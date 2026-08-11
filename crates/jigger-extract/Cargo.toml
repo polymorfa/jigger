@@ -1,0 +1,19 @@
+[package]
+name = "jigger-extract"
+description = "Extracts protocol facts from a cellar-indexed bundle by parsing, never by evaluating."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+cellar-core = { workspace = true }
+jigger-ir = { workspace = true }
+oxc_allocator = { workspace = true }
+oxc_ast = { workspace = true }
+oxc_ast_visit = { workspace = true }
+oxc_parser = { workspace = true }
+oxc_span = { workspace = true }
+regex = { workspace = true }
+serde_json = { workspace = true }
