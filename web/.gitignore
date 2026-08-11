@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# build-time generated artifacts (see scripts/prepare.mjs)
+/content/spec/
+/public/data/search-index.json
+
+# misc
+.DS_Store
+*.log
+.env*.local
