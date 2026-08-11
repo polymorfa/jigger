@@ -1,0 +1,11 @@
+[package]
+name = "jigger-ir"
+description = "IR types and identity rules for the jigger WhatsApp protocol spec."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
