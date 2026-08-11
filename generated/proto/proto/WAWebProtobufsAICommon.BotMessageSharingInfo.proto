@@ -1,0 +1,4 @@
+message BotMessageSharingInfo {
+  optional bytes botEntryPointOrigin = 1;
+  optional bytes forwardScore = 2;
+}

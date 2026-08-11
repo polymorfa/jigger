@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_filter_out_subscribed_in_directory_null_state",
+  "kind": "ab",
+  "name": "channels_filter_out_subscribed_in_directory_null_state",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5015,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_filter_out_subscribed_in_directory_null_state:\\s*\\[\\s*5015"
+  },
+  "literals": [
+    "channels_filter_out_subscribed_in_directory_null_state",
+    "5015"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

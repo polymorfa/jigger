@@ -1,0 +1,47 @@
+{
+  "id": "enum:PLACEHOLDER_ACTION",
+  "kind": "enum",
+  "name": "PLACEHOLDER_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPlaceholderAction",
+    "variants": [
+      {
+        "name": "OTHER",
+        "value": 0.0
+      },
+      {
+        "name": "ADD",
+        "value": 1.0
+      },
+      {
+        "name": "VIEW",
+        "value": 2.0
+      },
+      {
+        "name": "POPULATE",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPlaceholderAction",
+    "matches": "PLACEHOLDER_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "PLACEHOLDER_ACTION",
+    "OTHER",
+    "ADD",
+    "VIEW",
+    "POPULATE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebHandlePlaceholderWam",
+      "WAWebPlaceholderActivityWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

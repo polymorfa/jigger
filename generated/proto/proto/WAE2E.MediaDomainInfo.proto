@@ -1,0 +1,4 @@
+message MediaDomainInfo {
+  optional bytes mediaKeyDomain = 1;
+  optional bytes e2EeMediaKey = 2;
+}

@@ -1,0 +1,10 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OFFLINERESUMEMODES {
+    RESUMEFROMRESTART = 1,
+    RESUMEFROMOPENTAB = 2,
+    UNKNOWN = 3,
+    CONNECTREASONUSER = 4,
+    CONNECTREASONPUSH = 5,
+    CONNECTREASONBACKOFF = 6,
+}

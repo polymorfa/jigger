@@ -1,0 +1,33 @@
+{
+  "id": "mex:WAWebMexUpdateGroupPropertyJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexUpdateGroupPropertyJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9418211574894172",
+    "operation": "mutation",
+    "variables": [
+      "group_id",
+      "update"
+    ],
+    "root_field": "xwa2_group_update_property",
+    "document": "mutation MexUpdateGroupPropertyJobMutation($group_id, $update) {\n  xwa2_group_update_property {\n    id\n    state\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexUpdateGroupPropertyJobMutation.graphql",
+    "matches": "id: \"9418211574894172\""
+  },
+  "literals": [
+    "9418211574894172",
+    "WAWebMexUpdateGroupPropertyJobMutation",
+    "xwa2_group_update_property"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexUpdateGroupPropertyJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

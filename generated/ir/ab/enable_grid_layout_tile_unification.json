@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_grid_layout_tile_unification",
+  "kind": "ab",
+  "name": "enable_grid_layout_tile_unification",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18066,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_grid_layout_tile_unification:\\s*\\[\\s*18066"
+  },
+  "literals": [
+    "enable_grid_layout_tile_unification",
+    "18066"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

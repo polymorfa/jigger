@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_voip_stack_log_level",
+  "kind": "ab",
+  "name": "wa_web_voip_stack_log_level",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 30261,
+    "type": "int",
+    "default": 3,
+    "alt_default": 3
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_voip_stack_log_level:\\s*\\[\\s*30261"
+  },
+  "literals": [
+    "wa_web_voip_stack_log_level",
+    "30261"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

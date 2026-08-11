@@ -1,0 +1,1418 @@
+{
+  "id": "enum:CHAT_FILTER_ACTION_TYPES",
+  "kind": "enum",
+  "name": "CHAT_FILTER_ACTION_TYPES",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChatFilterActionTypes",
+    "variants": [
+      {
+        "name": "OPEN",
+        "value": 1.0
+      },
+      {
+        "name": "SELECT_FILTER",
+        "value": 2.0
+      },
+      {
+        "name": "SEARCH_WITH_FILTER",
+        "value": 3.0
+      },
+      {
+        "name": "SEARCH",
+        "value": 4.0
+      },
+      {
+        "name": "SEARCH_ITEM_SELECTED",
+        "value": 5.0
+      },
+      {
+        "name": "SEARCH_MSG_SENT",
+        "value": 6.0
+      },
+      {
+        "name": "UNSELECT_FILTER",
+        "value": 7.0
+      },
+      {
+        "name": "AUTO_CLEAR_FILTER",
+        "value": 8.0
+      },
+      {
+        "name": "VIEW",
+        "value": 9.0
+      },
+      {
+        "name": "GROUP_NAVIGATION",
+        "value": 10.0
+      },
+      {
+        "name": "GROUP_DISCOVERY",
+        "value": 11.0
+      },
+      {
+        "name": "GROUP_JOIN",
+        "value": 12.0
+      },
+      {
+        "name": "SUBGROUP_SWITCHER_CLICK",
+        "value": 13.0
+      },
+      {
+        "name": "SUBGROUP_MENTION_CLICK",
+        "value": 14.0
+      },
+      {
+        "name": "COMMUNITY_RICH_SYSTEM_MESSAGE_CLICK",
+        "value": 15.0
+      },
+      {
+        "name": "GROUP_SYSTEM_MESSAGE_CLICK",
+        "value": 16.0
+      },
+      {
+        "name": "NESTING_VIEW_COMMUNITY_CLICK",
+        "value": 17.0
+      },
+      {
+        "name": "SELECT_COMMUNITY_ADMINS_CAN_ADD_GROUPS",
+        "value": 18.0
+      },
+      {
+        "name": "SELECT_EVERYONE_CAN_ADD_GROUPS",
+        "value": 19.0
+      },
+      {
+        "name": "GROUP_JOIN_REQUEST",
+        "value": 20.0
+      },
+      {
+        "name": "NOTIFICATION_RECEIVED",
+        "value": 21.0
+      },
+      {
+        "name": "NOTIFICATION_RENDERED",
+        "value": 22.0
+      },
+      {
+        "name": "TAP_TO_OPEN",
+        "value": 23.0
+      },
+      {
+        "name": "TAP_TO_REPLY",
+        "value": 24.0
+      },
+      {
+        "name": "VOIP_CALLBACK",
+        "value": 25.0
+      },
+      {
+        "name": "VOIP_MESSAGE",
+        "value": 26.0
+      },
+      {
+        "name": "VOIP_DECLINE",
+        "value": 27.0
+      },
+      {
+        "name": "MARK_AS_READ",
+        "value": 28.0
+      },
+      {
+        "name": "AI_NEW_CHAT_CLICK",
+        "value": 29.0
+      },
+      {
+        "name": "AI_TAB_SELECTION_CLICK",
+        "value": 30.0
+      },
+      {
+        "name": "AI_PERSONA_SELECTION_CLICK",
+        "value": 31.0
+      },
+      {
+        "name": "AI_TOS_VIEW",
+        "value": 32.0
+      },
+      {
+        "name": "AI_TOS_ACCEPT_CLICK",
+        "value": 33.0
+      },
+      {
+        "name": "AI_TOS_DISMISS_CLICK",
+        "value": 34.0
+      },
+      {
+        "name": "AI_NEW_UGC_CLICK",
+        "value": 35.0
+      },
+      {
+        "name": "AI_UGC_CREATION_START_CLICK",
+        "value": 36.0
+      },
+      {
+        "name": "AI_GENDER_AGE_SELECTION_CLICK",
+        "value": 37.0
+      },
+      {
+        "name": "AI_PERSONALITY_SELECTION_CLICK",
+        "value": 38.0
+      },
+      {
+        "name": "AI_INTEREST_SELECTION_CLICK",
+        "value": 39.0
+      },
+      {
+        "name": "AI_AVATAR_SELECTION_CLICK",
+        "value": 40.0
+      },
+      {
+        "name": "AI_NAME_SELECTION_CLICK",
+        "value": 41.0
+      },
+      {
+        "name": "AI_UGC_CREATION_FINISH_CLICK",
+        "value": 42.0
+      },
+      {
+        "name": "REQUEST_WAITLIST_DIALOG_APPEAR",
+        "value": 43.0
+      },
+      {
+        "name": "REQUEST_WAITLIST_SELECT",
+        "value": 44.0
+      },
+      {
+        "name": "FILTER_VIEWED",
+        "value": 45.0
+      },
+      {
+        "name": "FILTER_EMPTY_STATE_VIEWED",
+        "value": 46.0
+      },
+      {
+        "name": "BUSINESS_SERP_LOADED",
+        "value": 47.0
+      },
+      {
+        "name": "BIZ_SEE_MORE_CLICKED",
+        "value": 48.0
+      },
+      {
+        "name": "IMPRESSION",
+        "value": 49.0
+      },
+      {
+        "name": "BIZ_SEARCH_SET_LOCATION_CLICKED",
+        "value": 50.0
+      },
+      {
+        "name": "CLOSE_BTN_CLICKED",
+        "value": 51.0
+      },
+      {
+        "name": "AI_CHAT_CLICK",
+        "value": 52.0
+      },
+      {
+        "name": "NEW_CHAT_CLICK",
+        "value": 53.0
+      },
+      {
+        "name": "SERP_LOADED",
+        "value": 54.0
+      },
+      {
+        "name": "CLICK",
+        "value": 55.0
+      },
+      {
+        "name": "ENTER",
+        "value": 56.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 57.0
+      },
+      {
+        "name": "SEND_MESSAGE_SUCCESS",
+        "value": 58.0
+      },
+      {
+        "name": "META_AI_MODEL_SETTING_SHOW",
+        "value": 59.0
+      },
+      {
+        "name": "META_AI_MODEL_UPDATE",
+        "value": 60.0
+      },
+      {
+        "name": "AI_CHARACTER_EXPLORE_CLICK",
+        "value": 61.0
+      },
+      {
+        "name": "AI_CHARACTER_EXISTING_CHAT_CLICK",
+        "value": 62.0
+      },
+      {
+        "name": "AI_CHARACTER_PREVIEWED",
+        "value": 63.0
+      },
+      {
+        "name": "AI_CHARACTER_PROMPT_CLICK",
+        "value": 64.0
+      },
+      {
+        "name": "AI_CHARACTER_START_CHATTING_CLICK",
+        "value": 65.0
+      },
+      {
+        "name": "AI_CHARACTER_SHARE_CLICKED",
+        "value": 66.0
+      },
+      {
+        "name": "AI_CHARACTER_CREATOR_PROFILE_CLICK",
+        "value": 67.0
+      },
+      {
+        "name": "AI_TOS_DISMISS_NOT_ACCEPTED",
+        "value": 68.0
+      },
+      {
+        "name": "AI_TOS_DISMISS_AUTO_ACCEPTED",
+        "value": 69.0
+      },
+      {
+        "name": "AI_CHARACTER_CHAT_CLICK",
+        "value": 70.0
+      },
+      {
+        "name": "AI_HOME_IMPRESSION",
+        "value": 71.0
+      },
+      {
+        "name": "AI_VOICE_NUX_VIEW",
+        "value": 72.0
+      },
+      {
+        "name": "AI_VOICE_NUX_ALLOW",
+        "value": 73.0
+      },
+      {
+        "name": "AI_VOICE_NUX_DISMISS",
+        "value": 74.0
+      },
+      {
+        "name": "AI_VOICE_MIC_PERMISSION_VIEW",
+        "value": 75.0
+      },
+      {
+        "name": "AI_VOICE_MIC_PERMISSION_ALLOW",
+        "value": 76.0
+      },
+      {
+        "name": "AI_VOICE_MIC_PERMISSION_DISMISS",
+        "value": 77.0
+      },
+      {
+        "name": "AI_VOICE_AUDIO_RECORDING_PERMISSION_VIEW",
+        "value": 78.0
+      },
+      {
+        "name": "AI_VOICE_AUDIO_RECORDING_PERMISSION_WHILE_USING_THE_APP_CLICK",
+        "value": 79.0
+      },
+      {
+        "name": "AI_VOICE_AUDIO_RECORDING_PERMISSION_ONLY_THIS_TIME_CLICK",
+        "value": 80.0
+      },
+      {
+        "name": "AI_VOICE_HALF_SHEET_VIEW",
+        "value": 81.0
+      },
+      {
+        "name": "AI_VOICE_HALF_SHEET_CONNECT",
+        "value": 82.0
+      },
+      {
+        "name": "AI_VOICE_FULL_SHEET_VIEW",
+        "value": 83.0
+      },
+      {
+        "name": "SCAN",
+        "value": 84.0
+      },
+      {
+        "name": "AI_VOICE_MIC_PERMISSION_REDIRECT_TO_SETTING",
+        "value": 85.0
+      },
+      {
+        "name": "AI_VOICE_SEARCH_CHATS_LIST_CLICK",
+        "value": 86.0
+      },
+      {
+        "name": "AI_VOICE_CHAT_THREAD_CLICK",
+        "value": 87.0
+      },
+      {
+        "name": "AI_VOICE_FAB_CLICK",
+        "value": 88.0
+      },
+      {
+        "name": "XMA_REELS_PLUGIN_PREVIEWED",
+        "value": 89.0
+      },
+      {
+        "name": "XMA_REELS_CLICKED",
+        "value": 90.0
+      },
+      {
+        "name": "AI_MEMORY_DELETE",
+        "value": 91.0
+      },
+      {
+        "name": "AI_MEMORY_ALL_DELETE",
+        "value": 92.0
+      },
+      {
+        "name": "AI_MEMORY_DISMISS_CLICK",
+        "value": 93.0
+      },
+      {
+        "name": "AI_MEMORY_BOTTOM_SHEET_VIEW_ALL_CLICK",
+        "value": 94.0
+      },
+      {
+        "name": "AI_MEMORY_VIEW",
+        "value": 95.0
+      },
+      {
+        "name": "AI_MULTIMODAL_SESSION_BEGIN",
+        "value": 96.0
+      },
+      {
+        "name": "AI_VOICE_TO_TEXT_TRANSITION",
+        "value": 97.0
+      },
+      {
+        "name": "AI_VOICE_CONNECTION_ERROR",
+        "value": 98.0
+      },
+      {
+        "name": "AI_VOICE_TAP_ICEBREAKER",
+        "value": 99.0
+      },
+      {
+        "name": "AI_MULTIMODAL_HISTORY_FETCH",
+        "value": 100.0
+      },
+      {
+        "name": "AI_LISTENING_ENABLE",
+        "value": 101.0
+      },
+      {
+        "name": "AI_LISTENING_DISABLE",
+        "value": 102.0
+      },
+      {
+        "name": "AI_TAB_CLICK",
+        "value": 103.0
+      },
+      {
+        "name": "AI_TAB_IMPRESSION",
+        "value": 104.0
+      },
+      {
+        "name": "AI_DISCOVERY_CLICK",
+        "value": 105.0
+      },
+      {
+        "name": "AI_DISCOVERY_PREVIEW",
+        "value": 106.0
+      },
+      {
+        "name": "AI_CHARACTER_AUDIO_MUTED",
+        "value": 107.0
+      },
+      {
+        "name": "AI_CHARACTER_AUDIO_UNMUTED",
+        "value": 108.0
+      },
+      {
+        "name": "AI_TAB_CHARACTER_PREVIEWED",
+        "value": 109.0
+      },
+      {
+        "name": "AI_CHARACTER_IMPRESSION",
+        "value": 110.0
+      },
+      {
+        "name": "AI_INLINE_TOS_RENDERED",
+        "value": 111.0
+      },
+      {
+        "name": "AI_INLINE_TOS_VIEWED_ATTEMPT",
+        "value": 112.0
+      },
+      {
+        "name": "AI_INLINE_TOS_VIEWED",
+        "value": 113.0
+      },
+      {
+        "name": "AI_INITIATION_CONTINUE_ACCEPTED",
+        "value": 114.0
+      },
+      {
+        "name": "NOVICE_AI_TAB_CLICK",
+        "value": 115.0
+      },
+      {
+        "name": "AI_VOICE_BACKGROUND_CALL",
+        "value": 116.0
+      },
+      {
+        "name": "AI_VOICE_FOREGROUND_CALL",
+        "value": 119.0
+      },
+      {
+        "name": "AI_VOICE_START_CALL",
+        "value": 120.0
+      },
+      {
+        "name": "AI_VOICE_END_CALL",
+        "value": 121.0
+      },
+      {
+        "name": "AI_VOICE_AUTO_END_CALL",
+        "value": 122.0
+      },
+      {
+        "name": "AI_NULL_STATE_PROMPT_SEND",
+        "value": 125.0
+      },
+      {
+        "name": "AI_NULL_STATE_HISTORY_FETCH",
+        "value": 126.0
+      },
+      {
+        "name": "AI_VOICE_CONVERSATION_STARTER_CLICK",
+        "value": 127.0
+      },
+      {
+        "name": "AI_VOICE_START_VOICE_MODE",
+        "value": 128.0
+      },
+      {
+        "name": "AI_VOICE_SEND_TEXT",
+        "value": 129.0
+      },
+      {
+        "name": "AI_TOS_NOTICE_ID_ERROR",
+        "value": 130.0
+      },
+      {
+        "name": "AI_HOME_PULL_TO_REFRESH",
+        "value": 131.0
+      },
+      {
+        "name": "AI_VOICE_VIEW_VOICE_SELECTION",
+        "value": 132.0
+      },
+      {
+        "name": "AI_VOICE_SKIP_VOICE_SELECTION",
+        "value": 133.0
+      },
+      {
+        "name": "AI_VOICE_CANCEL_VOICE_SELECTION",
+        "value": 134.0
+      },
+      {
+        "name": "AI_VOICE_SELECT_VOICE_SELECTION",
+        "value": 135.0
+      },
+      {
+        "name": "AI_VOICE_ON_DEFAULT_ENABLED",
+        "value": 136.0
+      },
+      {
+        "name": "AI_VOICE_ON_DEFAULT_DISABLED",
+        "value": 137.0
+      },
+      {
+        "name": "AI_MEMORY_UPDATED",
+        "value": 138.0
+      },
+      {
+        "name": "AI_CREATION_BUTTON_CLICK",
+        "value": 139.0
+      },
+      {
+        "name": "AI_CREATION_TOS_PREVIEWED",
+        "value": 140.0
+      },
+      {
+        "name": "AI_CREATION_PREVIEW",
+        "value": 141.0
+      },
+      {
+        "name": "AI_CREATION_DESCRIPTION_SUBMIT",
+        "value": 142.0
+      },
+      {
+        "name": "AI_CREATION_PERSONALITY_CATEGORY_PREVIEW",
+        "value": 143.0
+      },
+      {
+        "name": "AI_CREATION_PERSONALITY_SUBMIT",
+        "value": 144.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_CREATE_PREVIEWED",
+        "value": 145.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_SUBMIT",
+        "value": 146.0
+      },
+      {
+        "name": "AI_CREATION_AUDIENCE_PUBLIC",
+        "value": 147.0
+      },
+      {
+        "name": "AI_CREATION_AUDIENCE_ONLY_ME",
+        "value": 148.0
+      },
+      {
+        "name": "AI_CREATION_CONFIRMED",
+        "value": 149.0
+      },
+      {
+        "name": "AI_CREATION_DELETION_STARTED",
+        "value": 150.0
+      },
+      {
+        "name": "AI_CREATION_DELETION_COMPLETED",
+        "value": 151.0
+      },
+      {
+        "name": "AI_CREATION_REPORT_STARTED",
+        "value": 152.0
+      },
+      {
+        "name": "AI_CREATION_REPORT_COMPLETED",
+        "value": 153.0
+      },
+      {
+        "name": "AI_CREATION_NAMING_PREVIEWED",
+        "value": 154.0
+      },
+      {
+        "name": "AI_CREATION_NAMING_SUBMIT",
+        "value": 155.0
+      },
+      {
+        "name": "AI_CREATION_INTRO_PREVIEWED",
+        "value": 156.0
+      },
+      {
+        "name": "AI_CREATION_INTRO_SUBMIT",
+        "value": 157.0
+      },
+      {
+        "name": "AI_CREATION_REVIEW_PREVIEWED",
+        "value": 158.0
+      },
+      {
+        "name": "AI_CREATION_SUBMIT",
+        "value": 159.0
+      },
+      {
+        "name": "AI_CHAT_THREAD_VOICE_VIEW",
+        "value": 160.0
+      },
+      {
+        "name": "AI_VOICE_CONVERSATION_STARTER_VIEW",
+        "value": 161.0
+      },
+      {
+        "name": "AI_HIDE_REQUEST_SUBMITTED",
+        "value": 162.0
+      },
+      {
+        "name": "AI_CHARACTER_EXPLORE_VIEWED",
+        "value": 163.0
+      },
+      {
+        "name": "META_AI_CHAT_THREAD_VIEWED_TEXT",
+        "value": 164.0
+      },
+      {
+        "name": "META_AI_CHAT_THREAD_VIEWED_VOICE",
+        "value": 165.0
+      },
+      {
+        "name": "TAP_TO_FORWARD",
+        "value": 166.0
+      },
+      {
+        "name": "TAP_TO_COPY",
+        "value": 167.0
+      },
+      {
+        "name": "TAP_TO_STAR",
+        "value": 168.0
+      },
+      {
+        "name": "TAP_TO_DELETE",
+        "value": 169.0
+      },
+      {
+        "name": "TAP_TO_REACT",
+        "value": 170.0
+      },
+      {
+        "name": "SWIPE_TO_REPLY",
+        "value": 171.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_EDIT_CLICK",
+        "value": 172.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_CREATE_NEW",
+        "value": 173.0
+      },
+      {
+        "name": "AI_CREATION_VOICE_SELECTION_PREVIEWED",
+        "value": 174.0
+      },
+      {
+        "name": "AI_CREATION_NAMING_EDIT_SAVED",
+        "value": 175.0
+      },
+      {
+        "name": "AI_CREATION_DESCRIPTION_EDIT_SAVED",
+        "value": 176.0
+      },
+      {
+        "name": "AI_CREATION_INTRODUCTION_EDIT_SAVED",
+        "value": 177.0
+      },
+      {
+        "name": "AI_CREATION_WELCOME_MSG_SAVED",
+        "value": 178.0
+      },
+      {
+        "name": "AI_CREATION_ICEBREAKER_SAVED",
+        "value": 179.0
+      },
+      {
+        "name": "AI_CREATION_INSTRUCTIONS_SAVED",
+        "value": 180.0
+      },
+      {
+        "name": "AI_CREATION_INSTRUCTIONS_DELETED",
+        "value": 181.0
+      },
+      {
+        "name": "AI_CREATION_EXAMPLE_DIALOG_SAVED",
+        "value": 182.0
+      },
+      {
+        "name": "AI_CREATION_EXAMPLE_DIALOG_DELETED",
+        "value": 183.0
+      },
+      {
+        "name": "AI_CREATION_ADVANCED_SETTINGS_PREVIEWED",
+        "value": 184.0
+      },
+      {
+        "name": "AI_CREATION_VOICE_PREVIEWED",
+        "value": 185.0
+      },
+      {
+        "name": "AI_CREATION_VOICE_SUBMIT",
+        "value": 186.0
+      },
+      {
+        "name": "AI_VOICE_TOS_ACCEPT_CLICK",
+        "value": 187.0
+      },
+      {
+        "name": "AI_VOICE_TOS_VIEW",
+        "value": 188.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_REGENERATION",
+        "value": 189.0
+      },
+      {
+        "name": "AI_VOICE_RING_TAP_CLICK",
+        "value": 190.0
+      },
+      {
+        "name": "AI_VOICE_RING_UNDO_MUTE_UNMUTE",
+        "value": 191.0
+      },
+      {
+        "name": "AI_HOME_BOUNCE",
+        "value": 192.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_EDIT_BUTTON_CLICK",
+        "value": 193.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_EDIT_DONE",
+        "value": 194.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_EDIT_SUBMIT",
+        "value": 195.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_CROP_CLICK",
+        "value": 196.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_CROP_DONE",
+        "value": 197.0
+      },
+      {
+        "name": "AI_CREATION_IMAGE_UPLOAD_CLICK",
+        "value": 198.0
+      },
+      {
+        "name": "AI_CREATION_IMAGE_UPLOAD_DONE",
+        "value": 199.0
+      },
+      {
+        "name": "AI_CREATION_AVATAR_EDIT_PREVIEWED",
+        "value": 200.0
+      },
+      {
+        "name": "AI_CREATION_DISCARD_EDIT_DIALOG_PREVIEWED",
+        "value": 201.0
+      },
+      {
+        "name": "AI_CREATION_DISCARD_EDIT_DIALOG_CONFIRMED",
+        "value": 202.0
+      },
+      {
+        "name": "AI_HOME_BOUNCE_250MS",
+        "value": 203.0
+      },
+      {
+        "name": "AI_HOME_BOUNCE_750MS",
+        "value": 205.0
+      },
+      {
+        "name": "AI_HOME_BOUNCE_1000MS",
+        "value": 206.0
+      },
+      {
+        "name": "AI_HOME_BOUNCE_2000MS",
+        "value": 207.0
+      },
+      {
+        "name": "AI_HOME_BOUNCE_3000MS",
+        "value": 208.0
+      },
+      {
+        "name": "AI_HOME_BOUNCE_5000MS",
+        "value": 209.0
+      },
+      {
+        "name": "AI_PROACTIVE_MESSAGE_UPDATED",
+        "value": 210.0
+      },
+      {
+        "name": "AI_PROACTIVE_MESSAGE_UPDATED_SUCCESS",
+        "value": 211.0
+      },
+      {
+        "name": "AI_PROACTIVE_MESSAGE_UPDATED_FAILURE",
+        "value": 212.0
+      },
+      {
+        "name": "AI_PROACTIVE_MESSAGE_DISMISS",
+        "value": 213.0
+      },
+      {
+        "name": "AI_PROACTIVE_MESSAGE_VIEW",
+        "value": 214.0
+      },
+      {
+        "name": "UGC_INTEREST_PAGE_IMPRESSION",
+        "value": 215.0
+      },
+      {
+        "name": "MANAGE_INTERESTS_CLICK",
+        "value": 216.0
+      },
+      {
+        "name": "EDIT_UGC_INTERESTS",
+        "value": 217.0
+      },
+      {
+        "name": "INTEREST_PAGE_CONTINUE_CLICK",
+        "value": 218.0
+      },
+      {
+        "name": "INTEREST_PAGE_EXIT",
+        "value": 219.0
+      },
+      {
+        "name": "AI_CATEGORIES_CHANGE",
+        "value": 220.0
+      },
+      {
+        "name": "AI_SCROLL_DEPTH_CHANGE",
+        "value": 221.0
+      },
+      {
+        "name": "NUX_INTEREST_QUIZ_IMPRESSION",
+        "value": 222.0
+      },
+      {
+        "name": "NUX_INTEREST_QUIZ_DISMISSED",
+        "value": 223.0
+      },
+      {
+        "name": "INTEREST_PAGE_DONE_CLICK",
+        "value": 224.0
+      },
+      {
+        "name": "NUX_INTEREST_QUIZ_CONTINUE_CLICK",
+        "value": 225.0
+      },
+      {
+        "name": "AI_CHARACTER_HIDE",
+        "value": 226.0
+      },
+      {
+        "name": "AI_CHARACTER_UNHIDE",
+        "value": 227.0
+      },
+      {
+        "name": "AI_DISCLAIMER_SYSTEM_MESSAGE_INSERTED",
+        "value": 228.0
+      },
+      {
+        "name": "AI_DISCLAIMER_LEARN_MORE_CLICK",
+        "value": 229.0
+      },
+      {
+        "name": "AI_HOME_CLICK_CARD",
+        "value": 230.0
+      },
+      {
+        "name": "AI_HOME_CARD_IMPRESSION_PARTIAL",
+        "value": 231.0
+      },
+      {
+        "name": "AI_HOME_CARD_IMPRESSION_FULL",
+        "value": 232.0
+      },
+      {
+        "name": "AI_HOME_CLICK_BACK_BUTTON",
+        "value": 233.0
+      },
+      {
+        "name": "AI_HOME_CLOSE_APP",
+        "value": 234.0
+      },
+      {
+        "name": "AI_HOME_USER_INPUT",
+        "value": 235.0
+      },
+      {
+        "name": "MODE_SELECTION_CLICK",
+        "value": 236.0
+      },
+      {
+        "name": "MODE_SELECTION_IMPRESSION",
+        "value": 237.0
+      },
+      {
+        "name": "AI_HOME_NULL_STATE_SUGGESTION_IMPRESSION_PARTIAL",
+        "value": 238.0
+      },
+      {
+        "name": "AI_HOME_NULL_STATE_SUGGESTION_IMPRESSION_FULL",
+        "value": 239.0
+      },
+      {
+        "name": "AI_HOME_CLICK_NULL_STATE_SUGGESTION",
+        "value": 240.0
+      },
+      {
+        "name": "AI_HOME_CLICK_FOLLOWUP_PROMPT",
+        "value": 241.0
+      },
+      {
+        "name": "AI_HOME_FOLLOWUP_PROMPT_FULL_IMPRESSION",
+        "value": 242.0
+      },
+      {
+        "name": "AI_HOME_FOLLOWUP_PROMPT_PARTIAL_IMPRESSION",
+        "value": 243.0
+      },
+      {
+        "name": "AI_FAB_CLICK",
+        "value": 244.0
+      },
+      {
+        "name": "BOUNCE_250MS",
+        "value": 245.0
+      },
+      {
+        "name": "BOUNCE_750MS",
+        "value": 246.0
+      },
+      {
+        "name": "BOUNCE_1000MS",
+        "value": 247.0
+      },
+      {
+        "name": "BOUNCE_2000MS",
+        "value": 248.0
+      },
+      {
+        "name": "BOUNCE_3000MS",
+        "value": 249.0
+      },
+      {
+        "name": "BOUNCE_5000MS",
+        "value": 250.0
+      },
+      {
+        "name": "FIRST_PROMPT_SENT",
+        "value": 251.0
+      },
+      {
+        "name": "AI_FAB_CHAT_HISTORY_CLICK",
+        "value": 252.0
+      },
+      {
+        "name": "COMMUNITIES_TOOLTIP_DISMISSED",
+        "value": 253.0
+      },
+      {
+        "name": "VOICE_LIVE_AI_VIDEO_BUTTON_CLICK",
+        "value": 254.0
+      },
+      {
+        "name": "AI_VOICE_IMAGE_INPUT_CLICK",
+        "value": 255.0
+      },
+      {
+        "name": "MESSAGE_BUBBLE_INVITE_LINK_DISPLAYED",
+        "value": 256.0
+      },
+      {
+        "name": "MESSAGE_BUBBLE_INVITE_LINK_TAPPED",
+        "value": 257.0
+      },
+      {
+        "name": "JOIN_PREVIEW_BOTTOM_SHEET_DISPLAYED",
+        "value": 258.0
+      },
+      {
+        "name": "JOIN_PREVIEW_BOTTOM_SHEET_TAPPED",
+        "value": 259.0
+      },
+      {
+        "name": "JOIN_PREVIEW_BOTTOM_SHEET_DISMISSED_CLOSE_BUTTON",
+        "value": 260.0
+      },
+      {
+        "name": "JOIN_PREVIEW_BOTTOM_SHEET_DISMISSED_OUTSIDE_TAP",
+        "value": 261.0
+      },
+      {
+        "name": "JOIN_PREVIEW_BOTTOM_SHEET_DISMISSED_SWIPE_DOWN",
+        "value": 262.0
+      },
+      {
+        "name": "COMPOSER_TAP",
+        "value": 263.0
+      },
+      {
+        "name": "ATTACHMENT_TAP",
+        "value": 264.0
+      },
+      {
+        "name": "CAMERA_TAP",
+        "value": 265.0
+      },
+      {
+        "name": "GALLERY_TAP",
+        "value": 266.0
+      },
+      {
+        "name": "PTT_TAP",
+        "value": 267.0
+      },
+      {
+        "name": "VOICE_TAP",
+        "value": 268.0
+      },
+      {
+        "name": "THREE_DOT_MENU_TAP",
+        "value": 269.0
+      },
+      {
+        "name": "CONVERSATION_STARTER_TAP",
+        "value": 270.0
+      },
+      {
+        "name": "DOCUMENT_TAP",
+        "value": 271.0
+      },
+      {
+        "name": "THREADING_HISTORY_TAP",
+        "value": 272.0
+      },
+      {
+        "name": "CONVERSATION_STARTER_IMPRESSION",
+        "value": 273.0
+      },
+      {
+        "name": "SLASH_ICON_BUTTON_CLICK",
+        "value": 274.0
+      },
+      {
+        "name": "SLASH_COMMAND_CLICK",
+        "value": 275.0
+      },
+      {
+        "name": "SLASH_ICON_TYPED",
+        "value": 276.0
+      },
+      {
+        "name": "SLASH_COMMAND_PROMPT_SUBMIT",
+        "value": 277.0
+      },
+      {
+        "name": "DOUBLE_HEIGHT_COMPOSER_IMPRESSION",
+        "value": 278.0
+      },
+      {
+        "name": "MODE_SELECTION_BUTTON_IMPRESSION",
+        "value": 279.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChatFilterActionTypes",
+    "matches": "CHAT_FILTER_ACTION_TYPES\\s*[:=]"
+  },
+  "literals": [
+    "CHAT_FILTER_ACTION_TYPES",
+    "OPEN",
+    "SELECT_FILTER",
+    "SEARCH_WITH_FILTER",
+    "SEARCH",
+    "SEARCH_ITEM_SELECTED",
+    "SEARCH_MSG_SENT",
+    "UNSELECT_FILTER",
+    "AUTO_CLEAR_FILTER",
+    "VIEW",
+    "GROUP_NAVIGATION",
+    "GROUP_DISCOVERY",
+    "GROUP_JOIN",
+    "SUBGROUP_SWITCHER_CLICK",
+    "SUBGROUP_MENTION_CLICK",
+    "COMMUNITY_RICH_SYSTEM_MESSAGE_CLICK",
+    "GROUP_SYSTEM_MESSAGE_CLICK",
+    "NESTING_VIEW_COMMUNITY_CLICK",
+    "SELECT_COMMUNITY_ADMINS_CAN_ADD_GROUPS",
+    "SELECT_EVERYONE_CAN_ADD_GROUPS",
+    "GROUP_JOIN_REQUEST",
+    "NOTIFICATION_RECEIVED",
+    "NOTIFICATION_RENDERED",
+    "TAP_TO_OPEN",
+    "TAP_TO_REPLY",
+    "VOIP_CALLBACK",
+    "VOIP_MESSAGE",
+    "VOIP_DECLINE",
+    "MARK_AS_READ",
+    "AI_NEW_CHAT_CLICK",
+    "AI_TAB_SELECTION_CLICK",
+    "AI_PERSONA_SELECTION_CLICK",
+    "AI_TOS_VIEW",
+    "AI_TOS_ACCEPT_CLICK",
+    "AI_TOS_DISMISS_CLICK",
+    "AI_NEW_UGC_CLICK",
+    "AI_UGC_CREATION_START_CLICK",
+    "AI_GENDER_AGE_SELECTION_CLICK",
+    "AI_PERSONALITY_SELECTION_CLICK",
+    "AI_INTEREST_SELECTION_CLICK",
+    "AI_AVATAR_SELECTION_CLICK",
+    "AI_NAME_SELECTION_CLICK",
+    "AI_UGC_CREATION_FINISH_CLICK",
+    "REQUEST_WAITLIST_DIALOG_APPEAR",
+    "REQUEST_WAITLIST_SELECT",
+    "FILTER_VIEWED",
+    "FILTER_EMPTY_STATE_VIEWED",
+    "BUSINESS_SERP_LOADED",
+    "BIZ_SEE_MORE_CLICKED",
+    "IMPRESSION",
+    "BIZ_SEARCH_SET_LOCATION_CLICKED",
+    "CLOSE_BTN_CLICKED",
+    "AI_CHAT_CLICK",
+    "NEW_CHAT_CLICK",
+    "SERP_LOADED",
+    "CLICK",
+    "ENTER",
+    "DISMISS",
+    "SEND_MESSAGE_SUCCESS",
+    "META_AI_MODEL_SETTING_SHOW",
+    "META_AI_MODEL_UPDATE",
+    "AI_CHARACTER_EXPLORE_CLICK",
+    "AI_CHARACTER_EXISTING_CHAT_CLICK",
+    "AI_CHARACTER_PREVIEWED",
+    "AI_CHARACTER_PROMPT_CLICK",
+    "AI_CHARACTER_START_CHATTING_CLICK",
+    "AI_CHARACTER_SHARE_CLICKED",
+    "AI_CHARACTER_CREATOR_PROFILE_CLICK",
+    "AI_TOS_DISMISS_NOT_ACCEPTED",
+    "AI_TOS_DISMISS_AUTO_ACCEPTED",
+    "AI_CHARACTER_CHAT_CLICK",
+    "AI_HOME_IMPRESSION",
+    "AI_VOICE_NUX_VIEW",
+    "AI_VOICE_NUX_ALLOW",
+    "AI_VOICE_NUX_DISMISS",
+    "AI_VOICE_MIC_PERMISSION_VIEW",
+    "AI_VOICE_MIC_PERMISSION_ALLOW",
+    "AI_VOICE_MIC_PERMISSION_DISMISS",
+    "AI_VOICE_AUDIO_RECORDING_PERMISSION_VIEW",
+    "AI_VOICE_AUDIO_RECORDING_PERMISSION_WHILE_USING_THE_APP_CLICK",
+    "AI_VOICE_AUDIO_RECORDING_PERMISSION_ONLY_THIS_TIME_CLICK",
+    "AI_VOICE_HALF_SHEET_VIEW",
+    "AI_VOICE_HALF_SHEET_CONNECT",
+    "AI_VOICE_FULL_SHEET_VIEW",
+    "SCAN",
+    "AI_VOICE_MIC_PERMISSION_REDIRECT_TO_SETTING",
+    "AI_VOICE_SEARCH_CHATS_LIST_CLICK",
+    "AI_VOICE_CHAT_THREAD_CLICK",
+    "AI_VOICE_FAB_CLICK",
+    "XMA_REELS_PLUGIN_PREVIEWED",
+    "XMA_REELS_CLICKED",
+    "AI_MEMORY_DELETE",
+    "AI_MEMORY_ALL_DELETE",
+    "AI_MEMORY_DISMISS_CLICK",
+    "AI_MEMORY_BOTTOM_SHEET_VIEW_ALL_CLICK",
+    "AI_MEMORY_VIEW",
+    "AI_MULTIMODAL_SESSION_BEGIN",
+    "AI_VOICE_TO_TEXT_TRANSITION",
+    "AI_VOICE_CONNECTION_ERROR",
+    "AI_VOICE_TAP_ICEBREAKER",
+    "AI_MULTIMODAL_HISTORY_FETCH",
+    "AI_LISTENING_ENABLE",
+    "AI_LISTENING_DISABLE",
+    "AI_TAB_CLICK",
+    "AI_TAB_IMPRESSION",
+    "AI_DISCOVERY_CLICK",
+    "AI_DISCOVERY_PREVIEW",
+    "AI_CHARACTER_AUDIO_MUTED",
+    "AI_CHARACTER_AUDIO_UNMUTED",
+    "AI_TAB_CHARACTER_PREVIEWED",
+    "AI_CHARACTER_IMPRESSION",
+    "AI_INLINE_TOS_RENDERED",
+    "AI_INLINE_TOS_VIEWED_ATTEMPT",
+    "AI_INLINE_TOS_VIEWED",
+    "AI_INITIATION_CONTINUE_ACCEPTED",
+    "NOVICE_AI_TAB_CLICK",
+    "AI_VOICE_BACKGROUND_CALL",
+    "AI_VOICE_FOREGROUND_CALL",
+    "AI_VOICE_START_CALL",
+    "AI_VOICE_END_CALL",
+    "AI_VOICE_AUTO_END_CALL",
+    "AI_NULL_STATE_PROMPT_SEND",
+    "AI_NULL_STATE_HISTORY_FETCH",
+    "AI_VOICE_CONVERSATION_STARTER_CLICK",
+    "AI_VOICE_START_VOICE_MODE",
+    "AI_VOICE_SEND_TEXT",
+    "AI_TOS_NOTICE_ID_ERROR",
+    "AI_HOME_PULL_TO_REFRESH",
+    "AI_VOICE_VIEW_VOICE_SELECTION",
+    "AI_VOICE_SKIP_VOICE_SELECTION",
+    "AI_VOICE_CANCEL_VOICE_SELECTION",
+    "AI_VOICE_SELECT_VOICE_SELECTION",
+    "AI_VOICE_ON_DEFAULT_ENABLED",
+    "AI_VOICE_ON_DEFAULT_DISABLED",
+    "AI_MEMORY_UPDATED",
+    "AI_CREATION_BUTTON_CLICK",
+    "AI_CREATION_TOS_PREVIEWED",
+    "AI_CREATION_PREVIEW",
+    "AI_CREATION_DESCRIPTION_SUBMIT",
+    "AI_CREATION_PERSONALITY_CATEGORY_PREVIEW",
+    "AI_CREATION_PERSONALITY_SUBMIT",
+    "AI_CREATION_AVATAR_CREATE_PREVIEWED",
+    "AI_CREATION_AVATAR_SUBMIT",
+    "AI_CREATION_AUDIENCE_PUBLIC",
+    "AI_CREATION_AUDIENCE_ONLY_ME",
+    "AI_CREATION_CONFIRMED",
+    "AI_CREATION_DELETION_STARTED",
+    "AI_CREATION_DELETION_COMPLETED",
+    "AI_CREATION_REPORT_STARTED",
+    "AI_CREATION_REPORT_COMPLETED",
+    "AI_CREATION_NAMING_PREVIEWED",
+    "AI_CREATION_NAMING_SUBMIT",
+    "AI_CREATION_INTRO_PREVIEWED",
+    "AI_CREATION_INTRO_SUBMIT",
+    "AI_CREATION_REVIEW_PREVIEWED",
+    "AI_CREATION_SUBMIT",
+    "AI_CHAT_THREAD_VOICE_VIEW",
+    "AI_VOICE_CONVERSATION_STARTER_VIEW",
+    "AI_HIDE_REQUEST_SUBMITTED",
+    "AI_CHARACTER_EXPLORE_VIEWED",
+    "META_AI_CHAT_THREAD_VIEWED_TEXT",
+    "META_AI_CHAT_THREAD_VIEWED_VOICE",
+    "TAP_TO_FORWARD",
+    "TAP_TO_COPY",
+    "TAP_TO_STAR",
+    "TAP_TO_DELETE",
+    "TAP_TO_REACT",
+    "SWIPE_TO_REPLY",
+    "AI_CREATION_AVATAR_EDIT_CLICK",
+    "AI_CREATION_AVATAR_CREATE_NEW",
+    "AI_CREATION_VOICE_SELECTION_PREVIEWED",
+    "AI_CREATION_NAMING_EDIT_SAVED",
+    "AI_CREATION_DESCRIPTION_EDIT_SAVED",
+    "AI_CREATION_INTRODUCTION_EDIT_SAVED",
+    "AI_CREATION_WELCOME_MSG_SAVED",
+    "AI_CREATION_ICEBREAKER_SAVED",
+    "AI_CREATION_INSTRUCTIONS_SAVED",
+    "AI_CREATION_INSTRUCTIONS_DELETED",
+    "AI_CREATION_EXAMPLE_DIALOG_SAVED",
+    "AI_CREATION_EXAMPLE_DIALOG_DELETED",
+    "AI_CREATION_ADVANCED_SETTINGS_PREVIEWED",
+    "AI_CREATION_VOICE_PREVIEWED",
+    "AI_CREATION_VOICE_SUBMIT",
+    "AI_VOICE_TOS_ACCEPT_CLICK",
+    "AI_VOICE_TOS_VIEW",
+    "AI_CREATION_AVATAR_REGENERATION",
+    "AI_VOICE_RING_TAP_CLICK",
+    "AI_VOICE_RING_UNDO_MUTE_UNMUTE",
+    "AI_HOME_BOUNCE",
+    "AI_CREATION_AVATAR_EDIT_BUTTON_CLICK",
+    "AI_CREATION_AVATAR_EDIT_DONE",
+    "AI_CREATION_AVATAR_EDIT_SUBMIT",
+    "AI_CREATION_AVATAR_CROP_CLICK",
+    "AI_CREATION_AVATAR_CROP_DONE",
+    "AI_CREATION_IMAGE_UPLOAD_CLICK",
+    "AI_CREATION_IMAGE_UPLOAD_DONE",
+    "AI_CREATION_AVATAR_EDIT_PREVIEWED",
+    "AI_CREATION_DISCARD_EDIT_DIALOG_PREVIEWED",
+    "AI_CREATION_DISCARD_EDIT_DIALOG_CONFIRMED",
+    "AI_HOME_BOUNCE_250MS",
+    "AI_HOME_BOUNCE_750MS",
+    "AI_HOME_BOUNCE_1000MS",
+    "AI_HOME_BOUNCE_2000MS",
+    "AI_HOME_BOUNCE_3000MS",
+    "AI_HOME_BOUNCE_5000MS",
+    "AI_PROACTIVE_MESSAGE_UPDATED",
+    "AI_PROACTIVE_MESSAGE_UPDATED_SUCCESS",
+    "AI_PROACTIVE_MESSAGE_UPDATED_FAILURE",
+    "AI_PROACTIVE_MESSAGE_DISMISS",
+    "AI_PROACTIVE_MESSAGE_VIEW",
+    "UGC_INTEREST_PAGE_IMPRESSION",
+    "MANAGE_INTERESTS_CLICK",
+    "EDIT_UGC_INTERESTS",
+    "INTEREST_PAGE_CONTINUE_CLICK",
+    "INTEREST_PAGE_EXIT",
+    "AI_CATEGORIES_CHANGE",
+    "AI_SCROLL_DEPTH_CHANGE",
+    "NUX_INTEREST_QUIZ_IMPRESSION",
+    "NUX_INTEREST_QUIZ_DISMISSED",
+    "INTEREST_PAGE_DONE_CLICK",
+    "NUX_INTEREST_QUIZ_CONTINUE_CLICK",
+    "AI_CHARACTER_HIDE",
+    "AI_CHARACTER_UNHIDE",
+    "AI_DISCLAIMER_SYSTEM_MESSAGE_INSERTED",
+    "AI_DISCLAIMER_LEARN_MORE_CLICK",
+    "AI_HOME_CLICK_CARD",
+    "AI_HOME_CARD_IMPRESSION_PARTIAL",
+    "AI_HOME_CARD_IMPRESSION_FULL",
+    "AI_HOME_CLICK_BACK_BUTTON",
+    "AI_HOME_CLOSE_APP",
+    "AI_HOME_USER_INPUT",
+    "MODE_SELECTION_CLICK",
+    "MODE_SELECTION_IMPRESSION",
+    "AI_HOME_NULL_STATE_SUGGESTION_IMPRESSION_PARTIAL",
+    "AI_HOME_NULL_STATE_SUGGESTION_IMPRESSION_FULL",
+    "AI_HOME_CLICK_NULL_STATE_SUGGESTION",
+    "AI_HOME_CLICK_FOLLOWUP_PROMPT",
+    "AI_HOME_FOLLOWUP_PROMPT_FULL_IMPRESSION",
+    "AI_HOME_FOLLOWUP_PROMPT_PARTIAL_IMPRESSION",
+    "AI_FAB_CLICK",
+    "BOUNCE_250MS",
+    "BOUNCE_750MS",
+    "BOUNCE_1000MS",
+    "BOUNCE_2000MS",
+    "BOUNCE_3000MS",
+    "BOUNCE_5000MS",
+    "FIRST_PROMPT_SENT",
+    "AI_FAB_CHAT_HISTORY_CLICK",
+    "COMMUNITIES_TOOLTIP_DISMISSED",
+    "VOICE_LIVE_AI_VIDEO_BUTTON_CLICK",
+    "AI_VOICE_IMAGE_INPUT_CLICK",
+    "MESSAGE_BUBBLE_INVITE_LINK_DISPLAYED",
+    "MESSAGE_BUBBLE_INVITE_LINK_TAPPED",
+    "JOIN_PREVIEW_BOTTOM_SHEET_DISPLAYED",
+    "JOIN_PREVIEW_BOTTOM_SHEET_TAPPED",
+    "JOIN_PREVIEW_BOTTOM_SHEET_DISMISSED_CLOSE_BUTTON",
+    "JOIN_PREVIEW_BOTTOM_SHEET_DISMISSED_OUTSIDE_TAP",
+    "JOIN_PREVIEW_BOTTOM_SHEET_DISMISSED_SWIPE_DOWN",
+    "COMPOSER_TAP",
+    "ATTACHMENT_TAP",
+    "CAMERA_TAP",
+    "GALLERY_TAP",
+    "PTT_TAP",
+    "VOICE_TAP",
+    "THREE_DOT_MENU_TAP",
+    "CONVERSATION_STARTER_TAP",
+    "DOCUMENT_TAP",
+    "THREADING_HISTORY_TAP",
+    "CONVERSATION_STARTER_IMPRESSION",
+    "SLASH_ICON_BUTTON_CLICK",
+    "SLASH_COMMAND_CLICK",
+    "SLASH_ICON_TYPED",
+    "SLASH_COMMAND_PROMPT_SUBMIT",
+    "DOUBLE_HEIGHT_COMPOSER_IMPRESSION",
+    "MODE_SELECTION_BUTTON_IMPRESSION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBotJourneyLogger",
+      "WAWebBotJourneyWamEvent",
+      "WAWebBotLoggingUtils",
+      "WAWebChatFilterEventWamEvent",
+      "WAWebChatlistPanelFunctionalLegacy.react",
+      "WAWebCommunityCells.react",
+      "WAWebCommunityHomeJoinedSubgroups.react",
+      "WAWebCommunityHomeWrapper.react",
+      "WAWebCommunityTabDrawer.react",
+      "WAWebFilterLogging",
+      "WAWebFormatParticipantNames",
+      "WAWebGroupInfoDrawer.react",
+      "WAWebGroupInviteLinkModal.react",
+      "WAWebGroupJoinModalBase.react",
+      "WAWebGroupJourneyWamEvent",
+      "WAWebGroupsModal.react",
+      "WAWebMessageCommunityCard.react",
+      "WAWebSetPropertyGroupAction",
+      "WAWebSmbUserJourneyWamEvent",
+      "WAWebSubgroupJoinModal.react",
+      "WAWebSubgroupSendRequestModal.react",
+      "WAWebSubgroupSwitcherButton.react",
+      "WAWebTextGroupMentionWrapperMutatorComponent.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 23
+  }
+}

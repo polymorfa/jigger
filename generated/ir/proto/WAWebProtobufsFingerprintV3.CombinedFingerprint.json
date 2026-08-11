@@ -1,0 +1,40 @@
+{
+  "id": "proto:WAWebProtobufsFingerprintV3.CombinedFingerprint",
+  "kind": "proto",
+  "name": "WAWebProtobufsFingerprintV3.CombinedFingerprint",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "localFingerprint": {
+        "number": 2,
+        "type_name": "WAWebProtobufsFingerprintV3.FingerprintData"
+      },
+      "remoteFingerprint": {
+        "number": 3,
+        "type_name": "WAWebProtobufsFingerprintV3.FingerprintData"
+      },
+      "version": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsFingerprintV3.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsFingerprintV3.pb",
+    "matches": "name = \"CombinedFingerprint\""
+  },
+  "literals": [
+    "CombinedFingerprint"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebIdentityVerificationApi"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

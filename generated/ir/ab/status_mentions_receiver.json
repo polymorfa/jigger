@@ -1,0 +1,45 @@
+{
+  "id": "ab:status_mentions_receiver",
+  "kind": "ab",
+  "name": "status_mentions_receiver",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7869,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "status_mentions_receiver:\\s*\\[\\s*7869"
+  },
+  "literals": [
+    "status_mentions_receiver",
+    "7869"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStatusGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

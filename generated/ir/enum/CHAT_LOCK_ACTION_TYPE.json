@@ -1,0 +1,119 @@
+{
+  "id": "enum:CHAT_LOCK_ACTION_TYPE",
+  "kind": "enum",
+  "name": "CHAT_LOCK_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChatLockActionType",
+    "variants": [
+      {
+        "name": "CHAT_INFO_IMPRESSION",
+        "value": 0.0
+      },
+      {
+        "name": "LOCK_CHAT_SCREEN_IMPRESSION",
+        "value": 1.0
+      },
+      {
+        "name": "AUTH_INITIATED",
+        "value": 2.0
+      },
+      {
+        "name": "AUTH_SUCCEEDED",
+        "value": 3.0
+      },
+      {
+        "name": "SET_UP_AUTH_IMPRESSION",
+        "value": 4.0
+      },
+      {
+        "name": "ADD_CHAT_LOCK",
+        "value": 5.0
+      },
+      {
+        "name": "REMOVE_CHAT_LOCK",
+        "value": 6.0
+      },
+      {
+        "name": "CLEAR_AND_UNLOCK_IMPRESSION",
+        "value": 7.0
+      },
+      {
+        "name": "CLEAR_AND_UNLOCK_SUCCESS",
+        "value": 8.0
+      },
+      {
+        "name": "CLEAR_AND_UNLOCK_FAILURE",
+        "value": 9.0
+      },
+      {
+        "name": "AUTH_FAILURE",
+        "value": 10.0
+      },
+      {
+        "name": "BOTTOM_SHEET_IMPRESSION",
+        "value": 11.0
+      },
+      {
+        "name": "BOTTOM_SHEET_CONTINUE_CLICK",
+        "value": 12.0
+      },
+      {
+        "name": "BOTTOM_SHEET_LEARN_MORE_CLICK",
+        "value": 13.0
+      },
+      {
+        "name": "FOLDER_OPEN",
+        "value": 14.0
+      },
+      {
+        "name": "FORGOT_SECRET_CODE",
+        "value": 15.0
+      },
+      {
+        "name": "UNLOCK_AND_CLEAR_WARNING",
+        "value": 16.0
+      },
+      {
+        "name": "USE_SECRET_CODE_AUTH",
+        "value": 17.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChatLockActionType",
+    "matches": "CHAT_LOCK_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CHAT_LOCK_ACTION_TYPE",
+    "CHAT_INFO_IMPRESSION",
+    "LOCK_CHAT_SCREEN_IMPRESSION",
+    "AUTH_INITIATED",
+    "AUTH_SUCCEEDED",
+    "SET_UP_AUTH_IMPRESSION",
+    "ADD_CHAT_LOCK",
+    "REMOVE_CHAT_LOCK",
+    "CLEAR_AND_UNLOCK_IMPRESSION",
+    "CLEAR_AND_UNLOCK_SUCCESS",
+    "CLEAR_AND_UNLOCK_FAILURE",
+    "AUTH_FAILURE",
+    "BOTTOM_SHEET_IMPRESSION",
+    "BOTTOM_SHEET_CONTINUE_CLICK",
+    "BOTTOM_SHEET_LEARN_MORE_CLICK",
+    "FOLDER_OPEN",
+    "FORGOT_SECRET_CODE",
+    "UNLOCK_AND_CLEAR_WARNING",
+    "USE_SECRET_CODE_AUTH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatLockActionWamEvent",
+      "WAWebChatLockCodeModal.react",
+      "WAWebChatLockWAMUtils",
+      "WAWebLockedChatsDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

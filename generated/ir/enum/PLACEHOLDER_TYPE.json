@@ -1,0 +1,62 @@
+{
+  "id": "enum:PLACEHOLDER_TYPE",
+  "kind": "enum",
+  "name": "PLACEHOLDER_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPlaceholderType",
+    "variants": [
+      {
+        "name": "OTHER",
+        "value": 0.0
+      },
+      {
+        "name": "CIPHERTEXT",
+        "value": 1.0
+      },
+      {
+        "name": "FANOUT",
+        "value": 2.0
+      },
+      {
+        "name": "DOWNGRADE",
+        "value": 3.0
+      },
+      {
+        "name": "FIXED_CONTENT",
+        "value": 4.0
+      },
+      {
+        "name": "TEMPORARY",
+        "value": 5.0
+      },
+      {
+        "name": "DROP",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPlaceholderType",
+    "matches": "PLACEHOLDER_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PLACEHOLDER_TYPE",
+    "OTHER",
+    "CIPHERTEXT",
+    "FANOUT",
+    "DOWNGRADE",
+    "FIXED_CONTENT",
+    "TEMPORARY",
+    "DROP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebHandlePlaceholderWam",
+      "WAWebPlaceholderActivityWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

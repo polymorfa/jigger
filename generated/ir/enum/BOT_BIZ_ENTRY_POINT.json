@@ -1,0 +1,42 @@
+{
+  "id": "enum:BOT_BIZ_ENTRY_POINT",
+  "kind": "enum",
+  "name": "BOT_BIZ_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBotBizEntryPoint",
+    "variants": [
+      {
+        "name": "SHARED_BOT_BIZ_CARD",
+        "value": 1.0
+      },
+      {
+        "name": "SHARED_BOT_BIZ_DEEPLINK",
+        "value": 2.0
+      },
+      {
+        "name": "BOT_BIZ_CHAT",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBotBizEntryPoint",
+    "matches": "BOT_BIZ_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "BOT_BIZ_ENTRY_POINT",
+    "SHARED_BOT_BIZ_CARD",
+    "SHARED_BOT_BIZ_DEEPLINK",
+    "BOT_BIZ_CHAT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizBotLogging",
+      "WAWebBotBizJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

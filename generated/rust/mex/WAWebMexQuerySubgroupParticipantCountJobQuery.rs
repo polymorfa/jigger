@@ -1,0 +1,2 @@
+/// Persisted query. Variables: input
+pub const MEX_WAWEB_MEX_QUERY_SUBGROUP_PARTICIPANT_COUNT_JOB_QUERY: &str = "24079399904996141";

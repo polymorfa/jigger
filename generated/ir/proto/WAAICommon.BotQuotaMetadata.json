@@ -1,0 +1,34 @@
+{
+  "id": "proto:WAAICommon.BotQuotaMetadata",
+  "kind": "proto",
+  "name": "WAAICommon.BotQuotaMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "botFeatureQuotaMetadata": {
+        "number": 1,
+        "type_name": "WAAICommon.BotQuotaMetadata.BotFeatureQuotaMetadata"
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotQuotaMetadata\""
+  },
+  "literals": [
+    "BotQuotaMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

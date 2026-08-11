@@ -1,0 +1,98 @@
+{
+  "id": "proto:WAMsgApplication.MessageApplication.Metadata",
+  "kind": "proto",
+  "name": "WAMsgApplication.MessageApplication.Metadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "botResponseId": {
+        "number": 16
+      },
+      "businessMetadata": {
+        "number": 7
+      },
+      "chatEphemeralSetting": {
+        "number": 1,
+        "type_name": "WAMsgApplication.MessageApplication.EphemeralSetting"
+      },
+      "collapsibleId": {
+        "number": 17
+      },
+      "ephemeralSettingList": {
+        "number": 2,
+        "type_name": "WAMsgApplication.MessageApplication.Metadata.EphemeralSettingMap"
+      },
+      "ephemeralSharedSecret": {
+        "number": 3
+      },
+      "forwardingScore": {
+        "number": 5
+      },
+      "frankingKey": {
+        "number": 8
+      },
+      "frankingVersion": {
+        "number": 9
+      },
+      "groupId": {
+        "number": 13
+      },
+      "groupIndex": {
+        "number": 15
+      },
+      "groupSize": {
+        "number": 14
+      },
+      "isForwarded": {
+        "number": 6
+      },
+      "quotedMessage": {
+        "number": 10,
+        "type_name": "WAMsgApplication.MessageApplication.Metadata.QuotedMessage"
+      },
+      "readonlyMetadataDataclass": {
+        "number": 12
+      },
+      "secondaryOtid": {
+        "number": 18
+      },
+      "threadType": {
+        "number": 11
+      }
+    },
+    "module": "WAMsgApplication.pb"
+  },
+  "evidence": {
+    "module": "WAMsgApplication.pb",
+    "matches": "name = \"MessageApplication.Metadata\""
+  },
+  "literals": [
+    "Metadata"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsGenerateDeletionMessage",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseXMAProtocol",
+      "MAWProtobufDeserializers",
+      "MAWSpamReportUtils",
+      "MAWXMAEncodeUtils",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsMessageApplication",
+      "WADecodeIncomingMsg",
+      "WASendAppDataFanoutProtocol",
+      "WMIForwardMsgProcessor",
+      "WMIProtobufBuilder",
+      "WMIWAMessagePublisher"
+    ],
+    "dep_count": 2,
+    "dependent_count": 16
+  }
+}

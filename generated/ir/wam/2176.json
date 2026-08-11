@@ -1,0 +1,96 @@
+{
+  "id": "wam:2176",
+  "kind": "wam",
+  "name": "MdBadDeviceSentMessage",
+  "data": {
+    "kind": "wam",
+    "event_id": 2176,
+    "fields": {
+      "dsmError": {
+        "id": 2,
+        "type": "DSM_ERROR",
+        "wire": "dsm_error",
+        "enum_ref": "DSM_ERROR"
+      },
+      "editType": {
+        "id": 3,
+        "type": "EDIT_TYPE",
+        "wire": "edit_type",
+        "enum_ref": "EDIT_TYPE"
+      },
+      "encryptionType": {
+        "id": 9,
+        "type": "ENCRYPTION_TYPE_CODE",
+        "wire": "encryption_type",
+        "enum_ref": "ENCRYPTION_TYPE_CODE"
+      },
+      "isLid": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_lid"
+      },
+      "mediaType": {
+        "id": 5,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messageType": {
+        "id": 6,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "peerType": {
+        "id": 1,
+        "type": "DEVICE_TYPE",
+        "wire": "peer_type",
+        "enum_ref": "DEVICE_TYPE"
+      },
+      "revokeType": {
+        "id": 7,
+        "type": "REVOKE_TYPE",
+        "wire": "revoke_type",
+        "enum_ref": "REVOKE_TYPE"
+      },
+      "senderPlatform": {
+        "id": 10,
+        "type": "PLATFORM_TYPE",
+        "wire": "sender_platform",
+        "enum_ref": "PLATFORM_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdBadDeviceSentMessageWamEvent",
+    "matches": "MdBadDeviceSentMessage:\\s*\\[\\s*2176"
+  },
+  "literals": [
+    "2176"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDeviceType",
+      "WAWebWamEnumDsmError",
+      "WAWebWamEnumEditType",
+      "WAWebWamEnumEncryptionTypeCode",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumPlatformType",
+      "WAWebWamEnumRevokeType"
+    ],
+    "dependents": [
+      "WAWebHandleMsgError",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 9,
+    "dependent_count": 2
+  }
+}

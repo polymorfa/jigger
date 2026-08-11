@@ -1,0 +1,117 @@
+{
+  "id": "wam:5970",
+  "kind": "wam",
+  "name": "MdSyncdMutation",
+  "data": {
+    "kind": "wam",
+    "event_id": 5970,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "companionSessionIds": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "companion_session_ids"
+      },
+      "contentLength": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "content_length"
+      },
+      "isInBootstrap": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_in_bootstrap"
+      },
+      "isUsingLid": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "is_using_lid"
+      },
+      "mutationBundle": {
+        "id": 6,
+        "type": "MUTATION_BUNDLE_TYPE",
+        "wire": "mutation_bundle",
+        "enum_ref": "MUTATION_BUNDLE_TYPE"
+      },
+      "mutationDirection": {
+        "id": 7,
+        "type": "MUTATION_DIRECTION_TYPE",
+        "wire": "mutation_direction",
+        "enum_ref": "MUTATION_DIRECTION_TYPE"
+      },
+      "mutationMac": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "mutation_mac"
+      },
+      "mutationName": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "mutation_name"
+      },
+      "mutationOperation": {
+        "id": 10,
+        "type": "MUTATION_OPERATION_TYPE",
+        "wire": "mutation_operation",
+        "enum_ref": "MUTATION_OPERATION_TYPE"
+      },
+      "patchMac": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "patch_mac"
+      },
+      "seqNumber": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "seq_number"
+      },
+      "syncdCollection": {
+        "id": 12,
+        "type": "SYNCD_COLLECTION_TYPE",
+        "wire": "syncd_collection",
+        "enum_ref": "SYNCD_COLLECTION_TYPE"
+      },
+      "syncdKeyhash": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "syncd_keyhash"
+      },
+      "syncdKeyid": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "syncd_keyid"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdSyncdMutationWamEvent",
+    "matches": "MdSyncdMutation:\\s*\\[\\s*5970"
+  },
+  "literals": [
+    "5970"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMutationBundleType",
+      "WAWebWamEnumMutationDirectionType",
+      "WAWebWamEnumMutationOperationType",
+      "WAWebWamEnumSyncdCollectionType"
+    ],
+    "dependents": [
+      "WAWebSyncdWamReportingUtils"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

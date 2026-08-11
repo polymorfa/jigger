@@ -1,0 +1,45 @@
+{
+  "id": "ab:pinned_messages_sender_short_expiry_durations_enabled",
+  "kind": "ab",
+  "name": "pinned_messages_sender_short_expiry_durations_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4432,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pinned_messages_sender_short_expiry_durations_enabled:\\s*\\[\\s*4432"
+  },
+  "literals": [
+    "pinned_messages_sender_short_expiry_durations_enabled",
+    "4432"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPinMessageModal.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

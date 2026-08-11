@@ -1,0 +1,94 @@
+{
+  "id": "wam:5134",
+  "kind": "wam",
+  "name": "MessagingUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 5134,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "isSelfPin": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_self_pin"
+      },
+      "mediaType": {
+        "id": 9,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messagingActionType": {
+        "id": 2,
+        "type": "ACTION_TYPE",
+        "wire": "messaging_action_type",
+        "enum_ref": "ACTION_TYPE"
+      },
+      "pinInChatExpirySecs": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "pin_in_chat_expiry_secs"
+      },
+      "threadType": {
+        "id": 4,
+        "type": "THREAD_TYPE",
+        "wire": "thread_type",
+        "enum_ref": "THREAD_TYPE"
+      },
+      "uiSurface": {
+        "id": 5,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyFunnelId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      },
+      "userRole": {
+        "id": 7,
+        "type": "USER_ROLE_TYPE",
+        "wire": "user_role",
+        "enum_ref": "USER_ROLE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMessagingUserJourneyWamEvent",
+    "matches": "MessagingUserJourney:\\s*\\[\\s*5134"
+  },
+  "literals": [
+    "5134"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumActionType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumThreadType",
+      "WAWebWamEnumTsSurface",
+      "WAWebWamEnumUserRoleType"
+    ],
+    "dependents": [
+      "WAWebMessagingUserJourneyLogger"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

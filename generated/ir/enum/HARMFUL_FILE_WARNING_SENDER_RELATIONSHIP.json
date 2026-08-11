@@ -1,0 +1,42 @@
+{
+  "id": "enum:HARMFUL_FILE_WARNING_SENDER_RELATIONSHIP",
+  "kind": "enum",
+  "name": "HARMFUL_FILE_WARNING_SENDER_RELATIONSHIP",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumHarmfulFileWarningSenderRelationship",
+    "variants": [
+      {
+        "name": "NON_CONTACT",
+        "value": 0.0
+      },
+      {
+        "name": "CONTACT",
+        "value": 1.0
+      },
+      {
+        "name": "SIDE_CONTACT",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumHarmfulFileWarningSenderRelationship",
+    "matches": "HARMFUL_FILE_WARNING_SENDER_RELATIONSHIP\\s*[:=]"
+  },
+  "literals": [
+    "HARMFUL_FILE_WARNING_SENDER_RELATIONSHIP",
+    "NON_CONTACT",
+    "CONTACT",
+    "SIDE_CONTACT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDangerousFileOpenStatsV2WamEvent",
+      "WAWebHarmfulFileWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

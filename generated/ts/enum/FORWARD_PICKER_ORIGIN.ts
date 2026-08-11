@@ -1,0 +1,4 @@
+export enum FORWARDPICKERORIGIN {
+  STATUS_VIEWER = 1,
+  PTT_WIDGET = 2,
+}

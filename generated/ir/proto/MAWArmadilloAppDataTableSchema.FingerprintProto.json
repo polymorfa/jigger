@@ -1,0 +1,38 @@
+{
+  "id": "proto:MAWArmadilloAppDataTableSchema.FingerprintProto",
+  "kind": "proto",
+  "name": "MAWArmadilloAppDataTableSchema.FingerprintProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "currentIndex": {
+        "number": 1
+      },
+      "deviceIndexes": {
+        "number": 2
+      },
+      "rawId": {
+        "number": 3
+      }
+    },
+    "module": "MAWArmadilloAppDataTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloAppDataTableSchema.pb",
+    "matches": "name = \"FingerprintProto\""
+  },
+  "literals": [
+    "FingerprintProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseMapMetadata",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseMapMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "annotations": {
+        "number": 5,
+        "type_name": "WAAICommonDeprecated.AIRichResponseMapMetadata.AIRichResponseMapAnnotation"
+      },
+      "centerLatitude": {
+        "number": 1
+      },
+      "centerLongitude": {
+        "number": 2
+      },
+      "latitudeDelta": {
+        "number": 3
+      },
+      "longitudeDelta": {
+        "number": 4
+      },
+      "showInfoList": {
+        "number": 6
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseMapMetadata\""
+  },
+  "literals": [
+    "AIRichResponseMapMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

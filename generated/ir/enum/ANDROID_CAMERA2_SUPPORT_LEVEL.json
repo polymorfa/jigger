@@ -1,0 +1,51 @@
+{
+  "id": "enum:ANDROID_CAMERA2_SUPPORT_LEVEL",
+  "kind": "enum",
+  "name": "ANDROID_CAMERA2_SUPPORT_LEVEL",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAndroidCamera2SupportLevel",
+    "variants": [
+      {
+        "name": "LIMITED",
+        "value": 0.0
+      },
+      {
+        "name": "FULL",
+        "value": 1.0
+      },
+      {
+        "name": "LEGACY",
+        "value": 2.0
+      },
+      {
+        "name": "LEVEL_3",
+        "value": 3.0
+      },
+      {
+        "name": "EXTERNAL",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAndroidCamera2SupportLevel",
+    "matches": "ANDROID_CAMERA2_SUPPORT_LEVEL\\s*[:=]"
+  },
+  "literals": [
+    "ANDROID_CAMERA2_SUPPORT_LEVEL",
+    "LIMITED",
+    "FULL",
+    "LEGACY",
+    "LEVEL_3",
+    "EXTERNAL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

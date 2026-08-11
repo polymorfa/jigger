@@ -1,0 +1,42 @@
+{
+  "id": "ab:channel_poll_forwarding_enabled",
+  "kind": "ab",
+  "name": "channel_poll_forwarding_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10412,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channel_poll_forwarding_enabled:\\s*\\[\\s*10412"
+  },
+  "literals": [
+    "channel_poll_forwarding_enabled",
+    "10412"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

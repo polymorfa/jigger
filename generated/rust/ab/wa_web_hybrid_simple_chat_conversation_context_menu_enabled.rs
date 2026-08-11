@@ -1,0 +1,2 @@
+/// A/B property 17479 (bool), default false.
+pub const AB_WA_WEB_HYBRID_SIMPLE_CHAT_CONVERSATION_CONTEXT_MENU_ENABLED: &str = "wa_web_hybrid_simple_chat_conversation_context_menu_enabled";

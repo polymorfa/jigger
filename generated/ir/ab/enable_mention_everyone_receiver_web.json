@@ -1,0 +1,51 @@
+{
+  "id": "ab:enable_mention_everyone_receiver_web",
+  "kind": "ab",
+  "name": "enable_mention_everyone_receiver_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24843,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_mention_everyone_receiver_web:\\s*\\[\\s*24843"
+  },
+  "literals": [
+    "enable_mention_everyone_receiver_web",
+    "24843"
+  ],
+  "usage": {
+    "read_count": 7,
+    "readers": [
+      "WAWebChatNotificationSettingsDrawer.react",
+      "WAWebE2EProtoParser",
+      "WAWebExtractMentionFieldsFromScheduledMsg",
+      "WAWebGroupInfoDrawer.react",
+      "WAWebInfoFlow.react",
+      "WAWebMuteChatSync",
+      "WAWebNotifyForDrawer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

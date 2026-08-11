@@ -1,0 +1,46 @@
+{
+  "id": "ab:syncd_additional_mutations_count",
+  "kind": "ab",
+  "name": "syncd_additional_mutations_count",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2777,
+    "type": "int",
+    "default": 1,
+    "alt_default": 1
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "syncd_additional_mutations_count:\\s*\\[\\s*2777"
+  },
+  "literals": [
+    "syncd_additional_mutations_count",
+    "2777"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebKmpAbProps",
+      "WAWebSyncdRequestBuilderBuild"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

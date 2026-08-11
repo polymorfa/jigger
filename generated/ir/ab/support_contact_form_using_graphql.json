@@ -1,0 +1,42 @@
+{
+  "id": "ab:support_contact_form_using_graphql",
+  "kind": "ab",
+  "name": "support_contact_form_using_graphql",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26001,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "support_contact_form_using_graphql:\\s*\\[\\s*26001"
+  },
+  "literals": [
+    "support_contact_form_using_graphql",
+    "26001"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,10 @@
+message MessageHistoryBundle {
+  optional bytes mimetype = 1;
+  optional bytes fileSha256 = 2;
+  optional bytes mediaKey = 3;
+  optional bytes fileEncSha256 = 4;
+  optional bytes directPath = 5;
+  optional bytes mediaKeyTimestamp = 6;
+  optional ContextInfo contextInfo = 7;
+  optional MessageHistoryMetadata messageHistoryMetadata = 8;
+}

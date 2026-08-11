@@ -1,0 +1,40 @@
+{
+  "id": "enum:CHANNEL_DIRECTORY_SURFACE",
+  "kind": "enum",
+  "name": "CHANNEL_DIRECTORY_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChannelDirectorySurface",
+    "variants": [
+      {
+        "name": "CHANNEL_DIRECTORY_CATEGORIES",
+        "value": 1.0
+      },
+      {
+        "name": "CHANNEL_DIRECTORY",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChannelDirectorySurface",
+    "matches": "CHANNEL_DIRECTORY_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "CHANNEL_DIRECTORY_SURFACE",
+    "CHANNEL_DIRECTORY_CATEGORIES",
+    "CHANNEL_DIRECTORY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelDirectoryWamEvent",
+      "WAWebNewsletterDirectoryCategoriesDrawer.react",
+      "WAWebNewsletterDirectoryCategoriesSearchContent.react",
+      "WAWebNewsletterDirectoryDrawer.react",
+      "WAWebNewsletterDirectoryFunnelLogging"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "wam:3656",
+  "kind": "wam",
+  "name": "RevokeMessageSend",
+  "data": {
+    "kind": "wam",
+    "event_id": 3656,
+    "fields": {
+      "messageSendResultIsTerminal": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "message_send_result_is_terminal"
+      },
+      "messageType": {
+        "id": 2,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "resendCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "resend_count"
+      },
+      "retryCount": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "retry_count"
+      },
+      "revokeDuration": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "revoke_duration"
+      },
+      "revokeType": {
+        "id": 6,
+        "type": "REVOKE_TYPE",
+        "wire": "revoke_type",
+        "enum_ref": "REVOKE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebRevokeMessageSendWamEvent",
+    "matches": "RevokeMessageSend:\\s*\\[\\s*3656"
+  },
+  "literals": [
+    "3656"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumRevokeType"
+    ],
+    "dependents": [
+      "WAWebMessageSendReporter"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

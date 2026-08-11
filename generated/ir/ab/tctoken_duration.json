@@ -1,0 +1,42 @@
+{
+  "id": "ab:tctoken_duration",
+  "kind": "ab",
+  "name": "tctoken_duration",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 865,
+    "type": "int",
+    "default": 604800,
+    "alt_default": 604800
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "tctoken_duration:\\s*\\[\\s*865"
+  },
+  "literals": [
+    "tctoken_duration",
+    "865"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

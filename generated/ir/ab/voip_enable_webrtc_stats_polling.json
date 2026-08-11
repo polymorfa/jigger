@@ -1,0 +1,47 @@
+{
+  "id": "ab:voip_enable_webrtc_stats_polling",
+  "kind": "ab",
+  "name": "voip_enable_webrtc_stats_polling",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26744,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "voip_enable_webrtc_stats_polling:\\s*\\[\\s*26744"
+  },
+  "literals": [
+    "voip_enable_webrtc_stats_polling",
+    "26744"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebVoipP2PConnectionManager",
+      "WAWebVoipSctpConnectionManager",
+      "WAWebVoipSctpStatsInstrumentation"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

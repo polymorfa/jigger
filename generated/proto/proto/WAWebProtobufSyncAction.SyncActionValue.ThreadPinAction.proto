@@ -1,0 +1,3 @@
+message ThreadPinAction {
+  optional bytes pinned = 1;
+}

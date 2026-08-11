@@ -1,0 +1,10 @@
+message ListMessage {
+  optional bytes title = 1;
+  optional bytes description = 2;
+  optional bytes buttonText = 3;
+  optional bytes listType = 4;
+  optional Section sections = 5;
+  optional ProductListInfo productListInfo = 6;
+  optional bytes footerText = 7;
+  optional ContextInfo contextInfo = 8;
+}

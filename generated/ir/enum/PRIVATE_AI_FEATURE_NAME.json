@@ -1,0 +1,67 @@
+{
+  "id": "enum:PRIVATE_AI_FEATURE_NAME",
+  "kind": "enum",
+  "name": "PRIVATE_AI_FEATURE_NAME",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPrivateAiFeatureName",
+    "variants": [
+      {
+        "name": "SUMMARIZATION",
+        "value": 0.0
+      },
+      {
+        "name": "WRITE_WITH_AI",
+        "value": 1.0
+      },
+      {
+        "name": "PSI",
+        "value": 2.0
+      },
+      {
+        "name": "QUICK_RECAP",
+        "value": 3.0
+      },
+      {
+        "name": "INCOGNITO",
+        "value": 4.0
+      },
+      {
+        "name": "SIDE_CHAT",
+        "value": 5.0
+      },
+      {
+        "name": "GROUP_AI",
+        "value": 6.0
+      },
+      {
+        "name": "PSI_SEARCH",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPrivateAiFeatureName",
+    "matches": "PRIVATE_AI_FEATURE_NAME\\s*[:=]"
+  },
+  "literals": [
+    "PRIVATE_AI_FEATURE_NAME",
+    "SUMMARIZATION",
+    "WRITE_WITH_AI",
+    "PSI",
+    "QUICK_RECAP",
+    "INCOGNITO",
+    "SIDE_CHAT",
+    "GROUP_AI",
+    "PSI_SEARCH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:dsa_information_for_eu_only_enabled",
+  "kind": "ab",
+  "name": "dsa_information_for_eu_only_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7592,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "dsa_information_for_eu_only_enabled:\\s*\\[\\s*7592"
+  },
+  "literals": [
+    "dsa_information_for_eu_only_enabled",
+    "7592"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

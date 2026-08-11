@@ -1,0 +1,37 @@
+{
+  "id": "appstate:setting_chatLock",
+  "kind": "appstate",
+  "name": "ChatLockSettings",
+  "data": {
+    "kind": "appstate",
+    "index_name": "setting_chatLock",
+    "collection": "regular_low",
+    "version": 7,
+    "value_field": "chatLockSettings"
+  },
+  "evidence": {
+    "module": "WAWebChatLockSettingsSync",
+    "matches": "Actions\\.ChatLockSettings"
+  },
+  "literals": [
+    "setting_chatLock",
+    "ChatLockSettings",
+    "chatLockSettings"
+  ],
+  "graph": {
+    "deps": [
+      "WALogger",
+      "WAWebChatLockSettings",
+      "WAWebProtobufsUserPassword.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

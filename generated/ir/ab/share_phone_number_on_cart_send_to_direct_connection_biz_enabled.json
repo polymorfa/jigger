@@ -1,0 +1,46 @@
+{
+  "id": "ab:share_phone_number_on_cart_send_to_direct_connection_biz_enabled",
+  "kind": "ab",
+  "name": "share_phone_number_on_cart_send_to_direct_connection_biz_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1867,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "share_phone_number_on_cart_send_to_direct_connection_biz_enabled:\\s*\\[\\s*1867"
+  },
+  "literals": [
+    "share_phone_number_on_cart_send_to_direct_connection_biz_enabled",
+    "1867"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebBusinessDirectConnectionBridge",
+      "WAWebCartDetailDrawerFooter.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

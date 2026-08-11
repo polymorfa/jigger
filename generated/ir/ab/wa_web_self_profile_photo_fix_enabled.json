@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_self_profile_photo_fix_enabled",
+  "kind": "ab",
+  "name": "wa_web_self_profile_photo_fix_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24945,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_self_profile_photo_fix_enabled:\\s*\\[\\s*24945"
+  },
+  "literals": [
+    "wa_web_self_profile_photo_fix_enabled",
+    "24945"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStatusProfilePhotoRingWrapper.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

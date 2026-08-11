@@ -1,0 +1,45 @@
+{
+  "id": "ab:album_v2_min_items_to_send_as_album_enabled",
+  "kind": "ab",
+  "name": "album_v2_min_items_to_send_as_album_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10848,
+    "type": "int",
+    "default": 4,
+    "alt_default": 4
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "album_v2_min_items_to_send_as_album_enabled:\\s*\\[\\s*10848"
+  },
+  "literals": [
+    "album_v2_min_items_to_send_as_album_enabled",
+    "10848"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

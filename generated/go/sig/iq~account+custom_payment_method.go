@@ -1,0 +1,2 @@
+// ParseBrPaymentCreateCustomPaymentMethodResponseSuccess matches <iq>. Response to BrPaymentCreateCustomPaymentMethod.
+func ParseBrPaymentCreateCustomPaymentMethodResponseSuccess(n *waBinary.Node) (*BrPaymentCreateCustomPaymentMethodResponseSuccess, error)

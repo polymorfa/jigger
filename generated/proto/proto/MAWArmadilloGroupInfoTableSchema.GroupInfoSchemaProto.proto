@@ -1,0 +1,13 @@
+message GroupInfoSchemaProto {
+  optional bytes groupJid = 1;
+  optional bytes threadId = 2;
+  optional bytes creator = 3;
+  optional bytes creationTs = 4;
+  optional bytes name = 5;
+  optional bytes nameOwner = 6;
+  optional bytes nameTs = 7;
+  optional bytes msgExpiration = 8;
+  optional bytes participantVersion = 9;
+  optional bytes inviter = 10;
+  optional bytes memberAddMode = 11;
+}

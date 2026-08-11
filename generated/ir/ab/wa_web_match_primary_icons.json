@@ -1,0 +1,48 @@
+{
+  "id": "ab:wa_web_match_primary_icons",
+  "kind": "ab",
+  "name": "wa_web_match_primary_icons",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29293,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_match_primary_icons:\\s*\\[\\s*29293"
+  },
+  "literals": [
+    "wa_web_match_primary_icons",
+    "29293"
+  ],
+  "usage": {
+    "read_count": 4,
+    "readers": [
+      "WAWebAttachMenuBarItem.react",
+      "WAWebChatlistHeaderV2.react",
+      "WAWebNewChatMenuBarItem.react",
+      "WAWebStatusDrawer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

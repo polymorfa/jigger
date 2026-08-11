@@ -1,0 +1,7 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum CHANNELPRODUCERINSIGHTSENTRYPOINT {
+    PROFILESEEALL = 0,
+    PROFILEACCOUNTSREACHED = 1,
+    PROFILENETFOLLOWS = 2,
+}

@@ -1,0 +1,139 @@
+{
+  "id": "wam:5462",
+  "kind": "wam",
+  "name": "SmbUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 5462,
+    "fields": {
+      "actionType": {
+        "id": 1,
+        "type": "CHAT_FILTER_ACTION_TYPES",
+        "wire": "action_type",
+        "enum_ref": "CHAT_FILTER_ACTION_TYPES"
+      },
+      "bbTier": {
+        "id": 22,
+        "type": "BB_TIER_TYPE",
+        "wire": "bb_tier",
+        "enum_ref": "BB_TIER_TYPE"
+      },
+      "contactIsSaved": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "contact_is_saved"
+      },
+      "entryPoint": {
+        "id": 3,
+        "type": "ENTRY_POINT",
+        "wire": "entry_point",
+        "enum_ref": "ENTRY_POINT"
+      },
+      "entryPointDetails": {
+        "id": 18,
+        "type": "STRING",
+        "wire": "entry_point_details"
+      },
+      "extraAttributes": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "extra_attributes"
+      },
+      "hasCatalog": {
+        "id": 19,
+        "type": "BOOLEAN",
+        "wire": "has_catalog"
+      },
+      "isCoexAccount": {
+        "id": 20,
+        "type": "BOOLEAN",
+        "wire": "is_coex_account"
+      },
+      "isMvSubscriber": {
+        "id": 21,
+        "type": "BOOLEAN",
+        "wire": "is_mv_subscriber"
+      },
+      "oppositePlatform": {
+        "id": 5,
+        "type": "OPPOSITE_PLATFORM_ENUM",
+        "wire": "opposite_platform",
+        "enum_ref": "OPPOSITE_PLATFORM_ENUM"
+      },
+      "prevSurface": {
+        "id": 14,
+        "type": "SURFACE_TYPE",
+        "wire": "prev_surface",
+        "enum_ref": "SURFACE_TYPE"
+      },
+      "recipientSize": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "recipient_size"
+      },
+      "seqId": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "seq_id"
+      },
+      "smbFeatureName": {
+        "id": 8,
+        "type": "SMB_FEATURE_NAME_ENUM",
+        "wire": "smb_feature_name",
+        "enum_ref": "SMB_FEATURE_NAME_ENUM"
+      },
+      "smbUserActionType": {
+        "id": 13,
+        "type": "SMB_USER_ACTION_TYPE_ENUM",
+        "wire": "smb_user_action_type",
+        "enum_ref": "SMB_USER_ACTION_TYPE_ENUM"
+      },
+      "smbUserSessionId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "smb_user_session_id"
+      },
+      "surface": {
+        "id": 10,
+        "type": "SURFACE_TYPE",
+        "wire": "surface",
+        "enum_ref": "SURFACE_TYPE"
+      },
+      "userActionTarget": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "user_action_target"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSmbUserJourneyWamEvent",
+    "matches": "SmbUserJourney:\\s*\\[\\s*5462"
+  },
+  "literals": [
+    "5462"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBbTierType",
+      "WAWebWamEnumChatFilterActionTypes",
+      "WAWebWamEnumEntryPoint",
+      "WAWebWamEnumOppositePlatformEnum",
+      "WAWebWamEnumSmbFeatureNameEnum",
+      "WAWebWamEnumSmbUserActionTypeEnum",
+      "WAWebWamEnumSurfaceType"
+    ],
+    "dependents": [
+      "WAWebSMBUserJourneyLogger"
+    ],
+    "dep_count": 8,
+    "dependent_count": 1
+  }
+}

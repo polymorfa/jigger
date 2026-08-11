@@ -1,0 +1,68 @@
+{
+  "id": "proto:WAE2E.InteractiveAnnotation",
+  "kind": "proto",
+  "name": "WAE2E.InteractiveAnnotation",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "embeddedAction": {
+        "number": 6
+      },
+      "embeddedContent": {
+        "number": 5,
+        "type_name": "WAE2E.EmbeddedContent"
+      },
+      "location": {
+        "number": 2,
+        "type_name": "WAE2E.Location"
+      },
+      "newsletter": {
+        "number": 3,
+        "type_name": "WAE2E.ContextInfo.ForwardedNewsletterMessageInfo"
+      },
+      "polygonVertices": {
+        "number": 1,
+        "type_name": "WAE2E.Point"
+      },
+      "shouldSkipConfirmation": {
+        "number": 4
+      },
+      "statusLinkType": {
+        "number": 8
+      },
+      "tapAction": {
+        "number": 7,
+        "type_name": "WAE2E.TapLinkAction"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"InteractiveAnnotation\""
+  },
+  "literals": [
+    "InteractiveAnnotation"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

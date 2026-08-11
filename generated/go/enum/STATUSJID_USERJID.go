@@ -1,0 +1,5 @@
+type STATUSJIDUSERJID string
+
+const (
+	STATUSJIDUSERJIDTypeName STATUSJIDUSERJID = "StatusJid|UserJid"
+)

@@ -1,0 +1,115 @@
+{
+  "id": "enum:SIZE_BUCKET",
+  "kind": "enum",
+  "name": "SIZE_BUCKET",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSizeBucket",
+    "variants": [
+      {
+        "name": "LT32",
+        "value": 1.0
+      },
+      {
+        "name": "LT64",
+        "value": 2.0
+      },
+      {
+        "name": "LT128",
+        "value": 3.0
+      },
+      {
+        "name": "LT256",
+        "value": 4.0
+      },
+      {
+        "name": "LT512",
+        "value": 5.0
+      },
+      {
+        "name": "LT1000",
+        "value": 6.0
+      },
+      {
+        "name": "LT1024",
+        "value": 16.0
+      },
+      {
+        "name": "LT1500",
+        "value": 7.0
+      },
+      {
+        "name": "LT2000",
+        "value": 8.0
+      },
+      {
+        "name": "LT2500",
+        "value": 9.0
+      },
+      {
+        "name": "LT3000",
+        "value": 10.0
+      },
+      {
+        "name": "LT3500",
+        "value": 11.0
+      },
+      {
+        "name": "LT4000",
+        "value": 12.0
+      },
+      {
+        "name": "LT4500",
+        "value": 13.0
+      },
+      {
+        "name": "LT5000",
+        "value": 14.0
+      },
+      {
+        "name": "LARGEST_BUCKET",
+        "value": 15.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSizeBucket",
+    "matches": "SIZE_BUCKET\\s*[:=]"
+  },
+  "literals": [
+    "SIZE_BUCKET",
+    "LT32",
+    "LT64",
+    "LT128",
+    "LT256",
+    "LT512",
+    "LT1000",
+    "LT1024",
+    "LT1500",
+    "LT2000",
+    "LT2500",
+    "LT3000",
+    "LT3500",
+    "LT4000",
+    "LT4500",
+    "LT5000",
+    "LARGEST_BUCKET"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAndroidMessageSendPerfWamEvent",
+      "WAWebMessageHighRetryCountWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendPerfReporter",
+      "WAWebMessageSendWamEvent",
+      "WAWebPlaceholderActivityWamEvent",
+      "WAWebPrekeysDepletionWamEvent",
+      "WAWebSenderKeyExpiredWamEvent",
+      "WAWebUiActionWamEvent",
+      "WAWebWamNumberToSizeBucket"
+    ],
+    "dep_count": 0,
+    "dependent_count": 10
+  }
+}

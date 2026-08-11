@@ -1,0 +1,30 @@
+{
+  "id": "sig:message/url_number",
+  "kind": "sig",
+  "name": "MessageDeliverPreFilledNumberMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "url_number"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverPreFilledNumberMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "url_number"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBaseMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

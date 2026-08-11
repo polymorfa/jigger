@@ -1,0 +1,46 @@
+{
+  "id": "ab:web_send_orphan_in_receipts_enabled",
+  "kind": "ab",
+  "name": "web_send_orphan_in_receipts_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31114,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_send_orphan_in_receipts_enabled:\\s*\\[\\s*31114"
+  },
+  "literals": [
+    "web_send_orphan_in_receipts_enabled",
+    "31114"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebHandleMsgProcess",
+      "WAWebHandleMsgSendReceipt"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

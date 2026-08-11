@@ -1,0 +1,36 @@
+{
+  "id": "sig:iq/message_updates+messages",
+  "kind": "sig",
+  "name": "NewslettersGetNewsletterMessageUpdatesResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "message_updates",
+      "messages"
+    ],
+    "responds_to": "NewslettersGetNewsletterMessageUpdates"
+  },
+  "evidence": {
+    "module": "WASmaxInNewslettersGetNewsletterMessageUpdatesResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "message_updates",
+    "messages"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInNewslettersIQResultResponseMixin",
+      "WASmaxInNewslettersNewsletterMessageResponsePayloadMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxNewslettersGetNewsletterMessageUpdatesRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:wds_web_rich_text_field",
+  "kind": "ab",
+  "name": "wds_web_rich_text_field",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27264,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wds_web_rich_text_field:\\s*\\[\\s*27264"
+  },
+  "literals": [
+    "wds_web_rich_text_field",
+    "27264"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPasswordInputWithEmojiSupport.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

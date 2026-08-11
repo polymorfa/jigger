@@ -1,0 +1,33 @@
+{
+  "id": "proto:MAWArmadilloAppDataTableSchema.MetaSyncAppDataProto",
+  "kind": "proto",
+  "name": "MAWArmadilloAppDataTableSchema.MetaSyncAppDataProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actions": {
+        "number": 1,
+        "type_name": "MAWArmadilloAppDataTableSchema.MetaSyncActionProto"
+      }
+    },
+    "module": "MAWArmadilloAppDataTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloAppDataTableSchema.pb",
+    "matches": "name = \"MetaSyncAppDataProto\""
+  },
+  "literals": [
+    "MetaSyncAppDataProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

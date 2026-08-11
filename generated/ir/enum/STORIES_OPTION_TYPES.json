@@ -1,0 +1,65 @@
+{
+  "id": "enum:STORIES_OPTION_TYPES",
+  "kind": "enum",
+  "name": "STORIES_OPTION_TYPES",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "DELETE",
+        "value": "DELETE"
+      },
+      {
+        "name": "DELETE_STORY_AND_BLOCK_MEMBER",
+        "value": "DELETE_STORY_AND_BLOCK_MEMBER"
+      },
+      {
+        "name": "MUTE_CARD_OWNER",
+        "value": "MUTE_CARD_OWNER"
+      },
+      {
+        "name": "REPORT_TO_GROUP_ADMINS",
+        "value": "REPORT_TO_GROUP_ADMINS"
+      },
+      {
+        "name": "TOGGLE_COMMENT",
+        "value": "TOGGLE_COMMENT"
+      },
+      {
+        "name": "UNFOLLOW_PAGE",
+        "value": "UNFOLLOW_PAGE"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "STORIES_OPTION_TYPES\\s*[:=]"
+  },
+  "literals": [
+    "STORIES_OPTION_TYPES",
+    "DELETE",
+    "DELETE_STORY_AND_BLOCK_MEMBER",
+    "MUTE_CARD_OWNER",
+    "REPORT_TO_GROUP_ADMINS",
+    "TOGGLE_COMMENT",
+    "UNFOLLOW_PAGE"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

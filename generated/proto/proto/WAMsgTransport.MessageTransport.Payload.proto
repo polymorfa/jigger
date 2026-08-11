@@ -1,0 +1,4 @@
+message Payload {
+  optional bytes applicationPayload = 1;
+  optional bytes futureProof = 3;
+}

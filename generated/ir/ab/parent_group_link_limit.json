@@ -1,0 +1,45 @@
+{
+  "id": "ab:parent_group_link_limit",
+  "kind": "ab",
+  "name": "parent_group_link_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1238,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "parent_group_link_limit:\\s*\\[\\s*1238"
+  },
+  "literals": [
+    "parent_group_link_limit",
+    "1238"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCommunityGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "id": "iq:w:g2/get/group+query",
+  "kind": "iq",
+  "name": "GroupsBatchGetGroupInfo",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "get",
+    "tags": [
+      "group",
+      "query"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "string",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "query",
+          "attrs": [
+            {
+              "name": "context",
+              "ty": "string",
+              "optional": true
+            }
+          ],
+          "children": [
+            {
+              "tag": "group",
+              "attrs": [
+                {
+                  "name": "jid",
+                  "ty": "jid",
+                  "optional": false
+                }
+              ],
+              "card": "repeated"
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsBatchGetGroupInfoRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsBatchGetGroupInfoResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "groups",
+              "card": "one"
+            },
+            {
+              "tag": "group",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "GroupForbidden",
+          "GroupInfo",
+          "GroupNotExist",
+          "TruncatedGroupInfo"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsBatchGetGroupInfoResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsBatchGetGroupInfoResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsBatchGetGroupInfoRequest",
+    "matches": "smax\\(\"group\""
+  },
+  "literals": [
+    "w:g2",
+    "group",
+    "query"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseGetServerMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxGroupsBatchGetGroupInfoRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

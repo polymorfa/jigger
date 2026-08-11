@@ -1,0 +1,7 @@
+message KeyExchangeMessage {
+  optional bytes id = 1;
+  optional bytes baseKey = 2;
+  optional bytes ratchetKey = 3;
+  optional bytes identityKey = 4;
+  optional bytes baseKeySignature = 5;
+}

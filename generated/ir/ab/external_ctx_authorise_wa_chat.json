@@ -1,0 +1,45 @@
+{
+  "id": "ab:external_ctx_authorise_wa_chat",
+  "kind": "ab",
+  "name": "external_ctx_authorise_wa_chat",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11655,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "external_ctx_authorise_wa_chat:\\s*\\[\\s*11655"
+  },
+  "literals": [
+    "external_ctx_authorise_wa_chat",
+    "11655"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebExternalCtxConfig"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:channels_creation_entrypoint_in_directory_enabled",
+  "kind": "ab",
+  "name": "channels_creation_entrypoint_in_directory_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18613,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_creation_entrypoint_in_directory_enabled:\\s*\\[\\s*18613"
+  },
+  "literals": [
+    "channels_creation_entrypoint_in_directory_enabled",
+    "18613"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

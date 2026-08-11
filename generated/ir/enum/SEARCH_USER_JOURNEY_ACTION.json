@@ -1,0 +1,147 @@
+{
+  "id": "enum:SEARCH_USER_JOURNEY_ACTION",
+  "kind": "enum",
+  "name": "SEARCH_USER_JOURNEY_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSearchUserJourneyAction",
+    "variants": [
+      {
+        "name": "SEARCH_CTA_CLICKED",
+        "value": 1.0
+      },
+      {
+        "name": "NULL_STATE_SHOW",
+        "value": 2.0
+      },
+      {
+        "name": "NULL_STATE_ITEM_CLICK",
+        "value": 3.0
+      },
+      {
+        "name": "SEARCH_START",
+        "value": 4.0
+      },
+      {
+        "name": "TYPEAHEAD_SHOW",
+        "value": 5.0
+      },
+      {
+        "name": "TYPEAHEAD_ITEM_CLICK",
+        "value": 6.0
+      },
+      {
+        "name": "RESULT_PAGE_SHOW",
+        "value": 7.0
+      },
+      {
+        "name": "RESULT_ITEM_CLICK",
+        "value": 8.0
+      },
+      {
+        "name": "VIEW_MORE",
+        "value": 9.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 10.0
+      },
+      {
+        "name": "PAPER_PLANE_AI_BUTTON_CLICK",
+        "value": 11.0
+      },
+      {
+        "name": "AI_VOICE_INPUT_BUTTON_CLICKED",
+        "value": 12.0
+      },
+      {
+        "name": "INCLUDED_FUZZY_SEARCH",
+        "value": 13.0
+      },
+      {
+        "name": "NO_RESULT_STATE_ASK_META_AI_CLICK",
+        "value": 14.0
+      },
+      {
+        "name": "ASK_META_AI_BUTTON_CLICK",
+        "value": 15.0
+      },
+      {
+        "name": "CHAT_BACK_TO_SEARCH_CLICK",
+        "value": 16.0
+      },
+      {
+        "name": "KEYBOARD_RETURN_BUTTON_CLICK",
+        "value": 17.0
+      },
+      {
+        "name": "RECENT_SEARCHES_CLEAR_ALL_CLICK",
+        "value": 18.0
+      },
+      {
+        "name": "INVITE_RESULT_CLICK",
+        "value": 19.0
+      },
+      {
+        "name": "SEND_INVITE_CLICK",
+        "value": 20.0
+      },
+      {
+        "name": "DOWNSTREAM_SEND",
+        "value": 21.0
+      },
+      {
+        "name": "DOWNSTREAM_EXIT",
+        "value": 22.0
+      },
+      {
+        "name": "DOWNSTREAM_DWELL",
+        "value": 23.0
+      },
+      {
+        "name": "DOWNSTREAM_CALL",
+        "value": 24.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSearchUserJourneyAction",
+    "matches": "SEARCH_USER_JOURNEY_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "SEARCH_USER_JOURNEY_ACTION",
+    "SEARCH_CTA_CLICKED",
+    "NULL_STATE_SHOW",
+    "NULL_STATE_ITEM_CLICK",
+    "SEARCH_START",
+    "TYPEAHEAD_SHOW",
+    "TYPEAHEAD_ITEM_CLICK",
+    "RESULT_PAGE_SHOW",
+    "RESULT_ITEM_CLICK",
+    "VIEW_MORE",
+    "DISMISS",
+    "PAPER_PLANE_AI_BUTTON_CLICK",
+    "AI_VOICE_INPUT_BUTTON_CLICKED",
+    "INCLUDED_FUZZY_SEARCH",
+    "NO_RESULT_STATE_ASK_META_AI_CLICK",
+    "ASK_META_AI_BUTTON_CLICK",
+    "CHAT_BACK_TO_SEARCH_CLICK",
+    "KEYBOARD_RETURN_BUTTON_CLICK",
+    "RECENT_SEARCHES_CLEAR_ALL_CLICK",
+    "INVITE_RESULT_CLICK",
+    "SEND_INVITE_CLICK",
+    "DOWNSTREAM_SEND",
+    "DOWNSTREAM_EXIT",
+    "DOWNSTREAM_DWELL",
+    "DOWNSTREAM_CALL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSearchUserJourneyLogger",
+      "WAWebSearchUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:mm_message_level_feedback_enabled",
+  "kind": "ab",
+  "name": "mm_message_level_feedback_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10011,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_message_level_feedback_enabled:\\s*\\[\\s*10011"
+  },
+  "literals": [
+    "mm_message_level_feedback_enabled",
+    "10011"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "wam:5572",
+  "kind": "wam",
+  "name": "MmSignal",
+  "data": {
+    "kind": "wam",
+    "event_id": 5572,
+    "fields": {
+      "consentSource": {
+        "id": 10,
+        "type": "CONSENT_SOURCE",
+        "wire": "consent_source",
+        "enum_ref": "CONSENT_SOURCE"
+      },
+      "disclosed": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "disclosed"
+      },
+      "isLatestConversionToken": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "is_latest_conversion_token"
+      },
+      "mmConversationDepth": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "mm_conversation_depth"
+      },
+      "mmConversationRepeat": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "mm_conversation_repeat"
+      },
+      "mmConversionSchemaVersion": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "mm_conversion_schema_version"
+      },
+      "mmDirectionFrom": {
+        "id": 9,
+        "type": "MM_DIRECTION_FROM",
+        "wire": "mm_direction_from",
+        "enum_ref": "MM_DIRECTION_FROM"
+      },
+      "mmSignalData": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "mm_signal_data"
+      },
+      "mmSignalType": {
+        "id": 2,
+        "type": "MM_SIGNAL_TYPE",
+        "wire": "mm_signal_type",
+        "enum_ref": "MM_SIGNAL_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebMmSignalWamEvent",
+    "matches": "MmSignal:\\s*\\[\\s*5572"
+  },
+  "literals": [
+    "5572"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumConsentSource",
+      "WAWebWamEnumMmDirectionFrom",
+      "WAWebWamEnumMmSignalType"
+    ],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

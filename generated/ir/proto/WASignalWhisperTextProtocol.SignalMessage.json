@@ -1,0 +1,42 @@
+{
+  "id": "proto:WASignalWhisperTextProtocol.SignalMessage",
+  "kind": "proto",
+  "name": "WASignalWhisperTextProtocol.SignalMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "ciphertext": {
+        "number": 4
+      },
+      "counter": {
+        "number": 2
+      },
+      "previousCounter": {
+        "number": 3
+      },
+      "ratchetKey": {
+        "number": 1
+      }
+    },
+    "module": "WASignalWhisperTextProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalWhisperTextProtocol.pb",
+    "matches": "name = \"SignalMessage\""
+  },
+  "literals": [
+    "SignalMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WASignalCipher",
+      "WASignalGroupCipher",
+      "WAWebCryptoLibraryUtilsApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

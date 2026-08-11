@@ -1,0 +1,42 @@
+{
+  "id": "enum:COEX_SYS_MSG_INSERTION_CHANNEL",
+  "kind": "enum",
+  "name": "COEX_SYS_MSG_INSERTION_CHANNEL",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCoexSysMsgInsertionChannel",
+    "variants": [
+      {
+        "name": "CHAT_OPEN",
+        "value": 0.0
+      },
+      {
+        "name": "MESSAGE_RECEIVE",
+        "value": 1.0
+      },
+      {
+        "name": "HISTORY_SYNC",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCoexSysMsgInsertionChannel",
+    "matches": "COEX_SYS_MSG_INSERTION_CHANNEL\\s*[:=]"
+  },
+  "literals": [
+    "COEX_SYS_MSG_INSERTION_CHANNEL",
+    "CHAT_OPEN",
+    "MESSAGE_RECEIVE",
+    "HISTORY_SYNC"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCoexUtils",
+      "WAWebCoexPrivacySysMsgWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

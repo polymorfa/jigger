@@ -1,0 +1,45 @@
+{
+  "id": "ab:snapl_newsletter_logging_media_id_placeholder_string",
+  "kind": "ab",
+  "name": "snapl_newsletter_logging_media_id_placeholder_string",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14064,
+    "type": "string",
+    "default": "-1",
+    "alt_default": "-1"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "snapl_newsletter_logging_media_id_placeholder_string:\\s*\\[\\s*14064"
+  },
+  "literals": [
+    "snapl_newsletter_logging_media_id_placeholder_string",
+    "14064"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCometVideoPlayerUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "mex:WAWebMexNewsletterQuestionResponseStateUpdateJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterQuestionResponseStateUpdateJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24636260219323456",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "response_server_id",
+      "server_id",
+      "state"
+    ],
+    "root_field": "xwa2_newsletter_question_response_state_update",
+    "document": "mutation MexNewsletterQuestionResponseStateUpdateJobMutation($newsletter_id, $response_server_id, $server_id, $state) {\n  xwa2_newsletter_question_response_state_update {\n    id\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterQuestionResponseStateUpdateJobMutation.graphql",
+    "matches": "id: \"24636260219323456\""
+  },
+  "literals": [
+    "24636260219323456",
+    "WAWebMexNewsletterQuestionResponseStateUpdateJobMutation",
+    "xwa2_newsletter_question_response_state_update"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterQuestionResponseStateUpdateJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

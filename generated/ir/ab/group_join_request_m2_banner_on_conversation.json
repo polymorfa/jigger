@@ -1,0 +1,42 @@
+{
+  "id": "ab:group_join_request_m2_banner_on_conversation",
+  "kind": "ab",
+  "name": "group_join_request_m2_banner_on_conversation",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2449,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_join_request_m2_banner_on_conversation:\\s*\\[\\s*2449"
+  },
+  "literals": [
+    "group_join_request_m2_banner_on_conversation",
+    "2449"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

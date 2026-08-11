@@ -1,0 +1,10 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PNHACTIONTYPE {
+    SEEMASKEDPNATCHATCREATION = 1,
+    REQUESTDIALOGAPPEAR = 2,
+    SENDREQUEST = 3,
+    SHAREPNSHEETAPPEAR = 4,
+    DISMISS = 5,
+    SHARENUMBER = 6,
+}

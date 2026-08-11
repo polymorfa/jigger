@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_contact_and_chat_fuzzy_search_async_enabled",
+  "kind": "ab",
+  "name": "wa_web_contact_and_chat_fuzzy_search_async_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33433,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_contact_and_chat_fuzzy_search_async_enabled:\\s*\\[\\s*33433"
+  },
+  "literals": [
+    "wa_web_contact_and_chat_fuzzy_search_async_enabled",
+    "33433"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebContactSearchGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

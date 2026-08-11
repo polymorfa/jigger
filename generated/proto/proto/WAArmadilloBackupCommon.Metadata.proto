@@ -1,0 +1,10 @@
+message Metadata {
+  optional bytes senderId = 1;
+  optional bytes messageId = 2;
+  optional bytes timestampMs = 3;
+  optional FrankingMetadata frankingMetadata = 4;
+  optional bytes payloadVersion = 5;
+  optional bytes futureProofBehavior = 6;
+  optional bytes threadTypeTag = 7;
+  optional bytes clientTimestampMs = 8;
+}

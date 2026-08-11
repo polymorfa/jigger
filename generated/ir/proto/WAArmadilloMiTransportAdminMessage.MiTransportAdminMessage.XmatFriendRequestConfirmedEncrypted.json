@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatFriendRequestConfirmedEncrypted",
+  "kind": "proto",
+  "name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatFriendRequestConfirmedEncrypted",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "isTurnOnCohort": {
+        "number": 2
+      },
+      "otherUserName": {
+        "number": 1
+      },
+      "userWhoAcceptedFriendRequest": {
+        "number": 3
+      }
+    },
+    "module": "WAArmadilloMiTransportAdminMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloMiTransportAdminMessage.pb",
+    "matches": "name = \"MiTransportAdminMessage.XmatFriendRequestConfirmedEncrypted\""
+  },
+  "literals": [
+    "XmatFriendRequestConfirmedEncrypted"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleNotification",
+      "MAWMpsBridgeHandlers",
+      "MAWProtobufDeserializers",
+      "MpsAdminMsgToBridge",
+      "MpsThreadContentsPostProcessor",
+      "MpsToUIPostProcessor",
+      "WABuildMpsPayload",
+      "WmiMessengerE2EEIrisDeltaHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

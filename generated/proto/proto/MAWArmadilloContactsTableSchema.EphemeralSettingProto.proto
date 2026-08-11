@@ -1,0 +1,4 @@
+message EphemeralSettingProto {
+  optional bytes ephemeralExpirationInSec = 1;
+  optional bytes ephemeralLastUpdatedOrSetTimestamp = 2;
+}

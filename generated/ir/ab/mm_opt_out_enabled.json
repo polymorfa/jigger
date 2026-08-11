@@ -1,0 +1,45 @@
+{
+  "id": "ab:mm_opt_out_enabled",
+  "kind": "ab",
+  "name": "mm_opt_out_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11241,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_opt_out_enabled:\\s*\\[\\s*11241"
+  },
+  "literals": [
+    "mm_opt_out_enabled",
+    "11241"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMarketingMessagesUserFeedbackGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

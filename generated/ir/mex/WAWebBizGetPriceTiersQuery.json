@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebBizGetPriceTiersQuery",
+  "kind": "mex",
+  "name": "WAWebBizGetPriceTiersQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25362864436721857",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "document": "query BizGetPriceTiersQuery($request) {\n  xwa_whatsapp_get_pricing_tiers {\n    price_tiers {\n      id\n      description\n      symbol\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebBizGetPriceTiersQuery.graphql",
+    "matches": "id: \"25362864436721857\""
+  },
+  "literals": [
+    "25362864436721857",
+    "WAWebBizGetPriceTiersQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizGetPriceTiersQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

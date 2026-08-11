@@ -1,0 +1,6 @@
+export enum AUDIENCETYPES {
+  CUSTOM = "CUSTOM",
+  FRIENDS = "FRIENDS",
+  PUBLIC = "PUBLIC",
+  UNSET = "UNSET",
+}

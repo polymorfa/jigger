@@ -1,0 +1,32 @@
+{
+  "id": "enum:PM_BUTTON_EVENT_TYPE",
+  "kind": "enum",
+  "name": "PM_BUTTON_EVENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPmButtonEventType",
+    "variants": [
+      {
+        "name": "CLICK",
+        "value": 0.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPmButtonEventType",
+    "matches": "PM_BUTTON_EVENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PM_BUTTON_EVENT_TYPE",
+    "CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetInteractiveActionsFromButtons",
+      "WAWebSmbPaidMessagesButtonLoggerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

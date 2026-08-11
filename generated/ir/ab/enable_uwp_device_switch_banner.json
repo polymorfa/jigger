@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_uwp_device_switch_banner",
+  "kind": "ab",
+  "name": "enable_uwp_device_switch_banner",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10416,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_uwp_device_switch_banner:\\s*\\[\\s*10416"
+  },
+  "literals": [
+    "enable_uwp_device_switch_banner",
+    "10416"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

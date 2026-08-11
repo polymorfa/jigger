@@ -1,0 +1,3 @@
+message SideBySideSurveyCTAImpressionEventData {
+  optional bytes isSurveyExpired = 1;
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_3p_agent_chat_enabled",
+  "kind": "ab",
+  "name": "ai_3p_agent_chat_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31063,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_3p_agent_chat_enabled:\\s*\\[\\s*31063"
+  },
+  "literals": [
+    "ai_3p_agent_chat_enabled",
+    "31063"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

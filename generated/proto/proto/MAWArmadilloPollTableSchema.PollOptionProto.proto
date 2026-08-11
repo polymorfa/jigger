@@ -1,0 +1,4 @@
+message PollOptionProto {
+  optional bytes optionText = 1;
+  optional bytes voteAuthors = 2;
+}

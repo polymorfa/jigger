@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebSupportBugReportSubmitMutation",
+  "kind": "mex",
+  "name": "WAWebSupportBugReportSubmitMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25952242091096312",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation SupportBugReportSubmitMutation($input) {\n  xwa_wa_support_bug_report_submit {\n    success\n    error_code\n    error_message\n    bug_report_id\n    task_id\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebSupportBugReportSubmitMutation.graphql",
+    "matches": "id: \"25952242091096312\""
+  },
+  "literals": [
+    "25952242091096312",
+    "WAWebSupportBugReportSubmitMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSupportBugReportSubmitMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

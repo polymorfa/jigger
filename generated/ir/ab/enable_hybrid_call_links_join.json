@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_hybrid_call_links_join",
+  "kind": "ab",
+  "name": "enable_hybrid_call_links_join",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15501,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_hybrid_call_links_join:\\s*\\[\\s*15501"
+  },
+  "literals": [
+    "enable_hybrid_call_links_join",
+    "15501"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_ecommerce_compliance_india_m4",
+  "kind": "ab",
+  "name": "smb_ecommerce_compliance_india_m4",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1003,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_ecommerce_compliance_india_m4:\\s*\\[\\s*1003"
+  },
+  "literals": [
+    "smb_ecommerce_compliance_india_m4",
+    "1003"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizCatalogGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

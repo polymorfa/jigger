@@ -1,0 +1,2 @@
+/** A/B property 23559 (bool), default false. */
+export const ABBookingConfirmationEnabledWaWeb = 'booking_confirmation_enabled_wa_web' as const

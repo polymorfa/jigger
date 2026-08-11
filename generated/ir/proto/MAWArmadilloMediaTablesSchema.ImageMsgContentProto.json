@@ -1,0 +1,50 @@
+{
+  "id": "proto:MAWArmadilloMediaTablesSchema.ImageMsgContentProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMediaTablesSchema.ImageMsgContentProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "hdType": {
+        "number": 7
+      },
+      "height": {
+        "number": 2
+      },
+      "jpegThumbnail": {
+        "number": 3
+      },
+      "jpegThumbnailHeight": {
+        "number": 4
+      },
+      "jpegThumbnailWidth": {
+        "number": 5
+      },
+      "thumbnailPlaintextHash": {
+        "number": 6
+      },
+      "width": {
+        "number": 1
+      }
+    },
+    "module": "MAWArmadilloMediaTablesSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMediaTablesSchema.pb",
+    "matches": "name = \"ImageMsgContentProto\""
+  },
+  "literals": [
+    "ImageMsgContentProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

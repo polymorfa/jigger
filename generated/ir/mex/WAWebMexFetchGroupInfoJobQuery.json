@@ -1,0 +1,35 @@
+{
+  "id": "mex:WAWebMexFetchGroupInfoJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchGroupInfoJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27508847222068472",
+    "operation": "query",
+    "variables": [
+      "id",
+      "include_username",
+      "participants_phash",
+      "query_context"
+    ],
+    "root_field": "xwa2_group_query_by_id",
+    "document": "query MexFetchGroupInfoJobQuery($id, $include_username, $participants_phash, $query_context) {\n  id\n  creation_time\n  lid\n  pn\n  username\n  username_info {\n    creator {\n      state\n      value\n      display_name\n      role\n      join_time\n      group_history_sent\n      participants_phash_match\n      total_participants_count\n      missing_participant_identification\n      appeal_status\n      appeal_update_time\n      limit_sharing {\n        limit_sharing_enabled\n        lid_migration_state {\n          addressing_mode\n          properties {\n            allow_non_admin_sub_group_creation\n            closed_by_membership_approval_mode\n            ephemeral {\n              expiration_time_in_sec\n              locked\n              growth_locked2 {\n                member_add_mode\n                parent_group_jid\n                group_safety_check\n                properties {\n                  allow_admin_reports\n                  announcement\n                  member_link_mode\n                  member_share_group_history_mode\n                  membership_approval_mode_enabled\n                  membership_approval_request\n                  properties {\n                    general_chat\n                    auto_add_disabled\n                    hidden_group\n                    properties {\n                      capi\n                      support\n                      __typename\n                      username_info {\n                        creator {\n                          xwa2_group_query_by_id {\n                            subject {\n                              description {\n                                participants {\n                                  edges {\n                                    node {\n                                      xwa2_group_query_by_id {\n                                        subject {\n                                          description {\n                                            participants {\n                                              edges {\n                                                node {\n                                                }\n                                              }\n                                            }\n                                          }\n                                        }\n                                      }\n                                    }\n                                  }\n                                }\n                              }\n                            }\n                          }\n                        }\n                      }\n                    }\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchGroupInfoJobQuery.graphql",
+    "matches": "id: \"27508847222068472\""
+  },
+  "literals": [
+    "27508847222068472",
+    "WAWebMexFetchGroupInfoJobQuery",
+    "xwa2_group_query_by_id"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchGroupInfoJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

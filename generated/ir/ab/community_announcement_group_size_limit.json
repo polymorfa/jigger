@@ -1,0 +1,45 @@
+{
+  "id": "ab:community_announcement_group_size_limit",
+  "kind": "ab",
+  "name": "community_announcement_group_size_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2774,
+    "type": "int",
+    "default": "5e3",
+    "alt_default": "5e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "community_announcement_group_size_limit:\\s*\\[\\s*2774"
+  },
+  "literals": [
+    "community_announcement_group_size_limit",
+    "2774"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMiscGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "proto:WAE2E.Message.InvoiceMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.InvoiceMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "attachmentDirectPath": {
+        "number": 9
+      },
+      "attachmentFileEncSha256": {
+        "number": 8
+      },
+      "attachmentFileSha256": {
+        "number": 7
+      },
+      "attachmentJpegThumbnail": {
+        "number": 10
+      },
+      "attachmentMediaKey": {
+        "number": 5
+      },
+      "attachmentMediaKeyTimestamp": {
+        "number": 6
+      },
+      "attachmentMimetype": {
+        "number": 4
+      },
+      "attachmentType": {
+        "number": 3
+      },
+      "note": {
+        "number": 1
+      },
+      "token": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.InvoiceMessage\""
+  },
+  "literals": [
+    "InvoiceMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "enum:BUG_REPORT_ENTRY_POINT_NAME",
+  "kind": "enum",
+  "name": "BUG_REPORT_ENTRY_POINT_NAME",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBugReportEntryPointName",
+    "variants": [
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_SETTINGS",
+        "value": 1.0
+      },
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_HELP",
+        "value": 2.0
+      },
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_RAGE_SHAKE",
+        "value": 3.0
+      },
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_REPORT_MESSAGE",
+        "value": 4.0
+      },
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_VOIP_BUGNUB",
+        "value": 5.0
+      },
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_VOIP_CALL_MENU",
+        "value": 6.0
+      },
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_BLOKS",
+        "value": 7.0
+      },
+      {
+        "name": "BUG_REPORT_ENTRY_POINT_SIDEBAR_BUGNUB",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBugReportEntryPointName",
+    "matches": "BUG_REPORT_ENTRY_POINT_NAME\\s*[:=]"
+  },
+  "literals": [
+    "BUG_REPORT_ENTRY_POINT_NAME",
+    "BUG_REPORT_ENTRY_POINT_SETTINGS",
+    "BUG_REPORT_ENTRY_POINT_HELP",
+    "BUG_REPORT_ENTRY_POINT_RAGE_SHAKE",
+    "BUG_REPORT_ENTRY_POINT_REPORT_MESSAGE",
+    "BUG_REPORT_ENTRY_POINT_VOIP_BUGNUB",
+    "BUG_REPORT_ENTRY_POINT_VOIP_CALL_MENU",
+    "BUG_REPORT_ENTRY_POINT_BLOKS",
+    "BUG_REPORT_ENTRY_POINT_SIDEBAR_BUGNUB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBugReportSessionWamEvent",
+      "WAWebFeedbackNavBarItem.react",
+      "WAWebHelpDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "proto:WAE2E.EmbeddedMusic",
+  "kind": "proto",
+  "name": "WAE2E.EmbeddedMusic",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "artistAttribution": {
+        "number": 8
+      },
+      "artworkDirectPath": {
+        "number": 5
+      },
+      "artworkEncSha256": {
+        "number": 7
+      },
+      "artworkMediaKey": {
+        "number": 11
+      },
+      "artworkSha256": {
+        "number": 6
+      },
+      "author": {
+        "number": 3
+      },
+      "countryBlocklist": {
+        "number": 9
+      },
+      "derivedContentStartTimeInMs": {
+        "number": 13
+      },
+      "isExplicit": {
+        "number": 10
+      },
+      "musicContentMediaId": {
+        "number": 1
+      },
+      "musicSongStartTimeInMs": {
+        "number": 12
+      },
+      "overlapDurationInMs": {
+        "number": 14
+      },
+      "songId": {
+        "number": 2
+      },
+      "title": {
+        "number": 4
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"EmbeddedMusic\""
+  },
+  "literals": [
+    "EmbeddedMusic"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

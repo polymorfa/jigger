@@ -1,0 +1,47 @@
+{
+  "id": "ab:web_voip_dynamic_thread_preallocate_count",
+  "kind": "ab",
+  "name": "web_voip_dynamic_thread_preallocate_count",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23789,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_voip_dynamic_thread_preallocate_count:\\s*\\[\\s*23789"
+  },
+  "literals": [
+    "web_voip_dynamic_thread_preallocate_count",
+    "23789"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebVoipHandleNativeCallEvent",
+      "WAWebVoipWebLoadable",
+      "WAWebVoipWebWasmVariantLoader"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

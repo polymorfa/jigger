@@ -1,0 +1,92 @@
+{
+  "id": "enum:FORWARD_ACTION_USER_JOURNEY_ACTION",
+  "kind": "enum",
+  "name": "FORWARD_ACTION_USER_JOURNEY_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumForwardActionUserJourneyAction",
+    "variants": [
+      {
+        "name": "CONTEXT_MENU_SHOWN_WITH_FORWARD",
+        "value": 1.0
+      },
+      {
+        "name": "CONTEXT_MENU_SHOWN_WITHOUT_FORWARD",
+        "value": 2.0
+      },
+      {
+        "name": "FORWARD_TAPPED_IN_CONTEXT_MENU",
+        "value": 3.0
+      },
+      {
+        "name": "FAST_FORWARD_BUTTON_TAPPED",
+        "value": 4.0
+      },
+      {
+        "name": "MESSAGE_FORWARD_SELECT",
+        "value": 5.0
+      },
+      {
+        "name": "MESSAGE_FORWARD_UNSELECT",
+        "value": 6.0
+      },
+      {
+        "name": "SHARE_BUTTON_TAPPED_IN_FORWARD_TOOLBAR",
+        "value": 7.0
+      },
+      {
+        "name": "CANCEL_IN_FORWARD_TOOLBAR",
+        "value": 8.0
+      },
+      {
+        "name": "CONTEXT_MENU_DISMISSED",
+        "value": 9.0
+      },
+      {
+        "name": "FORWARD_BUTTON_TAPPED_IN_FORWARD_TOOLBAR",
+        "value": 10.0
+      },
+      {
+        "name": "FORWARD_TOOLBAR_DISMISSED",
+        "value": 11.0
+      },
+      {
+        "name": "SELECT_TAPPED_IN_CONTEXT_MENU",
+        "value": 12.0
+      },
+      {
+        "name": "SELECT_TAPPED_IN_MORE_MENU",
+        "value": 13.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumForwardActionUserJourneyAction",
+    "matches": "FORWARD_ACTION_USER_JOURNEY_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "FORWARD_ACTION_USER_JOURNEY_ACTION",
+    "CONTEXT_MENU_SHOWN_WITH_FORWARD",
+    "CONTEXT_MENU_SHOWN_WITHOUT_FORWARD",
+    "FORWARD_TAPPED_IN_CONTEXT_MENU",
+    "FAST_FORWARD_BUTTON_TAPPED",
+    "MESSAGE_FORWARD_SELECT",
+    "MESSAGE_FORWARD_UNSELECT",
+    "SHARE_BUTTON_TAPPED_IN_FORWARD_TOOLBAR",
+    "CANCEL_IN_FORWARD_TOOLBAR",
+    "CONTEXT_MENU_DISMISSED",
+    "FORWARD_BUTTON_TAPPED_IN_FORWARD_TOOLBAR",
+    "FORWARD_TOOLBAR_DISMISSED",
+    "SELECT_TAPPED_IN_CONTEXT_MENU",
+    "SELECT_TAPPED_IN_MORE_MENU"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebForwardActionUserJourneyLogger",
+      "WAWebForwardActionUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

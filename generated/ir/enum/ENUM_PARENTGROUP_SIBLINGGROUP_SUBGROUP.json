@@ -1,0 +1,66 @@
+{
+  "id": "enum:ENUM_PARENTGROUP_SIBLINGGROUP_SUBGROUP",
+  "kind": "enum",
+  "name": "ENUM_PARENTGROUP_SIBLINGGROUP_SUBGROUP",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInGroupsEnums",
+    "variants": [
+      {
+        "name": "parent_group",
+        "value": "parent_group"
+      },
+      {
+        "name": "sibling_group",
+        "value": "sibling_group"
+      },
+      {
+        "name": "sub_group",
+        "value": "sub_group"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInGroupsEnums",
+    "matches": "ENUM_PARENTGROUP_SIBLINGGROUP_SUBGROUP\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_PARENTGROUP_SIBLINGGROUP_SUBGROUP",
+    "parent_group",
+    "sibling_group",
+    "sub_group"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInGroupsAddNotificationRequest",
+      "WASmaxInGroupsAddParticipantTimeRateLimitMixin",
+      "WASmaxInGroupsCreateParticipantAddedMixin",
+      "WASmaxInGroupsCreateParticipantAddedResponseMixin",
+      "WASmaxInGroupsCreateResponseSuccess",
+      "WASmaxInGroupsDedupAttrsMixin",
+      "WASmaxInGroupsDeleteNotificationRequest",
+      "WASmaxInGroupsDemoteNotificationRequest",
+      "WASmaxInGroupsGroupAddressingModeMixin",
+      "WASmaxInGroupsGroupInfoMixin",
+      "WASmaxInGroupsGroupInfoParticipantAdminMixin",
+      "WASmaxInGroupsJoinNotificationRequest",
+      "WASmaxInGroupsLinkedGroupInfoMixin",
+      "WASmaxInGroupsMembershipRequestMethodAttributeMixin",
+      "WASmaxInGroupsMembershipRequestsActionResponseSuccess",
+      "WASmaxInGroupsParticipantGroupJoinRequestMixin",
+      "WASmaxInGroupsParticipantMixin",
+      "WASmaxInGroupsProfilePictureTypeMixin",
+      "WASmaxInGroupsPromoteDemoteAdminResponseSuccessMultiAdmin",
+      "WASmaxInGroupsPromoteDemoteResponseSuccessDemote",
+      "WASmaxInGroupsPromoteDemoteResponseSuccessPromote",
+      "WASmaxInGroupsPromoteNotificationRequest",
+      "WASmaxInGroupsRemoveParticipantsResponseSuccess",
+      "WASmaxOutGroupsNotificationClientAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 24
+  }
+}

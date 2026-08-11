@@ -1,0 +1,39 @@
+{
+  "id": "enum:ENUM_EVERYONE_SAMEASLASTSEEN",
+  "kind": "enum",
+  "name": "ENUM_EVERYONE_SAMEASLASTSEEN",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInUsyncEnums",
+    "variants": [
+      {
+        "name": "everyone",
+        "value": "everyone"
+      },
+      {
+        "name": "same_as_last_seen",
+        "value": "same_as_last_seen"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInUsyncEnums",
+    "matches": "ENUM_EVERYONE_SAMEASLASTSEEN\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_EVERYONE_SAMEASLASTSEEN",
+    "everyone",
+    "same_as_last_seen"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInUsyncNotificationAddDevicesNotificationMixin",
+      "WASmaxInUsyncNotificationRemoveDevicesNotificationMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

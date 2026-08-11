@@ -1,0 +1,42 @@
+{
+  "id": "ab:p2p_pills_entries_enabled",
+  "kind": "ab",
+  "name": "p2p_pills_entries_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31471,
+    "type": "string",
+    "default": "{\\\"enabled_for\\\": {\\\"sender\\\": true",
+    "alt_default": "\\\"receiver\\\": true}"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "p2p_pills_entries_enabled:\\s*\\[\\s*31471"
+  },
+  "literals": [
+    "p2p_pills_entries_enabled",
+    "31471"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

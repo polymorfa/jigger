@@ -1,0 +1,32 @@
+{
+  "id": "proto:WAStatusAttributions.StatusAttribution.AiCreatedAttribution",
+  "kind": "proto",
+  "name": "WAStatusAttributions.StatusAttribution.AiCreatedAttribution",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "source": {
+        "number": 1
+      }
+    },
+    "module": "WAStatusAttributions.pb"
+  },
+  "evidence": {
+    "module": "WAStatusAttributions.pb",
+    "matches": "name = \"StatusAttribution.AiCreatedAttribution\""
+  },
+  "literals": [
+    "AiCreatedAttribution"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

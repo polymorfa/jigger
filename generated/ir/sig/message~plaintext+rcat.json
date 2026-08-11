@@ -1,0 +1,34 @@
+{
+  "id": "sig:message/plaintext+rcat",
+  "kind": "sig",
+  "name": "MessageDeliverReceiverContentTypeMediaRCATMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "plaintext",
+      "rcat"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverReceiverContentTypeMediaRCATMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "plaintext",
+    "rcat"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMessageDeliverContentTypeMediaMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverNewsletterRequest"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

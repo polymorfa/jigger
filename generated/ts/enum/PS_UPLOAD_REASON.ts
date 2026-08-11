@@ -1,0 +1,4 @@
+export enum PSUPLOADREASON {
+  REASON_PS_PINGER = 0,
+  REASON_PS_OFFCYCLE = 1,
+}

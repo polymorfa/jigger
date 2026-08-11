@@ -1,0 +1,4 @@
+message SyncdMutation {
+  optional bytes operation = 1;
+  optional SyncdRecord record = 2;
+}

@@ -1,0 +1,103 @@
+{
+  "id": "iq:md/get/ref",
+  "kind": "iq",
+  "name": "MdGetRef",
+  "data": {
+    "kind": "iq",
+    "xmlns": "md",
+    "type": "get",
+    "tags": [
+      "ref"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "md",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "ref",
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxMdGetRefRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInMdGetRefResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "ref",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutMdGetRefRequest",
+    "matches": "smax\\(\"ref\""
+  },
+  "literals": [
+    "md",
+    "ref"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutMdBaseIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxMdGetRefRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

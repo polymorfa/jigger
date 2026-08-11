@@ -1,0 +1,4 @@
+export enum ENTRYPOINTTYPE {
+  MAIN_SCREEN = 1,
+  CONTACT_INFO = 2,
+}

@@ -1,0 +1,7 @@
+message BackupMessage {
+  optional bytes metadata = 1;
+  optional bytes encryptedTransportMessage = 2;
+  optional bytes encryptedTransportEvent = 5;
+  optional bytes encryptedTransportLocallyTransformedMessage = 6;
+  optional bytes miTransportAdminMessage = 7;
+}

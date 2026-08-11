@@ -1,0 +1,134 @@
+{
+  "id": "wam:1094",
+  "kind": "wam",
+  "name": "AppLaunch",
+  "data": {
+    "kind": "wam",
+    "event_id": 1094,
+    "fields": {
+      "appContext": {
+        "id": 22,
+        "type": "STRING",
+        "wire": "app_context"
+      },
+      "appContextBitfield": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "app_context_bitfield"
+      },
+      "appLaunchCpuT": {
+        "id": 2,
+        "type": "TIMER",
+        "wire": "app_launch_cpu_t"
+      },
+      "appLaunchDestination": {
+        "id": 7,
+        "type": "APP_LAUNCH_DESTINATION_TYPE",
+        "wire": "app_launch_destination",
+        "enum_ref": "APP_LAUNCH_DESTINATION_TYPE"
+      },
+      "appLaunchMainPreT": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "app_launch_main_pre_t"
+      },
+      "appLaunchMainRunT": {
+        "id": 4,
+        "type": "TIMER",
+        "wire": "app_launch_main_run_t"
+      },
+      "appLaunchT": {
+        "id": 1,
+        "type": "TIMER",
+        "wire": "app_launch_t"
+      },
+      "appLaunchTypeT": {
+        "id": 5,
+        "type": "APP_LAUNCH_TYPE",
+        "wire": "app_launch_type_t",
+        "enum_ref": "APP_LAUNCH_TYPE"
+      },
+      "dbBgThreadReadsDurationT": {
+        "id": 17,
+        "type": "TIMER",
+        "wire": "db_bg_thread_reads_duration_t"
+      },
+      "dbBgThreadWritesDurationT": {
+        "id": 18,
+        "type": "TIMER",
+        "wire": "db_bg_thread_writes_duration_t"
+      },
+      "dbMainThreadCount": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "db_main_thread_count"
+      },
+      "dbMainThreadReadsDurationT": {
+        "id": 19,
+        "type": "TIMER",
+        "wire": "db_main_thread_reads_duration_t"
+      },
+      "dbMainThreadWritesDurationT": {
+        "id": 20,
+        "type": "TIMER",
+        "wire": "db_main_thread_writes_duration_t"
+      },
+      "dbReadsCount": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "db_reads_count"
+      },
+      "dbWritesCount": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "db_writes_count"
+      },
+      "lowPowerModeEnabled": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "low_power_mode_enabled"
+      },
+      "peripheralConnected": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "peripheral_connected"
+      },
+      "processIdentifier": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "process_identifier"
+      },
+      "traceIdInt": {
+        "id": 24,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebAppLaunchWamEvent",
+    "matches": "AppLaunch:\\s*\\[\\s*1094"
+  },
+  "literals": [
+    "1094"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAppLaunchDestinationType",
+      "WAWebWamEnumAppLaunchType"
+    ],
+    "dependents": [
+      "WAWebWamAppLaunchReporter",
+      "WAWebWindowsWamAppLaunchReporter"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebFetchMetaAiNullStatePromptsGQLQuery",
+  "kind": "mex",
+  "name": "WAWebFetchMetaAiNullStatePromptsGQLQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27011415698537190",
+    "operation": "query",
+    "variables": [
+      "exp_config",
+      "locale",
+      "null_state_source"
+    ],
+    "document": "query FetchMetaAiNullStatePromptsGQLQuery($exp_config, $locale, $null_state_source) {\n  xwa_genai_meta_ai_search_null_state {\n    suggestions {\n      suggestion\n      query\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebFetchMetaAiNullStatePromptsGQLQuery.graphql",
+    "matches": "id: \"27011415698537190\""
+  },
+  "literals": [
+    "27011415698537190",
+    "WAWebFetchMetaAiNullStatePromptsGQLQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebFetchMetaAiNullStatePromptsGQL"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

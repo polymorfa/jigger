@@ -1,0 +1,32 @@
+{
+  "id": "proto:WAArmadilloLocallyTransformedMessage.LocallyTransformedMessage",
+  "kind": "proto",
+  "name": "WAArmadilloLocallyTransformedMessage.LocallyTransformedMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "pollUpdateMessage": {
+        "number": 1,
+        "type_name": "WAArmadilloLocallyTransformedMessage.LocallyTransformedMessage.PollUpdateAdminMessage"
+      }
+    },
+    "module": "WAArmadilloLocallyTransformedMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloLocallyTransformedMessage.pb",
+    "matches": "name = \"LocallyTransformedMessage\""
+  },
+  "literals": [
+    "LocallyTransformedMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWProtobufDeserializers"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

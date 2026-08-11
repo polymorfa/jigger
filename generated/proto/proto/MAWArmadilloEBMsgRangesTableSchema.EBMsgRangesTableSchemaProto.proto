@@ -1,0 +1,9 @@
+message EBMsgRangesTableSchemaProto {
+  optional bytes rangeId = 1;
+  optional bytes threadJid = 2;
+  optional bytes minMsgExternalId = 3;
+  optional bytes maxMsgExternalId = 4;
+  optional bytes minMsgSortOrderMs = 5;
+  optional bytes maxMsgSortOrderMs = 6;
+  optional bytes creationTime = 7;
+}

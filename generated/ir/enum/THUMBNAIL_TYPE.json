@@ -1,0 +1,43 @@
+{
+  "id": "enum:THUMBNAIL_TYPE",
+  "kind": "enum",
+  "name": "THUMBNAIL_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumThumbnailType",
+    "variants": [
+      {
+        "name": "HQ",
+        "value": 1.0
+      },
+      {
+        "name": "CUSTOM",
+        "value": 2.0
+      },
+      {
+        "name": "MEDIA_BASED",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumThumbnailType",
+    "matches": "THUMBNAIL_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "THUMBNAIL_TYPE",
+    "HQ",
+    "CUSTOM",
+    "MEDIA_BASED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebQbmMessageClickLogEvent",
+      "WAWebQbmMessageClickWamEvent",
+      "WAWebQbmMessageReadWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

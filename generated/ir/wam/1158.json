@@ -1,0 +1,908 @@
+{
+  "id": "wam:1158",
+  "kind": "wam",
+  "name": "Daily",
+  "data": {
+    "kind": "wam",
+    "event_id": 1158,
+    "fields": {
+      "accessibilityVoiceover": {
+        "id": 108,
+        "type": "BOOLEAN",
+        "wire": "accessibility_voiceover"
+      },
+      "addressbookSize": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "addressbook_size"
+      },
+      "addressbookWhatsappSize": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "addressbook_whatsapp_size"
+      },
+      "aiMemorySavedCnt": {
+        "id": 223,
+        "type": "INTEGER",
+        "wire": "ai_memory_saved_cnt"
+      },
+      "aiWidgetInstalled": {
+        "id": 210,
+        "type": "BOOLEAN",
+        "wire": "ai_widget_installed"
+      },
+      "androidAdvertisingId": {
+        "id": 135,
+        "type": "STRING",
+        "wire": "android_advertising_id"
+      },
+      "androidKeystoreState": {
+        "id": 139,
+        "type": "ANDROID_KEYSTORE_STATE_TYPE",
+        "wire": "android_keystore_state",
+        "enum_ref": "ANDROID_KEYSTORE_STATE_TYPE"
+      },
+      "appCodeHash": {
+        "id": 103,
+        "type": "STRING",
+        "wire": "app_code_hash"
+      },
+      "appLastOpenTimestamp": {
+        "id": 212,
+        "type": "INTEGER",
+        "wire": "app_last_open_timestamp"
+      },
+      "appStandbyBucket": {
+        "id": 121,
+        "type": "INTEGER",
+        "wire": "app_standby_bucket"
+      },
+      "autoDlAudioCellular": {
+        "id": 90,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_audio_cellular"
+      },
+      "autoDlAudioRoaming": {
+        "id": 91,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_audio_roaming"
+      },
+      "autoDlAudioWifi": {
+        "id": 89,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_audio_wifi"
+      },
+      "autoDlDocCellular": {
+        "id": 96,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_doc_cellular"
+      },
+      "autoDlDocRoaming": {
+        "id": 97,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_doc_roaming"
+      },
+      "autoDlDocWifi": {
+        "id": 95,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_doc_wifi"
+      },
+      "autoDlImageCellular": {
+        "id": 87,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_image_cellular"
+      },
+      "autoDlImageRoaming": {
+        "id": 88,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_image_roaming"
+      },
+      "autoDlImageWifi": {
+        "id": 86,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_image_wifi"
+      },
+      "autoDlVideoCellular": {
+        "id": 93,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_video_cellular"
+      },
+      "autoDlVideoRoaming": {
+        "id": 94,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_video_roaming"
+      },
+      "autoDlVideoWifi": {
+        "id": 92,
+        "type": "BOOLEAN",
+        "wire": "auto_dl_video_wifi"
+      },
+      "backupEncryptionMethod": {
+        "id": 231,
+        "type": "BACKUP_ENCRYPTION_METHOD",
+        "wire": "backup_encryption_method",
+        "enum_ref": "BACKUP_ENCRYPTION_METHOD"
+      },
+      "backupNetworkSetting": {
+        "id": 10,
+        "type": "BACKUP_NETWORK_SETTING",
+        "wire": "backup_network_setting",
+        "enum_ref": "BACKUP_NETWORK_SETTING"
+      },
+      "backupRestoreEncryptionVersion": {
+        "id": 138,
+        "type": "INTEGER",
+        "wire": "backup_restore_encryption_version"
+      },
+      "backupSchedule": {
+        "id": 9,
+        "type": "BACKUP_SCHEDULE",
+        "wire": "backup_schedule",
+        "enum_ref": "BACKUP_SCHEDULE"
+      },
+      "canonicalEntLastValidationTsMs": {
+        "id": 241,
+        "type": "INTEGER",
+        "wire": "canonical_ent_last_validation_ts_ms"
+      },
+      "channelsMediaFolderSize": {
+        "id": 186,
+        "type": "INTEGER",
+        "wire": "channels_media_folder_size"
+      },
+      "chatDatabaseSize": {
+        "id": 19,
+        "type": "INTEGER",
+        "wire": "chat_database_size"
+      },
+      "chatLockFolderCount": {
+        "id": 168,
+        "type": "INTEGER",
+        "wire": "chat_lock_folder_count"
+      },
+      "contactsCreatedOnWhatsappSize": {
+        "id": 200,
+        "type": "INTEGER",
+        "wire": "contacts_created_on_whatsapp_size"
+      },
+      "contactsPermissionAuthorizationStatus": {
+        "id": 201,
+        "type": "CONTACTS_PERMISSION_AUTHORIZATION_STATUS_TYPE",
+        "wire": "contacts_permission_authorization_status",
+        "enum_ref": "CONTACTS_PERMISSION_AUTHORIZATION_STATUS_TYPE"
+      },
+      "contactsRequiringSyncBeforeDisplaySize": {
+        "id": 238,
+        "type": "INTEGER",
+        "wire": "contacts_requiring_sync_before_display_size"
+      },
+      "count1on1Threads": {
+        "id": 216,
+        "type": "INTEGER",
+        "wire": "count1on1_threads"
+      },
+      "countEphemeralThreads": {
+        "id": 181,
+        "type": "INTEGER",
+        "wire": "count_ephemeral_threads"
+      },
+      "countEphemeralThreadsEnabledByMe": {
+        "id": 182,
+        "type": "INTEGER",
+        "wire": "count_ephemeral_threads_enabled_by_me"
+      },
+      "countGroupThreads": {
+        "id": 217,
+        "type": "INTEGER",
+        "wire": "count_group_threads"
+      },
+      "countLimitSharing1on1Threads": {
+        "id": 218,
+        "type": "INTEGER",
+        "wire": "count_limit_sharing1on1_threads"
+      },
+      "countLimitSharingGroupThreads": {
+        "id": 219,
+        "type": "INTEGER",
+        "wire": "count_limit_sharing_group_threads"
+      },
+      "dailyPasskeyCount": {
+        "id": 247,
+        "type": "INTEGER",
+        "wire": "daily_passkey_count"
+      },
+      "dbAddressbookTableSize": {
+        "id": 206,
+        "type": "INTEGER",
+        "wire": "db_addressbook_table_size"
+      },
+      "defaultAfterReadDuration": {
+        "id": 248,
+        "type": "INTEGER",
+        "wire": "default_after_read_duration"
+      },
+      "defaultAfterReadEnabled": {
+        "id": 249,
+        "type": "BOOLEAN",
+        "wire": "default_after_read_enabled"
+      },
+      "defaultDisappearingDuration": {
+        "id": 140,
+        "type": "INTEGER",
+        "wire": "default_disappearing_duration"
+      },
+      "defenseMode": {
+        "id": 214,
+        "type": "INTEGER",
+        "wire": "defense_mode"
+      },
+      "deprecatedContactsSize": {
+        "id": 228,
+        "type": "INTEGER",
+        "wire": "deprecated_contacts_size"
+      },
+      "deviceLanguage": {
+        "id": 153,
+        "type": "STRING",
+        "wire": "device_language"
+      },
+      "emailState": {
+        "id": 174,
+        "type": "EMAIL_STATE",
+        "wire": "email_state",
+        "enum_ref": "EMAIL_STATE"
+      },
+      "entSecurityNotificationsEnabled": {
+        "id": 134,
+        "type": "BOOLEAN",
+        "wire": "ent_security_notifications_enabled"
+      },
+      "experimentTmoPreloadGroupDaily": {
+        "id": 166,
+        "type": "INTEGER",
+        "wire": "experiment_tmo_preload_group_daily"
+      },
+      "favoritedAnimatedStickerCount": {
+        "id": 113,
+        "type": "INTEGER",
+        "wire": "favorited_animated_sticker_count"
+      },
+      "favoritedFirstPartyStickerCount": {
+        "id": 112,
+        "type": "INTEGER",
+        "wire": "favorited_first_party_sticker_count"
+      },
+      "favoritedTotalStickerCount": {
+        "id": 111,
+        "type": "INTEGER",
+        "wire": "favorited_total_sticker_count"
+      },
+      "galleryPermission": {
+        "id": 164,
+        "type": "GALLERY_PERMISSION_STATE",
+        "wire": "gallery_permission",
+        "enum_ref": "GALLERY_PERMISSION_STATE"
+      },
+      "hasTextstatusEmojiModified24h": {
+        "id": 175,
+        "type": "BOOLEAN",
+        "wire": "has_textstatus_emoji_modified24h"
+      },
+      "hasTextstatusModified24h": {
+        "id": 176,
+        "type": "BOOLEAN",
+        "wire": "has_textstatus_modified24h"
+      },
+      "hasTextstatusTextModified24h": {
+        "id": 177,
+        "type": "BOOLEAN",
+        "wire": "has_textstatus_text_modified24h"
+      },
+      "hasUsername": {
+        "id": 187,
+        "type": "BOOLEAN",
+        "wire": "has_username"
+      },
+      "hasUsernamePin": {
+        "id": 222,
+        "type": "BOOLEAN",
+        "wire": "has_username_pin"
+      },
+      "inNetworkContactsSize": {
+        "id": 190,
+        "type": "INTEGER",
+        "wire": "in_network_contacts_size"
+      },
+      "installedAnimatedStickerPackCount": {
+        "id": 116,
+        "type": "INTEGER",
+        "wire": "installed_animated_sticker_pack_count"
+      },
+      "installedAnimatedThirdPartyStickerPackCount": {
+        "id": 137,
+        "type": "INTEGER",
+        "wire": "installed_animated_third_party_sticker_pack_count"
+      },
+      "installedFirstPartyStickerPackCount": {
+        "id": 115,
+        "type": "INTEGER",
+        "wire": "installed_first_party_sticker_pack_count"
+      },
+      "installedTotalStickerPackCount": {
+        "id": 114,
+        "type": "INTEGER",
+        "wire": "installed_total_sticker_pack_count"
+      },
+      "interopContactsSize": {
+        "id": 260,
+        "type": "INTEGER",
+        "wire": "interop_contacts_size"
+      },
+      "interopContactsSizePerIntegrator": {
+        "id": 261,
+        "type": "STRING",
+        "wire": "interop_contacts_size_per_integrator"
+      },
+      "isCanonicalEntPresent": {
+        "id": 234,
+        "type": "BOOLEAN",
+        "wire": "is_canonical_ent_present"
+      },
+      "isContactSyncToOsDefaultOn": {
+        "id": 202,
+        "type": "BOOLEAN",
+        "wire": "is_contact_sync_to_os_default_on"
+      },
+      "isDefaultDisappearingMessagingUser": {
+        "id": 183,
+        "type": "BOOLEAN",
+        "wire": "is_default_disappearing_messaging_user"
+      },
+      "isEphemeralMessagingUser": {
+        "id": 184,
+        "type": "BOOLEAN",
+        "wire": "is_ephemeral_messaging_user"
+      },
+      "isProfilePhotoSet": {
+        "id": 195,
+        "type": "BOOLEAN",
+        "wire": "is_profile_photo_set"
+      },
+      "keyboardLanguage": {
+        "id": 154,
+        "type": "STRING",
+        "wire": "keyboard_language"
+      },
+      "languageCode": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "language_code"
+      },
+      "lastBackupTimestamp": {
+        "id": 63,
+        "type": "INTEGER",
+        "wire": "last_backup_timestamp"
+      },
+      "lastCloudBackupSize": {
+        "id": 185,
+        "type": "INTEGER",
+        "wire": "last_cloud_backup_size"
+      },
+      "lidRawContactId": {
+        "id": 258,
+        "type": "INTEGER",
+        "wire": "lid_raw_contact_id"
+      },
+      "lidToPnMappingCount": {
+        "id": 253,
+        "type": "INTEGER",
+        "wire": "lid_to_pn_mapping_count"
+      },
+      "lidToUsernameMappingCount": {
+        "id": 254,
+        "type": "INTEGER",
+        "wire": "lid_to_username_mapping_count"
+      },
+      "locationCode": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "location_code"
+      },
+      "lockFolderHidden": {
+        "id": 171,
+        "type": "BOOLEAN",
+        "wire": "lock_folder_hidden"
+      },
+      "lowestAppStandbyBucket": {
+        "id": 160,
+        "type": "INTEGER",
+        "wire": "lowest_app_standby_bucket"
+      },
+      "mdPairTime": {
+        "id": 124,
+        "type": "INTEGER",
+        "wire": "md_pair_time"
+      },
+      "mediaAutoDownloadQualitySetting": {
+        "id": 244,
+        "type": "MEDIA_AUTO_DOWNLOAD_QUALITY",
+        "wire": "media_auto_download_quality_setting",
+        "enum_ref": "MEDIA_AUTO_DOWNLOAD_QUALITY"
+      },
+      "mediaFolderFileCount": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "media_folder_file_count"
+      },
+      "mediaFolderSize": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "media_folder_size"
+      },
+      "mediaQualitySetting": {
+        "id": 188,
+        "type": "MEDIA_QUALITY",
+        "wire": "media_quality_setting",
+        "enum_ref": "MEDIA_QUALITY"
+      },
+      "mediaSizeCacheAgeSeconds": {
+        "id": 239,
+        "type": "INTEGER",
+        "wire": "media_size_cache_age_seconds"
+      },
+      "metaAiModelActual": {
+        "id": 198,
+        "type": "META_AI_MODEL_TIER_TYPE",
+        "wire": "meta_ai_model_actual",
+        "enum_ref": "META_AI_MODEL_TIER_TYPE"
+      },
+      "metaAiModelSelected": {
+        "id": 199,
+        "type": "META_AI_MODEL_TIER_TYPE",
+        "wire": "meta_ai_model_selected",
+        "enum_ref": "META_AI_MODEL_TIER_TYPE"
+      },
+      "metaAiVoiceDefaultOn": {
+        "id": 220,
+        "type": "BOOLEAN",
+        "wire": "meta_ai_voice_default_on"
+      },
+      "metaAiVoiceSelection": {
+        "id": 221,
+        "type": "STRING",
+        "wire": "meta_ai_voice_selection"
+      },
+      "modifiedInternalProps": {
+        "id": 155,
+        "type": "BOOLEAN",
+        "wire": "modified_internal_props"
+      },
+      "nativeContactsGlobalSettingEnabled": {
+        "id": 205,
+        "type": "BOOLEAN",
+        "wire": "native_contacts_global_setting_enabled"
+      },
+      "networkIsRoaming": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "network_is_roaming"
+      },
+      "networkOperatorName": {
+        "id": 159,
+        "type": "STRING",
+        "wire": "network_operator_name"
+      },
+      "numAccounts": {
+        "id": 163,
+        "type": "INTEGER",
+        "wire": "num_accounts"
+      },
+      "numContactsWithTextstatus24h": {
+        "id": 178,
+        "type": "INTEGER",
+        "wire": "num_contacts_with_textstatus24h"
+      },
+      "numContactsWithTextstatusEmoji24h": {
+        "id": 179,
+        "type": "INTEGER",
+        "wire": "num_contacts_with_textstatus_emoji24h"
+      },
+      "numContactsWithTextstatusText24h": {
+        "id": 180,
+        "type": "INTEGER",
+        "wire": "num_contacts_with_textstatus_text24h"
+      },
+      "numberOfSim": {
+        "id": 250,
+        "type": "INTEGER",
+        "wire": "number_of_sim"
+      },
+      "osBuildNumber": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "os_build_number"
+      },
+      "osNotificationSetting": {
+        "id": 118,
+        "type": "NOTIFICATION_SETTING_TYPE",
+        "wire": "os_notification_setting",
+        "enum_ref": "NOTIFICATION_SETTING_TYPE"
+      },
+      "outOfNetworkContactsSize": {
+        "id": 191,
+        "type": "INTEGER",
+        "wire": "out_of_network_contacts_size"
+      },
+      "packageName": {
+        "id": 102,
+        "type": "STRING",
+        "wire": "package_name"
+      },
+      "passkeyExists": {
+        "id": 165,
+        "type": "BOOLEAN",
+        "wire": "passkey_exists"
+      },
+      "paymentsIsEnabled": {
+        "id": 100,
+        "type": "BOOLEAN",
+        "wire": "payments_is_enabled"
+      },
+      "peripheralConnected": {
+        "id": 209,
+        "type": "STRING",
+        "wire": "peripheral_connected"
+      },
+      "peripheralDisplayConnectivityType": {
+        "id": 255,
+        "type": "PERIPHERAL_DISPLAY_CONNECTIVITY_TYPE",
+        "wire": "peripheral_display_connectivity_type",
+        "enum_ref": "PERIPHERAL_DISPLAY_CONNECTIVITY_TYPE"
+      },
+      "peripheralLinkedProductLine": {
+        "id": 229,
+        "type": "STRING",
+        "wire": "peripheral_linked_product_line"
+      },
+      "permissionAccessCoarseLocation": {
+        "id": 57,
+        "type": "INTEGER",
+        "wire": "permission_access_coarse_location"
+      },
+      "permissionAccessFineLocation": {
+        "id": 58,
+        "type": "INTEGER",
+        "wire": "permission_access_fine_location"
+      },
+      "permissionCamera": {
+        "id": 56,
+        "type": "INTEGER",
+        "wire": "permission_camera"
+      },
+      "permissionContacts": {
+        "id": 104,
+        "type": "BOOLEAN",
+        "wire": "permission_contacts"
+      },
+      "permissionReadExternalStorage": {
+        "id": 53,
+        "type": "INTEGER",
+        "wire": "permission_read_external_storage"
+      },
+      "permissionRecordAudio": {
+        "id": 55,
+        "type": "INTEGER",
+        "wire": "permission_record_audio"
+      },
+      "phoneCores": {
+        "id": 156,
+        "type": "INTEGER",
+        "wire": "phone_cores"
+      },
+      "phoneNumberHintAvailableCount": {
+        "id": 251,
+        "type": "INTEGER",
+        "wire": "phone_number_hint_available_count"
+      },
+      "phoneyid": {
+        "id": 162,
+        "type": "STRING",
+        "wire": "phoneyid"
+      },
+      "preloadsAppManagerId": {
+        "id": 224,
+        "type": "STRING",
+        "wire": "preloads_app_manager_id"
+      },
+      "preloadsAttributionJson": {
+        "id": 227,
+        "type": "STRING",
+        "wire": "preloads_attribution_json"
+      },
+      "privacySettingsAbout": {
+        "id": 141,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "privacy_settings_about",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "privacySettingsAboutExceptNum": {
+        "id": 142,
+        "type": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+        "wire": "privacy_settings_about_except_num",
+        "enum_ref": "PRIVACY_SETTINGS_CONTACTS_BUCKETS"
+      },
+      "privacySettingsCoverPhoto": {
+        "id": 235,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "privacy_settings_cover_photo",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "privacySettingsGroups": {
+        "id": 143,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "privacy_settings_groups",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "privacySettingsGroupsExceptNum": {
+        "id": 144,
+        "type": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+        "wire": "privacy_settings_groups_except_num",
+        "enum_ref": "PRIVACY_SETTINGS_CONTACTS_BUCKETS"
+      },
+      "privacySettingsLastSeen": {
+        "id": 145,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "privacy_settings_last_seen",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "privacySettingsLastSeenExceptNum": {
+        "id": 146,
+        "type": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+        "wire": "privacy_settings_last_seen_except_num",
+        "enum_ref": "PRIVACY_SETTINGS_CONTACTS_BUCKETS"
+      },
+      "privacySettingsProfileLinks": {
+        "id": 225,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "privacy_settings_profile_links",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "privacySettingsProfileLinksExceptNum": {
+        "id": 226,
+        "type": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+        "wire": "privacy_settings_profile_links_except_num",
+        "enum_ref": "PRIVACY_SETTINGS_CONTACTS_BUCKETS"
+      },
+      "privacySettingsProfilePhoto": {
+        "id": 147,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "privacy_settings_profile_photo",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "privacySettingsProfilePhotoExceptNum": {
+        "id": 148,
+        "type": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+        "wire": "privacy_settings_profile_photo_except_num",
+        "enum_ref": "PRIVACY_SETTINGS_CONTACTS_BUCKETS"
+      },
+      "privacySettingsStatus": {
+        "id": 150,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "privacy_settings_status",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "privacySettingsStatusExceptNum": {
+        "id": 151,
+        "type": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+        "wire": "privacy_settings_status_except_num",
+        "enum_ref": "PRIVACY_SETTINGS_CONTACTS_BUCKETS"
+      },
+      "privacySettingsStatusShareNum": {
+        "id": 152,
+        "type": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+        "wire": "privacy_settings_status_share_num",
+        "enum_ref": "PRIVACY_SETTINGS_CONTACTS_BUCKETS"
+      },
+      "profileLinksCount": {
+        "id": 211,
+        "type": "INTEGER",
+        "wire": "profile_links_count"
+      },
+      "receiptsEnabled": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "receipts_enabled"
+      },
+      "secretCodeActive": {
+        "id": 172,
+        "type": "BOOLEAN",
+        "wire": "secret_code_active"
+      },
+      "showMetaAiButtonSetting": {
+        "id": 173,
+        "type": "BOOLEAN",
+        "wire": "show_meta_ai_button_setting"
+      },
+      "simMcc": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "sim_mcc"
+      },
+      "simMnc": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "sim_mnc"
+      },
+      "simPhoneNumberMatched": {
+        "id": 243,
+        "type": "INTEGER",
+        "wire": "sim_phone_number_matched"
+      },
+      "stickersFolderFileCount": {
+        "id": 256,
+        "type": "INTEGER",
+        "wire": "stickers_folder_file_count"
+      },
+      "stickersFolderSize": {
+        "id": 257,
+        "type": "INTEGER",
+        "wire": "stickers_folder_size"
+      },
+      "storageAvailSize": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "storage_avail_size"
+      },
+      "storageAvailSizeWithCache": {
+        "id": 136,
+        "type": "INTEGER",
+        "wire": "storage_avail_size_with_cache"
+      },
+      "storageTotalSize": {
+        "id": 32,
+        "type": "INTEGER",
+        "wire": "storage_total_size"
+      },
+      "supportedDecoders": {
+        "id": 169,
+        "type": "STRING",
+        "wire": "supported_decoders"
+      },
+      "supportedEncoders": {
+        "id": 170,
+        "type": "STRING",
+        "wire": "supported_encoders"
+      },
+      "syncedInNetworkContactsSize": {
+        "id": 192,
+        "type": "INTEGER",
+        "wire": "synced_in_network_contacts_size"
+      },
+      "textMessageAnimationEnabled": {
+        "id": 259,
+        "type": "BOOLEAN",
+        "wire": "text_message_animation_enabled"
+      },
+      "totalCountInNetworkUniquePhoneNumber": {
+        "id": 193,
+        "type": "INTEGER",
+        "wire": "total_count_in_network_unique_phone_number"
+      },
+      "totalCountSyncedInNetworkUniquePhoneNumber": {
+        "id": 194,
+        "type": "INTEGER",
+        "wire": "total_count_synced_in_network_unique_phone_number"
+      },
+      "totalMissedCalls": {
+        "id": 232,
+        "type": "INTEGER",
+        "wire": "total_missed_calls"
+      },
+      "totalUnreadMessages": {
+        "id": 233,
+        "type": "INTEGER",
+        "wire": "total_unread_messages"
+      },
+      "traceIdInt": {
+        "id": 240,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      },
+      "trafficAnonymization": {
+        "id": 215,
+        "type": "INTEGER",
+        "wire": "traffic_anonymization"
+      },
+      "uniquePhoneNumberContactsSizeWithUsername": {
+        "id": 236,
+        "type": "INTEGER",
+        "wire": "unique_phone_number_contacts_size_with_username"
+      },
+      "unreadBadgeFrequency": {
+        "id": 213,
+        "type": "INTEGER",
+        "wire": "unread_badge_frequency"
+      },
+      "unverifiedProfileLinksCount": {
+        "id": 245,
+        "type": "INTEGER",
+        "wire": "unverified_profile_links_count"
+      },
+      "usernameOnlyContactsSize": {
+        "id": 237,
+        "type": "INTEGER",
+        "wire": "username_only_contacts_size"
+      },
+      "usernameState": {
+        "id": 242,
+        "type": "USERNAME_STATE",
+        "wire": "username_state",
+        "enum_ref": "USERNAME_STATE"
+      },
+      "verifiedProfileLinksCount": {
+        "id": 246,
+        "type": "INTEGER",
+        "wire": "verified_profile_links_count"
+      },
+      "videoFolderFileCount": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "video_folder_file_count"
+      },
+      "videoFolderSize": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "video_folder_size"
+      },
+      "webcContactsTableSize": {
+        "id": 207,
+        "type": "INTEGER",
+        "wire": "webc_contacts_table_size"
+      },
+      "webcFilteredContactsSize": {
+        "id": 208,
+        "type": "INTEGER",
+        "wire": "webc_filtered_contacts_size"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebDailyWamEvent",
+    "matches": "Daily:\\s*\\[\\s*1158"
+  },
+  "literals": [
+    "1158"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAndroidKeystoreStateType",
+      "WAWebWamEnumBackupEncryptionMethod",
+      "WAWebWamEnumBackupNetworkSetting",
+      "WAWebWamEnumBackupSchedule",
+      "WAWebWamEnumContactsPermissionAuthorizationStatusType",
+      "WAWebWamEnumEmailState",
+      "WAWebWamEnumGalleryPermissionState",
+      "WAWebWamEnumMediaAutoDownloadQuality",
+      "WAWebWamEnumMediaQuality",
+      "WAWebWamEnumMetaAiModelTierType",
+      "WAWebWamEnumNotificationSettingType",
+      "WAWebWamEnumPeripheralDisplayConnectivityType",
+      "WAWebWamEnumPrivacySettingsContactsBuckets",
+      "WAWebWamEnumPrivacySettingsValueType",
+      "WAWebWamEnumUsernameState"
+    ],
+    "dependents": [
+      "WAWebTasksDailyStatsTask",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 16,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_multi_device_message_attribution_enabled",
+  "kind": "ab",
+  "name": "smb_multi_device_message_attribution_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1981,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_multi_device_message_attribution_enabled:\\s*\\[\\s*1981"
+  },
+  "literals": [
+    "smb_multi_device_message_attribution_enabled",
+    "1981"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebChatAssignmentGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

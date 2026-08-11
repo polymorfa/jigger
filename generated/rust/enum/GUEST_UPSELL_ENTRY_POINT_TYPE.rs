@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GUESTUPSELLENTRYPOINTTYPE {
+    BANNERDOWNLOADCTA = 1,
+    AUDIOCALL = 2,
+    VIDEOCALL = 3,
+    ATTACHMENT = 4,
+    NEWINVITE = 5,
+    LANDINGSCREENDOWNLOADCTA = 6,
+    SESSIONREOPEN = 7,
+}

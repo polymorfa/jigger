@@ -1,0 +1,42 @@
+{
+  "id": "enum:ENUM_ALLOW_DENY_SKIP",
+  "kind": "enum",
+  "name": "ENUM_ALLOW_DENY_SKIP",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBizCtwaAdAccountEnums",
+    "variants": [
+      {
+        "name": "allow",
+        "value": "allow"
+      },
+      {
+        "name": "deny",
+        "value": "deny"
+      },
+      {
+        "name": "skip",
+        "value": "skip"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizCtwaAdAccountEnums",
+    "matches": "ENUM_ALLOW_DENY_SKIP\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ALLOW_DENY_SKIP",
+    "allow",
+    "deny",
+    "skip"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBizCtwaAdAccountGetAccessTokenAndSessionCookiesResponseSuccess",
+      "WASmaxInBizCtwaAdAccountSendAccountRecoveryNonceResponseMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

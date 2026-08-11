@@ -1,0 +1,1385 @@
+{
+  "id": "enum:TS_SURFACE",
+  "kind": "enum",
+  "name": "TS_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumTsSurface",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 1.0
+      },
+      {
+        "name": "COMMUNITY_HOME",
+        "value": 2.0
+      },
+      {
+        "name": "COMMUNITY_TAB",
+        "value": 3.0
+      },
+      {
+        "name": "CHAT_THREAD",
+        "value": 4.0
+      },
+      {
+        "name": "CHAT_INFO_PAGE",
+        "value": 5.0
+      },
+      {
+        "name": "CHAT_LIST",
+        "value": 6.0
+      },
+      {
+        "name": "COMMUNITY_NAVIGATION",
+        "value": 7.0
+      },
+      {
+        "name": "BACKGROUND",
+        "value": 8.0
+      },
+      {
+        "name": "RESIGN",
+        "value": 9.0
+      },
+      {
+        "name": "SUBGROUP_SWITCHER",
+        "value": 10.0
+      },
+      {
+        "name": "COMMUNITY_COMPOSER",
+        "value": 11.0
+      },
+      {
+        "name": "MEDIA_VIEWER",
+        "value": 12.0
+      },
+      {
+        "name": "ALL_MEDIA",
+        "value": 13.0
+      },
+      {
+        "name": "STREAMING_MEDIA_VIEWER",
+        "value": 14.0
+      },
+      {
+        "name": "CALLS_HOME_TAB",
+        "value": 15.0
+      },
+      {
+        "name": "IN_CALL_UI",
+        "value": 16.0
+      },
+      {
+        "name": "STATUS_HOME_TAB",
+        "value": 17.0
+      },
+      {
+        "name": "STATUS_COMPOSER",
+        "value": 18.0
+      },
+      {
+        "name": "STATUS_VIEW",
+        "value": 19.0
+      },
+      {
+        "name": "CAMERA",
+        "value": 20.0
+      },
+      {
+        "name": "PHOTO_VIDEO_LIBRARY",
+        "value": 21.0
+      },
+      {
+        "name": "SETTINGS_HOME_TAB",
+        "value": 22.0
+      },
+      {
+        "name": "TOOLS_TAB",
+        "value": 23.0
+      },
+      {
+        "name": "COMMUNITY_SETTINGS",
+        "value": 24.0
+      },
+      {
+        "name": "CHANNEL_UPDATES_HOME",
+        "value": 25.0
+      },
+      {
+        "name": "CHANNEL_THREAD",
+        "value": 26.0
+      },
+      {
+        "name": "CHANNEL_DIRECTORY",
+        "value": 27.0
+      },
+      {
+        "name": "CHANNEL_PROFILE",
+        "value": 28.0
+      },
+      {
+        "name": "CHANNEL_FORWARD",
+        "value": 29.0
+      },
+      {
+        "name": "CHANNEL_PRODUCER_MEDIA_EDITOR",
+        "value": 30.0
+      },
+      {
+        "name": "CHANNEL_CREATE",
+        "value": 31.0
+      },
+      {
+        "name": "CHANNEL_EDIT",
+        "value": 32.0
+      },
+      {
+        "name": "CHANNEL_DELETE",
+        "value": 33.0
+      },
+      {
+        "name": "STATUS_COMPOSER_TEXT",
+        "value": 34.0
+      },
+      {
+        "name": "LIGHTWEIGHT_CALL_UI",
+        "value": 35.0
+      },
+      {
+        "name": "AI_HOME",
+        "value": 36.0
+      },
+      {
+        "name": "LIGHTWEIGHT_CALL_BANNER",
+        "value": 37.0
+      },
+      {
+        "name": "LIGHTWEIGHT_CALL_NUX",
+        "value": 38.0
+      },
+      {
+        "name": "CALL_INFO_PAGE",
+        "value": 39.0
+      },
+      {
+        "name": "SMB_CATALOG",
+        "value": 40.0
+      },
+      {
+        "name": "SMB_CATALOG_SHARE_LINK",
+        "value": 41.0
+      },
+      {
+        "name": "SMB_CATALOG_SHARE_PRODUCT_LINK",
+        "value": 42.0
+      },
+      {
+        "name": "SMB_CATALOG_SETTINGS",
+        "value": 43.0
+      },
+      {
+        "name": "SMB_CATALOG_PRODUCT",
+        "value": 44.0
+      },
+      {
+        "name": "SMB_CATALOG_NEW_COLLECTION",
+        "value": 45.0
+      },
+      {
+        "name": "SMB_CATALOG_EDIT_COLLECTION",
+        "value": 46.0
+      },
+      {
+        "name": "SMB_CATALOG_CREATE_PRODUCT",
+        "value": 47.0
+      },
+      {
+        "name": "SMB_CATALOG_EDIT_PRODUCT",
+        "value": 48.0
+      },
+      {
+        "name": "SMB_CATALOG_NEW_COLLECTION_ADD_ITEMS",
+        "value": 49.0
+      },
+      {
+        "name": "SMB_CATALOG_COLLECTION_UPDATE_ITEMS",
+        "value": 50.0
+      },
+      {
+        "name": "SMB_CATALOG_COLLECTIONS",
+        "value": 51.0
+      },
+      {
+        "name": "SMB_CATALOG_COLLECTION_REORDER",
+        "value": 52.0
+      },
+      {
+        "name": "SMB_CATALOG_COLLECTION_PRODUCTS",
+        "value": 53.0
+      },
+      {
+        "name": "SMB_CATALOG_COLLECTION_PRODUCTS_REORDER",
+        "value": 54.0
+      },
+      {
+        "name": "CREATE_EVENT",
+        "value": 55.0
+      },
+      {
+        "name": "EVENT_PAGE",
+        "value": 56.0
+      },
+      {
+        "name": "EVENTS_IN_GROUP",
+        "value": 57.0
+      },
+      {
+        "name": "CATALOG_HOME",
+        "value": 59.0
+      },
+      {
+        "name": "CATALOG_COLLECTION",
+        "value": 60.0
+      },
+      {
+        "name": "CATALOG_ITEM",
+        "value": 61.0
+      },
+      {
+        "name": "CATALOG_CART",
+        "value": 62.0
+      },
+      {
+        "name": "FLOWS_EXPERIENCE",
+        "value": 63.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT",
+        "value": 64.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_NAME",
+        "value": 65.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_CATEGORIES",
+        "value": 66.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_DESCRIPTION",
+        "value": 67.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_WEBSITE",
+        "value": 68.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_EMAIL",
+        "value": 69.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_ADDRESS",
+        "value": 70.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_HOURS",
+        "value": 71.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_EDIT_COVER_PHOTO",
+        "value": 72.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_LINK_FB_IG",
+        "value": 73.0
+      },
+      {
+        "name": "BUSINESS_PROFILE_HELP_PAGE_LINK_FB_IG",
+        "value": 74.0
+      },
+      {
+        "name": "PAYMENTS_HOME",
+        "value": 75.0
+      },
+      {
+        "name": "PAYMENTS_HOME_TRANSACTIONS",
+        "value": 76.0
+      },
+      {
+        "name": "PAYMENTS_HOME_RECENT_MERCHANTS",
+        "value": 77.0
+      },
+      {
+        "name": "PAYMENTS_HOME_INVITE_OTHERS",
+        "value": 78.0
+      },
+      {
+        "name": "PAYMENTS_HOME_HELP",
+        "value": 79.0
+      },
+      {
+        "name": "MESSAGE_MENU",
+        "value": 80.0
+      },
+      {
+        "name": "PIN_MESSAGE_REPLACEMENT_DIALOG",
+        "value": 81.0
+      },
+      {
+        "name": "PIN_MESSAGE_EXPIRATION_DIALOG",
+        "value": 82.0
+      },
+      {
+        "name": "MY_STATUS_LIST",
+        "value": 83.0
+      },
+      {
+        "name": "ALL_STATUS_LIST",
+        "value": 84.0
+      },
+      {
+        "name": "PIN_BANNER",
+        "value": 85.0
+      },
+      {
+        "name": "CALL_BANNER",
+        "value": 86.0
+      },
+      {
+        "name": "LANDING_SCREEN",
+        "value": 87.0
+      },
+      {
+        "name": "NEW_CHAT",
+        "value": 88.0
+      },
+      {
+        "name": "GROUP_MEMBER_ADD_GROUP_CREATION",
+        "value": 89.0
+      },
+      {
+        "name": "GROUP_MEMBER_ADD_EXISTING_GROUP",
+        "value": 90.0
+      },
+      {
+        "name": "GROUP_CHAT",
+        "value": 91.0
+      },
+      {
+        "name": "GROUP_CREATION",
+        "value": 92.0
+      },
+      {
+        "name": "CONTACT_NOTIFICATION_SETTING_PAGE",
+        "value": 93.0
+      },
+      {
+        "name": "CUSTOMIZE_NOTIFICATION_SETTING_PAGE",
+        "value": 94.0
+      },
+      {
+        "name": "ADVANCED_NOTIFICATION_SETTINGS_PAGE",
+        "value": 95.0
+      },
+      {
+        "name": "ARCHIVED_MESSAGES_TAB",
+        "value": 96.0
+      },
+      {
+        "name": "STARRED_MESSAGES_TAB",
+        "value": 97.0
+      },
+      {
+        "name": "CONTACT_PERM_UPSELL",
+        "value": 98.0
+      },
+      {
+        "name": "CHANNEL_DIRECTORY_CATEGORIES",
+        "value": 99.0
+      },
+      {
+        "name": "SEARCH",
+        "value": 100.0
+      },
+      {
+        "name": "STATUS_VIEWER_SHEET",
+        "value": 101.0
+      },
+      {
+        "name": "CHANNEL_PRODUCER_INSIGHTS_REACH",
+        "value": 102.0
+      },
+      {
+        "name": "CHANNEL_PRODUCER_INSIGHTS_GROWTH",
+        "value": 103.0
+      },
+      {
+        "name": "CHANNEL_PRODUCER_INSIGHTS_FOLLOWERS",
+        "value": 104.0
+      },
+      {
+        "name": "COMMUNITY_MEDIA",
+        "value": 105.0
+      },
+      {
+        "name": "FORWARD_SELECTION_SCREEN",
+        "value": 106.0
+      },
+      {
+        "name": "CONTACT_SELECTION_SCREEN",
+        "value": 107.0
+      },
+      {
+        "name": "EXTERNAL_SHARE",
+        "value": 108.0
+      },
+      {
+        "name": "MEDIA_COMPOSER",
+        "value": 109.0
+      },
+      {
+        "name": "SHARED_TEXT_COMPOSER",
+        "value": 110.0
+      },
+      {
+        "name": "CONTACT_INFO",
+        "value": 111.0
+      },
+      {
+        "name": "LIST_MANAGEMENT",
+        "value": 112.0
+      },
+      {
+        "name": "CHANNEL_LINK",
+        "value": 113.0
+      },
+      {
+        "name": "CHANNEL_QR_CODE",
+        "value": 114.0
+      },
+      {
+        "name": "SELF_PROFILE",
+        "value": 115.0
+      },
+      {
+        "name": "PROFILE_PICTURE_PREVIEW",
+        "value": 116.0
+      },
+      {
+        "name": "COINFLIP_PREVIEW",
+        "value": 117.0
+      },
+      {
+        "name": "AVATAR_HOME",
+        "value": 118.0
+      },
+      {
+        "name": "AVATAR_POSE_AND_BACKGROUND",
+        "value": 119.0
+      },
+      {
+        "name": "CHANNEL_DIRECTORY_SEARCH",
+        "value": 120.0
+      },
+      {
+        "name": "CHANNEL_DIRECTORY_CATEGORIES_SEARCH",
+        "value": 121.0
+      },
+      {
+        "name": "CHANNEL_UPDATES_HOME_SEARCH",
+        "value": 122.0
+      },
+      {
+        "name": "UNIFIED_UPDATE_CREATION",
+        "value": 123.0
+      },
+      {
+        "name": "IAB_EXPERIENCE",
+        "value": 124.0
+      },
+      {
+        "name": "AVATAR_HOME_PREVIEW",
+        "value": 125.0
+      },
+      {
+        "name": "STICKER_STORE",
+        "value": 126.0
+      },
+      {
+        "name": "STICKER_PACK_DETAILS",
+        "value": 127.0
+      },
+      {
+        "name": "PROFILE_PICTURE_EDIT",
+        "value": 128.0
+      },
+      {
+        "name": "GENAI_VOICE_SURFACE",
+        "value": 129.0
+      },
+      {
+        "name": "STATUS_COMPOSER_VOICE",
+        "value": 130.0
+      },
+      {
+        "name": "MUSIC_DIRECTORY",
+        "value": 131.0
+      },
+      {
+        "name": "MUSIC_COMPOSER",
+        "value": 132.0
+      },
+      {
+        "name": "STATUS_AUDIENCE_SELECTOR",
+        "value": 133.0
+      },
+      {
+        "name": "CHANNEL_STARRED_POSTS",
+        "value": 134.0
+      },
+      {
+        "name": "MUSIC_ATTRIBUTION",
+        "value": 135.0
+      },
+      {
+        "name": "AI_TAB",
+        "value": 136.0
+      },
+      {
+        "name": "STARRED_MESSAGES_AND_UPDATES",
+        "value": 137.0
+      },
+      {
+        "name": "AI_VOICE_SHEET",
+        "value": 138.0
+      },
+      {
+        "name": "AI_VOICE_NATIVE_NOTIFICATION",
+        "value": 139.0
+      },
+      {
+        "name": "AI_VOICE_LIVE_ACTIVITY",
+        "value": 140.0
+      },
+      {
+        "name": "AI_VOICE_SETTING",
+        "value": 141.0
+      },
+      {
+        "name": "AI_VOICE_ONBOARDING",
+        "value": 142.0
+      },
+      {
+        "name": "STATUS_LAYOUTS_EDITOR",
+        "value": 143.0
+      },
+      {
+        "name": "IMAGINE_BOTTOM_SHEET",
+        "value": 144.0
+      },
+      {
+        "name": "APP_LAUNCHER_SHORTCUTS_SURFACE",
+        "value": 145.0
+      },
+      {
+        "name": "WAMOSUB_SUBSCRIPTION_SHEET",
+        "value": 146.0
+      },
+      {
+        "name": "WAMOSUB_ERROR_SHEET",
+        "value": 147.0
+      },
+      {
+        "name": "WAMOSUB_SUCCESS_SHEET",
+        "value": 148.0
+      },
+      {
+        "name": "WAMOSUB_SUBSCRIPTION_MANAGEMENT",
+        "value": 149.0
+      },
+      {
+        "name": "WAMOSUB_AUDIENCE_SELECTION_SHEET",
+        "value": 150.0
+      },
+      {
+        "name": "WAMOSUB_UNFOLLOW_AND_CANCEL_SHEET",
+        "value": 151.0
+      },
+      {
+        "name": "CONTACT_PERM_UPSELL_LIMITED_ACCESS_IOS18",
+        "value": 152.0
+      },
+      {
+        "name": "NO_CONTACT_ACCESS_PERMISSION_NULL_STATE_LANDING_SCREEN",
+        "value": 153.0
+      },
+      {
+        "name": "NO_CONTACT_ACCESS_PERMISSION_NULL_STATE_CALLS_SCREEN",
+        "value": 154.0
+      },
+      {
+        "name": "SMB_GREETING_MESSAGE_SETTINGS",
+        "value": 155.0
+      },
+      {
+        "name": "SMB_GREETING_MESSAGE_EDIT",
+        "value": 156.0
+      },
+      {
+        "name": "SMB_GREETING_MESSAGE_SELECT_RECIPIENTS",
+        "value": 157.0
+      },
+      {
+        "name": "SMB_AWAY_MESSAGE_SETTING",
+        "value": 158.0
+      },
+      {
+        "name": "SMB_AWAY_MESSAGE_EDIT",
+        "value": 159.0
+      },
+      {
+        "name": "SMB_AWAY_MESSAGE_SELECT_RECIPIENTS",
+        "value": 160.0
+      },
+      {
+        "name": "SMB_QUICK_REPLY_LIST",
+        "value": 161.0
+      },
+      {
+        "name": "SMB_QUICK_REPLY_EDIT",
+        "value": 162.0
+      },
+      {
+        "name": "SMB_QUICK_REPLY_ADD",
+        "value": 163.0
+      },
+      {
+        "name": "SMB_LABELS_LIST",
+        "value": 164.0
+      },
+      {
+        "name": "SMB_LABEL_DETAIL",
+        "value": 165.0
+      },
+      {
+        "name": "SMB_LABEL_EDIT",
+        "value": 166.0
+      },
+      {
+        "name": "CONTACT_CREATION",
+        "value": 167.0
+      },
+      {
+        "name": "NEW_GROUP_CONTACT_CREATION",
+        "value": 168.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_EDIT",
+        "value": 169.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_EDIT_NAME",
+        "value": 170.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_EDIT_CATEGORIES",
+        "value": 171.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_EDIT_ADDRESS",
+        "value": 172.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_EDIT_ADDRESS_MAP",
+        "value": 173.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_EDIT_BUSINESS_HOURS",
+        "value": 174.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_EDIT_BUSINESS_HOURS_DETAIL",
+        "value": 175.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_SERVICES",
+        "value": 176.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_PRICE_RANGE",
+        "value": 177.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_ABOUT",
+        "value": 178.0
+      },
+      {
+        "name": "SMB_BUSINESS_PROFILE_CHANGE_NUMBER",
+        "value": 179.0
+      },
+      {
+        "name": "SMB_LINK_FB_IG",
+        "value": 180.0
+      },
+      {
+        "name": "SMB_LEARNING_HUB",
+        "value": 181.0
+      },
+      {
+        "name": "CALLING_LIVE_ACTIVITY",
+        "value": 182.0
+      },
+      {
+        "name": "GROUP_QR_CODE",
+        "value": 183.0
+      },
+      {
+        "name": "COMMUNITY_QR_CODE",
+        "value": 184.0
+      },
+      {
+        "name": "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION",
+        "value": 185.0
+      },
+      {
+        "name": "META_AI_CHAT",
+        "value": 186.0
+      },
+      {
+        "name": "CHAT_INFO_META_AI_GLASSES",
+        "value": 187.0
+      },
+      {
+        "name": "MESSAGE_REACTIONS",
+        "value": 188.0
+      },
+      {
+        "name": "MEDIA_PICKER_SEND_BAR",
+        "value": 189.0
+      },
+      {
+        "name": "MEDIA_PICKER_MULTI",
+        "value": 190.0
+      },
+      {
+        "name": "MEDIA_PICKER_SINGLE",
+        "value": 191.0
+      },
+      {
+        "name": "VIEW_REPLIES",
+        "value": 192.0
+      },
+      {
+        "name": "BUG_REPORTING_COMPOSER_MEDIA",
+        "value": 193.0
+      },
+      {
+        "name": "CHANNEL_INVITE_ADMINS",
+        "value": 194.0
+      },
+      {
+        "name": "CHANNEL_SETTINGS",
+        "value": 195.0
+      },
+      {
+        "name": "SMB_SENT_CART_DETAILS",
+        "value": 196.0
+      },
+      {
+        "name": "SMB_ORDERS_HUB",
+        "value": 197.0
+      },
+      {
+        "name": "SMB_ORDER_DETAILS",
+        "value": 198.0
+      },
+      {
+        "name": "SMB_LABEL_EDIT_COLOR",
+        "value": 199.0
+      },
+      {
+        "name": "CHANNEL_INVITE_CONTACTS_TO_FOLLOW",
+        "value": 200.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_IMPORTED_CONTACT_WIZARD",
+        "value": 201.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_EDIT_CONTACT",
+        "value": 202.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_AUDIENCE_SELECTION",
+        "value": 203.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_CAMPAIGN_INSIGHTS",
+        "value": 204.0
+      },
+      {
+        "name": "EXTERNAL_BROWSER",
+        "value": 205.0
+      },
+      {
+        "name": "META_AI_CHAT_COMPOSER",
+        "value": 206.0
+      },
+      {
+        "name": "META_AI_MODE_SELECTION_BOTTOM_SHEET",
+        "value": 207.0
+      },
+      {
+        "name": "CHANNEL_NOTIFICATIONS_SETTINGS",
+        "value": 208.0
+      },
+      {
+        "name": "META_AI_CHAT_WITH_HISTORY",
+        "value": 209.0
+      },
+      {
+        "name": "MEDIA_HUB",
+        "value": 210.0
+      },
+      {
+        "name": "META_AI_THREAD_LIST_VIEW",
+        "value": 211.0
+      },
+      {
+        "name": "CHANNEL_DESCRIPTION_EDIT",
+        "value": 212.0
+      },
+      {
+        "name": "CHANNEL_ALERTS",
+        "value": 213.0
+      },
+      {
+        "name": "CHANNEL_FOLLOWER_SEARCH",
+        "value": 214.0
+      },
+      {
+        "name": "CHANNEL_TRANSFER_OWNERSHIP",
+        "value": 215.0
+      },
+      {
+        "name": "CHANNEL_PROFILE_PICTURE",
+        "value": 216.0
+      },
+      {
+        "name": "CHANNEL_ADMIN_PROFILE",
+        "value": 217.0
+      },
+      {
+        "name": "MESSAGE_EDIT",
+        "value": 218.0
+      },
+      {
+        "name": "GROUP_MESSAGE_INFO",
+        "value": 219.0
+      },
+      {
+        "name": "CONTACT_MESSAGE_INFO",
+        "value": 220.0
+      },
+      {
+        "name": "POLL_DETAILS",
+        "value": 221.0
+      },
+      {
+        "name": "CONTACT_VIEWER",
+        "value": 222.0
+      },
+      {
+        "name": "VOICE_LIVE_AI_SCREEN",
+        "value": 223.0
+      },
+      {
+        "name": "DELETE_MESSAGE",
+        "value": 224.0
+      },
+      {
+        "name": "GUIDE_POPUP",
+        "value": 225.0
+      },
+      {
+        "name": "CLEAR_CHAT",
+        "value": 226.0
+      },
+      {
+        "name": "DELETE_CHAT",
+        "value": 227.0
+      },
+      {
+        "name": "BLOCK_BUSINESS",
+        "value": 228.0
+      },
+      {
+        "name": "BLOCK_CONTACT",
+        "value": 229.0
+      },
+      {
+        "name": "REPORT",
+        "value": 230.0
+      },
+      {
+        "name": "ABOUT_WHATSAPP_BUSINESS",
+        "value": 231.0
+      },
+      {
+        "name": "SEND_CONTACTS",
+        "value": 232.0
+      },
+      {
+        "name": "FOA_BIZ_PROFILE",
+        "value": 233.0
+      },
+      {
+        "name": "META_AI_NEW_CHAT",
+        "value": 234.0
+      },
+      {
+        "name": "MANAGE_STORAGE_GALLERY",
+        "value": 235.0
+      },
+      {
+        "name": "STATUS_PRIVACY_PARTICIPANT_PICKER",
+        "value": 236.0
+      },
+      {
+        "name": "SMB_CATALOG_ADD_ITEM",
+        "value": 237.0
+      },
+      {
+        "name": "SMB_CATALOG_ADD_ITEM_MEDIA",
+        "value": 238.0
+      },
+      {
+        "name": "SMB_CATALOG_ADD_ITEM_ORIGIN_COUNTRY",
+        "value": 239.0
+      },
+      {
+        "name": "SMB_CATALOG_ADD_ITEM_SAVE",
+        "value": 240.0
+      },
+      {
+        "name": "SMB_CATALOG_ADD_ITEM_SAVE_ERROR",
+        "value": 241.0
+      },
+      {
+        "name": "SMB_CATALOG_ADD_ITEM_SAVE_SUCCESS",
+        "value": 242.0
+      },
+      {
+        "name": "SMB_LISTS_MANAGE",
+        "value": 243.0
+      },
+      {
+        "name": "SMB_LISTS_CREATE",
+        "value": 244.0
+      },
+      {
+        "name": "SMB_LISTS_PICKER",
+        "value": 245.0
+      },
+      {
+        "name": "CHANNEL_ADMIN_PROFILE_VIEWER",
+        "value": 246.0
+      },
+      {
+        "name": "CHANNEL_ADMIN_PROFILE_PICTURE",
+        "value": 247.0
+      },
+      {
+        "name": "PTT_WIDGET",
+        "value": 248.0
+      },
+      {
+        "name": "BIOMETRIC_UNLOCK",
+        "value": 249.0
+      },
+      {
+        "name": "LOCKED_CHATS",
+        "value": 250.0
+      },
+      {
+        "name": "REACTION_DETAILS",
+        "value": 251.0
+      },
+      {
+        "name": "STORAGE_WARNING",
+        "value": 252.0
+      },
+      {
+        "name": "STICKER_BROWSER",
+        "value": 253.0
+      },
+      {
+        "name": "COMPANION_LOADING",
+        "value": 254.0
+      },
+      {
+        "name": "COMPANION_REGISTRATION",
+        "value": 255.0
+      },
+      {
+        "name": "REGISTRATION_WELCOME",
+        "value": 256.0
+      },
+      {
+        "name": "CALLS_TAB_SECONDARY",
+        "value": 257.0
+      },
+      {
+        "name": "MERCHANT_APP_UNIVERSAL_LINK",
+        "value": 258.0
+      },
+      {
+        "name": "MERCHANT_APP_DEEPLINK",
+        "value": 259.0
+      },
+      {
+        "name": "PINBOARD",
+        "value": 260.0
+      },
+      {
+        "name": "MERCHANT_APP_STORE",
+        "value": 261.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumTsSurface",
+    "matches": "TS_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "TS_SURFACE",
+    "UNKNOWN",
+    "COMMUNITY_HOME",
+    "COMMUNITY_TAB",
+    "CHAT_THREAD",
+    "CHAT_INFO_PAGE",
+    "CHAT_LIST",
+    "COMMUNITY_NAVIGATION",
+    "BACKGROUND",
+    "RESIGN",
+    "SUBGROUP_SWITCHER",
+    "COMMUNITY_COMPOSER",
+    "MEDIA_VIEWER",
+    "ALL_MEDIA",
+    "STREAMING_MEDIA_VIEWER",
+    "CALLS_HOME_TAB",
+    "IN_CALL_UI",
+    "STATUS_HOME_TAB",
+    "STATUS_COMPOSER",
+    "STATUS_VIEW",
+    "CAMERA",
+    "PHOTO_VIDEO_LIBRARY",
+    "SETTINGS_HOME_TAB",
+    "TOOLS_TAB",
+    "COMMUNITY_SETTINGS",
+    "CHANNEL_UPDATES_HOME",
+    "CHANNEL_THREAD",
+    "CHANNEL_DIRECTORY",
+    "CHANNEL_PROFILE",
+    "CHANNEL_FORWARD",
+    "CHANNEL_PRODUCER_MEDIA_EDITOR",
+    "CHANNEL_CREATE",
+    "CHANNEL_EDIT",
+    "CHANNEL_DELETE",
+    "STATUS_COMPOSER_TEXT",
+    "LIGHTWEIGHT_CALL_UI",
+    "AI_HOME",
+    "LIGHTWEIGHT_CALL_BANNER",
+    "LIGHTWEIGHT_CALL_NUX",
+    "CALL_INFO_PAGE",
+    "SMB_CATALOG",
+    "SMB_CATALOG_SHARE_LINK",
+    "SMB_CATALOG_SHARE_PRODUCT_LINK",
+    "SMB_CATALOG_SETTINGS",
+    "SMB_CATALOG_PRODUCT",
+    "SMB_CATALOG_NEW_COLLECTION",
+    "SMB_CATALOG_EDIT_COLLECTION",
+    "SMB_CATALOG_CREATE_PRODUCT",
+    "SMB_CATALOG_EDIT_PRODUCT",
+    "SMB_CATALOG_NEW_COLLECTION_ADD_ITEMS",
+    "SMB_CATALOG_COLLECTION_UPDATE_ITEMS",
+    "SMB_CATALOG_COLLECTIONS",
+    "SMB_CATALOG_COLLECTION_REORDER",
+    "SMB_CATALOG_COLLECTION_PRODUCTS",
+    "SMB_CATALOG_COLLECTION_PRODUCTS_REORDER",
+    "CREATE_EVENT",
+    "EVENT_PAGE",
+    "EVENTS_IN_GROUP",
+    "CATALOG_HOME",
+    "CATALOG_COLLECTION",
+    "CATALOG_ITEM",
+    "CATALOG_CART",
+    "FLOWS_EXPERIENCE",
+    "BUSINESS_PROFILE_EDIT",
+    "BUSINESS_PROFILE_EDIT_NAME",
+    "BUSINESS_PROFILE_EDIT_CATEGORIES",
+    "BUSINESS_PROFILE_EDIT_DESCRIPTION",
+    "BUSINESS_PROFILE_EDIT_WEBSITE",
+    "BUSINESS_PROFILE_EDIT_EMAIL",
+    "BUSINESS_PROFILE_EDIT_ADDRESS",
+    "BUSINESS_PROFILE_EDIT_HOURS",
+    "BUSINESS_PROFILE_EDIT_COVER_PHOTO",
+    "BUSINESS_PROFILE_LINK_FB_IG",
+    "BUSINESS_PROFILE_HELP_PAGE_LINK_FB_IG",
+    "PAYMENTS_HOME",
+    "PAYMENTS_HOME_TRANSACTIONS",
+    "PAYMENTS_HOME_RECENT_MERCHANTS",
+    "PAYMENTS_HOME_INVITE_OTHERS",
+    "PAYMENTS_HOME_HELP",
+    "MESSAGE_MENU",
+    "PIN_MESSAGE_REPLACEMENT_DIALOG",
+    "PIN_MESSAGE_EXPIRATION_DIALOG",
+    "MY_STATUS_LIST",
+    "ALL_STATUS_LIST",
+    "PIN_BANNER",
+    "CALL_BANNER",
+    "LANDING_SCREEN",
+    "NEW_CHAT",
+    "GROUP_MEMBER_ADD_GROUP_CREATION",
+    "GROUP_MEMBER_ADD_EXISTING_GROUP",
+    "GROUP_CHAT",
+    "GROUP_CREATION",
+    "CONTACT_NOTIFICATION_SETTING_PAGE",
+    "CUSTOMIZE_NOTIFICATION_SETTING_PAGE",
+    "ADVANCED_NOTIFICATION_SETTINGS_PAGE",
+    "ARCHIVED_MESSAGES_TAB",
+    "STARRED_MESSAGES_TAB",
+    "CONTACT_PERM_UPSELL",
+    "CHANNEL_DIRECTORY_CATEGORIES",
+    "SEARCH",
+    "STATUS_VIEWER_SHEET",
+    "CHANNEL_PRODUCER_INSIGHTS_REACH",
+    "CHANNEL_PRODUCER_INSIGHTS_GROWTH",
+    "CHANNEL_PRODUCER_INSIGHTS_FOLLOWERS",
+    "COMMUNITY_MEDIA",
+    "FORWARD_SELECTION_SCREEN",
+    "CONTACT_SELECTION_SCREEN",
+    "EXTERNAL_SHARE",
+    "MEDIA_COMPOSER",
+    "SHARED_TEXT_COMPOSER",
+    "CONTACT_INFO",
+    "LIST_MANAGEMENT",
+    "CHANNEL_LINK",
+    "CHANNEL_QR_CODE",
+    "SELF_PROFILE",
+    "PROFILE_PICTURE_PREVIEW",
+    "COINFLIP_PREVIEW",
+    "AVATAR_HOME",
+    "AVATAR_POSE_AND_BACKGROUND",
+    "CHANNEL_DIRECTORY_SEARCH",
+    "CHANNEL_DIRECTORY_CATEGORIES_SEARCH",
+    "CHANNEL_UPDATES_HOME_SEARCH",
+    "UNIFIED_UPDATE_CREATION",
+    "IAB_EXPERIENCE",
+    "AVATAR_HOME_PREVIEW",
+    "STICKER_STORE",
+    "STICKER_PACK_DETAILS",
+    "PROFILE_PICTURE_EDIT",
+    "GENAI_VOICE_SURFACE",
+    "STATUS_COMPOSER_VOICE",
+    "MUSIC_DIRECTORY",
+    "MUSIC_COMPOSER",
+    "STATUS_AUDIENCE_SELECTOR",
+    "CHANNEL_STARRED_POSTS",
+    "MUSIC_ATTRIBUTION",
+    "AI_TAB",
+    "STARRED_MESSAGES_AND_UPDATES",
+    "AI_VOICE_SHEET",
+    "AI_VOICE_NATIVE_NOTIFICATION",
+    "AI_VOICE_LIVE_ACTIVITY",
+    "AI_VOICE_SETTING",
+    "AI_VOICE_ONBOARDING",
+    "STATUS_LAYOUTS_EDITOR",
+    "IMAGINE_BOTTOM_SHEET",
+    "APP_LAUNCHER_SHORTCUTS_SURFACE",
+    "WAMOSUB_SUBSCRIPTION_SHEET",
+    "WAMOSUB_ERROR_SHEET",
+    "WAMOSUB_SUCCESS_SHEET",
+    "WAMOSUB_SUBSCRIPTION_MANAGEMENT",
+    "WAMOSUB_AUDIENCE_SELECTION_SHEET",
+    "WAMOSUB_UNFOLLOW_AND_CANCEL_SHEET",
+    "CONTACT_PERM_UPSELL_LIMITED_ACCESS_IOS18",
+    "NO_CONTACT_ACCESS_PERMISSION_NULL_STATE_LANDING_SCREEN",
+    "NO_CONTACT_ACCESS_PERMISSION_NULL_STATE_CALLS_SCREEN",
+    "SMB_GREETING_MESSAGE_SETTINGS",
+    "SMB_GREETING_MESSAGE_EDIT",
+    "SMB_GREETING_MESSAGE_SELECT_RECIPIENTS",
+    "SMB_AWAY_MESSAGE_SETTING",
+    "SMB_AWAY_MESSAGE_EDIT",
+    "SMB_AWAY_MESSAGE_SELECT_RECIPIENTS",
+    "SMB_QUICK_REPLY_LIST",
+    "SMB_QUICK_REPLY_EDIT",
+    "SMB_QUICK_REPLY_ADD",
+    "SMB_LABELS_LIST",
+    "SMB_LABEL_DETAIL",
+    "SMB_LABEL_EDIT",
+    "CONTACT_CREATION",
+    "NEW_GROUP_CONTACT_CREATION",
+    "SMB_BUSINESS_PROFILE_EDIT",
+    "SMB_BUSINESS_PROFILE_EDIT_NAME",
+    "SMB_BUSINESS_PROFILE_EDIT_CATEGORIES",
+    "SMB_BUSINESS_PROFILE_EDIT_ADDRESS",
+    "SMB_BUSINESS_PROFILE_EDIT_ADDRESS_MAP",
+    "SMB_BUSINESS_PROFILE_EDIT_BUSINESS_HOURS",
+    "SMB_BUSINESS_PROFILE_EDIT_BUSINESS_HOURS_DETAIL",
+    "SMB_BUSINESS_PROFILE_SERVICES",
+    "SMB_BUSINESS_PROFILE_PRICE_RANGE",
+    "SMB_BUSINESS_PROFILE_ABOUT",
+    "SMB_BUSINESS_PROFILE_CHANGE_NUMBER",
+    "SMB_LINK_FB_IG",
+    "SMB_LEARNING_HUB",
+    "CALLING_LIVE_ACTIVITY",
+    "GROUP_QR_CODE",
+    "COMMUNITY_QR_CODE",
+    "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION",
+    "META_AI_CHAT",
+    "CHAT_INFO_META_AI_GLASSES",
+    "MESSAGE_REACTIONS",
+    "MEDIA_PICKER_SEND_BAR",
+    "MEDIA_PICKER_MULTI",
+    "MEDIA_PICKER_SINGLE",
+    "VIEW_REPLIES",
+    "BUG_REPORTING_COMPOSER_MEDIA",
+    "CHANNEL_INVITE_ADMINS",
+    "CHANNEL_SETTINGS",
+    "SMB_SENT_CART_DETAILS",
+    "SMB_ORDERS_HUB",
+    "SMB_ORDER_DETAILS",
+    "SMB_LABEL_EDIT_COLOR",
+    "CHANNEL_INVITE_CONTACTS_TO_FOLLOW",
+    "BUSINESS_BROADCAST_IMPORTED_CONTACT_WIZARD",
+    "BUSINESS_BROADCAST_EDIT_CONTACT",
+    "BUSINESS_BROADCAST_AUDIENCE_SELECTION",
+    "BUSINESS_BROADCAST_CAMPAIGN_INSIGHTS",
+    "EXTERNAL_BROWSER",
+    "META_AI_CHAT_COMPOSER",
+    "META_AI_MODE_SELECTION_BOTTOM_SHEET",
+    "CHANNEL_NOTIFICATIONS_SETTINGS",
+    "META_AI_CHAT_WITH_HISTORY",
+    "MEDIA_HUB",
+    "META_AI_THREAD_LIST_VIEW",
+    "CHANNEL_DESCRIPTION_EDIT",
+    "CHANNEL_ALERTS",
+    "CHANNEL_FOLLOWER_SEARCH",
+    "CHANNEL_TRANSFER_OWNERSHIP",
+    "CHANNEL_PROFILE_PICTURE",
+    "CHANNEL_ADMIN_PROFILE",
+    "MESSAGE_EDIT",
+    "GROUP_MESSAGE_INFO",
+    "CONTACT_MESSAGE_INFO",
+    "POLL_DETAILS",
+    "CONTACT_VIEWER",
+    "VOICE_LIVE_AI_SCREEN",
+    "DELETE_MESSAGE",
+    "GUIDE_POPUP",
+    "CLEAR_CHAT",
+    "DELETE_CHAT",
+    "BLOCK_BUSINESS",
+    "BLOCK_CONTACT",
+    "REPORT",
+    "ABOUT_WHATSAPP_BUSINESS",
+    "SEND_CONTACTS",
+    "FOA_BIZ_PROFILE",
+    "META_AI_NEW_CHAT",
+    "MANAGE_STORAGE_GALLERY",
+    "STATUS_PRIVACY_PARTICIPANT_PICKER",
+    "SMB_CATALOG_ADD_ITEM",
+    "SMB_CATALOG_ADD_ITEM_MEDIA",
+    "SMB_CATALOG_ADD_ITEM_ORIGIN_COUNTRY",
+    "SMB_CATALOG_ADD_ITEM_SAVE",
+    "SMB_CATALOG_ADD_ITEM_SAVE_ERROR",
+    "SMB_CATALOG_ADD_ITEM_SAVE_SUCCESS",
+    "SMB_LISTS_MANAGE",
+    "SMB_LISTS_CREATE",
+    "SMB_LISTS_PICKER",
+    "CHANNEL_ADMIN_PROFILE_VIEWER",
+    "CHANNEL_ADMIN_PROFILE_PICTURE",
+    "PTT_WIDGET",
+    "BIOMETRIC_UNLOCK",
+    "LOCKED_CHATS",
+    "REACTION_DETAILS",
+    "STORAGE_WARNING",
+    "STICKER_BROWSER",
+    "COMPANION_LOADING",
+    "COMPANION_REGISTRATION",
+    "REGISTRATION_WELCOME",
+    "CALLS_TAB_SECONDARY",
+    "MERCHANT_APP_UNIVERSAL_LINK",
+    "MERCHANT_APP_DEEPLINK",
+    "PINBOARD",
+    "MERCHANT_APP_STORE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAiModeSelector.react",
+      "WAWebAnnotation.react",
+      "WAWebBotJourneyLogger",
+      "WAWebBotJourneyWamEvent",
+      "WAWebChannelCoreEventWamEvent",
+      "WAWebChannelDiscoveryVisibilityTrackingWamEvent",
+      "WAWebChannelOpenFromInviteWamEvent",
+      "WAWebChannelOpenWamEvent",
+      "WAWebChannelStatusPlayerOverflowMenu.react",
+      "WAWebChatSearchDrawer.react",
+      "WAWebChatlistPanelFunctionalLegacy.react",
+      "WAWebContactNotificationSettingUserJourneyWamEvent",
+      "WAWebCrashLogWamEvent",
+      "WAWebForwardActionUserJourneyLogger",
+      "WAWebForwardActionUserJourneyWamEvent",
+      "WAWebGroupHistoryPostJoinSendFlow",
+      "WAWebGroupHistoryReceiverUserJourneyWamEvent",
+      "WAWebGroupHistorySenderUserJourneyWamEvent",
+      "WAWebGroupInfoParticipantsSection.react",
+      "WAWebGroupJourneyWamEvent",
+      "WAWebGroupMemberAddingUserJourneyWamEvent",
+      "WAWebGroupMemberTagUpdateWamEvent",
+      "WAWebGroupNotificationContextCardActions.react",
+      "WAWebGroupParticipantSearch.react",
+      "WAWebMemberLabelCreateUpdateModal.react",
+      "WAWebMessageGroupNotification.react",
+      "WAWebMessageText.react",
+      "WAWebMessagingUserJourneyWamEvent",
+      "WAWebMuteAllMentionsRow.react",
+      "WAWebNewsletterApiParse",
+      "WAWebNewsletterAttributionLogging",
+      "WAWebNewsletterChatCell.react",
+      "WAWebNewsletterChatMenuDropdown.react",
+      "WAWebNewsletterContextMenu",
+      "WAWebNewsletterConversationPanelHeader.react",
+      "WAWebNewsletterDirectoryCategoriesPreviewDrawerContent.react",
+      "WAWebNewsletterDirectoryCategoriesSearchContent.react",
+      "WAWebNewsletterDirectoryCell.react",
+      "WAWebNewsletterDirectoryDrawer.react",
+      "WAWebNewsletterDismissAdminPopup.react",
+      "WAWebNewsletterDrawerListItem.react",
+      "WAWebNewsletterFollowerInviteMessageComponent.react",
+      "WAWebNewsletterInboxSearch.react",
+      "WAWebNewsletterInfoTopCard.react",
+      "WAWebNewsletterIntegritySection.react",
+      "WAWebNewsletterLoggingUtils",
+      "WAWebNewsletterRecommendedV3.react",
+      "WAWebPinInChatInteractionWamEvent",
+      "WAWebPinnedMessagesUserJourneyLogger",
+      "WAWebPttMessageUserJourneyLogger",
+      "WAWebPttMessageUserJourneyWamEvent",
+      "WAWebQuotedMessageUserJourneyLogger",
+      "WAWebQuotedMessageUserJourneyWamEvent",
+      "WAWebReactionUserJourneyLogger",
+      "WAWebReactionUserJourneyWamEvent",
+      "WAWebReportNewsletterPopup.react",
+      "WAWebReportNewsletterPostPopup.react",
+      "WAWebReportNewsletterStatusPopup.react",
+      "WAWebSearchUserJourneyLogger",
+      "WAWebSearchUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 71
+  }
+}

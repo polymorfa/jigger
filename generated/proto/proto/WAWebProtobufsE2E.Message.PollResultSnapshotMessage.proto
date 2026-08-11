@@ -1,0 +1,6 @@
+message PollResultSnapshotMessage {
+  optional bytes name = 1;
+  optional PollVote pollVotes = 2;
+  optional ContextInfo contextInfo = 3;
+  optional bytes pollType = 4;
+}

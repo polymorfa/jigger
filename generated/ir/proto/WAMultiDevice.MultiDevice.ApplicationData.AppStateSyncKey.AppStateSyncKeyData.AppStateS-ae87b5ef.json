@@ -1,0 +1,37 @@
+{
+  "id": "proto:WAMultiDevice.MultiDevice.ApplicationData.AppStateSyncKey.AppStateSyncKeyData.AppStateSyncKeyFingerprint",
+  "kind": "proto",
+  "name": "WAMultiDevice.MultiDevice.ApplicationData.AppStateSyncKey.AppStateSyncKeyData.AppStateSyncKeyFingerprint",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "currentIndex": {
+        "number": 2
+      },
+      "deviceIndexes": {
+        "number": 3
+      },
+      "rawId": {
+        "number": 1
+      }
+    },
+    "module": "WAMultiDevice.pb"
+  },
+  "evidence": {
+    "module": "WAMultiDevice.pb",
+    "matches": "name = \"MultiDevice.ApplicationData.AppStateSyncKey.AppStateSyncKeyData.AppStateSyncKeyFingerprint\""
+  },
+  "literals": [
+    "AppStateSyncKeyFingerprint"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAConvertAppData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

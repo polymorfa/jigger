@@ -1,0 +1,45 @@
+{
+  "id": "ab:enable_calling_phone_number_privacy",
+  "kind": "ab",
+  "name": "enable_calling_phone_number_privacy",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 17731,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_calling_phone_number_privacy:\\s*\\[\\s*17731"
+  },
+  "literals": [
+    "enable_calling_phone_number_privacy",
+    "17731"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipLidUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

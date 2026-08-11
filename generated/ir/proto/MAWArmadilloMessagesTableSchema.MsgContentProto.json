@@ -1,0 +1,69 @@
+{
+  "id": "proto:MAWArmadilloMessagesTableSchema.MsgContentProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMessagesTableSchema.MsgContentProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "adminMsgContent": {
+        "number": 2
+      },
+      "adminType": {
+        "number": 3
+      },
+      "authorName": {
+        "number": 9
+      },
+      "commands": {
+        "number": 12,
+        "type_name": "MAWArmadilloMessagesTableSchema.MsgContentCommandProto"
+      },
+      "content": {
+        "number": 1
+      },
+      "mentionedJids": {
+        "number": 11
+      },
+      "obsoleteExpiration": {
+        "number": 4
+      },
+      "obsoleteTs": {
+        "number": 5
+      },
+      "protobuf": {
+        "number": 7
+      },
+      "screenshotActionType": {
+        "number": 8
+      },
+      "subtype": {
+        "number": 6
+      },
+      "version": {
+        "number": 10
+      }
+    },
+    "module": "MAWArmadilloMessagesTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMessagesTableSchema.pb",
+    "matches": "name = \"MsgContentProto\""
+  },
+  "literals": [
+    "MsgContentProto"
+  ],
+  "graph": {
+    "deps": [
+      "MAWArmadilloContactsTableSchema.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWArmadilloEditMsgHistoryTableSchema.pb",
+      "MAWArmadilloUnrenderedMessagesTableSchema.pb",
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

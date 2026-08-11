@@ -1,0 +1,46 @@
+{
+  "id": "enum:NOTICE_TRIGGERED_BY",
+  "kind": "enum",
+  "name": "NOTICE_TRIGGERED_BY",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumNoticeTriggeredBy",
+    "variants": [
+      {
+        "name": "AUTO_START",
+        "value": 0.0
+      },
+      {
+        "name": "BANNER",
+        "value": 1.0
+      },
+      {
+        "name": "DEEP_LINK",
+        "value": 2.0
+      },
+      {
+        "name": "JUST_IN_TIME",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumNoticeTriggeredBy",
+    "matches": "NOTICE_TRIGGERED_BY\\s*[:=]"
+  },
+  "literals": [
+    "NOTICE_TRIGGERED_BY",
+    "AUTO_START",
+    "BANNER",
+    "DEEP_LINK",
+    "JUST_IN_TIME"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebUserNoticeWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

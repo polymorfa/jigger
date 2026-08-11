@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebReportProductJobMutation",
+  "kind": "mex",
+  "name": "WAWebReportProductJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27419506181072609",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation ReportProductJobMutation($input) {\n  xwa_whatsapp_catalog_report_product {\n    __typename\n    success\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebReportProductJobMutation.graphql",
+    "matches": "id: \"27419506181072609\""
+  },
+  "literals": [
+    "27419506181072609",
+    "WAWebReportProductJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebReportProductJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

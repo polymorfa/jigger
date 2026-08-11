@@ -1,0 +1,39 @@
+{
+  "id": "enum:ENUM_IMAGE_VIDEO",
+  "kind": "enum",
+  "name": "ENUM_IMAGE_VIDEO",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBizCtwaNativeAdEnums",
+    "variants": [
+      {
+        "name": "image",
+        "value": "image"
+      },
+      {
+        "name": "video",
+        "value": "video"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizCtwaNativeAdEnums",
+    "matches": "ENUM_IMAGE_VIDEO\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_IMAGE_VIDEO",
+    "image",
+    "video"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInBizCtwaNativeAdDeprecatedIQErrorResponseOptionalFromMixin",
+      "WASmaxInBizCtwaNativeAdUploadAdMediaResponseSuccess"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

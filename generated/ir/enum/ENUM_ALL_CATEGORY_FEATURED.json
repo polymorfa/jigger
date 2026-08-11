@@ -1,0 +1,42 @@
+{
+  "id": "enum:ENUM_ALL_CATEGORY_FEATURED",
+  "kind": "enum",
+  "name": "ENUM_ALL_CATEGORY_FEATURED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBotEnums",
+    "variants": [
+      {
+        "name": "all",
+        "value": "all"
+      },
+      {
+        "name": "category",
+        "value": "category"
+      },
+      {
+        "name": "featured",
+        "value": "featured"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBotEnums",
+    "matches": "ENUM_ALL_CATEGORY_FEATURED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ALL_CATEGORY_FEATURED",
+    "all",
+    "category",
+    "featured"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBotBotListResponseSuccessV2",
+      "WASmaxInBotBotListResponseSuccessV3"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

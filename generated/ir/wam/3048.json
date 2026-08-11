@@ -1,0 +1,42 @@
+{
+  "id": "wam:3048",
+  "kind": "wam",
+  "name": "AdvMetadataCreationFailure",
+  "data": {
+    "kind": "wam",
+    "event_id": 3048,
+    "fields": {
+      "advMetadataIsMe": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "adv_metadata_is_me"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebAdvMetadataCreationFailureWamEvent",
+    "matches": "AdvMetadataCreationFailure:\\s*\\[\\s*3048"
+  },
+  "literals": [
+    "3048"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebGetGroupKeyDistributionMsg",
+      "WAWebGroupGetCompanionDsmPhashMsg",
+      "WAWebICDCMetaApi",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAWebProtobufsAICommonDeprecated.AIRichResponseInlineImageMetadata",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommonDeprecated.AIRichResponseInlineImageMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "alignment": {
+        "number": 3
+      },
+      "imageText": {
+        "number": 2
+      },
+      "imageUrl": {
+        "number": 1,
+        "type_name": "WAWebProtobufsAICommonDeprecated.AIRichResponseImageURL"
+      },
+      "tapLinkUrl": {
+        "number": 4
+      }
+    },
+    "module": "WAWebProtobufsAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseInlineImageMetadata\""
+  },
+  "literals": [
+    "AIRichResponseInlineImageMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebProtobufsE2E.pb",
+      "WAWebRichResponseGenerateUtils",
+      "WAWebRichResponseParseUtils",
+      "WAWebRichResponseUnknownFragmentUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

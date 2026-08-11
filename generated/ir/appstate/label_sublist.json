@@ -1,0 +1,52 @@
+{
+  "id": "appstate:label_sublist",
+  "kind": "appstate",
+  "name": "LabelSublist",
+  "data": {
+    "kind": "appstate",
+    "index_name": "label_sublist",
+    "collection": "regular",
+    "value_field": "labelSublistAction",
+    "index_fields": {
+      "chatJidIndex": 2
+    }
+  },
+  "evidence": {
+    "module": "WAWebLabelSublistSync",
+    "matches": "Actions\\.LabelSublist"
+  },
+  "literals": [
+    "label_sublist",
+    "LabelSublist",
+    "labelSublistAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebApiContact",
+      "WAWebBackendApi",
+      "WAWebDBLabelSublistDatabaseApi",
+      "WAWebLid1X1MigrationGating",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSchemaLabelSublist",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdCoreApi",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdIndexUtils",
+      "WAWebWid",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebApplyLeadStageSublistAction",
+      "WAWebCollectionHandlerActions",
+      "WAWebEditLabelAssociationBridge"
+    ],
+    "dep_count": 18,
+    "dependent_count": 3
+  }
+}

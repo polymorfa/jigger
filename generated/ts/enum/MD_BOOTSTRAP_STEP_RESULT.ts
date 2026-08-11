@@ -1,0 +1,4 @@
+export enum MDBOOTSTRAPSTEPRESULT {
+  SUCCESS = 1,
+  FAILURE = 2,
+}

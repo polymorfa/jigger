@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_join_ongoing_call_refactor",
+  "kind": "ab",
+  "name": "enable_join_ongoing_call_refactor",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34093,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_join_ongoing_call_refactor:\\s*\\[\\s*34093"
+  },
+  "literals": [
+    "enable_join_ongoing_call_refactor",
+    "34093"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

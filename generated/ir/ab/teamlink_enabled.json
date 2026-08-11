@@ -1,0 +1,45 @@
+{
+  "id": "ab:teamlink_enabled",
+  "kind": "ab",
+  "name": "teamlink_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33978,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "teamlink_enabled:\\s*\\[\\s*33978"
+  },
+  "literals": [
+    "teamlink_enabled",
+    "33978"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebTeamLinkGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

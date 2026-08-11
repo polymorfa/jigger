@@ -1,0 +1,35 @@
+{
+  "id": "sig:message/my_addons",
+  "kind": "sig",
+  "name": "NewslettersMyAddOnsResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "my_addons"
+    ],
+    "responds_to": "NewslettersMyAddOns"
+  },
+  "evidence": {
+    "module": "WASmaxInNewslettersMyAddOnsResponseSuccess",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "my_addons"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInNewslettersIQResultResponseMixin",
+      "WASmaxInNewslettersNewsletterMessageMyAddOnsMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxNewslettersMyAddOnsRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

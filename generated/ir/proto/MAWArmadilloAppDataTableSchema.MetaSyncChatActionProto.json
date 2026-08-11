@@ -1,0 +1,48 @@
+{
+  "id": "proto:MAWArmadilloAppDataTableSchema.MetaSyncChatActionProto",
+  "kind": "proto",
+  "name": "MAWArmadilloAppDataTableSchema.MetaSyncChatActionProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "archived": {
+        "number": 3
+      },
+      "chatJid": {
+        "number": 2
+      },
+      "messageRange": {
+        "number": 5,
+        "type_name": "MAWArmadilloAppDataTableSchema.MetaSyncMessageRangeProto"
+      },
+      "read": {
+        "number": 6
+      },
+      "ts": {
+        "number": 4
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "MAWArmadilloAppDataTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloAppDataTableSchema.pb",
+    "matches": "name = \"MetaSyncChatActionProto\""
+  },
+  "literals": [
+    "MetaSyncChatActionProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

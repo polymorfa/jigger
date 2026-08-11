@@ -1,0 +1,98 @@
+{
+  "id": "proto:MAWArmadilloThreadsTableSchema.ThreadsTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloThreadsTableSchema.ThreadsTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "archived": {
+        "number": 13
+      },
+      "authoritativeThreadKey": {
+        "number": 20
+      },
+      "cannotReplyReason": {
+        "number": 14
+      },
+      "chatId": {
+        "number": 15
+      },
+      "deduplicationKey": {
+        "number": 19
+      },
+      "didInsertDualThreadCutoverAdminMsg": {
+        "number": 22
+      },
+      "folder": {
+        "number": 4
+      },
+      "isMigratedLocally": {
+        "number": 17
+      },
+      "jid": {
+        "number": 1
+      },
+      "lastReadMsg": {
+        "number": 7
+      },
+      "lastReadMsgReceiptSent": {
+        "number": 8
+      },
+      "lastReadMsgTs": {
+        "number": 9
+      },
+      "muteCallsExpireTimeMs": {
+        "number": 12
+      },
+      "muteExpireTimeMs": {
+        "number": 11
+      },
+      "newestMsg": {
+        "number": 5
+      },
+      "newestMsgTs": {
+        "number": 10
+      },
+      "oldestMsg": {
+        "number": 6
+      },
+      "optimisticThreadKey": {
+        "number": 16
+      },
+      "snippetMsg": {
+        "number": 18
+      },
+      "snippetMsgTs": {
+        "number": 21
+      },
+      "threadOrder": {
+        "number": 2
+      },
+      "unbumpFromTs": {
+        "number": 23
+      },
+      "unbumpToTs": {
+        "number": 24
+      }
+    },
+    "module": "MAWArmadilloThreadsTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloThreadsTableSchema.pb",
+    "matches": "name = \"ThreadsTableSchemaProto\""
+  },
+  "literals": [
+    "ThreadsTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

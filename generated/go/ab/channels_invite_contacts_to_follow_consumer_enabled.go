@@ -1,0 +1,2 @@
+// ABChannelsInviteContactsToFollowConsumerEnabled is A/B property 16790 (bool), default false.
+const ABChannelsInviteContactsToFollowConsumerEnabled = "channels_invite_contacts_to_follow_consumer_enabled"

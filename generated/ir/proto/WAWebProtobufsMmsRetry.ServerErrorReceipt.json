@@ -1,0 +1,38 @@
+{
+  "id": "proto:WAWebProtobufsMmsRetry.ServerErrorReceipt",
+  "kind": "proto",
+  "name": "WAWebProtobufsMmsRetry.ServerErrorReceipt",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "stanzaId": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsMmsRetry.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMmsRetry.pb",
+    "matches": "name = \"ServerErrorReceipt\""
+  },
+  "literals": [
+    "ServerErrorReceipt"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebCryptoMediaRetry",
+      "WAWebHandleMediaRetryNotification",
+      "WAWebLinkPreviewChatAction",
+      "WAWebNonMessageDataRequestHandlerGenLinkPreview",
+      "WAWebNonMessageDataRequestHandlerUploadSticker",
+      "WAWebProtobufsE2E.pb",
+      "WAWebRequestMediaReuploadBridge"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

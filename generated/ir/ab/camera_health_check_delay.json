@@ -1,0 +1,42 @@
+{
+  "id": "ab:camera_health_check_delay",
+  "kind": "ab",
+  "name": "camera_health_check_delay",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8739,
+    "type": "int",
+    "default": "5e3",
+    "alt_default": "5e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "camera_health_check_delay:\\s*\\[\\s*8739"
+  },
+  "literals": [
+    "camera_health_check_delay",
+    "8739"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

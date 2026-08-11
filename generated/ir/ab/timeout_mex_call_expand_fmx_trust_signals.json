@@ -1,0 +1,42 @@
+{
+  "id": "ab:timeout_mex_call_expand_fmx_trust_signals",
+  "kind": "ab",
+  "name": "timeout_mex_call_expand_fmx_trust_signals",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27862,
+    "type": "int",
+    "default": 600,
+    "alt_default": 600
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "timeout_mex_call_expand_fmx_trust_signals:\\s*\\[\\s*27862"
+  },
+  "literals": [
+    "timeout_mex_call_expand_fmx_trust_signals",
+    "27862"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

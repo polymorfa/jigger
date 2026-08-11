@@ -1,0 +1,72 @@
+{
+  "id": "enum:SHARE_CONTENT_USER_JOURNEY_ACTION",
+  "kind": "enum",
+  "name": "SHARE_CONTENT_USER_JOURNEY_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumShareContentUserJourneyAction",
+    "variants": [
+      {
+        "name": "CONTACT_PICKER_DISPLAYED",
+        "value": 1.0
+      },
+      {
+        "name": "RECIPIENTS_SELECTED",
+        "value": 2.0
+      },
+      {
+        "name": "CONTENT_SHARED",
+        "value": 4.0
+      },
+      {
+        "name": "CANCEL",
+        "value": 5.0
+      },
+      {
+        "name": "ABANDONED",
+        "value": 6.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_DISPLAYED",
+        "value": 7.0
+      },
+      {
+        "name": "SHARED_TEXT_COMPOSER_DISPLAYED",
+        "value": 8.0
+      },
+      {
+        "name": "FUNNEL_START",
+        "value": 9.0
+      },
+      {
+        "name": "SAVE_STATUS",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumShareContentUserJourneyAction",
+    "matches": "SHARE_CONTENT_USER_JOURNEY_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "SHARE_CONTENT_USER_JOURNEY_ACTION",
+    "CONTACT_PICKER_DISPLAYED",
+    "RECIPIENTS_SELECTED",
+    "CONTENT_SHARED",
+    "CANCEL",
+    "ABANDONED",
+    "MEDIA_COMPOSER_DISPLAYED",
+    "SHARED_TEXT_COMPOSER_DISPLAYED",
+    "FUNNEL_START",
+    "SAVE_STATUS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebShareContentUserJourneyLogger",
+      "WAWebShareContentUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

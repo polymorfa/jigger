@@ -1,0 +1,50 @@
+{
+  "id": "ab:web_detached_dom_unmount_cleanup",
+  "kind": "ab",
+  "name": "web_detached_dom_unmount_cleanup",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33393,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_detached_dom_unmount_cleanup:\\s*\\[\\s*33393"
+  },
+  "literals": [
+    "web_detached_dom_unmount_cleanup",
+    "33393"
+  ],
+  "usage": {
+    "read_count": 6,
+    "readers": [
+      "WAWebContextMenuManager.react",
+      "WAWebConversationMsgsMenuV2.react",
+      "WAWebMessageWrapper.react",
+      "WAWebStatusPlayer.react",
+      "WAWebUim",
+      "WAWebUimUie.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

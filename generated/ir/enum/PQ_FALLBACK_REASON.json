@@ -1,0 +1,41 @@
+{
+  "id": "enum:PQ_FALLBACK_REASON",
+  "kind": "enum",
+  "name": "PQ_FALLBACK_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPqFallbackReason",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "PQ_NO_SESSION_REGULAR_FALLBACK",
+        "value": 1.0
+      },
+      {
+        "name": "PQ_SESSION_DELETED_KEYLESS_RETRY",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPqFallbackReason",
+    "matches": "PQ_FALLBACK_REASON\\s*[:=]"
+  },
+  "literals": [
+    "PQ_FALLBACK_REASON",
+    "UNKNOWN",
+    "PQ_NO_SESSION_REGULAR_FALLBACK",
+    "PQ_SESSION_DELETED_KEYLESS_RETRY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebE2eRetryRejectWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAWebProtobufsWa6.ClientPayload.UserAgent.AppVersion",
+  "kind": "proto",
+  "name": "WAWebProtobufsWa6.ClientPayload.UserAgent.AppVersion",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "primary": {
+        "number": 1
+      },
+      "quaternary": {
+        "number": 4
+      },
+      "quinary": {
+        "number": 5
+      },
+      "secondary": {
+        "number": 2
+      },
+      "tertiary": {
+        "number": 3
+      }
+    },
+    "module": "WAWebProtobufsWa6.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsWa6.pb",
+    "matches": "name = \"ClientPayload.UserAgent.AppVersion\""
+  },
+  "literals": [
+    "AppVersion"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebClientPayloadReleaseChannel",
+      "WAWebCommonSocketPlatformDetails",
+      "WAWebOpenChatSocket",
+      "WAWebWorkerClientPayload"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

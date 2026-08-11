@@ -1,0 +1,42 @@
+{
+  "id": "ab:early_audio_driver_capture_at_native",
+  "kind": "ab",
+  "name": "early_audio_driver_capture_at_native",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13166,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "early_audio_driver_capture_at_native:\\s*\\[\\s*13166"
+  },
+  "literals": [
+    "early_audio_driver_capture_at_native",
+    "13166"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,2 @@
+/** A/B property 15306 (int), default 100. */
+export const ABGenaiEarlyAudioPreBufSize = 'genai_early_audio_pre_buf_size' as const

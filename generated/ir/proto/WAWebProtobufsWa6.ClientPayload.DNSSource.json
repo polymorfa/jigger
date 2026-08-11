@@ -1,0 +1,39 @@
+{
+  "id": "proto:WAWebProtobufsWa6.ClientPayload.DNSSource",
+  "kind": "proto",
+  "name": "WAWebProtobufsWa6.ClientPayload.DNSSource",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "appCached": {
+        "number": 16
+      },
+      "dnsMethod": {
+        "number": 15
+      }
+    },
+    "module": "WAWebProtobufsWa6.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsWa6.pb",
+    "matches": "name = \"ClientPayload.DNSSource\""
+  },
+  "literals": [
+    "DNSSource"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebClientPayloadReleaseChannel",
+      "WAWebCommonSocketPlatformDetails",
+      "WAWebOpenChatSocket",
+      "WAWebWorkerClientPayload"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,4 @@
+message CollectionMutations {
+  optional bytes collection = 1;
+  optional Mutation mutations = 2;
+}

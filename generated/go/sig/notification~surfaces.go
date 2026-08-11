@@ -1,0 +1,2 @@
+// ParseQpSurfacesQPNotificationRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseQpSurfacesQPNotificationRequest(n *waBinary.Node) (*QpSurfacesQPNotificationRequest, error)

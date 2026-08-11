@@ -1,0 +1,45 @@
+{
+  "id": "ab:wae_metadata_integrity_timeout_minutes",
+  "kind": "ab",
+  "name": "wae_metadata_integrity_timeout_minutes",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4849,
+    "type": "int",
+    "default": 5,
+    "alt_default": 5
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wae_metadata_integrity_timeout_minutes:\\s*\\[\\s*4849"
+  },
+  "literals": [
+    "wae_metadata_integrity_timeout_minutes",
+    "4849"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGalaxyFlowsMetadataUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

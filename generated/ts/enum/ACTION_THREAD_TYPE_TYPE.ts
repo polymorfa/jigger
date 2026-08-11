@@ -1,0 +1,9 @@
+export enum ACTIONTHREADTYPETYPE {
+  GROUP_CHAT = 1,
+  P2_P_THREAD = 2,
+  MESSAGE_YOURSELF = 3,
+  META_AI = 4,
+  TO_CHARACTER = 5,
+  TO_UGC = 6,
+  AR_SURFACE = 7,
+}

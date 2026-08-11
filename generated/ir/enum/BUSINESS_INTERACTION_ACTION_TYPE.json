@@ -1,0 +1,37 @@
+{
+  "id": "enum:BUSINESS_INTERACTION_ACTION_TYPE",
+  "kind": "enum",
+  "name": "BUSINESS_INTERACTION_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBusinessInteractionActionType",
+    "variants": [
+      {
+        "name": "ACTION_CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "ACTION_MSG_SENT",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBusinessInteractionActionType",
+    "matches": "BUSINESS_INTERACTION_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "BUSINESS_INTERACTION_ACTION_TYPE",
+    "ACTION_CLICK",
+    "ACTION_MSG_SENT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBusinessInteractionWamEvent",
+      "WAWebCustomUrlLogEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_rewrite_languages_and_tones_config",
+  "kind": "ab",
+  "name": "ai_rewrite_languages_and_tones_config",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21139,
+    "type": "string",
+    "default": "{}",
+    "alt_default": "{\\\"en\\\": \\\"rephrase"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_rewrite_languages_and_tones_config:\\s*\\[\\s*21139"
+  },
+  "literals": [
+    "ai_rewrite_languages_and_tones_config",
+    "21139"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

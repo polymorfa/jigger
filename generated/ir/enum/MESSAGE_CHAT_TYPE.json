@@ -1,0 +1,70 @@
+{
+  "id": "enum:MESSAGE_CHAT_TYPE",
+  "kind": "enum",
+  "name": "MESSAGE_CHAT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMessageChatType",
+    "variants": [
+      {
+        "name": "OTHER",
+        "value": 0.0
+      },
+      {
+        "name": "INDIVIDUAL",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "STATUS",
+        "value": 3.0
+      },
+      {
+        "name": "BROADCAST",
+        "value": 4.0
+      },
+      {
+        "name": "CHANNEL",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMessageChatType",
+    "matches": "MESSAGE_CHAT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MESSAGE_CHAT_TYPE",
+    "OTHER",
+    "INDIVIDUAL",
+    "GROUP",
+    "STATUS",
+    "BROADCAST",
+    "CHANNEL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatExportWamEvent",
+      "WAWebChatThreadWallpaperWamEvent",
+      "WAWebConsumerPaymentsHomeLogger",
+      "WAWebExportChatLogging",
+      "WAWebGetBrazilnteractiveActions",
+      "WAWebGetMessageChatTypeFromWid",
+      "WAWebMdDeviceSyncAckWamEvent",
+      "WAWebNativeFlowMessage",
+      "WAWebPixAttachmentTrayFeature",
+      "WAWebPixQuickReplyFeature",
+      "WAWebPixWamLogger",
+      "WAWebPollsActionsWamEvent",
+      "WAWebPsChannelPostForwardWamEvent",
+      "WAWebSenderKeyExpiredWamEvent",
+      "WAWebUprAttachmentTrayFeature"
+    ],
+    "dep_count": 0,
+    "dependent_count": 15
+  }
+}

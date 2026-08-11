@@ -1,0 +1,45 @@
+{
+  "id": "ab:ctwa_smb_label_chat_header_enabled_web",
+  "kind": "ab",
+  "name": "ctwa_smb_label_chat_header_enabled_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25180,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_smb_label_chat_header_enabled_web:\\s*\\[\\s*25180"
+  },
+  "literals": [
+    "ctwa_smb_label_chat_header_enabled_web",
+    "25180"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebListsLabelGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

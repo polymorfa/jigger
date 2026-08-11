@@ -1,0 +1,10 @@
+message LinkPreviewResponse {
+  optional bytes url = 1;
+  optional bytes title = 2;
+  optional bytes description = 3;
+  optional bytes thumbData = 4;
+  optional bytes matchText = 6;
+  optional bytes previewType = 7;
+  optional LinkPreviewHighQualityThumbnail hqThumbnail = 8;
+  optional PaymentLinkPreviewMetadata previewMetadata = 9;
+}

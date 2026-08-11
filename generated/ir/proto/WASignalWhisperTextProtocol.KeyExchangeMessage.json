@@ -1,0 +1,45 @@
+{
+  "id": "proto:WASignalWhisperTextProtocol.KeyExchangeMessage",
+  "kind": "proto",
+  "name": "WASignalWhisperTextProtocol.KeyExchangeMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "baseKey": {
+        "number": 2
+      },
+      "baseKeySignature": {
+        "number": 5
+      },
+      "id": {
+        "number": 1
+      },
+      "identityKey": {
+        "number": 4
+      },
+      "ratchetKey": {
+        "number": 3
+      }
+    },
+    "module": "WASignalWhisperTextProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalWhisperTextProtocol.pb",
+    "matches": "name = \"KeyExchangeMessage\""
+  },
+  "literals": [
+    "KeyExchangeMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WASignalCipher",
+      "WASignalGroupCipher",
+      "WAWebCryptoLibraryUtilsApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:aura_status_search_max_viewers",
+  "kind": "ab",
+  "name": "aura_status_search_max_viewers",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26545,
+    "type": "int",
+    "default": "1e3",
+    "alt_default": "1e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "aura_status_search_max_viewers:\\s*\\[\\s*26545"
+  },
+  "literals": [
+    "aura_status_search_max_viewers",
+    "26545"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStatusSearchUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

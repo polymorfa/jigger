@@ -1,0 +1,268 @@
+{
+  "id": "wam:642",
+  "kind": "wam",
+  "name": "WebcPageLoad",
+  "data": {
+    "kind": "wam",
+    "event_id": 642,
+    "fields": {
+      "webcAppcacheStatus": {
+        "id": 29,
+        "type": "WEBC_APPCACHE_STATUS_CODE",
+        "wire": "webc_appcache_status",
+        "enum_ref": "WEBC_APPCACHE_STATUS_CODE"
+      },
+      "webcCached": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "webc_cached"
+      },
+      "webcConnectEnd": {
+        "id": 10,
+        "type": "TIMER",
+        "wire": "webc_connect_end"
+      },
+      "webcConnectStart": {
+        "id": 9,
+        "type": "TIMER",
+        "wire": "webc_connect_start"
+      },
+      "webcDomComplete": {
+        "id": 19,
+        "type": "TIMER",
+        "wire": "webc_dom_complete"
+      },
+      "webcDomContentLoadedEventEnd": {
+        "id": 18,
+        "type": "TIMER",
+        "wire": "webc_dom_content_loaded_event_end"
+      },
+      "webcDomContentLoadedEventStart": {
+        "id": 17,
+        "type": "TIMER",
+        "wire": "webc_dom_content_loaded_event_start"
+      },
+      "webcDomInteractive": {
+        "id": 16,
+        "type": "TIMER",
+        "wire": "webc_dom_interactive"
+      },
+      "webcDomLoading": {
+        "id": 15,
+        "type": "TIMER",
+        "wire": "webc_dom_loading"
+      },
+      "webcDomainLookupEnd": {
+        "id": 8,
+        "type": "TIMER",
+        "wire": "webc_domain_lookup_end"
+      },
+      "webcDomainLookupStart": {
+        "id": 7,
+        "type": "TIMER",
+        "wire": "webc_domain_lookup_start"
+      },
+      "webcExeDone": {
+        "id": 23,
+        "type": "TIMER",
+        "wire": "webc_exe_done"
+      },
+      "webcExeStart": {
+        "id": 22,
+        "type": "TIMER",
+        "wire": "webc_exe_start"
+      },
+      "webcFetchStart": {
+        "id": 6,
+        "type": "TIMER",
+        "wire": "webc_fetch_start"
+      },
+      "webcInitialMountT": {
+        "id": 38,
+        "type": "TIMER",
+        "wire": "webc_initial_mount_t"
+      },
+      "webcInitialNavMountT": {
+        "id": 39,
+        "type": "TIMER",
+        "wire": "webc_initial_nav_mount_t"
+      },
+      "webcInitialPanel": {
+        "id": 42,
+        "type": "STRING",
+        "wire": "webc_initial_panel"
+      },
+      "webcInitialPanelMountStartT": {
+        "id": 43,
+        "type": "TIMER",
+        "wire": "webc_initial_panel_mount_start_t"
+      },
+      "webcInitialPanelMountT": {
+        "id": 40,
+        "type": "TIMER",
+        "wire": "webc_initial_panel_mount_t"
+      },
+      "webcInitialPanelRenderT": {
+        "id": 46,
+        "type": "TIMER",
+        "wire": "webc_initial_panel_render_t"
+      },
+      "webcJsLoadT": {
+        "id": 37,
+        "type": "TIMER",
+        "wire": "webc_js_load_t"
+      },
+      "webcLoadEventEnd": {
+        "id": 21,
+        "type": "TIMER",
+        "wire": "webc_load_event_end"
+      },
+      "webcLoadEventStart": {
+        "id": 20,
+        "type": "TIMER",
+        "wire": "webc_load_event_start"
+      },
+      "webcLoadInForeground": {
+        "id": 53,
+        "type": "BOOLEAN",
+        "wire": "webc_load_in_foreground"
+      },
+      "webcMainScriptEnd": {
+        "id": 45,
+        "type": "TIMER",
+        "wire": "webc_main_script_end"
+      },
+      "webcMainScriptStart": {
+        "id": 44,
+        "type": "TIMER",
+        "wire": "webc_main_script_start"
+      },
+      "webcNativeLoadT": {
+        "id": 36,
+        "type": "TIMER",
+        "wire": "webc_native_load_t"
+      },
+      "webcNavigation": {
+        "id": 32,
+        "type": "WEBC_NAVIGATION_TYPE",
+        "wire": "webc_navigation",
+        "enum_ref": "WEBC_NAVIGATION_TYPE"
+      },
+      "webcPageLoadId": {
+        "id": 54,
+        "type": "STRING",
+        "wire": "webc_page_load_id"
+      },
+      "webcPageLoadT": {
+        "id": 34,
+        "type": "TIMER",
+        "wire": "webc_page_load_t"
+      },
+      "webcParallellyFetched": {
+        "id": 41,
+        "type": "BOOLEAN",
+        "wire": "webc_parallelly_fetched"
+      },
+      "webcQrCode": {
+        "id": 31,
+        "type": "BOOLEAN",
+        "wire": "webc_qr_code"
+      },
+      "webcRedirectCount": {
+        "id": 33,
+        "type": "NUMBER",
+        "wire": "webc_redirect_count"
+      },
+      "webcRedirectEnd": {
+        "id": 5,
+        "type": "TIMER",
+        "wire": "webc_redirect_end"
+      },
+      "webcRedirectStart": {
+        "id": 4,
+        "type": "TIMER",
+        "wire": "webc_redirect_start"
+      },
+      "webcRequestStart": {
+        "id": 12,
+        "type": "TIMER",
+        "wire": "webc_request_start"
+      },
+      "webcResponseEnd": {
+        "id": 14,
+        "type": "TIMER",
+        "wire": "webc_response_end"
+      },
+      "webcResponseStart": {
+        "id": 13,
+        "type": "TIMER",
+        "wire": "webc_response_start"
+      },
+      "webcSecureConnectionStart": {
+        "id": 11,
+        "type": "TIMER",
+        "wire": "webc_secure_connection_start"
+      },
+      "webcUnloadEventEnd": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "webc_unload_event_end"
+      },
+      "webcUnloadEventStart": {
+        "id": 2,
+        "type": "TIMER",
+        "wire": "webc_unload_event_start"
+      },
+      "webcWsAttempts": {
+        "id": 28,
+        "type": "NUMBER",
+        "wire": "webc_ws_attempts"
+      },
+      "webcWsNormal": {
+        "id": 27,
+        "type": "TIMER",
+        "wire": "webc_ws_normal"
+      },
+      "webcWsOpening": {
+        "id": 24,
+        "type": "TIMER",
+        "wire": "webc_ws_opening"
+      },
+      "webcWsPairing": {
+        "id": 25,
+        "type": "TIMER",
+        "wire": "webc_ws_pairing"
+      },
+      "webcWsSyncing": {
+        "id": 26,
+        "type": "TIMER",
+        "wire": "webc_ws_syncing"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcPageLoadWamEvent",
+    "matches": "WebcPageLoad:\\s*\\[\\s*642"
+  },
+  "literals": [
+    "642"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcAppcacheStatusCode",
+      "WAWebWamEnumWebcNavigationType"
+    ],
+    "dependents": [
+      "WAWebWamPageLoadReporter"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

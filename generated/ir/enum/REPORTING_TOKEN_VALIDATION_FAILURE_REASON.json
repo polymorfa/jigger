@@ -1,0 +1,54 @@
+{
+  "id": "enum:REPORTING_TOKEN_VALIDATION_FAILURE_REASON",
+  "kind": "enum",
+  "name": "REPORTING_TOKEN_VALIDATION_FAILURE_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumReportingTokenValidationFailureReason",
+    "variants": [
+      {
+        "name": "MISSING_MESSAGE_SECRET",
+        "value": 0.0
+      },
+      {
+        "name": "EMPTY_REPORTING_TOKEN_CONTENT",
+        "value": 1.0
+      },
+      {
+        "name": "MISMATCH_REPORTING_TOKEN",
+        "value": 2.0
+      },
+      {
+        "name": "UNSUPPORTED_VERSION",
+        "value": 3.0
+      },
+      {
+        "name": "GROUP_HISTORY_MESSAGE_MISSING_FROM_PUBLIC_STANZA",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumReportingTokenValidationFailureReason",
+    "matches": "REPORTING_TOKEN_VALIDATION_FAILURE_REASON\\s*[:=]"
+  },
+  "literals": [
+    "REPORTING_TOKEN_VALIDATION_FAILURE_REASON",
+    "MISSING_MESSAGE_SECRET",
+    "EMPTY_REPORTING_TOKEN_CONTENT",
+    "MISMATCH_REPORTING_TOKEN",
+    "UNSUPPORTED_VERSION",
+    "GROUP_HISTORY_MESSAGE_MISSING_FROM_PUBLIC_STANZA"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupHistoryReportingTokenValidator",
+      "WAWebReportingTokenUtils",
+      "WAWebReportingTokenValidationFailureSenderWamEvent",
+      "WAWebReportingTokenValidationFailureWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

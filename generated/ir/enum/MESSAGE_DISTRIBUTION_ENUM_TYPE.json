@@ -1,0 +1,47 @@
+{
+  "id": "enum:MESSAGE_DISTRIBUTION_ENUM_TYPE",
+  "kind": "enum",
+  "name": "MESSAGE_DISTRIBUTION_ENUM_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMessageDistributionEnumType",
+    "variants": [
+      {
+        "name": "REGULAR_MESSAGE",
+        "value": 0.0
+      },
+      {
+        "name": "DIRECT_MESSAGE",
+        "value": 1.0
+      },
+      {
+        "name": "SENDER_KEY_DISTRIBUTION_MESSAGE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMessageDistributionEnumType",
+    "matches": "MESSAGE_DISTRIBUTION_ENUM_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MESSAGE_DISTRIBUTION_ENUM_TYPE",
+    "REGULAR_MESSAGE",
+    "DIRECT_MESSAGE",
+    "SENDER_KEY_DISTRIBUTION_MESSAGE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebEncryptAndSendStatusMsg",
+      "WAWebMessageSendReporter",
+      "WAWebMessageSendWamEvent",
+      "WAWebSendDirectMsgToDeviceList",
+      "WAWebSendGroupSkmsgJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 7
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "enum:SETTING_TYPE",
+  "kind": "enum",
+  "name": "SETTING_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSettingType",
+    "variants": [
+      {
+        "name": "HYBRID_START_UP",
+        "value": 0.0
+      },
+      {
+        "name": "HYBRID_SYSTEM_TRAY",
+        "value": 1.0
+      },
+      {
+        "name": "LANGUAGE",
+        "value": 2.0
+      },
+      {
+        "name": "REPLACE_TEXT_WITH_EMOJI",
+        "value": 3.0
+      },
+      {
+        "name": "BANNER_NOTIFICATION_DISPLAY_MODE",
+        "value": 4.0
+      },
+      {
+        "name": "UNREAD_COUNTER_BADGE_DISPLAY_MODE",
+        "value": 5.0
+      },
+      {
+        "name": "IS_MESSAGES_NOTIFICATION_ENABLED",
+        "value": 6.0
+      },
+      {
+        "name": "IS_CALLS_NOTIFICATION_ENABLED",
+        "value": 7.0
+      },
+      {
+        "name": "IS_REACTIONS_NOTIFICATION_ENABLED",
+        "value": 8.0
+      },
+      {
+        "name": "IS_STATUS_REACTIONS_NOTIFICATION_ENABLED",
+        "value": 9.0
+      },
+      {
+        "name": "IS_TEXT_PREVIEW_FOR_NOTIFICATION_ENABLED",
+        "value": 10.0
+      },
+      {
+        "name": "DEFAULT_NOTIFICATION_TONE_ID",
+        "value": 11.0
+      },
+      {
+        "name": "GROUP_DEFAULT_NOTIFICATION_TONE_ID",
+        "value": 12.0
+      },
+      {
+        "name": "APP_THEME",
+        "value": 13.0
+      },
+      {
+        "name": "WALLPAPER_ID",
+        "value": 14.0
+      },
+      {
+        "name": "IS_DOODLE_WALLPAPER_ENABLED",
+        "value": 15.0
+      },
+      {
+        "name": "FONT_SIZE",
+        "value": 16.0
+      },
+      {
+        "name": "IS_PHOTOS_AUTODOWNLOAD_ENABLED",
+        "value": 17.0
+      },
+      {
+        "name": "IS_AUDIOS_AUTODOWNLOAD_ENABLED",
+        "value": 18.0
+      },
+      {
+        "name": "IS_VIDEOS_AUTODOWNLOAD_ENABLED",
+        "value": 19.0
+      },
+      {
+        "name": "IS_DOCUMENTS_AUTODOWNLOAD_ENABLED",
+        "value": 20.0
+      },
+      {
+        "name": "DISABLE_LINK_PREVIEWS",
+        "value": 21.0
+      },
+      {
+        "name": "NOTIFICATION_TONE_ID",
+        "value": 22.0
+      },
+      {
+        "name": "MEDIA_UPLOAD_QUALITY",
+        "value": 23.0
+      },
+      {
+        "name": "IS_SPELL_CHECK_ENABLED",
+        "value": 24.0
+      },
+      {
+        "name": "IS_ENTER_TO_SEND_ENABLED",
+        "value": 25.0
+      },
+      {
+        "name": "IS_GROUP_MESSAGE_NOTIFICATION_ENABLED",
+        "value": 26.0
+      },
+      {
+        "name": "IS_GROUP_REACTIONS_NOTIFICATION_ENABLED",
+        "value": 27.0
+      },
+      {
+        "name": "IS_STATUS_NOTIFICATION_ENABLED",
+        "value": 28.0
+      },
+      {
+        "name": "STATUS_NOTIFICATION_TONE_ID",
+        "value": 29.0
+      },
+      {
+        "name": "SHOULD_PLAY_SOUND_FOR_CALL_NOTIFICATION",
+        "value": 30.0
+      },
+      {
+        "name": "CHAT_THEME_ID",
+        "value": 31.0
+      },
+      {
+        "name": "COLOR_SCHEME_ID",
+        "value": 32.0
+      },
+      {
+        "name": "IS_TEXT_MESSAGE_ANIMATION_ENABLED",
+        "value": 33.0
+      },
+      {
+        "name": "STOCK_WALLPAPER_IMAGE_ID",
+        "value": 34.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSettingType",
+    "matches": "SETTING_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SETTING_TYPE",
+    "HYBRID_START_UP",
+    "HYBRID_SYSTEM_TRAY",
+    "LANGUAGE",
+    "REPLACE_TEXT_WITH_EMOJI",
+    "BANNER_NOTIFICATION_DISPLAY_MODE",
+    "UNREAD_COUNTER_BADGE_DISPLAY_MODE",
+    "IS_MESSAGES_NOTIFICATION_ENABLED",
+    "IS_CALLS_NOTIFICATION_ENABLED",
+    "IS_REACTIONS_NOTIFICATION_ENABLED",
+    "IS_STATUS_REACTIONS_NOTIFICATION_ENABLED",
+    "IS_TEXT_PREVIEW_FOR_NOTIFICATION_ENABLED",
+    "DEFAULT_NOTIFICATION_TONE_ID",
+    "GROUP_DEFAULT_NOTIFICATION_TONE_ID",
+    "APP_THEME",
+    "WALLPAPER_ID",
+    "IS_DOODLE_WALLPAPER_ENABLED",
+    "FONT_SIZE",
+    "IS_PHOTOS_AUTODOWNLOAD_ENABLED",
+    "IS_AUDIOS_AUTODOWNLOAD_ENABLED",
+    "IS_VIDEOS_AUTODOWNLOAD_ENABLED",
+    "IS_DOCUMENTS_AUTODOWNLOAD_ENABLED",
+    "DISABLE_LINK_PREVIEWS",
+    "NOTIFICATION_TONE_ID",
+    "MEDIA_UPLOAD_QUALITY",
+    "IS_SPELL_CHECK_ENABLED",
+    "IS_ENTER_TO_SEND_ENABLED",
+    "IS_GROUP_MESSAGE_NOTIFICATION_ENABLED",
+    "IS_GROUP_REACTIONS_NOTIFICATION_ENABLED",
+    "IS_STATUS_NOTIFICATION_ENABLED",
+    "STATUS_NOTIFICATION_TONE_ID",
+    "SHOULD_PLAY_SOUND_FOR_CALL_NOTIFICATION",
+    "CHAT_THEME_ID",
+    "COLOR_SCHEME_ID",
+    "IS_TEXT_MESSAGE_ANIMATION_ENABLED",
+    "STOCK_WALLPAPER_IMAGE_ID"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSettingsChangeWamEvent",
+      "WAWebSettingsSyncBridge"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

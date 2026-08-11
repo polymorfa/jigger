@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebGalaxyFlowsDrawerGetFlowDataQuery",
+  "kind": "mex",
+  "name": "WAWebGalaxyFlowsDrawerGetFlowDataQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "32671434985780838",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "document": "query GalaxyFlowsDrawerGetFlowDataQuery($request) {\n  xwa_extensions_get_flow_data {\n    __typename\n    extensions_flow_data {\n      flow_id\n      extensions {\n        metadata {\n          flow_name\n          state\n          categories\n          creation_source\n          www_proxy_secret\n          flow_token_signature\n          endpoint_public_key {\n            key\n            signature\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebGalaxyFlowsDrawerGetFlowDataQuery.graphql",
+    "matches": "id: \"32671434985780838\""
+  },
+  "literals": [
+    "32671434985780838",
+    "WAWebGalaxyFlowsDrawerGetFlowDataQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGalaxyFlowsDrawerGetFlowDataQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

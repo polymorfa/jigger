@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAE2E.Message.EncReactionMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.EncReactionMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "encIv": {
+        "number": 3
+      },
+      "encPayload": {
+        "number": 2
+      },
+      "targetMessageKey": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.EncReactionMessage\""
+  },
+  "literals": [
+    "EncReactionMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

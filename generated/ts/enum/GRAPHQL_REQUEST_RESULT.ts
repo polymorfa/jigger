@@ -1,0 +1,4 @@
+export enum GRAPHQLREQUESTRESULT {
+  SUCCESS = 1,
+  FAILURE = 2,
+}

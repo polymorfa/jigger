@@ -1,0 +1,95 @@
+{
+  "id": "enum:GROUP_SUSPENSION_APPEAL_UI_SURFACE",
+  "kind": "enum",
+  "name": "GROUP_SUSPENSION_APPEAL_UI_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupSuspensionAppealUiSurface",
+    "variants": [
+      {
+        "name": "GROUP_SUSPENSION_BOTTOM_SHEET",
+        "value": 1.0
+      },
+      {
+        "name": "COMMUNITY_SUSPENSION_BOTTOM_SHEET",
+        "value": 2.0
+      },
+      {
+        "name": "SUSPENDED_FOOTER",
+        "value": 3.0
+      },
+      {
+        "name": "IN_REVIEW_FOOTER",
+        "value": 4.0
+      },
+      {
+        "name": "REJECT_FOOTER",
+        "value": 5.0
+      },
+      {
+        "name": "IN_REVIEW_BOTTOM_SHEET",
+        "value": 6.0
+      },
+      {
+        "name": "ACCEPT_BOTTOM_SHEET",
+        "value": 7.0
+      },
+      {
+        "name": "REJECT_BOTTOM_SHEET",
+        "value": 8.0
+      },
+      {
+        "name": "SUSPENDED_NOTIFICATION",
+        "value": 9.0
+      },
+      {
+        "name": "ACCEPT_NOTIFICATION",
+        "value": 10.0
+      },
+      {
+        "name": "REJECT_NOTIFICATION",
+        "value": 11.0
+      },
+      {
+        "name": "REQUEST_REVIEW_ERROR_DIALOG",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupSuspensionAppealUiSurface",
+    "matches": "GROUP_SUSPENSION_APPEAL_UI_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_SUSPENSION_APPEAL_UI_SURFACE",
+    "GROUP_SUSPENSION_BOTTOM_SHEET",
+    "COMMUNITY_SUSPENSION_BOTTOM_SHEET",
+    "SUSPENDED_FOOTER",
+    "IN_REVIEW_FOOTER",
+    "REJECT_FOOTER",
+    "IN_REVIEW_BOTTOM_SHEET",
+    "ACCEPT_BOTTOM_SHEET",
+    "REJECT_BOTTOM_SHEET",
+    "SUSPENDED_NOTIFICATION",
+    "ACCEPT_NOTIFICATION",
+    "REJECT_NOTIFICATION",
+    "REQUEST_REVIEW_ERROR_DIALOG"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupAppealApprovedModal.react",
+      "WAWebGroupAppealInReviewModal.react",
+      "WAWebGroupAppealRejectedModal.react",
+      "WAWebGroupSuspensionAppealEventsWamEvent",
+      "WAWebSuspendedCommunityModal.react",
+      "WAWebSuspendedCommunityMsgBar.react",
+      "WAWebSuspendedGroupModalV2.react",
+      "WAWebSuspendedGroupRedesignModal.react",
+      "WAWebSuspendedGroupUtils",
+      "WAWebSuspendedOrTerminatedGroupMsgBarV2.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 10
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterInsightsJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterInsightsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9853618868050977",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_newsletter_admin_insights",
+    "document": "query MexFetchNewsletterInsightsJobQuery($input) {\n  xwa2_newsletter_admin_insights {\n    newsletter_id\n    state {\n      type\n      last_update_time\n      metrics_status\n      result {\n        id\n        values {\n          value\n          country\n          role\n          timestamp\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterInsightsJobQuery.graphql",
+    "matches": "id: \"9853618868050977\""
+  },
+  "literals": [
+    "9853618868050977",
+    "WAWebMexFetchNewsletterInsightsJobQuery",
+    "xwa2_newsletter_admin_insights"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterInsightsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

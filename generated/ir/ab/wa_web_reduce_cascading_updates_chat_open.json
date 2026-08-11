@@ -1,0 +1,47 @@
+{
+  "id": "ab:wa_web_reduce_cascading_updates_chat_open",
+  "kind": "ab",
+  "name": "wa_web_reduce_cascading_updates_chat_open",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25006,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_reduce_cascading_updates_chat_open:\\s*\\[\\s*25006"
+  },
+  "literals": [
+    "wa_web_reduce_cascading_updates_chat_open",
+    "25006"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebChatCellContextMenuV2.react",
+      "WAWebContactGetters",
+      "WAWebDesktopUpsellChatlistToastbar.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

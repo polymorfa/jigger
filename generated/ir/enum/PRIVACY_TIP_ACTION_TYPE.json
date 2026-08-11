@@ -1,0 +1,47 @@
+{
+  "id": "enum:PRIVACY_TIP_ACTION_TYPE",
+  "kind": "enum",
+  "name": "PRIVACY_TIP_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPrivacyTipActionType",
+    "variants": [
+      {
+        "name": "VIEW",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK_PRIVACY_TIP",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_OK",
+        "value": 3.0
+      },
+      {
+        "name": "CLICK_OUTSIDE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPrivacyTipActionType",
+    "matches": "PRIVACY_TIP_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PRIVACY_TIP_ACTION_TYPE",
+    "VIEW",
+    "CLICK_PRIVACY_TIP",
+    "CLICK_OK",
+    "CLICK_OUTSIDE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupInfoIntegritySection.react",
+      "WAWebPrivacyTipActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

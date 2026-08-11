@@ -1,0 +1,40 @@
+{
+  "id": "enum:MUTATION_DIRECTION_TYPE",
+  "kind": "enum",
+  "name": "MUTATION_DIRECTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMutationDirectionType",
+    "variants": [
+      {
+        "name": "INCOMING",
+        "value": 0.0
+      },
+      {
+        "name": "OUTGOING",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMutationDirectionType",
+    "matches": "MUTATION_DIRECTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MUTATION_DIRECTION_TYPE",
+    "INCOMING",
+    "OUTGOING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebKmpWamLogger",
+      "WAWebMdSyncdBundleWamEvent",
+      "WAWebMdSyncdMutationWamEvent",
+      "WAWebMdSyncdMutationsSummaryWamEvent",
+      "WAWebSyncdWamReportingUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

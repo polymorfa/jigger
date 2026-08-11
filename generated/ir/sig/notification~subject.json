@@ -1,0 +1,38 @@
+{
+  "id": "sig:notification/subject",
+  "kind": "sig",
+  "name": "GroupsSubjectChangeNotificationRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "subject"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInGroupsSubjectChangeNotificationRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "subject"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInGroupsCommonNotificationMixin",
+      "WASmaxInGroupsGroupAddressingModeMixin",
+      "WASmaxInGroupsNamedSubjectOrUnnamedSubjectFallbackMixinGroup",
+      "WASmaxInGroupsParentGroupMixin",
+      "WASmaxInGroupsParticipantIdentityMixin",
+      "WASmaxInGroupsSubjectOwnerIdentityMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxGroupsSubjectChangeNotificationRPC"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

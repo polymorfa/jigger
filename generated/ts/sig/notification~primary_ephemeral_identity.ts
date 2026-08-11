@@ -1,0 +1,2 @@
+/** Matches `<notification>`. Server-initiated; nothing sends it. */
+export function parseMdSetPrimaryEphemeralIdentityNotificationRequest(n: BinaryNode): MdSetPrimaryEphemeralIdentityNotificationRequest | null

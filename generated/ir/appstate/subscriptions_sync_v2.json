@@ -1,0 +1,39 @@
+{
+  "id": "appstate:subscriptions_sync_v2",
+  "kind": "appstate",
+  "name": "SubscriptionsSyncV2",
+  "data": {
+    "kind": "appstate",
+    "index_name": "subscriptions_sync_v2",
+    "collection": "regular",
+    "version": 1,
+    "value_field": "subscriptionsSyncV2Action"
+  },
+  "evidence": {
+    "module": "WAWebSubscriptionsSyncV2Sync",
+    "matches": "Actions\\.SubscriptionsSyncV2"
+  },
+  "literals": [
+    "subscriptions_sync_v2",
+    "SubscriptionsSyncV2",
+    "subscriptionsSyncV2Action"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebODS",
+      "WAWebSubscriptionSource",
+      "WAWebSubscriptions",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

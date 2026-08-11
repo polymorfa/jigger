@@ -1,0 +1,14 @@
+message ProductSnapshot {
+  optional ImageMessage productImage = 1;
+  optional bytes productId = 2;
+  optional bytes title = 3;
+  optional bytes description = 4;
+  optional bytes currencyCode = 5;
+  optional bytes priceAmount1000 = 6;
+  optional bytes retailerId = 7;
+  optional bytes url = 8;
+  optional bytes productImageCount = 9;
+  optional bytes firstImageId = 11;
+  optional bytes salePriceAmount1000 = 12;
+  optional bytes signedUrl = 13;
+}

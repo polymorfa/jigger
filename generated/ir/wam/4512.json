@@ -1,0 +1,79 @@
+{
+  "id": "wam:4512",
+  "kind": "wam",
+  "name": "GroupJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 4512,
+    "fields": {
+      "actionType": {
+        "id": 1,
+        "type": "CHAT_FILTER_ACTION_TYPES",
+        "wire": "action_type",
+        "enum_ref": "CHAT_FILTER_ACTION_TYPES"
+      },
+      "appSessionId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "groupSize": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "group_size"
+      },
+      "surface": {
+        "id": 4,
+        "type": "SURFACE_TYPE",
+        "wire": "surface",
+        "enum_ref": "SURFACE_TYPE"
+      },
+      "threadType": {
+        "id": 5,
+        "type": "THREAD_TYPE",
+        "wire": "thread_type",
+        "enum_ref": "THREAD_TYPE"
+      },
+      "uiSurface": {
+        "id": 7,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "userRole": {
+        "id": 6,
+        "type": "USER_ROLE_TYPE",
+        "wire": "user_role",
+        "enum_ref": "USER_ROLE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGroupJourneyWamEvent",
+    "matches": "GroupJourney:\\s*\\[\\s*4512"
+  },
+  "literals": [
+    "4512"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatFilterActionTypes",
+      "WAWebWamEnumSurfaceType",
+      "WAWebWamEnumThreadType",
+      "WAWebWamEnumTsSurface",
+      "WAWebWamEnumUserRoleType"
+    ],
+    "dependents": [
+      "WAWebCommunityGroupJourneyEventImpl"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

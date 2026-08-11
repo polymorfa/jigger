@@ -1,0 +1,45 @@
+{
+  "id": "ab:username_adoption_and_engagement_monitoring_enabled",
+  "kind": "ab",
+  "name": "username_adoption_and_engagement_monitoring_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15493,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_adoption_and_engagement_monitoring_enabled:\\s*\\[\\s*15493"
+  },
+  "literals": [
+    "username_adoption_and_engagement_monitoring_enabled",
+    "15493"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUsernameGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

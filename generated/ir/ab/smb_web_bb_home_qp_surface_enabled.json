@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_web_bb_home_qp_surface_enabled",
+  "kind": "ab",
+  "name": "smb_web_bb_home_qp_surface_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32613,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_web_bb_home_qp_surface_enabled:\\s*\\[\\s*32613"
+  },
+  "literals": [
+    "smb_web_bb_home_qp_surface_enabled",
+    "32613"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBBHomeQPSurface.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

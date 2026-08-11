@@ -1,0 +1,107 @@
+{
+  "id": "proto:WAE2E.Message.StickerPackMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.StickerPackMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "caption": {
+        "number": 10
+      },
+      "contextInfo": {
+        "number": 11,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "directPath": {
+        "number": 9
+      },
+      "fileEncSha256": {
+        "number": 7
+      },
+      "fileLength": {
+        "number": 5
+      },
+      "fileSha256": {
+        "number": 6
+      },
+      "imageDataHash": {
+        "number": 20
+      },
+      "mediaKey": {
+        "number": 8
+      },
+      "mediaKeyTimestamp": {
+        "number": 13
+      },
+      "name": {
+        "number": 2
+      },
+      "packDescription": {
+        "number": 12
+      },
+      "publisher": {
+        "number": 3
+      },
+      "stickerPackId": {
+        "number": 1
+      },
+      "stickerPackOrigin": {
+        "number": 22
+      },
+      "stickerPackSize": {
+        "number": 21
+      },
+      "stickers": {
+        "number": 4,
+        "type_name": "WAE2E.Message.StickerPackMessage.Sticker"
+      },
+      "thumbnailDirectPath": {
+        "number": 15
+      },
+      "thumbnailEncSha256": {
+        "number": 17
+      },
+      "thumbnailHeight": {
+        "number": 18
+      },
+      "thumbnailSha256": {
+        "number": 16
+      },
+      "thumbnailWidth": {
+        "number": 19
+      },
+      "trayIconFileName": {
+        "number": 14
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.StickerPackMessage\""
+  },
+  "literals": [
+    "StickerPackMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

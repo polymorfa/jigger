@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAWebProtobufsRoutingInfo.RoutingInfo",
+  "kind": "proto",
+  "name": "WAWebProtobufsRoutingInfo.RoutingInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "clusterId": {
+        "number": 2
+      },
+      "debug": {
+        "number": 4
+      },
+      "regionId": {
+        "number": 1
+      },
+      "taskId": {
+        "number": 3
+      },
+      "tcpBbr": {
+        "number": 5
+      },
+      "tcpKeepalive": {
+        "number": 6
+      }
+    },
+    "module": "WAWebProtobufsRoutingInfo.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsRoutingInfo.pb",
+    "matches": "name = \"RoutingInfo\""
+  },
+  "literals": [
+    "RoutingInfo"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDebugRoutingToken"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

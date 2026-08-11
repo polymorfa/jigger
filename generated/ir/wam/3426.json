@@ -1,0 +1,53 @@
+{
+  "id": "wam:3426",
+  "kind": "wam",
+  "name": "CadminDemote",
+  "data": {
+    "kind": "wam",
+    "event_id": 3426,
+    "fields": {
+      "cadminDemoteOrigin": {
+        "id": 1,
+        "type": "CADMIN_DEMOTE_ORIGIN_TYPE",
+        "wire": "cadmin_demote_origin",
+        "enum_ref": "CADMIN_DEMOTE_ORIGIN_TYPE"
+      },
+      "cadminDemoteResult": {
+        "id": 2,
+        "type": "CADMIN_DEMOTE_RESULT_TYPE",
+        "wire": "cadmin_demote_result",
+        "enum_ref": "CADMIN_DEMOTE_RESULT_TYPE"
+      },
+      "isLastCadminOrCreator": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_last_cadmin_or_creator"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCadminDemoteWamEvent",
+    "matches": "CadminDemote:\\s*\\[\\s*3426"
+  },
+  "literals": [
+    "3426"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCadminDemoteOriginType",
+      "WAWebWamEnumCadminDemoteResultType"
+    ],
+    "dependents": [
+      "WAWebCommunityLogEvents"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

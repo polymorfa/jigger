@@ -1,0 +1,6 @@
+message BCallMessage {
+  optional bytes sessionId = 1;
+  optional bytes mediaType = 2;
+  optional bytes masterKey = 3;
+  optional bytes caption = 4;
+}

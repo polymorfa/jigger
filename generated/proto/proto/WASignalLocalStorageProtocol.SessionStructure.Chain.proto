@@ -1,0 +1,6 @@
+message Chain {
+  optional bytes senderRatchetKey = 1;
+  optional bytes senderRatchetKeyPrivate = 2;
+  optional ChainKey chainKey = 3;
+  optional MessageKey messageKeys = 4;
+}

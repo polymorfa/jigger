@@ -1,0 +1,33 @@
+{
+  "id": "proto:WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData",
+  "kind": "proto",
+  "name": "WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "draftMessage": {
+        "number": 1,
+        "type_name": "WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData.DraftMessage"
+      }
+    },
+    "module": "WAWebProtobufsMdStorageChatRowOpaqueData.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMdStorageChatRowOpaqueData.pb",
+    "matches": "name = \"ChatRowOpaqueData\""
+  },
+  "literals": [
+    "ChatRowOpaqueData"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDBChatSerialization"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAAICommon.InThreadSurveyMetadata.InThreadSurveyPrivacyStatementPart",
+  "kind": "proto",
+  "name": "WAAICommon.InThreadSurveyMetadata.InThreadSurveyPrivacyStatementPart",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "text": {
+        "number": 1
+      },
+      "url": {
+        "number": 2
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"InThreadSurveyMetadata.InThreadSurveyPrivacyStatementPart\""
+  },
+  "literals": [
+    "InThreadSurveyPrivacyStatementPart"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

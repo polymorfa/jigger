@@ -1,0 +1,57 @@
+{
+  "id": "enum:WAFFLE_LIFECYCLE_ERROR_ACTION_TYPE",
+  "kind": "enum",
+  "name": "WAFFLE_LIFECYCLE_ERROR_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWaffleLifecycleErrorActionType",
+    "variants": [
+      {
+        "name": "NOT_APPLICABLE",
+        "value": 0.0
+      },
+      {
+        "name": "RETRY",
+        "value": 1.0
+      },
+      {
+        "name": "REQUEST_NONCE",
+        "value": 2.0
+      },
+      {
+        "name": "PURGE",
+        "value": 3.0
+      },
+      {
+        "name": "PAUSE",
+        "value": 4.0
+      },
+      {
+        "name": "FAIL",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWaffleLifecycleErrorActionType",
+    "matches": "WAFFLE_LIFECYCLE_ERROR_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WAFFLE_LIFECYCLE_ERROR_ACTION_TYPE",
+    "NOT_APPLICABLE",
+    "RETRY",
+    "REQUEST_NONCE",
+    "PURGE",
+    "PAUSE",
+    "FAIL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWaffleCompanionStateLifecycleWamEvent",
+      "WAWebWaffleLifecycleWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

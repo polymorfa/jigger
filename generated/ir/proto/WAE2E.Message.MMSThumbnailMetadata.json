@@ -1,0 +1,60 @@
+{
+  "id": "proto:WAE2E.Message.MMSThumbnailMetadata",
+  "kind": "proto",
+  "name": "WAE2E.Message.MMSThumbnailMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "mediaKey": {
+        "number": 4
+      },
+      "mediaKeyTimestamp": {
+        "number": 5
+      },
+      "thumbnailDirectPath": {
+        "number": 1
+      },
+      "thumbnailEncSha256": {
+        "number": 3
+      },
+      "thumbnailHeight": {
+        "number": 6
+      },
+      "thumbnailSha256": {
+        "number": 2
+      },
+      "thumbnailWidth": {
+        "number": 7
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.MMSThumbnailMetadata\""
+  },
+  "literals": [
+    "MMSThumbnailMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:after_read_fallback_duration",
+  "kind": "ab",
+  "name": "after_read_fallback_duration",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26225,
+    "type": "int",
+    "default": 86400,
+    "alt_default": 86400
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "after_read_fallback_duration:\\s*\\[\\s*26225"
+  },
+  "literals": [
+    "after_read_fallback_duration",
+    "26225"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebAfterReadUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

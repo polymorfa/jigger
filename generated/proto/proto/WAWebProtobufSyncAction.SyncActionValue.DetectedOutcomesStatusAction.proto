@@ -1,0 +1,3 @@
+message DetectedOutcomesStatusAction {
+  optional bytes isEnabled = 1;
+}

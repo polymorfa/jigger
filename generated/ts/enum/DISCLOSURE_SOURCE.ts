@@ -1,0 +1,5 @@
+export enum DISCLOSURESOURCE {
+  BLOCKING = 0,
+  NON_BLOCKING = 1,
+  INFO = 2,
+}

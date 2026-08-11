@@ -1,0 +1,36 @@
+{
+  "id": "enum:DEVICEJID_DOMAINJID",
+  "kind": "enum",
+  "name": "DEVICEJID_DOMAINJID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInPreKeysEnums",
+    "variants": [
+      {
+        "name": "typeName",
+        "value": "DeviceJid|DomainJid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPreKeysEnums",
+    "matches": "DEVICEJID_DOMAINJID\\s*[:=]"
+  },
+  "literals": [
+    "DEVICEJID_DOMAINJID",
+    "typeName"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInPreKeysFetchKeyBundlesResponseSuccess",
+      "WASmaxInPreKeysFetchMissingPreKeysResponseSuccess",
+      "WASmaxInPreKeysFetchMissingPreKeysUserSuccessMixin",
+      "WASmaxOutPreKeysNotificationClientAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,14 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum IMAGINEACTIONTARGET {
+    NONE = 0,
+    IMAGINEEDIT = 1,
+    IMAGINEME = 2,
+    IMAGINEFLASH = 3,
+    IMAGINE = 4,
+    MEDIAINPUT = 5,
+    MEDIASHARINGEDIT = 6,
+    MEDIASHARINGSTYLES = 7,
+    MEDIASHARINGINTENTS = 8,
+    MEDIASHARINGFILTERS = 9,
+}

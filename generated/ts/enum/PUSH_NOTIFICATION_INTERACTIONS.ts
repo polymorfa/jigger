@@ -1,0 +1,4 @@
+export enum PUSHNOTIFICATIONINTERACTIONS {
+  SHOWN = 1,
+  CLICKED = 2,
+}

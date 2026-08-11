@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAServerSync.SyncdMutation",
+  "kind": "proto",
+  "name": "WAServerSync.SyncdMutation",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "operation": {
+        "number": 1
+      },
+      "record": {
+        "number": 2,
+        "type_name": "WAServerSync.SyncdRecord"
+      }
+    },
+    "module": "WAServerSync.pb"
+  },
+  "evidence": {
+    "module": "WAServerSync.pb",
+    "matches": "name = \"SyncdMutation\""
+  },
+  "literals": [
+    "SyncdMutation"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

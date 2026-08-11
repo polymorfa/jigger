@@ -1,0 +1,15 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SMBDATASHARINGCONSENTSCREENENTRYPOINT {
+    NEWORDER = 0,
+    CART = 1,
+    LABELCHAT = 2,
+    LABELMESSAGE = 3,
+    BLOCK = 4,
+    REPORT = 5,
+    CTWACHAT = 6,
+    DATASHARINGTOOLS = 7,
+    CONTACTINFOCARD = 8,
+    DATASHARINGSYSTEMMESSAGE = 9,
+    LISTSMANAGEMENT = 10,
+}

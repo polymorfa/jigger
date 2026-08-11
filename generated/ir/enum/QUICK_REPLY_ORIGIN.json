@@ -1,0 +1,46 @@
+{
+  "id": "enum:QUICK_REPLY_ORIGIN",
+  "kind": "enum",
+  "name": "QUICK_REPLY_ORIGIN",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumQuickReplyOrigin",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "CONVERSATIONS",
+        "value": 1.0
+      },
+      {
+        "name": "BUTTON",
+        "value": 2.0
+      },
+      {
+        "name": "KEYBOARD",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumQuickReplyOrigin",
+    "matches": "QUICK_REPLY_ORIGIN\\s*[:=]"
+  },
+  "literals": [
+    "QUICK_REPLY_ORIGIN",
+    "UNKNOWN",
+    "CONVERSATIONS",
+    "BUTTON",
+    "KEYBOARD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebQuickReplyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

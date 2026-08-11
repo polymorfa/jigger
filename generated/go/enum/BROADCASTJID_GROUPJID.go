@@ -1,0 +1,5 @@
+type BROADCASTJIDGROUPJID string
+
+const (
+	BROADCASTJIDGROUPJIDTypeName BROADCASTJIDGROUPJID = "BroadcastJid|GroupJid"
+)

@@ -1,0 +1,42 @@
+{
+  "id": "ab:voice_chat_companion_experience_version",
+  "kind": "ab",
+  "name": "voice_chat_companion_experience_version",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 17052,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "voice_chat_companion_experience_version:\\s*\\[\\s*17052"
+  },
+  "literals": [
+    "voice_chat_companion_experience_version",
+    "17052"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

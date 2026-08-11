@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_premium_messages_click_logging_enabled",
+  "kind": "ab",
+  "name": "smb_premium_messages_click_logging_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4657,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_premium_messages_click_logging_enabled:\\s*\\[\\s*4657"
+  },
+  "literals": [
+    "smb_premium_messages_click_logging_enabled",
+    "4657"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

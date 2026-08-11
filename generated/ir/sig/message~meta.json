@@ -1,0 +1,36 @@
+{
+  "id": "sig:message/meta",
+  "kind": "sig",
+  "name": "MessageDeliverAppdataMetaAttributeMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "meta"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverAppdataMetaAttributeMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "meta"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMessageDeliverEnums",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBroadcastMixin",
+      "WASmaxInMessageDeliverGroupMixin",
+      "WASmaxInMessageDeliverIndividualMixin",
+      "WASmaxInMessageDeliverPeerRequest",
+      "WASmaxInMessageDeliverStatusMixin"
+    ],
+    "dep_count": 3,
+    "dependent_count": 5
+  }
+}

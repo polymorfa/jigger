@@ -1,0 +1,2 @@
+// ParseMdGetPasskeyRequestOptionsResponseSuccess matches <iq>. Response to MdGetPasskeyRequestOptions.
+func ParseMdGetPasskeyRequestOptionsResponseSuccess(n *waBinary.Node) (*MdGetPasskeyRequestOptionsResponseSuccess, error)

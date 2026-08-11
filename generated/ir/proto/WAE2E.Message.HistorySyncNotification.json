@@ -1,0 +1,86 @@
+{
+  "id": "proto:WAE2E.Message.HistorySyncNotification",
+  "kind": "proto",
+  "name": "WAE2E.Message.HistorySyncNotification",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "chunkOrder": {
+        "number": 7
+      },
+      "directPath": {
+        "number": 5
+      },
+      "encHandle": {
+        "number": 14
+      },
+      "fileEncSha256": {
+        "number": 4
+      },
+      "fileLength": {
+        "number": 2
+      },
+      "fileSha256": {
+        "number": 1
+      },
+      "fullHistorySyncOnDemandRequestMetadata": {
+        "number": 13,
+        "type_name": "WAE2E.Message.FullHistorySyncOnDemandRequestMetadata"
+      },
+      "initialHistBootstrapInlinePayload": {
+        "number": 11
+      },
+      "mediaKey": {
+        "number": 3
+      },
+      "messageAccessStatus": {
+        "number": 15,
+        "type_name": "WAE2E.Message.HistorySyncMessageAccessStatus"
+      },
+      "oldestMsgInChunkTimestampSec": {
+        "number": 10
+      },
+      "originalMessageId": {
+        "number": 8
+      },
+      "peerDataRequestSessionId": {
+        "number": 12
+      },
+      "progress": {
+        "number": 9
+      },
+      "syncType": {
+        "number": 6
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.HistorySyncNotification\""
+  },
+  "literals": [
+    "HistorySyncNotification"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

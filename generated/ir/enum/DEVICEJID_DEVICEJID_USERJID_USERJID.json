@@ -1,0 +1,35 @@
+{
+  "id": "enum:DEVICEJID_DEVICEJID_USERJID_USERJID",
+  "kind": "enum",
+  "name": "DEVICEJID_DEVICEJID_USERJID_USERJID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessagePublishEnums",
+    "variants": [
+      {
+        "name": "typeName",
+        "value": "DeviceJid|DeviceJid|UserJid|UserJid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessagePublishEnums",
+    "matches": "DEVICEJID_DEVICEJID_USERJID_USERJID\\s*[:=]"
+  },
+  "literals": [
+    "DEVICEJID_DEVICEJID_USERJID_USERJID",
+    "typeName"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInMessagePublishAckPaidConversationMixin",
+      "WASmaxInMessagePublishIndividualResponseSuccess",
+      "WASmaxInMessagePublishRefreshLIDMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

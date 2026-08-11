@@ -1,0 +1,48 @@
+{
+  "id": "enum:KIC_NUX_ACTION_NAME_TYPE",
+  "kind": "enum",
+  "name": "KIC_NUX_ACTION_NAME_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumKicNuxActionNameType",
+    "variants": [
+      {
+        "name": "FIRST_DM_NUX_IMPRESSION",
+        "value": 1.0
+      },
+      {
+        "name": "KIC_NUX_IMPRESSION",
+        "value": 2.0
+      },
+      {
+        "name": "KIC_NUX_LEARN_MORE_TAP",
+        "value": 3.0
+      },
+      {
+        "name": "KIC_SYSTEM_MESSAGE_GENERATE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumKicNuxActionNameType",
+    "matches": "KIC_NUX_ACTION_NAME_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "KIC_NUX_ACTION_NAME_TYPE",
+    "FIRST_DM_NUX_IMPRESSION",
+    "KIC_NUX_IMPRESSION",
+    "KIC_NUX_LEARN_MORE_TAP",
+    "KIC_SYSTEM_MESSAGE_GENERATE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebEphemeralKicNux.react",
+      "WAWebKeepInChatNuxWamEvent",
+      "WAWebKicNux.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

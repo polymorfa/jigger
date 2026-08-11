@@ -1,0 +1,36 @@
+{
+  "id": "enum:CALLJID_DEVICEJID_DOMAINJID_USERJID",
+  "kind": "enum",
+  "name": "CALLJID_DEVICEJID_DOMAINJID_USERJID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInVoipEnums",
+    "variants": [
+      {
+        "name": "typeName",
+        "value": "CallJid|DeviceJid|DomainJid|UserJid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInVoipEnums",
+    "matches": "CALLJID_DEVICEJID_DOMAINJID_USERJID\\s*[:=]"
+  },
+  "literals": [
+    "CALLJID_DEVICEJID_DOMAINJID_USERJID",
+    "typeName"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInVoipCallAckBaseMixin",
+      "WASmaxInVoipLinkCreateResponseLinkCreateAck",
+      "WASmaxInVoipLinkQueryResponseLinkQueryAck",
+      "WAWebVoipCreateCallLinkJob"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

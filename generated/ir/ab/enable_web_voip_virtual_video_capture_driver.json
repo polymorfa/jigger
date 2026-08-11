@@ -1,0 +1,50 @@
+{
+  "id": "ab:enable_web_voip_virtual_video_capture_driver",
+  "kind": "ab",
+  "name": "enable_web_voip_virtual_video_capture_driver",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26817,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_web_voip_virtual_video_capture_driver:\\s*\\[\\s*26817"
+  },
+  "literals": [
+    "enable_web_voip_virtual_video_capture_driver",
+    "26817"
+  ],
+  "usage": {
+    "read_count": 6,
+    "readers": [
+      "WAWebCallLinkDeviceSelector.react",
+      "WAWebVoipAcquireMediaStream",
+      "WAWebVoipCameraDeviceSelector.react",
+      "WAWebVoipCameraPrewarm",
+      "WAWebVoipVideoCaptureAndRendering",
+      "WAWebVoipVoiceCallContainer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

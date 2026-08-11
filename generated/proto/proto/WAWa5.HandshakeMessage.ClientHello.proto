@@ -1,0 +1,5 @@
+message ClientHello {
+  optional bytes ephemeral = 1;
+  optional bytes static = 2;
+  optional bytes payload = 3;
+}

@@ -1,0 +1,52 @@
+{
+  "id": "proto:WAWebProtobufsCompanionReg.DeviceProps",
+  "kind": "proto",
+  "name": "WAWebProtobufsCompanionReg.DeviceProps",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "historySyncConfig": {
+        "number": 5,
+        "type_name": "WAWebProtobufsCompanionReg.DeviceProps.HistorySyncConfig"
+      },
+      "os": {
+        "number": 1
+      },
+      "platformType": {
+        "number": 3
+      },
+      "requireFullSync": {
+        "number": 4
+      },
+      "version": {
+        "number": 2,
+        "type_name": "WAWebProtobufsCompanionReg.DeviceProps.AppVersion"
+      }
+    },
+    "module": "WAWebProtobufsCompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsCompanionReg.pb",
+    "matches": "name = \"DeviceProps\""
+  },
+  "literals": [
+    "DeviceProps"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebHandlePairSuccess",
+      "WAWebProtobufsE2E.pb",
+      "WAWebShortcakeLinkingAlgorithm",
+      "WAWebShortcakeLinkingApi",
+      "WAWebShortcakeLinkingPairingRequest",
+      "WAWebShortcakeLinkingPasskeyPrologue"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

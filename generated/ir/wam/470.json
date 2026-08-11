@@ -1,0 +1,86 @@
+{
+  "id": "wam:470",
+  "kind": "wam",
+  "name": "ContactUsSession",
+  "data": {
+    "kind": "wam",
+    "event_id": 470,
+    "fields": {
+      "contactUsAutomaticEmail": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "contact_us_automatic_email"
+      },
+      "contactUsExitState": {
+        "id": 1,
+        "type": "CONTACT_US_EXIT_STATE",
+        "wire": "contact_us_exit_state",
+        "enum_ref": "CONTACT_US_EXIT_STATE"
+      },
+      "contactUsFaq": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "contact_us_faq"
+      },
+      "contactUsLogs": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "contact_us_logs"
+      },
+      "contactUsMenuFaqT": {
+        "id": 12,
+        "type": "TIMER",
+        "wire": "contact_us_menu_faq_t"
+      },
+      "contactUsOutage": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "contact_us_outage"
+      },
+      "contactUsOutageEmail": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "contact_us_outage_email"
+      },
+      "contactUsScreenshotC": {
+        "id": 19,
+        "type": "NUMBER",
+        "wire": "contact_us_screenshot_c"
+      },
+      "contactUsT": {
+        "id": 11,
+        "type": "TIMER",
+        "wire": "contact_us_t"
+      },
+      "languageCode": {
+        "id": 21,
+        "type": "STRING",
+        "wire": "language_code"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebContactUsSessionWamEvent",
+    "matches": "ContactUsSession:\\s*\\[\\s*470"
+  },
+  "literals": [
+    "470"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumContactUsExitState"
+    ],
+    "dependents": [
+      "WAWebLogSessionEvent"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

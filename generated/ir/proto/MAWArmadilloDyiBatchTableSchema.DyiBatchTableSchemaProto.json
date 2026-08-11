@@ -1,0 +1,59 @@
+{
+  "id": "proto:MAWArmadilloDyiBatchTableSchema.DyiBatchTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloDyiBatchTableSchema.DyiBatchTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "batchId": {
+        "number": 1
+      },
+      "isThread": {
+        "number": 5
+      },
+      "numMessages": {
+        "number": 2
+      },
+      "numMessagesRestored": {
+        "number": 6
+      },
+      "numThreadsRestored": {
+        "number": 10
+      },
+      "oldestTs": {
+        "number": 3
+      },
+      "qplFlowDescriptor": {
+        "number": 8
+      },
+      "qplInstanceKeyE2E": {
+        "number": 9
+      },
+      "qplInstanceKeyForThread": {
+        "number": 7
+      },
+      "threadId": {
+        "number": 4
+      }
+    },
+    "module": "MAWArmadilloDyiBatchTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloDyiBatchTableSchema.pb",
+    "matches": "name = \"DyiBatchTableSchemaProto\""
+  },
+  "literals": [
+    "DyiBatchTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

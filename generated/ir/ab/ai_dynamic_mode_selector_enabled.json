@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_dynamic_mode_selector_enabled",
+  "kind": "ab",
+  "name": "ai_dynamic_mode_selector_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25287,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_dynamic_mode_selector_enabled:\\s*\\[\\s*25287"
+  },
+  "literals": [
+    "ai_dynamic_mode_selector_enabled",
+    "25287"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotBaseGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "proto:WACompanionReg.CompanionCommitment",
+  "kind": "proto",
+  "name": "WACompanionReg.CompanionCommitment",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "hash": {
+        "number": 1
+      }
+    },
+    "module": "WACompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WACompanionReg.pb",
+    "matches": "name = \"CompanionCommitment\""
+  },
+  "literals": [
+    "CompanionCommitment"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

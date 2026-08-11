@@ -1,0 +1,42 @@
+{
+  "id": "ab:community_admin_promotion_one_time_prompt",
+  "kind": "ab",
+  "name": "community_admin_promotion_one_time_prompt",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1864,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "community_admin_promotion_one_time_prompt:\\s*\\[\\s*1864"
+  },
+  "literals": [
+    "community_admin_promotion_one_time_prompt",
+    "1864"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

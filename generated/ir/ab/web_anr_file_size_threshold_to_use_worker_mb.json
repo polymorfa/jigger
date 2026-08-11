@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_anr_file_size_threshold_to_use_worker_mb",
+  "kind": "ab",
+  "name": "web_anr_file_size_threshold_to_use_worker_mb",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22930,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_anr_file_size_threshold_to_use_worker_mb:\\s*\\[\\s*22930"
+  },
+  "literals": [
+    "web_anr_file_size_threshold_to_use_worker_mb",
+    "22930"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPREGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

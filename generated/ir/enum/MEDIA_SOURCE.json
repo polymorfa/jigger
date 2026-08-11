@@ -1,0 +1,61 @@
+{
+  "id": "enum:MEDIA_SOURCE",
+  "kind": "enum",
+  "name": "MEDIA_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMediaSource",
+    "variants": [
+      {
+        "name": "LOCAL_MEDIA_GALLERY",
+        "value": 1.0
+      },
+      {
+        "name": "NEW_MEDIA_CAMERA",
+        "value": 2.0
+      },
+      {
+        "name": "CATALOG_MEDIA",
+        "value": 3.0
+      },
+      {
+        "name": "STATUS_MEDIA",
+        "value": 4.0
+      },
+      {
+        "name": "BIZ_PROFILE_IMAGE",
+        "value": 5.0
+      },
+      {
+        "name": "FB_MEDIA",
+        "value": 6.0
+      },
+      {
+        "name": "IG_MEDIA",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMediaSource",
+    "matches": "MEDIA_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "MEDIA_SOURCE",
+    "LOCAL_MEDIA_GALLERY",
+    "NEW_MEDIA_CAMERA",
+    "CATALOG_MEDIA",
+    "STATUS_MEDIA",
+    "BIZ_PROFILE_IMAGE",
+    "FB_MEDIA",
+    "IG_MEDIA"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

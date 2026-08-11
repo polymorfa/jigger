@@ -1,0 +1,34 @@
+{
+  "id": "sig:message/auth+biz",
+  "kind": "sig",
+  "name": "MessageDeliverAuthMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "auth",
+      "biz"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverAuthMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "auth",
+    "biz"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMessageDeliverEnums",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBizMixin"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "wam:4212",
+  "kind": "wam",
+  "name": "ChatLockAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 4212,
+    "fields": {
+      "actionEntryPoint": {
+        "id": 3,
+        "type": "ACTION_ENTRY_POINT",
+        "wire": "action_entry_point",
+        "enum_ref": "ACTION_ENTRY_POINT"
+      },
+      "actionFolderChatsCount": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "action_folder_chats_count"
+      },
+      "authType": {
+        "id": 5,
+        "type": "AUTH_TYPE",
+        "wire": "auth_type",
+        "enum_ref": "AUTH_TYPE"
+      },
+      "chatLockActionType": {
+        "id": 1,
+        "type": "CHAT_LOCK_ACTION_TYPE",
+        "wire": "chat_lock_action_type",
+        "enum_ref": "CHAT_LOCK_ACTION_TYPE"
+      },
+      "chatLockIsGroup": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "chat_lock_is_group"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatLockActionWamEvent",
+    "matches": "ChatLockAction:\\s*\\[\\s*4212"
+  },
+  "literals": [
+    "4212"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumActionEntryPoint",
+      "WAWebWamEnumAuthType",
+      "WAWebWamEnumChatLockActionType"
+    ],
+    "dependents": [
+      "WAWebChatLockWAMUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

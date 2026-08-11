@@ -1,0 +1,35 @@
+{
+  "id": "proto:MAWArmadilloMediaTablesSchema.DocumentFileMsgContentProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMediaTablesSchema.DocumentFileMsgContentProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "filename": {
+        "number": 1
+      },
+      "mimetype": {
+        "number": 2
+      }
+    },
+    "module": "MAWArmadilloMediaTablesSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMediaTablesSchema.pb",
+    "matches": "name = \"DocumentFileMsgContentProto\""
+  },
+  "literals": [
+    "DocumentFileMsgContentProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

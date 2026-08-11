@@ -1,0 +1,11 @@
+message QuotedDbMediaProto {
+  optional bytes mediaType = 1;
+  optional bytes plaintextHash = 2;
+  optional bytes size = 3;
+  optional bytes ts = 4;
+  optional bytes mediaEntry = 5;
+  optional VideoMsgContentProto validatedVideoInfo = 6;
+  optional ImageMsgContentProto validatedImageInfo = 7;
+  optional AudioMsgContentProto validatedAudioInfo = 8;
+  optional DocumentFileMsgContentProto validatedDocumentFileInfo = 9;
+}

@@ -1,0 +1,43 @@
+{
+  "id": "enum:STICKER_ERROR_TYPE",
+  "kind": "enum",
+  "name": "STICKER_ERROR_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStickerErrorType",
+    "variants": [
+      {
+        "name": "DECOMPRESSION",
+        "value": 2.0
+      },
+      {
+        "name": "SENDER_VALIDATION",
+        "value": 3.0
+      },
+      {
+        "name": "RECEIVER_VALIDATION",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStickerErrorType",
+    "matches": "STICKER_ERROR_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STICKER_ERROR_TYPE",
+    "DECOMPRESSION",
+    "SENDER_VALIDATION",
+    "RECEIVER_VALIDATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebInMemoryLottieStickerCache",
+      "WAWebMediaMmsV4Download",
+      "WAWebStickerErrorWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

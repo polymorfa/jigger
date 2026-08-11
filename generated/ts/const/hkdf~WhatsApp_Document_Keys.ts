@@ -1,0 +1,1 @@
+export const HkdfWhatsAppDocumentKeys = "WhatsApp Document Keys" as const

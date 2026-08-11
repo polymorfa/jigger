@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_lists_m2_enabled",
+  "kind": "ab",
+  "name": "wa_web_lists_m2_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22086,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_lists_m2_enabled:\\s*\\[\\s*22086"
+  },
+  "literals": [
+    "wa_web_lists_m2_enabled",
+    "22086"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebListsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

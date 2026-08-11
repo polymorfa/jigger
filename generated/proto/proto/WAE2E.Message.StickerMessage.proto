@@ -1,0 +1,24 @@
+message StickerMessage {
+  optional bytes url = 1;
+  optional bytes fileSha256 = 2;
+  optional bytes fileEncSha256 = 3;
+  optional bytes mediaKey = 4;
+  optional bytes mimetype = 5;
+  optional bytes height = 6;
+  optional bytes width = 7;
+  optional bytes directPath = 8;
+  optional bytes fileLength = 9;
+  optional bytes mediaKeyTimestamp = 10;
+  optional bytes firstFrameLength = 11;
+  optional bytes firstFrameSidecar = 12;
+  optional bytes isAnimated = 13;
+  optional bytes pngThumbnail = 16;
+  optional ContextInfo contextInfo = 17;
+  optional bytes stickerSentTs = 18;
+  optional bytes isAvatar = 19;
+  optional bytes isAiSticker = 20;
+  optional bytes isLottie = 21;
+  optional bytes accessibilityLabel = 22;
+  optional bytes premium = 24;
+  optional bytes emojis = 25;
+}

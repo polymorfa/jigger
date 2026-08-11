@@ -1,0 +1,60 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.ExtendedTextMessage",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.ExtendedTextMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "canonicalUrl": {
+        "number": 3
+      },
+      "description": {
+        "number": 4
+      },
+      "matchedText": {
+        "number": 2
+      },
+      "previewType": {
+        "number": 7
+      },
+      "text": {
+        "number": 1
+      },
+      "thumbnail": {
+        "number": 6
+      },
+      "title": {
+        "number": 5
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.ExtendedTextMessage\""
+  },
+  "literals": [
+    "ExtendedTextMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

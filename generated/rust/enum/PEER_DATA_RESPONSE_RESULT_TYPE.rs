@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PEERDATARESPONSERESULTTYPE {
+    SUCCESS = 1,
+    OTHERERROR = 2,
+    REQUESTTARGETNOTFOUND = 3,
+    REQUESTINVALID = 4,
+    FAILTOUPLOAD = 5,
+    FAILTOSENDRESPONSE = 6,
+    REQUESTTOOOLD = 7,
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:gc_device_switch_show_entry_point",
+  "kind": "ab",
+  "name": "gc_device_switch_show_entry_point",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33281,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "gc_device_switch_show_entry_point:\\s*\\[\\s*33281"
+  },
+  "literals": [
+    "gc_device_switch_show_entry_point",
+    "33281"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

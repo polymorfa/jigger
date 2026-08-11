@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAWebProtobufsQuickPromotionSurfaces.QP.Filter",
+  "kind": "proto",
+  "name": "WAWebProtobufsQuickPromotionSurfaces.QP.Filter",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "clientNotSupportedConfig": {
+        "number": 4
+      },
+      "filterName": {
+        "number": 1
+      },
+      "filterResult": {
+        "number": 3
+      },
+      "parameters": {
+        "number": 2,
+        "type_name": "WAWebProtobufsQuickPromotionSurfaces.QP.FilterParameters"
+      }
+    },
+    "module": "WAWebProtobufsQuickPromotionSurfaces.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsQuickPromotionSurfaces.pb",
+    "matches": "name = \"QP.Filter\""
+  },
+  "literals": [
+    "Filter"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebFetchQuickPromotionsCore",
+      "WAWebParseQPSurfacesNotification",
+      "WAWebQuickPromotionFilterUnknown",
+      "WAWebQuickPromotionFiltersRuleValidator"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

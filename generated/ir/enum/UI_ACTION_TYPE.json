@@ -1,0 +1,261 @@
+{
+  "id": "enum:UI_ACTION_TYPE",
+  "kind": "enum",
+  "name": "UI_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUiActionType",
+    "variants": [
+      {
+        "name": "OTHER",
+        "value": 1.0
+      },
+      {
+        "name": "APP_OPEN",
+        "value": 2.0
+      },
+      {
+        "name": "CHAT_OPEN",
+        "value": 3.0
+      },
+      {
+        "name": "IMAGE_OPEN",
+        "value": 4.0
+      },
+      {
+        "name": "FIRST_FTS_RESULT",
+        "value": 5.0
+      },
+      {
+        "name": "CONTACTS_OPEN",
+        "value": 6.0
+      },
+      {
+        "name": "GROUP_INFO_OPEN",
+        "value": 7.0
+      },
+      {
+        "name": "MSG_INFO_OPEN",
+        "value": 8.0
+      },
+      {
+        "name": "COMMUNITY_INFO_OPEN",
+        "value": 9.0
+      },
+      {
+        "name": "DEFAULT_SUBGROUP_INFO_OPEN",
+        "value": 10.0
+      },
+      {
+        "name": "COMMUNITY_CREATE",
+        "value": 11.0
+      },
+      {
+        "name": "COMMUNITY_LINK",
+        "value": 12.0
+      },
+      {
+        "name": "EMOJI_OBI_DECOMPRESSION",
+        "value": 13.0
+      },
+      {
+        "name": "EMOJI_PNG_DECOMPRESSION",
+        "value": 14.0
+      },
+      {
+        "name": "CHAT_LIST_OPEN",
+        "value": 15.0
+      },
+      {
+        "name": "CALL_LIST_OPEN",
+        "value": 16.0
+      },
+      {
+        "name": "CHANNEL_INFO_OPEN",
+        "value": 17.0
+      },
+      {
+        "name": "TTRC",
+        "value": 18.0
+      },
+      {
+        "name": "PTT_START_LATENCY",
+        "value": 19.0
+      },
+      {
+        "name": "VIDEO_OPEN",
+        "value": 20.0
+      },
+      {
+        "name": "GIF_OPEN",
+        "value": 21.0
+      },
+      {
+        "name": "GALLERY_OPEN",
+        "value": 22.0
+      },
+      {
+        "name": "REACTION_TRAY_START_LATENCY",
+        "value": 23.0
+      },
+      {
+        "name": "PTT_STOP_LATENCY",
+        "value": 24.0
+      },
+      {
+        "name": "PTT_LOCKED_VIEW_OPEN",
+        "value": 25.0
+      },
+      {
+        "name": "PTT_PLAYBACK_START",
+        "value": 26.0
+      },
+      {
+        "name": "PTV_PLAYBACK_START",
+        "value": 27.0
+      },
+      {
+        "name": "PTV_RECORDING_START",
+        "value": 28.0
+      },
+      {
+        "name": "PTV_RECORDING_STOP",
+        "value": 29.0
+      },
+      {
+        "name": "PTV_RECORDING_DISCARD",
+        "value": 30.0
+      },
+      {
+        "name": "PTV_RECORDING_SEND",
+        "value": 31.0
+      },
+      {
+        "name": "EMOJI_PICKER_START",
+        "value": 32.0
+      },
+      {
+        "name": "MESSAGE_FORWARD",
+        "value": 33.0
+      },
+      {
+        "name": "DRAFT_PTT_PLAYBACK_START_LATENCY",
+        "value": 34.0
+      },
+      {
+        "name": "CONTEXT_MENU_SHOWN_LATENCY",
+        "value": 35.0
+      },
+      {
+        "name": "KEYBOARD_SHOWN_LATENCY",
+        "value": 36.0
+      },
+      {
+        "name": "FIRST_CHAR_TYPING_PROCESSING_LATENCY",
+        "value": 37.0
+      },
+      {
+        "name": "AVG_TYPING_PROCESSING_LATENCY",
+        "value": 38.0
+      },
+      {
+        "name": "EVOLVE_ABOUT_CHAT_RENDER_LATENCY",
+        "value": 39.0
+      },
+      {
+        "name": "VOIP_OPEN",
+        "value": 40.0
+      },
+      {
+        "name": "VOIP_CLOSE",
+        "value": 41.0
+      },
+      {
+        "name": "VOIP_JOIN_CALL",
+        "value": 42.0
+      },
+      {
+        "name": "SHOW_QUOTED_ITEM_LATENCY",
+        "value": 43.0
+      },
+      {
+        "name": "DELETE_QUOTED_ITEM_LATENCY",
+        "value": 44.0
+      },
+      {
+        "name": "NAVIGATE_TO_QUOTED_ITEM_LATENCY",
+        "value": 45.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUiActionType",
+    "matches": "UI_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "UI_ACTION_TYPE",
+    "OTHER",
+    "APP_OPEN",
+    "CHAT_OPEN",
+    "IMAGE_OPEN",
+    "FIRST_FTS_RESULT",
+    "CONTACTS_OPEN",
+    "GROUP_INFO_OPEN",
+    "MSG_INFO_OPEN",
+    "COMMUNITY_INFO_OPEN",
+    "DEFAULT_SUBGROUP_INFO_OPEN",
+    "COMMUNITY_CREATE",
+    "COMMUNITY_LINK",
+    "EMOJI_OBI_DECOMPRESSION",
+    "EMOJI_PNG_DECOMPRESSION",
+    "CHAT_LIST_OPEN",
+    "CALL_LIST_OPEN",
+    "CHANNEL_INFO_OPEN",
+    "TTRC",
+    "PTT_START_LATENCY",
+    "VIDEO_OPEN",
+    "GIF_OPEN",
+    "GALLERY_OPEN",
+    "REACTION_TRAY_START_LATENCY",
+    "PTT_STOP_LATENCY",
+    "PTT_LOCKED_VIEW_OPEN",
+    "PTT_PLAYBACK_START",
+    "PTV_PLAYBACK_START",
+    "PTV_RECORDING_START",
+    "PTV_RECORDING_STOP",
+    "PTV_RECORDING_DISCARD",
+    "PTV_RECORDING_SEND",
+    "EMOJI_PICKER_START",
+    "MESSAGE_FORWARD",
+    "DRAFT_PTT_PLAYBACK_START_LATENCY",
+    "CONTEXT_MENU_SHOWN_LATENCY",
+    "KEYBOARD_SHOWN_LATENCY",
+    "FIRST_CHAR_TYPING_PROCESSING_LATENCY",
+    "AVG_TYPING_PROCESSING_LATENCY",
+    "EVOLVE_ABOUT_CHAT_RENDER_LATENCY",
+    "VOIP_OPEN",
+    "VOIP_CLOSE",
+    "VOIP_JOIN_CALL",
+    "SHOW_QUOTED_ITEM_LATENCY",
+    "DELETE_QUOTED_ITEM_LATENCY",
+    "NAVIGATE_TO_QUOTED_ITEM_LATENCY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatOpenMetricsStore",
+      "WAWebCommunityHomeWrapper.react",
+      "WAWebContactMsgInfoDrawer.react",
+      "WAWebCreateCommunityAction",
+      "WAWebFtsMsgsCollection",
+      "WAWebGroupInfoDrawer.react",
+      "WAWebGroupMsgInfoDrawer.react",
+      "WAWebManageCommunityGroupsFlow.react",
+      "WAWebMediaViewerFlow.react",
+      "WAWebNewsletterInfoDrawer.react",
+      "WAWebUiActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 11
+  }
+}

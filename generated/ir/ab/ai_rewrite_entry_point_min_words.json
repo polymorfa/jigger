@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_rewrite_entry_point_min_words",
+  "kind": "ab",
+  "name": "ai_rewrite_entry_point_min_words",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14923,
+    "type": "int",
+    "default": 4,
+    "alt_default": 4
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_rewrite_entry_point_min_words:\\s*\\[\\s*14923"
+  },
+  "literals": [
+    "ai_rewrite_entry_point_min_words",
+    "14923"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebComposeBoxWWAIWrapper.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,832 @@
+{
+  "id": "enum:STATUS_EVENT_TYPE",
+  "kind": "enum",
+  "name": "STATUS_EVENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusEventType",
+    "variants": [
+      {
+        "name": "CAMERA_ROLL_TAP",
+        "value": 1.0
+      },
+      {
+        "name": "DEFAULT_STATUS_PRIVACY_SCREEN_IMP",
+        "value": 2.0
+      },
+      {
+        "name": "DELETE_STATUS_FAILURE",
+        "value": 3.0
+      },
+      {
+        "name": "DELETE_STATUS_REQUEST",
+        "value": 4.0
+      },
+      {
+        "name": "DELETE_STATUS_SUCCESS",
+        "value": 5.0
+      },
+      {
+        "name": "EDUCATIONAL_POPOUP_IMP",
+        "value": 6.0
+      },
+      {
+        "name": "GALLERY_TAP",
+        "value": 7.0
+      },
+      {
+        "name": "GALLERY_IMAGE_TAPPED_IMP",
+        "value": 8.0
+      },
+      {
+        "name": "GALLERY_IMAGE_SLIDEUP_IMP",
+        "value": 9.0
+      },
+      {
+        "name": "MY_UPDATES_SCREEN_IMP",
+        "value": 10.0
+      },
+      {
+        "name": "POST_SEND_TAP",
+        "value": 11.0
+      },
+      {
+        "name": "POST_STATUS_FAILURE",
+        "value": 12.0
+      },
+      {
+        "name": "POST_STATUS_REQUEST",
+        "value": 13.0
+      },
+      {
+        "name": "POST_STATUS_SUCCESS",
+        "value": 14.0
+      },
+      {
+        "name": "STATUS_CAMERA_IMP",
+        "value": 15.0
+      },
+      {
+        "name": "STATUS_PRIVACY_SCREEN_SHEET_IMP",
+        "value": 16.0
+      },
+      {
+        "name": "STATUS_READY_SCREEN_IMP",
+        "value": 17.0
+      },
+      {
+        "name": "STATUS_SCREEN_IMP",
+        "value": 18.0
+      },
+      {
+        "name": "TOAST_IMP",
+        "value": 19.0
+      },
+      {
+        "name": "UNDO_POST_TAP",
+        "value": 20.0
+      },
+      {
+        "name": "EFFECTS_USED",
+        "value": 21.0
+      },
+      {
+        "name": "POST_STATUS",
+        "value": 22.0
+      },
+      {
+        "name": "STATUS_PEN_TAP",
+        "value": 23.0
+      },
+      {
+        "name": "STATUS_CAMERA_TAP",
+        "value": 24.0
+      },
+      {
+        "name": "STATUS_TEXT_SCREEN_IMP",
+        "value": 25.0
+      },
+      {
+        "name": "STATUS_PRIVACY_UPDATED",
+        "value": 26.0
+      },
+      {
+        "name": "BACKGROUND_COLOR_TAP",
+        "value": 27.0
+      },
+      {
+        "name": "RECORDING_CANCELLED",
+        "value": 28.0
+      },
+      {
+        "name": "RECORDING_LIMIT_REACHED",
+        "value": 29.0
+      },
+      {
+        "name": "STATUS_VOICE_PREVIEW_IMP",
+        "value": 30.0
+      },
+      {
+        "name": "PLAYBACK_VOICE_PREVIEW",
+        "value": 31.0
+      },
+      {
+        "name": "DELETE_VOICE_PREVIEW",
+        "value": 32.0
+      },
+      {
+        "name": "ADD_MENTION_TAP",
+        "value": 33.0
+      },
+      {
+        "name": "CONFIRM_MENTION_TAP",
+        "value": 34.0
+      },
+      {
+        "name": "VIEWER_SHEET_IMP",
+        "value": 35.0
+      },
+      {
+        "name": "MEDIA_PICKER_CAMERA_ACTION",
+        "value": 36.0
+      },
+      {
+        "name": "MEDIA_PICKER_TEXT_ACTION",
+        "value": 37.0
+      },
+      {
+        "name": "ADD_PROMPT_TAP",
+        "value": 38.0
+      },
+      {
+        "name": "CONFIRM_PROMPT_TAP",
+        "value": 39.0
+      },
+      {
+        "name": "CROP_MEDIA_ICON_TAPPED",
+        "value": 40.0
+      },
+      {
+        "name": "CROP_MEDIA_CANCEL_TAPPED",
+        "value": 41.0
+      },
+      {
+        "name": "CROP_MEDIA_DONE_TAPPED",
+        "value": 42.0
+      },
+      {
+        "name": "STICKER_TRAY_ICON_TAPPED",
+        "value": 43.0
+      },
+      {
+        "name": "STICKER_TRAY_BACK_TAPPED",
+        "value": 44.0
+      },
+      {
+        "name": "STICKER_TRAY_STICKER_ADDED",
+        "value": 45.0
+      },
+      {
+        "name": "STICKER_TRAY_STICKER_SEARCH",
+        "value": 46.0
+      },
+      {
+        "name": "TEXT_TOOL_ICON_TAPPED",
+        "value": 47.0
+      },
+      {
+        "name": "TEXT_TOOL_TEXT_ADDED",
+        "value": 48.0
+      },
+      {
+        "name": "TEXT_TOOL_REMOVED",
+        "value": 49.0
+      },
+      {
+        "name": "DRAWING_TOOL_ICON_TAPPED",
+        "value": 50.0
+      },
+      {
+        "name": "DRAWING_TOOL_ADDED",
+        "value": 51.0
+      },
+      {
+        "name": "MUSIC_ICON_TAPPED",
+        "value": 52.0
+      },
+      {
+        "name": "MUSIC_DONE_TAPPED",
+        "value": 53.0
+      },
+      {
+        "name": "MUSIC_REMOVED",
+        "value": 54.0
+      },
+      {
+        "name": "CAPTION_TEXT_TAPPED",
+        "value": 55.0
+      },
+      {
+        "name": "CAPTION_TEXT_ADDED",
+        "value": 56.0
+      },
+      {
+        "name": "COMPOSER_XOUT_TAPPED",
+        "value": 57.0
+      },
+      {
+        "name": "MEDIA_PICKER_XOUT_TAPPED",
+        "value": 58.0
+      },
+      {
+        "name": "MEDIA_PICKER_MEDIA_SELECTED",
+        "value": 59.0
+      },
+      {
+        "name": "MEDIA_PICKER_ACCEPT_TAPPED",
+        "value": 60.0
+      },
+      {
+        "name": "UNDO_BUTTON_TAPPED",
+        "value": 61.0
+      },
+      {
+        "name": "CAMERA_VIDEO_TAB_TAPPED",
+        "value": 62.0
+      },
+      {
+        "name": "CAMERA_PHOTO_TAB_TAPPED",
+        "value": 63.0
+      },
+      {
+        "name": "CAMERA_SHUTTER_TAPPED",
+        "value": 64.0
+      },
+      {
+        "name": "CAMERA_BACK_TAPPED",
+        "value": 65.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_SCREEN_OPENED",
+        "value": 66.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_FILTER_OPENED",
+        "value": 67.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_FILTER_SELECTED",
+        "value": 68.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_FILTER_CLOSED",
+        "value": 69.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_GIF_TOGGLE_TAPPED",
+        "value": 70.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_VIDEO_TOGGLE_TAPPED",
+        "value": 71.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_TRIM_TAPPED",
+        "value": 72.0
+      },
+      {
+        "name": "STICKER_CHANGED",
+        "value": 73.0
+      },
+      {
+        "name": "STICKER_REMOVED",
+        "value": 74.0
+      },
+      {
+        "name": "COMPOSER_DISCARD_DIALOG_IMPRESSION",
+        "value": 75.0
+      },
+      {
+        "name": "COMPOSER_DISCARD_DIALOG_DISMISSED",
+        "value": 76.0
+      },
+      {
+        "name": "COMPOSER_DISCARD_DIALOG_ACCEPTED",
+        "value": 77.0
+      },
+      {
+        "name": "TEXT_TOOL_FONT_CHANGED",
+        "value": 78.0
+      },
+      {
+        "name": "TEXT_TOOL_COLOR_CHANGED",
+        "value": 79.0
+      },
+      {
+        "name": "TEXT_TOOL_ALIGNMENT_CHANGED",
+        "value": 80.0
+      },
+      {
+        "name": "DRAWING_TOOL_BRUSH_CHANGED",
+        "value": 81.0
+      },
+      {
+        "name": "DRAWING_TOOL_COLOR_CHANGED",
+        "value": 82.0
+      },
+      {
+        "name": "COMPOSER_MEDIA_REMOVED",
+        "value": 83.0
+      },
+      {
+        "name": "TEXT_TOOL_BACKGROUND_STYLE_CHANGED",
+        "value": 84.0
+      },
+      {
+        "name": "STICKER_TRAY_STICKER_SELECTED",
+        "value": 85.0
+      },
+      {
+        "name": "TEXT_STATUS_FONT_CHANGED",
+        "value": 86.0
+      },
+      {
+        "name": "STATUS_VOICE_SCREEN_IMP",
+        "value": 87.0
+      },
+      {
+        "name": "STATUS_TEXT_TAB_TAPPED",
+        "value": 88.0
+      },
+      {
+        "name": "STATUS_VOICE_TAB_TAPPED",
+        "value": 89.0
+      },
+      {
+        "name": "VOICE_RECORD_TAPPED",
+        "value": 90.0
+      },
+      {
+        "name": "VOICE_RECORD_STARTED",
+        "value": 91.0
+      },
+      {
+        "name": "VOICE_RECORD_CANCELLED",
+        "value": 92.0
+      },
+      {
+        "name": "VOICE_RECORD_HOLD_TOO_SHORT",
+        "value": 93.0
+      },
+      {
+        "name": "VOICE_RECORD_TIME_LIMIT_REACHED",
+        "value": 94.0
+      },
+      {
+        "name": "MEDIA_PICKER_VOICE_ACTION",
+        "value": 95.0
+      },
+      {
+        "name": "PHOTO_STICKER_EDIT_OPENED",
+        "value": 96.0
+      },
+      {
+        "name": "PHOTO_STICKER_EDIT_CANCEL",
+        "value": 97.0
+      },
+      {
+        "name": "PHOTO_STICKER_EDIT_DONE",
+        "value": 98.0
+      },
+      {
+        "name": "PHOTO_STICKER_SHAPE_CHANGE_TAPPED",
+        "value": 99.0
+      },
+      {
+        "name": "PHOTO_STICKER_CROP_DRAGGED",
+        "value": 100.0
+      },
+      {
+        "name": "STATUS_ENTRYPOINT_TAP",
+        "value": 101.0
+      },
+      {
+        "name": "TEXT_STATUS_FONT_BUTTON_TAPPED",
+        "value": 102.0
+      },
+      {
+        "name": "TEXT_STATUS_COLOR_BUTTON_TAPPED",
+        "value": 103.0
+      },
+      {
+        "name": "TEXT_STATUS_FONT_DONE_BUTTON_TAPPED",
+        "value": 104.0
+      },
+      {
+        "name": "TEXT_STATUS_COLOR_DONE_BUTTON_TAPPED",
+        "value": 105.0
+      },
+      {
+        "name": "MEDIA_PICKER_MUSIC_ACTION",
+        "value": 106.0
+      },
+      {
+        "name": "MEDIA_PICKER_MULTISELECT_TOGGLE_TAPPED",
+        "value": 107.0
+      },
+      {
+        "name": "MEDIA_PICKER_RECENT_TAPPED",
+        "value": 108.0
+      },
+      {
+        "name": "MEDIA_PICKER_LAYOUTS",
+        "value": 109.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_GENERIC_ERROR_SHOWN",
+        "value": 110.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_OPENED",
+        "value": 111.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_READY",
+        "value": 112.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_BACK_TAPPED",
+        "value": 113.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_NEXT_TAPPED",
+        "value": 114.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_DISCARD_DIALOG_IMPRESSION",
+        "value": 115.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_DISCARD_DIALOG_DISMISSED",
+        "value": 116.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_DISCARD_DIALOG_ACCEPTED",
+        "value": 117.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_NEXT_EXECUTED",
+        "value": 118.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_LAYOUT_CHANGED",
+        "value": 119.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_MEDIA_REPLACED",
+        "value": 120.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_MEDIA_ADDED",
+        "value": 121.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_COMPLETE_GRID_IMPRESSION",
+        "value": 122.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_COMPLETE_GRID_ACTION_TAPPED",
+        "value": 123.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_MEDIA_LOAD_FAILED",
+        "value": 124.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_MEDIA_ITEM_TAPPED",
+        "value": 125.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_EMPTY_GRID_TAPPED",
+        "value": 126.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_MEDIA_CHANGE_CANCELLED",
+        "value": 127.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_MEDIA_ERROR_SHOWN",
+        "value": 128.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_NEXT_ERROR_SHOWN",
+        "value": 129.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_NEXT_RETRIED",
+        "value": 130.0
+      },
+      {
+        "name": "MUSIC_STICKER_TAPPED",
+        "value": 131.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_SWAP_INITIATED",
+        "value": 132.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_SWAP_CANCELLED",
+        "value": 133.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_SWAP_SUCCESS",
+        "value": 134.0
+      },
+      {
+        "name": "LAYOUTS_EDITOR_SCREEN_SWAP_HOVERED",
+        "value": 135.0
+      },
+      {
+        "name": "STATUS_MEDIA_PICKER_FORMAT_TAP",
+        "value": 136.0
+      },
+      {
+        "name": "MEDIA_PICKER_IMAGINE_BOTTOM_SHEET",
+        "value": 137.0
+      },
+      {
+        "name": "IMAGINE_BOTTOM_SHEET_NEXT_EXECUTED",
+        "value": 138.0
+      },
+      {
+        "name": "STATUS_SENT_VIEW_BUTTON_TAPPED",
+        "value": 139.0
+      },
+      {
+        "name": "MEDIA_COMPOSER_VIDEO_LOADED",
+        "value": 140.0
+      },
+      {
+        "name": "EXIT_PROMPT",
+        "value": 141.0
+      },
+      {
+        "name": "FORWARD_PREVIEW_EDIT",
+        "value": 142.0
+      },
+      {
+        "name": "MAXIMISE_INLINE_VIDEO_BUTTON_CLICKED",
+        "value": 143.0
+      },
+      {
+        "name": "MINIMISE_INLINE_VIDEO_BUTTON_CLICKED",
+        "value": 144.0
+      },
+      {
+        "name": "NYE_2026_BANNER_SHOWN",
+        "value": 145.0
+      },
+      {
+        "name": "NYE_2026_BANNER_CLICKED",
+        "value": 146.0
+      },
+      {
+        "name": "NYE_2026_BANNER_DISMISS_CLICKED",
+        "value": 147.0
+      },
+      {
+        "name": "NYE_2026_LOADING_BANNER_SHOWN",
+        "value": 148.0
+      },
+      {
+        "name": "NYE_2026_ERROR_BANNER_SHOWN",
+        "value": 149.0
+      },
+      {
+        "name": "NYE_2026_ERROR_BANNER_CLICKED",
+        "value": 150.0
+      },
+      {
+        "name": "NYE_2026_ERROR_BANNER_DISMISS_CLICKED",
+        "value": 151.0
+      },
+      {
+        "name": "COMPOSER_DISCARD_DIALOG_SAVE_DRAFT",
+        "value": 152.0
+      },
+      {
+        "name": "COMPOSER_DISCARD_DIALOG_DELETE_DRAFT",
+        "value": 153.0
+      },
+      {
+        "name": "MEDIA_PICKER_IMP",
+        "value": 154.0
+      },
+      {
+        "name": "COMPOSER_EXIT_WITHOUT_POSTING",
+        "value": 155.0
+      },
+      {
+        "name": "STATUS_CREATION_ENTRYPOINT_IMP",
+        "value": 156.0
+      },
+      {
+        "name": "POST_NEXT_TAP",
+        "value": 157.0
+      },
+      {
+        "name": "MEDIA_PICKER_LOCATION",
+        "value": 158.0
+      },
+      {
+        "name": "LOCATION_ICON_TAPPED",
+        "value": 159.0
+      },
+      {
+        "name": "CHANGE_LOCATION_FORMAT",
+        "value": 160.0
+      },
+      {
+        "name": "CHANGE_BACKGROUND_COLOR",
+        "value": 161.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusEventType",
+    "matches": "STATUS_EVENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_EVENT_TYPE",
+    "CAMERA_ROLL_TAP",
+    "DEFAULT_STATUS_PRIVACY_SCREEN_IMP",
+    "DELETE_STATUS_FAILURE",
+    "DELETE_STATUS_REQUEST",
+    "DELETE_STATUS_SUCCESS",
+    "EDUCATIONAL_POPOUP_IMP",
+    "GALLERY_TAP",
+    "GALLERY_IMAGE_TAPPED_IMP",
+    "GALLERY_IMAGE_SLIDEUP_IMP",
+    "MY_UPDATES_SCREEN_IMP",
+    "POST_SEND_TAP",
+    "POST_STATUS_FAILURE",
+    "POST_STATUS_REQUEST",
+    "POST_STATUS_SUCCESS",
+    "STATUS_CAMERA_IMP",
+    "STATUS_PRIVACY_SCREEN_SHEET_IMP",
+    "STATUS_READY_SCREEN_IMP",
+    "STATUS_SCREEN_IMP",
+    "TOAST_IMP",
+    "UNDO_POST_TAP",
+    "EFFECTS_USED",
+    "POST_STATUS",
+    "STATUS_PEN_TAP",
+    "STATUS_CAMERA_TAP",
+    "STATUS_TEXT_SCREEN_IMP",
+    "STATUS_PRIVACY_UPDATED",
+    "BACKGROUND_COLOR_TAP",
+    "RECORDING_CANCELLED",
+    "RECORDING_LIMIT_REACHED",
+    "STATUS_VOICE_PREVIEW_IMP",
+    "PLAYBACK_VOICE_PREVIEW",
+    "DELETE_VOICE_PREVIEW",
+    "ADD_MENTION_TAP",
+    "CONFIRM_MENTION_TAP",
+    "VIEWER_SHEET_IMP",
+    "MEDIA_PICKER_CAMERA_ACTION",
+    "MEDIA_PICKER_TEXT_ACTION",
+    "ADD_PROMPT_TAP",
+    "CONFIRM_PROMPT_TAP",
+    "CROP_MEDIA_ICON_TAPPED",
+    "CROP_MEDIA_CANCEL_TAPPED",
+    "CROP_MEDIA_DONE_TAPPED",
+    "STICKER_TRAY_ICON_TAPPED",
+    "STICKER_TRAY_BACK_TAPPED",
+    "STICKER_TRAY_STICKER_ADDED",
+    "STICKER_TRAY_STICKER_SEARCH",
+    "TEXT_TOOL_ICON_TAPPED",
+    "TEXT_TOOL_TEXT_ADDED",
+    "TEXT_TOOL_REMOVED",
+    "DRAWING_TOOL_ICON_TAPPED",
+    "DRAWING_TOOL_ADDED",
+    "MUSIC_ICON_TAPPED",
+    "MUSIC_DONE_TAPPED",
+    "MUSIC_REMOVED",
+    "CAPTION_TEXT_TAPPED",
+    "CAPTION_TEXT_ADDED",
+    "COMPOSER_XOUT_TAPPED",
+    "MEDIA_PICKER_XOUT_TAPPED",
+    "MEDIA_PICKER_MEDIA_SELECTED",
+    "MEDIA_PICKER_ACCEPT_TAPPED",
+    "UNDO_BUTTON_TAPPED",
+    "CAMERA_VIDEO_TAB_TAPPED",
+    "CAMERA_PHOTO_TAB_TAPPED",
+    "CAMERA_SHUTTER_TAPPED",
+    "CAMERA_BACK_TAPPED",
+    "MEDIA_COMPOSER_SCREEN_OPENED",
+    "MEDIA_COMPOSER_FILTER_OPENED",
+    "MEDIA_COMPOSER_FILTER_SELECTED",
+    "MEDIA_COMPOSER_FILTER_CLOSED",
+    "MEDIA_COMPOSER_GIF_TOGGLE_TAPPED",
+    "MEDIA_COMPOSER_VIDEO_TOGGLE_TAPPED",
+    "MEDIA_COMPOSER_TRIM_TAPPED",
+    "STICKER_CHANGED",
+    "STICKER_REMOVED",
+    "COMPOSER_DISCARD_DIALOG_IMPRESSION",
+    "COMPOSER_DISCARD_DIALOG_DISMISSED",
+    "COMPOSER_DISCARD_DIALOG_ACCEPTED",
+    "TEXT_TOOL_FONT_CHANGED",
+    "TEXT_TOOL_COLOR_CHANGED",
+    "TEXT_TOOL_ALIGNMENT_CHANGED",
+    "DRAWING_TOOL_BRUSH_CHANGED",
+    "DRAWING_TOOL_COLOR_CHANGED",
+    "COMPOSER_MEDIA_REMOVED",
+    "TEXT_TOOL_BACKGROUND_STYLE_CHANGED",
+    "STICKER_TRAY_STICKER_SELECTED",
+    "TEXT_STATUS_FONT_CHANGED",
+    "STATUS_VOICE_SCREEN_IMP",
+    "STATUS_TEXT_TAB_TAPPED",
+    "STATUS_VOICE_TAB_TAPPED",
+    "VOICE_RECORD_TAPPED",
+    "VOICE_RECORD_STARTED",
+    "VOICE_RECORD_CANCELLED",
+    "VOICE_RECORD_HOLD_TOO_SHORT",
+    "VOICE_RECORD_TIME_LIMIT_REACHED",
+    "MEDIA_PICKER_VOICE_ACTION",
+    "PHOTO_STICKER_EDIT_OPENED",
+    "PHOTO_STICKER_EDIT_CANCEL",
+    "PHOTO_STICKER_EDIT_DONE",
+    "PHOTO_STICKER_SHAPE_CHANGE_TAPPED",
+    "PHOTO_STICKER_CROP_DRAGGED",
+    "STATUS_ENTRYPOINT_TAP",
+    "TEXT_STATUS_FONT_BUTTON_TAPPED",
+    "TEXT_STATUS_COLOR_BUTTON_TAPPED",
+    "TEXT_STATUS_FONT_DONE_BUTTON_TAPPED",
+    "TEXT_STATUS_COLOR_DONE_BUTTON_TAPPED",
+    "MEDIA_PICKER_MUSIC_ACTION",
+    "MEDIA_PICKER_MULTISELECT_TOGGLE_TAPPED",
+    "MEDIA_PICKER_RECENT_TAPPED",
+    "MEDIA_PICKER_LAYOUTS",
+    "LAYOUTS_EDITOR_SCREEN_GENERIC_ERROR_SHOWN",
+    "LAYOUTS_EDITOR_SCREEN_OPENED",
+    "LAYOUTS_EDITOR_SCREEN_READY",
+    "LAYOUTS_EDITOR_SCREEN_BACK_TAPPED",
+    "LAYOUTS_EDITOR_SCREEN_NEXT_TAPPED",
+    "LAYOUTS_EDITOR_DISCARD_DIALOG_IMPRESSION",
+    "LAYOUTS_EDITOR_DISCARD_DIALOG_DISMISSED",
+    "LAYOUTS_EDITOR_DISCARD_DIALOG_ACCEPTED",
+    "LAYOUTS_EDITOR_SCREEN_NEXT_EXECUTED",
+    "LAYOUTS_EDITOR_SCREEN_LAYOUT_CHANGED",
+    "LAYOUTS_EDITOR_SCREEN_MEDIA_REPLACED",
+    "LAYOUTS_EDITOR_SCREEN_MEDIA_ADDED",
+    "LAYOUTS_EDITOR_SCREEN_COMPLETE_GRID_IMPRESSION",
+    "LAYOUTS_EDITOR_SCREEN_COMPLETE_GRID_ACTION_TAPPED",
+    "LAYOUTS_EDITOR_SCREEN_MEDIA_LOAD_FAILED",
+    "LAYOUTS_EDITOR_SCREEN_MEDIA_ITEM_TAPPED",
+    "LAYOUTS_EDITOR_SCREEN_EMPTY_GRID_TAPPED",
+    "LAYOUTS_EDITOR_SCREEN_MEDIA_CHANGE_CANCELLED",
+    "LAYOUTS_EDITOR_SCREEN_MEDIA_ERROR_SHOWN",
+    "LAYOUTS_EDITOR_SCREEN_NEXT_ERROR_SHOWN",
+    "LAYOUTS_EDITOR_SCREEN_NEXT_RETRIED",
+    "MUSIC_STICKER_TAPPED",
+    "LAYOUTS_EDITOR_SCREEN_SWAP_INITIATED",
+    "LAYOUTS_EDITOR_SCREEN_SWAP_CANCELLED",
+    "LAYOUTS_EDITOR_SCREEN_SWAP_SUCCESS",
+    "LAYOUTS_EDITOR_SCREEN_SWAP_HOVERED",
+    "STATUS_MEDIA_PICKER_FORMAT_TAP",
+    "MEDIA_PICKER_IMAGINE_BOTTOM_SHEET",
+    "IMAGINE_BOTTOM_SHEET_NEXT_EXECUTED",
+    "STATUS_SENT_VIEW_BUTTON_TAPPED",
+    "MEDIA_COMPOSER_VIDEO_LOADED",
+    "EXIT_PROMPT",
+    "FORWARD_PREVIEW_EDIT",
+    "MAXIMISE_INLINE_VIDEO_BUTTON_CLICKED",
+    "MINIMISE_INLINE_VIDEO_BUTTON_CLICKED",
+    "NYE_2026_BANNER_SHOWN",
+    "NYE_2026_BANNER_CLICKED",
+    "NYE_2026_BANNER_DISMISS_CLICKED",
+    "NYE_2026_LOADING_BANNER_SHOWN",
+    "NYE_2026_ERROR_BANNER_SHOWN",
+    "NYE_2026_ERROR_BANNER_CLICKED",
+    "NYE_2026_ERROR_BANNER_DISMISS_CLICKED",
+    "COMPOSER_DISCARD_DIALOG_SAVE_DRAFT",
+    "COMPOSER_DISCARD_DIALOG_DELETE_DRAFT",
+    "MEDIA_PICKER_IMP",
+    "COMPOSER_EXIT_WITHOUT_POSTING",
+    "STATUS_CREATION_ENTRYPOINT_IMP",
+    "POST_NEXT_TAP",
+    "MEDIA_PICKER_LOCATION",
+    "LOCATION_ICON_TAPPED",
+    "CHANGE_LOCATION_FORMAT",
+    "CHANGE_BACKGROUND_COLOR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPosterActionsLogger",
+      "WAWebStatusPosterActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,11 @@
+message SyncdPatch {
+  optional SyncdVersion version = 1;
+  optional SyncdMutation mutations = 2;
+  optional ExternalBlobReference externalMutations = 3;
+  optional bytes snapshotMac = 4;
+  optional bytes patchMac = 5;
+  optional KeyId keyId = 6;
+  optional ExitCode exitCode = 7;
+  optional bytes deviceIndex = 8;
+  optional bytes clientDebugData = 9;
+}

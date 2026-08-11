@@ -1,0 +1,3 @@
+message PrivacySettingDisableLinkPreviewsAction {
+  optional bytes isPreviewsDisabled = 1;
+}

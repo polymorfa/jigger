@@ -1,0 +1,49 @@
+{
+  "id": "wam:912",
+  "kind": "wam",
+  "name": "WebcMediaAnalyzed",
+  "data": {
+    "kind": "wam",
+    "event_id": 912,
+    "fields": {
+      "webcMediaAnalyzeT": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "webc_media_analyze_t"
+      },
+      "webcMediaExtensions": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "webc_media_extensions"
+      },
+      "webcMediaSupported": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "webc_media_supported"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcMediaAnalyzedWamEvent",
+    "matches": "WebcMediaAnalyzed:\\s*\\[\\s*912"
+  },
+  "literals": [
+    "912"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebMediaAnalyzer"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

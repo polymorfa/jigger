@@ -1,0 +1,62 @@
+{
+  "id": "enum:PAID_MESSAGING_USER_INTERACTIONS_ACTION_TYPE",
+  "kind": "enum",
+  "name": "PAID_MESSAGING_USER_INTERACTIONS_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsActionType",
+    "variants": [
+      {
+        "name": "VIEW",
+        "value": 0.0
+      },
+      {
+        "name": "CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "READ",
+        "value": 2.0
+      },
+      {
+        "name": "FORWARD",
+        "value": 3.0
+      },
+      {
+        "name": "MEDIA_PLAYBACK",
+        "value": 4.0
+      },
+      {
+        "name": "SHOW_MORE_CLICKED",
+        "value": 5.0
+      },
+      {
+        "name": "CAROUSEL_SCROLLED",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsActionType",
+    "matches": "PAID_MESSAGING_USER_INTERACTIONS_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PAID_MESSAGING_USER_INTERACTIONS_ACTION_TYPE",
+    "VIEW",
+    "CLICK",
+    "READ",
+    "FORWARD",
+    "MEDIA_PLAYBACK",
+    "SHOW_MORE_CLICKED",
+    "CAROUSEL_SCROLLED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebInteractiveMessageCarouselLogEvents",
+      "WAWebPaidMessagingUserInteractionsLoggerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

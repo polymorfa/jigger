@@ -1,0 +1,46 @@
+{
+  "id": "enum:PUSH_GHOST_CALL_REASON",
+  "kind": "enum",
+  "name": "PUSH_GHOST_CALL_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPushGhostCallReason",
+    "variants": [
+      {
+        "name": "OFFER_ELAPSED",
+        "value": 0.0
+      },
+      {
+        "name": "OFFLINE_TERMINATE",
+        "value": 1.0
+      },
+      {
+        "name": "OFFLINE_MD_REJECT",
+        "value": 2.0
+      },
+      {
+        "name": "OFFLINE_MD_ACCEPT",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPushGhostCallReason",
+    "matches": "PUSH_GHOST_CALL_REASON\\s*[:=]"
+  },
+  "literals": [
+    "PUSH_GHOST_CALL_REASON",
+    "OFFER_ELAPSED",
+    "OFFLINE_TERMINATE",
+    "OFFLINE_MD_REJECT",
+    "OFFLINE_MD_ACCEPT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

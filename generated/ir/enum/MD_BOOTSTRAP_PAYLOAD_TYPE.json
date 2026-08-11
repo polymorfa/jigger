@@ -1,0 +1,47 @@
+{
+  "id": "enum:MD_BOOTSTRAP_PAYLOAD_TYPE",
+  "kind": "enum",
+  "name": "MD_BOOTSTRAP_PAYLOAD_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdBootstrapPayloadType",
+    "variants": [
+      {
+        "name": "CRITICAL",
+        "value": 1.0
+      },
+      {
+        "name": "NON_CRITICAL",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdBootstrapPayloadType",
+    "matches": "MD_BOOTSTRAP_PAYLOAD_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MD_BOOTSTRAP_PAYLOAD_TYPE",
+    "CRITICAL",
+    "NON_CRITICAL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCollectionHandlerWamMutation",
+      "WAWebCollectionHandlerWamSyncUtil",
+      "WAWebGetHistorySyncMetrics",
+      "WAWebHandleHistorySyncNotification",
+      "WAWebKmpWamLogger",
+      "WAWebMdBootstrapAppStateCriticalDataProcessingWamEvent",
+      "WAWebMdBootstrapAppStateDataDownloadedWamEvent",
+      "WAWebMdBootstrapDataAppliedWamEvent",
+      "WAWebMdBootstrapHistoryDataDownloadedWamEvent",
+      "WAWebMdBootstrapHistoryDataReceivedWamEvent",
+      "WAWebMdBootstrapHistoryDataStartDownloadingWamEvent",
+      "WAWebSyncBootstrap"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

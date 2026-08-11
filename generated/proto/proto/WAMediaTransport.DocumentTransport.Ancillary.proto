@@ -1,0 +1,3 @@
+message Ancillary {
+  optional bytes pageCount = 1;
+}

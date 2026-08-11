@@ -1,0 +1,8 @@
+message RoutingInfo {
+  optional bytes regionId = 1;
+  optional bytes clusterId = 2;
+  optional bytes taskId = 3;
+  optional bytes debug = 4;
+  optional bytes tcpBbr = 5;
+  optional bytes tcpKeepalive = 6;
+}

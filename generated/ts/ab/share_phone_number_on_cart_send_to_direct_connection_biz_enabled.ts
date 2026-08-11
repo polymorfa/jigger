@@ -1,0 +1,2 @@
+/** A/B property 1867 (bool), default true. */
+export const ABSharePhoneNumberOnCartSendToDirectConnectionBizEnabled = 'share_phone_number_on_cart_send_to_direct_connection_biz_enabled' as const

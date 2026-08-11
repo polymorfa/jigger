@@ -1,0 +1,527 @@
+{
+  "id": "enum:ENTRY_POINT",
+  "kind": "enum",
+  "name": "ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEntryPoint",
+    "variants": [
+      {
+        "name": "SETTINGS_CONTACTS",
+        "value": 1.0
+      },
+      {
+        "name": "CONTACTS_LIST",
+        "value": 2.0
+      },
+      {
+        "name": "CONTACTS_MENU",
+        "value": 3.0
+      },
+      {
+        "name": "CONTACTPICKER_LIST",
+        "value": 4.0
+      },
+      {
+        "name": "CONTACTPICKER_MENU",
+        "value": 5.0
+      },
+      {
+        "name": "EMPTY_CONVERSATIONS",
+        "value": 6.0
+      },
+      {
+        "name": "EMPTY_CONTACTS",
+        "value": 7.0
+      },
+      {
+        "name": "INVITE_NON_WA_CONTACT",
+        "value": 8.0
+      },
+      {
+        "name": "EMPTY_CALLS",
+        "value": 9.0
+      },
+      {
+        "name": "CHATS_LIST",
+        "value": 10.0
+      },
+      {
+        "name": "CHANNEL_THREAD",
+        "value": 11.0
+      },
+      {
+        "name": "CHANNEL_INFO",
+        "value": 12.0
+      },
+      {
+        "name": "CHAT_THREAD",
+        "value": 13.0
+      },
+      {
+        "name": "CHAT_HOME",
+        "value": 14.0
+      },
+      {
+        "name": "CHAT_INFO_PAGE",
+        "value": 15.0
+      },
+      {
+        "name": "SEARCH_FILTER",
+        "value": 16.0
+      },
+      {
+        "name": "BUSINESS_HOME",
+        "value": 17.0
+      },
+      {
+        "name": "OVERFLOW_MENU",
+        "value": 18.0
+      },
+      {
+        "name": "BUSINESS_TOOLS",
+        "value": 19.0
+      },
+      {
+        "name": "SETTINGS",
+        "value": 20.0
+      },
+      {
+        "name": "APP_STORE",
+        "value": 21.0
+      },
+      {
+        "name": "ACCOUNT_SETTINGS",
+        "value": 22.0
+      },
+      {
+        "name": "CHAT_LONG_PRESS_OPTIONS",
+        "value": 23.0
+      },
+      {
+        "name": "CHAT_SELECT_OPTIONS",
+        "value": 24.0
+      },
+      {
+        "name": "CHAT_SWIPE",
+        "value": 25.0
+      },
+      {
+        "name": "CHAT_MORE_OPTIONS",
+        "value": 26.0
+      },
+      {
+        "name": "DEEP_LINK",
+        "value": 27.0
+      },
+      {
+        "name": "ALERT",
+        "value": 28.0
+      },
+      {
+        "name": "KEYBOARD_SHORTCUTS",
+        "value": 29.0
+      },
+      {
+        "name": "ADD_EDIT_PRODUCT",
+        "value": 30.0
+      },
+      {
+        "name": "AI_HUB_CHAT",
+        "value": 31.0
+      },
+      {
+        "name": "TOPICS_CHECKLIST",
+        "value": 32.0
+      },
+      {
+        "name": "LEARNING_SUMMARY",
+        "value": 33.0
+      },
+      {
+        "name": "CATALOG_PRODUCT_DETAILS",
+        "value": 34.0
+      },
+      {
+        "name": "AI_HOME",
+        "value": 35.0
+      },
+      {
+        "name": "MESSAGE",
+        "value": 36.0
+      },
+      {
+        "name": "KNOWLEDGE_REPO",
+        "value": 37.0
+      },
+      {
+        "name": "COACHING_INDICATOR",
+        "value": 38.0
+      },
+      {
+        "name": "SPAM_FOLDER",
+        "value": 39.0
+      },
+      {
+        "name": "SAMPLE_RESPONSE_BOTTOMSHEET",
+        "value": 40.0
+      },
+      {
+        "name": "CHAT_BANNER",
+        "value": 41.0
+      },
+      {
+        "name": "CHAT_ATTACHMENT_MENU",
+        "value": 42.0
+      },
+      {
+        "name": "ORDERS",
+        "value": 43.0
+      },
+      {
+        "name": "PROFILE_EDIT",
+        "value": 44.0
+      },
+      {
+        "name": "ONBOARDING",
+        "value": 45.0
+      },
+      {
+        "name": "COACHING_ENTRYPOINT_BUTTON",
+        "value": 46.0
+      },
+      {
+        "name": "COACHING_INLINE_FEEDBACK_BUTTONS",
+        "value": 47.0
+      },
+      {
+        "name": "MESSAGE_HEADER",
+        "value": 48.0
+      },
+      {
+        "name": "MESSAGE_CTA",
+        "value": 49.0
+      },
+      {
+        "name": "NOTIFICATION",
+        "value": 50.0
+      },
+      {
+        "name": "BB_HOME",
+        "value": 51.0
+      },
+      {
+        "name": "BB_THREAD",
+        "value": 52.0
+      },
+      {
+        "name": "BB_THREAD_BANNER",
+        "value": 53.0
+      },
+      {
+        "name": "BB_HOME_USED_ALL_BB_CREDIT_MV_BANNER",
+        "value": 54.0
+      },
+      {
+        "name": "BB_HOME_USED_MOST_BB_CREDIT_MV_BANNER",
+        "value": 55.0
+      },
+      {
+        "name": "BB_THREAD_USED_ALL_BB_CREDIT_MV_BANNER",
+        "value": 56.0
+      },
+      {
+        "name": "BB_THREAD_USED_MOST_BB_CREDIT_MV_BANNER",
+        "value": 57.0
+      },
+      {
+        "name": "BB_THREAD_NEED_MORE_CREDIT_MV_BANNER",
+        "value": 58.0
+      },
+      {
+        "name": "BB_REVIEW_USED_ALL_BB_CREDIT_MV_BANNER",
+        "value": 59.0
+      },
+      {
+        "name": "BB_REVIEW_USED_MOST_BB_CREDIT_MV_BANNER",
+        "value": 60.0
+      },
+      {
+        "name": "BB_REVIEW_NEED_MORE_CREDIT_MV_BANNER",
+        "value": 61.0
+      },
+      {
+        "name": "MESSAGE_CAPPING_NUX",
+        "value": 62.0
+      },
+      {
+        "name": "ADVANCED_TOOLS_BOTTOM_SHEET",
+        "value": 63.0
+      },
+      {
+        "name": "DEEP_LINK_CHAT_PSA",
+        "value": 64.0
+      },
+      {
+        "name": "NAV_BAR",
+        "value": 65.0
+      },
+      {
+        "name": "SMB_ONBOARDING_FLOW",
+        "value": 66.0
+      },
+      {
+        "name": "CLIENT_ERROR_FOREGROUND",
+        "value": 67.0
+      },
+      {
+        "name": "ALERTS_CENTER_HOME",
+        "value": 68.0
+      },
+      {
+        "name": "POST_ONBOARDING",
+        "value": 69.0
+      },
+      {
+        "name": "APP_LAUNCH",
+        "value": 70.0
+      },
+      {
+        "name": "PRODUCT_INFO_LIST",
+        "value": 71.0
+      },
+      {
+        "name": "SIMULATION_CONVERSATION",
+        "value": 72.0
+      },
+      {
+        "name": "DEPENDENT_MESSAGE_REQUESTS_FOLDER",
+        "value": 73.0
+      },
+      {
+        "name": "DEPENDENT_CONVERSATION_MESSAGE_REQUEST",
+        "value": 74.0
+      },
+      {
+        "name": "CTWA_CHAT_THREAD",
+        "value": 75.0
+      },
+      {
+        "name": "BB_CHAT_OVERFLOW_MENU",
+        "value": 76.0
+      },
+      {
+        "name": "BB_TOOLS_PAGE",
+        "value": 77.0
+      },
+      {
+        "name": "BB_REVIEW",
+        "value": 78.0
+      },
+      {
+        "name": "CHAT_OVERFLOW_MENU",
+        "value": 79.0
+      },
+      {
+        "name": "IN_THREAD_CHAT",
+        "value": 80.0
+      },
+      {
+        "name": "SETTINGS_TAB",
+        "value": 81.0
+      },
+      {
+        "name": "CONNECTIONS",
+        "value": 82.0
+      },
+      {
+        "name": "KNOWLEDGE",
+        "value": 83.0
+      },
+      {
+        "name": "GDRIVE_VALUE_PROP",
+        "value": 84.0
+      },
+      {
+        "name": "BB_SUGGESTED_AUDIENCE_ACTIVE_CHATS",
+        "value": 85.0
+      },
+      {
+        "name": "BB_SUGGESTED_AUDIENCE_INACTIVE_CHATS",
+        "value": 86.0
+      },
+      {
+        "name": "BB_SUGGESTED_AUDIENCE_YOUR_CONTACTS",
+        "value": 87.0
+      },
+      {
+        "name": "BB_SUGGESTED_AUDIENCE_LIST",
+        "value": 88.0
+      },
+      {
+        "name": "BB_SHARE_MODAL",
+        "value": 89.0
+      },
+      {
+        "name": "BB_FORWARD_MODAL",
+        "value": 90.0
+      },
+      {
+        "name": "ATTACHMENT_TRAY",
+        "value": 91.0
+      },
+      {
+        "name": "BIZ_PROFILE_CONNECTED_MEDIA",
+        "value": 92.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEntryPoint",
+    "matches": "ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "ENTRY_POINT",
+    "SETTINGS_CONTACTS",
+    "CONTACTS_LIST",
+    "CONTACTS_MENU",
+    "CONTACTPICKER_LIST",
+    "CONTACTPICKER_MENU",
+    "EMPTY_CONVERSATIONS",
+    "EMPTY_CONTACTS",
+    "INVITE_NON_WA_CONTACT",
+    "EMPTY_CALLS",
+    "CHATS_LIST",
+    "CHANNEL_THREAD",
+    "CHANNEL_INFO",
+    "CHAT_THREAD",
+    "CHAT_HOME",
+    "CHAT_INFO_PAGE",
+    "SEARCH_FILTER",
+    "BUSINESS_HOME",
+    "OVERFLOW_MENU",
+    "BUSINESS_TOOLS",
+    "SETTINGS",
+    "APP_STORE",
+    "ACCOUNT_SETTINGS",
+    "CHAT_LONG_PRESS_OPTIONS",
+    "CHAT_SELECT_OPTIONS",
+    "CHAT_SWIPE",
+    "CHAT_MORE_OPTIONS",
+    "DEEP_LINK",
+    "ALERT",
+    "KEYBOARD_SHORTCUTS",
+    "ADD_EDIT_PRODUCT",
+    "AI_HUB_CHAT",
+    "TOPICS_CHECKLIST",
+    "LEARNING_SUMMARY",
+    "CATALOG_PRODUCT_DETAILS",
+    "AI_HOME",
+    "MESSAGE",
+    "KNOWLEDGE_REPO",
+    "COACHING_INDICATOR",
+    "SPAM_FOLDER",
+    "SAMPLE_RESPONSE_BOTTOMSHEET",
+    "CHAT_BANNER",
+    "CHAT_ATTACHMENT_MENU",
+    "ORDERS",
+    "PROFILE_EDIT",
+    "ONBOARDING",
+    "COACHING_ENTRYPOINT_BUTTON",
+    "COACHING_INLINE_FEEDBACK_BUTTONS",
+    "MESSAGE_HEADER",
+    "MESSAGE_CTA",
+    "NOTIFICATION",
+    "BB_HOME",
+    "BB_THREAD",
+    "BB_THREAD_BANNER",
+    "BB_HOME_USED_ALL_BB_CREDIT_MV_BANNER",
+    "BB_HOME_USED_MOST_BB_CREDIT_MV_BANNER",
+    "BB_THREAD_USED_ALL_BB_CREDIT_MV_BANNER",
+    "BB_THREAD_USED_MOST_BB_CREDIT_MV_BANNER",
+    "BB_THREAD_NEED_MORE_CREDIT_MV_BANNER",
+    "BB_REVIEW_USED_ALL_BB_CREDIT_MV_BANNER",
+    "BB_REVIEW_USED_MOST_BB_CREDIT_MV_BANNER",
+    "BB_REVIEW_NEED_MORE_CREDIT_MV_BANNER",
+    "MESSAGE_CAPPING_NUX",
+    "ADVANCED_TOOLS_BOTTOM_SHEET",
+    "DEEP_LINK_CHAT_PSA",
+    "NAV_BAR",
+    "SMB_ONBOARDING_FLOW",
+    "CLIENT_ERROR_FOREGROUND",
+    "ALERTS_CENTER_HOME",
+    "POST_ONBOARDING",
+    "APP_LAUNCH",
+    "PRODUCT_INFO_LIST",
+    "SIMULATION_CONVERSATION",
+    "DEPENDENT_MESSAGE_REQUESTS_FOLDER",
+    "DEPENDENT_CONVERSATION_MESSAGE_REQUEST",
+    "CTWA_CHAT_THREAD",
+    "BB_CHAT_OVERFLOW_MENU",
+    "BB_TOOLS_PAGE",
+    "BB_REVIEW",
+    "CHAT_OVERFLOW_MENU",
+    "IN_THREAD_CHAT",
+    "SETTINGS_TAB",
+    "CONNECTIONS",
+    "KNOWLEDGE",
+    "GDRIVE_VALUE_PROP",
+    "BB_SUGGESTED_AUDIENCE_ACTIVE_CHATS",
+    "BB_SUGGESTED_AUDIENCE_INACTIVE_CHATS",
+    "BB_SUGGESTED_AUDIENCE_YOUR_CONTACTS",
+    "BB_SUGGESTED_AUDIENCE_LIST",
+    "BB_SHARE_MODAL",
+    "BB_FORWARD_MODAL",
+    "ATTACHMENT_TRAY",
+    "BIZ_PROFILE_CONNECTED_MEDIA"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBBLoggerTypes",
+      "WAWebBizAIDrawer.react",
+      "WAWebBizAILargeScreensLogEvents",
+      "WAWebBizAiChatOpenLogEvents",
+      "WAWebBizBroadcastAudienceSection.react",
+      "WAWebBizBroadcastAudienceSectionAudienceRow.react",
+      "WAWebBizBroadcastContextualEntrypointUtils",
+      "WAWebBizBroadcastProNewBroadcastAudienceSection.react",
+      "WAWebBizBroadcastTosReviewBanner.react",
+      "WAWebBizBroadcastsBizToolsUploadDrawerButton.react",
+      "WAWebBizBroadcastsChatlistHeaderDropdownItem.react",
+      "WAWebBizToolsFlow.react",
+      "WAWebBizToolsNavBarItem.react",
+      "WAWebBroadcastChatListMenuItems",
+      "WAWebBroadcastConversationMenuItems",
+      "WAWebBroadcastDetailsDrawerFromChat.react",
+      "WAWebBroadcastDuplicateFromThreadHandler",
+      "WAWebBroadcastInsightsChip.react",
+      "WAWebBroadcastMessageDropdownMenu.react",
+      "WAWebCappingUsageModal.react",
+      "WAWebCappingWarningDetailModal.react",
+      "WAWebCatalogLogEvents",
+      "WAWebChatlistHeaderDropdown.react",
+      "WAWebChatlistHeaderV2.react",
+      "WAWebExecApiCmd",
+      "WAWebForwardCreateBroadcastAction",
+      "WAWebIndividualNewChatMessageCappedModal.react",
+      "WAWebInfoFlow.react",
+      "WAWebMeTabFlow.react",
+      "WAWebMessageNotification.react",
+      "WAWebNewBroadcastHeaderButton.react",
+      "WAWebNewChatFlowBroadcastAudienceDrawer.react",
+      "WAWebNewChatFlowBroadcastContainer.react",
+      "WAWebNotesLogEvents",
+      "WAWebOpenBizAiHubDeeplink",
+      "WAWebProfileNavBarItem.react",
+      "WAWebQbmRichOrderStatusInteractionWamEvent",
+      "WAWebQuickPromotionCustomHandlingUtils",
+      "WAWebSendMsgCreateBroadcastButton.react",
+      "WAWebSettingsFlow.react",
+      "WAWebSmbUserJourneyWamEvent",
+      "useWAWebLogCarouselViewOnce"
+    ],
+    "dep_count": 0,
+    "dependent_count": 42
+  }
+}

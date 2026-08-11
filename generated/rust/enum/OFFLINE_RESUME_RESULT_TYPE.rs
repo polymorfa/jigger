@@ -1,0 +1,8 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OFFLINERESUMERESULTTYPE {
+    COMPLETE = 1,
+    INCOMPLETEUNKNOWNERROR = 2,
+    INCOMPLETEDISCONNECT = 3,
+    INCOMPLETEAPPRESTART = 4,
+}

@@ -1,0 +1,55 @@
+{
+  "id": "proto:WAE2E.Message.TemplateButtonReplyMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.TemplateButtonReplyMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "contextInfo": {
+        "number": 3,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "selectedCarouselCardIndex": {
+        "number": 5
+      },
+      "selectedDisplayText": {
+        "number": 2
+      },
+      "selectedId": {
+        "number": 1
+      },
+      "selectedIndex": {
+        "number": 4
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.TemplateButtonReplyMessage\""
+  },
+  "literals": [
+    "TemplateButtonReplyMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

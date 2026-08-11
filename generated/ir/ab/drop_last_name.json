@@ -1,0 +1,45 @@
+{
+  "id": "ab:drop_last_name",
+  "kind": "ab",
+  "name": "drop_last_name",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 726,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "drop_last_name:\\s*\\[\\s*726"
+  },
+  "literals": [
+    "drop_last_name",
+    "726"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMiscGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

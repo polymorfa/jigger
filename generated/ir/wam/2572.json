@@ -1,0 +1,308 @@
+{
+  "id": "wam:2572",
+  "kind": "wam",
+  "name": "JoinableCall",
+  "data": {
+    "kind": "wam",
+    "event_id": 2572,
+    "fields": {
+      "acceptAckLatencyMs": {
+        "id": 23,
+        "type": "TIMER",
+        "wire": "accept_ack_latency_ms"
+      },
+      "callLinkRandomId": {
+        "id": 51,
+        "type": "STRING",
+        "wire": "call_link_random_id"
+      },
+      "callRandomId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "call_random_id"
+      },
+      "callReplayerId": {
+        "id": 31,
+        "type": "STRING",
+        "wire": "call_replayer_id"
+      },
+      "callSide": {
+        "id": 41,
+        "type": "CALL_SIDE",
+        "wire": "call_side",
+        "enum_ref": "CALL_SIDE"
+      },
+      "groupAcceptNoCriticalGroupUpdate": {
+        "id": 37,
+        "type": "BOOLEAN",
+        "wire": "group_accept_no_critical_group_update"
+      },
+      "groupAcceptToCriticalGroupUpdateMs": {
+        "id": 38,
+        "type": "TIMER",
+        "wire": "group_accept_to_critical_group_update_ms"
+      },
+      "hasScheduleExactAlarmPermission": {
+        "id": 42,
+        "type": "BOOLEAN",
+        "wire": "has_schedule_exact_alarm_permission"
+      },
+      "hasSpamDialog": {
+        "id": 26,
+        "type": "BOOLEAN",
+        "wire": "has_spam_dialog"
+      },
+      "isCallFull": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "is_call_full"
+      },
+      "isDeviceSwitch": {
+        "id": 55,
+        "type": "BOOLEAN",
+        "wire": "is_device_switch"
+      },
+      "isEventsLink": {
+        "id": 50,
+        "type": "BOOLEAN",
+        "wire": "is_events_link"
+      },
+      "isFromCallLink": {
+        "id": 32,
+        "type": "BOOLEAN",
+        "wire": "is_from_call_link"
+      },
+      "isLidCall": {
+        "id": 45,
+        "type": "BOOLEAN",
+        "wire": "is_lid_call"
+      },
+      "isLinkCreator": {
+        "id": 39,
+        "type": "BOOLEAN",
+        "wire": "is_link_creator"
+      },
+      "isLinkJoin": {
+        "id": 33,
+        "type": "BOOLEAN",
+        "wire": "is_link_join"
+      },
+      "isLinkedGroupCall": {
+        "id": 24,
+        "type": "BOOLEAN",
+        "wire": "is_linked_group_call"
+      },
+      "isOneOnOneCall": {
+        "id": 54,
+        "type": "BOOLEAN",
+        "wire": "is_one_on_one_call"
+      },
+      "isPendingCall": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_pending_call"
+      },
+      "isPhashBased": {
+        "id": 46,
+        "type": "BOOLEAN",
+        "wire": "is_phash_based"
+      },
+      "isPhashMismatch": {
+        "id": 48,
+        "type": "BOOLEAN",
+        "wire": "is_phash_mismatch"
+      },
+      "isRejoin": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "is_rejoin"
+      },
+      "isRering": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_rering"
+      },
+      "isScheduledCall": {
+        "id": 40,
+        "type": "BOOLEAN",
+        "wire": "is_scheduled_call"
+      },
+      "isTransferRejoin": {
+        "id": 56,
+        "type": "BOOLEAN",
+        "wire": "is_transfer_rejoin"
+      },
+      "isUpgradedGroupCallBeforeConnected": {
+        "id": 47,
+        "type": "BOOLEAN",
+        "wire": "is_upgraded_group_call_before_connected"
+      },
+      "isVoiceChat": {
+        "id": 43,
+        "type": "BOOLEAN",
+        "wire": "is_voice_chat"
+      },
+      "isWaitingRoomEnabled": {
+        "id": 52,
+        "type": "BOOLEAN",
+        "wire": "is_waiting_room_enabled"
+      },
+      "joinAckLatencyMs": {
+        "id": 34,
+        "type": "TIMER",
+        "wire": "join_ack_latency_ms"
+      },
+      "joinableAcceptBeforeLobbyAck": {
+        "id": 16,
+        "type": "BOOLEAN",
+        "wire": "joinable_accept_before_lobby_ack"
+      },
+      "joinableDuringCall": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "joinable_during_call"
+      },
+      "joinableEndCallBeforeLobbyAck": {
+        "id": 17,
+        "type": "BOOLEAN",
+        "wire": "joinable_end_call_before_lobby_ack"
+      },
+      "legacyCallResult": {
+        "id": 6,
+        "type": "CALL_RESULT_TYPE",
+        "wire": "legacy_call_result",
+        "enum_ref": "CALL_RESULT_TYPE"
+      },
+      "lobbyAckLatencyMs": {
+        "id": 19,
+        "type": "TIMER",
+        "wire": "lobby_ack_latency_ms"
+      },
+      "lobbyEntryPoint": {
+        "id": 2,
+        "type": "LOBBY_ENTRY_POINT_TYPE",
+        "wire": "lobby_entry_point",
+        "enum_ref": "LOBBY_ENTRY_POINT_TYPE"
+      },
+      "lobbyExit": {
+        "id": 4,
+        "type": "LOBBY_EXIT_TYPE",
+        "wire": "lobby_exit",
+        "enum_ref": "LOBBY_EXIT_TYPE"
+      },
+      "lobbyExitNackCode": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "lobby_exit_nack_code"
+      },
+      "lobbyOpenDurationMs": {
+        "id": 49,
+        "type": "INTEGER",
+        "wire": "lobby_open_duration_ms"
+      },
+      "lobbyQueryWhileConnected": {
+        "id": 18,
+        "type": "BOOLEAN",
+        "wire": "lobby_query_while_connected"
+      },
+      "lobbyVisibleT": {
+        "id": 7,
+        "type": "TIMER",
+        "wire": "lobby_visible_t"
+      },
+      "nseEnabled": {
+        "id": 27,
+        "type": "BOOLEAN",
+        "wire": "nse_enabled"
+      },
+      "nseOfflineQueueMs": {
+        "id": 28,
+        "type": "TIMER",
+        "wire": "nse_offline_queue_ms"
+      },
+      "numConnectedPeers": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "num_connected_peers"
+      },
+      "numInvitedParticipants": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "num_invited_participants"
+      },
+      "numOutgoingRingingPeers": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "num_outgoing_ringing_peers"
+      },
+      "queryAckLatencyMs": {
+        "id": 35,
+        "type": "TIMER",
+        "wire": "query_ack_latency_ms"
+      },
+      "randomScheduledId": {
+        "id": 44,
+        "type": "INTEGER",
+        "wire": "random_scheduled_id"
+      },
+      "receivedByNse": {
+        "id": 29,
+        "type": "BOOLEAN",
+        "wire": "received_by_nse"
+      },
+      "rejoinMissingDbMapping": {
+        "id": 22,
+        "type": "BOOLEAN",
+        "wire": "rejoin_missing_db_mapping"
+      },
+      "timeInWaitingRoomMs": {
+        "id": 53,
+        "type": "INTEGER",
+        "wire": "time_in_waiting_room_ms"
+      },
+      "timeSinceAcceptMs": {
+        "id": 36,
+        "type": "TIMER",
+        "wire": "time_since_accept_ms"
+      },
+      "timeSinceLastClientPollMinutes": {
+        "id": 21,
+        "type": "TIMER",
+        "wire": "time_since_last_client_poll_minutes"
+      },
+      "videoEnabled": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "video_enabled"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebJoinableCallWamEvent",
+    "matches": "JoinableCall:\\s*\\[\\s*2572"
+  },
+  "literals": [
+    "2572"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCallResultType",
+      "WAWebWamEnumCallSide",
+      "WAWebWamEnumLobbyEntryPointType",
+      "WAWebWamEnumLobbyExitType"
+    ],
+    "dependents": [
+      "WAWebVoipHandleNativeCallEventFieldstatsHandlers",
+      "WAWebVoipInit"
+    ],
+    "dep_count": 5,
+    "dependent_count": 2
+  }
+}

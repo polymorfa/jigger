@@ -1,0 +1,3 @@
+message PrivacySettingRelayAllCalls {
+  optional bytes isEnabled = 1;
+}

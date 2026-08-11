@@ -1,0 +1,119 @@
+{
+  "id": "wam:1616",
+  "kind": "wam",
+  "name": "ChatFilterEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 1616,
+    "fields": {
+      "actionType": {
+        "id": 1,
+        "type": "CHAT_FILTER_ACTION_TYPES",
+        "wire": "action_type",
+        "enum_ref": "CHAT_FILTER_ACTION_TYPES"
+      },
+      "activitySessionId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "activity_session_id"
+      },
+      "filterType": {
+        "id": 2,
+        "type": "CHAT_FILTER_TYPES",
+        "wire": "filter_type",
+        "enum_ref": "CHAT_FILTER_TYPES"
+      },
+      "labelName": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "label_name"
+      },
+      "listId": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "list_id"
+      },
+      "listIndex": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "list_index"
+      },
+      "listType": {
+        "id": 14,
+        "type": "LIST_TYPE",
+        "wire": "list_type",
+        "enum_ref": "LIST_TYPE"
+      },
+      "metadata": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "metadata"
+      },
+      "predefinedId": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "predefined_id"
+      },
+      "searchQueryId": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "search_query_id"
+      },
+      "searchRequestId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "search_request_id"
+      },
+      "searchResultType": {
+        "id": 4,
+        "type": "CHAT_SEARCH_RESULT_TYPE",
+        "wire": "search_result_type",
+        "enum_ref": "CHAT_SEARCH_RESULT_TYPE"
+      },
+      "sessionId": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "session_id"
+      },
+      "targetScreen": {
+        "id": 5,
+        "type": "CHAT_FILTER_TARGET_SCREEN",
+        "wire": "target_screen",
+        "enum_ref": "CHAT_FILTER_TARGET_SCREEN"
+      },
+      "threadId": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "thread_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatFilterEventWamEvent",
+    "matches": "ChatFilterEvent:\\s*\\[\\s*1616"
+  },
+  "literals": [
+    "1616"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatFilterActionTypes",
+      "WAWebWamEnumChatFilterTargetScreen",
+      "WAWebWamEnumChatFilterTypes",
+      "WAWebWamEnumChatSearchResultType",
+      "WAWebWamEnumListType"
+    ],
+    "dependents": [
+      "WAWebFilterLogging"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

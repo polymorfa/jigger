@@ -1,0 +1,2 @@
+/// Matches `<notification>`. Server-initiated; nothing sends it.
+pub fn parse_smb_metered_messages_campaign_campaign_state_changed_notification_request(n: &Node) -> Option<SmbMeteredMessagesCampaignCampaignStateChangedNotificationRequest>

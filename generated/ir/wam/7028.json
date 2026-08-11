@@ -1,0 +1,49 @@
+{
+  "id": "wam:7028",
+  "kind": "wam",
+  "name": "WebArkoseToken",
+  "data": {
+    "kind": "wam",
+    "event_id": 7028,
+    "fields": {
+      "mdClientSessionId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "md_client_session_id"
+      },
+      "mdSessionId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "md_session_id"
+      },
+      "token": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "token"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebArkoseTokenWamEvent",
+    "matches": "WebArkoseToken:\\s*\\[\\s*7028"
+  },
+  "literals": [
+    "7028"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebArkoseManager"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

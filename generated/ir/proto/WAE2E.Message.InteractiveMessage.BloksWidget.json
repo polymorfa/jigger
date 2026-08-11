@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAE2E.Message.InteractiveMessage.BloksWidget",
+  "kind": "proto",
+  "name": "WAE2E.Message.InteractiveMessage.BloksWidget",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "data": {
+        "number": 2
+      },
+      "type": {
+        "number": 3
+      },
+      "uuid": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.InteractiveMessage.BloksWidget\""
+  },
+  "literals": [
+    "BloksWidget"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/linked_group",
+  "kind": "sig",
+  "name": "GroupsGetLinkedGroupResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "linked_group"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInGroupsGetLinkedGroupResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "linked_group"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInGroupsGroupAddressingModeMixin",
+      "WASmaxInGroupsIQResultResponseMixin",
+      "WASmaxInGroupsLinkedGroupInfoMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxGroupsGetLinkedGroupRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

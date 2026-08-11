@@ -1,0 +1,39 @@
+{
+  "id": "appstate:business_broadcast_insights_sync",
+  "kind": "appstate",
+  "name": "BusinessBroadcastInsights",
+  "data": {
+    "kind": "appstate",
+    "index_name": "business_broadcast_insights_sync",
+    "collection": "regular",
+    "version": 1,
+    "value_field": "businessBroadcastInsightsAction"
+  },
+  "evidence": {
+    "module": "WAWebBusinessBroadcastInsightsSync",
+    "matches": "Actions\\.BusinessBroadcastInsights"
+  },
+  "literals": [
+    "business_broadcast_insights_sync",
+    "BusinessBroadcastInsights",
+    "businessBroadcastInsightsAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebBackendApi",
+      "WAWebBizBroadcastInsightsStorageUtils",
+      "WAWebBusinessBroadcastsGatingUtils",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

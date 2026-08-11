@@ -1,0 +1,12 @@
+message InteractiveMessage {
+  optional Header header = 1;
+  optional Body body = 2;
+  optional Footer footer = 3;
+  optional ShopMessage shopStorefrontMessage = 4;
+  optional CollectionMessage collectionMessage = 5;
+  optional NativeFlowMessage nativeFlowMessage = 6;
+  optional CarouselMessage carouselMessage = 7;
+  optional BloksWidget bloksWidget = 8;
+  optional ContextInfo contextInfo = 15;
+  optional UrlTrackingMap urlTrackingMap = 16;
+}

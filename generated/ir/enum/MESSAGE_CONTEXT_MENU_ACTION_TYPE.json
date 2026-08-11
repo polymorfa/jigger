@@ -1,0 +1,50 @@
+{
+  "id": "enum:MESSAGE_CONTEXT_MENU_ACTION_TYPE",
+  "kind": "enum",
+  "name": "MESSAGE_CONTEXT_MENU_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMessageContextMenuActionType",
+    "variants": [
+      {
+        "name": "OPEN",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK",
+        "value": 2.0
+      },
+      {
+        "name": "COMPLETE",
+        "value": 3.0
+      },
+      {
+        "name": "CANCEL",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMessageContextMenuActionType",
+    "matches": "MESSAGE_CONTEXT_MENU_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MESSAGE_CONTEXT_MENU_ACTION_TYPE",
+    "OPEN",
+    "CLICK",
+    "COMPLETE",
+    "CANCEL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaHubMessageDropdownMenu.react",
+      "WAWebMessageContextMenuActionsWamEvent",
+      "WAWebMessageDebugMenuItems.react",
+      "WAWebMultiSelectUtils",
+      "WAWebWrapperMessageDropdownMenu.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

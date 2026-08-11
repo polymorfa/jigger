@@ -1,0 +1,2 @@
+// ABMmMessageLevelFeedbackNotInterestedMenuEnabled is A/B property 10668 (bool), default false.
+const ABMmMessageLevelFeedbackNotInterestedMenuEnabled = "mm_message_level_feedback_not_interested_menu_enabled"

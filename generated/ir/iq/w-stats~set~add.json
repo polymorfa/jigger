@@ -1,0 +1,173 @@
+{
+  "id": "iq:w:stats/set/add",
+  "kind": "iq",
+  "name": "StatsSendBuffer",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:stats",
+    "type": "set",
+    "tags": [
+      "add"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:stats",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "add",
+          "attrs": [
+            {
+              "name": "t",
+              "ty": "int",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxStatsSendBufferRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInStatsSendBufferResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "ErrorNoRetry",
+        "module": "WASmaxInStatsSendBufferResponseErrorNoRetry",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFeatureNotImplemented",
+          "IQErrorNotAcceptable"
+        ]
+      },
+      {
+        "arm": "ErrorRetry",
+        "module": "WASmaxInStatsSendBufferResponseErrorRetry",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutStatsSendBufferRequest",
+    "matches": "smax\\(\"add\""
+  },
+  "literals": [
+    "w:stats",
+    "add"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutStatsBaseIQSetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxStatsSendBufferRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

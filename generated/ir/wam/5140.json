@@ -1,0 +1,95 @@
+{
+  "id": "wam:5140",
+  "kind": "wam",
+  "name": "Ctwa1pdConversion",
+  "data": {
+    "kind": "wam",
+    "event_id": 5140,
+    "fields": {
+      "bizPlatform": {
+        "id": 3,
+        "type": "BIZ_PLATFORM",
+        "wire": "biz_platform",
+        "enum_ref": "BIZ_PLATFORM"
+      },
+      "ctwa1pdConversionMetadata": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "ctwa1pd_conversion_metadata"
+      },
+      "ctwa1pdConversionSchemaVersion": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "ctwa1pd_conversion_schema_version"
+      },
+      "ctwa1pdConversionType": {
+        "id": 1,
+        "type": "CTWA_1PD_CONVERSION_TYPE",
+        "wire": "ctwa1pd_conversion_type",
+        "enum_ref": "CTWA_1PD_CONVERSION_TYPE"
+      },
+      "ctwaConversationDepth": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "ctwa_conversation_depth"
+      },
+      "ctwaConversationRepeat": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "ctwa_conversation_repeat"
+      },
+      "ctwaDirectionFrom": {
+        "id": 12,
+        "type": "CTWA_DIRECTION_FROM",
+        "wire": "ctwa_direction_from",
+        "enum_ref": "CTWA_DIRECTION_FROM"
+      },
+      "ctwaSignals": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "ctwa_signals"
+      },
+      "ctwaTrackingPayload": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "ctwa_tracking_payload"
+      },
+      "isLatestConversionToken": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "is_latest_conversion_token"
+      },
+      "twoMeasurementEnabled": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "two_measurement_enabled"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebCtwa1pdConversionWamEvent",
+    "matches": "Ctwa1pdConversion:\\s*\\[\\s*5140"
+  },
+  "literals": [
+    "5140"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBizPlatform",
+      "WAWebWamEnumCtwa1pdConversionType",
+      "WAWebWamEnumCtwaDirectionFrom"
+    ],
+    "dependents": [
+      "WAWebSmb1pdConversionSignalAction"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

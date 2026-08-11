@@ -1,0 +1,46 @@
+{
+  "id": "enum:RECEIPT_AGGREGATION_TYPE",
+  "kind": "enum",
+  "name": "RECEIPT_AGGREGATION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumReceiptAggregationType",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 0.0
+      },
+      {
+        "name": "MULTI_MESSAGES",
+        "value": 1.0
+      },
+      {
+        "name": "MULTI_PARTICIPANTS",
+        "value": 2.0
+      },
+      {
+        "name": "AGGREGATE_BY_ID",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumReceiptAggregationType",
+    "matches": "RECEIPT_AGGREGATION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "RECEIPT_AGGREGATION_TYPE",
+    "NONE",
+    "MULTI_MESSAGES",
+    "MULTI_PARTICIPANTS",
+    "AGGREGATE_BY_ID"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebReceiptStanzaReceiveWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

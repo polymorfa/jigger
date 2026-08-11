@@ -1,0 +1,102 @@
+{
+  "id": "enum:PRESET_TYPE",
+  "kind": "enum",
+  "name": "PRESET_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPresetType",
+    "variants": [
+      {
+        "name": "FREE_TO_CHAT",
+        "value": 1.0
+      },
+      {
+        "name": "SLOW_TO_RESPOND",
+        "value": 2.0
+      },
+      {
+        "name": "HANGING_WITH_FRIENDS",
+        "value": 3.0
+      },
+      {
+        "name": "TRAVELING",
+        "value": 4.0
+      },
+      {
+        "name": "EXCITED",
+        "value": 5.0
+      },
+      {
+        "name": "HAPPY_NEW_YEAR",
+        "value": 6.0
+      },
+      {
+        "name": "HAPPY_ST_PATRICKS_DAY",
+        "value": 7.0
+      },
+      {
+        "name": "HAPPY_EASTER",
+        "value": 8.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_WATCHING_THE_MATCH",
+        "value": 9.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_EXCITED_FOR_FINALS",
+        "value": 10.0
+      },
+      {
+        "name": "PREVIOUS_SET_ABOUT",
+        "value": 11.0
+      },
+      {
+        "name": "AWAY_LEAVE_A_MESSAGE",
+        "value": 12.0
+      },
+      {
+        "name": "AT_THE_GYM",
+        "value": 13.0
+      },
+      {
+        "name": "SLEEPING",
+        "value": 14.0
+      },
+      {
+        "name": "AT_WORK",
+        "value": 15.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPresetType",
+    "matches": "PRESET_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PRESET_TYPE",
+    "FREE_TO_CHAT",
+    "SLOW_TO_RESPOND",
+    "HANGING_WITH_FRIENDS",
+    "TRAVELING",
+    "EXCITED",
+    "HAPPY_NEW_YEAR",
+    "HAPPY_ST_PATRICKS_DAY",
+    "HAPPY_EASTER",
+    "FIFA_WORLDCUP_WATCHING_THE_MATCH",
+    "FIFA_WORLDCUP_EXCITED_FOR_FINALS",
+    "PREVIOUS_SET_ABOUT",
+    "AWAY_LEAVE_A_MESSAGE",
+    "AT_THE_GYM",
+    "SLEEPING",
+    "AT_WORK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAboutCreationWamEvent",
+      "WAWebAboutWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

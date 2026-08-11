@@ -1,0 +1,154 @@
+{
+  "id": "iq:md/get/link_code_companion_reg",
+  "kind": "iq",
+  "name": "MdGetCountryCode",
+  "data": {
+    "kind": "iq",
+    "xmlns": "md",
+    "type": "get",
+    "tags": [
+      "link_code_companion_reg"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "md",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "link_code_companion_reg",
+          "attrs": [
+            {
+              "name": "stage",
+              "ty": "string",
+              "literal": "get_country_code",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxMdGetCountryCodeRPC",
+    "responses": [
+      {
+        "arm": "MdGetCountryCodeResponseGetCountryCodeResponse",
+        "module": "WASmaxInMdGetCountryCodeResponseGetCountryCodeResponse",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "country_code",
+              "attrs": [
+                {
+                  "name": "iso",
+                  "ty": "string",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInMdGetCountryCodeResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorInternalServerError"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutMdGetCountryCodeRequest",
+    "matches": "smax\\(\"link_code_companion_reg\""
+  },
+  "literals": [
+    "md",
+    "link_code_companion_reg"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutMdBaseIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxMdGetCountryCodeRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

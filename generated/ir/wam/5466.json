@@ -1,0 +1,109 @@
+{
+  "id": "wam:5466",
+  "kind": "wam",
+  "name": "ReportingTokenValidationFailure",
+  "data": {
+    "kind": "wam",
+    "event_id": 5466,
+    "fields": {
+      "editType": {
+        "id": 1,
+        "type": "EDIT_TYPE",
+        "wire": "edit_type",
+        "enum_ref": "EDIT_TYPE"
+      },
+      "isLid": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "is_lid"
+      },
+      "isMessageMediaRetry": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "is_message_media_retry"
+      },
+      "isMessageRetry": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "is_message_retry"
+      },
+      "isPartOfGroupHistory": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "is_part_of_group_history"
+      },
+      "isSecretEncryptedMsg": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_secret_encrypted_msg"
+      },
+      "messageIsForward": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "message_is_forward"
+      },
+      "messageMediaType": {
+        "id": 2,
+        "type": "MEDIA_TYPE",
+        "wire": "message_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messageType": {
+        "id": 3,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "offline": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "offline"
+      },
+      "reportingTokenValidationFailureReason": {
+        "id": 4,
+        "type": "REPORTING_TOKEN_VALIDATION_FAILURE_REASON",
+        "wire": "reporting_token_validation_failure_reason",
+        "enum_ref": "REPORTING_TOKEN_VALIDATION_FAILURE_REASON"
+      },
+      "reportingTokenVersion": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "reporting_token_version"
+      },
+      "senderPlatform": {
+        "id": 14,
+        "type": "PLATFORM_TYPE",
+        "wire": "sender_platform",
+        "enum_ref": "PLATFORM_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebReportingTokenValidationFailureWamEvent",
+    "matches": "ReportingTokenValidationFailure:\\s*\\[\\s*5466"
+  },
+  "literals": [
+    "5466"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumEditType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumPlatformType",
+      "WAWebWamEnumReportingTokenValidationFailureReason"
+    ],
+    "dependents": [
+      "WAWebWamReportingTokenMismatchReporter"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

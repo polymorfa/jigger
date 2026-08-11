@@ -1,0 +1,49 @@
+{
+  "id": "wam:4814",
+  "kind": "wam",
+  "name": "WebDbLoadFromVersionFailureNonAnonymous",
+  "data": {
+    "kind": "wam",
+    "event_id": 4814,
+    "fields": {
+      "webDbLoader": {
+        "id": 1,
+        "type": "WEB_DB_LOADER_TYPE",
+        "wire": "web_db_loader",
+        "enum_ref": "WEB_DB_LOADER_TYPE"
+      },
+      "webDbName": {
+        "id": 2,
+        "type": "WEB_DB_NAME_TYPE",
+        "wire": "web_db_name",
+        "enum_ref": "WEB_DB_NAME_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebDbLoadFromVersionFailureNonAnonymousWamEvent",
+    "matches": "WebDbLoadFromVersionFailureNonAnonymous:\\s*\\[\\s*4814"
+  },
+  "literals": [
+    "4814"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebDbLoaderType",
+      "WAWebWamEnumWebDbNameType"
+    ],
+    "dependents": [
+      "WAWebSchemaVersions",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

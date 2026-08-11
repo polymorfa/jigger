@@ -1,0 +1,42 @@
+{
+  "id": "enum:BIZ_AI_RENDER_OUTCOME_TYPE",
+  "kind": "enum",
+  "name": "BIZ_AI_RENDER_OUTCOME_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBizAiRenderOutcomeType",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 0.0
+      },
+      {
+        "name": "FALLBACK",
+        "value": 1.0
+      },
+      {
+        "name": "ERROR",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBizAiRenderOutcomeType",
+    "matches": "BIZ_AI_RENDER_OUTCOME_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "BIZ_AI_RENDER_OUTCOME_TYPE",
+    "SUCCESS",
+    "FALLBACK",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizAiComponentInteractionWamEvent",
+      "WAWebInteractiveBloksWidgetLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

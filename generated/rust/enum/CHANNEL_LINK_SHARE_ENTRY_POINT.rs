@@ -1,0 +1,10 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum CHANNELLINKSHAREENTRYPOINT {
+    CHANNELINFOPAGE = 1,
+    CHANNELTHREAD = 2,
+    PRODUCERCONTEXTCARD = 3,
+    UPDATESTAB = 4,
+    SHARELINKSCREEN = 5,
+    CHANNELADMINONBOARDING = 6,
+}

@@ -1,0 +1,3 @@
+message BusinessMessageForwardInfo {
+  optional bytes businessOwnerJid = 1;
+}

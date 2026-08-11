@@ -1,0 +1,46 @@
+{
+  "id": "enum:PAYMENTS_CONTACTS_BUCKET_TYPE",
+  "kind": "enum",
+  "name": "PAYMENTS_CONTACTS_BUCKET_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaymentsContactsBucketType",
+    "variants": [
+      {
+        "name": "SMALL",
+        "value": 1.0
+      },
+      {
+        "name": "MEDIUM",
+        "value": 2.0
+      },
+      {
+        "name": "LARGE",
+        "value": 3.0
+      },
+      {
+        "name": "EXTRA_LARGE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaymentsContactsBucketType",
+    "matches": "PAYMENTS_CONTACTS_BUCKET_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PAYMENTS_CONTACTS_BUCKET_TYPE",
+    "SMALL",
+    "MEDIUM",
+    "LARGE",
+    "EXTRA_LARGE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPaymentsUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

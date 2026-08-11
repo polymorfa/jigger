@@ -1,0 +1,36 @@
+{
+  "id": "enum:LWI_AD_MEDIA_TYPE",
+  "kind": "enum",
+  "name": "LWI_AD_MEDIA_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiAdMediaType",
+    "variants": [
+      {
+        "name": "IMAGE",
+        "value": 1.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiAdMediaType",
+    "matches": "LWI_AD_MEDIA_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LWI_AD_MEDIA_TYPE",
+    "IMAGE",
+    "VIDEO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

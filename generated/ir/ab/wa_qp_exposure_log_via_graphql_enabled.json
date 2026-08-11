@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_qp_exposure_log_via_graphql_enabled",
+  "kind": "ab",
+  "name": "wa_qp_exposure_log_via_graphql_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31560,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_qp_exposure_log_via_graphql_enabled:\\s*\\[\\s*31560"
+  },
+  "literals": [
+    "wa_qp_exposure_log_via_graphql_enabled",
+    "31560"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

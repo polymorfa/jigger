@@ -1,0 +1,5 @@
+export enum WEBCWHATSNEWSURFACETYPE {
+  LOADING_CAROUSEL = 1,
+  BANNER = 2,
+  MODAL = 3,
+}

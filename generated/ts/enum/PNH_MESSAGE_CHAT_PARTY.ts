@@ -1,0 +1,4 @@
+export enum PNHMESSAGECHATPARTY {
+  BIZ = 1,
+  CONSUMER = 2,
+}

@@ -1,0 +1,37 @@
+{
+  "id": "enum:CALL_SIDE",
+  "kind": "enum",
+  "name": "CALL_SIDE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallSide",
+    "variants": [
+      {
+        "name": "CALLER",
+        "value": 1.0
+      },
+      {
+        "name": "CALLEE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallSide",
+    "matches": "CALL_SIDE\\s*[:=]"
+  },
+  "literals": [
+    "CALL_SIDE",
+    "CALLER",
+    "CALLEE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent",
+      "WAWebJoinableCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

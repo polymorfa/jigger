@@ -1,0 +1,52 @@
+{
+  "id": "proto:WAAICommon.BotFeedbackMessage",
+  "kind": "proto",
+  "name": "WAAICommon.BotFeedbackMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "kind": {
+        "number": 2
+      },
+      "kindNegative": {
+        "number": 4
+      },
+      "kindPositive": {
+        "number": 5
+      },
+      "kindReport": {
+        "number": 6
+      },
+      "messageKey": {
+        "number": 1
+      },
+      "sideBySideSurveyMetadata": {
+        "number": 7,
+        "type_name": "WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata"
+      },
+      "text": {
+        "number": 3
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotFeedbackMessage\""
+  },
+  "literals": [
+    "BotFeedbackMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

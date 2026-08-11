@@ -1,0 +1,5 @@
+export enum REACTIONACTIONTYPE {
+  OPEN_TRAY = 1,
+  DELETE = 2,
+  UPDATE = 3,
+}

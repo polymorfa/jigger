@@ -1,0 +1,19 @@
+message XmatLinkCTA {
+  optional bytes linkCtaXmatPrimaryText = 1;
+  optional bytes linkCtaXmatCtaText = 2;
+  optional bytes linkCtaXmatCtaUrl = 3;
+  optional bytes linkCtaXmatCtaIosUrl = 4;
+  optional bytes androidUri = 5;
+  optional bytes asyncUrl = 6;
+  optional bytes wwwIsAsyncUrl = 7;
+  optional bytes msiteEnabled = 8;
+  optional bytes hideUriInFallback = 9;
+  optional bytes showConfirmationDialog = 10;
+  optional bytes graphPayload = 11;
+  optional bytes identifierName = 12;
+  optional bytes threadId = 13;
+  optional bytes hideCtaInFallback = 14;
+  optional bytes ctxAdConversationStarterInfo = 15;
+  optional bytes fbmUri = 16;
+  optional bytes initiatorUserId = 17;
+}

@@ -1,0 +1,43 @@
+{
+  "id": "proto:WAWebProtobufsSyncdSnapshotRecovery.SyncdSnapshotRecovery",
+  "kind": "proto",
+  "name": "WAWebProtobufsSyncdSnapshotRecovery.SyncdSnapshotRecovery",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "collectionLthash": {
+        "number": 4
+      },
+      "collectionName": {
+        "number": 2
+      },
+      "mutationRecords": {
+        "number": 3,
+        "type_name": "WAWebProtobufsSyncdSnapshotRecovery.SyncdPlainTextRecord"
+      },
+      "version": {
+        "number": 1,
+        "type_name": "WAWebProtobufsSyncdSnapshotRecovery.SyncdVersion"
+      }
+    },
+    "module": "WAWebProtobufsSyncdSnapshotRecovery.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsSyncdSnapshotRecovery.pb",
+    "matches": "name = \"SyncdSnapshotRecovery\""
+  },
+  "literals": [
+    "SyncdSnapshotRecovery"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst",
+      "WAWebProtobufSyncAction.pb"
+    ],
+    "dependents": [
+      "WAWebNonMessageDataRequestHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

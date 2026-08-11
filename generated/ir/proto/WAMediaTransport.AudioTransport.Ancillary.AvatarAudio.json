@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAMediaTransport.AudioTransport.Ancillary.AvatarAudio",
+  "kind": "proto",
+  "name": "WAMediaTransport.AudioTransport.Ancillary.AvatarAudio",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "avatarAnimations": {
+        "number": 2,
+        "type_name": "WAMediaTransport.AudioTransport.Ancillary.AvatarAudio.DownloadableAvatarAnimations"
+      },
+      "poseId": {
+        "number": 1
+      }
+    },
+    "module": "WAMediaTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMediaTransport.pb",
+    "matches": "name = \"AudioTransport.Ancillary.AvatarAudio\""
+  },
+  "literals": [
+    "AvatarAudio"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EncryptedBackupsCreateAttachmentContext",
+      "MAWAsConsumerApplication",
+      "MAWEncodeMediaTransportProtocol",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWMpsMigrationProtobufCorrectnessCheckerArmadilloComparisons",
+      "MAWParseNoteReplyMsg",
+      "MAWParseRavenMsg",
+      "MAWProtobufDeserializers",
+      "WAParseConsumerMessageProtocol",
+      "WAParseMediaTransportProtocol",
+      "getMediaTypeFromConsumerMessage"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

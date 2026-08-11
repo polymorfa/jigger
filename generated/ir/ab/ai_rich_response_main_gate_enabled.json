@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_rich_response_main_gate_enabled",
+  "kind": "ab",
+  "name": "ai_rich_response_main_gate_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 12539,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_rich_response_main_gate_enabled:\\s*\\[\\s*12539"
+  },
+  "literals": [
+    "ai_rich_response_main_gate_enabled",
+    "12539"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

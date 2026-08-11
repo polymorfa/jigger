@@ -1,0 +1,34 @@
+{
+  "id": "enum:USERJID_USERJID_USERJID",
+  "kind": "enum",
+  "name": "USERJID_USERJID_USERJID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInChatstateEnums",
+    "variants": [
+      {
+        "name": "typeName",
+        "value": "UserJid|UserJid|UserJid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInChatstateEnums",
+    "matches": "USERJID_USERJID_USERJID\\s*[:=]"
+  },
+  "literals": [
+    "USERJID_USERJID_USERJID",
+    "typeName"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInChatstateFromGroupMixin",
+      "WASmaxInChatstateFromUserMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,4 @@
+message LegacyMessage {
+  optional bytes eventResponseMessage = 1;
+  optional bytes pollVote = 2;
+}

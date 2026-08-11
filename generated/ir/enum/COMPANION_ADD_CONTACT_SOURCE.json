@@ -1,0 +1,82 @@
+{
+  "id": "enum:COMPANION_ADD_CONTACT_SOURCE",
+  "kind": "enum",
+  "name": "COMPANION_ADD_CONTACT_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCompanionAddContactSource",
+    "variants": [
+      {
+        "name": "CONTACT_INFO",
+        "value": 0.0
+      },
+      {
+        "name": "VCARD",
+        "value": 1.0
+      },
+      {
+        "name": "CONTACT_LIST",
+        "value": 2.0
+      },
+      {
+        "name": "NEW_CHAT",
+        "value": 3.0
+      },
+      {
+        "name": "PHONE_NUMBER_DIALER",
+        "value": 4.0
+      },
+      {
+        "name": "FMX_CARD",
+        "value": 5.0
+      },
+      {
+        "name": "NEW_CHAT_DRAWER",
+        "value": 6.0
+      },
+      {
+        "name": "CHAT_HEADER",
+        "value": 7.0
+      },
+      {
+        "name": "GROUP_MEMBER",
+        "value": 8.0
+      },
+      {
+        "name": "CHAT_LIST_GLOBAL_SEARCH",
+        "value": 9.0
+      },
+      {
+        "name": "SUSPICIOUS_CHAT_BANNER",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCompanionAddContactSource",
+    "matches": "COMPANION_ADD_CONTACT_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "COMPANION_ADD_CONTACT_SOURCE",
+    "CONTACT_INFO",
+    "VCARD",
+    "CONTACT_LIST",
+    "NEW_CHAT",
+    "PHONE_NUMBER_DIALER",
+    "FMX_CARD",
+    "NEW_CHAT_DRAWER",
+    "CHAT_HEADER",
+    "GROUP_MEMBER",
+    "CHAT_LIST_GLOBAL_SEARCH",
+    "SUSPICIOUS_CHAT_BANNER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCompanionsContactEventWamEvent",
+      "WAWebContactLogging"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

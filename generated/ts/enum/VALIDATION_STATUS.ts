@@ -1,0 +1,5 @@
+export enum VALIDATIONSTATUS {
+  UNKNOWN = 1,
+  NO_ACTION_REQUIRED = 2,
+  HAS_ERRORS = 3,
+}

@@ -1,0 +1,48 @@
+{
+  "id": "wam:3726",
+  "kind": "wam",
+  "name": "PrivacySettingsClick",
+  "data": {
+    "kind": "wam",
+    "event_id": 3726,
+    "fields": {
+      "privacyControlEntryPoint": {
+        "id": 1,
+        "type": "PRIVACY_CONTROL_ENTRY_POINT_TYPE",
+        "wire": "privacy_control_entry_point",
+        "enum_ref": "PRIVACY_CONTROL_ENTRY_POINT_TYPE"
+      },
+      "privacyControlItem": {
+        "id": 2,
+        "type": "PRIVACY_CONTROL_ITEM_TYPE",
+        "wire": "privacy_control_item",
+        "enum_ref": "PRIVACY_CONTROL_ITEM_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPrivacySettingsClickWamEvent",
+    "matches": "PrivacySettingsClick:\\s*\\[\\s*3726"
+  },
+  "literals": [
+    "3726"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumPrivacyControlEntryPointType",
+      "WAWebWamEnumPrivacyControlItemType"
+    ],
+    "dependents": [
+      "WAWebPrivacySettingsDrawer.react"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "enum:PS_GROUP_SAFETY_CHECK_EXIT_DIALOG_ACTIONS",
+  "kind": "enum",
+  "name": "PS_GROUP_SAFETY_CHECK_EXIT_DIALOG_ACTIONS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPsGroupSafetyCheckExitDialogActions",
+    "variants": [
+      {
+        "name": "GROUP_EXIT_DIALOG_DISMISS",
+        "value": 0.0
+      },
+      {
+        "name": "GROUP_EXIT_DIALOG_EXIT",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP_EXIT_DIALOG_EXIT_AND_REPORT",
+        "value": 2.0
+      },
+      {
+        "name": "COMMUNITY_EXIT_DIALOG_DISMISS",
+        "value": 3.0
+      },
+      {
+        "name": "COMMUNITY_EXIT_DIALOG_EXIT",
+        "value": 4.0
+      },
+      {
+        "name": "COMMUNITY_EXIT_DIALOG_EXIT_AND_DELETE",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPsGroupSafetyCheckExitDialogActions",
+    "matches": "PS_GROUP_SAFETY_CHECK_EXIT_DIALOG_ACTIONS\\s*[:=]"
+  },
+  "literals": [
+    "PS_GROUP_SAFETY_CHECK_EXIT_DIALOG_ACTIONS",
+    "GROUP_EXIT_DIALOG_DISMISS",
+    "GROUP_EXIT_DIALOG_EXIT",
+    "GROUP_EXIT_DIALOG_EXIT_AND_REPORT",
+    "COMMUNITY_EXIT_DIALOG_DISMISS",
+    "COMMUNITY_EXIT_DIALOG_EXIT",
+    "COMMUNITY_EXIT_DIALOG_EXIT_AND_DELETE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLeaveAndReportGroupModal.react",
+      "WAWebLeaveAndReportGroupModalV2.react",
+      "WAWebLeaveCommunityModal.react",
+      "WAWebLeaveCommunityModalV2.react",
+      "WAWebPsGroupSafetyCheckExitDialogWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

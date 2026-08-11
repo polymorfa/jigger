@@ -1,0 +1,3 @@
+message AiThread {
+  optional bytes supportLevel = 1;
+}

@@ -1,0 +1,37 @@
+{
+  "id": "enum:DYI_TRIGGER_TYPE_CODE",
+  "kind": "enum",
+  "name": "DYI_TRIGGER_TYPE_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDyiTriggerTypeCode",
+    "variants": [
+      {
+        "name": "ADHOC",
+        "value": 1.0
+      },
+      {
+        "name": "SCHEDULED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDyiTriggerTypeCode",
+    "matches": "DYI_TRIGGER_TYPE_CODE\\s*[:=]"
+  },
+  "literals": [
+    "DYI_TRIGGER_TYPE_CODE",
+    "ADHOC",
+    "SCHEDULED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDyiReportRequestWamEvent",
+      "useWAWebGdprRequest"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

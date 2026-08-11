@@ -1,0 +1,8 @@
+export enum STATUSMEDIAPICKERFORMATTYPE {
+  TEXT = 1,
+  VOICE = 2,
+  LAYOUTS = 3,
+  MUSIC = 4,
+  AI_IMAGINE = 5,
+  LOCATION = 6,
+}

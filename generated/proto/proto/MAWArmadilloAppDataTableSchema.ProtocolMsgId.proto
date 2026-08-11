@@ -1,0 +1,5 @@
+message ProtocolMsgId {
+  optional bytes externalId = 1;
+  optional bytes author = 2;
+  optional bytes chat = 3;
+}

@@ -1,0 +1,4 @@
+message RecordStructure {
+  optional SessionStructure currentSession = 1;
+  optional SessionStructure previousSessions = 2;
+}

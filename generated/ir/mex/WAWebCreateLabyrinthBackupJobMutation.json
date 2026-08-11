@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebCreateLabyrinthBackupJobMutation",
+  "kind": "mex",
+  "name": "WAWebCreateLabyrinthBackupJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "28017003717917462",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation CreateLabyrinthBackupJobMutation($input) {\n  wa_labyrinth_create_backup {\n    __typename\n    mailbox_id\n    backup_id\n    device_id\n    epoch_id\n    status\n    message\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebCreateLabyrinthBackupJobMutation.graphql",
+    "matches": "id: \"28017003717917462\""
+  },
+  "literals": [
+    "28017003717917462",
+    "WAWebCreateLabyrinthBackupJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCreateLabyrinthBackupJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

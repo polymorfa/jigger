@@ -1,0 +1,42 @@
+{
+  "id": "ab:group_create_add_using_lid_jids",
+  "kind": "ab",
+  "name": "group_create_add_using_lid_jids",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16192,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_create_add_using_lid_jids:\\s*\\[\\s*16192"
+  },
+  "literals": [
+    "group_create_add_using_lid_jids",
+    "16192"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

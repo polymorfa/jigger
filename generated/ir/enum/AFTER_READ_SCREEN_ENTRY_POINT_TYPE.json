@@ -1,0 +1,59 @@
+{
+  "id": "enum:AFTER_READ_SCREEN_ENTRY_POINT_TYPE",
+  "kind": "enum",
+  "name": "AFTER_READ_SCREEN_ENTRY_POINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAfterReadScreenEntryPointType",
+    "variants": [
+      {
+        "name": "STORAGE_SETTING",
+        "value": 0.0
+      },
+      {
+        "name": "PRIVACY",
+        "value": 1.0
+      },
+      {
+        "name": "DM_TIMER_SCREEN",
+        "value": 2.0
+      },
+      {
+        "name": "CHAT_PICKER_SCREEN",
+        "value": 3.0
+      },
+      {
+        "name": "CHAT_ENTRY",
+        "value": 4.0
+      },
+      {
+        "name": "GROUP_CREATION",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAfterReadScreenEntryPointType",
+    "matches": "AFTER_READ_SCREEN_ENTRY_POINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "AFTER_READ_SCREEN_ENTRY_POINT_TYPE",
+    "STORAGE_SETTING",
+    "PRIVACY",
+    "DM_TIMER_SCREEN",
+    "CHAT_PICKER_SCREEN",
+    "CHAT_ENTRY",
+    "GROUP_CREATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebArInterstitialScreenImpressionWamEvent",
+      "WAWebMultiSelectDdm.react",
+      "useWAWebConversationPanelEphemeralNux",
+      "useWAWebHandleAfterReadingClick"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

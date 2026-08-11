@@ -1,0 +1,106 @@
+{
+  "id": "wam:6302",
+  "kind": "wam",
+  "name": "MdSyncdMutationsSummary",
+  "data": {
+    "kind": "wam",
+    "event_id": 6302,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "companionSessionIds": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "companion_session_ids"
+      },
+      "isInBootstrap": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "is_in_bootstrap"
+      },
+      "lidMutations": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "lid_mutations"
+      },
+      "mutationBundle": {
+        "id": 5,
+        "type": "MUTATION_BUNDLE_TYPE",
+        "wire": "mutation_bundle",
+        "enum_ref": "MUTATION_BUNDLE_TYPE"
+      },
+      "mutationDirection": {
+        "id": 6,
+        "type": "MUTATION_DIRECTION_TYPE",
+        "wire": "mutation_direction",
+        "enum_ref": "MUTATION_DIRECTION_TYPE"
+      },
+      "patchMac": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "patch_mac"
+      },
+      "removeMutations": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "remove_mutations"
+      },
+      "seqNumber": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "seq_number"
+      },
+      "setMutations": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "set_mutations"
+      },
+      "snapshotMac": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "snapshot_mac"
+      },
+      "syncdCollection": {
+        "id": 12,
+        "type": "SYNCD_COLLECTION_TYPE",
+        "wire": "syncd_collection",
+        "enum_ref": "SYNCD_COLLECTION_TYPE"
+      },
+      "syncdKeyidKeyhash": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "syncd_keyid_keyhash"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdSyncdMutationsSummaryWamEvent",
+    "matches": "MdSyncdMutationsSummary:\\s*\\[\\s*6302"
+  },
+  "literals": [
+    "6302"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMutationBundleType",
+      "WAWebWamEnumMutationDirectionType",
+      "WAWebWamEnumSyncdCollectionType"
+    ],
+    "dependents": [
+      "WAWebKmpWamLogger",
+      "WAWebSyncdWamReportingUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 2
+  }
+}

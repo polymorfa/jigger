@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_send_invisible_msg_min_group_size",
+  "kind": "ab",
+  "name": "web_send_invisible_msg_min_group_size",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1100,
+    "type": "int",
+    "default": 128,
+    "alt_default": 128
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_send_invisible_msg_min_group_size:\\s*\\[\\s*1100"
+  },
+  "literals": [
+    "web_send_invisible_msg_min_group_size",
+    "1100"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

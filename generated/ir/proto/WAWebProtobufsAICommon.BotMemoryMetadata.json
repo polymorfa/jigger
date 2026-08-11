@@ -1,0 +1,55 @@
+{
+  "id": "proto:WAWebProtobufsAICommon.BotMemoryMetadata",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommon.BotMemoryMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "addedFacts": {
+        "number": 1,
+        "type_name": "WAWebProtobufsAICommon.BotMemoryFact"
+      },
+      "disclaimer": {
+        "number": 3
+      },
+      "removedFacts": {
+        "number": 2,
+        "type_name": "WAWebProtobufsAICommon.BotMemoryFact"
+      }
+    },
+    "module": "WAWebProtobufsAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommon.pb",
+    "matches": "name = \"BotMemoryMetadata\""
+  },
+  "literals": [
+    "BotMemoryMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadTypeUtils",
+      "WAWebBotLoggingUtils",
+      "WAWebBotModeSelectionProtoUtils",
+      "WAWebBotPluginCarouselWrapper.react",
+      "WAWebBotPluginMsgBubbleMeta.react",
+      "WAWebBotSignatureVerificationUtils",
+      "WAWebFrontendMsgGetters",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotMetadata",
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebMediaLinkPreviewContainer.react",
+      "WAWebMsgGetters",
+      "WAWebParseBotFeedbackProtocolMessageProto",
+      "WAWebParseBotSessionTransparencyNotice",
+      "WAWebProtobufsE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 15
+  }
+}

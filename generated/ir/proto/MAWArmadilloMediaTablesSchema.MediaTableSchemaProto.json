@@ -1,0 +1,86 @@
+{
+  "id": "proto:MAWArmadilloMediaTablesSchema.MediaTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMediaTablesSchema.MediaTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilitySummaryText": {
+        "number": 16
+      },
+      "fbid": {
+        "number": 13
+      },
+      "hashedPlaintextHash": {
+        "number": 9
+      },
+      "isVideoGif": {
+        "number": 17
+      },
+      "mediaEntries": {
+        "number": 4,
+        "type_name": "MAWArmadilloMediaTablesSchema.MediaEntriesProto"
+      },
+      "mediaId": {
+        "number": 10
+      },
+      "mediaType": {
+        "number": 1
+      },
+      "msgIds": {
+        "number": 11
+      },
+      "objectId": {
+        "number": 12
+      },
+      "plaintextHash": {
+        "number": 2
+      },
+      "size": {
+        "number": 3
+      },
+      "ts": {
+        "number": 5
+      },
+      "validatedAudioInfo": {
+        "number": 8,
+        "type_name": "MAWArmadilloMediaTablesSchema.AudioMsgContentProto"
+      },
+      "validatedDocumentFileInfo": {
+        "number": 14,
+        "type_name": "MAWArmadilloMediaTablesSchema.DocumentFileMsgContentProto"
+      },
+      "validatedImageInfo": {
+        "number": 7,
+        "type_name": "MAWArmadilloMediaTablesSchema.ImageMsgContentProto"
+      },
+      "validatedResult": {
+        "number": 15,
+        "type_name": "MAWArmadilloMediaTablesSchema.ValidatedResult"
+      },
+      "validatedVideoInfo": {
+        "number": 6,
+        "type_name": "MAWArmadilloMediaTablesSchema.VideoMsgContentProto"
+      }
+    },
+    "module": "MAWArmadilloMediaTablesSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMediaTablesSchema.pb",
+    "matches": "name = \"MediaTableSchemaProto\""
+  },
+  "literals": [
+    "MediaTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

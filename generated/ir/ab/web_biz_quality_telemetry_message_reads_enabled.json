@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_biz_quality_telemetry_message_reads_enabled",
+  "kind": "ab",
+  "name": "web_biz_quality_telemetry_message_reads_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28574,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_biz_quality_telemetry_message_reads_enabled:\\s*\\[\\s*28574"
+  },
+  "literals": [
+    "web_biz_quality_telemetry_message_reads_enabled",
+    "28574"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebQbmMessageReadLogEvent"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

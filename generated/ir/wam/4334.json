@@ -1,0 +1,214 @@
+{
+  "id": "wam:4334",
+  "kind": "wam",
+  "name": "TsNavigation",
+  "data": {
+    "kind": "wam",
+    "event_id": 4334,
+    "fields": {
+      "aiSessionId": {
+        "id": 39,
+        "type": "STRING",
+        "wire": "ai_session_id"
+      },
+      "canonicalEntLastValidationTsMs": {
+        "id": 38,
+        "type": "INTEGER",
+        "wire": "canonical_ent_last_validation_ts_ms"
+      },
+      "cid": {
+        "id": 19,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "entryPointConversationInitiated": {
+        "id": 23,
+        "type": "ENTRY_POINT_CONVERSATION_INITIATED",
+        "wire": "entry_point_conversation_initiated",
+        "enum_ref": "ENTRY_POINT_CONVERSATION_INITIATED"
+      },
+      "entryPointConversionApp": {
+        "id": 24,
+        "type": "STRING",
+        "wire": "entry_point_conversion_app"
+      },
+      "entryPointConversionSource": {
+        "id": 25,
+        "type": "STRING",
+        "wire": "entry_point_conversion_source"
+      },
+      "groupSize": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "group_size"
+      },
+      "isCanonicalEntPresent": {
+        "id": 36,
+        "type": "BOOLEAN",
+        "wire": "is_canonical_ent_present"
+      },
+      "isCatalogVisible": {
+        "id": 29,
+        "type": "BOOLEAN",
+        "wire": "is_catalog_visible"
+      },
+      "isCloudapi": {
+        "id": 26,
+        "type": "BOOLEAN",
+        "wire": "is_cloudapi"
+      },
+      "isMetaAiThread": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "is_meta_ai_thread"
+      },
+      "isOnpremises": {
+        "id": 27,
+        "type": "BOOLEAN",
+        "wire": "is_onpremises"
+      },
+      "isSmb": {
+        "id": 28,
+        "type": "BOOLEAN",
+        "wire": "is_smb"
+      },
+      "navigationDestination": {
+        "id": 2,
+        "type": "TS_SURFACE",
+        "wire": "navigation_destination",
+        "enum_ref": "TS_SURFACE"
+      },
+      "navigationDestinationProductArea": {
+        "id": 34,
+        "type": "PRODUCT_AREA",
+        "wire": "navigation_destination_product_area",
+        "enum_ref": "PRODUCT_AREA"
+      },
+      "navigationDestinationViewName": {
+        "id": 35,
+        "type": "STRING",
+        "wire": "navigation_destination_view_name"
+      },
+      "navigationSource": {
+        "id": 3,
+        "type": "TS_SURFACE",
+        "wire": "navigation_source",
+        "enum_ref": "TS_SURFACE"
+      },
+      "networkIsWifiCanonicalOpNumber": {
+        "id": 43,
+        "type": "INTEGER",
+        "wire": "network_is_wifi_canonical_op_number"
+      },
+      "networkIsWifiOpNumber": {
+        "id": 41,
+        "type": "INTEGER",
+        "wire": "network_is_wifi_op_number"
+      },
+      "networkRadioTypeCanonicalOpNumber": {
+        "id": 44,
+        "type": "INTEGER",
+        "wire": "network_radio_type_canonical_op_number"
+      },
+      "networkRadioTypeEventLevel": {
+        "id": 40,
+        "type": "RADIO_TYPE",
+        "wire": "network_radio_type_event_level",
+        "enum_ref": "RADIO_TYPE"
+      },
+      "networkRadioTypeOpNumber": {
+        "id": 42,
+        "type": "INTEGER",
+        "wire": "network_radio_type_op_number"
+      },
+      "referrerAction": {
+        "id": 31,
+        "type": "REFERRER_ACTION",
+        "wire": "referrer_action",
+        "enum_ref": "REFERRER_ACTION"
+      },
+      "relativeTimestampMs": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "relative_timestamp_ms"
+      },
+      "smbCatalogBusinessVertical": {
+        "id": 20,
+        "type": "STRING",
+        "wire": "smb_catalog_business_vertical"
+      },
+      "smbCatalogIsCatalogVisible": {
+        "id": 21,
+        "type": "BOOLEAN",
+        "wire": "smb_catalog_is_catalog_visible"
+      },
+      "smbCatalogIsToggleCart": {
+        "id": 22,
+        "type": "BOOLEAN",
+        "wire": "smb_catalog_is_toggle_cart"
+      },
+      "threadType": {
+        "id": 7,
+        "type": "THREAD_TYPE",
+        "wire": "thread_type",
+        "enum_ref": "THREAD_TYPE"
+      },
+      "traceIdInt": {
+        "id": 37,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      },
+      "tsSessionId": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "ts_session_id"
+      },
+      "tsTimestampMs": {
+        "id": 32,
+        "type": "INTEGER",
+        "wire": "ts_timestamp_ms"
+      },
+      "typeOfGroup": {
+        "id": 6,
+        "type": "TYPE_OF_GROUP_ENUM",
+        "wire": "type_of_group",
+        "enum_ref": "TYPE_OF_GROUP_ENUM"
+      },
+      "unifiedSessionId": {
+        "id": 33,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebTsNavigationWamEvent",
+    "matches": "TsNavigation:\\s*\\[\\s*4334"
+  },
+  "literals": [
+    "4334"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumEntryPointConversationInitiated",
+      "WAWebWamEnumProductArea",
+      "WAWebWamEnumRadioType",
+      "WAWebWamEnumReferrerAction",
+      "WAWebWamEnumThreadType",
+      "WAWebWamEnumTsSurface",
+      "WAWebWamEnumTypeOfGroupEnum"
+    ],
+    "dependents": [
+      "WAWebTimeSpentLoggingNavigation"
+    ],
+    "dep_count": 8,
+    "dependent_count": 1
+  }
+}

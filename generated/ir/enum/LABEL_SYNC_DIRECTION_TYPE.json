@@ -1,0 +1,47 @@
+{
+  "id": "enum:LABEL_SYNC_DIRECTION_TYPE",
+  "kind": "enum",
+  "name": "LABEL_SYNC_DIRECTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLabelSyncDirectionType",
+    "variants": [
+      {
+        "name": "SENDER",
+        "value": 1.0
+      },
+      {
+        "name": "RECEIVER",
+        "value": 2.0
+      },
+      {
+        "name": "RETRY",
+        "value": 3.0
+      },
+      {
+        "name": "BOOTSTRAP_SENDER",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLabelSyncDirectionType",
+    "matches": "LABEL_SYNC_DIRECTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LABEL_SYNC_DIRECTION_TYPE",
+    "SENDER",
+    "RECEIVER",
+    "RETRY",
+    "BOOTSTRAP_SENDER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdLabelSyncTrackingWamEvent",
+      "WAWebWamLabelSyncTrackingReporter"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

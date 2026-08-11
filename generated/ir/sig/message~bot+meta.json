@@ -1,0 +1,35 @@
+{
+  "id": "sig:message/bot+meta",
+  "kind": "sig",
+  "name": "MessageDeliverBotMessageMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "bot",
+      "meta"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverBotMessageMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "bot",
+    "meta"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMessageDeliverBotResponseMixin",
+      "WASmaxInMessageDeliverMessageTargetMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBotOrCoExV2ProactiveOrBotProactiveMessageMixinGroup"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

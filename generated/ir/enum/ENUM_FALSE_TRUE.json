@@ -1,0 +1,36 @@
+{
+  "id": "enum:ENUM_FALSE_TRUE",
+  "kind": "enum",
+  "name": "ENUM_FALSE_TRUE",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInAbPropsEnums",
+    "variants": [
+      {
+        "name": "false",
+        "value": "false"
+      },
+      {
+        "name": "true",
+        "value": "true"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAbPropsEnums",
+    "matches": "ENUM_FALSE_TRUE\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_FALSE_TRUE",
+    "false",
+    "true"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInAbPropsGetExperimentConfigResponseSuccess"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

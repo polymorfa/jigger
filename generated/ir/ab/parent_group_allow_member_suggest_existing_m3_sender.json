@@ -1,0 +1,45 @@
+{
+  "id": "ab:parent_group_allow_member_suggest_existing_m3_sender",
+  "kind": "ab",
+  "name": "parent_group_allow_member_suggest_existing_m3_sender",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5077,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "parent_group_allow_member_suggest_existing_m3_sender:\\s*\\[\\s*5077"
+  },
+  "literals": [
+    "parent_group_allow_member_suggest_existing_m3_sender",
+    "5077"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCommunityGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

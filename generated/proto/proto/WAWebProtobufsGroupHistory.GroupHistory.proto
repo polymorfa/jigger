@@ -1,0 +1,6 @@
+message GroupHistory {
+  optional bytes messages = 1;
+  optional UnCountedAssociatedMessageList uncountedAssociatedMessageLists = 2;
+  optional bytes commentMessages = 3;
+  optional bytes outOfWindowPinnedMessages = 4;
+}

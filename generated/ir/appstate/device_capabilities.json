@@ -1,0 +1,30 @@
+{
+  "id": "appstate:device_capabilities",
+  "kind": "appstate",
+  "name": "DeviceCapabilities",
+  "data": {
+    "kind": "appstate",
+    "index_name": "device_capabilities"
+  },
+  "evidence": {
+    "module": "WAWebDeviceCapabilitiesSync",
+    "matches": "Actions\\.DeviceCapabilities"
+  },
+  "literals": [
+    "device_capabilities",
+    "DeviceCapabilities"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebDeviceCapabilitiesSyncBase",
+      "WAWebSyncdConst",
+      "WAWebUserPrefsMeUser"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebDeviceCapabilitiesBootstrap"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "wam:5308",
+  "kind": "wam",
+  "name": "SearchActionEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 5308,
+    "fields": {
+      "bizSearchCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "biz_search_count"
+      },
+      "resultPageShown": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "result_page_shown"
+      },
+      "searchAction": {
+        "id": 2,
+        "type": "SEARCH_ACTION_TYPE",
+        "wire": "search_action",
+        "enum_ref": "SEARCH_ACTION_TYPE"
+      },
+      "searchActionEntryPoint": {
+        "id": 3,
+        "type": "SEARCH_ACTION_ENTRY_POINT_TYPE",
+        "wire": "search_action_entry_point",
+        "enum_ref": "SEARCH_ACTION_ENTRY_POINT_TYPE"
+      },
+      "searchAiSuggestionCount": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "search_ai_suggestion_count",
+        "constraints": [
+          "search_ai_suggestion_count > 0",
+          "search_ai_suggestion_count == 1"
+        ]
+      },
+      "searchChatsCount": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "search_chats_count"
+      },
+      "searchContactsCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "search_contacts_count"
+      },
+      "searchFilterCount": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "search_filter_count"
+      },
+      "searchGroupsCount": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "search_groups_count"
+      },
+      "searchMessagesCount": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "search_messages_count"
+      },
+      "selectedItemRank": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "selected_item_rank"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSearchActionEventWamEvent",
+    "matches": "SearchActionEvent:\\s*\\[\\s*5308"
+  },
+  "literals": [
+    "5308"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumSearchActionEntryPointType",
+      "WAWebWamEnumSearchActionType"
+    ],
+    "dependents": [
+      "WAWebSearchLogging"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

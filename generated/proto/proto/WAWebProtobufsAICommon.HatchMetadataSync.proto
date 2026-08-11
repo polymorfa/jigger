@@ -1,0 +1,5 @@
+message HatchMetadataSync {
+  optional bytes data = 1;
+  optional bytes timestampMs = 2;
+  optional bytes requestId = 3;
+}

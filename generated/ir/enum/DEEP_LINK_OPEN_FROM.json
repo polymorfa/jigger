@@ -1,0 +1,59 @@
+{
+  "id": "enum:DEEP_LINK_OPEN_FROM",
+  "kind": "enum",
+  "name": "DEEP_LINK_OPEN_FROM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDeepLinkOpenFrom",
+    "variants": [
+      {
+        "name": "DEEP_LINK_EXTERNAL",
+        "value": 1.0
+      },
+      {
+        "name": "DEEP_LINK_WA_LINK_CLICK",
+        "value": 2.0
+      },
+      {
+        "name": "QR_CODE_SHEET",
+        "value": 3.0
+      },
+      {
+        "name": "DEEP_LINK_BANNER",
+        "value": 4.0
+      },
+      {
+        "name": "DEEP_LINK_SMB_NOTIFICATION",
+        "value": 5.0
+      },
+      {
+        "name": "DEEP_LINK_MESSENGER_APP",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDeepLinkOpenFrom",
+    "matches": "DEEP_LINK_OPEN_FROM\\s*[:=]"
+  },
+  "literals": [
+    "DEEP_LINK_OPEN_FROM",
+    "DEEP_LINK_EXTERNAL",
+    "DEEP_LINK_WA_LINK_CLICK",
+    "QR_CODE_SHEET",
+    "DEEP_LINK_BANNER",
+    "DEEP_LINK_SMB_NOTIFICATION",
+    "DEEP_LINK_MESSENGER_APP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCatalogViewWamEvent",
+      "WAWebCatalogBizWamEvent",
+      "WAWebDeepLinkOpenWamEvent",
+      "WAWebExecApiCmdHelpers"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

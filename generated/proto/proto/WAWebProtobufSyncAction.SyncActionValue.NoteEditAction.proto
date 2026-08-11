@@ -1,0 +1,7 @@
+message NoteEditAction {
+  optional bytes type = 1;
+  optional bytes chatJid = 2;
+  optional bytes createdAt = 3;
+  optional bytes deleted = 4;
+  optional bytes unstructuredContent = 5;
+}

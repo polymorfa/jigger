@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TRIGGERTYPE {
+    CHATENTRY = 1,
+    SYSTEMMESSAGE = 2,
+    KEEPMESSAGEFIRSTTIME = 3,
+    USERMESSAGEKEPT = 4,
+    KEPTFOLDERTAPFIRSTTIME = 5,
+    UNKEEPMESSAGEFIRSTTIME = 6,
+    EPHEMERALSETTINGS = 7,
+}

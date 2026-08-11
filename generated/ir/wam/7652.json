@@ -1,0 +1,182 @@
+{
+  "id": "wam:7652",
+  "kind": "wam",
+  "name": "PaidMessageVpvImpression",
+  "data": {
+    "kind": "wam",
+    "event_id": 7652,
+    "fields": {
+      "bodyUrlCountInt": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "body_url_count_int"
+      },
+      "bodyUrlUniqueCountInt": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "body_url_unique_count_int"
+      },
+      "buttonValueJsonArray": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "button_value_json_array"
+      },
+      "chatsFolderType": {
+        "id": 4,
+        "type": "CHATS_FOLDER_TYPE",
+        "wire": "chats_folder_type",
+        "enum_ref": "CHATS_FOLDER_TYPE"
+      },
+      "contactType": {
+        "id": 5,
+        "type": "CONTACT_TYPE",
+        "wire": "contact_type",
+        "enum_ref": "CONTACT_TYPE"
+      },
+      "ctaUrlUniqueCountInt": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "cta_url_unique_count_int"
+      },
+      "decisionId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "decision_id"
+      },
+      "deltaTime": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "delta_time"
+      },
+      "deltaTimeReceived": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "delta_time_received"
+      },
+      "hsmTagStr": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "hsm_tag_str"
+      },
+      "isBizIntent": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "is_biz_intent"
+      },
+      "isBroadcastMessage": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "is_broadcast_message"
+      },
+      "isInsubContact": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "is_insub_contact"
+      },
+      "isMuted": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_muted"
+      },
+      "messageBodyType": {
+        "id": 25,
+        "type": "MESSAGE_BODY_TYPE_ENUM",
+        "wire": "message_body_type",
+        "enum_ref": "MESSAGE_BODY_TYPE_ENUM"
+      },
+      "messageBubbleHeightPx": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "message_bubble_height_px"
+      },
+      "messageBubbleWidthPx": {
+        "id": 28,
+        "type": "INTEGER",
+        "wire": "message_bubble_width_px"
+      },
+      "messageFieldJsonArray": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "message_field_json_array"
+      },
+      "messageIdHmac": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "message_id_hmac"
+      },
+      "mmCarouselCardIndex": {
+        "id": 26,
+        "type": "INTEGER",
+        "wire": "mm_carousel_card_index"
+      },
+      "qbmFlag": {
+        "id": 17,
+        "type": "QBM_FLAG",
+        "wire": "qbm_flag",
+        "enum_ref": "QBM_FLAG"
+      },
+      "readReceiptsEnabled": {
+        "id": 18,
+        "type": "BOOLEAN",
+        "wire": "read_receipts_enabled"
+      },
+      "submessageFieldJsonArray": {
+        "id": 19,
+        "type": "STRING",
+        "wire": "submessage_field_json_array"
+      },
+      "threadIdHmac": {
+        "id": 20,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      },
+      "unifiedSessionId": {
+        "id": 21,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "urlUniqueCountInt": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "url_unique_count_int"
+      },
+      "vpvDwellTimeMs": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "vpv_dwell_time_ms"
+      },
+      "vpvJsonObject": {
+        "id": 24,
+        "type": "STRING",
+        "wire": "vpv_json_object"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPaidMessageVpvImpressionWamEvent",
+    "matches": "PaidMessageVpvImpression:\\s*\\[\\s*7652"
+  },
+  "literals": [
+    "7652"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatsFolderType",
+      "WAWebWamEnumContactType",
+      "WAWebWamEnumMessageBodyTypeEnum",
+      "WAWebWamEnumQbmFlag"
+    ],
+    "dependents": [
+      "WAWebMerlinImpressionManager"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

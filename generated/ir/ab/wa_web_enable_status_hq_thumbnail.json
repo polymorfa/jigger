@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_enable_status_hq_thumbnail",
+  "kind": "ab",
+  "name": "wa_web_enable_status_hq_thumbnail",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25079,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_enable_status_hq_thumbnail:\\s*\\[\\s*25079"
+  },
+  "literals": [
+    "wa_web_enable_status_hq_thumbnail",
+    "25079"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMediaUploadMediaWithPrep"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "enum:META_VERIFIED_LOCKED_FIELD_EDIT_OUTCOME",
+  "kind": "enum",
+  "name": "META_VERIFIED_LOCKED_FIELD_EDIT_OUTCOME",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMetaVerifiedLockedFieldEditOutcome",
+    "variants": [
+      {
+        "name": "APPROVED",
+        "value": 1.0
+      },
+      {
+        "name": "REJECTED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMetaVerifiedLockedFieldEditOutcome",
+    "matches": "META_VERIFIED_LOCKED_FIELD_EDIT_OUTCOME\\s*[:=]"
+  },
+  "literals": [
+    "META_VERIFIED_LOCKED_FIELD_EDIT_OUTCOME",
+    "APPROVED",
+    "REJECTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaVerifiedUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

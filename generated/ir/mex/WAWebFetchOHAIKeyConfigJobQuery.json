@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebFetchOHAIKeyConfigJobQuery",
+  "kind": "mex",
+  "name": "WAWebFetchOHAIKeyConfigJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "29366514836329275",
+    "operation": "query",
+    "variables": [],
+    "root_field": "xwa2_ohai_configurations",
+    "document": "query FetchOHAIKeyConfigJobQuery {\n  aead_id\n  expiration_date\n  kdf_id\n  kem_id\n  key_id\n  last_updated_time\n  public_key\n  xwa2_ohai_configurations {\n    ohai_configs {\n      xwa2_ohai_configurations {\n        ohai_configs {\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebFetchOHAIKeyConfigJobQuery.graphql",
+    "matches": "id: \"29366514836329275\""
+  },
+  "literals": [
+    "29366514836329275",
+    "WAWebFetchOHAIKeyConfigJobQuery",
+    "xwa2_ohai_configurations"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebFetchOHAIKeyConfigJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

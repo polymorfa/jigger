@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_windows_calling_32p_version",
+  "kind": "ab",
+  "name": "web_windows_calling_32p_version",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31845,
+    "type": "int",
+    "default": 3,
+    "alt_default": 3
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_windows_calling_32p_version:\\s*\\[\\s*31845"
+  },
+  "literals": [
+    "web_windows_calling_32p_version",
+    "31845"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

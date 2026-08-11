@@ -1,0 +1,4 @@
+export enum PSTESTENUMFIELD {
+  TEST_VALUE1 = 1,
+  TEST_VALUE2 = 2,
+}

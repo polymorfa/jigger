@@ -1,0 +1,5 @@
+message BotHistoryShareSyncMetadata {
+  optional bytes botJid = 1;
+  optional bytes historyShareCutoffTimestamp = 2;
+  optional HistoryShareMessageEntry historyShareMessages = 3;
+}

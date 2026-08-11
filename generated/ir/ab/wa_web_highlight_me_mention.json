@@ -1,0 +1,52 @@
+{
+  "id": "ab:wa_web_highlight_me_mention",
+  "kind": "ab",
+  "name": "wa_web_highlight_me_mention",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25408,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_highlight_me_mention:\\s*\\[\\s*25408"
+  },
+  "literals": [
+    "wa_web_highlight_me_mention",
+    "25408"
+  ],
+  "usage": {
+    "read_count": 8,
+    "readers": [
+      "WAWebInteractiveMessageCarousel.react",
+      "WAWebMentionAllMutatorComponent.react",
+      "WAWebMentionMutatorComponentBase.react",
+      "WAWebMessageAlbumWrapper.react",
+      "WAWebMessageContainer.react",
+      "WAWebMessageWrapper.react",
+      "WAWebTextMentionMutatorComponent.react",
+      "WAWebWrapperSystemBubble.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

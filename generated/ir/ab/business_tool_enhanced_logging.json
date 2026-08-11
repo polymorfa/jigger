@@ -1,0 +1,42 @@
+{
+  "id": "ab:business_tool_enhanced_logging",
+  "kind": "ab",
+  "name": "business_tool_enhanced_logging",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4427,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "business_tool_enhanced_logging:\\s*\\[\\s*4427"
+  },
+  "literals": [
+    "business_tool_enhanced_logging",
+    "4427"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "proto:WAWebProtobufsAdv.ADVSignedDeviceIdentityHMAC",
+  "kind": "proto",
+  "name": "WAWebProtobufsAdv.ADVSignedDeviceIdentityHMAC",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accountType": {
+        "number": 3
+      },
+      "details": {
+        "number": 1
+      },
+      "hmac": {
+        "number": 2
+      }
+    },
+    "module": "WAWebProtobufsAdv.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAdv.pb",
+    "matches": "name = \"ADVSignedDeviceIdentityHMAC\""
+  },
+  "literals": [
+    "ADVSignedDeviceIdentityHMAC"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebAdvDeviceNotificationApi",
+      "WAWebAdvHandlerApi",
+      "WAWebAdvHostedAccountTypeSystemMsg",
+      "WAWebAdvSignatureApi",
+      "WAWebApiContact",
+      "WAWebContactMutator",
+      "WAWebDeviceSyncBackendWorker",
+      "WAWebHandleAdvDeviceNotificationApi",
+      "WAWebHandleAdvDeviceNotificationUtils",
+      "WAWebHandleAdvKeyIndexResultApi",
+      "WAWebHandleAdvOmittedResultApi",
+      "WAWebHandlePairSuccess",
+      "WAWebHistoryMsgHandlerAction",
+      "WAWebIcdcHandlerApi",
+      "WAWebIdentityChangeApi",
+      "WAWebIdentityIcdcApi",
+      "WAWebIdentityUpdateDeviceTableApi",
+      "WAWebInitialSystemMsg",
+      "WAWebMessageProcessPlaceholder",
+      "WAWebProtobufsE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 20
+  }
+}

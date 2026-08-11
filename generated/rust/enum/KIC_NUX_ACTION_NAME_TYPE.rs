@@ -1,0 +1,8 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum KICNUXACTIONNAMETYPE {
+    FIRSTDMNUXIMPRESSION = 1,
+    KICNUXIMPRESSION = 2,
+    KICNUXLEARNMORETAP = 3,
+    KICSYSTEMMESSAGEGENERATE = 4,
+}

@@ -1,0 +1,46 @@
+{
+  "id": "ab:ai_standard_bot_profile_enabled",
+  "kind": "ab",
+  "name": "ai_standard_bot_profile_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32961,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_standard_bot_profile_enabled:\\s*\\[\\s*32961"
+  },
+  "literals": [
+    "ai_standard_bot_profile_enabled",
+    "32961"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebBotBaseGating",
+      "WAWebDebugBot"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

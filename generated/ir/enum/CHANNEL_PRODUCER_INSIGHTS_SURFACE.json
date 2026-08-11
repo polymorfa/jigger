@@ -1,0 +1,47 @@
+{
+  "id": "enum:CHANNEL_PRODUCER_INSIGHTS_SURFACE",
+  "kind": "enum",
+  "name": "CHANNEL_PRODUCER_INSIGHTS_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChannelProducerInsightsSurface",
+    "variants": [
+      {
+        "name": "CHANNEL_INFO",
+        "value": 0.0
+      },
+      {
+        "name": "REACH_TAB",
+        "value": 1.0
+      },
+      {
+        "name": "GROWTH_TAB",
+        "value": 2.0
+      },
+      {
+        "name": "FOLLOWERS_TAB",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChannelProducerInsightsSurface",
+    "matches": "CHANNEL_PRODUCER_INSIGHTS_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "CHANNEL_PRODUCER_INSIGHTS_SURFACE",
+    "CHANNEL_INFO",
+    "REACH_TAB",
+    "GROWTH_TAB",
+    "FOLLOWERS_TAB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelProducerInsightsNavigationWamEvent",
+      "WAWebNewsletterProducerInsightsLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,2 @@
+/** Matches `<iq>`. Response to NewslettersSubscribeToLiveUpdates. */
+export function parseNewslettersSubscribeToLiveUpdatesResponseSuccess(n: BinaryNode): NewslettersSubscribeToLiveUpdatesResponseSuccess | null

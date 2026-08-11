@@ -1,0 +1,67 @@
+{
+  "id": "wam:3808",
+  "kind": "wam",
+  "name": "PnhRequestRevealAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 3808,
+    "fields": {
+      "pnhAction": {
+        "id": 1,
+        "type": "PNH_ACTION_TYPE",
+        "wire": "pnh_action",
+        "enum_ref": "PNH_ACTION_TYPE"
+      },
+      "pnhChatParty": {
+        "id": 2,
+        "type": "PNH_MESSAGE_CHAT_PARTY",
+        "wire": "pnh_chat_party",
+        "enum_ref": "PNH_MESSAGE_CHAT_PARTY"
+      },
+      "pnhChatType": {
+        "id": 3,
+        "type": "PNH_CHAT_TYPE_TYPE",
+        "wire": "pnh_chat_type",
+        "enum_ref": "PNH_CHAT_TYPE_TYPE"
+      },
+      "pnhEntryPoint": {
+        "id": 4,
+        "type": "PNH_ENTRY_POINT_TYPE",
+        "wire": "pnh_entry_point",
+        "enum_ref": "PNH_ENTRY_POINT_TYPE"
+      },
+      "threadId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "thread_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPnhRequestRevealActionWamEvent",
+    "matches": "PnhRequestRevealAction:\\s*\\[\\s*3808"
+  },
+  "literals": [
+    "3808"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumPnhActionType",
+      "WAWebWamEnumPnhChatTypeType",
+      "WAWebWamEnumPnhEntryPointType",
+      "WAWebWamEnumPnhMessageChatParty"
+    ],
+    "dependents": [
+      "WAWebLogRequestPhoneNumber"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "enum:BANNER_STATUS",
+  "kind": "enum",
+  "name": "BANNER_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBannerStatus",
+    "variants": [
+      {
+        "name": "DISPLAYED",
+        "value": 0.0
+      },
+      {
+        "name": "HIDDEN",
+        "value": 1.0
+      },
+      {
+        "name": "CLOSED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBannerStatus",
+    "matches": "BANNER_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "BANNER_STATUS",
+    "DISPLAYED",
+    "HIDDEN",
+    "CLOSED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelSimilarChannelsWamEvent",
+      "WAWebSimilarNewsletterLogging",
+      "WAWebSimilarNewslettersUnits.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

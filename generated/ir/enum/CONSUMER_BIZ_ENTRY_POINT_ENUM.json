@@ -1,0 +1,57 @@
+{
+  "id": "enum:CONSUMER_BIZ_ENTRY_POINT_ENUM",
+  "kind": "enum",
+  "name": "CONSUMER_BIZ_ENTRY_POINT_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumConsumerBizEntryPointEnum",
+    "variants": [
+      {
+        "name": "CHAT_LIST",
+        "value": 0.0
+      },
+      {
+        "name": "CHAT_THREAD",
+        "value": 1.0
+      },
+      {
+        "name": "CONTACT_INFO",
+        "value": 2.0
+      },
+      {
+        "name": "SEARCH_BAR",
+        "value": 3.0
+      },
+      {
+        "name": "SHARE_SHEET",
+        "value": 4.0
+      },
+      {
+        "name": "NEW_CHAT",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumConsumerBizEntryPointEnum",
+    "matches": "CONSUMER_BIZ_ENTRY_POINT_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "CONSUMER_BIZ_ENTRY_POINT_ENUM",
+    "CHAT_LIST",
+    "CHAT_THREAD",
+    "CONTACT_INFO",
+    "SEARCH_BAR",
+    "SHARE_SHEET",
+    "NEW_CHAT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAuthAgentConsumerJourneyLogger",
+      "WAWebConsumerBizInteractionJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

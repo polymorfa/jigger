@@ -1,0 +1,10 @@
+message Ancillary {
+  optional bytes height = 1;
+  optional bytes width = 2;
+  optional bytes scansSidecar = 3;
+  optional bytes scanLengths = 4;
+  optional bytes midQualityFileSha256 = 5;
+  optional bytes hdType = 6;
+  optional bytes memoriesConceptScores = 7;
+  optional bytes memoriesConceptIds = 8;
+}

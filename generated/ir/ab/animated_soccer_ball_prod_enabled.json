@@ -1,0 +1,47 @@
+{
+  "id": "ab:animated_soccer_ball_prod_enabled",
+  "kind": "ab",
+  "name": "animated_soccer_ball_prod_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27751,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "animated_soccer_ball_prod_enabled:\\s*\\[\\s*27751"
+  },
+  "literals": [
+    "animated_soccer_ball_prod_enabled",
+    "27751"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebAnimatedEmojiGatingUtils",
+      "WAWebEmoji",
+      "WAWebEmojiConst"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

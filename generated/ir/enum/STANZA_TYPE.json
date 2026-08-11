@@ -1,0 +1,58 @@
+{
+  "id": "enum:STANZA_TYPE",
+  "kind": "enum",
+  "name": "STANZA_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStanzaType",
+    "variants": [
+      {
+        "name": "MESSAGE",
+        "value": 1.0
+      },
+      {
+        "name": "RECEIPT",
+        "value": 2.0
+      },
+      {
+        "name": "CALL",
+        "value": 3.0
+      },
+      {
+        "name": "NOTIFICATION",
+        "value": 4.0
+      },
+      {
+        "name": "APPDATA",
+        "value": 5.0
+      },
+      {
+        "name": "STATUS",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStanzaType",
+    "matches": "STANZA_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STANZA_TYPE",
+    "MESSAGE",
+    "RECEIPT",
+    "CALL",
+    "NOTIFICATION",
+    "APPDATA",
+    "STATUS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebMaybePostOfflineCountTooHighMetric",
+      "WAWebOfflineCountTooHighWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

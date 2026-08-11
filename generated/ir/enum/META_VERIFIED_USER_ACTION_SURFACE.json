@@ -1,0 +1,313 @@
+{
+  "id": "enum:META_VERIFIED_USER_ACTION_SURFACE",
+  "kind": "enum",
+  "name": "META_VERIFIED_USER_ACTION_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMetaVerifiedUserActionSurface",
+    "variants": [
+      {
+        "name": "META_VERIFIED_HOME",
+        "value": 1.0
+      },
+      {
+        "name": "MV_SUBSCRIPTION_NOTIFICATION",
+        "value": 2.0
+      },
+      {
+        "name": "BUSINESS_TOOLS",
+        "value": 3.0
+      },
+      {
+        "name": "SETTINGS",
+        "value": 4.0
+      },
+      {
+        "name": "LINKED_DEVICES",
+        "value": 5.0
+      },
+      {
+        "name": "CONTACT_SUPPORT",
+        "value": 6.0
+      },
+      {
+        "name": "VERIFIED_CHANNEL_INTRO",
+        "value": 7.0
+      },
+      {
+        "name": "BUSINESS_CARD_PREVIEW",
+        "value": 8.0
+      },
+      {
+        "name": "PRIVACY_INTERSTITIAL",
+        "value": 9.0
+      },
+      {
+        "name": "BUSINESS_PROFILE",
+        "value": 10.0
+      },
+      {
+        "name": "EDIT_PROFILE_PICTURE_CONFIRMATION",
+        "value": 11.0
+      },
+      {
+        "name": "PROFILE_PHOTO",
+        "value": 12.0
+      },
+      {
+        "name": "PROFILE_PICTURE_REJECTED_NOTIFICATION",
+        "value": 13.0
+      },
+      {
+        "name": "PROFILE_PICTURE_REJECTED_BANNER",
+        "value": 14.0
+      },
+      {
+        "name": "PROFILE_PICTURE_EDIT_LOCKED_DIALOG",
+        "value": 15.0
+      },
+      {
+        "name": "WEB_PAGE",
+        "value": 16.0
+      },
+      {
+        "name": "BUSINESS_INFO",
+        "value": 17.0
+      },
+      {
+        "name": "CHAT_PROFILE",
+        "value": 18.0
+      },
+      {
+        "name": "VERIFIED_ELIGIBLE_EDU_BOTTOMSHEET",
+        "value": 19.0
+      },
+      {
+        "name": "VERIFIED_EDU_BOTTOMSHEET_CUSTOMER",
+        "value": 20.0
+      },
+      {
+        "name": "BUSINESS_CARD",
+        "value": 21.0
+      },
+      {
+        "name": "UNVERIFIED_ELIGIBLE_EDU_BOTTOMSHEET",
+        "value": 22.0
+      },
+      {
+        "name": "UNVERIFIED_INELIGIBLE_EDU_BOTTOMSHEET",
+        "value": 23.0
+      },
+      {
+        "name": "UNVERIFIED_EDU_BOTTOMSHEET_CUSTOMER",
+        "value": 24.0
+      },
+      {
+        "name": "EDIT_CHANNEL_DIALOG",
+        "value": 25.0
+      },
+      {
+        "name": "SUPPORT_REQUEST_FAQ_SEARCH",
+        "value": 26.0
+      },
+      {
+        "name": "CHANNEL_LIST",
+        "value": 27.0
+      },
+      {
+        "name": "VERIFIED_INELIGIBLE_EDU_BOTTOMSHEET",
+        "value": 28.0
+      },
+      {
+        "name": "WEB_PAGE_EDU_SCREEN",
+        "value": 29.0
+      },
+      {
+        "name": "LINKED_DEVICES_EDU_SCREEN",
+        "value": 30.0
+      },
+      {
+        "name": "SHARE_BUSINESS",
+        "value": 31.0
+      },
+      {
+        "name": "CHANNEL_INFO",
+        "value": 32.0
+      },
+      {
+        "name": "PROTECTED_BUSINESS_ACCOUNTS_EMPTY_LIST",
+        "value": 33.0
+      },
+      {
+        "name": "BUSINESS_CONTACTS_LIST",
+        "value": 34.0
+      },
+      {
+        "name": "PROTECTED_BUSINESS_ACCOUNTS_LIST",
+        "value": 35.0
+      },
+      {
+        "name": "CUSTOM_LINK_WEB_PAGE_ACTIVE_EDU",
+        "value": 36.0
+      },
+      {
+        "name": "BUSINESS_SEARCH",
+        "value": 37.0
+      },
+      {
+        "name": "ACCOUNT_LINKING_WARNING",
+        "value": 38.0
+      },
+      {
+        "name": "CHAT",
+        "value": 39.0
+      },
+      {
+        "name": "WEB_NON_SUBSCRIBER_DIALOG",
+        "value": 40.0
+      },
+      {
+        "name": "WEB_ACTIVE_SUBSCRIBER_DIALOG",
+        "value": 41.0
+      },
+      {
+        "name": "QUICK_PROMOTION",
+        "value": 42.0
+      },
+      {
+        "name": "CALLS_TAB",
+        "value": 43.0
+      },
+      {
+        "name": "FMX_NOT_META_VERIFIED_BOTTOM_SHEET",
+        "value": 44.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_HOME",
+        "value": 45.0
+      },
+      {
+        "name": "USERNAME_SCREEN",
+        "value": 46.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_THREAD",
+        "value": 47.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_TRIAL_CONSENT_SCREEN",
+        "value": 48.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_TRIAL_SCREEN",
+        "value": 49.0
+      },
+      {
+        "name": "EDIT_BUSINESS_PROFILE",
+        "value": 50.0
+      },
+      {
+        "name": "ADVANCED_BUSINESS_TOOLS",
+        "value": 51.0
+      },
+      {
+        "name": "MESSAGE_CAPPING_INFO",
+        "value": 52.0
+      },
+      {
+        "name": "MV_NEW_MESSAGE_CAPPING_EDUCATION",
+        "value": 53.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_REVIEW_SCREEN",
+        "value": 54.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_CREDITS_INFO_BOTTOMSHEET",
+        "value": 55.0
+      },
+      {
+        "name": "MV_NEW_MESSAGE_CHAT_EDUCATION_SCREEN",
+        "value": 56.0
+      },
+      {
+        "name": "CONVERSATION_THREAD",
+        "value": 57.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMetaVerifiedUserActionSurface",
+    "matches": "META_VERIFIED_USER_ACTION_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "META_VERIFIED_USER_ACTION_SURFACE",
+    "META_VERIFIED_HOME",
+    "MV_SUBSCRIPTION_NOTIFICATION",
+    "BUSINESS_TOOLS",
+    "SETTINGS",
+    "LINKED_DEVICES",
+    "CONTACT_SUPPORT",
+    "VERIFIED_CHANNEL_INTRO",
+    "BUSINESS_CARD_PREVIEW",
+    "PRIVACY_INTERSTITIAL",
+    "BUSINESS_PROFILE",
+    "EDIT_PROFILE_PICTURE_CONFIRMATION",
+    "PROFILE_PHOTO",
+    "PROFILE_PICTURE_REJECTED_NOTIFICATION",
+    "PROFILE_PICTURE_REJECTED_BANNER",
+    "PROFILE_PICTURE_EDIT_LOCKED_DIALOG",
+    "WEB_PAGE",
+    "BUSINESS_INFO",
+    "CHAT_PROFILE",
+    "VERIFIED_ELIGIBLE_EDU_BOTTOMSHEET",
+    "VERIFIED_EDU_BOTTOMSHEET_CUSTOMER",
+    "BUSINESS_CARD",
+    "UNVERIFIED_ELIGIBLE_EDU_BOTTOMSHEET",
+    "UNVERIFIED_INELIGIBLE_EDU_BOTTOMSHEET",
+    "UNVERIFIED_EDU_BOTTOMSHEET_CUSTOMER",
+    "EDIT_CHANNEL_DIALOG",
+    "SUPPORT_REQUEST_FAQ_SEARCH",
+    "CHANNEL_LIST",
+    "VERIFIED_INELIGIBLE_EDU_BOTTOMSHEET",
+    "WEB_PAGE_EDU_SCREEN",
+    "LINKED_DEVICES_EDU_SCREEN",
+    "SHARE_BUSINESS",
+    "CHANNEL_INFO",
+    "PROTECTED_BUSINESS_ACCOUNTS_EMPTY_LIST",
+    "BUSINESS_CONTACTS_LIST",
+    "PROTECTED_BUSINESS_ACCOUNTS_LIST",
+    "CUSTOM_LINK_WEB_PAGE_ACTIVE_EDU",
+    "BUSINESS_SEARCH",
+    "ACCOUNT_LINKING_WARNING",
+    "CHAT",
+    "WEB_NON_SUBSCRIBER_DIALOG",
+    "WEB_ACTIVE_SUBSCRIBER_DIALOG",
+    "QUICK_PROMOTION",
+    "CALLS_TAB",
+    "FMX_NOT_META_VERIFIED_BOTTOM_SHEET",
+    "BUSINESS_BROADCAST_HOME",
+    "USERNAME_SCREEN",
+    "BUSINESS_BROADCAST_THREAD",
+    "BUSINESS_BROADCAST_TRIAL_CONSENT_SCREEN",
+    "BUSINESS_BROADCAST_TRIAL_SCREEN",
+    "EDIT_BUSINESS_PROFILE",
+    "ADVANCED_BUSINESS_TOOLS",
+    "MESSAGE_CAPPING_INFO",
+    "MV_NEW_MESSAGE_CAPPING_EDUCATION",
+    "BUSINESS_BROADCAST_REVIEW_SCREEN",
+    "BUSINESS_BROADCAST_CREDITS_INFO_BOTTOMSHEET",
+    "MV_NEW_MESSAGE_CHAT_EDUCATION_SCREEN",
+    "CONVERSATION_THREAD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaVerifiedActiveSubscriberModal.react",
+      "WAWebMetaVerifiedUserActionLogger",
+      "WAWebMetaVerifiedUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

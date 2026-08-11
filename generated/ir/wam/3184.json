@@ -1,0 +1,57 @@
+{
+  "id": "wam:3184",
+  "kind": "wam",
+  "name": "ReactionActions",
+  "data": {
+    "kind": "wam",
+    "event_id": 3184,
+    "fields": {
+      "mediaType": {
+        "id": 3,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messageType": {
+        "id": 1,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "reactionAction": {
+        "id": 2,
+        "type": "REACTION_ACTION_TYPE",
+        "wire": "reaction_action",
+        "enum_ref": "REACTION_ACTION_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      10,
+      20
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebReactionActionsWamEvent",
+    "matches": "ReactionActions:\\s*\\[\\s*3184"
+  },
+  "literals": [
+    "3184"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumReactionActionType"
+    ],
+    "dependents": [
+      "WAWebMessageHoverBarContainer.react",
+      "WAWebRightClickReactionBarContainer.react",
+      "WAWebSendReactionsTrayContainer.react"
+    ],
+    "dep_count": 4,
+    "dependent_count": 3
+  }
+}

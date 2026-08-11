@@ -1,0 +1,48 @@
+{
+  "id": "enum:STW_ENTRY_POINT",
+  "kind": "enum",
+  "name": "STW_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStwEntryPoint",
+    "variants": [
+      {
+        "name": "HIGHLY_FORWARDED_MESSAGE",
+        "value": 0.0
+      },
+      {
+        "name": "URL_LONG_PRESS",
+        "value": 1.0
+      },
+      {
+        "name": "MEDIA_VIEWER",
+        "value": 2.0
+      },
+      {
+        "name": "CONTEXT_MENU",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStwEntryPoint",
+    "matches": "STW_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "STW_ENTRY_POINT",
+    "HIGHLY_FORWARDED_MESSAGE",
+    "URL_LONG_PRESS",
+    "MEDIA_VIEWER",
+    "CONTEXT_MENU"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaPanelHeader.react",
+      "WAWebMessageForwardedIndicatorSearchTheWeb.react",
+      "WAWebSearchTheWebFunnelWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

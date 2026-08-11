@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_batched_status_split_to_parts",
+  "kind": "ab",
+  "name": "web_batched_status_split_to_parts",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34539,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_batched_status_split_to_parts:\\s*\\[\\s*34539"
+  },
+  "literals": [
+    "web_batched_status_split_to_parts",
+    "34539"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

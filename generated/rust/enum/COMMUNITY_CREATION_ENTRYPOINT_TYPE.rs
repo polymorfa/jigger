@@ -1,0 +1,14 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum COMMUNITYCREATIONENTRYPOINTTYPE {
+    CHATSTAB = 1,
+    COMMUNITIESTAB = 2,
+    GROUPINFO = 3,
+    DEEPLINK = 4,
+    DEEPLINKBANNER = 5,
+    DEEPLINKPSA = 6,
+    DEEPLINKCHAT = 7,
+    DEEPLINKCHANNEL = 8,
+    COMMUNITYFILTER = 9,
+    OVERFLOWMENU = 10,
+}

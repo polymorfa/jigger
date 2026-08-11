@@ -1,0 +1,2 @@
+// ParseMessageDeliverAdminProfileMetaMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverAdminProfileMetaMixin(n *waBinary.Node) (*MessageDeliverAdminProfileMetaMixin, error)

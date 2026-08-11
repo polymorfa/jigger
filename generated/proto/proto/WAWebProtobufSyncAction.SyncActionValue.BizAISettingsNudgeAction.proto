@@ -1,0 +1,5 @@
+message BizAISettingsNudgeAction {
+  optional bytes category = 1;
+  optional bytes version = 2;
+  optional bytes updatedAtMs = 3;
+}

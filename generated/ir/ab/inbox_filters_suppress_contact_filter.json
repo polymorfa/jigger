@@ -1,0 +1,42 @@
+{
+  "id": "ab:inbox_filters_suppress_contact_filter",
+  "kind": "ab",
+  "name": "inbox_filters_suppress_contact_filter",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7769,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "inbox_filters_suppress_contact_filter:\\s*\\[\\s*7769"
+  },
+  "literals": [
+    "inbox_filters_suppress_contact_filter",
+    "7769"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

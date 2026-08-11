@@ -1,0 +1,46 @@
+{
+  "id": "appstate:status_privacy",
+  "kind": "appstate",
+  "name": "StatusPrivacy",
+  "data": {
+    "kind": "appstate",
+    "index_name": "status_privacy",
+    "collection": "regular_high",
+    "version": 7,
+    "value_field": "statusPrivacy"
+  },
+  "evidence": {
+    "module": "WAWebStatusPrivacySettingSync",
+    "matches": "Actions\\.StatusPrivacy"
+  },
+  "literals": [
+    "status_privacy",
+    "StatusPrivacy",
+    "statusPrivacy"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebBackendEventBus",
+      "WAWebCrosspostingBackendGatingUtils",
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebUserPrefsIndexedDBStorage",
+      "WAWebUserPrefsStatus",
+      "WAWebUserPrefsStatusType",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebStatusSetAndSyncPrivacy"
+    ],
+    "dep_count": 15,
+    "dependent_count": 2
+  }
+}

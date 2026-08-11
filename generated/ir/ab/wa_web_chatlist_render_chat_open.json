@@ -1,0 +1,46 @@
+{
+  "id": "ab:wa_web_chatlist_render_chat_open",
+  "kind": "ab",
+  "name": "wa_web_chatlist_render_chat_open",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27947,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_chatlist_render_chat_open:\\s*\\[\\s*27947"
+  },
+  "literals": [
+    "wa_web_chatlist_render_chat_open",
+    "27947"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebChatlistItem.react",
+      "WAWebChatlist_DEPRECATED.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

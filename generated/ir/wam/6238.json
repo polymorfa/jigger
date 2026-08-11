@@ -1,0 +1,64 @@
+{
+  "id": "wam:6238",
+  "kind": "wam",
+  "name": "PsGroupSafetyCheckEnabled",
+  "data": {
+    "kind": "wam",
+    "event_id": 6238,
+    "fields": {
+      "didJoinByGil": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "did_join_by_gil"
+      },
+      "integrityGroupUserHashedId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "integrity_group_user_hashed_id"
+      },
+      "psSafetyCheckGroupJid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "ps_safety_check_group_jid"
+      },
+      "psWasSafetyCheckGroupInitiallyMuted": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "ps_was_safety_check_group_initially_muted"
+      },
+      "wasAddedByContact": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "was_added_by_contact"
+      },
+      "willSafetyCheckBeSeen": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "will_safety_check_be_seen"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsGroupSafetyCheckEnabledWamEvent",
+    "matches": "PsGroupSafetyCheckEnabled:\\s*\\[\\s*6238"
+  },
+  "literals": [
+    "6238"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebGroupSafetyCheckModalLoggingUtils"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

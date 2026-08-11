@@ -1,0 +1,82 @@
+{
+  "id": "enum:PHONE_NUM_HYPERLINK_ACTION_TYPE",
+  "kind": "enum",
+  "name": "PHONE_NUM_HYPERLINK_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPhoneNumHyperlinkActionType",
+    "variants": [
+      {
+        "name": "PHONE_NUM_HYPERLINK_MSG_RECEIVED",
+        "value": 1.0
+      },
+      {
+        "name": "LONG_PRESS_PHONE_NUM_HYPERLINK",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_PHONE_NUM_HYPERLINK",
+        "value": 3.0
+      },
+      {
+        "name": "CLICK_CALL",
+        "value": 4.0
+      },
+      {
+        "name": "CLICK_ADD_TO_CONTACTS",
+        "value": 5.0
+      },
+      {
+        "name": "CLICK_MESSAGE_ON_WHATSAPP",
+        "value": 6.0
+      },
+      {
+        "name": "CLICK_COPY_PHONE_NUMBER",
+        "value": 7.0
+      },
+      {
+        "name": "CLOSE_DIALOG_BOX",
+        "value": 8.0
+      },
+      {
+        "name": "MESSAGE_SENT",
+        "value": 9.0
+      },
+      {
+        "name": "CLICK_CALL_ON_WHATSAPP",
+        "value": 10.0
+      },
+      {
+        "name": "CLICK_INVITE_TO_WHATSAPP",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPhoneNumHyperlinkActionType",
+    "matches": "PHONE_NUM_HYPERLINK_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PHONE_NUM_HYPERLINK_ACTION_TYPE",
+    "PHONE_NUM_HYPERLINK_MSG_RECEIVED",
+    "LONG_PRESS_PHONE_NUM_HYPERLINK",
+    "CLICK_PHONE_NUM_HYPERLINK",
+    "CLICK_CALL",
+    "CLICK_ADD_TO_CONTACTS",
+    "CLICK_MESSAGE_ON_WHATSAPP",
+    "CLICK_COPY_PHONE_NUMBER",
+    "CLOSE_DIALOG_BOX",
+    "MESSAGE_SENT",
+    "CLICK_CALL_ON_WHATSAPP",
+    "CLICK_INVITE_TO_WHATSAPP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPhoneNumberContactAction",
+      "WAWebPsPhoneNumberHyperlinkWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

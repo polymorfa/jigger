@@ -1,0 +1,505 @@
+{
+  "id": "enum:MD_SYNCD_FATAL_ERROR_CODE",
+  "kind": "enum",
+  "name": "MD_SYNCD_FATAL_ERROR_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdSyncdFatalErrorCode",
+    "variants": [
+      {
+        "name": "TOO_MANY_INTERNAL_SERVER_ERRORS_IN_7D",
+        "value": 1.0
+      },
+      {
+        "name": "SERVER_DATA_MISMATCH",
+        "value": 2.0
+      },
+      {
+        "name": "PROTOBUF_DESERIALIZATION_FAILED",
+        "value": 3.0
+      },
+      {
+        "name": "EXTERNAL_PATCH_EXPIRED",
+        "value": 4.0
+      },
+      {
+        "name": "MISSING_OR_EMPTY_INDEX",
+        "value": 5.0
+      },
+      {
+        "name": "SAME_INDEX_FOR_MULTIPLE_MUTATIONS_IN_PATCH",
+        "value": 6.0
+      },
+      {
+        "name": "DECRYPTION_FAILED",
+        "value": 7.0
+      },
+      {
+        "name": "MISSING_PATCH_VERSION",
+        "value": 8.0
+      },
+      {
+        "name": "DUPLICATE_PATCH_VERSION_IN_COLLECTION",
+        "value": 9.0
+      },
+      {
+        "name": "ENCRYPTION_FAILED",
+        "value": 10.0
+      },
+      {
+        "name": "MISSING_MUTATION_VERSION",
+        "value": 11.0
+      },
+      {
+        "name": "MISSING_MUTATION_VALUE",
+        "value": 12.0
+      },
+      {
+        "name": "INVALID_MUTATION_INDEX",
+        "value": 13.0
+      },
+      {
+        "name": "PATCH_WITH_BOTH_INLINE_AND_EXTERNAL_MUTATIONS",
+        "value": 14.0
+      },
+      {
+        "name": "MISSING_MUTATION_OPERATION",
+        "value": 15.0
+      },
+      {
+        "name": "MISSING_MUTATION_RECORD",
+        "value": 16.0
+      },
+      {
+        "name": "MISSING_MUTATION_KEY_ID",
+        "value": 17.0
+      },
+      {
+        "name": "PATCH_PROTOBUF_DESERIALIZATION_FAILED",
+        "value": 18.0
+      },
+      {
+        "name": "ACTION_DATA_PROTOBUF_DESERIALIZATION_FAILED",
+        "value": 19.0
+      },
+      {
+        "name": "MISSING_MUTATION_INDEX",
+        "value": 20.0
+      },
+      {
+        "name": "MISSING_ACTION_INDEX",
+        "value": 21.0
+      },
+      {
+        "name": "INVALID_ACTION_INDEX",
+        "value": 22.0
+      },
+      {
+        "name": "MISSING_ACTION_VALUE",
+        "value": 23.0
+      },
+      {
+        "name": "MISSING_ACTION_VERSION",
+        "value": 24.0
+      },
+      {
+        "name": "MISSING_ACTION_TIMESTAMP",
+        "value": 25.0
+      },
+      {
+        "name": "MUTATIONS_PROTOBUF_DESERIALIZATION_FAILED",
+        "value": 26.0
+      },
+      {
+        "name": "MUTATIONS_PROTOBUF_SERIALIZATION_FAILED",
+        "value": 27.0
+      },
+      {
+        "name": "PATCH_PROTOBUF_SERIALIZATION_FAILED",
+        "value": 28.0
+      },
+      {
+        "name": "ACTION_DATA_PROTOBUF_SERIALIZATION_FAILED",
+        "value": 29.0
+      },
+      {
+        "name": "MISSING_KEY_ON_ALL_CLIENTS",
+        "value": 30.0
+      },
+      {
+        "name": "TIMEOUT_WHILE_WAITING_FOR_MISSING_KEY",
+        "value": 31.0
+      },
+      {
+        "name": "MAC_MISMATCH_SNAPSHOT",
+        "value": 33.0
+      },
+      {
+        "name": "MAC_MISMATCH_PATCH",
+        "value": 34.0
+      },
+      {
+        "name": "DB_STORE_NOT_READY",
+        "value": 35.0
+      },
+      {
+        "name": "TERMINAL_PATCH_MISSING_DATA",
+        "value": 36.0
+      },
+      {
+        "name": "TERMINAL_PATCH_DESERIALIZATION_ERROR",
+        "value": 37.0
+      },
+      {
+        "name": "TERMINAL_PATCH_UNKNOWN",
+        "value": 38.0
+      },
+      {
+        "name": "CYCLIC_MUTATION_DEPENDENCY_IN_PATCH",
+        "value": 39.0
+      },
+      {
+        "name": "MISSING_SNAPSHOT_VERSION",
+        "value": 45.0
+      },
+      {
+        "name": "MISSING_SNAPSHOT_MAC",
+        "value": 46.0
+      },
+      {
+        "name": "MISSING_PATCH_SNAPSHOT_MAC",
+        "value": 47.0
+      },
+      {
+        "name": "MISSING_PATCH_MAC",
+        "value": 48.0
+      },
+      {
+        "name": "MISSING_EXTERNAL_BLOB_REFERENCE_MEDIA_KEY",
+        "value": 49.0
+      },
+      {
+        "name": "MISSING_EXTERNAL_BLOB_REFERENCE_DIRECT_PATH",
+        "value": 50.0
+      },
+      {
+        "name": "MISSING_EXTERNAL_BLOB_REFERENCE_FILE_SHA256",
+        "value": 51.0
+      },
+      {
+        "name": "MISSING_EXTERNAL_BLOB_REFERENCE_FILE_ENC_SHA256",
+        "value": 52.0
+      },
+      {
+        "name": "INVALID_KEY_SHARE_KEY_ID",
+        "value": 53.0
+      },
+      {
+        "name": "MISSING_PATCH_KEY_ID",
+        "value": 56.0
+      },
+      {
+        "name": "INVALID_KEY_SHARE_KEY_DATA",
+        "value": 57.0
+      },
+      {
+        "name": "SNAPSHOT_EXPIRED",
+        "value": 58.0
+      },
+      {
+        "name": "MISSING_SNAPSHOT_KEY_ID",
+        "value": 59.0
+      },
+      {
+        "name": "SNAPSHOT_MAC_MISMATCH_IN_PATCH",
+        "value": 60.0
+      },
+      {
+        "name": "SNAPSHOT_MAC_MISMATCH_IN_SNAPSHOT",
+        "value": 61.0
+      },
+      {
+        "name": "XMPP_BAD_REQUEST_FOR_COLLECTION",
+        "value": 62.0
+      },
+      {
+        "name": "XMPP_NOT_FOUND_FOR_COLLECTION",
+        "value": 63.0
+      },
+      {
+        "name": "XMPP_BAD_REQUEST_GLOBAL_ERROR",
+        "value": 64.0
+      },
+      {
+        "name": "XMPP_NOT_FOUND_GLOBAL_ERROR",
+        "value": 65.0
+      },
+      {
+        "name": "XMPP_BAD_METHOD_GLOBAL_ERROR",
+        "value": 66.0
+      },
+      {
+        "name": "XMPP_NOT_ACCEPTABLE_GLOBAL_ERROR",
+        "value": 67.0
+      },
+      {
+        "name": "SAME_INDEX_FOR_MULTIPLE_MUTATIONS_IN_SNAPSHOT",
+        "value": 68.0
+      },
+      {
+        "name": "EXTERNAL_BLOB_REFERENCE_PROTOBUF_DESERIALIZATION_FAILED",
+        "value": 69.0
+      },
+      {
+        "name": "SNAPSHOT_PROTOBUF_DESERIALIZATION_FAILED",
+        "value": 70.0
+      },
+      {
+        "name": "REQUESTING_MISSING_KEY_WITH_NO_CLIENTS",
+        "value": 71.0
+      },
+      {
+        "name": "DB_STORE_NOT_READY_LOW_DISK_SPACE",
+        "value": 72.0
+      },
+      {
+        "name": "SERVER_DID_NOT_SEND_ALL_PATCHES",
+        "value": 73.0
+      },
+      {
+        "name": "SERVER_SENT_EARLIER_PATCH",
+        "value": 74.0
+      },
+      {
+        "name": "MISSING_KEY_FOR_MUTATION_IN_LOCAL_SNAPSHOT",
+        "value": 75.0
+      },
+      {
+        "name": "MISSING_ACTIVE_KEY_AFTER_ROTATION",
+        "value": 76.0
+      },
+      {
+        "name": "MISSING_ACTIVE_KEY_FOR_ENCRYPTION",
+        "value": 77.0
+      },
+      {
+        "name": "MISSING_CURRENT_EPOCH_FOR_ACTIVE_KEY_VALIDATION",
+        "value": 78.0
+      },
+      {
+        "name": "SAME_INDEX_FOR_MULTIPLE_MUTATIONS_IN_OUTGOING_PATCH",
+        "value": 79.0
+      },
+      {
+        "name": "INVALID_SNAPSHOT_RECORDS",
+        "value": 80.0
+      },
+      {
+        "name": "MISSING_EXTERNAL_BLOB_REFERENCE_HANDLE",
+        "value": 81.0
+      },
+      {
+        "name": "INVALID_EXTERNAL_BLOB_REFERENCE_UPLOADED",
+        "value": 82.0
+      },
+      {
+        "name": "INVALID_PATCH_KEY_ID_SIZE",
+        "value": 83.0
+      },
+      {
+        "name": "INVALID_PATCH_MAC_SIZE",
+        "value": 84.0
+      },
+      {
+        "name": "INVALID_PATCH_SNAPSHOT_MAC_SIZE",
+        "value": 85.0
+      },
+      {
+        "name": "INVALID_COLLECTION_SNAPSHOT_HASH_SIZE",
+        "value": 86.0
+      },
+      {
+        "name": "MISSING_COLLECTION_SNAPSHOT_HASH",
+        "value": 87.0
+      },
+      {
+        "name": "INVALID_PATCH_KEY_ID_DEVICE_ID",
+        "value": 88.0
+      },
+      {
+        "name": "INVALID_PATCH_KEY_ID_EPOCH",
+        "value": 89.0
+      },
+      {
+        "name": "DECRYPTION_FAILED_KEY_ID_MISMATCH",
+        "value": 90.0
+      },
+      {
+        "name": "DECRYPTION_FAILED_VALUE_MAC_MISMATCH",
+        "value": 91.0
+      },
+      {
+        "name": "DECRYPTION_FAILED_INDEX_MAC_MISMATCH",
+        "value": 92.0
+      },
+      {
+        "name": "EXTERNAL_PATCH_MISSING_BLOB",
+        "value": 93.0
+      },
+      {
+        "name": "COLLECTION_PULL_REQUEST_RECEIVED_PUSH_RESPONSE_WITH_UPDATED_VERSION",
+        "value": 94.0
+      },
+      {
+        "name": "COLLECTION_PUSH_REQUEST_RECEIVED_RESPONSE_WITH_VERSION_MISMATCH",
+        "value": 95.0
+      },
+      {
+        "name": "MMS_ERROR_INVALID_FILEHASH",
+        "value": 96.0
+      },
+      {
+        "name": "UNKNOWN",
+        "value": 97.0
+      },
+      {
+        "name": "MALFORMED_MUTATION_CLEAR_CHAT",
+        "value": 98.0
+      },
+      {
+        "name": "MALFORMED_MUTATION_DELETE_CHAT",
+        "value": 99.0
+      },
+      {
+        "name": "FAILED_MUTATION_CLEAR_CHAT",
+        "value": 100.0
+      },
+      {
+        "name": "FAILED_MUTATION_DELETE_CHAT",
+        "value": 101.0
+      },
+      {
+        "name": "CHAT_DB_CORRUPTION",
+        "value": 102.0
+      },
+      {
+        "name": "LID_BLOCKLIST_PN_WHEN_MIGRATED",
+        "value": 103.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdSyncdFatalErrorCode",
+    "matches": "MD_SYNCD_FATAL_ERROR_CODE\\s*[:=]"
+  },
+  "literals": [
+    "MD_SYNCD_FATAL_ERROR_CODE",
+    "TOO_MANY_INTERNAL_SERVER_ERRORS_IN_7D",
+    "SERVER_DATA_MISMATCH",
+    "PROTOBUF_DESERIALIZATION_FAILED",
+    "EXTERNAL_PATCH_EXPIRED",
+    "MISSING_OR_EMPTY_INDEX",
+    "SAME_INDEX_FOR_MULTIPLE_MUTATIONS_IN_PATCH",
+    "DECRYPTION_FAILED",
+    "MISSING_PATCH_VERSION",
+    "DUPLICATE_PATCH_VERSION_IN_COLLECTION",
+    "ENCRYPTION_FAILED",
+    "MISSING_MUTATION_VERSION",
+    "MISSING_MUTATION_VALUE",
+    "INVALID_MUTATION_INDEX",
+    "PATCH_WITH_BOTH_INLINE_AND_EXTERNAL_MUTATIONS",
+    "MISSING_MUTATION_OPERATION",
+    "MISSING_MUTATION_RECORD",
+    "MISSING_MUTATION_KEY_ID",
+    "PATCH_PROTOBUF_DESERIALIZATION_FAILED",
+    "ACTION_DATA_PROTOBUF_DESERIALIZATION_FAILED",
+    "MISSING_MUTATION_INDEX",
+    "MISSING_ACTION_INDEX",
+    "INVALID_ACTION_INDEX",
+    "MISSING_ACTION_VALUE",
+    "MISSING_ACTION_VERSION",
+    "MISSING_ACTION_TIMESTAMP",
+    "MUTATIONS_PROTOBUF_DESERIALIZATION_FAILED",
+    "MUTATIONS_PROTOBUF_SERIALIZATION_FAILED",
+    "PATCH_PROTOBUF_SERIALIZATION_FAILED",
+    "ACTION_DATA_PROTOBUF_SERIALIZATION_FAILED",
+    "MISSING_KEY_ON_ALL_CLIENTS",
+    "TIMEOUT_WHILE_WAITING_FOR_MISSING_KEY",
+    "MAC_MISMATCH_SNAPSHOT",
+    "MAC_MISMATCH_PATCH",
+    "DB_STORE_NOT_READY",
+    "TERMINAL_PATCH_MISSING_DATA",
+    "TERMINAL_PATCH_DESERIALIZATION_ERROR",
+    "TERMINAL_PATCH_UNKNOWN",
+    "CYCLIC_MUTATION_DEPENDENCY_IN_PATCH",
+    "MISSING_SNAPSHOT_VERSION",
+    "MISSING_SNAPSHOT_MAC",
+    "MISSING_PATCH_SNAPSHOT_MAC",
+    "MISSING_PATCH_MAC",
+    "MISSING_EXTERNAL_BLOB_REFERENCE_MEDIA_KEY",
+    "MISSING_EXTERNAL_BLOB_REFERENCE_DIRECT_PATH",
+    "MISSING_EXTERNAL_BLOB_REFERENCE_FILE_SHA256",
+    "MISSING_EXTERNAL_BLOB_REFERENCE_FILE_ENC_SHA256",
+    "INVALID_KEY_SHARE_KEY_ID",
+    "MISSING_PATCH_KEY_ID",
+    "INVALID_KEY_SHARE_KEY_DATA",
+    "SNAPSHOT_EXPIRED",
+    "MISSING_SNAPSHOT_KEY_ID",
+    "SNAPSHOT_MAC_MISMATCH_IN_PATCH",
+    "SNAPSHOT_MAC_MISMATCH_IN_SNAPSHOT",
+    "XMPP_BAD_REQUEST_FOR_COLLECTION",
+    "XMPP_NOT_FOUND_FOR_COLLECTION",
+    "XMPP_BAD_REQUEST_GLOBAL_ERROR",
+    "XMPP_NOT_FOUND_GLOBAL_ERROR",
+    "XMPP_BAD_METHOD_GLOBAL_ERROR",
+    "XMPP_NOT_ACCEPTABLE_GLOBAL_ERROR",
+    "SAME_INDEX_FOR_MULTIPLE_MUTATIONS_IN_SNAPSHOT",
+    "EXTERNAL_BLOB_REFERENCE_PROTOBUF_DESERIALIZATION_FAILED",
+    "SNAPSHOT_PROTOBUF_DESERIALIZATION_FAILED",
+    "REQUESTING_MISSING_KEY_WITH_NO_CLIENTS",
+    "DB_STORE_NOT_READY_LOW_DISK_SPACE",
+    "SERVER_DID_NOT_SEND_ALL_PATCHES",
+    "SERVER_SENT_EARLIER_PATCH",
+    "MISSING_KEY_FOR_MUTATION_IN_LOCAL_SNAPSHOT",
+    "MISSING_ACTIVE_KEY_AFTER_ROTATION",
+    "MISSING_ACTIVE_KEY_FOR_ENCRYPTION",
+    "MISSING_CURRENT_EPOCH_FOR_ACTIVE_KEY_VALIDATION",
+    "SAME_INDEX_FOR_MULTIPLE_MUTATIONS_IN_OUTGOING_PATCH",
+    "INVALID_SNAPSHOT_RECORDS",
+    "MISSING_EXTERNAL_BLOB_REFERENCE_HANDLE",
+    "INVALID_EXTERNAL_BLOB_REFERENCE_UPLOADED",
+    "INVALID_PATCH_KEY_ID_SIZE",
+    "INVALID_PATCH_MAC_SIZE",
+    "INVALID_PATCH_SNAPSHOT_MAC_SIZE",
+    "INVALID_COLLECTION_SNAPSHOT_HASH_SIZE",
+    "MISSING_COLLECTION_SNAPSHOT_HASH",
+    "INVALID_PATCH_KEY_ID_DEVICE_ID",
+    "INVALID_PATCH_KEY_ID_EPOCH",
+    "DECRYPTION_FAILED_KEY_ID_MISMATCH",
+    "DECRYPTION_FAILED_VALUE_MAC_MISMATCH",
+    "DECRYPTION_FAILED_INDEX_MAC_MISMATCH",
+    "EXTERNAL_PATCH_MISSING_BLOB",
+    "COLLECTION_PULL_REQUEST_RECEIVED_PUSH_RESPONSE_WITH_UPDATED_VERSION",
+    "COLLECTION_PUSH_REQUEST_RECEIVED_RESPONSE_WITH_VERSION_MISMATCH",
+    "MMS_ERROR_INVALID_FILEHASH",
+    "UNKNOWN",
+    "MALFORMED_MUTATION_CLEAR_CHAT",
+    "MALFORMED_MUTATION_DELETE_CHAT",
+    "FAILED_MUTATION_CLEAR_CHAT",
+    "FAILED_MUTATION_DELETE_CHAT",
+    "CHAT_DB_CORRUPTION",
+    "LID_BLOCKLIST_PN_WHEN_MIGRATED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebKeyManagementHandleKeyShareApi",
+      "WAWebKmpWamLogger",
+      "WAWebMdFatalErrorWamEvent",
+      "WAWebSyncdMetricFatalErrorListener",
+      "WAWebSyncdNetCallbacksApi"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

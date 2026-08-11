@@ -1,0 +1,42 @@
+{
+  "id": "ab:aura_group_reactions_blocking_enabled",
+  "kind": "ab",
+  "name": "aura_group_reactions_blocking_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33522,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "aura_group_reactions_blocking_enabled:\\s*\\[\\s*33522"
+  },
+  "literals": [
+    "aura_group_reactions_blocking_enabled",
+    "33522"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

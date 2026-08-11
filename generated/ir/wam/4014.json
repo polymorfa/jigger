@@ -1,0 +1,41 @@
+{
+  "id": "wam:4014",
+  "kind": "wam",
+  "name": "SettingsSearchInitiate",
+  "data": {
+    "kind": "wam",
+    "event_id": 4014,
+    "fields": {
+      "settingsPageType": {
+        "id": 1,
+        "type": "SETTINGS_PAGE_TYPE",
+        "wire": "settings_page_type",
+        "enum_ref": "SETTINGS_PAGE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSettingsSearchInitiateWamEvent",
+    "matches": "SettingsSearchInitiate:\\s*\\[\\s*4014"
+  },
+  "literals": [
+    "4014"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumSettingsPageType"
+    ],
+    "dependents": [
+      "WAWebSettingsLoggerUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

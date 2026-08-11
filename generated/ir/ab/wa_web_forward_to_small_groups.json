@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_forward_to_small_groups",
+  "kind": "ab",
+  "name": "wa_web_forward_to_small_groups",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27157,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_forward_to_small_groups:\\s*\\[\\s*27157"
+  },
+  "literals": [
+    "wa_web_forward_to_small_groups",
+    "27157"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebForwardMessageModal.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

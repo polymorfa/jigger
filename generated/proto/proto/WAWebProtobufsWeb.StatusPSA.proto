@@ -1,0 +1,4 @@
+message StatusPSA {
+  optional bytes campaignId = 44;
+  optional bytes campaignExpirationTimestamp = 45;
+}

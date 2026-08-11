@@ -1,0 +1,4 @@
+message PaymentTosAction {
+  optional bytes paymentNotice = 1;
+  optional bytes accepted = 2;
+}

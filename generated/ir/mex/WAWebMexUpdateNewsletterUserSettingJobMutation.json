@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexUpdateNewsletterUserSettingJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexUpdateNewsletterUserSettingJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "31938993655691868",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_newsletter_update_user_setting",
+    "document": "mutation MexUpdateNewsletterUserSettingJobMutation($input) {\n  xwa2_newsletter_update_user_setting {\n    id\n    state {\n      type\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexUpdateNewsletterUserSettingJobMutation.graphql",
+    "matches": "id: \"31938993655691868\""
+  },
+  "literals": [
+    "31938993655691868",
+    "WAWebMexUpdateNewsletterUserSettingJobMutation",
+    "xwa2_newsletter_update_user_setting"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexUpdateNewsletterUserSetting"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

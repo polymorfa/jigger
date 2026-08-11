@@ -1,0 +1,41 @@
+{
+  "id": "enum:BUSINESS_TYPE",
+  "kind": "enum",
+  "name": "BUSINESS_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBusinessType",
+    "variants": [
+      {
+        "name": "SMB",
+        "value": 1.0
+      },
+      {
+        "name": "API_DC",
+        "value": 2.0
+      },
+      {
+        "name": "API",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBusinessType",
+    "matches": "BUSINESS_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "BUSINESS_TYPE",
+    "SMB",
+    "API_DC",
+    "API"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGraphqlCatalogRequestWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

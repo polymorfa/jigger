@@ -1,0 +1,31 @@
+{
+  "id": "sig:message/forwards_count",
+  "kind": "sig",
+  "name": "NewslettersNewsletterForwardsCountMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "forwards_count"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInNewslettersNewsletterForwardsCountMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "forwards_count"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInNewslettersNewsletterMessageHistoryWithAddOnsMixin"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

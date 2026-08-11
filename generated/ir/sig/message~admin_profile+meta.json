@@ -1,0 +1,33 @@
+{
+  "id": "sig:message/admin_profile+meta",
+  "kind": "sig",
+  "name": "MessageDeliverAdminProfileMetaMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "admin_profile",
+      "meta"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverAdminProfileMetaMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "admin_profile",
+    "meta"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxInMessageDeliverAdminProfileMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverNewsletterMessageFanoutMixin"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

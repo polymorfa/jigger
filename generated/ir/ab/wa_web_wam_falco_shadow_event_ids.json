@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_wam_falco_shadow_event_ids",
+  "kind": "ab",
+  "name": "wa_web_wam_falco_shadow_event_ids",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25309,
+    "type": "string",
+    "default": "",
+    "alt_default": ""
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_wam_falco_shadow_event_ids:\\s*\\[\\s*25309"
+  },
+  "literals": [
+    "wa_web_wam_falco_shadow_event_ids",
+    "25309"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebWamFalcoABProps"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

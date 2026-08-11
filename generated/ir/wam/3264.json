@@ -1,0 +1,33 @@
+{
+  "id": "wam:3264",
+  "kind": "wam",
+  "name": "WebWamForceFlush",
+  "data": {
+    "kind": "wam",
+    "event_id": 3264,
+    "fields": {},
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebWamForceFlushWamEvent",
+    "matches": "WebWamForceFlush:\\s*\\[\\s*3264"
+  },
+  "literals": [
+    "3264"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebForceFlushWamBuffers"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

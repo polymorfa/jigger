@@ -1,0 +1,55 @@
+{
+  "id": "proto:MAWArmadilloAppDataTableSchema.AppDataTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloAppDataTableSchema.AppDataTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "ack": {
+        "number": 5
+      },
+      "appDataId": {
+        "number": 6
+      },
+      "contents": {
+        "number": 3,
+        "type_name": "MAWArmadilloAppDataTableSchema.AppDataProto"
+      },
+      "externalId": {
+        "number": 1
+      },
+      "permittedIdentitiesPerDevice": {
+        "number": 4,
+        "type_name": "MAWArmadilloAppDataTableSchema.IdentitiesPerDeviceProto"
+      },
+      "recipientDevices": {
+        "number": 7
+      },
+      "sendPartial": {
+        "number": 8
+      },
+      "ts": {
+        "number": 2
+      }
+    },
+    "module": "MAWArmadilloAppDataTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloAppDataTableSchema.pb",
+    "matches": "name = \"AppDataTableSchemaProto\""
+  },
+  "literals": [
+    "AppDataTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

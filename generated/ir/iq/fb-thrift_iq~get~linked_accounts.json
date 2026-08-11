@@ -1,0 +1,221 @@
+{
+  "id": "iq:fb:thrift_iq/get/linked_accounts",
+  "kind": "iq",
+  "name": "BizLinkingGetLinkedAccounts",
+  "data": {
+    "kind": "iq",
+    "xmlns": "fb:thrift_iq",
+    "type": "get",
+    "tags": [
+      "linked_accounts"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "fb:thrift_iq",
+          "optional": false
+        },
+        {
+          "name": "smax_id",
+          "ty": "int",
+          "optional": false
+        },
+        {
+          "name": "from",
+          "ty": "jid",
+          "optional": true
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "linked_accounts",
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxBizLinkingGetLinkedAccountsRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInBizLinkingGetLinkedAccountsResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "linked_accounts",
+              "card": "one"
+            },
+            {
+              "tag": "fb_page",
+              "children": [
+                {
+                  "tag": "whatsapp_as_page_button",
+                  "attrs": [
+                    {
+                      "name": "state",
+                      "ty": "stringenum",
+                      "optional": false
+                    }
+                  ],
+                  "card": "one"
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "fb_biz",
+              "card": "optional"
+            },
+            {
+              "tag": "ig_professional",
+              "card": "optional"
+            },
+            {
+              "tag": "whatsapp_ad_identity",
+              "card": "optional"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Forbidden",
+        "module": "WASmaxInBizLinkingGetLinkedAccountsResponseForbidden",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInBizLinkingGetLinkedAccountsResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutBizLinkingGetLinkedAccountsRequest",
+    "matches": "smax\\(\"linked_accounts\""
+  },
+  "literals": [
+    "fb:thrift_iq",
+    "linked_accounts"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutBizLinkingHackBaseIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxBizLinkingGetLinkedAccountsRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

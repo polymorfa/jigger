@@ -1,0 +1,49 @@
+{
+  "id": "ab:web_notifications_banner_new_logic_enabled",
+  "kind": "ab",
+  "name": "web_notifications_banner_new_logic_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 19399,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_notifications_banner_new_logic_enabled:\\s*\\[\\s*19399"
+  },
+  "literals": [
+    "web_notifications_banner_new_logic_enabled",
+    "19399"
+  ],
+  "usage": {
+    "read_count": 5,
+    "readers": [
+      "WAWebCallsNotificationsDrawer.react",
+      "WAWebDoNotDisturbSettings.react",
+      "WAWebGranularNotificationsDrawer.react",
+      "WAWebGuidePopup.react",
+      "WAWebPrimaryButterbar.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

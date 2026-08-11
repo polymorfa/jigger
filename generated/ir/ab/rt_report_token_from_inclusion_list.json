@@ -1,0 +1,42 @@
+{
+  "id": "ab:rt_report_token_from_inclusion_list",
+  "kind": "ab",
+  "name": "rt_report_token_from_inclusion_list",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9818,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "rt_report_token_from_inclusion_list:\\s*\\[\\s*9818"
+  },
+  "literals": [
+    "rt_report_token_from_inclusion_list",
+    "9818"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

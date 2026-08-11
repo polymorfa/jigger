@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebMexGetUsernameJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexGetUsernameJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25347099718279209",
+    "operation": "query",
+    "variables": [],
+    "root_field": "xwa2_username_get",
+    "document": "query MexGetUsernameJobQuery {\n  xwa2_username_get {\n    username_info {\n      username\n      state\n      pin\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexGetUsernameJobQuery.graphql",
+    "matches": "id: \"25347099718279209\""
+  },
+  "literals": [
+    "25347099718279209",
+    "WAWebMexGetUsernameJobQuery",
+    "xwa2_username_get"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGetUsernameJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

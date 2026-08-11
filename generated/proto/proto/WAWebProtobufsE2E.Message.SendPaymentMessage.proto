@@ -1,0 +1,6 @@
+message SendPaymentMessage {
+  optional Message noteMessage = 2;
+  optional bytes requestMessageKey = 3;
+  optional PaymentBackground background = 4;
+  optional bytes transactionData = 5;
+}

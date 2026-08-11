@@ -1,0 +1,7 @@
+message ADVKeyIndexList {
+  optional bytes rawId = 1;
+  optional bytes timestamp = 2;
+  optional bytes currentIndex = 3;
+  optional bytes validIndexes = 4;
+  optional bytes accountType = 5;
+}

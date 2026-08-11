@@ -1,0 +1,45 @@
+{
+  "id": "ab:view_replies_with_threadid_enabled",
+  "kind": "ab",
+  "name": "view_replies_with_threadid_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16998,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "view_replies_with_threadid_enabled:\\s*\\[\\s*16998"
+  },
+  "literals": [
+    "view_replies_with_threadid_enabled",
+    "16998"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebThreadsGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:channels_pulse_on_unread_badge_enabled",
+  "kind": "ab",
+  "name": "channels_pulse_on_unread_badge_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28224,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_pulse_on_unread_badge_enabled:\\s*\\[\\s*28224"
+  },
+  "literals": [
+    "channels_pulse_on_unread_badge_enabled",
+    "28224"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMsgNotification"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

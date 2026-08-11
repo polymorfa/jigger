@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_crosspost_settings_sync",
+  "kind": "ab",
+  "name": "web_crosspost_settings_sync",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26296,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_crosspost_settings_sync:\\s*\\[\\s*26296"
+  },
+  "literals": [
+    "web_crosspost_settings_sync",
+    "26296"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCrosspostingBackendGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

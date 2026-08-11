@@ -1,0 +1,664 @@
+{
+  "id": "enum:E2E_FAILURE_REASON",
+  "kind": "enum",
+  "name": "E2E_FAILURE_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumE2eFailureReason",
+    "variants": [
+      {
+        "name": "INVALID_MESSAGE",
+        "value": 0.0
+      },
+      {
+        "name": "LEGACY_MESSAGE",
+        "value": 1.0
+      },
+      {
+        "name": "INVALID_VERSION",
+        "value": 2.0
+      },
+      {
+        "name": "PRE_KEY_MESSAGE_MISSING_PRE_KEY",
+        "value": 3.0
+      },
+      {
+        "name": "PRE_KEY_MESSAGE_INVALID_KEY",
+        "value": 4.0
+      },
+      {
+        "name": "UNTRUSTED_IDENTITY",
+        "value": 5.0
+      },
+      {
+        "name": "NO_SESSION_AVAILABLE",
+        "value": 6.0
+      },
+      {
+        "name": "PLAINTEXT_BYTE_MISMATCH",
+        "value": 7.0
+      },
+      {
+        "name": "UNKNOWN_CIPHERTEXT_TYPE",
+        "value": 8.0
+      },
+      {
+        "name": "UNKNOWN_CIPHERTEXT_VERSION",
+        "value": 9.0
+      },
+      {
+        "name": "INVALID_PADDING",
+        "value": 10.0
+      },
+      {
+        "name": "INVALID_PROTOCOL_BUFFER",
+        "value": 11.0
+      },
+      {
+        "name": "INVALID_NUMBER_OF_MESSAGE_TYPES",
+        "value": 12.0
+      },
+      {
+        "name": "INVALID_IMAGE_FILE_LENGTH",
+        "value": 13.0
+      },
+      {
+        "name": "INVALID_IMAGE_FILE_SHA256",
+        "value": 14.0
+      },
+      {
+        "name": "INVALID_IMAGE_MEDIA_URL",
+        "value": 15.0
+      },
+      {
+        "name": "INVALID_IMAGE_MEDIA_KEY",
+        "value": 16.0
+      },
+      {
+        "name": "INVALID_IMAGE_MIME_TYPE",
+        "value": 17.0
+      },
+      {
+        "name": "UNKNOWN_V2_TAGS",
+        "value": 18.0
+      },
+      {
+        "name": "INVALID_EDIT_VERSION",
+        "value": 19.0
+      },
+      {
+        "name": "INVALID_HSM_NAMESPACE",
+        "value": 20.0
+      },
+      {
+        "name": "INVALID_HSM_ELEMENT",
+        "value": 21.0
+      },
+      {
+        "name": "UNKNOWN_PROTOCOL_MESSAGE_TYPE",
+        "value": 22.0
+      },
+      {
+        "name": "DUPLICATE_MESSAGE",
+        "value": 23.0
+      },
+      {
+        "name": "FINGERPRINT_IDENTITY_MISMATCH",
+        "value": 24.0
+      },
+      {
+        "name": "FINGERPRINT_VERSION_MISMATCH",
+        "value": 25.0
+      },
+      {
+        "name": "INVALID_ARGUMENT",
+        "value": 26.0
+      },
+      {
+        "name": "INVALID_KEY",
+        "value": 27.0
+      },
+      {
+        "name": "INVALID_KEY_ID",
+        "value": 28.0
+      },
+      {
+        "name": "INVALID_MAC",
+        "value": 29.0
+      },
+      {
+        "name": "NO_MEMORY",
+        "value": 30.0
+      },
+      {
+        "name": "STALE_KEY_EXCHANGE",
+        "value": 31.0
+      },
+      {
+        "name": "VRF_SIGNATURE_VERIFICATION_FAILED",
+        "value": 32.0
+      },
+      {
+        "name": "ERROR_MINIMUM_VALUE",
+        "value": 33.0
+      },
+      {
+        "name": "ERROR_UNKNOWN",
+        "value": 34.0
+      },
+      {
+        "name": "INVALID_BROADCAST_STANZA_ATTRIBUTE",
+        "value": 35.0
+      },
+      {
+        "name": "INVALID_LIST_REPLY_MESSAGE",
+        "value": 36.0
+      },
+      {
+        "name": "INVALID_LIST_REPLY_ROW_IDENTIFIER",
+        "value": 37.0
+      },
+      {
+        "name": "INVALID_BUTTONS_RESPONSE_MESSAGE",
+        "value": 38.0
+      },
+      {
+        "name": "INVALID_BUTTONS_RESPONSE_BUTTON_IDENTIFIER",
+        "value": 39.0
+      },
+      {
+        "name": "INVALID_ORDER_MESSAGE",
+        "value": 40.0
+      },
+      {
+        "name": "ERROR_CANCELLED",
+        "value": 41.0
+      },
+      {
+        "name": "FUTURE_MESSAGE",
+        "value": 42.0
+      },
+      {
+        "name": "INVALID_EMPTY_PROTOBUF_NOT_ALLOWED",
+        "value": 43.0
+      },
+      {
+        "name": "SELF_SEND",
+        "value": 44.0
+      },
+      {
+        "name": "INVALID_MEDIA_MIME_TYPE_TEMPLATE_MESSAGE",
+        "value": 45.0
+      },
+      {
+        "name": "INVALID_MEDIA_ENC_HASH",
+        "value": 46.0
+      },
+      {
+        "name": "INVALID_IDENTITY",
+        "value": 47.0
+      },
+      {
+        "name": "PASSTHROUGH",
+        "value": 48.0
+      },
+      {
+        "name": "NOT_IN_PENDING_DEVICES",
+        "value": 49.0
+      },
+      {
+        "name": "EDIT_TYPE_AND_PROTOCOL_MISMATCH",
+        "value": 50.0
+      },
+      {
+        "name": "DECRYPTION_FAILED",
+        "value": 51.0
+      },
+      {
+        "name": "DESERIALIZE_INVALID_PROTO_FORMAT",
+        "value": 52.0
+      },
+      {
+        "name": "DESERIALIZE_RATCHET_KEY_BAD_FORMAT",
+        "value": 53.0
+      },
+      {
+        "name": "DESERIALIZE_PK_INVALID_PROTO_FORMAT",
+        "value": 54.0
+      },
+      {
+        "name": "DESERIALZE_PK_KEY_BAD_FORMAT",
+        "value": 55.0
+      },
+      {
+        "name": "TOO_MANY_MESSAGES_IN_FUTURE",
+        "value": 56.0
+      },
+      {
+        "name": "EMPTY_VERSION_CONTENT_SUFFIX",
+        "value": 57.0
+      },
+      {
+        "name": "CONTENT_EXCEEDED_EXPECTED_LENGTH",
+        "value": 58.0
+      },
+      {
+        "name": "GRP_INVALID_PROTO_FORMAT",
+        "value": 59.0
+      },
+      {
+        "name": "GRP_INVALID_KEY_FORMAT",
+        "value": 60.0
+      },
+      {
+        "name": "GRP_VERSION_CONTENT_EMPTY",
+        "value": 61.0
+      },
+      {
+        "name": "GRP_INVALID_VERSION_CONTENT_LENGTH",
+        "value": 62.0
+      },
+      {
+        "name": "GRP_SENDER_KEY_INVALID_PROTO_FORMAT",
+        "value": 63.0
+      },
+      {
+        "name": "GRP_SENDER_KEY_PROTO_ERROR",
+        "value": 64.0
+      },
+      {
+        "name": "GRP_TOO_MANY_MESSAGES_IN_FUTURE",
+        "value": 65.0
+      },
+      {
+        "name": "MISSING_MESSAGE_SECRET",
+        "value": 66.0
+      },
+      {
+        "name": "MESSAGE_SECRET_INVALID",
+        "value": 67.0
+      },
+      {
+        "name": "INVALID_REACTION_TEXT",
+        "value": 68.0
+      },
+      {
+        "name": "UNSUPPORTED_MESSAGE_TYPE",
+        "value": 69.0
+      },
+      {
+        "name": "UNSUPPORTED_IN_INTEROP",
+        "value": 70.0
+      },
+      {
+        "name": "TARGET_MESSAGE_NOT_FOUND",
+        "value": 71.0
+      },
+      {
+        "name": "STATUS_FROM_HOSTED_DEVICE_UNSUPPORTED",
+        "value": 72.0
+      },
+      {
+        "name": "GROUP_MESSAGE_FROM_HOSTED_DEVICE_UNSUPPORTED",
+        "value": 73.0
+      },
+      {
+        "name": "BROADCAST_FROM_HOSTED_DEVICE_UNSUPPORTED",
+        "value": 74.0
+      },
+      {
+        "name": "LIVE_LOCATION_FROM_HOSTED_DEVICE_UNSUPPORTED",
+        "value": 75.0
+      },
+      {
+        "name": "MESSAGE_TYPE_MISMATCH",
+        "value": 76.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_UNACKED_PKMSG_GET_BASE_KEY",
+        "value": 77.0
+      },
+      {
+        "name": "ERROR_SIGNAL_MESSAGE_GET_SENDER_RATCHET_KEY",
+        "value": 78.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_GET_ROOT_KEY",
+        "value": 79.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_GET_SENDER_RATCHET_KEY_PAIR",
+        "value": 80.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_SET_SENDER_CHAIN_KEY",
+        "value": 81.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_FIND_RECEIVER_CHAIN",
+        "value": 82.0
+      },
+      {
+        "name": "ERROR_SESSION_RECORD_DESERIALIZE",
+        "value": 83.0
+      },
+      {
+        "name": "ERROR_SENDER_KEY_STATE_REMOVE_SENDER_MESSAGE_KEY",
+        "value": 84.0
+      },
+      {
+        "name": "ERROR_EMPTY_PLAINTEXT_DATA",
+        "value": 85.0
+      },
+      {
+        "name": "ERROR_MAC_LEN_MISMATCH",
+        "value": 86.0
+      },
+      {
+        "name": "ERROR_INVALID_MAC_LEN",
+        "value": 87.0
+      },
+      {
+        "name": "ERROR_INVALID_SIGNATURE_LEN",
+        "value": 88.0
+      },
+      {
+        "name": "ERROR_SENDER_KEY_LOAD_KEY",
+        "value": 89.0
+      },
+      {
+        "name": "ERROR_FAST_RATCHET_SENDER_KEY_LOAD_KEY",
+        "value": 90.0
+      },
+      {
+        "name": "ERROR_UNKNOWN_LOAD_KEY",
+        "value": 91.0
+      },
+      {
+        "name": "ERROR_UNKNOWN_LOAD_SESSION",
+        "value": 92.0
+      },
+      {
+        "name": "ERROR_SESSION_RECORD_GET_STATE",
+        "value": 93.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_GET_SENDER_CHAIN_KEY",
+        "value": 94.0
+      },
+      {
+        "name": "ERROR_INVALID_KEY_MATEIRAL_DATA_LEN",
+        "value": 95.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_GET_SENDER_RATCHET_KEY",
+        "value": 96.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_GET_LOCAL_IDENTITY_KEY",
+        "value": 97.0
+      },
+      {
+        "name": "ERROR_SESSION_STATE_GET_REMOTE_IDENTITY_KEY",
+        "value": 98.0
+      },
+      {
+        "name": "ERROR_MEDIA_HASH_VERIFICATION_FAILURE",
+        "value": 99.0
+      },
+      {
+        "name": "ERROR_CIPHERTEXT_TOO_LONG",
+        "value": 100.0
+      },
+      {
+        "name": "ERROR_THUMBNAIL_HASH_VERIFICATION_FAILURE",
+        "value": 101.0
+      },
+      {
+        "name": "ERROR_PARENT_CHILD_SENDER_JID_MISMATCH",
+        "value": 102.0
+      },
+      {
+        "name": "INVALID_EDIT_MESSAGE",
+        "value": 103.0
+      },
+      {
+        "name": "INVALID_SESSION",
+        "value": 104.0
+      },
+      {
+        "name": "INVALID_STATUS_QUESTION_ANSWER_MESSAGE",
+        "value": 105.0
+      },
+      {
+        "name": "INVALID_REPORTING_TOKEN",
+        "value": 106.0
+      },
+      {
+        "name": "MISSING_REPORTING_TOKEN",
+        "value": 107.0
+      },
+      {
+        "name": "INVALID_GUEST_MESSAGE_TYPE",
+        "value": 108.0
+      },
+      {
+        "name": "INVALID_GUEST_PROTOCOL_BUFFER",
+        "value": 109.0
+      },
+      {
+        "name": "INVALID_STATUS_STICKER_INTERACTION_MESSAGE",
+        "value": 110.0
+      },
+      {
+        "name": "INVALID_JPEG_THUMBNAIL",
+        "value": 111.0
+      },
+      {
+        "name": "DSM_MISSING",
+        "value": 112.0
+      },
+      {
+        "name": "INVALID_DSM_SENDER",
+        "value": 113.0
+      },
+      {
+        "name": "INVALID_DSM",
+        "value": 114.0
+      },
+      {
+        "name": "REVOKE_STANZA_PROTOBUF_MISMATCH",
+        "value": 115.0
+      },
+      {
+        "name": "WASS_INVALID_ATTESTATION",
+        "value": 116.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumE2eFailureReason",
+    "matches": "E2E_FAILURE_REASON\\s*[:=]"
+  },
+  "literals": [
+    "E2E_FAILURE_REASON",
+    "INVALID_MESSAGE",
+    "LEGACY_MESSAGE",
+    "INVALID_VERSION",
+    "PRE_KEY_MESSAGE_MISSING_PRE_KEY",
+    "PRE_KEY_MESSAGE_INVALID_KEY",
+    "UNTRUSTED_IDENTITY",
+    "NO_SESSION_AVAILABLE",
+    "PLAINTEXT_BYTE_MISMATCH",
+    "UNKNOWN_CIPHERTEXT_TYPE",
+    "UNKNOWN_CIPHERTEXT_VERSION",
+    "INVALID_PADDING",
+    "INVALID_PROTOCOL_BUFFER",
+    "INVALID_NUMBER_OF_MESSAGE_TYPES",
+    "INVALID_IMAGE_FILE_LENGTH",
+    "INVALID_IMAGE_FILE_SHA256",
+    "INVALID_IMAGE_MEDIA_URL",
+    "INVALID_IMAGE_MEDIA_KEY",
+    "INVALID_IMAGE_MIME_TYPE",
+    "UNKNOWN_V2_TAGS",
+    "INVALID_EDIT_VERSION",
+    "INVALID_HSM_NAMESPACE",
+    "INVALID_HSM_ELEMENT",
+    "UNKNOWN_PROTOCOL_MESSAGE_TYPE",
+    "DUPLICATE_MESSAGE",
+    "FINGERPRINT_IDENTITY_MISMATCH",
+    "FINGERPRINT_VERSION_MISMATCH",
+    "INVALID_ARGUMENT",
+    "INVALID_KEY",
+    "INVALID_KEY_ID",
+    "INVALID_MAC",
+    "NO_MEMORY",
+    "STALE_KEY_EXCHANGE",
+    "VRF_SIGNATURE_VERIFICATION_FAILED",
+    "ERROR_MINIMUM_VALUE",
+    "ERROR_UNKNOWN",
+    "INVALID_BROADCAST_STANZA_ATTRIBUTE",
+    "INVALID_LIST_REPLY_MESSAGE",
+    "INVALID_LIST_REPLY_ROW_IDENTIFIER",
+    "INVALID_BUTTONS_RESPONSE_MESSAGE",
+    "INVALID_BUTTONS_RESPONSE_BUTTON_IDENTIFIER",
+    "INVALID_ORDER_MESSAGE",
+    "ERROR_CANCELLED",
+    "FUTURE_MESSAGE",
+    "INVALID_EMPTY_PROTOBUF_NOT_ALLOWED",
+    "SELF_SEND",
+    "INVALID_MEDIA_MIME_TYPE_TEMPLATE_MESSAGE",
+    "INVALID_MEDIA_ENC_HASH",
+    "INVALID_IDENTITY",
+    "PASSTHROUGH",
+    "NOT_IN_PENDING_DEVICES",
+    "EDIT_TYPE_AND_PROTOCOL_MISMATCH",
+    "DECRYPTION_FAILED",
+    "DESERIALIZE_INVALID_PROTO_FORMAT",
+    "DESERIALIZE_RATCHET_KEY_BAD_FORMAT",
+    "DESERIALIZE_PK_INVALID_PROTO_FORMAT",
+    "DESERIALZE_PK_KEY_BAD_FORMAT",
+    "TOO_MANY_MESSAGES_IN_FUTURE",
+    "EMPTY_VERSION_CONTENT_SUFFIX",
+    "CONTENT_EXCEEDED_EXPECTED_LENGTH",
+    "GRP_INVALID_PROTO_FORMAT",
+    "GRP_INVALID_KEY_FORMAT",
+    "GRP_VERSION_CONTENT_EMPTY",
+    "GRP_INVALID_VERSION_CONTENT_LENGTH",
+    "GRP_SENDER_KEY_INVALID_PROTO_FORMAT",
+    "GRP_SENDER_KEY_PROTO_ERROR",
+    "GRP_TOO_MANY_MESSAGES_IN_FUTURE",
+    "MISSING_MESSAGE_SECRET",
+    "MESSAGE_SECRET_INVALID",
+    "INVALID_REACTION_TEXT",
+    "UNSUPPORTED_MESSAGE_TYPE",
+    "UNSUPPORTED_IN_INTEROP",
+    "TARGET_MESSAGE_NOT_FOUND",
+    "STATUS_FROM_HOSTED_DEVICE_UNSUPPORTED",
+    "GROUP_MESSAGE_FROM_HOSTED_DEVICE_UNSUPPORTED",
+    "BROADCAST_FROM_HOSTED_DEVICE_UNSUPPORTED",
+    "LIVE_LOCATION_FROM_HOSTED_DEVICE_UNSUPPORTED",
+    "MESSAGE_TYPE_MISMATCH",
+    "ERROR_SESSION_STATE_UNACKED_PKMSG_GET_BASE_KEY",
+    "ERROR_SIGNAL_MESSAGE_GET_SENDER_RATCHET_KEY",
+    "ERROR_SESSION_STATE_GET_ROOT_KEY",
+    "ERROR_SESSION_STATE_GET_SENDER_RATCHET_KEY_PAIR",
+    "ERROR_SESSION_STATE_SET_SENDER_CHAIN_KEY",
+    "ERROR_SESSION_STATE_FIND_RECEIVER_CHAIN",
+    "ERROR_SESSION_RECORD_DESERIALIZE",
+    "ERROR_SENDER_KEY_STATE_REMOVE_SENDER_MESSAGE_KEY",
+    "ERROR_EMPTY_PLAINTEXT_DATA",
+    "ERROR_MAC_LEN_MISMATCH",
+    "ERROR_INVALID_MAC_LEN",
+    "ERROR_INVALID_SIGNATURE_LEN",
+    "ERROR_SENDER_KEY_LOAD_KEY",
+    "ERROR_FAST_RATCHET_SENDER_KEY_LOAD_KEY",
+    "ERROR_UNKNOWN_LOAD_KEY",
+    "ERROR_UNKNOWN_LOAD_SESSION",
+    "ERROR_SESSION_RECORD_GET_STATE",
+    "ERROR_SESSION_STATE_GET_SENDER_CHAIN_KEY",
+    "ERROR_INVALID_KEY_MATEIRAL_DATA_LEN",
+    "ERROR_SESSION_STATE_GET_SENDER_RATCHET_KEY",
+    "ERROR_SESSION_STATE_GET_LOCAL_IDENTITY_KEY",
+    "ERROR_SESSION_STATE_GET_REMOTE_IDENTITY_KEY",
+    "ERROR_MEDIA_HASH_VERIFICATION_FAILURE",
+    "ERROR_CIPHERTEXT_TOO_LONG",
+    "ERROR_THUMBNAIL_HASH_VERIFICATION_FAILURE",
+    "ERROR_PARENT_CHILD_SENDER_JID_MISMATCH",
+    "INVALID_EDIT_MESSAGE",
+    "INVALID_SESSION",
+    "INVALID_STATUS_QUESTION_ANSWER_MESSAGE",
+    "INVALID_REPORTING_TOKEN",
+    "MISSING_REPORTING_TOKEN",
+    "INVALID_GUEST_MESSAGE_TYPE",
+    "INVALID_GUEST_PROTOCOL_BUFFER",
+    "INVALID_STATUS_STICKER_INTERACTION_MESSAGE",
+    "INVALID_JPEG_THUMBNAIL",
+    "DSM_MISSING",
+    "INVALID_DSM_SENDER",
+    "INVALID_DSM",
+    "REVOKE_STANZA_PROTOBUF_MISMATCH",
+    "WASS_INVALID_ATTESTATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAddonEncryptionError",
+      "WAWebAddonProcessingError",
+      "WAWebAssociationProtoUtils",
+      "WAWebCommentMsgDataConversion",
+      "WAWebCreateEncryptedEventEditMsgData",
+      "WAWebCreateEncryptedEventResponseMsgData",
+      "WAWebCreateEncryptedMessageEditMsgData",
+      "WAWebE2EProtoParser",
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebEventEditDecryptedMsgDataConversion",
+      "WAWebEventsParseEventCreationMessageProto",
+      "WAWebEventsParseEventEditEncryptedMessageProto",
+      "WAWebEventsParseEventResponseMessageProto",
+      "WAWebHandleMsgError",
+      "WAWebHandleMsgValidate",
+      "WAWebIncomingMessageDropWamEvent",
+      "WAWebMediaMessageGetValidatedProperties",
+      "WAWebMessageEditDecryptedMsgDataConversion",
+      "WAWebMessageHistoryValidation",
+      "WAWebMessagePluginParseProtobuf",
+      "WAWebMessageSendWamEvent",
+      "WAWebMsgProcessingDecryptionHandler",
+      "WAWebParseEncCommentMessageProto",
+      "WAWebParseHatchMetadataSyncProto",
+      "WAWebParseHistorySyncProtocolMessageEditProto",
+      "WAWebParseInteractiveMessageProto",
+      "WAWebParseMessageEditEncryptedMessageProto",
+      "WAWebParseMessageHistoryBundleProto",
+      "WAWebParseMultiVcardMessageProto",
+      "WAWebParseNewsletterAdminInviteMessageProto",
+      "WAWebParseNewsletterFollowerInviteMessageProto",
+      "WAWebParsePinMessageProto",
+      "WAWebParsePollResultSnapshotMessageProto",
+      "WAWebParseRichResponseMessageProto",
+      "WAWebPollAddOptionDecryptedMsgDataConversion",
+      "WAWebPollEditDecryptedMsgDataConversion",
+      "WAWebPollEditEncryptMsgData",
+      "WAWebPollsParsePollAddOptionEncryptedMessageProto",
+      "WAWebPollsParsePollCreationMessageProto",
+      "WAWebPollsParsePollEditEncryptedMessageProto",
+      "WAWebPollsParsePollVoteMessageProto",
+      "WAWebProcessCommentMsg",
+      "WAWebProcessEncryptedEventEditMsgs",
+      "WAWebProcessEncryptedEventResponseMsgs",
+      "WAWebProcessEncryptedMessageEditMsgs",
+      "WAWebProcessEncryptedPollAddOptionMsgs",
+      "WAWebProcessEncryptedPollEditMsgs",
+      "WAWebProtocolRevokeMessageUtils",
+      "WAWebQuestionsProtoUtils",
+      "WAWebReactionsEncryption",
+      "WAWebReactionsParseReactionEncMessageProto",
+      "WAWebReactionsParseReactionMessageProto",
+      "WAWebSharableEventInviteParseEventInviteMessageProto"
+    ],
+    "dep_count": 0,
+    "dependent_count": 54
+  }
+}

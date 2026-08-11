@@ -1,0 +1,3 @@
+export enum WEBSCENARIOCODE {
+  OFFLINE_RESUME = 0,
+}

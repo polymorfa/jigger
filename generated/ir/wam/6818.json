@@ -1,0 +1,95 @@
+{
+  "id": "wam:6818",
+  "kind": "wam",
+  "name": "AboutCreation",
+  "data": {
+    "kind": "wam",
+    "event_id": 6818,
+    "fields": {
+      "aboutDuration": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "about_duration",
+        "constraints": [
+          "about_duration >= 0"
+        ]
+      },
+      "aboutEntrypoint": {
+        "id": 2,
+        "type": "ABOUT_ENTRYPOINT_TYPE",
+        "wire": "about_entrypoint",
+        "enum_ref": "ABOUT_ENTRYPOINT_TYPE"
+      },
+      "aboutLength": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "about_length",
+        "constraints": [
+          "about_length >= 0",
+          "about_length > 0",
+          "about_length == 0"
+        ]
+      },
+      "aboutLocale": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "about_locale"
+      },
+      "aboutOverallT": {
+        "id": 5,
+        "type": "TIMER",
+        "wire": "about_overall_t"
+      },
+      "aboutPresetSelected": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "about_preset_selected"
+      },
+      "aboutPrompt": {
+        "id": 9,
+        "type": "ABOUT_PROMPT_TYPE",
+        "wire": "about_prompt",
+        "enum_ref": "ABOUT_PROMPT_TYPE"
+      },
+      "aboutRequestType": {
+        "id": 7,
+        "type": "ABOUT_REQUEST_TYPE",
+        "wire": "about_request_type",
+        "enum_ref": "ABOUT_REQUEST_TYPE"
+      },
+      "preset": {
+        "id": 8,
+        "type": "PRESET_TYPE",
+        "wire": "preset",
+        "enum_ref": "PRESET_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebAboutCreationWamEvent",
+    "matches": "AboutCreation:\\s*\\[\\s*6818"
+  },
+  "literals": [
+    "6818"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAboutEntrypointType",
+      "WAWebWamEnumAboutPromptType",
+      "WAWebWamEnumAboutRequestType",
+      "WAWebWamEnumPresetType"
+    ],
+    "dependents": [
+      "WAWebAboutWamLogger"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

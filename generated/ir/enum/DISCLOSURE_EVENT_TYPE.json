@@ -1,0 +1,64 @@
+{
+  "id": "enum:DISCLOSURE_EVENT_TYPE",
+  "kind": "enum",
+  "name": "DISCLOSURE_EVENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDisclosureEventType",
+    "variants": [
+      {
+        "name": "CTA_URL_CLICK",
+        "value": 0.0
+      },
+      {
+        "name": "BODY_URL_CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "BODY_URL_LONG_PRESS",
+        "value": 2.0
+      },
+      {
+        "name": "DISCLOSURE_INFO_CLICK",
+        "value": 3.0
+      },
+      {
+        "name": "OPEN_CHAT_WITH_UNREAD_MM",
+        "value": 4.0
+      },
+      {
+        "name": "CTA_APP_CLICK",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDisclosureEventType",
+    "matches": "DISCLOSURE_EVENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DISCLOSURE_EVENT_TYPE",
+    "CTA_URL_CLICK",
+    "BODY_URL_CLICK",
+    "BODY_URL_LONG_PRESS",
+    "DISCLOSURE_INFO_CLICK",
+    "OPEN_CHAT_WITH_UNREAD_MM",
+    "CTA_APP_CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetInteractiveActionsFromButtons",
+      "WAWebMmDisclosureStateEventWamEvent",
+      "WAWebMmDisclosureStateFsEventWamEvent",
+      "WAWebMmSignalSharingDisclosureRow.react",
+      "WAWebMmSignalSharingLoggingEvents",
+      "WAWebMmSignalSharingLoggingUtils",
+      "WAWebMmSignalSharingModelUtils",
+      "WAWebMmSignalSharingShowDisclosureModal",
+      "WAWebMmSignalSharingUIUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 9
+  }
+}

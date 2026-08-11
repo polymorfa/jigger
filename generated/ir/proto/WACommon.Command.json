@@ -1,0 +1,49 @@
+{
+  "id": "proto:WACommon.Command",
+  "kind": "proto",
+  "name": "WACommon.Command",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "commandType": {
+        "number": 1
+      },
+      "length": {
+        "number": 3
+      },
+      "offset": {
+        "number": 2
+      },
+      "validationToken": {
+        "number": 4
+      }
+    },
+    "module": "WACommon.pb"
+  },
+  "evidence": {
+    "module": "WACommon.pb",
+    "matches": "name = \"Command\""
+  },
+  "literals": [
+    "Command"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWBridgeBuildMsgMentions",
+      "WAArmadilloApplication.pb",
+      "WAArmadilloXMA.pb",
+      "WAConsumerApplication.pb",
+      "WAMediaTransport.pb",
+      "WAMsgApplication.pb",
+      "WAMsgTransport.pb",
+      "WAParseConsumerMessageProtocol",
+      "maybeConvertMessageTextMentionsV2ToV1",
+      "useMAWSendSecureMessageV2"
+    ],
+    "dep_count": 1,
+    "dependent_count": 10
+  }
+}

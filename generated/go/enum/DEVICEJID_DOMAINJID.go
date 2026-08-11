@@ -1,0 +1,5 @@
+type DEVICEJIDDOMAINJID string
+
+const (
+	DEVICEJIDDOMAINJIDTypeName DEVICEJIDDOMAINJID = "DeviceJid|DomainJid"
+)

@@ -1,0 +1,290 @@
+{
+  "id": "iq:fb:thrift_iq/get/code+parameters",
+  "kind": "iq",
+  "name": "BizCtwaAdAccountGetAccessTokenAndSessionCookies",
+  "data": {
+    "kind": "iq",
+    "xmlns": "fb:thrift_iq",
+    "type": "get",
+    "tags": [
+      "code",
+      "parameters"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "fb:thrift_iq",
+          "optional": false
+        },
+        {
+          "name": "smax_id",
+          "ty": "int",
+          "optional": false
+        },
+        {
+          "name": "from",
+          "ty": "jid",
+          "optional": true
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "parameters",
+          "children": [
+            {
+              "tag": "code",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxBizCtwaAdAccountGetAccessTokenAndSessionCookiesRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInBizCtwaAdAccountGetAccessTokenAndSessionCookiesResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "access_token",
+              "card": "one"
+            },
+            {
+              "tag": "session_cookies",
+              "card": "one"
+            },
+            {
+              "tag": "business_person",
+              "attrs": [
+                {
+                  "name": "id",
+                  "ty": "string",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "token_type",
+              "card": "optional"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "TooManyAttempts",
+        "module": "WASmaxInBizCtwaAdAccountGetAccessTokenAndSessionCookiesResponseTooManyAttempts",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "attrs": [
+                {
+                  "name": "code",
+                  "ty": "string",
+                  "literal": "431",
+                  "optional": false
+                },
+                {
+                  "name": "text",
+                  "ty": "string",
+                  "literal": "TOO_MANY_ATTEMPTS",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "IncorrectNonce",
+        "module": "WASmaxInBizCtwaAdAccountGetAccessTokenAndSessionCookiesResponseIncorrectNonce",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "attrs": [
+                {
+                  "name": "code",
+                  "ty": "string",
+                  "literal": "432",
+                  "optional": false
+                },
+                {
+                  "name": "text",
+                  "ty": "string",
+                  "literal": "INCORRECT_NONCE",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInBizCtwaAdAccountGetAccessTokenAndSessionCookiesResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorForbidden",
+          "IQErrorInternalServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutBizCtwaAdAccountGetAccessTokenAndSessionCookiesRequest",
+    "matches": "smax\\(\"code\""
+  },
+  "literals": [
+    "fb:thrift_iq",
+    "code",
+    "parameters"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutBizCtwaAdAccountHackBaseIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxBizCtwaAdAccountGetAccessTokenAndSessionCookiesRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

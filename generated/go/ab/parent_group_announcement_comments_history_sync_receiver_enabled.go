@@ -1,0 +1,2 @@
+// ABParentGroupAnnouncementCommentsHistorySyncReceiverEnabled is A/B property 5813 (bool), default false.
+const ABParentGroupAnnouncementCommentsHistorySyncReceiverEnabled = "parent_group_announcement_comments_history_sync_receiver_enabled"

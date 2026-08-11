@@ -1,0 +1,58 @@
+{
+  "id": "wam:7166",
+  "kind": "wam",
+  "name": "DyiReportRequest",
+  "data": {
+    "kind": "wam",
+    "event_id": 7166,
+    "fields": {
+      "dyiReportType": {
+        "id": 1,
+        "type": "DYI_REPORT_TYPE_CODE",
+        "wire": "dyi_report_type",
+        "enum_ref": "DYI_REPORT_TYPE_CODE"
+      },
+      "dyiRequestErrorMessage": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "dyi_request_error_message"
+      },
+      "dyiRequestSuccess": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "dyi_request_success"
+      },
+      "dyiTriggerType": {
+        "id": 2,
+        "type": "DYI_TRIGGER_TYPE_CODE",
+        "wire": "dyi_trigger_type",
+        "enum_ref": "DYI_TRIGGER_TYPE_CODE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebDyiReportRequestWamEvent",
+    "matches": "DyiReportRequest:\\s*\\[\\s*7166"
+  },
+  "literals": [
+    "7166"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDyiReportTypeCode",
+      "WAWebWamEnumDyiTriggerTypeCode"
+    ],
+    "dependents": [
+      "useWAWebGdprRequest"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

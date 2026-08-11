@@ -1,0 +1,4 @@
+message XmatMessengerQRCodeScanned {
+  optional bytes receiverName = 1;
+  optional bytes senderName = 2;
+}

@@ -1,0 +1,10 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum DEEPLINKOPENFROM {
+    DEEPLINKEXTERNAL = 1,
+    DEEPLINKWALINKCLICK = 2,
+    QRCODESHEET = 3,
+    DEEPLINKBANNER = 4,
+    DEEPLINKSMBNOTIFICATION = 5,
+    DEEPLINKMESSENGERAPP = 6,
+}

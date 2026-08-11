@@ -1,0 +1,4 @@
+message PollNameHashHistoryEntry {
+  optional bytes editStanzaId = 1;
+  optional bytes pollNameHash = 2;
+}

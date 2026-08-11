@@ -1,0 +1,42 @@
+{
+  "id": "ab:mm_1pd_post_dc_old_schema_disabled",
+  "kind": "ab",
+  "name": "mm_1pd_post_dc_old_schema_disabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26282,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_1pd_post_dc_old_schema_disabled:\\s*\\[\\s*26282"
+  },
+  "literals": [
+    "mm_1pd_post_dc_old_schema_disabled",
+    "26282"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

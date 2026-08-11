@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_rewrite_tone_modifiers",
+  "kind": "ab",
+  "name": "ai_rewrite_tone_modifiers",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14743,
+    "type": "string",
+    "default": "rephrase",
+    "alt_default": "professional"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_rewrite_tone_modifiers:\\s*\\[\\s*14743"
+  },
+  "literals": [
+    "ai_rewrite_tone_modifiers",
+    "14743"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUseWWAIToneConfig"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

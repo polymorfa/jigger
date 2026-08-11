@@ -1,0 +1,43 @@
+{
+  "id": "enum:SURFACE_CODE",
+  "kind": "enum",
+  "name": "SURFACE_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSurfaceCode",
+    "variants": [
+      {
+        "name": "MEDIA",
+        "value": 1.0
+      },
+      {
+        "name": "LINKS",
+        "value": 2.0
+      },
+      {
+        "name": "DOCS",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSurfaceCode",
+    "matches": "SURFACE_CODE\\s*[:=]"
+  },
+  "literals": [
+    "SURFACE_CODE",
+    "MEDIA",
+    "LINKS",
+    "DOCS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaHubContextProvider",
+      "WAWebMediaHubSession",
+      "WAWebMediaHubUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

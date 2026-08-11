@@ -1,0 +1,2 @@
+/// Matches `<notification>`. Server-initiated; nothing sends it.
+pub fn parse_account_sync_notification_disappearing_mode_notification_mixin(n: &Node) -> Option<AccountSyncNotificationDisappearingModeNotificationMixin>

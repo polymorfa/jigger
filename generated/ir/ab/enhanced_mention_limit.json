@@ -1,0 +1,45 @@
+{
+  "id": "ab:enhanced_mention_limit",
+  "kind": "ab",
+  "name": "enhanced_mention_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25951,
+    "type": "int",
+    "default": 5,
+    "alt_default": 5
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enhanced_mention_limit:\\s*\\[\\s*25951"
+  },
+  "literals": [
+    "enhanced_mention_limit",
+    "25951"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMentionPickerPlugin"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,3 @@
+message BizBroadcastInsightsContactListRequest {
+  optional bytes campaignId = 1;
+}

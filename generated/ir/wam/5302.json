@@ -1,0 +1,62 @@
+{
+  "id": "wam:5302",
+  "kind": "wam",
+  "name": "WebcBackgroundSyncAdoption",
+  "data": {
+    "kind": "wam",
+    "event_id": 5302,
+    "fields": {
+      "offboardSource": {
+        "id": 1,
+        "type": "OFFBOARD_SOURCES",
+        "wire": "offboard_source",
+        "enum_ref": "OFFBOARD_SOURCES"
+      },
+      "onboardSource": {
+        "id": 2,
+        "type": "ONBOARD_SOURCES",
+        "wire": "onboard_source",
+        "enum_ref": "ONBOARD_SOURCES"
+      },
+      "pushNotificationInteraction": {
+        "id": 3,
+        "type": "PUSH_NOTIFICATION_INTERACTIONS",
+        "wire": "push_notification_interaction",
+        "enum_ref": "PUSH_NOTIFICATION_INTERACTIONS"
+      },
+      "webOsNotificationSetting": {
+        "id": 4,
+        "type": "WEB_NOTIFICATION_SETTING_TYPE",
+        "wire": "web_os_notification_setting",
+        "enum_ref": "WEB_NOTIFICATION_SETTING_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcBackgroundSyncAdoptionWamEvent",
+    "matches": "WebcBackgroundSyncAdoption:\\s*\\[\\s*5302"
+  },
+  "literals": [
+    "5302"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumOffboardSources",
+      "WAWebWamEnumOnboardSources",
+      "WAWebWamEnumPushNotificationInteractions",
+      "WAWebWamEnumWebNotificationSettingType"
+    ],
+    "dependents": [
+      "WAWebBackgroundSyncReporter"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

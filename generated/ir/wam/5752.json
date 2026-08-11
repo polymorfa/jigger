@@ -1,0 +1,106 @@
+{
+  "id": "wam:5752",
+  "kind": "wam",
+  "name": "ReactionUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 5752,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "messageHasOwnReaction": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "message_has_own_reaction"
+      },
+      "messageHasReaction": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "message_has_reaction"
+      },
+      "messageMediaType": {
+        "id": 10,
+        "type": "MEDIA_TYPE",
+        "wire": "message_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messageType": {
+        "id": 4,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "reactionUserJourneyAction": {
+        "id": 5,
+        "type": "REACTION_USER_JOURNEY_ACTION",
+        "wire": "reaction_user_journey_action",
+        "enum_ref": "REACTION_USER_JOURNEY_ACTION"
+      },
+      "reactionUserJourneyEntryPoint": {
+        "id": 6,
+        "type": "REACTION_USER_JOURNEY_ENTRY_POINT",
+        "wire": "reaction_user_journey_entry_point",
+        "enum_ref": "REACTION_USER_JOURNEY_ENTRY_POINT"
+      },
+      "uiSurface": {
+        "id": 7,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyChatType": {
+        "id": 8,
+        "type": "USER_JOURNEY_CHAT_TYPE",
+        "wire": "user_journey_chat_type",
+        "enum_ref": "USER_JOURNEY_CHAT_TYPE"
+      },
+      "userJourneyEventMs": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "userJourneyFunnelId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebReactionUserJourneyWamEvent",
+    "matches": "ReactionUserJourney:\\s*\\[\\s*5752"
+  },
+  "literals": [
+    "5752"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumReactionUserJourneyAction",
+      "WAWebWamEnumReactionUserJourneyEntryPoint",
+      "WAWebWamEnumTsSurface",
+      "WAWebWamEnumUserJourneyChatType"
+    ],
+    "dependents": [
+      "WAWebReactionUserJourneyLogger"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

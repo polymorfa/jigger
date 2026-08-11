@@ -1,0 +1,42 @@
+{
+  "id": "ab:biz_ai_web_onboarding_handoff_killswitch",
+  "kind": "ab",
+  "name": "biz_ai_web_onboarding_handoff_killswitch",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32263,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "biz_ai_web_onboarding_handoff_killswitch:\\s*\\[\\s*32263"
+  },
+  "literals": [
+    "biz_ai_web_onboarding_handoff_killswitch",
+    "32263"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

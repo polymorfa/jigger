@@ -1,0 +1,68 @@
+{
+  "id": "proto:MAWArmadilloReactionsTableSchema.ReactionsTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloReactionsTableSchema.ReactionsTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "ack": {
+        "number": 1
+      },
+      "author": {
+        "number": 2
+      },
+      "externalId": {
+        "number": 3
+      },
+      "groupingKey": {
+        "number": 10
+      },
+      "reactToAuthor": {
+        "number": 6
+      },
+      "reactToExternalId": {
+        "number": 5
+      },
+      "reactToMsgId": {
+        "number": 7
+      },
+      "reaction": {
+        "number": 9
+      },
+      "reactionId": {
+        "number": 4
+      },
+      "rowId": {
+        "number": 12
+      },
+      "senderTimestampMs": {
+        "number": 13
+      },
+      "threadJid": {
+        "number": 8
+      },
+      "ts": {
+        "number": 11
+      }
+    },
+    "module": "MAWArmadilloReactionsTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloReactionsTableSchema.pb",
+    "matches": "name = \"ReactionsTableSchemaProto\""
+  },
+  "literals": [
+    "ReactionsTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

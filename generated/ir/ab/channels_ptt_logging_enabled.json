@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_ptt_logging_enabled",
+  "kind": "ab",
+  "name": "channels_ptt_logging_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6274,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_ptt_logging_enabled:\\s*\\[\\s*6274"
+  },
+  "literals": [
+    "channels_ptt_logging_enabled",
+    "6274"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

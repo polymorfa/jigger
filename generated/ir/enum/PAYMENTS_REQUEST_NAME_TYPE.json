@@ -1,0 +1,366 @@
+{
+  "id": "enum:PAYMENTS_REQUEST_NAME_TYPE",
+  "kind": "enum",
+  "name": "PAYMENTS_REQUEST_NAME_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaymentsRequestNameType",
+    "variants": [
+      {
+        "name": "LIST_KEYS",
+        "value": 1.0
+      },
+      {
+        "name": "GET_TOKEN",
+        "value": 2.0
+      },
+      {
+        "name": "UPI_BATCH",
+        "value": 3.0
+      },
+      {
+        "name": "GET_BANKS",
+        "value": 4.0
+      },
+      {
+        "name": "REGISTER",
+        "value": 5.0
+      },
+      {
+        "name": "SET_PIN",
+        "value": 6.0
+      },
+      {
+        "name": "CHANGE_PIN",
+        "value": 7.0
+      },
+      {
+        "name": "GET_VPA",
+        "value": 8.0
+      },
+      {
+        "name": "VPA_SYNC",
+        "value": 9.0
+      },
+      {
+        "name": "GET_ONE_TRANSACTION",
+        "value": 10.0
+      },
+      {
+        "name": "GET_TRANSACTIONS",
+        "value": 11.0
+      },
+      {
+        "name": "GET_METHODS",
+        "value": 12.0
+      },
+      {
+        "name": "REMOVE_ONE_ACCOUNT",
+        "value": 13.0
+      },
+      {
+        "name": "DEREGISTER",
+        "value": 14.0
+      },
+      {
+        "name": "CHANGE_PRIMARY",
+        "value": 15.0
+      },
+      {
+        "name": "GENERATE_OTP",
+        "value": 16.0
+      },
+      {
+        "name": "SET_TOS",
+        "value": 17.0
+      },
+      {
+        "name": "GET_ACCOUNTS",
+        "value": 18.0
+      },
+      {
+        "name": "SEND_UPI_RAISE_COMPLAINT",
+        "value": 19.0
+      },
+      {
+        "name": "DEVICE_BINDING",
+        "value": 20.0
+      },
+      {
+        "name": "PRECHECK",
+        "value": 21.0
+      },
+      {
+        "name": "REGISTER_ALIAS",
+        "value": 22.0
+      },
+      {
+        "name": "DEREGISTER_ALIAS",
+        "value": 23.0
+      },
+      {
+        "name": "PORT_ALIAS",
+        "value": 24.0
+      },
+      {
+        "name": "ACCOUNT_RECOVERY",
+        "value": 25.0
+      },
+      {
+        "name": "RECOVER_ACCOUNT",
+        "value": 26.0
+      },
+      {
+        "name": "RETOKENIZE_CARD",
+        "value": 27.0
+      },
+      {
+        "name": "TRANSACTION_STATUS_UPDATE",
+        "value": 28.0
+      },
+      {
+        "name": "CHECK_BALANCE",
+        "value": 29.0
+      },
+      {
+        "name": "CHECK_PIN",
+        "value": 30.0
+      },
+      {
+        "name": "COLLECT_REQUEST",
+        "value": 31.0
+      },
+      {
+        "name": "ACTIVATE_INTERNATIONAL_PAYMENTS",
+        "value": 32.0
+      },
+      {
+        "name": "DEACTIVATE_INTERNATIONAL_PAYMENTS",
+        "value": 33.0
+      },
+      {
+        "name": "VALIDATE_INTERNATIONAL_QR",
+        "value": 34.0
+      },
+      {
+        "name": "PAYMENT_NOTIFICATION",
+        "value": 35.0
+      },
+      {
+        "name": "GET_VPA_NAME",
+        "value": 36.0
+      },
+      {
+        "name": "SEND_TO_VPA",
+        "value": 37.0
+      },
+      {
+        "name": "REGISTER_INIT",
+        "value": 38.0
+      },
+      {
+        "name": "REGISTER_ALL",
+        "value": 39.0
+      },
+      {
+        "name": "GET_CATEGORIES_LIST",
+        "value": 40.0
+      },
+      {
+        "name": "GET_BILLER_LIST",
+        "value": 41.0
+      },
+      {
+        "name": "GET_OPERATOR_CIRCLE_INFO",
+        "value": 42.0
+      },
+      {
+        "name": "FETCH_BILL",
+        "value": 43.0
+      },
+      {
+        "name": "GET_RECENT_BILLS",
+        "value": 44.0
+      },
+      {
+        "name": "GET_BILL_DETAILS",
+        "value": 45.0
+      },
+      {
+        "name": "GET_BILLER_DETAILS",
+        "value": 46.0
+      },
+      {
+        "name": "GET_PLANS",
+        "value": 47.0
+      },
+      {
+        "name": "DELETE_USER_BILL_ACCOUNT",
+        "value": 48.0
+      },
+      {
+        "name": "GET_BILL_RECEIPT",
+        "value": 49.0
+      },
+      {
+        "name": "GET_BILL_COMPLAINT_URL",
+        "value": 50.0
+      },
+      {
+        "name": "ACCEPT_MANDATE",
+        "value": 51.0
+      },
+      {
+        "name": "CREATE_MANDATE",
+        "value": 52.0
+      },
+      {
+        "name": "EXECUTE_MANDATE",
+        "value": 53.0
+      },
+      {
+        "name": "PAUSE_MANDATE",
+        "value": 54.0
+      },
+      {
+        "name": "REJECT_MANDATE",
+        "value": 55.0
+      },
+      {
+        "name": "RESUME_MANDATE",
+        "value": 56.0
+      },
+      {
+        "name": "REVOKE_MANDATE",
+        "value": 57.0
+      },
+      {
+        "name": "BIZ_ONBOARD",
+        "value": 58.0
+      },
+      {
+        "name": "ENROLL_AND_GET_REFERRAL_ID",
+        "value": 59.0
+      },
+      {
+        "name": "GET_PURPOSE_LIMITING_KEY",
+        "value": 60.0
+      },
+      {
+        "name": "VERIFY_OTP",
+        "value": 61.0
+      },
+      {
+        "name": "PAYMENT_REMINDER_CREATE",
+        "value": 62.0
+      },
+      {
+        "name": "PAYMENT_REMINDER_GET",
+        "value": 63.0
+      },
+      {
+        "name": "PAYMENT_REMINDER_CANCEL",
+        "value": 64.0
+      },
+      {
+        "name": "PAYMENT_REMINDER_STOP",
+        "value": 65.0
+      },
+      {
+        "name": "GET_P2M_CONFIG",
+        "value": 66.0
+      },
+      {
+        "name": "GET_UPI_LITE_DETAILS",
+        "value": 67.0
+      },
+      {
+        "name": "GET_SMS_CONTENT_AND_VMN",
+        "value": 68.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaymentsRequestNameType",
+    "matches": "PAYMENTS_REQUEST_NAME_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PAYMENTS_REQUEST_NAME_TYPE",
+    "LIST_KEYS",
+    "GET_TOKEN",
+    "UPI_BATCH",
+    "GET_BANKS",
+    "REGISTER",
+    "SET_PIN",
+    "CHANGE_PIN",
+    "GET_VPA",
+    "VPA_SYNC",
+    "GET_ONE_TRANSACTION",
+    "GET_TRANSACTIONS",
+    "GET_METHODS",
+    "REMOVE_ONE_ACCOUNT",
+    "DEREGISTER",
+    "CHANGE_PRIMARY",
+    "GENERATE_OTP",
+    "SET_TOS",
+    "GET_ACCOUNTS",
+    "SEND_UPI_RAISE_COMPLAINT",
+    "DEVICE_BINDING",
+    "PRECHECK",
+    "REGISTER_ALIAS",
+    "DEREGISTER_ALIAS",
+    "PORT_ALIAS",
+    "ACCOUNT_RECOVERY",
+    "RECOVER_ACCOUNT",
+    "RETOKENIZE_CARD",
+    "TRANSACTION_STATUS_UPDATE",
+    "CHECK_BALANCE",
+    "CHECK_PIN",
+    "COLLECT_REQUEST",
+    "ACTIVATE_INTERNATIONAL_PAYMENTS",
+    "DEACTIVATE_INTERNATIONAL_PAYMENTS",
+    "VALIDATE_INTERNATIONAL_QR",
+    "PAYMENT_NOTIFICATION",
+    "GET_VPA_NAME",
+    "SEND_TO_VPA",
+    "REGISTER_INIT",
+    "REGISTER_ALL",
+    "GET_CATEGORIES_LIST",
+    "GET_BILLER_LIST",
+    "GET_OPERATOR_CIRCLE_INFO",
+    "FETCH_BILL",
+    "GET_RECENT_BILLS",
+    "GET_BILL_DETAILS",
+    "GET_BILLER_DETAILS",
+    "GET_PLANS",
+    "DELETE_USER_BILL_ACCOUNT",
+    "GET_BILL_RECEIPT",
+    "GET_BILL_COMPLAINT_URL",
+    "ACCEPT_MANDATE",
+    "CREATE_MANDATE",
+    "EXECUTE_MANDATE",
+    "PAUSE_MANDATE",
+    "REJECT_MANDATE",
+    "RESUME_MANDATE",
+    "REVOKE_MANDATE",
+    "BIZ_ONBOARD",
+    "ENROLL_AND_GET_REFERRAL_ID",
+    "GET_PURPOSE_LIMITING_KEY",
+    "VERIFY_OTP",
+    "PAYMENT_REMINDER_CREATE",
+    "PAYMENT_REMINDER_GET",
+    "PAYMENT_REMINDER_CANCEL",
+    "PAYMENT_REMINDER_STOP",
+    "GET_P2M_CONFIG",
+    "GET_UPI_LITE_DETAILS",
+    "GET_SMS_CONTENT_AND_VMN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPaymentsUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

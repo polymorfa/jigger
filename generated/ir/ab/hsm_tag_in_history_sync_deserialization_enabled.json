@@ -1,0 +1,42 @@
+{
+  "id": "ab:hsm_tag_in_history_sync_deserialization_enabled",
+  "kind": "ab",
+  "name": "hsm_tag_in_history_sync_deserialization_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25804,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "hsm_tag_in_history_sync_deserialization_enabled:\\s*\\[\\s*25804"
+  },
+  "literals": [
+    "hsm_tag_in_history_sync_deserialization_enabled",
+    "25804"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

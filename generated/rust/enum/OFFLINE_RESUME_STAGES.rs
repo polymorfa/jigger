@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OFFLINERESUMESTAGES {
+    PAGELOAD = 1,
+    SOCKETCONNECT = 2,
+    PROCESSCOMPLETE = 3,
+    SCREENLOAD = 4,
+    OFFLINEPREVIEW = 5,
+    OFFLINECOMPLETERECEIVED = 6,
+    PREACKSSENT = 7,
+}

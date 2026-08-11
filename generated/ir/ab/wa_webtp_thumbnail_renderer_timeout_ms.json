@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_webtp_thumbnail_renderer_timeout_ms",
+  "kind": "ab",
+  "name": "wa_webtp_thumbnail_renderer_timeout_ms",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27148,
+    "type": "int",
+    "default": "3e3",
+    "alt_default": "3e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_webtp_thumbnail_renderer_timeout_ms:\\s*\\[\\s*27148"
+  },
+  "literals": [
+    "wa_webtp_thumbnail_renderer_timeout_ms",
+    "27148"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebTPThumbnailRenderer"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

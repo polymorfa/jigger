@@ -1,0 +1,33 @@
+{
+  "id": "sig:receipt/bot",
+  "kind": "sig",
+  "name": "ReceiptBotClientMultiThreadIDReceiptMixin",
+  "data": {
+    "kind": "sig",
+    "root": "receipt",
+    "children": [
+      "bot"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptBotClientMultiThreadIDReceiptMixin",
+    "matches": "assertTag\\([a-z], \"receipt\"\\)"
+  },
+  "literals": [
+    "receipt",
+    "bot"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInReceiptBotClientMultiThreadIDMixin",
+      "WASmaxInReceiptBotConversationThreadIDMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInReceiptDeliverSingleStyleMixin"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "id": "proto:MAWArmadilloXMATableSchema.XMATableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloXMATableSchema.XMATableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "associatedMessageId": {
+        "number": 1
+      },
+      "author": {
+        "number": 2
+      },
+      "ctas": {
+        "number": 3,
+        "type_name": "MAWArmadilloXMATableSchema.CTAProto"
+      },
+      "defaultCTA": {
+        "number": 4,
+        "type_name": "MAWArmadilloXMATableSchema.CTAProto"
+      },
+      "defaultPreviewMediaId": {
+        "number": 5
+      },
+      "defaultPreviewMediaPlaintextHash": {
+        "number": 27
+      },
+      "externalId": {
+        "number": 6
+      },
+      "faviconMediaId": {
+        "number": 7
+      },
+      "faviconPlaintextHash": {
+        "number": 28
+      },
+      "headerMediaId": {
+        "number": 8
+      },
+      "headerMediaPlaintextHash": {
+        "number": 29
+      },
+      "headerTitle": {
+        "number": 9
+      },
+      "isTombstoned": {
+        "number": 10
+      },
+      "maxSubtitleNumOfLines": {
+        "number": 11
+      },
+      "maxTitleNumOfLines": {
+        "number": 12
+      },
+      "msgId": {
+        "number": 13
+      },
+      "overlayDescription": {
+        "number": 14
+      },
+      "overlayIconGlyph": {
+        "number": 15
+      },
+      "overlayTitle": {
+        "number": 16
+      },
+      "previewMediaIds": {
+        "number": 17
+      },
+      "subtitleText": {
+        "number": 18
+      },
+      "targetExpiringAtSec": {
+        "number": 19
+      },
+      "targetId": {
+        "number": 20
+      },
+      "targetType": {
+        "number": 21
+      },
+      "targetUsername": {
+        "number": 22
+      },
+      "threadJid": {
+        "number": 23
+      },
+      "titleText": {
+        "number": 24
+      },
+      "xmaId": {
+        "number": 25
+      },
+      "xmaLayoutType": {
+        "number": 26
+      }
+    },
+    "module": "MAWArmadilloXMATableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloXMATableSchema.pb",
+    "matches": "name = \"XMATableSchemaProto\""
+  },
+  "literals": [
+    "XMATableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

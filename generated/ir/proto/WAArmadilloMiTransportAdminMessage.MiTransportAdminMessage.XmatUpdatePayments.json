@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatUpdatePayments",
+  "kind": "proto",
+  "name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatUpdatePayments",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "amount": {
+        "number": 3
+      },
+      "receiverName": {
+        "number": 1
+      },
+      "senderName": {
+        "number": 2
+      },
+      "transactionId": {
+        "number": 4
+      },
+      "transactionStatus": {
+        "number": 5
+      }
+    },
+    "module": "WAArmadilloMiTransportAdminMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloMiTransportAdminMessage.pb",
+    "matches": "name = \"MiTransportAdminMessage.XmatUpdatePayments\""
+  },
+  "literals": [
+    "XmatUpdatePayments"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleNotification",
+      "MAWMpsBridgeHandlers",
+      "MAWProtobufDeserializers",
+      "MpsAdminMsgToBridge",
+      "MpsThreadContentsPostProcessor",
+      "MpsToUIPostProcessor",
+      "WABuildMpsPayload",
+      "WmiMessengerE2EEIrisDeltaHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

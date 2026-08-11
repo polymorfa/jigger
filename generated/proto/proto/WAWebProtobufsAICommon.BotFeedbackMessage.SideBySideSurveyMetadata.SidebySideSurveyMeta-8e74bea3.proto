@@ -1,0 +1,3 @@
+message SideBySideSurveyAbandonEventData {
+  optional bytes abandonDwellTimeMsString = 1;
+}

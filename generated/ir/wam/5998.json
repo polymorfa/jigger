@@ -1,0 +1,91 @@
+{
+  "id": "wam:5998",
+  "kind": "wam",
+  "name": "ChannelMessageVisibilityTracking",
+  "data": {
+    "kind": "wam",
+    "event_id": 5998,
+    "fields": {
+      "aiProvenanceLabelEnabled": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "ai_provenance_label_enabled"
+      },
+      "aiProvenanceLabelShown": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "ai_provenance_label_shown"
+      },
+      "channelUserType": {
+        "id": 10,
+        "type": "CHANNEL_USER_TYPE",
+        "wire": "channel_user_type",
+        "enum_ref": "CHANNEL_USER_TYPE"
+      },
+      "cid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "containsMusic": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "contains_music"
+      },
+      "isOriginalAuthor": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "is_original_author"
+      },
+      "isStarredPost": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_starred_post"
+      },
+      "isVpvImpression": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "is_vpv_impression"
+      },
+      "postId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "post_id"
+      },
+      "traceIdInt": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      },
+      "unifiedSessionId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelMessageVisibilityTrackingWamEvent",
+    "matches": "ChannelMessageVisibilityTracking:\\s*\\[\\s*5998"
+  },
+  "literals": [
+    "5998"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelUserType"
+    ],
+    "dependents": [
+      "WAWebMerlinImpressionManager"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

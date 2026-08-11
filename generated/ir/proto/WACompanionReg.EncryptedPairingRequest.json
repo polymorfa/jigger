@@ -1,0 +1,35 @@
+{
+  "id": "proto:WACompanionReg.EncryptedPairingRequest",
+  "kind": "proto",
+  "name": "WACompanionReg.EncryptedPairingRequest",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "encryptedPayload": {
+        "number": 1
+      },
+      "iv": {
+        "number": 2
+      }
+    },
+    "module": "WACompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WACompanionReg.pb",
+    "matches": "name = \"EncryptedPairingRequest\""
+  },
+  "literals": [
+    "EncryptedPairingRequest"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

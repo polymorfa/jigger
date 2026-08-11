@@ -1,0 +1,33 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterDirectoryListJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterDirectoryListJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26125047313831973",
+    "operation": "query",
+    "variables": [
+      "fetch_status_metadata",
+      "input"
+    ],
+    "root_field": "xwa2_newsletters_directory_list",
+    "document": "query MexFetchNewsletterDirectoryListJobQuery($fetch_status_metadata, $input) {\n  id\n  text\n  update_time\n  xwa2_newsletters_directory_list {\n    page_info {\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n      result {\n        thread_metadata {\n          creation_time\n          invite\n          handle\n          subscribers_count\n          name {\n            description {\n              picture {\n                direct_path\n                type\n                verification\n                status_metadata {\n                  last_status_server_id\n                  last_status_sent_time\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterDirectoryListJobQuery.graphql",
+    "matches": "id: \"26125047313831973\""
+  },
+  "literals": [
+    "26125047313831973",
+    "WAWebMexFetchNewsletterDirectoryListJobQuery",
+    "xwa2_newsletters_directory_list"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterDirectoryListJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

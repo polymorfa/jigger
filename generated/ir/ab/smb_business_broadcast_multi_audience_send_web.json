@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_business_broadcast_multi_audience_send_web",
+  "kind": "ab",
+  "name": "smb_business_broadcast_multi_audience_send_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25206,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_business_broadcast_multi_audience_send_web:\\s*\\[\\s*25206"
+  },
+  "literals": [
+    "smb_business_broadcast_multi_audience_send_web",
+    "25206"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

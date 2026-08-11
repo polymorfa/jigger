@@ -1,0 +1,42 @@
+{
+  "id": "enum:VIDEO_TRANSCODER_TARGET_FORMAT_TYPE",
+  "kind": "enum",
+  "name": "VIDEO_TRANSCODER_TARGET_FORMAT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumVideoTranscoderTargetFormatType",
+    "variants": [
+      {
+        "name": "IMAGE",
+        "value": 0.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 1.0
+      },
+      {
+        "name": "GIF",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumVideoTranscoderTargetFormatType",
+    "matches": "VIDEO_TRANSCODER_TARGET_FORMAT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "VIDEO_TRANSCODER_TARGET_FORMAT_TYPE",
+    "IMAGE",
+    "VIDEO",
+    "GIF"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaDataUtils",
+      "WAWebVideoTranscoderWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

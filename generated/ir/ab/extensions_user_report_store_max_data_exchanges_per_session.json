@@ -1,0 +1,45 @@
+{
+  "id": "ab:extensions_user_report_store_max_data_exchanges_per_session",
+  "kind": "ab",
+  "name": "extensions_user_report_store_max_data_exchanges_per_session",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3211,
+    "type": "int",
+    "default": 10,
+    "alt_default": 10
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "extensions_user_report_store_max_data_exchanges_per_session:\\s*\\[\\s*3211"
+  },
+  "literals": [
+    "extensions_user_report_store_max_data_exchanges_per_session",
+    "3211"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGalaxyFlowsSessionsCache"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

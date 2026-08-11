@@ -1,0 +1,6 @@
+message NotificationMessageInfo {
+  optional bytes key = 1;
+  optional bytes message = 2;
+  optional bytes messageTimestamp = 3;
+  optional bytes participant = 4;
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:dsa_26_receiver_enabled",
+  "kind": "ab",
+  "name": "dsa_26_receiver_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22515,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "dsa_26_receiver_enabled:\\s*\\[\\s*22515"
+  },
+  "literals": [
+    "dsa_26_receiver_enabled",
+    "22515"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "id": "iq:w:g2/set/admin+demote+participant+promote",
+  "kind": "iq",
+  "name": "GroupsPromoteDemoteAdmin",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "set",
+    "tags": [
+      "admin",
+      "demote",
+      "participant",
+      "promote"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "admin",
+          "children": [
+            {
+              "tag": "promote",
+              "children": [
+                {
+                  "tag": "participant",
+                  "attrs": [
+                    {
+                      "name": "jid",
+                      "ty": "jid",
+                      "optional": false
+                    }
+                  ],
+                  "card": "repeated"
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "demote",
+              "children": [
+                {
+                  "tag": "participant",
+                  "attrs": [
+                    {
+                      "name": "jid",
+                      "ty": "jid",
+                      "optional": false
+                    }
+                  ],
+                  "card": "repeated"
+                }
+              ],
+              "card": "optional"
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsPromoteDemoteAdminRPC",
+    "responses": [
+      {
+        "arm": "SuccessMultiAdmin",
+        "module": "WASmaxInGroupsPromoteDemoteAdminResponseSuccessMultiAdmin",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "admin",
+              "card": "one"
+            },
+            {
+              "tag": "participant",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsPromoteDemoteAdminResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorBlockedIntegrityEnforcement",
+          "IQErrorFallbackClient",
+          "IQErrorForbidden",
+          "IQErrorItemNotFound",
+          "IQErrorLocked",
+          "IQErrorNotAuthorized",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsPromoteDemoteAdminResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsPromoteDemoteAdminRequest",
+    "matches": "smax\\(\"admin\""
+  },
+  "literals": [
+    "w:g2",
+    "admin",
+    "demote",
+    "participant",
+    "promote"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseSetGroupMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxGroupsPromoteDemoteAdminRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

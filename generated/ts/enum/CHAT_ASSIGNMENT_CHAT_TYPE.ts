@@ -1,0 +1,6 @@
+export enum CHATASSIGNMENTCHATTYPE {
+  INDIVIDUAL = 0,
+  GROUP = 1,
+  COMMUNITY = 2,
+  CHANNEL = 3,
+}

@@ -1,0 +1,276 @@
+{
+  "id": "iq:w:biz/get/features",
+  "kind": "iq",
+  "name": "BizMarketingMessageGetBusinessEligibility",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:biz",
+    "type": "get",
+    "tags": [
+      "features"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:biz",
+          "optional": false
+        },
+        {
+          "name": "smax_id",
+          "ty": "int",
+          "optional": false
+        },
+        {
+          "name": "from",
+          "ty": "jid",
+          "optional": true
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "features",
+          "attrs": [
+            {
+              "name": "meta_verified",
+              "ty": "string",
+              "optional": true
+            },
+            {
+              "name": "marketing_messages",
+              "ty": "string",
+              "optional": true
+            },
+            {
+              "name": "genai",
+              "ty": "string",
+              "optional": true
+            },
+            {
+              "name": "genai_image",
+              "ty": "string",
+              "optional": true
+            },
+            {
+              "name": "meta_one",
+              "ty": "string",
+              "optional": true
+            },
+            {
+              "name": "bb_pro",
+              "ty": "string",
+              "optional": true
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxBizMarketingMessageGetBusinessEligibilityRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInBizMarketingMessageGetBusinessEligibilityResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "meta_verified",
+              "attrs": [
+                {
+                  "name": "status",
+                  "ty": "stringenum",
+                  "optional": false
+                },
+                {
+                  "name": "should_show_privacy_interstitial_to_new_users",
+                  "ty": "stringenum",
+                  "optional": true
+                },
+                {
+                  "name": "additional_params",
+                  "ty": "string",
+                  "optional": true
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "marketing_messages",
+              "attrs": [
+                {
+                  "name": "status",
+                  "ty": "stringenum",
+                  "optional": false
+                },
+                {
+                  "name": "expiration",
+                  "ty": "int",
+                  "optional": true
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "genai",
+              "attrs": [
+                {
+                  "name": "status",
+                  "ty": "stringenum",
+                  "optional": false
+                },
+                {
+                  "name": "v1_enabled",
+                  "ty": "stringenum",
+                  "optional": true
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "genai_image",
+              "attrs": [
+                {
+                  "name": "status",
+                  "ty": "stringenum",
+                  "optional": false
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "meta_one",
+              "attrs": [
+                {
+                  "name": "status",
+                  "ty": "stringenum",
+                  "optional": false
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "bb_pro",
+              "attrs": [
+                {
+                  "name": "status",
+                  "ty": "stringenum",
+                  "optional": false
+                }
+              ],
+              "card": "optional"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInBizMarketingMessageGetBusinessEligibilityResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorForbidden",
+          "IQErrorInternalServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutBizMarketingMessageGetBusinessEligibilityRequest",
+    "matches": "smax\\(\"features\""
+  },
+  "literals": [
+    "w:biz",
+    "features"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxJsx",
+      "WASmaxOutBizMarketingMessageHackBaseIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxBizMarketingMessageGetBusinessEligibilityRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

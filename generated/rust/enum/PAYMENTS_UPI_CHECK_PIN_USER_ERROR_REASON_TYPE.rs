@@ -1,0 +1,8 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PAYMENTSUPICHECKPINUSERERRORREASONTYPE {
+    PININVALID = 1,
+    INSUFFICIENTBALANCE = 2,
+    SENDERVPAHANDLE = 3,
+    RECEIVERVPAHANDLE = 4,
+}

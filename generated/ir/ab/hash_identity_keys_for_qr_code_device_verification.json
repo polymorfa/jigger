@@ -1,0 +1,45 @@
+{
+  "id": "ab:hash_identity_keys_for_qr_code_device_verification",
+  "kind": "ab",
+  "name": "hash_identity_keys_for_qr_code_device_verification",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9211,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "hash_identity_keys_for_qr_code_device_verification:\\s*\\[\\s*9211"
+  },
+  "literals": [
+    "hash_identity_keys_for_qr_code_device_verification",
+    "9211"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebIdentityVerificationApi"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "wam:7900",
+  "kind": "wam",
+  "name": "AudienceManagement",
+  "data": {
+    "kind": "wam",
+    "event_id": 7900,
+    "fields": {
+      "audienceEventSurface": {
+        "id": 1,
+        "type": "AUDIENCE_EVENT_SURFACE_TYPE",
+        "wire": "audience_event_surface",
+        "enum_ref": "AUDIENCE_EVENT_SURFACE_TYPE"
+      },
+      "audienceExtraData": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "audience_extra_data"
+      },
+      "audienceManagementAction": {
+        "id": 3,
+        "type": "AUDIENCE_MANAGEMENT_ACTION_TYPE",
+        "wire": "audience_management_action",
+        "enum_ref": "AUDIENCE_MANAGEMENT_ACTION_TYPE"
+      },
+      "audiencePredicateType": {
+        "id": 4,
+        "type": "AUDIENCE_PREDICATE_TYPE_ENUM",
+        "wire": "audience_predicate_type",
+        "enum_ref": "AUDIENCE_PREDICATE_TYPE_ENUM"
+      },
+      "audienceResolutionTrigger": {
+        "id": 5,
+        "type": "AUDIENCE_RESOLUTION_TRIGGER_TYPE",
+        "wire": "audience_resolution_trigger",
+        "enum_ref": "AUDIENCE_RESOLUTION_TRIGGER_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebAudienceManagementWamEvent",
+    "matches": "AudienceManagement:\\s*\\[\\s*7900"
+  },
+  "literals": [
+    "7900"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAudienceEventSurfaceType",
+      "WAWebWamEnumAudienceManagementActionType",
+      "WAWebWamEnumAudiencePredicateTypeEnum",
+      "WAWebWamEnumAudienceResolutionTriggerType"
+    ],
+    "dependents": [
+      "WAWebBizBroadcastAudienceRefreshJob"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

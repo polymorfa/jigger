@@ -1,0 +1,9 @@
+message BotSourceItem {
+  optional bytes provider = 1;
+  optional bytes thumbnailCdnUrl = 2;
+  optional bytes sourceProviderUrl = 3;
+  optional bytes sourceQuery = 4;
+  optional bytes faviconCdnUrl = 5;
+  optional bytes citationNumber = 6;
+  optional bytes sourceTitle = 7;
+}

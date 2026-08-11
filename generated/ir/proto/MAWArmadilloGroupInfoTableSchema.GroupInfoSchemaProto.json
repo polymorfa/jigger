@@ -1,0 +1,62 @@
+{
+  "id": "proto:MAWArmadilloGroupInfoTableSchema.GroupInfoSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloGroupInfoTableSchema.GroupInfoSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "creationTs": {
+        "number": 4
+      },
+      "creator": {
+        "number": 3
+      },
+      "groupJid": {
+        "number": 1
+      },
+      "inviter": {
+        "number": 10
+      },
+      "memberAddMode": {
+        "number": 11
+      },
+      "msgExpiration": {
+        "number": 8
+      },
+      "name": {
+        "number": 5
+      },
+      "nameOwner": {
+        "number": 6
+      },
+      "nameTs": {
+        "number": 7
+      },
+      "participantVersion": {
+        "number": 9
+      },
+      "threadId": {
+        "number": 2
+      }
+    },
+    "module": "MAWArmadilloGroupInfoTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloGroupInfoTableSchema.pb",
+    "matches": "name = \"GroupInfoSchemaProto\""
+  },
+  "literals": [
+    "GroupInfoSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

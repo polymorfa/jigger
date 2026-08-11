@@ -1,0 +1,3 @@
+message PrivacySettingChannelsPersonalisedRecommendationAction {
+  optional bytes isUserOptedOut = 1;
+}

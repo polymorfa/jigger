@@ -1,0 +1,284 @@
+{
+  "id": "wam:2938",
+  "kind": "wam",
+  "name": "PttDaily",
+  "data": {
+    "kind": "wam",
+    "event_id": 2938,
+    "fields": {
+      "pttCancelBroadcast": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "ptt_cancel_broadcast"
+      },
+      "pttCancelGroup": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "ptt_cancel_group"
+      },
+      "pttCancelIndividual": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "ptt_cancel_individual"
+      },
+      "pttCancelInterop": {
+        "id": 42,
+        "type": "INTEGER",
+        "wire": "ptt_cancel_interop"
+      },
+      "pttCancelNewsletter": {
+        "id": 32,
+        "type": "INTEGER",
+        "wire": "ptt_cancel_newsletter"
+      },
+      "pttDraftReviewBroadcast": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "ptt_draft_review_broadcast"
+      },
+      "pttDraftReviewGroup": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "ptt_draft_review_group"
+      },
+      "pttDraftReviewIndividual": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "ptt_draft_review_individual"
+      },
+      "pttDraftReviewInterop": {
+        "id": 43,
+        "type": "INTEGER",
+        "wire": "ptt_draft_review_interop"
+      },
+      "pttDraftReviewNewsletter": {
+        "id": 33,
+        "type": "INTEGER",
+        "wire": "ptt_draft_review_newsletter"
+      },
+      "pttFastplaybackBroadcast": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "ptt_fastplayback_broadcast"
+      },
+      "pttFastplaybackGroup": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "ptt_fastplayback_group"
+      },
+      "pttFastplaybackIndividual": {
+        "id": 19,
+        "type": "INTEGER",
+        "wire": "ptt_fastplayback_individual"
+      },
+      "pttFastplaybackInterop": {
+        "id": 44,
+        "type": "INTEGER",
+        "wire": "ptt_fastplayback_interop"
+      },
+      "pttFastplaybackNewsletter": {
+        "id": 34,
+        "type": "INTEGER",
+        "wire": "ptt_fastplayback_newsletter"
+      },
+      "pttLockBroadcast": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "ptt_lock_broadcast"
+      },
+      "pttLockGroup": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "ptt_lock_group"
+      },
+      "pttLockIndividual": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "ptt_lock_individual"
+      },
+      "pttLockInterop": {
+        "id": 45,
+        "type": "INTEGER",
+        "wire": "ptt_lock_interop"
+      },
+      "pttLockNewsletter": {
+        "id": 35,
+        "type": "INTEGER",
+        "wire": "ptt_lock_newsletter"
+      },
+      "pttOutOfChatBroadcast": {
+        "id": 29,
+        "type": "INTEGER",
+        "wire": "ptt_out_of_chat_broadcast"
+      },
+      "pttOutOfChatGroup": {
+        "id": 30,
+        "type": "INTEGER",
+        "wire": "ptt_out_of_chat_group"
+      },
+      "pttOutOfChatIndividual": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "ptt_out_of_chat_individual"
+      },
+      "pttOutOfChatInterop": {
+        "id": 46,
+        "type": "INTEGER",
+        "wire": "ptt_out_of_chat_interop"
+      },
+      "pttOutOfChatNewsletter": {
+        "id": 36,
+        "type": "INTEGER",
+        "wire": "ptt_out_of_chat_newsletter"
+      },
+      "pttPausedRecordBroadcast": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "ptt_paused_record_broadcast"
+      },
+      "pttPausedRecordGroup": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "ptt_paused_record_group"
+      },
+      "pttPausedRecordIndividual": {
+        "id": 24,
+        "type": "INTEGER",
+        "wire": "ptt_paused_record_individual"
+      },
+      "pttPausedRecordInterop": {
+        "id": 47,
+        "type": "INTEGER",
+        "wire": "ptt_paused_record_interop"
+      },
+      "pttPausedRecordNewsletter": {
+        "id": 37,
+        "type": "INTEGER",
+        "wire": "ptt_paused_record_newsletter"
+      },
+      "pttPlaybackBroadcast": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "ptt_playback_broadcast"
+      },
+      "pttPlaybackGroup": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "ptt_playback_group"
+      },
+      "pttPlaybackIndividual": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "ptt_playback_individual"
+      },
+      "pttPlaybackInterop": {
+        "id": 48,
+        "type": "INTEGER",
+        "wire": "ptt_playback_interop"
+      },
+      "pttPlaybackNewsletter": {
+        "id": 38,
+        "type": "INTEGER",
+        "wire": "ptt_playback_newsletter"
+      },
+      "pttRecordBroadcast": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "ptt_record_broadcast"
+      },
+      "pttRecordGroup": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "ptt_record_group"
+      },
+      "pttRecordIndividual": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "ptt_record_individual"
+      },
+      "pttRecordInterop": {
+        "id": 49,
+        "type": "INTEGER",
+        "wire": "ptt_record_interop"
+      },
+      "pttRecordNewsletter": {
+        "id": 39,
+        "type": "INTEGER",
+        "wire": "ptt_record_newsletter"
+      },
+      "pttSendBroadcast": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "ptt_send_broadcast"
+      },
+      "pttSendGroup": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "ptt_send_group"
+      },
+      "pttSendIndividual": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "ptt_send_individual"
+      },
+      "pttSendInterop": {
+        "id": 50,
+        "type": "INTEGER",
+        "wire": "ptt_send_interop"
+      },
+      "pttSendNewsletter": {
+        "id": 40,
+        "type": "INTEGER",
+        "wire": "ptt_send_newsletter"
+      },
+      "pttStopTapBroadcast": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "ptt_stop_tap_broadcast"
+      },
+      "pttStopTapGroup": {
+        "id": 26,
+        "type": "INTEGER",
+        "wire": "ptt_stop_tap_group"
+      },
+      "pttStopTapIndividual": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "ptt_stop_tap_individual"
+      },
+      "pttStopTapInterop": {
+        "id": 51,
+        "type": "INTEGER",
+        "wire": "ptt_stop_tap_interop"
+      },
+      "pttStopTapNewsletter": {
+        "id": 41,
+        "type": "INTEGER",
+        "wire": "ptt_stop_tap_newsletter"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPttDailyWamEvent",
+    "matches": "PttDaily:\\s*\\[\\s*2938"
+  },
+  "literals": [
+    "2938"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebTasksDailyStatsTask"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

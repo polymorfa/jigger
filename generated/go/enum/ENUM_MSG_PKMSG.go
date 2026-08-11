@@ -1,0 +1,6 @@
+type ENUMMSGPKMSG string
+
+const (
+	ENUMMSGPKMSGMsg ENUMMSGPKMSG = "msg"
+	ENUMMSGPKMSGPkmsg ENUMMSGPKMSG = "pkmsg"
+)

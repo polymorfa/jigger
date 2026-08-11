@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexAcceptNewsletterAdminInviteJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexAcceptNewsletterAdminInviteJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9580828702035549",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id"
+    ],
+    "root_field": "xwa2_newsletter_admin_invite_accept",
+    "document": "mutation MexAcceptNewsletterAdminInviteJobMutation($newsletter_id) {\n  __typename\n  xwa2_newsletter_admin_invite_accept {\n    xwa2_newsletter_admin_invite_accept {\n      id\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexAcceptNewsletterAdminInviteJobMutation.graphql",
+    "matches": "id: \"9580828702035549\""
+  },
+  "literals": [
+    "9580828702035549",
+    "WAWebMexAcceptNewsletterAdminInviteJobMutation",
+    "xwa2_newsletter_admin_invite_accept"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexAcceptNewsletterAdminInviteJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

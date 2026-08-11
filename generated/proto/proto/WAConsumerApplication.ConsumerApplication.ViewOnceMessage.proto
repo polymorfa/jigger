@@ -1,0 +1,4 @@
+message ViewOnceMessage {
+  optional ImageMessage imageMessage = 1;
+  optional VideoMessage videoMessage = 2;
+}

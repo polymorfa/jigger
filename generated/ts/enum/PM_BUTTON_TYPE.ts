@@ -1,0 +1,7 @@
+export enum PMBUTTONTYPE {
+  QUICK_REPLY = 0,
+  CTA_URL = 1,
+  CTA_CALL = 2,
+  CTA_CATALOG = 3,
+  CTA_CATALOG_ITEM = 4,
+}

@@ -1,0 +1,39 @@
+{
+  "id": "proto:MAWArmadilloMessagesTableSchema.DbQuotedMsgProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMessagesTableSchema.DbQuotedMsgProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "content": {
+        "number": 2,
+        "type_name": "MAWArmadilloMessagesTableSchema.DbQuotedMsgContentProto"
+      },
+      "remoteJid": {
+        "number": 1
+      }
+    },
+    "module": "MAWArmadilloMessagesTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMessagesTableSchema.pb",
+    "matches": "name = \"DbQuotedMsgProto\""
+  },
+  "literals": [
+    "DbQuotedMsgProto"
+  ],
+  "graph": {
+    "deps": [
+      "MAWArmadilloContactsTableSchema.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWArmadilloEditMsgHistoryTableSchema.pb",
+      "MAWArmadilloUnrenderedMessagesTableSchema.pb",
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MDLINKDEVICECOMPANIONSTAGE {
+    PAIRSUCCESSRECEIVED = 1,
+    PAIRDEVICESIGNSENT = 2,
+    FIRSTCONNECT = 3,
+    UPLOADPREKEYS = 4,
+    COMPLETE = 5,
+    GENERATEPREKEYS = 6,
+    SENTPREKEYS = 7,
+}

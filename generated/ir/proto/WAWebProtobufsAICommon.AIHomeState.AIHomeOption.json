@@ -1,0 +1,68 @@
+{
+  "id": "proto:WAWebProtobufsAICommon.AIHomeState.AIHomeOption",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommon.AIHomeState.AIHomeOption",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "cardTypeId": {
+        "number": 8
+      },
+      "imageBackgroundColor": {
+        "number": 7
+      },
+      "imageTintColor": {
+        "number": 6
+      },
+      "imageWdsIdentifier": {
+        "number": 5
+      },
+      "promptText": {
+        "number": 3
+      },
+      "sessionId": {
+        "number": 4
+      },
+      "title": {
+        "number": 2
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommon.pb",
+    "matches": "name = \"AIHomeState.AIHomeOption\""
+  },
+  "literals": [
+    "AIHomeOption"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadTypeUtils",
+      "WAWebBotLoggingUtils",
+      "WAWebBotModeSelectionProtoUtils",
+      "WAWebBotPluginCarouselWrapper.react",
+      "WAWebBotPluginMsgBubbleMeta.react",
+      "WAWebBotSignatureVerificationUtils",
+      "WAWebFrontendMsgGetters",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotMetadata",
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebMediaLinkPreviewContainer.react",
+      "WAWebMsgGetters",
+      "WAWebParseBotFeedbackProtocolMessageProto",
+      "WAWebParseBotSessionTransparencyNotice",
+      "WAWebProtobufsE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 15
+  }
+}

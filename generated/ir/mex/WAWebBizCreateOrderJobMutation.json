@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebBizCreateOrderJobMutation",
+  "kind": "mex",
+  "name": "WAWebBizCreateOrderJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26486627094287046",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation BizCreateOrderJobMutation($input) {\n  xwa_checkout_place_order {\n    order {\n      order_id\n      token\n      price {\n        currency\n        subtotal_amount\n        total_amount\n        price_status\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebBizCreateOrderJobMutation.graphql",
+    "matches": "id: \"26486627094287046\""
+  },
+  "literals": [
+    "26486627094287046",
+    "WAWebBizCreateOrderJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCreateOrderJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

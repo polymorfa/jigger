@@ -1,0 +1,42 @@
+{
+  "id": "ab:unknown_user_wam_emit_cooldown_secs",
+  "kind": "ab",
+  "name": "unknown_user_wam_emit_cooldown_secs",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34551,
+    "type": "int",
+    "default": 30,
+    "alt_default": 30
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "unknown_user_wam_emit_cooldown_secs:\\s*\\[\\s*34551"
+  },
+  "literals": [
+    "unknown_user_wam_emit_cooldown_secs",
+    "34551"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

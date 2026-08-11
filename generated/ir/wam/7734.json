@@ -1,0 +1,85 @@
+{
+  "id": "wam:7734",
+  "kind": "wam",
+  "name": "ChatExport",
+  "data": {
+    "kind": "wam",
+    "event_id": 7734,
+    "fields": {
+      "chatType": {
+        "id": 1,
+        "type": "MESSAGE_CHAT_TYPE",
+        "wire": "chat_type",
+        "enum_ref": "MESSAGE_CHAT_TYPE"
+      },
+      "exportDateRangeUsed": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "export_date_range_used"
+      },
+      "exportDurationMs": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "export_duration_ms"
+      },
+      "exportErrorReason": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "export_error_reason"
+      },
+      "exportFileSizeBytes": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "export_file_size_bytes"
+      },
+      "exportMessageCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "export_message_count"
+      },
+      "exportMode": {
+        "id": 7,
+        "type": "EXPORT_MODE_TYPE",
+        "wire": "export_mode",
+        "enum_ref": "EXPORT_MODE_TYPE"
+      },
+      "exportResult": {
+        "id": 8,
+        "type": "EXPORT_RESULT_TYPE",
+        "wire": "export_result",
+        "enum_ref": "EXPORT_RESULT_TYPE"
+      },
+      "mediaCount": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "media_count"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatExportWamEvent",
+    "matches": "ChatExport:\\s*\\[\\s*7734"
+  },
+  "literals": [
+    "7734"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumExportModeType",
+      "WAWebWamEnumExportResultType",
+      "WAWebWamEnumMessageChatType"
+    ],
+    "dependents": [
+      "WAWebExportChatLogging"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

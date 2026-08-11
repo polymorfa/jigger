@@ -1,0 +1,2 @@
+// ParseGroupsAcceptGroupAddResponseGroupJoinRequestSuccess matches <iq>. Response to GroupsAcceptGroupAdd.
+func ParseGroupsAcceptGroupAddResponseGroupJoinRequestSuccess(n *waBinary.Node) (*GroupsAcceptGroupAddResponseGroupJoinRequestSuccess, error)

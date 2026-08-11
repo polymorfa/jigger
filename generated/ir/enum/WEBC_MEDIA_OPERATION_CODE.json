@@ -1,0 +1,37 @@
+{
+  "id": "enum:WEBC_MEDIA_OPERATION_CODE",
+  "kind": "enum",
+  "name": "WEBC_MEDIA_OPERATION_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcMediaOperationCode",
+    "variants": [
+      {
+        "name": "DOWNLOAD",
+        "value": 1.0
+      },
+      {
+        "name": "UPLOAD",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcMediaOperationCode",
+    "matches": "WEBC_MEDIA_OPERATION_CODE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_MEDIA_OPERATION_CODE",
+    "DOWNLOAD",
+    "UPLOAD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWamMediaMetricUtils",
+      "WAWebWebcMediaErrorUnknownDetailsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

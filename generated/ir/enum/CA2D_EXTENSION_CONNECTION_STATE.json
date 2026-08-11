@@ -1,0 +1,61 @@
+{
+  "id": "enum:CA2D_EXTENSION_CONNECTION_STATE",
+  "kind": "enum",
+  "name": "CA2D_EXTENSION_CONNECTION_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCa2dExtensionConnectionState",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 0.0
+      },
+      {
+        "name": "CREATING",
+        "value": 1.0
+      },
+      {
+        "name": "CREATED",
+        "value": 2.0
+      },
+      {
+        "name": "CONNECTING",
+        "value": 3.0
+      },
+      {
+        "name": "CONNECTED",
+        "value": 4.0
+      },
+      {
+        "name": "REMOVED",
+        "value": 5.0
+      },
+      {
+        "name": "FAILED",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCa2dExtensionConnectionState",
+    "matches": "CA2D_EXTENSION_CONNECTION_STATE\\s*[:=]"
+  },
+  "literals": [
+    "CA2D_EXTENSION_CONNECTION_STATE",
+    "NONE",
+    "CREATING",
+    "CREATED",
+    "CONNECTING",
+    "CONNECTED",
+    "REMOVED",
+    "FAILED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

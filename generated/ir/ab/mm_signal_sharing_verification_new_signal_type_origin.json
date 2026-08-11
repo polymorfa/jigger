@@ -1,0 +1,45 @@
+{
+  "id": "ab:mm_signal_sharing_verification_new_signal_type_origin",
+  "kind": "ab",
+  "name": "mm_signal_sharing_verification_new_signal_type_origin",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26784,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_signal_sharing_verification_new_signal_type_origin:\\s*\\[\\s*26784"
+  },
+  "literals": [
+    "mm_signal_sharing_verification_new_signal_type_origin",
+    "26784"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMmSignalSharingGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

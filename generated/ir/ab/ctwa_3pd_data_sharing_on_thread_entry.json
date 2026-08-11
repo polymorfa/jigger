@@ -1,0 +1,45 @@
+{
+  "id": "ab:ctwa_3pd_data_sharing_on_thread_entry",
+  "kind": "ab",
+  "name": "ctwa_3pd_data_sharing_on_thread_entry",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13485,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_3pd_data_sharing_on_thread_entry:\\s*\\[\\s*13485"
+  },
+  "literals": [
+    "ctwa_3pd_data_sharing_on_thread_entry",
+    "13485"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCTWAGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

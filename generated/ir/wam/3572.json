@@ -1,0 +1,58 @@
+{
+  "id": "wam:3572",
+  "kind": "wam",
+  "name": "ChatPsaAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 3572,
+    "fields": {
+      "messageMediaType": {
+        "id": 1,
+        "type": "MEDIA_TYPE",
+        "wire": "message_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "psaCampaignId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "psa_campaign_id"
+      },
+      "psaMessageActionType": {
+        "id": 2,
+        "type": "PSA_MESSAGE_ACTION_TYPE",
+        "wire": "psa_message_action_type",
+        "enum_ref": "PSA_MESSAGE_ACTION_TYPE"
+      },
+      "psaMsgId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "psa_msg_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatPsaActionWamEvent",
+    "matches": "ChatPsaAction:\\s*\\[\\s*3572"
+  },
+  "literals": [
+    "3572"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumPsaMessageActionType"
+    ],
+    "dependents": [
+      "WAWebWamChatPSALogger"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

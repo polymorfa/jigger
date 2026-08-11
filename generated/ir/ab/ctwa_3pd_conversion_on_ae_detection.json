@@ -1,0 +1,42 @@
+{
+  "id": "ab:ctwa_3pd_conversion_on_ae_detection",
+  "kind": "ab",
+  "name": "ctwa_3pd_conversion_on_ae_detection",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34045,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_3pd_conversion_on_ae_detection:\\s*\\[\\s*34045"
+  },
+  "literals": [
+    "ctwa_3pd_conversion_on_ae_detection",
+    "34045"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

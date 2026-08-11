@@ -1,0 +1,61 @@
+{
+  "id": "appstate:deleteMessageForMe",
+  "kind": "appstate",
+  "name": "DeleteMessageForMe",
+  "data": {
+    "kind": "appstate",
+    "index_name": "deleteMessageForMe",
+    "collection": "regular_high",
+    "version": 3,
+    "value_field": "deleteMessageForMeAction",
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebDeleteMessageForMeSync",
+    "matches": "Actions\\.DeleteMessageForMe"
+  },
+  "literals": [
+    "deleteMessageForMe",
+    "DeleteMessageForMe",
+    "deleteMessageForMeAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebAddonProcessDeleteForMe",
+      "WAWebBackendApi",
+      "WAWebCurrentUser",
+      "WAWebDBMessageDelete",
+      "WAWebLidMigrationUtils",
+      "WAWebMsgGetters",
+      "WAWebMsgKey",
+      "WAWebPersistedJobDefinitions",
+      "WAWebPersistedJobManagerWorkerCompatible",
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdIndexUtils",
+      "WAWebSyncdResolveMessages",
+      "WAWebWidFactory",
+      "WAWebWidToJid",
+      "asyncToGeneratorRuntime",
+      "decodeProtobuf",
+      "nullthrows"
+    ],
+    "dependents": [
+      "WAWebAddonDeleteAddons",
+      "WAWebChatSendDeleteMsgsBridge",
+      "WAWebCollectionHandlerActions",
+      "WAWebDebugSyncd"
+    ],
+    "dep_count": 25,
+    "dependent_count": 4
+  }
+}

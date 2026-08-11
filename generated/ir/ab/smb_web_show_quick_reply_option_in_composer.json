@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_web_show_quick_reply_option_in_composer",
+  "kind": "ab",
+  "name": "smb_web_show_quick_reply_option_in_composer",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31700,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_web_show_quick_reply_option_in_composer:\\s*\\[\\s*31700"
+  },
+  "literals": [
+    "smb_web_show_quick_reply_option_in_composer",
+    "31700"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebQuickReplyGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

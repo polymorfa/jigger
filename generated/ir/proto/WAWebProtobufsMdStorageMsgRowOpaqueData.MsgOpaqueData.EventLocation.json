@@ -1,0 +1,50 @@
+{
+  "id": "proto:WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.EventLocation",
+  "kind": "proto",
+  "name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.EventLocation",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "address": {
+        "number": 4
+      },
+      "degreesLatitude": {
+        "number": 1
+      },
+      "degreesLongitude": {
+        "number": 2
+      },
+      "jpegThumbnail": {
+        "number": 6
+      },
+      "name": {
+        "number": 3
+      },
+      "url": {
+        "number": 5
+      }
+    },
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb",
+    "matches": "name = \"MsgOpaqueData.EventLocation\""
+  },
+  "literals": [
+    "EventLocation"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDBMessageSerialization",
+      "WAWebFtsV3MessageSource",
+      "WAWebMsgOpaqueData",
+      "WAWebPollCreationUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

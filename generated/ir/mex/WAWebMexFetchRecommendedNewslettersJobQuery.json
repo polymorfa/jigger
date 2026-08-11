@@ -1,0 +1,33 @@
+{
+  "id": "mex:WAWebMexFetchRecommendedNewslettersJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchRecommendedNewslettersJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25806748772361516",
+    "operation": "query",
+    "variables": [
+      "fetch_status_metadata",
+      "input"
+    ],
+    "root_field": "xwa2_newsletters_recommended",
+    "document": "query MexFetchRecommendedNewslettersJobQuery($fetch_status_metadata, $input) {\n  id\n  type\n  text\n  update_time\n  xwa2_newsletters_recommended {\n    page_info {\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n      result {\n        state {\n          thread_metadata {\n            creation_time\n            name {\n              description {\n                picture {\n                  direct_path\n                  invite\n                  handle\n                  verification\n                  subscribers_count\n                  status_metadata {\n                    last_status_server_id\n                    last_status_sent_time\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchRecommendedNewslettersJobQuery.graphql",
+    "matches": "id: \"25806748772361516\""
+  },
+  "literals": [
+    "25806748772361516",
+    "WAWebMexFetchRecommendedNewslettersJobQuery",
+    "xwa2_newsletters_recommended"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchRecommendedNewslettersJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

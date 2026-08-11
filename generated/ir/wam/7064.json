@@ -1,0 +1,108 @@
+{
+  "id": "wam:7064",
+  "kind": "wam",
+  "name": "GroupHistoryReceiverUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 7064,
+    "fields": {
+      "groupHistoryDbIgnoredOlderMessages": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "group_history_db_ignored_older_messages"
+      },
+      "groupHistoryMessagesCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "group_history_messages_count"
+      },
+      "groupHistoryOutWindowPinsCount": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "group_history_out_window_pins_count"
+      },
+      "groupHistoryPinsCount": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "group_history_pins_count"
+      },
+      "groupHistoryReceiverActionType": {
+        "id": 2,
+        "type": "GROUP_HISTORY_RECEIVER_USER_JOURNEY_ACTION_TYPE",
+        "wire": "group_history_receiver_action_type",
+        "enum_ref": "GROUP_HISTORY_RECEIVER_USER_JOURNEY_ACTION_TYPE"
+      },
+      "groupHistoryReceiverGroupId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "group_history_receiver_group_id"
+      },
+      "groupHistoryUncountedMessagesCount": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "group_history_uncounted_messages_count"
+      },
+      "isAutoProcess": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_auto_process"
+      },
+      "messageKeyHash": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "message_key_hash"
+      },
+      "messageReceivedTs": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "message_received_ts"
+      },
+      "receiverFailureReason": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "receiver_failure_reason"
+      },
+      "uiSurface": {
+        "id": 6,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyMs": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "user_journey_ms"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGroupHistoryReceiverUserJourneyWamEvent",
+    "matches": "GroupHistoryReceiverUserJourney:\\s*\\[\\s*7064"
+  },
+  "literals": [
+    "7064"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGroupHistoryReceiverUserJourneyActionType",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebGroupHistoryReceiverUserJourneyLogger"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAWebProtobufsStatusAttributions.StatusAttribution.StatusReshare.Metadata",
+  "kind": "proto",
+  "name": "WAWebProtobufsStatusAttributions.StatusAttribution.StatusReshare.Metadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "channelJid": {
+        "number": 2
+      },
+      "channelMessageId": {
+        "number": 3
+      },
+      "duration": {
+        "number": 1
+      },
+      "hasMultipleReshares": {
+        "number": 4
+      }
+    },
+    "module": "WAWebProtobufsStatusAttributions.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsStatusAttributions.pb",
+    "matches": "name = \"StatusAttribution.StatusReshare.Metadata\""
+  },
+  "literals": [
+    "Metadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebE2EProtoGenerator",
+      "WAWebMsgGetters",
+      "WAWebNewsletterSendStatusAction",
+      "WAWebProtobufsE2E.pb",
+      "WAWebStatusExternalShareUtils",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusReshareAction",
+      "WAWebStatusSubtitle.react"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "enum:CROSSPOST_RESULT_TYPE",
+  "kind": "enum",
+  "name": "CROSSPOST_RESULT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCrosspostResultType",
+    "variants": [
+      {
+        "name": "OK",
+        "value": 1.0
+      },
+      {
+        "name": "USER_CANCELED",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCrosspostResultType",
+    "matches": "CROSSPOST_RESULT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CROSSPOST_RESULT_TYPE",
+    "OK",
+    "USER_CANCELED",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCrosspostingHelper",
+      "WAWebStatusCrosspostRequestWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

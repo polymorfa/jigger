@@ -1,0 +1,121 @@
+{
+  "id": "enum:WEBC_NATIVE_UPSELL_CTA_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "WEBC_NATIVE_UPSELL_CTA_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcNativeUpsellCtaSourceType",
+    "variants": [
+      {
+        "name": "INTRO_PANEL",
+        "value": 1.0
+      },
+      {
+        "name": "CHATLIST_DROPDOWN",
+        "value": 2.0
+      },
+      {
+        "name": "BUTTERBAR",
+        "value": 3.0
+      },
+      {
+        "name": "QR_BANNER",
+        "value": 4.0
+      },
+      {
+        "name": "SEARCH_RESULTS",
+        "value": 5.0
+      },
+      {
+        "name": "CALL_BTN_MODAL",
+        "value": 6.0
+      },
+      {
+        "name": "CALL_BTN_MODAL_2",
+        "value": 7.0
+      },
+      {
+        "name": "MISSED_CALL_MODAL",
+        "value": 8.0
+      },
+      {
+        "name": "MISSED_CALL_MODAL_2",
+        "value": 9.0
+      },
+      {
+        "name": "QR_BANNER_2",
+        "value": 10.0
+      },
+      {
+        "name": "QR_DOWNLOAD_BUTTON",
+        "value": 11.0
+      },
+      {
+        "name": "QR_SLIM_BANNER",
+        "value": 12.0
+      },
+      {
+        "name": "QR_LARGE_BANNER",
+        "value": 13.0
+      },
+      {
+        "name": "SETTINGS",
+        "value": 14.0
+      },
+      {
+        "name": "SETTINGS_HELP",
+        "value": 15.0
+      },
+      {
+        "name": "LINK_DEVICE_APPLE_TOUCHSCREEN_OVERLAY",
+        "value": 16.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcNativeUpsellCtaSourceType",
+    "matches": "WEBC_NATIVE_UPSELL_CTA_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_NATIVE_UPSELL_CTA_SOURCE_TYPE",
+    "INTRO_PANEL",
+    "CHATLIST_DROPDOWN",
+    "BUTTERBAR",
+    "QR_BANNER",
+    "SEARCH_RESULTS",
+    "CALL_BTN_MODAL",
+    "CALL_BTN_MODAL_2",
+    "MISSED_CALL_MODAL",
+    "MISSED_CALL_MODAL_2",
+    "QR_BANNER_2",
+    "QR_DOWNLOAD_BUTTON",
+    "QR_SLIM_BANNER",
+    "QR_LARGE_BANNER",
+    "SETTINGS",
+    "SETTINGS_HELP",
+    "LINK_DEVICE_APPLE_TOUCHSCREEN_OVERLAY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatlistHeaderDropdown.react",
+      "WAWebDesktopUpsellCallingMissedCall.react",
+      "WAWebDesktopUpsellCallingUnavailablePopover.react",
+      "WAWebDesktopUpsellChatlistToastbar.react",
+      "WAWebDesktopUpsellQRCodeSlimBanner.react",
+      "WAWebDesktopUpsellSearchToastbar.react",
+      "WAWebDesktopUpsellStoreOpener",
+      "WAWebHelpDrawer.react",
+      "WAWebIntroPanel.react",
+      "WAWebIntroPanelV2.react",
+      "WAWebLandingHeader.react",
+      "WAWebLinkDeviceScreen.react",
+      "WAWebMeTabFlow.react",
+      "WAWebNativeAppDownloadButton.react",
+      "WAWebSettingsDrawer.react",
+      "WAWebWebcNativeUpsellCtaWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 16
+  }
+}

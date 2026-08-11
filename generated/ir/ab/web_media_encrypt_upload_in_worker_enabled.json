@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_media_encrypt_upload_in_worker_enabled",
+  "kind": "ab",
+  "name": "web_media_encrypt_upload_in_worker_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31721,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_media_encrypt_upload_in_worker_enabled:\\s*\\[\\s*31721"
+  },
+  "literals": [
+    "web_media_encrypt_upload_in_worker_enabled",
+    "31721"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUploadManager"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

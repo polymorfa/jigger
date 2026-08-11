@@ -1,0 +1,51 @@
+{
+  "id": "enum:BIZ_AI_ASSET_MATERIALIZATION_FAILURE_TYPE",
+  "kind": "enum",
+  "name": "BIZ_AI_ASSET_MATERIALIZATION_FAILURE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBizAiAssetMaterializationFailureType",
+    "variants": [
+      {
+        "name": "CONTEXT_GENERATION",
+        "value": 0.0
+      },
+      {
+        "name": "ASSET_RETRIEVAL",
+        "value": 1.0
+      },
+      {
+        "name": "CDN_GENERATION",
+        "value": 2.0
+      },
+      {
+        "name": "UNKNOWN_TYPE",
+        "value": 3.0
+      },
+      {
+        "name": "GENERAL_FAILURE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBizAiAssetMaterializationFailureType",
+    "matches": "BIZ_AI_ASSET_MATERIALIZATION_FAILURE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "BIZ_AI_ASSET_MATERIALIZATION_FAILURE_TYPE",
+    "CONTEXT_GENERATION",
+    "ASSET_RETRIEVAL",
+    "CDN_GENERATION",
+    "UNKNOWN_TYPE",
+    "GENERAL_FAILURE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizAiComponentInteractionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

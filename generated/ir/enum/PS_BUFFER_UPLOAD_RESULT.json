@@ -1,0 +1,82 @@
+{
+  "id": "enum:PS_BUFFER_UPLOAD_RESULT",
+  "kind": "enum",
+  "name": "PS_BUFFER_UPLOAD_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPsBufferUploadResult",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "ERROR_PARSING",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR_DECODING",
+        "value": 3.0
+      },
+      {
+        "name": "ERROR_CREDENTIAL",
+        "value": 4.0
+      },
+      {
+        "name": "ERROR_OTHER",
+        "value": 5.0
+      },
+      {
+        "name": "ERROR_CLIENT_NETWORK",
+        "value": 6.0
+      },
+      {
+        "name": "ERROR_WAIT_FOR_TOKEN",
+        "value": 7.0
+      },
+      {
+        "name": "ERROR_SERVER_OTHER",
+        "value": 8.0
+      },
+      {
+        "name": "SKIPPED_NO_NETWORK",
+        "value": 9.0
+      },
+      {
+        "name": "SKIPPED_NO_DATA",
+        "value": 10.0
+      },
+      {
+        "name": "ERROR_ACCESS_TOKEN",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPsBufferUploadResult",
+    "matches": "PS_BUFFER_UPLOAD_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "PS_BUFFER_UPLOAD_RESULT",
+    "SUCCESS",
+    "ERROR_PARSING",
+    "ERROR_DECODING",
+    "ERROR_CREDENTIAL",
+    "ERROR_OTHER",
+    "ERROR_CLIENT_NETWORK",
+    "ERROR_WAIT_FOR_TOKEN",
+    "ERROR_SERVER_OTHER",
+    "SKIPPED_NO_NETWORK",
+    "SKIPPED_NO_DATA",
+    "ERROR_ACCESS_TOKEN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPsBufferUploadWamEvent",
+      "WAWebUploadPrivateStatsBackend"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

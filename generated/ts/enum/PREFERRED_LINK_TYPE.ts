@@ -1,0 +1,4 @@
+export enum PREFERREDLINKTYPE {
+  LOCAL = 0,
+  UNIVERSAL = 1,
+}

@@ -1,0 +1,81 @@
+{
+  "id": "wam:2242",
+  "kind": "wam",
+  "name": "SignCredential",
+  "data": {
+    "kind": "wam",
+    "event_id": 2242,
+    "fields": {
+      "applicationState": {
+        "id": 6,
+        "type": "APPLICATION_STATE",
+        "wire": "application_state",
+        "enum_ref": "APPLICATION_STATE"
+      },
+      "isFromWameta": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_from_wameta"
+      },
+      "overallT": {
+        "id": 4,
+        "type": "TIMER",
+        "wire": "overall_t"
+      },
+      "projectCode": {
+        "id": 7,
+        "type": "PROJECT_CODE",
+        "wire": "project_code",
+        "enum_ref": "PROJECT_CODE"
+      },
+      "retryCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "retry_count"
+      },
+      "signCredentialResult": {
+        "id": 1,
+        "type": "SIGN_CREDENTIAL_RESULT",
+        "wire": "sign_credential_result",
+        "enum_ref": "SIGN_CREDENTIAL_RESULT"
+      },
+      "signCredentialT": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "sign_credential_t"
+      },
+      "waConnectedToChatd": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "wa_connected_to_chatd"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSignCredentialWamEvent",
+    "matches": "SignCredential:\\s*\\[\\s*2242"
+  },
+  "literals": [
+    "2242"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumApplicationState",
+      "WAWebWamEnumProjectCode",
+      "WAWebWamEnumSignCredentialResult"
+    ],
+    "dependents": [
+      "WAWebIssuePrivateStatsToken",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 4,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "enum:STICKER_PICKER_ENTRY_POINT",
+  "kind": "enum",
+  "name": "STICKER_PICKER_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStickerPickerEntryPoint",
+    "variants": [
+      {
+        "name": "CHAT_COMPOSER",
+        "value": 1.0
+      },
+      {
+        "name": "REACTION",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStickerPickerEntryPoint",
+    "matches": "STICKER_PICKER_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "STICKER_PICKER_ENTRY_POINT",
+    "CHAT_COMPOSER",
+    "REACTION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStickerPickerOpenedWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseMapMetadata.AIRichResponseMapAnnotation",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseMapMetadata.AIRichResponseMapAnnotation",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "annotationNumber": {
+        "number": 1
+      },
+      "body": {
+        "number": 5
+      },
+      "latitude": {
+        "number": 2
+      },
+      "longitude": {
+        "number": 3
+      },
+      "title": {
+        "number": 4
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseMapMetadata.AIRichResponseMapAnnotation\""
+  },
+  "literals": [
+    "AIRichResponseMapAnnotation"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

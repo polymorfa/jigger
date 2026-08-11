@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_dynamic_mode_selector_ttl_seconds",
+  "kind": "ab",
+  "name": "ai_dynamic_mode_selector_ttl_seconds",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25797,
+    "type": "int",
+    "default": 86400,
+    "alt_default": 86400
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_dynamic_mode_selector_ttl_seconds:\\s*\\[\\s*25797"
+  },
+  "literals": [
+    "ai_dynamic_mode_selector_ttl_seconds",
+    "25797"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

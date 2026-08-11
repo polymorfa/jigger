@@ -1,0 +1,34 @@
+{
+  "id": "wam:158",
+  "kind": "wam",
+  "name": "GroupJoinC",
+  "data": {
+    "kind": "wam",
+    "event_id": 158,
+    "fields": {},
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGroupJoinCWamEvent",
+    "matches": "GroupJoinC:\\s*\\[\\s*158"
+  },
+  "literals": [
+    "158"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebHandleGroupCreation",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

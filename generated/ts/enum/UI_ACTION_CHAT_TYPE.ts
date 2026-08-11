@@ -1,0 +1,9 @@
+export enum UIACTIONCHATTYPE {
+  INDIVIDUAL = 1,
+  GROUP = 2,
+  SUBGROUP = 3,
+  DEFAULT_SUBGROUP = 4,
+  CHANNEL = 5,
+  META_AI = 6,
+  AI_CHARACTERS = 7,
+}

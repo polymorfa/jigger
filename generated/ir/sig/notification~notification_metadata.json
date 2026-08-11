@@ -1,0 +1,34 @@
+{
+  "id": "sig:notification/notification_metadata",
+  "kind": "sig",
+  "name": "WaffleWFNotificationRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "notification_metadata"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInWaffleWFNotificationRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "notification_metadata"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInWaffleEnums",
+      "WASmaxInWaffleServerNotificationMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WAWebAccountLinkingNotificationHandler"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

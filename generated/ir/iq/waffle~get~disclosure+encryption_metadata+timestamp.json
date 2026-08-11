@@ -1,0 +1,188 @@
+{
+  "id": "iq:waffle/get/disclosure+encryption_metadata+timestamp",
+  "kind": "iq",
+  "name": "WaffleGenerateWAEntACUser",
+  "data": {
+    "kind": "iq",
+    "xmlns": "waffle",
+    "type": "get",
+    "tags": [
+      "disclosure",
+      "encryption_metadata",
+      "timestamp"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "waffle",
+          "optional": false
+        },
+        {
+          "name": "smax_id",
+          "ty": "int",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "encryption_metadata",
+          "card": "one"
+        },
+        {
+          "tag": "timestamp",
+          "card": "one"
+        },
+        {
+          "tag": "disclosure",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "int",
+              "optional": false
+            },
+            {
+              "name": "version",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "lg",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "lc",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxWaffleGenerateWAEntACUserRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInWaffleGenerateWAEntACUserResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "encryption_metadata",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInWaffleGenerateWAEntACUserResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorAlreadyExists",
+          "IQErrorBadRequest",
+          "IQErrorConflict",
+          "IQErrorInternalServerError",
+          "IQErrorNotAllowed",
+          "IQErrorNotAuthorized",
+          "IQErrorPayloadEncDec",
+          "IQErrorRateOverlimit",
+          "IQErrorRequestTimeout",
+          "IQErrorServiceUnavailable",
+          "IQErrorWFJurisdictionGating"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutWaffleGenerateWAEntACUserRequest",
+    "matches": "smax\\(\"disclosure\""
+  },
+  "literals": [
+    "waffle",
+    "disclosure",
+    "encryption_metadata",
+    "timestamp"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutWaffleBaseIQGetRequestMixin",
+      "WASmaxOutWaffleRSAEncryptionMetadataMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxWaffleGenerateWAEntACUserRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

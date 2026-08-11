@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_biz_broadcasts_contextual_entrypoints",
+  "kind": "ab",
+  "name": "wa_web_biz_broadcasts_contextual_entrypoints",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 30270,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_biz_broadcasts_contextual_entrypoints:\\s*\\[\\s*30270"
+  },
+  "literals": [
+    "wa_web_biz_broadcasts_contextual_entrypoints",
+    "30270"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBusinessBroadcastsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,10 @@
+message ReceiverFetchInfoTableSchemaProto {
+  optional bytes mimetype = 1;
+  optional bytes previewHeight = 2;
+  optional bytes previewWidth = 3;
+  optional bytes receiverFetchId = 4;
+  optional bytes type = 5;
+  optional bytes previewUrl = 6;
+  optional bytes previewUrlExpirationTimestampMs = 7;
+  optional bytes accessibilitySummaryText = 8;
+}

@@ -1,0 +1,54 @@
+{
+  "id": "enum:BANNER_STATUS_REASON",
+  "kind": "enum",
+  "name": "BANNER_STATUS_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBannerStatusReason",
+    "variants": [
+      {
+        "name": "NO_SIMILAR_CHANNELS_FOUND",
+        "value": 0.0
+      },
+      {
+        "name": "NOT_ENOUGH_SIMILAR_CHANNELS",
+        "value": 1.0
+      },
+      {
+        "name": "SIMILAR_CHANNELS_FOUND",
+        "value": 2.0
+      },
+      {
+        "name": "CLOSE_TAP",
+        "value": 3.0
+      },
+      {
+        "name": "UNFOLLOW_TAP",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBannerStatusReason",
+    "matches": "BANNER_STATUS_REASON\\s*[:=]"
+  },
+  "literals": [
+    "BANNER_STATUS_REASON",
+    "NO_SIMILAR_CHANNELS_FOUND",
+    "NOT_ENOUGH_SIMILAR_CHANNELS",
+    "SIMILAR_CHANNELS_FOUND",
+    "CLOSE_TAP",
+    "UNFOLLOW_TAP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelSimilarChannelsWamEvent",
+      "WAWebNewsletterUnsubscribeAction",
+      "WAWebSimilarNewsletterLogging",
+      "WAWebSimilarNewslettersUnits.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

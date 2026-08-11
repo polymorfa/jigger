@@ -1,0 +1,7 @@
+message MediaData {
+  optional bytes mediaKey = 1;
+  optional bytes mediaKeyTimestamp = 2;
+  optional bytes fileSha256 = 3;
+  optional bytes fileEncSha256 = 4;
+  optional bytes directPath = 5;
+}

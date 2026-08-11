@@ -1,0 +1,6 @@
+message CtwaContextLinkData {
+  optional bytes context = 1;
+  optional bytes sourceUrl = 2;
+  optional bytes icebreaker = 3;
+  optional bytes phone = 4;
+}

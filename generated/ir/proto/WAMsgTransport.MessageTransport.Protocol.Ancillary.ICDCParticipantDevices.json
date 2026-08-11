@@ -1,0 +1,44 @@
+{
+  "id": "proto:WAMsgTransport.MessageTransport.Protocol.Ancillary.ICDCParticipantDevices",
+  "kind": "proto",
+  "name": "WAMsgTransport.MessageTransport.Protocol.Ancillary.ICDCParticipantDevices",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "recipientIdentities": {
+        "number": 2,
+        "type_name": "WAMsgTransport.MessageTransport.Protocol.Ancillary.ICDCParticipantDevices.ICDCIdentityListDescription"
+      },
+      "recipientUserJids": {
+        "number": 3
+      },
+      "senderIdentity": {
+        "number": 1,
+        "type_name": "WAMsgTransport.MessageTransport.Protocol.Ancillary.ICDCParticipantDevices.ICDCIdentityListDescription"
+      }
+    },
+    "module": "WAMsgTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMsgTransport.pb",
+    "matches": "name = \"MessageTransport.Protocol.Ancillary.ICDCParticipantDevices\""
+  },
+  "literals": [
+    "ICDCParticipantDevices"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAAsMessageTransport",
+      "WADecodeIncomingMsg",
+      "WAEncGroupMsg",
+      "WAEncNode",
+      "WAHandleAppdataMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

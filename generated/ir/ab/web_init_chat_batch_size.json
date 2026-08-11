@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_init_chat_batch_size",
+  "kind": "ab",
+  "name": "web_init_chat_batch_size",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1171,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_init_chat_batch_size:\\s*\\[\\s*1171"
+  },
+  "literals": [
+    "web_init_chat_batch_size",
+    "1171"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebRestoreChatsAndMessages"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

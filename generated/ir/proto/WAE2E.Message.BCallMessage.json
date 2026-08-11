@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAE2E.Message.BCallMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.BCallMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "caption": {
+        "number": 4
+      },
+      "masterKey": {
+        "number": 3
+      },
+      "mediaType": {
+        "number": 2
+      },
+      "sessionId": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.BCallMessage\""
+  },
+  "literals": [
+    "BCallMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,12 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum COMPANIONCONTACTSAVERESULT {
+    SUCCESS = 0,
+    NETWORKUNAVAILABLE = 1,
+    USYNCUNAVAILABLE = 2,
+    CLIENTERROR = 3,
+    PHONENUMBERUSERNAMENOTMATCH = 4,
+    INVALIDUSERNAME = 5,
+    PINREQUIRED = 6,
+    WRONGPIN = 7,
+}

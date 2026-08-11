@@ -1,0 +1,4 @@
+message SyncDCollectionFatalRecoveryRequest {
+  optional bytes collectionName = 1;
+  optional bytes timestamp = 2;
+}

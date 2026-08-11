@@ -1,0 +1,3 @@
+message BumpExistingMessage {
+  optional bytes key = 1;
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:waweb_chatinfo_refresh",
+  "kind": "ab",
+  "name": "waweb_chatinfo_refresh",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23018,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "waweb_chatinfo_refresh:\\s*\\[\\s*23018"
+  },
+  "literals": [
+    "waweb_chatinfo_refresh",
+    "23018"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

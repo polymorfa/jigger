@@ -1,0 +1,2 @@
+// WAWebMexFetchNewsletterAdminCapabilitiesJobQuery is the persisted query. Variables: newsletter_id
+const MexWAWebMexFetchNewsletterAdminCapabilitiesJobQuery = "9801384413216421"

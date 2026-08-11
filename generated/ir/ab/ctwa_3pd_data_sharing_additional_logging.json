@@ -1,0 +1,45 @@
+{
+  "id": "ab:ctwa_3pd_data_sharing_additional_logging",
+  "kind": "ab",
+  "name": "ctwa_3pd_data_sharing_additional_logging",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29333,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_3pd_data_sharing_additional_logging:\\s*\\[\\s*29333"
+  },
+  "literals": [
+    "ctwa_3pd_data_sharing_additional_logging",
+    "29333"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSmbDataSharingOptInModalDialog"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

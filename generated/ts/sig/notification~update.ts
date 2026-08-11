@@ -1,0 +1,2 @@
+/** Matches `<notification>`. Server-initiated; nothing sends it. */
+export function parseUsyncNotificationUpdateDevicesNotificationMixin(n: BinaryNode): UsyncNotificationUpdateDevicesNotificationMixin | null

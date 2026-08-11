@@ -1,0 +1,42 @@
+{
+  "id": "ab:group_history_out_of_window_pins_receiver",
+  "kind": "ab",
+  "name": "group_history_out_of_window_pins_receiver",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26039,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_history_out_of_window_pins_receiver:\\s*\\[\\s*26039"
+  },
+  "literals": [
+    "group_history_out_of_window_pins_receiver",
+    "26039"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

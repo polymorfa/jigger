@@ -1,0 +1,42 @@
+{
+  "id": "ab:channel_album_v2_receiving_enabled",
+  "kind": "ab",
+  "name": "channel_album_v2_receiving_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13219,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channel_album_v2_receiving_enabled:\\s*\\[\\s*13219"
+  },
+  "literals": [
+    "channel_album_v2_receiving_enabled",
+    "13219"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

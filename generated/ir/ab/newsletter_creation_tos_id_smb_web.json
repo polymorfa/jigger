@@ -1,0 +1,45 @@
+{
+  "id": "ab:newsletter_creation_tos_id_smb_web",
+  "kind": "ab",
+  "name": "newsletter_creation_tos_id_smb_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5598,
+    "type": "string",
+    "default": "20601217",
+    "alt_default": "20601217"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "newsletter_creation_tos_id_smb_web:\\s*\\[\\s*5598"
+  },
+  "literals": [
+    "newsletter_creation_tos_id_smb_web",
+    "5598"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,27 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ATTACHMENTTRAYACTIONTARGETTYPE {
+    ATTACHMENTTRAY = 1,
+    DOCUMENT = 2,
+    CAMERA = 3,
+    CAMERALIBRARY = 4,
+    GALLERY = 5,
+    PHOTOANDVIDEOLIBRARY = 6,
+    AUDIO = 7,
+    LOCATION = 8,
+    CONTACT = 9,
+    POLL = 10,
+    PAYMENT = 11,
+    SHOP = 12,
+    ORDER = 13,
+    CATALOG = 14,
+    QUICKREPLY = 15,
+    STICKERMAKER = 16,
+    IMAGINEEDIT = 17,
+    EVENTCREATION = 18,
+    CALLLINKCREATION = 19,
+    SHAREUPIQR = 20,
+    MUSIC = 21,
+    DRAWING = 22,
+    EVENTV2CREATION = 23,
+}

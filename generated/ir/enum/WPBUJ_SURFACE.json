@@ -1,0 +1,116 @@
+{
+  "id": "enum:WPBUJ_SURFACE",
+  "kind": "enum",
+  "name": "WPBUJ_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWpbujSurface",
+    "variants": [
+      {
+        "name": "APP_THEME",
+        "value": 1.0
+      },
+      {
+        "name": "APP_ICON",
+        "value": 2.0
+      },
+      {
+        "name": "RINGTONE",
+        "value": 3.0
+      },
+      {
+        "name": "LIST",
+        "value": 4.0
+      },
+      {
+        "name": "CHAT_THEME",
+        "value": 5.0
+      },
+      {
+        "name": "ALERT_TONE",
+        "value": 6.0
+      },
+      {
+        "name": "PINNED_CHAT",
+        "value": 7.0
+      },
+      {
+        "name": "STICKER_TRAY",
+        "value": 8.0
+      },
+      {
+        "name": "STICKER_RECEIVED",
+        "value": 9.0
+      },
+      {
+        "name": "STICKER_STORE",
+        "value": 10.0
+      },
+      {
+        "name": "APPEARANCE_SETTINGS",
+        "value": 11.0
+      },
+      {
+        "name": "NOTIFICATION_SETTINGS",
+        "value": 12.0
+      },
+      {
+        "name": "WHATSAPP_SETTINGS",
+        "value": 13.0
+      },
+      {
+        "name": "STICKER_GENERIC",
+        "value": 14.0
+      },
+      {
+        "name": "BACKUP_PROVIDER_SELECTION",
+        "value": 15.0
+      },
+      {
+        "name": "BACKUP_NEW_USER_SETUP",
+        "value": 16.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWpbujSurface",
+    "matches": "WPBUJ_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "WPBUJ_SURFACE",
+    "APP_THEME",
+    "APP_ICON",
+    "RINGTONE",
+    "LIST",
+    "CHAT_THEME",
+    "ALERT_TONE",
+    "PINNED_CHAT",
+    "STICKER_TRAY",
+    "STICKER_RECEIVED",
+    "STICKER_STORE",
+    "APPEARANCE_SETTINGS",
+    "NOTIFICATION_SETTINGS",
+    "WHATSAPP_SETTINGS",
+    "STICKER_GENERIC",
+    "BACKUP_PROVIDER_SELECTION",
+    "BACKUP_NEW_USER_SETUP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAuraRingtoneChatTone.react",
+      "WAWebAuraRingtoneDownloader",
+      "WAWebAuraRingtoneGlobalSelector.react",
+      "WAWebMessageStickerBubble.react",
+      "WAWebPinChatAuraUpsellModal.react",
+      "WAWebSendStickerAction",
+      "WAWebSetPinChatAction",
+      "WAWebStickerPanel.react",
+      "WAWebStickersDetailsDrawerModal.react",
+      "WAWebStickersStoreDrawerModal.react",
+      "WAWebWaPlusBenefitUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 11
+  }
+}

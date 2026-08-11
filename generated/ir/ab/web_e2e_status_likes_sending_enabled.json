@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_e2e_status_likes_sending_enabled",
+  "kind": "ab",
+  "name": "web_e2e_status_likes_sending_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34296,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_e2e_status_likes_sending_enabled:\\s*\\[\\s*34296"
+  },
+  "literals": [
+    "web_e2e_status_likes_sending_enabled",
+    "34296"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

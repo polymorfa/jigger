@@ -1,0 +1,42 @@
+{
+  "id": "enum:GA_STATUS",
+  "kind": "enum",
+  "name": "GA_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGaStatus",
+    "variants": [
+      {
+        "name": "NEW",
+        "value": 0.0
+      },
+      {
+        "name": "RETAINED",
+        "value": 1.0
+      },
+      {
+        "name": "RESURRECTED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGaStatus",
+    "matches": "GA_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "GA_STATUS",
+    "NEW",
+    "RETAINED",
+    "RESURRECTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatMessageCountsWamEvent",
+      "WAWebThreadInteractionDataCoreConsumerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

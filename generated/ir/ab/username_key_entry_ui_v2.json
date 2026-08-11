@@ -1,0 +1,42 @@
+{
+  "id": "ab:username_key_entry_ui_v2",
+  "kind": "ab",
+  "name": "username_key_entry_ui_v2",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34226,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_key_entry_ui_v2:\\s*\\[\\s*34226"
+  },
+  "literals": [
+    "username_key_entry_ui_v2",
+    "34226"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

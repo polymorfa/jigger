@@ -1,0 +1,1 @@
+pub const HKDF_WHATS_APP_DOCUMENT_KEYS: &str = "WhatsApp Document Keys";

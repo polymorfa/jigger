@@ -1,0 +1,84 @@
+{
+  "id": "wam:3582",
+  "kind": "wam",
+  "name": "ChatPsaRemove",
+  "data": {
+    "kind": "wam",
+    "event_id": 3582,
+    "fields": {
+      "lastReceivedMediaType": {
+        "id": 2,
+        "type": "MEDIA_TYPE",
+        "wire": "last_received_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "lastReceivedMessageTs": {
+        "id": 4,
+        "type": "TIMER",
+        "wire": "last_received_message_ts"
+      },
+      "lastReceivedMsgId": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "last_received_msg_id"
+      },
+      "psaBlockReason": {
+        "id": 10,
+        "type": "PSA_BLOCK_REASON",
+        "wire": "psa_block_reason",
+        "enum_ref": "PSA_BLOCK_REASON"
+      },
+      "psaCampaignId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "psa_campaign_id"
+      },
+      "psaMessageRemoveAction": {
+        "id": 5,
+        "type": "PSA_MESSAGE_REMOVE_ACTION",
+        "wire": "psa_message_remove_action",
+        "enum_ref": "PSA_MESSAGE_REMOVE_ACTION"
+      },
+      "psaMessageRemoveEntryPoint": {
+        "id": 6,
+        "type": "PSA_MESSAGE_REMOVE_ENTRY_POINT",
+        "wire": "psa_message_remove_entry_point",
+        "enum_ref": "PSA_MESSAGE_REMOVE_ENTRY_POINT"
+      },
+      "waOfficialAccountName": {
+        "id": 7,
+        "type": "WA_OFFICIAL_ACCOUNT_NAME",
+        "wire": "wa_official_account_name",
+        "enum_ref": "WA_OFFICIAL_ACCOUNT_NAME"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatPsaRemoveWamEvent",
+    "matches": "ChatPsaRemove:\\s*\\[\\s*3582"
+  },
+  "literals": [
+    "3582"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumPsaBlockReason",
+      "WAWebWamEnumPsaMessageRemoveAction",
+      "WAWebWamEnumPsaMessageRemoveEntryPoint",
+      "WAWebWamEnumWaOfficialAccountName"
+    ],
+    "dependents": [
+      "WAWebWamChatPSALogger"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

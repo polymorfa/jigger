@@ -1,0 +1,36 @@
+{
+  "id": "enum:ENGAGEMENT_CARD_TYPE",
+  "kind": "enum",
+  "name": "ENGAGEMENT_CARD_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEngagementCardType",
+    "variants": [
+      {
+        "name": "MID_CARD",
+        "value": 1.0
+      },
+      {
+        "name": "END_CARD",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEngagementCardType",
+    "matches": "ENGAGEMENT_CARD_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ENGAGEMENT_CARD_TYPE",
+    "MID_CARD",
+    "END_CARD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPosterActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

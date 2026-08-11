@@ -1,0 +1,31 @@
+{
+  "id": "mex:WAWebCustomLabel3pdEventQuery",
+  "kind": "mex",
+  "name": "WAWebCustomLabel3pdEventQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24247439618185103",
+    "operation": "query",
+    "variables": [
+      "custom_labels",
+      "expt_group"
+    ],
+    "document": "query CustomLabel3pdEventQuery($custom_labels, $expt_group) {\n  xwa_get_3pd_event {\n    custom_label\n    ctwa_3pd_conversion_type\n    ctwa_3pd_conversion_subtype\n    ctwa_3pd_conversion_metadata\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebCustomLabel3pdEventQuery.graphql",
+    "matches": "id: \"24247439618185103\""
+  },
+  "literals": [
+    "24247439618185103",
+    "WAWebCustomLabel3pdEventQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCustomLabel3pdEventQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

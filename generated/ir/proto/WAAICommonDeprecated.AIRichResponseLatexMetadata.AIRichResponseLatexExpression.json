@@ -1,0 +1,56 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseLatexMetadata.AIRichResponseLatexExpression",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseLatexMetadata.AIRichResponseLatexExpression",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "fontHeight": {
+        "number": 5
+      },
+      "height": {
+        "number": 4
+      },
+      "imageBottomPadding": {
+        "number": 8
+      },
+      "imageLeadingPadding": {
+        "number": 7
+      },
+      "imageTopPadding": {
+        "number": 6
+      },
+      "imageTrailingPadding": {
+        "number": 9
+      },
+      "latexExpression": {
+        "number": 1
+      },
+      "url": {
+        "number": 2
+      },
+      "width": {
+        "number": 3
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseLatexMetadata.AIRichResponseLatexExpression\""
+  },
+  "literals": [
+    "AIRichResponseLatexExpression"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

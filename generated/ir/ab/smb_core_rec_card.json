@@ -1,0 +1,46 @@
+{
+  "id": "ab:smb_core_rec_card",
+  "kind": "ab",
+  "name": "smb_core_rec_card",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27568,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_core_rec_card:\\s*\\[\\s*27568"
+  },
+  "literals": [
+    "smb_core_rec_card",
+    "27568"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebBizToolsGatingUtils",
+      "WAWebQuickPromotionDebugSnapshot"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "enum:DNS_RESOLUTION_METHOD_TYPE",
+  "kind": "enum",
+  "name": "DNS_RESOLUTION_METHOD_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDnsResolutionMethodType",
+    "variants": [
+      {
+        "name": "SYSTEM",
+        "value": 1.0
+      },
+      {
+        "name": "GOOGLE",
+        "value": 2.0
+      },
+      {
+        "name": "HARDCODED",
+        "value": 3.0
+      },
+      {
+        "name": "NO_DNS",
+        "value": 4.0
+      },
+      {
+        "name": "MNS",
+        "value": 5.0
+      },
+      {
+        "name": "SOCKS_PROXY",
+        "value": 6.0
+      },
+      {
+        "name": "MNS_SECONDARY",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDnsResolutionMethodType",
+    "matches": "DNS_RESOLUTION_METHOD_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DNS_RESOLUTION_METHOD_TYPE",
+    "SYSTEM",
+    "GOOGLE",
+    "HARDCODED",
+    "NO_DNS",
+    "MNS",
+    "SOCKS_PROXY",
+    "MNS_SECONDARY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLoginWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

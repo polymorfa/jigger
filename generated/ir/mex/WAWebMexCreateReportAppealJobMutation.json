@@ -1,0 +1,33 @@
+{
+  "id": "mex:WAWebMexCreateReportAppealJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCreateReportAppealJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27103316329328467",
+    "operation": "mutation",
+    "variables": [
+      "reason",
+      "report_id"
+    ],
+    "root_field": "xwa2_create_channel_report_appeal_v2",
+    "document": "mutation MexCreateReportAppealJobMutation($reason, $report_id) {\n  report_id\n  status\n  creation_time\n  last_update_time\n  channel_name\n  channel_jid\n  appeal_reason_options {\n    reason\n    label\n    server_msg_id\n    server_id\n    server_response_id\n    notify_name\n    appeal {\n      state\n      appeal_reason\n      appeal_id\n      __typename\n      xwa2_create_channel_report_appeal_v2 {\n        reported_content_data {\n          question_data {\n            xwa2_create_channel_report_appeal_v2 {\n              reported_content_data {\n                question_data {\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexCreateReportAppealJobMutation.graphql",
+    "matches": "id: \"27103316329328467\""
+  },
+  "literals": [
+    "27103316329328467",
+    "WAWebMexCreateReportAppealJobMutation",
+    "xwa2_create_channel_report_appeal_v2"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCreateReportAppealJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

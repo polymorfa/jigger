@@ -1,0 +1,42 @@
+{
+  "id": "ab:pnh_history_sync_force_general",
+  "kind": "ab",
+  "name": "pnh_history_sync_force_general",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28664,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pnh_history_sync_force_general:\\s*\\[\\s*28664"
+  },
+  "literals": [
+    "pnh_history_sync_force_general",
+    "28664"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

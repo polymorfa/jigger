@@ -1,0 +1,44 @@
+{
+  "id": "proto:MAWArmadilloMessagesTableSchema.MsgContentCommandProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMessagesTableSchema.MsgContentCommandProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "commandType": {
+        "number": 1
+      },
+      "length": {
+        "number": 3
+      },
+      "offset": {
+        "number": 2
+      },
+      "validationToken": {
+        "number": 4
+      }
+    },
+    "module": "MAWArmadilloMessagesTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMessagesTableSchema.pb",
+    "matches": "name = \"MsgContentCommandProto\""
+  },
+  "literals": [
+    "MsgContentCommandProto"
+  ],
+  "graph": {
+    "deps": [
+      "MAWArmadilloContactsTableSchema.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWArmadilloEditMsgHistoryTableSchema.pb",
+      "MAWArmadilloUnrenderedMessagesTableSchema.pb",
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

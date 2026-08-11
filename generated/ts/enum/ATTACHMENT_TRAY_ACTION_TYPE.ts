@@ -1,0 +1,5 @@
+export enum ATTACHMENTTRAYACTIONTYPE {
+  CLICK = 1,
+  SEND = 2,
+  CANCEL = 3,
+}

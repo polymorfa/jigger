@@ -1,0 +1,14 @@
+message PeerDataOperationRequestMessage {
+  optional bytes peerDataOperationRequestType = 1;
+  optional RequestStickerReupload requestStickerReupload = 2;
+  optional RequestUrlPreview requestUrlPreview = 3;
+  optional HistorySyncOnDemandRequest historySyncOnDemandRequest = 4;
+  optional PlaceholderMessageResendRequest placeholderMessageResendRequest = 5;
+  optional FullHistorySyncOnDemandRequest fullHistorySyncOnDemandRequest = 6;
+  optional SyncDCollectionFatalRecoveryRequest syncdCollectionFatalRecoveryRequest = 7;
+  optional HistorySyncChunkRetryRequest historySyncChunkRetryRequest = 8;
+  optional GalaxyFlowAction galaxyFlowAction = 9;
+  optional CompanionCanonicalUserNonceFetchRequest companionCanonicalUserNonceFetchRequest = 10;
+  optional BizBroadcastInsightsContactListRequest bizBroadcastInsightsContactListRequest = 11;
+  optional BizBroadcastInsightsRefreshRequest bizBroadcastInsightsRefreshRequest = 12;
+}

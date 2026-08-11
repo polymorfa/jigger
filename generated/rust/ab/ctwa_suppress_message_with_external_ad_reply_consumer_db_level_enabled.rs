@@ -1,0 +1,2 @@
+/// A/B property 21819 (bool), default false.
+pub const AB_CTWA_SUPPRESS_MESSAGE_WITH_EXTERNAL_AD_REPLY_CONSUMER_DB_LEVEL_ENABLED: &str = "ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled";

@@ -1,0 +1,4 @@
+message ActionChatRead {
+  optional SyncActionMessageRange messageRange = 1;
+  optional bytes read = 2;
+}

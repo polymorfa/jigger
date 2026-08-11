@@ -1,0 +1,45 @@
+{
+  "id": "ab:is_expand_fmx_account_age_ui_enabled",
+  "kind": "ab",
+  "name": "is_expand_fmx_account_age_ui_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26548,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "is_expand_fmx_account_age_ui_enabled:\\s*\\[\\s*26548"
+  },
+  "literals": [
+    "is_expand_fmx_account_age_ui_enabled",
+    "26548"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebFMXGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

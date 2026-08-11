@@ -1,0 +1,71 @@
+{
+  "_": "Which repositories get issues, and what each one wants to hear about. Opt-in per kind: a maintainer who does not care about telemetry should not receive a WAM issue every release.",
+  "repos": [
+    {
+      "name": "whatsmeow",
+      "remote": "tulir/whatsmeow",
+      "enabled": true,
+      "kinds": [
+        "iq",
+        "const",
+        "wam",
+        "ab",
+        "proto"
+      ],
+      "paths": [
+        ".repos/whatsmeow"
+      ],
+      "ext": "go",
+      "wam_paths": [],
+      "max_per_kind": 15,
+      "proto_paths": [
+        ".repos/whatsmeow"
+      ]
+    },
+    {
+      "name": "baileys",
+      "remote": "WhiskeySockets/Baileys",
+      "enabled": true,
+      "kinds": [
+        "iq",
+        "const",
+        "wam",
+        "ab",
+        "proto"
+      ],
+      "paths": [
+        ".repos/baileys"
+      ],
+      "ext": "ts",
+      "wam_paths": [
+        "WAM"
+      ],
+      "max_per_kind": 15,
+      "proto_paths": [
+        ".repos/baileys"
+      ]
+    },
+    {
+      "name": "whatsapp-rust",
+      "remote": "oxidezap/whatsapp-rust",
+      "enabled": true,
+      "kinds": [
+        "iq",
+        "const",
+        "wam",
+        "ab",
+        "proto"
+      ],
+      "paths": [
+        ".repos/whatsapp-rust"
+      ],
+      "ext": "rs",
+      "wam_paths": [],
+      "max_per_kind": 10,
+      "proto_paths": [
+        ".repos/whatsapp-rust"
+      ]
+    }
+  ],
+  "_paths": "Every source root a library keeps protocol code in. Scanning one crate of a workspace and calling the rest missing is how a scanner produces confident nonsense."
+}

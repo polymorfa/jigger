@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAE2E.DisappearingMode",
+  "kind": "proto",
+  "name": "WAE2E.DisappearingMode",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "initiatedByMe": {
+        "number": 4
+      },
+      "initiator": {
+        "number": 1
+      },
+      "initiatorDeviceJid": {
+        "number": 3
+      },
+      "trigger": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"DisappearingMode\""
+  },
+  "literals": [
+    "DisappearingMode"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

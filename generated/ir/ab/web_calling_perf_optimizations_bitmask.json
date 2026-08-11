@@ -1,0 +1,46 @@
+{
+  "id": "ab:web_calling_perf_optimizations_bitmask",
+  "kind": "ab",
+  "name": "web_calling_perf_optimizations_bitmask",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22186,
+    "type": "int",
+    "default": 1,
+    "alt_default": 1
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_calling_perf_optimizations_bitmask:\\s*\\[\\s*22186"
+  },
+  "literals": [
+    "web_calling_perf_optimizations_bitmask",
+    "22186"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebVoipHandleNativeCallEvent",
+      "WAWebVoipPerfOptimizations"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,3 @@
+message BotCapabilityMetadata {
+  optional bytes capabilities = 1;
+}

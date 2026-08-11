@@ -1,0 +1,5 @@
+message ChatThemeChanged {
+  optional bytes themeName = 1;
+  optional bytes themeEmoji = 2;
+  optional bytes themeType = 3;
+}

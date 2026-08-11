@@ -1,0 +1,48 @@
+{
+  "id": "enum:VALUE",
+  "kind": "enum",
+  "name": "VALUE",
+  "data": {
+    "kind": "enum",
+    "module": "CustomConversionRuleEnum",
+    "variants": [
+      {
+        "name": "description",
+        "value": "Filter events that meet certain values"
+      },
+      {
+        "name": "name",
+        "value": "Value"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "CustomConversionRuleEnum",
+    "matches": "VALUE\\s*[:=]"
+  },
+  "literals": [
+    "VALUE",
+    "description",
+    "name"
+  ],
+  "graph": {
+    "deps": [
+      "AdsCustomConversionAdvancedOperators",
+      "fbt"
+    ],
+    "dependents": [
+      "AdsEventsManagerCustomConversionCreationUtils",
+      "AdsEventsManagerCustomConversionPixelRuleContainer.react",
+      "AdsEventsManagerCustomConversionRule.react",
+      "AdsEventsManagerCustomConversionRuleUtils",
+      "AdsEventsManagerCustomConversionTokenizer.react",
+      "AdsEventsManagerLongConsiderationCustomConversionCreationDialog.react",
+      "AdsEventsManagerPostConversionCustomConversionRuleSelectorContainer.react",
+      "CustomConversionCreationUtils",
+      "CustomConversionRuleDefaultValues",
+      "DataSourceToRuleTypeMapping"
+    ],
+    "dep_count": 2,
+    "dependent_count": 10
+  }
+}

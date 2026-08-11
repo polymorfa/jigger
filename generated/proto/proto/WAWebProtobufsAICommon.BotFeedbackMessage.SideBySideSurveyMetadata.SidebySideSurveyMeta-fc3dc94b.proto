@@ -1,0 +1,11 @@
+message SidebySideSurveyMetaAiAnalyticsData {
+  optional bytes surveyId = 1;
+  optional bytes primaryResponseId = 2;
+  optional bytes testArmName = 3;
+  optional bytes timestampMsString = 4;
+  optional SideBySideSurveyCTAImpressionEventData ctaImpressionEvent = 5;
+  optional SideBySideSurveyCTAClickEventData ctaClickEvent = 6;
+  optional SideBySideSurveyCardImpressionEventData cardImpressionEvent = 7;
+  optional SideBySideSurveyResponseEventData responseEvent = 8;
+  optional SideBySideSurveyAbandonEventData abandonEvent = 9;
+}

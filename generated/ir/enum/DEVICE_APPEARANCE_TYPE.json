@@ -1,0 +1,41 @@
+{
+  "id": "enum:DEVICE_APPEARANCE_TYPE",
+  "kind": "enum",
+  "name": "DEVICE_APPEARANCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDeviceAppearanceType",
+    "variants": [
+      {
+        "name": "LIGHT",
+        "value": 0.0
+      },
+      {
+        "name": "DARK",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDeviceAppearanceType",
+    "matches": "DEVICE_APPEARANCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DEVICE_APPEARANCE_TYPE",
+    "LIGHT",
+    "DARK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatThemeScreenWamEvent",
+      "WAWebChatThreadWallpaperWamEvent",
+      "WAWebChatWallpaperWamEvent",
+      "useWAWebChatThemeScreenLogging",
+      "useWAWebChatThreadWallpaperMetrics",
+      "useWAWebChatWallpaperLogging"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

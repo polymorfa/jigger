@@ -1,0 +1,3 @@
+message XmatGenAITaskAdd {
+  optional bytes taskId = 1;
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:enable_product_carousel_message",
+  "kind": "ab",
+  "name": "enable_product_carousel_message",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7177,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_product_carousel_message:\\s*\\[\\s*7177"
+  },
+  "literals": [
+    "enable_product_carousel_message",
+    "7177"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebParseInteractiveMessageProto"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

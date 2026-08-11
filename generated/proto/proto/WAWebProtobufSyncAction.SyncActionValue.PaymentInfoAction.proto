@@ -1,0 +1,3 @@
+message PaymentInfoAction {
+  optional bytes cpi = 1;
+}

@@ -1,0 +1,45 @@
+{
+  "id": "enum:ENUM_FREECUSTOMERSERVICE_FREEENTRYPOINT_REGULAR",
+  "kind": "enum",
+  "name": "ENUM_FREECUSTOMERSERVICE_FREEENTRYPOINT_REGULAR",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessagePublishEnums",
+    "variants": [
+      {
+        "name": "free_customer_service",
+        "value": "free_customer_service"
+      },
+      {
+        "name": "free_entry_point",
+        "value": "free_entry_point"
+      },
+      {
+        "name": "regular",
+        "value": "regular"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessagePublishEnums",
+    "matches": "ENUM_FREECUSTOMERSERVICE_FREEENTRYPOINT_REGULAR\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_FREECUSTOMERSERVICE_FREEENTRYPOINT_REGULAR",
+    "free_customer_service",
+    "free_entry_point",
+    "regular"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInMessagePublishAckPaidConversationMixin",
+      "WASmaxInMessagePublishIndividualResponseSuccess",
+      "WASmaxInMessagePublishRefreshLIDMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

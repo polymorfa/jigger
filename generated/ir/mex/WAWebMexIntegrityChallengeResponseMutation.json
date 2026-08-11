@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexIntegrityChallengeResponseMutation",
+  "kind": "mex",
+  "name": "WAWebMexIntegrityChallengeResponseMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26230331493320650",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_submit_integrity_challenge_response",
+    "document": "mutation MexIntegrityChallengeResponseMutation($input) {\n  xwa2_submit_integrity_challenge_response {\n    success\n    error_message\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexIntegrityChallengeResponseMutation.graphql",
+    "matches": "id: \"26230331493320650\""
+  },
+  "literals": [
+    "26230331493320650",
+    "WAWebMexIntegrityChallengeResponseMutation",
+    "xwa2_submit_integrity_challenge_response"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexIntegrityChallengeResponse"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

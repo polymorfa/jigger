@@ -1,0 +1,54 @@
+{
+  "id": "proto:WAWebProtobufsHistorySync.Pushname",
+  "kind": "proto",
+  "name": "WAWebProtobufsHistorySync.Pushname",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "id": {
+        "number": 1
+      },
+      "pushname": {
+        "number": 2
+      }
+    },
+    "module": "WAWebProtobufsHistorySync.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsHistorySync.pb",
+    "matches": "name = \"Pushname\""
+  },
+  "literals": [
+    "Pushname"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsChatLockSettings.pb",
+      "WAWebProtobufsE2E.pb",
+      "WAWebProtobufsProtocol.pb",
+      "WAWebProtobufsWeb.pb"
+    ],
+    "dependents": [
+      "WAWebApiHistorySyncNotification",
+      "WAWebGetHistorySyncMetrics",
+      "WAWebGetHistorySyncProgress",
+      "WAWebHandleHistorySyncChunk",
+      "WAWebHandleHistorySyncNotification",
+      "WAWebHandleWorkerCompatibleRecentSyncChunk",
+      "WAWebHistoryMsgHandlerAction",
+      "WAWebHistorySyncBackendWorkerV2",
+      "WAWebHistorySyncNotificationUtils",
+      "WAWebHistorySyncProgress",
+      "WAWebHistorySyncWorkerCompatibleNotificationUtils",
+      "WAWebMetricsAttributionActions",
+      "WAWebRestartRecentSyncJob",
+      "WAWebSyncBootstrap",
+      "WAWebUserPrefsHistorySync"
+    ],
+    "dep_count": 7,
+    "dependent_count": 15
+  }
+}

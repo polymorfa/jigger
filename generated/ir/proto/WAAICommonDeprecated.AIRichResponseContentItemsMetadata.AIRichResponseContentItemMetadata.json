@@ -1,0 +1,33 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseContentItemsMetadata.AIRichResponseContentItemMetadata",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseContentItemsMetadata.AIRichResponseContentItemMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "reelItem": {
+        "number": 1,
+        "type_name": "WAAICommonDeprecated.AIRichResponseContentItemsMetadata.AIRichResponseReelItem"
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseContentItemsMetadata.AIRichResponseContentItemMetadata\""
+  },
+  "literals": [
+    "AIRichResponseContentItemMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

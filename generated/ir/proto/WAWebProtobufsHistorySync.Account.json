@@ -1,0 +1,60 @@
+{
+  "id": "proto:WAWebProtobufsHistorySync.Account",
+  "kind": "proto",
+  "name": "WAWebProtobufsHistorySync.Account",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "countryCode": {
+        "number": 3
+      },
+      "isUsernameDeleted": {
+        "number": 4
+      },
+      "lid": {
+        "number": 1
+      },
+      "username": {
+        "number": 2
+      }
+    },
+    "module": "WAWebProtobufsHistorySync.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsHistorySync.pb",
+    "matches": "name = \"Account\""
+  },
+  "literals": [
+    "Account"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsChatLockSettings.pb",
+      "WAWebProtobufsE2E.pb",
+      "WAWebProtobufsProtocol.pb",
+      "WAWebProtobufsWeb.pb"
+    ],
+    "dependents": [
+      "WAWebApiHistorySyncNotification",
+      "WAWebGetHistorySyncMetrics",
+      "WAWebGetHistorySyncProgress",
+      "WAWebHandleHistorySyncChunk",
+      "WAWebHandleHistorySyncNotification",
+      "WAWebHandleWorkerCompatibleRecentSyncChunk",
+      "WAWebHistoryMsgHandlerAction",
+      "WAWebHistorySyncBackendWorkerV2",
+      "WAWebHistorySyncNotificationUtils",
+      "WAWebHistorySyncProgress",
+      "WAWebHistorySyncWorkerCompatibleNotificationUtils",
+      "WAWebMetricsAttributionActions",
+      "WAWebRestartRecentSyncJob",
+      "WAWebSyncBootstrap",
+      "WAWebUserPrefsHistorySync"
+    ],
+    "dep_count": 7,
+    "dependent_count": 15
+  }
+}

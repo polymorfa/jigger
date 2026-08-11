@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/error",
+  "kind": "sig",
+  "name": "AbPropsGetExperimentConfigResponseErrorNoRetry",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "error"
+    ],
+    "responds_to": "AbPropsGetExperimentConfig"
+  },
+  "evidence": {
+    "module": "WASmaxInAbPropsGetExperimentConfigResponseErrorNoRetry",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "error"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInAbPropsIQErrorResponseMixin",
+      "WASmaxInAbPropsNoRetryErrors",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxAbPropsGetExperimentConfigRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

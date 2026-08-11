@@ -1,0 +1,47 @@
+{
+  "id": "enum:ENUM_1_2",
+  "kind": "enum",
+  "name": "ENUM_1_2",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBrPaymentEnums",
+    "variants": [
+      {
+        "name": "1",
+        "value": "1"
+      },
+      {
+        "name": "2",
+        "value": "2"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBrPaymentEnums",
+    "matches": "ENUM_1_2\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_1_2",
+    "1",
+    "2"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBrPaymentBRCardMixin",
+      "WASmaxInBrPaymentBRMerchantMixin",
+      "WASmaxInBrPaymentCardBaseMixin",
+      "WASmaxInBrPaymentCardCapabilitiesBaseMixin",
+      "WASmaxInBrPaymentComboCardCapabilitiesMixin",
+      "WASmaxInBrPaymentConsumerBaseMixin",
+      "WASmaxInBrPaymentCustomPaymentMethodMixin",
+      "WASmaxInBrPaymentMerchantBaseMixin",
+      "WASmaxInBrPaymentMethodBaseMixin",
+      "WASmaxInBrPaymentPayoutBankMixin",
+      "WASmaxInBrPaymentUPIAliasMixin",
+      "WASmaxInBrPaymentUPIBankMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

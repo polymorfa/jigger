@@ -1,0 +1,49 @@
+{
+  "id": "ab:enable_web_voip_anr_optimizations",
+  "kind": "ab",
+  "name": "enable_web_voip_anr_optimizations",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27268,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_web_voip_anr_optimizations:\\s*\\[\\s*27268"
+  },
+  "literals": [
+    "enable_web_voip_anr_optimizations",
+    "27268"
+  ],
+  "usage": {
+    "read_count": 5,
+    "readers": [
+      "WAWebVoipActionWriteCallLogImpl",
+      "WAWebVoipActionWriteCallLogOfferNotice",
+      "WAWebVoipUiBody.react",
+      "WAWebVoipUiDocPipPortalContainer.react",
+      "WAWebVoipVideoCaptureWithConverter"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

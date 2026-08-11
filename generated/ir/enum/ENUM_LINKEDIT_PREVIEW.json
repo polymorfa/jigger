@@ -1,0 +1,41 @@
+{
+  "id": "enum:ENUM_LINKEDIT_PREVIEW",
+  "kind": "enum",
+  "name": "ENUM_LINKEDIT_PREVIEW",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInVoipEnums",
+    "variants": [
+      {
+        "name": "link_edit",
+        "value": "link_edit"
+      },
+      {
+        "name": "preview",
+        "value": "preview"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInVoipEnums",
+    "matches": "ENUM_LINKEDIT_PREVIEW\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_LINKEDIT_PREVIEW",
+    "link_edit",
+    "preview"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInVoipCallAckBaseMixin",
+      "WASmaxInVoipLinkCreateResponseLinkCreateAck",
+      "WASmaxInVoipLinkQueryResponseLinkQueryAck",
+      "WAWebVoipCreateCallLinkJob"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

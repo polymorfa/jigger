@@ -1,0 +1,13 @@
+message PollCreationMessage {
+  optional bytes encKey = 1;
+  optional bytes name = 2;
+  optional Option options = 3;
+  optional bytes selectableOptionsCount = 4;
+  optional ContextInfo contextInfo = 5;
+  optional bytes pollContentType = 6;
+  optional bytes pollType = 7;
+  optional Option correctAnswer = 8;
+  optional bytes endTime = 9;
+  optional bytes hideParticipantName = 10;
+  optional bytes allowAddOption = 11;
+}

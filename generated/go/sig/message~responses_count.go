@@ -1,0 +1,2 @@
+// ParseNewslettersNewsletterResponsesCountMixin matches <message>. Server-initiated; nothing sends it.
+func ParseNewslettersNewsletterResponsesCountMixin(n *waBinary.Node) (*NewslettersNewsletterResponsesCountMixin, error)

@@ -1,0 +1,2 @@
+// ABEnhancedMentionSuggestionsMinMentionCharCount is A/B property 28089 (int), default -1.
+const ABEnhancedMentionSuggestionsMinMentionCharCount = "enhanced_mention_suggestions_min_mention_char_count"

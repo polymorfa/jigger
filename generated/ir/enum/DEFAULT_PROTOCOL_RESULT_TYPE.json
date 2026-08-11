@@ -1,0 +1,47 @@
+{
+  "id": "enum:DEFAULT_PROTOCOL_RESULT_TYPE",
+  "kind": "enum",
+  "name": "DEFAULT_PROTOCOL_RESULT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDefaultProtocolResultType",
+    "variants": [
+      {
+        "name": "DISPATCHED",
+        "value": 0.0
+      },
+      {
+        "name": "CONVERSION_FAILURE",
+        "value": 1.0
+      },
+      {
+        "name": "NAVIGATION_SUCCESS",
+        "value": 2.0
+      },
+      {
+        "name": "NAVIGATION_FAILURE",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDefaultProtocolResultType",
+    "matches": "DEFAULT_PROTOCOL_RESULT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DEFAULT_PROTOCOL_RESULT_TYPE",
+    "DISPATCHED",
+    "CONVERSION_FAILURE",
+    "NAVIGATION_SUCCESS",
+    "NAVIGATION_FAILURE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebExecApiCmdHelpers",
+      "WAWebWindowsDefaultProtocolActivationWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

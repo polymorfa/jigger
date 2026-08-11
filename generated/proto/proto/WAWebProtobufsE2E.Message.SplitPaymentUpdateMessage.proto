@@ -1,0 +1,4 @@
+message SplitPaymentUpdateMessage {
+  optional bytes splitId = 1;
+  optional bytes participantJid = 2;
+}

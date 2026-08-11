@@ -1,0 +1,5 @@
+message SplitPaymentParticipant {
+  optional bytes jid = 1;
+  optional Money amount = 2;
+  optional bytes status = 3;
+}

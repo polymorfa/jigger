@@ -1,0 +1,207 @@
+{
+  "id": "enum:ABOUT_PROMPT_TYPE",
+  "kind": "enum",
+  "name": "ABOUT_PROMPT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAboutPromptType",
+    "variants": [
+      {
+        "name": "SHARE_A_THOUGHT",
+        "value": 1.0
+      },
+      {
+        "name": "MONDAY_MOTIVATION",
+        "value": 2.0
+      },
+      {
+        "name": "WHATS_HAPPENING",
+        "value": 3.0
+      },
+      {
+        "name": "CURRENT_MOOD",
+        "value": 4.0
+      },
+      {
+        "name": "DONT_FORGET_ABOUT",
+        "value": 5.0
+      },
+      {
+        "name": "SHARE_THOUGHT_ABOUT",
+        "value": 6.0
+      },
+      {
+        "name": "SHARE_UP_TO",
+        "value": 7.0
+      },
+      {
+        "name": "THOUGHTS_MOOD_PLANS",
+        "value": 8.0
+      },
+      {
+        "name": "NEW_DAY_NEW",
+        "value": 9.0
+      },
+      {
+        "name": "TIME_FOR_NEW",
+        "value": 10.0
+      },
+      {
+        "name": "TODAY_THINKING",
+        "value": 11.0
+      },
+      {
+        "name": "MIDWEEK_MOOD",
+        "value": 12.0
+      },
+      {
+        "name": "FRIDAY_PLANS",
+        "value": 13.0
+      },
+      {
+        "name": "UNWINDING",
+        "value": 14.0
+      },
+      {
+        "name": "BREWING_MORNING",
+        "value": 15.0
+      },
+      {
+        "name": "IM_FEELING",
+        "value": 16.0
+      },
+      {
+        "name": "DROP_THOUGHT",
+        "value": 17.0
+      },
+      {
+        "name": "RIGHT_NOW",
+        "value": 18.0
+      },
+      {
+        "name": "WHATS_GOING_ON",
+        "value": 19.0
+      },
+      {
+        "name": "EMOJIS_TODAY",
+        "value": 20.0
+      },
+      {
+        "name": "EXPRESS_EMOJIS",
+        "value": 21.0
+      },
+      {
+        "name": "SONG_REPEAT",
+        "value": 22.0
+      },
+      {
+        "name": "PLAYLIST",
+        "value": 23.0
+      },
+      {
+        "name": "TODAY_FEELS_LIKE",
+        "value": 24.0
+      },
+      {
+        "name": "EASTER_HAPPY",
+        "value": 25.0
+      },
+      {
+        "name": "EASTER_PLANS",
+        "value": 26.0
+      },
+      {
+        "name": "EASTER_FEELS",
+        "value": 27.0
+      },
+      {
+        "name": "EASTER_TIME_FOR",
+        "value": 28.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_CHEERING_FOR",
+        "value": 30.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_COUNTRY_PRIDE",
+        "value": 31.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_YOUR_TEAM_TODAY",
+        "value": 32.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_WATCHING_MATCH_WITH",
+        "value": 33.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_QUARTERFINALS_PICK",
+        "value": 34.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_MATCH_DAY_PLANS",
+        "value": 35.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_TAKING_IT_HOME",
+        "value": 36.0
+      },
+      {
+        "name": "FIFA_WORLDCUP_FINALS_TEAM",
+        "value": 37.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAboutPromptType",
+    "matches": "ABOUT_PROMPT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ABOUT_PROMPT_TYPE",
+    "SHARE_A_THOUGHT",
+    "MONDAY_MOTIVATION",
+    "WHATS_HAPPENING",
+    "CURRENT_MOOD",
+    "DONT_FORGET_ABOUT",
+    "SHARE_THOUGHT_ABOUT",
+    "SHARE_UP_TO",
+    "THOUGHTS_MOOD_PLANS",
+    "NEW_DAY_NEW",
+    "TIME_FOR_NEW",
+    "TODAY_THINKING",
+    "MIDWEEK_MOOD",
+    "FRIDAY_PLANS",
+    "UNWINDING",
+    "BREWING_MORNING",
+    "IM_FEELING",
+    "DROP_THOUGHT",
+    "RIGHT_NOW",
+    "WHATS_GOING_ON",
+    "EMOJIS_TODAY",
+    "EXPRESS_EMOJIS",
+    "SONG_REPEAT",
+    "PLAYLIST",
+    "TODAY_FEELS_LIKE",
+    "EASTER_HAPPY",
+    "EASTER_PLANS",
+    "EASTER_FEELS",
+    "EASTER_TIME_FOR",
+    "FIFA_WORLDCUP_CHEERING_FOR",
+    "FIFA_WORLDCUP_COUNTRY_PRIDE",
+    "FIFA_WORLDCUP_YOUR_TEAM_TODAY",
+    "FIFA_WORLDCUP_WATCHING_MATCH_WITH",
+    "FIFA_WORLDCUP_QUARTERFINALS_PICK",
+    "FIFA_WORLDCUP_MATCH_DAY_PLANS",
+    "FIFA_WORLDCUP_TAKING_IT_HOME",
+    "FIFA_WORLDCUP_FINALS_TEAM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAboutCreationWamEvent",
+      "WAWebAboutWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

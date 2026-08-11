@@ -1,0 +1,40 @@
+{
+  "id": "enum:ADMIN_FLOW_TYPE",
+  "kind": "enum",
+  "name": "ADMIN_FLOW_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAdminFlowType",
+    "variants": [
+      {
+        "name": "CREATION",
+        "value": 1.0
+      },
+      {
+        "name": "EDIT",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAdminFlowType",
+    "matches": "ADMIN_FLOW_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ADMIN_FLOW_TYPE",
+    "CREATION",
+    "EDIT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelAdminWamEvent",
+      "WAWebInfoFlow.react",
+      "WAWebNewsletterMessageAdminContextCard.react",
+      "WAWebNewsletterTabFlow.react",
+      "WAWebOpenNewsletterCreationFlow"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

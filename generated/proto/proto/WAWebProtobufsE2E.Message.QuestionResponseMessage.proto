@@ -1,0 +1,4 @@
+message QuestionResponseMessage {
+  optional bytes key = 1;
+  optional bytes text = 2;
+}

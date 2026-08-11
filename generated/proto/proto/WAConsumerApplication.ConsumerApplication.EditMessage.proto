@@ -1,0 +1,5 @@
+message EditMessage {
+  optional bytes key = 1;
+  optional bytes message = 2;
+  optional bytes timestampMs = 3;
+}

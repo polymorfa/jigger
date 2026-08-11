@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseTableMetadata",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseTableMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "rows": {
+        "number": 1,
+        "type_name": "WAAICommonDeprecated.AIRichResponseTableMetadata.AIRichResponseTableRow"
+      },
+      "title": {
+        "number": 2
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseTableMetadata\""
+  },
+  "literals": [
+    "AIRichResponseTableMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

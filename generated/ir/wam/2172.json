@@ -1,0 +1,56 @@
+{
+  "id": "wam:2172",
+  "kind": "wam",
+  "name": "SendDocument",
+  "data": {
+    "kind": "wam",
+    "event_id": 2172,
+    "fields": {
+      "documentExt": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "document_ext"
+      },
+      "documentPageSize": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "document_page_size"
+      },
+      "documentSize": {
+        "id": 1,
+        "type": "NUMBER",
+        "wire": "document_size"
+      },
+      "documentType": {
+        "id": 2,
+        "type": "DOCUMENT_TYPE",
+        "wire": "document_type",
+        "enum_ref": "DOCUMENT_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSendDocumentWamEvent",
+    "matches": "SendDocument:\\s*\\[\\s*2172"
+  },
+  "literals": [
+    "2172"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDocumentType"
+    ],
+    "dependents": [
+      "WAWebProcessRawMediaLogging"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

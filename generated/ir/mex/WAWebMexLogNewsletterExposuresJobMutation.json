@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexLogNewsletterExposuresJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexLogNewsletterExposuresJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25260800823586918",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_newsletter_log_exposures",
+    "document": "mutation MexLogNewsletterExposuresJobMutation($input) {\n  xwa2_newsletter_log_exposures {\n    __typename\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexLogNewsletterExposuresJobMutation.graphql",
+    "matches": "id: \"25260800823586918\""
+  },
+  "literals": [
+    "25260800823586918",
+    "WAWebMexLogNewsletterExposuresJobMutation",
+    "xwa2_newsletter_log_exposures"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexLogNewsletterExposuresJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

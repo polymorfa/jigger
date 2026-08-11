@@ -1,0 +1,4 @@
+message AppStateSyncKey {
+  optional AppStateSyncKeyId keyId = 1;
+  optional AppStateSyncKeyData keyData = 2;
+}

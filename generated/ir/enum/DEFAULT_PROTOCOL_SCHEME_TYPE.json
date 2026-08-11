@@ -1,0 +1,51 @@
+{
+  "id": "enum:DEFAULT_PROTOCOL_SCHEME_TYPE",
+  "kind": "enum",
+  "name": "DEFAULT_PROTOCOL_SCHEME_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDefaultProtocolSchemeType",
+    "variants": [
+      {
+        "name": "TEL",
+        "value": 0.0
+      },
+      {
+        "name": "MS_VOIP_CALL",
+        "value": 1.0
+      },
+      {
+        "name": "MS_VOIP_VIDEO",
+        "value": 2.0
+      },
+      {
+        "name": "IM",
+        "value": 3.0
+      },
+      {
+        "name": "MS_IPMESSAGING",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDefaultProtocolSchemeType",
+    "matches": "DEFAULT_PROTOCOL_SCHEME_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DEFAULT_PROTOCOL_SCHEME_TYPE",
+    "TEL",
+    "MS_VOIP_CALL",
+    "MS_VOIP_VIDEO",
+    "IM",
+    "MS_IPMESSAGING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWindowsDefaultProtocolActivationWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

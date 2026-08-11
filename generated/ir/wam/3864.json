@@ -1,0 +1,56 @@
+{
+  "id": "wam:3864",
+  "kind": "wam",
+  "name": "WebcLinkPreviewDisplay",
+  "data": {
+    "kind": "wam",
+    "event_id": 3864,
+    "fields": {
+      "didFallbackNonHq": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "did_fallback_non_hq"
+      },
+      "didRequestHq": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "did_request_hq"
+      },
+      "didRespondHqPreview": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "did_respond_hq_preview"
+      },
+      "webcDisplayStatus": {
+        "id": 1,
+        "type": "WEBC_DISPLAY_STATUS_TYPE",
+        "wire": "webc_display_status",
+        "enum_ref": "WEBC_DISPLAY_STATUS_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcLinkPreviewDisplayWamEvent",
+    "matches": "WebcLinkPreviewDisplay:\\s*\\[\\s*3864"
+  },
+  "literals": [
+    "3864"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcDisplayStatusType"
+    ],
+    "dependents": [
+      "WAWebLinkPreviewChatAction"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

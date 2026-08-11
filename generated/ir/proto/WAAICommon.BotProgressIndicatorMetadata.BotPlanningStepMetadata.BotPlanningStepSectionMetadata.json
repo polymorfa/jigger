@@ -1,0 +1,40 @@
+{
+  "id": "proto:WAAICommon.BotProgressIndicatorMetadata.BotPlanningStepMetadata.BotPlanningStepSectionMetadata",
+  "kind": "proto",
+  "name": "WAAICommon.BotProgressIndicatorMetadata.BotPlanningStepMetadata.BotPlanningStepSectionMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "sectionBody": {
+        "number": 2
+      },
+      "sectionTitle": {
+        "number": 1
+      },
+      "sourcesMetadata": {
+        "number": 3,
+        "type_name": "WAAICommon.BotProgressIndicatorMetadata.BotPlanningStepMetadata.BotPlanningSearchSourceMetadata"
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotProgressIndicatorMetadata.BotPlanningStepMetadata.BotPlanningStepSectionMetadata\""
+  },
+  "literals": [
+    "BotPlanningStepSectionMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

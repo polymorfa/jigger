@@ -1,0 +1,67 @@
+{
+  "id": "enum:CLIENT_MESSAGE_SEND_STAGE",
+  "kind": "enum",
+  "name": "CLIENT_MESSAGE_SEND_STAGE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumClientMessageSendStage",
+    "variants": [
+      {
+        "name": "CLIENT_RENDERED",
+        "value": 1.0
+      },
+      {
+        "name": "CLIENT_SAVED",
+        "value": 2.0
+      },
+      {
+        "name": "CLIENT_WRITTEN_WIRE",
+        "value": 3.0
+      },
+      {
+        "name": "CLIENT_QUEUED",
+        "value": 4.0
+      },
+      {
+        "name": "CLIENT_WAITING_TO_ENCRYPT",
+        "value": 5.0
+      },
+      {
+        "name": "CLIENT_READY_TO_SEND",
+        "value": 6.0
+      },
+      {
+        "name": "CLIENT_ENCRYPT",
+        "value": 7.0
+      },
+      {
+        "name": "CLIENT_PREKEYS_FETCH",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumClientMessageSendStage",
+    "matches": "CLIENT_MESSAGE_SEND_STAGE\\s*[:=]"
+  },
+  "literals": [
+    "CLIENT_MESSAGE_SEND_STAGE",
+    "CLIENT_RENDERED",
+    "CLIENT_SAVED",
+    "CLIENT_WRITTEN_WIRE",
+    "CLIENT_QUEUED",
+    "CLIENT_WAITING_TO_ENCRYPT",
+    "CLIENT_READY_TO_SEND",
+    "CLIENT_ENCRYPT",
+    "CLIENT_PREKEYS_FETCH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAndroidMessageSendPerfWamEvent",
+      "WAWebMessageSendPerfReporter"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

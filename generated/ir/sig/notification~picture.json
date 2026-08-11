@@ -1,0 +1,32 @@
+{
+  "id": "sig:notification/picture",
+  "kind": "sig",
+  "name": "AccountSyncNotificationPictureNotificationMixin",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "picture"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAccountSyncNotificationPictureNotificationMixin",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "picture"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInAccountSyncPictureNotificationType",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInAccountSyncNotificationType"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

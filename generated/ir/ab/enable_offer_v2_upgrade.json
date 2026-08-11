@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_offer_v2_upgrade",
+  "kind": "ab",
+  "name": "enable_offer_v2_upgrade",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26435,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_offer_v2_upgrade:\\s*\\[\\s*26435"
+  },
+  "literals": [
+    "enable_offer_v2_upgrade",
+    "26435"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

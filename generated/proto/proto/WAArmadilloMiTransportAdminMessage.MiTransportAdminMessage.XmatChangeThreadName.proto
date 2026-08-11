@@ -1,0 +1,3 @@
+message XmatChangeThreadName {
+  optional bytes newThreadName = 1;
+}

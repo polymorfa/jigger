@@ -1,0 +1,38 @@
+{
+  "id": "enum:ENUM_VIDEO_VOICE",
+  "kind": "enum",
+  "name": "ENUM_VIDEO_VOICE",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInRtcE2eeCallEventNotifyEnums",
+    "variants": [
+      {
+        "name": "video",
+        "value": "video"
+      },
+      {
+        "name": "voice",
+        "value": "voice"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInRtcE2eeCallEventNotifyEnums",
+    "matches": "ENUM_VIDEO_VOICE\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_VIDEO_VOICE",
+    "video",
+    "voice"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInRtcE2eeCallEventNotifyCallEventNotificationRequest"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

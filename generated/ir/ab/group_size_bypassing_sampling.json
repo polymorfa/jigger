@@ -1,0 +1,45 @@
+{
+  "id": "ab:group_size_bypassing_sampling",
+  "kind": "ab",
+  "name": "group_size_bypassing_sampling",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1861,
+    "type": "int",
+    "default": "1e5",
+    "alt_default": "1e5"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_size_bypassing_sampling:\\s*\\[\\s*1861"
+  },
+  "literals": [
+    "group_size_bypassing_sampling",
+    "1861"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMessagingGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

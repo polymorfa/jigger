@@ -1,0 +1,43 @@
+{
+  "id": "enum:SEARCH_UJ_DISMISS_TYPE",
+  "kind": "enum",
+  "name": "SEARCH_UJ_DISMISS_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSearchUjDismissType",
+    "variants": [
+      {
+        "name": "BACK_PRESSED",
+        "value": 1.0
+      },
+      {
+        "name": "OTHER",
+        "value": 2.0
+      },
+      {
+        "name": "SWIPE",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSearchUjDismissType",
+    "matches": "SEARCH_UJ_DISMISS_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SEARCH_UJ_DISMISS_TYPE",
+    "BACK_PRESSED",
+    "OTHER",
+    "SWIPE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatListSearch.react",
+      "WAWebChatSearchDrawer.react",
+      "WAWebSearchUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

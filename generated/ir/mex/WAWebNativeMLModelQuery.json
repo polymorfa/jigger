@@ -1,0 +1,31 @@
+{
+  "id": "mex:WAWebNativeMLModelQuery",
+  "kind": "mex",
+  "name": "WAWebNativeMLModelQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "32743078615336512",
+    "operation": "query",
+    "variables": [
+      "client_capability_metadata",
+      "model_request_metadatas"
+    ],
+    "document": "query NativeMLModelQuery($client_capability_metadata, $model_request_metadatas) {\n  name\n  aim_model_batched_manifest {\n    models {\n      version\n      assets {\n        id\n        cache_key\n        source_content_hash\n        md5_hash\n        asset_handle\n        creation_time\n        url\n        filesize_bytes\n        compression_type\n        asset_type\n        properties {\n          value\n          entry_point\n          asset_count\n          model_count\n          status\n          status_details\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebNativeMLModelQuery.graphql",
+    "matches": "id: \"32743078615336512\""
+  },
+  "literals": [
+    "32743078615336512",
+    "WAWebNativeMLModelQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNativeMLModelQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

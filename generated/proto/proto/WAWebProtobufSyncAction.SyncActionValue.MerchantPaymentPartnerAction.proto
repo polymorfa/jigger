@@ -1,0 +1,6 @@
+message MerchantPaymentPartnerAction {
+  optional bytes status = 1;
+  optional bytes country = 2;
+  optional bytes gatewayName = 3;
+  optional bytes credentialId = 4;
+}

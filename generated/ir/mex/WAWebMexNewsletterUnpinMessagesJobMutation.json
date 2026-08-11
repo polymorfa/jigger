@@ -1,0 +1,33 @@
+{
+  "id": "mex:WAWebMexNewsletterUnpinMessagesJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterUnpinMessagesJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "28007176042216937",
+    "operation": "mutation",
+    "variables": [
+      "input",
+      "newsletter_id"
+    ],
+    "root_field": "xwa2_newsletter_unpin_messages",
+    "document": "mutation MexNewsletterUnpinMessagesJobMutation($input, $newsletter_id) {\n  xwa2_newsletter_unpin_messages {\n    id\n    thread_metadata {\n      pinned_messages {\n        message_id\n        expiry_ts\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterUnpinMessagesJobMutation.graphql",
+    "matches": "id: \"28007176042216937\""
+  },
+  "literals": [
+    "28007176042216937",
+    "WAWebMexNewsletterUnpinMessagesJobMutation",
+    "xwa2_newsletter_unpin_messages"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterUnpinMessagesJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebBizGetCategoriesQuery",
+  "kind": "mex",
+  "name": "WAWebBizGetCategoriesQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26266473919627648",
+    "operation": "query",
+    "variables": [
+      "query_params"
+    ],
+    "document": "query BizGetCategoriesQuery($query_params) {\n  id\n  display_name\n  whatsapp_catkit_typeahead_proxy {\n    categories {\n      not_a_biz {\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebBizGetCategoriesQuery.graphql",
+    "matches": "id: \"26266473919627648\""
+  },
+  "literals": [
+    "26266473919627648",
+    "WAWebBizGetCategoriesQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizGetCategoriesQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

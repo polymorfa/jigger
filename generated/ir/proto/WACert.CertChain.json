@@ -1,0 +1,36 @@
+{
+  "id": "proto:WACert.CertChain",
+  "kind": "proto",
+  "name": "WACert.CertChain",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "intermediate": {
+        "number": 2,
+        "type_name": "WACert.CertChain.NoiseCertificate"
+      },
+      "leaf": {
+        "number": 1,
+        "type_name": "WACert.CertChain.NoiseCertificate"
+      }
+    },
+    "module": "WACert.pb"
+  },
+  "evidence": {
+    "module": "WACert.pb",
+    "matches": "name = \"CertChain\""
+  },
+  "literals": [
+    "CertChain"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAVerifyChainCertificateWA6"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

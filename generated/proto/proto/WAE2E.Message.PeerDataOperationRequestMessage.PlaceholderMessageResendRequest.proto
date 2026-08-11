@@ -1,0 +1,3 @@
+message PlaceholderMessageResendRequest {
+  optional bytes messageKey = 1;
+}

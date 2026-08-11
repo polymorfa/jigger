@@ -1,0 +1,7 @@
+export enum CONTACTSUGGESTION {
+  DEFAULT = 1,
+  FREQUENTS = 2,
+  RECENTS = 3,
+  PINNED = 4,
+  RANKER = 5,
+}

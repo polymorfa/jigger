@@ -1,0 +1,5 @@
+target/
+web/node_modules/
+web/.next/
+web/content/spec/
+web/public/data/

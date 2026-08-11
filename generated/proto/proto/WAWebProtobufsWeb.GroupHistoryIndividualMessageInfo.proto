@@ -1,0 +1,4 @@
+message GroupHistoryIndividualMessageInfo {
+  optional bytes bundleMessageKey = 1;
+  optional bytes editedAfterReceivedAsHistory = 2;
+}

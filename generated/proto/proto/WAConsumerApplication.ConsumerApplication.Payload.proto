@@ -1,0 +1,6 @@
+message Payload {
+  optional Content content = 1;
+  optional ApplicationData applicationData = 2;
+  optional Signal signal = 3;
+  optional SubProtocolPayload subProtocol = 4;
+}

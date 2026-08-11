@@ -1,0 +1,45 @@
+{
+  "id": "ab:call_info_optimizations_lgc",
+  "kind": "ab",
+  "name": "call_info_optimizations_lgc",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31094,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "call_info_optimizations_lgc:\\s*\\[\\s*31094"
+  },
+  "literals": [
+    "call_info_optimizations_lgc",
+    "31094"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

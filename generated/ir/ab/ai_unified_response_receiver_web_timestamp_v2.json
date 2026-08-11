@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_unified_response_receiver_web_timestamp_v2",
+  "kind": "ab",
+  "name": "ai_unified_response_receiver_web_timestamp_v2",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25930,
+    "type": "int",
+    "default": "1772082e3",
+    "alt_default": "1772082e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_unified_response_receiver_web_timestamp_v2:\\s*\\[\\s*25930"
+  },
+  "literals": [
+    "ai_unified_response_receiver_web_timestamp_v2",
+    "25930"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotUnifiedResponseGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

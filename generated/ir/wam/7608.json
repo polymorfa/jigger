@@ -1,0 +1,71 @@
+{
+  "id": "wam:7608",
+  "kind": "wam",
+  "name": "RingtoneScreen",
+  "data": {
+    "kind": "wam",
+    "event_id": 7608,
+    "fields": {
+      "premiumRingtonesDownloadedCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "premium_ringtones_downloaded_count"
+      },
+      "ringtoneChangeApplied": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "ringtone_change_applied"
+      },
+      "ringtoneId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "ringtone_id"
+      },
+      "ringtoneReset": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "ringtone_reset"
+      },
+      "ringtoneSelectionCancelled": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "ringtone_selection_cancelled"
+      },
+      "ringtoneSource": {
+        "id": 5,
+        "type": "RINGTONE_ENTRY_TYPE",
+        "wire": "ringtone_source",
+        "enum_ref": "RINGTONE_ENTRY_TYPE"
+      },
+      "ringtoneSubscribeSelected": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "ringtone_subscribe_selected"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebRingtoneScreenWamEvent",
+    "matches": "RingtoneScreen:\\s*\\[\\s*7608"
+  },
+  "literals": [
+    "7608"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumRingtoneEntryType"
+    ],
+    "dependents": [
+      "WAWebAuraRingtoneDropdown.react"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

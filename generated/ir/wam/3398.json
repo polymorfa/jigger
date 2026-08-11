@@ -1,0 +1,79 @@
+{
+  "id": "wam:3398",
+  "kind": "wam",
+  "name": "DisappearingMessageChatPicker",
+  "data": {
+    "kind": "wam",
+    "event_id": 3398,
+    "fields": {
+      "chatsSelected": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "chats_selected"
+      },
+      "dmChatPickerEntryPoint": {
+        "id": 2,
+        "type": "DM_CHAT_PICKER_ENTRY_POINT_TYPE",
+        "wire": "dm_chat_picker_entry_point",
+        "enum_ref": "DM_CHAT_PICKER_ENTRY_POINT_TYPE"
+      },
+      "dmChatPickerEventName": {
+        "id": 3,
+        "type": "DM_CHAT_PICKER_EVENT_NAME_TYPE",
+        "wire": "dm_chat_picker_event_name",
+        "enum_ref": "DM_CHAT_PICKER_EVENT_NAME_TYPE"
+      },
+      "ephemeralityDuration": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "ephemerality_duration"
+      },
+      "groupChatsSelected": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "group_chats_selected"
+      },
+      "groupSizeDistributionJson": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "group_size_distribution_json"
+      },
+      "newlyEphemeralChats": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "newly_ephemeral_chats"
+      },
+      "totalChatsInChatPicker": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "total_chats_in_chat_picker"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebDisappearingMessageChatPickerWamEvent",
+    "matches": "DisappearingMessageChatPicker:\\s*\\[\\s*3398"
+  },
+  "literals": [
+    "3398"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDmChatPickerEntryPointType",
+      "WAWebWamEnumDmChatPickerEventNameType"
+    ],
+    "dependents": [
+      "WAWebDefaultEphemeralityDrawer.react",
+      "WAWebMultiSelectDdm.react"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

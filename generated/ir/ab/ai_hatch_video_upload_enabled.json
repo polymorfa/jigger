@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_hatch_video_upload_enabled",
+  "kind": "ab",
+  "name": "ai_hatch_video_upload_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27470,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_hatch_video_upload_enabled:\\s*\\[\\s*27470"
+  },
+  "literals": [
+    "ai_hatch_video_upload_enabled",
+    "27470"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebHatchGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

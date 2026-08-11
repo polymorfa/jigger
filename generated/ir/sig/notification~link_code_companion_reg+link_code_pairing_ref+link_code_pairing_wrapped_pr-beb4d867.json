@@ -1,0 +1,39 @@
+{
+  "id": "sig:notification/link_code_companion_reg+link_code_pairing_ref+link_code_pairing_wrapped_primary_ephemeral_pub+primary_identity_pub",
+  "kind": "sig",
+  "name": "MdPrimaryHelloNotifyCompanionRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "link_code_companion_reg",
+      "link_code_pairing_ref",
+      "link_code_pairing_wrapped_primary_ephemeral_pub",
+      "primary_identity_pub"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMdPrimaryHelloNotifyCompanionRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "link_code_companion_reg",
+    "link_code_pairing_ref",
+    "link_code_pairing_wrapped_primary_ephemeral_pub",
+    "primary_identity_pub"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMdServerNotificationMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxMdPrimaryHelloNotifyCompanionRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

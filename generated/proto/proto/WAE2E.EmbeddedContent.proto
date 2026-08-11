@@ -1,0 +1,4 @@
+message EmbeddedContent {
+  optional EmbeddedMessage embeddedMessage = 1;
+  optional EmbeddedMusic embeddedMusic = 2;
+}

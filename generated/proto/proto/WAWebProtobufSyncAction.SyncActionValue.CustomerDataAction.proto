@@ -1,0 +1,13 @@
+message CustomerDataAction {
+  optional bytes chatJid = 1;
+  optional bytes contactType = 2;
+  optional bytes email = 3;
+  optional bytes altPhoneNumbers = 4;
+  optional bytes birthday = 5;
+  optional bytes address = 6;
+  optional bytes acquisitionSource = 7;
+  optional bytes leadStage = 8;
+  optional bytes lastOrder = 9;
+  optional bytes createdAt = 10;
+  optional bytes modifiedAt = 11;
+}

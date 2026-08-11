@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_history_sync_allow_duplicate_in_bulk_error",
+  "kind": "ab",
+  "name": "web_history_sync_allow_duplicate_in_bulk_error",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10842,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_history_sync_allow_duplicate_in_bulk_error:\\s*\\[\\s*10842"
+  },
+  "literals": [
+    "web_history_sync_allow_duplicate_in_bulk_error",
+    "10842"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCacheStoreGatingUtil"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

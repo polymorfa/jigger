@@ -1,0 +1,6 @@
+message Ancillary {
+  optional SenderKeyDistributionMessage skdm = 2;
+  optional DeviceListMetadata deviceListMetadata = 3;
+  optional ICDCParticipantDevices icdc = 4;
+  optional BackupDirective backupDirective = 5;
+}

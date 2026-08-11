@@ -1,0 +1,75 @@
+{
+  "id": "wam:7090",
+  "kind": "wam",
+  "name": "MediaHubUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 7090,
+    "fields": {
+      "customFields": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "custom_fields"
+      },
+      "mediaHubAction": {
+        "id": 2,
+        "type": "ACTION_CODE",
+        "wire": "media_hub_action",
+        "enum_ref": "ACTION_CODE"
+      },
+      "mediaHubEntryPoint": {
+        "id": 3,
+        "type": "ENTRY_POINT_TYPE",
+        "wire": "media_hub_entry_point",
+        "enum_ref": "ENTRY_POINT_TYPE"
+      },
+      "mediaHubSequenceNumber": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "media_hub_sequence_number"
+      },
+      "mediaHubSessionId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "media_hub_session_id"
+      },
+      "mediaHubSurface": {
+        "id": 6,
+        "type": "SURFACE_CODE",
+        "wire": "media_hub_surface",
+        "enum_ref": "SURFACE_CODE"
+      },
+      "unifiedSessionId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMediaHubUserJourneyWamEvent",
+    "matches": "MediaHubUserJourney:\\s*\\[\\s*7090"
+  },
+  "literals": [
+    "7090"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumActionCode",
+      "WAWebWamEnumEntryPointType",
+      "WAWebWamEnumSurfaceCode"
+    ],
+    "dependents": [
+      "WAWebMediaHubLogger"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

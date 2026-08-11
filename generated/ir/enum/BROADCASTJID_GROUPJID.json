@@ -1,0 +1,47 @@
+{
+  "id": "enum:BROADCASTJID_GROUPJID",
+  "kind": "enum",
+  "name": "BROADCASTJID_GROUPJID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInReceiptEnums",
+    "variants": [
+      {
+        "name": "typeName",
+        "value": "BroadcastJid|GroupJid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptEnums",
+    "matches": "BROADCASTJID_GROUPJID\\s*[:=]"
+  },
+  "literals": [
+    "BROADCASTJID_GROUPJID",
+    "typeName"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInReceiptAggregatedByMessageIdMixin",
+      "WASmaxInReceiptDeliverAggregatedByMessageIdStyleMixin",
+      "WASmaxInReceiptDeliverMessageAggregatedStyleMixin",
+      "WASmaxInReceiptDeliverPaidConversationAggregatedMixin",
+      "WASmaxInReceiptDeprecatedDeliveryTypeMixin",
+      "WASmaxInReceiptDeprecatedEditMixin",
+      "WASmaxInReceiptGroupMixin",
+      "WASmaxInReceiptHSMErrorTypeMixin",
+      "WASmaxInReceiptIndividualMixin",
+      "WASmaxInReceiptOrderStatusErrorTypeMixin",
+      "WASmaxInReceiptPublishSuccessMixin",
+      "WASmaxInReceiptRecipientMixin",
+      "WASmaxInReceiptRoiTemplateSourceMixin",
+      "WASmaxInReceiptServerErrorTypeMixin",
+      "WASmaxOutReceiptDeliverResponseSuccess"
+    ],
+    "dep_count": 1,
+    "dependent_count": 15
+  }
+}

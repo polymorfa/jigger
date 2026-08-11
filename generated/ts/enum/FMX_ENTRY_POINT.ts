@@ -1,0 +1,4 @@
+export enum FMXENTRYPOINT {
+  FMX_CARD = 0,
+  SAFETY_TOOLS = 1,
+}

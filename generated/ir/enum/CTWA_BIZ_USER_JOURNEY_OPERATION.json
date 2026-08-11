@@ -1,0 +1,127 @@
+{
+  "id": "enum:CTWA_BIZ_USER_JOURNEY_OPERATION",
+  "kind": "enum",
+  "name": "CTWA_BIZ_USER_JOURNEY_OPERATION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCtwaBizUserJourneyOperation",
+    "variants": [
+      {
+        "name": "AGM_INJECTED",
+        "value": 1.0
+      },
+      {
+        "name": "AGM_CTA_CLICKED",
+        "value": 2.0
+      },
+      {
+        "name": "AGM_VIEW_DETAILS_CLICKED",
+        "value": 3.0
+      },
+      {
+        "name": "AGM_BOTTOMSHEET_SHOWN",
+        "value": 4.0
+      },
+      {
+        "name": "AGM_BOTTOMSHEET_CLOSED",
+        "value": 5.0
+      },
+      {
+        "name": "AGM_BOTTOMSHEET_EXTERNAL_NAVIGATION",
+        "value": 6.0
+      },
+      {
+        "name": "DUPLICATED_AGM_NOT_INJECTED",
+        "value": 7.0
+      },
+      {
+        "name": "AGM_WELCOME_MESSAGE_NULL",
+        "value": 8.0
+      },
+      {
+        "name": "AGM_INVALID_CTA_TYPE_FROM_MESSAGE",
+        "value": 9.0
+      },
+      {
+        "name": "AGM_INVALID_CTA_PAYLOAD_FROM_MESSAGE",
+        "value": 10.0
+      },
+      {
+        "name": "AGM_INVALID_SOURCE_APP_FROM_MESSAGE",
+        "value": 11.0
+      },
+      {
+        "name": "AGM_BOTTOMSHEET_IMAGE_ERROR",
+        "value": 12.0
+      },
+      {
+        "name": "AGM_BOTTOMSHEET_TEXT_ERROR",
+        "value": 13.0
+      },
+      {
+        "name": "AD_PREVIEW_DEEPLINK_V1_CLICKED",
+        "value": 14.0
+      },
+      {
+        "name": "AD_PREVIEW_FETCH_FROM_DEEPLINK_V2_STARTED",
+        "value": 15.0
+      },
+      {
+        "name": "AD_PREVIEW_FETCH_FROM_DEEPLINK_V2_SUCCESS",
+        "value": 16.0
+      },
+      {
+        "name": "AD_PREVIEW_FETCH_FROM_DEEPLINK_V2_FAILED",
+        "value": 17.0
+      },
+      {
+        "name": "AD_PREVIEW_OPEN",
+        "value": 18.0
+      },
+      {
+        "name": "AD_PREVIEW_CLOSE",
+        "value": 19.0
+      },
+      {
+        "name": "AD_PREVIEW_RENDER_FAILED",
+        "value": 20.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCtwaBizUserJourneyOperation",
+    "matches": "CTWA_BIZ_USER_JOURNEY_OPERATION\\s*[:=]"
+  },
+  "literals": [
+    "CTWA_BIZ_USER_JOURNEY_OPERATION",
+    "AGM_INJECTED",
+    "AGM_CTA_CLICKED",
+    "AGM_VIEW_DETAILS_CLICKED",
+    "AGM_BOTTOMSHEET_SHOWN",
+    "AGM_BOTTOMSHEET_CLOSED",
+    "AGM_BOTTOMSHEET_EXTERNAL_NAVIGATION",
+    "DUPLICATED_AGM_NOT_INJECTED",
+    "AGM_WELCOME_MESSAGE_NULL",
+    "AGM_INVALID_CTA_TYPE_FROM_MESSAGE",
+    "AGM_INVALID_CTA_PAYLOAD_FROM_MESSAGE",
+    "AGM_INVALID_SOURCE_APP_FROM_MESSAGE",
+    "AGM_BOTTOMSHEET_IMAGE_ERROR",
+    "AGM_BOTTOMSHEET_TEXT_ERROR",
+    "AD_PREVIEW_DEEPLINK_V1_CLICKED",
+    "AD_PREVIEW_FETCH_FROM_DEEPLINK_V2_STARTED",
+    "AD_PREVIEW_FETCH_FROM_DEEPLINK_V2_SUCCESS",
+    "AD_PREVIEW_FETCH_FROM_DEEPLINK_V2_FAILED",
+    "AD_PREVIEW_OPEN",
+    "AD_PREVIEW_CLOSE",
+    "AD_PREVIEW_RENDER_FAILED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwaBizUserJourneyWamEvent",
+      "WAWebCtwaLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

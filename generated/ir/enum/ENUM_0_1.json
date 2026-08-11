@@ -1,0 +1,37 @@
+{
+  "id": "enum:ENUM_0_1",
+  "kind": "enum",
+  "name": "ENUM_0_1",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInAccountEnums",
+    "variants": [
+      {
+        "name": "0",
+        "value": "0"
+      },
+      {
+        "name": "1",
+        "value": "1"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAccountEnums",
+    "matches": "ENUM_0_1\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_0_1",
+    "0",
+    "1"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInAccountSetPaymentsTOSv3BRConsumerPaymentsTOSv3ResponseMixin",
+      "WASmaxInAccountSetPaymentsTOSv3UPIConsumerPaymentsTOSv3ResponseMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

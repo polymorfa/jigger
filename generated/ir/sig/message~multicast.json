@@ -1,0 +1,30 @@
+{
+  "id": "sig:message/multicast",
+  "kind": "sig",
+  "name": "MessageDeliverMulticastMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "multicast"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverMulticastMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "multicast"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBaseMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

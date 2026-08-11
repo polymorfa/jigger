@@ -1,0 +1,240 @@
+{
+  "id": "wam:3546",
+  "kind": "wam",
+  "name": "StatusPosterActions",
+  "data": {
+    "kind": "wam",
+    "event_id": 3546,
+    "fields": {
+      "canSaveAsDraft": {
+        "id": 32,
+        "type": "BOOLEAN",
+        "wire": "can_save_as_draft"
+      },
+      "cardType": {
+        "id": 34,
+        "type": "ENGAGEMENT_CARD_TYPE",
+        "wire": "card_type",
+        "enum_ref": "ENGAGEMENT_CARD_TYPE"
+      },
+      "cardVariant": {
+        "id": 35,
+        "type": "ENGAGEMENT_CARD_VARIANT",
+        "wire": "card_variant",
+        "enum_ref": "ENGAGEMENT_CARD_VARIANT"
+      },
+      "cid": {
+        "id": 36,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "defaultTrimmedVideoDuration": {
+        "id": 26,
+        "type": "INTEGER",
+        "wire": "default_trimmed_video_duration"
+      },
+      "editable": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "editable"
+      },
+      "externalInteractables": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "external_interactables"
+      },
+      "externalPackageName": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "external_package_name"
+      },
+      "hasDraftAvailable": {
+        "id": 33,
+        "type": "BOOLEAN",
+        "wire": "has_draft_available"
+      },
+      "isBatchedPost": {
+        "id": 37,
+        "type": "BOOLEAN",
+        "wire": "is_batched_post"
+      },
+      "isFavoured": {
+        "id": 28,
+        "type": "BOOLEAN",
+        "wire": "is_favoured"
+      },
+      "mediaIndex": {
+        "id": 29,
+        "type": "INTEGER",
+        "wire": "media_index"
+      },
+      "originalVideoDuration": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "original_video_duration"
+      },
+      "pairedMediaType": {
+        "id": 24,
+        "type": "PAIRED_MEDIA_TYPE",
+        "wire": "paired_media_type",
+        "enum_ref": "PAIRED_MEDIA_TYPE"
+      },
+      "retryCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "retry_count"
+      },
+      "selectedLayoutConfigId": {
+        "id": 21,
+        "type": "SELECTED_LAYOUT_CONFIG_ID",
+        "wire": "selected_layout_config_id",
+        "enum_ref": "SELECTED_LAYOUT_CONFIG_ID"
+      },
+      "selectedMediaCount": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "selected_media_count"
+      },
+      "shareType": {
+        "id": 17,
+        "type": "STRING",
+        "wire": "share_type"
+      },
+      "statusAudienceSize": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "status_audience_size"
+      },
+      "statusCategory": {
+        "id": 30,
+        "type": "STATUS_CATEGORY",
+        "wire": "status_category",
+        "enum_ref": "STATUS_CATEGORY"
+      },
+      "statusContentSource": {
+        "id": 3,
+        "type": "STATUS_CONTENT_SOURCE",
+        "wire": "status_content_source",
+        "enum_ref": "STATUS_CONTENT_SOURCE"
+      },
+      "statusContentType": {
+        "id": 4,
+        "type": "STATUS_CONTENT_TYPE",
+        "wire": "status_content_type",
+        "enum_ref": "STATUS_CONTENT_TYPE"
+      },
+      "statusCreationEntryPoint": {
+        "id": 5,
+        "type": "STATUS_CREATION_ENTRY_POINT",
+        "wire": "status_creation_entry_point",
+        "enum_ref": "STATUS_CREATION_ENTRY_POINT"
+      },
+      "statusDuration": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "status_duration"
+      },
+      "statusEventType": {
+        "id": 7,
+        "type": "STATUS_EVENT_TYPE",
+        "wire": "status_event_type",
+        "enum_ref": "STATUS_EVENT_TYPE"
+      },
+      "statusId": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "statusMediaPickerFormatType": {
+        "id": 23,
+        "type": "STATUS_MEDIA_PICKER_FORMAT_TYPE",
+        "wire": "status_media_picker_format_type",
+        "enum_ref": "STATUS_MEDIA_PICKER_FORMAT_TYPE"
+      },
+      "statusPairedMediaQuality": {
+        "id": 25,
+        "type": "STATUS_PAIRED_MEDIA_QUALITY",
+        "wire": "status_paired_media_quality",
+        "enum_ref": "STATUS_PAIRED_MEDIA_QUALITY"
+      },
+      "statusPartCode": {
+        "id": 38,
+        "type": "STRING",
+        "wire": "status_part_code"
+      },
+      "statusPostFailureReason": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "status_post_failure_reason"
+      },
+      "statusPostingSessionId": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "status_posting_session_id"
+      },
+      "statusPrivacyType": {
+        "id": 10,
+        "type": "STATUS_PRIVACY_TYPE",
+        "wire": "status_privacy_type",
+        "enum_ref": "STATUS_PRIVACY_TYPE"
+      },
+      "statusSessionId": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "status_session_id"
+      },
+      "stickerType": {
+        "id": 18,
+        "type": "STICKER_TYPE",
+        "wire": "sticker_type",
+        "enum_ref": "STICKER_TYPE"
+      },
+      "unifiedSessionId": {
+        "id": 19,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStatusPosterActionsWamEvent",
+    "matches": "StatusPosterActions:\\s*\\[\\s*3546"
+  },
+  "literals": [
+    "3546"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumEngagementCardType",
+      "WAWebWamEnumEngagementCardVariant",
+      "WAWebWamEnumPairedMediaType",
+      "WAWebWamEnumSelectedLayoutConfigId",
+      "WAWebWamEnumStatusCategory",
+      "WAWebWamEnumStatusContentSource",
+      "WAWebWamEnumStatusContentType",
+      "WAWebWamEnumStatusCreationEntryPoint",
+      "WAWebWamEnumStatusEventType",
+      "WAWebWamEnumStatusMediaPickerFormatType",
+      "WAWebWamEnumStatusPairedMediaQuality",
+      "WAWebWamEnumStatusPrivacyType",
+      "WAWebWamEnumStickerType"
+    ],
+    "dependents": [
+      "WAWebStatusPosterActionsLogger"
+    ],
+    "dep_count": 14,
+    "dependent_count": 1
+  }
+}

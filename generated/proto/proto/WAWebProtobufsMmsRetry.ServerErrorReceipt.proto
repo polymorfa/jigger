@@ -1,0 +1,3 @@
+message ServerErrorReceipt {
+  optional bytes stanzaId = 1;
+}

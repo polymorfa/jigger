@@ -1,0 +1,7 @@
+message GalaxyFlowAction {
+  optional bytes type = 1;
+  optional bytes flowId = 2;
+  optional bytes stanzaId = 3;
+  optional bytes galaxyFlowDownloadRequestId = 4;
+  optional bytes agmId = 5;
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexLeaveNewsletterJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexLeaveNewsletterJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9767147403369991",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id"
+    ],
+    "root_field": "xwa2_newsletter_leave_v2",
+    "document": "mutation MexLeaveNewsletterJobMutation($newsletter_id) {\n  xwa2_newsletter_leave_v2 {\n    id\n    state {\n      type\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexLeaveNewsletterJobMutation.graphql",
+    "matches": "id: \"9767147403369991\""
+  },
+  "literals": [
+    "9767147403369991",
+    "WAWebMexLeaveNewsletterJobMutation",
+    "xwa2_newsletter_leave_v2"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexLeaveNewsletterJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

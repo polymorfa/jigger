@@ -1,0 +1,6 @@
+message DeviceListMetadata {
+  optional bytes senderKeyHash = 1;
+  optional bytes senderTimestamp = 2;
+  optional bytes recipientKeyHash = 8;
+  optional bytes recipientTimestamp = 9;
+}

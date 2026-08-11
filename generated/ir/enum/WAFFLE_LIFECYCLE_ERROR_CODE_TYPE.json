@@ -1,0 +1,72 @@
+{
+  "id": "enum:WAFFLE_LIFECYCLE_ERROR_CODE_TYPE",
+  "kind": "enum",
+  "name": "WAFFLE_LIFECYCLE_ERROR_CODE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWaffleLifecycleErrorCodeType",
+    "variants": [
+      {
+        "name": "NOT_APPLICABLE",
+        "value": 0.0
+      },
+      {
+        "name": "TIMEOUT",
+        "value": 1.0
+      },
+      {
+        "name": "RATE_OVERLIMIT",
+        "value": 2.0
+      },
+      {
+        "name": "NOT_AUTHORIZED",
+        "value": 3.0
+      },
+      {
+        "name": "INVALID_PASSWORD",
+        "value": 4.0
+      },
+      {
+        "name": "WF_NOT_FOUND",
+        "value": 5.0
+      },
+      {
+        "name": "WF_STATE_MISMATCH",
+        "value": 6.0
+      },
+      {
+        "name": "WF_SUSPENDED",
+        "value": 7.0
+      },
+      {
+        "name": "UNKNOWN",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWaffleLifecycleErrorCodeType",
+    "matches": "WAFFLE_LIFECYCLE_ERROR_CODE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WAFFLE_LIFECYCLE_ERROR_CODE_TYPE",
+    "NOT_APPLICABLE",
+    "TIMEOUT",
+    "RATE_OVERLIMIT",
+    "NOT_AUTHORIZED",
+    "INVALID_PASSWORD",
+    "WF_NOT_FOUND",
+    "WF_STATE_MISMATCH",
+    "WF_SUSPENDED",
+    "UNKNOWN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWaffleCompanionStateLifecycleWamEvent",
+      "WAWebWaffleLifecycleWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

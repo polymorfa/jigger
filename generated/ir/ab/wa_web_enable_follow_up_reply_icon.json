@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_enable_follow_up_reply_icon",
+  "kind": "ab",
+  "name": "wa_web_enable_follow_up_reply_icon",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24429,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_enable_follow_up_reply_icon:\\s*\\[\\s*24429"
+  },
+  "literals": [
+    "wa_web_enable_follow_up_reply_icon",
+    "24429"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebThreadsGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

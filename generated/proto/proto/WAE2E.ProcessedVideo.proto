@@ -1,0 +1,10 @@
+message ProcessedVideo {
+  optional bytes directPath = 1;
+  optional bytes fileSha256 = 2;
+  optional bytes height = 3;
+  optional bytes width = 4;
+  optional bytes fileLength = 5;
+  optional bytes bitrate = 6;
+  optional bytes quality = 7;
+  optional bytes capabilities = 8;
+}

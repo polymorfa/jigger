@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAE2E.Message.MessageHistoryNotice",
+  "kind": "proto",
+  "name": "WAE2E.Message.MessageHistoryNotice",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "contextInfo": {
+        "number": 1,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "messageHistoryMetadata": {
+        "number": 2,
+        "type_name": "WAE2E.Message.MessageHistoryMetadata"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.MessageHistoryNotice\""
+  },
+  "literals": [
+    "MessageHistoryNotice"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

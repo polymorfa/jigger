@@ -1,0 +1,5 @@
+export enum URLSTATUSCLICKED {
+  ONE_CLICK = 1,
+  TWO_CLICKS = 2,
+  NO_CLICK = 3,
+}

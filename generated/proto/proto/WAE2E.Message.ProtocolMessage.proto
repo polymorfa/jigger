@@ -1,0 +1,28 @@
+message ProtocolMessage {
+  optional bytes key = 1;
+  optional bytes type = 2;
+  optional bytes ephemeralExpiration = 4;
+  optional bytes ephemeralSettingTimestamp = 5;
+  optional HistorySyncNotification historySyncNotification = 6;
+  optional AppStateSyncKeyShare appStateSyncKeyShare = 7;
+  optional AppStateSyncKeyRequest appStateSyncKeyRequest = 8;
+  optional InitialSecurityNotificationSettingSync initialSecurityNotificationSettingSync = 9;
+  optional AppStateFatalExceptionNotification appStateFatalExceptionNotification = 10;
+  optional DisappearingMode disappearingMode = 11;
+  optional Message editedMessage = 14;
+  optional bytes timestampMs = 15;
+  optional PeerDataOperationRequestMessage peerDataOperationRequestMessage = 16;
+  optional PeerDataOperationRequestResponseMessage peerDataOperationRequestResponseMessage = 17;
+  optional bytes botFeedbackMessage = 18;
+  optional bytes invokerJid = 19;
+  optional RequestWelcomeMessageMetadata requestWelcomeMessageMetadata = 20;
+  optional MediaNotifyMessage mediaNotifyMessage = 21;
+  optional CloudAPIThreadControlNotification cloudApiThreadControlNotification = 22;
+  optional LIDMigrationMappingSyncMessage lidMigrationMappingSyncMessage = 23;
+  optional bytes limitSharing = 24;
+  optional bytes aiPsiMetadata = 25;
+  optional AIQueryFanout aiQueryFanout = 26;
+  optional MemberLabel memberLabel = 27;
+  optional bytes aiMediaCollectionMessage = 28;
+  optional bytes afterReadDuration = 29;
+}

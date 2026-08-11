@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterAdminInfoJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterAdminInfoJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26278439461859188",
+    "operation": "query",
+    "variables": [
+      "newsletter_id"
+    ],
+    "root_field": "xwa2_newsletter_admin",
+    "document": "query MexFetchNewsletterAdminInfoJobQuery($newsletter_id) {\n  admin_count\n  id\n  admin_profile {\n    name\n    picture {\n      direct_path\n      admin_settings {\n        admin_profiles_enabled\n        xwa2_newsletter_admin {\n          xwa2_newsletter_admin {\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterAdminInfoJobQuery.graphql",
+    "matches": "id: \"26278439461859188\""
+  },
+  "literals": [
+    "26278439461859188",
+    "WAWebMexFetchNewsletterAdminInfoJobQuery",
+    "xwa2_newsletter_admin"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterAdminInfoJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

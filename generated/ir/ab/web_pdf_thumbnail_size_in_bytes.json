@@ -1,0 +1,47 @@
+{
+  "id": "ab:web_pdf_thumbnail_size_in_bytes",
+  "kind": "ab",
+  "name": "web_pdf_thumbnail_size_in_bytes",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16834,
+    "type": "int",
+    "default": 1300,
+    "alt_default": 1300
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_pdf_thumbnail_size_in_bytes:\\s*\\[\\s*16834"
+  },
+  "literals": [
+    "web_pdf_thumbnail_size_in_bytes",
+    "16834"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebMediaUploadMediaWithPrep",
+      "WAWebPDFUtils",
+      "WAWebTPDocumentEnrichment"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

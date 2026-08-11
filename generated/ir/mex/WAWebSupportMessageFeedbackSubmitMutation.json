@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebSupportMessageFeedbackSubmitMutation",
+  "kind": "mex",
+  "name": "WAWebSupportMessageFeedbackSubmitMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25772720305756789",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation SupportMessageFeedbackSubmitMutation($input) {\n  xwa_wa_support_message_feedback_submit {\n    success\n    error_code\n    error_message\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebSupportMessageFeedbackSubmitMutation.graphql",
+    "matches": "id: \"25772720305756789\""
+  },
+  "literals": [
+    "25772720305756789",
+    "WAWebSupportMessageFeedbackSubmitMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSupportMessageFeedbackSubmitMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

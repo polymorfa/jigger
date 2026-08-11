@@ -1,0 +1,42 @@
+{
+  "id": "ab:coex_revoke_message_enabled",
+  "kind": "ab",
+  "name": "coex_revoke_message_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 19285,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "coex_revoke_message_enabled:\\s*\\[\\s*19285"
+  },
+  "literals": [
+    "coex_revoke_message_enabled",
+    "19285"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

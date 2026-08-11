@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_payments_smb_enabled",
+  "kind": "ab",
+  "name": "wa_payments_smb_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27173,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_payments_smb_enabled:\\s*\\[\\s*27173"
+  },
+  "literals": [
+    "wa_payments_smb_enabled",
+    "27173"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

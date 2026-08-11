@@ -1,0 +1,47 @@
+{
+  "id": "wam:4816",
+  "kind": "wam",
+  "name": "WebDbVersionNonAnonymous",
+  "data": {
+    "kind": "wam",
+    "event_id": 4816,
+    "fields": {
+      "webDbName": {
+        "id": 1,
+        "type": "WEB_DB_NAME_TYPE",
+        "wire": "web_db_name",
+        "enum_ref": "WEB_DB_NAME_TYPE"
+      },
+      "webDbVersionNumber": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "web_db_version_number"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      20
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebDbVersionNonAnonymousWamEvent",
+    "matches": "WebDbVersionNonAnonymous:\\s*\\[\\s*4816"
+  },
+  "literals": [
+    "4816"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebDbNameType"
+    ],
+    "dependents": [
+      "WAWebReportDbVerionsJob",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "wam:2522",
+  "kind": "wam",
+  "name": "MdAppStateMessageRange",
+  "data": {
+    "kind": "wam",
+    "event_id": 2522,
+    "fields": {
+      "additionalMessagesCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "additional_messages_count"
+      }
+    },
+    "weights": [
+      1,
+      20,
+      1000
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdAppStateMessageRangeWamEvent",
+    "matches": "MdAppStateMessageRange:\\s*\\[\\s*2522"
+  },
+  "literals": [
+    "2522"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerWamMutation",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

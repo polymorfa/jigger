@@ -1,0 +1,42 @@
+{
+  "id": "ab:p2p_pills_enabled_for_ineligible_contacts",
+  "kind": "ab",
+  "name": "p2p_pills_enabled_for_ineligible_contacts",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29715,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "p2p_pills_enabled_for_ineligible_contacts:\\s*\\[\\s*29715"
+  },
+  "literals": [
+    "p2p_pills_enabled_for_ineligible_contacts",
+    "29715"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

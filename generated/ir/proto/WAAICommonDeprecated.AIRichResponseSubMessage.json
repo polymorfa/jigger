@@ -1,0 +1,67 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseSubMessage",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseSubMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "codeMetadata": {
+        "number": 5,
+        "type_name": "WAAICommonDeprecated.AIRichResponseCodeMetadata"
+      },
+      "contentItemsMetadata": {
+        "number": 10,
+        "type_name": "WAAICommonDeprecated.AIRichResponseContentItemsMetadata"
+      },
+      "dynamicMetadata": {
+        "number": 7,
+        "type_name": "WAAICommonDeprecated.AIRichResponseDynamicMetadata"
+      },
+      "gridImageMetadata": {
+        "number": 2,
+        "type_name": "WAAICommonDeprecated.AIRichResponseGridImageMetadata"
+      },
+      "imageMetadata": {
+        "number": 4,
+        "type_name": "WAAICommonDeprecated.AIRichResponseInlineImageMetadata"
+      },
+      "latexMetadata": {
+        "number": 8,
+        "type_name": "WAAICommonDeprecated.AIRichResponseLatexMetadata"
+      },
+      "mapMetadata": {
+        "number": 9,
+        "type_name": "WAAICommonDeprecated.AIRichResponseMapMetadata"
+      },
+      "messageText": {
+        "number": 3
+      },
+      "messageType": {
+        "number": 1
+      },
+      "tableMetadata": {
+        "number": 6,
+        "type_name": "WAAICommonDeprecated.AIRichResponseTableMetadata"
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseSubMessage\""
+  },
+  "literals": [
+    "AIRichResponseSubMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

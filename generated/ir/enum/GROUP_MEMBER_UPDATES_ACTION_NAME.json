@@ -1,0 +1,98 @@
+{
+  "id": "enum:GROUP_MEMBER_UPDATES_ACTION_NAME",
+  "kind": "enum",
+  "name": "GROUP_MEMBER_UPDATES_ACTION_NAME",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupMemberUpdatesActionName",
+    "variants": [
+      {
+        "name": "VIEW",
+        "value": 0.0
+      },
+      {
+        "name": "CLICK_PAST_MEMBER_UPDATE",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK_USERNAME_UPDATE",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_INFO_OPTION",
+        "value": 3.0
+      },
+      {
+        "name": "CLICK_MESSAGE_OPTION",
+        "value": 4.0
+      },
+      {
+        "name": "CLICK_AUDIO_OPTION",
+        "value": 5.0
+      },
+      {
+        "name": "CLICK_VIDEO_OPTION",
+        "value": 6.0
+      },
+      {
+        "name": "CLICK_USERNAME_UPSELL_OPTION",
+        "value": 7.0
+      },
+      {
+        "name": "CLICK_EDIT_CONTACT_INFO",
+        "value": 8.0
+      },
+      {
+        "name": "FETCH_MEMBER_UPDATES_SUCCESS",
+        "value": 9.0
+      },
+      {
+        "name": "FETCH_MEMBER_UPDATES_FAILURE",
+        "value": 10.0
+      },
+      {
+        "name": "FETCH_MEMBER_UPDATES_EMPTY",
+        "value": 11.0
+      },
+      {
+        "name": "VIEW_USERNAME_UPSELL_BUTTON",
+        "value": 12.0
+      },
+      {
+        "name": "CLICK_ADD_TO_CONTACTS",
+        "value": 13.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupMemberUpdatesActionName",
+    "matches": "GROUP_MEMBER_UPDATES_ACTION_NAME\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_MEMBER_UPDATES_ACTION_NAME",
+    "VIEW",
+    "CLICK_PAST_MEMBER_UPDATE",
+    "CLICK_USERNAME_UPDATE",
+    "CLICK_INFO_OPTION",
+    "CLICK_MESSAGE_OPTION",
+    "CLICK_AUDIO_OPTION",
+    "CLICK_VIDEO_OPTION",
+    "CLICK_USERNAME_UPSELL_OPTION",
+    "CLICK_EDIT_CONTACT_INFO",
+    "FETCH_MEMBER_UPDATES_SUCCESS",
+    "FETCH_MEMBER_UPDATES_FAILURE",
+    "FETCH_MEMBER_UPDATES_EMPTY",
+    "VIEW_USERNAME_UPSELL_BUTTON",
+    "CLICK_ADD_TO_CONTACTS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupMemberUpdatesPanel.react",
+      "WAWebGroupMemberUpdatesWamEvent",
+      "WAWebInfoFlow.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

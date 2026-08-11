@@ -1,0 +1,49 @@
+{
+  "id": "proto:WACommon.MessageKey",
+  "kind": "proto",
+  "name": "WACommon.MessageKey",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "fromMe": {
+        "number": 2
+      },
+      "id": {
+        "number": 3
+      },
+      "participant": {
+        "number": 4
+      },
+      "remoteJid": {
+        "number": 1
+      }
+    },
+    "module": "WACommon.pb"
+  },
+  "evidence": {
+    "module": "WACommon.pb",
+    "matches": "name = \"MessageKey\""
+  },
+  "literals": [
+    "MessageKey"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWBridgeBuildMsgMentions",
+      "WAArmadilloApplication.pb",
+      "WAArmadilloXMA.pb",
+      "WAConsumerApplication.pb",
+      "WAMediaTransport.pb",
+      "WAMsgApplication.pb",
+      "WAMsgTransport.pb",
+      "WAParseConsumerMessageProtocol",
+      "maybeConvertMessageTextMentionsV2ToV1",
+      "useMAWSendSecureMessageV2"
+    ],
+    "dep_count": 1,
+    "dependent_count": 10
+  }
+}

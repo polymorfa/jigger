@@ -1,0 +1,45 @@
+{
+  "id": "ab:im_a2ui_require_bot_attribution",
+  "kind": "ab",
+  "name": "im_a2ui_require_bot_attribution",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34324,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "im_a2ui_require_bot_attribution:\\s*\\[\\s*34324"
+  },
+  "literals": [
+    "im_a2ui_require_bot_attribution",
+    "34324"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebInteractiveBloksWidget.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

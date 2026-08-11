@@ -1,0 +1,45 @@
+{
+  "id": "ab:group_history_bundle_time_limit_receiver_enforcement_secs",
+  "kind": "ab",
+  "name": "group_history_bundle_time_limit_receiver_enforcement_secs",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25910,
+    "type": "int",
+    "default": 1209600,
+    "alt_default": 1209600
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_history_bundle_time_limit_receiver_enforcement_secs:\\s*\\[\\s*25910"
+  },
+  "literals": [
+    "group_history_bundle_time_limit_receiver_enforcement_secs",
+    "25910"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGroupHistoryUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

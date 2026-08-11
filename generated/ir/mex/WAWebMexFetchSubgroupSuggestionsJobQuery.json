@@ -1,0 +1,34 @@
+{
+  "id": "mex:WAWebMexFetchSubgroupSuggestionsJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchSubgroupSuggestionsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "23972005349071865",
+    "operation": "query",
+    "variables": [
+      "group_id",
+      "query_context",
+      "sub_group_hint_id"
+    ],
+    "root_field": "xwa2_group_query_by_id",
+    "document": "query MexFetchSubgroupSuggestionsJobQuery($group_id, $query_context, $sub_group_hint_id) {\n  id\n  value\n  subject {\n    creator {\n      creation_time\n      total_participants_count\n      is_existing_group\n      hidden_group\n      xwa2_group_query_by_id {\n        sub_group_suggestions {\n          edges {\n            node {\n              description {\n                xwa2_group_query_by_id {\n                  __typename\n                  sub_group_suggestions {\n                    edges {\n                      node {\n                        description {\n                        }\n                      }\n                    }\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchSubgroupSuggestionsJobQuery.graphql",
+    "matches": "id: \"23972005349071865\""
+  },
+  "literals": [
+    "23972005349071865",
+    "WAWebMexFetchSubgroupSuggestionsJobQuery",
+    "xwa2_group_query_by_id"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchSubgroupSuggestionsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

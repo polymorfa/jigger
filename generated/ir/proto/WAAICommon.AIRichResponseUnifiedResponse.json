@@ -1,0 +1,33 @@
+{
+  "id": "proto:WAAICommon.AIRichResponseUnifiedResponse",
+  "kind": "proto",
+  "name": "WAAICommon.AIRichResponseUnifiedResponse",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "data": {
+        "number": 1
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"AIRichResponseUnifiedResponse\""
+  },
+  "literals": [
+    "AIRichResponseUnifiedResponse"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "enum:ONE_PD_SIGNAL_NOT_SHARED_REASON",
+  "kind": "enum",
+  "name": "ONE_PD_SIGNAL_NOT_SHARED_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOnePdSignalNotSharedReason",
+    "variants": [
+      {
+        "name": "VALUE_NOT_AVAILABLE",
+        "value": 0.0
+      },
+      {
+        "name": "WINDOW_EXPIRED",
+        "value": 1.0
+      },
+      {
+        "name": "TOKEN_EXPIRED",
+        "value": 2.0
+      },
+      {
+        "name": "SIGNAL_NOT_ALLOWLISTED",
+        "value": 3.0
+      },
+      {
+        "name": "INVALID_URL",
+        "value": 4.0
+      },
+      {
+        "name": "DISCLOSURE_ABPROP_DISABLED",
+        "value": 5.0
+      },
+      {
+        "name": "USER_UNDISCLOSED_OR_NOT_ELIGIBLE_FOR_DISCLOSURE",
+        "value": 6.0
+      },
+      {
+        "name": "BLOCKED",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOnePdSignalNotSharedReason",
+    "matches": "ONE_PD_SIGNAL_NOT_SHARED_REASON\\s*[:=]"
+  },
+  "literals": [
+    "ONE_PD_SIGNAL_NOT_SHARED_REASON",
+    "VALUE_NOT_AVAILABLE",
+    "WINDOW_EXPIRED",
+    "TOKEN_EXPIRED",
+    "SIGNAL_NOT_ALLOWLISTED",
+    "INVALID_URL",
+    "DISCLOSURE_ABPROP_DISABLED",
+    "USER_UNDISCLOSED_OR_NOT_ELIGIBLE_FOR_DISCLOSURE",
+    "BLOCKED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils",
+      "WAWebMmSignalSharingVerificationEventWamEvent",
+      "WAWebMmSignalSharingVerificationFsEventWamEvent",
+      "WAWebMmSignalSharingVerificationWithSignalDataEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

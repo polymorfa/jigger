@@ -1,0 +1,4 @@
+message AIRegenerateMetadata {
+  optional bytes messageKey = 1;
+  optional bytes responseTimestampMs = 2;
+}

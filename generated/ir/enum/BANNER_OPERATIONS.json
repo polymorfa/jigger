@@ -1,0 +1,66 @@
+{
+  "id": "enum:BANNER_OPERATIONS",
+  "kind": "enum",
+  "name": "BANNER_OPERATIONS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBannerOperations",
+    "variants": [
+      {
+        "name": "SHOWN",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK",
+        "value": 2.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 3.0
+      },
+      {
+        "name": "ELIGIBLE",
+        "value": 4.0
+      },
+      {
+        "name": "REVOKED",
+        "value": 5.0
+      },
+      {
+        "name": "RENDERED",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBannerOperations",
+    "matches": "BANNER_OPERATIONS\\s*[:=]"
+  },
+  "literals": [
+    "BANNER_OPERATIONS",
+    "SHOWN",
+    "CLICK",
+    "DISMISS",
+    "ELIGIBLE",
+    "REVOKED",
+    "RENDERED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBannerEventWamEvent",
+      "WAWebBizAddPixKeyButton.react",
+      "WAWebBizAddPixKeyPromo.react",
+      "WAWebBizChargesInfoBanner.react",
+      "WAWebBizPixKeyPromo.react",
+      "WAWebNuxCoolOff",
+      "WAWebQuickPromotionCustomHandlingUtils",
+      "WAWebSmbUpsellBusinessInfoWithUpsellModal.react",
+      "WAWebSmbUpsellSmbAppUpsellModal.react",
+      "WAWebUpdatesTabPrivacyFooter.react",
+      "useWAWebContextualBanner"
+    ],
+    "dep_count": 0,
+    "dependent_count": 11
+  }
+}

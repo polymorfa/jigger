@@ -1,0 +1,3 @@
+message Metadata {
+  optional bytes specialTextSize = 1;
+}

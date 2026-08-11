@@ -1,0 +1,130 @@
+{
+  "id": "wam:1584",
+  "kind": "wam",
+  "name": "MediaStreamPlayback",
+  "data": {
+    "kind": "wam",
+    "event_id": 1584,
+    "fields": {
+      "bytesDownloadedStart": {
+        "id": 4,
+        "type": "NUMBER",
+        "wire": "bytes_downloaded_start"
+      },
+      "bytesTransferred": {
+        "id": 5,
+        "type": "NUMBER",
+        "wire": "bytes_transferred"
+      },
+      "didPlay": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "did_play"
+      },
+      "forcedPlayCount": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "forced_play_count"
+      },
+      "initialBufferingT": {
+        "id": 7,
+        "type": "TIMER",
+        "wire": "initial_buffering_t"
+      },
+      "mediaSize": {
+        "id": 2,
+        "type": "NUMBER",
+        "wire": "media_size"
+      },
+      "mediaType": {
+        "id": 3,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "overallPlayT": {
+        "id": 10,
+        "type": "TIMER",
+        "wire": "overall_play_t"
+      },
+      "overallT": {
+        "id": 1,
+        "type": "TIMER",
+        "wire": "overall_t"
+      },
+      "playbackCount": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "playback_count"
+      },
+      "playbackError": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "playback_error"
+      },
+      "playbackOrigin": {
+        "id": 16,
+        "type": "PLAYBACK_ORIGIN_TYPE",
+        "wire": "playback_origin",
+        "enum_ref": "PLAYBACK_ORIGIN_TYPE"
+      },
+      "playbackState": {
+        "id": 11,
+        "type": "PLAYBACK_STATE_TYPE",
+        "wire": "playback_state",
+        "enum_ref": "PLAYBACK_STATE_TYPE"
+      },
+      "seekCount": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "seek_count"
+      },
+      "statusId": {
+        "id": 18,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "totalRebufferingCount": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "total_rebuffering_count"
+      },
+      "totalRebufferingT": {
+        "id": 8,
+        "type": "TIMER",
+        "wire": "total_rebuffering_t"
+      },
+      "videoDuration": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "video_duration"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMediaStreamPlaybackWamEvent",
+    "matches": "MediaStreamPlayback:\\s*\\[\\s*1584"
+  },
+  "literals": [
+    "1584"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumPlaybackOriginType",
+      "WAWebWamEnumPlaybackStateType"
+    ],
+    "dependents": [
+      "useWAWebMediaStreamPlaybackMetric"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

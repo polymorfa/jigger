@@ -1,0 +1,33 @@
+{
+  "id": "sig:notification/reset_smb_last_qp_prefetch_timestamp",
+  "kind": "sig",
+  "name": "PsaResetSmbLastQpPrefetchTimestampRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "reset_smb_last_qp_prefetch_timestamp"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPsaResetSmbLastQpPrefetchTimestampRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "reset_smb_last_qp_prefetch_timestamp"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInPsaServerNotificationMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxPsaResetSmbLastQpPrefetchTimestampRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

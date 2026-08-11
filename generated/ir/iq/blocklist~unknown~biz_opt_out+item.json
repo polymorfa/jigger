@@ -1,0 +1,344 @@
+{
+  "id": "iq:blocklist/unknown/biz_opt_out+item",
+  "kind": "iq",
+  "name": "BlocklistsUpdateBlockList",
+  "data": {
+    "kind": "iq",
+    "xmlns": "blocklist",
+    "type": "unknown",
+    "tags": [
+      "biz_opt_out",
+      "item"
+    ],
+    "rpc": "WASmaxBlocklistsUpdateBlockListRPC",
+    "responses": [
+      {
+        "arm": "SuccessWithMatch",
+        "module": "WASmaxInBlocklistsUpdateBlockListResponseSuccessWithMatch",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "list",
+              "attrs": [
+                {
+                  "name": "matched",
+                  "ty": "string",
+                  "literal": "true",
+                  "optional": false
+                },
+                {
+                  "name": "dhash",
+                  "ty": "string",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "SuccessWithMismatch",
+        "module": "WASmaxInBlocklistsUpdateBlockListResponseSuccessWithMismatch",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "list",
+              "attrs": [
+                {
+                  "name": "matched",
+                  "ty": "string",
+                  "literal": "false",
+                  "optional": false
+                },
+                {
+                  "name": "dhash",
+                  "ty": "string",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "item",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "MigratedSuccessWithMismatch",
+        "module": "WASmaxInBlocklistsUpdateBlockListResponseMigratedSuccessWithMismatch",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "list",
+              "attrs": [
+                {
+                  "name": "matched",
+                  "ty": "string",
+                  "literal": "false",
+                  "optional": false
+                },
+                {
+                  "name": "dhash",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "addressing_mode",
+                  "ty": "string",
+                  "literal": "lid",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "item",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "DisplayName",
+          "GuestName",
+          "GuestNameAndDisplayName",
+          "PnJid",
+          "UnknownIdentifier",
+          "Username"
+        ]
+      },
+      {
+        "arm": "CAPISuccessWithMismatch",
+        "module": "WASmaxInBlocklistsUpdateBlockListResponseCAPISuccessWithMismatch",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "list",
+              "attrs": [
+                {
+                  "name": "matched",
+                  "ty": "string",
+                  "literal": "false",
+                  "optional": false
+                },
+                {
+                  "name": "dhash",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "addressing_mode",
+                  "ty": "string",
+                  "literal": "lid",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "item",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "DisplayName",
+          "GuestName",
+          "GuestNameAndDisplayName",
+          "PnJid",
+          "UnknownIdentifier",
+          "Username"
+        ]
+      },
+      {
+        "arm": "InvalidRequest",
+        "module": "WASmaxInBlocklistsUpdateBlockListResponseInvalidRequest",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "attrs": [
+                {
+                  "name": "addressing_mode",
+                  "ty": "stringenum",
+                  "optional": true
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorForbidden",
+          "IQErrorNotAcceptable",
+          "IQErrorNotAllowed",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInBlocklistsUpdateBlockListResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFeatureNotImplemented",
+          "IQErrorInternalServerError"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutBlocklistsUpdateBlockListRequest",
+    "matches": "smax\\(\"biz_opt_out\""
+  },
+  "literals": [
+    "blocklist",
+    "biz_opt_out",
+    "item"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxMixins",
+      "WASmaxOutBlocklistsUpdateBlockListBlockOrUpdateBlockListUnblockItemMixinGroup",
+      "WASmaxOutBlocklistsUpdateBlockListReportBlockEntryPointMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxBlocklistsUpdateBlockListRPC"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

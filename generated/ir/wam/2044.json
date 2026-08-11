@@ -1,0 +1,182 @@
+{
+  "id": "wam:2044",
+  "kind": "wam",
+  "name": "PttPlayback",
+  "data": {
+    "kind": "wam",
+    "event_id": 2044,
+    "fields": {
+      "audioStreamType": {
+        "id": 19,
+        "type": "AUDIO_STREAM_TYPE",
+        "wire": "audio_stream_type",
+        "enum_ref": "AUDIO_STREAM_TYPE"
+      },
+      "pttAudioRouteBluetoothTime": {
+        "id": 23,
+        "type": "TIMER",
+        "wire": "ptt_audio_route_bluetooth_time"
+      },
+      "pttAudioRouteChangeCount": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "ptt_audio_route_change_count"
+      },
+      "pttAudioRouteEarpieceTime": {
+        "id": 24,
+        "type": "TIMER",
+        "wire": "ptt_audio_route_earpiece_time"
+      },
+      "pttAudioRouteHeadsetTime": {
+        "id": 25,
+        "type": "TIMER",
+        "wire": "ptt_audio_route_headset_time"
+      },
+      "pttAudioRouteInitial": {
+        "id": 21,
+        "type": "AUDIO_OUTPUT_ROUTE",
+        "wire": "ptt_audio_route_initial",
+        "enum_ref": "AUDIO_OUTPUT_ROUTE"
+      },
+      "pttAudioRouteLast": {
+        "id": 22,
+        "type": "AUDIO_OUTPUT_ROUTE",
+        "wire": "ptt_audio_route_last",
+        "enum_ref": "AUDIO_OUTPUT_ROUTE"
+      },
+      "pttAudioRouteSpeakerTime": {
+        "id": 26,
+        "type": "TIMER",
+        "wire": "ptt_audio_route_speaker_time"
+      },
+      "pttDuration": {
+        "id": 12,
+        "type": "TIMER",
+        "wire": "ptt_duration"
+      },
+      "pttMainThreadBlock": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "ptt_main_thread_block"
+      },
+      "pttMiniPlayerClick": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "ptt_mini_player_click"
+      },
+      "pttMiniPlayerClose": {
+        "id": 16,
+        "type": "BOOLEAN",
+        "wire": "ptt_mini_player_close"
+      },
+      "pttMiniPlayerPauseCnt": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "ptt_mini_player_pause_cnt"
+      },
+      "pttPlayRequestT": {
+        "id": 1,
+        "type": "TIMER",
+        "wire": "ptt_play_request_t"
+      },
+      "pttPlaybackFailed": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "ptt_playback_failed"
+      },
+      "pttPlaybackOverallT": {
+        "id": 4,
+        "type": "TIMER",
+        "wire": "ptt_playback_overall_t"
+      },
+      "pttPlaybackSpeed": {
+        "id": 10,
+        "type": "PTT_PLAYBACK_SPEED_TYPE",
+        "wire": "ptt_playback_speed",
+        "enum_ref": "PTT_PLAYBACK_SPEED_TYPE"
+      },
+      "pttPlaybackSpeedCnt": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "ptt_playback_speed_cnt"
+      },
+      "pttPlayedOutOfChat": {
+        "id": 18,
+        "type": "BOOLEAN",
+        "wire": "ptt_played_out_of_chat"
+      },
+      "pttPlayedPct": {
+        "id": 14,
+        "type": "NUMBER",
+        "wire": "ptt_played_pct"
+      },
+      "pttPlayer": {
+        "id": 9,
+        "type": "PTT_PLAYER_TYPE",
+        "wire": "ptt_player",
+        "enum_ref": "PTT_PLAYER_TYPE"
+      },
+      "pttPlayerInitT": {
+        "id": 2,
+        "type": "TIMER",
+        "wire": "ptt_player_init_t"
+      },
+      "pttPlayerPlayT": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "ptt_player_play_t"
+      },
+      "pttSeekCnt": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "ptt_seek_cnt"
+      },
+      "pttTrigger": {
+        "id": 5,
+        "type": "PTT_TRIGGER_TYPE",
+        "wire": "ptt_trigger",
+        "enum_ref": "PTT_TRIGGER_TYPE"
+      },
+      "pttType": {
+        "id": 6,
+        "type": "PTT_STREAM_TYPE",
+        "wire": "ptt_type",
+        "enum_ref": "PTT_STREAM_TYPE"
+      },
+      "pttVolumeUpAfterMaxCount": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "ptt_volume_up_after_max_count"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPttPlaybackWamEvent",
+    "matches": "PttPlayback:\\s*\\[\\s*2044"
+  },
+  "literals": [
+    "2044"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAudioOutputRoute",
+      "WAWebWamEnumAudioStreamType",
+      "WAWebWamEnumPttPlaybackSpeedType",
+      "WAWebWamEnumPttPlayerType",
+      "WAWebWamEnumPttStreamType",
+      "WAWebWamEnumPttTriggerType"
+    ],
+    "dependents": [
+      "WAWebPttPlaybackLogger"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

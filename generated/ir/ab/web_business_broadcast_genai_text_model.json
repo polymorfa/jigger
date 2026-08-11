@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_business_broadcast_genai_text_model",
+  "kind": "ab",
+  "name": "web_business_broadcast_genai_text_model",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32051,
+    "type": "string",
+    "default": "LLAMA",
+    "alt_default": "LLAMA"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_business_broadcast_genai_text_model:\\s*\\[\\s*32051"
+  },
+  "literals": [
+    "web_business_broadcast_genai_text_model",
+    "32051"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizBroadcastGenAIGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

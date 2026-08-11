@@ -1,0 +1,46 @@
+{
+  "id": "ab:device_capabilities_v2_sync_enabled",
+  "kind": "ab",
+  "name": "device_capabilities_v2_sync_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33380,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "device_capabilities_v2_sync_enabled:\\s*\\[\\s*33380"
+  },
+  "literals": [
+    "device_capabilities_v2_sync_enabled",
+    "33380"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebDeviceCapabilitiesBootstrap",
+      "WAWebDeviceCapabilitiesV2Sync"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

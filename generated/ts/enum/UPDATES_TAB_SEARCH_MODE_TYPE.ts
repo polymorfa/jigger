@@ -1,0 +1,4 @@
+export enum UPDATESTABSEARCHMODETYPE {
+  QUERY = 0,
+  RECENT = 1,
+}

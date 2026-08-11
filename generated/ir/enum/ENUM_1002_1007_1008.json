@@ -1,0 +1,57 @@
+{
+  "id": "enum:ENUM_1002_1007_1008",
+  "kind": "enum",
+  "name": "ENUM_1002_1007_1008",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInReceiptEnums",
+    "variants": [
+      {
+        "name": "1002",
+        "value": "1002"
+      },
+      {
+        "name": "1007",
+        "value": "1007"
+      },
+      {
+        "name": "1008",
+        "value": "1008"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptEnums",
+    "matches": "ENUM_1002_1007_1008\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_1002_1007_1008",
+    "1002",
+    "1007",
+    "1008"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInReceiptAggregatedByMessageIdMixin",
+      "WASmaxInReceiptDeliverAggregatedByMessageIdStyleMixin",
+      "WASmaxInReceiptDeliverMessageAggregatedStyleMixin",
+      "WASmaxInReceiptDeliverPaidConversationAggregatedMixin",
+      "WASmaxInReceiptDeprecatedDeliveryTypeMixin",
+      "WASmaxInReceiptDeprecatedEditMixin",
+      "WASmaxInReceiptGroupMixin",
+      "WASmaxInReceiptHSMErrorTypeMixin",
+      "WASmaxInReceiptIndividualMixin",
+      "WASmaxInReceiptOrderStatusErrorTypeMixin",
+      "WASmaxInReceiptPublishSuccessMixin",
+      "WASmaxInReceiptRecipientMixin",
+      "WASmaxInReceiptRoiTemplateSourceMixin",
+      "WASmaxInReceiptServerErrorTypeMixin",
+      "WASmaxOutReceiptDeliverResponseSuccess"
+    ],
+    "dep_count": 1,
+    "dependent_count": 15
+  }
+}

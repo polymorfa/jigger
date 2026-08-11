@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_minimize_individual_mutation_write",
+  "kind": "ab",
+  "name": "enable_minimize_individual_mutation_write",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8910,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_minimize_individual_mutation_write:\\s*\\[\\s*8910"
+  },
+  "literals": [
+    "enable_minimize_individual_mutation_write",
+    "8910"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

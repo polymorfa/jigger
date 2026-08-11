@@ -1,0 +1,45 @@
+{
+  "id": "ab:animated_emoji_use_lazy_parsing",
+  "kind": "ab",
+  "name": "animated_emoji_use_lazy_parsing",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29140,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "animated_emoji_use_lazy_parsing:\\s*\\[\\s*29140"
+  },
+  "literals": [
+    "animated_emoji_use_lazy_parsing",
+    "29140"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebAnimatedEmojiAssetLoader"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

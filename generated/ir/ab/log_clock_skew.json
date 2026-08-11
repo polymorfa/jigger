@@ -1,0 +1,45 @@
+{
+  "id": "ab:log_clock_skew",
+  "kind": "ab",
+  "name": "log_clock_skew",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1190,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "log_clock_skew:\\s*\\[\\s*1190"
+  },
+  "literals": [
+    "log_clock_skew",
+    "1190"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUpdateClockSkewUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

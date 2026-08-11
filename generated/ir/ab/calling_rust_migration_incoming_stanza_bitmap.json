@@ -1,0 +1,42 @@
+{
+  "id": "ab:calling_rust_migration_incoming_stanza_bitmap",
+  "kind": "ab",
+  "name": "calling_rust_migration_incoming_stanza_bitmap",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26876,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "calling_rust_migration_incoming_stanza_bitmap:\\s*\\[\\s*26876"
+  },
+  "literals": [
+    "calling_rust_migration_incoming_stanza_bitmap",
+    "26876"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

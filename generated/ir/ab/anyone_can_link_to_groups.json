@@ -1,0 +1,42 @@
+{
+  "id": "ab:anyone_can_link_to_groups",
+  "kind": "ab",
+  "name": "anyone_can_link_to_groups",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13268,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "anyone_can_link_to_groups:\\s*\\[\\s*13268"
+  },
+  "literals": [
+    "anyone_can_link_to_groups",
+    "13268"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

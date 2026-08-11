@@ -1,0 +1,57 @@
+{
+  "id": "enum:LOG_TYPE",
+  "kind": "enum",
+  "name": "LOG_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLogType",
+    "variants": [
+      {
+        "name": "MINOR_EVENT",
+        "value": 0.0
+      },
+      {
+        "name": "COUNTING_STAT",
+        "value": 1.0
+      },
+      {
+        "name": "UNCAUGHT_EXCEPTION",
+        "value": 3.0
+      },
+      {
+        "name": "UNHANDLED_REJECTED_PROMISE",
+        "value": 4.0
+      },
+      {
+        "name": "INVESTIGATION",
+        "value": 5.0
+      },
+      {
+        "name": "UNCATEGORIZED",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLogType",
+    "matches": "LOG_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LOG_TYPE",
+    "MINOR_EVENT",
+    "COUNTING_STAT",
+    "UNCAUGHT_EXCEPTION",
+    "UNHANDLED_REJECTED_PROMISE",
+    "INVESTIGATION",
+    "UNCATEGORIZED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCrashlog",
+      "WAWebWebcMinorEventLogWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

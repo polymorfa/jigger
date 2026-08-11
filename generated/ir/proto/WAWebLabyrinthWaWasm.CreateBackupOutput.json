@@ -1,0 +1,50 @@
+{
+  "id": "proto:WAWebLabyrinthWaWasm.CreateBackupOutput",
+  "kind": "proto",
+  "name": "WAWebLabyrinthWaWasm.CreateBackupOutput",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "device": {
+        "number": 1,
+        "type_name": "WAWebLabyrinthWaWasm.DeviceOutput"
+      },
+      "epoch0": {
+        "number": 3,
+        "type_name": "WAWebLabyrinthWaWasm.Epoch0Output"
+      },
+      "error": {
+        "number": 5
+      },
+      "mailboxRootKey": {
+        "number": 4
+      },
+      "virtualDevice": {
+        "number": 2,
+        "type_name": "WAWebLabyrinthWaWasm.VirtualDeviceOutput"
+      }
+    },
+    "module": "WAWebLabyrinthWaWasm.pb"
+  },
+  "evidence": {
+    "module": "WAWebLabyrinthWaWasm.pb",
+    "matches": "name = \"CreateBackupOutput\""
+  },
+  "literals": [
+    "CreateBackupOutput"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebLabyrinthWasmCreateBackup",
+      "WAWebLabyrinthWasmDecryptMessage",
+      "WAWebLabyrinthWasmDeriveMessageKey",
+      "WAWebLabyrinthWasmEncryptMessage",
+      "WAWebLabyrinthWasmOrfThreadId"
+    ],
+    "dep_count": 1,
+    "dependent_count": 5
+  }
+}

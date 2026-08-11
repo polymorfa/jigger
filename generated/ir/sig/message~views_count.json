@@ -1,0 +1,31 @@
+{
+  "id": "sig:message/views_count",
+  "kind": "sig",
+  "name": "NewslettersNewsletterViewsCountDeprecatedMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "views_count"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInNewslettersNewsletterViewsCountDeprecatedMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "views_count"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInNewslettersNewsletterViewsCountViewsOrDeprecatedMixinGroup"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

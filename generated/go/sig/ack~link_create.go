@@ -1,0 +1,2 @@
+// ParseVoipLinkCreateResponseLinkCreateAck matches <ack>. Server-initiated; nothing sends it.
+func ParseVoipLinkCreateResponseLinkCreateAck(n *waBinary.Node) (*VoipLinkCreateResponseLinkCreateAck, error)

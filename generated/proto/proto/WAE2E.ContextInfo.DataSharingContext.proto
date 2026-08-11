@@ -1,0 +1,6 @@
+message DataSharingContext {
+  optional bytes showMmDisclosure = 1;
+  optional bytes encryptedSignalTokenConsented = 2;
+  optional Parameters parameters = 3;
+  optional bytes dataSharingFlags = 4;
+}

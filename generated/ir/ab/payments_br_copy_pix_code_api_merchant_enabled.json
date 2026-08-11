@@ -1,0 +1,42 @@
+{
+  "id": "ab:payments_br_copy_pix_code_api_merchant_enabled",
+  "kind": "ab",
+  "name": "payments_br_copy_pix_code_api_merchant_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9017,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "payments_br_copy_pix_code_api_merchant_enabled:\\s*\\[\\s*9017"
+  },
+  "literals": [
+    "payments_br_copy_pix_code_api_merchant_enabled",
+    "9017"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

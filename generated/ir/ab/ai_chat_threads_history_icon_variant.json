@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_chat_threads_history_icon_variant",
+  "kind": "ab",
+  "name": "ai_chat_threads_history_icon_variant",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27316,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_chat_threads_history_icon_variant:\\s*\\[\\s*27316"
+  },
+  "literals": [
+    "ai_chat_threads_history_icon_variant",
+    "27316"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

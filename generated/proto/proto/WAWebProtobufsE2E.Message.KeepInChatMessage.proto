@@ -1,0 +1,5 @@
+message KeepInChatMessage {
+  optional bytes key = 1;
+  optional bytes keepType = 2;
+  optional bytes timestampMs = 3;
+}

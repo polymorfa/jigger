@@ -1,0 +1,2 @@
+/** A/B property 21819 (bool), default false. */
+export const ABCtwaSuppressMessageWithExternalAdReplyConsumerDbLevelEnabled = 'ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled' as const

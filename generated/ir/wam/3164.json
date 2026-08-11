@@ -1,0 +1,64 @@
+{
+  "id": "wam:3164",
+  "kind": "wam",
+  "name": "MdBootstrapAppStateCriticalDataProcessing",
+  "data": {
+    "kind": "wam",
+    "event_id": 3164,
+    "fields": {
+      "bootstrapAppStateDataStage": {
+        "id": 1,
+        "type": "BOOTSTRAP_APP_STATE_DATA_STAGE_CODE",
+        "wire": "bootstrap_app_state_data_stage",
+        "enum_ref": "BOOTSTRAP_APP_STATE_DATA_STAGE_CODE"
+      },
+      "mdBootstrapPayloadType": {
+        "id": 2,
+        "type": "MD_BOOTSTRAP_PAYLOAD_TYPE",
+        "wire": "md_bootstrap_payload_type",
+        "enum_ref": "MD_BOOTSTRAP_PAYLOAD_TYPE"
+      },
+      "mdRegAttemptId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "md_reg_attempt_id"
+      },
+      "mdSessionId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "md_session_id"
+      },
+      "mdTimestamp": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "md_timestamp"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdBootstrapAppStateCriticalDataProcessingWamEvent",
+    "matches": "MdBootstrapAppStateCriticalDataProcessing:\\s*\\[\\s*3164"
+  },
+  "literals": [
+    "3164"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBootstrapAppStateDataStageCode",
+      "WAWebWamEnumMdBootstrapPayloadType"
+    ],
+    "dependents": [
+      "WAWebSyncdCriticalBootstrapProcessingApi",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

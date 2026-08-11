@@ -1,0 +1,6 @@
+message BotSuggestedPromptMetadata {
+  optional bytes suggestedPrompts = 1;
+  optional bytes selectedPromptIndex = 2;
+  optional BotPromptSuggestions promptSuggestions = 3;
+  optional bytes selectedPromptId = 4;
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ab:wds_web_text_layout",
+  "kind": "ab",
+  "name": "wds_web_text_layout",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31789,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wds_web_text_layout:\\s*\\[\\s*31789"
+  },
+  "literals": [
+    "wds_web_text_layout",
+    "31789"
+  ],
+  "usage": {
+    "read_count": 10,
+    "readers": [
+      "WAWebBlockedDrawer.react",
+      "WAWebEmptyResponsesList.react",
+      "WAWebEmptyState.react",
+      "WAWebEmptyStateModule.react",
+      "WAWebGroupMemberUpdatesPanel.react",
+      "WAWebMediaHubEmptyGalleryEntryPoint.react",
+      "WAWebMediaHubEmptyStates.react",
+      "WAWebNoNewsletterAlertsDrawer.react",
+      "WAWebSentForAdminReviewDrawer.react",
+      "WAWebStarredDrawerV2.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

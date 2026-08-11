@@ -1,0 +1,5 @@
+message RequestWelcomeMessageMetadata {
+  optional bytes localChatState = 1;
+  optional bytes welcomeTrigger = 2;
+  optional bytes botAgentMetadata = 3;
+}

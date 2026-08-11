@@ -1,0 +1,42 @@
+{
+  "id": "enum:PREMIUM_STATUS_TYPE",
+  "kind": "enum",
+  "name": "PREMIUM_STATUS_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPremiumStatusType",
+    "variants": [
+      {
+        "name": "DISABLED",
+        "value": 0.0
+      },
+      {
+        "name": "ENABLED",
+        "value": 1.0
+      },
+      {
+        "name": "ACTIVE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPremiumStatusType",
+    "matches": "PREMIUM_STATUS_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PREMIUM_STATUS_TYPE",
+    "DISABLED",
+    "ENABLED",
+    "ACTIVE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPinnedChatsMaxAlertWamEvent",
+      "WAWebPinnedChatsWamUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

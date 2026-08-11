@@ -1,0 +1,8 @@
+message NotificationSettings {
+  optional bytes messageVibrate = 1;
+  optional bytes messagePopup = 2;
+  optional bytes messageLight = 3;
+  optional bytes lowPriorityNotifications = 4;
+  optional bytes reactionsMuted = 5;
+  optional bytes callVibrate = 6;
+}

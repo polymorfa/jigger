@@ -1,0 +1,33 @@
+{
+  "id": "sig:ack/waiting_room_toggle",
+  "kind": "sig",
+  "name": "VoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck",
+  "data": {
+    "kind": "sig",
+    "root": "ack",
+    "children": [
+      "waiting_room_toggle"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInVoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck",
+    "matches": "assertTag\\([a-z], \"ack\"\\)"
+  },
+  "literals": [
+    "ack",
+    "waiting_room_toggle"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInVoipCallAckBaseMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxVoipWaitingRoomToggleCallLinkRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

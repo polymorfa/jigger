@@ -1,0 +1,197 @@
+{
+  "id": "enum:WSUA_REFERRAL",
+  "kind": "enum",
+  "name": "WSUA_REFERRAL",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWsuaReferral",
+    "variants": [
+      {
+        "name": "SETTINGS",
+        "value": 1.0
+      },
+      {
+        "name": "APPEARANCE_SETTINGS",
+        "value": 2.0
+      },
+      {
+        "name": "APP_ICON_SETTINGS",
+        "value": 3.0
+      },
+      {
+        "name": "APP_THEME_SETTINGS",
+        "value": 4.0
+      },
+      {
+        "name": "DEFAULT_RINGTONE",
+        "value": 5.0
+      },
+      {
+        "name": "CHAT_RINGTONE",
+        "value": 6.0
+      },
+      {
+        "name": "STICKER_TRAY",
+        "value": 7.0
+      },
+      {
+        "name": "STICKER_RECEIVED",
+        "value": 8.0
+      },
+      {
+        "name": "CHAT_PIN",
+        "value": 9.0
+      },
+      {
+        "name": "BUSINESS_TOOLS",
+        "value": 10.0
+      },
+      {
+        "name": "CALLS_TAB",
+        "value": 11.0
+      },
+      {
+        "name": "BUSINESS_CARD",
+        "value": 12.0
+      },
+      {
+        "name": "CONVERSATION_THREAD",
+        "value": 13.0
+      },
+      {
+        "name": "NOTIFICATION",
+        "value": 14.0
+      },
+      {
+        "name": "QUICK_PROMOTION",
+        "value": 15.0
+      },
+      {
+        "name": "CUSTOM_URL",
+        "value": 16.0
+      },
+      {
+        "name": "LINKED_DEVICES",
+        "value": 17.0
+      },
+      {
+        "name": "LIST_THEME",
+        "value": 18.0
+      },
+      {
+        "name": "LIST_ALERT_TONE",
+        "value": 19.0
+      },
+      {
+        "name": "LIST_RINGTONE",
+        "value": 20.0
+      },
+      {
+        "name": "META_AI_THINKING",
+        "value": 21.0
+      },
+      {
+        "name": "META_AI_IMAGINE",
+        "value": 22.0
+      },
+      {
+        "name": "META_AI_VIDEO",
+        "value": 23.0
+      },
+      {
+        "name": "META_AI_SETTINGS",
+        "value": 24.0
+      },
+      {
+        "name": "VALUE_SCREEN",
+        "value": 25.0
+      },
+      {
+        "name": "META_ONE_ELIGIBLE_BOTTOMSHEET",
+        "value": 26.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_HOME",
+        "value": 27.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_THREAD",
+        "value": 28.0
+      },
+      {
+        "name": "BUSINESS_BROADCAST_REVIEW_SCREEN",
+        "value": 29.0
+      },
+      {
+        "name": "BIZ_AI_AGENT_THREAD",
+        "value": 30.0
+      },
+      {
+        "name": "BIZ_AI_HOME",
+        "value": 31.0
+      },
+      {
+        "name": "CHAT_LIST",
+        "value": 32.0
+      },
+      {
+        "name": "BIZ_AI_THREAD",
+        "value": 33.0
+      },
+      {
+        "name": "BIZ_AI",
+        "value": 34.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWsuaReferral",
+    "matches": "WSUA_REFERRAL\\s*[:=]"
+  },
+  "literals": [
+    "WSUA_REFERRAL",
+    "SETTINGS",
+    "APPEARANCE_SETTINGS",
+    "APP_ICON_SETTINGS",
+    "APP_THEME_SETTINGS",
+    "DEFAULT_RINGTONE",
+    "CHAT_RINGTONE",
+    "STICKER_TRAY",
+    "STICKER_RECEIVED",
+    "CHAT_PIN",
+    "BUSINESS_TOOLS",
+    "CALLS_TAB",
+    "BUSINESS_CARD",
+    "CONVERSATION_THREAD",
+    "NOTIFICATION",
+    "QUICK_PROMOTION",
+    "CUSTOM_URL",
+    "LINKED_DEVICES",
+    "LIST_THEME",
+    "LIST_ALERT_TONE",
+    "LIST_RINGTONE",
+    "META_AI_THINKING",
+    "META_AI_IMAGINE",
+    "META_AI_VIDEO",
+    "META_AI_SETTINGS",
+    "VALUE_SCREEN",
+    "META_ONE_ELIGIBLE_BOTTOMSHEET",
+    "BUSINESS_BROADCAST_HOME",
+    "BUSINESS_BROADCAST_THREAD",
+    "BUSINESS_BROADCAST_REVIEW_SCREEN",
+    "BIZ_AI_AGENT_THREAD",
+    "BIZ_AI_HOME",
+    "CHAT_LIST",
+    "BIZ_AI_THREAD",
+    "BIZ_AI"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaOneUpsellLogger",
+      "WAWebSubscriptionUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

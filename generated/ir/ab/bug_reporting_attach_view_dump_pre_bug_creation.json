@@ -1,0 +1,42 @@
+{
+  "id": "ab:bug_reporting_attach_view_dump_pre_bug_creation",
+  "kind": "ab",
+  "name": "bug_reporting_attach_view_dump_pre_bug_creation",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26307,
+    "type": "bool",
+    "default": true,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "bug_reporting_attach_view_dump_pre_bug_creation:\\s*\\[\\s*26307"
+  },
+  "literals": [
+    "bug_reporting_attach_view_dump_pre_bug_creation",
+    "26307"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

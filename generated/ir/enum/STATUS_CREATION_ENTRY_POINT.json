@@ -1,0 +1,346 @@
+{
+  "id": "enum:STATUS_CREATION_ENTRY_POINT",
+  "kind": "enum",
+  "name": "STATUS_CREATION_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusCreationEntryPoint",
+    "variants": [
+      {
+        "name": "EXTERNAL_SHARE",
+        "value": 1.0
+      },
+      {
+        "name": "FORWARD_TO_STATUS",
+        "value": 2.0
+      },
+      {
+        "name": "STATUS_TAB_CAMERA",
+        "value": 3.0
+      },
+      {
+        "name": "STATUS_TAB_PEN",
+        "value": 4.0
+      },
+      {
+        "name": "STATUS_DEEPLINK",
+        "value": 5.0
+      },
+      {
+        "name": "CHANNEL_POST",
+        "value": 6.0
+      },
+      {
+        "name": "CHANNEL_LINK",
+        "value": 7.0
+      },
+      {
+        "name": "STATUS_TAB_SELF_POG",
+        "value": 8.0
+      },
+      {
+        "name": "CHATS_TAB_CAMERA",
+        "value": 9.0
+      },
+      {
+        "name": "CHAT_THREAD_CAMERA",
+        "value": 10.0
+      },
+      {
+        "name": "CALLS_TAB_CAMERA",
+        "value": 11.0
+      },
+      {
+        "name": "STATUS_TAB_FAB_CAMERA",
+        "value": 12.0
+      },
+      {
+        "name": "COMMUNITIES_TAB_CAMERA",
+        "value": 13.0
+      },
+      {
+        "name": "MY_STATUS_PEN",
+        "value": 14.0
+      },
+      {
+        "name": "MY_STATUS_FAB_CAMERA",
+        "value": 15.0
+      },
+      {
+        "name": "STATUS_RESHARE",
+        "value": 16.0
+      },
+      {
+        "name": "SELF_POG_ON_STATUS_VIEWER",
+        "value": 17.0
+      },
+      {
+        "name": "CATALOG_MANAGER",
+        "value": 18.0
+      },
+      {
+        "name": "CATALOG_PRODUCT_DETAILS",
+        "value": 19.0
+      },
+      {
+        "name": "MEDIA_PICKER_CAMERA_ACTION",
+        "value": 20.0
+      },
+      {
+        "name": "MEDIA_PICKER_TEXT_ACTION",
+        "value": 21.0
+      },
+      {
+        "name": "STATUS_CREATION_ENTRY_POINT",
+        "value": 22.0
+      },
+      {
+        "name": "UNIFIED_CREATION_QUICK_ACTION_CAMERA",
+        "value": 23.0
+      },
+      {
+        "name": "UNIFIED_CREATION_QUICK_ACTION_PEN",
+        "value": 24.0
+      },
+      {
+        "name": "UNIFIED_CREATION_MENU_CAMERA",
+        "value": 25.0
+      },
+      {
+        "name": "UNIFIED_CREATION_MENU_GALLERY",
+        "value": 26.0
+      },
+      {
+        "name": "UNIFIED_CREATION_MENU_TEXT_OR_VOICE",
+        "value": 27.0
+      },
+      {
+        "name": "UNIFIED_CREATION_MENU_NEW_STATUS",
+        "value": 28.0
+      },
+      {
+        "name": "MEDIA_PICKER_VOICE_ACTION",
+        "value": 29.0
+      },
+      {
+        "name": "MUSIC_ATTRIBUTION",
+        "value": 30.0
+      },
+      {
+        "name": "STATUS_PROMPT_RESPONSE",
+        "value": 31.0
+      },
+      {
+        "name": "AI_IMAGINE_BOTTOM_SHEET",
+        "value": 32.0
+      },
+      {
+        "name": "STATUS_POST_RESHARE",
+        "value": 33.0
+      },
+      {
+        "name": "WA_GROUP_INVITE",
+        "value": 34.0
+      },
+      {
+        "name": "FORWARD_FROM_STATUS",
+        "value": 35.0
+      },
+      {
+        "name": "GROUP_INFO_PAGE",
+        "value": 36.0
+      },
+      {
+        "name": "STATUS_VIEWER_TOPBAR",
+        "value": 37.0
+      },
+      {
+        "name": "QUESTION_ANSWER_RESHARE",
+        "value": 38.0
+      },
+      {
+        "name": "GROUP_STATUS_TAB_SELF_POG",
+        "value": 39.0
+      },
+      {
+        "name": "GROUP_STATUS_TAB_CAMERA",
+        "value": 40.0
+      },
+      {
+        "name": "GROUP_STATUS_TAB_PEN",
+        "value": 41.0
+      },
+      {
+        "name": "MY_GROUP_STATUS_FAB_CAMERA",
+        "value": 42.0
+      },
+      {
+        "name": "STATUS_WIDGET",
+        "value": 43.0
+      },
+      {
+        "name": "ENGAGEMENT_CARD",
+        "value": 44.0
+      },
+      {
+        "name": "CHANNEL_STATUS_TAB_SELF_POG",
+        "value": 45.0
+      },
+      {
+        "name": "MY_CHANNEL_STATUS_FAB_CAMERA",
+        "value": 46.0
+      },
+      {
+        "name": "CHANNEL_THREAD_PAGE",
+        "value": 47.0
+      },
+      {
+        "name": "CHANNEL_STATUS_VIEWER_TOP_BAR",
+        "value": 48.0
+      },
+      {
+        "name": "GROUP_STATUS_CHAT_HEADER",
+        "value": 50.0
+      },
+      {
+        "name": "CHATS_TAB_SELF_POG",
+        "value": 51.0
+      },
+      {
+        "name": "CHATS_TAB_NEW_CHAT",
+        "value": 52.0
+      },
+      {
+        "name": "GROUP_STATUS_CHAT_HEADER_PROFILE_RING",
+        "value": 53.0
+      },
+      {
+        "name": "GROUP_STATUS_CHAT_HEADER_PROFILE_RING_DROPDOWN",
+        "value": 54.0
+      },
+      {
+        "name": "CLOSE_SHARING_MIMICRY",
+        "value": 55.0
+      },
+      {
+        "name": "CHANNEL_THREAD_SCREEN",
+        "value": 56.0
+      },
+      {
+        "name": "MEDIA_BROWSER_STATUS_MENU",
+        "value": 57.0
+      },
+      {
+        "name": "ARCHIVE_STATUS_VIEWER",
+        "value": 58.0
+      },
+      {
+        "name": "ME_TAB",
+        "value": 59.0
+      },
+      {
+        "name": "CONTACTS_TAB",
+        "value": 60.0
+      },
+      {
+        "name": "CHANNEL_THREAD_SCREEN_PROFILE_RING",
+        "value": 61.0
+      },
+      {
+        "name": "GROUP_STATUS_REPLY_WITH_STATUS",
+        "value": 62.0
+      },
+      {
+        "name": "GROUP_INFO_BOTTOM_SHEET_CHATS_TAB",
+        "value": 63.0
+      },
+      {
+        "name": "GROUP_INFO_BOTTOM_SHEET_CALLS_TAB",
+        "value": 64.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusCreationEntryPoint",
+    "matches": "STATUS_CREATION_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_CREATION_ENTRY_POINT",
+    "EXTERNAL_SHARE",
+    "FORWARD_TO_STATUS",
+    "STATUS_TAB_CAMERA",
+    "STATUS_TAB_PEN",
+    "STATUS_DEEPLINK",
+    "CHANNEL_POST",
+    "CHANNEL_LINK",
+    "STATUS_TAB_SELF_POG",
+    "CHATS_TAB_CAMERA",
+    "CHAT_THREAD_CAMERA",
+    "CALLS_TAB_CAMERA",
+    "STATUS_TAB_FAB_CAMERA",
+    "COMMUNITIES_TAB_CAMERA",
+    "MY_STATUS_PEN",
+    "MY_STATUS_FAB_CAMERA",
+    "STATUS_RESHARE",
+    "SELF_POG_ON_STATUS_VIEWER",
+    "CATALOG_MANAGER",
+    "CATALOG_PRODUCT_DETAILS",
+    "MEDIA_PICKER_CAMERA_ACTION",
+    "MEDIA_PICKER_TEXT_ACTION",
+    "STATUS_CREATION_ENTRY_POINT",
+    "UNIFIED_CREATION_QUICK_ACTION_CAMERA",
+    "UNIFIED_CREATION_QUICK_ACTION_PEN",
+    "UNIFIED_CREATION_MENU_CAMERA",
+    "UNIFIED_CREATION_MENU_GALLERY",
+    "UNIFIED_CREATION_MENU_TEXT_OR_VOICE",
+    "UNIFIED_CREATION_MENU_NEW_STATUS",
+    "MEDIA_PICKER_VOICE_ACTION",
+    "MUSIC_ATTRIBUTION",
+    "STATUS_PROMPT_RESPONSE",
+    "AI_IMAGINE_BOTTOM_SHEET",
+    "STATUS_POST_RESHARE",
+    "WA_GROUP_INVITE",
+    "FORWARD_FROM_STATUS",
+    "GROUP_INFO_PAGE",
+    "STATUS_VIEWER_TOPBAR",
+    "QUESTION_ANSWER_RESHARE",
+    "GROUP_STATUS_TAB_SELF_POG",
+    "GROUP_STATUS_TAB_CAMERA",
+    "GROUP_STATUS_TAB_PEN",
+    "MY_GROUP_STATUS_FAB_CAMERA",
+    "STATUS_WIDGET",
+    "ENGAGEMENT_CARD",
+    "CHANNEL_STATUS_TAB_SELF_POG",
+    "MY_CHANNEL_STATUS_FAB_CAMERA",
+    "CHANNEL_THREAD_PAGE",
+    "CHANNEL_STATUS_VIEWER_TOP_BAR",
+    "GROUP_STATUS_CHAT_HEADER",
+    "CHATS_TAB_SELF_POG",
+    "CHATS_TAB_NEW_CHAT",
+    "GROUP_STATUS_CHAT_HEADER_PROFILE_RING",
+    "GROUP_STATUS_CHAT_HEADER_PROFILE_RING_DROPDOWN",
+    "CLOSE_SHARING_MIMICRY",
+    "CHANNEL_THREAD_SCREEN",
+    "MEDIA_BROWSER_STATUS_MENU",
+    "ARCHIVE_STATUS_VIEWER",
+    "ME_TAB",
+    "CONTACTS_TAB",
+    "CHANNEL_THREAD_SCREEN_PROFILE_RING",
+    "GROUP_STATUS_REPLY_WITH_STATUS",
+    "GROUP_INFO_BOTTOM_SHEET_CHATS_TAB",
+    "GROUP_INFO_BOTTOM_SHEET_CALLS_TAB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLogStatusPosterActions",
+      "WAWebNewsletterAddToStatusButton.react",
+      "WAWebStatusDrawer.react",
+      "WAWebStatusListHeader.react",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusPosterActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

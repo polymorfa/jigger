@@ -1,0 +1,42 @@
+{
+  "id": "enum:OTP_PRODUCT_TYPE",
+  "kind": "enum",
+  "name": "OTP_PRODUCT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOtpProductType",
+    "variants": [
+      {
+        "name": "ONE_TAP",
+        "value": 0.0
+      },
+      {
+        "name": "ZERO_TAP",
+        "value": 1.0
+      },
+      {
+        "name": "COPY_CODE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOtpProductType",
+    "matches": "OTP_PRODUCT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "OTP_PRODUCT_TYPE",
+    "ONE_TAP",
+    "ZERO_TAP",
+    "COPY_CODE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebOTPLoggingHelper",
+      "WAWebOtpRetrieverWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

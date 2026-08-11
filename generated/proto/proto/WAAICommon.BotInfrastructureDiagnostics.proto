@@ -1,0 +1,5 @@
+message BotInfrastructureDiagnostics {
+  optional bytes botBackend = 1;
+  optional bytes toolsUsed = 2;
+  optional bytes isThinking = 3;
+}

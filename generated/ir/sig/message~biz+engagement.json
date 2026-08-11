@@ -1,0 +1,34 @@
+{
+  "id": "sig:message/biz+engagement",
+  "kind": "sig",
+  "name": "MessageDeliverBizEngagementDataMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "biz",
+      "engagement"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverBizEngagementDataMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "biz",
+    "engagement"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMessageDeliverEnums",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBizMixin"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

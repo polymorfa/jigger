@@ -1,0 +1,45 @@
+{
+  "id": "ab:imp_send_signal_post_connect_webc_enabled",
+  "kind": "ab",
+  "name": "imp_send_signal_post_connect_webc_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23322,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "imp_send_signal_post_connect_webc_enabled:\\s*\\[\\s*23322"
+  },
+  "literals": [
+    "imp_send_signal_post_connect_webc_enabled",
+    "23322"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebKmpAbProps"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

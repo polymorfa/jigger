@@ -1,0 +1,46 @@
+{
+  "id": "wam:3198",
+  "kind": "wam",
+  "name": "DeepLinkMsgSent",
+  "data": {
+    "kind": "wam",
+    "event_id": 3198,
+    "fields": {
+      "deepLinkAction": {
+        "id": 1,
+        "type": "DEEP_LINK_ACTION",
+        "wire": "deep_link_action",
+        "enum_ref": "DEEP_LINK_ACTION"
+      },
+      "deepLinkSessionId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "deep_link_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebDeepLinkMsgSentWamEvent",
+    "matches": "DeepLinkMsgSent:\\s*\\[\\s*3198"
+  },
+  "literals": [
+    "3198"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDeepLinkAction"
+    ],
+    "dependents": [
+      "WAWebExecApiCmd"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

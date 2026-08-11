@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_3p_bot_product_nux_notice_id",
+  "kind": "ab",
+  "name": "ai_3p_bot_product_nux_notice_id",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34541,
+    "type": "string",
+    "default": "20260806",
+    "alt_default": "20260806"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_3p_bot_product_nux_notice_id:\\s*\\[\\s*34541"
+  },
+  "literals": [
+    "ai_3p_bot_product_nux_notice_id",
+    "34541"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

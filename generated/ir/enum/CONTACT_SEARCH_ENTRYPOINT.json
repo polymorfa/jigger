@@ -1,0 +1,68 @@
+{
+  "id": "enum:CONTACT_SEARCH_ENTRYPOINT",
+  "kind": "enum",
+  "name": "CONTACT_SEARCH_ENTRYPOINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumContactSearchEntrypoint",
+    "variants": [
+      {
+        "name": "NEW_CHAT",
+        "value": 1.0
+      },
+      {
+        "name": "NEW_GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "NEW_CALL",
+        "value": 3.0
+      },
+      {
+        "name": "ADD_TO_GROUP",
+        "value": 4.0
+      },
+      {
+        "name": "CHATS_LIST_GLOBAL_SEARCH",
+        "value": 5.0
+      },
+      {
+        "name": "CALLS_TAB_GLOBAL_SEARCH",
+        "value": 6.0
+      },
+      {
+        "name": "EVENT_INVITE",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumContactSearchEntrypoint",
+    "matches": "CONTACT_SEARCH_ENTRYPOINT\\s*[:=]"
+  },
+  "literals": [
+    "CONTACT_SEARCH_ENTRYPOINT",
+    "NEW_CHAT",
+    "NEW_GROUP",
+    "NEW_CALL",
+    "ADD_TO_GROUP",
+    "CHATS_LIST_GLOBAL_SEARCH",
+    "CALLS_TAB_GLOBAL_SEARCH",
+    "EVENT_INVITE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAddGroupParticipantFlow.react",
+      "WAWebChatContactList.react",
+      "WAWebChatlistPanelFunctionalLegacy.react",
+      "WAWebContactSearchExperienceWamEvent",
+      "WAWebMultiSelectContactList.react",
+      "WAWebNewChatDrawer.react",
+      "WAWebNewChatFlow.react",
+      "WAWebSelectGroupParticipantsDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

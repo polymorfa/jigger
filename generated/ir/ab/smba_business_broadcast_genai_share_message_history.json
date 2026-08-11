@@ -1,0 +1,42 @@
+{
+  "id": "ab:smba_business_broadcast_genai_share_message_history",
+  "kind": "ab",
+  "name": "smba_business_broadcast_genai_share_message_history",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 20926,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smba_business_broadcast_genai_share_message_history:\\s*\\[\\s*20926"
+  },
+  "literals": [
+    "smba_business_broadcast_genai_share_message_history",
+    "20926"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

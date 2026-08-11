@@ -1,0 +1,25 @@
+message ThreadsTableSchemaProto {
+  optional bytes jid = 1;
+  optional bytes threadOrder = 2;
+  optional bytes folder = 4;
+  optional bytes newestMsg = 5;
+  optional bytes oldestMsg = 6;
+  optional bytes lastReadMsg = 7;
+  optional bytes lastReadMsgReceiptSent = 8;
+  optional bytes lastReadMsgTs = 9;
+  optional bytes newestMsgTs = 10;
+  optional bytes muteExpireTimeMs = 11;
+  optional bytes muteCallsExpireTimeMs = 12;
+  optional bytes archived = 13;
+  optional bytes cannotReplyReason = 14;
+  optional bytes chatId = 15;
+  optional bytes optimisticThreadKey = 16;
+  optional bytes isMigratedLocally = 17;
+  optional bytes snippetMsg = 18;
+  optional bytes deduplicationKey = 19;
+  optional bytes authoritativeThreadKey = 20;
+  optional bytes snippetMsgTs = 21;
+  optional bytes didInsertDualThreadCutoverAdminMsg = 22;
+  optional bytes unbumpFromTs = 23;
+  optional bytes unbumpToTs = 24;
+}

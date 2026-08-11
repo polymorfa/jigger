@@ -1,0 +1,78 @@
+{
+  "id": "enum:SEARCH_ACTION_NAME",
+  "kind": "enum",
+  "name": "SEARCH_ACTION_NAME",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSearchActionName",
+    "variants": [
+      {
+        "name": "SEARCH_START",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK_ON_CONTACT",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_ON_NON_CONTACT",
+        "value": 3.0
+      },
+      {
+        "name": "VIEW_PIN_VERIFICATION",
+        "value": 5.0
+      },
+      {
+        "name": "PIN_VERFICATION_ERROR_SHOWN",
+        "value": 6.0
+      },
+      {
+        "name": "INITIATION_SUCCESS",
+        "value": 7.0
+      },
+      {
+        "name": "INITIATION_FAILURE",
+        "value": 8.0
+      },
+      {
+        "name": "CLICK_ON_CONTACT_WITH_EXISTING_CHAT",
+        "value": 9.0
+      },
+      {
+        "name": "CLICK_ON_NON_CONTACT_WITH_EXISTING_CHAT",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSearchActionName",
+    "matches": "SEARCH_ACTION_NAME\\s*[:=]"
+  },
+  "literals": [
+    "SEARCH_ACTION_NAME",
+    "SEARCH_START",
+    "CLICK_ON_CONTACT",
+    "CLICK_ON_NON_CONTACT",
+    "VIEW_PIN_VERIFICATION",
+    "PIN_VERFICATION_ERROR_SHOWN",
+    "INITIATION_SUCCESS",
+    "INITIATION_FAILURE",
+    "CLICK_ON_CONTACT_WITH_EXISTING_CHAT",
+    "CLICK_ON_NON_CONTACT_WITH_EXISTING_CHAT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAddGroupParticipantFlow.react",
+      "WAWebChatContactList.react",
+      "WAWebChatlistPanelFunctionalLegacy.react",
+      "WAWebContactSearchExperienceWamEvent",
+      "WAWebMultiSelectContactList.react",
+      "WAWebNewChatDrawer.react",
+      "WAWebNewChatFlow.react",
+      "WAWebSelectGroupParticipantsDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

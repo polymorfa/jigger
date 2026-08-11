@@ -1,0 +1,8 @@
+message MetaSyncChatActionProto {
+  optional bytes type = 1;
+  optional bytes chatJid = 2;
+  optional bytes archived = 3;
+  optional bytes ts = 4;
+  optional MetaSyncMessageRangeProto messageRange = 5;
+  optional bytes read = 6;
+}

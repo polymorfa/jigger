@@ -1,0 +1,42 @@
+{
+  "id": "ab:unified_calling_entry_point_desktop_type",
+  "kind": "ab",
+  "name": "unified_calling_entry_point_desktop_type",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21591,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "unified_calling_entry_point_desktop_type:\\s*\\[\\s*21591"
+  },
+  "literals": [
+    "unified_calling_entry_point_desktop_type",
+    "21591"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

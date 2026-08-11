@@ -1,0 +1,5 @@
+export enum CHATORIGINSTYPE {
+  LID_USERNAME = 1,
+  LID_CTWA = 2,
+  OTHERS = 3,
+}

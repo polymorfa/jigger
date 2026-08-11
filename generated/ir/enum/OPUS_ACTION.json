@@ -1,0 +1,61 @@
+{
+  "id": "enum:OPUS_ACTION",
+  "kind": "enum",
+  "name": "OPUS_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOpusAction",
+    "variants": [
+      {
+        "name": "OPUS_NOT_WORKING",
+        "value": 0.0
+      },
+      {
+        "name": "OPUS_JOB_RUN",
+        "value": 1.0
+      },
+      {
+        "name": "OPUS_FALLBACK_RUN",
+        "value": 2.0
+      },
+      {
+        "name": "OPUS_MESSAGE_CLICKED",
+        "value": 3.0
+      },
+      {
+        "name": "OPUS_JOB_FAILED",
+        "value": 4.0
+      },
+      {
+        "name": "OPUS_FALLBACK_FAILED",
+        "value": 5.0
+      },
+      {
+        "name": "OPUS_HOOK_FAILED",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOpusAction",
+    "matches": "OPUS_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "OPUS_ACTION",
+    "OPUS_NOT_WORKING",
+    "OPUS_JOB_RUN",
+    "OPUS_FALLBACK_RUN",
+    "OPUS_MESSAGE_CLICKED",
+    "OPUS_JOB_FAILED",
+    "OPUS_FALLBACK_FAILED",
+    "OPUS_HOOK_FAILED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLimitSharingSettingUpdateWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

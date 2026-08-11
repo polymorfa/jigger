@@ -1,0 +1,36 @@
+{
+  "id": "enum:ENUM_LID_PN",
+  "kind": "enum",
+  "name": "ENUM_LID_PN",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBlocklistsEnums",
+    "variants": [
+      {
+        "name": "lid",
+        "value": "lid"
+      },
+      {
+        "name": "pn",
+        "value": "pn"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBlocklistsEnums",
+    "matches": "ENUM_LID_PN\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_LID_PN",
+    "lid",
+    "pn"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBlocklistsUpdateBlockListResponseInvalidRequest"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

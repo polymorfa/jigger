@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexFetchBotCertificateRevocationListQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchBotCertificateRevocationListQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "35807917542188393",
+    "operation": "query",
+    "variables": [
+      "crl_name"
+    ],
+    "root_field": "xwa2_fetch_feature_pki_crl",
+    "document": "query MexFetchBotCertificateRevocationListQuery($crl_name) {\n  xwa2_fetch_feature_pki_crl {\n    crl\n    next_update\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchBotCertificateRevocationListQuery.graphql",
+    "matches": "id: \"35807917542188393\""
+  },
+  "literals": [
+    "35807917542188393",
+    "WAWebMexFetchBotCertificateRevocationListQuery",
+    "xwa2_fetch_feature_pki_crl"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchBotCertificateRevocationList"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

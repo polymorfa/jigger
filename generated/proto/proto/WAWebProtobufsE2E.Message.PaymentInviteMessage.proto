@@ -1,0 +1,7 @@
+message PaymentInviteMessage {
+  optional bytes serviceType = 1;
+  optional bytes expiryTimestamp = 2;
+  optional bytes incentiveEligible = 3;
+  optional bytes referralId = 4;
+  optional bytes inviteType = 5;
+}

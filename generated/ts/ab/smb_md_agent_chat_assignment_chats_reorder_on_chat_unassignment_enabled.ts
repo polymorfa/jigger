@@ -1,0 +1,2 @@
+/** A/B property 2788 (bool), default false. */
+export const ABSmbMdAgentChatAssignmentChatsReorderOnChatUnassignmentEnabled = 'smb_md_agent_chat_assignment_chats_reorder_on_chat_unassignment_enabled' as const

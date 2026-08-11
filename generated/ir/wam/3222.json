@@ -1,0 +1,109 @@
+{
+  "id": "wam:3222",
+  "kind": "wam",
+  "name": "StructuredMessageReceive",
+  "data": {
+    "kind": "wam",
+    "event_id": 3222,
+    "fields": {
+      "bizPlatform": {
+        "id": 1,
+        "type": "BIZ_PLATFORM",
+        "wire": "biz_platform",
+        "enum_ref": "BIZ_PLATFORM"
+      },
+      "businessOwnerJid": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "business_owner_jid"
+      },
+      "entryPointConversationInitiated": {
+        "id": 7,
+        "type": "ENTRY_POINT_CONVERSATION_INITIATED",
+        "wire": "entry_point_conversation_initiated",
+        "enum_ref": "ENTRY_POINT_CONVERSATION_INITIATED"
+      },
+      "entryPointConversionApp": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "entry_point_conversion_app"
+      },
+      "entryPointConversionSource": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "entry_point_conversion_source"
+      },
+      "lastMessageDirection": {
+        "id": 10,
+        "type": "LAST_MESSAGE_DIRECTION",
+        "wire": "last_message_direction",
+        "enum_ref": "LAST_MESSAGE_DIRECTION"
+      },
+      "messageClass": {
+        "id": 3,
+        "type": "STRUCTURED_MESSAGE_CLASS",
+        "wire": "message_class",
+        "enum_ref": "STRUCTURED_MESSAGE_CLASS"
+      },
+      "messageClassAttributes": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "message_class_attributes"
+      },
+      "messageDepth": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "message_depth"
+      },
+      "messageMediaType": {
+        "id": 5,
+        "type": "MEDIA_TYPE",
+        "wire": "message_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "templateId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "template_id"
+      },
+      "threadIdHmac": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebStructuredMessageReceiveWamEvent",
+    "matches": "StructuredMessageReceive:\\s*\\[\\s*3222"
+  },
+  "literals": [
+    "3222"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBizPlatform",
+      "WAWebWamEnumEntryPointConversationInitiated",
+      "WAWebWamEnumLastMessageDirection",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumStructuredMessageClass"
+    ],
+    "dependents": [
+      "PaymentLinkWamLogger",
+      "WAWebGalaxyFlowWamLoggerUtils",
+      "WAWebOrderDetailsReceivedWamLogger",
+      "WAWebPaymentInfoReceivedWamLogger",
+      "WAWebPaymentRequestWamLogger",
+      "WAWebUprReceivedWamLogger"
+    ],
+    "dep_count": 6,
+    "dependent_count": 6
+  }
+}

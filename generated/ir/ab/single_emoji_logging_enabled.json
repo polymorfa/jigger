@@ -1,0 +1,42 @@
+{
+  "id": "ab:single_emoji_logging_enabled",
+  "kind": "ab",
+  "name": "single_emoji_logging_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9669,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "single_emoji_logging_enabled:\\s*\\[\\s*9669"
+  },
+  "literals": [
+    "single_emoji_logging_enabled",
+    "9669"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

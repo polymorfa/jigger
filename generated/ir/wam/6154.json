@@ -1,0 +1,113 @@
+{
+  "id": "wam:6154",
+  "kind": "wam",
+  "name": "Lid11MigrationLifecycle",
+  "data": {
+    "kind": "wam",
+    "event_id": 6154,
+    "fields": {
+      "chatNotInMappingCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "chat_not_in_mapping_count"
+      },
+      "companionHasADifferentMappingCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "companion_has_a_different_mapping_count"
+      },
+      "currentLocalTimeSeconds": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "current_local_time_seconds"
+      },
+      "fakeLidCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "fake_lid_count"
+      },
+      "isLocally1x1MigratedFromDb": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_locally1x1_migrated_from_db"
+      },
+      "isStageInOfflineResume": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "is_stage_in_offline_resume"
+      },
+      "isSyncdLidSession": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_syncd_lid_session"
+      },
+      "latestMappingCount": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "latest_mapping_count"
+      },
+      "mappingCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "mapping_count"
+      },
+      "migratedThreadCount": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "migrated_thread_count"
+      },
+      "migrationStage": {
+        "id": 8,
+        "type": "MIGRATION_STAGE_ENUM",
+        "wire": "migration_stage",
+        "enum_ref": "MIGRATION_STAGE_ENUM"
+      },
+      "peerMappingBytesLength": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "peer_mapping_bytes_length"
+      },
+      "primaryMigrationTimeSeconds": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "primary_migration_time_seconds"
+      },
+      "stageFailureReason": {
+        "id": 9,
+        "type": "STAGE_FAILURE_REASON_ENUM",
+        "wire": "stage_failure_reason",
+        "enum_ref": "STAGE_FAILURE_REASON_ENUM"
+      },
+      "webClientDidPairingStanzaIndicated1x1MigrationThisSession": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "web_client_did_pairing_stanza_indicated1x1_migration_this_session"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebLid11MigrationLifecycleWamEvent",
+    "matches": "Lid11MigrationLifecycle:\\s*\\[\\s*6154"
+  },
+  "literals": [
+    "6154"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMigrationStageEnum",
+      "WAWebWamEnumStageFailureReasonEnum"
+    ],
+    "dependents": [
+      "WAWebHandlePairSuccess"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

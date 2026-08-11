@@ -1,0 +1,5 @@
+export enum SETTINGSPAGETYPE {
+  SETTINGS = 0,
+  ME_TAB = 1,
+  AVATAR_COINFLIP = 2,
+}

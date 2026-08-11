@@ -1,0 +1,42 @@
+{
+  "id": "ab:expand_fmx_mex_should_use_fmx_use_case",
+  "kind": "ab",
+  "name": "expand_fmx_mex_should_use_fmx_use_case",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27662,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "expand_fmx_mex_should_use_fmx_use_case:\\s*\\[\\s*27662"
+  },
+  "literals": [
+    "expand_fmx_mex_should_use_fmx_use_case",
+    "27662"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

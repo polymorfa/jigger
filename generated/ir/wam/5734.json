@@ -1,0 +1,156 @@
+{
+  "id": "wam:5734",
+  "kind": "wam",
+  "name": "ShareContentUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 5734,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "captionAdded": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "caption_added"
+      },
+      "forwardUserJourneyFunnelId": {
+        "id": 27,
+        "type": "STRING",
+        "wire": "forward_user_journey_funnel_id"
+      },
+      "hasBotImagineImages": {
+        "id": 22,
+        "type": "BOOLEAN",
+        "wire": "has_bot_imagine_images"
+      },
+      "hasCaptionPrefilled": {
+        "id": 21,
+        "type": "BOOLEAN",
+        "wire": "has_caption_prefilled"
+      },
+      "hasFiles": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "has_files"
+      },
+      "hasImages": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "has_images"
+      },
+      "hasLinks": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "has_links"
+      },
+      "hasMusic": {
+        "id": 17,
+        "type": "BOOLEAN",
+        "wire": "has_music"
+      },
+      "hasStatusRecipient": {
+        "id": 25,
+        "type": "BOOLEAN",
+        "wire": "has_status_recipient"
+      },
+      "hasVideo": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "has_video"
+      },
+      "isForwardFlow": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "is_forward_flow"
+      },
+      "mediaCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "media_count"
+      },
+      "messageSelectedCount": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "message_selected_count"
+      },
+      "numberOfRecipients": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "number_of_recipients"
+      },
+      "prefilledCaptionRemoved": {
+        "id": 23,
+        "type": "BOOLEAN",
+        "wire": "prefilled_caption_removed"
+      },
+      "shareContentUserJourneyAction": {
+        "id": 8,
+        "type": "SHARE_CONTENT_USER_JOURNEY_ACTION",
+        "wire": "share_content_user_journey_action",
+        "enum_ref": "SHARE_CONTENT_USER_JOURNEY_ACTION"
+      },
+      "shareContentUserJourneyEntryPoint": {
+        "id": 24,
+        "type": "SHARE_CONTENT_USER_JOURNEY_ENTRY_POINT",
+        "wire": "share_content_user_journey_entry_point",
+        "enum_ref": "SHARE_CONTENT_USER_JOURNEY_ENTRY_POINT"
+      },
+      "shareContentUserJourneySurfaceEntryPoint": {
+        "id": 9,
+        "type": "TS_SURFACE",
+        "wire": "share_content_user_journey_surface_entry_point",
+        "enum_ref": "TS_SURFACE"
+      },
+      "uiSurface": {
+        "id": 10,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyEventMs": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "userJourneyFunnelId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebShareContentUserJourneyWamEvent",
+    "matches": "ShareContentUserJourney:\\s*\\[\\s*5734"
+  },
+  "literals": [
+    "5734"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumShareContentUserJourneyAction",
+      "WAWebWamEnumShareContentUserJourneyEntryPoint",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebShareContentUserJourneyLogger"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

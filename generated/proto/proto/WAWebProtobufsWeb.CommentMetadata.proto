@@ -1,0 +1,4 @@
+message CommentMetadata {
+  optional bytes commentParentKey = 1;
+  optional bytes replyCount = 2;
+}

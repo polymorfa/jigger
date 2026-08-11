@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/blocking",
+  "kind": "sig",
+  "name": "PsaChatBlockGetResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "blocking"
+    ],
+    "responds_to": "PsaChatBlockGet"
+  },
+  "evidence": {
+    "module": "WASmaxInPsaChatBlockGetResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "blocking"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInPsaEnums",
+      "WASmaxInPsaIQResultResponseMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxPsaChatBlockGetRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

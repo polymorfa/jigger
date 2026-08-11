@@ -1,0 +1,34 @@
+{
+  "id": "sig:ack/link_create",
+  "kind": "sig",
+  "name": "VoipLinkCreateResponseLinkCreateAck",
+  "data": {
+    "kind": "sig",
+    "root": "ack",
+    "children": [
+      "link_create"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInVoipLinkCreateResponseLinkCreateAck",
+    "matches": "assertTag\\([a-z], \"ack\"\\)"
+  },
+  "literals": [
+    "ack",
+    "link_create"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInVoipCallAckBaseMixin",
+      "WASmaxInVoipEnums",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxVoipLinkCreateRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

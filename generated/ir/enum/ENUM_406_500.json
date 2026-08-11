@@ -1,0 +1,61 @@
+{
+  "id": "enum:ENUM_406_500",
+  "kind": "enum",
+  "name": "ENUM_406_500",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInGroupsEnums",
+    "variants": [
+      {
+        "name": "406",
+        "value": "406"
+      },
+      {
+        "name": "500",
+        "value": "500"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInGroupsEnums",
+    "matches": "ENUM_406_500\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_406_500",
+    "406",
+    "500"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInGroupsAddNotificationRequest",
+      "WASmaxInGroupsAddParticipantTimeRateLimitMixin",
+      "WASmaxInGroupsCreateParticipantAddedMixin",
+      "WASmaxInGroupsCreateParticipantAddedResponseMixin",
+      "WASmaxInGroupsCreateResponseSuccess",
+      "WASmaxInGroupsDedupAttrsMixin",
+      "WASmaxInGroupsDeleteNotificationRequest",
+      "WASmaxInGroupsDemoteNotificationRequest",
+      "WASmaxInGroupsGroupAddressingModeMixin",
+      "WASmaxInGroupsGroupInfoMixin",
+      "WASmaxInGroupsGroupInfoParticipantAdminMixin",
+      "WASmaxInGroupsJoinNotificationRequest",
+      "WASmaxInGroupsLinkedGroupInfoMixin",
+      "WASmaxInGroupsMembershipRequestMethodAttributeMixin",
+      "WASmaxInGroupsMembershipRequestsActionResponseSuccess",
+      "WASmaxInGroupsParticipantGroupJoinRequestMixin",
+      "WASmaxInGroupsParticipantMixin",
+      "WASmaxInGroupsProfilePictureTypeMixin",
+      "WASmaxInGroupsPromoteDemoteAdminResponseSuccessMultiAdmin",
+      "WASmaxInGroupsPromoteDemoteResponseSuccessDemote",
+      "WASmaxInGroupsPromoteDemoteResponseSuccessPromote",
+      "WASmaxInGroupsPromoteNotificationRequest",
+      "WASmaxInGroupsRemoveParticipantsResponseSuccess",
+      "WASmaxOutGroupsNotificationClientAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 24
+  }
+}

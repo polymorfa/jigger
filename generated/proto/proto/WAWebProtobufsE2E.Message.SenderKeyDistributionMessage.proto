@@ -1,0 +1,4 @@
+message SenderKeyDistributionMessage {
+  optional bytes groupId = 1;
+  optional bytes axolotlSenderKeyDistributionMessage = 2;
+}

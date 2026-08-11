@@ -1,0 +1,66 @@
+{
+  "id": "wam:1250",
+  "kind": "wam",
+  "name": "StatusRevoke",
+  "data": {
+    "kind": "wam",
+    "event_id": 1250,
+    "fields": {
+      "mediaType": {
+        "id": 2,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "statusId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "statusLifeT": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "status_life_t"
+      },
+      "statusSessionId": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "status_session_id"
+      },
+      "unifiedSessionId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStatusRevokeWamEvent",
+    "matches": "StatusRevoke:\\s*\\[\\s*1250"
+  },
+  "literals": [
+    "1250"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType"
+    ],
+    "dependents": [
+      "WAWebLogStatusRevoke"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

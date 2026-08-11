@@ -1,0 +1,67 @@
+{
+  "id": "appstate:pin_v1",
+  "kind": "appstate",
+  "name": "Pin",
+  "data": {
+    "kind": "appstate",
+    "index_name": "pin_v1",
+    "collection": "regular_low",
+    "version": 5,
+    "value_field": "pinAction",
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebPinChatSync",
+    "matches": "Actions\\.Pin"
+  },
+  "literals": [
+    "pin_v1",
+    "Pin",
+    "pinAction"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "Promise",
+      "WALogger",
+      "WALongInt",
+      "WATimeUtils",
+      "WAWebAndroidUnsupportedActionsSync",
+      "WAWebArchiveChatSync",
+      "WAWebChatGetExistingBridge",
+      "WAWebChatPinBridge",
+      "WAWebLid1X1MigrationGating",
+      "WAWebLidMigrationUtils",
+      "WAWebMdSyncdDogfoodingFeatureUsageWamEvent",
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSchemaChat",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdCoreApi",
+      "WAWebSyncdDb",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdIndexUtils",
+      "WAWebWamEnumMdFeatureCode",
+      "WAWebWid",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime",
+      "compactMap",
+      "decodeProtobuf",
+      "gkx",
+      "nullthrows"
+    ],
+    "dependents": [
+      "WAWebArchiveChatSync",
+      "WAWebChatDeleteBridge",
+      "WAWebChatPinBridge",
+      "WAWebCollectionHandlerActions",
+      "WAWebLockChatSync"
+    ],
+    "dep_count": 30,
+    "dependent_count": 5
+  }
+}

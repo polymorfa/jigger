@@ -1,0 +1,72 @@
+{
+  "id": "enum:STATUS_VIEW_ACTION_TYPE",
+  "kind": "enum",
+  "name": "STATUS_VIEW_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusViewActionType",
+    "variants": [
+      {
+        "name": "ATTRIBUTION_TAPPED",
+        "value": 0.0
+      },
+      {
+        "name": "ATTRIBUTION_LIST_OPENED",
+        "value": 1.0
+      },
+      {
+        "name": "ATTRIBUTION_LIST_ITEM_TAPPED",
+        "value": 2.0
+      },
+      {
+        "name": "QUESTION_STICKER_CLICK",
+        "value": 3.0
+      },
+      {
+        "name": "QUESTION_ANSWER_SEND",
+        "value": 4.0
+      },
+      {
+        "name": "REACTION_STICKER_CLICK",
+        "value": 5.0
+      },
+      {
+        "name": "RESHARE_BUTTON_TAP",
+        "value": 6.0
+      },
+      {
+        "name": "CLOSE_SHARING_EMOJI_CLICK",
+        "value": 7.0
+      },
+      {
+        "name": "URL_CLICK",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusViewActionType",
+    "matches": "STATUS_VIEW_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_VIEW_ACTION_TYPE",
+    "ATTRIBUTION_TAPPED",
+    "ATTRIBUTION_LIST_OPENED",
+    "ATTRIBUTION_LIST_ITEM_TAPPED",
+    "QUESTION_STICKER_CLICK",
+    "QUESTION_ANSWER_SEND",
+    "REACTION_STICKER_CLICK",
+    "RESHARE_BUTTON_TAP",
+    "CLOSE_SHARING_EMOJI_CLICK",
+    "URL_CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusSubtitle.react",
+      "WAWebStatusViewerActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

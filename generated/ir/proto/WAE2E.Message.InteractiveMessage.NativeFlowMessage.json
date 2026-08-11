@@ -1,0 +1,49 @@
+{
+  "id": "proto:WAE2E.Message.InteractiveMessage.NativeFlowMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.InteractiveMessage.NativeFlowMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "buttons": {
+        "number": 1,
+        "type_name": "WAE2E.Message.InteractiveMessage.NativeFlowMessage.NativeFlowButton"
+      },
+      "messageParamsJson": {
+        "number": 2
+      },
+      "messageVersion": {
+        "number": 3
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.InteractiveMessage.NativeFlowMessage\""
+  },
+  "literals": [
+    "NativeFlowMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

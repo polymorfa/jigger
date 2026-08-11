@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAE2E.EmbeddedMessage",
+  "kind": "proto",
+  "name": "WAE2E.EmbeddedMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "message": {
+        "number": 2,
+        "type_name": "WAE2E.Message"
+      },
+      "stanzaId": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"EmbeddedMessage\""
+  },
+  "literals": [
+    "EmbeddedMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

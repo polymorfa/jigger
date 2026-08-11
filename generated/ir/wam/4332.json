@@ -1,0 +1,79 @@
+{
+  "id": "wam:4332",
+  "kind": "wam",
+  "name": "TsBitArray",
+  "data": {
+    "kind": "wam",
+    "event_id": 4332,
+    "fields": {
+      "bitarrayHigh": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "bitarray_high"
+      },
+      "bitarrayLength": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "bitarray_length"
+      },
+      "bitarrayLow": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "bitarray_low"
+      },
+      "cumulativeBits": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "cumulative_bits"
+      },
+      "relativeTimestampMs": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "relative_timestamp_ms"
+      },
+      "sessionSeq": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "session_seq"
+      },
+      "tsSessionId": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "ts_session_id"
+      },
+      "tsTimestampMs": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "ts_timestamp_ms"
+      },
+      "unifiedSessionId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebTsBitArrayWamEvent",
+    "matches": "TsBitArray:\\s*\\[\\s*4332"
+  },
+  "literals": [
+    "4332"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebTimeSpentLoggingBitArray"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

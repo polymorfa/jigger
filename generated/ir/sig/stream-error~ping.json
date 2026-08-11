@@ -1,0 +1,31 @@
+{
+  "id": "sig:stream:error/ping",
+  "kind": "sig",
+  "name": "StreamErrorPingKickRequest",
+  "data": {
+    "kind": "sig",
+    "root": "stream:error",
+    "children": [
+      "ping"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInStreamErrorPingKickRequest",
+    "matches": "assertTag\\([a-z], \"stream:error\"\\)"
+  },
+  "literals": [
+    "stream:error",
+    "ping"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxStreamErrorPingKickRPC"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

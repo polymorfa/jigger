@@ -1,0 +1,2 @@
+// ParseMessageDeliverNewsletterReactionMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverNewsletterReactionMixin(n *waBinary.Node) (*MessageDeliverNewsletterReactionMixin, error)

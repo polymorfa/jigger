@@ -1,0 +1,335 @@
+{
+  "id": "wam:3792",
+  "kind": "wam",
+  "name": "QbmMessageRead",
+  "data": {
+    "kind": "wam",
+    "event_id": 3792,
+    "fields": {
+      "apiDailyThreadCount7d": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "api_daily_thread_count7d"
+      },
+      "apiMessageCount1d": {
+        "id": 19,
+        "type": "INTEGER",
+        "wire": "api_message_count1d"
+      },
+      "apiMessageCount7d": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "api_message_count7d"
+      },
+      "apiTotalMessageCount": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "api_total_message_count"
+      },
+      "apiTotalNewThreadCount": {
+        "id": 24,
+        "type": "INTEGER",
+        "wire": "api_total_new_thread_count"
+      },
+      "apiUniqueThreadCount1d": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "api_unique_thread_count1d"
+      },
+      "apiUniqueThreadCount7d": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "api_unique_thread_count7d"
+      },
+      "bizTrustTier": {
+        "id": 34,
+        "type": "STRING",
+        "wire": "biz_trust_tier"
+      },
+      "bodyUrlCountInt": {
+        "id": 51,
+        "type": "INTEGER",
+        "wire": "body_url_count_int"
+      },
+      "bodyUrlUniqueCountInt": {
+        "id": 52,
+        "type": "INTEGER",
+        "wire": "body_url_unique_count_int"
+      },
+      "buttonValueJsonArray": {
+        "id": 44,
+        "type": "STRING",
+        "wire": "button_value_json_array"
+      },
+      "chatsFolderType": {
+        "id": 1,
+        "type": "CHATS_FOLDER_TYPE",
+        "wire": "chats_folder_type",
+        "enum_ref": "CHATS_FOLDER_TYPE"
+      },
+      "companionDevices": {
+        "id": 41,
+        "type": "INTEGER",
+        "wire": "companion_devices"
+      },
+      "contactType": {
+        "id": 2,
+        "type": "CONTACT_TYPE",
+        "wire": "contact_type",
+        "enum_ref": "CONTACT_TYPE"
+      },
+      "ctaUrlUniqueCountInt": {
+        "id": 53,
+        "type": "INTEGER",
+        "wire": "cta_url_unique_count_int"
+      },
+      "decisionId": {
+        "id": 40,
+        "type": "STRING",
+        "wire": "decision_id"
+      },
+      "deltaTime": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "delta_time"
+      },
+      "deltaTimeReceived": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "delta_time_received"
+      },
+      "entSourceSubplatform": {
+        "id": 39,
+        "type": "STRING",
+        "wire": "ent_source_subplatform"
+      },
+      "hsmTagStr": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "hsm_tag_str"
+      },
+      "iasEntryPoint": {
+        "id": 57,
+        "type": "SIGNUP_ENTRY_POINT",
+        "wire": "ias_entry_point",
+        "enum_ref": "SIGNUP_ENTRY_POINT"
+      },
+      "iasOptinDs": {
+        "id": 58,
+        "type": "STRING",
+        "wire": "ias_optin_ds"
+      },
+      "isBizIntent": {
+        "id": 37,
+        "type": "BOOLEAN",
+        "wire": "is_biz_intent"
+      },
+      "isBroadcastMessage": {
+        "id": 38,
+        "type": "BOOLEAN",
+        "wire": "is_broadcast_message"
+      },
+      "isBulkAction": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_bulk_action"
+      },
+      "isCoex": {
+        "id": 55,
+        "type": "BOOLEAN",
+        "wire": "is_coex"
+      },
+      "isFromAdsManagerMm": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "is_from_ads_manager_mm"
+      },
+      "isFromCapi": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "is_from_capi"
+      },
+      "isFromPill": {
+        "id": 60,
+        "type": "BOOLEAN",
+        "wire": "is_from_pill"
+      },
+      "isIasSubscriber": {
+        "id": 59,
+        "type": "BOOLEAN",
+        "wire": "is_ias_subscriber"
+      },
+      "isInsubContact": {
+        "id": 35,
+        "type": "BOOLEAN",
+        "wire": "is_insub_contact"
+      },
+      "isMuted": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "is_muted"
+      },
+      "isOba": {
+        "id": 43,
+        "type": "BOOLEAN",
+        "wire": "is_oba"
+      },
+      "isThroughDecisionService": {
+        "id": 56,
+        "type": "BOOLEAN",
+        "wire": "is_through_decision_service"
+      },
+      "messageFieldJsonArray": {
+        "id": 45,
+        "type": "STRING",
+        "wire": "message_field_json_array"
+      },
+      "messageHasButton": {
+        "id": 16,
+        "type": "BOOLEAN",
+        "wire": "message_has_button"
+      },
+      "messageHasUrl": {
+        "id": 17,
+        "type": "BOOLEAN",
+        "wire": "message_has_url"
+      },
+      "messageIdHmac": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "message_id_hmac"
+      },
+      "messageTypeStr": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "message_type_str"
+      },
+      "pillEntryPoint": {
+        "id": 61,
+        "type": "PILL_ENTRY_POINT",
+        "wire": "pill_entry_point",
+        "enum_ref": "PILL_ENTRY_POINT"
+      },
+      "qbmFlag": {
+        "id": 4,
+        "type": "QBM_FLAG",
+        "wire": "qbm_flag",
+        "enum_ref": "QBM_FLAG"
+      },
+      "readReceiptsEnabled": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "read_receipts_enabled"
+      },
+      "readSource": {
+        "id": 5,
+        "type": "READ_SOURCE",
+        "wire": "read_source",
+        "enum_ref": "READ_SOURCE"
+      },
+      "smbDailyThreadCount7d": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "smb_daily_thread_count7d"
+      },
+      "smbMessageCount1d": {
+        "id": 26,
+        "type": "INTEGER",
+        "wire": "smb_message_count1d"
+      },
+      "smbMessageCount7d": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "smb_message_count7d"
+      },
+      "smbTotalMessageCount": {
+        "id": 28,
+        "type": "INTEGER",
+        "wire": "smb_total_message_count"
+      },
+      "smbTotalNewThreadCount": {
+        "id": 29,
+        "type": "INTEGER",
+        "wire": "smb_total_new_thread_count"
+      },
+      "smbUniqueThreadCount1d": {
+        "id": 30,
+        "type": "INTEGER",
+        "wire": "smb_unique_thread_count1d"
+      },
+      "smbUniqueThreadCount7d": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "smb_unique_thread_count7d"
+      },
+      "submessageFieldJsonArray": {
+        "id": 46,
+        "type": "STRING",
+        "wire": "submessage_field_json_array"
+      },
+      "threadCreationTime": {
+        "id": 32,
+        "type": "THREAD_CREATION_TIME",
+        "wire": "thread_creation_time",
+        "enum_ref": "THREAD_CREATION_TIME"
+      },
+      "threadDwellTime": {
+        "id": 33,
+        "type": "INTEGER",
+        "wire": "thread_dwell_time"
+      },
+      "threadIdHmac": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      },
+      "threadLidHmac": {
+        "id": 42,
+        "type": "STRING",
+        "wire": "thread_lid_hmac"
+      },
+      "thumbnailType": {
+        "id": 36,
+        "type": "THUMBNAIL_TYPE",
+        "wire": "thumbnail_type",
+        "enum_ref": "THUMBNAIL_TYPE"
+      },
+      "urlUniqueCountInt": {
+        "id": 54,
+        "type": "INTEGER",
+        "wire": "url_unique_count_int"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebQbmMessageReadWamEvent",
+    "matches": "QbmMessageRead:\\s*\\[\\s*3792"
+  },
+  "literals": [
+    "3792"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatsFolderType",
+      "WAWebWamEnumContactType",
+      "WAWebWamEnumPillEntryPoint",
+      "WAWebWamEnumQbmFlag",
+      "WAWebWamEnumReadSource",
+      "WAWebWamEnumSignupEntryPoint",
+      "WAWebWamEnumThreadCreationTime",
+      "WAWebWamEnumThumbnailType"
+    ],
+    "dependents": [
+      "WAWebQbmMessageReadLogEvent"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

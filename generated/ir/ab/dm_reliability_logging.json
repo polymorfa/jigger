@@ -1,0 +1,46 @@
+{
+  "id": "ab:dm_reliability_logging",
+  "kind": "ab",
+  "name": "dm_reliability_logging",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5580,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "dm_reliability_logging:\\s*\\[\\s*5580"
+  },
+  "literals": [
+    "dm_reliability_logging",
+    "5580"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebEphemeralSyncResponse",
+      "WAWebEphemeralSyncResponseWAM"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

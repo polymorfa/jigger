@@ -1,0 +1,42 @@
+{
+  "id": "ab:updates_tab_channels_show_unfollowed_search_results_enabled",
+  "kind": "ab",
+  "name": "updates_tab_channels_show_unfollowed_search_results_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33936,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "updates_tab_channels_show_unfollowed_search_results_enabled:\\s*\\[\\s*33936"
+  },
+  "literals": [
+    "updates_tab_channels_show_unfollowed_search_results_enabled",
+    "33936"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

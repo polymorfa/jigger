@@ -1,0 +1,491 @@
+{
+  "id": "enum:PRE_CALL_ACTION_TYPE",
+  "kind": "enum",
+  "name": "PRE_CALL_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPreCallActionType",
+    "variants": [
+      {
+        "name": "CHAT_OPEN",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK_AUDIO_CALL",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_VIDEO_CALL",
+        "value": 3.0
+      },
+      {
+        "name": "CLICK_CALL_CONFIRM_BUTTON",
+        "value": 4.0
+      },
+      {
+        "name": "CLICK_ICCE",
+        "value": 5.0
+      },
+      {
+        "name": "CLICK_PHONE_NUMBER",
+        "value": 6.0
+      },
+      {
+        "name": "CLICK_REJOIN",
+        "value": 7.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 8.0
+      },
+      {
+        "name": "CLICK_CALL_LINK",
+        "value": 9.0
+      },
+      {
+        "name": "OPEN_CALLS_TAB",
+        "value": 10.0
+      },
+      {
+        "name": "CLICK_PLUS_BUTTON",
+        "value": 11.0
+      },
+      {
+        "name": "CLICK_DIAL_PAD_BUTTON",
+        "value": 12.0
+      },
+      {
+        "name": "CLICK_CALL_LOG_ROW",
+        "value": 13.0
+      },
+      {
+        "name": "CLICK_CREATE_VIDEO_CALL_LINK",
+        "value": 14.0
+      },
+      {
+        "name": "CLICK_CALL_INFO",
+        "value": 15.0
+      },
+      {
+        "name": "CLICK_VIDEO_CALL_LINK_SHARE",
+        "value": 16.0
+      },
+      {
+        "name": "CLICK_FAVORITES_MORE",
+        "value": 17.0
+      },
+      {
+        "name": "CALLING_AWARENESS_BANNER_PRESENTED",
+        "value": 18.0
+      },
+      {
+        "name": "CALLING_AWARENESS_BANNER_LEARN_MORE_TAPPED",
+        "value": 19.0
+      },
+      {
+        "name": "CALLING_AWARENESS_BANNER_DISMISSED_USER_TAP",
+        "value": 20.0
+      },
+      {
+        "name": "CALLING_AWARENESS_BANNER_DISMISSED_TIMEOUT",
+        "value": 21.0
+      },
+      {
+        "name": "SELECT_PARTICIPANT",
+        "value": 22.0
+      },
+      {
+        "name": "DESELECT_PARTICIPANT",
+        "value": 23.0
+      },
+      {
+        "name": "SHOW_PARTICIPANT_SELECTION_CLICK",
+        "value": 24.0
+      },
+      {
+        "name": "SHOW_PARTICIPANT_SELECTION_OTHER",
+        "value": 25.0
+      },
+      {
+        "name": "HIDE_PARTICIPANT_SELECTION_CLICK",
+        "value": 26.0
+      },
+      {
+        "name": "HIDE_PARTICIPANT_SELECTION_OTHER",
+        "value": 27.0
+      },
+      {
+        "name": "OPEN_ATTACHMENT_TRAY",
+        "value": 28.0
+      },
+      {
+        "name": "CLICK_CREATE_EVENT",
+        "value": 29.0
+      },
+      {
+        "name": "CLICK_CREATE_AUDIO_CALL_LINK",
+        "value": 30.0
+      },
+      {
+        "name": "CLICK_AUDIO_CALL_LINK_SHARE",
+        "value": 31.0
+      },
+      {
+        "name": "CLICK_VOICE_CHAT",
+        "value": 32.0
+      },
+      {
+        "name": "CLICK_NOTIFICATION_RING",
+        "value": 33.0
+      },
+      {
+        "name": "CLICK_NOTIFICATION_WAVE",
+        "value": 34.0
+      },
+      {
+        "name": "CLICK_NOTIFICATION_WAVE_ALL",
+        "value": 35.0
+      },
+      {
+        "name": "OVERSCROLL_START",
+        "value": 36.0
+      },
+      {
+        "name": "OVERSCROLL_HOLD",
+        "value": 37.0
+      },
+      {
+        "name": "OVERSCROLL_CANCEL",
+        "value": 38.0
+      },
+      {
+        "name": "OVERSCROLL_SUCCESS",
+        "value": 39.0
+      },
+      {
+        "name": "JOIN_VOICE_CHAT",
+        "value": 40.0
+      },
+      {
+        "name": "CALL_PHONE_NUMBER_DEEPLINK",
+        "value": 41.0
+      },
+      {
+        "name": "CLICK_PHONE_PLUS",
+        "value": 42.0
+      },
+      {
+        "name": "CLICK_START_CALL",
+        "value": 43.0
+      },
+      {
+        "name": "SEND_MESSAGE",
+        "value": 44.0
+      },
+      {
+        "name": "CALL_INFO_OPEN",
+        "value": 45.0
+      },
+      {
+        "name": "DELETE_CALL_LOG",
+        "value": 46.0
+      },
+      {
+        "name": "CLICK_ADD_CONTACT",
+        "value": 47.0
+      },
+      {
+        "name": "CLICK_CALL_DROPDOWN",
+        "value": 48.0
+      },
+      {
+        "name": "CLICK_MORE",
+        "value": 49.0
+      },
+      {
+        "name": "SCROLL_CAROUSEL",
+        "value": 50.0
+      },
+      {
+        "name": "AUTO_SCROLL_CAROUSEL",
+        "value": 51.0
+      },
+      {
+        "name": "OPEN_SYNC_CONTACT_SETTINGS",
+        "value": 52.0
+      },
+      {
+        "name": "CLICK_SEND_INVITE",
+        "value": 53.0
+      },
+      {
+        "name": "CLICK_CONTACT_INFO",
+        "value": 54.0
+      },
+      {
+        "name": "VOICE_CHAT_TOOLTIP_APPEAR",
+        "value": 55.0
+      },
+      {
+        "name": "VOICE_CHAT_TOOLTIP_HIDE",
+        "value": 56.0
+      },
+      {
+        "name": "VOICE_CHAT_TOOLTIP_DISMISS",
+        "value": 57.0
+      },
+      {
+        "name": "OPEN_SEND_CALL_LINK_BOTTOM_SHEET",
+        "value": 58.0
+      },
+      {
+        "name": "CLICK_EVENT_MORE",
+        "value": 59.0
+      },
+      {
+        "name": "CLICK_EVENT_DETAIL",
+        "value": 60.0
+      },
+      {
+        "name": "CLICK_EVENT_MORE_DETAIL",
+        "value": 61.0
+      },
+      {
+        "name": "CHAT_TO_CALL_TOOLTIP_APPEAR",
+        "value": 62.0
+      },
+      {
+        "name": "CHAT_TO_CALL_TOOLTIP_HIDE",
+        "value": 63.0
+      },
+      {
+        "name": "CHAT_TO_CALL_TOOLTIP_DISMISS",
+        "value": 64.0
+      },
+      {
+        "name": "CLICK_EVENT_JOIN",
+        "value": 65.0
+      },
+      {
+        "name": "CLICK_VOICE_CALL_LINK_SHARE",
+        "value": 66.0
+      },
+      {
+        "name": "CLICK_ADD_TO_CALENDAR",
+        "value": 67.0
+      },
+      {
+        "name": "TAP_FAVORITES_ADD",
+        "value": 68.0
+      },
+      {
+        "name": "TAP_FAVORITES_SEE_ALL",
+        "value": 69.0
+      },
+      {
+        "name": "LONG_PRESS",
+        "value": 70.0
+      },
+      {
+        "name": "EXPAND_CALL_LOG",
+        "value": 71.0
+      },
+      {
+        "name": "CLICK_EVENT_BANNER_DETAIL",
+        "value": 72.0
+      },
+      {
+        "name": "CLICK_EVENT_BANNER_JOIN",
+        "value": 73.0
+      },
+      {
+        "name": "CLICK_REMINDER_SHEET_OPENED",
+        "value": 74.0
+      },
+      {
+        "name": "CLICK_REMINDER_OPTION_15_MINS",
+        "value": 75.0
+      },
+      {
+        "name": "CLICK_REMINDER_OPTION_30_MINS",
+        "value": 76.0
+      },
+      {
+        "name": "CLICK_REMINDER_OPTION_1_HOUR",
+        "value": 77.0
+      },
+      {
+        "name": "CLICK_REMINDER_OPTION_1_DAY",
+        "value": 78.0
+      },
+      {
+        "name": "CLICK_REMINDER_OPTION_NEVER",
+        "value": 79.0
+      },
+      {
+        "name": "CLICK_PARTICIPANT_ROW",
+        "value": 80.0
+      },
+      {
+        "name": "CLICK_GROUP_INFO",
+        "value": 81.0
+      },
+      {
+        "name": "CLICK_MORE_BUTTON",
+        "value": 82.0
+      },
+      {
+        "name": "DIALER_INPUT_STARTED",
+        "value": 83.0
+      },
+      {
+        "name": "DIALER_INPUT_CUT",
+        "value": 84.0
+      },
+      {
+        "name": "DIALER_INPUT_COPIED",
+        "value": 85.0
+      },
+      {
+        "name": "DIALER_INPUT_PASTED",
+        "value": 86.0
+      },
+      {
+        "name": "DIALER_COUNTRY_CHIP_TAPPED",
+        "value": 87.0
+      },
+      {
+        "name": "DIALER_COUNTRY_PICKER_SELECTED",
+        "value": 88.0
+      },
+      {
+        "name": "DIALER_NEW_COUNTRY_CODE_DETECTED",
+        "value": 89.0
+      },
+      {
+        "name": "DIALER_INPUT_CURSOR_ENGAGED",
+        "value": 90.0
+      },
+      {
+        "name": "CALL_LOG_MULTI_SELECT_ENTER",
+        "value": 91.0
+      },
+      {
+        "name": "CALL_LOG_MULTI_SELECT_SELECT_ALL",
+        "value": 92.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPreCallActionType",
+    "matches": "PRE_CALL_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PRE_CALL_ACTION_TYPE",
+    "CHAT_OPEN",
+    "CLICK_AUDIO_CALL",
+    "CLICK_VIDEO_CALL",
+    "CLICK_CALL_CONFIRM_BUTTON",
+    "CLICK_ICCE",
+    "CLICK_PHONE_NUMBER",
+    "CLICK_REJOIN",
+    "DISMISS",
+    "CLICK_CALL_LINK",
+    "OPEN_CALLS_TAB",
+    "CLICK_PLUS_BUTTON",
+    "CLICK_DIAL_PAD_BUTTON",
+    "CLICK_CALL_LOG_ROW",
+    "CLICK_CREATE_VIDEO_CALL_LINK",
+    "CLICK_CALL_INFO",
+    "CLICK_VIDEO_CALL_LINK_SHARE",
+    "CLICK_FAVORITES_MORE",
+    "CALLING_AWARENESS_BANNER_PRESENTED",
+    "CALLING_AWARENESS_BANNER_LEARN_MORE_TAPPED",
+    "CALLING_AWARENESS_BANNER_DISMISSED_USER_TAP",
+    "CALLING_AWARENESS_BANNER_DISMISSED_TIMEOUT",
+    "SELECT_PARTICIPANT",
+    "DESELECT_PARTICIPANT",
+    "SHOW_PARTICIPANT_SELECTION_CLICK",
+    "SHOW_PARTICIPANT_SELECTION_OTHER",
+    "HIDE_PARTICIPANT_SELECTION_CLICK",
+    "HIDE_PARTICIPANT_SELECTION_OTHER",
+    "OPEN_ATTACHMENT_TRAY",
+    "CLICK_CREATE_EVENT",
+    "CLICK_CREATE_AUDIO_CALL_LINK",
+    "CLICK_AUDIO_CALL_LINK_SHARE",
+    "CLICK_VOICE_CHAT",
+    "CLICK_NOTIFICATION_RING",
+    "CLICK_NOTIFICATION_WAVE",
+    "CLICK_NOTIFICATION_WAVE_ALL",
+    "OVERSCROLL_START",
+    "OVERSCROLL_HOLD",
+    "OVERSCROLL_CANCEL",
+    "OVERSCROLL_SUCCESS",
+    "JOIN_VOICE_CHAT",
+    "CALL_PHONE_NUMBER_DEEPLINK",
+    "CLICK_PHONE_PLUS",
+    "CLICK_START_CALL",
+    "SEND_MESSAGE",
+    "CALL_INFO_OPEN",
+    "DELETE_CALL_LOG",
+    "CLICK_ADD_CONTACT",
+    "CLICK_CALL_DROPDOWN",
+    "CLICK_MORE",
+    "SCROLL_CAROUSEL",
+    "AUTO_SCROLL_CAROUSEL",
+    "OPEN_SYNC_CONTACT_SETTINGS",
+    "CLICK_SEND_INVITE",
+    "CLICK_CONTACT_INFO",
+    "VOICE_CHAT_TOOLTIP_APPEAR",
+    "VOICE_CHAT_TOOLTIP_HIDE",
+    "VOICE_CHAT_TOOLTIP_DISMISS",
+    "OPEN_SEND_CALL_LINK_BOTTOM_SHEET",
+    "CLICK_EVENT_MORE",
+    "CLICK_EVENT_DETAIL",
+    "CLICK_EVENT_MORE_DETAIL",
+    "CHAT_TO_CALL_TOOLTIP_APPEAR",
+    "CHAT_TO_CALL_TOOLTIP_HIDE",
+    "CHAT_TO_CALL_TOOLTIP_DISMISS",
+    "CLICK_EVENT_JOIN",
+    "CLICK_VOICE_CALL_LINK_SHARE",
+    "CLICK_ADD_TO_CALENDAR",
+    "TAP_FAVORITES_ADD",
+    "TAP_FAVORITES_SEE_ALL",
+    "LONG_PRESS",
+    "EXPAND_CALL_LOG",
+    "CLICK_EVENT_BANNER_DETAIL",
+    "CLICK_EVENT_BANNER_JOIN",
+    "CLICK_REMINDER_SHEET_OPENED",
+    "CLICK_REMINDER_OPTION_15_MINS",
+    "CLICK_REMINDER_OPTION_30_MINS",
+    "CLICK_REMINDER_OPTION_1_HOUR",
+    "CLICK_REMINDER_OPTION_1_DAY",
+    "CLICK_REMINDER_OPTION_NEVER",
+    "CLICK_PARTICIPANT_ROW",
+    "CLICK_GROUP_INFO",
+    "CLICK_MORE_BUTTON",
+    "DIALER_INPUT_STARTED",
+    "DIALER_INPUT_CUT",
+    "DIALER_INPUT_COPIED",
+    "DIALER_INPUT_PASTED",
+    "DIALER_COUNTRY_CHIP_TAPPED",
+    "DIALER_COUNTRY_PICKER_SELECTED",
+    "DIALER_NEW_COUNTRY_CODE_DETECTED",
+    "DIALER_INPUT_CURSOR_ENGAGED",
+    "CALL_LOG_MULTI_SELECT_ENTER",
+    "CALL_LOG_MULTI_SELECT_SELECT_ALL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallInfoUserJourneyWamEvent",
+      "WAWebCallLogEntryDetails.react",
+      "WAWebCallLogParticipantsList.react",
+      "WAWebPreCallUserJourneyCallsTabWamEvent",
+      "WAWebPreCallUserJourneyChatThreadWamEvent",
+      "WAWebPreCallUserJourneyLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

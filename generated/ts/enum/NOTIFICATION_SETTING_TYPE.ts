@@ -1,0 +1,5 @@
+export enum NOTIFICATIONSETTINGTYPE {
+  ALLOWED = 1,
+  BLOCKED = 2,
+  UNKNOWN = 3,
+}

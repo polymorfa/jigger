@@ -1,0 +1,40 @@
+{
+  "id": "proto:WAWebProtobufsAICommonDeprecated.AIRichResponseCodeMetadata",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommonDeprecated.AIRichResponseCodeMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "codeBlocks": {
+        "number": 2,
+        "type_name": "WAWebProtobufsAICommonDeprecated.AIRichResponseCodeMetadata.AIRichResponseCodeBlock"
+      },
+      "codeLanguage": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseCodeMetadata\""
+  },
+  "literals": [
+    "AIRichResponseCodeMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebProtobufsE2E.pb",
+      "WAWebRichResponseGenerateUtils",
+      "WAWebRichResponseParseUtils",
+      "WAWebRichResponseUnknownFragmentUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

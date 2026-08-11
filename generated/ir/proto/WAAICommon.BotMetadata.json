@@ -1,0 +1,178 @@
+{
+  "id": "proto:WAAICommon.BotMetadata",
+  "kind": "proto",
+  "name": "WAAICommon.BotMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "aiConversationContext": {
+        "number": 20
+      },
+      "aiMediaCollectionMetadata": {
+        "number": 38,
+        "type_name": "WAAICommon.AIMediaCollectionMetadata"
+      },
+      "botAgeCollectionMetadata": {
+        "number": 24,
+        "type_name": "WAAICommon.BotAgeCollectionMetadata"
+      },
+      "botDocumentMessageMetadata": {
+        "number": 34,
+        "type_name": "WAAICommon.BotDocumentMessageMetadata"
+      },
+      "botGroupMetadata": {
+        "number": 35,
+        "type_name": "WAAICommon.BotGroupMetadata"
+      },
+      "botInfrastructureDiagnostics": {
+        "number": 37,
+        "type_name": "WAAICommon.BotInfrastructureDiagnostics"
+      },
+      "botLinkedAccountsMetadata": {
+        "number": 18,
+        "type_name": "WAAICommon.BotLinkedAccountsMetadata"
+      },
+      "botMessageOriginMetadata": {
+        "number": 29,
+        "type_name": "WAAICommon.BotMessageOriginMetadata"
+      },
+      "botMetricsMetadata": {
+        "number": 17,
+        "type_name": "WAAICommon.BotMetricsMetadata"
+      },
+      "botModeSelectionMetadata": {
+        "number": 22,
+        "type_name": "WAAICommon.BotModeSelectionMetadata"
+      },
+      "botPromotionMessageMetadata": {
+        "number": 21,
+        "type_name": "WAAICommon.BotPromotionMessageMetadata"
+      },
+      "botQuotaMetadata": {
+        "number": 23,
+        "type_name": "WAAICommon.BotQuotaMetadata"
+      },
+      "botRenderingConfigMetadata": {
+        "number": 36,
+        "type_name": "WAAICommon.BotRenderingConfigMetadata"
+      },
+      "botResponseId": {
+        "number": 26
+      },
+      "botThreadInfo": {
+        "number": 31,
+        "type_name": "WAAICommon.AIThreadInfo"
+      },
+      "capabilityMetadata": {
+        "number": 13,
+        "type_name": "WAAICommon.BotCapabilityMetadata"
+      },
+      "commandMetadata": {
+        "number": 39,
+        "type_name": "WAAICommon.BotCommandMetadata"
+      },
+      "conversationStarterPromptId": {
+        "number": 25
+      },
+      "imagineMetadata": {
+        "number": 14,
+        "type_name": "WAAICommon.BotImagineMetadata"
+      },
+      "inThreadSurveyMetadata": {
+        "number": 30,
+        "type_name": "WAAICommon.InThreadSurveyMetadata"
+      },
+      "internalMetadata": {
+        "number": 999
+      },
+      "invokerJid": {
+        "number": 5
+      },
+      "memoryMetadata": {
+        "number": 15,
+        "type_name": "WAAICommon.BotMemoryMetadata"
+      },
+      "memuMetadata": {
+        "number": 7,
+        "type_name": "WAAICommon.BotMemuMetadata"
+      },
+      "messageDisclaimerText": {
+        "number": 11
+      },
+      "modelMetadata": {
+        "number": 10,
+        "type_name": "WAAICommon.BotModelMetadata"
+      },
+      "personaId": {
+        "number": 2
+      },
+      "pluginMetadata": {
+        "number": 3,
+        "type_name": "WAAICommon.BotPluginMetadata"
+      },
+      "progressIndicatorMetadata": {
+        "number": 12,
+        "type_name": "WAAICommon.BotProgressIndicatorMetadata"
+      },
+      "regenerateMetadata": {
+        "number": 32,
+        "type_name": "WAAICommon.AIRegenerateMetadata"
+      },
+      "reminderMetadata": {
+        "number": 9,
+        "type_name": "WAAICommon.BotReminderMetadata"
+      },
+      "renderingMetadata": {
+        "number": 16,
+        "type_name": "WAAICommon.BotRenderingMetadata"
+      },
+      "richResponseSourcesMetadata": {
+        "number": 19,
+        "type_name": "WAAICommon.BotSourcesMetadata"
+      },
+      "sessionMetadata": {
+        "number": 6,
+        "type_name": "WAAICommon.BotSessionMetadata"
+      },
+      "sessionTransparencyMetadata": {
+        "number": 33,
+        "type_name": "WAAICommon.SessionTransparencyMetadata"
+      },
+      "suggestedPromptMetadata": {
+        "number": 4,
+        "type_name": "WAAICommon.BotSuggestedPromptMetadata"
+      },
+      "timezone": {
+        "number": 8
+      },
+      "unifiedResponseMutation": {
+        "number": 28,
+        "type_name": "WAAICommon.BotUnifiedResponseMutation"
+      },
+      "verificationMetadata": {
+        "number": 27,
+        "type_name": "WAAICommon.BotSignatureVerificationMetadata"
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotMetadata\""
+  },
+  "literals": [
+    "BotMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

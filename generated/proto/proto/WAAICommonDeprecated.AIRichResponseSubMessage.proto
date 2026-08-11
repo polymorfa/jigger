@@ -1,0 +1,12 @@
+message AIRichResponseSubMessage {
+  optional bytes messageType = 1;
+  optional AIRichResponseGridImageMetadata gridImageMetadata = 2;
+  optional bytes messageText = 3;
+  optional AIRichResponseInlineImageMetadata imageMetadata = 4;
+  optional AIRichResponseCodeMetadata codeMetadata = 5;
+  optional AIRichResponseTableMetadata tableMetadata = 6;
+  optional AIRichResponseDynamicMetadata dynamicMetadata = 7;
+  optional AIRichResponseLatexMetadata latexMetadata = 8;
+  optional AIRichResponseMapMetadata mapMetadata = 9;
+  optional AIRichResponseContentItemsMetadata contentItemsMetadata = 10;
+}

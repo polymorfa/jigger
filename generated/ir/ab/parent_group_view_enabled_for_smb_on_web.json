@@ -1,0 +1,42 @@
+{
+  "id": "ab:parent_group_view_enabled_for_smb_on_web",
+  "kind": "ab",
+  "name": "parent_group_view_enabled_for_smb_on_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2205,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "parent_group_view_enabled_for_smb_on_web:\\s*\\[\\s*2205"
+  },
+  "literals": [
+    "parent_group_view_enabled_for_smb_on_web",
+    "2205"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "wam:6692",
+  "kind": "wam",
+  "name": "StatusViewerAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 6692,
+    "fields": {
+      "actionIndex": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "action_index"
+      },
+      "attributionType": {
+        "id": 1,
+        "type": "TOP_BAR_ATTRIBUTION_TYPE",
+        "wire": "attribution_type",
+        "enum_ref": "TOP_BAR_ATTRIBUTION_TYPE"
+      },
+      "attributionTypes": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "attribution_types"
+      },
+      "externalSourceDomainType": {
+        "id": 5,
+        "type": "INLINE_VIDEO_TYPE",
+        "wire": "external_source_domain_type",
+        "enum_ref": "INLINE_VIDEO_TYPE"
+      },
+      "linkLoadTime": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "link_load_time"
+      },
+      "linkOpenResult": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "link_open_result"
+      },
+      "psaCampaignId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "psa_campaign_id"
+      },
+      "statusCategory": {
+        "id": 4,
+        "type": "STATUS_CATEGORY",
+        "wire": "status_category",
+        "enum_ref": "STATUS_CATEGORY"
+      },
+      "statusId": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "statusViewerSessionId": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "status_viewer_session_id"
+      },
+      "urlStatusClicked": {
+        "id": 6,
+        "type": "URL_STATUS_CLICKED",
+        "wire": "url_status_clicked",
+        "enum_ref": "URL_STATUS_CLICKED"
+      },
+      "urlStatusType": {
+        "id": 7,
+        "type": "URL_STATUS_TYPE",
+        "wire": "url_status_type",
+        "enum_ref": "URL_STATUS_TYPE"
+      },
+      "viewerActionType": {
+        "id": 2,
+        "type": "STATUS_VIEW_ACTION_TYPE",
+        "wire": "viewer_action_type",
+        "enum_ref": "STATUS_VIEW_ACTION_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStatusViewerActionWamEvent",
+    "matches": "StatusViewerAction:\\s*\\[\\s*6692"
+  },
+  "literals": [
+    "6692"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumInlineVideoType",
+      "WAWebWamEnumStatusCategory",
+      "WAWebWamEnumStatusViewActionType",
+      "WAWebWamEnumTopBarAttributionType",
+      "WAWebWamEnumUrlStatusClicked",
+      "WAWebWamEnumUrlStatusType"
+    ],
+    "dependents": [
+      "WAWebStatusSubtitle.react"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "enum:FETCH_MECHANISM_ENUM",
+  "kind": "enum",
+  "name": "FETCH_MECHANISM_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumFetchMechanismEnum",
+    "variants": [
+      {
+        "name": "GRAPHQL",
+        "value": 0.0
+      },
+      {
+        "name": "IQ",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumFetchMechanismEnum",
+    "matches": "FETCH_MECHANISM_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "FETCH_MECHANISM_ENUM",
+    "GRAPHQL",
+    "IQ"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSmbQpCallHealthLogger",
+      "WAWebSmbQpCallHealthWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

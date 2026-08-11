@@ -1,0 +1,52 @@
+{
+  "id": "enum:AGENT_ENGAGEMENT_ENUM_TYPE",
+  "kind": "enum",
+  "name": "AGENT_ENGAGEMENT_ENUM_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAgentEngagementEnumType",
+    "variants": [
+      {
+        "name": "DIRECT_CHAT",
+        "value": 0.0
+      },
+      {
+        "name": "INVOKED",
+        "value": 1.0
+      },
+      {
+        "name": "MEMBER",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAgentEngagementEnumType",
+    "matches": "AGENT_ENGAGEMENT_ENUM_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "AGENT_ENGAGEMENT_ENUM_TYPE",
+    "DIRECT_CHAT",
+    "INVOKED",
+    "MEMBER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAndroidMessageSendPerfWamEvent",
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebIncomingMessageDropWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent",
+      "WAWebPostE2eMessageRecvMetric",
+      "WAWebPostE2eMessageSendMetric",
+      "WAWebPostIncomingMessageDropMetric",
+      "WAWebUiActionWamEvent",
+      "WAWebWamMsgUtils",
+      "useWAWebConversationPanelMetrics"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

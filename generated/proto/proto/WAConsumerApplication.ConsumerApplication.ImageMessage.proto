@@ -1,0 +1,4 @@
+message ImageMessage {
+  optional bytes image = 1;
+  optional bytes caption = 2;
+}

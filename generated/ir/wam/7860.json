@@ -1,0 +1,56 @@
+{
+  "id": "wam:7860",
+  "kind": "wam",
+  "name": "MmSignalRealtimeWeb",
+  "data": {
+    "kind": "wam",
+    "event_id": 7860,
+    "fields": {
+      "mmCarouselCardIndex": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "mm_carousel_card_index"
+      },
+      "mmCtaButtonIndex": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "mm_cta_button_index"
+      },
+      "mmSignalData": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "mm_signal_data"
+      },
+      "mmSignalType": {
+        "id": 4,
+        "type": "MM_SIGNAL_TYPE",
+        "wire": "mm_signal_type",
+        "enum_ref": "MM_SIGNAL_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebMmSignalRealtimeWebWamEvent",
+    "matches": "MmSignalRealtimeWeb:\\s*\\[\\s*7860"
+  },
+  "literals": [
+    "7860"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMmSignalType"
+    ],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

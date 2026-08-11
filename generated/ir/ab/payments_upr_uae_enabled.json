@@ -1,0 +1,42 @@
+{
+  "id": "ab:payments_upr_uae_enabled",
+  "kind": "ab",
+  "name": "payments_upr_uae_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31860,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "payments_upr_uae_enabled:\\s*\\[\\s*31860"
+  },
+  "literals": [
+    "payments_upr_uae_enabled",
+    "31860"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

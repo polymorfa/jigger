@@ -1,0 +1,5 @@
+message CarouselMessage {
+  optional InteractiveMessage cards = 1;
+  optional bytes messageVersion = 2;
+  optional bytes carouselCardType = 3;
+}

@@ -1,0 +1,5 @@
+message QuestionReplyQuotedMessage {
+  optional bytes serverQuestionId = 1;
+  optional Message quotedQuestion = 2;
+  optional Message quotedResponse = 3;
+}

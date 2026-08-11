@@ -1,0 +1,53 @@
+{
+  "id": "enum:ABOUT_ENTRYPOINT_TYPE",
+  "kind": "enum",
+  "name": "ABOUT_ENTRYPOINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAboutEntrypointType",
+    "variants": [
+      {
+        "name": "SETTINGS",
+        "value": 1.0
+      },
+      {
+        "name": "PROFILE",
+        "value": 2.0
+      },
+      {
+        "name": "ME_TAB",
+        "value": 3.0
+      },
+      {
+        "name": "DEEP_LINK",
+        "value": 4.0
+      },
+      {
+        "name": "ONE_ON_ONE_CHAT",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAboutEntrypointType",
+    "matches": "ABOUT_ENTRYPOINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ABOUT_ENTRYPOINT_TYPE",
+    "SETTINGS",
+    "PROFILE",
+    "ME_TAB",
+    "DEEP_LINK",
+    "ONE_ON_ONE_CHAT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAboutCreationDailyWamEvent",
+      "WAWebAboutCreationWamEvent",
+      "WAWebAboutWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

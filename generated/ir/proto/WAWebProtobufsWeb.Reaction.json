@@ -1,0 +1,71 @@
+{
+  "id": "proto:WAWebProtobufsWeb.Reaction",
+  "kind": "proto",
+  "name": "WAWebProtobufsWeb.Reaction",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "groupingKey": {
+        "number": 3
+      },
+      "key": {
+        "number": 1
+      },
+      "senderTimestampMs": {
+        "number": 4
+      },
+      "text": {
+        "number": 2
+      },
+      "unread": {
+        "number": 5
+      }
+    },
+    "module": "WAWebProtobufsWeb.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsWeb.pb",
+    "matches": "name = \"Reaction\""
+  },
+  "literals": [
+    "Reaction"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsE2E.pb",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebBizPrivacyUtils",
+      "WAWebDBProcessPaymentMessages",
+      "WAWebDebug",
+      "WAWebEventsParseWebMsgInfoEventResponse",
+      "WAWebGenerateRevokeWebMessageInfo",
+      "WAWebGroupHistorySerializationUtils",
+      "WAWebHandleMsgParser",
+      "WAWebMessagePluginGenerateWebMessageInfo",
+      "WAWebNonMessageDataRequestHandlerPlaceholderResend",
+      "WAWebParseLimitSharingHistorySyncProto",
+      "WAWebParseMessageHistoryBundleProto",
+      "WAWebParseRequestPaymentMessageProto",
+      "WAWebParseWebMessageInfoUtils",
+      "WAWebPaymentIcon.react",
+      "WAWebPaymentIcon.story",
+      "WAWebPaymentInfo.react",
+      "WAWebPaymentInfo.story",
+      "WAWebPaymentStatus.react",
+      "WAWebPaymentStatus.story",
+      "WAWebPaymentStatusUtils",
+      "WAWebPinMsgParseWebMsgInfoPinInChat",
+      "WAWebPollsParseWebMsgInfoPollUpdates",
+      "WAWebProtobufsGroupHistory.pb",
+      "WAWebProtobufsHistorySync.pb",
+      "WAWebReactionsParseWebMsgInfoReaction",
+      "WAWebUpdateMsgBizPrivacyStatusAction"
+    ],
+    "dep_count": 4,
+    "dependent_count": 26
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "enum:OFFLINE_RESUME_MODES",
+  "kind": "enum",
+  "name": "OFFLINE_RESUME_MODES",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOfflineResumeModes",
+    "variants": [
+      {
+        "name": "RESUME_FROM_RESTART",
+        "value": 1.0
+      },
+      {
+        "name": "RESUME_FROM_OPEN_TAB",
+        "value": 2.0
+      },
+      {
+        "name": "UNKNOWN",
+        "value": 3.0
+      },
+      {
+        "name": "CONNECT_REASON_USER",
+        "value": 4.0
+      },
+      {
+        "name": "CONNECT_REASON_PUSH",
+        "value": 5.0
+      },
+      {
+        "name": "CONNECT_REASON_BACKOFF",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOfflineResumeModes",
+    "matches": "OFFLINE_RESUME_MODES\\s*[:=]"
+  },
+  "literals": [
+    "OFFLINE_RESUME_MODES",
+    "RESUME_FROM_RESTART",
+    "RESUME_FROM_OPEN_TAB",
+    "UNKNOWN",
+    "CONNECT_REASON_USER",
+    "CONNECT_REASON_PUSH",
+    "CONNECT_REASON_BACKOFF"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebOfflineResumeStageWamEvent",
+      "WAWebWamOfflineResumeReporter"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

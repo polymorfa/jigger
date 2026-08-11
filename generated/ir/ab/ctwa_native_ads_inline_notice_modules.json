@@ -1,0 +1,45 @@
+{
+  "id": "ab:ctwa_native_ads_inline_notice_modules",
+  "kind": "ab",
+  "name": "ctwa_native_ads_inline_notice_modules",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32701,
+    "type": "string",
+    "default": "AdsLWICTWAZeroOutcomeAdValidationModule",
+    "alt_default": "AdsLWICTWASimilarAdvertiserBudgetRecommendationValidationModule"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_native_ads_inline_notice_modules:\\s*\\[\\s*32701"
+  },
+  "literals": [
+    "ctwa_native_ads_inline_notice_modules",
+    "32701"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizNativeAdsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

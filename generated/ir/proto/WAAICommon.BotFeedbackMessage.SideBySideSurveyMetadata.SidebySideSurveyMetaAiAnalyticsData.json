@@ -1,0 +1,62 @@
+{
+  "id": "proto:WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData",
+  "kind": "proto",
+  "name": "WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "abandonEvent": {
+        "number": 9,
+        "type_name": "WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyAbandonEventData"
+      },
+      "cardImpressionEvent": {
+        "number": 7,
+        "type_name": "WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyCardImpressionEventData"
+      },
+      "ctaClickEvent": {
+        "number": 6,
+        "type_name": "WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyCTAClickEventData"
+      },
+      "ctaImpressionEvent": {
+        "number": 5,
+        "type_name": "WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyCTAImpressionEventData"
+      },
+      "primaryResponseId": {
+        "number": 2
+      },
+      "responseEvent": {
+        "number": 8,
+        "type_name": "WAAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyResponseEventData"
+      },
+      "surveyId": {
+        "number": 1
+      },
+      "testArmName": {
+        "number": 3
+      },
+      "timestampMsString": {
+        "number": 4
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData\""
+  },
+  "literals": [
+    "SidebySideSurveyMetaAiAnalyticsData"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

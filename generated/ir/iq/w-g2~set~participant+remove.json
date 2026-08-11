@@ -1,0 +1,217 @@
+{
+  "id": "iq:w:g2/set/participant+remove",
+  "kind": "iq",
+  "name": "GroupsRemoveParticipants",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "set",
+    "tags": [
+      "participant",
+      "remove"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "remove",
+          "attrs": [
+            {
+              "name": "linked_groups",
+              "ty": "string",
+              "literal": "true",
+              "optional": true
+            }
+          ],
+          "children": [
+            {
+              "tag": "participant",
+              "attrs": [
+                {
+                  "name": "jid",
+                  "ty": "jid",
+                  "optional": false
+                }
+              ],
+              "card": "repeated"
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsRemoveParticipantsRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsRemoveParticipantsResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "remove",
+              "card": "one"
+            },
+            {
+              "tag": "participant",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "ParticipantNotAcceptable",
+          "ParticipantNotAllowed",
+          "ParticipantNotInGroup",
+          "RemoveParticipantsLinkedGroupsServerError"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsRemoveParticipantsResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFallbackClient",
+          "IQErrorForbidden",
+          "IQErrorItemNotFound",
+          "IQErrorLocked",
+          "IQErrorNotAuthorized",
+          "IQErrorPayloadTooLarge",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsRemoveParticipantsResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsRemoveParticipantsRequest",
+    "matches": "smax\\(\"participant\""
+  },
+  "literals": [
+    "w:g2",
+    "participant",
+    "remove"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseSetGroupMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxGroupsRemoveParticipantsRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

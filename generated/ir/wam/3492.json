@@ -1,0 +1,70 @@
+{
+  "id": "wam:3492",
+  "kind": "wam",
+  "name": "CommunityCreation",
+  "data": {
+    "kind": "wam",
+    "event_id": 3492,
+    "fields": {
+      "communityCreationActionCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "community_creation_action_count"
+      },
+      "communityCreationActionTaken": {
+        "id": 2,
+        "type": "COMMUNITY_CREATION_ACTION_TAKEN_TYPE",
+        "wire": "community_creation_action_taken",
+        "enum_ref": "COMMUNITY_CREATION_ACTION_TAKEN_TYPE"
+      },
+      "communityCreationCurrentScreen": {
+        "id": 3,
+        "type": "COMMUNITY_CREATION_CURRENT_SCREEN_TYPE",
+        "wire": "community_creation_current_screen",
+        "enum_ref": "COMMUNITY_CREATION_CURRENT_SCREEN_TYPE"
+      },
+      "communityCreationEntrypoint": {
+        "id": 5,
+        "type": "COMMUNITY_CREATION_ENTRYPOINT_TYPE",
+        "wire": "community_creation_entrypoint",
+        "enum_ref": "COMMUNITY_CREATION_ENTRYPOINT_TYPE"
+      },
+      "communityCreationSessionId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "community_creation_session_id"
+      },
+      "communityId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "community_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCommunityCreationWamEvent",
+    "matches": "CommunityCreation:\\s*\\[\\s*3492"
+  },
+  "literals": [
+    "3492"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCommunityCreationActionTakenType",
+      "WAWebWamEnumCommunityCreationCurrentScreenType",
+      "WAWebWamEnumCommunityCreationEntrypointType"
+    ],
+    "dependents": [
+      "WAWebCommunityCreationFlowMetricUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

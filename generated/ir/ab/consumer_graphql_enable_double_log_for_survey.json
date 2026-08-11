@@ -1,0 +1,42 @@
+{
+  "id": "ab:consumer_graphql_enable_double_log_for_survey",
+  "kind": "ab",
+  "name": "consumer_graphql_enable_double_log_for_survey",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28129,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "consumer_graphql_enable_double_log_for_survey:\\s*\\[\\s*28129"
+  },
+  "literals": [
+    "consumer_graphql_enable_double_log_for_survey",
+    "28129"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "enum:DISCLOSURE_INTERACTION",
+  "kind": "enum",
+  "name": "DISCLOSURE_INTERACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDisclosureInteraction",
+    "variants": [
+      {
+        "name": "CONTINUE",
+        "value": 0.0
+      },
+      {
+        "name": "CANCEL",
+        "value": 1.0
+      },
+      {
+        "name": "DISMISSED",
+        "value": 2.0
+      },
+      {
+        "name": "LEARN_MORE",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDisclosureInteraction",
+    "matches": "DISCLOSURE_INTERACTION\\s*[:=]"
+  },
+  "literals": [
+    "DISCLOSURE_INTERACTION",
+    "CONTINUE",
+    "CANCEL",
+    "DISMISSED",
+    "LEARN_MORE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMmDisclosureStateEventWamEvent",
+      "WAWebMmDisclosureStateFsEventWamEvent",
+      "WAWebMmSignalSharingLoggingEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

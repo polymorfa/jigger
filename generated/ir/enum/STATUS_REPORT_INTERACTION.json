@@ -1,0 +1,47 @@
+{
+  "id": "enum:STATUS_REPORT_INTERACTION",
+  "kind": "enum",
+  "name": "STATUS_REPORT_INTERACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusReportInteraction",
+    "variants": [
+      {
+        "name": "CLICK_REPORT",
+        "value": 0.0
+      },
+      {
+        "name": "CLICK_SUBMIT_REPORT",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK_CANCEL_REPORT",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_SUBMIT_REPORT_BLOCK",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusReportInteraction",
+    "matches": "STATUS_REPORT_INTERACTION\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_REPORT_INTERACTION",
+    "CLICK_REPORT",
+    "CLICK_SUBMIT_REPORT",
+    "CLICK_CANCEL_REPORT",
+    "CLICK_SUBMIT_REPORT_BLOCK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPlayer.react",
+      "WAWebStatusReportingEventsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

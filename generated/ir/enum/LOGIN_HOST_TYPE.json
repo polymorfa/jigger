@@ -1,0 +1,61 @@
+{
+  "id": "enum:LOGIN_HOST_TYPE",
+  "kind": "enum",
+  "name": "LOGIN_HOST_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLoginHostType",
+    "variants": [
+      {
+        "name": "PUSH_OVERRIDES",
+        "value": 1.0
+      },
+      {
+        "name": "G_WHATSAPP_NET",
+        "value": 2.0
+      },
+      {
+        "name": "PUSH_FALLBACKS",
+        "value": 3.0
+      },
+      {
+        "name": "G_FALLBACK_WHATSAPP_NET",
+        "value": 4.0
+      },
+      {
+        "name": "HARDCODED_LIST",
+        "value": 5.0
+      },
+      {
+        "name": "EX_WHATSAPP_NET",
+        "value": 6.0
+      },
+      {
+        "name": "PROXY",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLoginHostType",
+    "matches": "LOGIN_HOST_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LOGIN_HOST_TYPE",
+    "PUSH_OVERRIDES",
+    "G_WHATSAPP_NET",
+    "PUSH_FALLBACKS",
+    "G_FALLBACK_WHATSAPP_NET",
+    "HARDCODED_LIST",
+    "EX_WHATSAPP_NET",
+    "PROXY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLoginWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

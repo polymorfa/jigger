@@ -1,0 +1,27 @@
+{
+  "id": "const:hkdf/WhatsApp Audio Keys",
+  "kind": "const",
+  "name": "WhatsApp Audio Keys",
+  "data": {
+    "kind": "const",
+    "group": "hkdf",
+    "value": "WhatsApp Audio Keys"
+  },
+  "evidence": {
+    "module": "WAMediaHkdfInfo",
+    "matches": "WhatsApp Audio Keys"
+  },
+  "literals": [
+    "WhatsApp Audio Keys"
+  ],
+  "graph": {
+    "deps": [
+      "err"
+    ],
+    "dependents": [
+      "WAMediaCrypto"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

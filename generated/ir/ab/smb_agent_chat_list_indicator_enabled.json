@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_agent_chat_list_indicator_enabled",
+  "kind": "ab",
+  "name": "smb_agent_chat_list_indicator_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10455,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_agent_chat_list_indicator_enabled:\\s*\\[\\s*10455"
+  },
+  "literals": [
+    "smb_agent_chat_list_indicator_enabled",
+    "10455"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

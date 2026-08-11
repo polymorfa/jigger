@@ -1,0 +1,9 @@
+message VirtualDeviceOutput {
+  optional bytes vdId = 1;
+  optional bytes vdPublicKey = 2;
+  optional bytes vdEpochStoragePublicKey = 3;
+  optional bytes vdEpochStoragePublicKeySig = 4;
+  optional bytes ocmfRotationToken = 5;
+  optional bytes deviceEpochHmac = 6;
+  optional EncryptedSecretValuesOutput encryptedSecretValues = 7;
+}

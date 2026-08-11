@@ -1,0 +1,2 @@
+/** A/B property 22206 (int), default 3600. */
+export const ABNewsletterForwardCounterMaxSendAfterRandomTime = 'newsletter_forward_counter_max_send_after_random_time' as const

@@ -1,0 +1,2 @@
+// ABGroupCreateAddUsingLidJids is A/B property 16192 (bool), default false.
+const ABGroupCreateAddUsingLidJids = "group_create_add_using_lid_jids"

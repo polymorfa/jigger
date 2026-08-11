@@ -1,0 +1,75 @@
+{
+  "id": "enum:WEBC_BUTTERBAR_BB_TYPE",
+  "kind": "enum",
+  "name": "WEBC_BUTTERBAR_BB_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcButterbarBbType",
+    "variants": [
+      {
+        "name": "OFFLINE",
+        "value": 1.0
+      },
+      {
+        "name": "RESUME_CONNECTING",
+        "value": 2.0
+      },
+      {
+        "name": "RESUME_LOADING_MSGS_PROGRESS",
+        "value": 3.0
+      },
+      {
+        "name": "UPDATE_DUE_TO_SOFT_MIN",
+        "value": 4.0
+      },
+      {
+        "name": "UWP_UPSELL",
+        "value": 5.0
+      },
+      {
+        "name": "NOTIFICATION",
+        "value": 6.0
+      },
+      {
+        "name": "OFFLINE_NOTIFICATION",
+        "value": 7.0
+      },
+      {
+        "name": "NOTIFICATION_DISABLED",
+        "value": 8.0
+      },
+      {
+        "name": "NOTIFICATION_AWARENESS",
+        "value": 9.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcButterbarBbType",
+    "matches": "WEBC_BUTTERBAR_BB_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_BUTTERBAR_BB_TYPE",
+    "OFFLINE",
+    "RESUME_CONNECTING",
+    "RESUME_LOADING_MSGS_PROGRESS",
+    "UPDATE_DUE_TO_SOFT_MIN",
+    "UWP_UPSELL",
+    "NOTIFICATION",
+    "OFFLINE_NOTIFICATION",
+    "NOTIFICATION_DISABLED",
+    "NOTIFICATION_AWARENESS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNotificationBanners.react",
+      "WAWebOfflineButterbar.react",
+      "WAWebPrimaryButterbar.react",
+      "WAWebResumeButterbar.react",
+      "WAWebWebcButterbarEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

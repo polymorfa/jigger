@@ -1,0 +1,40 @@
+{
+  "id": "enum:CHATBAR_INITIAL_STATE",
+  "kind": "enum",
+  "name": "CHATBAR_INITIAL_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChatbarInitialState",
+    "variants": [
+      {
+        "name": "EMPTY",
+        "value": 1.0
+      },
+      {
+        "name": "CONTAINS_DRAFT",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChatbarInitialState",
+    "matches": "CHATBAR_INITIAL_STATE\\s*[:=]"
+  },
+  "literals": [
+    "CHATBAR_INITIAL_STATE",
+    "EMPTY",
+    "CONTAINS_DRAFT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPttMessageUserJourneyLogger",
+      "WAWebPttMessageUserJourneyWamEvent",
+      "WAWebQuotedMessageUserJourneyWamEvent",
+      "WAWebTextMessageUserJourneyLogger",
+      "WAWebTextMessageUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

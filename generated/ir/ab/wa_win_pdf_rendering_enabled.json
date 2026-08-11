@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_win_pdf_rendering_enabled",
+  "kind": "ab",
+  "name": "wa_win_pdf_rendering_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29548,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_win_pdf_rendering_enabled:\\s*\\[\\s*29548"
+  },
+  "literals": [
+    "wa_win_pdf_rendering_enabled",
+    "29548"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebTPPdfViewerGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

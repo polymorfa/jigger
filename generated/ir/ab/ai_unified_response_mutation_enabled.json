@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_unified_response_mutation_enabled",
+  "kind": "ab",
+  "name": "ai_unified_response_mutation_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 17805,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_unified_response_mutation_enabled:\\s*\\[\\s*17805"
+  },
+  "literals": [
+    "ai_unified_response_mutation_enabled",
+    "17805"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotUnifiedResponseGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

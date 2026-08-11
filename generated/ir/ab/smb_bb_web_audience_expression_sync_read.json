@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_bb_web_audience_expression_sync_read",
+  "kind": "ab",
+  "name": "smb_bb_web_audience_expression_sync_read",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26894,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_bb_web_audience_expression_sync_read:\\s*\\[\\s*26894"
+  },
+  "literals": [
+    "smb_bb_web_audience_expression_sync_read",
+    "26894"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

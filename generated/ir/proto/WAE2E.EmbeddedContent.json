@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAE2E.EmbeddedContent",
+  "kind": "proto",
+  "name": "WAE2E.EmbeddedContent",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "embeddedMessage": {
+        "number": 1,
+        "type_name": "WAE2E.EmbeddedMessage"
+      },
+      "embeddedMusic": {
+        "number": 2,
+        "type_name": "WAE2E.EmbeddedMusic"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"EmbeddedContent\""
+  },
+  "literals": [
+    "EmbeddedContent"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

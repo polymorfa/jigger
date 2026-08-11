@@ -1,0 +1,46 @@
+{
+  "id": "enum:BACKUP_ENCRYPTION_METHOD",
+  "kind": "enum",
+  "name": "BACKUP_ENCRYPTION_METHOD",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBackupEncryptionMethod",
+    "variants": [
+      {
+        "name": "NOT_E2EE",
+        "value": 1.0
+      },
+      {
+        "name": "E2EE_PASSWORD",
+        "value": 2.0
+      },
+      {
+        "name": "E2EE_64DIGIT",
+        "value": 3.0
+      },
+      {
+        "name": "E2EE_PASSKEY",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBackupEncryptionMethod",
+    "matches": "BACKUP_ENCRYPTION_METHOD\\s*[:=]"
+  },
+  "literals": [
+    "BACKUP_ENCRYPTION_METHOD",
+    "NOT_E2EE",
+    "E2EE_PASSWORD",
+    "E2EE_64DIGIT",
+    "E2EE_PASSKEY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDailyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

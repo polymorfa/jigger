@@ -1,0 +1,2 @@
+// ParseGroupsCreateResponseGroupAlreadyExists matches <iq>. Response to GroupsCreate.
+func ParseGroupsCreateResponseGroupAlreadyExists(n *waBinary.Node) (*GroupsCreateResponseGroupAlreadyExists, error)

@@ -1,0 +1,47 @@
+{
+  "id": "enum:WEB_DB_VERSION_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "WEB_DB_VERSION_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebDbVersionSourceType",
+    "variants": [
+      {
+        "name": "KNOB",
+        "value": 1.0
+      },
+      {
+        "name": "LOCAL",
+        "value": 2.0
+      },
+      {
+        "name": "STATIC",
+        "value": 3.0
+      },
+      {
+        "name": "KNOB_WITH_LOCAL_OVERRIDE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebDbVersionSourceType",
+    "matches": "WEB_DB_VERSION_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEB_DB_VERSION_SOURCE_TYPE",
+    "KNOB",
+    "LOCAL",
+    "STATIC",
+    "KNOB_WITH_LOCAL_OVERRIDE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDbRolloutUtil",
+      "WAWebWebDbVersionsSourceWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

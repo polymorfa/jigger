@@ -1,0 +1,250 @@
+{
+  "id": "iq:w:g2/set/group+hidden_group+link+links",
+  "kind": "iq",
+  "name": "GroupsLinkSubGroups",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "set",
+    "tags": [
+      "group",
+      "hidden_group",
+      "link",
+      "links"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "links",
+          "children": [
+            {
+              "tag": "link",
+              "attrs": [
+                {
+                  "name": "link_type",
+                  "ty": "string",
+                  "literal": "sub_group",
+                  "optional": false
+                }
+              ],
+              "children": [
+                {
+                  "tag": "group",
+                  "attrs": [
+                    {
+                      "name": "jid",
+                      "ty": "jid",
+                      "optional": false
+                    }
+                  ],
+                  "children": [
+                    {
+                      "tag": "hidden_group",
+                      "card": "repeated"
+                    }
+                  ],
+                  "card": "repeated"
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsLinkSubGroupsRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsLinkSubGroupsResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "links",
+              "card": "one"
+            },
+            {
+              "tag": "link",
+              "attrs": [
+                {
+                  "name": "link_type",
+                  "ty": "string",
+                  "literal": "sub_group",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "group",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "PendingAddRequestsNotAllowed",
+          "SubGroupConflict",
+          "SubGroupForbidden",
+          "SubGroupNotAcceptable",
+          "SubGroupNotAuthorized",
+          "SubGroupNotExist",
+          "SubGroupResourceLimit",
+          "SubGroupServerError"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsLinkSubGroupsResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorForbidden",
+          "IQErrorGroupHasPendingAddRequests",
+          "IQErrorItemNotFound",
+          "IQErrorNotAllowed",
+          "IQErrorNotAuthorized",
+          "IQErrorParentGroupSuspended",
+          "IQErrorPayloadTooLarge",
+          "IQErrorRateOverlimit",
+          "IQErrorResourceLimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsLinkSubGroupsResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsLinkSubGroupsRequest",
+    "matches": "smax\\(\"group\""
+  },
+  "literals": [
+    "w:g2",
+    "group",
+    "hidden_group",
+    "link",
+    "links"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseSetGroupMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxGroupsLinkSubGroupsRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

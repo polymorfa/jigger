@@ -1,0 +1,41 @@
+{
+  "id": "enum:CRASHLOG_TYPE",
+  "kind": "enum",
+  "name": "CRASHLOG_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCrashlogType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "ZERO_EVENT_EXPECTED",
+        "value": 1.0
+      },
+      {
+        "name": "TRACKING",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCrashlogType",
+    "matches": "CRASHLOG_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CRASHLOG_TYPE",
+    "UNKNOWN",
+    "ZERO_EVENT_EXPECTED",
+    "TRACKING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCriticalEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

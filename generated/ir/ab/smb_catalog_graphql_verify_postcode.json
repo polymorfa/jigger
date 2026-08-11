@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_catalog_graphql_verify_postcode",
+  "kind": "ab",
+  "name": "smb_catalog_graphql_verify_postcode",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11624,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_catalog_graphql_verify_postcode:\\s*\\[\\s*11624"
+  },
+  "literals": [
+    "smb_catalog_graphql_verify_postcode",
+    "11624"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

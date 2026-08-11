@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_broadcast_disappearing_messages_fix",
+  "kind": "ab",
+  "name": "wa_web_broadcast_disappearing_messages_fix",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31499,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_broadcast_disappearing_messages_fix:\\s*\\[\\s*31499"
+  },
+  "literals": [
+    "wa_web_broadcast_disappearing_messages_fix",
+    "31499"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

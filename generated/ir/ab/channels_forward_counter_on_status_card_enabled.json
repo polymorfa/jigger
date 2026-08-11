@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_forward_counter_on_status_card_enabled",
+  "kind": "ab",
+  "name": "channels_forward_counter_on_status_card_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26148,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_forward_counter_on_status_card_enabled:\\s*\\[\\s*26148"
+  },
+  "literals": [
+    "channels_forward_counter_on_status_card_enabled",
+    "26148"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

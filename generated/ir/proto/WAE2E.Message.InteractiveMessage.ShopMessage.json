@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAE2E.Message.InteractiveMessage.ShopMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.InteractiveMessage.ShopMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "id": {
+        "number": 1
+      },
+      "messageVersion": {
+        "number": 3
+      },
+      "surface": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.InteractiveMessage.ShopMessage\""
+  },
+  "literals": [
+    "ShopMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

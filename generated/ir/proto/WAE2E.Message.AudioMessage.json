@@ -1,0 +1,88 @@
+{
+  "id": "proto:WAE2E.Message.AudioMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.AudioMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilityLabel": {
+        "number": 22
+      },
+      "backgroundArgb": {
+        "number": 20
+      },
+      "contextInfo": {
+        "number": 17,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "directPath": {
+        "number": 9
+      },
+      "fileEncSha256": {
+        "number": 8
+      },
+      "fileLength": {
+        "number": 4
+      },
+      "fileSha256": {
+        "number": 3
+      },
+      "mediaKey": {
+        "number": 7
+      },
+      "mediaKeyTimestamp": {
+        "number": 10
+      },
+      "mimetype": {
+        "number": 2
+      },
+      "ptt": {
+        "number": 6
+      },
+      "seconds": {
+        "number": 5
+      },
+      "streamingSidecar": {
+        "number": 18
+      },
+      "url": {
+        "number": 1
+      },
+      "viewOnce": {
+        "number": 21
+      },
+      "waveform": {
+        "number": 19
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.AudioMessage\""
+  },
+  "literals": [
+    "AudioMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

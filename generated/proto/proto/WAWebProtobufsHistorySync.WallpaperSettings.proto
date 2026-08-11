@@ -1,0 +1,5 @@
+message WallpaperSettings {
+  optional bytes filename = 1;
+  optional bytes opacity = 2;
+  optional bytes isGenAi = 3;
+}

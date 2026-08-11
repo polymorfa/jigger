@@ -1,0 +1,36 @@
+{
+  "id": "enum:ENUM_BLOCK_UNBLOCK",
+  "kind": "enum",
+  "name": "ENUM_BLOCK_UNBLOCK",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInAccountSyncEnums",
+    "variants": [
+      {
+        "name": "block",
+        "value": "block"
+      },
+      {
+        "name": "unblock",
+        "value": "unblock"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAccountSyncEnums",
+    "matches": "ENUM_BLOCK_UNBLOCK\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_BLOCK_UNBLOCK",
+    "block",
+    "unblock"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInAccountSyncNotificationBlocklistMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

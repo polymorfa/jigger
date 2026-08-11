@@ -1,0 +1,4 @@
+message MarkChatAsReadAction {
+  optional bytes read = 1;
+  optional SyncActionMessageRange messageRange = 2;
+}

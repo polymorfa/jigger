@@ -1,0 +1,45 @@
+{
+  "id": "ab:newsletter_forward_counter_max_send_after_random_time",
+  "kind": "ab",
+  "name": "newsletter_forward_counter_max_send_after_random_time",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22206,
+    "type": "int",
+    "default": 3600,
+    "alt_default": 60
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "newsletter_forward_counter_max_send_after_random_time:\\s*\\[\\s*22206"
+  },
+  "literals": [
+    "newsletter_forward_counter_max_send_after_random_time",
+    "22206"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebScheduleIncrementNewsletterForwardCounterAction"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

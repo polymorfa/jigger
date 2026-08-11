@@ -1,0 +1,4 @@
+message MetaSyncActionProto {
+  optional MetaSyncChatActionProto chatAction = 1;
+  optional MetaSyncMessageActionProto messageAction = 2;
+}

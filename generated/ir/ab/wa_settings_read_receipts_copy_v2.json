@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_settings_read_receipts_copy_v2",
+  "kind": "ab",
+  "name": "wa_settings_read_receipts_copy_v2",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33610,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_settings_read_receipts_copy_v2:\\s*\\[\\s*33610"
+  },
+  "literals": [
+    "wa_settings_read_receipts_copy_v2",
+    "33610"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

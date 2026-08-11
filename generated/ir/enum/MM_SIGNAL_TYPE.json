@@ -1,0 +1,201 @@
+{
+  "id": "enum:MM_SIGNAL_TYPE",
+  "kind": "enum",
+  "name": "MM_SIGNAL_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMmSignalType",
+    "variants": [
+      {
+        "name": "USER_BLOCK",
+        "value": 0.0
+      },
+      {
+        "name": "USER_REPORT",
+        "value": 1.0
+      },
+      {
+        "name": "FIRST_CUSTOMER_MESSAGE",
+        "value": 2.0
+      },
+      {
+        "name": "FIRST_CUSTOMER_MESSAGE_CONTINUATION",
+        "value": 3.0
+      },
+      {
+        "name": "FIRST_BIZ_REPLY",
+        "value": 4.0
+      },
+      {
+        "name": "FIRST_BIZ_REPLY_CONTINUATION",
+        "value": 5.0
+      },
+      {
+        "name": "SECOND_CUSTOMER_MESSAGE",
+        "value": 6.0
+      },
+      {
+        "name": "SECOND_CUSTOMER_MESSAGE_CONTINUATION",
+        "value": 7.0
+      },
+      {
+        "name": "SECOND_BIZ_REPLY",
+        "value": 8.0
+      },
+      {
+        "name": "SECOND_BIZ_REPLY_CONTINUATION",
+        "value": 9.0
+      },
+      {
+        "name": "THIRD_CUSTOMER_MESSAGE",
+        "value": 10.0
+      },
+      {
+        "name": "THIRD_CUSTOMER_MESSAGE_CONTINUATION",
+        "value": 11.0
+      },
+      {
+        "name": "THIRD_BIZ_REPLY",
+        "value": 12.0
+      },
+      {
+        "name": "USER_INTERESTED",
+        "value": 13.0
+      },
+      {
+        "name": "USER_NOT_INTERESTED",
+        "value": 14.0
+      },
+      {
+        "name": "USER_STOP_OFFERS",
+        "value": 15.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_NO_LONGER_NEEDED",
+        "value": 16.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_NO_SIGN_UP",
+        "value": 17.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_SPAM",
+        "value": 18.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_OFFENSIVE_MESSAGES",
+        "value": 19.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_OTP_DID_NOT_REQUEST",
+        "value": 20.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_OTHER",
+        "value": 21.0
+      },
+      {
+        "name": "USER_MUTE",
+        "value": 22.0
+      },
+      {
+        "name": "URL_CTA_CLICK",
+        "value": 23.0
+      },
+      {
+        "name": "APP_CTA_CLICK",
+        "value": 24.0
+      },
+      {
+        "name": "BODY_URL_CLICK",
+        "value": 25.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_SCAM_OR_FRAUD",
+        "value": 26.0
+      },
+      {
+        "name": "MESSAGE",
+        "value": 27.0
+      },
+      {
+        "name": "USER_ARCHIVE",
+        "value": 28.0
+      },
+      {
+        "name": "BODY_URL_LONG_PRESS",
+        "value": 29.0
+      },
+      {
+        "name": "USER_BLOCK_REASON_DONT_RECOGNIZE",
+        "value": 30.0
+      },
+      {
+        "name": "IAB_LPV",
+        "value": 31.0
+      },
+      {
+        "name": "IAB_LPV_BODY",
+        "value": 32.0
+      },
+      {
+        "name": "PAYMENT_CTA_CLICK",
+        "value": 33.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMmSignalType",
+    "matches": "MM_SIGNAL_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MM_SIGNAL_TYPE",
+    "USER_BLOCK",
+    "USER_REPORT",
+    "FIRST_CUSTOMER_MESSAGE",
+    "FIRST_CUSTOMER_MESSAGE_CONTINUATION",
+    "FIRST_BIZ_REPLY",
+    "FIRST_BIZ_REPLY_CONTINUATION",
+    "SECOND_CUSTOMER_MESSAGE",
+    "SECOND_CUSTOMER_MESSAGE_CONTINUATION",
+    "SECOND_BIZ_REPLY",
+    "SECOND_BIZ_REPLY_CONTINUATION",
+    "THIRD_CUSTOMER_MESSAGE",
+    "THIRD_CUSTOMER_MESSAGE_CONTINUATION",
+    "THIRD_BIZ_REPLY",
+    "USER_INTERESTED",
+    "USER_NOT_INTERESTED",
+    "USER_STOP_OFFERS",
+    "USER_BLOCK_REASON_NO_LONGER_NEEDED",
+    "USER_BLOCK_REASON_NO_SIGN_UP",
+    "USER_BLOCK_REASON_SPAM",
+    "USER_BLOCK_REASON_OFFENSIVE_MESSAGES",
+    "USER_BLOCK_REASON_OTP_DID_NOT_REQUEST",
+    "USER_BLOCK_REASON_OTHER",
+    "USER_MUTE",
+    "URL_CTA_CLICK",
+    "APP_CTA_CLICK",
+    "BODY_URL_CLICK",
+    "USER_BLOCK_REASON_SCAM_OR_FRAUD",
+    "MESSAGE",
+    "USER_ARCHIVE",
+    "BODY_URL_LONG_PRESS",
+    "USER_BLOCK_REASON_DONT_RECOGNIZE",
+    "IAB_LPV",
+    "IAB_LPV_BODY",
+    "PAYMENT_CTA_CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMmSignalRealtimeWebWamEvent",
+      "WAWebMmSignalSharingGatingUtils",
+      "WAWebMmSignalSharingLoggingEvents",
+      "WAWebMmSignalSharingLoggingUtils",
+      "WAWebMmSignalUndisclosedWebWamEvent",
+      "WAWebMmSignalWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

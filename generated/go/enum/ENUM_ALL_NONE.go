@@ -1,0 +1,6 @@
+type ENUMALLNONE string
+
+const (
+	ENUMALLNONEAll ENUMALLNONE = "all"
+	ENUMALLNONENone ENUMALLNONE = "none"
+)

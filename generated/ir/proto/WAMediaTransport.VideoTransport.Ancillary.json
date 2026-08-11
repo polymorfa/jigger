@@ -1,0 +1,66 @@
+{
+  "id": "proto:WAMediaTransport.VideoTransport.Ancillary",
+  "kind": "proto",
+  "name": "WAMediaTransport.VideoTransport.Ancillary",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilityLabel": {
+        "number": 8
+      },
+      "caption": {
+        "number": 2
+      },
+      "gifAttribution": {
+        "number": 7
+      },
+      "gifPlayback": {
+        "number": 3
+      },
+      "height": {
+        "number": 4
+      },
+      "isHd": {
+        "number": 9
+      },
+      "seconds": {
+        "number": 1
+      },
+      "sidecar": {
+        "number": 6
+      },
+      "width": {
+        "number": 5
+      }
+    },
+    "module": "WAMediaTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMediaTransport.pb",
+    "matches": "name = \"VideoTransport.Ancillary\""
+  },
+  "literals": [
+    "Ancillary"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EncryptedBackupsCreateAttachmentContext",
+      "MAWAsConsumerApplication",
+      "MAWEncodeMediaTransportProtocol",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWMpsMigrationProtobufCorrectnessCheckerArmadilloComparisons",
+      "MAWParseNoteReplyMsg",
+      "MAWParseRavenMsg",
+      "MAWProtobufDeserializers",
+      "WAParseConsumerMessageProtocol",
+      "WAParseMediaTransportProtocol",
+      "getMediaTypeFromConsumerMessage"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

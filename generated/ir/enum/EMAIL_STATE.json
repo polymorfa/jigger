@@ -1,0 +1,46 @@
+{
+  "id": "enum:EMAIL_STATE",
+  "kind": "enum",
+  "name": "EMAIL_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEmailState",
+    "variants": [
+      {
+        "name": "NOT_ADDED",
+        "value": 1.0
+      },
+      {
+        "name": "UNVERIFIED",
+        "value": 2.0
+      },
+      {
+        "name": "VERIFIED",
+        "value": 3.0
+      },
+      {
+        "name": "UNCONFIRMED",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEmailState",
+    "matches": "EMAIL_STATE\\s*[:=]"
+  },
+  "literals": [
+    "EMAIL_STATE",
+    "NOT_ADDED",
+    "UNVERIFIED",
+    "VERIFIED",
+    "UNCONFIRMED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDailyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

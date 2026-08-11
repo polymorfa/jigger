@@ -1,0 +1,42 @@
+{
+  "id": "ab:ctwa_ad_creation_entry_point_catalog_web",
+  "kind": "ab",
+  "name": "ctwa_ad_creation_entry_point_catalog_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9596,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_ad_creation_entry_point_catalog_web:\\s*\\[\\s*9596"
+  },
+  "literals": [
+    "ctwa_ad_creation_entry_point_catalog_web",
+    "9596"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

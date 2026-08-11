@@ -1,0 +1,4 @@
+message AIRichResponseCodeBlock {
+  optional bytes highlightType = 1;
+  optional bytes codeContent = 2;
+}

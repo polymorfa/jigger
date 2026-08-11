@@ -1,0 +1,106 @@
+{
+  "id": "proto:WAWebProtobufsServerSync.ExternalBlobReference",
+  "kind": "proto",
+  "name": "WAWebProtobufsServerSync.ExternalBlobReference",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "directPath": {
+        "number": 2
+      },
+      "fileEncSha256": {
+        "number": 6
+      },
+      "fileSha256": {
+        "number": 5
+      },
+      "fileSizeBytes": {
+        "number": 4
+      },
+      "handle": {
+        "number": 3
+      },
+      "mediaKey": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsServerSync.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsServerSync.pb",
+    "matches": "name = \"ExternalBlobReference\""
+  },
+  "literals": [
+    "ExternalBlobReference"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebAiThreadDeleteSync",
+      "WAWebAiThreadPinSync",
+      "WAWebAiThreadRenameSync",
+      "WAWebArchiveChatSync",
+      "WAWebBizAISettingsNudgeAction",
+      "WAWebBizBroadcastCampaignStorageUtils",
+      "WAWebBotWelcomeRequestSync",
+      "WAWebBroadcastCampaignSync",
+      "WAWebBroadcastListSync",
+      "WAWebCallLogSync",
+      "WAWebChatAssignmentOpenedStatusSync",
+      "WAWebChatAssignmentSync",
+      "WAWebClearChatSync",
+      "WAWebContactSync",
+      "WAWebCtwaPerCustomerDataSharingSync",
+      "WAWebCustomPaymentMethodsSync",
+      "WAWebCustomerDataSync",
+      "WAWebDebugSyncd",
+      "WAWebDeleteChatSync",
+      "WAWebDeleteMessageForMeSync",
+      "WAWebDeviceCapabilitiesSyncBase",
+      "WAWebDisableLinkPreviewsSync",
+      "WAWebExternalBetaOptInAction",
+      "WAWebFavoritesSync",
+      "WAWebInteractiveMessageSync",
+      "WAWebKmpSyncdMutationUtils",
+      "WAWebLabelJidSync",
+      "WAWebLabelSublistSync",
+      "WAWebLabelSync",
+      "WAWebLidContactSync",
+      "WAWebListsActions",
+      "WAWebLockChatSync",
+      "WAWebMarkChatAsReadSync",
+      "WAWebMuteChatSync",
+      "WAWebNoteSync",
+      "WAWebNuxSync",
+      "WAWebPaymentTosSync",
+      "WAWebPinChatSync",
+      "WAWebProtobufsE2E.pb",
+      "WAWebPushNameSync",
+      "WAWebQuickRepliesSync",
+      "WAWebRequestSyncdSnapshotRecovery",
+      "WAWebSentinelMutationSync",
+      "WAWebSettingsSync",
+      "WAWebStarMessageSync",
+      "WAWebStatusPrivacySettingSync",
+      "WAWebStickersFavoriteSyncAction",
+      "WAWebStickersRemoveRecentSyncAction",
+      "WAWebSyncdAntiTampering",
+      "WAWebSyncdCollectionHandler",
+      "WAWebSyncdCollectionHandlerTypesConverter",
+      "WAWebSyncdCoreApi",
+      "WAWebSyncdDecode",
+      "WAWebSyncdDecryptMutationsWrapper",
+      "WAWebSyncdEncryptMutationsWrapper",
+      "WAWebSyncdKmpConversion",
+      "WAWebSyncdMutationsCryptoUtils",
+      "WAWebSyncdRequestBuilderBuild",
+      "WAWebSyncdRequestEncode",
+      "WAWebSyncdValidateMutations"
+    ],
+    "dep_count": 2,
+    "dependent_count": 63
+  }
+}

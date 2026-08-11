@@ -1,0 +1,36 @@
+{
+  "id": "enum:AUDIENCE_TYPE",
+  "kind": "enum",
+  "name": "AUDIENCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAudienceType",
+    "variants": [
+      {
+        "name": "REGION",
+        "value": 1.0
+      },
+      {
+        "name": "MAP",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAudienceType",
+    "matches": "AUDIENCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "AUDIENCE_TYPE",
+    "REGION",
+    "MAP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "enum:DISAPPEARING_MODE_ENTRY_POINT_TYPE",
+  "kind": "enum",
+  "name": "DISAPPEARING_MODE_ENTRY_POINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDisappearingModeEntryPointType",
+    "variants": [
+      {
+        "name": "ACCOUNT_SETTINGS",
+        "value": 1.0
+      },
+      {
+        "name": "SYSTEM_MESSAGE",
+        "value": 2.0
+      },
+      {
+        "name": "INDIVIDUAL_CHAT_DISAPPEARING_MESSAGES_SETTING",
+        "value": 3.0
+      },
+      {
+        "name": "GROUP_CHAT_DISAPPEARING_MESSAGES_SETTING",
+        "value": 4.0
+      },
+      {
+        "name": "DEEP_LINK",
+        "value": 5.0
+      },
+      {
+        "name": "STORAGE_SETTINGS",
+        "value": 6.0
+      },
+      {
+        "name": "PRIVACY_SETTINGS",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDisappearingModeEntryPointType",
+    "matches": "DISAPPEARING_MODE_ENTRY_POINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DISAPPEARING_MODE_ENTRY_POINT_TYPE",
+    "ACCOUNT_SETTINGS",
+    "SYSTEM_MESSAGE",
+    "INDIVIDUAL_CHAT_DISAPPEARING_MESSAGES_SETTING",
+    "GROUP_CHAT_DISAPPEARING_MESSAGES_SETTING",
+    "DEEP_LINK",
+    "STORAGE_SETTINGS",
+    "PRIVACY_SETTINGS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDisappearingModeSettingChangeWamEvent",
+      "WAWebDisappearingModeSettingEventsWamEvent",
+      "WAWebInfoFlow.react",
+      "WAWebMessageNotification.react",
+      "WAWebSettingsFlow.react",
+      "useWAWebConversationPanelChatActionListeners"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebGetNumbersForBrandIdsJobQuery",
+  "kind": "mex",
+  "name": "WAWebGetNumbersForBrandIdsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "33391034967211217",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "document": "query GetNumbersForBrandIdsJobQuery($input) {\n  xwa_get_numbers_for_brand_ids {\n    brand_ids_data {\n      brand_id\n      error\n      phone_numbers\n      lids\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebGetNumbersForBrandIdsJobQuery.graphql",
+    "matches": "id: \"33391034967211217\""
+  },
+  "literals": [
+    "33391034967211217",
+    "WAWebGetNumbersForBrandIdsJobQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetNumbersForBrandIdsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

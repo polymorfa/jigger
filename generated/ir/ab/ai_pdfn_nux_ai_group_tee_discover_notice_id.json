@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_pdfn_nux_ai_group_tee_discover_notice_id",
+  "kind": "ab",
+  "name": "ai_pdfn_nux_ai_group_tee_discover_notice_id",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26171,
+    "type": "string",
+    "default": "20260212",
+    "alt_default": "20260212"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_pdfn_nux_ai_group_tee_discover_notice_id:\\s*\\[\\s*26171"
+  },
+  "literals": [
+    "ai_pdfn_nux_ai_group_tee_discover_notice_id",
+    "26171"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

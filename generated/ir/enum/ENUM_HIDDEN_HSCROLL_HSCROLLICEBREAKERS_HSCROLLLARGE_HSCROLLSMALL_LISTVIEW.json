@@ -1,0 +1,57 @@
+{
+  "id": "enum:ENUM_HIDDEN_HSCROLL_HSCROLLICEBREAKERS_HSCROLLLARGE_HSCROLLSMALL_LISTVIEW",
+  "kind": "enum",
+  "name": "ENUM_HIDDEN_HSCROLL_HSCROLLICEBREAKERS_HSCROLLLARGE_HSCROLLSMALL_LISTVIEW",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBotEnums",
+    "variants": [
+      {
+        "name": "hidden",
+        "value": "hidden"
+      },
+      {
+        "name": "hscroll",
+        "value": "hscroll"
+      },
+      {
+        "name": "hscroll_icebreakers",
+        "value": "hscroll_icebreakers"
+      },
+      {
+        "name": "hscroll_large",
+        "value": "hscroll_large"
+      },
+      {
+        "name": "hscroll_small",
+        "value": "hscroll_small"
+      },
+      {
+        "name": "listview",
+        "value": "listview"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBotEnums",
+    "matches": "ENUM_HIDDEN_HSCROLL_HSCROLLICEBREAKERS_HSCROLLLARGE_HSCROLLSMALL_LISTVIEW\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_HIDDEN_HSCROLL_HSCROLLICEBREAKERS_HSCROLLLARGE_HSCROLLSMALL_LISTVIEW",
+    "hidden",
+    "hscroll",
+    "hscroll_icebreakers",
+    "hscroll_large",
+    "hscroll_small",
+    "listview"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBotBotListResponseSuccessV2",
+      "WASmaxInBotBotListResponseSuccessV3"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

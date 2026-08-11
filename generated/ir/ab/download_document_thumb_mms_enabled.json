@@ -1,0 +1,42 @@
+{
+  "id": "ab:download_document_thumb_mms_enabled",
+  "kind": "ab",
+  "name": "download_document_thumb_mms_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 250,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "download_document_thumb_mms_enabled:\\s*\\[\\s*250"
+  },
+  "literals": [
+    "download_document_thumb_mms_enabled",
+    "250"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

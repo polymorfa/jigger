@@ -1,0 +1,28 @@
+{
+  "id": "mex:WAWebCanonicalHatchChannelUnlinkMutation",
+  "kind": "mex",
+  "name": "WAWebCanonicalHatchChannelUnlinkMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27856697387325731",
+    "operation": "mutation",
+    "variables": [],
+    "document": "mutation CanonicalHatchChannelUnlinkMutation {\n  wa_genai_hatch_channel_unlink {\n    success\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebCanonicalHatchChannelUnlinkMutation.graphql",
+    "matches": "id: \"27856697387325731\""
+  },
+  "literals": [
+    "27856697387325731",
+    "WAWebCanonicalHatchChannelUnlinkMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCanonicalHatchChannelUnlinkMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

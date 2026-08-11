@@ -1,0 +1,58 @@
+{
+  "id": "wam:8200",
+  "kind": "wam",
+  "name": "WebcWhatsNewImpression",
+  "data": {
+    "kind": "wam",
+    "event_id": 8200,
+    "fields": {
+      "webcWhatsNewAction": {
+        "id": 1,
+        "type": "WEBC_WHATS_NEW_ACTION_TYPE",
+        "wire": "webc_whats_new_action",
+        "enum_ref": "WEBC_WHATS_NEW_ACTION_TYPE"
+      },
+      "webcWhatsNewSurface": {
+        "id": 2,
+        "type": "WEBC_WHATS_NEW_SURFACE_TYPE",
+        "wire": "webc_whats_new_surface",
+        "enum_ref": "WEBC_WHATS_NEW_SURFACE_TYPE"
+      },
+      "webcWhatsNewTimeSpent": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "webc_whats_new_time_spent"
+      },
+      "webcWhatsNewVariant": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "webc_whats_new_variant"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcWhatsNewImpressionWamEvent",
+    "matches": "WebcWhatsNewImpression:\\s*\\[\\s*8200"
+  },
+  "literals": [
+    "8200"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcWhatsNewActionType",
+      "WAWebWamEnumWebcWhatsNewSurfaceType"
+    ],
+    "dependents": [
+      "WAWebWhatsNewLogging"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

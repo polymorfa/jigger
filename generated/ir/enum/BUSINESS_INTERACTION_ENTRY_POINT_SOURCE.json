@@ -1,0 +1,52 @@
+{
+  "id": "enum:BUSINESS_INTERACTION_ENTRY_POINT_SOURCE",
+  "kind": "enum",
+  "name": "BUSINESS_INTERACTION_ENTRY_POINT_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBusinessInteractionEntryPointSource",
+    "variants": [
+      {
+        "name": "CLICK_TO_CHAT_LINK",
+        "value": 1.0
+      },
+      {
+        "name": "MESSAGE_SHORT_LINK",
+        "value": 2.0
+      },
+      {
+        "name": "QR_CODE",
+        "value": 3.0
+      },
+      {
+        "name": "CUSTOM_LINK",
+        "value": 4.0
+      },
+      {
+        "name": "CUSTOM_QR_CODE_LINK",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBusinessInteractionEntryPointSource",
+    "matches": "BUSINESS_INTERACTION_ENTRY_POINT_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "BUSINESS_INTERACTION_ENTRY_POINT_SOURCE",
+    "CLICK_TO_CHAT_LINK",
+    "MESSAGE_SHORT_LINK",
+    "QR_CODE",
+    "CUSTOM_LINK",
+    "CUSTOM_QR_CODE_LINK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBusinessInteractionWamEvent",
+      "WAWebCustomUrlLogEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

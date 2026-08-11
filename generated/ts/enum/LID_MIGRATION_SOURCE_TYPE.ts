@@ -1,0 +1,4 @@
+export enum LIDMIGRATIONSOURCETYPE {
+  PEER = 1,
+  HISTORY = 2,
+}

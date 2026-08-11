@@ -1,0 +1,4 @@
+message ArchiveChatAction {
+  optional bytes archived = 1;
+  optional SyncActionMessageRange messageRange = 2;
+}

@@ -1,0 +1,41 @@
+{
+  "id": "enum:BILLING_STATUS",
+  "kind": "enum",
+  "name": "BILLING_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBillingStatus",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 1.0
+      },
+      {
+        "name": "NO_ACTION_REQUIRED",
+        "value": 2.0
+      },
+      {
+        "name": "HAS_PENDING_ACTIONS",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBillingStatus",
+    "matches": "BILLING_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "BILLING_STATUS",
+    "UNKNOWN",
+    "NO_ACTION_REQUIRED",
+    "HAS_PENDING_ACTIONS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

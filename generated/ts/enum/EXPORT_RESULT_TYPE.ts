@@ -1,0 +1,5 @@
+export enum EXPORTRESULTTYPE {
+  SUCCESS = 1,
+  CANCELLED = 2,
+  ERROR = 3,
+}

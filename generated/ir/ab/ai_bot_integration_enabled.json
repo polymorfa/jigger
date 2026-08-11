@@ -1,0 +1,46 @@
+{
+  "id": "ab:ai_bot_integration_enabled",
+  "kind": "ab",
+  "name": "ai_bot_integration_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25119,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_bot_integration_enabled:\\s*\\[\\s*25119"
+  },
+  "literals": [
+    "ai_bot_integration_enabled",
+    "25119"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebBotFrontendGating",
+      "WAWebBotProductGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

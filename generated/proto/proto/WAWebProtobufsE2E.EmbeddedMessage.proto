@@ -1,0 +1,4 @@
+message EmbeddedMessage {
+  optional bytes stanzaId = 1;
+  optional Message message = 2;
+}

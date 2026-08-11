@@ -1,0 +1,7 @@
+message MusicMessage {
+  optional EmbeddedMusic embeddedMusic = 1;
+  optional bytes songUri = 2;
+  optional bytes artworkUri = 3;
+  optional bytes style = 4;
+  optional ContextInfo contextInfo = 5;
+}

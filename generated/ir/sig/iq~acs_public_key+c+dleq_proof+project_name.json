@@ -1,0 +1,39 @@
+{
+  "id": "sig:iq/acs_public_key+c+dleq_proof+project_name",
+  "kind": "sig",
+  "name": "PrivatestatsSignCredentialResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "acs_public_key",
+      "c",
+      "dleq_proof",
+      "project_name"
+    ],
+    "responds_to": "PrivatestatsSignCredential"
+  },
+  "evidence": {
+    "module": "WASmaxInPrivatestatsSignCredentialResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "acs_public_key",
+    "c",
+    "dleq_proof",
+    "project_name"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseReference",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxPrivatestatsSignCredentialRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

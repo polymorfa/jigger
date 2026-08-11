@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_windows_hybrid_jumplist_contacts",
+  "kind": "ab",
+  "name": "enable_windows_hybrid_jumplist_contacts",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21057,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_windows_hybrid_jumplist_contacts:\\s*\\[\\s*21057"
+  },
+  "literals": [
+    "enable_windows_hybrid_jumplist_contacts",
+    "21057"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

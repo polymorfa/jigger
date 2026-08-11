@@ -1,0 +1,2 @@
+// ParseMessageDeliverGroupHistoryBundleReportingMessagesReceiveMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverGroupHistoryBundleReportingMessagesReceiveMixin(n *waBinary.Node) (*MessageDeliverGroupHistoryBundleReportingMessagesReceiveMixin, error)

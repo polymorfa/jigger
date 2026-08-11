@@ -1,0 +1,4 @@
+message BotSessionMetadata {
+  optional bytes sessionId = 1;
+  optional bytes sessionSource = 2;
+}

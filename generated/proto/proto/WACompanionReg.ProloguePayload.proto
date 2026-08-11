@@ -1,0 +1,4 @@
+message ProloguePayload {
+  optional bytes companionEphemeralIdentity = 1;
+  optional CompanionCommitment commitment = 2;
+}

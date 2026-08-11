@@ -1,0 +1,54 @@
+{
+  "id": "enum:SP_SIGNAL_NOT_SHARED_REASON",
+  "kind": "enum",
+  "name": "SP_SIGNAL_NOT_SHARED_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSpSignalNotSharedReason",
+    "variants": [
+      {
+        "name": "VALUE_NOT_AVAILABLE",
+        "value": 0.0
+      },
+      {
+        "name": "WINDOW_EXPIRED",
+        "value": 1.0
+      },
+      {
+        "name": "TOKEN_EXPIRED",
+        "value": 2.0
+      },
+      {
+        "name": "SIGNAL_NOT_ALLOWLISTED",
+        "value": 3.0
+      },
+      {
+        "name": "INVALID_URL",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSpSignalNotSharedReason",
+    "matches": "SP_SIGNAL_NOT_SHARED_REASON\\s*[:=]"
+  },
+  "literals": [
+    "SP_SIGNAL_NOT_SHARED_REASON",
+    "VALUE_NOT_AVAILABLE",
+    "WINDOW_EXPIRED",
+    "TOKEN_EXPIRED",
+    "SIGNAL_NOT_ALLOWLISTED",
+    "INVALID_URL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils",
+      "WAWebMmSignalSharingVerificationEventWamEvent",
+      "WAWebMmSignalSharingVerificationFsEventWamEvent",
+      "WAWebMmSignalSharingVerificationWithSignalDataEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

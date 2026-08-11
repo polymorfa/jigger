@@ -1,0 +1,11 @@
+message AIRichResponseLatexExpression {
+  optional bytes latexExpression = 1;
+  optional bytes url = 2;
+  optional bytes width = 3;
+  optional bytes height = 4;
+  optional bytes fontHeight = 5;
+  optional bytes imageTopPadding = 6;
+  optional bytes imageLeadingPadding = 7;
+  optional bytes imageBottomPadding = 8;
+  optional bytes imageTrailingPadding = 9;
+}

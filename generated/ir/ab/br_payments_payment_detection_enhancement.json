@@ -1,0 +1,45 @@
+{
+  "id": "ab:br_payments_payment_detection_enhancement",
+  "kind": "ab",
+  "name": "br_payments_payment_detection_enhancement",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27309,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "br_payments_payment_detection_enhancement:\\s*\\[\\s*27309"
+  },
+  "literals": [
+    "br_payments_payment_detection_enhancement",
+    "27309"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBrPaymentRequest"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,14 @@
+message LocationMessage {
+  optional bytes degreesLatitude = 1;
+  optional bytes degreesLongitude = 2;
+  optional bytes name = 3;
+  optional bytes address = 4;
+  optional bytes url = 5;
+  optional bytes isLive = 6;
+  optional bytes accuracyInMeters = 7;
+  optional bytes speedInMps = 8;
+  optional bytes degreesClockwiseFromMagneticNorth = 9;
+  optional bytes comment = 11;
+  optional bytes jpegThumbnail = 16;
+  optional ContextInfo contextInfo = 17;
+}

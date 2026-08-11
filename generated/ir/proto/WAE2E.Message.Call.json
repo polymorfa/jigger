@@ -1,0 +1,74 @@
+{
+  "id": "proto:WAE2E.Message.Call",
+  "kind": "proto",
+  "name": "WAE2E.Message.Call",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "callEntryPoint": {
+        "number": 11
+      },
+      "callKey": {
+        "number": 1
+      },
+      "contextInfo": {
+        "number": 7,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "conversionData": {
+        "number": 3
+      },
+      "conversionDelaySeconds": {
+        "number": 4
+      },
+      "conversionSource": {
+        "number": 2
+      },
+      "ctwaPayload": {
+        "number": 6
+      },
+      "ctwaSignals": {
+        "number": 5
+      },
+      "deeplinkPayload": {
+        "number": 9
+      },
+      "messageContextInfo": {
+        "number": 10,
+        "type_name": "WAE2E.MessageContextInfo"
+      },
+      "nativeFlowCallButtonPayload": {
+        "number": 8
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.Call\""
+  },
+  "literals": [
+    "Call"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "wam:3450",
+  "kind": "wam",
+  "name": "BusinessInteraction",
+  "data": {
+    "kind": "wam",
+    "event_id": 3450,
+    "fields": {
+      "businessInteractionAction": {
+        "id": 1,
+        "type": "BUSINESS_INTERACTION_ACTION_TYPE",
+        "wire": "business_interaction_action",
+        "enum_ref": "BUSINESS_INTERACTION_ACTION_TYPE"
+      },
+      "businessInteractionTargetScreen": {
+        "id": 2,
+        "type": "BUSINESS_INTERACTION_TARGET_SCREEN_TYPE",
+        "wire": "business_interaction_target_screen",
+        "enum_ref": "BUSINESS_INTERACTION_TARGET_SCREEN_TYPE"
+      },
+      "businessJid": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "business_jid"
+      },
+      "entryPointApp": {
+        "id": 4,
+        "type": "BUSINESS_INTERACTION_ENTRY_POINT_APP",
+        "wire": "entry_point_app",
+        "enum_ref": "BUSINESS_INTERACTION_ENTRY_POINT_APP"
+      },
+      "entryPointSource": {
+        "id": 5,
+        "type": "BUSINESS_INTERACTION_ENTRY_POINT_SOURCE",
+        "wire": "entry_point_source",
+        "enum_ref": "BUSINESS_INTERACTION_ENTRY_POINT_SOURCE"
+      },
+      "internalEntryPoint": {
+        "id": 6,
+        "type": "BUSINESS_INTERACTION_INTERNAL_ENTRY_POINT",
+        "wire": "internal_entry_point",
+        "enum_ref": "BUSINESS_INTERACTION_INTERNAL_ENTRY_POINT"
+      },
+      "sequenceNumber": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "sequence_number"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebBusinessInteractionWamEvent",
+    "matches": "BusinessInteraction:\\s*\\[\\s*3450"
+  },
+  "literals": [
+    "3450"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBusinessInteractionActionType",
+      "WAWebWamEnumBusinessInteractionEntryPointApp",
+      "WAWebWamEnumBusinessInteractionEntryPointSource",
+      "WAWebWamEnumBusinessInteractionInternalEntryPoint",
+      "WAWebWamEnumBusinessInteractionTargetScreenType"
+    ],
+    "dependents": [
+      "WAWebCustomUrlLogEvents"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

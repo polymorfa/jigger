@@ -1,0 +1,42 @@
+{
+  "id": "ab:audio_level_speaking_threshold",
+  "kind": "ab",
+  "name": "audio_level_speaking_threshold",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1213,
+    "type": "int",
+    "default": 30,
+    "alt_default": 50
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "audio_level_speaking_threshold:\\s*\\[\\s*1213"
+  },
+  "literals": [
+    "audio_level_speaking_threshold",
+    "1213"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

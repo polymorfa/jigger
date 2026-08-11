@@ -1,0 +1,4 @@
+message MediaEntriesProto {
+  optional bytes msgId = 1;
+  optional bytes mediaEntryData = 2;
+}

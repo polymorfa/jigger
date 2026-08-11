@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_search_max_num_suggestions",
+  "kind": "ab",
+  "name": "ai_search_max_num_suggestions",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8076,
+    "type": "int",
+    "default": 5,
+    "alt_default": 5
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_search_max_num_suggestions:\\s*\\[\\s*8076"
+  },
+  "literals": [
+    "ai_search_max_num_suggestions",
+    "8076"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

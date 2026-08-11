@@ -1,0 +1,2 @@
+// ParseMessageDeliverBizEngagementDataMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverBizEngagementDataMixin(n *waBinary.Node) (*MessageDeliverBizEngagementDataMixin, error)

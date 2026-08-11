@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAMediaTransport.ContactTransport.Integral",
+  "kind": "proto",
+  "name": "WAMediaTransport.ContactTransport.Integral",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "downloadableVcard": {
+        "number": 2,
+        "type_name": "WAMediaTransport.WAMediaTransport"
+      },
+      "vcard": {
+        "number": 1
+      }
+    },
+    "module": "WAMediaTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMediaTransport.pb",
+    "matches": "name = \"ContactTransport.Integral\""
+  },
+  "literals": [
+    "Integral"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EncryptedBackupsCreateAttachmentContext",
+      "MAWAsConsumerApplication",
+      "MAWEncodeMediaTransportProtocol",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWMpsMigrationProtobufCorrectnessCheckerArmadilloComparisons",
+      "MAWParseNoteReplyMsg",
+      "MAWParseRavenMsg",
+      "MAWProtobufDeserializers",
+      "WAParseConsumerMessageProtocol",
+      "WAParseMediaTransportProtocol",
+      "getMediaTypeFromConsumerMessage"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

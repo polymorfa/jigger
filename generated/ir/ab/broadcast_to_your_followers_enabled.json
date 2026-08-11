@@ -1,0 +1,42 @@
+{
+  "id": "ab:broadcast_to_your_followers_enabled",
+  "kind": "ab",
+  "name": "broadcast_to_your_followers_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31580,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "broadcast_to_your_followers_enabled:\\s*\\[\\s*31580"
+  },
+  "literals": [
+    "broadcast_to_your_followers_enabled",
+    "31580"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

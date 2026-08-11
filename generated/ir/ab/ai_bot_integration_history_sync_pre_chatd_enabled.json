@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_bot_integration_history_sync_pre_chatd_enabled",
+  "kind": "ab",
+  "name": "ai_bot_integration_history_sync_pre_chatd_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25469,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_bot_integration_history_sync_pre_chatd_enabled:\\s*\\[\\s*25469"
+  },
+  "literals": [
+    "ai_bot_integration_history_sync_pre_chatd_enabled",
+    "25469"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

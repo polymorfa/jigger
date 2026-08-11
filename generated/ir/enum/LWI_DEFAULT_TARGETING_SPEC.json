@@ -1,0 +1,41 @@
+{
+  "id": "enum:LWI_DEFAULT_TARGETING_SPEC",
+  "kind": "enum",
+  "name": "LWI_DEFAULT_TARGETING_SPEC",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiDefaultTargetingSpec",
+    "variants": [
+      {
+        "name": "UNKOWN",
+        "value": 1.0
+      },
+      {
+        "name": "MATCHES_TARGETING_SPEC",
+        "value": 2.0
+      },
+      {
+        "name": "DIFFERS_FROM_TARGETING_SPEC",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiDefaultTargetingSpec",
+    "matches": "LWI_DEFAULT_TARGETING_SPEC\\s*[:=]"
+  },
+  "literals": [
+    "LWI_DEFAULT_TARGETING_SPEC",
+    "UNKOWN",
+    "MATCHES_TARGETING_SPEC",
+    "DIFFERS_FROM_TARGETING_SPEC"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

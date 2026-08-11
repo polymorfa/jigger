@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.PollVotesSnapshot",
+  "kind": "proto",
+  "name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.PollVotesSnapshot",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "pollVotes": {
+        "number": 1,
+        "type_name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.PollVoteSnapshot"
+      }
+    },
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb",
+    "matches": "name = \"MsgOpaqueData.PollVotesSnapshot\""
+  },
+  "literals": [
+    "PollVotesSnapshot"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDBMessageSerialization",
+      "WAWebFtsV3MessageSource",
+      "WAWebMsgOpaqueData",
+      "WAWebPollCreationUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

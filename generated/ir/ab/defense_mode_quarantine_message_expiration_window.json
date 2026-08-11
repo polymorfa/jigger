@@ -1,0 +1,42 @@
+{
+  "id": "ab:defense_mode_quarantine_message_expiration_window",
+  "kind": "ab",
+  "name": "defense_mode_quarantine_message_expiration_window",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21918,
+    "type": "int",
+    "default": "121e4",
+    "alt_default": "121e4"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "defense_mode_quarantine_message_expiration_window:\\s*\\[\\s*21918"
+  },
+  "literals": [
+    "defense_mode_quarantine_message_expiration_window",
+    "21918"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

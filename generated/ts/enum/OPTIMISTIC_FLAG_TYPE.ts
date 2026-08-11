@@ -1,0 +1,7 @@
+export enum OPTIMISTICFLAGTYPE {
+  NONE = 0,
+  OPTIMISTIC = 1,
+  OPT_USED = 2,
+  OPT_TAKEOVER = 3,
+  OPT_DISABLED = 4,
+}

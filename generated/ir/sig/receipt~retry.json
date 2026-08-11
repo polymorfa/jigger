@@ -1,0 +1,33 @@
+{
+  "id": "sig:receipt/retry",
+  "kind": "sig",
+  "name": "ReceiptRetryTypeMixin",
+  "data": {
+    "kind": "sig",
+    "root": "receipt",
+    "children": [
+      "retry"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptRetryTypeMixin",
+    "matches": "assertTag\\([a-z], \"receipt\"\\)"
+  },
+  "literals": [
+    "receipt",
+    "retry"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInReceiptAppDataPeerRetryTypeMixin",
+      "WASmaxInReceiptPeerRetryTypeMixin",
+      "WASmaxInReceiptRetryMixin"
+    ],
+    "dep_count": 2,
+    "dependent_count": 3
+  }
+}

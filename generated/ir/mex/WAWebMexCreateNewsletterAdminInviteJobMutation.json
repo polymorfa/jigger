@@ -1,0 +1,33 @@
+{
+  "id": "mex:WAWebMexCreateNewsletterAdminInviteJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCreateNewsletterAdminInviteJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9387141988078609",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "user_id"
+    ],
+    "root_field": "xwa2_newsletter_admin_invite_create",
+    "document": "mutation MexCreateNewsletterAdminInviteJobMutation($newsletter_id, $user_id) {\n  invite_expiration_time\n  xwa2_newsletter_admin_invite_create {\n    xwa2_newsletter_admin_invite_create {\n      id\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexCreateNewsletterAdminInviteJobMutation.graphql",
+    "matches": "id: \"9387141988078609\""
+  },
+  "literals": [
+    "9387141988078609",
+    "WAWebMexCreateNewsletterAdminInviteJobMutation",
+    "xwa2_newsletter_admin_invite_create"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCreateNewsletterAdminInviteJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

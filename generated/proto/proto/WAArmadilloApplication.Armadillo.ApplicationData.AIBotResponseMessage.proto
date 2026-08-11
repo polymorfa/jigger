@@ -1,0 +1,5 @@
+message AIBotResponseMessage {
+  optional bytes summonToken = 1;
+  optional bytes messageText = 2;
+  optional bytes serializedExtras = 3;
+}

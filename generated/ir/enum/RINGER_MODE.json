@@ -1,0 +1,41 @@
+{
+  "id": "enum:RINGER_MODE",
+  "kind": "enum",
+  "name": "RINGER_MODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumRingerMode",
+    "variants": [
+      {
+        "name": "SILENT",
+        "value": 0.0
+      },
+      {
+        "name": "VIBRATE",
+        "value": 1.0
+      },
+      {
+        "name": "NORMAL",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumRingerMode",
+    "matches": "RINGER_MODE\\s*[:=]"
+  },
+  "literals": [
+    "RINGER_MODE",
+    "SILENT",
+    "VIBRATE",
+    "NORMAL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

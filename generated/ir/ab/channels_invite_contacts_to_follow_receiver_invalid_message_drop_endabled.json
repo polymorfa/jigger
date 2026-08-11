@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_invite_contacts_to_follow_receiver_invalid_message_drop_endabled",
+  "kind": "ab",
+  "name": "channels_invite_contacts_to_follow_receiver_invalid_message_drop_endabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22280,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_invite_contacts_to_follow_receiver_invalid_message_drop_endabled:\\s*\\[\\s*22280"
+  },
+  "literals": [
+    "channels_invite_contacts_to_follow_receiver_invalid_message_drop_endabled",
+    "22280"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "id": "enum:USERNAME_CREATION_ACTION_NAME",
+  "kind": "enum",
+  "name": "USERNAME_CREATION_ACTION_NAME",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUsernameCreationActionName",
+    "variants": [
+      {
+        "name": "VIEW",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK_USERNAME_PIN",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_CREATE_USERNAME",
+        "value": 3.0
+      },
+      {
+        "name": "CLICK_EDIT_USERNAME",
+        "value": 4.0
+      },
+      {
+        "name": "CLICK_CHANGE_USERNAME",
+        "value": 5.0
+      },
+      {
+        "name": "CLICK_DELETE_USERNAME",
+        "value": 6.0
+      },
+      {
+        "name": "CLICK_DELETE_USERNAME_CONFIRM",
+        "value": 7.0
+      },
+      {
+        "name": "CLICK_DELETE_USERNAME_CANCEL",
+        "value": 8.0
+      },
+      {
+        "name": "CLICK_SAVE_USERNAME",
+        "value": 9.0
+      },
+      {
+        "name": "CLICK_USERNAME_COMPLETE_CONTINUE",
+        "value": 10.0
+      },
+      {
+        "name": "CLICK_ADD_PIN",
+        "value": 11.0
+      },
+      {
+        "name": "CLICK_SKIP_PIN",
+        "value": 12.0
+      },
+      {
+        "name": "CLICK_CHANGE_PIN",
+        "value": 13.0
+      },
+      {
+        "name": "CLICK_DELETE_PIN",
+        "value": 14.0
+      },
+      {
+        "name": "CLICK_DELETE_PIN_CONFIRM",
+        "value": 15.0
+      },
+      {
+        "name": "CLICK_DELETE_PIN_CANCEL",
+        "value": 16.0
+      },
+      {
+        "name": "CLICK_BACK_BUTTON",
+        "value": 17.0
+      },
+      {
+        "name": "FOUR_DIGITS_FILLED",
+        "value": 18.0
+      },
+      {
+        "name": "CLICK_SAVE_PIN",
+        "value": 19.0
+      },
+      {
+        "name": "USERNAME_SAVE_SUCCESS",
+        "value": 20.0
+      },
+      {
+        "name": "USERNAME_SAVE_FAILURE",
+        "value": 21.0
+      },
+      {
+        "name": "USERNAME_PIN_SAVE_SUCCESS",
+        "value": 22.0
+      },
+      {
+        "name": "USERNAME_PIN_SAVE_FAILURE",
+        "value": 23.0
+      },
+      {
+        "name": "USERNAME_AVAILABILITY_CHECK_SUCCESS",
+        "value": 24.0
+      },
+      {
+        "name": "USERNAME_AVAILABILITY_CHECK_FAILURE",
+        "value": 25.0
+      },
+      {
+        "name": "CLICK_SUGGEST_NEW_PIN",
+        "value": 26.0
+      },
+      {
+        "name": "USERNAME_DELETE_SUCCESS",
+        "value": 27.0
+      },
+      {
+        "name": "USERNAME_DELETE_FAILURE",
+        "value": 28.0
+      },
+      {
+        "name": "USERNAME_PIN_DELETE_SUCCESS",
+        "value": 29.0
+      },
+      {
+        "name": "USERNAME_PIN_DELETE_FAILURE",
+        "value": 30.0
+      },
+      {
+        "name": "CLICK_SUGGEST_USERNAME",
+        "value": 31.0
+      },
+      {
+        "name": "USERNAME_SUGGESTION_SUCCESS",
+        "value": 32.0
+      },
+      {
+        "name": "USERNAME_SUGGEST_BUTTON_SHOWN",
+        "value": 33.0
+      },
+      {
+        "name": "USERNAME_SUGGESTION_FAILURE",
+        "value": 34.0
+      },
+      {
+        "name": "USERNAME_SUGGESTION_EMPTY",
+        "value": 35.0
+      },
+      {
+        "name": "ACTIVATION_REQUEST_SENT",
+        "value": 36.0
+      },
+      {
+        "name": "ACTIVATION_SUCCESS",
+        "value": 37.0
+      },
+      {
+        "name": "ACTIVATION_FAILURE",
+        "value": 38.0
+      },
+      {
+        "name": "CLICK_FB_CONNECT",
+        "value": 39.0
+      },
+      {
+        "name": "CLICK_IG_CONNECT",
+        "value": 40.0
+      },
+      {
+        "name": "DISMISS_LINKING_BOTTOMSHEET",
+        "value": 41.0
+      },
+      {
+        "name": "CLICK_CONSUMER_APP_LINK",
+        "value": 42.0
+      },
+      {
+        "name": "VIEW_ERROR_USERNAME_NOT_FOUND",
+        "value": 43.0
+      },
+      {
+        "name": "VIEW_LINK_FAILURE",
+        "value": 44.0
+      },
+      {
+        "name": "VIEW_LEARN_MORE",
+        "value": 45.0
+      },
+      {
+        "name": "VIEW_OK",
+        "value": 46.0
+      },
+      {
+        "name": "VIEW_LINK_SUCESS_TOAST",
+        "value": 47.0
+      },
+      {
+        "name": "VIEW_USE_FB",
+        "value": 48.0
+      },
+      {
+        "name": "VIEW_USE_IG",
+        "value": 49.0
+      },
+      {
+        "name": "VIEW_SEE_ALL_ACCOUNTS",
+        "value": 50.0
+      },
+      {
+        "name": "VIEW_LINK_ERROR_UPSELL_USE_FB",
+        "value": 51.0
+      },
+      {
+        "name": "VIEW_LINK_ERROR_UPSELL_USE_IG",
+        "value": 52.0
+      },
+      {
+        "name": "VIEW_LINK_ERROR_UPSELL_USE_FOA",
+        "value": 53.0
+      },
+      {
+        "name": "VIEW_LINK_ERROR_UPSELL_USE_SMB",
+        "value": 54.0
+      },
+      {
+        "name": "VIEW_SUGGEST_USERNAME",
+        "value": 55.0
+      },
+      {
+        "name": "CLICK_LEARN_MORE",
+        "value": 56.0
+      },
+      {
+        "name": "CLICK_SHARE",
+        "value": 57.0
+      },
+      {
+        "name": "CLICK_CANCEL",
+        "value": 58.0
+      },
+      {
+        "name": "CLICK_OK",
+        "value": 59.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 60.0
+      },
+      {
+        "name": "CLICK_USE_FB",
+        "value": 61.0
+      },
+      {
+        "name": "CLICK_USE_IG",
+        "value": 62.0
+      },
+      {
+        "name": "CLICK_SEE_ALL_ACCOUNTS",
+        "value": 63.0
+      },
+      {
+        "name": "CLICK_LINK_ERROR_UPSELL_USE_FB",
+        "value": 64.0
+      },
+      {
+        "name": "CLICK_LINK_ERROR_UPSELL_USE_IG",
+        "value": 65.0
+      },
+      {
+        "name": "CLICK_LINK_ERROR_UPSELL_USE_FOA",
+        "value": 66.0
+      },
+      {
+        "name": "CLICK_LINK_ERROR_UPSELL_USE_SMB",
+        "value": 67.0
+      },
+      {
+        "name": "SELECT_USERNAME_RECOMMENDATION",
+        "value": 68.0
+      },
+      {
+        "name": "VIEW_USERNAME_RECOMMENDATIONS_LIST",
+        "value": 69.0
+      },
+      {
+        "name": "USERNAME_SUGGESTIONS_LIST_SHOWN",
+        "value": 70.0
+      },
+      {
+        "name": "VIEW_USERNAME_SUGGESTIONS_LIST",
+        "value": 71.0
+      },
+      {
+        "name": "SELECT_USERNAME_SUGGESTION",
+        "value": 72.0
+      },
+      {
+        "name": "VIEW_FB_ALREADY_LINKED_DIALOG",
+        "value": 73.0
+      },
+      {
+        "name": "CLICK_FB_ALREADY_LINKED_CANCEL",
+        "value": 74.0
+      },
+      {
+        "name": "VIEW_FB_ALREADY_LINKED_MANAGE_ACCOUNTS",
+        "value": 75.0
+      },
+      {
+        "name": "CLICK_FB_ALREADY_LINKED_MANAGE_ACCOUNTS",
+        "value": 76.0
+      },
+      {
+        "name": "VIEW_INLINE_ERROR_USERNAME_TOO_SHORT",
+        "value": 77.0
+      },
+      {
+        "name": "VIEW_INLINE_ERROR_USERNAME_CONTAINS_INVALID_CHARACTER",
+        "value": 78.0
+      },
+      {
+        "name": "VIEW_INLINE_ERROR_USERNAME_TOO_LONG",
+        "value": 79.0
+      },
+      {
+        "name": "VIEW_INLINE_ERROR_USERNAME_CONTAINS_INVALID_PERIODS",
+        "value": 80.0
+      },
+      {
+        "name": "LINK_SUCCESS",
+        "value": 81.0
+      },
+      {
+        "name": "LINK_CANCEL",
+        "value": 82.0
+      },
+      {
+        "name": "APP_SWITCH_FROM_FB_KEY_FLOW",
+        "value": 83.0
+      },
+      {
+        "name": "APP_SWITCH_FROM_IG_KEY_FLOW",
+        "value": 84.0
+      },
+      {
+        "name": "USERNAME_RESERVATION_KEY_IMPRESSION",
+        "value": 85.0
+      },
+      {
+        "name": "USERNAME_RESERVATION_KEY_ADD_KEY_CLICKED",
+        "value": 86.0
+      },
+      {
+        "name": "USERNAME_RESERVATION_KEY_NOT_NOW_CLICKED",
+        "value": 87.0
+      },
+      {
+        "name": "USERNAME_RESERVATION_KEY_SAVE_KEY_CLICKED",
+        "value": 88.0
+      },
+      {
+        "name": "USERNAME_RESERVATION_KEY_CANCEL_CLICKED",
+        "value": 89.0
+      },
+      {
+        "name": "APP_SWITCH_TO_FB_KEY_FLOW",
+        "value": 90.0
+      },
+      {
+        "name": "APP_SWITCH_TO_IG_KEY_FLOW",
+        "value": 91.0
+      },
+      {
+        "name": "ACTIVATION_REQUEST_JITTERED",
+        "value": 92.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUsernameCreationActionName",
+    "matches": "USERNAME_CREATION_ACTION_NAME\\s*[:=]"
+  },
+  "literals": [
+    "USERNAME_CREATION_ACTION_NAME",
+    "VIEW",
+    "CLICK_USERNAME_PIN",
+    "CLICK_CREATE_USERNAME",
+    "CLICK_EDIT_USERNAME",
+    "CLICK_CHANGE_USERNAME",
+    "CLICK_DELETE_USERNAME",
+    "CLICK_DELETE_USERNAME_CONFIRM",
+    "CLICK_DELETE_USERNAME_CANCEL",
+    "CLICK_SAVE_USERNAME",
+    "CLICK_USERNAME_COMPLETE_CONTINUE",
+    "CLICK_ADD_PIN",
+    "CLICK_SKIP_PIN",
+    "CLICK_CHANGE_PIN",
+    "CLICK_DELETE_PIN",
+    "CLICK_DELETE_PIN_CONFIRM",
+    "CLICK_DELETE_PIN_CANCEL",
+    "CLICK_BACK_BUTTON",
+    "FOUR_DIGITS_FILLED",
+    "CLICK_SAVE_PIN",
+    "USERNAME_SAVE_SUCCESS",
+    "USERNAME_SAVE_FAILURE",
+    "USERNAME_PIN_SAVE_SUCCESS",
+    "USERNAME_PIN_SAVE_FAILURE",
+    "USERNAME_AVAILABILITY_CHECK_SUCCESS",
+    "USERNAME_AVAILABILITY_CHECK_FAILURE",
+    "CLICK_SUGGEST_NEW_PIN",
+    "USERNAME_DELETE_SUCCESS",
+    "USERNAME_DELETE_FAILURE",
+    "USERNAME_PIN_DELETE_SUCCESS",
+    "USERNAME_PIN_DELETE_FAILURE",
+    "CLICK_SUGGEST_USERNAME",
+    "USERNAME_SUGGESTION_SUCCESS",
+    "USERNAME_SUGGEST_BUTTON_SHOWN",
+    "USERNAME_SUGGESTION_FAILURE",
+    "USERNAME_SUGGESTION_EMPTY",
+    "ACTIVATION_REQUEST_SENT",
+    "ACTIVATION_SUCCESS",
+    "ACTIVATION_FAILURE",
+    "CLICK_FB_CONNECT",
+    "CLICK_IG_CONNECT",
+    "DISMISS_LINKING_BOTTOMSHEET",
+    "CLICK_CONSUMER_APP_LINK",
+    "VIEW_ERROR_USERNAME_NOT_FOUND",
+    "VIEW_LINK_FAILURE",
+    "VIEW_LEARN_MORE",
+    "VIEW_OK",
+    "VIEW_LINK_SUCESS_TOAST",
+    "VIEW_USE_FB",
+    "VIEW_USE_IG",
+    "VIEW_SEE_ALL_ACCOUNTS",
+    "VIEW_LINK_ERROR_UPSELL_USE_FB",
+    "VIEW_LINK_ERROR_UPSELL_USE_IG",
+    "VIEW_LINK_ERROR_UPSELL_USE_FOA",
+    "VIEW_LINK_ERROR_UPSELL_USE_SMB",
+    "VIEW_SUGGEST_USERNAME",
+    "CLICK_LEARN_MORE",
+    "CLICK_SHARE",
+    "CLICK_CANCEL",
+    "CLICK_OK",
+    "DISMISS",
+    "CLICK_USE_FB",
+    "CLICK_USE_IG",
+    "CLICK_SEE_ALL_ACCOUNTS",
+    "CLICK_LINK_ERROR_UPSELL_USE_FB",
+    "CLICK_LINK_ERROR_UPSELL_USE_IG",
+    "CLICK_LINK_ERROR_UPSELL_USE_FOA",
+    "CLICK_LINK_ERROR_UPSELL_USE_SMB",
+    "SELECT_USERNAME_RECOMMENDATION",
+    "VIEW_USERNAME_RECOMMENDATIONS_LIST",
+    "USERNAME_SUGGESTIONS_LIST_SHOWN",
+    "VIEW_USERNAME_SUGGESTIONS_LIST",
+    "SELECT_USERNAME_SUGGESTION",
+    "VIEW_FB_ALREADY_LINKED_DIALOG",
+    "CLICK_FB_ALREADY_LINKED_CANCEL",
+    "VIEW_FB_ALREADY_LINKED_MANAGE_ACCOUNTS",
+    "CLICK_FB_ALREADY_LINKED_MANAGE_ACCOUNTS",
+    "VIEW_INLINE_ERROR_USERNAME_TOO_SHORT",
+    "VIEW_INLINE_ERROR_USERNAME_CONTAINS_INVALID_CHARACTER",
+    "VIEW_INLINE_ERROR_USERNAME_TOO_LONG",
+    "VIEW_INLINE_ERROR_USERNAME_CONTAINS_INVALID_PERIODS",
+    "LINK_SUCCESS",
+    "LINK_CANCEL",
+    "APP_SWITCH_FROM_FB_KEY_FLOW",
+    "APP_SWITCH_FROM_IG_KEY_FLOW",
+    "USERNAME_RESERVATION_KEY_IMPRESSION",
+    "USERNAME_RESERVATION_KEY_ADD_KEY_CLICKED",
+    "USERNAME_RESERVATION_KEY_NOT_NOW_CLICKED",
+    "USERNAME_RESERVATION_KEY_SAVE_KEY_CLICKED",
+    "USERNAME_RESERVATION_KEY_CANCEL_CLICKED",
+    "APP_SWITCH_TO_FB_KEY_FLOW",
+    "APP_SWITCH_TO_IG_KEY_FLOW",
+    "ACTIVATION_REQUEST_JITTERED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebContactMeByUsernameDrawer.react",
+      "WAWebCreateUsernameKeyDrawer.react",
+      "WAWebProfileDrawer.react",
+      "WAWebSetUsernameDrawer.react",
+      "WAWebUsernameCreationActionLogger",
+      "WAWebUsernameCreationActionWamEvent",
+      "WAWebUsernameCreationSuccessDrawer.react",
+      "WAWebUsernameDeleteModal.react",
+      "WAWebUsernameEditDropdown.react",
+      "WAWebUsernameKeyDeleteModal.react",
+      "WAWebUsernameManagementDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 11
+  }
+}

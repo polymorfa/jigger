@@ -1,0 +1,4 @@
+export enum COREEVENTTRIGGERTYPE {
+  USER = 1,
+  REPORT = 2,
+}

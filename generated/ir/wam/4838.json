@@ -1,0 +1,105 @@
+{
+  "id": "wam:4838",
+  "kind": "wam",
+  "name": "UpdatesTabSearch",
+  "data": {
+    "kind": "wam",
+    "event_id": 4838,
+    "fields": {
+      "channelsAdminCount": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "channels_admin_count"
+      },
+      "channelsFollowedCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "channels_followed_count"
+      },
+      "premiumChannelsFollowedCount": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "premium_channels_followed_count"
+      },
+      "recentStatusItemCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "recent_status_item_count"
+      },
+      "recentStatusRowCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "recent_status_row_count"
+      },
+      "unifiedSessionId": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updateTabSearchEventType": {
+        "id": 4,
+        "type": "UPDATE_TAB_SEARCH_EVENT_TYPE",
+        "wire": "update_tab_search_event_type",
+        "enum_ref": "UPDATE_TAB_SEARCH_EVENT_TYPE"
+      },
+      "updatesTabSearchModeType": {
+        "id": 11,
+        "type": "UPDATES_TAB_SEARCH_MODE_TYPE",
+        "wire": "updates_tab_search_mode_type",
+        "enum_ref": "UPDATES_TAB_SEARCH_MODE_TYPE"
+      },
+      "updatesTabSearchResultType": {
+        "id": 9,
+        "type": "UPDATES_TAB_SEARCH_RESULT_TYPE",
+        "wire": "updates_tab_search_result_type",
+        "enum_ref": "UPDATES_TAB_SEARCH_RESULT_TYPE"
+      },
+      "updatesTabSearchSessionId": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "updates_tab_search_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      },
+      "viewedStatusItemCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "viewed_status_item_count"
+      },
+      "viewedStatusRowCount": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "viewed_status_row_count"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebUpdatesTabSearchWamEvent",
+    "matches": "UpdatesTabSearch:\\s*\\[\\s*4838"
+  },
+  "literals": [
+    "4838"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumUpdateTabSearchEventType",
+      "WAWebWamEnumUpdatesTabSearchModeType",
+      "WAWebWamEnumUpdatesTabSearchResultType"
+    ],
+    "dependents": [
+      "WAWebNewsletterInboxSearchLogging"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

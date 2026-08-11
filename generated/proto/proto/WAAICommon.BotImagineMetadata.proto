@@ -1,0 +1,4 @@
+message BotImagineMetadata {
+  optional bytes imagineType = 1;
+  optional bytes shortPrompt = 2;
+}

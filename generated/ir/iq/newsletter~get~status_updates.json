@@ -1,0 +1,191 @@
+{
+  "id": "iq:newsletter/get/status_updates",
+  "kind": "iq",
+  "name": "NewslettersGetNewsletterStatusUpdates",
+  "data": {
+    "kind": "iq",
+    "xmlns": "newsletter",
+    "type": "get",
+    "tags": [
+      "status_updates"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "newsletter",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "status_updates",
+          "attrs": [
+            {
+              "name": "count",
+              "ty": "int",
+              "optional": false
+            },
+            {
+              "name": "since",
+              "ty": "int",
+              "optional": true
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxNewslettersGetNewsletterStatusUpdatesRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInNewslettersGetNewsletterStatusUpdatesResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "status_updates",
+              "card": "one"
+            },
+            {
+              "tag": "statuses",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInNewslettersGetNewsletterStatusUpdatesResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "BadRequestIQErrorResponse",
+          "ItemNotFoundIQErrorResponse",
+          "RateLimitedIQErrorResponse",
+          "SuspendedIQErrorResponse",
+          "UnavailableForLegalReasonsResponse"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInNewslettersGetNewsletterStatusUpdatesResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutNewslettersGetNewsletterStatusUpdatesRequest",
+    "matches": "smax\\(\"status_updates\""
+  },
+  "literals": [
+    "newsletter",
+    "status_updates"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxJsx",
+      "WASmaxOutNewslettersNewsletterIQGetRequestMixin",
+      "WASmaxOutNewslettersStatusUpdatesBeforeOrAfterMixinMixinGroup",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxNewslettersGetNewsletterStatusUpdatesRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

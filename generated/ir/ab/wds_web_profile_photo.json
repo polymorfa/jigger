@@ -1,0 +1,59 @@
+{
+  "id": "ab:wds_web_profile_photo",
+  "kind": "ab",
+  "name": "wds_web_profile_photo",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27954,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wds_web_profile_photo:\\s*\\[\\s*27954"
+  },
+  "literals": [
+    "wds_web_profile_photo",
+    "27954"
+  ],
+  "usage": {
+    "read_count": 15,
+    "readers": [
+      "WAWebBusinessProfileCoverPhoto.react",
+      "WAWebCommunityHomeTopCard.react",
+      "WAWebContactInfoDrawer.react",
+      "WAWebContactInfoTopCard.react",
+      "WAWebGroupChatImage.react",
+      "WAWebGroupInfoCommunitySection.react",
+      "WAWebGroupInfoPhoto.react",
+      "WAWebGroupPastParticipant.react",
+      "WAWebHeader.react",
+      "WAWebPhotoPicker.react",
+      "WAWebPhotoViewerModal.react",
+      "WAWebProfileDrawerCoverPhoto.react",
+      "WAWebStatusProfilePhotoRing.react",
+      "WAWebStatusProfilePhotoRingWrapper.react",
+      "WAWebSubgroupSwitcherButton.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

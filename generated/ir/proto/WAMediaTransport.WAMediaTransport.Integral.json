@@ -1,0 +1,54 @@
+{
+  "id": "proto:WAMediaTransport.WAMediaTransport.Integral",
+  "kind": "proto",
+  "name": "WAMediaTransport.WAMediaTransport.Integral",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "directPath": {
+        "number": 4
+      },
+      "fileEncSha256": {
+        "number": 3
+      },
+      "fileSha256": {
+        "number": 1
+      },
+      "mediaKey": {
+        "number": 2
+      },
+      "mediaKeyTimestamp": {
+        "number": 5
+      }
+    },
+    "module": "WAMediaTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMediaTransport.pb",
+    "matches": "name = \"WAMediaTransport.Integral\""
+  },
+  "literals": [
+    "Integral"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EncryptedBackupsCreateAttachmentContext",
+      "MAWAsConsumerApplication",
+      "MAWEncodeMediaTransportProtocol",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWMpsMigrationProtobufCorrectnessCheckerArmadilloComparisons",
+      "MAWParseNoteReplyMsg",
+      "MAWParseRavenMsg",
+      "MAWProtobufDeserializers",
+      "WAParseConsumerMessageProtocol",
+      "WAParseMediaTransportProtocol",
+      "getMediaTypeFromConsumerMessage"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

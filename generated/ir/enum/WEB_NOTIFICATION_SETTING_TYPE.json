@@ -1,0 +1,42 @@
+{
+  "id": "enum:WEB_NOTIFICATION_SETTING_TYPE",
+  "kind": "enum",
+  "name": "WEB_NOTIFICATION_SETTING_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebNotificationSettingType",
+    "variants": [
+      {
+        "name": "ALLOWED",
+        "value": 1.0
+      },
+      {
+        "name": "BLOCKED",
+        "value": 2.0
+      },
+      {
+        "name": "UNKNOWN",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebNotificationSettingType",
+    "matches": "WEB_NOTIFICATION_SETTING_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEB_NOTIFICATION_SETTING_TYPE",
+    "ALLOWED",
+    "BLOCKED",
+    "UNKNOWN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBackgroundSyncReporter",
+      "WAWebWebcBackgroundSyncAdoptionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

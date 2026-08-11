@@ -1,0 +1,79 @@
+{
+  "id": "enum:OPPOSITE_VISIBLE_IDENTIFICATION_TYPE",
+  "kind": "enum",
+  "name": "OPPOSITE_VISIBLE_IDENTIFICATION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOppositeVisibleIdentificationType",
+    "variants": [
+      {
+        "name": "PHONE_NUMBER",
+        "value": 1.0
+      },
+      {
+        "name": "SAVED_CONTACT_NAME",
+        "value": 2.0
+      },
+      {
+        "name": "USERNAME",
+        "value": 3.0
+      },
+      {
+        "name": "MASKED_PHONE_NUMBER",
+        "value": 4.0
+      },
+      {
+        "name": "VERIFIED_BUSINESS_NAME",
+        "value": 5.0
+      },
+      {
+        "name": "PLACEHOLDER",
+        "value": 6.0
+      },
+      {
+        "name": "PUSHNAME",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOppositeVisibleIdentificationType",
+    "matches": "OPPOSITE_VISIBLE_IDENTIFICATION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "OPPOSITE_VISIBLE_IDENTIFICATION_TYPE",
+    "PHONE_NUMBER",
+    "SAVED_CONTACT_NAME",
+    "USERNAME",
+    "MASKED_PHONE_NUMBER",
+    "VERIFIED_BUSINESS_NAME",
+    "PLACEHOLDER",
+    "PUSHNAME"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallParticipantInfo.react",
+      "WAWebChatMessageCountsWamEvent",
+      "WAWebChatThreadLoggingUtils",
+      "WAWebContactInfoCard.react",
+      "WAWebContactInfoCustomerDataSection.react",
+      "WAWebContactInfoPhoneNumberSection.react",
+      "WAWebContactInfoTopCard.react",
+      "WAWebFormatChangeUsernameTemplateText",
+      "WAWebFrontendContactGetters",
+      "WAWebGroupJoinModalUtils",
+      "WAWebGroupMemberUpdateUsernameRow.react",
+      "WAWebMessageAuthor.react",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent",
+      "WAWebName.react",
+      "WAWebNotificationHelpers",
+      "WAWebThreadInteractionDataCoreConsumerWamEvent",
+      "WAWebTrustSignalsUtils",
+      "WAWebVoipUiLobby.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 19
+  }
+}

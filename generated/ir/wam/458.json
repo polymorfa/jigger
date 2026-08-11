@@ -1,0 +1,279 @@
+{
+  "id": "wam:458",
+  "kind": "wam",
+  "name": "Ptt",
+  "data": {
+    "kind": "wam",
+    "event_id": 458,
+    "fields": {
+      "audioDriverRestartCount": {
+        "id": 52,
+        "type": "INTEGER",
+        "wire": "audio_driver_restart_count"
+      },
+      "audioDriverRestartReason": {
+        "id": 53,
+        "type": "INTEGER",
+        "wire": "audio_driver_restart_reason"
+      },
+      "deviceAgcState": {
+        "id": 54,
+        "type": "DEVICE_AGC_STATE_TYPE",
+        "wire": "device_agc_state",
+        "enum_ref": "DEVICE_AGC_STATE_TYPE"
+      },
+      "deviceNsState": {
+        "id": 55,
+        "type": "DEVICE_NS_STATE_TYPE",
+        "wire": "device_ns_state",
+        "enum_ref": "DEVICE_NS_STATE_TYPE"
+      },
+      "isMetaAiThread": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "is_meta_ai_thread"
+      },
+      "pttAuddevRecorderAvgCbT": {
+        "id": 17,
+        "type": "TIMER",
+        "wire": "ptt_auddev_recorder_avg_cb_t"
+      },
+      "pttAuddevRecorderInitT": {
+        "id": 18,
+        "type": "TIMER",
+        "wire": "ptt_auddev_recorder_init_t"
+      },
+      "pttAuddevRecorderStartT": {
+        "id": 19,
+        "type": "TIMER",
+        "wire": "ptt_auddev_recorder_start_t"
+      },
+      "pttAuddevRecorderStopT": {
+        "id": 20,
+        "type": "TIMER",
+        "wire": "ptt_auddev_recorder_stop_t"
+      },
+      "pttAudioEngine": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "ptt_audio_engine"
+      },
+      "pttAvgNoiseLoudness": {
+        "id": 11,
+        "type": "NUMBER",
+        "wire": "ptt_avg_noise_loudness"
+      },
+      "pttAvgNoiseLoudnessReduction": {
+        "id": 12,
+        "type": "NUMBER",
+        "wire": "ptt_avg_noise_loudness_reduction"
+      },
+      "pttAvgSpeechLoudness": {
+        "id": 13,
+        "type": "NUMBER",
+        "wire": "ptt_avg_speech_loudness"
+      },
+      "pttAvgSpeechLoudnessReduction": {
+        "id": 14,
+        "type": "NUMBER",
+        "wire": "ptt_avg_speech_loudness_reduction"
+      },
+      "pttCaptureSampleRateEffectiveHz": {
+        "id": 56,
+        "type": "INTEGER",
+        "wire": "ptt_capture_sample_rate_effective_hz"
+      },
+      "pttCaptureSampleRateRequestedHz": {
+        "id": 57,
+        "type": "INTEGER",
+        "wire": "ptt_capture_sample_rate_requested_hz"
+      },
+      "pttDraftPlayCnt": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "ptt_draft_play_cnt"
+      },
+      "pttDraftSeekCnt": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "ptt_draft_seek_cnt"
+      },
+      "pttDuration": {
+        "id": 5,
+        "type": "TIMER",
+        "wire": "ptt_duration"
+      },
+      "pttIntensityAggregateValue": {
+        "id": 50,
+        "type": "NUMBER",
+        "wire": "ptt_intensity_aggregate_value"
+      },
+      "pttLock": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "ptt_lock"
+      },
+      "pttOggPageWriteBucketGte10msPct": {
+        "id": 38,
+        "type": "NUMBER",
+        "wire": "ptt_ogg_page_write_bucket_gte10ms_pct"
+      },
+      "pttOggPageWriteBucketLt10msPct": {
+        "id": 39,
+        "type": "NUMBER",
+        "wire": "ptt_ogg_page_write_bucket_lt10ms_pct"
+      },
+      "pttOggPageWriteBucketLt2msPct": {
+        "id": 40,
+        "type": "NUMBER",
+        "wire": "ptt_ogg_page_write_bucket_lt2ms_pct"
+      },
+      "pttOggPageWriteBucketLt4msPct": {
+        "id": 41,
+        "type": "NUMBER",
+        "wire": "ptt_ogg_page_write_bucket_lt4ms_pct"
+      },
+      "pttOggPageWriteBucketLt6msPct": {
+        "id": 42,
+        "type": "NUMBER",
+        "wire": "ptt_ogg_page_write_bucket_lt6ms_pct"
+      },
+      "pttOggPageWriteBucketLt8msPct": {
+        "id": 43,
+        "type": "NUMBER",
+        "wire": "ptt_ogg_page_write_bucket_lt8ms_pct"
+      },
+      "pttOpusEncodeBucketGte10msPct": {
+        "id": 44,
+        "type": "NUMBER",
+        "wire": "ptt_opus_encode_bucket_gte10ms_pct"
+      },
+      "pttOpusEncodeBucketLt10msPct": {
+        "id": 45,
+        "type": "NUMBER",
+        "wire": "ptt_opus_encode_bucket_lt10ms_pct"
+      },
+      "pttOpusEncodeBucketLt2msPct": {
+        "id": 46,
+        "type": "NUMBER",
+        "wire": "ptt_opus_encode_bucket_lt2ms_pct"
+      },
+      "pttOpusEncodeBucketLt4msPct": {
+        "id": 47,
+        "type": "NUMBER",
+        "wire": "ptt_opus_encode_bucket_lt4ms_pct"
+      },
+      "pttOpusEncodeBucketLt6msPct": {
+        "id": 48,
+        "type": "NUMBER",
+        "wire": "ptt_opus_encode_bucket_lt6ms_pct"
+      },
+      "pttOpusEncodeBucketLt8msPct": {
+        "id": 49,
+        "type": "NUMBER",
+        "wire": "ptt_opus_encode_bucket_lt8ms_pct"
+      },
+      "pttPauseCnt": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "ptt_pause_cnt"
+      },
+      "pttRecorderCbBucketGte20msPct": {
+        "id": 21,
+        "type": "NUMBER",
+        "wire": "ptt_recorder_cb_bucket_gte20ms_pct"
+      },
+      "pttRecorderCbBucketLt10msPct": {
+        "id": 22,
+        "type": "NUMBER",
+        "wire": "ptt_recorder_cb_bucket_lt10ms_pct"
+      },
+      "pttRecorderCbBucketLt15msPct": {
+        "id": 23,
+        "type": "NUMBER",
+        "wire": "ptt_recorder_cb_bucket_lt15ms_pct"
+      },
+      "pttRecorderCbBucketLt20msPct": {
+        "id": 24,
+        "type": "NUMBER",
+        "wire": "ptt_recorder_cb_bucket_lt20ms_pct"
+      },
+      "pttRecorderCbBucketLt5msPct": {
+        "id": 25,
+        "type": "NUMBER",
+        "wire": "ptt_recorder_cb_bucket_lt5ms_pct"
+      },
+      "pttRecorderNoiseDurationMs": {
+        "id": 26,
+        "type": "TIMER",
+        "wire": "ptt_recorder_noise_duration_ms"
+      },
+      "pttRecorderSpeechDurationMs": {
+        "id": 27,
+        "type": "TIMER",
+        "wire": "ptt_recorder_speech_duration_ms"
+      },
+      "pttResult": {
+        "id": 1,
+        "type": "PTT_RESULT_TYPE",
+        "wire": "ptt_result",
+        "enum_ref": "PTT_RESULT_TYPE"
+      },
+      "pttSize": {
+        "id": 3,
+        "type": "NUMBER",
+        "wire": "ptt_size"
+      },
+      "pttSource": {
+        "id": 2,
+        "type": "PTT_SOURCE_TYPE",
+        "wire": "ptt_source",
+        "enum_ref": "PTT_SOURCE_TYPE"
+      },
+      "pttStop": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "ptt_stop"
+      },
+      "pttStopTapCnt": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "ptt_stop_tap_cnt"
+      },
+      "pttWaveformResult": {
+        "id": 51,
+        "type": "PTT_WAVEFORM_RESULT",
+        "wire": "ptt_waveform_result",
+        "enum_ref": "PTT_WAVEFORM_RESULT"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPttWamEvent",
+    "matches": "Ptt:\\s*\\[\\s*458"
+  },
+  "literals": [
+    "458"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDeviceAgcStateType",
+      "WAWebWamEnumDeviceNsStateType",
+      "WAWebWamEnumPttResultType",
+      "WAWebWamEnumPttSourceType",
+      "WAWebWamEnumPttWaveformResult"
+    ],
+    "dependents": [
+      "WAWebPttComposerRecordingSession"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

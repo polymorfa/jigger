@@ -1,0 +1,7 @@
+message PaymentsTransactionMessage {
+  optional bytes transactionId = 1;
+  optional bytes amount = 2;
+  optional bytes currency = 3;
+  optional bytes paymentStatus = 4;
+  optional bytes extendedContentMessage = 5;
+}

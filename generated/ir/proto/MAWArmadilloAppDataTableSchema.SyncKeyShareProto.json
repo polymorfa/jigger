@@ -1,0 +1,36 @@
+{
+  "id": "proto:MAWArmadilloAppDataTableSchema.SyncKeyShareProto",
+  "kind": "proto",
+  "name": "MAWArmadilloAppDataTableSchema.SyncKeyShareProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "keys": {
+        "number": 1,
+        "type_name": "MAWArmadilloAppDataTableSchema.SyncKeyDataProto"
+      },
+      "orphanKeys": {
+        "number": 2
+      }
+    },
+    "module": "MAWArmadilloAppDataTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloAppDataTableSchema.pb",
+    "matches": "name = \"SyncKeyShareProto\""
+  },
+  "literals": [
+    "SyncKeyShareProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

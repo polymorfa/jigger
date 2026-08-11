@@ -1,0 +1,123 @@
+{
+  "id": "wam:1188",
+  "kind": "wam",
+  "name": "WebcMemoryStat",
+  "data": {
+    "kind": "wam",
+    "event_id": 1188,
+    "fields": {
+      "appContext": {
+        "id": 26,
+        "type": "STRING",
+        "wire": "app_context"
+      },
+      "appContextBitfield": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "app_context_bitfield"
+      },
+      "chatCollectionSize": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "chat_collection_size"
+      },
+      "chatDbSize": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "chat_db_size"
+      },
+      "contactCollectionSize": {
+        "id": 19,
+        "type": "INTEGER",
+        "wire": "contact_collection_size"
+      },
+      "contactDbSize": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "contact_db_size"
+      },
+      "isForeground": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "is_foreground"
+      },
+      "jsHeapSizeLimit": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "js_heap_size_limit"
+      },
+      "messageCollectionSize": {
+        "id": 24,
+        "type": "INTEGER",
+        "wire": "message_collection_size"
+      },
+      "messageDbSize": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "message_db_size"
+      },
+      "peakUsedJsHeapSize": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "peak_used_js_heap_size"
+      },
+      "scenario": {
+        "id": 15,
+        "type": "WEBC_SCENARIO_TYPE",
+        "wire": "scenario",
+        "enum_ref": "WEBC_SCENARIO_TYPE"
+      },
+      "totalJsHeapSize": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "total_js_heap_size"
+      },
+      "uptime": {
+        "id": 6,
+        "type": "NUMBER",
+        "wire": "uptime"
+      },
+      "usedJsHeapSize": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "used_js_heap_size"
+      },
+      "usedJsHeapSizeDelta": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "used_js_heap_size_delta"
+      },
+      "webcRuntimeEnv": {
+        "id": 23,
+        "type": "WEBC_RUNTIME_ENV_CODE",
+        "wire": "webc_runtime_env",
+        "enum_ref": "WEBC_RUNTIME_ENV_CODE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      10
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcMemoryStatWamEvent",
+    "matches": "WebcMemoryStat:\\s*\\[\\s*1188"
+  },
+  "literals": [
+    "1188"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcRuntimeEnvCode",
+      "WAWebWamEnumWebcScenarioType"
+    ],
+    "dependents": [
+      "WAWebWamMemoryStat"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

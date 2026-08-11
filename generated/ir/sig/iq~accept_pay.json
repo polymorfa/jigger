@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/accept_pay",
+  "kind": "sig",
+  "name": "AccountSetPaymentsTOSv3ResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "accept_pay"
+    ],
+    "responds_to": "AccountSetPaymentsTOSv3"
+  },
+  "evidence": {
+    "module": "WASmaxInAccountSetPaymentsTOSv3ResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "accept_pay"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInAccountIQResultResponseMixin",
+      "WASmaxInAccountSetPaymentsTOSv3BRConsumerOrSetPaymentsTOSv3UPIConsumerPaymentsTOSv3ResponseMixinGroup",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxAccountSetPaymentsTOSv3RPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

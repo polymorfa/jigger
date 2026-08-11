@@ -1,0 +1,2 @@
+// ABWaMetaOneEligibilitySubscriptionStatusCheckEnabled is A/B property 28613 (bool), default false.
+const ABWaMetaOneEligibilitySubscriptionStatusCheckEnabled = "wa_meta_one_eligibility_subscription_status_check_enabled"

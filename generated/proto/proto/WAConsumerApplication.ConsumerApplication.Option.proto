@@ -1,0 +1,3 @@
+message Option {
+  optional bytes optionName = 1;
+}

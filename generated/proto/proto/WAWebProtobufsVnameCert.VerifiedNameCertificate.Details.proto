@@ -1,0 +1,7 @@
+message Details {
+  optional bytes serial = 1;
+  optional bytes issuer = 2;
+  optional bytes verifiedName = 4;
+  optional LocalizedName localizedNames = 8;
+  optional bytes issueTime = 10;
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_voip_sctp_worker_safari_exp",
+  "kind": "ab",
+  "name": "web_voip_sctp_worker_safari_exp",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27695,
+    "type": "int",
+    "default": 1,
+    "alt_default": 1
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_voip_sctp_worker_safari_exp:\\s*\\[\\s*27695"
+  },
+  "literals": [
+    "web_voip_sctp_worker_safari_exp",
+    "27695"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipRelayConnectionUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

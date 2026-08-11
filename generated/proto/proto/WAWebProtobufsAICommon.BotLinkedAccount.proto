@@ -1,0 +1,3 @@
+message BotLinkedAccount {
+  optional bytes type = 1;
+}

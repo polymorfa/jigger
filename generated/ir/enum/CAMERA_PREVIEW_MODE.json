@@ -1,0 +1,41 @@
+{
+  "id": "enum:CAMERA_PREVIEW_MODE",
+  "kind": "enum",
+  "name": "CAMERA_PREVIEW_MODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCameraPreviewMode",
+    "variants": [
+      {
+        "name": "DEFAULT",
+        "value": 0.0
+      },
+      {
+        "name": "TEXTURE",
+        "value": 1.0
+      },
+      {
+        "name": "TEXTURE_FALLBACK",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCameraPreviewMode",
+    "matches": "CAMERA_PREVIEW_MODE\\s*[:=]"
+  },
+  "literals": [
+    "CAMERA_PREVIEW_MODE",
+    "DEFAULT",
+    "TEXTURE",
+    "TEXTURE_FALLBACK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

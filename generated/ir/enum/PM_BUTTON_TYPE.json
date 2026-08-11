@@ -1,0 +1,52 @@
+{
+  "id": "enum:PM_BUTTON_TYPE",
+  "kind": "enum",
+  "name": "PM_BUTTON_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPmButtonType",
+    "variants": [
+      {
+        "name": "QUICK_REPLY",
+        "value": 0.0
+      },
+      {
+        "name": "CTA_URL",
+        "value": 1.0
+      },
+      {
+        "name": "CTA_CALL",
+        "value": 2.0
+      },
+      {
+        "name": "CTA_CATALOG",
+        "value": 3.0
+      },
+      {
+        "name": "CTA_CATALOG_ITEM",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPmButtonType",
+    "matches": "PM_BUTTON_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PM_BUTTON_TYPE",
+    "QUICK_REPLY",
+    "CTA_URL",
+    "CTA_CALL",
+    "CTA_CATALOG",
+    "CTA_CATALOG_ITEM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetInteractiveActionsFromButtons",
+      "WAWebSmbPaidMessagesButtonLoggerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

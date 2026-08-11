@@ -1,0 +1,9 @@
+message HSMDateTimeComponent {
+  optional bytes dayOfWeek = 1;
+  optional bytes year = 2;
+  optional bytes month = 3;
+  optional bytes dayOfMonth = 4;
+  optional bytes hour = 5;
+  optional bytes minute = 6;
+  optional bytes calendar = 7;
+}

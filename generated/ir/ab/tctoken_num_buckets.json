@@ -1,0 +1,42 @@
+{
+  "id": "ab:tctoken_num_buckets",
+  "kind": "ab",
+  "name": "tctoken_num_buckets",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 909,
+    "type": "int",
+    "default": 4,
+    "alt_default": 4
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "tctoken_num_buckets:\\s*\\[\\s*909"
+  },
+  "literals": [
+    "tctoken_num_buckets",
+    "909"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

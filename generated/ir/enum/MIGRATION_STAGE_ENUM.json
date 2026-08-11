@@ -1,0 +1,87 @@
+{
+  "id": "enum:MIGRATION_STAGE_ENUM",
+  "kind": "enum",
+  "name": "MIGRATION_STAGE_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMigrationStageEnum",
+    "variants": [
+      {
+        "name": "GOT_ABPROP",
+        "value": 1.0
+      },
+      {
+        "name": "PRIMARY_LOCAL_MIGRATION_STARTED",
+        "value": 2.0
+      },
+      {
+        "name": "PRIMARY_LOCAL_MIGRATION_ENDED",
+        "value": 3.0
+      },
+      {
+        "name": "PRIMARY_LOCAL_MIGRATION_FAILED",
+        "value": 4.0
+      },
+      {
+        "name": "PRIMARY_SENT_PEER_MESSAGE",
+        "value": 5.0
+      },
+      {
+        "name": "COMPANION_RECEIVED_PEER_MESSAGE",
+        "value": 6.0
+      },
+      {
+        "name": "COMPANION_LOCAL_MIGRATION_STARTED",
+        "value": 7.0
+      },
+      {
+        "name": "COMPANION_LOCAL_MIGRATION_ENDED",
+        "value": 8.0
+      },
+      {
+        "name": "COMPANION_LOCAL_MIGRATION_FAILED",
+        "value": 9.0
+      },
+      {
+        "name": "COMPANION_MIGRATED_ON_NEW_PAIRING",
+        "value": 10.0
+      },
+      {
+        "name": "COMPANION_RECEIVED_DEVICE_CAPABILITY",
+        "value": 11.0
+      },
+      {
+        "name": "COMPANION_EXTRACTED_AND_SAVED_PEER_MESSAGE",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMigrationStageEnum",
+    "matches": "MIGRATION_STAGE_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "MIGRATION_STAGE_ENUM",
+    "GOT_ABPROP",
+    "PRIMARY_LOCAL_MIGRATION_STARTED",
+    "PRIMARY_LOCAL_MIGRATION_ENDED",
+    "PRIMARY_LOCAL_MIGRATION_FAILED",
+    "PRIMARY_SENT_PEER_MESSAGE",
+    "COMPANION_RECEIVED_PEER_MESSAGE",
+    "COMPANION_LOCAL_MIGRATION_STARTED",
+    "COMPANION_LOCAL_MIGRATION_ENDED",
+    "COMPANION_LOCAL_MIGRATION_FAILED",
+    "COMPANION_MIGRATED_ON_NEW_PAIRING",
+    "COMPANION_RECEIVED_DEVICE_CAPABILITY",
+    "COMPANION_EXTRACTED_AND_SAVED_PEER_MESSAGE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebHandlePairSuccess",
+      "WAWebLid11MigrationLifecycleWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

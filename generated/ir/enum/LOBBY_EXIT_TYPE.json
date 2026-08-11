@@ -1,0 +1,101 @@
+{
+  "id": "enum:LOBBY_EXIT_TYPE",
+  "kind": "enum",
+  "name": "LOBBY_EXIT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLobbyExitType",
+    "variants": [
+      {
+        "name": "ERROR",
+        "value": 0.0
+      },
+      {
+        "name": "CONNECTED",
+        "value": 1.0
+      },
+      {
+        "name": "REJECTED_BY_USER",
+        "value": 2.0
+      },
+      {
+        "name": "MISSED",
+        "value": 3.0
+      },
+      {
+        "name": "LOBBY_NACK",
+        "value": 4.0
+      },
+      {
+        "name": "ACCEPT_NACK",
+        "value": 5.0
+      },
+      {
+        "name": "MISSED_NO_RING",
+        "value": 6.0
+      },
+      {
+        "name": "LINK_QUERY_NACK",
+        "value": 7.0
+      },
+      {
+        "name": "LINK_JOIN_NACK",
+        "value": 8.0
+      },
+      {
+        "name": "TIMEOUT",
+        "value": 9.0
+      },
+      {
+        "name": "LOBBY_SWITCH",
+        "value": 10.0
+      },
+      {
+        "name": "OFFER_NACK",
+        "value": 11.0
+      },
+      {
+        "name": "WAITING_ROOM_DENIED",
+        "value": 12.0
+      },
+      {
+        "name": "WAITING_ROOM_LEAVE",
+        "value": 13.0
+      },
+      {
+        "name": "WAITING_ROOM_TIMEOUT",
+        "value": 14.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLobbyExitType",
+    "matches": "LOBBY_EXIT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LOBBY_EXIT_TYPE",
+    "ERROR",
+    "CONNECTED",
+    "REJECTED_BY_USER",
+    "MISSED",
+    "LOBBY_NACK",
+    "ACCEPT_NACK",
+    "MISSED_NO_RING",
+    "LINK_QUERY_NACK",
+    "LINK_JOIN_NACK",
+    "TIMEOUT",
+    "LOBBY_SWITCH",
+    "OFFER_NACK",
+    "WAITING_ROOM_DENIED",
+    "WAITING_ROOM_LEAVE",
+    "WAITING_ROOM_TIMEOUT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebJoinableCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

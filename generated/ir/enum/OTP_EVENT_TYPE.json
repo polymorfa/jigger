@@ -1,0 +1,117 @@
+{
+  "id": "enum:OTP_EVENT_TYPE",
+  "kind": "enum",
+  "name": "OTP_EVENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOtpEventType",
+    "variants": [
+      {
+        "name": "CLICK",
+        "value": 0.0
+      },
+      {
+        "name": "IMPRESSION",
+        "value": 1.0
+      },
+      {
+        "name": "OTP_CODE_REQUESTED",
+        "value": 2.0
+      },
+      {
+        "name": "OTP_CODE_SENT",
+        "value": 3.0
+      },
+      {
+        "name": "MESSAGE_RECEIVED",
+        "value": 4.0
+      },
+      {
+        "name": "MESSAGE_READ",
+        "value": 5.0
+      },
+      {
+        "name": "MESSAGE_DELETED",
+        "value": 6.0
+      },
+      {
+        "name": "ZERO_TAP_ENABLED",
+        "value": 7.0
+      },
+      {
+        "name": "ZERO_TAP_DISABLED",
+        "value": 8.0
+      },
+      {
+        "name": "ZERO_TAP_NOTICE_VIEWED",
+        "value": 9.0
+      },
+      {
+        "name": "CLEAR_CHAT",
+        "value": 10.0
+      },
+      {
+        "name": "ZERO_TAP_SEND_CODE_STARTED",
+        "value": 11.0
+      },
+      {
+        "name": "ZERO_TAP_SEND_CODE_COMPLETED",
+        "value": 12.0
+      },
+      {
+        "name": "ZERO_TAP_SEND_CODE_FAILED",
+        "value": 13.0
+      },
+      {
+        "name": "OTP_CONF_OPT_ZERO_TAP_FLAG_ENABLED",
+        "value": 14.0
+      },
+      {
+        "name": "OTP_CONF_OPT_ZERO_TAP_FLAG_DISABLED",
+        "value": 15.0
+      },
+      {
+        "name": "HANDSHAKE_CONFIRMATION_SENT",
+        "value": 16.0
+      },
+      {
+        "name": "FEEDBACK_BUTTON_CLICK",
+        "value": 17.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOtpEventType",
+    "matches": "OTP_EVENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "OTP_EVENT_TYPE",
+    "CLICK",
+    "IMPRESSION",
+    "OTP_CODE_REQUESTED",
+    "OTP_CODE_SENT",
+    "MESSAGE_RECEIVED",
+    "MESSAGE_READ",
+    "MESSAGE_DELETED",
+    "ZERO_TAP_ENABLED",
+    "ZERO_TAP_DISABLED",
+    "ZERO_TAP_NOTICE_VIEWED",
+    "CLEAR_CHAT",
+    "ZERO_TAP_SEND_CODE_STARTED",
+    "ZERO_TAP_SEND_CODE_COMPLETED",
+    "ZERO_TAP_SEND_CODE_FAILED",
+    "OTP_CONF_OPT_ZERO_TAP_FLAG_ENABLED",
+    "OTP_CONF_OPT_ZERO_TAP_FLAG_DISABLED",
+    "HANDSHAKE_CONFIRMATION_SENT",
+    "FEEDBACK_BUTTON_CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebOTPLoggingHelper",
+      "WAWebOtpRetrieverWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

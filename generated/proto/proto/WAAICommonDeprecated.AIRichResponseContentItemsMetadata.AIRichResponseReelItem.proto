@@ -1,0 +1,6 @@
+message AIRichResponseReelItem {
+  optional bytes title = 1;
+  optional bytes profileIconUrl = 2;
+  optional bytes thumbnailUrl = 3;
+  optional bytes videoUrl = 4;
+}

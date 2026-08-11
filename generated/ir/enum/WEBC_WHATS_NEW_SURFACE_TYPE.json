@@ -1,0 +1,42 @@
+{
+  "id": "enum:WEBC_WHATS_NEW_SURFACE_TYPE",
+  "kind": "enum",
+  "name": "WEBC_WHATS_NEW_SURFACE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcWhatsNewSurfaceType",
+    "variants": [
+      {
+        "name": "LOADING_CAROUSEL",
+        "value": 1.0
+      },
+      {
+        "name": "BANNER",
+        "value": 2.0
+      },
+      {
+        "name": "MODAL",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcWhatsNewSurfaceType",
+    "matches": "WEBC_WHATS_NEW_SURFACE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_WHATS_NEW_SURFACE_TYPE",
+    "LOADING_CAROUSEL",
+    "BANNER",
+    "MODAL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWebcWhatsNewImpressionWamEvent",
+      "WAWebWhatsNewLogging"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

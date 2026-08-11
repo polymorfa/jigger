@@ -1,0 +1,18 @@
+message AudioMessage {
+  optional bytes url = 1;
+  optional bytes mimetype = 2;
+  optional bytes fileSha256 = 3;
+  optional bytes fileLength = 4;
+  optional bytes seconds = 5;
+  optional bytes ptt = 6;
+  optional bytes mediaKey = 7;
+  optional bytes fileEncSha256 = 8;
+  optional bytes directPath = 9;
+  optional bytes mediaKeyTimestamp = 10;
+  optional ContextInfo contextInfo = 17;
+  optional bytes streamingSidecar = 18;
+  optional bytes waveform = 19;
+  optional bytes backgroundArgb = 20;
+  optional bytes viewOnce = 21;
+  optional bytes accessibilityLabel = 22;
+}

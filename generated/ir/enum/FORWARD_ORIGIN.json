@@ -1,0 +1,51 @@
+{
+  "id": "enum:FORWARD_ORIGIN",
+  "kind": "enum",
+  "name": "FORWARD_ORIGIN",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumForwardOrigin",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 1.0
+      },
+      {
+        "name": "CHAT",
+        "value": 2.0
+      },
+      {
+        "name": "STATUS",
+        "value": 3.0
+      },
+      {
+        "name": "CHANNELS",
+        "value": 4.0
+      },
+      {
+        "name": "META_AI",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumForwardOrigin",
+    "matches": "FORWARD_ORIGIN\\s*[:=]"
+  },
+  "literals": [
+    "FORWARD_ORIGIN",
+    "UNKNOWN",
+    "CHAT",
+    "STATUS",
+    "CHANNELS",
+    "META_AI"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebForwardSendWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

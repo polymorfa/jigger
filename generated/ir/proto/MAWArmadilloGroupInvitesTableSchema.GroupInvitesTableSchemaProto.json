@@ -1,0 +1,44 @@
+{
+  "id": "proto:MAWArmadilloGroupInvitesTableSchema.GroupInvitesTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloGroupInvitesTableSchema.GroupInvitesTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "caption": {
+        "number": 5
+      },
+      "inviteCode": {
+        "number": 3
+      },
+      "inviteExpirationTs": {
+        "number": 4
+      },
+      "invitedParticipantId": {
+        "number": 2
+      },
+      "inviterJid": {
+        "number": 1
+      }
+    },
+    "module": "MAWArmadilloGroupInvitesTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloGroupInvitesTableSchema.pb",
+    "matches": "name = \"GroupInvitesTableSchemaProto\""
+  },
+  "literals": [
+    "GroupInvitesTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

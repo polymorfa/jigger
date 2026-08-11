@@ -1,0 +1,36 @@
+{
+  "id": "enum:CALL_LINK_TYPE",
+  "kind": "enum",
+  "name": "CALL_LINK_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallLinkType",
+    "variants": [
+      {
+        "name": "STANDARD",
+        "value": 1.0
+      },
+      {
+        "name": "EVENT",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallLinkType",
+    "matches": "CALL_LINK_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CALL_LINK_TYPE",
+    "STANDARD",
+    "EVENT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallLinkActionEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

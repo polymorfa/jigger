@@ -1,0 +1,4 @@
+message MemberLabel {
+  optional bytes label = 1;
+  optional bytes labelTimestamp = 2;
+}

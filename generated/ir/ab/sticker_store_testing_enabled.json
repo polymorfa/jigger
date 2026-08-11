@@ -1,0 +1,45 @@
+{
+  "id": "ab:sticker_store_testing_enabled",
+  "kind": "ab",
+  "name": "sticker_store_testing_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25639,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "sticker_store_testing_enabled:\\s*\\[\\s*25639"
+  },
+  "literals": [
+    "sticker_store_testing_enabled",
+    "25639"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStickerUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

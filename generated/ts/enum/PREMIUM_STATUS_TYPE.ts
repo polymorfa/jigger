@@ -1,0 +1,5 @@
+export enum PREMIUMSTATUSTYPE {
+  DISABLED = 0,
+  ENABLED = 1,
+  ACTIVE = 2,
+}

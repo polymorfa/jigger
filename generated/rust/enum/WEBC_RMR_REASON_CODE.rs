@@ -1,0 +1,20 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum WEBCRMRREASONCODE {
+    OTHER = 0,
+    MSGCLICK = 1,
+    STICKERPANELICON = 2,
+    MEDIAVIEWER = 3,
+    VIDEOSTREAMING = 4,
+    STATUSV3 = 5,
+    MULTISELECTDOWNLOAD = 6,
+    DOCUMENTDOWNLOAD = 7,
+    PIP = 8,
+    STICKERPANELSTICKER = 9,
+    SENDTOCHAT = 10,
+    UPLOAD = 11,
+    MSGINIT = 12,
+    MSGUPDATE = 13,
+    MSGDELETE = 14,
+    MSGRENDER = 15,
+}

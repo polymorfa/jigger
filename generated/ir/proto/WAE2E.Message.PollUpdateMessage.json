@@ -1,0 +1,53 @@
+{
+  "id": "proto:WAE2E.Message.PollUpdateMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.PollUpdateMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "metadata": {
+        "number": 3,
+        "type_name": "WAE2E.Message.PollUpdateMessageMetadata"
+      },
+      "pollCreationMessageKey": {
+        "number": 1
+      },
+      "senderTimestampMs": {
+        "number": 4
+      },
+      "vote": {
+        "number": 2,
+        "type_name": "WAE2E.Message.PollEncValue"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.PollUpdateMessage\""
+  },
+  "literals": [
+    "PollUpdateMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

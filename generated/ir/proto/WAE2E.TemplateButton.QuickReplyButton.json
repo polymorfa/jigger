@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAE2E.TemplateButton.QuickReplyButton",
+  "kind": "proto",
+  "name": "WAE2E.TemplateButton.QuickReplyButton",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "displayText": {
+        "number": 1,
+        "type_name": "WAE2E.Message.HighlyStructuredMessage"
+      },
+      "id": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"TemplateButton.QuickReplyButton\""
+  },
+  "literals": [
+    "QuickReplyButton"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

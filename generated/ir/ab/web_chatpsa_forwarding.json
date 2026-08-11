@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_chatpsa_forwarding",
+  "kind": "ab",
+  "name": "web_chatpsa_forwarding",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23695,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_chatpsa_forwarding:\\s*\\[\\s*23695"
+  },
+  "literals": [
+    "web_chatpsa_forwarding",
+    "23695"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMsgActionCapability"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

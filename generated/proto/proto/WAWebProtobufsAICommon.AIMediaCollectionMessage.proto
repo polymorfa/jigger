@@ -1,0 +1,5 @@
+message AIMediaCollectionMessage {
+  optional bytes collectionId = 1;
+  optional bytes expectedMediaCount = 2;
+  optional bytes hasGlobalCaption = 3;
+}

@@ -1,0 +1,42 @@
+{
+  "id": "enum:ATTACHMENT_TRAY_ACTION_TYPE",
+  "kind": "enum",
+  "name": "ATTACHMENT_TRAY_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAttachmentTrayActionType",
+    "variants": [
+      {
+        "name": "CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "SEND",
+        "value": 2.0
+      },
+      {
+        "name": "CANCEL",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAttachmentTrayActionType",
+    "matches": "ATTACHMENT_TRAY_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ATTACHMENT_TRAY_ACTION_TYPE",
+    "CLICK",
+    "SEND",
+    "CANCEL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAttachmentMenuLogger",
+      "WAWebAttachmentTrayActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,3 @@
+message GroupNameChanged {
+  optional bytes groupName = 1;
+}

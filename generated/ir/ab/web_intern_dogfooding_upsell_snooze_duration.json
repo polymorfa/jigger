@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_intern_dogfooding_upsell_snooze_duration",
+  "kind": "ab",
+  "name": "web_intern_dogfooding_upsell_snooze_duration",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6859,
+    "type": "int",
+    "default": 86400,
+    "alt_default": 86400
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_intern_dogfooding_upsell_snooze_duration:\\s*\\[\\s*6859"
+  },
+  "literals": [
+    "web_intern_dogfooding_upsell_snooze_duration",
+    "6859"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebInternDogfoodingModal.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

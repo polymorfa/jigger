@@ -1,0 +1,39 @@
+{
+  "id": "wam:4802",
+  "kind": "wam",
+  "name": "ScreenLockSettingsData",
+  "data": {
+    "kind": "wam",
+    "event_id": 4802,
+    "fields": {
+      "screenAutoLockDuration": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "screen_auto_lock_duration"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebScreenLockSettingsDataWamEvent",
+    "matches": "ScreenLockSettingsData:\\s*\\[\\s*4802"
+  },
+  "literals": [
+    "4802"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebTasksDailyStatsTask"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

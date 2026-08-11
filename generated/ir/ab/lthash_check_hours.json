@@ -1,0 +1,46 @@
+{
+  "id": "ab:lthash_check_hours",
+  "kind": "ab",
+  "name": "lthash_check_hours",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1104,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "lthash_check_hours:\\s*\\[\\s*1104"
+  },
+  "literals": [
+    "lthash_check_hours",
+    "1104"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebKmpAbProps",
+      "WAWebTasksDefinitions"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexGetPrivacyListsQuery",
+  "kind": "mex",
+  "name": "WAWebMexGetPrivacyListsQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26806428515612550",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_fetch_wa_users",
+    "document": "query MexGetPrivacyListsQuery($input) {\n  dhash\n  jid\n  pn_jid\n  username\n  __typename\n  xwa2_fetch_wa_users {\n    privacy_contact_list {\n      contacts {\n        username_info {\n          xwa2_fetch_wa_users {\n            privacy_contact_list {\n              contacts {\n                username_info {\n                  id\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexGetPrivacyListsQuery.graphql",
+    "matches": "id: \"26806428515612550\""
+  },
+  "literals": [
+    "26806428515612550",
+    "WAWebMexGetPrivacyListsQuery",
+    "xwa2_fetch_wa_users"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGetPrivacyList"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

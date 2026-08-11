@@ -1,0 +1,87 @@
+{
+  "id": "wam:5626",
+  "kind": "wam",
+  "name": "ChannelProducerInsightsNavigation",
+  "data": {
+    "kind": "wam",
+    "event_id": 5626,
+    "fields": {
+      "channelProducerInsightsActionTarget": {
+        "id": 1,
+        "type": "ACTION_TARGET",
+        "wire": "channel_producer_insights_action_target",
+        "enum_ref": "ACTION_TARGET"
+      },
+      "channelProducerInsightsActionType": {
+        "id": 2,
+        "type": "CHANNEL_PRODUCER_INSIGHTS_ACTION_TYPE",
+        "wire": "channel_producer_insights_action_type",
+        "enum_ref": "CHANNEL_PRODUCER_INSIGHTS_ACTION_TYPE"
+      },
+      "channelProducerInsightsEntryPoint": {
+        "id": 3,
+        "type": "CHANNEL_PRODUCER_INSIGHTS_ENTRY_POINT",
+        "wire": "channel_producer_insights_entry_point",
+        "enum_ref": "CHANNEL_PRODUCER_INSIGHTS_ENTRY_POINT"
+      },
+      "channelProducerInsightsSequenceNumber": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "channel_producer_insights_sequence_number"
+      },
+      "channelProducerInsightsSurface": {
+        "id": 5,
+        "type": "CHANNEL_PRODUCER_INSIGHTS_SURFACE",
+        "wire": "channel_producer_insights_surface",
+        "enum_ref": "CHANNEL_PRODUCER_INSIGHTS_SURFACE"
+      },
+      "cid": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "producerInsightsSessionId": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "producer_insights_session_id"
+      },
+      "unifiedSessionId": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelProducerInsightsNavigationWamEvent",
+    "matches": "ChannelProducerInsightsNavigation:\\s*\\[\\s*5626"
+  },
+  "literals": [
+    "5626"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumActionTarget",
+      "WAWebWamEnumChannelProducerInsightsActionType",
+      "WAWebWamEnumChannelProducerInsightsEntryPoint",
+      "WAWebWamEnumChannelProducerInsightsSurface"
+    ],
+    "dependents": [
+      "WAWebNewsletterProducerInsightsLogger"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

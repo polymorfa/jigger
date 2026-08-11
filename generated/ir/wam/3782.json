@@ -1,0 +1,90 @@
+{
+  "id": "wam:3782",
+  "kind": "wam",
+  "name": "MexEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 3782,
+    "fields": {
+      "isMex": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "is_mex"
+      },
+      "mexEventData": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "mex_event_data"
+      },
+      "mexEventDurationT": {
+        "id": 12,
+        "type": "TIMER",
+        "wire": "mex_event_duration_t"
+      },
+      "mexEventEndTime": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "mex_event_end_time"
+      },
+      "mexEventEnvelopeResponseStatus": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "mex_event_envelope_response_status"
+      },
+      "mexEventOperation": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "mex_event_operation"
+      },
+      "mexEventPayloadResponseStatus": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "mex_event_payload_response_status"
+      },
+      "mexEventRequestSize": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "mex_event_request_size"
+      },
+      "mexEventResponseSize": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "mex_event_response_size"
+      },
+      "mexEventRetries": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "mex_event_retries"
+      },
+      "mexEventStartTime": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "mex_event_start_time"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMexEventWamEvent",
+    "matches": "MexEvent:\\s*\\[\\s*3782"
+  },
+  "literals": [
+    "3782"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebMexExperiment",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

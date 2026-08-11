@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_disable_prefetch_loadables",
+  "kind": "ab",
+  "name": "wa_web_disable_prefetch_loadables",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21917,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_disable_prefetch_loadables:\\s*\\[\\s*21917"
+  },
+  "literals": [
+    "wa_web_disable_prefetch_loadables",
+    "21917"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

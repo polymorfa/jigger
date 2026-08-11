@@ -1,0 +1,56 @@
+{
+  "id": "enum:SELECTED_LAYOUT_CONFIG_ID",
+  "kind": "enum",
+  "name": "SELECTED_LAYOUT_CONFIG_ID",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSelectedLayoutConfigId",
+    "variants": [
+      {
+        "name": "ONE_BY_TWO",
+        "value": 1.0
+      },
+      {
+        "name": "ONE_AND_TWO",
+        "value": 2.0
+      },
+      {
+        "name": "ONE_BY_THREE",
+        "value": 3.0
+      },
+      {
+        "name": "TWO_BY_TWO",
+        "value": 4.0
+      },
+      {
+        "name": "TWO_ONE_TWO",
+        "value": 5.0
+      },
+      {
+        "name": "TWO_BY_THREE",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSelectedLayoutConfigId",
+    "matches": "SELECTED_LAYOUT_CONFIG_ID\\s*[:=]"
+  },
+  "literals": [
+    "SELECTED_LAYOUT_CONFIG_ID",
+    "ONE_BY_TWO",
+    "ONE_AND_TWO",
+    "ONE_BY_THREE",
+    "TWO_BY_TWO",
+    "TWO_ONE_TWO",
+    "TWO_BY_THREE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPosterActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_defense_mode_quarantine_extra_pn_check",
+  "kind": "ab",
+  "name": "wa_web_defense_mode_quarantine_extra_pn_check",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33541,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_defense_mode_quarantine_extra_pn_check:\\s*\\[\\s*33541"
+  },
+  "literals": [
+    "wa_web_defense_mode_quarantine_extra_pn_check",
+    "33541"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

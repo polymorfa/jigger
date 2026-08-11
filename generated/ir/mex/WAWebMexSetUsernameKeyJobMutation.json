@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexSetUsernameKeyJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexSetUsernameKeyJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9749436995157074",
+    "operation": "mutation",
+    "variables": [
+      "pin"
+    ],
+    "root_field": "xwa2_username_pin_set",
+    "document": "mutation MexSetUsernameKeyJobMutation($pin) {\n  xwa2_username_pin_set {\n    result\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexSetUsernameKeyJobMutation.graphql",
+    "matches": "id: \"9749436995157074\""
+  },
+  "literals": [
+    "9749436995157074",
+    "WAWebMexSetUsernameKeyJobMutation",
+    "xwa2_username_pin_set"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexSetUsernameKeyJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

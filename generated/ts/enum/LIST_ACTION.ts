@@ -1,0 +1,13 @@
+export enum LISTACTION {
+  CREATE = 1,
+  DELETE = 2,
+  UNDELETE = 3,
+  RENAME = 4,
+  UPDATE_MEMBERS = 5,
+  MUTE = 6,
+  UNMUTE = 7,
+  HIDE = 8,
+  UNHIDE = 9,
+  REORDER = 10,
+  BUCKET_MIGRATION_DONE = 11,
+}

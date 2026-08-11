@@ -1,0 +1,4 @@
+message DeleteIndividualCallLogAction {
+  optional bytes peerJid = 1;
+  optional bytes isIncoming = 2;
+}

@@ -1,0 +1,36 @@
+{
+  "id": "sig:iq/status_updates+statuses",
+  "kind": "sig",
+  "name": "NewslettersGetNewsletterStatusUpdatesResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "status_updates",
+      "statuses"
+    ],
+    "responds_to": "NewslettersGetNewsletterStatusUpdates"
+  },
+  "evidence": {
+    "module": "WASmaxInNewslettersGetNewsletterStatusUpdatesResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "status_updates",
+    "statuses"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInNewslettersIQResultResponseMixin",
+      "WASmaxInNewslettersNewsletterStatusResponsePayloadMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxNewslettersGetNewsletterStatusUpdatesRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

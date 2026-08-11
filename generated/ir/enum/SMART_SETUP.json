@@ -1,0 +1,48 @@
+{
+  "id": "enum:SMART_SETUP",
+  "kind": "enum",
+  "name": "SMART_SETUP",
+  "data": {
+    "kind": "enum",
+    "module": "CustomConversionRuleEnum",
+    "variants": [
+      {
+        "name": "description",
+        "value": "Filter events using page and product info"
+      },
+      {
+        "name": "name",
+        "value": "Page and Product Info"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "CustomConversionRuleEnum",
+    "matches": "SMART_SETUP\\s*[:=]"
+  },
+  "literals": [
+    "SMART_SETUP",
+    "description",
+    "name"
+  ],
+  "graph": {
+    "deps": [
+      "AdsCustomConversionAdvancedOperators",
+      "fbt"
+    ],
+    "dependents": [
+      "AdsEventsManagerCustomConversionCreationUtils",
+      "AdsEventsManagerCustomConversionPixelRuleContainer.react",
+      "AdsEventsManagerCustomConversionRule.react",
+      "AdsEventsManagerCustomConversionRuleUtils",
+      "AdsEventsManagerCustomConversionTokenizer.react",
+      "AdsEventsManagerLongConsiderationCustomConversionCreationDialog.react",
+      "AdsEventsManagerPostConversionCustomConversionRuleSelectorContainer.react",
+      "CustomConversionCreationUtils",
+      "CustomConversionRuleDefaultValues",
+      "DataSourceToRuleTypeMapping"
+    ],
+    "dep_count": 2,
+    "dependent_count": 10
+  }
+}

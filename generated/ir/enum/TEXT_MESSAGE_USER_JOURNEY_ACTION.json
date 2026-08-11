@@ -1,0 +1,68 @@
+{
+  "id": "enum:TEXT_MESSAGE_USER_JOURNEY_ACTION",
+  "kind": "enum",
+  "name": "TEXT_MESSAGE_USER_JOURNEY_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumTextMessageUserJourneyAction",
+    "variants": [
+      {
+        "name": "TYPING_START",
+        "value": 1.0
+      },
+      {
+        "name": "CLEARED",
+        "value": 2.0
+      },
+      {
+        "name": "SENT",
+        "value": 3.0
+      },
+      {
+        "name": "DRAFT_SAVED",
+        "value": 4.0
+      },
+      {
+        "name": "EXIT",
+        "value": 5.0
+      },
+      {
+        "name": "CLICK_ON_COMPOSER",
+        "value": 6.0
+      },
+      {
+        "name": "DELIVERED",
+        "value": 7.0
+      },
+      {
+        "name": "DRAFT_LOADED",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumTextMessageUserJourneyAction",
+    "matches": "TEXT_MESSAGE_USER_JOURNEY_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "TEXT_MESSAGE_USER_JOURNEY_ACTION",
+    "TYPING_START",
+    "CLEARED",
+    "SENT",
+    "DRAFT_SAVED",
+    "EXIT",
+    "CLICK_ON_COMPOSER",
+    "DELIVERED",
+    "DRAFT_LOADED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebTextMessageUserJourneyLogger",
+      "WAWebTextMessageUserJourneyWamEvent",
+      "useWAWebTextMessageUserJourneyLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

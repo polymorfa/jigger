@@ -1,0 +1,55 @@
+{
+  "id": "wam:3860",
+  "kind": "wam",
+  "name": "WebcLinkPreviewResponseHandle",
+  "data": {
+    "kind": "wam",
+    "event_id": 3860,
+    "fields": {
+      "didRespondHqPreview": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "did_respond_hq_preview"
+      },
+      "isPreviewSuccess": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "is_preview_success"
+      },
+      "previewDurationMs": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "preview_duration_ms"
+      },
+      "previewSessionId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "preview_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcLinkPreviewResponseHandleWamEvent",
+    "matches": "WebcLinkPreviewResponseHandle:\\s*\\[\\s*3860"
+  },
+  "literals": [
+    "3860"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebNonMessageDataRequestLoggingUtils",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

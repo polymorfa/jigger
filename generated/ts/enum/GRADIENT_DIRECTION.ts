@@ -1,0 +1,10 @@
+export enum GRADIENTDIRECTION {
+  BL_TR = "BL_TR",
+  BOTTOM_TOP = "BOTTOM_TOP",
+  BR_TL = "BR_TL",
+  LEFT_RIGHT = "LEFT_RIGHT",
+  RIGHT_LEFT = "RIGHT_LEFT",
+  TL_BR = "TL_BR",
+  TOP_BOTTOM = "TOP_BOTTOM",
+  TR_BL = "TR_BL",
+}

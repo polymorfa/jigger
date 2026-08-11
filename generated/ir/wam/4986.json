@@ -1,0 +1,166 @@
+{
+  "id": "wam:4986",
+  "kind": "wam",
+  "name": "MetaVerifiedUserAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 4986,
+    "fields": {
+      "isProfileLocked": {
+        "id": 16,
+        "type": "BOOLEAN",
+        "wire": "is_profile_locked"
+      },
+      "isRetryAttempt": {
+        "id": 22,
+        "type": "BOOLEAN",
+        "wire": "is_retry_attempt"
+      },
+      "isVlevelHigh": {
+        "id": 19,
+        "type": "BOOLEAN",
+        "wire": "is_vlevel_high"
+      },
+      "metaVerifiedDialogInteraction": {
+        "id": 20,
+        "type": "META_VERIFIED_DIALOG_INTERACTION",
+        "wire": "meta_verified_dialog_interaction",
+        "enum_ref": "META_VERIFIED_DIALOG_INTERACTION"
+      },
+      "metaVerifiedLockedFieldEditOutcome": {
+        "id": 21,
+        "type": "META_VERIFIED_LOCKED_FIELD_EDIT_OUTCOME",
+        "wire": "meta_verified_locked_field_edit_outcome",
+        "enum_ref": "META_VERIFIED_LOCKED_FIELD_EDIT_OUTCOME"
+      },
+      "metaVerifiedLockedProfileField": {
+        "id": 17,
+        "type": "META_VERIFIED_LOCKED_PROFILE_FIELD",
+        "wire": "meta_verified_locked_profile_field",
+        "enum_ref": "META_VERIFIED_LOCKED_PROFILE_FIELD"
+      },
+      "metaVerifiedLockedProfileFieldEligibility": {
+        "id": 18,
+        "type": "STRING",
+        "wire": "meta_verified_locked_profile_field_eligibility"
+      },
+      "metaVerifiedQuickPromotionId": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "meta_verified_quick_promotion_id"
+      },
+      "metaVerifiedUserActionAction": {
+        "id": 1,
+        "type": "META_VERIFIED_USER_ACTION_ACTION",
+        "wire": "meta_verified_user_action_action",
+        "enum_ref": "META_VERIFIED_USER_ACTION_ACTION"
+      },
+      "metaVerifiedUserActionAssetType": {
+        "id": 2,
+        "type": "META_VERIFIED_USER_ACTION_ASSET_TYPE",
+        "wire": "meta_verified_user_action_asset_type",
+        "enum_ref": "META_VERIFIED_USER_ACTION_ASSET_TYPE"
+      },
+      "metaVerifiedUserActionBannerType": {
+        "id": 14,
+        "type": "META_VERIFIED_USER_ACTION_BANNER_TYPE",
+        "wire": "meta_verified_user_action_banner_type",
+        "enum_ref": "META_VERIFIED_USER_ACTION_BANNER_TYPE"
+      },
+      "metaVerifiedUserActionErrorDetails": {
+        "id": 8,
+        "type": "META_VERIFIED_USER_ACTION_ERROR_DETAILS",
+        "wire": "meta_verified_user_action_error_details",
+        "enum_ref": "META_VERIFIED_USER_ACTION_ERROR_DETAILS"
+      },
+      "metaVerifiedUserActionExtra": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "meta_verified_user_action_extra"
+      },
+      "metaVerifiedUserActionGreenDotVisible": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "meta_verified_user_action_green_dot_visible"
+      },
+      "metaVerifiedUserActionInteractionError": {
+        "id": 6,
+        "type": "META_VERIFIED_USER_ACTION_INTERACTION_ERROR",
+        "wire": "meta_verified_user_action_interaction_error",
+        "enum_ref": "META_VERIFIED_USER_ACTION_INTERACTION_ERROR"
+      },
+      "metaVerifiedUserActionIsSubscribed": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "meta_verified_user_action_is_subscribed"
+      },
+      "metaVerifiedUserActionReferral": {
+        "id": 3,
+        "type": "META_VERIFIED_USER_ACTION_REFERRAL",
+        "wire": "meta_verified_user_action_referral",
+        "enum_ref": "META_VERIFIED_USER_ACTION_REFERRAL"
+      },
+      "metaVerifiedUserActionResult": {
+        "id": 5,
+        "type": "META_VERIFIED_USER_ACTION_RESULT",
+        "wire": "meta_verified_user_action_result",
+        "enum_ref": "META_VERIFIED_USER_ACTION_RESULT"
+      },
+      "metaVerifiedUserActionSurface": {
+        "id": 4,
+        "type": "META_VERIFIED_USER_ACTION_SURFACE",
+        "wire": "meta_verified_user_action_surface",
+        "enum_ref": "META_VERIFIED_USER_ACTION_SURFACE"
+      },
+      "metaVerifiedUserActionVerifiedBadgeVisible": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "meta_verified_user_action_verified_badge_visible"
+      },
+      "userActionErrorCode": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "user_action_error_code"
+      },
+      "userActionSessionId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "user_action_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMetaVerifiedUserActionWamEvent",
+    "matches": "MetaVerifiedUserAction:\\s*\\[\\s*4986"
+  },
+  "literals": [
+    "4986"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMetaVerifiedDialogInteraction",
+      "WAWebWamEnumMetaVerifiedLockedFieldEditOutcome",
+      "WAWebWamEnumMetaVerifiedLockedProfileField",
+      "WAWebWamEnumMetaVerifiedUserActionAction",
+      "WAWebWamEnumMetaVerifiedUserActionAssetType",
+      "WAWebWamEnumMetaVerifiedUserActionBannerType",
+      "WAWebWamEnumMetaVerifiedUserActionErrorDetails",
+      "WAWebWamEnumMetaVerifiedUserActionInteractionError",
+      "WAWebWamEnumMetaVerifiedUserActionReferral",
+      "WAWebWamEnumMetaVerifiedUserActionResult",
+      "WAWebWamEnumMetaVerifiedUserActionSurface"
+    ],
+    "dependents": [
+      "WAWebMetaVerifiedUserActionLogger"
+    ],
+    "dep_count": 12,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "mex:WAWebMexNewsletterLabelAiContentJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterLabelAiContentJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27909718265289596",
+    "operation": "mutation",
+    "variables": [
+      "message_type",
+      "newsletter_id",
+      "server_id"
+    ],
+    "root_field": "xwa2_newsletter_label_ai_content",
+    "document": "mutation MexNewsletterLabelAiContentJobMutation($message_type, $newsletter_id, $server_id) {\n  xwa2_newsletter_label_ai_content {\n    id\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterLabelAiContentJobMutation.graphql",
+    "matches": "id: \"27909718265289596\""
+  },
+  "literals": [
+    "27909718265289596",
+    "WAWebMexNewsletterLabelAiContentJobMutation",
+    "xwa2_newsletter_label_ai_content"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterLabelAiContentJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

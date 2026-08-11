@@ -1,0 +1,32 @@
+{
+  "id": "proto:WAMmsRetry.ServerErrorReceipt",
+  "kind": "proto",
+  "name": "WAMmsRetry.ServerErrorReceipt",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "stanzaId": {
+        "number": 1
+      }
+    },
+    "module": "WAMmsRetry.pb"
+  },
+  "evidence": {
+    "module": "WAMmsRetry.pb",
+    "matches": "name = \"ServerErrorReceipt\""
+  },
+  "literals": [
+    "ServerErrorReceipt"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:channels_directory_enabled",
+  "kind": "ab",
+  "name": "channels_directory_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3879,
+    "type": "int",
+    "default": 0,
+    "alt_default": 2
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_directory_enabled:\\s*\\[\\s*3879"
+  },
+  "literals": [
+    "channels_directory_enabled",
+    "3879"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

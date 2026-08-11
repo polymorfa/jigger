@@ -1,0 +1,3 @@
+export enum SEARCHUSECASE {
+  GLOBAL_SEARCH = 1,
+}

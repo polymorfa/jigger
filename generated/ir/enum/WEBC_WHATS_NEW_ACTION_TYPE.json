@@ -1,0 +1,52 @@
+{
+  "id": "enum:WEBC_WHATS_NEW_ACTION_TYPE",
+  "kind": "enum",
+  "name": "WEBC_WHATS_NEW_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcWhatsNewActionType",
+    "variants": [
+      {
+        "name": "IMPRESSION",
+        "value": 1.0
+      },
+      {
+        "name": "DISMISS_BUTTON",
+        "value": 2.0
+      },
+      {
+        "name": "DISMISS_OVERLAY",
+        "value": 3.0
+      },
+      {
+        "name": "BANNER_CLICK",
+        "value": 4.0
+      },
+      {
+        "name": "BANNER_DISMISS",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcWhatsNewActionType",
+    "matches": "WEBC_WHATS_NEW_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_WHATS_NEW_ACTION_TYPE",
+    "IMPRESSION",
+    "DISMISS_BUTTON",
+    "DISMISS_OVERLAY",
+    "BANNER_CLICK",
+    "BANNER_DISMISS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWebcWhatsNewImpressionWamEvent",
+      "WAWebWhatsNewLogging"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

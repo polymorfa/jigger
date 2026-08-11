@@ -1,0 +1,65 @@
+{
+  "id": "proto:WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData.DraftMessage.CtwaContextData",
+  "kind": "proto",
+  "name": "WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData.DraftMessage.CtwaContextData",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "conversionData": {
+        "number": 2
+      },
+      "conversionSource": {
+        "number": 1
+      },
+      "description": {
+        "number": 7
+      },
+      "isSuspiciousLink": {
+        "number": 12
+      },
+      "mediaType": {
+        "number": 10
+      },
+      "mediaUrl": {
+        "number": 11
+      },
+      "sourceId": {
+        "number": 4
+      },
+      "sourceType": {
+        "number": 5
+      },
+      "sourceUrl": {
+        "number": 3
+      },
+      "thumbnail": {
+        "number": 8
+      },
+      "thumbnailUrl": {
+        "number": 9
+      },
+      "title": {
+        "number": 6
+      }
+    },
+    "module": "WAWebProtobufsMdStorageChatRowOpaqueData.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMdStorageChatRowOpaqueData.pb",
+    "matches": "name = \"ChatRowOpaqueData.DraftMessage.CtwaContextData\""
+  },
+  "literals": [
+    "CtwaContextData"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDBChatSerialization"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

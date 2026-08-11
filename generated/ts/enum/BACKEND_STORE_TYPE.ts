@@ -1,0 +1,9 @@
+export enum BACKENDSTORETYPE {
+  UNKNOWN = 0,
+  NON_DIRECT_PATH = 1,
+  EVERSTORE = 2,
+  OIL = 3,
+  EXPRESS_PATH = 4,
+  STATIC = 5,
+  MANIFOLD = 6,
+}

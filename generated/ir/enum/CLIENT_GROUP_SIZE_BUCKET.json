@@ -1,0 +1,113 @@
+{
+  "id": "enum:CLIENT_GROUP_SIZE_BUCKET",
+  "kind": "enum",
+  "name": "CLIENT_GROUP_SIZE_BUCKET",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumClientGroupSizeBucket",
+    "variants": [
+      {
+        "name": "SMALL",
+        "value": 1.0
+      },
+      {
+        "name": "MEDIUM",
+        "value": 2.0
+      },
+      {
+        "name": "LARGE",
+        "value": 3.0
+      },
+      {
+        "name": "EXTRA_LARGE",
+        "value": 4.0
+      },
+      {
+        "name": "XX_LARGE",
+        "value": 5.0
+      },
+      {
+        "name": "XXX_LARGE",
+        "value": 6.0
+      },
+      {
+        "name": "LT1024",
+        "value": 16.0
+      },
+      {
+        "name": "LT1500",
+        "value": 7.0
+      },
+      {
+        "name": "LT2000",
+        "value": 8.0
+      },
+      {
+        "name": "LT2500",
+        "value": 9.0
+      },
+      {
+        "name": "LT3000",
+        "value": 10.0
+      },
+      {
+        "name": "LT3500",
+        "value": 11.0
+      },
+      {
+        "name": "LT4000",
+        "value": 12.0
+      },
+      {
+        "name": "LT4500",
+        "value": 13.0
+      },
+      {
+        "name": "LT5000",
+        "value": 14.0
+      },
+      {
+        "name": "LARGEST_BUCKET",
+        "value": 15.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumClientGroupSizeBucket",
+    "matches": "CLIENT_GROUP_SIZE_BUCKET\\s*[:=]"
+  },
+  "literals": [
+    "CLIENT_GROUP_SIZE_BUCKET",
+    "SMALL",
+    "MEDIUM",
+    "LARGE",
+    "EXTRA_LARGE",
+    "XX_LARGE",
+    "XXX_LARGE",
+    "LT1024",
+    "LT1500",
+    "LT2000",
+    "LT2500",
+    "LT3000",
+    "LT3500",
+    "LT4000",
+    "LT4500",
+    "LT5000",
+    "LARGEST_BUCKET"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAndroidMessageSendPerfWamEvent",
+      "WAWebAttachmentTrayActionsWamEvent",
+      "WAWebEphemeralOutOfSyncInfoWamEvent",
+      "WAWebMdGroupParticipantMissAckWamEvent",
+      "WAWebNotificationEngagementWamEvent",
+      "WAWebPollsActionsWamEvent",
+      "WAWebThreadInteractionDataNotificationWamEvent",
+      "WAWebWamNumberToClientGroupSizeBucket"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

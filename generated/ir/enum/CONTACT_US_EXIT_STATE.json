@@ -1,0 +1,57 @@
+{
+  "id": "enum:CONTACT_US_EXIT_STATE",
+  "kind": "enum",
+  "name": "CONTACT_US_EXIT_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumContactUsExitState",
+    "variants": [
+      {
+        "name": "PROBLEM_DESCRIPTION",
+        "value": 1.0
+      },
+      {
+        "name": "SUGGESTED_FAQ",
+        "value": 2.0
+      },
+      {
+        "name": "EMAIL_SEND",
+        "value": 3.0
+      },
+      {
+        "name": "IN_APP_FAQ",
+        "value": 4.0
+      },
+      {
+        "name": "CANCELLED",
+        "value": 5.0
+      },
+      {
+        "name": "FAQ",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumContactUsExitState",
+    "matches": "CONTACT_US_EXIT_STATE\\s*[:=]"
+  },
+  "literals": [
+    "CONTACT_US_EXIT_STATE",
+    "PROBLEM_DESCRIPTION",
+    "SUGGESTED_FAQ",
+    "EMAIL_SEND",
+    "IN_APP_FAQ",
+    "CANCELLED",
+    "FAQ"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebContactUsSessionWamEvent",
+      "WAWebHelpDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

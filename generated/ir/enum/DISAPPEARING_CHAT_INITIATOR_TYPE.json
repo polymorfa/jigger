@@ -1,0 +1,57 @@
+{
+  "id": "enum:DISAPPEARING_CHAT_INITIATOR_TYPE",
+  "kind": "enum",
+  "name": "DISAPPEARING_CHAT_INITIATOR_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDisappearingChatInitiatorType",
+    "variants": [
+      {
+        "name": "CHAT",
+        "value": 1.0
+      },
+      {
+        "name": "INITIATED_BY_ME",
+        "value": 2.0
+      },
+      {
+        "name": "INITIATED_BY_OTHER",
+        "value": 3.0
+      },
+      {
+        "name": "CHAT_PICKER",
+        "value": 4.0
+      },
+      {
+        "name": "BIZ_UPGRADE_FB_HOSTING",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDisappearingChatInitiatorType",
+    "matches": "DISAPPEARING_CHAT_INITIATOR_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DISAPPEARING_CHAT_INITIATOR_TYPE",
+    "CHAT",
+    "INITIATED_BY_ME",
+    "INITIATED_BY_OTHER",
+    "CHAT_PICKER",
+    "BIZ_UPGRADE_FB_HOSTING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatMessageCountsWamEvent",
+      "WAWebEphemeralSyncResponseReceiveWamEvent",
+      "WAWebEphemeralSyncResponseSendWamEvent",
+      "WAWebEphemeralityWAMUtils",
+      "WAWebForwardSendWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 7
+  }
+}

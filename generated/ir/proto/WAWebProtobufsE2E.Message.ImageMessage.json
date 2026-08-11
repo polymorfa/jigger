@@ -1,0 +1,190 @@
+{
+  "id": "proto:WAWebProtobufsE2E.Message.ImageMessage",
+  "kind": "proto",
+  "name": "WAWebProtobufsE2E.Message.ImageMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilityLabel": {
+        "number": 32
+      },
+      "annotations": {
+        "number": 30,
+        "type_name": "WAWebProtobufsE2E.InteractiveAnnotation"
+      },
+      "caption": {
+        "number": 3
+      },
+      "contextInfo": {
+        "number": 17,
+        "type_name": "WAWebProtobufsE2E.ContextInfo"
+      },
+      "directPath": {
+        "number": 11
+      },
+      "experimentGroupId": {
+        "number": 20
+      },
+      "fileEncSha256": {
+        "number": 9
+      },
+      "fileLength": {
+        "number": 5
+      },
+      "fileSha256": {
+        "number": 4
+      },
+      "firstScanLength": {
+        "number": 19
+      },
+      "firstScanSidecar": {
+        "number": 18
+      },
+      "height": {
+        "number": 6
+      },
+      "imageSourceType": {
+        "number": 31
+      },
+      "interactiveAnnotations": {
+        "number": 10,
+        "type_name": "WAWebProtobufsE2E.InteractiveAnnotation"
+      },
+      "jpegThumbnail": {
+        "number": 16
+      },
+      "mediaKey": {
+        "number": 8
+      },
+      "mediaKeyTimestamp": {
+        "number": 12
+      },
+      "midQualityFileEncSha256": {
+        "number": 24
+      },
+      "midQualityFileSha256": {
+        "number": 23
+      },
+      "mimetype": {
+        "number": 2
+      },
+      "qrUrl": {
+        "number": 34
+      },
+      "scanLengths": {
+        "number": 22
+      },
+      "scansSidecar": {
+        "number": 21
+      },
+      "staticUrl": {
+        "number": 29
+      },
+      "thumbnailDirectPath": {
+        "number": 26
+      },
+      "thumbnailEncSha256": {
+        "number": 28
+      },
+      "thumbnailSha256": {
+        "number": 27
+      },
+      "url": {
+        "number": 1
+      },
+      "viewOnce": {
+        "number": 25
+      },
+      "width": {
+        "number": 7
+      }
+    },
+    "module": "WAWebProtobufsE2E.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsE2E.pb",
+    "matches": "name = \"Message.ImageMessage\""
+  },
+  "literals": [
+    "ImageMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsAICommon.pb",
+      "WAWebProtobufsAICommonDeprecated.pb",
+      "WAWebProtobufsAdv.pb",
+      "WAWebProtobufsAea.pb",
+      "WAWebProtobufsCompanionReg.pb",
+      "WAWebProtobufsMmsRetry.pb",
+      "WAWebProtobufsProtocol.pb",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebProtobufsStatusAttributions.pb"
+    ],
+    "dependents": [
+      "PaymentLinkWamLogger",
+      "WAWebAIAgentAIReplyUtils",
+      "WAWebAccountLinkingNonceFetchAPI",
+      "WAWebAddonEncryption",
+      "WAWebApiPrepareCtwaContextSend",
+      "WAWebAssociationProtoUtils",
+      "WAWebBizAiAgentStatusUtils",
+      "WAWebBizAiSmartComposerMode",
+      "WAWebBizAiThreadControlExtraJson",
+      "WAWebBizBroadcastInsightsContactListHandler",
+      "WAWebBizBroadcastInsightsPeerOps",
+      "WAWebBizCtwaContext.react",
+      "WAWebBizLinkPreviewCatalogUtils",
+      "WAWebBizOrderDetailAction",
+      "WAWebBizProductDetailsFlow.react",
+      "WAWebBotMessageSecret",
+      "WAWebButtonsMessageProtoUtils",
+      "WAWebCanonicalRecoveryActions",
+      "WAWebCartOrderDetailDrawer.react",
+      "WAWebChatAssignmentUtils",
+      "WAWebChatLastMsg.react",
+      "WAWebChatMessageSearch",
+      "WAWebChatModel",
+      "WAWebChatlistTertiaryPillsRow.react",
+      "WAWebComposeBox.react",
+      "WAWebConditionalRevealPreProcessor",
+      "WAWebContactMenuDropdown.react",
+      "WAWebConversationLoadMoreMessagesHistorySync",
+      "WAWebConversationMenusDevOnly",
+      "WAWebCreateEncryptedEventEditMsgData",
+      "WAWebCreateEncryptedMessageEditMsgData",
+      "WAWebDebug",
+      "WAWebDebugPins",
+      "WAWebDebugSyncd",
+      "WAWebDirectConnectionGatingUtils",
+      "WAWebDisappearingModeProtoUtils",
+      "WAWebE2EProtoGenerator",
+      "WAWebE2EProtoParser",
+      "WAWebE2EProtoParserApi",
+      "WAWebE2EProtoUtils",
+      "WAWebEncryptAndSendGroupMsg",
+      "WAWebEncryptAndSendStatusMsg",
+      "WAWebEphemeralKeepInChatUtils",
+      "WAWebEphemeralKeepInChatWamUtils",
+      "WAWebEphemeralityUtils",
+      "WAWebEventEditDecryptedMsgDataConversion",
+      "WAWebEventInfoDrawer.react",
+      "WAWebEventPreviewBlock.react",
+      "WAWebEventResponseDBSerialization",
+      "WAWebEventUtils",
+      "WAWebEventsDrawerEventCell.react",
+      "WAWebEventsGenerateEventEditMessageProto",
+      "WAWebEventsMessageComponent.react",
+      "WAWebEventsParseEventEditEncryptedMessageProto",
+      "WAWebEventsRSVPPopup.react",
+      "WAWebGalaxyFlows.react",
+      "WAWebGalaxyFlowsResponseDownloadFlow.react",
+      "WAWebGenerateAiMediaCollectionProtocolMsg",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotRequestWelcomeMessageProto"
+    ],
+    "dep_count": 11,
+    "dependent_count": 215
+  }
+}

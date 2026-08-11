@@ -1,0 +1,51 @@
+{
+  "id": "wam:7104",
+  "kind": "wam",
+  "name": "WebHybridAppRateAndReviewPromptDialogShown",
+  "data": {
+    "kind": "wam",
+    "event_id": 7104,
+    "fields": {
+      "webHybridAppRateAndReviewPromptDialogShownTime": {
+        "id": 1,
+        "type": "TIMER",
+        "wire": "web_hybrid_app_rate_and_review_prompt_dialog_shown_time"
+      },
+      "webHybridAppRateAndReviewPromptDialogStatusResult": {
+        "id": 2,
+        "type": "WEB_HYBRID_APP_RATE_AND_REVIEW_PROMPT_DIALOG_STATUS_RESULT",
+        "wire": "web_hybrid_app_rate_and_review_prompt_dialog_status_result",
+        "enum_ref": "WEB_HYBRID_APP_RATE_AND_REVIEW_PROMPT_DIALOG_STATUS_RESULT"
+      },
+      "webHybridDontShowAgainAppRateAndReviewChecked": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "web_hybrid_dont_show_again_app_rate_and_review_checked"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebHybridAppRateAndReviewPromptDialogShownWamEvent",
+    "matches": "WebHybridAppRateAndReviewPromptDialogShown:\\s*\\[\\s*7104"
+  },
+  "literals": [
+    "7104"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebHybridAppRateAndReviewPromptDialogStatusResult"
+    ],
+    "dependents": [
+      "WAWebWindowsRateAppPromptModal.react"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "wam:2956",
+  "kind": "wam",
+  "name": "TestAnonymousWeeklyId",
+  "data": {
+    "kind": "wam",
+    "event_id": 2956,
+    "fields": {
+      "psTestBooleanField": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "ps_test_boolean_field"
+      },
+      "psTestStringField": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "ps_test_string_field"
+      },
+      "psTimeSinceLastEventInMin": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "ps_time_since_last_event_in_min"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebTestAnonymousWeeklyIdWamEvent",
+    "matches": "TestAnonymousWeeklyId:\\s*\\[\\s*2956"
+  },
+  "literals": [
+    "2956"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebWamPrivateStatsUtils"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

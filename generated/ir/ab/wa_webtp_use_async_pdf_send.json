@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_webtp_use_async_pdf_send",
+  "kind": "ab",
+  "name": "wa_webtp_use_async_pdf_send",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 30214,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_webtp_use_async_pdf_send:\\s*\\[\\s*30214"
+  },
+  "literals": [
+    "wa_webtp_use_async_pdf_send",
+    "30214"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebTPPdfViewerGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

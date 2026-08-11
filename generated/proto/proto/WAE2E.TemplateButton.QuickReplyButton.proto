@@ -1,0 +1,4 @@
+message QuickReplyButton {
+  optional HighlyStructuredMessage displayText = 1;
+  optional bytes id = 2;
+}

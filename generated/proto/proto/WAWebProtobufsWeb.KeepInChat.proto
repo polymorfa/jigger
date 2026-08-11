@@ -1,0 +1,8 @@
+message KeepInChat {
+  optional bytes keepType = 1;
+  optional bytes serverTimestamp = 2;
+  optional bytes key = 3;
+  optional bytes deviceJid = 4;
+  optional bytes clientTimestampMs = 5;
+  optional bytes serverTimestampMs = 6;
+}

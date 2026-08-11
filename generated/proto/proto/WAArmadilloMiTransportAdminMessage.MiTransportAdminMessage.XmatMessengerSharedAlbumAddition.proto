@@ -1,0 +1,6 @@
+message XmatMessengerSharedAlbumAddition {
+  optional bytes sharedAlbumId = 1;
+  optional bytes albumTitle = 2;
+  optional bytes numOfAttachments = 3;
+  optional bytes isAlbumCreation = 4;
+}

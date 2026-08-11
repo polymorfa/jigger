@@ -1,0 +1,46 @@
+{
+  "id": "ab:channels_producer_insights_min_followers",
+  "kind": "ab",
+  "name": "channels_producer_insights_min_followers",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9447,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_producer_insights_min_followers:\\s*\\[\\s*9447"
+  },
+  "literals": [
+    "channels_producer_insights_min_followers",
+    "9447"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebCommonNewsletterStrings",
+      "WAWebNewsletterGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

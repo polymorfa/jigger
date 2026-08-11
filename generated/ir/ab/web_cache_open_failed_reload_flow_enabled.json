@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_cache_open_failed_reload_flow_enabled",
+  "kind": "ab",
+  "name": "web_cache_open_failed_reload_flow_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22155,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_cache_open_failed_reload_flow_enabled:\\s*\\[\\s*22155"
+  },
+  "literals": [
+    "web_cache_open_failed_reload_flow_enabled",
+    "22155"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCacheStorageOpenFailedPopup.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

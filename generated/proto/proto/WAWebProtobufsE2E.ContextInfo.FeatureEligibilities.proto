@@ -1,0 +1,7 @@
+message FeatureEligibilities {
+  optional bytes cannotBeReactedTo = 1;
+  optional bytes cannotBeRanked = 2;
+  optional bytes canRequestFeedback = 3;
+  optional bytes canBeReshared = 4;
+  optional bytes canReceiveMultiReact = 5;
+}

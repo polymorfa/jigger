@@ -1,0 +1,4 @@
+message DeviceConsistencyCodeMessage {
+  optional bytes generation = 1;
+  optional bytes signature = 2;
+}

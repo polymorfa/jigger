@@ -1,0 +1,59 @@
+{
+  "id": "enum:ENUM_CITY_COUNTRY_CUSTOMLOCATION_NEIGHBORHOOD_REGION_ZIP",
+  "kind": "enum",
+  "name": "ENUM_CITY_COUNTRY_CUSTOMLOCATION_NEIGHBORHOOD_REGION_ZIP",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBizCtwaNativeAdEnums",
+    "variants": [
+      {
+        "name": "CITY",
+        "value": "CITY"
+      },
+      {
+        "name": "COUNTRY",
+        "value": "COUNTRY"
+      },
+      {
+        "name": "CUSTOM_LOCATION",
+        "value": "CUSTOM_LOCATION"
+      },
+      {
+        "name": "NEIGHBORHOOD",
+        "value": "NEIGHBORHOOD"
+      },
+      {
+        "name": "REGION",
+        "value": "REGION"
+      },
+      {
+        "name": "ZIP",
+        "value": "ZIP"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizCtwaNativeAdEnums",
+    "matches": "ENUM_CITY_COUNTRY_CUSTOMLOCATION_NEIGHBORHOOD_REGION_ZIP\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_CITY_COUNTRY_CUSTOMLOCATION_NEIGHBORHOOD_REGION_ZIP",
+    "CITY",
+    "COUNTRY",
+    "CUSTOM_LOCATION",
+    "NEIGHBORHOOD",
+    "REGION",
+    "ZIP"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInBizCtwaNativeAdDeprecatedIQErrorResponseOptionalFromMixin",
+      "WASmaxInBizCtwaNativeAdUploadAdMediaResponseSuccess"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

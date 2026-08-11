@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_payment_notifications_ack_kick_fix_enabled",
+  "kind": "ab",
+  "name": "web_payment_notifications_ack_kick_fix_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7546,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_payment_notifications_ack_kick_fix_enabled:\\s*\\[\\s*7546"
+  },
+  "literals": [
+    "web_payment_notifications_ack_kick_fix_enabled",
+    "7546"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

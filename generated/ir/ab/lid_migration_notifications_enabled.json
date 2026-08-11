@@ -1,0 +1,42 @@
+{
+  "id": "ab:lid_migration_notifications_enabled",
+  "kind": "ab",
+  "name": "lid_migration_notifications_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8785,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "lid_migration_notifications_enabled:\\s*\\[\\s*8785"
+  },
+  "literals": [
+    "lid_migration_notifications_enabled",
+    "8785"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

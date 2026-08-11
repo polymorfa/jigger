@@ -1,0 +1,42 @@
+{
+  "id": "ab:ctwa_web_custom_label_signals_enabled",
+  "kind": "ab",
+  "name": "ctwa_web_custom_label_signals_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 19985,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_web_custom_label_signals_enabled:\\s*\\[\\s*19985"
+  },
+  "literals": [
+    "ctwa_web_custom_label_signals_enabled",
+    "19985"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

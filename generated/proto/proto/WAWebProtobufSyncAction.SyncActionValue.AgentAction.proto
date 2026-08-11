@@ -1,0 +1,5 @@
+message AgentAction {
+  optional bytes name = 1;
+  optional bytes deviceId = 2;
+  optional bytes isDeleted = 3;
+}

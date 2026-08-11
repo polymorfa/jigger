@@ -1,0 +1,42 @@
+{
+  "id": "ab:wavoip_legacy_ml_qpl_exp_tag",
+  "kind": "ab",
+  "name": "wavoip_legacy_ml_qpl_exp_tag",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 30561,
+    "type": "string",
+    "default": "none",
+    "alt_default": "none"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wavoip_legacy_ml_qpl_exp_tag:\\s*\\[\\s*30561"
+  },
+  "literals": [
+    "wavoip_legacy_ml_qpl_exp_tag",
+    "30561"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

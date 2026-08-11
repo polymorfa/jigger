@@ -1,0 +1,42 @@
+{
+  "id": "ab:native_flow_response_message_params_json_max_size",
+  "kind": "ab",
+  "name": "native_flow_response_message_params_json_max_size",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32367,
+    "type": "int",
+    "default": 262144,
+    "alt_default": 262144
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "native_flow_response_message_params_json_max_size:\\s*\\[\\s*32367"
+  },
+  "literals": [
+    "native_flow_response_message_params_json_max_size",
+    "32367"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "id": "enum:AUTOMATIC_EVENTS_TARGET_COMPONENT_ENUM",
+  "kind": "enum",
+  "name": "AUTOMATIC_EVENTS_TARGET_COMPONENT_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAutomaticEventsTargetComponentEnum",
+    "variants": [
+      {
+        "name": "SYSTEM_MESSAGE",
+        "value": 0.0
+      },
+      {
+        "name": "LEARN_MORE",
+        "value": 1.0
+      },
+      {
+        "name": "NUX_SCREEN",
+        "value": 2.0
+      },
+      {
+        "name": "NUX_SCREEN_OK",
+        "value": 3.0
+      },
+      {
+        "name": "NUX_SCREEN_META_BUSINESS_SUITE",
+        "value": 4.0
+      },
+      {
+        "name": "AE_ONBOARDING_NUX_SCREEN",
+        "value": 5.0
+      },
+      {
+        "name": "AE_ONBOARDING_NUX_TURN_ON",
+        "value": 6.0
+      },
+      {
+        "name": "AE_ONBOARDING_NUX_NOT_NOW",
+        "value": 7.0
+      },
+      {
+        "name": "AE_ONBOARDING_NUX_META_TERMS_FOR_AUTOMATIC_EVENTS",
+        "value": 8.0
+      },
+      {
+        "name": "AE_ONBOARDING_NUX_PRIVACY_POLICY",
+        "value": 9.0
+      },
+      {
+        "name": "AE_ONBOARDING_NUX_LEARN_MORE",
+        "value": 10.0
+      },
+      {
+        "name": "AE_ONBOARDING_START",
+        "value": 11.0
+      },
+      {
+        "name": "AE_ONBOARDING_FINISH",
+        "value": 12.0
+      },
+      {
+        "name": "AE_OFFBOARDING_NUX_SCREEN",
+        "value": 13.0
+      },
+      {
+        "name": "AE_OFFBOARDING_NUX_TURN_OFF",
+        "value": 14.0
+      },
+      {
+        "name": "AE_OFFBOARDING_NUX_NOT_NOW",
+        "value": 15.0
+      },
+      {
+        "name": "AE_OFFBOARDING_CONFIRMATION_DIALOG",
+        "value": 16.0
+      },
+      {
+        "name": "AE_OFFBOARDING_CONFIRMATION_DIALOG_TURN_OFF",
+        "value": 17.0
+      },
+      {
+        "name": "AE_OFFBOARDING_CONFIRMATION_DIALOG_NOT_NOW",
+        "value": 18.0
+      },
+      {
+        "name": "AE_OFFBOARDING_START",
+        "value": 19.0
+      },
+      {
+        "name": "AE_OFFBOARDING_FINISH",
+        "value": 20.0
+      },
+      {
+        "name": "AE_ONBOARDING_BLOCKED_FOR_MULTI1P",
+        "value": 21.0
+      },
+      {
+        "name": "LIST_SETTINGS_AE_ROW_OFFBOARDED",
+        "value": 22.0
+      },
+      {
+        "name": "LIST_SETTINGS_AE_ROW_ONBOARDED",
+        "value": 23.0
+      },
+      {
+        "name": "LIST_SETTINGS_AE_ROW_OFFBOARDING",
+        "value": 24.0
+      },
+      {
+        "name": "LIST_SETTINGS_AE_ROW_ONBOARDING",
+        "value": 25.0
+      },
+      {
+        "name": "LIST_SETTINGS_AE_ROW_OFFBOARDED_CLICK",
+        "value": 26.0
+      },
+      {
+        "name": "LIST_SETTINGS_AE_ROW_ONBOARDED_CLICK",
+        "value": 27.0
+      },
+      {
+        "name": "AE_ONBOARDING_BIOMETRIC_SCREEN",
+        "value": 28.0
+      },
+      {
+        "name": "AE_ONBOARDING_BIOMETRIC_SKIPPED",
+        "value": 29.0
+      },
+      {
+        "name": "AE_ONBOARDING_BIOMETRIC_BYPASS",
+        "value": 30.0
+      },
+      {
+        "name": "AE_ONBOARDING_BIOMETRIC_SUCCESS",
+        "value": 31.0
+      },
+      {
+        "name": "AE_ONBOARDING_BIOMETRIC_CANCELLED",
+        "value": 32.0
+      },
+      {
+        "name": "AE_ONBOARDING_BIOMETRIC_ERROR",
+        "value": 33.0
+      },
+      {
+        "name": "AE_PRECHECK_FINISH",
+        "value": 34.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAutomaticEventsTargetComponentEnum",
+    "matches": "AUTOMATIC_EVENTS_TARGET_COMPONENT_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "AUTOMATIC_EVENTS_TARGET_COMPONENT_ENUM",
+    "SYSTEM_MESSAGE",
+    "LEARN_MORE",
+    "NUX_SCREEN",
+    "NUX_SCREEN_OK",
+    "NUX_SCREEN_META_BUSINESS_SUITE",
+    "AE_ONBOARDING_NUX_SCREEN",
+    "AE_ONBOARDING_NUX_TURN_ON",
+    "AE_ONBOARDING_NUX_NOT_NOW",
+    "AE_ONBOARDING_NUX_META_TERMS_FOR_AUTOMATIC_EVENTS",
+    "AE_ONBOARDING_NUX_PRIVACY_POLICY",
+    "AE_ONBOARDING_NUX_LEARN_MORE",
+    "AE_ONBOARDING_START",
+    "AE_ONBOARDING_FINISH",
+    "AE_OFFBOARDING_NUX_SCREEN",
+    "AE_OFFBOARDING_NUX_TURN_OFF",
+    "AE_OFFBOARDING_NUX_NOT_NOW",
+    "AE_OFFBOARDING_CONFIRMATION_DIALOG",
+    "AE_OFFBOARDING_CONFIRMATION_DIALOG_TURN_OFF",
+    "AE_OFFBOARDING_CONFIRMATION_DIALOG_NOT_NOW",
+    "AE_OFFBOARDING_START",
+    "AE_OFFBOARDING_FINISH",
+    "AE_ONBOARDING_BLOCKED_FOR_MULTI1P",
+    "LIST_SETTINGS_AE_ROW_OFFBOARDED",
+    "LIST_SETTINGS_AE_ROW_ONBOARDED",
+    "LIST_SETTINGS_AE_ROW_OFFBOARDING",
+    "LIST_SETTINGS_AE_ROW_ONBOARDING",
+    "LIST_SETTINGS_AE_ROW_OFFBOARDED_CLICK",
+    "LIST_SETTINGS_AE_ROW_ONBOARDED_CLICK",
+    "AE_ONBOARDING_BIOMETRIC_SCREEN",
+    "AE_ONBOARDING_BIOMETRIC_SKIPPED",
+    "AE_ONBOARDING_BIOMETRIC_BYPASS",
+    "AE_ONBOARDING_BIOMETRIC_SUCCESS",
+    "AE_ONBOARDING_BIOMETRIC_CANCELLED",
+    "AE_ONBOARDING_BIOMETRIC_ERROR",
+    "AE_PRECHECK_FINISH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAutomaticEventsUserJourneyWamEvent",
+      "WAWebBizLabelDrawer.react",
+      "WAWebBizLabelItemDrawer.react",
+      "WAWebCreateOrEditListDrawer.react",
+      "WAWebDOIntroPopup.react",
+      "WAWebLabelsMultiSelectLabelList.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

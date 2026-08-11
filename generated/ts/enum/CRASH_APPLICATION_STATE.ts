@@ -1,0 +1,6 @@
+export enum CRASHAPPLICATIONSTATE {
+  FOREGROUND = 1,
+  BACKGROUND = 2,
+  APP_INIT = 3,
+  VISIBLE = 4,
+}

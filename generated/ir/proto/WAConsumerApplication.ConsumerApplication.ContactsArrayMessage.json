@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.ContactsArrayMessage",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.ContactsArrayMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "contacts": {
+        "number": 2,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ContactMessage"
+      },
+      "displayName": {
+        "number": 1
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.ContactsArrayMessage\""
+  },
+  "literals": [
+    "ContactsArrayMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "proto:MAWArmadilloMessagesTableSchema.DbQuotedMsgContentProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMessagesTableSchema.DbQuotedMsgContentProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "author": {
+        "number": 4
+      },
+      "expirationTs": {
+        "number": 13
+      },
+      "externalId": {
+        "number": 3
+      },
+      "mediaId": {
+        "number": 8
+      },
+      "msgContent": {
+        "number": 5,
+        "type_name": "MAWArmadilloMessagesTableSchema.MsgContentProto"
+      },
+      "msgId": {
+        "number": 7
+      },
+      "obsoleteMedia": {
+        "number": 6,
+        "type_name": "MAWArmadilloMessagesTableSchema.QuotedDbMediaProto"
+      },
+      "plaintextHash": {
+        "number": 12
+      },
+      "sourceId": {
+        "number": 9
+      },
+      "specialTextSize": {
+        "number": 11
+      },
+      "ts": {
+        "number": 2
+      },
+      "type": {
+        "number": 1
+      },
+      "xmaMessageType": {
+        "number": 10
+      }
+    },
+    "module": "MAWArmadilloMessagesTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMessagesTableSchema.pb",
+    "matches": "name = \"DbQuotedMsgContentProto\""
+  },
+  "literals": [
+    "DbQuotedMsgContentProto"
+  ],
+  "graph": {
+    "deps": [
+      "MAWArmadilloContactsTableSchema.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWArmadilloEditMsgHistoryTableSchema.pb",
+      "MAWArmadilloUnrenderedMessagesTableSchema.pb",
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

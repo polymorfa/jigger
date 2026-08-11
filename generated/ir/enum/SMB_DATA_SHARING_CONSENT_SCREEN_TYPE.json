@@ -1,0 +1,62 @@
+{
+  "id": "enum:SMB_DATA_SHARING_CONSENT_SCREEN_TYPE",
+  "kind": "enum",
+  "name": "SMB_DATA_SHARING_CONSENT_SCREEN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSmbDataSharingConsentScreenType",
+    "variants": [
+      {
+        "name": "SMB_DATA_SHARING_CONSENT_SCREEN_VIEW",
+        "value": 0.0
+      },
+      {
+        "name": "SMB_DATA_SHARING_CONSENT_SCREEN_AGREE",
+        "value": 1.0
+      },
+      {
+        "name": "SMB_DATA_SHARING_CONSENT_SCREEN_DISAGREE",
+        "value": 2.0
+      },
+      {
+        "name": "SMB_DATA_SHARING_CONSENT_SCREEN_CANCEL",
+        "value": 3.0
+      },
+      {
+        "name": "SMB_DATA_SHARING_OPT_OUT_CONFIRMATION_DIALOG_VIEW",
+        "value": 4.0
+      },
+      {
+        "name": "SMB_DATA_SHARING_OPT_OUT_CONFIRMATION_DIALOG_CANCEL",
+        "value": 5.0
+      },
+      {
+        "name": "SMB_DATA_SHARING_OPT_OUT_CONFIRMATION_DIALOG_CONFIRM",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSmbDataSharingConsentScreenType",
+    "matches": "SMB_DATA_SHARING_CONSENT_SCREEN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SMB_DATA_SHARING_CONSENT_SCREEN_TYPE",
+    "SMB_DATA_SHARING_CONSENT_SCREEN_VIEW",
+    "SMB_DATA_SHARING_CONSENT_SCREEN_AGREE",
+    "SMB_DATA_SHARING_CONSENT_SCREEN_DISAGREE",
+    "SMB_DATA_SHARING_CONSENT_SCREEN_CANCEL",
+    "SMB_DATA_SHARING_OPT_OUT_CONFIRMATION_DIALOG_VIEW",
+    "SMB_DATA_SHARING_OPT_OUT_CONFIRMATION_DIALOG_CANCEL",
+    "SMB_DATA_SHARING_OPT_OUT_CONFIRMATION_DIALOG_CONFIRM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSmbDataSharingConsentScreenWamEvent",
+      "WAWebSmbDataSharingOptInModalDialog"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

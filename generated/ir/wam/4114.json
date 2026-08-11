@@ -1,0 +1,106 @@
+{
+  "id": "wam:4114",
+  "kind": "wam",
+  "name": "ExtensionsStructuredMessageInteraction",
+  "data": {
+    "kind": "wam",
+    "event_id": 4114,
+    "fields": {
+      "adContext": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "ad_context"
+      },
+      "bizPlatform": {
+        "id": 1,
+        "type": "BIZ_PLATFORM",
+        "wire": "biz_platform",
+        "enum_ref": "BIZ_PLATFORM"
+      },
+      "businessOwnerJid": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "business_owner_jid"
+      },
+      "entryPointConversationInitiated": {
+        "id": 7,
+        "type": "ENTRY_POINT_CONVERSATION_INITIATED",
+        "wire": "entry_point_conversation_initiated",
+        "enum_ref": "ENTRY_POINT_CONVERSATION_INITIATED"
+      },
+      "entryPointConversionApp": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "entry_point_conversion_app"
+      },
+      "entryPointConversionSource": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "entry_point_conversion_source"
+      },
+      "flowEntryPoint": {
+        "id": 11,
+        "type": "FLOW_ENTRY_POINT",
+        "wire": "flow_entry_point",
+        "enum_ref": "FLOW_ENTRY_POINT"
+      },
+      "messageClass": {
+        "id": 3,
+        "type": "STRUCTURED_MESSAGE_CLASS",
+        "wire": "message_class",
+        "enum_ref": "STRUCTURED_MESSAGE_CLASS"
+      },
+      "messageClassAttributes": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "message_class_attributes"
+      },
+      "messageInteraction": {
+        "id": 5,
+        "type": "INTERACTION_TYPE",
+        "wire": "message_interaction",
+        "enum_ref": "INTERACTION_TYPE"
+      },
+      "messageMediaType": {
+        "id": 6,
+        "type": "MEDIA_TYPE",
+        "wire": "message_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "threadIdHmac": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebExtensionsStructuredMessageInteractionWamEvent",
+    "matches": "ExtensionsStructuredMessageInteraction:\\s*\\[\\s*4114"
+  },
+  "literals": [
+    "4114"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBizPlatform",
+      "WAWebWamEnumEntryPointConversationInitiated",
+      "WAWebWamEnumFlowEntryPoint",
+      "WAWebWamEnumInteractionType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumStructuredMessageClass"
+    ],
+    "dependents": [
+      "WAWebGalaxyFlowWamLoggerUtils"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

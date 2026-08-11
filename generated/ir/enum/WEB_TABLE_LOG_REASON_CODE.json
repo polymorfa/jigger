@@ -1,0 +1,36 @@
+{
+  "id": "enum:WEB_TABLE_LOG_REASON_CODE",
+  "kind": "enum",
+  "name": "WEB_TABLE_LOG_REASON_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebTableLogReasonCode",
+    "variants": [
+      {
+        "name": "BASE",
+        "value": 0.0
+      },
+      {
+        "name": "EXCEEDED_THRESHOLD",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebTableLogReasonCode",
+    "matches": "WEB_TABLE_LOG_REASON_CODE\\s*[:=]"
+  },
+  "literals": [
+    "WEB_TABLE_LOG_REASON_CODE",
+    "BASE",
+    "EXCEEDED_THRESHOLD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWebDbTableUsageWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

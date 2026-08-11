@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebUploadLabyrinthMessagesJobMutation",
+  "kind": "mex",
+  "name": "WAWebUploadLabyrinthMessagesJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "28023438937253549",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation UploadLabyrinthMessagesJobMutation($input) {\n  wa_labyrinth_upload_messages {\n    __typename\n    results {\n      offline_threading_id\n      success\n      error\n      status\n      message\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebUploadLabyrinthMessagesJobMutation.graphql",
+    "matches": "id: \"28023438937253549\""
+  },
+  "literals": [
+    "28023438937253549",
+    "WAWebUploadLabyrinthMessagesJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebUploadLabyrinthMessagesJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

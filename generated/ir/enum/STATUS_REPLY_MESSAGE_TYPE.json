@@ -1,0 +1,117 @@
+{
+  "id": "enum:STATUS_REPLY_MESSAGE_TYPE",
+  "kind": "enum",
+  "name": "STATUS_REPLY_MESSAGE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusReplyMessageType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 1.0
+      },
+      {
+        "name": "TEXT",
+        "value": 2.0
+      },
+      {
+        "name": "IMAGE",
+        "value": 3.0
+      },
+      {
+        "name": "VOICE",
+        "value": 4.0
+      },
+      {
+        "name": "DOCUMENT",
+        "value": 5.0
+      },
+      {
+        "name": "AUDIO",
+        "value": 6.0
+      },
+      {
+        "name": "STICKER",
+        "value": 7.0
+      },
+      {
+        "name": "LOCATION",
+        "value": 8.0
+      },
+      {
+        "name": "PRODUCT",
+        "value": 9.0
+      },
+      {
+        "name": "CONTACT",
+        "value": 10.0
+      },
+      {
+        "name": "CONTACT_ARRAY",
+        "value": 11.0
+      },
+      {
+        "name": "CAMERA_CAPTURE_IMAGE",
+        "value": 12.0
+      },
+      {
+        "name": "MEDIA_GALLERY",
+        "value": 13.0
+      },
+      {
+        "name": "GIF_VIDEO",
+        "value": 14.0
+      },
+      {
+        "name": "QUICK_REPLY",
+        "value": 15.0
+      },
+      {
+        "name": "POLL",
+        "value": 16.0
+      },
+      {
+        "name": "AVATAR_QUICK_REPLY",
+        "value": 17.0
+      },
+      {
+        "name": "STICKER_QUICK_REPLY",
+        "value": 18.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusReplyMessageType",
+    "matches": "STATUS_REPLY_MESSAGE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_REPLY_MESSAGE_TYPE",
+    "UNKNOWN",
+    "TEXT",
+    "IMAGE",
+    "VOICE",
+    "DOCUMENT",
+    "AUDIO",
+    "STICKER",
+    "LOCATION",
+    "PRODUCT",
+    "CONTACT",
+    "CONTACT_ARRAY",
+    "CAMERA_CAPTURE_IMAGE",
+    "MEDIA_GALLERY",
+    "GIF_VIDEO",
+    "QUICK_REPLY",
+    "POLL",
+    "AVATAR_QUICK_REPLY",
+    "STICKER_QUICK_REPLY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusComposeBox.react",
+      "WAWebStatusReplyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

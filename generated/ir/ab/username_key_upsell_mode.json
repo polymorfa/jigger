@@ -1,0 +1,45 @@
+{
+  "id": "ab:username_key_upsell_mode",
+  "kind": "ab",
+  "name": "username_key_upsell_mode",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26220,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_key_upsell_mode:\\s*\\[\\s*26220"
+  },
+  "literals": [
+    "username_key_upsell_mode",
+    "26220"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSetUsernameDrawer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

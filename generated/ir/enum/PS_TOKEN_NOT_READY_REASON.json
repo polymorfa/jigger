@@ -1,0 +1,106 @@
+{
+  "id": "enum:PS_TOKEN_NOT_READY_REASON",
+  "kind": "enum",
+  "name": "PS_TOKEN_NOT_READY_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPsTokenNotReadyReason",
+    "variants": [
+      {
+        "name": "NO_REASON",
+        "value": 0.0
+      },
+      {
+        "name": "REASON_UNKNOWN",
+        "value": 1.0
+      },
+      {
+        "name": "REASON_WAIT_FOR_FIRST_TOKEN",
+        "value": 2.0
+      },
+      {
+        "name": "REASON_INVALID_SHARED_KEY",
+        "value": 3.0
+      },
+      {
+        "name": "REASON_INVALID_FACTOR",
+        "value": 4.0
+      },
+      {
+        "name": "REASON_GEN_FACTOR_FAILURE",
+        "value": 5.0
+      },
+      {
+        "name": "REASON_COMPUTE_HMAC_FAILURE",
+        "value": 6.0
+      },
+      {
+        "name": "REASON_BLIND_FAILURE",
+        "value": 7.0
+      },
+      {
+        "name": "REASON_UNBLIND_FAILURE",
+        "value": 8.0
+      },
+      {
+        "name": "REASON_LAST_SIGNREQ_NETWORK_FAILURE",
+        "value": 9.0
+      },
+      {
+        "name": "REASON_LAST_SIGNREQ_SERVER_ERROR",
+        "value": 10.0
+      },
+      {
+        "name": "REASON_LAST_SIGNREQ_BAD_REQUEST",
+        "value": 11.0
+      },
+      {
+        "name": "REASON_LAST_SIGNREQ_OTHER_ERROR",
+        "value": 12.0
+      },
+      {
+        "name": "REASON_WAIT_FOR_GEN_TOKEN",
+        "value": 13.0
+      },
+      {
+        "name": "REASON_GEN_SHAREDKEY_FAILURE",
+        "value": 14.0
+      },
+      {
+        "name": "REASON_WAIT_FOR_GEN_FIRST_TOKEN",
+        "value": 15.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPsTokenNotReadyReason",
+    "matches": "PS_TOKEN_NOT_READY_REASON\\s*[:=]"
+  },
+  "literals": [
+    "PS_TOKEN_NOT_READY_REASON",
+    "NO_REASON",
+    "REASON_UNKNOWN",
+    "REASON_WAIT_FOR_FIRST_TOKEN",
+    "REASON_INVALID_SHARED_KEY",
+    "REASON_INVALID_FACTOR",
+    "REASON_GEN_FACTOR_FAILURE",
+    "REASON_COMPUTE_HMAC_FAILURE",
+    "REASON_BLIND_FAILURE",
+    "REASON_UNBLIND_FAILURE",
+    "REASON_LAST_SIGNREQ_NETWORK_FAILURE",
+    "REASON_LAST_SIGNREQ_SERVER_ERROR",
+    "REASON_LAST_SIGNREQ_BAD_REQUEST",
+    "REASON_LAST_SIGNREQ_OTHER_ERROR",
+    "REASON_WAIT_FOR_GEN_TOKEN",
+    "REASON_GEN_SHAREDKEY_FAILURE",
+    "REASON_WAIT_FOR_GEN_FIRST_TOKEN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPsBufferUploadWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

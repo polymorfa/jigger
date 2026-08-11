@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAE2E.Message.StatusStickerInteractionMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.StatusStickerInteractionMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "key": {
+        "number": 1
+      },
+      "stickerKey": {
+        "number": 2
+      },
+      "type": {
+        "number": 3
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.StatusStickerInteractionMessage\""
+  },
+  "literals": [
+    "StatusStickerInteractionMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

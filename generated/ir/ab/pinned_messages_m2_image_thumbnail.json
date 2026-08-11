@@ -1,0 +1,42 @@
+{
+  "id": "ab:pinned_messages_m2_image_thumbnail",
+  "kind": "ab",
+  "name": "pinned_messages_m2_image_thumbnail",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7467,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pinned_messages_m2_image_thumbnail:\\s*\\[\\s*7467"
+  },
+  "literals": [
+    "pinned_messages_m2_image_thumbnail",
+    "7467"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

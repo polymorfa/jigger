@@ -1,0 +1,52 @@
+{
+  "id": "proto:WAE2E.AIRichResponseMessage",
+  "kind": "proto",
+  "name": "WAE2E.AIRichResponseMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "contextInfo": {
+        "number": 4,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "messageType": {
+        "number": 1
+      },
+      "submessages": {
+        "number": 2
+      },
+      "unifiedResponse": {
+        "number": 3
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"AIRichResponseMessage\""
+  },
+  "literals": [
+    "AIRichResponseMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

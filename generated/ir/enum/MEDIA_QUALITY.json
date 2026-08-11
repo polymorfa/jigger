@@ -1,0 +1,49 @@
+{
+  "id": "enum:MEDIA_QUALITY",
+  "kind": "enum",
+  "name": "MEDIA_QUALITY",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMediaQuality",
+    "variants": [
+      {
+        "name": "AUTO",
+        "value": 0.0
+      },
+      {
+        "name": "DATA_SAVER",
+        "value": 1.0
+      },
+      {
+        "name": "HIGH_QUALITY",
+        "value": 2.0
+      },
+      {
+        "name": "HIGHEST_QUALITY",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMediaQuality",
+    "matches": "MEDIA_QUALITY\\s*[:=]"
+  },
+  "literals": [
+    "MEDIA_QUALITY",
+    "AUTO",
+    "DATA_SAVER",
+    "HIGH_QUALITY",
+    "HIGHEST_QUALITY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCreateMediaUploadMetrics",
+      "WAWebDailyWamEvent",
+      "WAWebMediaPickerWamEvent",
+      "WAWebMediaUpload2WamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:album_v2_forward_as_album_enabled",
+  "kind": "ab",
+  "name": "album_v2_forward_as_album_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10725,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "album_v2_forward_as_album_enabled:\\s*\\[\\s*10725"
+  },
+  "literals": [
+    "album_v2_forward_as_album_enabled",
+    "10725"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

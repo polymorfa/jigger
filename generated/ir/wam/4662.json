@@ -1,0 +1,95 @@
+{
+  "id": "wam:4662",
+  "kind": "wam",
+  "name": "CtwaLabelSignal",
+  "data": {
+    "kind": "wam",
+    "event_id": 4662,
+    "fields": {
+      "ctwaConversationDepth": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "ctwa_conversation_depth"
+      },
+      "ctwaLabelSignalVersion": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "ctwa_label_signal_version"
+      },
+      "ctwaLabelTarget": {
+        "id": 2,
+        "type": "CTWA_LABEL_TARGET",
+        "wire": "ctwa_label_target",
+        "enum_ref": "CTWA_LABEL_TARGET"
+      },
+      "ctwaLabelType": {
+        "id": 3,
+        "type": "CTWA_LABEL_TYPE",
+        "wire": "ctwa_label_type",
+        "enum_ref": "CTWA_LABEL_TYPE"
+      },
+      "ctwaSignalMetadata": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "ctwa_signal_metadata"
+      },
+      "customerAdsSharingSettingEnabled": {
+        "id": 10,
+        "type": "CUSTOMER_ADS_SHARING_SETTING_ENABLED",
+        "wire": "customer_ads_sharing_setting_enabled",
+        "enum_ref": "CUSTOMER_ADS_SHARING_SETTING_ENABLED"
+      },
+      "deepLinkConversionData": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "deep_link_conversion_data"
+      },
+      "deepLinkConversionSource": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "deep_link_conversion_source"
+      },
+      "eventSharingSettingEnabled": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "event_sharing_setting_enabled"
+      },
+      "globalSharingSettingEnabled": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "global_sharing_setting_enabled"
+      },
+      "threadIdHmac": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCtwaLabelSignalWamEvent",
+    "matches": "CtwaLabelSignal:\\s*\\[\\s*4662"
+  },
+  "literals": [
+    "4662"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCtwaLabelTarget",
+      "WAWebWamEnumCtwaLabelType",
+      "WAWebWamEnumCustomerAdsSharingSettingEnabled"
+    ],
+    "dependents": [
+      "WAWebSmbMarkAsXLabelAction"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

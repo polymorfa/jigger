@@ -1,0 +1,62 @@
+{
+  "id": "enum:UI_ACTION_CHAT_TYPE",
+  "kind": "enum",
+  "name": "UI_ACTION_CHAT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUiActionChatType",
+    "variants": [
+      {
+        "name": "INDIVIDUAL",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "SUBGROUP",
+        "value": 3.0
+      },
+      {
+        "name": "DEFAULT_SUBGROUP",
+        "value": 4.0
+      },
+      {
+        "name": "CHANNEL",
+        "value": 5.0
+      },
+      {
+        "name": "META_AI",
+        "value": 6.0
+      },
+      {
+        "name": "AI_CHARACTERS",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUiActionChatType",
+    "matches": "UI_ACTION_CHAT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "UI_ACTION_CHAT_TYPE",
+    "INDIVIDUAL",
+    "GROUP",
+    "SUBGROUP",
+    "DEFAULT_SUBGROUP",
+    "CHANNEL",
+    "META_AI",
+    "AI_CHARACTERS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebUiActionWamEvent",
+      "useWAWebConversationPanelMetrics"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

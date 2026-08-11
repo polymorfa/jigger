@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_configurable_quick_actions_m1_communities",
+  "kind": "ab",
+  "name": "web_configurable_quick_actions_m1_communities",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31782,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_configurable_quick_actions_m1_communities:\\s*\\[\\s*31782"
+  },
+  "literals": [
+    "web_configurable_quick_actions_m1_communities",
+    "31782"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebQuickActionGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

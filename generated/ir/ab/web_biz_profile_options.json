@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_biz_profile_options",
+  "kind": "ab",
+  "name": "web_biz_profile_options",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14881,
+    "type": "int",
+    "default": 116,
+    "alt_default": 116
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_biz_profile_options:\\s*\\[\\s*14881"
+  },
+  "literals": [
+    "web_biz_profile_options",
+    "14881"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizProfileGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

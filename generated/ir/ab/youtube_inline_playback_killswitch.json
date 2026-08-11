@@ -1,0 +1,45 @@
+{
+  "id": "ab:youtube_inline_playback_killswitch",
+  "kind": "ab",
+  "name": "youtube_inline_playback_killswitch",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3522,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "youtube_inline_playback_killswitch:\\s*\\[\\s*3522"
+  },
+  "literals": [
+    "youtube_inline_playback_killswitch",
+    "3522"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMediaVideoLinkPreview.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

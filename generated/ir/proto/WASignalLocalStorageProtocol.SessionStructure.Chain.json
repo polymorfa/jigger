@@ -1,0 +1,45 @@
+{
+  "id": "proto:WASignalLocalStorageProtocol.SessionStructure.Chain",
+  "kind": "proto",
+  "name": "WASignalLocalStorageProtocol.SessionStructure.Chain",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "chainKey": {
+        "number": 3,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure.Chain.ChainKey"
+      },
+      "messageKeys": {
+        "number": 4,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure.Chain.MessageKey"
+      },
+      "senderRatchetKey": {
+        "number": 1
+      },
+      "senderRatchetKeyPrivate": {
+        "number": 2
+      }
+    },
+    "module": "WASignalLocalStorageProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalLocalStorageProtocol.pb",
+    "matches": "name = \"SessionStructure.Chain\""
+  },
+  "literals": [
+    "Chain"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WACryptoManager",
+      "WASignalKeys",
+      "WASignalSignatures",
+      "WAWebCryptoLibraryDbCallbacksApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

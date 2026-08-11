@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAArmadilloTransportEvent.TransportEvent.Event.DeviceChange",
+  "kind": "proto",
+  "name": "WAArmadilloTransportEvent.TransportEvent.Event.DeviceChange",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "deviceModel": {
+        "number": 4
+      },
+      "deviceName": {
+        "number": 2
+      },
+      "devicePlatform": {
+        "number": 3
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "WAArmadilloTransportEvent.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloTransportEvent.pb",
+    "matches": "name = \"TransportEvent.Event.DeviceChange\""
+  },
+  "literals": [
+    "DeviceChange"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EBMinosWriteKeyChangeAdminMessage",
+      "IgnitionE2EEDecryptionPlaceholder",
+      "MAWProtobufDeserializers",
+      "MpsWaAdminMsgToBridge",
+      "MpsWaPlaceholderToBridge",
+      "WABuildMpsPayload",
+      "WAInMemorySignalStore"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

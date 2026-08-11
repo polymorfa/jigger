@@ -1,0 +1,4 @@
+message AIRichResponseCodeMetadata {
+  optional bytes codeLanguage = 1;
+  optional AIRichResponseCodeBlock codeBlocks = 2;
+}

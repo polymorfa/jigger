@@ -1,0 +1,37 @@
+{
+  "id": "proto:WASignalLocalStorageProtocol.SenderKeyStateStructure.SenderMessageKey",
+  "kind": "proto",
+  "name": "WASignalLocalStorageProtocol.SenderKeyStateStructure.SenderMessageKey",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "iteration": {
+        "number": 1
+      },
+      "seed": {
+        "number": 2
+      }
+    },
+    "module": "WASignalLocalStorageProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalLocalStorageProtocol.pb",
+    "matches": "name = \"SenderKeyStateStructure.SenderMessageKey\""
+  },
+  "literals": [
+    "SenderMessageKey"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WACryptoManager",
+      "WASignalKeys",
+      "WASignalSignatures",
+      "WAWebCryptoLibraryDbCallbacksApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

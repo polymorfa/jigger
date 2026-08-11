@@ -1,0 +1,151 @@
+{
+  "id": "iq:waffle/get/timestamp",
+  "kind": "iq",
+  "name": "WaffleForceSuspendState",
+  "data": {
+    "kind": "iq",
+    "xmlns": "waffle",
+    "type": "get",
+    "tags": [
+      "timestamp"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "waffle",
+          "optional": false
+        },
+        {
+          "name": "smax_id",
+          "ty": "int",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "timestamp",
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxWaffleForceSuspendStateRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInWaffleForceSuspendStateResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "npr",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInWaffleForceSuspendStateResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorConflict",
+          "IQErrorInternalServerError",
+          "IQErrorNotAllowed",
+          "IQErrorRateOverlimit",
+          "IQErrorRequestTimeout",
+          "IQErrorServiceUnavailable",
+          "IQErrorWFNotFound",
+          "IQErrorWFStateMismatch"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutWaffleForceSuspendStateRequest",
+    "matches": "smax\\(\"timestamp\""
+  },
+  "literals": [
+    "waffle",
+    "timestamp"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutWaffleBaseIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxWaffleForceSuspendStateRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

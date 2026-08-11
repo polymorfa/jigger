@@ -1,0 +1,6 @@
+message PollCreationMessage {
+  optional bytes encKey = 1;
+  optional bytes name = 2;
+  optional Option options = 3;
+  optional bytes selectableOptionsCount = 4;
+}

@@ -1,0 +1,3 @@
+message AiCreatedAttribution {
+  optional bytes source = 1;
+}

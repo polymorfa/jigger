@@ -1,0 +1,42 @@
+{
+  "id": "enum:WEBC_MEDIA_LOAD_RESULT_CODE",
+  "kind": "enum",
+  "name": "WEBC_MEDIA_LOAD_RESULT_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcMediaLoadResultCode",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 0.0
+      },
+      {
+        "name": "SILENCE",
+        "value": 1.0
+      },
+      {
+        "name": "ZEROWIDTH",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcMediaLoadResultCode",
+    "matches": "WEBC_MEDIA_LOAD_RESULT_CODE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_MEDIA_LOAD_RESULT_CODE",
+    "SUCCESS",
+    "SILENCE",
+    "ZEROWIDTH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaLoad",
+      "WAWebWebcMediaLoadWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

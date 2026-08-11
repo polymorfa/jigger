@@ -1,0 +1,34 @@
+{
+  "id": "proto:WAAICommon.BotAgentMetadata",
+  "kind": "proto",
+  "name": "WAAICommon.BotAgentMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "deepLinkMetadata": {
+        "number": 1,
+        "type_name": "WAAICommon.BotAgentDeepLinkMetadata"
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotAgentMetadata\""
+  },
+  "literals": [
+    "BotAgentMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

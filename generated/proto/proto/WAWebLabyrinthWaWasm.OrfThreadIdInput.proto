@@ -1,0 +1,4 @@
+message OrfThreadIdInput {
+  optional bytes orfClientState = 1;
+  optional bytes threadId = 2;
+}

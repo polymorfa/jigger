@@ -1,0 +1,2 @@
+// ABEnhancedMentionSuggestionsNonGroupMembersEnabled is A/B property 24852 (bool), default false.
+const ABEnhancedMentionSuggestionsNonGroupMembersEnabled = "enhanced_mention_suggestions_non_group_members_enabled"

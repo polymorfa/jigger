@@ -1,0 +1,40 @@
+{
+  "id": "wam:2520",
+  "kind": "wam",
+  "name": "MdAppStateDirtyBits",
+  "data": {
+    "kind": "wam",
+    "event_id": 2520,
+    "fields": {
+      "dirtyBitsFalsePositive": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "dirty_bits_false_positive"
+      }
+    },
+    "weights": [
+      1,
+      20,
+      1000
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdAppStateDirtyBitsWamEvent",
+    "matches": "MdAppStateDirtyBits:\\s*\\[\\s*2520"
+  },
+  "literals": [
+    "2520"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebHandleDirtyBits",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

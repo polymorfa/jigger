@@ -1,0 +1,87 @@
+{
+  "id": "enum:CONSUMER_BIZ_ACTION_TARGET_ENUM",
+  "kind": "enum",
+  "name": "CONSUMER_BIZ_ACTION_TARGET_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumConsumerBizActionTargetEnum",
+    "variants": [
+      {
+        "name": "SEARCH_RESULT_ITEM",
+        "value": 0.0
+      },
+      {
+        "name": "PROFILE_BUTTON",
+        "value": 1.0
+      },
+      {
+        "name": "SHARE_BUTTON",
+        "value": 2.0
+      },
+      {
+        "name": "BACK_BUTTON",
+        "value": 3.0
+      },
+      {
+        "name": "CONTACT_CARD",
+        "value": 4.0
+      },
+      {
+        "name": "HEADER_SUBTITLE",
+        "value": 5.0
+      },
+      {
+        "name": "FMX_AFFILIATION_ROW",
+        "value": 6.0
+      },
+      {
+        "name": "AFFILIATION_SECTION",
+        "value": 7.0
+      },
+      {
+        "name": "CONTACT_BIZ_CTA",
+        "value": 8.0
+      },
+      {
+        "name": "BOTTOM_SHEET_OK",
+        "value": 9.0
+      },
+      {
+        "name": "BLOCKED_COMPOSER_LEARN_MORE",
+        "value": 10.0
+      },
+      {
+        "name": "BLOCKED_COMPOSER",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumConsumerBizActionTargetEnum",
+    "matches": "CONSUMER_BIZ_ACTION_TARGET_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "CONSUMER_BIZ_ACTION_TARGET_ENUM",
+    "SEARCH_RESULT_ITEM",
+    "PROFILE_BUTTON",
+    "SHARE_BUTTON",
+    "BACK_BUTTON",
+    "CONTACT_CARD",
+    "HEADER_SUBTITLE",
+    "FMX_AFFILIATION_ROW",
+    "AFFILIATION_SECTION",
+    "CONTACT_BIZ_CTA",
+    "BOTTOM_SHEET_OK",
+    "BLOCKED_COMPOSER_LEARN_MORE",
+    "BLOCKED_COMPOSER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAuthAgentConsumerJourneyLogger",
+      "WAWebConsumerBizInteractionJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

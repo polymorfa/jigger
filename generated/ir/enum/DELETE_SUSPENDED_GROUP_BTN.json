@@ -1,0 +1,38 @@
+{
+  "id": "enum:DELETE_SUSPENDED_GROUP_BTN",
+  "kind": "enum",
+  "name": "DELETE_SUSPENDED_GROUP_BTN",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDeleteSuspendedGroupBtn",
+    "variants": [
+      {
+        "name": "BOTTOM_SHEET_BTN",
+        "value": 1.0
+      },
+      {
+        "name": "BLOCKED_COMPOSER_BTN",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDeleteSuspendedGroupBtn",
+    "matches": "DELETE_SUSPENDED_GROUP_BTN\\s*[:=]"
+  },
+  "literals": [
+    "DELETE_SUSPENDED_GROUP_BTN",
+    "BOTTOM_SHEET_BTN",
+    "BLOCKED_COMPOSER_BTN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSuspendedGroupDeleteWamEvent",
+      "WAWebSuspendedGroupModalV2.react",
+      "WAWebSuspendedOrTerminatedGroupMsgBarV2.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

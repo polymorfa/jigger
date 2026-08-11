@@ -1,0 +1,201 @@
+{
+  "id": "proto:WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData",
+  "kind": "proto",
+  "name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "body": {
+        "number": 1
+      },
+      "botMessageSecret": {
+        "number": 29
+      },
+      "caption": {
+        "number": 3
+      },
+      "clientUrl": {
+        "number": 15
+      },
+      "correctOptionIndex": {
+        "number": 47
+      },
+      "description": {
+        "number": 13
+      },
+      "encIv": {
+        "number": 32
+      },
+      "encPayload": {
+        "number": 31
+      },
+      "encPollVote": {
+        "number": 24,
+        "type_name": "WAWebProtobufsMdStorageMsgRowOpaqueData.PollEncValue"
+      },
+      "encReactionEncIv": {
+        "number": 27
+      },
+      "encReactionEncPayload": {
+        "number": 26
+      },
+      "encReactionTargetMessageKey": {
+        "number": 25
+      },
+      "eventDescription": {
+        "number": 35
+      },
+      "eventEndTime": {
+        "number": 40
+      },
+      "eventExtraGuestsAllowed": {
+        "number": 45
+      },
+      "eventIsScheduledCall": {
+        "number": 44
+      },
+      "eventJoinLink": {
+        "number": 36
+      },
+      "eventLocation": {
+        "number": 38,
+        "type_name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.EventLocation"
+      },
+      "eventName": {
+        "number": 33
+      },
+      "eventStartTime": {
+        "number": 37
+      },
+      "futureproofBuffer": {
+        "number": 14
+      },
+      "isEventCanceled": {
+        "number": 34
+      },
+      "isLive": {
+        "number": 6
+      },
+      "isSentCagPollCreation": {
+        "number": 28
+      },
+      "lat": {
+        "number": 7
+      },
+      "lng": {
+        "number": 5
+      },
+      "loc": {
+        "number": 16
+      },
+      "matchedText": {
+        "number": 11
+      },
+      "messageSecret": {
+        "number": 21
+      },
+      "originalSelfAuthor": {
+        "number": 51
+      },
+      "paymentAmount1000": {
+        "number": 8
+      },
+      "paymentNoteMsgBody": {
+        "number": 9
+      },
+      "plainProtobufBytes": {
+        "number": 43
+      },
+      "pollAllowAddOption": {
+        "number": 52
+      },
+      "pollContentType": {
+        "number": 42
+      },
+      "pollEndTime": {
+        "number": 49
+      },
+      "pollHideVoterNames": {
+        "number": 50
+      },
+      "pollName": {
+        "number": 17
+      },
+      "pollOptions": {
+        "number": 18,
+        "type_name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.PollOption"
+      },
+      "pollSelectableOptionsCount": {
+        "number": 20
+      },
+      "pollType": {
+        "number": 46
+      },
+      "pollUpdateParentKey": {
+        "number": 23
+      },
+      "pollVotesSnapshot": {
+        "number": 41,
+        "type_name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.PollVotesSnapshot"
+      },
+      "quarantineExtractedText": {
+        "number": 48
+      },
+      "senderTimestampMs": {
+        "number": 22
+      },
+      "sharableEventInviteCallLink": {
+        "number": 60
+      },
+      "sharableEventInviteCaption": {
+        "number": 57
+      },
+      "sharableEventInviteEndTime": {
+        "number": 56
+      },
+      "sharableEventInviteId": {
+        "number": 53
+      },
+      "sharableEventInviteIsCanceled": {
+        "number": 58
+      },
+      "sharableEventInviteJpegThumbnail": {
+        "number": 59
+      },
+      "sharableEventInviteStartTime": {
+        "number": 55
+      },
+      "sharableEventInviteTitle": {
+        "number": 54
+      },
+      "targetMessageKey": {
+        "number": 30
+      },
+      "title": {
+        "number": 12
+      }
+    },
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb",
+    "matches": "name = \"MsgOpaqueData\""
+  },
+  "literals": [
+    "MsgOpaqueData"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDBMessageSerialization",
+      "WAWebFtsV3MessageSource",
+      "WAWebMsgOpaqueData",
+      "WAWebPollCreationUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "wam:3004",
+  "kind": "wam",
+  "name": "TestAnonymousIdLess",
+  "data": {
+    "kind": "wam",
+    "event_id": 3004,
+    "fields": {
+      "psTimeSinceLastEventInMin": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "ps_time_since_last_event_in_min"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebTestAnonymousIdLessWamEvent",
+    "matches": "TestAnonymousIdLess:\\s*\\[\\s*3004"
+  },
+  "literals": [
+    "3004"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebWamPrivateStatsUtils"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

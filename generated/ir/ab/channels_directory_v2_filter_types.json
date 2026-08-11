@@ -1,0 +1,45 @@
+{
+  "id": "ab:channels_directory_v2_filter_types",
+  "kind": "ab",
+  "name": "channels_directory_v2_filter_types",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5127,
+    "type": "string",
+    "default": "",
+    "alt_default": "1"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_directory_v2_filter_types:\\s*\\[\\s*5127"
+  },
+  "literals": [
+    "channels_directory_v2_filter_types",
+    "5127"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterExtendedGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

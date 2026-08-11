@@ -1,0 +1,56 @@
+{
+  "id": "wam:5762",
+  "kind": "wam",
+  "name": "ChannelMembershipActionEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 5762,
+    "fields": {
+      "actionResult": {
+        "id": 1,
+        "type": "CHANNEL_MEMBERSHIP_ACTION_RESULT",
+        "wire": "action_result",
+        "enum_ref": "CHANNEL_MEMBERSHIP_ACTION_RESULT"
+      },
+      "cid": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "unifiedSessionId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelMembershipActionEventWamEvent",
+    "matches": "ChannelMembershipActionEvent:\\s*\\[\\s*5762"
+  },
+  "literals": [
+    "5762"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelMembershipActionResult"
+    ],
+    "dependents": [
+      "WAWebNewsletterMembershipActionLogger"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

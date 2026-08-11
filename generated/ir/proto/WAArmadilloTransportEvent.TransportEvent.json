@@ -1,0 +1,43 @@
+{
+  "id": "proto:WAArmadilloTransportEvent.TransportEvent",
+  "kind": "proto",
+  "name": "WAArmadilloTransportEvent.TransportEvent",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "event": {
+        "number": 2,
+        "type_name": "WAArmadilloTransportEvent.TransportEvent.Event"
+      },
+      "placeholder": {
+        "number": 1,
+        "type_name": "WAArmadilloTransportEvent.TransportEvent.Placeholder"
+      }
+    },
+    "module": "WAArmadilloTransportEvent.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloTransportEvent.pb",
+    "matches": "name = \"TransportEvent\""
+  },
+  "literals": [
+    "TransportEvent"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EBMinosWriteKeyChangeAdminMessage",
+      "IgnitionE2EEDecryptionPlaceholder",
+      "MAWProtobufDeserializers",
+      "MpsWaAdminMsgToBridge",
+      "MpsWaPlaceholderToBridge",
+      "WABuildMpsPayload",
+      "WAInMemorySignalStore"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

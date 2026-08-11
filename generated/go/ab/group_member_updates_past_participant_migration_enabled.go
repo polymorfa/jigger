@@ -1,0 +1,2 @@
+// ABGroupMemberUpdatesPastParticipantMigrationEnabled is A/B property 31614 (bool), default false.
+const ABGroupMemberUpdatesPastParticipantMigrationEnabled = "group_member_updates_past_participant_migration_enabled"

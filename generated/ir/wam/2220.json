@@ -1,0 +1,51 @@
+{
+  "id": "wam:2220",
+  "kind": "wam",
+  "name": "BusinessToolsImpression",
+  "data": {
+    "kind": "wam",
+    "event_id": 2220,
+    "fields": {
+      "businessToolsEntryPoint": {
+        "id": 4,
+        "type": "BUSINESS_TOOLS_ENTRY_POINT_TYPE",
+        "wire": "business_tools_entry_point",
+        "enum_ref": "BUSINESS_TOOLS_ENTRY_POINT_TYPE"
+      },
+      "businessToolsSequenceNumber": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "business_tools_sequence_number"
+      },
+      "businessToolsSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "business_tools_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebBusinessToolsImpressionWamEvent",
+    "matches": "BusinessToolsImpression:\\s*\\[\\s*2220"
+  },
+  "literals": [
+    "2220"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBusinessToolsEntryPointType"
+    ],
+    "dependents": [
+      "WAWebBizToolsUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

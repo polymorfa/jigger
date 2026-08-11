@@ -1,0 +1,4 @@
+message BotPromotionMessageMetadata {
+  optional bytes promotionType = 1;
+  optional bytes buttonTitle = 2;
+}

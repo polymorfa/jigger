@@ -1,0 +1,24 @@
+message StickerPackMessage {
+  optional bytes stickerPackId = 1;
+  optional bytes name = 2;
+  optional bytes publisher = 3;
+  optional Sticker stickers = 4;
+  optional bytes fileLength = 5;
+  optional bytes fileSha256 = 6;
+  optional bytes fileEncSha256 = 7;
+  optional bytes mediaKey = 8;
+  optional bytes directPath = 9;
+  optional bytes caption = 10;
+  optional ContextInfo contextInfo = 11;
+  optional bytes packDescription = 12;
+  optional bytes mediaKeyTimestamp = 13;
+  optional bytes trayIconFileName = 14;
+  optional bytes thumbnailDirectPath = 15;
+  optional bytes thumbnailSha256 = 16;
+  optional bytes thumbnailEncSha256 = 17;
+  optional bytes thumbnailHeight = 18;
+  optional bytes thumbnailWidth = 19;
+  optional bytes imageDataHash = 20;
+  optional bytes stickerPackSize = 21;
+  optional bytes stickerPackOrigin = 22;
+}

@@ -1,0 +1,3 @@
+message PartiallySelectedContent {
+  optional bytes text = 1;
+}

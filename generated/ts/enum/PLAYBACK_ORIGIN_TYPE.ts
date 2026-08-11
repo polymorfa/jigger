@@ -1,0 +1,5 @@
+export enum PLAYBACKORIGINTYPE {
+  CONVERSATION = 1,
+  STATUS = 2,
+  CHANNELS = 3,
+}

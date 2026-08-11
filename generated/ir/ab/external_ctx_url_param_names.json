@@ -1,0 +1,45 @@
+{
+  "id": "ab:external_ctx_url_param_names",
+  "kind": "ab",
+  "name": "external_ctx_url_param_names",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 12726,
+    "type": "string",
+    "default": "partnertoken",
+    "alt_default": "partnertoken"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "external_ctx_url_param_names:\\s*\\[\\s*12726"
+  },
+  "literals": [
+    "external_ctx_url_param_names",
+    "12726"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebExternalCtxConfig"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

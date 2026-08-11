@@ -1,0 +1,4 @@
+message PhoneNumberToLIDMapping {
+  optional bytes pnJid = 1;
+  optional bytes lidJid = 2;
+}

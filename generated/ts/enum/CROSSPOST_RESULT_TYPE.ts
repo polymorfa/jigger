@@ -1,0 +1,5 @@
+export enum CROSSPOSTRESULTTYPE {
+  OK = 1,
+  USER_CANCELED = 2,
+  ERROR = 3,
+}

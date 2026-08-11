@@ -1,0 +1,8 @@
+message Music {
+  optional bytes authorName = 1;
+  optional bytes songId = 2;
+  optional bytes title = 3;
+  optional bytes author = 4;
+  optional bytes artistAttribution = 5;
+  optional bytes isExplicit = 6;
+}

@@ -1,0 +1,39 @@
+{
+  "id": "wam:1166",
+  "kind": "wam",
+  "name": "WebcEmojiOpen",
+  "data": {
+    "kind": "wam",
+    "event_id": 1166,
+    "fields": {
+      "webcEmojiOpenTab": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "webc_emoji_open_tab"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcEmojiOpenWamEvent",
+    "matches": "WebcEmojiOpen:\\s*\\[\\s*1166"
+  },
+  "literals": [
+    "1166"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebGifPanel.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

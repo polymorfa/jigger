@@ -1,0 +1,210 @@
+{
+  "id": "wam:1704",
+  "kind": "wam",
+  "name": "WebcFingerprint",
+  "data": {
+    "kind": "wam",
+    "event_id": 1704,
+    "fields": {
+      "audioFingerprint": {
+        "id": 50,
+        "type": "STRING",
+        "wire": "audio_fingerprint"
+      },
+      "automationSignals": {
+        "id": 51,
+        "type": "STRING",
+        "wire": "automation_signals"
+      },
+      "batteryLevel": {
+        "id": 49,
+        "type": "INTEGER",
+        "wire": "battery_level"
+      },
+      "browserEngine": {
+        "id": 26,
+        "type": "BROWSER_ENGINE_NAME",
+        "wire": "browser_engine",
+        "enum_ref": "BROWSER_ENGINE_NAME"
+      },
+      "chromeStructure": {
+        "id": 52,
+        "type": "STRING",
+        "wire": "chrome_structure"
+      },
+      "connectionRtt": {
+        "id": 37,
+        "type": "INTEGER",
+        "wire": "connection_rtt"
+      },
+      "cpuMake": {
+        "id": 38,
+        "type": "STRING",
+        "wire": "cpu_make"
+      },
+      "deviceMemory": {
+        "id": 39,
+        "type": "STRING",
+        "wire": "device_memory"
+      },
+      "extentionIds": {
+        "id": 27,
+        "type": "STRING",
+        "wire": "extention_ids"
+      },
+      "externalSources": {
+        "id": 36,
+        "type": "STRING",
+        "wire": "external_sources"
+      },
+      "foreignDbList": {
+        "id": 54,
+        "type": "STRING",
+        "wire": "foreign_db_list"
+      },
+      "gpuMake": {
+        "id": 40,
+        "type": "STRING",
+        "wire": "gpu_make"
+      },
+      "hasChrome": {
+        "id": 28,
+        "type": "BOOLEAN",
+        "wire": "has_chrome"
+      },
+      "hasTaskbar": {
+        "id": 29,
+        "type": "BOOLEAN",
+        "wire": "has_taskbar"
+      },
+      "hasWebShare": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "has_web_share"
+      },
+      "historyLength": {
+        "id": 41,
+        "type": "INTEGER",
+        "wire": "history_length"
+      },
+      "mimeTypeCount": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "mime_type_count"
+      },
+      "notificationPermission": {
+        "id": 32,
+        "type": "BOOLEAN",
+        "wire": "notification_permission"
+      },
+      "pdfViewerEnabled": {
+        "id": 33,
+        "type": "BOOLEAN",
+        "wire": "pdf_viewer_enabled"
+      },
+      "peripherals": {
+        "id": 42,
+        "type": "STRING",
+        "wire": "peripherals"
+      },
+      "permissionsConsistency": {
+        "id": 53,
+        "type": "STRING",
+        "wire": "permissions_consistency"
+      },
+      "platformEstimate": {
+        "id": 34,
+        "type": "PLATFORM_NAME",
+        "wire": "platform_estimate",
+        "enum_ref": "PLATFORM_NAME"
+      },
+      "pluginCount": {
+        "id": 35,
+        "type": "INTEGER",
+        "wire": "plugin_count"
+      },
+      "screenResolution": {
+        "id": 43,
+        "type": "STRING",
+        "wire": "screen_resolution"
+      },
+      "sessionStorageLength": {
+        "id": 44,
+        "type": "INTEGER",
+        "wire": "session_storage_length"
+      },
+      "timezone": {
+        "id": 45,
+        "type": "STRING",
+        "wire": "timezone"
+      },
+      "touchPresence": {
+        "id": 46,
+        "type": "BOOLEAN",
+        "wire": "touch_presence"
+      },
+      "viewportSize": {
+        "id": 47,
+        "type": "STRING",
+        "wire": "viewport_size"
+      },
+      "waUlCookie": {
+        "id": 48,
+        "type": "STRING",
+        "wire": "wa_ul_cookie"
+      },
+      "webcCanvasFingerprint": {
+        "id": 25,
+        "type": "STRING",
+        "wire": "webc_canvas_fingerprint"
+      },
+      "webcWebglFingerprint": {
+        "id": 24,
+        "type": "STRING",
+        "wire": "webc_webgl_fingerprint"
+      },
+      "webcWebglRenderer": {
+        "id": 23,
+        "type": "STRING",
+        "wire": "webc_webgl_renderer"
+      },
+      "webcWebglVendor": {
+        "id": 22,
+        "type": "STRING",
+        "wire": "webc_webgl_vendor"
+      },
+      "webcWindowNavigatorWebdriver": {
+        "id": 21,
+        "type": "WEBC_WINDOW_NAVIGATOR_WEBDRIVER_TYPE",
+        "wire": "webc_window_navigator_webdriver",
+        "enum_ref": "WEBC_WINDOW_NAVIGATOR_WEBDRIVER_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcFingerprintWamEvent",
+    "matches": "WebcFingerprint:\\s*\\[\\s*1704"
+  },
+  "literals": [
+    "1704"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBrowserEngineName",
+      "WAWebWamEnumPlatformName",
+      "WAWebWamEnumWebcWindowNavigatorWebdriverType"
+    ],
+    "dependents": [
+      "WAWebWamFingerprintReporter"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

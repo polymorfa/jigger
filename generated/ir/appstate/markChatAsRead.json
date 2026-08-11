@@ -1,0 +1,55 @@
+{
+  "id": "appstate:markChatAsRead",
+  "kind": "appstate",
+  "name": "MarkChatAsRead",
+  "data": {
+    "kind": "appstate",
+    "index_name": "markChatAsRead",
+    "collection": "regular_low",
+    "version": 3,
+    "value_field": "markChatAsReadAction",
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebMarkChatAsReadSync",
+    "matches": "Actions\\.MarkChatAsRead"
+  },
+  "literals": [
+    "markChatAsRead",
+    "MarkChatAsRead",
+    "markChatAsReadAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebApiActiveMessageRanges",
+      "WAWebBackendApi",
+      "WAWebChatUnreadConstants",
+      "WAWebMessageRangeUtils",
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSchemaChat",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdIndexUtils",
+      "WAWebWid",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime",
+      "decodeProtobuf",
+      "encodeProtobuf",
+      "nullthrows"
+    ],
+    "dependents": [
+      "WAWebChatSeenBridge",
+      "WAWebChatSendConversationSeen",
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 20,
+    "dependent_count": 3
+  }
+}

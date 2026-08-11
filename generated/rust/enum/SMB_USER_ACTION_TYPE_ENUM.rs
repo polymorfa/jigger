@@ -1,0 +1,18 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SMBUSERACTIONTYPEENUM {
+    VIEW = 0,
+    CLICK = 1,
+    ENTER = 2,
+    SCROLL = 3,
+    SCAN = 4,
+    API = 5,
+    EDIT = 6,
+    DELETE = 7,
+    SEARCH = 8,
+    DISMISS = 9,
+    VALIDATION = 10,
+    READ = 11,
+    WRITE = 12,
+    SUPPRESS = 13,
+}

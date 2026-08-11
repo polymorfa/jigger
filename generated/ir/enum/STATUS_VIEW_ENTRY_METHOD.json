@@ -1,0 +1,78 @@
+{
+  "id": "enum:STATUS_VIEW_ENTRY_METHOD",
+  "kind": "enum",
+  "name": "STATUS_VIEW_ENTRY_METHOD",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusViewEntryMethod",
+    "variants": [
+      {
+        "name": "FORWARD_TAP",
+        "value": 1.0
+      },
+      {
+        "name": "BACK_TAP",
+        "value": 2.0
+      },
+      {
+        "name": "FORWARD_SWIPE",
+        "value": 3.0
+      },
+      {
+        "name": "BACK_SWIPE",
+        "value": 4.0
+      },
+      {
+        "name": "DIRECT_POG_TAP",
+        "value": 5.0
+      },
+      {
+        "name": "AUTO_NAVIGATE_TIMER_END",
+        "value": 6.0
+      },
+      {
+        "name": "STATUS_WIDGET",
+        "value": 7.0
+      },
+      {
+        "name": "CHAINING_PILL_TAP",
+        "value": 8.0
+      },
+      {
+        "name": "ENGAGEMENT_CARD_CTA_TAP",
+        "value": 9.0
+      },
+      {
+        "name": "MY_STATUSES_SCREEN",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusViewEntryMethod",
+    "matches": "STATUS_VIEW_ENTRY_METHOD\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_VIEW_ENTRY_METHOD",
+    "FORWARD_TAP",
+    "BACK_TAP",
+    "FORWARD_SWIPE",
+    "BACK_SWIPE",
+    "DIRECT_POG_TAP",
+    "AUTO_NAVIGATE_TIMER_END",
+    "STATUS_WIDGET",
+    "CHAINING_PILL_TAP",
+    "ENGAGEMENT_CARD_CTA_TAP",
+    "MY_STATUSES_SCREEN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPlayer.react",
+      "WAWebStatusPostImpressionWamEvent",
+      "WAWebStatusViewer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

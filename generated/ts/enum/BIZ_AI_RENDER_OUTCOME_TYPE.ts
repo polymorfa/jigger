@@ -1,0 +1,5 @@
+export enum BIZAIRENDEROUTCOMETYPE {
+  SUCCESS = 0,
+  FALLBACK = 1,
+  ERROR = 2,
+}

@@ -1,0 +1,44 @@
+{
+  "id": "enum:ENUM_ALL_CONTACTS_NONE",
+  "kind": "enum",
+  "name": "ENUM_ALL_CONTACTS_NONE",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInPrivacyEnums",
+    "variants": [
+      {
+        "name": "all",
+        "value": "all"
+      },
+      {
+        "name": "contacts",
+        "value": "contacts"
+      },
+      {
+        "name": "none",
+        "value": "none"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPrivacyEnums",
+    "matches": "ENUM_ALL_CONTACTS_NONE\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ALL_CONTACTS_NONE",
+    "all",
+    "contacts",
+    "none"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInPrivacyDeprecatedIQErrorResponseOptionalFromMixin",
+      "WASmaxInPrivacyDeprecatedIQResultResponseOptionalFromMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

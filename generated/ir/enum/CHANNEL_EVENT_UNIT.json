@@ -1,0 +1,45 @@
+{
+  "id": "enum:CHANNEL_EVENT_UNIT",
+  "kind": "enum",
+  "name": "CHANNEL_EVENT_UNIT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChannelEventUnit",
+    "variants": [
+      {
+        "name": "RECOMMENDED_CHANNELS",
+        "value": 1.0
+      },
+      {
+        "name": "SIMILAR_CHANNELS",
+        "value": 2.0
+      },
+      {
+        "name": "RECENT_SEARCHES",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChannelEventUnit",
+    "matches": "CHANNEL_EVENT_UNIT\\s*[:=]"
+  },
+  "literals": [
+    "CHANNEL_EVENT_UNIT",
+    "RECOMMENDED_CHANNELS",
+    "SIMILAR_CHANNELS",
+    "RECENT_SEARCHES"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelCoreEventWamEvent",
+      "WAWebChannelDiscoveryVisibilityTrackingWamEvent",
+      "WAWebNewsletterRecommendedV2Item.react",
+      "WAWebNewsletterRecommendedV3.react",
+      "WAWebSimilarNewslettersUnits.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

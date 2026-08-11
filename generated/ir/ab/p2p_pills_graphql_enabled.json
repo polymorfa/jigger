@@ -1,0 +1,42 @@
+{
+  "id": "ab:p2p_pills_graphql_enabled",
+  "kind": "ab",
+  "name": "p2p_pills_graphql_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 30629,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "p2p_pills_graphql_enabled:\\s*\\[\\s*30629"
+  },
+  "literals": [
+    "p2p_pills_graphql_enabled",
+    "30629"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

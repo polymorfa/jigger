@@ -1,0 +1,15 @@
+message SessionStructure {
+  optional bytes sessionVersion = 1;
+  optional bytes localIdentityPublic = 2;
+  optional bytes remoteIdentityPublic = 3;
+  optional bytes rootKey = 4;
+  optional bytes previousCounter = 5;
+  optional Chain senderChain = 6;
+  optional Chain receiverChains = 7;
+  optional PendingKeyExchange pendingKeyExchange = 8;
+  optional PendingPreKey pendingPreKey = 9;
+  optional bytes remoteRegistrationId = 10;
+  optional bytes localRegistrationId = 11;
+  optional bytes needsRefresh = 12;
+  optional bytes aliceBaseKey = 13;
+}

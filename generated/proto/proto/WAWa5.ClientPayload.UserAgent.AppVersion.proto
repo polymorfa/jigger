@@ -1,0 +1,7 @@
+message AppVersion {
+  optional bytes primary = 1;
+  optional bytes secondary = 2;
+  optional bytes tertiary = 3;
+  optional bytes quaternary = 4;
+  optional bytes quinary = 5;
+}

@@ -1,0 +1,188 @@
+{
+  "id": "iq:w:biz:msg_feedback/set/user_feedback",
+  "kind": "iq",
+  "name": "BizMsgUserFeedbackUpdatePreference",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:biz:msg_feedback",
+    "type": "set",
+    "tags": [
+      "user_feedback"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:biz:msg_feedback",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "user_feedback",
+          "attrs": [
+            {
+              "name": "action",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "jid",
+              "ty": "jid",
+              "optional": false
+            },
+            {
+              "name": "feedback",
+              "ty": "string",
+              "optional": true
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxBizMsgUserFeedbackUpdatePreferenceRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInBizMsgUserFeedbackUpdatePreferenceResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "InvalidRequest",
+        "module": "WASmaxInBizMsgUserFeedbackUpdatePreferenceResponseInvalidRequest",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorForbidden",
+          "IQErrorNotAcceptable",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInBizMsgUserFeedbackUpdatePreferenceResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFeatureNotImplemented",
+          "IQErrorInternalServerError"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutBizMsgUserFeedbackUpdatePreferenceRequest",
+    "matches": "smax\\(\"user_feedback\""
+  },
+  "literals": [
+    "w:biz:msg_feedback",
+    "user_feedback"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxJsx",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxBizMsgUserFeedbackUpdatePreferenceRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

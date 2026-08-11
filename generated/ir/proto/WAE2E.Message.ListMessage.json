@@ -1,0 +1,66 @@
+{
+  "id": "proto:WAE2E.Message.ListMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.ListMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "buttonText": {
+        "number": 3
+      },
+      "contextInfo": {
+        "number": 8,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "description": {
+        "number": 2
+      },
+      "footerText": {
+        "number": 7
+      },
+      "listType": {
+        "number": 4
+      },
+      "productListInfo": {
+        "number": 6,
+        "type_name": "WAE2E.Message.ListMessage.ProductListInfo"
+      },
+      "sections": {
+        "number": 5,
+        "type_name": "WAE2E.Message.ListMessage.Section"
+      },
+      "title": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.ListMessage\""
+  },
+  "literals": [
+    "ListMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

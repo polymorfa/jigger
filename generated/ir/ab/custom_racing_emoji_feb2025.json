@@ -1,0 +1,42 @@
+{
+  "id": "ab:custom_racing_emoji_feb2025",
+  "kind": "ab",
+  "name": "custom_racing_emoji_feb2025",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13322,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "custom_racing_emoji_feb2025:\\s*\\[\\s*13322"
+  },
+  "literals": [
+    "custom_racing_emoji_feb2025",
+    "13322"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

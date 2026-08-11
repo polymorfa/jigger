@@ -1,0 +1,9 @@
+export enum PLACEHOLDERTYPE {
+  OTHER = 0,
+  CIPHERTEXT = 1,
+  FANOUT = 2,
+  DOWNGRADE = 3,
+  FIXED_CONTENT = 4,
+  TEMPORARY = 5,
+  DROP = 6,
+}

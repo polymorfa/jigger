@@ -1,0 +1,45 @@
+{
+  "id": "ab:imp_send_signal_post_connect_delay",
+  "kind": "ab",
+  "name": "imp_send_signal_post_connect_delay",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23323,
+    "type": "int",
+    "default": 500,
+    "alt_default": 500
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "imp_send_signal_post_connect_delay:\\s*\\[\\s*23323"
+  },
+  "literals": [
+    "imp_send_signal_post_connect_delay",
+    "23323"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebKmpAbProps"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

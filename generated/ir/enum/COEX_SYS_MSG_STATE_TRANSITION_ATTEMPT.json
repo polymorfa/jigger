@@ -1,0 +1,42 @@
+{
+  "id": "enum:COEX_SYS_MSG_STATE_TRANSITION_ATTEMPT",
+  "kind": "enum",
+  "name": "COEX_SYS_MSG_STATE_TRANSITION_ATTEMPT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCoexSysMsgStateTransitionAttempt",
+    "variants": [
+      {
+        "name": "E2EE_TO_HOSTED",
+        "value": 0.0
+      },
+      {
+        "name": "HOSTED_TO_E2EE",
+        "value": 1.0
+      },
+      {
+        "name": "HOSTED_TO_HOSTED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCoexSysMsgStateTransitionAttempt",
+    "matches": "COEX_SYS_MSG_STATE_TRANSITION_ATTEMPT\\s*[:=]"
+  },
+  "literals": [
+    "COEX_SYS_MSG_STATE_TRANSITION_ATTEMPT",
+    "E2EE_TO_HOSTED",
+    "HOSTED_TO_E2EE",
+    "HOSTED_TO_HOSTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCoexUtils",
+      "WAWebCoexPrivacySysMsgWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

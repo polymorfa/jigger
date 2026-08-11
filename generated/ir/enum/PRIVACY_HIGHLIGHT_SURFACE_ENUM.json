@@ -1,0 +1,99 @@
+{
+  "id": "enum:PRIVACY_HIGHLIGHT_SURFACE_ENUM",
+  "kind": "enum",
+  "name": "PRIVACY_HIGHLIGHT_SURFACE_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPrivacyHighlightSurfaceEnum",
+    "variants": [
+      {
+        "name": "GOLDEN_BOX_CONTACT",
+        "value": 0.0
+      },
+      {
+        "name": "GOLDEN_BOX_GROUP",
+        "value": 1.0
+      },
+      {
+        "name": "GOLDEN_BOX_BROADCAST",
+        "value": 2.0
+      },
+      {
+        "name": "INFO_SCREEN_CONTACT",
+        "value": 3.0
+      },
+      {
+        "name": "INFO_SCREEN_GROUP",
+        "value": 4.0
+      },
+      {
+        "name": "INFO_SCREEN_BROADCAST",
+        "value": 5.0
+      },
+      {
+        "name": "CALLS_LIST",
+        "value": 6.0
+      },
+      {
+        "name": "CHATS_LIST",
+        "value": 7.0
+      },
+      {
+        "name": "STATUS_LIST",
+        "value": 8.0
+      },
+      {
+        "name": "LINKED_DEVICES_SCREEN",
+        "value": 9.0
+      },
+      {
+        "name": "CALLING_SCREEN_AUDIO",
+        "value": 10.0
+      },
+      {
+        "name": "CALLING_SCREEN_VIDEO",
+        "value": 11.0
+      },
+      {
+        "name": "SPLIT_VIEW_HOME_PLACEHOLDER",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPrivacyHighlightSurfaceEnum",
+    "matches": "PRIVACY_HIGHLIGHT_SURFACE_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "PRIVACY_HIGHLIGHT_SURFACE_ENUM",
+    "GOLDEN_BOX_CONTACT",
+    "GOLDEN_BOX_GROUP",
+    "GOLDEN_BOX_BROADCAST",
+    "INFO_SCREEN_CONTACT",
+    "INFO_SCREEN_GROUP",
+    "INFO_SCREEN_BROADCAST",
+    "CALLS_LIST",
+    "CHATS_LIST",
+    "STATUS_LIST",
+    "LINKED_DEVICES_SCREEN",
+    "CALLING_SCREEN_AUDIO",
+    "CALLING_SCREEN_VIDEO",
+    "SPLIT_VIEW_HOME_PLACEHOLDER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCommunityAnnouncementsSection.react",
+      "WAWebE2EInfoModalV2.story",
+      "WAWebE2EMessage.story",
+      "WAWebGroupInfoDrawer.react",
+      "WAWebPrinaUtils",
+      "WAWebPrivacyHighlightDailyUtils",
+      "WAWebPrivacyHighlightDailyWamEvent",
+      "WAWebPrivacyNarrativeE2EMessage.react",
+      "WAWebTasksDailyStatsTask"
+    ],
+    "dep_count": 0,
+    "dependent_count": 9
+  }
+}

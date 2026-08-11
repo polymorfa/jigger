@@ -1,0 +1,11 @@
+export enum STATUSINTERACTIONMESSAGETYPE {
+  LIKE = 1,
+  EMOJI = 2,
+  TEXT = 3,
+  IMAGE = 4,
+  VOICE = 5,
+  STICKER = 6,
+  LOCATION = 7,
+  CONTACT = 8,
+  CAMERA_CAPTURE_IMAGE = 9,
+}

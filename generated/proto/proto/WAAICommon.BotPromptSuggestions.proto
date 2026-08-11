@@ -1,0 +1,3 @@
+message BotPromptSuggestions {
+  optional BotPromptSuggestion suggestions = 1;
+}

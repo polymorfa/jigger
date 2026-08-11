@@ -1,0 +1,45 @@
+{
+  "id": "ab:notification_highlight_group_size_threshold",
+  "kind": "ab",
+  "name": "notification_highlight_group_size_threshold",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11891,
+    "type": "int",
+    "default": 130,
+    "alt_default": 130
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "notification_highlight_group_size_threshold:\\s*\\[\\s*11891"
+  },
+  "literals": [
+    "notification_highlight_group_size_threshold",
+    "11891"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNotifyForUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

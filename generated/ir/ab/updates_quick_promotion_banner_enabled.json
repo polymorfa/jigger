@@ -1,0 +1,45 @@
+{
+  "id": "ab:updates_quick_promotion_banner_enabled",
+  "kind": "ab",
+  "name": "updates_quick_promotion_banner_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13997,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "updates_quick_promotion_banner_enabled:\\s*\\[\\s*13997"
+  },
+  "literals": [
+    "updates_quick_promotion_banner_enabled",
+    "13997"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebQuickPromotionGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

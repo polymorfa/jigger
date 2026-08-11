@@ -1,0 +1,98 @@
+{
+  "id": "enum:WEBC_NAVBAR_ITEM_LABEL",
+  "kind": "enum",
+  "name": "WEBC_NAVBAR_ITEM_LABEL",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcNavbarItemLabel",
+    "variants": [
+      {
+        "name": "CHATS",
+        "value": 1.0
+      },
+      {
+        "name": "COMMUNITIES",
+        "value": 2.0
+      },
+      {
+        "name": "NEWSLETTERS",
+        "value": 3.0
+      },
+      {
+        "name": "STATUS",
+        "value": 4.0
+      },
+      {
+        "name": "STARRED",
+        "value": 5.0
+      },
+      {
+        "name": "ARCHIVED",
+        "value": 6.0
+      },
+      {
+        "name": "SETTINGS_HELP",
+        "value": 7.0
+      },
+      {
+        "name": "SETTINGS",
+        "value": 8.0
+      },
+      {
+        "name": "PROFILE",
+        "value": 9.0
+      },
+      {
+        "name": "ADS_CREATION",
+        "value": 10.0
+      },
+      {
+        "name": "BUSINESS_TOOLS",
+        "value": 11.0
+      },
+      {
+        "name": "UPDATES",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcNavbarItemLabel",
+    "matches": "WEBC_NAVBAR_ITEM_LABEL\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_NAVBAR_ITEM_LABEL",
+    "CHATS",
+    "COMMUNITIES",
+    "NEWSLETTERS",
+    "STATUS",
+    "STARRED",
+    "ARCHIVED",
+    "SETTINGS_HELP",
+    "SETTINGS",
+    "PROFILE",
+    "ADS_CREATION",
+    "BUSINESS_TOOLS",
+    "UPDATES"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBetaNavBarItem.react",
+      "WAWebBizAdCreationNavBarItem.react",
+      "WAWebBizToolsNavBarItem.react",
+      "WAWebChatsNavBarItem.react",
+      "WAWebCommunitiesNavBarItem.react",
+      "WAWebMeTabNavBarItem.react",
+      "WAWebMetaBotNavBarItem.react",
+      "WAWebNewslettersNavBarItem.react",
+      "WAWebProfileNavBarItem.react",
+      "WAWebSettingsNavBarItem.react",
+      "WAWebStatusNavBarItem.react",
+      "WAWebWebcNavbarWamEvent",
+      "WAWebWindowsArchivedChatsNavBarItem.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 13
+  }
+}

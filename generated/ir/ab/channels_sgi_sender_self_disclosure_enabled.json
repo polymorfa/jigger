@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_sgi_sender_self_disclosure_enabled",
+  "kind": "ab",
+  "name": "channels_sgi_sender_self_disclosure_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32990,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_sgi_sender_self_disclosure_enabled:\\s*\\[\\s*32990"
+  },
+  "literals": [
+    "channels_sgi_sender_self_disclosure_enabled",
+    "32990"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

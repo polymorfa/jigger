@@ -1,0 +1,2 @@
+// ABChannelsAdminProfilesForwardingToChatsEnabled is A/B property 23170 (bool), default false.
+const ABChannelsAdminProfilesForwardingToChatsEnabled = "channels_admin_profiles_forwarding_to_chats_enabled"

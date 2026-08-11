@@ -1,0 +1,42 @@
+{
+  "id": "ab:ctwa_3pd_aggregated_call_logging_allowed",
+  "kind": "ab",
+  "name": "ctwa_3pd_aggregated_call_logging_allowed",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32379,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_3pd_aggregated_call_logging_allowed:\\s*\\[\\s*32379"
+  },
+  "literals": [
+    "ctwa_3pd_aggregated_call_logging_allowed",
+    "32379"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

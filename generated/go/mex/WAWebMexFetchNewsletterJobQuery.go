@@ -1,0 +1,2 @@
+// WAWebMexFetchNewsletterJobQuery is the persisted query. Variables: fetch_creation_time, fetch_full_image, fetch_pinned_messages, fetch_status_metadata, fetch_viewer_metadata, fetch_wamo_sub, input
+const MexWAWebMexFetchNewsletterJobQuery = "27456920720571478"

@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_biz_ai_lists_pills",
+  "kind": "ab",
+  "name": "smb_biz_ai_lists_pills",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28470,
+    "type": "string",
+    "default": "None",
+    "alt_default": "None"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_biz_ai_lists_pills:\\s*\\[\\s*28470"
+  },
+  "literals": [
+    "smb_biz_ai_lists_pills",
+    "28470"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

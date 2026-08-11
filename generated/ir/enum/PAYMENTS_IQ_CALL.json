@@ -1,0 +1,41 @@
+{
+  "id": "enum:PAYMENTS_IQ_CALL",
+  "kind": "enum",
+  "name": "PAYMENTS_IQ_CALL",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaymentsIqCall",
+    "variants": [
+      {
+        "name": "REQUEST",
+        "value": 0.0
+      },
+      {
+        "name": "FAILURE_RESPONSE",
+        "value": 1.0
+      },
+      {
+        "name": "SUCCESS_RESPONSE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaymentsIqCall",
+    "matches": "PAYMENTS_IQ_CALL\\s*[:=]"
+  },
+  "literals": [
+    "PAYMENTS_IQ_CALL",
+    "REQUEST",
+    "FAILURE_RESPONSE",
+    "SUCCESS_RESPONSE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPaymentsUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

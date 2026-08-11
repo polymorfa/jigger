@@ -1,0 +1,6 @@
+message Mention {
+  optional bytes mentionType = 1;
+  optional bytes mentionedJid = 2;
+  optional bytes offset = 3;
+  optional bytes length = 4;
+}

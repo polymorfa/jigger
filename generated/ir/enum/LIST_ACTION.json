@@ -1,0 +1,89 @@
+{
+  "id": "enum:LIST_ACTION",
+  "kind": "enum",
+  "name": "LIST_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumListAction",
+    "variants": [
+      {
+        "name": "CREATE",
+        "value": 1.0
+      },
+      {
+        "name": "DELETE",
+        "value": 2.0
+      },
+      {
+        "name": "UNDELETE",
+        "value": 3.0
+      },
+      {
+        "name": "RENAME",
+        "value": 4.0
+      },
+      {
+        "name": "UPDATE_MEMBERS",
+        "value": 5.0
+      },
+      {
+        "name": "MUTE",
+        "value": 6.0
+      },
+      {
+        "name": "UNMUTE",
+        "value": 7.0
+      },
+      {
+        "name": "HIDE",
+        "value": 8.0
+      },
+      {
+        "name": "UNHIDE",
+        "value": 9.0
+      },
+      {
+        "name": "REORDER",
+        "value": 10.0
+      },
+      {
+        "name": "BUCKET_MIGRATION_DONE",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumListAction",
+    "matches": "LIST_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "LIST_ACTION",
+    "CREATE",
+    "DELETE",
+    "UNDELETE",
+    "RENAME",
+    "UPDATE_MEMBERS",
+    "MUTE",
+    "UNMUTE",
+    "HIDE",
+    "UNHIDE",
+    "REORDER",
+    "BUCKET_MIGRATION_DONE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizLabelEditModal.react",
+      "WAWebBizManageLabelModal.react",
+      "WAWebCreateOrEditListDrawer.react",
+      "WAWebLabelEditInput.react",
+      "WAWebLabelsLabelListItem.react",
+      "WAWebListSubmenuContent.react",
+      "WAWebListUpdateUserJourneyWamEvent",
+      "WAWebListUpdateWamEvent",
+      "WAWebListsActions"
+    ],
+    "dep_count": 0,
+    "dependent_count": 9
+  }
+}

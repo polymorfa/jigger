@@ -1,0 +1,37 @@
+{
+  "id": "enum:WEBC_SOCKET_CONNECT_REASON_TYPE",
+  "kind": "enum",
+  "name": "WEBC_SOCKET_CONNECT_REASON_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcSocketConnectReasonType",
+    "variants": [
+      {
+        "name": "PAGE_LOAD",
+        "value": 0.0
+      },
+      {
+        "name": "RECONNECT",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcSocketConnectReasonType",
+    "matches": "WEBC_SOCKET_CONNECT_REASON_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_SOCKET_CONNECT_REASON_TYPE",
+    "PAGE_LOAD",
+    "RECONNECT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebOpenChatSocket",
+      "WAWebWebcSocketConnectWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

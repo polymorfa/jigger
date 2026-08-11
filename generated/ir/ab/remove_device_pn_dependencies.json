@@ -1,0 +1,42 @@
+{
+  "id": "ab:remove_device_pn_dependencies",
+  "kind": "ab",
+  "name": "remove_device_pn_dependencies",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27791,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "remove_device_pn_dependencies:\\s*\\[\\s*27791"
+  },
+  "literals": [
+    "remove_device_pn_dependencies",
+    "27791"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

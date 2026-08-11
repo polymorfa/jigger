@@ -1,0 +1,8 @@
+message StatusPrivacyAction {
+  optional bytes mode = 1;
+  optional bytes userJid = 2;
+  optional bytes shareToFb = 3;
+  optional bytes shareToIg = 4;
+  optional CustomList customLists = 5;
+  optional bytes modes = 6;
+}

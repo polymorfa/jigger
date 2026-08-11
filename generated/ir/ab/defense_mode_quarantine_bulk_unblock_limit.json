@@ -1,0 +1,42 @@
+{
+  "id": "ab:defense_mode_quarantine_bulk_unblock_limit",
+  "kind": "ab",
+  "name": "defense_mode_quarantine_bulk_unblock_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21921,
+    "type": "int",
+    "default": 50,
+    "alt_default": 50
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "defense_mode_quarantine_bulk_unblock_limit:\\s*\\[\\s*21921"
+  },
+  "literals": [
+    "defense_mode_quarantine_bulk_unblock_limit",
+    "21921"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

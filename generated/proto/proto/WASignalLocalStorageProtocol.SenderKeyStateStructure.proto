@@ -1,0 +1,6 @@
+message SenderKeyStateStructure {
+  optional bytes senderKeyId = 1;
+  optional SenderChainKey senderChainKey = 2;
+  optional SenderSigningKey senderSigningKey = 3;
+  optional SenderMessageKey senderMessageKeys = 4;
+}

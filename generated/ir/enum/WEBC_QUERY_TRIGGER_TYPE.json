@@ -1,0 +1,49 @@
+{
+  "id": "enum:WEBC_QUERY_TRIGGER_TYPE",
+  "kind": "enum",
+  "name": "WEBC_QUERY_TRIGGER_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcQueryTriggerType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "USER_SCROLL",
+        "value": 1.0
+      },
+      {
+        "name": "NEW_MESSAGE_PREFETCH",
+        "value": 2.0
+      },
+      {
+        "name": "SEARCH_RESULT_CLICK",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcQueryTriggerType",
+    "matches": "WEBC_QUERY_TRIGGER_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_QUERY_TRIGGER_TYPE",
+    "UNKNOWN",
+    "USER_SCROLL",
+    "NEW_MESSAGE_PREFETCH",
+    "SEARCH_RESULT_CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatLoadMessages",
+      "WAWebChatMessageSearch",
+      "WAWebHandleNewMsgAction",
+      "WAWebWebcMessageQueryWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

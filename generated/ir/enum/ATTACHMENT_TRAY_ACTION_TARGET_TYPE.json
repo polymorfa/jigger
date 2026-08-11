@@ -1,0 +1,142 @@
+{
+  "id": "enum:ATTACHMENT_TRAY_ACTION_TARGET_TYPE",
+  "kind": "enum",
+  "name": "ATTACHMENT_TRAY_ACTION_TARGET_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAttachmentTrayActionTargetType",
+    "variants": [
+      {
+        "name": "ATTACHMENT_TRAY",
+        "value": 1.0
+      },
+      {
+        "name": "DOCUMENT",
+        "value": 2.0
+      },
+      {
+        "name": "CAMERA",
+        "value": 3.0
+      },
+      {
+        "name": "CAMERA_LIBRARY",
+        "value": 4.0
+      },
+      {
+        "name": "GALLERY",
+        "value": 5.0
+      },
+      {
+        "name": "PHOTO_AND_VIDEO_LIBRARY",
+        "value": 6.0
+      },
+      {
+        "name": "AUDIO",
+        "value": 7.0
+      },
+      {
+        "name": "LOCATION",
+        "value": 8.0
+      },
+      {
+        "name": "CONTACT",
+        "value": 9.0
+      },
+      {
+        "name": "POLL",
+        "value": 10.0
+      },
+      {
+        "name": "PAYMENT",
+        "value": 11.0
+      },
+      {
+        "name": "SHOP",
+        "value": 12.0
+      },
+      {
+        "name": "ORDER",
+        "value": 13.0
+      },
+      {
+        "name": "CATALOG",
+        "value": 14.0
+      },
+      {
+        "name": "QUICK_REPLY",
+        "value": 15.0
+      },
+      {
+        "name": "STICKER_MAKER",
+        "value": 16.0
+      },
+      {
+        "name": "IMAGINE_EDIT",
+        "value": 17.0
+      },
+      {
+        "name": "EVENT_CREATION",
+        "value": 18.0
+      },
+      {
+        "name": "CALL_LINK_CREATION",
+        "value": 19.0
+      },
+      {
+        "name": "SHARE_UPI_QR",
+        "value": 20.0
+      },
+      {
+        "name": "MUSIC",
+        "value": 21.0
+      },
+      {
+        "name": "DRAWING",
+        "value": 22.0
+      },
+      {
+        "name": "EVENT_V2_CREATION",
+        "value": 23.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAttachmentTrayActionTargetType",
+    "matches": "ATTACHMENT_TRAY_ACTION_TARGET_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ATTACHMENT_TRAY_ACTION_TARGET_TYPE",
+    "ATTACHMENT_TRAY",
+    "DOCUMENT",
+    "CAMERA",
+    "CAMERA_LIBRARY",
+    "GALLERY",
+    "PHOTO_AND_VIDEO_LIBRARY",
+    "AUDIO",
+    "LOCATION",
+    "CONTACT",
+    "POLL",
+    "PAYMENT",
+    "SHOP",
+    "ORDER",
+    "CATALOG",
+    "QUICK_REPLY",
+    "STICKER_MAKER",
+    "IMAGINE_EDIT",
+    "EVENT_CREATION",
+    "CALL_LINK_CREATION",
+    "SHARE_UPI_QR",
+    "MUSIC",
+    "DRAWING",
+    "EVENT_V2_CREATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAttachmentMenuLogger",
+      "WAWebAttachmentTrayActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

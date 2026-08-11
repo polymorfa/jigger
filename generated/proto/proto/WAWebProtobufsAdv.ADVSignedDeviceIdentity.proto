@@ -1,0 +1,6 @@
+message ADVSignedDeviceIdentity {
+  optional bytes details = 1;
+  optional bytes accountSignatureKey = 2;
+  optional bytes accountSignature = 3;
+  optional bytes deviceSignature = 4;
+}

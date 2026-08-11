@@ -1,0 +1,45 @@
+{
+  "id": "enum:ENTRY_POINT_CONVERSATION_INITIATED",
+  "kind": "enum",
+  "name": "ENTRY_POINT_CONVERSATION_INITIATED",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEntryPointConversationInitiated",
+    "variants": [
+      {
+        "name": "BUSINESS_INITIATED",
+        "value": 0.0
+      },
+      {
+        "name": "CONSUMER_INITIATED",
+        "value": 1.0
+      },
+      {
+        "name": "NO_MESSAGES_LAST_24H",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEntryPointConversationInitiated",
+    "matches": "ENTRY_POINT_CONVERSATION_INITIATED\\s*[:=]"
+  },
+  "literals": [
+    "ENTRY_POINT_CONVERSATION_INITIATED",
+    "BUSINESS_INITIATED",
+    "CONSUMER_INITIATED",
+    "NO_MESSAGES_LAST_24H"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCatalogViewWamEvent",
+      "WAWebExtensionScreenProgressWamEvent",
+      "WAWebExtensionsStructuredMessageInteractionWamEvent",
+      "WAWebStructuredMessageReceiveWamEvent",
+      "WAWebTsNavigationWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

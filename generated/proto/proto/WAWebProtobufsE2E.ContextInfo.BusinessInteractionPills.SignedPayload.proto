@@ -1,0 +1,4 @@
+message SignedPayload {
+  optional bytes verifiedName = 1;
+  optional Pill pills = 2;
+}

@@ -1,0 +1,5 @@
+export enum STICKERSENDMESSAGETYPE {
+  REGULAR = 1,
+  PAYMENTS = 2,
+  ANNOTATION = 3,
+}

@@ -1,0 +1,108 @@
+{
+  "id": "enum:FAVORITES_UPDATE_ENTRY_POINT",
+  "kind": "enum",
+  "name": "FAVORITES_UPDATE_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumFavoritesUpdateEntryPoint",
+    "variants": [
+      {
+        "name": "CONTACT_INFO",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP_INFO",
+        "value": 2.0
+      },
+      {
+        "name": "CHAT_MORE_OPTIONS",
+        "value": 3.0
+      },
+      {
+        "name": "CHAT_LONG_PRESS_OPTIONS",
+        "value": 4.0
+      },
+      {
+        "name": "MESSAGE_FAVORITES_CONTACT_PICKER",
+        "value": 5.0
+      },
+      {
+        "name": "FAVORITE_SETTINGS",
+        "value": 6.0
+      },
+      {
+        "name": "FILTER_CONTEXT_MENU",
+        "value": 7.0
+      },
+      {
+        "name": "FILTER_EMPTY_STATE_ACTION",
+        "value": 8.0
+      },
+      {
+        "name": "FILTER_MANAGE_FAVORITE_ACTION",
+        "value": 9.0
+      },
+      {
+        "name": "CALLING_TAB_FAVORITE_PICKER",
+        "value": 10.0
+      },
+      {
+        "name": "CALLING_TAB_FAVORITE_EDIT",
+        "value": 11.0
+      },
+      {
+        "name": "CHAT_CONTEXT_MENU",
+        "value": 12.0
+      },
+      {
+        "name": "CHAT_HEADER_CONTEXT_MENU",
+        "value": 13.0
+      },
+      {
+        "name": "CALL_LOG_LONG_PRESS_OPTIONS",
+        "value": 14.0
+      },
+      {
+        "name": "CALL_LOG_MORE_OPTIONS",
+        "value": 15.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumFavoritesUpdateEntryPoint",
+    "matches": "FAVORITES_UPDATE_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "FAVORITES_UPDATE_ENTRY_POINT",
+    "CONTACT_INFO",
+    "GROUP_INFO",
+    "CHAT_MORE_OPTIONS",
+    "CHAT_LONG_PRESS_OPTIONS",
+    "MESSAGE_FAVORITES_CONTACT_PICKER",
+    "FAVORITE_SETTINGS",
+    "FILTER_CONTEXT_MENU",
+    "FILTER_EMPTY_STATE_ACTION",
+    "FILTER_MANAGE_FAVORITE_ACTION",
+    "CALLING_TAB_FAVORITE_PICKER",
+    "CALLING_TAB_FAVORITE_EDIT",
+    "CHAT_CONTEXT_MENU",
+    "CHAT_HEADER_CONTEXT_MENU",
+    "CALL_LOG_LONG_PRESS_OPTIONS",
+    "CALL_LOG_MORE_OPTIONS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAddToFavoritesModal.react",
+      "WAWebChatContextMenu",
+      "WAWebChatInfoFavoritesSection.react",
+      "WAWebContactMenuDropdown.react",
+      "WAWebConversationMenus",
+      "WAWebCreateOrEditListDrawer.react",
+      "WAWebMessagingFavoritesUpdateWamEvent",
+      "WAWebVoipCallsTabDrawerFavorites.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

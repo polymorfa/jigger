@@ -1,0 +1,39 @@
+{
+  "id": "appstate:nct_salt_sync",
+  "kind": "appstate",
+  "name": "NctSaltSync",
+  "data": {
+    "kind": "appstate",
+    "index_name": "nct_salt_sync",
+    "collection": "regular_high",
+    "version": 1,
+    "value_field": "nctSaltSyncAction"
+  },
+  "evidence": {
+    "module": "WAWebNctSaltSync",
+    "matches": "Actions\\.NctSaltSync"
+  },
+  "literals": [
+    "nct_salt_sync",
+    "NctSaltSync",
+    "nctSaltSyncAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WABase64",
+      "WALogger",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebUserPrefsIndexedDBStorage",
+      "WAWebUserPrefsKeys",
+      "asyncToGeneratorRuntime",
+      "countWhere"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

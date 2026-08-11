@@ -1,0 +1,42 @@
+{
+  "id": "ab:username_key_min_length",
+  "kind": "ab",
+  "name": "username_key_min_length",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34347,
+    "type": "int",
+    "default": 4,
+    "alt_default": 4
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_key_min_length:\\s*\\[\\s*34347"
+  },
+  "literals": [
+    "username_key_min_length",
+    "34347"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

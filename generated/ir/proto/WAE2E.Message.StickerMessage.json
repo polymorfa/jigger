@@ -1,0 +1,106 @@
+{
+  "id": "proto:WAE2E.Message.StickerMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.StickerMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilityLabel": {
+        "number": 22
+      },
+      "contextInfo": {
+        "number": 17,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "directPath": {
+        "number": 8
+      },
+      "emojis": {
+        "number": 25
+      },
+      "fileEncSha256": {
+        "number": 3
+      },
+      "fileLength": {
+        "number": 9
+      },
+      "fileSha256": {
+        "number": 2
+      },
+      "firstFrameLength": {
+        "number": 11
+      },
+      "firstFrameSidecar": {
+        "number": 12
+      },
+      "height": {
+        "number": 6
+      },
+      "isAiSticker": {
+        "number": 20
+      },
+      "isAnimated": {
+        "number": 13
+      },
+      "isAvatar": {
+        "number": 19
+      },
+      "isLottie": {
+        "number": 21
+      },
+      "mediaKey": {
+        "number": 4
+      },
+      "mediaKeyTimestamp": {
+        "number": 10
+      },
+      "mimetype": {
+        "number": 5
+      },
+      "pngThumbnail": {
+        "number": 16
+      },
+      "premium": {
+        "number": 24
+      },
+      "stickerSentTs": {
+        "number": 18
+      },
+      "url": {
+        "number": 1
+      },
+      "width": {
+        "number": 7
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.StickerMessage\""
+  },
+  "literals": [
+    "StickerMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

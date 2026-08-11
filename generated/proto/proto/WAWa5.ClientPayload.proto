@@ -1,0 +1,28 @@
+message ClientPayload {
+  optional bytes username = 1;
+  optional bytes passive = 3;
+  optional UserAgent userAgent = 5;
+  optional WebInfo webInfo = 6;
+  optional bytes pushName = 7;
+  optional bytes sessionId = 9;
+  optional bytes shortConnect = 10;
+  optional bytes connectType = 12;
+  optional bytes connectReason = 13;
+  optional bytes shards = 14;
+  optional DNSSource dnsSource = 15;
+  optional bytes connectAttemptCount = 16;
+  optional bytes device = 18;
+  optional DevicePairingRegistrationData devicePairingData = 19;
+  optional bytes product = 20;
+  optional bytes fbCat = 21;
+  optional bytes fbUserAgent = 22;
+  optional bytes oc = 23;
+  optional bytes lc = 24;
+  optional bytes iosAppExtension = 30;
+  optional bytes fbAppId = 31;
+  optional bytes fbDeviceId = 32;
+  optional bytes pull = 33;
+  optional bytes paddingBytes = 34;
+  optional bytes yearClass = 36;
+  optional bytes memClass = 37;
+}

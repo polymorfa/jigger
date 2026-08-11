@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebACSServerProviderIssuanceMutation",
+  "kind": "mex",
+  "name": "WAWebACSServerProviderIssuanceMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26039599689054760",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation ACSServerProviderIssuanceMutation($input) {\n  xwa_wa_acs_issue_credentials {\n    success\n    creds {\n      evaluation {\n        data\n        proof {\n          c\n          s\n          error_message\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebACSServerProviderIssuanceMutation.graphql",
+    "matches": "id: \"26039599689054760\""
+  },
+  "literals": [
+    "26039599689054760",
+    "WAWebACSServerProviderIssuanceMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebACSServerProvider"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

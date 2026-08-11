@@ -1,0 +1,95 @@
+{
+  "id": "wam:4264",
+  "kind": "wam",
+  "name": "CtwaOrderSignal",
+  "data": {
+    "kind": "wam",
+    "event_id": 4264,
+    "fields": {
+      "ctwaOrderSignalVersion": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "ctwa_order_signal_version"
+      },
+      "ctwaSignalMetadata": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "ctwa_signal_metadata"
+      },
+      "customerAdsSharingSettingEnabled": {
+        "id": 11,
+        "type": "CUSTOMER_ADS_SHARING_SETTING_ENABLED",
+        "wire": "customer_ads_sharing_setting_enabled",
+        "enum_ref": "CUSTOMER_ADS_SHARING_SETTING_ENABLED"
+      },
+      "deepLinkConversionData": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "deep_link_conversion_data"
+      },
+      "deepLinkConversionSource": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "deep_link_conversion_source"
+      },
+      "eventSharingSettingEnabled": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "event_sharing_setting_enabled"
+      },
+      "globalSharingSettingEnabled": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "global_sharing_setting_enabled"
+      },
+      "orderPaid": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "order_paid"
+      },
+      "orderSignalType": {
+        "id": 6,
+        "type": "ORDER_SIGNAL_TYPE",
+        "wire": "order_signal_type",
+        "enum_ref": "ORDER_SIGNAL_TYPE"
+      },
+      "orderStatus": {
+        "id": 7,
+        "type": "ORDER_STATUS",
+        "wire": "order_status",
+        "enum_ref": "ORDER_STATUS"
+      },
+      "threadIdHmac": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCtwaOrderSignalWamEvent",
+    "matches": "CtwaOrderSignal:\\s*\\[\\s*4264"
+  },
+  "literals": [
+    "4264"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCustomerAdsSharingSettingEnabled",
+      "WAWebWamEnumOrderSignalType",
+      "WAWebWamEnumOrderStatus"
+    ],
+    "dependents": [
+      "WAWebSmbMarkAsXOrderAction"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

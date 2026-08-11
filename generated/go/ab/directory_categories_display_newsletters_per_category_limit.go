@@ -1,0 +1,2 @@
+// ABDirectoryCategoriesDisplayNewslettersPerCategoryLimit is A/B property 9312 (int), default 4.
+const ABDirectoryCategoriesDisplayNewslettersPerCategoryLimit = "directory_categories_display_newsletters_per_category_limit"

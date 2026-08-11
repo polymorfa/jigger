@@ -1,0 +1,3 @@
+message LinkCta {
+  optional UkOsaAdminText ukOsaAdminText = 1;
+}

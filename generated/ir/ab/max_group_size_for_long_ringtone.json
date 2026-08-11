@@ -1,0 +1,42 @@
+{
+  "id": "ab:max_group_size_for_long_ringtone",
+  "kind": "ab",
+  "name": "max_group_size_for_long_ringtone",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4710,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "max_group_size_for_long_ringtone:\\s*\\[\\s*4710"
+  },
+  "literals": [
+    "max_group_size_for_long_ringtone",
+    "4710"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

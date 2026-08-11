@@ -1,0 +1,35 @@
+{
+  "id": "sig:notification/identity",
+  "kind": "sig",
+  "name": "PreKeysNotificationContactIDChangedRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "identity"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPreKeysNotificationContactIDChangedRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "identity"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInPreKeysCloudAPIGroupListMixin",
+      "WASmaxInPreKeysNotificationContactIDChangedLIDAttrOrDisplayNameMixinGroup",
+      "WASmaxInPreKeysServerNotificationMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxPreKeysNotificationContactIDChangedRPC"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

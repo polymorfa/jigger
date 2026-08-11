@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_rich_response_forward_sending_enabled",
+  "kind": "ab",
+  "name": "ai_rich_response_forward_sending_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16681,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_rich_response_forward_sending_enabled:\\s*\\[\\s*16681"
+  },
+  "literals": [
+    "ai_rich_response_forward_sending_enabled",
+    "16681"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotBaseGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

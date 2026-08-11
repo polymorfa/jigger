@@ -1,0 +1,6 @@
+export enum CAMERASTARTMODEPARAMS {
+  DEFAULT = 0,
+  CONSERVATIVE = 1,
+  STRICT = 2,
+  ERROR = 11,
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_media_image_upload_cache",
+  "kind": "ab",
+  "name": "wa_media_image_upload_cache",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22784,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_media_image_upload_cache:\\s*\\[\\s*22784"
+  },
+  "literals": [
+    "wa_media_image_upload_cache",
+    "22784"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPREGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

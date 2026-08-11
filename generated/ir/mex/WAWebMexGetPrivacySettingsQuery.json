@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexGetPrivacySettingsQuery",
+  "kind": "mex",
+  "name": "WAWebMexGetPrivacySettingsQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25637004609323493",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_fetch_wa_users",
+    "document": "query MexGetPrivacySettingsQuery($input) {\n  privacy_settings {\n    settings {\n      feature\n      setting\n      xwa2_fetch_wa_users {\n        xwa2_fetch_wa_users {\n          __typename\n          id\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexGetPrivacySettingsQuery.graphql",
+    "matches": "id: \"25637004609323493\""
+  },
+  "literals": [
+    "25637004609323493",
+    "WAWebMexGetPrivacySettingsQuery",
+    "xwa2_fetch_wa_users"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGetPrivacySetting"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

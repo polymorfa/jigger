@@ -1,0 +1,14 @@
+message CtwaContextData {
+  optional bytes conversionSource = 1;
+  optional bytes conversionData = 2;
+  optional bytes sourceUrl = 3;
+  optional bytes sourceId = 4;
+  optional bytes sourceType = 5;
+  optional bytes title = 6;
+  optional bytes description = 7;
+  optional bytes thumbnail = 8;
+  optional bytes thumbnailUrl = 9;
+  optional bytes mediaType = 10;
+  optional bytes mediaUrl = 11;
+  optional bytes isSuspiciousLink = 12;
+}

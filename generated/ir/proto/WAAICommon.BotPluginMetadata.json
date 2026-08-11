@@ -1,0 +1,66 @@
+{
+  "id": "proto:WAAICommon.BotPluginMetadata",
+  "kind": "proto",
+  "name": "WAAICommon.BotPluginMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "deprecatedField": {
+        "number": 11
+      },
+      "expectedLinksCount": {
+        "number": 7
+      },
+      "faviconCdnUrl": {
+        "number": 13
+      },
+      "parentPluginMessageKey": {
+        "number": 10
+      },
+      "parentPluginType": {
+        "number": 12
+      },
+      "pluginType": {
+        "number": 2
+      },
+      "profilePhotoCdnUrl": {
+        "number": 4
+      },
+      "provider": {
+        "number": 1
+      },
+      "referenceIndex": {
+        "number": 6
+      },
+      "searchProviderUrl": {
+        "number": 5
+      },
+      "searchQuery": {
+        "number": 9
+      },
+      "thumbnailCdnUrl": {
+        "number": 3
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotPluginMetadata\""
+  },
+  "literals": [
+    "BotPluginMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

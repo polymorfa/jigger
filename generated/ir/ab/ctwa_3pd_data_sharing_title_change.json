@@ -1,0 +1,45 @@
+{
+  "id": "ab:ctwa_3pd_data_sharing_title_change",
+  "kind": "ab",
+  "name": "ctwa_3pd_data_sharing_title_change",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29332,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_3pd_data_sharing_title_change:\\s*\\[\\s*29332"
+  },
+  "literals": [
+    "ctwa_3pd_data_sharing_title_change",
+    "29332"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCTWAGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "wam:6390",
+  "kind": "wam",
+  "name": "LimitSharingSettingUpdate",
+  "data": {
+    "kind": "wam",
+    "event_id": 6390,
+    "fields": {
+      "opusAction": {
+        "id": 3,
+        "type": "OPUS_ACTION",
+        "wire": "opus_action",
+        "enum_ref": "OPUS_ACTION"
+      },
+      "threadId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "thread_id"
+      },
+      "toggleUpdateAction": {
+        "id": 2,
+        "type": "TOGGLE_UPDATE_ACTION",
+        "wire": "toggle_update_action",
+        "enum_ref": "TOGGLE_UPDATE_ACTION"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebLimitSharingSettingUpdateWamEvent",
+    "matches": "LimitSharingSettingUpdate:\\s*\\[\\s*6390"
+  },
+  "literals": [
+    "6390"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumOpusAction",
+      "WAWebWamEnumToggleUpdateAction"
+    ],
+    "dependents": [
+      "WAWebLimitSharingUIUtils"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

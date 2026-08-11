@@ -1,0 +1,12 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PAYMENTSVERIFYCARDRESULTTYPE {
+    OK = 1,
+    ERRORGENERIC = 2,
+    DEBITCARDINVALID = 3,
+    EXPIRATIONINPAST = 4,
+    EXPIRATIONEMPTY = 5,
+    EXPIRATIONINVALID = 6,
+    MONTHINVALID = 7,
+    YEARINVALID = 8,
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebWaffleXEQuery",
+  "kind": "mex",
+  "name": "WAWebWaffleXEQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "32172601809054525",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "document": "mutation WaffleXEQuery($input) {\n  waffle_xas {\n    waffle_xan\n    waffle_xs\n    waffle_xe_root {\n      purpose_public_keys {\n        purpose_public_ek\n        purpose_public_ik\n        purpose_public_ik_sig\n        purpose_public_ik_enc_certificate\n        purpose_dummy_ciphertext\n        purpose_dummy_nonce\n        waffle_unique_ids\n        waffle_d {\n          waffle_di\n          waffle_xps {\n            waffle_hcbc\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebWaffleXEQuery.graphql",
+    "matches": "id: \"32172601809054525\""
+  },
+  "literals": [
+    "32172601809054525",
+    "WAWebWaffleXEQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWaffleXEQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

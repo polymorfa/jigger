@@ -1,0 +1,56 @@
+{
+  "id": "enum:DOWNLOAD_QUALITY_TYPE",
+  "kind": "enum",
+  "name": "DOWNLOAD_QUALITY_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDownloadQualityType",
+    "variants": [
+      {
+        "name": "NORMAL_QUALITY",
+        "value": 1.0
+      },
+      {
+        "name": "MID_QUALITY",
+        "value": 2.0
+      },
+      {
+        "name": "INELIGIBLE_IMAGE_TOO_SMALL",
+        "value": 3.0
+      },
+      {
+        "name": "INELIGIBLE_PARTIAL_HASHES_NOT_FOUND",
+        "value": 4.0
+      },
+      {
+        "name": "ERROR_DETERMINING_ELIGIBILITY",
+        "value": 5.0
+      },
+      {
+        "name": "NOT_DOWNLOADED_ENOUGH_BYTES_TO_DETERMINE_ELIGIBILITY",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDownloadQualityType",
+    "matches": "DOWNLOAD_QUALITY_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DOWNLOAD_QUALITY_TYPE",
+    "NORMAL_QUALITY",
+    "MID_QUALITY",
+    "INELIGIBLE_IMAGE_TOO_SMALL",
+    "INELIGIBLE_PARTIAL_HASHES_NOT_FOUND",
+    "ERROR_DETERMINING_ELIGIBILITY",
+    "NOT_DOWNLOADED_ENOUGH_BYTES_TO_DETERMINE_ELIGIBILITY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaDownload2WamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

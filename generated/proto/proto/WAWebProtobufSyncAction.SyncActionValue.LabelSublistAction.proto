@@ -1,0 +1,3 @@
+message LabelSublistAction {
+  optional bytes subListId = 1;
+}

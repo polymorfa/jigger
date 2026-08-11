@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_contact_manager_sublist_enabled",
+  "kind": "ab",
+  "name": "smb_contact_manager_sublist_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33708,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_contact_manager_sublist_enabled:\\s*\\[\\s*33708"
+  },
+  "literals": [
+    "smb_contact_manager_sublist_enabled",
+    "33708"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebContactManagerGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

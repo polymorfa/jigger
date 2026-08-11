@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterIsDomainPreviewableJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterIsDomainPreviewableJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9849510985088294",
+    "operation": "query",
+    "variables": [
+      "url_domains"
+    ],
+    "root_field": "xwa2_newsletter_message_integrity",
+    "document": "query MexFetchNewsletterIsDomainPreviewableJobQuery($url_domains) {\n  xwa2_newsletter_message_integrity {\n    url_previews {\n      url_domain\n      is_previewable\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterIsDomainPreviewableJobQuery.graphql",
+    "matches": "id: \"9849510985088294\""
+  },
+  "literals": [
+    "9849510985088294",
+    "WAWebMexFetchNewsletterIsDomainPreviewableJobQuery",
+    "xwa2_newsletter_message_integrity"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterIsDomainPreviewableJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

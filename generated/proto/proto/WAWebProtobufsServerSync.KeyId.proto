@@ -1,0 +1,3 @@
+message KeyId {
+  optional bytes id = 1;
+}

@@ -1,0 +1,41 @@
+{
+  "id": "enum:QUICK_REPLY_SOURCE",
+  "kind": "enum",
+  "name": "QUICK_REPLY_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumQuickReplySource",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "UPLEVEL",
+        "value": 1.0
+      },
+      {
+        "name": "FULLSCREEN",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumQuickReplySource",
+    "matches": "QUICK_REPLY_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "QUICK_REPLY_SOURCE",
+    "UNKNOWN",
+    "UPLEVEL",
+    "FULLSCREEN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusReplyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

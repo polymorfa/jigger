@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_rating_and_review_contextual_prompt_enabled",
+  "kind": "ab",
+  "name": "web_rating_and_review_contextual_prompt_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18737,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_rating_and_review_contextual_prompt_enabled:\\s*\\[\\s*18737"
+  },
+  "literals": [
+    "web_rating_and_review_contextual_prompt_enabled",
+    "18737"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

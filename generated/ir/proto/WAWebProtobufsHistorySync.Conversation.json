@@ -1,0 +1,241 @@
+{
+  "id": "proto:WAWebProtobufsHistorySync.Conversation",
+  "kind": "proto",
+  "name": "WAWebProtobufsHistorySync.Conversation",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accountLid": {
+        "number": 49
+      },
+      "afterReadDuration": {
+        "number": 57
+      },
+      "appealStatus": {
+        "number": 59
+      },
+      "appealUpdateTime": {
+        "number": 60
+      },
+      "archived": {
+        "number": 16
+      },
+      "authAgentObaPhoneNumber": {
+        "number": 62
+      },
+      "authAgentParentCompanyName": {
+        "number": 61
+      },
+      "capiCreatedGroup": {
+        "number": 48
+      },
+      "commentsCount": {
+        "number": 45
+      },
+      "contactPrimaryIdentityKey": {
+        "number": 23
+      },
+      "conversationTimestamp": {
+        "number": 12
+      },
+      "createdAt": {
+        "number": 31
+      },
+      "createdBy": {
+        "number": 32
+      },
+      "description": {
+        "number": 33
+      },
+      "disappearingMode": {
+        "number": 17
+      },
+      "displayName": {
+        "number": 38
+      },
+      "endOfHistoryTransfer": {
+        "number": 8
+      },
+      "endOfHistoryTransferType": {
+        "number": 11
+      },
+      "ephemeralExpiration": {
+        "number": 9
+      },
+      "ephemeralSettingTimestamp": {
+        "number": 10
+      },
+      "id": {
+        "number": 1
+      },
+      "identityVerification": {
+        "number": 63,
+        "type_name": "WAWebProtobufsHistorySync.IdentityVerificationState"
+      },
+      "isDefaultSubgroup": {
+        "number": 36
+      },
+      "isMarketingMessageThread": {
+        "number": 55
+      },
+      "isParentGroup": {
+        "number": 35
+      },
+      "isSenderNewAccount": {
+        "number": 56
+      },
+      "isSenderSuspicious": {
+        "number": 58
+      },
+      "lastMsgTimestamp": {
+        "number": 5
+      },
+      "lidJid": {
+        "number": 42
+      },
+      "lidOriginType": {
+        "number": 44
+      },
+      "limitSharing": {
+        "number": 50
+      },
+      "limitSharingInitiatedByMe": {
+        "number": 53
+      },
+      "limitSharingSettingTimestamp": {
+        "number": 51
+      },
+      "limitSharingTrigger": {
+        "number": 52
+      },
+      "locked": {
+        "number": 46
+      },
+      "maibaAiThreadEnabled": {
+        "number": 54
+      },
+      "markedAsUnread": {
+        "number": 19
+      },
+      "mediaVisibility": {
+        "number": 27
+      },
+      "messages": {
+        "number": 2,
+        "type_name": "WAWebProtobufsHistorySync.HistorySyncMsg"
+      },
+      "muteEndTime": {
+        "number": 25
+      },
+      "name": {
+        "number": 13
+      },
+      "newJid": {
+        "number": 3
+      },
+      "notSpam": {
+        "number": 15
+      },
+      "oldJid": {
+        "number": 4
+      },
+      "pHash": {
+        "number": 14
+      },
+      "parentGroupId": {
+        "number": 37
+      },
+      "participant": {
+        "number": 20,
+        "type_name": "WAWebProtobufsHistorySync.GroupParticipant"
+      },
+      "pinned": {
+        "number": 24
+      },
+      "pnJid": {
+        "number": 39
+      },
+      "pnhDuplicateLidThread": {
+        "number": 41
+      },
+      "readOnly": {
+        "number": 7
+      },
+      "shareOwnPn": {
+        "number": 40
+      },
+      "support": {
+        "number": 34
+      },
+      "suspended": {
+        "number": 29
+      },
+      "systemMessageToInsert": {
+        "number": 47
+      },
+      "tcToken": {
+        "number": 21
+      },
+      "tcTokenSenderTimestamp": {
+        "number": 28
+      },
+      "tcTokenTimestamp": {
+        "number": 22
+      },
+      "terminated": {
+        "number": 30
+      },
+      "unreadCount": {
+        "number": 6
+      },
+      "unreadMentionCount": {
+        "number": 18
+      },
+      "username": {
+        "number": 43
+      },
+      "wallpaper": {
+        "number": 26,
+        "type_name": "WAWebProtobufsHistorySync.WallpaperSettings"
+      }
+    },
+    "module": "WAWebProtobufsHistorySync.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsHistorySync.pb",
+    "matches": "name = \"Conversation\""
+  },
+  "literals": [
+    "Conversation"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsChatLockSettings.pb",
+      "WAWebProtobufsE2E.pb",
+      "WAWebProtobufsProtocol.pb",
+      "WAWebProtobufsWeb.pb"
+    ],
+    "dependents": [
+      "WAWebApiHistorySyncNotification",
+      "WAWebGetHistorySyncMetrics",
+      "WAWebGetHistorySyncProgress",
+      "WAWebHandleHistorySyncChunk",
+      "WAWebHandleHistorySyncNotification",
+      "WAWebHandleWorkerCompatibleRecentSyncChunk",
+      "WAWebHistoryMsgHandlerAction",
+      "WAWebHistorySyncBackendWorkerV2",
+      "WAWebHistorySyncNotificationUtils",
+      "WAWebHistorySyncProgress",
+      "WAWebHistorySyncWorkerCompatibleNotificationUtils",
+      "WAWebMetricsAttributionActions",
+      "WAWebRestartRecentSyncJob",
+      "WAWebSyncBootstrap",
+      "WAWebUserPrefsHistorySync"
+    ],
+    "dep_count": 7,
+    "dependent_count": 15
+  }
+}

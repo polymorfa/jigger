@@ -1,0 +1,46 @@
+{
+  "id": "ab:lid_trusted_token_issue_to_lid",
+  "kind": "ab",
+  "name": "lid_trusted_token_issue_to_lid",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14303,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "lid_trusted_token_issue_to_lid:\\s*\\[\\s*14303"
+  },
+  "literals": [
+    "lid_trusted_token_issue_to_lid",
+    "14303"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebSendTcTokenChatAction",
+      "WAWebSendTcTokenWhenDeviceIdentityChange"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

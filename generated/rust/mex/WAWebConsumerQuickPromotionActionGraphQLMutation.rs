@@ -1,0 +1,2 @@
+/// Persisted mutation. Variables: input
+pub const MEX_WAWEB_CONSUMER_QUICK_PROMOTION_ACTION_GRAPH_QLMUTATION: &str = "25690382143972563";

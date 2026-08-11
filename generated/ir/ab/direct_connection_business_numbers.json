@@ -1,0 +1,45 @@
+{
+  "id": "ab:direct_connection_business_numbers",
+  "kind": "ab",
+  "name": "direct_connection_business_numbers",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1846,
+    "type": "string",
+    "default": "16005554444",
+    "alt_default": 918591749310
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "direct_connection_business_numbers:\\s*\\[\\s*1846"
+  },
+  "literals": [
+    "direct_connection_business_numbers",
+    "1846"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebDirectConnectionGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

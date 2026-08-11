@@ -1,0 +1,42 @@
+{
+  "id": "ab:username_max_length",
+  "kind": "ab",
+  "name": "username_max_length",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 20459,
+    "type": "int",
+    "default": 35,
+    "alt_default": 35
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_max_length:\\s*\\[\\s*20459"
+  },
+  "literals": [
+    "username_max_length",
+    "20459"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

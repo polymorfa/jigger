@@ -1,0 +1,174 @@
+{
+  "id": "enum:CATALOG_ENTRY_POINT",
+  "kind": "enum",
+  "name": "CATALOG_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCatalogEntryPoint",
+    "variants": [
+      {
+        "name": "CATALOG_ENTRY_POINT_PROFILE",
+        "value": 1.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_SETTINGS",
+        "value": 2.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_MESSAGE",
+        "value": 3.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_ATTACHMENT_PANEL",
+        "value": 4.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_NUX",
+        "value": 5.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_DEEPLINK",
+        "value": 6.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_CHAT",
+        "value": 7.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_ORDER_MESSAGE",
+        "value": 8.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_INVOICE_ATTACHMENT_PANEL",
+        "value": 9.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_PRODUCT_LIST_MESSAGE",
+        "value": 10.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_TOP_BAR",
+        "value": 11.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_PROFILE_ITEM_CLICK",
+        "value": 12.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_PROFILE_SEE_ALL",
+        "value": 13.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_QUOTED_PRODUCT",
+        "value": 14.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_CATALOG_MESSAGE",
+        "value": 15.0
+      },
+      {
+        "name": "CATALOG_ENTRY_QBM",
+        "value": 16.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_ADS_DEEPLINK",
+        "value": 17.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_WA_PAGES",
+        "value": 18.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_DIRECTORY_BARE_TIPS",
+        "value": 19.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_BIZ_ACTION_BAR",
+        "value": 20.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_BIZ_ONBOARDING",
+        "value": 21.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_TRUST_CARD",
+        "value": 22.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_FLOWS",
+        "value": 23.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_BIZ_AI_HOME",
+        "value": 24.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_BUSINESS_HOME",
+        "value": 25.0
+      },
+      {
+        "name": "CATALOG_ENTRY_POINT_LEARNING_HUB",
+        "value": 26.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCatalogEntryPoint",
+    "matches": "CATALOG_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "CATALOG_ENTRY_POINT",
+    "CATALOG_ENTRY_POINT_PROFILE",
+    "CATALOG_ENTRY_POINT_SETTINGS",
+    "CATALOG_ENTRY_POINT_MESSAGE",
+    "CATALOG_ENTRY_POINT_ATTACHMENT_PANEL",
+    "CATALOG_ENTRY_POINT_NUX",
+    "CATALOG_ENTRY_POINT_DEEPLINK",
+    "CATALOG_ENTRY_POINT_CHAT",
+    "CATALOG_ENTRY_POINT_ORDER_MESSAGE",
+    "CATALOG_ENTRY_POINT_INVOICE_ATTACHMENT_PANEL",
+    "CATALOG_ENTRY_POINT_PRODUCT_LIST_MESSAGE",
+    "CATALOG_ENTRY_POINT_TOP_BAR",
+    "CATALOG_ENTRY_POINT_PROFILE_ITEM_CLICK",
+    "CATALOG_ENTRY_POINT_PROFILE_SEE_ALL",
+    "CATALOG_ENTRY_POINT_QUOTED_PRODUCT",
+    "CATALOG_ENTRY_POINT_CATALOG_MESSAGE",
+    "CATALOG_ENTRY_QBM",
+    "CATALOG_ENTRY_POINT_ADS_DEEPLINK",
+    "CATALOG_ENTRY_POINT_WA_PAGES",
+    "CATALOG_ENTRY_POINT_DIRECTORY_BARE_TIPS",
+    "CATALOG_ENTRY_POINT_BIZ_ACTION_BAR",
+    "CATALOG_ENTRY_POINT_BIZ_ONBOARDING",
+    "CATALOG_ENTRY_POINT_TRUST_CARD",
+    "CATALOG_ENTRY_POINT_FLOWS",
+    "CATALOG_ENTRY_POINT_BIZ_AI_HOME",
+    "CATALOG_ENTRY_POINT_BUSINESS_HOME",
+    "CATALOG_ENTRY_POINT_LEARNING_HUB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizAGMCatalogCta.react",
+      "WAWebBizCartFlow",
+      "WAWebBizCatalogViewWamEvent",
+      "WAWebBizProduct",
+      "WAWebBizToolsFlow.react",
+      "WAWebCatalogBizWamEvent",
+      "WAWebCatalogChatlistHeaderDropdownItem.react",
+      "WAWebCatalogLoadError.react",
+      "WAWebCommerceButton.react",
+      "WAWebContactInfoDrawer.react",
+      "WAWebExecApiCmd",
+      "WAWebExecApiCmdHelpers",
+      "WAWebInfoFlow.react",
+      "WAWebMessageBizOrder",
+      "WAWebMessageList",
+      "WAWebProductCatalogDrawerSection",
+      "WAWebProductCatalogLogEvents",
+      "WAWebProfileDrawer.react",
+      "WAWebQuotedMsg.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 19
+  }
+}

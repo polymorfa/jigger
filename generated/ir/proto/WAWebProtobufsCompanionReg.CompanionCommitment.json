@@ -1,0 +1,38 @@
+{
+  "id": "proto:WAWebProtobufsCompanionReg.CompanionCommitment",
+  "kind": "proto",
+  "name": "WAWebProtobufsCompanionReg.CompanionCommitment",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "hash": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsCompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsCompanionReg.pb",
+    "matches": "name = \"CompanionCommitment\""
+  },
+  "literals": [
+    "CompanionCommitment"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebHandlePairSuccess",
+      "WAWebProtobufsE2E.pb",
+      "WAWebShortcakeLinkingAlgorithm",
+      "WAWebShortcakeLinkingApi",
+      "WAWebShortcakeLinkingPairingRequest",
+      "WAWebShortcakeLinkingPasskeyPrologue"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

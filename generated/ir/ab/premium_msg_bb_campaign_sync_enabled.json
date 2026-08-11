@@ -1,0 +1,42 @@
+{
+  "id": "ab:premium_msg_bb_campaign_sync_enabled",
+  "kind": "ab",
+  "name": "premium_msg_bb_campaign_sync_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29650,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "premium_msg_bb_campaign_sync_enabled:\\s*\\[\\s*29650"
+  },
+  "literals": [
+    "premium_msg_bb_campaign_sync_enabled",
+    "29650"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

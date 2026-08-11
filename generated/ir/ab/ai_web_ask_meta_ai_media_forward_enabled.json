@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_web_ask_meta_ai_media_forward_enabled",
+  "kind": "ab",
+  "name": "ai_web_ask_meta_ai_media_forward_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34257,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_web_ask_meta_ai_media_forward_enabled:\\s*\\[\\s*34257"
+  },
+  "literals": [
+    "ai_web_ask_meta_ai_media_forward_enabled",
+    "34257"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

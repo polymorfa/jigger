@@ -1,0 +1,53 @@
+{
+  "id": "enum:MUTE_CHAT_TYPE",
+  "kind": "enum",
+  "name": "MUTE_CHAT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMuteChatType",
+    "variants": [
+      {
+        "name": "ONE_ON_ONE",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "CHANNEL",
+        "value": 3.0
+      },
+      {
+        "name": "INTEROP",
+        "value": 4.0
+      },
+      {
+        "name": "INORGANIC_NOTIFICATION",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMuteChatType",
+    "matches": "MUTE_CHAT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MUTE_CHAT_TYPE",
+    "ONE_ON_ONE",
+    "GROUP",
+    "CHANNEL",
+    "INTEROP",
+    "INORGANIC_NOTIFICATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatMuteLogger",
+      "WAWebChatMuteWamEvent",
+      "WAWebWamChatPSALogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

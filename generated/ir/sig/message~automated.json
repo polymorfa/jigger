@@ -1,0 +1,30 @@
+{
+  "id": "sig:message/automated",
+  "kind": "sig",
+  "name": "MessageDeliverAutomatedMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "automated"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverAutomatedMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "automated"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBaseMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

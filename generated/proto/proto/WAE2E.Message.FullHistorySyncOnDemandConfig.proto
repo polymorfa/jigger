@@ -1,0 +1,4 @@
+message FullHistorySyncOnDemandConfig {
+  optional bytes historyFromTimestamp = 1;
+  optional bytes historyDurationDays = 2;
+}

@@ -1,0 +1,48 @@
+{
+  "id": "enum:EPHEMERALITY_INITIATOR_TYPE",
+  "kind": "enum",
+  "name": "EPHEMERALITY_INITIATOR_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEphemeralityInitiatorType",
+    "variants": [
+      {
+        "name": "INITIATED_BY_ME",
+        "value": 1.0
+      },
+      {
+        "name": "INITIATED_BY_OTHER",
+        "value": 2.0
+      },
+      {
+        "name": "BIZ_UPGRADE_FB_HOSTING",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEphemeralityInitiatorType",
+    "matches": "EPHEMERALITY_INITIATOR_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "EPHEMERALITY_INITIATOR_TYPE",
+    "INITIATED_BY_ME",
+    "INITIATED_BY_OTHER",
+    "BIZ_UPGRADE_FB_HOSTING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatMessageCountsWamEvent",
+      "WAWebChatThreadLoggingUtils",
+      "WAWebEphemeralSyncResponseReceiveWamEvent",
+      "WAWebEphemeralSyncResponseSendWamEvent",
+      "WAWebEphemeralityWAMUtils",
+      "WAWebForwardSendWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

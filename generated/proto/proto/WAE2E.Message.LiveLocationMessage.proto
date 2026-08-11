@@ -1,0 +1,12 @@
+message LiveLocationMessage {
+  optional bytes degreesLatitude = 1;
+  optional bytes degreesLongitude = 2;
+  optional bytes accuracyInMeters = 3;
+  optional bytes speedInMps = 4;
+  optional bytes degreesClockwiseFromMagneticNorth = 5;
+  optional bytes caption = 6;
+  optional bytes sequenceNumber = 7;
+  optional bytes timeOffset = 8;
+  optional bytes jpegThumbnail = 16;
+  optional ContextInfo contextInfo = 17;
+}

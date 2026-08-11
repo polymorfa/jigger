@@ -1,0 +1,83 @@
+{
+  "id": "wam:3056",
+  "kind": "wam",
+  "name": "DisappearingModeSettingChange",
+  "data": {
+    "kind": "wam",
+    "event_id": 3056,
+    "fields": {
+      "afterReadDuration": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "after_read_duration"
+      },
+      "disappearingModeEntryPoint": {
+        "id": 4,
+        "type": "DISAPPEARING_MODE_ENTRY_POINT_TYPE",
+        "wire": "disappearing_mode_entry_point",
+        "enum_ref": "DISAPPEARING_MODE_ENTRY_POINT_TYPE"
+      },
+      "errorCode": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "error_code"
+      },
+      "isAfterRead": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_after_read"
+      },
+      "isSuccess": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "is_success"
+      },
+      "lastToggleTimestamp": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "last_toggle_timestamp"
+      },
+      "newEphemeralityDuration": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "new_ephemerality_duration"
+      },
+      "previousEphemeralityDuration": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "previous_ephemerality_duration"
+      },
+      "previousEphemeralityType": {
+        "id": 10,
+        "type": "PREVIOUS_EPHEMERALITY_TYPE",
+        "wire": "previous_ephemerality_type",
+        "enum_ref": "PREVIOUS_EPHEMERALITY_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebDisappearingModeSettingChangeWamEvent",
+    "matches": "DisappearingModeSettingChange:\\s*\\[\\s*3056"
+  },
+  "literals": [
+    "3056"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDisappearingModeEntryPointType",
+      "WAWebWamEnumPreviousEphemeralityType"
+    ],
+    "dependents": [
+      "WAWebDefaultEphemeralityDrawer.react"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

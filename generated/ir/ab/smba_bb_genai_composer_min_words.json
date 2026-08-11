@@ -1,0 +1,42 @@
+{
+  "id": "ab:smba_bb_genai_composer_min_words",
+  "kind": "ab",
+  "name": "smba_bb_genai_composer_min_words",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21447,
+    "type": "int",
+    "default": 4,
+    "alt_default": 4
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smba_bb_genai_composer_min_words:\\s*\\[\\s*21447"
+  },
+  "literals": [
+    "smba_bb_genai_composer_min_words",
+    "21447"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

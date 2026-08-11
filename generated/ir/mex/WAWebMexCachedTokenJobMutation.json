@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexCachedTokenJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCachedTokenJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27013462064904056",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_ent_trade_canonical_nonce_for_access_tokens",
+    "document": "mutation MexCachedTokenJobMutation($input) {\n  xwa2_ent_trade_canonical_nonce_for_access_tokens {\n    encrypted_access_tokens {\n      key\n      data\n      tag\n      nonce\n      algorithm\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexCachedTokenJobMutation.graphql",
+    "matches": "id: \"27013462064904056\""
+  },
+  "literals": [
+    "27013462064904056",
+    "WAWebMexCachedTokenJobMutation",
+    "xwa2_ent_trade_canonical_nonce_for_access_tokens"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCachedTokenJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

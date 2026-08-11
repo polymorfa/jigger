@@ -1,0 +1,88 @@
+{
+  "id": "wam:7506",
+  "kind": "wam",
+  "name": "WebcWebtpPdfViewer",
+  "data": {
+    "kind": "wam",
+    "event_id": 7506,
+    "fields": {
+      "webtpErrorCode": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "webtp_error_code"
+      },
+      "webtpErrorMessage": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "webtp_error_message"
+      },
+      "webtpErrorStack": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "webtp_error_stack"
+      },
+      "webtpErrorType": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "webtp_error_type"
+      },
+      "webtpEvent": {
+        "id": 5,
+        "type": "WEBTP_EVENT_TYPE",
+        "wire": "webtp_event",
+        "enum_ref": "WEBTP_EVENT_TYPE"
+      },
+      "webtpFileSize": {
+        "id": 6,
+        "type": "NUMBER",
+        "wire": "webtp_file_size"
+      },
+      "webtpSdkVersion": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "webtp_sdk_version"
+      },
+      "webtpSessionId": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "webtp_session_id"
+      },
+      "webtpSource": {
+        "id": 9,
+        "type": "WEBTP_SOURCE_TYPE",
+        "wire": "webtp_source",
+        "enum_ref": "WEBTP_SOURCE_TYPE"
+      },
+      "webtpTelemetryData": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "webtp_telemetry_data"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcWebtpPdfViewerWamEvent",
+    "matches": "WebcWebtpPdfViewer:\\s*\\[\\s*7506"
+  },
+  "literals": [
+    "7506"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebtpEventType",
+      "WAWebWamEnumWebtpSourceType"
+    ],
+    "dependents": [
+      "WAWebTPLoggingUtils"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

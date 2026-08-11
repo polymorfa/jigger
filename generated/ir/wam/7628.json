@@ -1,0 +1,70 @@
+{
+  "id": "wam:7628",
+  "kind": "wam",
+  "name": "PsApiSignupFlow",
+  "data": {
+    "kind": "wam",
+    "event_id": 7628,
+    "fields": {
+      "businessLid": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "business_lid"
+      },
+      "businessPhoneNumber": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "business_phone_number"
+      },
+      "signupDeepLinkId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "signup_deep_link_id"
+      },
+      "signupEntryPoint": {
+        "id": 6,
+        "type": "SIGNUP_ENTRY_POINT",
+        "wire": "signup_entry_point",
+        "enum_ref": "SIGNUP_ENTRY_POINT"
+      },
+      "signupUserJourneyOperation": {
+        "id": 3,
+        "type": "SIGNUP_USER_JOURNEY_OPERATION",
+        "wire": "signup_user_journey_operation",
+        "enum_ref": "SIGNUP_USER_JOURNEY_OPERATION"
+      },
+      "threadCreationTime": {
+        "id": 7,
+        "type": "THREAD_CREATION_TIME",
+        "wire": "thread_creation_time",
+        "enum_ref": "THREAD_CREATION_TIME"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsApiSignupFlowWamEvent",
+    "matches": "PsApiSignupFlow:\\s*\\[\\s*7628"
+  },
+  "literals": [
+    "7628"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumSignupEntryPoint",
+      "WAWebWamEnumSignupUserJourneyOperation",
+      "WAWebWamEnumThreadCreationTime"
+    ],
+    "dependents": [
+      "WAWebSignupFlowLogger"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

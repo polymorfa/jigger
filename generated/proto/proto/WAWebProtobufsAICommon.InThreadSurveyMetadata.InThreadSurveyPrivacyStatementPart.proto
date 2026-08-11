@@ -1,0 +1,4 @@
+message InThreadSurveyPrivacyStatementPart {
+  optional bytes text = 1;
+  optional bytes url = 2;
+}

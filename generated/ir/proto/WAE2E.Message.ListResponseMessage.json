@@ -1,0 +1,56 @@
+{
+  "id": "proto:WAE2E.Message.ListResponseMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.ListResponseMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "contextInfo": {
+        "number": 4,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "description": {
+        "number": 5
+      },
+      "listType": {
+        "number": 2
+      },
+      "singleSelectReply": {
+        "number": 3,
+        "type_name": "WAE2E.Message.ListResponseMessage.SingleSelectReply"
+      },
+      "title": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.ListResponseMessage\""
+  },
+  "literals": [
+    "ListResponseMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

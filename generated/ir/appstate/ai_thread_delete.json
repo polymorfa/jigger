@@ -1,0 +1,50 @@
+{
+  "id": "appstate:ai_thread_delete",
+  "kind": "appstate",
+  "name": "AiThreadDelete",
+  "data": {
+    "kind": "appstate",
+    "index_name": "ai_thread_delete",
+    "collection": "regular_high",
+    "version": 7,
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebAiThreadDeleteSync",
+    "matches": "Actions\\.AiThreadDelete"
+  },
+  "literals": [
+    "ai_thread_delete",
+    "AiThreadDelete"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebAiThreadCreationUtils",
+      "WAWebBackendApi",
+      "WAWebBotBaseGating",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdCoreApi",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdGetThread",
+      "WAWebThreadMetadataBulkJob",
+      "WAWebWid",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime",
+      "isStringNotNullAndNotWhitespaceOnly"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebDeleteAiThreadsAction"
+    ],
+    "dep_count": 18,
+    "dependent_count": 2
+  }
+}

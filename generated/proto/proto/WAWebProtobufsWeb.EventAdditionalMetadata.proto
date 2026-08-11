@@ -1,0 +1,3 @@
+message EventAdditionalMetadata {
+  optional bytes isStale = 1;
+}

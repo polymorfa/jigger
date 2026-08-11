@@ -1,0 +1,46 @@
+{
+  "id": "enum:URL_STATUS_CLICKED",
+  "kind": "enum",
+  "name": "URL_STATUS_CLICKED",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUrlStatusClicked",
+    "variants": [
+      {
+        "name": "ONE_CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "TWO_CLICKS",
+        "value": 2.0
+      },
+      {
+        "name": "NO_CLICK",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUrlStatusClicked",
+    "matches": "URL_STATUS_CLICKED\\s*[:=]"
+  },
+  "literals": [
+    "URL_STATUS_CLICKED",
+    "ONE_CLICK",
+    "TWO_CLICKS",
+    "NO_CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLongLinkPop.react",
+      "WAWebMediaLinkPreviewContainer.react",
+      "WAWebStatusItemViewWamEvent",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusText.react",
+      "WAWebStatusViewerActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

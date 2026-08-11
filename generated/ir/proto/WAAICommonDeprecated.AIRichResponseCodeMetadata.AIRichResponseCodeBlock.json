@@ -1,0 +1,35 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseCodeMetadata.AIRichResponseCodeBlock",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseCodeMetadata.AIRichResponseCodeBlock",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "codeContent": {
+        "number": 2
+      },
+      "highlightType": {
+        "number": 1
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseCodeMetadata.AIRichResponseCodeBlock\""
+  },
+  "literals": [
+    "AIRichResponseCodeBlock"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

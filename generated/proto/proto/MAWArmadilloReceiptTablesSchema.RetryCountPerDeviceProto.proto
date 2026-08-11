@@ -1,0 +1,4 @@
+message RetryCountPerDeviceProto {
+  optional bytes deviceJid = 1;
+  optional bytes count = 2;
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:group_member_updates_usernames_enabled",
+  "kind": "ab",
+  "name": "group_member_updates_usernames_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24617,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_member_updates_usernames_enabled:\\s*\\[\\s*24617"
+  },
+  "literals": [
+    "group_member_updates_usernames_enabled",
+    "24617"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "enum:TAG_STICKER_TYPES",
+  "kind": "enum",
+  "name": "TAG_STICKER_TYPES",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "INSTAGRAM",
+        "value": "INSTAGRAM"
+      },
+      {
+        "name": "LOCATION",
+        "value": "LOCATION"
+      },
+      {
+        "name": "PAGE",
+        "value": "PAGE"
+      },
+      {
+        "name": "PEOPLE",
+        "value": "PEOPLE"
+      },
+      {
+        "name": "PRODUCT",
+        "value": "PRODUCT"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "TAG_STICKER_TYPES\\s*[:=]"
+  },
+  "literals": [
+    "TAG_STICKER_TYPES",
+    "INSTAGRAM",
+    "LOCATION",
+    "PAGE",
+    "PEOPLE",
+    "PRODUCT"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

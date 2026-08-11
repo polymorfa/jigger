@@ -1,0 +1,42 @@
+{
+  "id": "enum:CHANNEL_PRODUCER_INSIGHTS_ENTRY_POINT",
+  "kind": "enum",
+  "name": "CHANNEL_PRODUCER_INSIGHTS_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChannelProducerInsightsEntryPoint",
+    "variants": [
+      {
+        "name": "PROFILE_SEE_ALL",
+        "value": 0.0
+      },
+      {
+        "name": "PROFILE_ACCOUNTS_REACHED",
+        "value": 1.0
+      },
+      {
+        "name": "PROFILE_NET_FOLLOWS",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChannelProducerInsightsEntryPoint",
+    "matches": "CHANNEL_PRODUCER_INSIGHTS_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "CHANNEL_PRODUCER_INSIGHTS_ENTRY_POINT",
+    "PROFILE_SEE_ALL",
+    "PROFILE_ACCOUNTS_REACHED",
+    "PROFILE_NET_FOLLOWS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelProducerInsightsNavigationWamEvent",
+      "WAWebNewsletterInsightsSection.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

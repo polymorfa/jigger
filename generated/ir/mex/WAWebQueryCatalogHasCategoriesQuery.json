@@ -1,0 +1,30 @@
+{
+  "id": "mex:WAWebQueryCatalogHasCategoriesQuery",
+  "kind": "mex",
+  "name": "WAWebQueryCatalogHasCategoriesQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9746549555457302",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "document": "query QueryCatalogHasCategoriesQuery($request) {\n  xwa_product_catalog_get_categories {\n    categories {\n      __typename\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebQueryCatalogHasCategoriesQuery.graphql",
+    "matches": "id: \"9746549555457302\""
+  },
+  "literals": [
+    "9746549555457302",
+    "WAWebQueryCatalogHasCategoriesQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebQueryCatalogHasCategories"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "proto:WAWebLabyrinthWaWasm.VirtualDeviceOutput",
+  "kind": "proto",
+  "name": "WAWebLabyrinthWaWasm.VirtualDeviceOutput",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "deviceEpochHmac": {
+        "number": 6
+      },
+      "encryptedSecretValues": {
+        "number": 7,
+        "type_name": "WAWebLabyrinthWaWasm.EncryptedSecretValuesOutput"
+      },
+      "ocmfRotationToken": {
+        "number": 5
+      },
+      "vdEpochStoragePublicKey": {
+        "number": 3
+      },
+      "vdEpochStoragePublicKeySig": {
+        "number": 4
+      },
+      "vdId": {
+        "number": 1
+      },
+      "vdPublicKey": {
+        "number": 2
+      }
+    },
+    "module": "WAWebLabyrinthWaWasm.pb"
+  },
+  "evidence": {
+    "module": "WAWebLabyrinthWaWasm.pb",
+    "matches": "name = \"VirtualDeviceOutput\""
+  },
+  "literals": [
+    "VirtualDeviceOutput"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebLabyrinthWasmCreateBackup",
+      "WAWebLabyrinthWasmDecryptMessage",
+      "WAWebLabyrinthWasmDeriveMessageKey",
+      "WAWebLabyrinthWasmEncryptMessage",
+      "WAWebLabyrinthWasmOrfThreadId"
+    ],
+    "dep_count": 1,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:payments_upr_cote_divoire_enabled",
+  "kind": "ab",
+  "name": "payments_upr_cote_divoire_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33894,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "payments_upr_cote_divoire_enabled:\\s*\\[\\s*33894"
+  },
+  "literals": [
+    "payments_upr_cote_divoire_enabled",
+    "33894"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

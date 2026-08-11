@@ -1,0 +1,55 @@
+{
+  "id": "enum:AUDIENCE_TYPES",
+  "kind": "enum",
+  "name": "AUDIENCE_TYPES",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "CUSTOM",
+        "value": "CUSTOM"
+      },
+      {
+        "name": "FRIENDS",
+        "value": "FRIENDS"
+      },
+      {
+        "name": "PUBLIC",
+        "value": "PUBLIC"
+      },
+      {
+        "name": "UNSET",
+        "value": "UNSET"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "AUDIENCE_TYPES\\s*[:=]"
+  },
+  "literals": [
+    "AUDIENCE_TYPES",
+    "CUSTOM",
+    "FRIENDS",
+    "PUBLIC",
+    "UNSET"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

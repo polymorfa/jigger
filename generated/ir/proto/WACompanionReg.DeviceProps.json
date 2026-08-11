@@ -1,0 +1,46 @@
+{
+  "id": "proto:WACompanionReg.DeviceProps",
+  "kind": "proto",
+  "name": "WACompanionReg.DeviceProps",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "historySyncConfig": {
+        "number": 5,
+        "type_name": "WACompanionReg.DeviceProps.HistorySyncConfig"
+      },
+      "os": {
+        "number": 1
+      },
+      "platformType": {
+        "number": 3
+      },
+      "requireFullSync": {
+        "number": 4
+      },
+      "version": {
+        "number": 2,
+        "type_name": "WACompanionReg.DeviceProps.AppVersion"
+      }
+    },
+    "module": "WACompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WACompanionReg.pb",
+    "matches": "name = \"DeviceProps\""
+  },
+  "literals": [
+    "DeviceProps"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:pix_onboarding_new_content_enabled",
+  "kind": "ab",
+  "name": "pix_onboarding_new_content_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23953,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pix_onboarding_new_content_enabled:\\s*\\[\\s*23953"
+  },
+  "literals": [
+    "pix_onboarding_new_content_enabled",
+    "23953"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPixPaymentRequestFeature"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

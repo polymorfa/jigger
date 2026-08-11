@@ -1,0 +1,104 @@
+{
+  "id": "wam:6796",
+  "kind": "wam",
+  "name": "MmDisclosureStateFsEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 6796,
+    "fields": {
+      "disclosureEventType": {
+        "id": 1,
+        "type": "DISCLOSURE_EVENT_TYPE",
+        "wire": "disclosure_event_type",
+        "enum_ref": "DISCLOSURE_EVENT_TYPE"
+      },
+      "disclosureInteraction": {
+        "id": 2,
+        "type": "DISCLOSURE_INTERACTION",
+        "wire": "disclosure_interaction",
+        "enum_ref": "DISCLOSURE_INTERACTION"
+      },
+      "disclosureSource": {
+        "id": 3,
+        "type": "DISCLOSURE_SOURCE",
+        "wire": "disclosure_source",
+        "enum_ref": "DISCLOSURE_SOURCE"
+      },
+      "disclosureSuppressionReason": {
+        "id": 4,
+        "type": "DISCLOSURE_SUPPRESSION_REASON",
+        "wire": "disclosure_suppression_reason",
+        "enum_ref": "DISCLOSURE_SUPPRESSION_REASON"
+      },
+      "disclosureSurface": {
+        "id": 5,
+        "type": "DISCLOSURE_SURFACE",
+        "wire": "disclosure_surface",
+        "enum_ref": "DISCLOSURE_SURFACE"
+      },
+      "isCompanionDevice": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "is_companion_device"
+      },
+      "isUserDisclosed": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "is_user_disclosed"
+      },
+      "mmDisclosureFlags": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "mm_disclosure_flags"
+      },
+      "mmHasDisclosedUrl": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "mm_has_disclosed_url"
+      },
+      "mmHasShowDisclosureFlag": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "mm_has_show_disclosure_flag"
+      },
+      "threadIdHmac": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      },
+      "userBecameDisclosed": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "user_became_disclosed"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMmDisclosureStateFsEventWamEvent",
+    "matches": "MmDisclosureStateFsEvent:\\s*\\[\\s*6796"
+  },
+  "literals": [
+    "6796"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDisclosureEventType",
+      "WAWebWamEnumDisclosureInteraction",
+      "WAWebWamEnumDisclosureSource",
+      "WAWebWamEnumDisclosureSuppressionReason",
+      "WAWebWamEnumDisclosureSurface"
+    ],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

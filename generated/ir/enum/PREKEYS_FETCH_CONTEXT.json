@@ -1,0 +1,116 @@
+{
+  "id": "enum:PREKEYS_FETCH_CONTEXT",
+  "kind": "enum",
+  "name": "PREKEYS_FETCH_CONTEXT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPrekeysFetchContext",
+    "variants": [
+      {
+        "name": "SEND_MESSAGE",
+        "value": 1.0
+      },
+      {
+        "name": "GET_VNAME_CERTIFICATE",
+        "value": 2.0
+      },
+      {
+        "name": "SEND_LIVE_LOCATION_RETRY",
+        "value": 3.0
+      },
+      {
+        "name": "SEND_LIVE_LOCATION_KEY",
+        "value": 4.0
+      },
+      {
+        "name": "SEND_PEER_MESSAGE",
+        "value": 5.0
+      },
+      {
+        "name": "MULTI_DEVICE_CALL",
+        "value": 6.0
+      },
+      {
+        "name": "CALL_PEER_E2E_FAIL",
+        "value": 7.0
+      },
+      {
+        "name": "IDENTITY_CHANGE_NOTIFICATION",
+        "value": 8.0
+      },
+      {
+        "name": "BACK_OFF",
+        "value": 9.0
+      },
+      {
+        "name": "USER_INTENT_PREFETCH",
+        "value": 10.0
+      },
+      {
+        "name": "RESEND_MESSAGE",
+        "value": 11.0
+      },
+      {
+        "name": "RETRY_MESSAGE",
+        "value": 12.0
+      },
+      {
+        "name": "USER_INTENT_STATUS_PREFETCH",
+        "value": 13.0
+      },
+      {
+        "name": "SEND_SENDERKEY",
+        "value": 14.0
+      },
+      {
+        "name": "AEA_SEND_TIME_RECONCILATION",
+        "value": 15.0
+      },
+      {
+        "name": "AEA_CONSUMER_BACKFILL",
+        "value": 16.0
+      },
+      {
+        "name": "AEA_GOSSIP_MISMATCH",
+        "value": 17.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPrekeysFetchContext",
+    "matches": "PREKEYS_FETCH_CONTEXT\\s*[:=]"
+  },
+  "literals": [
+    "PREKEYS_FETCH_CONTEXT",
+    "SEND_MESSAGE",
+    "GET_VNAME_CERTIFICATE",
+    "SEND_LIVE_LOCATION_RETRY",
+    "SEND_LIVE_LOCATION_KEY",
+    "SEND_PEER_MESSAGE",
+    "MULTI_DEVICE_CALL",
+    "CALL_PEER_E2E_FAIL",
+    "IDENTITY_CHANGE_NOTIFICATION",
+    "BACK_OFF",
+    "USER_INTENT_PREFETCH",
+    "RESEND_MESSAGE",
+    "RETRY_MESSAGE",
+    "USER_INTENT_STATUS_PREFETCH",
+    "SEND_SENDERKEY",
+    "AEA_SEND_TIME_RECONCILATION",
+    "AEA_CONSUMER_BACKFILL",
+    "AEA_GOSSIP_MISMATCH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatEagerlyEstablishE2EeSessionBridge",
+      "WAWebEncryptAndSendBroadcastMsg",
+      "WAWebEncryptAndSendStatusMsg",
+      "WAWebPrekeysDepletionWamEvent",
+      "WAWebSendGroupSkmsgJob",
+      "WAWebSendMsgCreateFanoutStanza"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

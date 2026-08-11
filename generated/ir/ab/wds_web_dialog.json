@@ -1,0 +1,58 @@
+{
+  "id": "ab:wds_web_dialog",
+  "kind": "ab",
+  "name": "wds_web_dialog",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28557,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wds_web_dialog:\\s*\\[\\s*28557"
+  },
+  "literals": [
+    "wds_web_dialog",
+    "28557"
+  ],
+  "usage": {
+    "read_count": 14,
+    "readers": [
+      "WAWebActionListener",
+      "WAWebBlockContactUtils",
+      "WAWebCommunityCells.react",
+      "WAWebCommunityHomeActionsSection.react",
+      "WAWebGroupInfoIntegritySection.react",
+      "WAWebLeaveAndReportGroupModal.react",
+      "WAWebLeaveCommunityModalUtils",
+      "WAWebLogoutChatlistHeaderDropdownItem.react",
+      "WAWebMeTabFlow.react",
+      "WAWebMultiSelectDelete.react",
+      "WAWebOpenLeaveAndReportGroupModal",
+      "WAWebReportContactDialogUtils",
+      "WAWebSettingsFlow.react",
+      "WAWebSuspendedGroupUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

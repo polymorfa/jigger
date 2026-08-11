@@ -1,0 +1,282 @@
+{
+  "id": "enum:LOBBY_ENTRY_POINT_TYPE",
+  "kind": "enum",
+  "name": "LOBBY_ENTRY_POINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLobbyEntryPointType",
+    "variants": [
+      {
+        "name": "ERROR",
+        "value": 0.0
+      },
+      {
+        "name": "NOTIFICATION_MESSAGE",
+        "value": 1.0
+      },
+      {
+        "name": "NOTIFICATION_BUTTON",
+        "value": 2.0
+      },
+      {
+        "name": "CALL_LOG",
+        "value": 3.0
+      },
+      {
+        "name": "NOTIFICATION_ONGOING",
+        "value": 4.0
+      },
+      {
+        "name": "NOT_OPENED",
+        "value": 5.0
+      },
+      {
+        "name": "OPEN_FOR_RINGING",
+        "value": 6.0
+      },
+      {
+        "name": "IN_APP_NOTIFICATION",
+        "value": 7.0
+      },
+      {
+        "name": "LINKED_GROUP_CALL_SYSTEM_MESSAGE",
+        "value": 8.0
+      },
+      {
+        "name": "CHAT_HEADER",
+        "value": 9.0
+      },
+      {
+        "name": "QUICK_CONTACT_DIALOG",
+        "value": 10.0
+      },
+      {
+        "name": "GROUP_CHAT_INFO",
+        "value": 11.0
+      },
+      {
+        "name": "CALL_LINK_CALL_LOG",
+        "value": 12.0
+      },
+      {
+        "name": "CALL_LINK_LOG_INFO",
+        "value": 13.0
+      },
+      {
+        "name": "CALL_LINK_INTERNAL",
+        "value": 14.0
+      },
+      {
+        "name": "CALL_LINK_EXTERNAL",
+        "value": 15.0
+      },
+      {
+        "name": "CALL_LINK_CREATE",
+        "value": 16.0
+      },
+      {
+        "name": "CALL_LINK_INDIVIDUAL_CHAT",
+        "value": 17.0
+      },
+      {
+        "name": "CALL_LINK_GROUP_CHAT",
+        "value": 18.0
+      },
+      {
+        "name": "UPCOMING_CALL_LOG",
+        "value": 19.0
+      },
+      {
+        "name": "LOBBY_SWITCH",
+        "value": 20.0
+      },
+      {
+        "name": "SCHEDULED_CREATION_MESSAGE",
+        "value": 21.0
+      },
+      {
+        "name": "CALL_LOG_MESSAGE_ONGOING",
+        "value": 22.0
+      },
+      {
+        "name": "APP_TILE_CONTEXT_MENU",
+        "value": 23.0
+      },
+      {
+        "name": "EVENT_INDIVIDUAL_CHAT",
+        "value": 24.0
+      },
+      {
+        "name": "EVENT_GROUP_CHAT",
+        "value": 25.0
+      },
+      {
+        "name": "VOICE_CHAT_MINI_PLAYER",
+        "value": 26.0
+      },
+      {
+        "name": "SECOND_NOTIFICATION",
+        "value": 27.0
+      },
+      {
+        "name": "START_CALL",
+        "value": 28.0
+      },
+      {
+        "name": "CALL_LINK_CREATOR_PUSH_NOTIFICATION",
+        "value": 29.0
+      },
+      {
+        "name": "LINK_CREATOR_CALL_STARTED_PUSH_NOTIFICATION",
+        "value": 30.0
+      },
+      {
+        "name": "LINK_CREATOR_CALL_CONNECTED_PUSH_NOTIFICATION",
+        "value": 31.0
+      },
+      {
+        "name": "UPCOMING_SCHEDULE_CALL",
+        "value": 32.0
+      },
+      {
+        "name": "UPCOMING_SCHEDULE_CALL_LIST",
+        "value": 33.0
+      },
+      {
+        "name": "EVENT_MESSAGE",
+        "value": 34.0
+      },
+      {
+        "name": "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION",
+        "value": 35.0
+      },
+      {
+        "name": "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION_BUTTON",
+        "value": 36.0
+      },
+      {
+        "name": "UPCOMING_EVENT_BANNER",
+        "value": 37.0
+      },
+      {
+        "name": "WAITING_ROOM_JOINED_PUSH_NOTIFICATION",
+        "value": 38.0
+      },
+      {
+        "name": "WAITING_ROOM_MULTIPLE_JOINED_PUSH_NOTIFICATION",
+        "value": 39.0
+      },
+      {
+        "name": "CALL_TRANSFER_PUSH_NOTIFICATION",
+        "value": 40.0
+      },
+      {
+        "name": "XDR_CALL_TRANSFER",
+        "value": 41.0
+      },
+      {
+        "name": "CHAT_EMPTY_STATE",
+        "value": 42.0
+      },
+      {
+        "name": "GROUP_INFO_BOTTOM_SHEET_CHATS_TAB",
+        "value": 43.0
+      },
+      {
+        "name": "GROUP_INFO_BOTTOM_SHEET_CALLS_TAB",
+        "value": 44.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLobbyEntryPointType",
+    "matches": "LOBBY_ENTRY_POINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LOBBY_ENTRY_POINT_TYPE",
+    "ERROR",
+    "NOTIFICATION_MESSAGE",
+    "NOTIFICATION_BUTTON",
+    "CALL_LOG",
+    "NOTIFICATION_ONGOING",
+    "NOT_OPENED",
+    "OPEN_FOR_RINGING",
+    "IN_APP_NOTIFICATION",
+    "LINKED_GROUP_CALL_SYSTEM_MESSAGE",
+    "CHAT_HEADER",
+    "QUICK_CONTACT_DIALOG",
+    "GROUP_CHAT_INFO",
+    "CALL_LINK_CALL_LOG",
+    "CALL_LINK_LOG_INFO",
+    "CALL_LINK_INTERNAL",
+    "CALL_LINK_EXTERNAL",
+    "CALL_LINK_CREATE",
+    "CALL_LINK_INDIVIDUAL_CHAT",
+    "CALL_LINK_GROUP_CHAT",
+    "UPCOMING_CALL_LOG",
+    "LOBBY_SWITCH",
+    "SCHEDULED_CREATION_MESSAGE",
+    "CALL_LOG_MESSAGE_ONGOING",
+    "APP_TILE_CONTEXT_MENU",
+    "EVENT_INDIVIDUAL_CHAT",
+    "EVENT_GROUP_CHAT",
+    "VOICE_CHAT_MINI_PLAYER",
+    "SECOND_NOTIFICATION",
+    "START_CALL",
+    "CALL_LINK_CREATOR_PUSH_NOTIFICATION",
+    "LINK_CREATOR_CALL_STARTED_PUSH_NOTIFICATION",
+    "LINK_CREATOR_CALL_CONNECTED_PUSH_NOTIFICATION",
+    "UPCOMING_SCHEDULE_CALL",
+    "UPCOMING_SCHEDULE_CALL_LIST",
+    "EVENT_MESSAGE",
+    "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION",
+    "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION_BUTTON",
+    "UPCOMING_EVENT_BANNER",
+    "WAITING_ROOM_JOINED_PUSH_NOTIFICATION",
+    "WAITING_ROOM_MULTIPLE_JOINED_PUSH_NOTIFICATION",
+    "CALL_TRANSFER_PUSH_NOTIFICATION",
+    "XDR_CALL_TRANSFER",
+    "CHAT_EMPTY_STATE",
+    "GROUP_INFO_BOTTOM_SHEET_CHATS_TAB",
+    "GROUP_INFO_BOTTOM_SHEET_CALLS_TAB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallButtons.react",
+      "WAWebCallLogEntryCell.react",
+      "WAWebCallLogEntryDetails.react",
+      "WAWebCallLogJoinOngoingCell.react",
+      "WAWebCallLogParticipantsList.react",
+      "WAWebCallWamEvent",
+      "WAWebCometLiteCallActions.react",
+      "WAWebContactCallButtons.react",
+      "WAWebContactInfoTopCard.react",
+      "WAWebDialerContactWithCallButtons.react",
+      "WAWebDialerUnknownContactWithCallButtons.react",
+      "WAWebEventInfoDrawer.react",
+      "WAWebExecApiCmd",
+      "WAWebFavoriteCell.react",
+      "WAWebGroupCallDropdownContent.react",
+      "WAWebGroupCallParticipantSelector.react",
+      "WAWebGroupHoverCard.react",
+      "WAWebGroupInfoTopCard.react",
+      "WAWebHeader.react",
+      "WAWebIntroPanelStartCallEmptyState.react",
+      "WAWebJoinEventCallAction",
+      "WAWebJoinableCallWamEvent",
+      "WAWebMessageNotification.react",
+      "WAWebMessageText.react",
+      "WAWebOneOnOneIcceCallBubble.react",
+      "WAWebUpcomingEventCell.react",
+      "WAWebVoipBridgeNotificationHandlers",
+      "WAWebVoipCallsTabDrawerNewCall.react",
+      "WAWebVoipCallsTabDrawerUpcomingEvents.react",
+      "WAWebVoipCallsTabEmptyStateButtons.react",
+      "WAWebVoipNewGroupCallContactPicker.react",
+      "WAWebVoipStartCall"
+    ],
+    "dep_count": 0,
+    "dependent_count": 32
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "wam:5718",
+  "kind": "wam",
+  "name": "CompanionsContactEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 5718,
+    "fields": {
+      "companionAddContactActionType": {
+        "id": 1,
+        "type": "ADD_CONTACT_ACTION_TYPE",
+        "wire": "companion_add_contact_action_type",
+        "enum_ref": "ADD_CONTACT_ACTION_TYPE"
+      },
+      "companionAddContactEventType": {
+        "id": 2,
+        "type": "COMPANION_ADD_CONTACT_EVENT_TYPE",
+        "wire": "companion_add_contact_event_type",
+        "enum_ref": "COMPANION_ADD_CONTACT_EVENT_TYPE"
+      },
+      "companionAddContactSessionId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "companion_add_contact_session_id"
+      },
+      "companionAddContactSource": {
+        "id": 4,
+        "type": "COMPANION_ADD_CONTACT_SOURCE",
+        "wire": "companion_add_contact_source",
+        "enum_ref": "COMPANION_ADD_CONTACT_SOURCE"
+      },
+      "companionContactSaveResult": {
+        "id": 5,
+        "type": "COMPANION_CONTACT_SAVE_RESULT",
+        "wire": "companion_contact_save_result",
+        "enum_ref": "COMPANION_CONTACT_SAVE_RESULT"
+      },
+      "companionFnameEdited": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "companion_fname_edited"
+      },
+      "companionHasPhoneNumber": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "companion_has_phone_number"
+      },
+      "companionHasUsername": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "companion_has_username"
+      },
+      "companionIsContactSyncToOs": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "companion_is_contact_sync_to_os"
+      },
+      "companionLnameEdited": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "companion_lname_edited"
+      },
+      "companionPhNumberAutofilled": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "companion_ph_number_autofilled"
+      },
+      "companionPhNumberEdited": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "companion_ph_number_edited"
+      },
+      "companionSyncSettingChanged": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "companion_sync_setting_changed"
+      },
+      "companionUsernameAutofilled": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "companion_username_autofilled"
+      },
+      "companionUsernameEdited": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "companion_username_edited"
+      },
+      "companionWhatsappContactStatus": {
+        "id": 16,
+        "type": "COMPANION_WHATSAPP_CONTACT_STATUS",
+        "wire": "companion_whatsapp_contact_status",
+        "enum_ref": "COMPANION_WHATSAPP_CONTACT_STATUS"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCompanionsContactEventWamEvent",
+    "matches": "CompanionsContactEvent:\\s*\\[\\s*5718"
+  },
+  "literals": [
+    "5718"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAddContactActionType",
+      "WAWebWamEnumCompanionAddContactEventType",
+      "WAWebWamEnumCompanionAddContactSource",
+      "WAWebWamEnumCompanionContactSaveResult",
+      "WAWebWamEnumCompanionWhatsappContactStatus"
+    ],
+    "dependents": [
+      "WAWebContactLogging"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:create_group_and_add_member_overflow",
+  "kind": "ab",
+  "name": "create_group_and_add_member_overflow",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15772,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "create_group_and_add_member_overflow:\\s*\\[\\s*15772"
+  },
+  "literals": [
+    "create_group_and_add_member_overflow",
+    "15772"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebConversationMenus"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

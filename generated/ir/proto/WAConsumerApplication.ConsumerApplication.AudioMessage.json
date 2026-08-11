@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.AudioMessage",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.AudioMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "audio": {
+        "number": 1
+      },
+      "ptt": {
+        "number": 2
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.AudioMessage\""
+  },
+  "literals": [
+    "AudioMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

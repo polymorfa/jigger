@@ -1,0 +1,45 @@
+{
+  "id": "ab:br_smb_paymentshome_enabled",
+  "kind": "ab",
+  "name": "br_smb_paymentshome_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23042,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "br_smb_paymentshome_enabled:\\s*\\[\\s*23042"
+  },
+  "literals": [
+    "br_smb_paymentshome_enabled",
+    "23042"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPaymentsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

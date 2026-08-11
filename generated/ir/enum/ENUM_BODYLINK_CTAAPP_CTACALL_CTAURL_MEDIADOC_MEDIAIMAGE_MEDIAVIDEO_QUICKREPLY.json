@@ -1,0 +1,82 @@
+{
+  "id": "enum:ENUM_BODYLINK_CTAAPP_CTACALL_CTAURL_MEDIADOC_MEDIAIMAGE_MEDIAVIDEO_QUICKREPLY",
+  "kind": "enum",
+  "name": "ENUM_BODYLINK_CTAAPP_CTACALL_CTAURL_MEDIADOC_MEDIAIMAGE_MEDIAVIDEO_QUICKREPLY",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInReceiptEnums",
+    "variants": [
+      {
+        "name": "body-link",
+        "value": "body-link"
+      },
+      {
+        "name": "cta-app",
+        "value": "cta-app"
+      },
+      {
+        "name": "cta-call",
+        "value": "cta-call"
+      },
+      {
+        "name": "cta-url",
+        "value": "cta-url"
+      },
+      {
+        "name": "media-doc",
+        "value": "media-doc"
+      },
+      {
+        "name": "media-image",
+        "value": "media-image"
+      },
+      {
+        "name": "media-video",
+        "value": "media-video"
+      },
+      {
+        "name": "quick-reply",
+        "value": "quick-reply"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptEnums",
+    "matches": "ENUM_BODYLINK_CTAAPP_CTACALL_CTAURL_MEDIADOC_MEDIAIMAGE_MEDIAVIDEO_QUICKREPLY\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_BODYLINK_CTAAPP_CTACALL_CTAURL_MEDIADOC_MEDIAIMAGE_MEDIAVIDEO_QUICKREPLY",
+    "body-link",
+    "cta-app",
+    "cta-call",
+    "cta-url",
+    "media-doc",
+    "media-image",
+    "media-video",
+    "quick-reply"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInReceiptAggregatedByMessageIdMixin",
+      "WASmaxInReceiptDeliverAggregatedByMessageIdStyleMixin",
+      "WASmaxInReceiptDeliverMessageAggregatedStyleMixin",
+      "WASmaxInReceiptDeliverPaidConversationAggregatedMixin",
+      "WASmaxInReceiptDeprecatedDeliveryTypeMixin",
+      "WASmaxInReceiptDeprecatedEditMixin",
+      "WASmaxInReceiptGroupMixin",
+      "WASmaxInReceiptHSMErrorTypeMixin",
+      "WASmaxInReceiptIndividualMixin",
+      "WASmaxInReceiptOrderStatusErrorTypeMixin",
+      "WASmaxInReceiptPublishSuccessMixin",
+      "WASmaxInReceiptRecipientMixin",
+      "WASmaxInReceiptRoiTemplateSourceMixin",
+      "WASmaxInReceiptServerErrorTypeMixin",
+      "WASmaxOutReceiptDeliverResponseSuccess"
+    ],
+    "dep_count": 1,
+    "dependent_count": 15
+  }
+}

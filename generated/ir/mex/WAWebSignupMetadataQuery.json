@@ -1,0 +1,31 @@
+{
+  "id": "mex:WAWebSignupMetadataQuery",
+  "kind": "mex",
+  "name": "WAWebSignupMetadataQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26378108788468347",
+    "operation": "query",
+    "variables": [
+      "phone_number",
+      "signup_id"
+    ],
+    "document": "query SignupMetadataQuery($phone_number, $signup_id) {\n  wa_signup_metadata {\n    id\n    signup_message\n    privacy_policy_url\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebSignupMetadataQuery.graphql",
+    "matches": "id: \"26378108788468347\""
+  },
+  "literals": [
+    "26378108788468347",
+    "WAWebSignupMetadataQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSignupMetadataQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

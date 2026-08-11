@@ -1,0 +1,46 @@
+{
+  "id": "ab:opus_enabled",
+  "kind": "ab",
+  "name": "opus_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27278,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "opus_enabled:\\s*\\[\\s*27278"
+  },
+  "literals": [
+    "opus_enabled",
+    "27278"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebLimitSharingGatingUtils",
+      "WAWebTasksDefinitions"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

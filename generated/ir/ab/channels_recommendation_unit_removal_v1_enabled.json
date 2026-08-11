@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_recommendation_unit_removal_v1_enabled",
+  "kind": "ab",
+  "name": "channels_recommendation_unit_removal_v1_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33761,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_recommendation_unit_removal_v1_enabled:\\s*\\[\\s*33761"
+  },
+  "literals": [
+    "channels_recommendation_unit_removal_v1_enabled",
+    "33761"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

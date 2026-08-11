@@ -1,0 +1,43 @@
+{
+  "id": "enum:CHAT_MUTED_TYPE",
+  "kind": "enum",
+  "name": "CHAT_MUTED_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChatMutedType",
+    "variants": [
+      {
+        "name": "NOT_MUTED",
+        "value": 1.0
+      },
+      {
+        "name": "MUTED_NO_NOTIFICATIONS",
+        "value": 2.0
+      },
+      {
+        "name": "MUTED_SILENT_NOTIFICATIONS",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChatMutedType",
+    "matches": "CHAT_MUTED_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CHAT_MUTED_TYPE",
+    "NOT_MUTED",
+    "MUTED_NO_NOTIFICATIONS",
+    "MUTED_SILENT_NOTIFICATIONS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatMessageCountsWamEvent",
+      "WAWebThreadInteractionDataCoreConsumerWamEvent",
+      "WAWebThreadLoggingCoreConsumer"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

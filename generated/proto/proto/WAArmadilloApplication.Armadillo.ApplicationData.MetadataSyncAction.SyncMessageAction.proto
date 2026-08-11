@@ -1,0 +1,4 @@
+message SyncMessageAction {
+  optional bytes key = 1;
+  optional ActionMessageDelete messageDelete = 101;
+}

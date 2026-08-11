@@ -1,0 +1,156 @@
+{
+  "id": "iq:w:comms/set/event",
+  "kind": "iq",
+  "name": "InAppCommsEvent",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:comms",
+    "type": "set",
+    "tags": [
+      "event"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:comms",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "event",
+          "attrs": [
+            {
+              "name": "promotion_id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "timestamp_sec",
+              "ty": "int",
+              "optional": false
+            },
+            {
+              "name": "logdata",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxInAppCommsEventRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInInAppCommsEventResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInInAppCommsEventResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorInternalServerError",
+          "IQErrorRequestTimeout",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutInAppCommsEventRequest",
+    "matches": "smax\\(\"event\""
+  },
+  "literals": [
+    "w:comms",
+    "event"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutInAppCommsBaseIQSetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxInAppCommsEventRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

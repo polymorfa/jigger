@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_anr_throttle_signal_snapshot_enabled",
+  "kind": "ab",
+  "name": "web_anr_throttle_signal_snapshot_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28890,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_anr_throttle_signal_snapshot_enabled:\\s*\\[\\s*28890"
+  },
+  "literals": [
+    "web_anr_throttle_signal_snapshot_enabled",
+    "28890"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMessageProcessorCache"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

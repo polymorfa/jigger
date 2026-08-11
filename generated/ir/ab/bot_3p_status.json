@@ -1,0 +1,46 @@
+{
+  "id": "ab:bot_3p_status",
+  "kind": "ab",
+  "name": "bot_3p_status",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5985,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "bot_3p_status:\\s*\\[\\s*5985"
+  },
+  "literals": [
+    "bot_3p_status",
+    "5985"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebBotBaseGating",
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

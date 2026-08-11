@@ -1,0 +1,4 @@
+message NativeFlowInfo {
+  optional bytes name = 1;
+  optional bytes paramsJson = 2;
+}

@@ -1,0 +1,67 @@
+{
+  "id": "enum:COMPANION_CONTACT_SAVE_RESULT",
+  "kind": "enum",
+  "name": "COMPANION_CONTACT_SAVE_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCompanionContactSaveResult",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 0.0
+      },
+      {
+        "name": "NETWORK_UNAVAILABLE",
+        "value": 1.0
+      },
+      {
+        "name": "USYNC_UNAVAILABLE",
+        "value": 2.0
+      },
+      {
+        "name": "CLIENT_ERROR",
+        "value": 3.0
+      },
+      {
+        "name": "PHONE_NUMBER_USERNAME_NOT_MATCH",
+        "value": 4.0
+      },
+      {
+        "name": "INVALID_USERNAME",
+        "value": 5.0
+      },
+      {
+        "name": "PIN_REQUIRED",
+        "value": 6.0
+      },
+      {
+        "name": "WRONG_PIN",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCompanionContactSaveResult",
+    "matches": "COMPANION_CONTACT_SAVE_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "COMPANION_CONTACT_SAVE_RESULT",
+    "SUCCESS",
+    "NETWORK_UNAVAILABLE",
+    "USYNC_UNAVAILABLE",
+    "CLIENT_ERROR",
+    "PHONE_NUMBER_USERNAME_NOT_MATCH",
+    "INVALID_USERNAME",
+    "PIN_REQUIRED",
+    "WRONG_PIN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCompanionsContactEventWamEvent",
+      "WAWebContactLogging"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,5 @@
+export enum BUSYREASON {
+  PSTN_RINGING = 0,
+  PSTN_OFFHOOK = 1,
+  WA_CALL_RINGING_OR_PENDING = 2,
+}

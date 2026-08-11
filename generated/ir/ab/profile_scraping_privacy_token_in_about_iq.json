@@ -1,0 +1,45 @@
+{
+  "id": "ab:profile_scraping_privacy_token_in_about_iq",
+  "kind": "ab",
+  "name": "profile_scraping_privacy_token_in_about_iq",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9668,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "profile_scraping_privacy_token_in_about_iq:\\s*\\[\\s*9668"
+  },
+  "literals": [
+    "profile_scraping_privacy_token_in_about_iq",
+    "9668"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPrivacyGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

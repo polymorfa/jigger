@@ -1,0 +1,157 @@
+{
+  "id": "enum:ENUM__CALLPERMISSIONREQUEST_CATALOGMESSAGE_MENUOPTIONS_ORDERDETAILS_ORDERSTATUS_OTP_PAYMENTINFO_PAYMENTKEYINFO_PAYMENTMETHOD_PAYMENTSTATUS_SPLITPAYMENT_VIDEOCALL_VOICECALL",
+  "kind": "enum",
+  "name": "ENUM__CALLPERMISSIONREQUEST_CATALOGMESSAGE_MENUOPTIONS_ORDERDETAILS_ORDERSTATUS_OTP_PAYMENTINFO_PAYMENTKEYINFO_PAYMENTMETHOD_PAYMENTSTATUS_SPLITPAYMENT_VIDEOCALL_VOICECALL",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessageDeliverEnums",
+    "variants": [
+      {
+        "name": "",
+        "value": ""
+      },
+      {
+        "name": "call_permission_request",
+        "value": "call_permission_request"
+      },
+      {
+        "name": "catalog_message",
+        "value": "catalog_message"
+      },
+      {
+        "name": "menu_options",
+        "value": "menu_options"
+      },
+      {
+        "name": "order_details",
+        "value": "order_details"
+      },
+      {
+        "name": "order_status",
+        "value": "order_status"
+      },
+      {
+        "name": "otp",
+        "value": "otp"
+      },
+      {
+        "name": "payment_info",
+        "value": "payment_info"
+      },
+      {
+        "name": "payment_key_info",
+        "value": "payment_key_info"
+      },
+      {
+        "name": "payment_method",
+        "value": "payment_method"
+      },
+      {
+        "name": "payment_status",
+        "value": "payment_status"
+      },
+      {
+        "name": "split_payment",
+        "value": "split_payment"
+      },
+      {
+        "name": "video_call",
+        "value": "video_call"
+      },
+      {
+        "name": "voice_call",
+        "value": "voice_call"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverEnums",
+    "matches": "ENUM__CALLPERMISSIONREQUEST_CATALOGMESSAGE_MENUOPTIONS_ORDERDETAILS_ORDERSTATUS_OTP_PAYMENTINFO_PAYMENTKEYINFO_PAYMENTMETHOD_PAYMENTSTATUS_SPLITPAYMENT_VIDEOCALL_VOICECALL\\s*[:=]"
+  },
+  "literals": [
+    "ENUM__CALLPERMISSIONREQUEST_CATALOGMESSAGE_MENUOPTIONS_ORDERDETAILS_ORDERSTATUS_OTP_PAYMENTINFO_PAYMENTKEYINFO_PAYMENTMETHOD_PAYMENTSTATUS_SPLITPAYMENT_VIDEOCALL_VOICECALL",
+    "",
+    "call_permission_request",
+    "catalog_message",
+    "menu_options",
+    "order_details",
+    "order_status",
+    "otp",
+    "payment_info",
+    "payment_key_info",
+    "payment_method",
+    "payment_status",
+    "split_payment",
+    "video_call",
+    "voice_call"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverAppdataMetaAttributeMixin",
+      "WASmaxInMessageDeliverAuthMixin",
+      "WASmaxInMessageDeliverBRMessageDeliverSendNodeMixin",
+      "WASmaxInMessageDeliverBRP2MHPPTransactionMixin",
+      "WASmaxInMessageDeliverBasePayNodeMixin",
+      "WASmaxInMessageDeliverBillMetadataMixin",
+      "WASmaxInMessageDeliverBizAutoResponseMixin",
+      "WASmaxInMessageDeliverBizEngagementDataMixin",
+      "WASmaxInMessageDeliverBizROIMetricsGatingFlagsMixin",
+      "WASmaxInMessageDeliverBotResponseMixin",
+      "WASmaxInMessageDeliverBroadcastContextMixin",
+      "WASmaxInMessageDeliverBroadcastMixin",
+      "WASmaxInMessageDeliverBusinessBotGatingMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageFeedbackRequestedMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageMixin",
+      "WASmaxInMessageDeliverClientReportingTokenValidationPolicyMixin",
+      "WASmaxInMessageDeliverCoExV2ProactiveMetaMixin",
+      "WASmaxInMessageDeliverCollectionContentTypeMixin",
+      "WASmaxInMessageDeliverContentTypeEventMixin",
+      "WASmaxInMessageDeliverContentTypeMixin",
+      "WASmaxInMessageDeliverConversionRecipientStatusMixin",
+      "WASmaxInMessageDeliverDeliveryContextMixin",
+      "WASmaxInMessageDeliverEncMediaTypeDeprecatedMixin",
+      "WASmaxInMessageDeliverEncMediaTypeMixin",
+      "WASmaxInMessageDeliverEncStateMixin",
+      "WASmaxInMessageDeliverEncTypeIndividualMixin",
+      "WASmaxInMessageDeliverFrequencyRuleMixin",
+      "WASmaxInMessageDeliverFullTransactionBaseMixin",
+      "WASmaxInMessageDeliverGroupAddressingModeMixin",
+      "WASmaxInMessageDeliverGroupCAPIShardRoutingStrategyMetaAttributeMixin",
+      "WASmaxInMessageDeliverGroupMixin",
+      "WASmaxInMessageDeliverHSMReviewMetadataMixin",
+      "WASmaxInMessageDeliverIndividualMixin",
+      "WASmaxInMessageDeliverLIDSessionDeprecationMixin",
+      "WASmaxInMessageDeliverLiveLocationModeMixin",
+      "WASmaxInMessageDeliverMediaTypeMixin",
+      "WASmaxInMessageDeliverMemberTagsMessageMetaAttributeMixin",
+      "WASmaxInMessageDeliverMessageAssociationTypeMixin",
+      "WASmaxInMessageDeliverMessageTargetMixin",
+      "WASmaxInMessageDeliverMetaIsGroupStatusMixin",
+      "WASmaxInMessageDeliverNativeFlowMixin",
+      "WASmaxInMessageDeliverNewsletterMediaMixin",
+      "WASmaxInMessageDeliverP2MHybridExternalPaymentMethodMixin",
+      "WASmaxInMessageDeliverPayNodeTypeMixin",
+      "WASmaxInMessageDeliverPaymentInitiatorMixin",
+      "WASmaxInMessageDeliverPeerRequest",
+      "WASmaxInMessageDeliverProductListDeprecatedMixin",
+      "WASmaxInMessageDeliverQualityControlMixin",
+      "WASmaxInMessageDeliverRecipientMixin",
+      "WASmaxInMessageDeliverSMBBroadcastSourceMixin",
+      "WASmaxInMessageDeliverSenderAccountKindMixin",
+      "WASmaxInMessageDeliverSingleSelectListMixin",
+      "WASmaxInMessageDeliverStatusMentionSourceMixin",
+      "WASmaxInMessageDeliverStatusMentionedUsersMixin",
+      "WASmaxInMessageDeliverStatusSettingMixin",
+      "WASmaxInMessageDeliverTransactionNUXReceiverMixin",
+      "WASmaxInMessageDeliverTransactionSyncStatusMixin",
+      "WASmaxInMessageDeliverTransactionTypeMixin",
+      "WASmaxInMessageDeliverUPILiteDetailsMixin",
+      "WASmaxInMessageDeliverUPIMandateBaseMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 72
+  }
+}

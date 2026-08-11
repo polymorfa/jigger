@@ -1,0 +1,2 @@
+/** A/B property 14492 (int), default 7. */
+export const ABSyncdWaitForKeyTimeoutDays = 'syncd_wait_for_key_timeout_days' as const

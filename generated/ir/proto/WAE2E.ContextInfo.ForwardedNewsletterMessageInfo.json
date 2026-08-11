@@ -1,0 +1,57 @@
+{
+  "id": "proto:WAE2E.ContextInfo.ForwardedNewsletterMessageInfo",
+  "kind": "proto",
+  "name": "WAE2E.ContextInfo.ForwardedNewsletterMessageInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilityText": {
+        "number": 5
+      },
+      "contentType": {
+        "number": 4
+      },
+      "newsletterJid": {
+        "number": 1
+      },
+      "newsletterName": {
+        "number": 3
+      },
+      "profileName": {
+        "number": 6
+      },
+      "serverMessageId": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"ContextInfo.ForwardedNewsletterMessageInfo\""
+  },
+  "literals": [
+    "ForwardedNewsletterMessageInfo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

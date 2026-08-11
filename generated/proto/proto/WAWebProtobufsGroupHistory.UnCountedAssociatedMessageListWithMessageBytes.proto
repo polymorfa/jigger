@@ -1,0 +1,4 @@
+message UnCountedAssociatedMessageListWithMessageBytes {
+  optional WebMessageInfoWithMessageBytes messages = 1;
+  optional bytes parentMessage = 2;
+}

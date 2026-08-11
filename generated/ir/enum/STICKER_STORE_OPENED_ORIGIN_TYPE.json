@@ -1,0 +1,31 @@
+{
+  "id": "enum:STICKER_STORE_OPENED_ORIGIN_TYPE",
+  "kind": "enum",
+  "name": "STICKER_STORE_OPENED_ORIGIN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStickerStoreOpenedOriginType",
+    "variants": [
+      {
+        "name": "MEDIA_EDITOR",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStickerStoreOpenedOriginType",
+    "matches": "STICKER_STORE_OPENED_ORIGIN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STICKER_STORE_OPENED_ORIGIN_TYPE",
+    "MEDIA_EDITOR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStickerStoreOpenedWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

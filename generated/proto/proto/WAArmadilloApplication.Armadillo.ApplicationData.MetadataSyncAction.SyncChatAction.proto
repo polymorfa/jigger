@@ -1,0 +1,6 @@
+message SyncChatAction {
+  optional bytes chatId = 1;
+  optional ActionChatArchive chatArchive = 101;
+  optional ActionChatDelete chatDelete = 102;
+  optional ActionChatRead chatRead = 103;
+}

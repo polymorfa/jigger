@@ -1,0 +1,42 @@
+{
+  "id": "ab:channel_playable_message_views_duration_milliseconds",
+  "kind": "ab",
+  "name": "channel_playable_message_views_duration_milliseconds",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4722,
+    "type": "int",
+    "default": "3e3",
+    "alt_default": "3e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channel_playable_message_views_duration_milliseconds:\\s*\\[\\s*4722"
+  },
+  "literals": [
+    "channel_playable_message_views_duration_milliseconds",
+    "4722"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:bonsai_carousel_hq_thumbnail_enabled",
+  "kind": "ab",
+  "name": "bonsai_carousel_hq_thumbnail_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6459,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "bonsai_carousel_hq_thumbnail_enabled:\\s*\\[\\s*6459"
+  },
+  "literals": [
+    "bonsai_carousel_hq_thumbnail_enabled",
+    "6459"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

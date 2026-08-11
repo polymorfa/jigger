@@ -1,0 +1,10 @@
+message DeviceCapabilities {
+  optional bytes chatLockSupportLevel = 1;
+  optional LIDMigration lidMigration = 2;
+  optional BusinessBroadcast businessBroadcast = 3;
+  optional UserHasAvatar userHasAvatar = 4;
+  optional bytes memberNameTagPrimarySupport = 5;
+  optional AiThread aiThread = 6;
+  optional AiFbidMigration aiFbidMigration = 7;
+  optional BizAiSettingsSync bizAiSettingsSync = 8;
+}

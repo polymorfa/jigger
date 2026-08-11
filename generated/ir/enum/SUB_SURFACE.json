@@ -1,0 +1,392 @@
+{
+  "id": "enum:SUB_SURFACE",
+  "kind": "enum",
+  "name": "SUB_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSubSurface",
+    "variants": [
+      {
+        "name": "CHAT_HEADER",
+        "value": 1.0
+      },
+      {
+        "name": "VOICE_CHAT_NOTIFICATION",
+        "value": 2.0
+      },
+      {
+        "name": "NONE",
+        "value": 3.0
+      },
+      {
+        "name": "CALL_CONTROL_BOTTOM_SHEET",
+        "value": 4.0
+      },
+      {
+        "name": "CALL_HEADER",
+        "value": 5.0
+      },
+      {
+        "name": "ADD_PARTICIPANT_PICKER",
+        "value": 6.0
+      },
+      {
+        "name": "LIGHTWEIGHT_CALL_MESSAGE",
+        "value": 7.0
+      },
+      {
+        "name": "PARTICIPANT_LIST",
+        "value": 8.0
+      },
+      {
+        "name": "FAVORITES_PICKER",
+        "value": 9.0
+      },
+      {
+        "name": "FAVORITES_FULLLIST",
+        "value": 10.0
+      },
+      {
+        "name": "DESKTOP_GALLERY_VIEW",
+        "value": 11.0
+      },
+      {
+        "name": "DESKTOP_SPEAKER_VIEW",
+        "value": 12.0
+      },
+      {
+        "name": "MORE_MENU",
+        "value": 13.0
+      },
+      {
+        "name": "DIALER",
+        "value": 14.0
+      },
+      {
+        "name": "CALL_CONFIRMATION_SELECTION_SHEET",
+        "value": 15.0
+      },
+      {
+        "name": "PHONE_NUMBER_SHEET",
+        "value": 16.0
+      },
+      {
+        "name": "MISSED_ICCE_BUBBLE",
+        "value": 17.0
+      },
+      {
+        "name": "ICCE_BUBBLE_OTHER_RESULT",
+        "value": 18.0
+      },
+      {
+        "name": "QUICK_CONTACT",
+        "value": 19.0
+      },
+      {
+        "name": "CALL_LOG_FAVORITE_ROW",
+        "value": 20.0
+      },
+      {
+        "name": "CALL_LOG_MISSED_ROW",
+        "value": 21.0
+      },
+      {
+        "name": "CALL_LOG_INCOMING_ROW",
+        "value": 22.0
+      },
+      {
+        "name": "CALL_LOG_OUTGOING_ROW",
+        "value": 23.0
+      },
+      {
+        "name": "CALL_LOG_FAILED_ROW",
+        "value": 24.0
+      },
+      {
+        "name": "CALL_LINK_CREATION_PAGE",
+        "value": 25.0
+      },
+      {
+        "name": "PEER_VIEW",
+        "value": 26.0
+      },
+      {
+        "name": "SELF_VIEW_FRONT_CAMERA",
+        "value": 27.0
+      },
+      {
+        "name": "SELF_VIEW_BACK_CAMERA",
+        "value": 28.0
+      },
+      {
+        "name": "SHARED_SCREEN_VIEW",
+        "value": 29.0
+      },
+      {
+        "name": "ATTACHMENT_TRAY",
+        "value": 30.0
+      },
+      {
+        "name": "EVENT_CREATION_PAGE",
+        "value": 31.0
+      },
+      {
+        "name": "LIGHTWEIGHT_CALL_UI",
+        "value": 32.0
+      },
+      {
+        "name": "WAVE_ALL_ICCE_BUBBLE",
+        "value": 33.0
+      },
+      {
+        "name": "VOICE_CHAT_MINI_PLAYER",
+        "value": 34.0
+      },
+      {
+        "name": "VOICE_CHAT_FAB",
+        "value": 35.0
+      },
+      {
+        "name": "CALL_DROPDOWN_MENU",
+        "value": 36.0
+      },
+      {
+        "name": "AWARENESS_SYNC_CONTACTS",
+        "value": 37.0
+      },
+      {
+        "name": "AWARENESS_PRIVATE_CALLS",
+        "value": 38.0
+      },
+      {
+        "name": "AWARENESS_COMPANION_CALLS",
+        "value": 39.0
+      },
+      {
+        "name": "AWARENESS_EXPRESSIVE_CALLS",
+        "value": 40.0
+      },
+      {
+        "name": "AWARENESS_INVITE_OTHERS",
+        "value": 41.0
+      },
+      {
+        "name": "AWARENESS_AND_SUGGESTION",
+        "value": 42.0
+      },
+      {
+        "name": "CALLS_AND_SUGGESTION",
+        "value": 43.0
+      },
+      {
+        "name": "CALLS",
+        "value": 44.0
+      },
+      {
+        "name": "CALL_LOG_SUGGESTED_ROW",
+        "value": 45.0
+      },
+      {
+        "name": "CONTACT_INFO",
+        "value": 46.0
+      },
+      {
+        "name": "BANNER",
+        "value": 47.0
+      },
+      {
+        "name": "ANSWER_CALL_SCREEN",
+        "value": 48.0
+      },
+      {
+        "name": "SCHEDULE_CALL_EVENT_CREATION_PAGE",
+        "value": 49.0
+      },
+      {
+        "name": "INVITE_ICCE_BUBBLE",
+        "value": 50.0
+      },
+      {
+        "name": "INVITE_MISSED_ICCE_BUBBLE",
+        "value": 51.0
+      },
+      {
+        "name": "CALL_LOG_INVITE_ROW",
+        "value": 52.0
+      },
+      {
+        "name": "CALL_LOG_INVITE_MISSED_ROW",
+        "value": 53.0
+      },
+      {
+        "name": "CALL_VIDEO_SOURCE_PICKER",
+        "value": 54.0
+      },
+      {
+        "name": "SELF_VIEW_WEARABLE_CAMERA",
+        "value": 55.0
+      },
+      {
+        "name": "CALL_LOG_BLOCKED_ROW",
+        "value": 56.0
+      },
+      {
+        "name": "BLOCKED_ICCE_BUBBLE",
+        "value": 57.0
+      },
+      {
+        "name": "REMINDER_DURATION_SHEET",
+        "value": 58.0
+      },
+      {
+        "name": "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION",
+        "value": 59.0
+      },
+      {
+        "name": "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION_BUTTON",
+        "value": 60.0
+      },
+      {
+        "name": "H_SCROLL",
+        "value": 61.0
+      },
+      {
+        "name": "SCHEDULED_CALL_LIST",
+        "value": 62.0
+      },
+      {
+        "name": "HEADER_MORE_MENU",
+        "value": 63.0
+      },
+      {
+        "name": "LONG_PRESS_UI_MENU",
+        "value": 64.0
+      },
+      {
+        "name": "CHAT_BUBBLE",
+        "value": 65.0
+      },
+      {
+        "name": "ADD_PARTICIPANT_PICKER_SEARCH",
+        "value": 66.0
+      },
+      {
+        "name": "CALLS_TAB_SEARCH",
+        "value": 67.0
+      },
+      {
+        "name": "UPCOMING_EVENT_BANNER",
+        "value": 68.0
+      },
+      {
+        "name": "CALL_LOG_MULTI_SELECT_TOOLBAR",
+        "value": 69.0
+      },
+      {
+        "name": "CALL_LOG_SWIPE",
+        "value": 70.0
+      },
+      {
+        "name": "CALL_LOG_CLEAR_ALL",
+        "value": 71.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSubSurface",
+    "matches": "SUB_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "SUB_SURFACE",
+    "CHAT_HEADER",
+    "VOICE_CHAT_NOTIFICATION",
+    "NONE",
+    "CALL_CONTROL_BOTTOM_SHEET",
+    "CALL_HEADER",
+    "ADD_PARTICIPANT_PICKER",
+    "LIGHTWEIGHT_CALL_MESSAGE",
+    "PARTICIPANT_LIST",
+    "FAVORITES_PICKER",
+    "FAVORITES_FULLLIST",
+    "DESKTOP_GALLERY_VIEW",
+    "DESKTOP_SPEAKER_VIEW",
+    "MORE_MENU",
+    "DIALER",
+    "CALL_CONFIRMATION_SELECTION_SHEET",
+    "PHONE_NUMBER_SHEET",
+    "MISSED_ICCE_BUBBLE",
+    "ICCE_BUBBLE_OTHER_RESULT",
+    "QUICK_CONTACT",
+    "CALL_LOG_FAVORITE_ROW",
+    "CALL_LOG_MISSED_ROW",
+    "CALL_LOG_INCOMING_ROW",
+    "CALL_LOG_OUTGOING_ROW",
+    "CALL_LOG_FAILED_ROW",
+    "CALL_LINK_CREATION_PAGE",
+    "PEER_VIEW",
+    "SELF_VIEW_FRONT_CAMERA",
+    "SELF_VIEW_BACK_CAMERA",
+    "SHARED_SCREEN_VIEW",
+    "ATTACHMENT_TRAY",
+    "EVENT_CREATION_PAGE",
+    "LIGHTWEIGHT_CALL_UI",
+    "WAVE_ALL_ICCE_BUBBLE",
+    "VOICE_CHAT_MINI_PLAYER",
+    "VOICE_CHAT_FAB",
+    "CALL_DROPDOWN_MENU",
+    "AWARENESS_SYNC_CONTACTS",
+    "AWARENESS_PRIVATE_CALLS",
+    "AWARENESS_COMPANION_CALLS",
+    "AWARENESS_EXPRESSIVE_CALLS",
+    "AWARENESS_INVITE_OTHERS",
+    "AWARENESS_AND_SUGGESTION",
+    "CALLS_AND_SUGGESTION",
+    "CALLS",
+    "CALL_LOG_SUGGESTED_ROW",
+    "CONTACT_INFO",
+    "BANNER",
+    "ANSWER_CALL_SCREEN",
+    "SCHEDULE_CALL_EVENT_CREATION_PAGE",
+    "INVITE_ICCE_BUBBLE",
+    "INVITE_MISSED_ICCE_BUBBLE",
+    "CALL_LOG_INVITE_ROW",
+    "CALL_LOG_INVITE_MISSED_ROW",
+    "CALL_VIDEO_SOURCE_PICKER",
+    "SELF_VIEW_WEARABLE_CAMERA",
+    "CALL_LOG_BLOCKED_ROW",
+    "BLOCKED_ICCE_BUBBLE",
+    "REMINDER_DURATION_SHEET",
+    "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION",
+    "VOICE_CHAT_WAVE_IN_APP_NOTIFICATION_BUTTON",
+    "H_SCROLL",
+    "SCHEDULED_CALL_LIST",
+    "HEADER_MORE_MENU",
+    "LONG_PRESS_UI_MENU",
+    "CHAT_BUBBLE",
+    "ADD_PARTICIPANT_PICKER_SEARCH",
+    "CALLS_TAB_SEARCH",
+    "UPCOMING_EVENT_BANNER",
+    "CALL_LOG_MULTI_SELECT_TOOLBAR",
+    "CALL_LOG_SWIPE",
+    "CALL_LOG_CLEAR_ALL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallButtons.react",
+      "WAWebChatlistItem.react",
+      "WAWebChatlist_DEPRECATED.react",
+      "WAWebContactMenuDropdown.react",
+      "WAWebEventsCreateEventModalFlow.react",
+      "WAWebGroupCallDropdownContent.react",
+      "WAWebGroupCallDropdownWithTrigger.react",
+      "WAWebGroupCallParticipantSelector.react",
+      "WAWebMessageNotification.react",
+      "WAWebPreCallUserJourneyCallsTabWamEvent",
+      "WAWebPreCallUserJourneyChatThreadWamEvent",
+      "WAWebVoipCallsTabDrawerUpcomingEvents.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

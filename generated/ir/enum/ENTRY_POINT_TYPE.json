@@ -1,0 +1,40 @@
+{
+  "id": "enum:ENTRY_POINT_TYPE",
+  "kind": "enum",
+  "name": "ENTRY_POINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEntryPointType",
+    "variants": [
+      {
+        "name": "MAIN_SCREEN",
+        "value": 1.0
+      },
+      {
+        "name": "CONTACT_INFO",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEntryPointType",
+    "matches": "ENTRY_POINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ENTRY_POINT_TYPE",
+    "MAIN_SCREEN",
+    "CONTACT_INFO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaHubEmptyGalleryEntryPoint.react",
+      "WAWebMediaHubFooterEntryPoint.react",
+      "WAWebMediaHubNavBarItem.react",
+      "WAWebMediaHubSession",
+      "WAWebMediaHubUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

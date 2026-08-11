@@ -1,0 +1,9 @@
+message ChatThemeSetting {
+  optional bytes settingTimestampMs = 1;
+  optional bytes clearTheme = 2;
+  optional bytes colorSchemeId = 3;
+  optional ChatDefaultWallpaper defaultWallpaper = 10;
+  optional ChatSolidColorWallpaper solidColor = 11;
+  optional ChatStockImageWallpaper stockImage = 12;
+  optional ChatCustomImageWallpaper customImage = 13;
+}

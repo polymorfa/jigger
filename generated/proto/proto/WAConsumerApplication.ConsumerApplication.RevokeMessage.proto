@@ -1,0 +1,3 @@
+message RevokeMessage {
+  optional bytes key = 1;
+}

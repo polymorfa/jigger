@@ -1,0 +1,3 @@
+message AIRichResponseContentItemMetadata {
+  optional AIRichResponseReelItem reelItem = 1;
+}

@@ -1,0 +1,66 @@
+{
+  "id": "wam:5992",
+  "kind": "wam",
+  "name": "CtwaBizUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 5992,
+    "fields": {
+      "adId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "ad_id"
+      },
+      "bizFeatureEnabled": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "biz_feature_enabled"
+      },
+      "ctwaBizEventReason": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "ctwa_biz_event_reason"
+      },
+      "ctwaBizUserJouneryEntryPoint": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "ctwa_biz_user_jounery_entry_point"
+      },
+      "ctwaBizUserJourneyMetadata": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "ctwa_biz_user_journey_metadata"
+      },
+      "ctwaBizUserJourneyOperation": {
+        "id": 2,
+        "type": "CTWA_BIZ_USER_JOURNEY_OPERATION",
+        "wire": "ctwa_biz_user_journey_operation",
+        "enum_ref": "CTWA_BIZ_USER_JOURNEY_OPERATION"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCtwaBizUserJourneyWamEvent",
+    "matches": "CtwaBizUserJourney:\\s*\\[\\s*5992"
+  },
+  "literals": [
+    "5992"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCtwaBizUserJourneyOperation"
+    ],
+    "dependents": [
+      "WAWebCtwaLogger"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

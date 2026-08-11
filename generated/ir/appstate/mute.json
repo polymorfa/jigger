@@ -1,0 +1,51 @@
+{
+  "id": "appstate:mute",
+  "kind": "appstate",
+  "name": "Mute",
+  "data": {
+    "kind": "appstate",
+    "index_name": "mute",
+    "collection": "regular_high",
+    "version": 2,
+    "value_field": "muteAction",
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebMuteChatSync",
+    "matches": "Actions\\.Mute"
+  },
+  "literals": [
+    "mute",
+    "Mute",
+    "muteAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WALongInt",
+      "WATimeUtils",
+      "WAWebABProps",
+      "WAWebBackendApi",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSchemaChat",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdIndexUtils",
+      "WAWebWid",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebChatDeleteBridge",
+      "WAWebChatMuteBridge",
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 16,
+    "dependent_count": 3
+  }
+}

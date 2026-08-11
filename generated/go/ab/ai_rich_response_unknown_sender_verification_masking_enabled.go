@@ -1,0 +1,2 @@
+// ABAiRichResponseUnknownSenderVerificationMaskingEnabled is A/B property 27635 (bool), default false.
+const ABAiRichResponseUnknownSenderVerificationMaskingEnabled = "ai_rich_response_unknown_sender_verification_masking_enabled"

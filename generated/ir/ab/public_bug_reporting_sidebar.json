@@ -1,0 +1,45 @@
+{
+  "id": "ab:public_bug_reporting_sidebar",
+  "kind": "ab",
+  "name": "public_bug_reporting_sidebar",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 19124,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "public_bug_reporting_sidebar:\\s*\\[\\s*19124"
+  },
+  "literals": [
+    "public_bug_reporting_sidebar",
+    "19124"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebFeedbackNavBarItem.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

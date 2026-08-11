@@ -1,0 +1,556 @@
+{
+  "id": "enum:IMAGINE_ACTION",
+  "kind": "enum",
+  "name": "IMAGINE_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumImagineAction",
+    "variants": [
+      {
+        "name": "NULL_STATE_INITIATED",
+        "value": 0.0
+      },
+      {
+        "name": "SUGGESTED_PROMPT_CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "USER_QUERY_INPUT",
+        "value": 2.0
+      },
+      {
+        "name": "EDIT_PROMPT_CLICK",
+        "value": 3.0
+      },
+      {
+        "name": "EDIT_BY_ADD_CLICK",
+        "value": 4.0
+      },
+      {
+        "name": "EDIT_BY_REMOVE_CLICK",
+        "value": 5.0
+      },
+      {
+        "name": "EDIT_BY_CHANGE_CLICK",
+        "value": 6.0
+      },
+      {
+        "name": "ANIMATE_BUTTON_CLICK",
+        "value": 7.0
+      },
+      {
+        "name": "REGENERATE_BUTTON_CLICK",
+        "value": 8.0
+      },
+      {
+        "name": "IMAGINE_SEND",
+        "value": 9.0
+      },
+      {
+        "name": "IMAGINE_CANCEL",
+        "value": 10.0
+      },
+      {
+        "name": "IMAGINE_TOS_PREVIEW",
+        "value": 11.0
+      },
+      {
+        "name": "IMAGINE_TOS_ACCEPT",
+        "value": 12.0
+      },
+      {
+        "name": "IMAGINE_TOS_DECLINE",
+        "value": 13.0
+      },
+      {
+        "name": "IMAGINE_TOS_CANCEL",
+        "value": 14.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_CLICK",
+        "value": 15.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_IMAGE_CLICK_CENTER",
+        "value": 17.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_IMAGE_CLICK_RIGHT",
+        "value": 18.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_IMAGE_CLICK_LEFT",
+        "value": 19.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_UPLOAD_FAILED",
+        "value": 20.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_UPLOAD_DROPOUT",
+        "value": 21.0
+      },
+      {
+        "name": "IMAGINE_INVOKE",
+        "value": 22.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_SETTINGS_DELETE",
+        "value": 23.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_FLOW_RESET",
+        "value": 24.0
+      },
+      {
+        "name": "BOTTOM_SHEET_PREVIEW_NEXT_CLICK",
+        "value": 25.0
+      },
+      {
+        "name": "IMAGINE_CAROUSEL_PREVIEWED",
+        "value": 26.0
+      },
+      {
+        "name": "IMAGINE_CAROUSEL_IMAGE_SELECT",
+        "value": 27.0
+      },
+      {
+        "name": "IMAGINE_CAROUSEL_IMAGE_SWIPE",
+        "value": 28.0
+      },
+      {
+        "name": "IMAGINE_DEFAULT_CAROUSEL_IMAGE_SELECT",
+        "value": 29.0
+      },
+      {
+        "name": "IMAGINE_RETAKE_INLINE_PREVIEWED",
+        "value": 30.0
+      },
+      {
+        "name": "IMAGINE_RETAKE_INLINE_CLICK",
+        "value": 31.0
+      },
+      {
+        "name": "MEDIA_INPUT_CLICK",
+        "value": 32.0
+      },
+      {
+        "name": "MEDIA_INPUT_GALLERY_CLICK",
+        "value": 33.0
+      },
+      {
+        "name": "MEDIA_INPUT_VISUAL_EFFECT_SELECTION",
+        "value": 34.0
+      },
+      {
+        "name": "MEDIA_INPUT_GALLERY_SELECTION_CONFIRMED",
+        "value": 35.0
+      },
+      {
+        "name": "MEDIA_INPUT_COPY_PASTE",
+        "value": 36.0
+      },
+      {
+        "name": "MEDIA_INPUT_CAPTURE_NEW",
+        "value": 37.0
+      },
+      {
+        "name": "MEDIA_INPUT_SEND_CONFIRM",
+        "value": 38.0
+      },
+      {
+        "name": "MEDIA_INPUT_SEND_CANCEL",
+        "value": 39.0
+      },
+      {
+        "name": "IMAGE_DOWNLOADED_TO_DEVICE",
+        "value": 40.0
+      },
+      {
+        "name": "IMAGINE_RETAKE_BOTTOM_SHEET_CLICK",
+        "value": 41.0
+      },
+      {
+        "name": "MEDIA_INPUT_FORWARD_SELECTION",
+        "value": 42.0
+      },
+      {
+        "name": "BOTTOM_SHEET_OPEN_CLICK",
+        "value": 43.0
+      },
+      {
+        "name": "CAROUSEL_IMAGES_LOAD_COMPLETE",
+        "value": 44.0
+      },
+      {
+        "name": "SPOTLIGHT_CLICK",
+        "value": 45.0
+      },
+      {
+        "name": "IMAGINE_PROMPT_SEND",
+        "value": 46.0
+      },
+      {
+        "name": "IMAGINE_CLEAR_BUTTON_TAPPED",
+        "value": 47.0
+      },
+      {
+        "name": "MEMU_TOGGLE_CLICK",
+        "value": 48.0
+      },
+      {
+        "name": "MEDIA_SHARING_BUTTON_PREVIEWED",
+        "value": 49.0
+      },
+      {
+        "name": "MEDIA_SHARING_BUTTON_CLICKED",
+        "value": 50.0
+      },
+      {
+        "name": "MEDIA_SHARING_SUGGESTION_CLICKED",
+        "value": 51.0
+      },
+      {
+        "name": "MEDIA_SHARING_DESCRIPTION_MODE_CLICK",
+        "value": 52.0
+      },
+      {
+        "name": "MEDIA_SHARING_DESCRIPTION_SUBMITTED",
+        "value": 53.0
+      },
+      {
+        "name": "MEDIA_SHARING_REGENERATE_CLICK",
+        "value": 54.0
+      },
+      {
+        "name": "MEDIA_SHARING_ANIMATE_CLICK",
+        "value": 55.0
+      },
+      {
+        "name": "MEDIA_SHARING_SEND",
+        "value": 56.0
+      },
+      {
+        "name": "MIMICRY_POST_VIEWED",
+        "value": 57.0
+      },
+      {
+        "name": "MIMICRY_STICKER_CLICKED",
+        "value": 58.0
+      },
+      {
+        "name": "MIMICRY_ATTRIBUTION_CLICKED",
+        "value": 59.0
+      },
+      {
+        "name": "MIMICRY_ATTRIBUTION_CONFIRMED",
+        "value": 60.0
+      },
+      {
+        "name": "MIMICRY_ADDED",
+        "value": 61.0
+      },
+      {
+        "name": "MIMICRY_REMOVED",
+        "value": 62.0
+      },
+      {
+        "name": "MEDIA_SHARING_CORE_PANEL_VIEW",
+        "value": 63.0
+      },
+      {
+        "name": "MEDIA_SHARING_EDITOR_INITIATED",
+        "value": 64.0
+      },
+      {
+        "name": "MEDIA_SHARING_EDIT_SUBMITTED",
+        "value": 65.0
+      },
+      {
+        "name": "MEDIA_SHARING_FILTER_APPLIED",
+        "value": 66.0
+      },
+      {
+        "name": "MEDIA_SHARING_EDITOR_DONE",
+        "value": 67.0
+      },
+      {
+        "name": "MEDIA_SHARING_CANCEL",
+        "value": 68.0
+      },
+      {
+        "name": "MEDIA_PAGE_COUNT_EXCEED_LIMIT",
+        "value": 69.0
+      },
+      {
+        "name": "MEDIA_SIZE_EXCEED_LIMIT",
+        "value": 70.0
+      },
+      {
+        "name": "MEDIA_EDIT_UNDO_CLICK",
+        "value": 71.0
+      },
+      {
+        "name": "UNDONE_MEDIA_SENT",
+        "value": 72.0
+      },
+      {
+        "name": "MEDIA_SHARING_EXPAND_CLICK",
+        "value": 73.0
+      },
+      {
+        "name": "MEDIA_VIEWER_CTA_VIEWED",
+        "value": 74.0
+      },
+      {
+        "name": "MEDIA_VIEWER_CTA_CLICKED",
+        "value": 75.0
+      },
+      {
+        "name": "BACKGROUND_BUTTON_CLICK",
+        "value": 76.0
+      },
+      {
+        "name": "IMAGINE_PTT_STARTED",
+        "value": 77.0
+      },
+      {
+        "name": "IMAGINE_PTT_CANCELED",
+        "value": 78.0
+      },
+      {
+        "name": "IMAGINE_PTT_SENT",
+        "value": 79.0
+      },
+      {
+        "name": "MEDIA_INPUT_DOCUMENT_CLICK",
+        "value": 80.0
+      },
+      {
+        "name": "UNSUPPORTED_FILE_TYPE_ERROR",
+        "value": 81.0
+      },
+      {
+        "name": "PASSWORD_PROTECTED_FILE_ERROR",
+        "value": 82.0
+      },
+      {
+        "name": "CORRUPTED_FILE_ERROR",
+        "value": 83.0
+      },
+      {
+        "name": "EDIT_BY_DESCRIBE_CLICK",
+        "value": 84.0
+      },
+      {
+        "name": "EDIT_BY_BACKGROUND_CLICK",
+        "value": 85.0
+      },
+      {
+        "name": "IMAGINE_PTT_IMPRESSION",
+        "value": 86.0
+      },
+      {
+        "name": "MEDIA_SHARING_VIDEO_EDIT_COMPLETE",
+        "value": 87.0
+      },
+      {
+        "name": "MEDIA_SHARING_VIDEO_PLAY_CLICK",
+        "value": 88.0
+      },
+      {
+        "name": "MEDIA_SHARING_VIDEO_TRIM_INITIATED",
+        "value": 89.0
+      },
+      {
+        "name": "MEDIA_SHARING_VIDEO_TRIM_DONE",
+        "value": 90.0
+      },
+      {
+        "name": "MEDIA_SHARING_VIDEO_TRIM_CANCEL",
+        "value": 91.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_SETUP_IMPRESSION",
+        "value": 92.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_UPLOAD_PHOTOS_TAP",
+        "value": 93.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_TAKE_PHOTOS_TAP",
+        "value": 94.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_GALLERY_OPEN",
+        "value": 95.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_GALLERY_PHOTO_CLICK",
+        "value": 96.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_CONFIRM_UPLOAD",
+        "value": 97.0
+      },
+      {
+        "name": "IMAGINE_ONBOARDING_CHOOSE_DIFFERENT_PHOTO",
+        "value": 98.0
+      },
+      {
+        "name": "ATTACHMENT_TRAY_OPEN_CLICK",
+        "value": 99.0
+      },
+      {
+        "name": "RESTYLE_OPTION_VIEWED",
+        "value": 100.0
+      },
+      {
+        "name": "RESTYLE_OPTION_CLICKED",
+        "value": 101.0
+      },
+      {
+        "name": "RESTYLE_LONG_PRESSED",
+        "value": 102.0
+      },
+      {
+        "name": "SAVE_BUTTON_CLICKED",
+        "value": 103.0
+      },
+      {
+        "name": "REPORT_BUTTON_CLICKED",
+        "value": 104.0
+      },
+      {
+        "name": "REPORT_SUBMITTED",
+        "value": 105.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumImagineAction",
+    "matches": "IMAGINE_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "IMAGINE_ACTION",
+    "NULL_STATE_INITIATED",
+    "SUGGESTED_PROMPT_CLICK",
+    "USER_QUERY_INPUT",
+    "EDIT_PROMPT_CLICK",
+    "EDIT_BY_ADD_CLICK",
+    "EDIT_BY_REMOVE_CLICK",
+    "EDIT_BY_CHANGE_CLICK",
+    "ANIMATE_BUTTON_CLICK",
+    "REGENERATE_BUTTON_CLICK",
+    "IMAGINE_SEND",
+    "IMAGINE_CANCEL",
+    "IMAGINE_TOS_PREVIEW",
+    "IMAGINE_TOS_ACCEPT",
+    "IMAGINE_TOS_DECLINE",
+    "IMAGINE_TOS_CANCEL",
+    "IMAGINE_ONBOARDING_CLICK",
+    "IMAGINE_ONBOARDING_IMAGE_CLICK_CENTER",
+    "IMAGINE_ONBOARDING_IMAGE_CLICK_RIGHT",
+    "IMAGINE_ONBOARDING_IMAGE_CLICK_LEFT",
+    "IMAGINE_ONBOARDING_UPLOAD_FAILED",
+    "IMAGINE_ONBOARDING_UPLOAD_DROPOUT",
+    "IMAGINE_INVOKE",
+    "IMAGINE_ONBOARDING_SETTINGS_DELETE",
+    "IMAGINE_ONBOARDING_FLOW_RESET",
+    "BOTTOM_SHEET_PREVIEW_NEXT_CLICK",
+    "IMAGINE_CAROUSEL_PREVIEWED",
+    "IMAGINE_CAROUSEL_IMAGE_SELECT",
+    "IMAGINE_CAROUSEL_IMAGE_SWIPE",
+    "IMAGINE_DEFAULT_CAROUSEL_IMAGE_SELECT",
+    "IMAGINE_RETAKE_INLINE_PREVIEWED",
+    "IMAGINE_RETAKE_INLINE_CLICK",
+    "MEDIA_INPUT_CLICK",
+    "MEDIA_INPUT_GALLERY_CLICK",
+    "MEDIA_INPUT_VISUAL_EFFECT_SELECTION",
+    "MEDIA_INPUT_GALLERY_SELECTION_CONFIRMED",
+    "MEDIA_INPUT_COPY_PASTE",
+    "MEDIA_INPUT_CAPTURE_NEW",
+    "MEDIA_INPUT_SEND_CONFIRM",
+    "MEDIA_INPUT_SEND_CANCEL",
+    "IMAGE_DOWNLOADED_TO_DEVICE",
+    "IMAGINE_RETAKE_BOTTOM_SHEET_CLICK",
+    "MEDIA_INPUT_FORWARD_SELECTION",
+    "BOTTOM_SHEET_OPEN_CLICK",
+    "CAROUSEL_IMAGES_LOAD_COMPLETE",
+    "SPOTLIGHT_CLICK",
+    "IMAGINE_PROMPT_SEND",
+    "IMAGINE_CLEAR_BUTTON_TAPPED",
+    "MEMU_TOGGLE_CLICK",
+    "MEDIA_SHARING_BUTTON_PREVIEWED",
+    "MEDIA_SHARING_BUTTON_CLICKED",
+    "MEDIA_SHARING_SUGGESTION_CLICKED",
+    "MEDIA_SHARING_DESCRIPTION_MODE_CLICK",
+    "MEDIA_SHARING_DESCRIPTION_SUBMITTED",
+    "MEDIA_SHARING_REGENERATE_CLICK",
+    "MEDIA_SHARING_ANIMATE_CLICK",
+    "MEDIA_SHARING_SEND",
+    "MIMICRY_POST_VIEWED",
+    "MIMICRY_STICKER_CLICKED",
+    "MIMICRY_ATTRIBUTION_CLICKED",
+    "MIMICRY_ATTRIBUTION_CONFIRMED",
+    "MIMICRY_ADDED",
+    "MIMICRY_REMOVED",
+    "MEDIA_SHARING_CORE_PANEL_VIEW",
+    "MEDIA_SHARING_EDITOR_INITIATED",
+    "MEDIA_SHARING_EDIT_SUBMITTED",
+    "MEDIA_SHARING_FILTER_APPLIED",
+    "MEDIA_SHARING_EDITOR_DONE",
+    "MEDIA_SHARING_CANCEL",
+    "MEDIA_PAGE_COUNT_EXCEED_LIMIT",
+    "MEDIA_SIZE_EXCEED_LIMIT",
+    "MEDIA_EDIT_UNDO_CLICK",
+    "UNDONE_MEDIA_SENT",
+    "MEDIA_SHARING_EXPAND_CLICK",
+    "MEDIA_VIEWER_CTA_VIEWED",
+    "MEDIA_VIEWER_CTA_CLICKED",
+    "BACKGROUND_BUTTON_CLICK",
+    "IMAGINE_PTT_STARTED",
+    "IMAGINE_PTT_CANCELED",
+    "IMAGINE_PTT_SENT",
+    "MEDIA_INPUT_DOCUMENT_CLICK",
+    "UNSUPPORTED_FILE_TYPE_ERROR",
+    "PASSWORD_PROTECTED_FILE_ERROR",
+    "CORRUPTED_FILE_ERROR",
+    "EDIT_BY_DESCRIBE_CLICK",
+    "EDIT_BY_BACKGROUND_CLICK",
+    "IMAGINE_PTT_IMPRESSION",
+    "MEDIA_SHARING_VIDEO_EDIT_COMPLETE",
+    "MEDIA_SHARING_VIDEO_PLAY_CLICK",
+    "MEDIA_SHARING_VIDEO_TRIM_INITIATED",
+    "MEDIA_SHARING_VIDEO_TRIM_DONE",
+    "MEDIA_SHARING_VIDEO_TRIM_CANCEL",
+    "IMAGINE_ONBOARDING_SETUP_IMPRESSION",
+    "IMAGINE_ONBOARDING_UPLOAD_PHOTOS_TAP",
+    "IMAGINE_ONBOARDING_TAKE_PHOTOS_TAP",
+    "IMAGINE_ONBOARDING_GALLERY_OPEN",
+    "IMAGINE_ONBOARDING_GALLERY_PHOTO_CLICK",
+    "IMAGINE_ONBOARDING_CONFIRM_UPLOAD",
+    "IMAGINE_ONBOARDING_CHOOSE_DIFFERENT_PHOTO",
+    "ATTACHMENT_TRAY_OPEN_CLICK",
+    "RESTYLE_OPTION_VIEWED",
+    "RESTYLE_OPTION_CLICKED",
+    "RESTYLE_LONG_PRESSED",
+    "SAVE_BUTTON_CLICKED",
+    "REPORT_BUTTON_CLICKED",
+    "REPORT_SUBMITTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAttachMediaCollection",
+      "WAWebAttachMediaFlow.react",
+      "WAWebAttachMenuPopupItemPhotos.react",
+      "WAWebImagineActionLogger",
+      "WAWebImagineActionsWamEvent",
+      "WAWebSendAiMediaCollectionBatch"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

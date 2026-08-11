@@ -1,0 +1,45 @@
+{
+  "id": "ab:pnh_cag_disable_polls_group_size",
+  "kind": "ab",
+  "name": "pnh_cag_disable_polls_group_size",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5056,
+    "type": "int",
+    "default": "1e4",
+    "alt_default": "1e4"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pnh_cag_disable_polls_group_size:\\s*\\[\\s*5056"
+  },
+  "literals": [
+    "pnh_cag_disable_polls_group_size",
+    "5056"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebChatModelDerivedMethods"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mex:WAWebMexCreateNewsletterJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCreateNewsletterJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25149874324715067",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "root_field": "xwa2_newsletter_create",
+    "document": "mutation MexCreateNewsletterJobMutation($input) {\n  id\n  type\n  text\n  update_time\n  direct_path\n  xwa2_newsletter_create {\n    state {\n      thread_metadata {\n        name {\n          description {\n            picture {\n              picture {\n                invite\n                handle\n                verification\n                subscribers_count\n                creation_time\n                viewer_metadata {\n                  settings {\n                    value\n                    role\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+  },
+  "evidence": {
+    "module": "WAWebMexCreateNewsletterJobMutation.graphql",
+    "matches": "id: \"25149874324715067\""
+  },
+  "literals": [
+    "25149874324715067",
+    "WAWebMexCreateNewsletterJobMutation",
+    "xwa2_newsletter_create"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCreateNewsletterJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

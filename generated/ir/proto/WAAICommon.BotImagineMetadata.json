@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAAICommon.BotImagineMetadata",
+  "kind": "proto",
+  "name": "WAAICommon.BotImagineMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "imagineType": {
+        "number": 1
+      },
+      "shortPrompt": {
+        "number": 2
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotImagineMetadata\""
+  },
+  "literals": [
+    "BotImagineMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

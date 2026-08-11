@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_disable_sw_on_safari_pwa",
+  "kind": "ab",
+  "name": "web_disable_sw_on_safari_pwa",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7281,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_disable_sw_on_safari_pwa:\\s*\\[\\s*7281"
+  },
+  "literals": [
+    "web_disable_sw_on_safari_pwa",
+    "7281"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebAppSwInitializer"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

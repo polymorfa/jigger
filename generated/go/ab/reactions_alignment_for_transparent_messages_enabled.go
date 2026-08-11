@@ -1,0 +1,2 @@
+// ABReactionsAlignmentForTransparentMessagesEnabled is A/B property 16792 (bool), default false.
+const ABReactionsAlignmentForTransparentMessagesEnabled = "reactions_alignment_for_transparent_messages_enabled"

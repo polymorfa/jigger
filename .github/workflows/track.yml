@@ -1,0 +1,135 @@
+name: track
+
+# Keeps the generated IR current and tells the tracked libraries what they are
+# missing.
+#
+# WhatsApp Web ships roughly every ten hours and each version expires exactly 61
+# days after its own release, so falling behind is not cosmetic — a library
+# pinned to an expired revision stops working entirely. This runs four times a
+# day and is a no-op on most runs by design: the expensive path only starts once
+# the extraction actually differs, because at ~900 releases a year anything that
+# does real work per release is a cost problem rather than a correctness one.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: "Revision to index (default: latest)"
+        required: false
+        default: "latest"
+
+concurrency:
+  group: track
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Build jigger and cellar
+        run: |
+          cargo build --release --locked
+          cargo install --git https://github.com/polymorfa/cellar cellar --locked
+
+      - name: Fetch and index the revision
+        run: cellar bundle add --rev "${{ inputs.revision || 'latest' }}"
+
+      # Extract into a scratch tree first. Writing straight into `generated`
+      # would make "did anything change" unanswerable, since the working tree
+      # would already contain the answer.
+      - name: Extract
+        id: extract
+        run: |
+          ./target/release/jigger --out .next-gen extract latest
+          echo "rev=$(jq -r .revision .next-gen/revision.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Anything new?
+        id: changed
+        run: |
+          if diff -rq generated/ir .next-gen/ir >/dev/null 2>&1; then
+            echo "new=false" >> "$GITHUB_OUTPUT"
+            echo "no protocol change in revision ${{ steps.extract.outputs.rev }}"
+          else
+            echo "new=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # From here on, only when something actually moved.
+      - name: Diff against the committed revision
+        if: steps.changed.outputs.new == 'true'
+        run: ./target/release/jigger diff generated .next-gen | tee diff-summary.txt
+
+      - name: Promote the new extraction
+        if: steps.changed.outputs.new == 'true'
+        run: rm -rf generated && mv .next-gen generated
+
+      - name: Emit helpers
+        if: steps.changed.outputs.new == 'true'
+        run: ./target/release/jigger emit
+
+      - name: Check out the tracked libraries
+        if: steps.changed.outputs.new == 'true'
+        run: |
+          mkdir -p .repos
+          jq -r '.repos[] | select(.enabled and .remote) | "\(.name) \(.remote)"' repos.json |
+          while read -r name remote; do
+            git clone --depth 1 "https://github.com/$remote" ".repos/$name" || true
+          done
+
+      - name: Scan coverage
+        if: steps.changed.outputs.new == 'true'
+        run: ./target/release/jigger scan --config repos.ci.json || true
+
+      # One commit per revision, tagged. That is the revision history: `git diff
+      # rev/A rev/B -- generated/ir` is the protocol changelog, and no separate
+      # database has to be kept in step with it.
+      - name: Commit and tag
+        if: steps.changed.outputs.new == 'true'
+        run: |
+          git config user.name "jigger"
+          git config user.email "jigger@users.noreply.github.com"
+          git add generated
+          git commit -m "track: revision ${{ steps.extract.outputs.rev }}" || exit 0
+          git tag "rev/${{ steps.extract.outputs.rev }}"
+          git push --follow-tags
+
+      - name: File or update issues
+        if: steps.changed.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # At most one open issue per repo. A second one for the same thing is
+          # how a useful feed becomes something maintainers mute.
+          jq -r '.repos[] | select(.enabled and .remote) | "\(.name) \(.remote)"' repos.json |
+          while read -r name remote; do
+            body="generated/issues/${name}-${{ steps.extract.outputs.rev }}.md"
+            [ -f "$body" ] || continue
+            existing=$(gh issue list -R "$remote" --label jigger --state open --json number -q '.[0].number' || true)
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" -R "$remote" -F "$body"
+            else
+              gh issue create -R "$remote" -t "jigger: protocol facts missing as of ${{ steps.extract.outputs.rev }}" \
+                -F "$body" --label jigger || true
+            fi
+          done
+
+      - uses: actions/upload-artifact@v4
+        if: steps.changed.outputs.new == 'true'
+        with:
+          name: jigger-${{ steps.extract.outputs.rev }}
+          path: |
+            generated/ir.json
+            generated/diff.json
+            generated/coverage.json
+            generated/issues

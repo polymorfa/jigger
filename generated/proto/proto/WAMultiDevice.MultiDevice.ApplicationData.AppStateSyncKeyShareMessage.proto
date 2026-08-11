@@ -1,0 +1,3 @@
+message AppStateSyncKeyShareMessage {
+  optional AppStateSyncKey keys = 1;
+}

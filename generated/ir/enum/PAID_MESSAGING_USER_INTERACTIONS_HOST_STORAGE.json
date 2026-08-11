@@ -1,0 +1,41 @@
+{
+  "id": "enum:PAID_MESSAGING_USER_INTERACTIONS_HOST_STORAGE",
+  "kind": "enum",
+  "name": "PAID_MESSAGING_USER_INTERACTIONS_HOST_STORAGE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsHostStorage",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 0.0
+      },
+      {
+        "name": "ON_PREMISE",
+        "value": 1.0
+      },
+      {
+        "name": "FACEBOOK",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsHostStorage",
+    "matches": "PAID_MESSAGING_USER_INTERACTIONS_HOST_STORAGE\\s*[:=]"
+  },
+  "literals": [
+    "PAID_MESSAGING_USER_INTERACTIONS_HOST_STORAGE",
+    "NONE",
+    "ON_PREMISE",
+    "FACEBOOK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPaidMessagingUserInteractionsLoggerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

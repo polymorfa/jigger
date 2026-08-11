@@ -1,0 +1,54 @@
+{
+  "id": "proto:WAE2E.Message.PeerDataOperationRequestMessage.GalaxyFlowAction",
+  "kind": "proto",
+  "name": "WAE2E.Message.PeerDataOperationRequestMessage.GalaxyFlowAction",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "agmId": {
+        "number": 5
+      },
+      "flowId": {
+        "number": 2
+      },
+      "galaxyFlowDownloadRequestId": {
+        "number": 4
+      },
+      "stanzaId": {
+        "number": 3
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.PeerDataOperationRequestMessage.GalaxyFlowAction\""
+  },
+  "literals": [
+    "GalaxyFlowAction"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

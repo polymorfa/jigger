@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_horizontal_link_previews",
+  "kind": "ab",
+  "name": "wa_web_horizontal_link_previews",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24425,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_horizontal_link_previews:\\s*\\[\\s*24425"
+  },
+  "literals": [
+    "wa_web_horizontal_link_previews",
+    "24425"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMessageText.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

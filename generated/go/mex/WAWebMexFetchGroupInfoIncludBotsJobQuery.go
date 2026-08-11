@@ -1,0 +1,2 @@
+// WAWebMexFetchGroupInfoIncludBotsJobQuery is the persisted query. Variables: id, include_username, participants_phash, query_context
+const MexWAWebMexFetchGroupInfoIncludBotsJobQuery = "27795062750123057"

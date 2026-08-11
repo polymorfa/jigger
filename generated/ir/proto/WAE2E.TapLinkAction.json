@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAE2E.TapLinkAction",
+  "kind": "proto",
+  "name": "WAE2E.TapLinkAction",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "tapUrl": {
+        "number": 2
+      },
+      "title": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"TapLinkAction\""
+  },
+  "literals": [
+    "TapLinkAction"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

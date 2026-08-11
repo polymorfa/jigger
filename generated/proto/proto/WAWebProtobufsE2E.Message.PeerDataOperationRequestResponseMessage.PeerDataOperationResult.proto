@@ -1,0 +1,15 @@
+message PeerDataOperationResult {
+  optional bytes mediaUploadResult = 1;
+  optional StickerMessage stickerMessage = 2;
+  optional LinkPreviewResponse linkPreviewResponse = 3;
+  optional PlaceholderMessageResendResponse placeholderMessageResendResponse = 4;
+  optional WaffleNonceFetchResponse waffleNonceFetchRequestResponse = 5;
+  optional FullHistorySyncOnDemandRequestResponse fullHistorySyncOnDemandRequestResponse = 6;
+  optional CompanionMetaNonceFetchResponse companionMetaNonceFetchRequestResponse = 7;
+  optional SyncDSnapshotFatalRecoveryResponse syncdSnapshotFatalRecoveryResponse = 8;
+  optional CompanionCanonicalUserNonceFetchResponse companionCanonicalUserNonceFetchRequestResponse = 9;
+  optional HistorySyncChunkRetryResponse historySyncChunkRetryResponse = 10;
+  optional FlowResponsesCsvBundle flowResponsesCsvBundle = 11;
+  optional BizBroadcastInsightsContactListResponse bizBroadcastInsightsContactListResponse = 12;
+  optional ContactRefreshResponse contactRefreshResponse = 13;
+}

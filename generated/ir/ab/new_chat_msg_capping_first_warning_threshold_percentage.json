@@ -1,0 +1,42 @@
+{
+  "id": "ab:new_chat_msg_capping_first_warning_threshold_percentage",
+  "kind": "ab",
+  "name": "new_chat_msg_capping_first_warning_threshold_percentage",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18967,
+    "type": "int",
+    "default": 50,
+    "alt_default": 50
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "new_chat_msg_capping_first_warning_threshold_percentage:\\s*\\[\\s*18967"
+  },
+  "literals": [
+    "new_chat_msg_capping_first_warning_threshold_percentage",
+    "18967"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

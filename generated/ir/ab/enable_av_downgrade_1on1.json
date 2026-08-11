@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_av_downgrade_1on1",
+  "kind": "ab",
+  "name": "enable_av_downgrade_1on1",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18165,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_av_downgrade_1on1:\\s*\\[\\s*18165"
+  },
+  "literals": [
+    "enable_av_downgrade_1on1",
+    "18165"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

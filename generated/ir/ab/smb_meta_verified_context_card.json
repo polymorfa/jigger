@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_meta_verified_context_card",
+  "kind": "ab",
+  "name": "smb_meta_verified_context_card",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8313,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_meta_verified_context_card:\\s*\\[\\s*8313"
+  },
+  "literals": [
+    "smb_meta_verified_context_card",
+    "8313"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSubscriptionsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "wam:5224",
+  "kind": "wam",
+  "name": "UsernameCreationAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 5224,
+    "fields": {
+      "eligibleToLink": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "eligible_to_link"
+      },
+      "linkedAccountsFb": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "linked_accounts_fb"
+      },
+      "linkedAccountsIg": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "linked_accounts_ig"
+      },
+      "userJourneyEventMs": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "usernameCreationActionName": {
+        "id": 2,
+        "type": "USERNAME_CREATION_ACTION_NAME",
+        "wire": "username_creation_action_name",
+        "enum_ref": "USERNAME_CREATION_ACTION_NAME"
+      },
+      "usernameCreationCurrentScreen": {
+        "id": 3,
+        "type": "USERNAME_CREATION_CURRENT_SCREEN",
+        "wire": "username_creation_current_screen",
+        "enum_ref": "USERNAME_CREATION_CURRENT_SCREEN"
+      },
+      "usernameCreationDeepLinkCampaign": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "username_creation_deep_link_campaign"
+      },
+      "usernameCreationDeepLinkChannel": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "username_creation_deep_link_channel"
+      },
+      "usernameCreationEntrypoint": {
+        "id": 4,
+        "type": "USERNAME_CREATION_ENTRYPOINT",
+        "wire": "username_creation_entrypoint",
+        "enum_ref": "USERNAME_CREATION_ENTRYPOINT"
+      },
+      "usernameCreationErrorCd": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "username_creation_error_cd"
+      },
+      "usernameCreationErrorMessage": {
+        "id": 13,
+        "type": "USERNAME_CREATION_ERROR_MESSAGE",
+        "wire": "username_creation_error_message",
+        "enum_ref": "USERNAME_CREATION_ERROR_MESSAGE"
+      },
+      "usernameCreationFlowType": {
+        "id": 9,
+        "type": "USERNAME_CREATION_FLOW_TYPE",
+        "wire": "username_creation_flow_type",
+        "enum_ref": "USERNAME_CREATION_FLOW_TYPE"
+      },
+      "usernameCreationUsernameSessionId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "username_creation_username_session_id"
+      },
+      "usernameLinkOriginSurface": {
+        "id": 18,
+        "type": "USERNAME_LINK_ORIGIN_SURFACE",
+        "wire": "username_link_origin_surface",
+        "enum_ref": "USERNAME_LINK_ORIGIN_SURFACE"
+      },
+      "usernameLinkType": {
+        "id": 12,
+        "type": "USERNAME_LINK_TYPE",
+        "wire": "username_link_type",
+        "enum_ref": "USERNAME_LINK_TYPE"
+      },
+      "usernameSource": {
+        "id": 8,
+        "type": "USERNAME_SOURCE",
+        "wire": "username_source",
+        "enum_ref": "USERNAME_SOURCE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebUsernameCreationActionWamEvent",
+    "matches": "UsernameCreationAction:\\s*\\[\\s*5224"
+  },
+  "literals": [
+    "5224"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumUsernameCreationActionName",
+      "WAWebWamEnumUsernameCreationCurrentScreen",
+      "WAWebWamEnumUsernameCreationEntrypoint",
+      "WAWebWamEnumUsernameCreationErrorMessage",
+      "WAWebWamEnumUsernameCreationFlowType",
+      "WAWebWamEnumUsernameLinkOriginSurface",
+      "WAWebWamEnumUsernameLinkType",
+      "WAWebWamEnumUsernameSource"
+    ],
+    "dependents": [
+      "WAWebUsernameCreationActionLogger"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

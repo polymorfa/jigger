@@ -1,0 +1,51 @@
+{
+  "id": "enum:AI_FETCH_MEDIA_TYPE",
+  "kind": "enum",
+  "name": "AI_FETCH_MEDIA_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAiFetchMediaType",
+    "variants": [
+      {
+        "name": "IMAGE_SINGLE",
+        "value": 1.0
+      },
+      {
+        "name": "GRID_HIGH_RES",
+        "value": 2.0
+      },
+      {
+        "name": "GRID_LOW_RES",
+        "value": 3.0
+      },
+      {
+        "name": "INLINE_HIGH_RES",
+        "value": 4.0
+      },
+      {
+        "name": "INLINE_LOW_RES",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAiFetchMediaType",
+    "matches": "AI_FETCH_MEDIA_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "AI_FETCH_MEDIA_TYPE",
+    "IMAGE_SINGLE",
+    "GRID_HIGH_RES",
+    "GRID_LOW_RES",
+    "INLINE_HIGH_RES",
+    "INLINE_LOW_RES"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaDownload2WamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

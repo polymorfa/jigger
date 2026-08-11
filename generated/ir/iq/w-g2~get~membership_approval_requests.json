@@ -1,0 +1,185 @@
+{
+  "id": "iq:w:g2/get/membership_approval_requests",
+  "kind": "iq",
+  "name": "GroupsGetMembershipApprovalRequests",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "get",
+    "tags": [
+      "membership_approval_requests"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsGetMembershipApprovalRequestsRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsGetMembershipApprovalRequestsResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "membership_approval_requests",
+              "card": "one"
+            },
+            {
+              "tag": "membership_approval_request",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "PhoneNumber",
+          "PhoneNumberAndUsernameAtt",
+          "UsernameAtt"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsGetMembershipApprovalRequestsResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFallbackClient",
+          "IQErrorForbidden",
+          "IQErrorItemNotFound",
+          "IQErrorLocked",
+          "IQErrorNotAuthorized",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsGetMembershipApprovalRequestsResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsGetMembershipApprovalRequestsRequest",
+    "matches": "smax\\(\"membership_approval_requests\""
+  },
+  "literals": [
+    "w:g2",
+    "membership_approval_requests"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxMixins",
+      "WASmaxOutGroupsBaseGetGroupMixin",
+      "WASmaxOutGroupsGetMembershipApprovalRequestsRequestorFetchMixin"
+    ],
+    "dependents": [
+      "WASmaxGroupsGetMembershipApprovalRequestsRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

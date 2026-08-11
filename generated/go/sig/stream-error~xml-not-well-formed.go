@@ -1,0 +1,2 @@
+// ParseStreamErrorXMLNotWellFormedRequest matches <stream:error>. Server-initiated; nothing sends it.
+func ParseStreamErrorXMLNotWellFormedRequest(n *waBinary.Node) (*StreamErrorXMLNotWellFormedRequest, error)

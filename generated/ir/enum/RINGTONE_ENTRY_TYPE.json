@@ -1,0 +1,48 @@
+{
+  "id": "enum:RINGTONE_ENTRY_TYPE",
+  "kind": "enum",
+  "name": "RINGTONE_ENTRY_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumRingtoneEntryType",
+    "variants": [
+      {
+        "name": "APP_WIDE",
+        "value": 0.0
+      },
+      {
+        "name": "ONE_TO_ONE",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "LIST",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumRingtoneEntryType",
+    "matches": "RINGTONE_ENTRY_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "RINGTONE_ENTRY_TYPE",
+    "APP_WIDE",
+    "ONE_TO_ONE",
+    "GROUP",
+    "LIST"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAuraRingtoneChatTone.react",
+      "WAWebAuraRingtoneGlobalSelector.react",
+      "WAWebRingtoneScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

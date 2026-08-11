@@ -1,0 +1,4 @@
+message DbQuotedMsgProto {
+  optional bytes remoteJid = 1;
+  optional DbQuotedMsgContentProto content = 2;
+}

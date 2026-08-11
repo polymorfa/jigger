@@ -1,0 +1,92 @@
+{
+  "id": "wam:3676",
+  "kind": "wam",
+  "name": "PollsActions",
+  "data": {
+    "kind": "wam",
+    "event_id": 3676,
+    "fields": {
+      "chatType": {
+        "id": 8,
+        "type": "MESSAGE_CHAT_TYPE",
+        "wire": "chat_type",
+        "enum_ref": "MESSAGE_CHAT_TYPE"
+      },
+      "groupSizeBucket": {
+        "id": 1,
+        "type": "CLIENT_GROUP_SIZE_BUCKET",
+        "wire": "group_size_bucket",
+        "enum_ref": "CLIENT_GROUP_SIZE_BUCKET"
+      },
+      "hideVoterName": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "hide_voter_name"
+      },
+      "isAGroup": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "is_a_group"
+      },
+      "isAdmin": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "is_admin"
+      },
+      "pollAction": {
+        "id": 3,
+        "type": "POLL_ACTION_TYPE",
+        "wire": "poll_action",
+        "enum_ref": "POLL_ACTION_TYPE"
+      },
+      "pollCreationDs": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "poll_creation_ds"
+      },
+      "pollDurationMs": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "poll_duration_ms"
+      },
+      "pollOptionsCount": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "poll_options_count"
+      },
+      "typeOfGroup": {
+        "id": 7,
+        "type": "TYPE_OF_GROUP_ENUM",
+        "wire": "type_of_group",
+        "enum_ref": "TYPE_OF_GROUP_ENUM"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPollsActionsWamEvent",
+    "matches": "PollsActions:\\s*\\[\\s*3676"
+  },
+  "literals": [
+    "3676"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumClientGroupSizeBucket",
+      "WAWebWamEnumMessageChatType",
+      "WAWebWamEnumPollActionType",
+      "WAWebWamEnumTypeOfGroupEnum"
+    ],
+    "dependents": [
+      "WAWebPollsActionsMetricUtils"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

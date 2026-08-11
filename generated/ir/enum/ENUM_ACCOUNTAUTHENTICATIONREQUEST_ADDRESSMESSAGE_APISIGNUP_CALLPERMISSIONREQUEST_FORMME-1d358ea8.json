@@ -1,0 +1,64 @@
+{
+  "id": "enum:ENUM_ACCOUNTAUTHENTICATIONREQUEST_ADDRESSMESSAGE_APISIGNUP_CALLPERMISSIONREQUEST_FORMMESSAGE_GALAXYMESSAGE_MENUOPTIONS",
+  "kind": "enum",
+  "name": "ENUM_ACCOUNTAUTHENTICATIONREQUEST_ADDRESSMESSAGE_APISIGNUP_CALLPERMISSIONREQUEST_FORMMESSAGE_GALAXYMESSAGE_MENUOPTIONS",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInStatusDeliverEnums",
+    "variants": [
+      {
+        "name": "account_authentication_request",
+        "value": "account_authentication_request"
+      },
+      {
+        "name": "address_message",
+        "value": "address_message"
+      },
+      {
+        "name": "api_signup",
+        "value": "api_signup"
+      },
+      {
+        "name": "call_permission_request",
+        "value": "call_permission_request"
+      },
+      {
+        "name": "form_message",
+        "value": "form_message"
+      },
+      {
+        "name": "galaxy_message",
+        "value": "galaxy_message"
+      },
+      {
+        "name": "menu_options",
+        "value": "menu_options"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInStatusDeliverEnums",
+    "matches": "ENUM_ACCOUNTAUTHENTICATIONREQUEST_ADDRESSMESSAGE_APISIGNUP_CALLPERMISSIONREQUEST_FORMMESSAGE_GALAXYMESSAGE_MENUOPTIONS\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ACCOUNTAUTHENTICATIONREQUEST_ADDRESSMESSAGE_APISIGNUP_CALLPERMISSIONREQUEST_FORMMESSAGE_GALAXYMESSAGE_MENUOPTIONS",
+    "account_authentication_request",
+    "address_message",
+    "api_signup",
+    "call_permission_request",
+    "form_message",
+    "galaxy_message",
+    "menu_options"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInStatusDeliverStatusNewsletterMediaMixin",
+      "WASmaxOutStatusDeliverStatusAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

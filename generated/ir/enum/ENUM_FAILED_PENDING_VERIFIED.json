@@ -1,0 +1,52 @@
+{
+  "id": "enum:ENUM_FAILED_PENDING_VERIFIED",
+  "kind": "enum",
+  "name": "ENUM_FAILED_PENDING_VERIFIED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBrPaymentEnums",
+    "variants": [
+      {
+        "name": "FAILED",
+        "value": "FAILED"
+      },
+      {
+        "name": "PENDING",
+        "value": "PENDING"
+      },
+      {
+        "name": "VERIFIED",
+        "value": "VERIFIED"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBrPaymentEnums",
+    "matches": "ENUM_FAILED_PENDING_VERIFIED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_FAILED_PENDING_VERIFIED",
+    "FAILED",
+    "PENDING",
+    "VERIFIED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBrPaymentBRCardMixin",
+      "WASmaxInBrPaymentBRMerchantMixin",
+      "WASmaxInBrPaymentCardBaseMixin",
+      "WASmaxInBrPaymentCardCapabilitiesBaseMixin",
+      "WASmaxInBrPaymentComboCardCapabilitiesMixin",
+      "WASmaxInBrPaymentConsumerBaseMixin",
+      "WASmaxInBrPaymentCustomPaymentMethodMixin",
+      "WASmaxInBrPaymentMerchantBaseMixin",
+      "WASmaxInBrPaymentMethodBaseMixin",
+      "WASmaxInBrPaymentPayoutBankMixin",
+      "WASmaxInBrPaymentUPIAliasMixin",
+      "WASmaxInBrPaymentUPIBankMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

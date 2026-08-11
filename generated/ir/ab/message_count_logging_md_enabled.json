@@ -1,0 +1,42 @@
+{
+  "id": "ab:message_count_logging_md_enabled",
+  "kind": "ab",
+  "name": "message_count_logging_md_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1135,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "message_count_logging_md_enabled:\\s*\\[\\s*1135"
+  },
+  "literals": [
+    "message_count_logging_md_enabled",
+    "1135"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

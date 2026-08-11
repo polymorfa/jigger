@@ -1,0 +1,194 @@
+{
+  "id": "enum:BUG_REPORT_FLOW_ACTION",
+  "kind": "enum",
+  "name": "BUG_REPORT_FLOW_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBugReportFlowAction",
+    "variants": [
+      {
+        "name": "NO_INTERNET_CONNECTION_IMPRESSION",
+        "value": 1.0
+      },
+      {
+        "name": "BUG_REPORT_FORM_IMPRESSION",
+        "value": 2.0
+      },
+      {
+        "name": "CANCEL_CLICK",
+        "value": 3.0
+      },
+      {
+        "name": "ADD_SCREENSHOT_CLICK",
+        "value": 4.0
+      },
+      {
+        "name": "REMOVE_SCREENSHOT_CLICK",
+        "value": 5.0
+      },
+      {
+        "name": "SUBMIT_CLICK",
+        "value": 6.0
+      },
+      {
+        "name": "SUCCESS_VIEW_IMPRESSION",
+        "value": 7.0
+      },
+      {
+        "name": "ERROR_VIEW_IMPRESSION",
+        "value": 8.0
+      },
+      {
+        "name": "SUBMISSION_FAILED",
+        "value": 9.0
+      },
+      {
+        "name": "SUBMISSION_SUCCESSFUL",
+        "value": 10.0
+      },
+      {
+        "name": "DEVICE_LOG_UPLOAD_FAILED",
+        "value": 11.0
+      },
+      {
+        "name": "DEVICE_LOG_UPLOAD_SUCCESSFUL",
+        "value": 12.0
+      },
+      {
+        "name": "MEDIA_UPLOAD_FAILED",
+        "value": 13.0
+      },
+      {
+        "name": "MEDIA_UPLOAD_SUCCESSFUL",
+        "value": 14.0
+      },
+      {
+        "name": "MEDIA_UPLOAD_RETRY_CLICK",
+        "value": 15.0
+      },
+      {
+        "name": "SUBMIT_BUG_WITHOUT_FAILED_MEDIA_CLICK",
+        "value": 16.0
+      },
+      {
+        "name": "SUBMIT_BUG_WITHOUT_FAILED_MEDIA_CANCEL_CLICK",
+        "value": 17.0
+      },
+      {
+        "name": "SUBMIT_BUG_RETRY_CLICK",
+        "value": 18.0
+      },
+      {
+        "name": "SUBMIT_BUG_RETRY_VIA_EMAIL_CLICK",
+        "value": 19.0
+      },
+      {
+        "name": "SUBMIT_BUG_RETRY_CANCEL_CLICK",
+        "value": 20.0
+      },
+      {
+        "name": "SUBMIT_BUG_CATEGORY_CLICK",
+        "value": 21.0
+      },
+      {
+        "name": "MEDIA_ATTACHMENT_FILE_SETUP_ERROR",
+        "value": 22.0
+      },
+      {
+        "name": "EDUCATION_NUX_FROM_SETTINGS_IMPRESSION",
+        "value": 23.0
+      },
+      {
+        "name": "EDUCATION_NUX_FROM_RAGESHAKE_IMPRESSION",
+        "value": 24.0
+      },
+      {
+        "name": "RAGESHAKE_TURN_OFF_FROM_BOTTOM_SHEET_CLICKED",
+        "value": 25.0
+      },
+      {
+        "name": "RAGESHAKE_TURN_OFF_TOGGLE_CLICKED",
+        "value": 26.0
+      },
+      {
+        "name": "RAGESHAKE_TURN_ON_TOGGLE_CLICKED",
+        "value": 27.0
+      },
+      {
+        "name": "RAGESHAKE_BOTTOM_SHEET_IMPRESSION",
+        "value": 28.0
+      },
+      {
+        "name": "RAGESHAKE_SCREENSHOT_BLOCKED_ALERT_IMPRESSION",
+        "value": 29.0
+      },
+      {
+        "name": "BUG_REPORT_ATTACHMENT_UPLOAD_FAILED",
+        "value": 30.0
+      },
+      {
+        "name": "BUG_REPORT_ATTACHMENT_UPLOAD_SUCCESSFUL",
+        "value": 31.0
+      },
+      {
+        "name": "DOGFOODING_BUG_REPORT_TASK_CREATION_SUCCESSFUL",
+        "value": 32.0
+      },
+      {
+        "name": "DOGFOODING_BUG_REPORT_TASK_CREATION_FAILED",
+        "value": 33.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBugReportFlowAction",
+    "matches": "BUG_REPORT_FLOW_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "BUG_REPORT_FLOW_ACTION",
+    "NO_INTERNET_CONNECTION_IMPRESSION",
+    "BUG_REPORT_FORM_IMPRESSION",
+    "CANCEL_CLICK",
+    "ADD_SCREENSHOT_CLICK",
+    "REMOVE_SCREENSHOT_CLICK",
+    "SUBMIT_CLICK",
+    "SUCCESS_VIEW_IMPRESSION",
+    "ERROR_VIEW_IMPRESSION",
+    "SUBMISSION_FAILED",
+    "SUBMISSION_SUCCESSFUL",
+    "DEVICE_LOG_UPLOAD_FAILED",
+    "DEVICE_LOG_UPLOAD_SUCCESSFUL",
+    "MEDIA_UPLOAD_FAILED",
+    "MEDIA_UPLOAD_SUCCESSFUL",
+    "MEDIA_UPLOAD_RETRY_CLICK",
+    "SUBMIT_BUG_WITHOUT_FAILED_MEDIA_CLICK",
+    "SUBMIT_BUG_WITHOUT_FAILED_MEDIA_CANCEL_CLICK",
+    "SUBMIT_BUG_RETRY_CLICK",
+    "SUBMIT_BUG_RETRY_VIA_EMAIL_CLICK",
+    "SUBMIT_BUG_RETRY_CANCEL_CLICK",
+    "SUBMIT_BUG_CATEGORY_CLICK",
+    "MEDIA_ATTACHMENT_FILE_SETUP_ERROR",
+    "EDUCATION_NUX_FROM_SETTINGS_IMPRESSION",
+    "EDUCATION_NUX_FROM_RAGESHAKE_IMPRESSION",
+    "RAGESHAKE_TURN_OFF_FROM_BOTTOM_SHEET_CLICKED",
+    "RAGESHAKE_TURN_OFF_TOGGLE_CLICKED",
+    "RAGESHAKE_TURN_ON_TOGGLE_CLICKED",
+    "RAGESHAKE_BOTTOM_SHEET_IMPRESSION",
+    "RAGESHAKE_SCREENSHOT_BLOCKED_ALERT_IMPRESSION",
+    "BUG_REPORT_ATTACHMENT_UPLOAD_FAILED",
+    "BUG_REPORT_ATTACHMENT_UPLOAD_SUCCESSFUL",
+    "DOGFOODING_BUG_REPORT_TASK_CREATION_SUCCESSFUL",
+    "DOGFOODING_BUG_REPORT_TASK_CREATION_FAILED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBugReportSessionWamEvent",
+      "WAWebBugnubScreenshotUpload.react",
+      "WAWebBugnubV2Popup.react",
+      "WAWebSendFeedbackModal.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

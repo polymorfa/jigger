@@ -1,0 +1,58 @@
+{
+  "id": "wam:7098",
+  "kind": "wam",
+  "name": "DefenseModeQuarantine",
+  "data": {
+    "kind": "wam",
+    "event_id": 7098,
+    "fields": {
+      "defenseModeQuarantineEventCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "defense_mode_quarantine_event_count"
+      },
+      "defenseModeQuarantineIsCapi": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "defense_mode_quarantine_is_capi"
+      },
+      "jidDomain": {
+        "id": 4,
+        "type": "JID_DOMAIN_TYPE",
+        "wire": "jid_domain",
+        "enum_ref": "JID_DOMAIN_TYPE"
+      },
+      "quarantineAction": {
+        "id": 1,
+        "type": "DEFENSE_MODE_QUARANTINE_ACTION",
+        "wire": "quarantine_action",
+        "enum_ref": "DEFENSE_MODE_QUARANTINE_ACTION"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebDefenseModeQuarantineWamEvent",
+    "matches": "DefenseModeQuarantine:\\s*\\[\\s*7098"
+  },
+  "literals": [
+    "7098"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDefenseModeQuarantineAction",
+      "WAWebWamEnumJidDomainType"
+    ],
+    "dependents": [
+      "WAWebDefenseModeQuarantineLogger"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

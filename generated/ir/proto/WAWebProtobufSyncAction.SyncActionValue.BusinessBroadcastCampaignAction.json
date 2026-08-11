@@ -1,0 +1,117 @@
+{
+  "id": "proto:WAWebProtobufSyncAction.SyncActionValue.BusinessBroadcastCampaignAction",
+  "kind": "proto",
+  "name": "WAWebProtobufSyncAction.SyncActionValue.BusinessBroadcastCampaignAction",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "adId": {
+        "number": 2
+      },
+      "broadcastJid": {
+        "number": 5
+      },
+      "createTimestamp": {
+        "number": 8
+      },
+      "deviceId": {
+        "number": 1
+      },
+      "msgId": {
+        "number": 4
+      },
+      "name": {
+        "number": 3
+      },
+      "reservedQuota": {
+        "number": 6
+      },
+      "scheduledTimestamp": {
+        "number": 7
+      },
+      "status": {
+        "number": 9
+      }
+    },
+    "module": "WAWebProtobufSyncAction.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufSyncAction.pb",
+    "matches": "name = \"SyncActionValue.BusinessBroadcastCampaignAction\""
+  },
+  "literals": [
+    "BusinessBroadcastCampaignAction"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsChatLockSettings.pb",
+      "WAWebProtobufsDeviceCapabilities.pb",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadPinSyncUtils",
+      "WAWebApiActiveMessageRanges",
+      "WAWebArchiveChatSync",
+      "WAWebArchiveSettingSync",
+      "WAWebBizAIInstructionsDrawer.react",
+      "WAWebBizAISettingsCategoryHandlers",
+      "WAWebBizAiBridgeApi",
+      "WAWebBizAiHandoffSettingsDrawer.react",
+      "WAWebBizAiSettingsFetchOnLaunch",
+      "WAWebBizBroadcastsDeviceCapability",
+      "WAWebBotDeviceCapabilities",
+      "WAWebCallLogSync",
+      "WAWebChatClearBridge",
+      "WAWebClearChatSync",
+      "WAWebDebugSyncd",
+      "WAWebDeleteChatSync",
+      "WAWebDeleteMessageForMeSync",
+      "WAWebDeviceCapabilitiesSyncBase",
+      "WAWebHandleForMessageRange",
+      "WAWebHandlePairSuccess",
+      "WAWebInteractiveMessageSync",
+      "WAWebLabelSync",
+      "WAWebMarkChatAsReadSync",
+      "WAWebMediaUploadQualitySettings.react",
+      "WAWebMessageRangeUtils",
+      "WAWebNoteSync",
+      "WAWebPaymentsTosJob",
+      "WAWebPinChatSync",
+      "WAWebPremiumMessageHydrateMessageAction",
+      "WAWebPrimaryDeviceCapabilities",
+      "WAWebPrimaryVersion",
+      "WAWebProtobufsHistorySync.pb",
+      "WAWebProtobufsSyncdSnapshotRecovery.pb",
+      "WAWebRequestSyncdSnapshotRecovery",
+      "WAWebSchemaBusinessBroadcastCampaign",
+      "WAWebSettingsBridgeApi",
+      "WAWebSettingsSync",
+      "WAWebSettingsSyncConst",
+      "WAWebStatusPrivacySettingSync",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdCollectionHandler",
+      "WAWebSyncdCollectionHandlerTypesConverter",
+      "WAWebSyncdDecode",
+      "WAWebSyncdDecryptMutations",
+      "WAWebSyncdEncryptMutations",
+      "WAWebSyncdKmpConversion",
+      "WAWebSyncdMetricCriticalBootstrapStage",
+      "WAWebSyncdRequestBuilderBuild",
+      "WAWebSyncdRequestBuilderTypesConverter",
+      "WAWebSyncdRequestEncode",
+      "WAWebSyncdUploadFatalErrorMetric",
+      "WAWebSyncdValidateMutations",
+      "WAWebSyncdValidateServerSyncProtobuf",
+      "WAWebUserPrefsPaymentTos",
+      "WAWebVoipWaCallEnums",
+      "WAWebWASARootSecretSync",
+      "WAWebWasaRootSecretWriter",
+      "WAWebWindowsShowNotificationBannerOption",
+      "WAWebWindowsTaskbarNotificationOption"
+    ],
+    "dep_count": 5,
+    "dependent_count": 59
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:seller_orders_management_revamp",
+  "kind": "ab",
+  "name": "seller_orders_management_revamp",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5190,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "seller_orders_management_revamp:\\s*\\[\\s*5190"
+  },
+  "literals": [
+    "seller_orders_management_revamp",
+    "5190"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebOrderGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

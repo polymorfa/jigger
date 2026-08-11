@@ -1,0 +1,33 @@
+{
+  "id": "sig:iq/multiway",
+  "kind": "sig",
+  "name": "MultiwaydMultiwayResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "multiway"
+    ],
+    "responds_to": "MultiwaydMultiway"
+  },
+  "evidence": {
+    "module": "WASmaxInMultiwaydMultiwayResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "multiway"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMultiwaydIQResultResponseMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxMultiwaydMultiwayRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

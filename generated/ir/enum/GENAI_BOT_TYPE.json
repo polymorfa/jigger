@@ -1,0 +1,41 @@
+{
+  "id": "enum:GENAI_BOT_TYPE",
+  "kind": "enum",
+  "name": "GENAI_BOT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGenaiBotType",
+    "variants": [
+      {
+        "name": "META_AI",
+        "value": 1.0
+      },
+      {
+        "name": "UGC",
+        "value": 2.0
+      },
+      {
+        "name": "CHARACTER",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGenaiBotType",
+    "matches": "GENAI_BOT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "GENAI_BOT_TYPE",
+    "META_AI",
+    "UGC",
+    "CHARACTER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

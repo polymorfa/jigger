@@ -1,0 +1,146 @@
+{
+  "id": "proto:WAWebProtobufsWa6.ClientPayload",
+  "kind": "proto",
+  "name": "WAWebProtobufsWa6.ClientPayload",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accountType": {
+        "number": 42
+      },
+      "connectAttemptCount": {
+        "number": 16
+      },
+      "connectReason": {
+        "number": 13
+      },
+      "connectType": {
+        "number": 12
+      },
+      "connectionSequenceInfo": {
+        "number": 43
+      },
+      "device": {
+        "number": 18
+      },
+      "devicePairingData": {
+        "number": 19,
+        "type_name": "WAWebProtobufsWa6.ClientPayload.DevicePairingRegistrationData"
+      },
+      "dnsSource": {
+        "number": 15,
+        "type_name": "WAWebProtobufsWa6.ClientPayload.DNSSource"
+      },
+      "fbAppId": {
+        "number": 31
+      },
+      "fbCat": {
+        "number": 21
+      },
+      "fbDeviceId": {
+        "number": 32
+      },
+      "fbUserAgent": {
+        "number": 22
+      },
+      "interopData": {
+        "number": 38,
+        "type_name": "WAWebProtobufsWa6.ClientPayload.InteropData"
+      },
+      "iosAppExtension": {
+        "number": 30
+      },
+      "lc": {
+        "number": 24
+      },
+      "lidDbMigrated": {
+        "number": 41
+      },
+      "memClass": {
+        "number": 37
+      },
+      "oc": {
+        "number": 23
+      },
+      "paaLink": {
+        "number": 44
+      },
+      "paddingBytes": {
+        "number": 34
+      },
+      "pairedPeripherals": {
+        "number": 47
+      },
+      "passive": {
+        "number": 3
+      },
+      "preacksCount": {
+        "number": 45
+      },
+      "processingQueueSize": {
+        "number": 46
+      },
+      "product": {
+        "number": 20
+      },
+      "pull": {
+        "number": 33
+      },
+      "pushName": {
+        "number": 7
+      },
+      "sessionId": {
+        "number": 9
+      },
+      "shards": {
+        "number": 14
+      },
+      "shortConnect": {
+        "number": 10
+      },
+      "testIsolationId": {
+        "number": 48
+      },
+      "trafficAnonymization": {
+        "number": 40
+      },
+      "userAgent": {
+        "number": 5,
+        "type_name": "WAWebProtobufsWa6.ClientPayload.UserAgent"
+      },
+      "username": {
+        "number": 1
+      },
+      "webInfo": {
+        "number": 6,
+        "type_name": "WAWebProtobufsWa6.ClientPayload.WebInfo"
+      },
+      "yearClass": {
+        "number": 36
+      }
+    },
+    "module": "WAWebProtobufsWa6.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsWa6.pb",
+    "matches": "name = \"ClientPayload\""
+  },
+  "literals": [
+    "ClientPayload"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebClientPayloadReleaseChannel",
+      "WAWebCommonSocketPlatformDetails",
+      "WAWebOpenChatSocket",
+      "WAWebWorkerClientPayload"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

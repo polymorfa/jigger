@@ -1,0 +1,42 @@
+{
+  "id": "ab:reveal_username_non_linking_rejection_reason_enabled",
+  "kind": "ab",
+  "name": "reveal_username_non_linking_rejection_reason_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32910,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "reveal_username_non_linking_rejection_reason_enabled:\\s*\\[\\s*32910"
+  },
+  "literals": [
+    "reveal_username_non_linking_rejection_reason_enabled",
+    "32910"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

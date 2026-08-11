@@ -1,0 +1,59 @@
+{
+  "id": "enum:WSUA_PRODUCT_TYPE",
+  "kind": "enum",
+  "name": "WSUA_PRODUCT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWsuaProductType",
+    "variants": [
+      {
+        "name": "NOVA",
+        "value": 1.0
+      },
+      {
+        "name": "WA_PLUS",
+        "value": 2.0
+      },
+      {
+        "name": "META_AI",
+        "value": 3.0
+      },
+      {
+        "name": "META_ONE",
+        "value": 4.0
+      },
+      {
+        "name": "META_ONE_CONSUMER",
+        "value": 5.0
+      },
+      {
+        "name": "META_ONE_BUSINESS",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWsuaProductType",
+    "matches": "WSUA_PRODUCT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WSUA_PRODUCT_TYPE",
+    "NOVA",
+    "WA_PLUS",
+    "META_AI",
+    "META_ONE",
+    "META_ONE_CONSUMER",
+    "META_ONE_BUSINESS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaOneUpsellLogger",
+      "WAWebSubscriptionUserActionWamEvent",
+      "WAWebWaPlusBenefitJourneyLogger",
+      "WAWebWaPlusBenefitUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

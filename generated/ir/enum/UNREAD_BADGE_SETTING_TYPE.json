@@ -1,0 +1,36 @@
+{
+  "id": "enum:UNREAD_BADGE_SETTING_TYPE",
+  "kind": "enum",
+  "name": "UNREAD_BADGE_SETTING_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUnreadBadgeSettingType",
+    "variants": [
+      {
+        "name": "CURRENT_UNREAD_COUNT",
+        "value": 0.0
+      },
+      {
+        "name": "CLEAR_ON_APP_OPEN",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUnreadBadgeSettingType",
+    "matches": "UNREAD_BADGE_SETTING_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "UNREAD_BADGE_SETTING_TYPE",
+    "CURRENT_UNREAD_COUNT",
+    "CLEAR_ON_APP_OPEN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNotificationSettingWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

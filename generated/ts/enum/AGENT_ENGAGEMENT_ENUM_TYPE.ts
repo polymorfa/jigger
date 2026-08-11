@@ -1,0 +1,5 @@
+export enum AGENTENGAGEMENTENUMTYPE {
+  DIRECT_CHAT = 0,
+  INVOKED = 1,
+  MEMBER = 2,
+}

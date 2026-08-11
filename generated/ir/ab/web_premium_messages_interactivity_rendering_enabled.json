@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_premium_messages_interactivity_rendering_enabled",
+  "kind": "ab",
+  "name": "web_premium_messages_interactivity_rendering_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4596,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_premium_messages_interactivity_rendering_enabled:\\s*\\[\\s*4596"
+  },
+  "literals": [
+    "web_premium_messages_interactivity_rendering_enabled",
+    "4596"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizTemplateAndInteractiveMessagesUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "wam:7010",
+  "kind": "wam",
+  "name": "GroupMemberTagUpdate",
+  "data": {
+    "kind": "wam",
+    "event_id": 7010,
+    "fields": {
+      "groupId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "group_id"
+      },
+      "groupMemberTagUpdateAction": {
+        "id": 2,
+        "type": "GROUP_MEMBER_TAG_UPDATE_ACTION_TYPE",
+        "wire": "group_member_tag_update_action",
+        "enum_ref": "GROUP_MEMBER_TAG_UPDATE_ACTION_TYPE"
+      },
+      "hasMemberTagAtStart": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "has_member_tag_at_start"
+      },
+      "memberTagEntryPoint": {
+        "id": 4,
+        "type": "GROUP_MEMBER_TAG_ENTRY_POINT_TYPE",
+        "wire": "member_tag_entry_point",
+        "enum_ref": "GROUP_MEMBER_TAG_ENTRY_POINT_TYPE"
+      },
+      "uiSurface": {
+        "id": 5,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyEventMs": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGroupMemberTagUpdateWamEvent",
+    "matches": "GroupMemberTagUpdate:\\s*\\[\\s*7010"
+  },
+  "literals": [
+    "7010"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGroupMemberTagEntryPointType",
+      "WAWebWamEnumGroupMemberTagUpdateActionType",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebGroupMemberTagUpdateLogger"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

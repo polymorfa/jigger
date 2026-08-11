@@ -1,0 +1,41 @@
+{
+  "id": "enum:DEFAULT_PROTOCOL_TARGET_TYPE",
+  "kind": "enum",
+  "name": "DEFAULT_PROTOCOL_TARGET_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDefaultProtocolTargetType",
+    "variants": [
+      {
+        "name": "LID",
+        "value": 0.0
+      },
+      {
+        "name": "PHONE",
+        "value": 1.0
+      },
+      {
+        "name": "NONE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDefaultProtocolTargetType",
+    "matches": "DEFAULT_PROTOCOL_TARGET_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DEFAULT_PROTOCOL_TARGET_TYPE",
+    "LID",
+    "PHONE",
+    "NONE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWindowsDefaultProtocolActivationWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,6 @@
+export enum LABELSYNCDIRECTIONTYPE {
+  SENDER = 1,
+  RECEIVER = 2,
+  RETRY = 3,
+  BOOTSTRAP_SENDER = 4,
+}

@@ -1,0 +1,36 @@
+{
+  "id": "enum:ADDITIONAL_CATEGORY_TYPE",
+  "kind": "enum",
+  "name": "ADDITIONAL_CATEGORY_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAdditionalCategoryType",
+    "variants": [
+      {
+        "name": "META_AI_MODEL_BASE",
+        "value": 1.0
+      },
+      {
+        "name": "META_AI_MODEL_PREMIUM",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAdditionalCategoryType",
+    "matches": "ADDITIONAL_CATEGORY_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ADDITIONAL_CATEGORY_TYPE",
+    "META_AI_MODEL_BASE",
+    "META_AI_MODEL_PREMIUM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBotJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

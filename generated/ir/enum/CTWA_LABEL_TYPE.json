@@ -1,0 +1,93 @@
+{
+  "id": "enum:CTWA_LABEL_TYPE",
+  "kind": "enum",
+  "name": "CTWA_LABEL_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCtwaLabelType",
+    "variants": [
+      {
+        "name": "NEW_ORDER",
+        "value": 0.0
+      },
+      {
+        "name": "PENDING_PAYMENT",
+        "value": 1.0
+      },
+      {
+        "name": "PAID",
+        "value": 2.0
+      },
+      {
+        "name": "ORDER_COMPLETE",
+        "value": 3.0
+      },
+      {
+        "name": "NEW_CUSTOMER",
+        "value": 4.0
+      },
+      {
+        "name": "DELIVERED",
+        "value": 5.0
+      },
+      {
+        "name": "LEAD",
+        "value": 6.0
+      },
+      {
+        "name": "FOLLOW_UP",
+        "value": 7.0
+      },
+      {
+        "name": "APPOINTMENT",
+        "value": 8.0
+      },
+      {
+        "name": "IMPORTANT",
+        "value": 9.0
+      },
+      {
+        "name": "DO_NEW_ORDER",
+        "value": 10.0
+      },
+      {
+        "name": "DO_LEAD",
+        "value": 11.0
+      },
+      {
+        "name": "FAVORITES",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCtwaLabelType",
+    "matches": "CTWA_LABEL_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CTWA_LABEL_TYPE",
+    "NEW_ORDER",
+    "PENDING_PAYMENT",
+    "PAID",
+    "ORDER_COMPLETE",
+    "NEW_CUSTOMER",
+    "DELIVERED",
+    "LEAD",
+    "FOLLOW_UP",
+    "APPOINTMENT",
+    "IMPORTANT",
+    "DO_NEW_ORDER",
+    "DO_LEAD",
+    "FAVORITES"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwaLabelSignalWamEvent",
+      "WAWebLabelConstants",
+      "WAWebSmbMarkAsXLabelAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

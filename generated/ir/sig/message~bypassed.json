@@ -1,0 +1,30 @@
+{
+  "id": "sig:message/bypassed",
+  "kind": "sig",
+  "name": "MessageDeliverBypassedMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "bypassed"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverBypassedMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "bypassed"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverGroupRetryMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

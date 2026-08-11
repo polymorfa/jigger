@@ -1,0 +1,84 @@
+{
+  "id": "proto:WAArmadilloXMA.ExtendedContentMessage.CTA",
+  "kind": "proto",
+  "name": "WAArmadilloXMA.ExtendedContentMessage.CTA",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actionContentBlob": {
+        "number": 6
+      },
+      "actionUrl": {
+        "number": 3
+      },
+      "buttonType": {
+        "number": 1
+      },
+      "ctaType": {
+        "number": 5
+      },
+      "nativeUrl": {
+        "number": 4
+      },
+      "title": {
+        "number": 2
+      }
+    },
+    "module": "WAArmadilloXMA.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloXMA.pb",
+    "matches": "name = \"ExtendedContentMessage.CTA\""
+  },
+  "literals": [
+    "CTA"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "ACTSanitizerApiWasm",
+      "EBCallingXmaProtobufValidation",
+      "EBValidateMinosMessages",
+      "MAWBridgeNewXMAHandler",
+      "MAWBridgeXMAUtils",
+      "MAWConvertExtendedContentOverlayIconGlyphToInformTreatmentRenderingType",
+      "MAWConvertExtendedContentTypeToLSXmaContentType",
+      "MAWConvertXMAGatingTypeToExtendedContentOverlayIconGlyph",
+      "MAWConvertXMALayoutTypeToExtendedContentXMLLayoutType",
+      "MAWConvertXMATargetTypeToExtendedContentTargetType",
+      "MAWDeleteExpiredMsgsApi",
+      "MAWFetchXMAData",
+      "MAWFetchXMADataUtils",
+      "MAWFowardMessageFromOpenThread",
+      "MAWHandleEchoMediaMsgsRestoreV2",
+      "MAWHandleMediaDownloadApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWInformTreatmentTypeTransform",
+      "MAWMpsRTCCallLifecyclePreprocessor",
+      "MAWMsg",
+      "MAWParseXMAFBConfig",
+      "MAWParseXMAIGConfig",
+      "MAWParseXMAProtocol",
+      "MAWParseXMAUnsupportedMessageType",
+      "MAWRTCCallEventUtils",
+      "MAWRemoveExpiredUnsendMsgsContent",
+      "MAWSendExternalLinkXMAV2",
+      "MAWShareAttachment",
+      "MAWThreadSnippetForXMAMsg",
+      "MAWXMALoggingUtils",
+      "MAWXMAUtils",
+      "MWRepliesMedia.react",
+      "MWXMAAttachmentItem.react",
+      "MpsReceiverFetchHydration",
+      "MpsXmaToBridge",
+      "SendMsgArgsToProtobuf",
+      "WAArmadilloApplication.pb",
+      "WmiXmaMessagePublisher"
+    ],
+    "dep_count": 2,
+    "dependent_count": 38
+  }
+}

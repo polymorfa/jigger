@@ -1,0 +1,50 @@
+{
+  "id": "ab:flows_wa_web",
+  "kind": "ab",
+  "name": "flows_wa_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 12520,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "flows_wa_web:\\s*\\[\\s*12520"
+  },
+  "literals": [
+    "flows_wa_web",
+    "12520"
+  ],
+  "usage": {
+    "read_count": 6,
+    "readers": [
+      "WAWebBizCtwaAGMUtils",
+      "WAWebGalaxyFlowFeatureSupport",
+      "WAWebGalaxyFlowWamLoggerUtils",
+      "WAWebGalaxyFlowsLoadable.react",
+      "WAWebGalaxyFlowsUtils",
+      "WAWebGenerateInteractiveResponseMessageProto"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

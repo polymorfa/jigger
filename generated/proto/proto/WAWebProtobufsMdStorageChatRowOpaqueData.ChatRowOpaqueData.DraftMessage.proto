@@ -1,0 +1,7 @@
+message DraftMessage {
+  optional bytes text = 1;
+  optional bytes omittedUrl = 2;
+  optional CtwaContextLinkData ctwaContextLinkData = 3;
+  optional CtwaContextData ctwaContext = 4;
+  optional bytes timestamp = 5;
+}

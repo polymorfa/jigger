@@ -1,0 +1,17 @@
+export enum ENUMCALLADDCOVERPHOTODEFENSEDEPENDENTACCOUNTMESSAGESGROUPADDGROUPCREATIONLASTLINKEDPROFILESMESSAGESONLINEPIXPROFILEREADRECEIPTSSTATUSSTICKERS {
+  CALLADD = "calladd",
+  COVER_PHOTO = "cover_photo",
+  DEFENSE = "defense",
+  DEPENDENTACCOUNTMESSAGES = "dependentaccountmessages",
+  GROUPADD = "groupadd",
+  GROUPCREATION = "groupcreation",
+  LAST = "last",
+  LINKED_PROFILES = "linked_profiles",
+  MESSAGES = "messages",
+  ONLINE = "online",
+  PIX = "pix",
+  PROFILE = "profile",
+  READRECEIPTS = "readreceipts",
+  STATUS = "status",
+  STICKERS = "stickers",
+}

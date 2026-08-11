@@ -1,0 +1,64 @@
+{
+  "id": "wam:6636",
+  "kind": "wam",
+  "name": "AutomaticEventsUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 6636,
+    "fields": {
+      "automaticEventsTargetComponent": {
+        "id": 1,
+        "type": "AUTOMATIC_EVENTS_TARGET_COMPONENT_ENUM",
+        "wire": "automatic_events_target_component",
+        "enum_ref": "AUTOMATIC_EVENTS_TARGET_COMPONENT_ENUM"
+      },
+      "extraAttributes": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "extra_attributes"
+      },
+      "smbUserActionType": {
+        "id": 2,
+        "type": "SMB_USER_ACTION_TYPE_ENUM",
+        "wire": "smb_user_action_type",
+        "enum_ref": "SMB_USER_ACTION_TYPE_ENUM"
+      },
+      "surface": {
+        "id": 3,
+        "type": "SURFACE_TYPE",
+        "wire": "surface",
+        "enum_ref": "SURFACE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebAutomaticEventsUserJourneyWamEvent",
+    "matches": "AutomaticEventsUserJourney:\\s*\\[\\s*6636"
+  },
+  "literals": [
+    "6636"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAutomaticEventsTargetComponentEnum",
+      "WAWebWamEnumSmbUserActionTypeEnum",
+      "WAWebWamEnumSurfaceType"
+    ],
+    "dependents": [
+      "WAWebBizLabelDrawer.react",
+      "WAWebBizLabelItemDrawer.react",
+      "WAWebCreateOrEditListDrawer.react",
+      "WAWebDOIntroPopup.react",
+      "WAWebLabelsMultiSelectLabelList.react"
+    ],
+    "dep_count": 4,
+    "dependent_count": 5
+  }
+}

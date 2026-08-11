@@ -1,0 +1,62 @@
+{
+  "id": "enum:BACKEND_STORE_TYPE",
+  "kind": "enum",
+  "name": "BACKEND_STORE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBackendStoreType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "NON_DIRECT_PATH",
+        "value": 1.0
+      },
+      {
+        "name": "EVERSTORE",
+        "value": 2.0
+      },
+      {
+        "name": "OIL",
+        "value": 3.0
+      },
+      {
+        "name": "EXPRESS_PATH",
+        "value": 4.0
+      },
+      {
+        "name": "STATIC",
+        "value": 5.0
+      },
+      {
+        "name": "MANIFOLD",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBackendStoreType",
+    "matches": "BACKEND_STORE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "BACKEND_STORE_TYPE",
+    "UNKNOWN",
+    "NON_DIRECT_PATH",
+    "EVERSTORE",
+    "OIL",
+    "EXPRESS_PATH",
+    "STATIC",
+    "MANIFOLD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaDownload2WamEvent",
+      "WAWebWamMediaMetricUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

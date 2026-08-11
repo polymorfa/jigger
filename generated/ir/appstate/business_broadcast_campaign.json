@@ -1,0 +1,46 @@
+{
+  "id": "appstate:business_broadcast_campaign",
+  "kind": "appstate",
+  "name": "BusinessBroadcastCampaign",
+  "data": {
+    "kind": "appstate",
+    "index_name": "business_broadcast_campaign",
+    "collection": "regular",
+    "version": 1,
+    "value_field": "businessBroadcastCampaignAction"
+  },
+  "evidence": {
+    "module": "WAWebBroadcastCampaignSync",
+    "matches": "Actions\\.BusinessBroadcastCampaign"
+  },
+  "literals": [
+    "business_broadcast_campaign",
+    "BusinessBroadcastCampaign",
+    "businessBroadcastCampaignAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebBackendApi",
+      "WAWebBizBroadcastCampaignStorageUtils",
+      "WAWebBusinessBroadcastsGatingUtils",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSchemaBusinessBroadcastCampaign",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebBizBroadcastDeleteConfirmationModal.react",
+      "WAWebCollectionHandlerActions",
+      "WAWebCreatePendingBroadcastCampaignAction",
+      "WAWebProcessCampaignNotificationAction",
+      "WAWebRenameBroadcastCampaignAction"
+    ],
+    "dep_count": 12,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,2 @@
+// ABShimmedLinksInTheMarketingMessageBodyEnabled is A/B property 12995 (bool), default false.
+const ABShimmedLinksInTheMarketingMessageBodyEnabled = "shimmed_links_in_the_marketing_message_body_enabled"

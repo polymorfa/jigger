@@ -1,0 +1,6 @@
+message Point {
+  optional bytes xDeprecated = 1;
+  optional bytes yDeprecated = 2;
+  optional bytes x = 3;
+  optional bytes y = 4;
+}
