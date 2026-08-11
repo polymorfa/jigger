@@ -25,15 +25,11 @@ export function Code({
   copy = true,
   lines = false,
   links,
-  children,
 }: {
   src: string;
   lang: Lang;
   copy?: boolean;
   lines?: boolean;
-  /** Rendered inside the same frame, below the code — an expansion of the very
-   *  thing above it, rather than a second box saying it again. */
-  children?: React.ReactNode;
   /** Token text -> href. A schema whose types cannot be followed is a picture of
    *  a schema; this is what makes it navigable. */
   links?: Record<string, string>;
@@ -63,7 +59,6 @@ export function Code({
           ))}
         </code>
       </pre>
-      {children}
       </div>
     </div>
   );

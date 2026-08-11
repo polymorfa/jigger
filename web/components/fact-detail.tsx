@@ -7,7 +7,8 @@ import { CoverageChip } from "@/components/coverage-chip";
 import { GeneratedSection } from "@/components/generated-section";
 import { IqResponses } from "@/components/iq-responses";
 import { Timeline } from "@/components/timeline";
-import { EmbeddedBy, ProtoTree as ProtoMessageTree } from "@/components/proto-message-tree";
+import { EmbeddedBy } from "@/components/proto-message-tree";
+import { SchemaTree } from "@/components/schema-tree";
 import { REPOS } from "@/lib/constants";
 import { getCoverageForFact } from "@/lib/data";
 
@@ -15,7 +16,7 @@ import { historyFor } from "@/lib/history";
 import { getCitations, type Citation } from "@/lib/spec";
 import type { Embedding, TreeNode } from "@/lib/proto-graph";
 import type { Fact, FactKind } from "@/lib/types";
-import { isAb, isIq } from "@/lib/types";
+import { isAb, isIq, isProto } from "@/lib/types";
 
 /** `.proto` is offered only where it is the fact's native form. */
 // `.proto` is protobuf's native form and nothing else's. An IQ stanza is XML,
@@ -99,20 +100,22 @@ export function FactDetail({
           reading, not a second act you scroll to. Stacks on narrow screens. */}
       <div className="flex min-w-0 flex-col gap-7">
       {/* One box, not two. The schema and its expansion are the same object at
-          two depths, and splitting them meant reading the field list, scrolling
-          past the generated code, and finding the same fields again. */}
+          two depths; a message-typed field opens in place rather than sending
+          you to a second listing of the same fields further down the page. */}
       <section className="flex flex-col gap-1.5">
-        <Head title="Schema" note={LEAD[fact.kind]} />
-        <Code src={src} lang={lang} links={links}>
-          {tree && tree.length > 0 && (
-            <div className="border-t border-hair px-3 py-2">
-              <p className="mb-1 text-2xs text-fg-faint">
-                field types followed through — collapsed by default
-              </p>
-              <ProtoMessageTree nodes={tree} />
-            </div>
-          )}
-        </Code>
+        <Head
+          title="Schema"
+          note={tree && tree.length > 0 ? `${LEAD[fact.kind]} · click a type to expand` : LEAD[fact.kind]}
+        />
+        {tree && tree.length > 0 && isProto(fact) ? (
+          <SchemaTree
+            module={fact.data.module}
+            name={fact.name.split(".").pop() ?? fact.name}
+            nodes={tree}
+          />
+        ) : (
+          <Code src={src} lang={lang} links={links} />
+        )}
       </section>
 
       {/* Directly under the request, because the two only make sense together:
