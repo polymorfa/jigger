@@ -1,0 +1,22 @@
+[package]
+name = "jigger"
+description = "A spec of the WhatsApp protocol: extract, compile, emit, scan."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "jigger"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { workspace = true }
+cellar-core = { workspace = true }
+clap = { workspace = true }
+jigger-emit = { workspace = true }
+jigger-extract = { workspace = true }
+jigger-ir = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+walkdir = { workspace = true }
