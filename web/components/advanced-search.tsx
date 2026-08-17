@@ -1,9 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { CheckIcon, PlusIcon, SearchIcon, XIcon } from "lucide-react";
+import { CheckIcon, SearchIcon, XIcon } from "lucide-react";
 import { loadSearchIndex } from "@/lib/client-index";
 import {
   addTerm,
@@ -19,8 +18,7 @@ import {
   type Sort,
 } from "@/lib/query";
 import { SEARCH_KINDS, type SearchEntry, type SearchKind } from "@/lib/types";
-import { hrefOf } from "@/components/global-search";
-import { Badge } from "@/components/ui/badge";
+import { SearchResult } from "@/components/search-result";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Label } from "@/components/ui/label";
@@ -31,7 +29,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { KindBadge } from "./kind-badge";
+import { TagField } from "./tag-field";
 
 const PAGE = 200;
 
@@ -69,7 +67,6 @@ export function AdvancedSearch() {
   const [q, setQ] = useState(params.get("q") ?? "");
   const [sort, setSort] = useState<Sort>((params.get("sort") as Sort) ?? "relevance");
   const [limit, setLimit] = useState(PAGE);
-  const [draft, setDraft] = useState("");
 
   useEffect(() => {
     loadSearchIndex().then(setEntries);
@@ -98,8 +95,6 @@ export function AdvancedSearch() {
 
   const terms = useMemo(() => parseQuery(q), [q]);
   const activeKinds = useMemo(() => new Set(valuesOf(terms, "kind")), [terms]);
-  const contains = useMemo(() => valuesOf(terms, "contains"), [terms]);
-  const excluded = useMemo(() => valuesOf(terms, "contains", true), [terms]);
 
   const hits = useMemo<Scored[]>(
     () => (entries ? runQuery(entries, terms) : []),
@@ -137,13 +132,6 @@ export function AdvancedSearch() {
   const shown = results.slice(0, limit);
   const total = [...counts.values()].reduce((a, b) => a + b, 0);
 
-  const addContains = (negated: boolean) => {
-    const v = draft.trim();
-    if (!v) return;
-    edit(addTerm(q, "contains", v, negated));
-    setDraft("");
-  };
-
   return (
     <div className="flex flex-col gap-4">
       {/* --- The controls, which write the box below them ------------------ */}
@@ -170,56 +158,61 @@ export function AdvancedSearch() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5">
-          <span className="text-muted-foreground w-24 shrink-0 text-xs">Must contain</span>
-          <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
-            {contains.map((v) => (
-              <Pill key={v} label={v} onRemove={() => edit(removeTerm(q, "contains", v))} />
-            ))}
-            {excluded.map((v) => (
-              <Pill
-                key={`-${v}`}
-                label={v}
-                negated
-                onRemove={() => edit(removeTerm(q, "contains", v, true))}
-              />
-            ))}
-            <div className="focus-within:border-ring flex h-6 items-center border">
-              <input
-                value={draft}
-                onChange={(e) => setDraft(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    e.preventDefault();
-                    addContains(e.altKey);
-                  }
-                }}
-                placeholder="a field, tag or variant"
-                aria-label="Field, tag or variant a result must contain"
-                spellCheck={false}
-                className="placeholder:text-muted-foreground h-full w-44 min-w-0 bg-transparent px-2 text-xs outline-none"
-              />
-              <button
-                type="button"
-                onClick={() => addContains(false)}
-                disabled={!draft.trim()}
-                title="Require this"
-                className="text-muted-foreground hover:text-foreground flex h-full w-6 shrink-0 items-center justify-center border-l disabled:opacity-40"
-              >
-                <PlusIcon className="size-3" />
-              </button>
-              <button
-                type="button"
-                onClick={() => addContains(true)}
-                disabled={!draft.trim()}
-                title="Exclude this"
-                className="text-muted-foreground hover:text-missing flex h-full w-6 shrink-0 items-center justify-center border-l text-xs disabled:opacity-40"
-              >
-                −
-              </button>
-            </div>
-          </div>
-        </div>
+        <TagField
+          label="Must contain"
+          hint="A field, attribute, stanza tag or enum variant the result carries"
+          values={valuesOf(terms, "contains")}
+          onAdd={(v) => edit(addTerm(q, "contains", v))}
+          onRemove={(v) => edit(removeTerm(q, "contains", v))}
+          placeholder="contextInfo, jid, REACTION…"
+        />
+
+        <TagField
+          label="Must not contain"
+          hint="Excludes anything carrying this"
+          tone="negative"
+          values={valuesOf(terms, "contains", true)}
+          onAdd={(v) => edit(addTerm(q, "contains", v, true))}
+          onRemove={(v) => edit(removeTerm(q, "contains", v, true))}
+          placeholder="bool, deprecated…"
+        />
+
+        <TagField
+          label="Name matches"
+          hint="Substring of the readable name; /…/ for a regex"
+          values={valuesOf(terms, "name")}
+          onAdd={(v) => edit(addTerm(q, "name", v))}
+          onRemove={(v) => edit(removeTerm(q, "name", v))}
+          placeholder="Newsletter, /Query$/…"
+        />
+
+        <TagField
+          label="Name excludes"
+          hint="Drops anything whose name matches"
+          tone="negative"
+          values={valuesOf(terms, "name", true)}
+          onAdd={(v) => edit(addTerm(q, "name", v, true))}
+          onRemove={(v) => edit(removeTerm(q, "name", v, true))}
+          placeholder="Deprecated, Test…"
+        />
+
+        <TagField
+          label="Id matches"
+          hint="Substring of the wire-literal id"
+          values={valuesOf(terms, "id")}
+          onAdd={(v) => edit(addTerm(q, "id", v))}
+          onRemove={(v) => edit(removeTerm(q, "id", v))}
+          placeholder="w:biz, privacy/get…"
+        />
+
+        <TagField
+          label="From module"
+          hint="The source module the fact was read out of"
+          values={valuesOf(terms, "module")}
+          onAdd={(v) => edit(addTerm(q, "module", v))}
+          onRemove={(v) => edit(removeTerm(q, "module", v))}
+          placeholder="WAWebABPropsConfigs…"
+        />
 
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
           <Label htmlFor="sort" className="text-muted-foreground w-24 shrink-0 text-xs">
@@ -281,11 +274,10 @@ export function AdvancedSearch() {
           )}
         </div>
         <p className="text-muted-foreground text-2xs">
-          Bare words match names and contents. The controls above write{" "}
-          <span className="data text-fg">kind:</span> and{" "}
-          <span className="data text-fg">contains:</span> for you;{" "}
-          <span className="data text-fg">-</span> excludes,{" "}
-          <span className="data text-fg">/re/</span> is a regex.
+          Bare words match names, ids, modules and contents. Everything above
+          writes into this box — a tag row is just{" "}
+          <span className="data text-fg">field:value</span>, and{" "}
+          <span className="data text-fg">/re/</span> anywhere is a regex.
         </p>
       </div>
 
@@ -314,32 +306,7 @@ export function AdvancedSearch() {
       ) : (
         <div className="flex flex-col">
           {shown.map(({ e, via }) => (
-            <Link
-              key={`${e.kind}:${e.id}`}
-              href={hrefOf(e)}
-              className="hover:bg-accent flex items-baseline gap-2.5 border-b px-1 py-1.5"
-            >
-              {e.kind === "module" ? (
-                <Badge variant="outline" className="data shrink-0">
-                  src
-                </Badge>
-              ) : (
-                <KindBadge kind={e.kind} />
-              )}
-              <span className="data min-w-0 truncate text-sm text-fg">{e.id}</span>
-              {e.sub ? (
-                <span className="text-muted-foreground min-w-0 truncate text-xs">{e.sub}</span>
-              ) : (
-                e.name !== e.id.slice(e.id.indexOf(":") + 1) && (
-                  <span className="text-muted-foreground min-w-0 truncate text-sm">{e.name}</span>
-                )
-              )}
-              {via && (
-                <span className="data text-muted-foreground ml-auto shrink-0 text-2xs">
-                  contains <span className="text-brand">{via}</span>
-                </span>
-              )}
-            </Link>
+            <SearchResult key={`${e.kind}:${e.id}`} entry={e} via={via} />
           ))}
 
           {results.length > shown.length && (
@@ -402,37 +369,6 @@ function Chip({
       <span className={mono ? "data" : undefined}>{label}</span>
       <span className="tnum opacity-60">{count === undefined ? "—" : count.toLocaleString()}</span>
     </button>
-  );
-}
-
-/** One `contains:` requirement, removable. An excluded one reads as negative. */
-function Pill({
-  label,
-  onRemove,
-  negated = false,
-}: {
-  label: string;
-  onRemove: () => void;
-  negated?: boolean;
-}) {
-  return (
-    <span
-      className={
-        "flex items-center gap-1 border px-1.5 py-0.5 text-xs " +
-        (negated ? "border-missing/40 text-missing" : "border-brand bg-brand-weak text-fg")
-      }
-    >
-      {negated && <span aria-hidden="true">−</span>}
-      <span className="data">{label}</span>
-      <button
-        type="button"
-        onClick={onRemove}
-        aria-label={`Remove ${label}`}
-        className="opacity-60 hover:opacity-100"
-      >
-        <XIcon className="size-3" />
-      </button>
-    </span>
   );
 }
 

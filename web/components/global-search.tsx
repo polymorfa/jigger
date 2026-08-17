@@ -5,21 +5,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { SearchIcon, SlidersHorizontal } from "lucide-react";
 import { loadSearchIndex } from "@/lib/client-index";
-import { browseHref } from "@/lib/ids";
 import { parseQuery, runQuery, sortHits, type Scored } from "@/lib/query";
-import type { FactKind, SearchEntry } from "@/lib/types";
-import { Badge } from "@/components/ui/badge";
+import type { SearchEntry } from "@/lib/types";
 import { Kbd } from "@/components/ui/kbd";
-import { KindBadge } from "./kind-badge";
+import { SearchResult, hrefOf } from "./search-result";
 
 const LIMIT = 40;
-
-/** Where a hit goes. Modules have their own viewer; facts go to their browser. */
-export function hrefOf(e: SearchEntry): string {
-  return e.kind === "module"
-    ? `/source/${encodeURIComponent(e.name)}`
-    : browseHref(e.kind as FactKind, e.id);
-}
 
 /**
  * The header search: a field and a dropdown, not a command palette.
@@ -142,40 +133,8 @@ export function GlobalSearch() {
           ) : (
             <ul>
               {shown.map(({ e, via }, i) => (
-                <li key={`${e.kind}:${e.id}`}>
-                  <button
-                    type="button"
-                    onMouseDown={(ev) => {
-                      ev.preventDefault();
-                      go(e);
-                    }}
-                    onMouseEnter={() => setActive(i)}
-                    className={
-                      "flex w-full items-baseline gap-2 border-b px-2.5 py-1 text-left " +
-                      (i === active ? "bg-brand-weak" : "hover:bg-accent")
-                    }
-                  >
-                    {e.kind === "module" ? (
-                      <Badge variant="outline" className="data shrink-0">
-                        src
-                      </Badge>
-                    ) : (
-                      <KindBadge kind={e.kind} />
-                    )}
-                    <span className="data min-w-0 truncate text-sm text-fg">{e.id}</span>
-                    {e.sub ? (
-                      <span className="min-w-0 text-muted-foreground truncate text-xs">{e.sub}</span>
-                    ) : (
-                      e.name !== e.id.slice(e.id.indexOf(":") + 1) && (
-                        <span className="min-w-0 text-muted-foreground truncate text-sm">{e.name}</span>
-                      )
-                    )}
-                    {via && (
-                      <span className="data text-muted-foreground ml-auto shrink-0 text-2xs">
-                        contains <span className="text-brand">{via}</span>
-                      </span>
-                    )}
-                  </button>
+                <li key={`${e.kind}:${e.id}`} onMouseEnter={() => setActive(i)}>
+                  <SearchResult entry={e} via={via} active={i === active} compact onSelect={() => go(e)} />
                 </li>
               ))}
             </ul>

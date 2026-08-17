@@ -105,10 +105,74 @@ function buildSearchIndex() {
     return [...t].slice(0, 64);
   };
 
+  // The handful of attributes that distinguish one result from the next.
+  //
+  // A results list showing only a name and a kind makes you open things to find
+  // out whether they are the thing you wanted. What that costs is a round trip
+  // per candidate; what it takes to avoid is four short strings per fact, which
+  // is the difference between scanning and hunting.
+  //
+  // Pre-formatted rather than structured: the client renders these verbatim, so
+  // the shapes of nine different payloads stay here instead of turning into a
+  // switch in a component.
+  const metaOf = (f) => {
+    const d = f.data ?? {};
+    const n = (x) => (x ?? []).length;
+    switch (f.kind) {
+      case "ab": {
+        const reads = f.usage?.read_count ?? 0;
+        return [
+          `id ${d.opaque_id}`,
+          d.type,
+          `default ${JSON.stringify(d.default)}`,
+          // The rollout signal: two shipped defaults that disagree means the
+          // value is being decided server-side right now.
+          d.default !== d.alt_default ? "split" : null,
+          reads === 0 ? "never read" : `read by ${reads}`,
+        ];
+      }
+      case "wam":
+        return [
+          `event ${d.event_id}`,
+          `${Object.keys(d.fields ?? {}).length} fields`,
+          d.channel && `channel ${d.channel}`,
+        ];
+      case "iq":
+        return [
+          d.xmlns,
+          d.type,
+          n(d.responses) ? `${n(d.responses)} reply arms` : "no reply parsed",
+        ];
+      case "proto":
+        return [`${Object.keys(d.fields ?? {}).length} fields`, d.module];
+      case "enum":
+        return [`${n(d.variants)} variants`, d.module];
+      case "appstate":
+        return [
+          d.index_name,
+          d.collection ?? "collection unresolved",
+          d.version != null ? `v${d.version}` : null,
+        ];
+      case "mex":
+        return [d.operation, `doc ${d.doc_id}`, n(d.variables) ? `${n(d.variables)} vars` : null];
+      case "sig":
+        return [`<${d.root}>`, d.responds_to ? `answers ${d.responds_to}` : "server-initiated"];
+      case "const":
+        return [d.group];
+      default:
+        return [];
+    }
+  };
+
   const index = ir.facts.map((f) => ({
     id: f.id,
     kind: f.kind,
     name: f.name,
+    // The module a fact was read out of, as its own facet. It is the answer to
+    // "what else came from here", which `contains:` cannot express — evidence
+    // is not something the fact carries, it is where the fact came from.
+    module: f.evidence?.module,
+    meta: metaOf(f).filter(Boolean).map(String),
     terms: termsOf(f),
   }));
 
@@ -141,7 +205,13 @@ function buildSearchIndex() {
   for (const [name, roles] of modules) {
     // `sub` is what the module is *for*, which is the only thing distinguishing
     // one minified WASmax name from the next in a result list.
-    index.push({ id: name, kind: "module", name, sub: [...roles].sort().join(", ") });
+    index.push({
+      id: name,
+      kind: "module",
+      name,
+      sub: [...roles].sort().join(", "),
+      meta: [...roles].sort(),
+    });
   }
   console.log(`[prepare] ${modules.size} modules indexed alongside ${ir.facts.length} facts`);
   const out = join(webRoot, "public", "data", "search-index.json");

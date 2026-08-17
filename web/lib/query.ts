@@ -22,7 +22,7 @@ import type { SearchEntry, SearchKind } from "@/lib/types";
  * nothing is worse than one that merely fails to match.
  */
 
-export type Field = "kind" | "name" | "id" | "contains" | "any";
+export type Field = "kind" | "name" | "id" | "contains" | "module" | "any";
 
 export type Term = {
   field: Field;
@@ -44,6 +44,7 @@ export const FIELDS: { name: Field; hint: string }[] = [
   { name: "name", hint: "the readable name" },
   { name: "id", hint: "the wire-literal id" },
   { name: "contains", hint: "a field, attribute, tag or enum variant it carries" },
+  { name: "module", hint: "the source module it was read out of" },
 ];
 
 const TOKEN = /(-?)(?:(\w+):)?(?:"([^"]*)"|\/((?:[^/\\]|\\.)*)\/|(\S+))/g;
@@ -95,8 +96,15 @@ function hit(e: SearchEntry, t: Term): boolean {
       // Exact on a contained term, not substring: `contains:id` should not
       // match every field whose name happens to end in `Id`.
       return (e.terms ?? []).some((x) => (t.regex ? t.regex.test(x) : x.toLowerCase() === v));
+    case "module":
+      return e.module ? test(e.module) : false;
     case "any":
-      return test(e.id) || test(e.name) || (e.terms ?? []).some(test);
+      return (
+        test(e.id) ||
+        test(e.name) ||
+        (e.module ? test(e.module) : false) ||
+        (e.terms ?? []).some(test)
+      );
   }
 }
 

@@ -301,6 +301,11 @@ export type SearchEntry = {
    *  stanza tags. Ranked below id and name so a deep hit never outranks the
    *  thing actually called that. */
   terms?: string[];
+  /** The module it was extracted from. Facts only. */
+  module?: string;
+  /** A few short, pre-formatted attributes — enough to tell one result from the
+   *  next without opening it. Rendered verbatim. */
+  meta?: string[];
 };
 
 export function isMex(f: Fact): f is Fact & { data: MexData } {
