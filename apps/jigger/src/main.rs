@@ -19,7 +19,7 @@ use anyhow::{Context, Result};
 use cellar_core::{Platform, Store};
 use clap::{Parser, Subcommand};
 use jigger_ir::{Fact, Ir};
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
 use std::path::PathBuf;
 
@@ -70,6 +70,12 @@ enum Cmd {
         /// Same repo config the scanner uses.
         config: PathBuf,
     },
+
+    /// Per-module symbol tables, for go-to-definition in the source viewer.
+    ///
+    /// Precomputed rather than resolved per request: it is a pure function of a
+    /// module, so doing it once per revision beats doing it once per reader.
+    Symbols,
 
     /// IR -> conformance vectors a library can run in CI.
     Vectors,
@@ -200,6 +206,56 @@ fn main() -> Result<()> {
                 fs::write(&path, md)?;
                 println!("  {:<16} {} missing -> {}", repo.name, missing.len(), path.display());
             }
+        }
+
+        Cmd::Symbols => {
+            let id = store.latest(Platform::Whatsapp)?;
+            let bundle = store.open_bundle(id)?;
+            let index = bundle.index()?;
+
+            // Only the modules something can actually link to. Every module in
+            // the bundle would be 237k parses to serve a few thousand pages,
+            // and the viewer degrades to no internal links for the rest rather
+            // than to something wrong.
+            let wanted: BTreeSet<String> = {
+                let ir = read_ir(&cli.out).ok();
+                let mut w = BTreeSet::new();
+                for f in ir.iter().flat_map(|i| &i.facts) {
+                    w.insert(f.evidence.module.clone());
+                    if let Some(g) = &f.graph {
+                        w.extend(g.deps.iter().cloned());
+                        w.extend(g.dependents.iter().cloned());
+                    }
+                    if let Some(u) = &f.usage {
+                        w.extend(u.readers.iter().cloned());
+                    }
+                }
+                w
+            };
+
+            let dir = cli.out.join("symbols");
+            fs::create_dir_all(&dir)?;
+            let (mut done, mut skipped) = (0usize, 0usize);
+
+            for e in index.modules.iter().filter(|e| wanted.contains(&e.name)) {
+                let Ok(src) = bundle.read_module(e) else { continue };
+                match jigger_extract::symbols::symbols(&src) {
+                    Some(sym) => {
+                        // One file per module: the viewer reads exactly the one
+                        // it is showing, so nothing is paid for the rest.
+                        fs::write(
+                            dir.join(format!("{}.json", e.name.replace('/', "_"))),
+                            serde_json::to_string(&sym)?,
+                        )?;
+                        done += 1;
+                    }
+                    // Recorded, not hidden. A module that will never have
+                    // internal links is worth knowing about.
+                    None => skipped += 1,
+                }
+            }
+            println!("  {done} modules resolved, {skipped} unparseable");
+            eprintln!("  -> {}/symbols", cli.out.display());
         }
 
         Cmd::Vectors => {

@@ -14,6 +14,8 @@ oxc_allocator = { workspace = true }
 oxc_ast = { workspace = true }
 oxc_ast_visit = { workspace = true }
 oxc_parser = { workspace = true }
+oxc_semantic = "0.143"
 oxc_span = { workspace = true }
 regex = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
 serde_json = { workspace = true }

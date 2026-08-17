@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { tokenize } from "@/lib/highlight";
-import { dependenciesOf, headerLines, linksForLine, rewriteModule } from "@/lib/source-rewrite";
+import { dependenciesOf, headerLines, linksForLine } from "@/lib/source-rewrite";
+import type { Symbols } from "@/lib/module-symbols";
 import { ROW_CODE } from "@/lib/metrics";
 import { addNote, anchorHolds, notesFor, removeNote, type Note } from "@/lib/notes";
 
@@ -41,17 +42,19 @@ export function SourceView({
   src,
   revision,
   highlight,
+  symbols,
 }: {
   name: string;
   src: string;
   revision: number;
   /** 1-indexed line to jump to, from the evidence pattern. */
   highlight?: number | null;
+  /** Resolved bindings, when a symbol table was precomputed for this module. */
+  symbols?: Symbols | null;
 }) {
-  // Rewritten before anything else touches it, so notes, evidence patterns and
-  // `#L` links all address the same text the reader sees. The rewrite preserves
-  // line count and column positions exactly, which is what makes that safe.
-  const shown = useMemo(() => rewriteModule(src), [src]);
+  // Already rewritten by the page, which had to do it anyway to check the
+  // symbol table against the exact bytes being rendered.
+  const shown = src;
   const raw = useMemo(() => shown.split("\n"), [shown]);
   const deps = useMemo(() => dependenciesOf(shown), [shown]);
 
@@ -63,6 +66,31 @@ export function SourceView({
     () => raw.map((l, i) => linksForLine(l, i < headerEnd, deps)),
     [raw, headerEnd, deps],
   );
+
+  /**
+   * Every identifier that binds somewhere, by line and column.
+   *
+   * Columns, not names: a line can hold three different `t`s bound to three
+   * different scopes, and a name-keyed map answers the same for all of them.
+   * Resolving by position is the entire reason this is a symbol table and not
+   * a search.
+   */
+  const bindings = useMemo(() => {
+    const m = new Map<number, { col: number; len: number; line: number }[]>();
+    for (const [l, c, len, dl] of symbols?.refs ?? []) {
+      m.set(l, [...(m.get(l) ?? []), { col: c, len, line: dl }]);
+    }
+    return m;
+  }, [symbols]);
+
+  /** Declarations, so a definition can say how many places use it. */
+  const declared = useMemo(() => {
+    const m = new Map<number, { col: number; refs: number }[]>();
+    for (const [l, c, , n] of symbols?.decls ?? []) {
+      m.set(l, [...(m.get(l) ?? []), { col: c, refs: n }]);
+    }
+    return m;
+  }, [symbols]);
   const target = `module:${name}`;
 
   const [notes, setNotes] = useState<Note[]>([]);
@@ -108,6 +136,11 @@ export function SourceView({
     read();
     window.addEventListener("hashchange", read);
     return () => window.removeEventListener("hashchange", read);
+  }, []);
+
+  const goto = useCallback((line: number) => {
+    setPinned(line);
+    window.history.replaceState(null, "", `#L${line}`);
   }, []);
 
   const focusLine = pinned ?? highlight;
@@ -229,7 +262,10 @@ export function SourceView({
         onCopy={onCopy}
         className="min-h-0 flex-1 select-none overflow-auto bg-surface"
       >
-        <div style={{ height: virt.getTotalSize(), position: "relative" }}>
+        <div
+          className="w-max min-w-full"
+          style={{ height: virt.getTotalSize(), position: "relative" }}
+        >
           {virt.getVirtualItems().map((vi) => {
             const n = vi.index + 1;
             const lineNotes = byLine.get(n) ?? [];
@@ -253,8 +289,12 @@ export function SourceView({
                 }}
               >
                 <div
-                  className={`flex w-max min-w-full items-start ${
-                    highlight === n ? "bg-brand-weak" : "hover:bg-surface-2"
+                  className={`flex w-full items-start ${
+                    inRange
+                      ? n === focusLine
+                        ? "bg-hl-anchor"
+                        : "bg-hl"
+                      : "hover:bg-surface-2"
                   }`}
                   style={{ minHeight: ROW_CODE }}
                 >
@@ -278,9 +318,25 @@ export function SourceView({
                       drag down the file yields the source and not a column of
                       line numbers interleaved with it. */}
                   <code className="data shrink-0 select-text whitespace-pre text-xs leading-[var(--row-code)]">
-                    {(lines[vi.index] ?? []).map((t, j) => (
-                      <Tok key={j} text={t.t} cls={CLASS[t.c] ?? "text-fg"} links={links[vi.index]} />
-                    ))}
+                    {(() => {
+                      let col = 0;
+                      return (lines[vi.index] ?? []).map((t, j) => {
+                        const at = col;
+                        col += t.t.length;
+                        return (
+                          <Tok
+                            key={j}
+                            text={t.t}
+                            col={at}
+                            cls={CLASS[t.c] ?? "text-fg"}
+                            links={links[vi.index]}
+                            binds={bindings.get(n)}
+                            decls={declared.get(n)}
+                            onGoto={goto}
+                          />
+                        );
+                      });
+                    })()}
                   </code>
 
                   {/* Comment affordance, right of the code. Always occupies its
@@ -384,34 +440,91 @@ export function SourceView({
  */
 function Tok({
   text,
+  col,
   cls,
   links,
+  binds,
+  decls,
+  onGoto,
 }: {
   text: string;
+  /** Column this token starts at, so a binding can be found by position. */
+  col: number;
   cls: string;
   links?: Record<string, string>;
+  binds?: { col: number; len: number; line: number }[];
+  decls?: { col: number; refs: number }[];
+  onGoto?: (line: number) => void;
 }) {
-  if (!links) return <span className={cls}>{text}</span>;
   const parts = text.split(/([A-Za-z_$][A-Za-z0-9_$.]*)/g);
-  if (!parts.some((p) => Object.hasOwn(links, p))) return <span className={cls}>{text}</span>;
+  const hasModuleLink = links && parts.some((p) => Object.hasOwn(links, p));
+  if (!hasModuleLink && !binds?.length && !decls?.length) {
+    return <span className={cls}>{text}</span>;
+  }
+
+  let at = col;
   return (
     <span className={cls}>
       {parts.map((p, i) => {
-        // `Object.hasOwn`, not `links[p]`: a token named `toString` or
-        // `constructor` finds a function on the prototype chain, and
-        // `<Link href={fn}>` throws. 3,486 modules contain such a name.
-        const href = Object.hasOwn(links, p) ? links[p] : undefined;
-        return href ? (
-          <Link
-            key={i}
-            href={href}
-            className="underline decoration-dotted underline-offset-2 hover:decoration-solid"
-          >
-            {p}
-          </Link>
-        ) : (
-          p
-        );
+        const start = at;
+        at += p.length;
+        if (!p) return p;
+
+        // A cross-module link wins: `require("X")` names something in another
+        // file, which is further to go and more useful than a local binding.
+        // `Object.hasOwn`, not `links[p]`: a token named `toString` finds a
+        // function on the prototype chain and `<Link href={fn}>` throws.
+        const href = links && Object.hasOwn(links, p) ? links[p] : undefined;
+        if (href) {
+          return (
+            <Link
+              key={i}
+              href={href}
+              className="underline decoration-dotted underline-offset-2 hover:decoration-solid"
+            >
+              {p}
+            </Link>
+          );
+        }
+
+        const bind = binds?.find((b) => b.col === start && b.len === p.length);
+        if (bind) {
+          // A plain anchor, driven by hand. `<Link href="#L14">` routes with
+          // pushState, which does not fire `hashchange` — so the jump happened
+          // in the URL and nowhere else. Handling it directly also means
+          // clicking the same target twice re-scrolls, where a hash change to
+          // an identical hash is a no-op.
+          return (
+            <a
+              key={i}
+              href={`#L${bind.line}`}
+              title={`declared on line ${bind.line}`}
+              onClick={(e) => {
+                e.preventDefault();
+                onGoto?.(bind.line);
+              }}
+              className="decoration-fg-faint underline decoration-dotted underline-offset-2 hover:text-brand hover:decoration-solid"
+            >
+              {p}
+            </a>
+          );
+        }
+
+        // A declaration is not a link — it is where the links go — but saying
+        // how many places bind to it is the cheap half of "find references".
+        const decl = decls?.find((d) => d.col === start);
+        if (decl) {
+          return (
+            <span
+              key={i}
+              title={`${decl.refs} reference${decl.refs === 1 ? "" : "s"} in this module`}
+              className="underline decoration-dotted decoration-brand/50 underline-offset-2"
+            >
+              {p}
+            </span>
+          );
+        }
+        return p;
       })}
     </span>
   );

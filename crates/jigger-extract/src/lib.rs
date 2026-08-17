@@ -15,6 +15,7 @@ pub mod dispatch;
 pub mod enums;
 pub mod wam;
 pub mod stanza;
+pub mod symbols;
 
 use jigger_ir::{Data, Evidence, Fact, IqResponse, Kind, ModuleGraph, ProtoField, Usage};
 use std::collections::BTreeSet;

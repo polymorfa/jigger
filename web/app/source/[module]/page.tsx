@@ -5,6 +5,8 @@ import { SourceView } from "@/components/source-view";
 import { Scroll } from "@/components/ui";
 import { getSnapshotResult } from "@/lib/data";
 import { lineOfMatch, loadModule, memberLine } from "@/lib/module-source";
+import { loadSymbols } from "@/lib/module-symbols";
+import { rewriteModule } from "@/lib/source-rewrite";
 
 type Params = { params: Promise<{ module: string }>; searchParams: Promise<{ m?: string }> };
 
@@ -51,6 +53,11 @@ export default async function SourcePage({ params, searchParams }: Params) {
   // `?m=` carries two different things. An evidence pattern is a regex to match;
   // a member name came from a click-through and wants the definition, not the
   // first line that happens to mention it.
+  // Symbols are keyed to the rewritten text, so it is computed once here and
+  // handed to the viewer rather than derived twice.
+  const shown = rewriteModule(src);
+  const symbols = loadSymbols(name, shown);
+
   const isMember = Boolean(m && /^[A-Za-z_$][\w$]*$/.test(m));
   const hit = m ? (isMember ? memberLine(src, m) : lineOfMatch(src, m)) : null;
 
@@ -71,7 +78,13 @@ export default async function SourcePage({ params, searchParams }: Params) {
             )}
           </div>
       </div>
-      <SourceView name={name} src={src} revision={revision} highlight={hit} />
+      <SourceView
+        name={name}
+        src={shown}
+        revision={revision}
+        highlight={hit}
+        symbols={symbols}
+      />
     </div>
   );
 }
