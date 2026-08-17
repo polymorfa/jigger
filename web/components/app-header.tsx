@@ -8,7 +8,7 @@ import { getDiff } from "@/lib/data";
 export function AppHeader() {
   const revisions = getDiff().revisions;
   return (
-    <header className="bg-background sticky top-0 z-50 flex h-12 shrink-0 items-center gap-3 border-b px-3">
+    <header className="bg-background sticky top-0 z-50 flex h-10 shrink-0 items-center gap-3 border-b px-3">
       <Link href="/" className="flex shrink-0 items-baseline gap-2" aria-label="jigger — home">
         <span className="data text-md font-semibold tracking-tight text-fg">jigger</span>
         <span className="text-muted-foreground hidden text-xs sm:inline">

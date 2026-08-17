@@ -308,8 +308,14 @@
      Every master pane was a different width — 300, 320, 340, 360, 380, 440 —
      so the content column moved sideways on every tab switch. One token, and
      the detail pane stays put. Same for the reading column. */
-  --pane: 23rem;
-  --reading: 50rem;
+  /* Tailwind derives every spacing and sizing utility from this. Scaling the
+     type without scaling this is what left 18px text inside 32px buttons with
+     12px of padding — the type grew and every box around it stayed put. One
+     unit, so `px-3`, `h-8`, `size-4` and `gap-2` all move together. */
+  --spacing: 0.3125rem;
+
+  --pane: 26rem;
+  --reading: 54rem;
 
   /* Virtualized row heights. These are duplicated in `lib/metrics.ts`, which
      is the only way a virtualizer can know a height it does not render;
@@ -497,9 +503,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 16px;
-    height: 16px;
-    padding: 0 4px;
+    /* Sized off the line it sits on, not a number that happened to fit the
+       old text. At 16px this box was shorter than the 15px glyph inside it. */
+    min-width: var(--text-2xs--line-height);
+    height: var(--text-2xs--line-height);
+    padding: 0 calc(var(--spacing) * 1.2);
     font-family: var(--font-mono);
     font-size: var(--text-2xs);
     line-height: 1;
@@ -521,7 +529,7 @@
     color: var(--fg-muted);
     background: var(--surface);
     border-bottom: 1px solid var(--hair-strong);
-    padding: 5px 10px;
+    padding: calc(var(--spacing) * 1.2) calc(var(--spacing) * 2);
     white-space: nowrap;
     position: sticky;
     top: 0;
@@ -529,7 +537,7 @@
   }
   .grid-table td {
     border-bottom: 1px solid var(--hair);
-    padding: 4px 10px;
+    padding: calc(var(--spacing) * 0.8) calc(var(--spacing) * 2);
     vertical-align: top;
   }
   .grid-table tbody tr:hover {
@@ -599,31 +607,31 @@
     line-height: var(--text-xl--line-height);
     font-weight: 600;
     letter-spacing: -0.01em;
-    margin: 0 0 12px;
+    margin: 0 0 calc(var(--spacing) * 2.4);
   }
   .prose h2 {
     font-size: var(--text-lg);
     line-height: var(--text-lg--line-height);
     font-weight: 600;
-    margin: 26px 0 8px;
+    margin: calc(var(--spacing) * 5.2) 0 calc(var(--spacing) * 1.6);
     padding-bottom: 4px;
     border-bottom: 1px solid var(--hair);
   }
   .prose h3 {
     font-size: var(--text-md);
     font-weight: 600;
-    margin: 20px 0 6px;
+    margin: calc(var(--spacing) * 4) 0 calc(var(--spacing) * 1.2);
   }
   .prose p {
-    margin: 0 0 12px;
+    margin: 0 0 calc(var(--spacing) * 2.4);
   }
   .prose ul,
   .prose ol {
-    margin: 0 0 12px;
+    margin: 0 0 calc(var(--spacing) * 2.4);
     padding-left: 20px;
   }
   .prose li {
-    margin: 2px 0;
+    margin: calc(var(--spacing) * 0.4) 0;
   }
   .prose ul {
     list-style: square;
@@ -632,8 +640,8 @@
     list-style: decimal;
   }
   .prose blockquote {
-    margin: 0 0 12px;
-    padding: 2px 0 2px 12px;
+    margin: 0 0 calc(var(--spacing) * 2.4);
+    padding: calc(var(--spacing) * 0.4) 0 calc(var(--spacing) * 0.4) calc(var(--spacing) * 2.4);
     border-left: 2px solid var(--hair-strong);
     color: var(--fg-muted);
   }
@@ -655,7 +663,7 @@
     font-size: 0.9em;
     background: var(--surface-2);
     border: 1px solid var(--hair);
-    padding: 0 3px;
+    padding: 0 calc(var(--spacing) * 0.6);
   }
   .prose pre {
     font-family: var(--font-mono);
@@ -663,9 +671,9 @@
     line-height: var(--text-sm--line-height);
     background: var(--surface);
     border: 1px solid var(--hair);
-    padding: 10px 12px;
+    padding: calc(var(--spacing) * 2) calc(var(--spacing) * 2.4);
     overflow-x: auto;
-    margin: 0 0 12px;
+    margin: 0 0 calc(var(--spacing) * 2.4);
   }
   .prose pre code {
     background: none;
@@ -675,7 +683,7 @@
   .prose hr {
     border: 0;
     border-top: 1px solid var(--hair);
-    margin: 20px 0;
+    margin: calc(var(--spacing) * 4) 0;
   }
   /* a citation link keeps the code chip look but reads as interactive */
   .prose a > code {
