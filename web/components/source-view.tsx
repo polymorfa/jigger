@@ -111,6 +111,39 @@ export function SourceView({
   }, []);
 
   const focusLine = pinned ?? highlight;
+
+  /**
+   * The whole function you landed on, not just its first line.
+   *
+   * Clicking `require("X").assertTag` should show you `assertTag`, and a single
+   * highlighted line in the middle of minified code leaves you working out where
+   * the body ends. Braces are counted from the anchor forward, but only inside
+   * punctuation tokens — the highlighter has already separated strings, regexes
+   * and comments, so a `{` inside a string literal cannot throw the count off.
+   *
+   * Capped, and falls back to the single line: an unbalanced count would
+   * otherwise paint the rest of the file yellow, which is worse than painting
+   * one line.
+   */
+  const range = useMemo<[number, number] | null>(() => {
+    if (!focusLine) return null;
+    const start = focusLine - 1;
+    let depth = 0;
+    let opened = false;
+    for (let i = start; i < Math.min(lines.length, start + 400); i++) {
+      for (const t of lines[i] ?? []) {
+        if (t.c !== "pun") continue;
+        for (const ch of t.t) {
+          if (ch === "{") {
+            depth++;
+            opened = true;
+          } else if (ch === "}") depth--;
+        }
+      }
+      if (opened && depth <= 0) return [focusLine, i + 1];
+    }
+    return [focusLine, focusLine];
+  }, [focusLine, lines]);
   useEffect(() => {
     if (focusLine) virt.scrollToIndex(Math.max(0, focusLine - 6), { align: "start" });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -201,19 +234,23 @@ export function SourceView({
             const n = vi.index + 1;
             const lineNotes = byLine.get(n) ?? [];
             const isOpen = open === n;
+            const inRange = range !== null && n >= range[0] && n <= range[1];
             return (
               <div
                 key={vi.key}
                 data-index={vi.index}
                 ref={virt.measureElement}
+                className="group bg-surface"
                 style={{
                   position: "absolute",
                   top: 0,
                   left: 0,
                   width: "100%",
                   transform: `translateY(${vi.start}px)`,
+                  // A left edge marks the extent, so a long body reads as one
+                  // block rather than as a run of similarly tinted lines.
+                  boxShadow: inRange ? "inset 2px 0 0 0 var(--hl-edge)" : undefined,
                 }}
-                className="group bg-surface"
               >
                 <div
                   className={`flex w-max min-w-full items-start ${

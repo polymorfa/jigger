@@ -59,6 +59,14 @@
   --code-cmt: #8b939f;
   --code-enc: #b23a1c;
 
+  /* Permalink highlight. Yellow because it means "here is the thing you asked
+     for", which is a different statement from the blue that marks selection and
+     interaction — using the accent for both would make a landed permalink look
+     like something you had clicked. */
+  --hl: #fdf6d3;
+  --hl-anchor: #fbeaa0;
+  --hl-edge: #e0c34a;
+
   --selection: #cfe0fb;
 
   /* --- shadcn semantics, mapped onto the palette above ------------------
@@ -126,7 +134,19 @@
     --cov-inconclusive: #858e9b;
     --cov-absent: #4b535e;
 
-    --selection: #1c3557;
+    --hl: #2a2712;
+    --hl-anchor: #3d370f;
+    --hl-edge: #8a742a;
+
+    --hl: #2a2712;
+    --hl-anchor: #3d370f;
+    --hl-edge: #8a742a;
+
+    --hl: #2a2712;
+  --hl-anchor: #3d370f;
+  --hl-edge: #8a742a;
+
+  --selection: #1c3557;
 
   /* shadcn semantics — same aliases, dark values via the tokens above. */
   --background: var(--ground);
@@ -197,6 +217,10 @@
   --cov-covered: #57a175;
   --cov-inconclusive: #858e9b;
   --cov-absent: #4b535e;
+
+  --hl: #2a2712;
+  --hl-anchor: #3d370f;
+  --hl-edge: #8a742a;
 
   --selection: #1c3557;
 
