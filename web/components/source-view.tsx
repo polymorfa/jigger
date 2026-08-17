@@ -59,7 +59,10 @@ export function SourceView({
   // though nothing calls it there.
   const headerEnd = useMemo(() => headerLines(raw), [raw]);
   const lines = useMemo(() => tokenize(shown, "ts"), [shown]);
-  const links = useMemo(() => raw.map((l, i) => linksForLine(l, i < headerEnd)), [raw, headerEnd]);
+  const links = useMemo(
+    () => raw.map((l, i) => linksForLine(l, i < headerEnd, deps)),
+    [raw, headerEnd, deps],
+  );
   const target = `module:${name}`;
 
   const [notes, setNotes] = useState<Note[]>([]);

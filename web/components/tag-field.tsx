@@ -46,7 +46,7 @@ export function TagField({
 
   return (
     <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5">
-      <span className="text-muted-foreground w-28 shrink-0 text-xs" title={hint}>
+      <span className="text-muted-foreground w-[7.5rem] shrink-0 text-xs" title={hint}>
         {label}
       </span>
       <div

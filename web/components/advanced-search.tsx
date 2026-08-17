@@ -158,61 +158,79 @@ export function AdvancedSearch() {
           </div>
         </div>
 
-        <TagField
-          label="Must contain"
-          hint="A field, attribute, stanza tag or enum variant the result carries"
-          values={valuesOf(terms, "contains")}
-          onAdd={(v) => edit(addTerm(q, "contains", v))}
-          onRemove={(v) => edit(removeTerm(q, "contains", v))}
-          placeholder="contextInfo, jid, REACTION…"
-        />
-
-        <TagField
-          label="Must not contain"
-          hint="Excludes anything carrying this"
-          tone="negative"
-          values={valuesOf(terms, "contains", true)}
-          onAdd={(v) => edit(addTerm(q, "contains", v, true))}
-          onRemove={(v) => edit(removeTerm(q, "contains", v, true))}
-          placeholder="bool, deprecated…"
-        />
-
-        <TagField
-          label="Name matches"
-          hint="Substring of the readable name; /…/ for a regex"
-          values={valuesOf(terms, "name")}
-          onAdd={(v) => edit(addTerm(q, "name", v))}
-          onRemove={(v) => edit(removeTerm(q, "name", v))}
-          placeholder="Newsletter, /Query$/…"
-        />
-
-        <TagField
-          label="Name excludes"
-          hint="Drops anything whose name matches"
-          tone="negative"
-          values={valuesOf(terms, "name", true)}
-          onAdd={(v) => edit(addTerm(q, "name", v, true))}
-          onRemove={(v) => edit(removeTerm(q, "name", v, true))}
-          placeholder="Deprecated, Test…"
-        />
-
-        <TagField
-          label="Id matches"
-          hint="Substring of the wire-literal id"
-          values={valuesOf(terms, "id")}
-          onAdd={(v) => edit(addTerm(q, "id", v))}
-          onRemove={(v) => edit(removeTerm(q, "id", v))}
-          placeholder="w:biz, privacy/get…"
-        />
-
-        <TagField
-          label="From module"
-          hint="The source module the fact was read out of"
-          values={valuesOf(terms, "module")}
-          onAdd={(v) => edit(addTerm(q, "module", v))}
-          onRemove={(v) => edit(removeTerm(q, "module", v))}
-          placeholder="WAWebABPropsConfigs…"
-        />
+        {/* Paired, because they are one decision seen from both sides. Stacked
+            they read as four unrelated rows and you scan for the matching
+            exclude; side by side the relationship is the layout. */}
+        <div className="grid gap-x-4 gap-y-2.5 lg:grid-cols-2">
+          <TagField
+            label="Contains"
+            hint="A field, attribute, stanza tag or enum variant the result carries"
+            values={valuesOf(terms, "contains")}
+            onAdd={(v) => edit(addTerm(q, "contains", v))}
+            onRemove={(v) => edit(removeTerm(q, "contains", v))}
+            placeholder="contextInfo, jid, REACTION…"
+          />
+          <TagField
+            label="Excludes"
+            hint="Drops anything carrying this"
+            tone="negative"
+            values={valuesOf(terms, "contains", true)}
+            onAdd={(v) => edit(addTerm(q, "contains", v, true))}
+            onRemove={(v) => edit(removeTerm(q, "contains", v, true))}
+            placeholder="bool, deprecated…"
+          />
+          <TagField
+            label="Name has"
+            hint="Substring of the readable name; /…/ for a regex"
+            values={valuesOf(terms, "name")}
+            onAdd={(v) => edit(addTerm(q, "name", v))}
+            onRemove={(v) => edit(removeTerm(q, "name", v))}
+            placeholder="Newsletter, /Query$/…"
+          />
+          <TagField
+            label="Name lacks"
+            hint="Drops anything whose name matches"
+            tone="negative"
+            values={valuesOf(terms, "name", true)}
+            onAdd={(v) => edit(addTerm(q, "name", v, true))}
+            onRemove={(v) => edit(removeTerm(q, "name", v, true))}
+            placeholder="Deprecated, Test…"
+          />
+          <TagField
+            label="Id has"
+            hint="Substring of the wire-literal id"
+            values={valuesOf(terms, "id")}
+            onAdd={(v) => edit(addTerm(q, "id", v))}
+            onRemove={(v) => edit(removeTerm(q, "id", v))}
+            placeholder="w:biz, privacy/get…"
+          />
+          <TagField
+            label="Id lacks"
+            tone="negative"
+            hint="Drops anything whose id matches"
+            values={valuesOf(terms, "id", true)}
+            onAdd={(v) => edit(addTerm(q, "id", v, true))}
+            onRemove={(v) => edit(removeTerm(q, "id", v, true))}
+            placeholder="deprecated…"
+          />
+          <TagField
+            label="From module"
+            hint="The source module the fact was read out of"
+            values={valuesOf(terms, "module")}
+            onAdd={(v) => edit(addTerm(q, "module", v))}
+            onRemove={(v) => edit(removeTerm(q, "module", v))}
+            placeholder="WAWebABPropsConfigs…"
+          />
+          <TagField
+            label="Not from module"
+            tone="negative"
+            hint="Drops anything read out of this module"
+            values={valuesOf(terms, "module", true)}
+            onAdd={(v) => edit(addTerm(q, "module", v, true))}
+            onRemove={(v) => edit(removeTerm(q, "module", v, true))}
+            placeholder="WAWebWamEnum…"
+          />
+        </div>
 
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
           <Label htmlFor="sort" className="text-muted-foreground w-24 shrink-0 text-xs">

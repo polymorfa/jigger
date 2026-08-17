@@ -72,14 +72,24 @@ export function rewriteModule(src: string): string {
  * later wins. Rare, and the alternative is threading character offsets through
  * the renderer to save one click.
  */
-export function linksForLine(line: string, inHeader: boolean): Record<string, string> {
+export function linksForLine(
+  line: string,
+  inHeader: boolean,
+  deps?: Set<string>,
+): Record<string, string> {
   const out: Record<string, string> = {};
 
   // The dependency array: every string in it is a module you can open.
+  //
+  // Matched against the declared set rather than against a name shape. Shape
+  // matching works until the header detection is off by a line — on a module
+  // whose factory opens on the same line as the array, say — and then every
+  // ordinary string literal in the file becomes a link to a module that does
+  // not exist. The declared set cannot produce a dead link.
   if (inHeader) {
     for (const m of line.matchAll(/"([^"]+)"/g)) {
       const name = m[1]!;
-      if (MODULE_NAME.test(name) || /^[a-z][A-Za-z0-9_]*$/.test(name)) {
+      if (deps ? deps.has(name) : MODULE_NAME.test(name)) {
         out[name] = `/source/${encodeURIComponent(name)}`;
       }
     }
