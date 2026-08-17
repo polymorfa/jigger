@@ -3,14 +3,18 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { CheckIcon, SearchIcon, XIcon } from "lucide-react";
+import { CheckIcon, PlusIcon, SearchIcon, XIcon } from "lucide-react";
 import { loadSearchIndex } from "@/lib/client-index";
 import {
-  FIELDS,
+  addTerm,
+  clearField,
   countByKind,
   parseQuery,
+  removeTerm,
   runQuery,
   sortHits,
+  toggleTerm,
+  valuesOf,
   type Scored,
   type Sort,
 } from "@/lib/query";
@@ -47,13 +51,15 @@ const SORTS: { id: Sort; label: string }[] = [
 ];
 
 /**
- * Search as a place, not a popover.
+ * Search as a place, with the controls writing the query.
  *
- * The header field answers "take me to the thing I am thinking of". This
- * answers the other kind of question — the ones with a shape rather than a name
- * — where you want to see the whole result set, narrow it, and still be able to
- * share the URL afterwards. Every control writes to the query string, so a
- * result set is a link.
+ * The query text is the only state; every control edits it rather than sitting
+ * beside it. That matters twice over: two mechanisms can disagree and one
+ * cannot, and nobody discovers `contains:` by reading documentation — they
+ * discover it by clicking a chip and watching it appear in the box.
+ *
+ * So the controls are how you build a query and the box is how you read, tweak
+ * and share one. They are the same thing seen twice.
  */
 export function AdvancedSearch() {
   const router = useRouter();
@@ -62,103 +68,213 @@ export function AdvancedSearch() {
   const [entries, setEntries] = useState<SearchEntry[] | null>(null);
   const [q, setQ] = useState(params.get("q") ?? "");
   const [sort, setSort] = useState<Sort>((params.get("sort") as Sort) ?? "relevance");
-  const [kinds, setKinds] = useState<Set<SearchKind>>(
-    new Set((params.get("kind")?.split(",").filter(Boolean) ?? []) as SearchKind[]),
-  );
   const [limit, setLimit] = useState(PAGE);
+  const [draft, setDraft] = useState("");
 
   useEffect(() => {
     loadSearchIndex().then(setEntries);
   }, []);
 
-  // The URL is the state. Replace rather than push so refining a query does not
-  // fill the back button with every keystroke.
+  // The URL is the state. Replaced rather than pushed, so refining a query does
+  // not fill the back button with a history entry per keystroke.
   const sync = useCallback(
-    (next: { q?: string; sort?: Sort; kinds?: Set<SearchKind> }) => {
+    (nextQ: string, nextSort: Sort = sort) => {
       const sp = new URLSearchParams();
-      const qq = next.q ?? q;
-      const ss = next.sort ?? sort;
-      const kk = next.kinds ?? kinds;
-      if (qq) sp.set("q", qq);
-      if (ss !== "relevance") sp.set("sort", ss);
-      if (kk.size) sp.set("kind", [...kk].join(","));
+      if (nextQ) sp.set("q", nextQ);
+      if (nextSort !== "relevance") sp.set("sort", nextSort);
       router.replace(sp.size ? `/search?${sp}` : "/search", { scroll: false });
     },
-    [q, sort, kinds, router],
+    [sort, router],
+  );
+
+  /** Every edit goes through here, so the box and the URL cannot diverge. */
+  const edit = useCallback(
+    (next: string) => {
+      setQ(next);
+      sync(next);
+    },
+    [sync],
   );
 
   const terms = useMemo(() => parseQuery(q), [q]);
+  const activeKinds = useMemo(() => new Set(valuesOf(terms, "kind")), [terms]);
+  const contains = useMemo(() => valuesOf(terms, "contains"), [terms]);
+  const excluded = useMemo(() => valuesOf(terms, "contains", true), [terms]);
 
-  /** Everything matching the text, before the kind chips narrow it. */
-  const matched = useMemo<Scored[]>(
+  const hits = useMemo<Scored[]>(
     () => (entries ? runQuery(entries, terms) : []),
     [entries, terms],
   );
-  const counts = useMemo(() => countByKind(matched), [matched]);
 
-  const results = useMemo(
-    () => sortHits(kinds.size ? matched.filter((h) => kinds.has(h.e.kind)) : matched, sort),
-    [matched, kinds, sort],
-  );
+  /**
+   * What each kind would yield if it were the *only* kind selected.
+   *
+   * Counting the current results instead would show 0 beside every kind you
+   * have not picked, which reads as "there are none of those" rather than "you
+   * filtered them out" — and then the chips are useless for widening a search,
+   * which is most of what they are for.
+   */
+  const counts = useMemo(() => {
+    if (!entries) return new Map<SearchKind, number>();
+    const withoutKinds = terms.filter((t) => !(t.field === "kind" && !t.negated));
+    return countByKind(runQuery(entries, withoutKinds));
+  }, [entries, terms]);
 
-  useEffect(() => setLimit(PAGE), [q, sort, kinds]);
+  const results = useMemo(() => sortHits(hits, sort), [hits, sort]);
+  useEffect(() => setLimit(PAGE), [q, sort]);
 
-  const toggleKind = (k: SearchKind) => {
-    const next = new Set(kinds);
-    if (!next.delete(k)) next.add(k);
-    setKinds(next);
-    sync({ kinds: next });
+  const present = SEARCH_KINDS.filter((k) => (counts.get(k) ?? 0) > 0);
+  const shown = results.slice(0, limit);
+  const total = [...counts.values()].reduce((a, b) => a + b, 0);
+
+  const addContains = (negated: boolean) => {
+    const v = draft.trim();
+    if (!v) return;
+    edit(addTerm(q, "contains", v, negated));
+    setDraft("");
   };
 
-  const present = SEARCH_KINDS.filter((k) => counts.has(k));
-  const shown = results.slice(0, limit);
-
   return (
-    <div className="flex flex-col gap-5">
-      <div className="flex flex-col gap-2">
-        <div className="focus-within:border-ring flex h-10 items-center gap-2 border bg-surface px-3 transition-colors">
+    <div className="flex flex-col gap-4">
+      {/* --- The controls, which write the box below them ------------------ */}
+      <div className="bg-surface flex flex-col gap-2.5 border p-3">
+        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5">
+          <span className="text-muted-foreground w-24 shrink-0 text-xs">Show kinds</span>
+          <div className="flex min-w-0 flex-wrap items-center gap-1.5">
+            <Chip
+              label="Everything"
+              count={total}
+              active={activeKinds.size === 0}
+              onClick={() => edit(clearField(q, "kind"))}
+            />
+            {present.map((k) => (
+              <Chip
+                key={k}
+                label={k}
+                mono
+                count={counts.get(k) ?? 0}
+                active={activeKinds.has(k)}
+                onClick={() => edit(toggleTerm(q, "kind", k))}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5">
+          <span className="text-muted-foreground w-24 shrink-0 text-xs">Must contain</span>
+          <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
+            {contains.map((v) => (
+              <Pill key={v} label={v} onRemove={() => edit(removeTerm(q, "contains", v))} />
+            ))}
+            {excluded.map((v) => (
+              <Pill
+                key={`-${v}`}
+                label={v}
+                negated
+                onRemove={() => edit(removeTerm(q, "contains", v, true))}
+              />
+            ))}
+            <div className="focus-within:border-ring flex h-6 items-center border">
+              <input
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    addContains(e.altKey);
+                  }
+                }}
+                placeholder="a field, tag or variant"
+                aria-label="Field, tag or variant a result must contain"
+                spellCheck={false}
+                className="placeholder:text-muted-foreground h-full w-44 min-w-0 bg-transparent px-2 text-xs outline-none"
+              />
+              <button
+                type="button"
+                onClick={() => addContains(false)}
+                disabled={!draft.trim()}
+                title="Require this"
+                className="text-muted-foreground hover:text-foreground flex h-full w-6 shrink-0 items-center justify-center border-l disabled:opacity-40"
+              >
+                <PlusIcon className="size-3" />
+              </button>
+              <button
+                type="button"
+                onClick={() => addContains(true)}
+                disabled={!draft.trim()}
+                title="Exclude this"
+                className="text-muted-foreground hover:text-missing flex h-full w-6 shrink-0 items-center justify-center border-l text-xs disabled:opacity-40"
+              >
+                −
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+          <Label htmlFor="sort" className="text-muted-foreground w-24 shrink-0 text-xs">
+            Order by
+          </Label>
+          <Select
+            value={sort}
+            onValueChange={(v) => {
+              setSort(v as Sort);
+              sync(q, v as Sort);
+            }}
+          >
+            <SelectTrigger id="sort" size="sm" className="w-[13rem]">
+              <SelectValue>{SORTS.find((s) => s.id === sort)?.label}</SelectValue>
+            </SelectTrigger>
+            <SelectContent>
+              {SORTS.map((s) => (
+                <SelectItem key={s.id} value={s.id}>
+                  {s.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          {q && (
+            <Button variant="ghost" size="sm" onClick={() => edit("")} className="h-7 text-xs">
+              Reset
+            </Button>
+          )}
+          <span className="tnum text-muted-foreground ml-auto text-xs">
+            {results.length.toLocaleString()} result{results.length === 1 ? "" : "s"}
+          </span>
+        </div>
+      </div>
+
+      {/* --- The same query, as text -------------------------------------- */}
+      <div className="flex flex-col gap-1.5">
+        <div className="focus-within:border-ring flex h-9 items-center gap-2 border px-3 transition-colors">
           <SearchIcon className="text-muted-foreground size-4 shrink-0" />
           <input
             autoFocus
             value={q}
-            onChange={(e) => {
-              setQ(e.target.value);
-              sync({ q: e.target.value });
-            }}
-            placeholder="kind:proto contains:contextInfo"
+            onChange={(e) => edit(e.target.value)}
+            placeholder="Type here, or build a query with the controls above"
             spellCheck={false}
             autoComplete="off"
             aria-label="Query"
-            className="placeholder:text-muted-foreground data h-full flex-1 bg-transparent text-sm text-fg outline-none"
+            className="placeholder:text-muted-foreground data h-full min-w-0 flex-1 bg-transparent text-sm text-fg outline-none"
           />
           {q && (
             <button
-              onClick={() => {
-                setQ("");
-                sync({ q: "" });
-              }}
+              onClick={() => edit("")}
               aria-label="Clear"
-              className="text-muted-foreground hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground shrink-0"
             >
               <XIcon className="size-4" />
             </button>
           )}
         </div>
-
-        {/* The operators, stated rather than hidden behind a help link. A query
-            language nobody can see is a query language nobody uses. */}
-        <div className="text-muted-foreground flex flex-wrap items-center gap-x-4 gap-y-1 text-2xs">
-          {FIELDS.map((f) => (
-            <span key={f.name}>
-              <span className="data text-fg">{f.name}:</span> {f.hint}
-            </span>
-          ))}
-          <span>
-            <span className="data text-fg">-</span> negates ·{" "}
-            <span className="data text-fg">/re/</span> regex ·{" "}
-            <span className="data text-fg">&quot;…&quot;</span> phrase
-          </span>
-        </div>
+        <p className="text-muted-foreground text-2xs">
+          Bare words match names and contents. The controls above write{" "}
+          <span className="data text-fg">kind:</span> and{" "}
+          <span className="data text-fg">contains:</span> for you;{" "}
+          <span className="data text-fg">-</span> excludes,{" "}
+          <span className="data text-fg">/re/</span> is a regex.
+        </p>
       </div>
 
       {!q.trim() ? (
@@ -168,157 +284,77 @@ export function AdvancedSearch() {
             {EXAMPLES.map((x) => (
               <button
                 key={x.q}
-                onClick={() => {
-                  setQ(x.q);
-                  sync({ q: x.q });
-                }}
+                onClick={() => edit(x.q)}
                 className="hover:bg-accent flex items-baseline gap-3 border-b px-1 py-1.5 text-left"
               >
                 <span className="data shrink-0 text-sm text-brand">{x.q}</span>
-                <span className="text-muted-foreground text-xs">{x.what}</span>
+                <span className="text-muted-foreground min-w-0 text-xs">{x.what}</span>
               </button>
             ))}
           </div>
         </div>
+      ) : results.length === 0 ? (
+        <p className="text-muted-foreground text-sm">
+          {entries ? "Nothing matches." : "Loading index…"}
+        </p>
       ) : (
-        <>
-          {/* Both controls say what they do and what they are currently doing.
-              The previous version was a row of bare words — `ab 345`,
-              `Relevance` — where nothing said whether a word was a filter, a
-              sort, or a result count, and "Kind" appeared as both a sort option
-              and a set of filters. */}
-          <div className="flex flex-col gap-2 border-y py-2.5">
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5">
-              <span className="text-muted-foreground w-20 shrink-0 text-xs">
-                Show kinds
-              </span>
-              <div className="flex flex-wrap items-center gap-1.5">
-                {/* Counts come from the unfiltered set, so narrowing never
-                    hides what you would narrow to next. */}
-                <KindChip
-                  label="Everything"
-                  count={matched.length}
-                  active={kinds.size === 0}
-                  onClick={() => {
-                    setKinds(new Set());
-                    sync({ kinds: new Set() });
-                  }}
-                />
-                {present.map((k) => (
-                  <KindChip
-                    key={k}
-                    label={k}
-                    mono
-                    count={counts.get(k) ?? 0}
-                    active={kinds.has(k)}
-                    onClick={() => toggleKind(k)}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-              <Label htmlFor="sort" className="text-muted-foreground w-20 shrink-0 text-xs">
-                Order by
-              </Label>
-              <Select
-                value={sort}
-                onValueChange={(v) => {
-                  setSort(v as Sort);
-                  sync({ sort: v as Sort });
-                }}
-              >
-                <SelectTrigger id="sort" size="sm" className="w-[13rem]">
-                  <SelectValue>{SORTS.find((s) => s.id === sort)?.label}</SelectValue>
-                </SelectTrigger>
-                <SelectContent>
-                  {SORTS.map((s) => (
-                    <SelectItem key={s.id} value={s.id}>
-                      {s.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-
-              <span className="tnum text-muted-foreground ml-auto text-xs">
-                {results.length.toLocaleString()} of {matched.length.toLocaleString()} shown
-              </span>
-            </div>
-          </div>
-
-          {results.length === 0 ? (
-            <p className="text-muted-foreground text-sm">
-              {entries ? "Nothing matches." : "Loading index…"}
-            </p>
-          ) : (
-            <div className="flex flex-col">
-              {shown.map(({ e, via }) => (
-                <Link
-                  key={`${e.kind}:${e.id}`}
-                  href={hrefOf(e)}
-                  className="hover:bg-accent flex items-baseline gap-2.5 border-b px-1 py-1.5"
-                >
-                  {e.kind === "module" ? (
-                    <Badge variant="outline" className="data shrink-0">
-                      src
-                    </Badge>
-                  ) : (
-                    <KindBadge kind={e.kind} />
-                  )}
-                  <span className="data min-w-0 truncate text-sm text-fg">{e.id}</span>
-                  {e.sub ? (
-                    <span className="min-w-0 text-muted-foreground truncate text-xs">{e.sub}</span>
-                  ) : (
-                    e.name !== e.id.slice(e.id.indexOf(":") + 1) && (
-                      <span className="min-w-0 text-muted-foreground truncate text-sm">{e.name}</span>
-                    )
-                  )}
-                  {via && (
-                    <span className="data text-muted-foreground ml-auto shrink-0 text-2xs">
-                      contains <span className="text-brand">{via}</span>
-                    </span>
-                  )}
-                </Link>
-              ))}
-
-              {results.length > shown.length && (
-                <Button
-                  variant="ghost"
-                  onClick={() => setLimit((n) => n + PAGE)}
-                  className="mt-2 self-start text-xs"
-                >
-                  Show {Math.min(PAGE, results.length - shown.length)} more
-                  <span className="text-muted-foreground ml-1">
-                    ({results.length - shown.length} left)
-                  </span>
-                </Button>
+        <div className="flex flex-col">
+          {shown.map(({ e, via }) => (
+            <Link
+              key={`${e.kind}:${e.id}`}
+              href={hrefOf(e)}
+              className="hover:bg-accent flex items-baseline gap-2.5 border-b px-1 py-1.5"
+            >
+              {e.kind === "module" ? (
+                <Badge variant="outline" className="data shrink-0">
+                  src
+                </Badge>
+              ) : (
+                <KindBadge kind={e.kind} />
               )}
-            </div>
+              <span className="data min-w-0 truncate text-sm text-fg">{e.id}</span>
+              {e.sub ? (
+                <span className="text-muted-foreground min-w-0 truncate text-xs">{e.sub}</span>
+              ) : (
+                e.name !== e.id.slice(e.id.indexOf(":") + 1) && (
+                  <span className="text-muted-foreground min-w-0 truncate text-sm">{e.name}</span>
+                )
+              )}
+              {via && (
+                <span className="data text-muted-foreground ml-auto shrink-0 text-2xs">
+                  contains <span className="text-brand">{via}</span>
+                </span>
+              )}
+            </Link>
+          ))}
+
+          {results.length > shown.length && (
+            <Button
+              variant="ghost"
+              onClick={() => setLimit((n) => n + PAGE)}
+              className="mt-2 self-start text-xs"
+            >
+              Show {Math.min(PAGE, results.length - shown.length)} more
+              <span className="text-muted-foreground ml-1">
+                ({results.length - shown.length} left)
+              </span>
+            </Button>
           )}
-        </>
+        </div>
       )}
     </div>
-  );
-}
-
-/** Shown while the client component and its index load. */
-export function SearchFallback() {
-  return (
-    <p className="text-muted-foreground text-sm">
-      Loading the index… <Kbd>/</Kbd> focuses search from anywhere.
-    </p>
   );
 }
 
 /**
  * A kind filter, in an unmistakable state.
  *
- * Two greys apart is not a state anyone can read — the old chips differed only
- * by background shade, so "which of these am I filtering by" took a careful
- * look. The check mark is the answer, and the count stays visible either way so
- * you can see what turning one on would cost you.
+ * Two greys apart is not a state anyone can read — telling on from off should
+ * not require comparing shades — so the check mark is the answer. The count
+ * stays visible either way, because its job is to say what turning a chip on
+ * would cost you.
  */
-function KindChip({
+function Chip({
   label,
   count,
   active,
@@ -350,5 +386,45 @@ function KindChip({
       <span className={mono ? "data" : undefined}>{label}</span>
       <span className="tnum opacity-60">{count.toLocaleString()}</span>
     </button>
+  );
+}
+
+/** One `contains:` requirement, removable. An excluded one reads as negative. */
+function Pill({
+  label,
+  onRemove,
+  negated = false,
+}: {
+  label: string;
+  onRemove: () => void;
+  negated?: boolean;
+}) {
+  return (
+    <span
+      className={
+        "flex items-center gap-1 border px-1.5 py-0.5 text-xs " +
+        (negated ? "border-missing/40 text-missing" : "border-brand bg-brand-weak text-fg")
+      }
+    >
+      {negated && <span aria-hidden="true">−</span>}
+      <span className="data">{label}</span>
+      <button
+        type="button"
+        onClick={onRemove}
+        aria-label={`Remove ${label}`}
+        className="opacity-60 hover:opacity-100"
+      >
+        <XIcon className="size-3" />
+      </button>
+    </span>
+  );
+}
+
+/** Shown while the client component and its index load. */
+export function SearchFallback() {
+  return (
+    <p className="text-muted-foreground text-sm">
+      Loading the index… <Kbd>/</Kbd> focuses search from anywhere.
+    </p>
   );
 }

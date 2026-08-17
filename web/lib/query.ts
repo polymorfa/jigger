@@ -30,6 +30,13 @@ export type Term = {
   negated: boolean;
   /** `/…/` in the source becomes a real regex, compiled once. */
   regex?: RegExp;
+  /** Exactly as it was typed.
+   *
+   * The controls edit the query by rewriting this text, so a term has to
+   * round-trip byte for byte. Re-serialising from `field` and `value` would
+   * quietly turn `name:/^WAWeb/` into `name:^WAWeb` — a regex into a literal —
+   * the first time someone clicked an unrelated chip. */
+  raw: string;
 };
 
 export const FIELDS: { name: Field; hint: string }[] = [
@@ -57,6 +64,7 @@ export function parseQuery(input: string): Term[] {
       field,
       value: known ? value : (m[0].startsWith("-") ? m[0].slice(1) : m[0]),
       negated: neg === "-",
+      raw: m[0],
     };
     if (rx !== undefined) {
       try {
@@ -181,4 +189,62 @@ export function countByKind(hits: Scored[]): Map<SearchKind, number> {
   const m = new Map<SearchKind, number>();
   for (const { e } of hits) m.set(e.kind, (m.get(e.kind) ?? 0) + 1);
   return m;
+}
+
+/* ==========================================================================
+   Editing a query from the controls.
+
+   The text is the single source of truth and the controls write into it. The
+   alternative — filter state beside the box — gives you two mechanisms that can
+   disagree, and leaves the query language undiscoverable: you would only ever
+   find `contains:` by reading documentation. This way clicking a chip *shows*
+   you the operator it just wrote.
+   ========================================================================== */
+
+/** How a term is written when a control adds one. */
+function serialize(field: Field, value: string, negated = false): string {
+  const quoted = /\s/.test(value) ? JSON.stringify(value) : value;
+  const prefix = negated ? "-" : "";
+  return field === "any" ? `${prefix}${quoted}` : `${prefix}${field}:${quoted}`;
+}
+
+/** Every value currently bound to a field, in query order. */
+export function valuesOf(terms: Term[], field: Field, negated = false): string[] {
+  return terms.filter((t) => t.field === field && t.negated === negated).map((t) => t.value);
+}
+
+/** Rebuilds a query from terms, each written exactly as it was typed. */
+function join(terms: Term[]): string {
+  return terms.map((t) => t.raw).join(" ");
+}
+
+/** Adds a term, unless an identical one is already there. */
+export function addTerm(input: string, field: Field, value: string, negated = false): string {
+  const terms = parseQuery(input);
+  if (terms.some((t) => t.field === field && t.value === value && t.negated === negated)) {
+    return input;
+  }
+  const next = join(terms);
+  return next ? `${next} ${serialize(field, value, negated)}` : serialize(field, value, negated);
+}
+
+export function removeTerm(input: string, field: Field, value: string, negated = false): string {
+  return join(
+    parseQuery(input).filter(
+      (t) => !(t.field === field && t.value === value && t.negated === negated),
+    ),
+  );
+}
+
+/** The one the chips use: on if absent, off if present. */
+export function toggleTerm(input: string, field: Field, value: string): string {
+  const has = parseQuery(input).some(
+    (t) => t.field === field && t.value === value && !t.negated,
+  );
+  return has ? removeTerm(input, field, value) : addTerm(input, field, value);
+}
+
+/** Drops every term bound to a field — "clear the kind filter". */
+export function clearField(input: string, field: Field): string {
+  return join(parseQuery(input).filter((t) => t.field !== field));
 }

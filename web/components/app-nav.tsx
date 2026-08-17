@@ -44,7 +44,7 @@ function isActive(pathname: string, href: string): boolean {
 export function AppNav() {
   const pathname = usePathname();
   return (
-    <nav className="bg-background flex h-8 items-stretch overflow-x-auto border-b px-2">
+    <nav className="rail bg-background flex h-8 items-stretch overflow-x-auto border-b px-2">
       {GROUPS.map((group, gi) => (
         <div key={gi} className="flex items-stretch">
           {gi > 0 && <span className="bg-border my-2 w-px shrink-0" aria-hidden="true" />}

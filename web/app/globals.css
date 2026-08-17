@@ -422,6 +422,7 @@
   /* The shell is exactly the viewport; every pane scrolls inside it. */
   .app-shell {
     height: 100dvh;
+    overflow: hidden;
   }
 
   body {
@@ -475,6 +476,20 @@
    ========================================================================== */
 
 @layer components {
+  /* Scrollable, but without the bar.
+     A tab strip that does not fit still has to be reachable, so it scrolls —
+     but a scrollbar drawn across the navigation reads as a defect rather than
+     an affordance, and it steals height from a 32px row. The edge fade in
+     `.rail` is what says there is more. */
+  .rail {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent);
+  }
+  .rail::-webkit-scrollbar {
+    display: none;
+  }
+
   /* tabular monospace for all wire data */
   .data {
     font-family: var(--font-mono);
