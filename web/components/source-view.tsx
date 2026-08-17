@@ -1,8 +1,11 @@
 "use client";
 
+import Link from "next/link";
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { tokenize } from "@/lib/highlight";
+import { dependenciesOf, headerLines, linksForLine, rewriteModule } from "@/lib/source-rewrite";
 import { ROW_CODE } from "@/lib/metrics";
 import { addNote, anchorHolds, notesFor, removeNote, type Note } from "@/lib/notes";
 
@@ -45,8 +48,18 @@ export function SourceView({
   /** 1-indexed line to jump to, from the evidence pattern. */
   highlight?: number | null;
 }) {
-  const lines = useMemo(() => tokenize(src, "ts"), [src]);
-  const raw = useMemo(() => src.split("\n"), [src]);
+  // Rewritten before anything else touches it, so notes, evidence patterns and
+  // `#L` links all address the same text the reader sees. The rewrite preserves
+  // line count and column positions exactly, which is what makes that safe.
+  const shown = useMemo(() => rewriteModule(src), [src]);
+  const raw = useMemo(() => shown.split("\n"), [shown]);
+  const deps = useMemo(() => dependenciesOf(shown), [shown]);
+
+  // The dependency array is the header; a string inside it names a module even
+  // though nothing calls it there.
+  const headerEnd = useMemo(() => headerLines(raw), [raw]);
+  const lines = useMemo(() => tokenize(shown, "ts"), [shown]);
+  const links = useMemo(() => raw.map((l, i) => linksForLine(l, i < headerEnd)), [raw, headerEnd]);
   const target = `module:${name}`;
 
   const [notes, setNotes] = useState<Note[]>([]);
@@ -108,7 +121,7 @@ export function SourceView({
     setNotes(notesFor(target));
   };
 
-  const drifted = notes.filter((n) => !anchorHolds(n, src));
+  const drifted = notes.filter((n) => !anchorHolds(n, shown));
 
   const [copied, setCopied] = useState<number | null>(null);
   const flash = (n: number) => {
@@ -167,6 +180,7 @@ export function SourceView({
         <span className="data">{name}</span>
         <span className="flex gap-4">
           <span className="tnum">{lines.length.toLocaleString()} lines</span>
+          <span className="tnum">{deps.size} imports</span>
           <span className="tnum">{notes.length} notes</span>
           {drifted.length > 0 && (
             <span className="tnum text-cov-missing">{drifted.length} drifted</span>
@@ -225,9 +239,7 @@ export function SourceView({
                       line numbers interleaved with it. */}
                   <code className="data shrink-0 select-text whitespace-pre text-xs leading-[var(--row-code)]">
                     {(lines[vi.index] ?? []).map((t, j) => (
-                      <span key={j} className={CLASS[t.c] ?? "text-fg"}>
-                        {t.t}
-                      </span>
+                      <Tok key={j} text={t.t} cls={CLASS[t.c] ?? "text-fg"} links={links[vi.index]} />
                     ))}
                   </code>
 
@@ -315,5 +327,49 @@ export function SourceView({
         </div>
       )}
     </div>
+  );
+}
+
+/**
+ * One token, with any followable name inside it linked.
+ *
+ * Split by word rather than matched whole, because the highlighter merges
+ * adjacent runs of one class: a token often arrives as `require` with leading
+ * whitespace attached, or as `").` in one punctuation blob. Dots are word
+ * characters here so `WAWebProtobufsServerSync.pb` stays one name.
+ *
+ * The affordance is the schema view's: dotted underline, solid on hover. A
+ * module name and a protobuf message are the same kind of thing to a reader — a
+ * name you can follow — and should look it.
+ */
+function Tok({
+  text,
+  cls,
+  links,
+}: {
+  text: string;
+  cls: string;
+  links?: Record<string, string>;
+}) {
+  if (!links) return <span className={cls}>{text}</span>;
+  const parts = text.split(/([A-Za-z_$][A-Za-z0-9_$.]*)/g);
+  if (!parts.some((p) => links[p])) return <span className={cls}>{text}</span>;
+  return (
+    <span className={cls}>
+      {parts.map((p, i) => {
+        const href = links[p];
+        return href ? (
+          <Link
+            key={i}
+            href={href}
+            className="underline decoration-dotted underline-offset-2 hover:decoration-solid"
+          >
+            {p}
+          </Link>
+        ) : (
+          p
+        );
+      })}
+    </span>
   );
 }

@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Code, schemaOf } from "@/components/code";
+import { schemaOf } from "@/components/code";
+import { AnnotatedCode } from "@/components/annotated-code";
 import { CopyButton } from "@/components/copy-button";
 import { ModuleLink } from "@/components/module-link";
-import { Notes } from "@/components/notes";
 import { CoverageChip } from "@/components/coverage-chip";
 import { GeneratedSection } from "@/components/generated-section";
 import { IqResponses } from "@/components/iq-responses";
@@ -114,7 +114,13 @@ export function FactDetail({
             nodes={tree}
           />
         ) : (
-          <Code src={src} lang={lang} links={links} />
+          <AnnotatedCode
+            src={src}
+            lang={lang}
+            links={links}
+            target={fact.id}
+            revision={revision}
+          />
         )}
       </section>
 
@@ -266,7 +272,6 @@ export function FactDetail({
           </p>
         )}
       </section>
-        <Notes target={fact.id} revision={revision} text={src} />
       </aside>
     </div>
   );
