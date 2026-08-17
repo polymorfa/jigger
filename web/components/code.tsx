@@ -43,7 +43,7 @@ export function Code({
         </div>
       )}
       <div className="border border-hair bg-surface">
-      <pre className="overflow-x-auto p-3 text-sm leading-[19px]">
+      <pre className="overflow-x-auto p-3 text-sm leading-[var(--text-sm--line-height)]">
         <code className="data block">
           {rows.map((toks, i) => (
             <span key={i} className="block whitespace-pre">

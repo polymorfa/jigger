@@ -48,7 +48,7 @@ export default function PatchPage() {
                   <CopyButton value={p.body} title={`Copy the ${p.repo} patch`} />
                 </span>
               </div>
-              <pre className="data max-h-[420px] overflow-auto border border-hair bg-surface p-3 text-xs leading-[17px] text-fg">
+              <pre className="data max-h-[420px] overflow-auto border border-hair bg-surface p-3 text-xs leading-[var(--text-xs--line-height)] text-fg">
                 {p.body}
               </pre>
             </section>

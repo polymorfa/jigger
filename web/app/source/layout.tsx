@@ -25,7 +25,7 @@ export default async function SourceLayout({ children }: { children: React.React
 
   return (
     <div className="flex h-full min-h-0 flex-col md:flex-row">
-      <aside className="h-[42%] w-full min-h-0 shrink-0 border-b border-hair md:h-full md:w-[340px] md:border-b-0 md:border-r">
+      <aside className="h-[42%] w-full min-h-0 shrink-0 border-b border-hair md:h-full md:w-[var(--pane)] md:border-b-0 md:border-r">
         <ModuleList rows={rows} />
       </aside>
       <section className="min-h-0 min-w-0 flex-1">{children}</section>

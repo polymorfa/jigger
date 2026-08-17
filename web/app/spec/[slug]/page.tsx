@@ -52,7 +52,7 @@ export default async function SpecPage({ params }: Params) {
 
   return (
     <Scroll>
-      <div className="mx-auto flex max-w-[820px] flex-col gap-6 px-5 py-5">
+      <div className="mx-auto flex max-w-[var(--reading)] flex-col gap-6 px-5 py-5">
         <Link href="/spec" className="link -mb-2 inline-block text-xs">
           ← all spec documents
         </Link>

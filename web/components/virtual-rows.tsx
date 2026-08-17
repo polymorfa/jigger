@@ -2,13 +2,14 @@
 
 import { useRef } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
+import { ROW_LIST } from "@/lib/metrics";
 
 // A fixed-row-height virtualized scroll body. Only rows in (or near) the
 // viewport are mounted, so a 500- or 2,700-row list stays responsive. The
 // caller supplies its own sticky header above this element.
 export function VirtualRows<T>({
   items,
-  rowHeight = 26,
+  rowHeight = ROW_LIST,
   overscan = 14,
   renderRow,
   getKey,

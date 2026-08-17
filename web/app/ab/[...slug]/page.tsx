@@ -28,7 +28,7 @@ export default async function AbDetailPage({ params }: Params) {
 
   return (
     <Scroll>
-      <div className="flex max-w-[760px] flex-col gap-4 px-5 py-5">
+      <div className="flex max-w-[var(--reading)] flex-col gap-4 px-5 py-5">
         <div className="flex flex-col gap-2">
           <FactIdLine id={fact.id} kind="ab" />
           <span className="text-lg text-fg">{fact.name}</span>

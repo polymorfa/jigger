@@ -60,7 +60,7 @@ export function GeneratedSection({
                 <div className="absolute right-1.5 top-1.5 z-10">
                   <CopyButton value={generated[o]!} title={`Copy ${LANGUAGE_LABEL[o]}`} />
                 </div>
-                <pre className="bg-surface overflow-x-auto border p-3 text-sm leading-[19px]">
+                <pre className="bg-surface overflow-x-auto border p-3 text-sm leading-[var(--text-sm--line-height)]">
                   <code className="data text-fg">{generated[o]}</code>
                 </pre>
               </div>

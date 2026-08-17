@@ -13,8 +13,8 @@ import {
   type FlatRow,
   type ProtoName,
 } from "@/lib/proto-tree";
+import { ROW_TREE } from "@/lib/metrics";
 
-const ROW = 22;
 
 /**
  * The message hierarchy, as a tree.
@@ -61,7 +61,7 @@ export function ProtoTree() {
   const virt = useVirtualizer({
     count: rows.length,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => ROW,
+    estimateSize: () => ROW_TREE,
     overscan: 20,
   });
 
@@ -105,7 +105,7 @@ export function ProtoTree() {
                   top: 0,
                   left: 0,
                   width: "100%",
-                  height: ROW,
+                  height: ROW_TREE,
                   transform: `translateY(${vi.start}px)`,
                   paddingLeft: 6 + r.depth * 12,
                 }}

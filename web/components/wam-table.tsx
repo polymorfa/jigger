@@ -36,7 +36,7 @@ export function WamTable({ rows }: { rows: WamRow[] }) {
             <Link
               href={browseHref("wam", r.id)}
               className={
-                "grid h-[26px] grid-cols-[92px_1fr_46px_66px] items-center gap-2 border-b border-hair px-2.5 " +
+                "grid h-[var(--row-list)] grid-cols-[92px_1fr_46px_66px] items-center gap-2 border-b border-hair px-2.5 " +
                 (active
                   ? "bg-brand-weak shadow-[inset_2px_0_0_0_var(--accent)]"
                   : "hover:bg-surface-2")

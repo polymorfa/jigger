@@ -32,7 +32,7 @@ export function SchemaTree({
       <div className="absolute right-1.5 top-1.5 z-10">
         <CopyButton value={flatten(module, name, nodes)} title="Copy as .proto" />
       </div>
-      <pre className="overflow-x-auto p-3 text-sm leading-[19px]">
+      <pre className="overflow-x-auto p-3 text-sm leading-[var(--text-sm--line-height)]">
         <code className="data block">
           <span className="block whitespace-pre text-code-cmt italic">{`// ${module}`}</span>
           <span className="block whitespace-pre">

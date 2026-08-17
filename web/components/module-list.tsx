@@ -48,7 +48,7 @@ export function ModuleList({ rows }: { rows: ModuleRow[] }) {
             return (
               <Link
                 href={`/source/${encodeURIComponent(r.name)}`}
-                className={`flex h-[26px] items-center justify-between gap-2 border-b border-hair px-2.5 ${
+                className={`flex h-[var(--row-list)] items-center justify-between gap-2 border-b border-hair px-2.5 ${
                   on ? "bg-brand-weak" : "hover:bg-surface-2"
                 }`}
               >

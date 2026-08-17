@@ -19,7 +19,6 @@ export async function KindBrowser({
   children,
   detail,
   sort,
-  width = "340px",
 }: {
   kind: FactKind;
   title: string;
@@ -27,7 +26,6 @@ export async function KindBrowser({
   /** The secondary line under each row — what distinguishes one from the next. */
   detail: (f: Fact) => string;
   sort?: (a: Fact, b: Fact) => number;
-  width?: string;
 }) {
   const res = await getSnapshotResult();
   if (!res.ok) {
@@ -42,8 +40,7 @@ export async function KindBrowser({
   return (
     <div className="flex h-full min-h-0 flex-col md:flex-row">
       <aside
-        className="flex h-[42%] w-full min-h-0 shrink-0 flex-col border-b border-hair md:h-full md:w-[var(--sidebar-w)] md:border-b-0 md:border-r"
-        style={{ ["--sidebar-w" as string]: width }}
+        className="flex h-[42%] w-full min-h-0 shrink-0 flex-col border-b md:h-full md:w-[var(--pane)] md:border-b-0 md:border-r"
       >
         <div className="flex items-baseline justify-between border-b border-hair px-2.5 py-1 text-xs text-fg-muted">
           <span>{title}</span>

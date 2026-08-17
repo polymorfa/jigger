@@ -19,7 +19,7 @@ export function CopyButton({ value, title = "Copy" }: { value: string; title?: s
           /* ignore */
         }
       }}
-      className="inline-flex h-[18px] w-[18px] shrink-0 items-center justify-center border border-hair text-fg-faint hover:border-hair-strong hover:text-fg-muted"
+      className="inline-flex h-[var(--row-code)] w-[var(--row-code)] shrink-0 items-center justify-center border border-hair text-fg-faint hover:border-hair-strong hover:text-fg-muted"
     >
       {done ? (
         <svg viewBox="0 0 16 16" width="11" height="11" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6">

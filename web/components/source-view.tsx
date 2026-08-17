@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { tokenize } from "@/lib/highlight";
+import { ROW_CODE } from "@/lib/metrics";
 import { addNote, anchorHolds, notesFor, removeNote, type Note } from "@/lib/notes";
 
 const CLASS: Record<string, string> = {
@@ -18,7 +19,6 @@ const CLASS: Record<string, string> = {
   id: "text-fg",
 };
 
-const ROW = 18;
 
 /**
  * The source view, as a code editor rather than a wiki page.
@@ -71,11 +71,11 @@ export function SourceView({
   // Measured, not fixed. An open comment makes its row genuinely taller and
   // pushes the rest of the file down, the way a GitHub review thread does —
   // rather than floating over the lines beneath it, which is what forced all the
-  // z-index juggling before. ROW stays as the estimate for unmeasured rows.
+  // z-index juggling before. ROW_CODE stays as the estimate for unmeasured rows.
   const virt = useVirtualizer({
     count: lines.length,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => ROW,
+    estimateSize: () => ROW_CODE,
     measureElement: (el) => el.getBoundingClientRect().height,
     overscan: 30,
   });
@@ -202,7 +202,7 @@ export function SourceView({
                   className={`flex w-max min-w-full items-start ${
                     highlight === n ? "bg-brand-weak" : "hover:bg-surface-2"
                   }`}
-                  style={{ minHeight: ROW }}
+                  style={{ minHeight: ROW_CODE }}
                 >
                   {/* The line number stays a line number. Swapping it for the
                       comment affordance on hover meant losing your place in the
@@ -214,7 +214,7 @@ export function SourceView({
                   <button
                     onClick={() => copyLink(n)}
                     title={`Copy a link to line ${n}`}
-                    className={`data w-14 shrink-0 select-none pr-3 text-right text-xs leading-[18px] transition-colors ${
+                    className={`data w-14 shrink-0 select-none pr-3 text-right text-xs leading-[var(--row-code)] transition-colors ${
                       copied === n ? "text-brand" : "text-fg-faint hover:text-fg"
                     }`}
                   >
@@ -223,7 +223,7 @@ export function SourceView({
                   {/* `select-text` and nothing else selectable to its left, so a
                       drag down the file yields the source and not a column of
                       line numbers interleaved with it. */}
-                  <code className="data shrink-0 select-text whitespace-pre text-xs leading-[18px]">
+                  <code className="data shrink-0 select-text whitespace-pre text-xs leading-[var(--row-code)]">
                     {(lines[vi.index] ?? []).map((t, j) => (
                       <span key={j} className={CLASS[t.c] ?? "text-fg"}>
                         {t.t}
@@ -240,7 +240,7 @@ export function SourceView({
                     }}
                     title={`Comment on line ${n}`}
                     aria-label={`Comment on line ${n}`}
-                    className={`ml-2 flex h-[14px] w-[14px] shrink-0 items-center justify-center self-center rounded-full text-[10px] font-semibold leading-none transition-opacity ${
+                    className={`ml-2 flex size-4 shrink-0 items-center justify-center self-center rounded-full text-[11px] font-semibold leading-none transition-opacity ${
                       lineNotes.length || isOpen
                         ? "bg-brand text-brand-fg opacity-100"
                         : "bg-brand text-brand-fg opacity-0 group-hover:opacity-100 focus-visible:opacity-100"

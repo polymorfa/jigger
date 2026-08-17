@@ -283,20 +283,40 @@
      topped out at 13px for body text, which is a density that only works if you
      never actually read the page. Data stays monospace and slightly tighter
      than prose, but nothing here is below 12px. */
-  --text-2xs: 12px;
-  --text-2xs--line-height: 16px;
-  --text-xs: 13px;
-  --text-xs--line-height: 18px;
-  --text-sm: 14px;
-  --text-sm--line-height: 21px;
-  --text-base: 16px;
-  --text-base--line-height: 25px;
-  --text-md: 18px;
-  --text-md--line-height: 26px;
-  --text-lg: 22px;
-  --text-lg--line-height: 29px;
-  --text-xl: 28px;
-  --text-xl--line-height: 34px;
+  /* Sized once, at the size we actually want — not at a base size multiplied
+     later. The previous version set `zoom: 1.25` on the root, which scales
+     hairlines too: a 1px border became 1.25px and rounded to 1px on some rows
+     and 2px on others, so nothing in a table ever quite lined up.
+     Every line-height here is an even integer, because half-pixel line boxes
+     are the other half of that problem. */
+  --text-2xs: 15px;
+  --text-2xs--line-height: 20px;
+  --text-xs: 16px;
+  --text-xs--line-height: 22px;
+  --text-sm: 18px;
+  --text-sm--line-height: 26px;
+  --text-base: 20px;
+  --text-base--line-height: 30px;
+  --text-md: 22px;
+  --text-md--line-height: 32px;
+  --text-lg: 27px;
+  --text-lg--line-height: 36px;
+  --text-xl: 34px;
+  --text-xl--line-height: 42px;
+
+  /* --- Layout constants ---------------------------------------------------
+     Every master pane was a different width — 300, 320, 340, 360, 380, 440 —
+     so the content column moved sideways on every tab switch. One token, and
+     the detail pane stays put. Same for the reading column. */
+  --pane: 23rem;
+  --reading: 50rem;
+
+  /* Virtualized row heights. These are duplicated in `lib/metrics.ts`, which
+     is the only way a virtualizer can know a height it does not render;
+     the two must not drift. */
+  --row-code: 22px;
+  --row-tree: 26px;
+  --row-list: 30px;
 
   --radius: 0px;
 
@@ -391,30 +411,12 @@
 
   html {
     -webkit-text-size-adjust: 100%;
-
-    /* Everything scaled up by a quarter.
-     *
-     * `zoom` rather than `transform: scale()` because zoom participates in
-     * layout: the sidebar, the virtualizer's row heights and every px token
-     * scale together and the page still reflows to the viewport. A transform
-     * would leave the layout at its old size and simply magnify it, clipping
-     * the right edge and breaking scroll heights.
-     *
-     * Applied at the root instead of by rewriting the type scale because the
-     * tokens are in px, so bumping a root font-size would move the text and
-     * leave every width, gutter and row height behind. */
-    --zoom: 1.25;
-    zoom: var(--zoom);
     @apply font-sans;
   }
 
-  /* Viewport units do not see the zoom: `100dvh` still resolves against the
-   * unscaled viewport, so under zoom the shell came out a quarter too tall,
-   * the document itself gained a scrollbar, and the top bar scrolled away with
-   * the content. Dividing it back out restores the fixed shell — inner panes
-   * scroll, the header and nav stay put. */
+  /* The shell is exactly the viewport; every pane scrolls inside it. */
   .app-shell {
-    height: calc(100dvh / var(--zoom));
+    height: 100dvh;
   }
 
   body {

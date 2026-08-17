@@ -16,7 +16,7 @@ export const metadata: Metadata = { title: "Search" };
 export default function SearchPage() {
   return (
     <Scroll>
-      <div className="mx-auto flex max-w-[980px] flex-col gap-4 px-6 py-6">
+      <div className="mx-auto flex max-w-[var(--reading)] flex-col gap-4 px-6 py-6">
         <div className="flex flex-col gap-1">
           <h1 className="text-lg font-semibold tracking-tight text-fg">Search</h1>
           <p className="text-muted-foreground max-w-prose text-sm">
