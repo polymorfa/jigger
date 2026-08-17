@@ -122,7 +122,7 @@ export function AbTable({ rows, types }: { rows: AbRow[]; types: string[] }) {
                       href={browseHref("ab", r.id)}
                       className={
                         "grid h-[26px] items-center gap-2 border-b border-hair px-2.5 " +
-                        (active ? "bg-accent-weak shadow-[inset_2px_0_0_0_var(--accent)]" : "hover:bg-surface-2")
+                        (active ? "bg-brand-weak shadow-[inset_2px_0_0_0_var(--accent)]" : "hover:bg-surface-2")
                       }
                       style={{ gridTemplateColumns: COLS }}
                     >

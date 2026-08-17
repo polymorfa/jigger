@@ -200,7 +200,7 @@ export function SourceView({
               >
                 <div
                   className={`flex w-max min-w-full items-start ${
-                    highlight === n ? "bg-accent-weak" : "hover:bg-surface-2"
+                    highlight === n ? "bg-brand-weak" : "hover:bg-surface-2"
                   }`}
                   style={{ minHeight: ROW }}
                 >
@@ -215,7 +215,7 @@ export function SourceView({
                     onClick={() => copyLink(n)}
                     title={`Copy a link to line ${n}`}
                     className={`data w-14 shrink-0 select-none pr-3 text-right text-xs leading-[18px] transition-colors ${
-                      copied === n ? "text-accent" : "text-fg-faint hover:text-fg"
+                      copied === n ? "text-brand" : "text-fg-faint hover:text-fg"
                     }`}
                   >
                     {n}
@@ -242,8 +242,8 @@ export function SourceView({
                     aria-label={`Comment on line ${n}`}
                     className={`ml-2 flex h-[14px] w-[14px] shrink-0 items-center justify-center self-center rounded-full text-[10px] font-semibold leading-none transition-opacity ${
                       lineNotes.length || isOpen
-                        ? "bg-accent text-accent-fg opacity-100"
-                        : "bg-accent text-accent-fg opacity-0 group-hover:opacity-100 focus-visible:opacity-100"
+                        ? "bg-brand text-brand-fg opacity-100"
+                        : "bg-brand text-brand-fg opacity-0 group-hover:opacity-100 focus-visible:opacity-100"
                     }`}
                   >
                     {lineNotes.length ? lineNotes.length : "+"}
@@ -283,7 +283,7 @@ export function SourceView({
                         if (e.key === "Escape") setOpen(null);
                       }}
                       placeholder={`Comment on line ${n} — anchors to the text, not the number`}
-                      className="w-full border border-hair bg-surface px-2 py-1 text-sm outline-none focus:border-accent"
+                      className="w-full border border-hair bg-surface px-2 py-1 text-sm outline-none focus:border-brand"
                     />
                     <div className="flex items-center gap-3 text-xs text-fg-faint">
                       <button

@@ -66,7 +66,7 @@ export default async function OverviewPage() {
           <ul className="mb-8 grid gap-x-6 gap-y-1 sm:grid-cols-2">
             {rollouts.map((r: { id: string; name: string }) => (
               <li key={r.id} className="border-b border-hair py-1 text-sm">
-                <Link href={factHref(r.id)} className="data hover:text-accent hover:underline">
+                <Link href={factHref(r.id)} className="data hover:text-brand hover:underline">
                   {r.name}
                 </Link>
               </li>
@@ -95,7 +95,7 @@ export default async function OverviewPage() {
               {cov.perRepo.map((r: RepoCoverage) => (
                 <tr key={r.repo} className="border-b border-hair last:border-0">
                   <td className="px-3 py-1.5">
-                    <Link href="/coverage" className="data hover:text-accent hover:underline">
+                    <Link href="/coverage" className="data hover:text-brand hover:underline">
                       {r.repo}
                     </Link>
                   </td>

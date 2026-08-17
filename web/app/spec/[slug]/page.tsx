@@ -77,7 +77,7 @@ export default async function SpecPage({ params }: Params) {
                   className="flex items-baseline gap-2.5 border-b border-hair px-3 py-1.5 last:border-b-0 hover:bg-surface-2"
                 >
                   <KindBadge kind={f.kind} />
-                  <span className="data shrink-0 text-sm text-accent">{f.id}</span>
+                  <span className="data shrink-0 text-sm text-brand">{f.id}</span>
                   <span className="truncate text-sm text-fg-muted">{f.name}</span>
                 </Link>
               ))}

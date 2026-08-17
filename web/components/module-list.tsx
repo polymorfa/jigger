@@ -31,7 +31,7 @@ export function ModuleList({ rows }: { rows: ModuleRow[] }) {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="filter modules…"
-          className="w-full border border-hair bg-ground px-2 py-1 text-sm outline-none focus:border-accent"
+          className="w-full border border-hair bg-ground px-2 py-1 text-sm outline-none focus:border-brand"
         />
       </div>
       <div className="flex items-baseline justify-between border-b border-hair px-2.5 py-1 text-xs text-fg-muted">
@@ -49,7 +49,7 @@ export function ModuleList({ rows }: { rows: ModuleRow[] }) {
               <Link
                 href={`/source/${encodeURIComponent(r.name)}`}
                 className={`flex h-[26px] items-center justify-between gap-2 border-b border-hair px-2.5 ${
-                  on ? "bg-accent-weak" : "hover:bg-surface-2"
+                  on ? "bg-brand-weak" : "hover:bg-surface-2"
                 }`}
               >
                 <span className="data truncate text-xs text-fg">{r.name}</span>

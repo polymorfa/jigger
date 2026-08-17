@@ -47,7 +47,7 @@ export function DataError({
               document.cookie = `${SRC_COOKIE}=local; path=/; max-age=31536000; samesite=lax`;
               router.refresh();
             }}
-            className="border border-accent-border bg-accent-weak px-2.5 py-1 text-sm text-accent hover:border-accent"
+            className="border border-brand-border bg-brand-weak px-2.5 py-1 text-sm text-brand hover:border-brand"
           >
             Switch to local snapshot
           </button>

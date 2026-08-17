@@ -54,7 +54,7 @@ function RevSelect({
       <select
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="data border border-hair bg-surface px-2 py-[2px] text-sm text-fg hover:border-hair-strong focus:border-accent"
+        className="data border border-hair bg-surface px-2 py-[2px] text-sm text-fg hover:border-hair-strong focus:border-brand"
       >
         {revisions.map((r) => (
           <option key={r} value={r}>

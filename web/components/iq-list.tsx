@@ -35,7 +35,7 @@ export function IqList({ groups }: { groups: IqGroup[] }) {
                 className={
                   "grid grid-cols-[34px_1fr_auto] items-center gap-2 border-b border-hair px-2.5 py-1 " +
                   (active
-                    ? "bg-accent-weak shadow-[inset_2px_0_0_0_var(--accent)]"
+                    ? "bg-brand-weak shadow-[inset_2px_0_0_0_var(--accent)]"
                     : "hover:bg-surface-2")
                 }
               >

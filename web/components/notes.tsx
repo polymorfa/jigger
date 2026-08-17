@@ -74,13 +74,13 @@ export function Notes({
           onChange={(e) => setDraft(e.target.value)}
           rows={2}
           placeholder="what did you work out?"
-          className="w-full border border-hair bg-ground px-2 py-1.5 text-sm outline-none focus:border-accent"
+          className="w-full border border-hair bg-ground px-2 py-1.5 text-sm outline-none focus:border-brand"
         />
         <input
           value={anchor}
           onChange={(e) => setAnchor(e.target.value)}
           placeholder="optional: a snippet this is about, so the note can re-find it"
-          className="data w-full border border-hair bg-ground px-2 py-1 text-xs outline-none focus:border-accent"
+          className="data w-full border border-hair bg-ground px-2 py-1 text-xs outline-none focus:border-brand"
         />
         <button
           onClick={submit}

@@ -72,7 +72,7 @@ function Group({ group }: { group: AbGroup }) {
           <span>
             <span className="text-fg-muted">{group.on}</span> on
           </span>
-          <span className={group.split ? "text-accent" : ""}>
+          <span className={group.split ? "text-brand" : ""}>
             <span className={group.split ? "" : "text-fg-muted"}>{group.split}</span> split
           </span>
         </span>
@@ -100,7 +100,7 @@ function Names({ facts }: { facts: Fact[] }) {
               key={f.id}
               href={browseHref("ab", f.id)}
               title={`${d.type} · default ${String(d.default)} · alt ${String(d.alt_default)}`}
-              className={`data text-xs hover:underline ${live ? "text-accent" : "text-fg-muted"}`}
+              className={`data text-xs hover:underline ${live ? "text-brand" : "text-fg-muted"}`}
             >
               {f.name}
             </Link>

@@ -133,7 +133,7 @@ export function SourceControl({ revisions }: { revisions: number[] }) {
                   onChange={(e) => setRef(e.target.value)}
                   spellCheck={false}
                   autoComplete="off"
-                  className="data border border-hair bg-ground px-2 py-1 text-sm text-fg focus:border-accent"
+                  className="data border border-hair bg-ground px-2 py-1 text-sm text-fg focus:border-brand"
                 />
               </label>
               {suggestions.length > 0 ? (
@@ -156,7 +156,7 @@ export function SourceControl({ revisions }: { revisions: number[] }) {
               <button
                 type="button"
                 onClick={() => apply("github")}
-                className="border border-accent-border bg-accent-weak px-2 py-1 text-xs text-accent hover:border-accent"
+                className="border border-brand-border bg-brand-weak px-2 py-1 text-xs text-brand hover:border-brand"
               >
                 Load {ref || DEFAULT_REF}
               </button>

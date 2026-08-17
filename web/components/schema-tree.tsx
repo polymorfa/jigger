@@ -79,7 +79,7 @@ function Row({ node, depth }: { node: TreeNode; depth: number }) {
           aria-label={open ? `Collapse ${node.field}` : `Expand ${node.field}`}
           className={
             "inline-block w-3 text-left text-2xs " +
-            (expandable ? "text-fg-faint hover:text-accent" : "text-transparent")
+            (expandable ? "text-fg-faint hover:text-brand" : "text-transparent")
           }
         >
           {expandable ? (open ? "−" : "+") : "·"}

@@ -60,7 +60,7 @@ export default async function SourcePage({ params, searchParams }: Params) {
             <span className="tnum">
               {cited.length} fact{cited.length === 1 ? "" : "s"} extracted here
             </span>
-            {hit && <span className="tnum text-accent">match at line {hit}</span>}
+            {hit && <span className="tnum text-brand">match at line {hit}</span>}
           </div>
       </div>
       <SourceView name={name} src={src} revision={revision} highlight={hit} />

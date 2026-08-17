@@ -1,4 +1,16 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* This app switches theme with [data-theme] and honours the system setting.
+   The stock `.dark` variant matches neither, so every `dark:` utility a shadcn
+   component ships would have been dead. */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) { @slot; }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) { @slot; }
+  }
+}
 
 /* ==========================================================================
    Palette. Full light values live on bare :root. Dark is a set of overrides
@@ -23,11 +35,11 @@
   --hair: #dcdfe5; /* hairline rules replace card borders */
   --hair-strong: #c6ccd4;
 
-  --accent: #1a5fd0; /* the single interaction accent */
-  --accent-hover: #1550b4;
-  --accent-fg: #ffffff;
-  --accent-weak: #e7f0fd; /* active row / selected tint */
-  --accent-border: #a7c4f0;
+  --brand: #1a5fd0; /* the single interaction accent */
+  --brand-hover: #1550b4;
+  --brand-fg: #ffffff;
+  --brand-weak: #e7f0fd; /* active row / selected tint */
+  --brand-border: #a7c4f0;
 
   /* Semantic — coverage only, and weighted. `missing` is the only loud one. */
   --cov-missing: #b23a1c;
@@ -35,7 +47,6 @@
   --cov-covered: #3d7a50; /* quiet */
   --cov-inconclusive: #646e7b; /* neutral, never a failure */
   --cov-absent: #99a1ac; /* not scanned */
-
 
   /* Code. Five classes, not fifteen — a carnival of hues makes short snippets
      harder to scan. `enc` is the deliberate exception: the encoding suffix on a
@@ -49,6 +60,42 @@
   --code-enc: #b23a1c;
 
   --selection: #cfe0fb;
+
+  /* --- shadcn semantics, mapped onto the palette above ------------------
+     Aliases, never new values. A second set of colours would drift from the
+     first within a week, and the theme toggle only knows about one of them. */
+  --background: var(--ground);
+  --foreground: var(--fg);
+  --card: var(--surface);
+  --card-foreground: var(--fg);
+  --popover: var(--surface);
+  --popover-foreground: var(--fg);
+  --primary: var(--brand);
+  --primary-foreground: var(--brand-fg);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--fg);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--fg-muted);
+  --accent: var(--surface-2);
+  --accent-foreground: var(--fg);
+  --destructive: var(--cov-missing);
+  --destructive-foreground: var(--surface);
+  --border: var(--hair);
+  --input: var(--hair-strong);
+  --ring: var(--brand);
+  --sidebar: var(--surface);
+  --sidebar-foreground: var(--fg);
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: var(--brand-fg);
+  --sidebar-accent: var(--surface-2);
+  --sidebar-accent-foreground: var(--fg);
+  --sidebar-border: var(--hair);
+  --sidebar-ring: var(--brand);
+  --chart-1: var(--brand);
+  --chart-2: var(--cov-covered);
+  --chart-3: var(--cov-missing);
+  --chart-4: var(--cov-inconclusive);
+  --chart-5: var(--fg-faint);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,11 +114,11 @@
     --hair: #23272e;
     --hair-strong: #343a43;
 
-    --accent: #4f8cf0;
-    --accent-hover: #6a9ef3;
-    --accent-fg: #0b0d10;
-    --accent-weak: #15243b;
-    --accent-border: #34517f;
+    --brand: #4f8cf0;
+    --brand-hover: #6a9ef3;
+    --brand-fg: #0b0d10;
+    --brand-weak: #15243b;
+    --brand-border: #34517f;
 
     --cov-missing: #e07a52;
     --cov-missing-weak: #2a170f;
@@ -80,6 +127,40 @@
     --cov-absent: #4b535e;
 
     --selection: #1c3557;
+
+  /* shadcn semantics — same aliases, dark values via the tokens above. */
+  --background: var(--ground);
+  --foreground: var(--fg);
+  --card: var(--surface);
+  --card-foreground: var(--fg);
+  --popover: var(--surface);
+  --popover-foreground: var(--fg);
+  --primary: var(--brand);
+  --primary-foreground: var(--brand-fg);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--fg);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--fg-muted);
+  --accent: var(--surface-2);
+  --accent-foreground: var(--fg);
+  --destructive: var(--cov-missing);
+  --destructive-foreground: var(--surface);
+  --border: var(--hair);
+  --input: var(--hair-strong);
+  --ring: var(--brand);
+  --sidebar: var(--surface);
+  --sidebar-foreground: var(--fg);
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: var(--brand-fg);
+  --sidebar-accent: var(--surface-2);
+  --sidebar-accent-foreground: var(--fg);
+  --sidebar-border: var(--hair);
+  --sidebar-ring: var(--brand);
+  --chart-1: var(--brand);
+  --chart-2: var(--cov-covered);
+  --chart-3: var(--cov-missing);
+  --chart-4: var(--cov-inconclusive);
+  --chart-5: var(--fg-faint);
   --code-kw: #c9a2f0;
   --code-typ: #79c0e8;
   --code-str: #86ceA0;
@@ -105,11 +186,11 @@
   --hair: #23272e;
   --hair-strong: #343a43;
 
-  --accent: #4f8cf0;
-  --accent-hover: #6a9ef3;
-  --accent-fg: #0b0d10;
-  --accent-weak: #15243b;
-  --accent-border: #34517f;
+  --brand: #4f8cf0;
+  --brand-hover: #6a9ef3;
+  --brand-fg: #0b0d10;
+  --brand-weak: #15243b;
+  --brand-border: #34517f;
 
   --cov-missing: #e07a52;
   --cov-missing-weak: #2a170f;
@@ -118,6 +199,40 @@
   --cov-absent: #4b535e;
 
   --selection: #1c3557;
+
+  /* shadcn semantics — same aliases, dark values via the tokens above. */
+  --background: var(--ground);
+  --foreground: var(--fg);
+  --card: var(--surface);
+  --card-foreground: var(--fg);
+  --popover: var(--surface);
+  --popover-foreground: var(--fg);
+  --primary: var(--brand);
+  --primary-foreground: var(--brand-fg);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--fg);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--fg-muted);
+  --accent: var(--surface-2);
+  --accent-foreground: var(--fg);
+  --destructive: var(--cov-missing);
+  --destructive-foreground: var(--surface);
+  --border: var(--hair);
+  --input: var(--hair-strong);
+  --ring: var(--brand);
+  --sidebar: var(--surface);
+  --sidebar-foreground: var(--fg);
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: var(--brand-fg);
+  --sidebar-accent: var(--surface-2);
+  --sidebar-accent-foreground: var(--fg);
+  --sidebar-border: var(--hair);
+  --sidebar-ring: var(--brand);
+  --chart-1: var(--brand);
+  --chart-2: var(--cov-covered);
+  --chart-3: var(--cov-missing);
+  --chart-4: var(--cov-inconclusive);
+  --chart-5: var(--fg-faint);
   --code-kw: #c9a2f0;
   --code-typ: #79c0e8;
   --code-str: #86ceA0;
@@ -149,11 +264,11 @@
   --color-fg-faint: var(--fg-faint);
   --color-hair: var(--hair);
   --color-hair-strong: var(--hair-strong);
-  --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
-  --color-accent-fg: var(--accent-fg);
-  --color-accent-weak: var(--accent-weak);
-  --color-accent-border: var(--accent-border);
+  --color-accent: var(--brand);
+  --color-accent-hover: var(--brand-hover);
+  --color-accent-fg: var(--brand-fg);
+  --color-accent-weak: var(--brand-weak);
+  --color-accent-border: var(--brand-border);
   --color-missing: var(--cov-missing);
   --color-missing-weak: var(--cov-missing-weak);
   --color-covered: var(--cov-covered);
@@ -161,7 +276,7 @@
   --color-absent: var(--cov-absent);
 
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", "Consolas", monospace;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: var(--font-sans);
 
   /* one type scale */
   /* One scale, sized for reading rather than for cramming. The previous values
@@ -184,6 +299,82 @@
   --text-xl--line-height: 34px;
 
   --radius: 0px;
+
+  --font-heading: var(--font-sans);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-sidebar-border: var(--sidebar-border);
+
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+
+  --color-sidebar-accent: var(--sidebar-accent);
+
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+
+  --color-sidebar-primary: var(--sidebar-primary);
+
+  --color-sidebar-foreground: var(--sidebar-foreground);
+
+  --color-sidebar: var(--sidebar);
+
+  --color-chart-5: var(--chart-5);
+
+  --color-chart-4: var(--chart-4);
+
+  --color-chart-3: var(--chart-3);
+
+  --color-chart-2: var(--chart-2);
+
+  --color-chart-1: var(--chart-1);
+
+  --color-ring: var(--ring);
+
+  --color-input: var(--input);
+
+  --color-border: var(--border);
+
+  --color-destructive: var(--destructive);
+
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-muted: var(--muted);
+
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-secondary: var(--secondary);
+
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-primary: var(--primary);
+
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-popover: var(--popover);
+
+  --color-card-foreground: var(--card-foreground);
+
+  --color-card: var(--card);
+
+  --color-foreground: var(--foreground);
+
+  --color-background: var(--background);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+
+  --radius-md: calc(var(--radius) * 0.8);
+
+  --radius-lg: var(--radius);
+
+  --radius-xl: calc(var(--radius) * 1.4);
+
+  --radius-2xl: calc(var(--radius) * 1.8);
+
+  --radius-3xl: calc(var(--radius) * 2.2);
+
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
 /* ==========================================================================
@@ -214,6 +405,7 @@
      * leave every width, gutter and row height behind. */
     --zoom: 1.25;
     zoom: var(--zoom);
+    @apply font-sans;
   }
 
   /* Viewport units do not see the zoom: `100dvh` still resolves against the
@@ -233,6 +425,7 @@
     line-height: var(--text-base--line-height);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    @apply bg-background text-foreground;
   }
 
   ::selection {
@@ -245,7 +438,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--brand);
     outline-offset: -1px;
   }
 
@@ -263,6 +456,9 @@
   textarea {
     font: inherit;
     color: inherit;
+  }
+  * {
+    @apply border-border outline-ring/50;
   }
 }
 
@@ -286,10 +482,10 @@
 
   /* interaction accent for links inside prose / references */
   .link {
-    color: var(--accent);
+    color: var(--brand);
   }
   .link:hover {
-    color: var(--accent-hover);
+    color: var(--brand-hover);
     text-decoration: underline;
     text-underline-offset: 2px;
   }
@@ -446,7 +642,7 @@
     font-weight: 600;
   }
   .prose a {
-    color: var(--accent);
+    color: var(--brand);
   }
   .prose a:hover {
     text-decoration: underline;
@@ -481,11 +677,12 @@
   }
   /* a citation link keeps the code chip look but reads as interactive */
   .prose a > code {
-    color: var(--accent);
-    border-color: var(--accent-border);
+    color: var(--brand);
+    border-color: var(--brand-border);
     background: var(--surface-2);
   }
   .prose a:hover > code {
-    border-color: var(--accent);
+    border-color: var(--brand);
   }
 }
+

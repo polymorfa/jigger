@@ -112,7 +112,7 @@ export function CoverageMatrix({
           <select
             value={repo}
             onChange={(e) => setRepo(e.target.value)}
-            className="data border border-hair bg-surface px-2 py-[2px] text-xs text-fg hover:border-hair-strong focus:border-accent"
+            className="data border border-hair bg-surface px-2 py-[2px] text-xs text-fg hover:border-hair-strong focus:border-brand"
           >
             <option value="all">all three</option>
             {REPOS.map((r) => (
