@@ -393,11 +393,14 @@ function Tok({
 }) {
   if (!links) return <span className={cls}>{text}</span>;
   const parts = text.split(/([A-Za-z_$][A-Za-z0-9_$.]*)/g);
-  if (!parts.some((p) => links[p])) return <span className={cls}>{text}</span>;
+  if (!parts.some((p) => Object.hasOwn(links, p))) return <span className={cls}>{text}</span>;
   return (
     <span className={cls}>
       {parts.map((p, i) => {
-        const href = links[p];
+        // `Object.hasOwn`, not `links[p]`: a token named `toString` or
+        // `constructor` finds a function on the prototype chain, and
+        // `<Link href={fn}>` throws. 3,486 modules contain such a name.
+        const href = Object.hasOwn(links, p) ? links[p] : undefined;
         return href ? (
           <Link
             key={i}

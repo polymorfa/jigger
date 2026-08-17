@@ -77,7 +77,9 @@ export function linksForLine(
   inHeader: boolean,
   deps?: Set<string>,
 ): Record<string, string> {
-  const out: Record<string, string> = {};
+  // Null-prototype: the keys are arbitrary identifiers from the source, and a
+  // plain object would answer for `toString`, `constructor` and friends.
+  const out: Record<string, string> = Object.create(null);
 
   // The dependency array: every string in it is a module you can open.
   //
