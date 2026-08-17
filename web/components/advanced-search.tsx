@@ -109,21 +109,31 @@ export function AdvancedSearch() {
   /**
    * What each kind would yield if it were the *only* kind selected.
    *
-   * Counting the current results instead would show 0 beside every kind you
-   * have not picked, which reads as "there are none of those" rather than "you
-   * filtered them out" — and then the chips are useless for widening a search,
-   * which is most of what they are for.
+   * Two things this deliberately does not do. It does not count the current
+   * results — that shows 0 beside every kind you have not picked, which reads
+   * as "there are none of those" rather than "you filtered them out", exactly
+   * backwards for a control whose job is widening a search. And it does not
+   * wait for a query: with nothing typed these are the whole index, so the
+   * filters are usable as a way *in*, not just as a way to narrow something you
+   * already found.
    */
   const counts = useMemo(() => {
     if (!entries) return new Map<SearchKind, number>();
     const withoutKinds = terms.filter((t) => !(t.field === "kind" && !t.negated));
-    return countByKind(runQuery(entries, withoutKinds));
+    const base = withoutKinds.length
+      ? runQuery(entries, withoutKinds)
+      : entries.map((e) => ({ e, score: 8 }));
+    return countByKind(base);
   }, [entries, terms]);
 
   const results = useMemo(() => sortHits(hits, sort), [hits, sort]);
   useEffect(() => setLimit(PAGE), [q, sort]);
 
-  const present = SEARCH_KINDS.filter((k) => (counts.get(k) ?? 0) > 0);
+  // Every kind, in a fixed order, and present before the index has loaded. The
+  // controls popping into existence a beat after the page is the same problem
+  // as them not being there — you have already decided the page is a text box.
+  const loaded = entries !== null;
+  const present = loaded ? SEARCH_KINDS.filter((k) => (counts.get(k) ?? 0) > 0) : SEARCH_KINDS;
   const shown = results.slice(0, limit);
   const total = [...counts.values()].reduce((a, b) => a + b, 0);
 
@@ -143,7 +153,7 @@ export function AdvancedSearch() {
           <div className="flex min-w-0 flex-wrap items-center gap-1.5">
             <Chip
               label="Everything"
-              count={total}
+              count={loaded ? total : undefined}
               active={activeKinds.size === 0}
               onClick={() => edit(clearField(q, "kind"))}
             />
@@ -152,7 +162,7 @@ export function AdvancedSearch() {
                 key={k}
                 label={k}
                 mono
-                count={counts.get(k) ?? 0}
+                count={loaded ? (counts.get(k) ?? 0) : undefined}
                 active={activeKinds.has(k)}
                 onClick={() => edit(toggleTerm(q, "kind", k))}
               />
@@ -239,7 +249,9 @@ export function AdvancedSearch() {
             </Button>
           )}
           <span className="tnum text-muted-foreground ml-auto text-xs">
-            {results.length.toLocaleString()} result{results.length === 1 ? "" : "s"}
+            {q.trim()
+              ? `${results.length.toLocaleString()} result${results.length === 1 ? "" : "s"}`
+              : "nothing selected yet"}
           </span>
         </div>
       </div>
@@ -279,7 +291,9 @@ export function AdvancedSearch() {
 
       {!q.trim() ? (
         <div className="flex flex-col gap-2">
-          <h2 className="text-sm font-semibold text-fg">Try</h2>
+          <h2 className="text-sm font-semibold text-fg">
+            Pick a kind above, or start from one of these
+          </h2>
           <div className="flex flex-col">
             {EXAMPLES.map((x) => (
               <button
@@ -362,7 +376,9 @@ function Chip({
   mono = false,
 }: {
   label: string;
-  count: number;
+  /** Undefined until the index has loaded — shown as a dash, never as 0. A
+   *  zero is a claim about the data; a dash is a claim about the page. */
+  count?: number;
   active: boolean;
   onClick: () => void;
   mono?: boolean;
@@ -384,7 +400,7 @@ function Chip({
         aria-hidden="true"
       />
       <span className={mono ? "data" : undefined}>{label}</span>
-      <span className="tnum opacity-60">{count.toLocaleString()}</span>
+      <span className="tnum opacity-60">{count === undefined ? "—" : count.toLocaleString()}</span>
     </button>
   );
 }
