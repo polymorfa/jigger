@@ -162,12 +162,12 @@ export function GlobalSearch() {
                     ) : (
                       <KindBadge kind={e.kind} />
                     )}
-                    <span className="data shrink-0 truncate text-sm text-fg">{e.id}</span>
+                    <span className="data min-w-0 truncate text-sm text-fg">{e.id}</span>
                     {e.sub ? (
-                      <span className="text-muted-foreground truncate text-xs">{e.sub}</span>
+                      <span className="min-w-0 text-muted-foreground truncate text-xs">{e.sub}</span>
                     ) : (
                       e.name !== e.id.slice(e.id.indexOf(":") + 1) && (
-                        <span className="text-muted-foreground truncate text-sm">{e.name}</span>
+                        <span className="min-w-0 text-muted-foreground truncate text-sm">{e.name}</span>
                       )
                     )}
                     {via && (

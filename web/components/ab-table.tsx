@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { CheckIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { VirtualRows } from "./virtual-rows";
 import { browseHref } from "@/lib/ids";
@@ -25,10 +26,16 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
       aria-pressed={active}
       onClick={onClick}
       className={
-        "border px-2 py-[2px] text-xs " +
-        (active ? "border-hair-strong bg-surface-3 text-fg" : "border-hair bg-surface text-fg-faint hover:text-fg-muted")
+        "flex items-center gap-1.5 border px-2 py-[2px] text-xs transition-colors " +
+        (active
+          ? "border-brand bg-brand-weak text-fg"
+          : "text-muted-foreground hover:border-ring hover:text-foreground")
       }
     >
+      <CheckIcon
+        className={"size-3 shrink-0 " + (active ? "text-brand" : "opacity-0")}
+        aria-hidden="true"
+      />
       {children}
     </button>
   );
@@ -67,32 +74,53 @@ export function AbTable({ rows, types }: { rows: AbRow[]; types: string[] }) {
 
   return (
     <div className="flex h-full min-h-0 flex-col">
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-hair px-2.5 py-2">
-        <div className="flex items-center gap-1">
-          {(["all", "unwired", "wired"] as ReadState[]).map((s) => (
-            <Chip key={s} active={read === s} onClick={() => setRead(s)}>
-              {s === "unwired" ? "unwired (0)" : s}
-            </Chip>
-          ))}
+      {/* Every control is named. This toolbar used to be three unlabelled rows
+          of words — `all unwired wired`, then the type names, then
+          `sort: name` — with nothing saying which row did what, or that the
+          middle one was a filter at all. */}
+      <div className="flex flex-col gap-1.5 border-b border-hair px-2.5 py-2">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+          <span className="text-muted-foreground w-14 shrink-0 text-xs">Show</span>
+          <div className="flex items-center gap-1">
+            {(
+              [
+                ["all", "All flags"],
+                ["wired", "Read by some module"],
+                ["unwired", "Never read"],
+              ] as [ReadState, string][]
+            ).map(([s, label]) => (
+              <Chip key={s} active={read === s} onClick={() => setRead(s)}>
+                {label}
+              </Chip>
+            ))}
+          </div>
         </div>
-        <div className="flex items-center gap-1">
-          {types.map((t) => (
-            <Chip key={t} active={typeOn.has(t)} onClick={() => toggleType(t)}>
-              {t}
-            </Chip>
-          ))}
+
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+          <span className="text-muted-foreground w-14 shrink-0 text-xs">Types</span>
+          <div className="flex flex-wrap items-center gap-1">
+            {types.map((t) => (
+              <Chip key={t} active={typeOn.has(t)} onClick={() => toggleType(t)}>
+                {t}
+              </Chip>
+            ))}
+          </div>
         </div>
-        <button
-          type="button"
-          onClick={() => setSort((s) => (s === "name" ? "reads" : "name"))}
-          className="border border-hair px-2 py-[2px] text-xs text-fg-muted hover:border-hair-strong hover:text-fg"
-          title="Toggle sort"
-        >
-          sort: {sort === "name" ? "name" : "reads"}
-        </button>
-        <span className="data tnum ml-auto text-xs text-fg-faint">
-          {filtered.length} · <span className="text-missing">{unwiredShown} unwired</span>
-        </span>
+
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+          <span className="text-muted-foreground w-14 shrink-0 text-xs">Order</span>
+          <div className="flex items-center gap-1">
+            <Chip active={sort === "name"} onClick={() => setSort("name")}>
+              Name, A → Z
+            </Chip>
+            <Chip active={sort === "reads"} onClick={() => setSort("reads")}>
+              Most read first
+            </Chip>
+          </div>
+          <span className="data tnum text-muted-foreground ml-auto text-xs">
+            {filtered.length} shown · <span className="text-missing">{unwiredShown} never read</span>
+          </span>
+        </div>
       </div>
 
       <div className="min-h-0 flex-1 overflow-x-auto">
@@ -126,7 +154,7 @@ export function AbTable({ rows, types }: { rows: AbRow[]; types: string[] }) {
                       }
                       style={{ gridTemplateColumns: COLS }}
                     >
-                      <span className="data truncate text-sm text-fg" title={r.name}>
+                      <span className="min-w-0 data truncate text-sm text-fg" title={r.name}>
                         {r.name}
                       </span>
                       <span className="data tnum text-right text-sm text-fg-muted">{r.opaque_id}</span>

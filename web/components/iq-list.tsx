@@ -43,7 +43,7 @@ export function IqList({ groups }: { groups: IqGroup[] }) {
                   {TYPE_LABEL[it.type]}
                 </span>
                 <span className="min-w-0">
-                  <span className="truncate text-sm text-fg">{it.name}</span>
+                  <span className="min-w-0 truncate text-sm text-fg">{it.name}</span>
                 </span>
                 <CoverageDots byRepo={it.byRepo} />
               </Link>

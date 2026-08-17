@@ -51,7 +51,7 @@ export default async function SigLayout({ children }: { children: React.ReactNod
                         href={browseHref("sig", f.id)}
                         className="flex items-baseline justify-between gap-3 px-2.5 py-1.5 hover:bg-surface-2"
                       >
-                        <span className="truncate text-sm text-fg">{f.name}</span>
+                        <span className="min-w-0 truncate text-sm text-fg">{f.name}</span>
                         <span className="shrink-0 text-xs text-fg-faint">
                           {f.data.responds_to ? "response" : "server-initiated"}
                         </span>

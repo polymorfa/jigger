@@ -52,7 +52,7 @@ export function ModuleList({ rows }: { rows: ModuleRow[] }) {
                   on ? "bg-brand-weak" : "hover:bg-surface-2"
                 }`}
               >
-                <span className="data truncate text-xs text-fg">{r.name}</span>
+                <span className="min-w-0 data truncate text-xs text-fg">{r.name}</span>
                 <span className="data tnum shrink-0 text-xs text-fg-faint">{r.facts}</span>
               </Link>
             );

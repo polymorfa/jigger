@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { SearchIcon, XIcon } from "lucide-react";
+import { CheckIcon, SearchIcon, XIcon } from "lucide-react";
 import { loadSearchIndex } from "@/lib/client-index";
 import {
   FIELDS,
@@ -19,7 +19,14 @@ import { hrefOf } from "@/components/global-search";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
-import { Separator } from "@/components/ui/separator";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { KindBadge } from "./kind-badge";
 
 const PAGE = 200;
@@ -34,9 +41,9 @@ const EXAMPLES: { q: string; what: string }[] = [
 ];
 
 const SORTS: { id: Sort; label: string }[] = [
-  { id: "relevance", label: "Relevance" },
-  { id: "name", label: "Name" },
-  { id: "kind", label: "Kind" },
+  { id: "relevance", label: "Best match first" },
+  { id: "name", label: "Name, A → Z" },
+  { id: "kind", label: "Grouped by kind" },
 ];
 
 /**
@@ -175,58 +182,68 @@ export function AdvancedSearch() {
         </div>
       ) : (
         <>
-          <div className="flex flex-wrap items-center gap-3">
-            {/* Counts are computed before the kind filter, so narrowing never
-                hides what you would narrow to next. */}
-            <div className="flex flex-wrap items-center gap-1">
-              <Button
-                size="sm"
-                variant={kinds.size === 0 ? "secondary" : "ghost"}
-                onClick={() => {
-                  setKinds(new Set());
-                  sync({ kinds: new Set() });
-                }}
-                className="h-6 px-2 text-2xs"
-              >
-                all <span className="tnum ml-1 opacity-70">{matched.length}</span>
-              </Button>
-              {present.map((k) => (
-                <Button
-                  key={k}
-                  size="sm"
-                  variant={kinds.has(k) ? "secondary" : "ghost"}
-                  onClick={() => toggleKind(k)}
-                  className="h-6 gap-1 px-2 text-2xs"
-                >
-                  <span className="data">{k}</span>
-                  <span className="tnum opacity-70">{counts.get(k)}</span>
-                </Button>
-              ))}
-            </div>
-
-            <Separator orientation="vertical" className="h-5" />
-
-            <div className="flex items-center gap-1" role="group" aria-label="Sort">
-              <span className="text-muted-foreground text-2xs">sort</span>
-              {SORTS.map((s) => (
-                <Button
-                  key={s.id}
-                  size="sm"
-                  variant={sort === s.id ? "secondary" : "ghost"}
+          {/* Both controls say what they do and what they are currently doing.
+              The previous version was a row of bare words — `ab 345`,
+              `Relevance` — where nothing said whether a word was a filter, a
+              sort, or a result count, and "Kind" appeared as both a sort option
+              and a set of filters. */}
+          <div className="flex flex-col gap-2 border-y py-2.5">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5">
+              <span className="text-muted-foreground w-20 shrink-0 text-xs">
+                Show kinds
+              </span>
+              <div className="flex flex-wrap items-center gap-1.5">
+                {/* Counts come from the unfiltered set, so narrowing never
+                    hides what you would narrow to next. */}
+                <KindChip
+                  label="Everything"
+                  count={matched.length}
+                  active={kinds.size === 0}
                   onClick={() => {
-                    setSort(s.id);
-                    sync({ sort: s.id });
+                    setKinds(new Set());
+                    sync({ kinds: new Set() });
                   }}
-                  className="h-6 px-2 text-2xs"
-                >
-                  {s.label}
-                </Button>
-              ))}
+                />
+                {present.map((k) => (
+                  <KindChip
+                    key={k}
+                    label={k}
+                    mono
+                    count={counts.get(k) ?? 0}
+                    active={kinds.has(k)}
+                    onClick={() => toggleKind(k)}
+                  />
+                ))}
+              </div>
             </div>
 
-            <span className="tnum text-muted-foreground ml-auto text-xs">
-              {results.length.toLocaleString()} result{results.length === 1 ? "" : "s"}
-            </span>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+              <Label htmlFor="sort" className="text-muted-foreground w-20 shrink-0 text-xs">
+                Order by
+              </Label>
+              <Select
+                value={sort}
+                onValueChange={(v) => {
+                  setSort(v as Sort);
+                  sync({ sort: v as Sort });
+                }}
+              >
+                <SelectTrigger id="sort" size="sm" className="w-[13rem]">
+                  <SelectValue>{SORTS.find((s) => s.id === sort)?.label}</SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                  {SORTS.map((s) => (
+                    <SelectItem key={s.id} value={s.id}>
+                      {s.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+
+              <span className="tnum text-muted-foreground ml-auto text-xs">
+                {results.length.toLocaleString()} of {matched.length.toLocaleString()} shown
+              </span>
+            </div>
           </div>
 
           {results.length === 0 ? (
@@ -248,12 +265,12 @@ export function AdvancedSearch() {
                   ) : (
                     <KindBadge kind={e.kind} />
                   )}
-                  <span className="data shrink-0 text-sm text-fg">{e.id}</span>
+                  <span className="data min-w-0 truncate text-sm text-fg">{e.id}</span>
                   {e.sub ? (
-                    <span className="text-muted-foreground truncate text-xs">{e.sub}</span>
+                    <span className="min-w-0 text-muted-foreground truncate text-xs">{e.sub}</span>
                   ) : (
                     e.name !== e.id.slice(e.id.indexOf(":") + 1) && (
-                      <span className="text-muted-foreground truncate text-sm">{e.name}</span>
+                      <span className="min-w-0 text-muted-foreground truncate text-sm">{e.name}</span>
                     )
                   )}
                   {via && (
@@ -290,5 +307,48 @@ export function SearchFallback() {
     <p className="text-muted-foreground text-sm">
       Loading the index… <Kbd>/</Kbd> focuses search from anywhere.
     </p>
+  );
+}
+
+/**
+ * A kind filter, in an unmistakable state.
+ *
+ * Two greys apart is not a state anyone can read — the old chips differed only
+ * by background shade, so "which of these am I filtering by" took a careful
+ * look. The check mark is the answer, and the count stays visible either way so
+ * you can see what turning one on would cost you.
+ */
+function KindChip({
+  label,
+  count,
+  active,
+  onClick,
+  mono = false,
+}: {
+  label: string;
+  count: number;
+  active: boolean;
+  onClick: () => void;
+  mono?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      aria-pressed={active}
+      onClick={onClick}
+      className={
+        "flex items-center gap-1.5 border px-2 py-0.5 text-xs transition-colors " +
+        (active
+          ? "border-brand bg-brand-weak text-fg"
+          : "text-muted-foreground hover:border-ring hover:text-foreground")
+      }
+    >
+      <CheckIcon
+        className={"size-3 shrink-0 " + (active ? "text-brand" : "opacity-0")}
+        aria-hidden="true"
+      />
+      <span className={mono ? "data" : undefined}>{label}</span>
+      <span className="tnum opacity-60">{count.toLocaleString()}</span>
+    </button>
   );
 }

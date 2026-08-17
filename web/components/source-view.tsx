@@ -250,7 +250,7 @@ export function SourceView({
                   </button>
 
                   {lineNotes.length > 0 && !isOpen && (
-                    <span className="ml-2 self-center truncate border border-hair bg-ground px-1.5 text-xs text-fg-muted">
+                    <span className="min-w-0 ml-2 self-center truncate border border-hair bg-ground px-1.5 text-xs text-fg-muted">
                       {lineNotes[0]?.body.slice(0, 48)}
                       {(lineNotes[0]?.body.length ?? 0) > 48 ? "…" : ""}
                     </span>

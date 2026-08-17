@@ -78,7 +78,7 @@ export default async function SpecPage({ params }: Params) {
                 >
                   <KindBadge kind={f.kind} />
                   <span className="data shrink-0 text-sm text-brand">{f.id}</span>
-                  <span className="truncate text-sm text-fg-muted">{f.name}</span>
+                  <span className="min-w-0 truncate text-sm text-fg-muted">{f.name}</span>
                 </Link>
               ))}
             </div>

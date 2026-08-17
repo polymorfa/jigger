@@ -156,13 +156,13 @@ export function CoverageMatrix({
                     className="grid h-[28px] items-center gap-2 border-b border-hair px-4 hover:bg-surface-2"
                     style={{ gridTemplateColumns: COLS }}
                   >
-                    <span className="data truncate text-sm text-fg" title={r.id}>
+                    <span className="min-w-0 data truncate text-sm text-fg" title={r.id}>
                       {r.id}
                     </span>
                     <span>
                       <KindBadge kind={r.kind} />
                     </span>
-                    <span className="truncate text-sm text-fg-muted" title={r.name}>
+                    <span className="min-w-0 truncate text-sm text-fg-muted" title={r.name}>
                       {r.name}
                     </span>
                     {REPOS.map((rp) => {

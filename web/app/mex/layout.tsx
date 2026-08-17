@@ -44,7 +44,7 @@ export default async function MexLayout({ children }: { children: React.ReactNod
                       href={browseHref("mex", f.id)}
                       className="flex items-baseline justify-between gap-3 px-2.5 py-1.5 hover:bg-surface-2"
                     >
-                      <span className="truncate text-sm text-fg">
+                      <span className="min-w-0 truncate text-sm text-fg">
                         {f.name.replace(/^WAWeb/, "")}
                       </span>
                       {/* The doc id is the only part that goes on the wire. */}

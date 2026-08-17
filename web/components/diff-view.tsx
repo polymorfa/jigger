@@ -78,7 +78,7 @@ function EntryList({ entries, existing }: { entries: DiffEntry[]; existing: Set<
           <>
             <span className={"data shrink-0 text-sm " + (present ? "text-fg" : "text-fg-faint")}>{e.id}</span>
             {e.name !== e.id.slice(e.id.indexOf(":") + 1) ? (
-              <span className="truncate text-xs text-fg-muted">{e.name}</span>
+              <span className="min-w-0 truncate text-xs text-fg-muted">{e.name}</span>
             ) : null}
             <span className="data ml-auto shrink-0 text-2xs text-fg-faint">{e.module}</span>
           </>

@@ -125,12 +125,12 @@ export function ProtoTree() {
                 {r.factId ? (
                   <Link
                     href={browseHref("proto", r.factId)}
-                    className="data truncate text-xs text-fg hover:text-brand"
+                    className="min-w-0 data truncate text-xs text-fg hover:text-brand"
                   >
                     {r.seg}
                   </Link>
                 ) : (
-                  <span className="data truncate text-xs text-fg-faint">{r.seg}</span>
+                  <span className="min-w-0 data truncate text-xs text-fg-faint">{r.seg}</span>
                 )}
               </div>
             );

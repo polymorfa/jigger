@@ -42,8 +42,8 @@ export function WamTable({ rows }: { rows: WamRow[] }) {
                   : "hover:bg-surface-2")
               }
             >
-              <span className="data tnum truncate text-sm text-fg">{r.id}</span>
-              <span className="truncate text-sm text-fg-muted">{r.name}</span>
+              <span className="min-w-0 data tnum truncate text-sm text-fg">{r.id}</span>
+              <span className="min-w-0 truncate text-sm text-fg-muted">{r.name}</span>
               <span className="data tnum text-right text-sm text-fg-faint">{r.fieldCount}</span>
               <span className="flex justify-end">
                 <CoverageDots byRepo={r.byRepo} />
