@@ -138,15 +138,7 @@
     --hl-anchor: #3d370f;
     --hl-edge: #8a742a;
 
-    --hl: #2a2712;
-    --hl-anchor: #3d370f;
-    --hl-edge: #8a742a;
-
-    --hl: #2a2712;
-  --hl-anchor: #3d370f;
-  --hl-edge: #8a742a;
-
-  --selection: #1c3557;
+    --selection: #1c3557;
 
   /* shadcn semantics — same aliases, dark values via the tokens above. */
   --background: var(--ground);
@@ -279,6 +271,11 @@
   --color-code-num: var(--code-num);
   --color-code-cmt: var(--code-cmt);
   --color-code-enc: var(--code-enc);
+  /* Permalink highlight. Without these, `bg-hl` is a class nothing matches:
+     the markup looked right and the page stayed white. */
+  --color-hl: var(--hl);
+  --color-hl-anchor: var(--hl-anchor);
+  --color-hl-edge: var(--hl-edge);
   --color-ground: var(--ground);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
