@@ -11,10 +11,10 @@
  */
 
 /** One line of source, at `text-xs`. Equals `--text-xs--line-height`. */
-export const ROW_CODE = 22;
+export const ROW_CODE = 18;
 
 /** One node of a tree, at `text-xs` plus breathing room. */
-export const ROW_TREE = 26;
+export const ROW_TREE = 22;
 
 /** One row of a master list or table. Equals `--row-list`. */
-export const ROW_LIST = 30;
+export const ROW_LIST = 26;

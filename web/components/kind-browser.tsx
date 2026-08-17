@@ -46,7 +46,7 @@ export async function KindBrowser({
           <span>{title}</span>
           <span className="data tnum text-fg-faint">{facts.length}</span>
         </div>
-        <ul className="min-h-0 flex-1 overflow-y-auto">
+        <ul className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden">
           {facts.map((f) => (
             <li key={f.id} className="border-b border-hair">
               <Link

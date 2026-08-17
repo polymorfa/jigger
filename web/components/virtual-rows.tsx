@@ -7,6 +7,11 @@ import { ROW_LIST } from "@/lib/metrics";
 // A fixed-row-height virtualized scroll body. Only rows in (or near) the
 // viewport are mounted, so a 500- or 2,700-row list stays responsive. The
 // caller supplies its own sticky header above this element.
+//
+// Vertical only. Every table that uses this wraps it in its own horizontal
+// scroller for the column set, and `overflow-y: auto` alone promotes the other
+// axis to `auto` too — which put a second horizontal bar directly under the
+// first on every wide table.
 export function VirtualRows<T>({
   items,
   rowHeight = ROW_LIST,
@@ -31,7 +36,7 @@ export function VirtualRows<T>({
   });
 
   return (
-    <div ref={parentRef} className={"h-full overflow-y-auto " + className}>
+    <div ref={parentRef} className={"h-full overflow-y-auto overflow-x-hidden " + className}>
       <div style={{ height: virt.getTotalSize(), position: "relative" }}>
         {virt.getVirtualItems().map((vi) => {
           const item = items[vi.index]!;

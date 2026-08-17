@@ -36,7 +36,7 @@ export default async function SigLayout({ children }: { children: React.ReactNod
           <span>inbound · {unpaired} server-initiated</span>
           <span className="data tnum text-fg-faint">{facts.length}</span>
         </div>
-        <div className="min-h-0 flex-1 overflow-y-auto">
+        <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden">
           {groups.map(([root, items]) => (
             <div key={root}>
               <div className="sticky top-0 border-b border-hair bg-surface-2 px-2.5 py-1 text-xs text-fg-muted">

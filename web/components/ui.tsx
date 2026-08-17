@@ -80,8 +80,22 @@ export function DefRow({
 }
 
 // A scroll region that fills the main content area for document-style pages.
+/**
+ * The vertical scroller for a detail pane.
+ *
+ * `overflow-x-hidden` is not decoration. Setting `overflow-y: auto` and leaving
+ * the other axis `visible` is not a thing CSS allows — the spec promotes
+ * `overflow-x` to `auto` as well, so this element grew its own horizontal
+ * scrollbar underneath the one on whichever code block was too wide. Two bars,
+ * sometimes three once a table was involved.
+ *
+ * Horizontal overflow belongs to the element that owns it: a `<pre>` scrolls
+ * its own code. This one only ever scrolls down.
+ */
 export function Scroll({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={"h-full overflow-y-auto " + className}>{children}</div>;
+  return (
+    <div className={"h-full overflow-y-auto overflow-x-hidden " + className}>{children}</div>
+  );
 }
 
 // Empty detail-pane placeholder for master/detail views.

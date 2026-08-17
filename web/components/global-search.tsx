@@ -134,7 +134,7 @@ export function GlobalSearch() {
       </div>
 
       {open && q.trim().length > 0 && (
-        <div className="bg-popover absolute inset-x-0 top-[calc(100%+3px)] z-50 max-h-[70vh] overflow-y-auto border shadow-lg">
+        <div className="bg-popover absolute inset-x-0 top-[calc(100%+3px)] z-50 max-h-[70vh] overflow-y-auto overflow-x-hidden border shadow-lg">
           {shown.length === 0 ? (
             <p className="text-muted-foreground px-3 py-2 text-sm">
               {entries ? "No fact or module matches." : "Loading index…"}

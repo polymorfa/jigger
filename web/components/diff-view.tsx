@@ -71,7 +71,7 @@ function EntryList({ entries, existing }: { entries: DiffEntry[]; existing: Set<
     return <div className="px-2.5 py-1.5 text-xs text-fg-faint">none</div>;
   }
   return (
-    <div className="max-h-[340px] overflow-y-auto">
+    <div className="max-h-[340px] overflow-y-auto overflow-x-hidden">
       {entries.map((e) => {
         const present = existing.has(e.id);
         const inner = (

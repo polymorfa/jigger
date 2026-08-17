@@ -31,7 +31,7 @@ export default async function MexLayout({ children }: { children: React.ReactNod
           <span>persisted operations</span>
           <span className="data tnum text-fg-faint">{facts.length}</span>
         </div>
-        <div className="min-h-0 flex-1 overflow-y-auto">
+        <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden">
           {groups.map((g) => (
             <div key={g.kind}>
               <div className="sticky top-0 border-b border-hair bg-surface-2 px-2.5 py-1 text-xs text-fg-muted">

@@ -19,7 +19,7 @@ const TYPE_LABEL: Record<IqType, string> = { get: "get", set: "set", unknown: "?
 export function IqList({ groups }: { groups: IqGroup[] }) {
   const pathname = usePathname();
   return (
-    <div className="h-full overflow-y-auto">
+    <div className="h-full overflow-y-auto overflow-x-hidden">
       {groups.map((g) => (
         <section key={g.xmlns}>
           <div className="sticky top-0 z-10 flex items-baseline justify-between gap-2 border-b border-hair-strong bg-surface px-2.5 py-1">
