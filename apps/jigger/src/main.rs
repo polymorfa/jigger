@@ -74,6 +74,19 @@ enum Cmd {
     /// Per-module dependents and export usage — who relies on what.
     Graph,
 
+    /// Which modules really changed between two revisions.
+    ///
+    /// Half a release's modules differ byte-for-byte and most of that is
+    /// minifier renaming. This separates the two.
+    Churn {
+        old: String,
+        new: String,
+        /// Also fuzz the classifier: mutate real modules in ways that are known
+        /// to be renames and known to be edits, and report how it scores.
+        #[arg(long)]
+        fuzz: bool,
+    },
+
     /// Per-module symbol tables, for go-to-definition in the source viewer.
     ///
     /// Precomputed rather than resolved per request: it is a pure function of a
@@ -208,6 +221,92 @@ fn main() -> Result<()> {
                 let path = dir.join(format!("{}.md", repo.name));
                 fs::write(&path, md)?;
                 println!("  {:<16} {} missing -> {}", repo.name, missing.len(), path.display());
+            }
+        }
+
+        Cmd::Churn { old, new, fuzz } => {
+            let (a, b) = (store.resolve(&old)?, store.resolve(&new)?);
+            let (ba, bb) = (store.open_bundle(a)?, store.open_bundle(b)?);
+            let (ia, ib) = (ba.index()?, bb.index()?);
+
+            let old_by: BTreeMap<&str, _> =
+                ia.modules.iter().map(|e| (e.name.as_str(), e)).collect();
+
+            let mut same = 0u32;
+            let mut renamed = 0u32;
+            let mut changed = 0u32;
+            let mut unknown = 0u32;
+            let mut added = 0u32;
+            let mut ranked: Vec<(usize, usize, String)> = Vec::new();
+            let mut fn_total = 0usize;
+            let mut fn_changed = 0usize;
+
+            for e in ib.modules.iter().filter(|e| e.name.starts_with("WA") || e.name.starts_with("MAW")) {
+                let Some(prev) = old_by.get(e.name.as_str()) else { added += 1; continue };
+                let (Ok(before), Ok(after)) = (ba.read_module(prev), bb.read_module(e)) else {
+                    unknown += 1;
+                    continue;
+                };
+                match jigger_extract::shape::compare(&before, &after) {
+                    jigger_extract::shape::Verdict::Same => same += 1,
+                    jigger_extract::shape::Verdict::RenamedOnly => renamed += 1,
+                    jigger_extract::shape::Verdict::Changed => {
+                        changed += 1;
+                        // How much of it changed. A module a release merely
+                        // brushed against and one it rewrote both come back
+                        // "changed"; only this separates them.
+                        let (kept, total) = jigger_extract::shape::function_overlap(&before, &after);
+                        let moved = total.saturating_sub(kept);
+                        fn_total += total;
+                        fn_changed += moved;
+                        ranked.push((moved, total, e.name.clone()));
+                    }
+                    jigger_extract::shape::Verdict::Unknown => unknown += 1,
+                }
+            }
+
+            let differing = renamed + changed;
+            println!("  {a} -> {b}");
+            println!("  {same:>6} identical");
+            println!("  {renamed:>6} renamed only   <- text differs, program does not");
+            println!("  {changed:>6} really changed");
+            println!("  {added:>6} new modules");
+            if unknown > 0 {
+                println!("  {unknown:>6} unparseable (reported, not guessed)");
+            }
+            if differing > 0 {
+                println!(
+                    "\n  {}% of the text diff was noise",
+                    renamed * 100 / differing
+                );
+            }
+            if fn_total > 0 {
+                println!(
+                    "\n  {fn_changed} of {fn_total} functions in those modules actually changed \
+                     ({}%)",
+                    fn_changed * 100 / fn_total
+                );
+            }
+
+            // Ranked by how much moved, because that is the order you would read
+            // them in. A module with one changed function out of sixty is a
+            // minute; the ones at the top are the release.
+            ranked.sort_by(|a, b| b.0.cmp(&a.0));
+            println!("\n  most changed:");
+            for (moved, total, name) in ranked.iter().take(15) {
+                println!("    {moved:>4}/{total:<4} functions   {name}");
+            }
+            let untouched = ranked.iter().filter(|(m, ..)| *m == 0).count();
+            if untouched > 0 {
+                println!(
+                    "\n  {untouched} modules differ but no function changed \
+                     — module-level edits only (a dependency, a constant)"
+                );
+            }
+
+            if *fuzz {
+                println!();
+                jigger_extract::shape::fuzz(&bb, &ib.modules);
             }
         }
 
