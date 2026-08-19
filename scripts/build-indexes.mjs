@@ -10,7 +10,7 @@
  */
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { metaOf } from "./lib/fact-view.mjs";
+import { listOf, metaOf } from "./lib/fact-view.mjs";
 
 const [ir_path, out] = process.argv.slice(2);
 if (!ir_path || !out) {
@@ -65,6 +65,8 @@ for (const f of ir.facts) {
     // The same attribute line the search results show. Derived once, in
     // fact-view.mjs, so a list row and a result row cannot disagree.
     meta: metaOf(f).filter(Boolean).map(String),
+    // What the master pane groups, sorts and filters on.
+    list: listOf(f),
   };
   byKind.set(f.kind, [...(byKind.get(f.kind) ?? []), row]);
 

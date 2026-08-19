@@ -124,3 +124,38 @@ export const termsOf = (f) => {
 // Pre-formatted rather than structured: the client renders these verbatim, so
 // the shapes of nine different payloads stay here instead of turning into a
 // switch in a component.
+
+/**
+ * The fields a master pane groups, sorts and filters on.
+ *
+ * Separate from `metaOf` because they answer different questions. `meta` is
+ * prose for a human scanning results; this is data a list operates on — IQ
+ * groups by namespace, WAM sorts by event id, A/B filters by type and hides
+ * what nothing reads. Formatting those into strings and parsing them back is
+ * how `"id 4750"` becomes a number again, badly.
+ */
+export const listOf = (f) => {
+  const d = f.data ?? {};
+  switch (f.kind) {
+    case "ab":
+      return { oid: d.opaque_id, type: d.type, reads: f.usage?.read_count ?? 0 };
+    case "wam":
+      return { event: d.event_id, fields: Object.keys(d.fields ?? {}).length };
+    case "iq":
+      return { ns: d.xmlns, type: d.type };
+    case "mex":
+      return { op: d.operation, doc: d.doc_id };
+    // `responds_to` itself is not shown; what a list distinguishes is whether
+    // the stanza answers something we sent or arrives unprompted.
+    case "sig":
+      return { root: d.root, answers: Boolean(d.responds_to) };
+    case "enum":
+      return { variants: (d.variants ?? []).length };
+    case "appstate":
+      return { index: d.index_name };
+    case "const":
+      return { group: d.group };
+    default:
+      return {};
+  }
+};

@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { usePath } from "@/lib/route";
 import Link from "next/link";
 import { CheckIcon } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { VirtualRows } from "./virtual-rows";
 import { browseHref } from "@/lib/ids";
 
@@ -42,7 +42,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
 }
 
 export function AbTable({ rows, types }: { rows: AbRow[]; types: string[] }) {
-  const pathname = usePathname();
+  const pathname = usePath() ?? "";
   const [read, setRead] = useState<ReadState>("all");
   const [typeOn, setTypeOn] = useState<Set<string>>(new Set(types));
   const [sort, setSort] = useState<Sort>("name");

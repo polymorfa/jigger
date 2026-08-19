@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePath } from "@/lib/route";
 import { browseHref } from "@/lib/ids";
 import type { IqType } from "@/lib/types";
 
@@ -15,7 +15,7 @@ export type IqGroup = { xmlns: string; items: IqItem[] };
 const TYPE_LABEL: Record<IqType, string> = { get: "get", set: "set", unknown: "?" };
 
 export function IqList({ groups }: { groups: IqGroup[] }) {
-  const pathname = usePathname();
+  const pathname = usePath() ?? "";
   return (
     <div className="h-full overflow-y-auto overflow-x-hidden">
       {groups.map((g) => (

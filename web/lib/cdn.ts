@@ -7,7 +7,7 @@
 // writes per-fact and per-module files alongside `ir.json`: the 12 MB ledger is
 // the archive, and these are what a reader actually opens.
 
-import type { Fact, FactKind, Ir } from "./types";
+import type { Fact, FactKind, Ir, IqType } from "./types";
 
 /**
  * Where the payload lives.
@@ -114,21 +114,42 @@ export async function fetchTextOptional(path: string): Promise<string | null> {
 // Indexes — enough to render a list, and no more.
 // ---------------------------------------------------------------------------
 
+/**
+ * What a master pane groups, sorts and filters on, per kind.
+ *
+ * Typed rather than pre-formatted: IQ groups by namespace, WAM sorts by event
+ * id, A/B filters by type and counts what nothing reads. A list cannot do any
+ * of that against `"id 4750"`.
+ */
+export type ListFields = {
+  ab: { oid: number; type: string; reads: number };
+  wam: { event: number; fields: number };
+  iq: { ns: string; type: IqType };
+  mex: { op: "query" | "mutation"; doc: string };
+  sig: { root: string; answers: boolean };
+  enum: { variants: number };
+  appstate: { index: string };
+  const: { group: string };
+  proto: Record<string, never>;
+};
+
 /** A fact as a list needs it: what to show, and where the full record is. */
-export type IndexRow = {
+export type IndexRow<K extends FactKind = FactKind> = {
   id: string;
   name: string;
   /** The file under `ir/<kind>/`. Absent if the extraction wrote no record. */
   slug?: string;
+  /** Prose attributes, for a human scanning. */
   meta: string[];
+  list: ListFields[K];
 };
 
 export type ModuleRow = { name: string; facts: number };
 
 export type KindRow = { kind: FactKind; count: number };
 
-export const loadKindIndex = (kind: FactKind): Promise<IndexRow[]> =>
-  fetchJson<IndexRow[]>(`index/${kind}.json`);
+export const loadKindIndex = <K extends FactKind>(kind: K): Promise<IndexRow<K>[]> =>
+  fetchJson<IndexRow<K>[]>(`index/${kind}.json`);
 
 export const loadModuleIndex = (): Promise<ModuleRow[]> => fetchJson<ModuleRow[]>("index/modules.json");
 

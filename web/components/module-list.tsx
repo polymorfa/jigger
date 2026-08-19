@@ -1,11 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useMemo, useState } from "react";
+import { usePath } from "@/lib/route";
 import { VirtualRows } from "@/components/virtual-rows";
-
-export type ModuleRow = { name: string; facts: number };
+import type { ModuleRow } from "@/lib/cdn";
 
 /**
  * The module sidebar.
@@ -16,7 +15,7 @@ export type ModuleRow = { name: string; facts: number };
  */
 export function ModuleList({ rows }: { rows: ModuleRow[] }) {
   const [q, setQ] = useState("");
-  const pathname = usePathname();
+  const pathname = usePath() ?? "";
   const active = decodeURIComponent(pathname.replace(/^\/source\//, ""));
 
   const shown = useMemo(() => {
@@ -35,7 +34,7 @@ export function ModuleList({ rows }: { rows: ModuleRow[] }) {
         />
       </div>
       <div className="flex items-baseline justify-between border-b border-hair px-2.5 py-1 text-xs text-fg-muted">
-        <span>modules cited by a fact</span>
+        <span>modules</span>
         <span className="data tnum text-fg-faint">{shown.length}</span>
       </div>
       <div className="min-h-0 flex-1">

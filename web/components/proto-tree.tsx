@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { usePath } from "@/lib/route";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { loadSearchIndex } from "@/lib/client-index";
 import { browseHref } from "@/lib/ids";
 import {
   ancestorKeys,
@@ -27,21 +26,14 @@ import { ROW_TREE } from "@/lib/metrics";
  * Virtualized because a fully expanded tree is thousands of rows, and filtering
  * expands everything that matches.
  */
-export function ProtoTree() {
-  const pathname = usePathname();
-  const [names, setNames] = useState<ProtoName[] | null>(null);
+export function ProtoTree({ names }: { names: ProtoName[] }) {
+  const pathname = usePath() ?? "";
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState("");
 
-  useEffect(() => {
-    loadSearchIndex().then((idx) =>
-      setNames(idx.filter((e) => e.kind === "proto").map((e) => ({ id: e.id, name: e.name }))),
-    );
-  }, []);
-
   const q = filter.trim().toLowerCase();
   const shown = useMemo(
-    () => (names ?? []).filter((n) => !q || n.name.toLowerCase().includes(q)),
+    () => names.filter((n) => !q || n.name.toLowerCase().includes(q)),
     [names, q],
   );
   const roots = useMemo(() => buildProtoTree(shown), [shown]);
@@ -68,7 +60,6 @@ export function ProtoTree() {
   // Reveal the message the URL is on, so arriving by link does not land you in
   // a collapsed tree with no indication of where you are.
   useEffect(() => {
-    if (!names) return;
     const id = decodeURIComponent(pathname.replace(/^\/proto\/?/, ""));
     if (!id) return;
     const hit = names.find((n) => n.id.endsWith(id) || n.name === id);

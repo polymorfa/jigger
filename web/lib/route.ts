@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 /**
  * The address bar, as state.
@@ -17,6 +18,11 @@ import { useEffect, useState } from "react";
  * rendered; callers show their loading state for that frame.
  */
 function useLocation(): { pathname: string; search: URLSearchParams } | null {
+  // Next's pathname is the wrong *value* — under a rewrite it is the
+  // placeholder the page was built with — but it is the right *signal*: it
+  // changes on every client-side navigation, which `popstate` does not. So it
+  // drives the read, and the read goes to the address bar.
+  const routed = usePathname();
   const [loc, setLoc] = useState<{ pathname: string; search: URLSearchParams } | null>(null);
 
   useEffect(() => {
@@ -26,12 +32,9 @@ function useLocation(): { pathname: string; search: URLSearchParams } | null {
         search: new URLSearchParams(window.location.search),
       });
     read();
-    // Two of these pages are the same route under different rewrites, so
-    // navigating between them does not remount anything. The address bar has to
-    // be watched rather than read once.
     window.addEventListener("popstate", read);
     return () => window.removeEventListener("popstate", read);
-  }, []);
+  }, [routed]);
 
   return loc;
 }
@@ -48,4 +51,12 @@ export function useRouteTail(prefix: string): string | null {
 export function useQueryParam(key: string): string | null {
   const loc = useLocation();
   return loc?.search.get(key) ?? null;
+}
+
+/**
+ * The real pathname, as `usePathname()` would report it if rewrites did not
+ * exist. Null until mounted.
+ */
+export function usePath(): string | null {
+  return useLocation()?.pathname ?? null;
 }

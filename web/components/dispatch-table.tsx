@@ -79,9 +79,16 @@ function Row({ route, depth }: { route: Route; depth: number }) {
           <span className="text-2xs text-cov-missing">no handler reached</span>
         )}
       </div>
-      {kids.map((k) => (
-        <Row key={`${route.value}/${k.value}`} route={k} depth={depth + 1} />
-      ))}
+      {/* A nested list, not bare `<li>`s. Depth is drawn with padding, so this
+          is invisible — but `<li>` inside `<li>` is invalid HTML and the parser
+          rewrites it, which shows up as a hydration mismatch. */}
+      {kids.length > 0 && (
+        <ul>
+          {kids.map((k) => (
+            <Row key={`${route.value}/${k.value}`} route={k} depth={depth + 1} />
+          ))}
+        </ul>
+      )}
     </li>
   );
 }

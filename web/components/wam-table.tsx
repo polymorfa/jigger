@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePath } from "@/lib/route";
 import { VirtualRows } from "./virtual-rows";
 import { browseHref } from "@/lib/ids";
 
@@ -13,7 +13,7 @@ export type WamRow = {
 };
 
 export function WamTable({ rows }: { rows: WamRow[] }) {
-  const pathname = usePathname();
+  const pathname = usePath() ?? "";
 
   return (
     <div className="flex h-full min-h-0 flex-col">
