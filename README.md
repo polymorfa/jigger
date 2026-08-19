@@ -105,6 +105,11 @@ fetches exactly the artifact a page needs, and nothing opens the 12 MB ledger.
 `scripts/pack-data.sh` builds that payload and CI publishes it to the `data`
 branch, replaced wholesale each release.
 
+Vercel is given no `outputDirectory`. `output: "export"` writes `out/`, but
+`routes-manifest.json` stays in `.next/` — naming `out/` sends the Next builder
+looking for a manifest where it will never be. Default detection finds the
+export on its own.
+
 ### Deploying
 
 | variable | meaning |
