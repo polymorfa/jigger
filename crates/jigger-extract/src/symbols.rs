@@ -57,6 +57,13 @@ pub struct Symbols {
     pub hash: String,
     pub decls: Vec<Decl>,
     pub refs: Vec<Ref>,
+    /// Factory parameters to rename, against the text *before* renaming.
+    ///
+    /// The viewer applies these first; `hash`, `decls` and `refs` all describe
+    /// the text that results. Ordered by position, and applied back-to-front
+    /// within a line so earlier columns stay valid.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub renames: Vec<Rename>,
 }
 
 /// `__d(` -> `define(`, and the minified require -> `require(`.
@@ -90,6 +97,82 @@ pub fn rewrite(src: &str) -> String {
         .into_owned()
 }
 
+/// One rename: line, column and length in the rewritten text, and the name to
+/// put there.
+///
+/// Shipped as explicit spans rather than as a rule the viewer re-derives,
+/// because this substitution cannot be done textually and the viewer has no
+/// parser. `t`, `n`, `r`, `o`, `a`, `i` and `l` are the factory's parameters and
+/// also the first seven names the minifier hands out to locals, so the same
+/// letters appear as unrelated bindings in every nested function in the module.
+/// A textual pass would rewrite all of them; only the symbol table can tell the
+/// parameter from the sixty other `t`s.
+pub type Rename = (u32, u32, u32, String);
+
+/// Byte spans of every occurrence of the factory's parameters, with the name
+/// each should take.
+///
+/// Includes the declaration in the signature, so the header reads
+/// `function(global, require, importDefault, …)` and the body agrees with it.
+pub fn factory_renames(src: &str) -> Vec<(usize, usize, String)> {
+    let alloc = Allocator::default();
+    let parsed = Parser::new(&alloc, src, SourceType::cjs()).parse();
+    if parsed.panicked {
+        return vec![];
+    }
+    let semantic = SemanticBuilder::new()
+        .with_build_nodes(true)
+        .build(&parsed.program)
+        .semantic;
+    let scoping = semantic.scoping();
+
+    let Some(factory) = crate::factory::factory_of(&parsed.program) else {
+        return vec![];
+    };
+    let layout =
+        crate::factory::layout_of(factory, &crate::factory::deps_of(&parsed.program), scoping);
+
+    let mut out = Vec::new();
+    for (i, param) in factory.params.items.iter().enumerate() {
+        let oxc_ast::ast::BindingPattern::BindingIdentifier(id) = &param.pattern else {
+            continue;
+        };
+        let Some(name) = layout.name(i) else { continue };
+        // A module that already names its parameters needs no help, and
+        // rewriting `exports` to `exports` would only be a chance to get the
+        // offsets wrong.
+        if id.name == name {
+            continue;
+        }
+        let Some(sym) = id.symbol_id.get() else {
+            continue;
+        };
+
+        let span = scoping.symbol_span(sym);
+        out.push((span.start as usize, span.end as usize, name.to_string()));
+        for r in scoping.get_resolved_references(sym) {
+            let rspan = semantic.nodes().get_node(r.node_id()).kind().span();
+            if rspan.start == span.start {
+                continue;
+            }
+            out.push((rspan.start as usize, rspan.end as usize, name.to_string()));
+        }
+    }
+    out.sort_unstable_by_key(|(s, ..)| *s);
+    out
+}
+
+/// Apply byte spans back-to-front, so earlier offsets stay valid as we go.
+pub fn apply_renames(src: &str, spans: &[(usize, usize, String)]) -> String {
+    let mut out = src.to_string();
+    for (start, end, name) in spans.iter().rev() {
+        if *end <= out.len() && out.is_char_boundary(*start) && out.is_char_boundary(*end) {
+            out.replace_range(*start..*end, name);
+        }
+    }
+    out
+}
+
 fn fnv1a(s: &str) -> String {
     let mut h: u64 = 0xcbf2_9ce4_8422_2325;
     for b in s.as_bytes() {
@@ -117,7 +200,10 @@ impl Lines {
     }
 
     fn at(&self, src: &str, offset: usize) -> (u32, u32) {
-        let line = self.starts.partition_point(|&s| s <= offset).saturating_sub(1);
+        let line = self
+            .starts
+            .partition_point(|&s| s <= offset)
+            .saturating_sub(1);
         let start = self.starts[line];
         // Counted in characters, not bytes: the viewer indexes into JavaScript
         // strings, where a multi-byte character is one position.
@@ -132,7 +218,21 @@ impl Lines {
 /// worse than none: it links some identifiers and silently leaves others dead,
 /// which reads as "that one has no definition" rather than "we could not tell".
 pub fn symbols(raw: &str) -> Option<Symbols> {
-    let src = rewrite(raw);
+    // Three stages, in this order. The first is textual and duplicated in the
+    // viewer; the second needs a binder and so is shipped as spans rather than
+    // as a rule; everything after describes the result of both.
+    let rewritten = rewrite(raw);
+    let spans = factory_renames(&rewritten);
+    let rename_lines = Lines::new(&rewritten);
+    let renames: Vec<Rename> = spans
+        .iter()
+        .map(|(start, end, name)| {
+            let (l, c) = rename_lines.at(&rewritten, *start);
+            (l, c, (end - start) as u32, name.clone())
+        })
+        .collect();
+    let src = apply_renames(&rewritten, &spans);
+
     let alloc = Allocator::default();
     let parsed = Parser::new(&alloc, &src, SourceType::cjs()).parse();
     if parsed.panicked || !parsed.diagnostics.is_empty() {
@@ -173,7 +273,12 @@ pub fn symbols(raw: &str) -> Option<Symbols> {
 
     decls.sort_unstable();
     refs.sort_unstable();
-    Some(Symbols { hash: fnv1a(&src), decls, refs })
+    Some(Symbols {
+        hash: fnv1a(&src),
+        decls,
+        refs,
+        renames,
+    })
 }
 
 #[cfg(test)]
@@ -188,11 +293,58 @@ __d("M", ["Dep"], (function(t, n, r, o, a, i, l) {
 }), 98);
 "#;
 
+    /// The whole reason this cannot be a regex: `t` is the factory's `global`
+    /// and also a parameter of `u`, and only one of them may be renamed.
+    #[test]
+    fn only_the_factorys_own_parameter_is_renamed() {
+        let out = apply_renames(&rewrite(SRC), &factory_renames(&rewrite(SRC)));
+        assert!(
+            out.contains("function(global, require, importDefault, importNamespace, requireLazy, module, exports)"),
+            "signature not rewritten:\n{out}"
+        );
+        assert!(
+            out.contains("exports.go = u;"),
+            "exports use not rewritten:\n{out}"
+        );
+        // `u`'s own `t` shadows the factory's and must survive untouched.
+        assert!(
+            out.contains("function u(t) { return s(t); }"),
+            "inner `t` was clobbered:\n{out}"
+        );
+    }
+
+    /// A six-parameter factory is the other convention, and `i` is its exports.
+    #[test]
+    fn the_short_convention_is_renamed_to_its_own_names() {
+        let src = r#"__d("M", [], (function(t, n, r, o, a, i) { i.x = 1; }), 98);"#;
+        let out = apply_renames(&rewrite(src), &factory_renames(&rewrite(src)));
+        assert!(out.contains("exports.x = 1"), "{out}");
+        assert!(
+            out.contains("requireDynamic, requireLazy, module, exports"),
+            "{out}"
+        );
+    }
+
+    /// The hash describes the text after renaming, because that is the text the
+    /// viewer puts on screen. Shipping a hash of the intermediate would make
+    /// every module look like a drift failure.
+    #[test]
+    fn the_hash_covers_the_renamed_text() {
+        let sym = symbols(SRC).expect("parses");
+        let expected = apply_renames(&rewrite(SRC), &factory_renames(&rewrite(SRC)));
+        assert_eq!(sym.hash, fnv1a(&expected));
+        assert!(!sym.renames.is_empty(), "renames should be shipped");
+    }
+
     #[test]
     fn a_reference_resolves_to_its_own_scope() {
         let sym = symbols(SRC).expect("parses");
         // `s` is declared on line 3 and referenced on line 4.
-        let call = sym.refs.iter().find(|(l, ..)| *l == 4).expect("reference on line 4");
+        let call = sym
+            .refs
+            .iter()
+            .find(|(l, ..)| *l == 4)
+            .expect("reference on line 4");
         assert_eq!(call.3, 3, "should resolve to the declaration on line 3");
     }
 
@@ -206,13 +358,26 @@ __d("M", ["Dep"], (function(t, n, r, o, a, i, l) {
     }
 
     #[test]
-    fn offsets_are_against_the_rewritten_text() {
+    fn offsets_are_against_the_text_the_viewer_renders() {
         let sym = symbols(SRC).expect("parses");
-        let out = rewrite(SRC);
-        assert!(out.contains("define("), "the rewrite ran before parsing");
-        // Anything computed against the raw text would be three columns off on
-        // the header line, which is exactly the kind of wrong that still looks
-        // like it works.
+        let step = rewrite(SRC);
+        assert!(step.contains("define("), "the rewrite ran before parsing");
+        // Both stages, not just the first. Anything computed against the raw
+        // text would be three columns off on the header line, and anything
+        // computed before renaming would be off by the length of every
+        // parameter name — both being the kind of wrong that still looks like
+        // it works, because a link lands somewhere plausible.
+        let out = apply_renames(&step, &factory_renames(&step));
         assert_eq!(sym.hash, super::fnv1a(&out));
+    }
+
+    /// A module with no recognisable factory must still produce a table rather
+    /// than nothing: bundle bootstrap code is not a module definition, and it is
+    /// still worth being able to click through.
+    #[test]
+    fn a_module_without_a_factory_still_resolves() {
+        let sym = symbols("var a = 1; function f() { return a; }").expect("parses");
+        assert!(sym.renames.is_empty());
+        assert!(!sym.decls.is_empty());
     }
 }

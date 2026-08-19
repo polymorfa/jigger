@@ -87,6 +87,25 @@ enum Cmd {
         fuzz: bool,
     },
 
+    /// Which code change moved which fact — and which ones moved nothing.
+    ///
+    /// The fact diff says the protocol changed; the shape diff says which
+    /// functions changed. Neither alone tells you why. This joins them, and the
+    /// answer it gives that neither can is the *silent* one: a module a fact was
+    /// read from whose code really changed while every fact in it stayed put.
+    /// That is a change no extractor models, and no amount of diffing extracted
+    /// IR will ever surface it.
+    Observe {
+        /// The two extracted trees, oldest first. Revisions are read from them.
+        a: PathBuf,
+        b: PathBuf,
+        /// How many import hops to search before calling a fact unexplained. A
+        /// fact is assembled out of what its module imports, so a constant
+        /// changing one hop away moves it while its own module stays identical.
+        #[arg(long, default_value_t = 2)]
+        depth: u32,
+    },
+
     /// Per-module symbol tables, for go-to-definition in the source viewer.
     ///
     /// Precomputed rather than resolved per request: it is a pure function of a
@@ -308,6 +327,132 @@ fn main() -> Result<()> {
                 println!();
                 jigger_extract::shape::fuzz(&bb, &ib.modules);
             }
+        }
+
+        Cmd::Observe { a, b, depth } => {
+            let (ia, ib) = (read_ir(a)?, read_ir(b)?);
+            let (ra, rb) = (store.resolve(&ia.revision.to_string())?, store.resolve(&ib.revision.to_string())?);
+            let (ba, bb) = (store.open_bundle(ra)?, store.open_bundle(rb)?);
+            let (xa, xb) = (ba.index()?, bb.index()?);
+
+            let by_id = |ir: &Ir| -> BTreeMap<String, Fact> {
+                ir.facts.iter().map(|f| (f.id.clone(), f.clone())).collect()
+            };
+            let (ma, mb) = (by_id(&ia), by_id(&ib));
+
+            // What moved, and which module each one was read from. A removed
+            // fact's module comes from the old revision — it is the only side
+            // that still has one.
+            let mut changes = Vec::new();
+            for (id, f) in &mb {
+                let how = match ma.get(id) {
+                    None => "added",
+                    Some(old) if old.data != f.data => "changed",
+                    _ => continue,
+                };
+                changes.push(jigger_extract::observe::FactChange {
+                    id: id.clone(),
+                    kind: f.kind.as_str().to_string(),
+                    name: f.name.clone(),
+                    module: f.evidence.module.clone(),
+                    how: how.into(),
+                });
+            }
+            for (id, f) in &ma {
+                if !mb.contains_key(id) {
+                    changes.push(jigger_extract::observe::FactChange {
+                        id: id.clone(),
+                        kind: f.kind.as_str().to_string(),
+                        name: f.name.clone(),
+                        module: f.evidence.module.clone(),
+                        how: "removed".into(),
+                    });
+                }
+            }
+
+            eprintln!("  {} -> {}  ({} facts moved)", ia.revision, ib.revision, changes.len());
+            let mut obs = jigger_extract::observe::observe(
+                &ba, &bb, &xa.modules, &xb.modules, &changes, *depth,
+            );
+
+            // The silent half needs the whole fact-to-module map, not just the
+            // facts that moved — silence is defined by what did *not* move.
+            let mut fact_modules: BTreeMap<String, Vec<String>> = BTreeMap::new();
+            for f in &ib.facts {
+                fact_modules.entry(f.evidence.module.clone()).or_default().push(f.id.clone());
+            }
+            let moved: BTreeSet<String> = changes.iter().map(|c| c.id.clone()).collect();
+            obs.silent = jigger_extract::observe::silent_scan(
+                &ba, &bb, &xa.modules, &xb.modules, &fact_modules, &moved,
+            );
+
+            let s = &obs.stats;
+            println!("\n  attributed  {:>5}  of {} facts that moved", s.facts_attributed, s.facts_moved);
+            println!("  unexplained {:>5}  moved with nothing changed in reach", obs.unexplained.len());
+            println!("  silent      {:>5}  modules changed under facts that did not", obs.silent.len());
+            println!("\n  {} functions changed across {} of {} modules read",
+                     s.functions_changed, s.modules_changed, s.modules_examined);
+
+            let fresh = obs.attributed.iter().filter(|a| a.module_status != "both").count();
+            if fresh > 0 {
+                println!("  {fresh} of those are in modules that did not exist on both sides");
+            }
+
+            // Grouped by the code, not by the fact. One function that moved
+            // four hundred A/B flags is one thing that happened, and listing it
+            // four hundred times buries the other nine things next to it.
+            let mut by_site: BTreeMap<(String, String, u32), Vec<&str>> = BTreeMap::new();
+            for a in obs.attributed.iter().filter(|a| !a.sites.is_empty()) {
+                let s = &a.sites[0];
+                by_site
+                    .entry((s.module.clone(), s.function.clone(), s.hops))
+                    .or_default()
+                    .push(&a.id);
+            }
+            let mut sites: Vec<_> = by_site.into_iter().collect();
+            sites.sort_by(|a, b| b.1.len().cmp(&a.1.len()));
+
+            if !sites.is_empty() {
+                println!("\n  what moved, and the code that moved it:");
+                for ((module, function, hops), ids) in sites.iter().take(14) {
+                    let at = if *hops == 0 {
+                        String::new()
+                    } else {
+                        format!(" · {hops} hop{} away", if *hops == 1 { "" } else { "s" })
+                    };
+                    println!("    {module}  {function}(){at}");
+                    println!(
+                        "      {} fact{}: {}{}",
+                        ids.len(),
+                        if ids.len() == 1 { "" } else { "s" },
+                        ids.iter().take(3).copied().collect::<Vec<_>>().join(", "),
+                        if ids.len() > 3 { format!(", and {} more", ids.len() - 3) } else { String::new() },
+                    );
+                }
+            }
+
+            // The category no fact diff can produce. Printed last because it is
+            // the one worth reading when the rest looks fine.
+            if !obs.silent.is_empty() {
+                println!("\n  silent changes — real logic, no fact moved:");
+                for s in obs.silent.iter().take(12) {
+                    println!("    {:>3} functions  {:<52} {} dependents", s.sites.len(), s.module, s.dependents);
+                    for site in s.sites.iter().take(3) {
+                        println!("        {} {}()", site.how, site.function);
+                    }
+                }
+            }
+
+            if !obs.unexplained.is_empty() {
+                println!("\n  unexplained — a fact moved and no code did. Ours to explain, not theirs:");
+                for u in obs.unexplained.iter().take(8) {
+                    println!("    {:<9} {:<44} {}", u.how, u.id, u.module);
+                }
+            }
+
+            fs::create_dir_all(&cli.out)?;
+            fs::write(cli.out.join("observe.json"), serde_json::to_string(&obs)? + "\n")?;
+            eprintln!("\n  -> {}/observe.json", cli.out.display());
         }
 
         Cmd::Graph => {

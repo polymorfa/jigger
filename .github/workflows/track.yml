@@ -107,6 +107,37 @@ jobs:
           git show origin/data:ir.json > .prev/ir.json 2>/dev/null || echo '{"facts":[]}' > .prev/ir.json
           ./target/release/jigger --out .next diff .prev .next || true
 
+      # Which code moved which fact. The fact diff above says the protocol
+      # changed; this says where, by function, and — more usefully — which
+      # modules changed for real while every fact in them stayed put. That last
+      # category is the only signal we get that an extractor is missing
+      # something, and it cannot be derived from facts, because it is defined by
+      # their absence.
+      #
+      # Needs both revisions' source, and only the new one is fetched above. The
+      # previous bundle is re-fetched from the CDN, which stops serving old
+      # revisions eventually — so this degrades to "not available" rather than
+      # failing the run. A release note is worth having when it can be had, and
+      # never worth blocking a release over.
+      - name: Observe what changed
+        id: observe
+        if: steps.changed.outputs.new == 'true'
+        continue-on-error: true
+        run: |
+          PREV=$(git show origin/data:revision.json 2>/dev/null | jq -r .revision) || exit 0
+          [ -n "$PREV" ] && [ "$PREV" != "null" ] || exit 0
+
+          # `--rev` is exact, so this either gets that revision or nothing. A
+          # near-miss would silently attribute changes to the wrong baseline.
+          if ! cellar bundle add --rev "$PREV" --quiet; then
+            echo "revision $PREV is no longer served; skipping observation"
+            exit 0
+          fi
+
+          ./target/release/jigger --out .prevfacts extract "$PREV"
+          ./target/release/jigger --out .next observe .prevfacts .next
+          echo "ok=true" >> "$GITHUB_OUTPUT"
+
       - name: Pack the payload
         if: steps.changed.outputs.new == 'true'
         run: ./scripts/pack-data.sh .next "${{ steps.fetch.outputs.modules }}" .payload
@@ -158,18 +189,53 @@ jobs:
               "| \(.key) | \(.value.added) | \(.value.changed) | \(.value.removed) |"] | join("\n"))
           ' .next/diff.json 2>/dev/null || echo "_(no diff available)_")
 
+          # What the table above cannot say. Silent changes come first because
+          # they are the ones nobody would otherwise look for: a stanza parser
+          # that changed while every fact it produces stayed identical is either
+          # a protocol change we do not model yet or an extractor that has
+          # stopped seeing something. Unexplained comes last and is about us —
+          # a fact that moved with no code behind it means the extraction is not
+          # reproducible, and it should be embarrassing in public.
+          OBSERVED=""
+          if [ -f .next/observe.json ]; then
+            OBSERVED=$(jq -r '
+              "### What moved the facts\n\n" +
+              "`\(.stats.facts_attributed)` of `\(.stats.facts_moved)` changed facts trace to a specific function; " +
+              "`\(.stats.functions_changed)` functions changed across `\(.stats.modules_changed)` modules.\n\n" +
+              (if (.silent | length) > 0 then
+                "**Changed code that moved no fact — \(.silent | length) module(s).** Worth a look: either the protocol moved somewhere we do not model, or an extractor stopped seeing something.\n\n" +
+                "| module | functions | dependents |\n|---|---|---|\n" +
+                ([.silent[:10][] |
+                  "| `\(.module)` | \([.sites[:4][] | "`\(.function)`"] | join(", ")) | \(.dependents) |"] | join("\n")) + "\n\n"
+              else "" end) +
+              (if (.unexplained | length) > 0 then
+                "**\(.unexplained | length) fact(s) moved with no code change in reach.** That is a defect in this pipeline, not a finding about WhatsApp — most likely a non-reproducible extractor.\n\n" +
+                ([.unexplained[:10][] | "- `\(.id)` — `\(.module)`"] | join("\n")) + "\n"
+              else "" end)
+            ' .next/observe.json 2>/dev/null || echo "")
+          fi
+
+          # Built into a file rather than a heredoc. A heredoc's body has to
+          # start at column 1 to avoid indenting the output, and column 1 ends
+          # the YAML block scalar this whole script lives in — so the workflow
+          # did not parse, and every run failed before it reached a single step.
+          # `--body-file` keeps the text indented, which keeps it inside the
+          # block, and costs nothing.
+          {
+            printf 'Extracted from WhatsApp Web revision `%s`.\n\n' "$REV"
+            printf '%s\n\n' "$SUMMARY"
+            # `if`, not `[ … ] && …`: the latter returns non-zero when the
+            # observation is absent, and the runner's `set -e` would abort the
+            # release on the one path that is expected to be empty.
+            if [ -n "$OBSERVED" ]; then printf '%s\n\n' "$OBSERVED"; fi
+            printf 'Every module of this revision is in `modules/` — the whole bundle, not a\n'
+            printf 'subset, so the viewer can follow any reference. The branch is orphaned each\n'
+            printf 'release, so it is always exactly this revision.\n\n'
+            printf 'The same source is also attached to the [`rev/%s`](../../releases/tag/rev/%s)\n' "$REV" "$REV"
+            printf 'release as a single archive, which is the copy that keeps history.\n'
+          } > pr-body.md
+
           gh pr create --base data --head "$BRANCH" \
             --title "revision $REV" \
-            --body "$(cat <<EOF
-Extracted from WhatsApp Web revision \`$REV\`.
-
-$SUMMARY
-
-Every module of this revision is in \`modules/\` — the whole bundle, not a
-subset, so the viewer can follow any reference. The branch is orphaned each
-release, so it is always exactly this revision.
-
-The same source is also attached to the [\`rev/$REV\`](../../releases/tag/rev/$REV)
-release as a single archive, which is the copy that keeps history.
-EOF
-)" || gh pr edit "$BRANCH" --body "Updated for revision $REV."
+            --body-file pr-body.md \
+            || gh pr edit "$BRANCH" --body-file pr-body.md

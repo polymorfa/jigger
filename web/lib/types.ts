@@ -287,6 +287,71 @@ export type Diff = {
   changed: Record<string, DiffEntry[]>;
 };
 
+// --- observe.json (bundled analysis artifact) ---
+
+/**
+ * A function that changed, named by whatever survives minification.
+ *
+ * `function` is the export name where there is one — a Metro module declares
+ * everything under minified locals and publishes at the bottom, and the
+ * published name is the only one that means the same thing next release. `#7`
+ * is an unnamed function, numbered by position.
+ */
+export type ObserveSite = {
+  module: string;
+  function: string;
+  /** 0 in the fact's own module, 1 in something that module imports. */
+  hops: number;
+  /** Byte offsets into the new revision of the module. 0 for a removed one,
+   *  whose offsets describe a file the viewer does not have open. */
+  start: number;
+  end: number;
+  tokens: number;
+  how: "changed" | "added" | "removed";
+};
+
+/** A fact that moved, and the code that moved it. */
+export type Attributed = {
+  id: string;
+  kind: string;
+  name: string;
+  module: string;
+  how: "added" | "removed" | "changed";
+  /** `both`, `new`, `gone`. A fact in a module that did not exist last revision
+   *  is explained by that alone and has no function diff to show. */
+  module_status: string;
+  sites: ObserveSite[];
+};
+
+/**
+ * A module whose code really changed while every fact read from it stayed put.
+ *
+ * The category no fact-level diff can produce, because it is defined by the
+ * absence of a fact: either the protocol moved somewhere nothing models yet, or
+ * an extractor stopped seeing something it used to see.
+ */
+export type Silent = {
+  module: string;
+  sites: ObserveSite[];
+  facts: string[];
+  dependents: number;
+};
+
+export type Observed = {
+  attributed: Attributed[];
+  silent: Silent[];
+  /** A fact moved and no code in reach did. A defect in the pipeline, not a
+   *  finding about WhatsApp. */
+  unexplained: Attributed[];
+  stats: {
+    facts_moved: number;
+    facts_attributed: number;
+    modules_examined: number;
+    modules_changed: number;
+    functions_changed: number;
+  };
+};
+
 // --- coverage.json (bundled analysis artifact) ---
 
 export type CoverageState = "covered" | "missing" | "inconclusive";

@@ -5,7 +5,7 @@ import { SourceView } from "@/components/source-view";
 import { Scroll } from "@/components/ui";
 import { getSnapshotResult } from "@/lib/data";
 import { fetchModule, lineOfMatch, loadModule, memberLine } from "@/lib/module-source";
-import { fetchSymbols, loadSymbols } from "@/lib/module-symbols";
+import { applyRenames, fetchSymbols, loadSymbols } from "@/lib/module-symbols";
 import { ModuleGraphPanel } from "@/components/module-graph";
 import { loadModuleGraph } from "@/lib/module-graph";
 import { makeGithubSource } from "@/lib/source";
@@ -64,11 +64,20 @@ export default async function SourcePage({ params, searchParams }: Params) {
   // `?m=` carries two different things. An evidence pattern is a regex to match;
   // a member name came from a click-through and wants the definition, not the
   // first line that happens to mention it.
-  // Symbols are keyed to the rewritten text, so it is computed once here and
-  // handed to the viewer rather than derived twice.
-  const shown = rewriteModule(src);
+  // Two stages. The first is textual — `__d` becomes `define`, the minified
+  // require becomes `require` — and is duplicated in Rust so the offsets can be
+  // precomputed. The second gives the factory's parameters their names, and
+  // cannot be done here: telling the factory's `t` from the `t` of every nested
+  // function needs a binder, so the spans are resolved at extraction time and
+  // arrive with the symbol table.
+  //
+  // Which means the table is loaded against the intermediate text and the
+  // rendered text is derived from the table. When there is none, the module
+  // still renders — as `t, n, r, o, a, i, l`, which is what it says on disk.
+  const rewritten = rewriteModule(src);
   const symbols =
-    loadSymbols(name, shown) ?? (remote ? await fetchSymbols(remote, name, shown) : null);
+    loadSymbols(name, rewritten) ?? (remote ? await fetchSymbols(remote, name, rewritten) : null);
+  const shown = symbols ? applyRenames(rewritten, symbols.renames) : rewritten;
 
   // Who relies on this, and on which export. The direction the source itself
   // cannot answer.
