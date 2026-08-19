@@ -37,6 +37,10 @@ done
 python3 "$(dirname "$0")/reachable-modules.py" "$MODULES" "$OUT/modules" > /dev/null
 n=$(find "$OUT/modules" -name '*.js' | wc -l | tr -d ' ')
 
+# Per-kind indexes. A list page needs a name and an attribute line, not the
+# 12 MB ledger — `/appstate` is 6.9 KB this way.
+node "$(dirname "$0")/build-indexes.mjs" "$OUT/ir.json" "$OUT/index" > /dev/null
+
 # One manifest, so a reader can tell what it is holding without listing a
 # directory of five thousand files.
 jq -n \
