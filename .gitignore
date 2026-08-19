@@ -2,7 +2,10 @@ target/
 web/node_modules/
 web/.next/
 web/content/spec/
-web/public/data/
+# No trailing slash: with one this matches a directory only, and a symlink is a
+# blob. A dev symlink pointing at a scratch payload was committed that way and
+# broke the deploy on a machine where that path does not exist.
+web/public/data
 
 # The payload lives on the `data` branch, not here: it is ~65 MB and is
 # replaced wholesale each release, which is not a thing to keep in the branch
