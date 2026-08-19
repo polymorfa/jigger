@@ -24,17 +24,15 @@ for f in vectors.json diff.json history.json coverage.json; do
   [ -f "$SRC/$f" ] && cp "$SRC/$f" "$OUT/"
 done
 
-# Every module of the revision.
+# Every WhatsApp module, and everything they import.
 #
-# Not a curated subset. The viewer can reach any module — a dependency array
-# names things nothing extracted a fact from, and following a reference into a
-# module that "was not indexed" is a dead end for no reason the reader can see.
+# See reachable-modules.py for why that is the boundary rather than "all of it"
+# or "whatever facts cite": following a dependency array must never dead-end,
+# and the other ~209,000 files in a bundle are npm packages Meta vendors.
 #
-# It costs ~409 MB packed, which only works because the branch is *replaced*
-# each release rather than added to: an orphan commit, force-pushed, so the
-# branch is always exactly one revision and history never accumulates. The full
-# history lives in the release assets.
-cp -R "$MODULES/." "$OUT/modules/"
+# The branch is replaced rather than added to — an orphan commit, force-pushed
+# each release — so it is always exactly one revision and never accumulates.
+python3 "$(dirname "$0")/reachable-modules.py" "$MODULES" "$OUT/modules" > /dev/null
 n=$(find "$OUT/modules" -name '*.js' | wc -l | tr -d ' ')
 
 # One manifest, so a reader can tell what it is holding without listing a
