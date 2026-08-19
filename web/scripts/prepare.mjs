@@ -73,7 +73,18 @@ async function fetchPayload() {
     }
   }
   console.log(`[prepare] fetched ${got} file(s) from ${repo}@${ref}`);
-  return got > 0;
+  if (got === 0) {
+    // Configured but empty means misconfiguration — a wrong ref, a private repo
+    // with no token, a branch that has not been seeded. The app degrades to an
+    // honest error panel on every page, which is the right behaviour at runtime
+    // and the wrong one for a deploy: better a build that fails than a site
+    // that ships looking broken.
+    throw new Error(
+      `[prepare] no payload at ${repo}@${ref}. Check NEXT_PUBLIC_JIGGER_REF, ` +
+        `and set JIGGER_GITHUB_TOKEN if the repository is private.`,
+    );
+  }
+  return true;
 }
 
 function buildSearchIndex() {
