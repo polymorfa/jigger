@@ -63,8 +63,7 @@
      for", which is a different statement from the blue that marks selection and
      interaction — using the accent for both would make a landed permalink look
      like something you had clicked. */
-  --hl: #fdf6d3;
-  --hl-anchor: #fbeaa0;
+  --hl: #fbeaa0;
   --hl-edge: #e0c34a;
 
   --selection: #cfe0fb;
@@ -134,8 +133,7 @@
     --cov-inconclusive: #858e9b;
     --cov-absent: #4b535e;
 
-    --hl: #2a2712;
-    --hl-anchor: #3d370f;
+    --hl: #3d370f;
     --hl-edge: #8a742a;
 
     --selection: #1c3557;
@@ -210,8 +208,7 @@
   --cov-inconclusive: #858e9b;
   --cov-absent: #4b535e;
 
-  --hl: #2a2712;
-  --hl-anchor: #3d370f;
+  --hl: #3d370f;
   --hl-edge: #8a742a;
 
   --selection: #1c3557;
@@ -274,7 +271,6 @@
   /* Permalink highlight. Without these, `bg-hl` is a class nothing matches:
      the markup looked right and the page stayed white. */
   --color-hl: var(--hl);
-  --color-hl-anchor: var(--hl-anchor);
   --color-hl-edge: var(--hl-edge);
   --color-ground: var(--ground);
   --color-surface: var(--surface);
