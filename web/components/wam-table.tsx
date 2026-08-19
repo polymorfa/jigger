@@ -3,16 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { VirtualRows } from "./virtual-rows";
-import { CoverageDots } from "./coverage-chip";
 import { browseHref } from "@/lib/ids";
-import type { CoverageState } from "@/lib/types";
 
 export type WamRow = {
   id: string;
   eventId: number;
   name: string;
   fieldCount: number;
-  byRepo: Partial<Record<string, CoverageState>>;
 };
 
 export function WamTable({ rows }: { rows: WamRow[] }) {
@@ -46,7 +43,6 @@ export function WamTable({ rows }: { rows: WamRow[] }) {
               <span className="min-w-0 truncate text-sm text-fg-muted">{r.name}</span>
               <span className="data tnum text-right text-sm text-fg-faint">{r.fieldCount}</span>
               <span className="flex justify-end">
-                <CoverageDots byRepo={r.byRepo} />
               </span>
             </Link>
           );

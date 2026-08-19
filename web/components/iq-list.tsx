@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CoverageDots } from "./coverage-chip";
 import { browseHref } from "@/lib/ids";
-import type { CoverageState, IqType } from "@/lib/types";
+import type { IqType } from "@/lib/types";
 
 export type IqItem = {
   id: string;
   name: string;
   type: IqType;
-  byRepo: Partial<Record<string, CoverageState>>;
 };
 export type IqGroup = { xmlns: string; items: IqItem[] };
 
@@ -45,7 +43,6 @@ export function IqList({ groups }: { groups: IqGroup[] }) {
                 <span className="min-w-0">
                   <span className="min-w-0 truncate text-sm text-fg">{it.name}</span>
                 </span>
-                <CoverageDots byRepo={it.byRepo} />
               </Link>
             );
           })}

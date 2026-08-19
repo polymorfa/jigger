@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FactDetail } from "@/components/fact-detail";
 import { Scroll } from "@/components/ui";
-import { CoverageChip } from "@/components/coverage-chip";
 import { DataError } from "@/components/data-error";
 import { FactIdLine } from "@/components/fact-parts";
-import { REPOS } from "@/lib/constants";
-import { getCoverageForFact, getSnapshotResult, getTypeIndex } from "@/lib/data";
+import { getSnapshotResult, getTypeIndex } from "@/lib/data";
 import { idFromSlug } from "@/lib/ids";
 import { sourceLabel } from "@/lib/source";
 import { isIq } from "@/lib/types";
@@ -27,8 +25,6 @@ export default async function IqDetailPage({ params }: Params) {
   const fact = res.snap.factMap.get(idFromSlug("iq", slug));
   if (!fact || !isIq(fact)) notFound();
 
-  const byRepo = getCoverageForFact(fact.id);
-
   return (
     <Scroll>
       <div className="flex max-w-[var(--reading)] flex-col gap-4 px-5 py-5">
@@ -44,18 +40,6 @@ export default async function IqDetailPage({ params }: Params) {
 
         <section className="flex flex-col gap-1.5">
           <h2 className="text-sm font-semibold text-fg-muted">Stanza</h2>
-        </section>
-
-        <section className="flex flex-col gap-1.5">
-          <h2 className="text-sm font-semibold text-fg-muted">Coverage</h2>
-          <div className="flex flex-wrap gap-x-5 gap-y-1.5">
-            {REPOS.map((repo) => (
-              <span key={repo} className="flex items-center gap-2">
-                <span className="data text-xs text-fg-muted">{repo}</span>
-                <CoverageChip state={byRepo[repo]} />
-              </span>
-            ))}
-          </div>
         </section>
       </div>
       <FactDetail fact={fact} types={getTypeIndex(res.snap)} revision={res.snap.ir.revision} revisions={res.snap.ir.revisions ?? []} />

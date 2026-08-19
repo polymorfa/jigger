@@ -24,21 +24,18 @@ for f in vectors.json diff.json history.json coverage.json; do
   [ -f "$SRC/$f" ] && cp "$SRC/$f" "$OUT/"
 done
 
-# Source, for the modules the ledger actually references.
+# Every module of the revision.
 #
-# Not the whole revision: that is 1.3 GB and ~875 releases a year, which is a
-# terabyte of git history to serve a viewer that can only open the modules
-# something links to. The full bundle goes to the release asset instead, so
-# nothing is lost — it is just not in everyone's clone.
-n=0
-if [ -d "$SRC/symbols" ]; then
-  for f in "$SRC"/symbols/*.json; do
-    name="$(basename "$f" .json)"
-    [ -f "$MODULES/$name.js" ] || continue
-    cp "$MODULES/$name.js" "$OUT/modules/$name.js"
-    n=$((n + 1))
-  done
-fi
+# Not a curated subset. The viewer can reach any module — a dependency array
+# names things nothing extracted a fact from, and following a reference into a
+# module that "was not indexed" is a dead end for no reason the reader can see.
+#
+# It costs ~409 MB packed, which only works because the branch is *replaced*
+# each release rather than added to: an orphan commit, force-pushed, so the
+# branch is always exactly one revision and history never accumulates. The full
+# history lives in the release assets.
+cp -R "$MODULES/." "$OUT/modules/"
+n=$(find "$OUT/modules" -name '*.js' | wc -l | tr -d ' ')
 
 # One manifest, so a reader can tell what it is holding without listing a
 # directory of five thousand files.

@@ -1,6 +1,6 @@
 import { WamTable, type WamRow } from "@/components/wam-table";
 import { DataError } from "@/components/data-error";
-import { getCoverageForFact, getSnapshotResult } from "@/lib/data";
+import { getSnapshotResult } from "@/lib/data";
 import { sourceLabel } from "@/lib/source";
 import { isWam } from "@/lib/types";
 
@@ -17,7 +17,6 @@ export default async function WamLayout({ children }: { children: React.ReactNod
       eventId: f.data.event_id,
       name: f.name,
       fieldCount: Object.keys(f.data.fields).length,
-      byRepo: getCoverageForFact(f.id),
     }))
     .sort((a, b) => a.eventId - b.eventId);
 

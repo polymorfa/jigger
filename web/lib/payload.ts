@@ -27,10 +27,12 @@ export async function fetchPayloadFile(
 
   try {
     const res = await fetch(url, {
-      // A revision's content never changes — a new build is a new revision with
-      // its own branch content — so this is cacheable forever.
-      cache: "force-cache",
-      next: { revalidate: false },
+      // Straight through to the CDN every time. Caching a revision forever is
+      // defensible — its content never changes — but the branch is *replaced*
+      // when a new revision lands, and a cache keyed on a URL that now serves
+      // different bytes shows the old revision with no way to tell. Correct
+      // beats quick here.
+      cache: "no-store",
       headers: token
         ? { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" }
         : {},

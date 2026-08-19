@@ -23,11 +23,7 @@ const GROUPS: { href: string; label: string }[][] = [
     { href: "/enum", label: "Enums" },
     { href: "/appstate", label: "AppState" },
   ],
-  [
-    { href: "/coverage", label: "Coverage" },
-    { href: "/coverage/patch", label: "Patches" },
-    { href: "/diff", label: "Diff" },
-  ],
+  [{ href: "/diff", label: "Diff" }],
   [
     { href: "/source", label: "Source" },
     { href: "/spec", label: "Spec" },

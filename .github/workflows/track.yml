@@ -18,12 +18,16 @@ name: track
 #
 # So the three kinds of output go three places:
 #
-#   * `data`      — the payload the site reads, **latest revision only**. Each
-#                   release replaces it, so a clone stays around 65 MB forever.
+#   * `data`      — the payload the site reads: the facts and *every* module of
+#                   the revision. Replaced wholesale each release by an orphan
+#                   commit, so the branch is always exactly one revision and
+#                   history never accumulates. ~409 MB packed, and it stays
+#                   ~409 MB however long this runs.
 #   * a release   — the full 1.3 GB bundle, compressed to ~100 MB, one asset per
 #                   revision. Complete history, none of it in anyone's clone.
-#   * `artifacts` — generated libraries, coverage and patches. Derived from the
-#                   above, so pushed directly rather than reviewed.
+#
+# Generated libraries and coverage are not published here. They are derived from
+# the facts and belong to whoever wants them, not on the branch the viewer reads.
 #
 # The pull request itself carries the fact-level diff, which is the part a human
 # reads. Nobody reviews 29 MB of re-minified JavaScript.
@@ -132,8 +136,11 @@ jobs:
           git config user.name  "jigger"
           git config user.email "jigger@users.noreply.github.com"
 
-          # Branched from `data`, or orphaned if this is the first run.
-          git checkout -B "$BRANCH" origin/data 2>/dev/null || git checkout --orphan "$BRANCH"
+          # Orphaned every time, deliberately. Branching from `data` would
+          # carry 237k blobs forward into a new commit and the branch would grow
+          # by a revision every release; an orphan means the pushed tree is the
+          # only tree, and the branch stays one revision forever.
+          git checkout --orphan "$BRANCH"
           git rm -rq --cached . 2>/dev/null || true
           find . -maxdepth 1 -mindepth 1 ! -name .git ! -name .payload ! -name .next ! -name target -exec rm -rf {} +
           mv .payload/* .
@@ -157,25 +164,11 @@ Extracted from WhatsApp Web revision \`$REV\`.
 
 $SUMMARY
 
-Complete module source for this revision is attached to the
-[\`rev/$REV\`](../../releases/tag/rev/$REV) release — 1.3 GB uncompressed, kept
-out of git so a clone stays small. The \`modules/\` directory here holds only
-what the ledger references and the viewer can open.
+Every module of this revision is in \`modules/\` — the whole bundle, not a
+subset, so the viewer can follow any reference. The branch is orphaned each
+release, so it is always exactly this revision.
+
+The same source is also attached to the [\`rev/$REV\`](../../releases/tag/rev/$REV)
+release as a single archive, which is the copy that keeps history.
 EOF
 )" || gh pr edit "$BRANCH" --body "Updated for revision $REV."
-
-      # Derived from the facts, so there is nothing to review — it is pushed
-      # straight to its own branch rather than through the pull request.
-      - name: Publish generated libraries and coverage
-        if: steps.changed.outputs.new == 'true'
-        run: |
-          git checkout -B artifacts origin/artifacts 2>/dev/null || git checkout --orphan artifacts
-          find . -maxdepth 1 -mindepth 1 ! -name .git ! -name .next ! -name target -exec rm -rf {} +
-          ./target/release/jigger --out .next emit
-          for d in go ts rust proto vectors.json; do
-            [ -e ".next/$d" ] && cp -R ".next/$d" .
-          done
-          cp .next/revision.json .
-          git add -A
-          git commit -qm "libraries for revision ${{ steps.extract.outputs.rev }}" || exit 0
-          git push -f origin artifacts

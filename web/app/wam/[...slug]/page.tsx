@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FactDetail } from "@/components/fact-detail";
 import { Scroll } from "@/components/ui";
-import { CoverageChip } from "@/components/coverage-chip";
 import { DataError } from "@/components/data-error";
 import { FactIdLine } from "@/components/fact-parts";
-import { REPOS } from "@/lib/constants";
-import { getCoverageForFact, getSnapshotResult, getTypeIndex } from "@/lib/data";
+import { getSnapshotResult, getTypeIndex } from "@/lib/data";
 import { idFromSlug } from "@/lib/ids";
 import { sourceLabel } from "@/lib/source";
 import { isWam } from "@/lib/types";
@@ -26,8 +24,6 @@ export default async function WamDetailPage({ params }: Params) {
   }
   const fact = res.snap.factMap.get(idFromSlug("wam", slug));
   if (!fact || !isWam(fact)) notFound();
-
-  const byRepo = getCoverageForFact(fact.id);
   const fieldCount = Object.keys(fact.data.fields).length;
 
   return (
@@ -44,18 +40,6 @@ export default async function WamDetailPage({ params }: Params) {
 
         <section className="flex flex-col gap-1.5">
           <h2 className="text-sm font-semibold text-fg-muted">Fields</h2>
-        </section>
-
-        <section className="flex flex-col gap-1.5">
-          <h2 className="text-sm font-semibold text-fg-muted">Coverage</h2>
-          <div className="flex flex-wrap gap-x-5 gap-y-1.5">
-            {REPOS.map((repo) => (
-              <span key={repo} className="flex items-center gap-2">
-                <span className="data text-xs text-fg-muted">{repo}</span>
-                <CoverageChip state={byRepo[repo]} />
-              </span>
-            ))}
-          </div>
         </section>
       </div>
       <FactDetail fact={fact} types={getTypeIndex(res.snap)} revision={res.snap.ir.revision} revisions={res.snap.ir.revisions ?? []} />

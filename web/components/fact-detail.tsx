@@ -3,14 +3,10 @@ import { schemaOf } from "@/components/code";
 import { AnnotatedCode } from "@/components/annotated-code";
 import { CopyButton } from "@/components/copy-button";
 import { ModuleLink } from "@/components/module-link";
-import { CoverageChip } from "@/components/coverage-chip";
-import { GeneratedSection } from "@/components/generated-section";
 import { IqResponses } from "@/components/iq-responses";
 import { Timeline } from "@/components/timeline";
 import { EmbeddedBy } from "@/components/proto-message-tree";
 import { SchemaTree } from "@/components/schema-tree";
-import { REPOS } from "@/lib/constants";
-import { getCoverageForFact } from "@/lib/data";
 
 import { historyFor } from "@/lib/history";
 import { getCitations, type Citation } from "@/lib/spec";
@@ -21,7 +17,6 @@ import { isAb, isIq, isProto } from "@/lib/types";
 /** `.proto` is offered only where it is the fact's native form. */
 // `.proto` is protobuf's native form and nothing else's. An IQ stanza is XML,
 // and offering a .proto tab on it mislabels the thing it is showing.
-const PROTO_LANG_KINDS: FactKind[] = ["proto"];
 
 const LEAD: Record<FactKind, string> = {
   mex: "the persisted id that travels on the wire; it rotates between releases",
@@ -34,17 +29,6 @@ const LEAD: Record<FactKind, string> = {
   enum: "the value set a field of this type can hold",
   appstate: "the index, collection and version a mutation syncs under",
 };
-
-/**
- * The fact's filename in the generated tree.
- *
- * Mirrors the emitter's rule — 96 bytes then a hash — so the path shown beside a
- * snippet is the path it was written to, not an approximation of one.
- */
-function slugOf(fact: Fact): string {
-  const body = fact.id.slice(fact.id.indexOf(":") + 1);
-  return body.replace(/[^A-Za-z0-9._-]+/g, "_").slice(0, 96);
-}
 
 function Head({ title, note }: { title: string; note: string }) {
   return (
@@ -81,8 +65,6 @@ export function FactDetail({
   embeddedBy?: Embedding[];
 }) {
   const { src, lang } = schemaOf(fact);
-  const byRepo = getCoverageForFact(fact.id);
-  const scanned = REPOS.some((r) => byRepo[r]);
   const citations: Citation[] = getCitations().get(fact.id) ?? [];
   const reads = isAb(fact) ? (fact.usage?.read_count ?? 0) : null;
   const readers = fact.usage?.readers ?? [];
@@ -139,14 +121,6 @@ export function FactDetail({
           the arms are what the stanza above resolves to. */}
       {isIq(fact) && <IqResponses data={fact.data} />}
 
-      <GeneratedSection
-        generated={fact.generated}
-        protoOption={PROTO_LANG_KINDS.includes(fact.kind)}
-        module={fact.evidence.module}
-        kind={fact.kind}
-        slug={slugOf(fact)}
-        links={links}
-      />
 
       </div>
 
@@ -231,23 +205,6 @@ export function FactDetail({
           </div>
         )}
 
-        <div className="flex flex-col gap-1.5">
-          <span className="text-xs text-fg-muted">coverage per library</span>
-          {scanned ? (
-            <div className="flex flex-wrap gap-x-6 gap-y-1.5">
-              {REPOS.map((repo) => (
-                <span key={repo} className="flex items-center gap-2">
-                  <span className="data text-xs text-fg-muted">{repo}</span>
-                  <CoverageChip state={byRepo[repo]} />
-                </span>
-              ))}
-            </div>
-          ) : (
-            <p className="text-sm text-fg-faint">
-              Not tracked for <span className="data">{fact.kind}</span> facts.
-            </p>
-          )}
-        </div>
 
         {fact.literals.length > 0 && (
           <div className="flex flex-col gap-1.5">

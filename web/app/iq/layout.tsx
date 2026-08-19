@@ -1,6 +1,6 @@
 import { IqList, type IqGroup } from "@/components/iq-list";
 import { DataError } from "@/components/data-error";
-import { getCoverageForFact, getSnapshotResult } from "@/lib/data";
+import { getSnapshotResult } from "@/lib/data";
 import { sourceLabel } from "@/lib/source";
 import { isIq } from "@/lib/types";
 
@@ -21,7 +21,6 @@ export default async function IqLayout({ children }: { children: React.ReactNode
       id: f.id,
       name: f.name,
       type: f.data.type,
-      byRepo: getCoverageForFact(f.id),
     });
   }
   const groups = [...byNs.values()].sort((a, b) => a.xmlns.localeCompare(b.xmlns));
