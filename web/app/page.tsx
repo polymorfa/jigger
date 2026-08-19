@@ -2,7 +2,7 @@
 
 import { Suspense, use } from "react";
 import Link from "next/link";
-import { ClientOnly } from "@/components/client-only";
+import { ClientOnly, Waiting } from "@/components/client-only";
 import { KindBadge } from "@/components/kind-badge";
 import { Scroll, SectionTitle } from "@/components/ui";
 import { loadDiff, loadSummary } from "@/lib/cdn";
@@ -123,8 +123,8 @@ function Overview() {
 export default function OverviewPage() {
   return (
     <Scroll>
-      <ClientOnly>
-        <Suspense>
+      <ClientOnly fallback={<Waiting what="the revision summary" />}>
+        <Suspense fallback={<Waiting what="the revision summary" />}>
           <Overview />
         </Suspense>
       </ClientOnly>

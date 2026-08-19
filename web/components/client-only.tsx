@@ -21,3 +21,15 @@ export function ClientOnly({
   useEffect(() => setMounted(true), []);
   return <>{mounted ? children : fallback}</>;
 }
+
+/**
+ * What a pane shows while its data is in flight.
+ *
+ * Every boundary gets one. A blank pane and a broken pane look identical, and
+ * the data here comes from a CDN a few hundred milliseconds away — long enough
+ * that "nothing is happening" is the reasonable conclusion to draw from an
+ * empty box.
+ */
+export function Waiting({ what = "data" }: { what?: string }) {
+  return <p className="px-5 py-5 text-sm text-fg-faint">Fetching {what}…</p>;
+}

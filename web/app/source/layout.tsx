@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, use } from "react";
-import { ClientOnly } from "@/components/client-only";
+import { ClientOnly, Waiting } from "@/components/client-only";
 import { ModuleList } from "@/components/module-list";
 import { loadModuleIndex } from "@/lib/cdn";
 
@@ -21,8 +21,8 @@ export default function SourceLayout({ children }: { children: React.ReactNode }
   return (
     <div className="flex h-full min-h-0 flex-col md:flex-row">
       <aside className="h-[42%] w-full min-h-0 shrink-0 border-b border-hair md:h-full md:w-[var(--pane)] md:border-b-0 md:border-r">
-        <ClientOnly>
-          <Suspense>
+        <ClientOnly fallback={<Waiting what="the module list" />}>
+          <Suspense fallback={<Waiting what="the module list" />}>
             <List />
           </Suspense>
         </ClientOnly>

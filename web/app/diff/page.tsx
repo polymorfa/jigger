@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, use } from "react";
-import { ClientOnly } from "@/components/client-only";
+import { ClientOnly, Waiting } from "@/components/client-only";
 import { DiffView } from "@/components/diff-view";
 import { Scroll } from "@/components/ui";
 import { loadDiff } from "@/lib/cdn";
@@ -31,8 +31,8 @@ function View() {
 export default function DiffPage() {
   return (
     <Scroll>
-      <ClientOnly>
-        <Suspense>
+      <ClientOnly fallback={<Waiting what="the revision diff" />}>
+        <Suspense fallback={<Waiting what="the revision diff" />}>
           <View />
         </Suspense>
       </ClientOnly>

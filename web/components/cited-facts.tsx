@@ -2,7 +2,7 @@
 
 import { Suspense, use } from "react";
 import Link from "next/link";
-import { ClientOnly } from "@/components/client-only";
+import { ClientOnly, Waiting } from "@/components/client-only";
 import { KindBadge } from "@/components/kind-badge";
 import { loadKindIndex } from "@/lib/cdn";
 import { factHref, kindOfId } from "@/lib/ids";
@@ -59,8 +59,8 @@ export function CitedFacts({ ids }: { ids: string[] }) {
         <h2 className="text-md font-semibold text-fg">Facts in this section</h2>
         <span className="data tnum text-xs text-fg-faint">{ids.length}</span>
       </div>
-      <ClientOnly>
-        <Suspense>
+      <ClientOnly fallback={<Waiting what="cited facts" />}>
+        <Suspense fallback={<Waiting what="cited facts" />}>
           <List ids={ids} />
         </Suspense>
       </ClientOnly>

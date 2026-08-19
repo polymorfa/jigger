@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, use } from "react";
-import { ClientOnly } from "@/components/client-only";
+import { ClientOnly, Waiting } from "@/components/client-only";
 import { DispatchTable } from "@/components/dispatch-table";
 import { Scroll } from "@/components/ui";
 import { loadDispatch } from "@/lib/cdn";
@@ -38,8 +38,8 @@ export default function SigIndexPage() {
           <span className="data">server-initiated</span> stanza has nothing to pair against, which
           is why those are the ones libraries miss.
         </p>
-        <ClientOnly>
-          <Suspense>
+        <ClientOnly fallback={<Waiting what="the dispatch table" />}>
+          <Suspense fallback={<Waiting what="the dispatch table" />}>
             <Table />
           </Suspense>
         </ClientOnly>

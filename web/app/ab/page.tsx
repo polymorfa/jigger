@@ -2,7 +2,7 @@
 
 import { Suspense, use } from "react";
 import { AbMap } from "@/components/ab-map";
-import { ClientOnly } from "@/components/client-only";
+import { ClientOnly, Waiting } from "@/components/client-only";
 import { Scroll } from "@/components/ui";
 import { buildAbMap } from "@/lib/ab-map";
 import { loadKindIndex } from "@/lib/cdn";
@@ -23,8 +23,8 @@ export default function AbIndexPage() {
   return (
     <Scroll>
       <div className="px-6 py-5">
-        <ClientOnly>
-          <Suspense>
+        <ClientOnly fallback={<Waiting what="A/B properties" />}>
+          <Suspense fallback={<Waiting what="A/B properties" />}>
             <Map />
           </Suspense>
         </ClientOnly>
