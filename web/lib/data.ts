@@ -21,6 +21,7 @@ import type {
   Fact,
   FactKind,
   Ir,
+  Observed,
 } from "./types";
 import { FACT_KINDS } from "./types";
 
@@ -163,12 +164,26 @@ const EMPTY_DIFF: Diff = {
 };
 
 let _diff: Diff | null = null;
+let _observed: Observed | null | undefined = undefined;
 let _coverage: CoverageRow[] | null = null;
 let _covByFact: Map<string, CoveragePivot> | null = null;
 
 export function getDiff(): Diff {
   if (!_diff) _diff = readLocalJsonOr<Diff>("diff.json", EMPTY_DIFF);
   return _diff;
+}
+
+/**
+ * Which code change moved which fact, when the analysis has been run.
+ *
+ * Absent by default and that is not an error: `observe` needs both revisions'
+ * *source*, not just their extracted facts, and the previous bundle stops being
+ * served eventually. The page says so rather than rendering an empty table that
+ * reads as "nothing changed".
+ */
+export function getObserved(): Observed | null {
+  if (_observed === undefined) _observed = readLocalJsonOr<Observed | null>("observe.json", null);
+  return _observed;
 }
 
 export function getCoverage(): CoverageRow[] {
