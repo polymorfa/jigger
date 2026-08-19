@@ -88,6 +88,42 @@ web/               Next.js browser over the IR
 `spec/*.md` cites facts by writing the id in backticks — `` `wam:4750` `` — and
 nothing else. The field tables are joined in from the IR rather than retyped.
 
+## The site
+
+`web/` is a directory of static files. There is no server and no serverless
+function: no users, no writes, no personalisation — only immutable per-revision
+data that reads the same for everybody, which is a CDN's job. The browser
+fetches exactly the artifact a page needs, and nothing opens the 12 MB ledger.
+
+| what you are looking at | what it fetches | size |
+|---|---|---|
+| a fact | `ir/<kind>/<slug>.json` | ~1.7 KB |
+| a list | `index/<kind>.json` | 11–642 KB |
+| a module | `modules/<n>.js` + `symbols/<n>.json` + `graph/<n>.json` | ~9 KB |
+| the overview | `index/summary.json` | 300 B |
+
+`scripts/pack-data.sh` builds that payload and CI publishes it to the `data`
+branch, replaced wholesale each release.
+
+### Deploying
+
+| variable | meaning |
+|---|---|
+| `NEXT_PUBLIC_JIGGER_CDN` | base URL of the payload. Wins over everything below |
+| `NEXT_PUBLIC_JIGGER_REPO` | `owner/repo` — served through jsDelivr when no CDN is set |
+| `NEXT_PUBLIC_JIGGER_REF` | branch holding the payload. Defaults to `data` |
+
+With none of these the app reads `/data`, which is where a local `jigger
+extract` lands. jsDelivr requires the repository to be public; raw.
+githubusercontent works but is rate-limited per IP, and one office NAT shares
+that limit.
+
+URLs survive because the edge, not a function, maps them: there are 33,676 fact
+and module pages differing only in a string, so one shell is built per section
+and `vercel.json` rewrites onto it. `/proto/WAE2E.ContextInfo` still works. The
+consequence is that `useParams()` is a lie under a rewrite — every page reads
+its own parameter from `window.location` instead.
+
 ## Not done
 
 * MEX persisted query ids. They are constructed at runtime, so this needs the

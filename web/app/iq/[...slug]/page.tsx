@@ -1,26 +1,16 @@
-"use client";
+import Detail from "@/components/detail/iq";
 
-import { FactPage } from "@/components/fact-page";
-import { FactIdLine } from "@/components/fact-parts";
-import { isIq } from "@/lib/types";
+/**
+ * One shell for every iq fact, with the edge mapping each URL onto it.
+ *
+ * Export wants every dynamic route enumerated, and there are thousands — all
+ * differing only in a string the page reads from the address bar. Building them
+ * would be a long build to produce identical files.
+ */
+export function generateStaticParams() {
+  return [{ slug: ["_"] }];
+}
 
-export default function IqDetailPage() {
-  return (
-    <FactPage
-      kind="iq"
-      head={(fact) =>
-        isIq(fact) ? (
-          <div className="flex flex-col gap-2">
-            <FactIdLine id={fact.id} kind="iq" />
-            <span className="text-lg text-fg">{fact.name}</span>
-            <div className="data flex flex-wrap gap-4 text-xs text-fg-faint">
-              <span>xmlns {fact.data.xmlns}</span>
-              <span>type {fact.data.type}</span>
-              {fact.data.tags.length ? <span>tags {fact.data.tags.join(", ")}</span> : null}
-            </div>
-          </div>
-        ) : null
-      }
-    />
-  );
+export default function Page() {
+  return <Detail />;
 }

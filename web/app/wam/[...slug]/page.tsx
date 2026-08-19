@@ -1,25 +1,16 @@
-"use client";
+import Detail from "@/components/detail/wam";
 
-import { FactPage } from "@/components/fact-page";
-import { FactIdLine } from "@/components/fact-parts";
-import { isWam } from "@/lib/types";
+/**
+ * One shell for every wam fact, with the edge mapping each URL onto it.
+ *
+ * Export wants every dynamic route enumerated, and there are thousands — all
+ * differing only in a string the page reads from the address bar. Building them
+ * would be a long build to produce identical files.
+ */
+export function generateStaticParams() {
+  return [{ slug: ["_"] }];
+}
 
-export default function WamDetailPage() {
-  return (
-    <FactPage
-      kind="wam"
-      head={(fact) =>
-        isWam(fact) ? (
-          <div className="flex flex-col gap-2">
-            <FactIdLine id={fact.id} kind="wam" />
-            <span className="text-lg text-fg">{fact.name}</span>
-            <div className="data flex gap-4 text-xs text-fg-faint">
-              <span>event_id {fact.data.event_id}</span>
-              <span className="tnum">{Object.keys(fact.data.fields).length} fields</span>
-            </div>
-          </div>
-        ) : null
-      }
-    />
-  );
+export default function Page() {
+  return <Detail />;
 }

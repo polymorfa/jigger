@@ -1,18 +1,16 @@
-"use client";
+import Detail from "@/components/detail/appstate";
 
-import { FactPage } from "@/components/fact-page";
-import { FactIdLine } from "@/components/fact-parts";
+/**
+ * One shell for every appstate fact, with the edge mapping each URL onto it.
+ *
+ * Export wants every dynamic route enumerated, and there are thousands — all
+ * differing only in a string the page reads from the address bar. Building them
+ * would be a long build to produce identical files.
+ */
+export function generateStaticParams() {
+  return [{ slug: ["_"] }];
+}
 
-export default function AppStateDetailPage() {
-  return (
-    <FactPage
-      kind="appstate"
-      head={(fact) => (
-        <>
-          <FactIdLine id={fact.id} kind="appstate" />
-          <span className="text-lg text-fg">{fact.name}</span>
-        </>
-      )}
-    />
-  );
+export default function Page() {
+  return <Detail />;
 }

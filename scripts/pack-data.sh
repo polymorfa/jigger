@@ -19,11 +19,13 @@ mkdir -p "$OUT/modules"
 # The ledger, the per-fact tree, and everything derived from them.
 cp "$SRC/ir.json" "$SRC/revision.json" "$OUT/"
 cp -R "$SRC/ir" "$OUT/ir"
-[ -d "$SRC/symbols" ] && cp -R "$SRC/symbols" "$OUT/symbols"
+# `if` rather than `[ ... ] && cp`: under `set -e` a failing test is a failing
+# command, so the first absent optional artifact would end the run.
+if [ -d "$SRC/symbols" ]; then cp -R "$SRC/symbols" "$OUT/symbols"; fi
 # Who relies on what. One file per module, so a page reads only the one it shows.
-[ -d "$SRC/graph" ] && cp -R "$SRC/graph" "$OUT/graph"
-for f in vectors.json diff.json history.json coverage.json; do
-  [ -f "$SRC/$f" ] && cp "$SRC/$f" "$OUT/"
+if [ -d "$SRC/graph" ]; then cp -R "$SRC/graph" "$OUT/graph"; fi
+for f in vectors.json diff.json history.json; do
+  if [ -f "$SRC/$f" ]; then cp "$SRC/$f" "$OUT/"; fi
 done
 
 # Every WhatsApp module, and everything they import.
@@ -37,8 +39,13 @@ done
 python3 "$(dirname "$0")/reachable-modules.py" "$MODULES" "$OUT/modules" > /dev/null
 n=$(find "$OUT/modules" -name '*.js' | wc -l | tr -d ' ')
 
-# Per-kind indexes. A list page needs a name and an attribute line, not the
-# 12 MB ledger — `/appstate` is 6.9 KB this way.
+# Everything the browser actually reads: per-kind lists, the module list, the
+# type and embedding maps, the search index, and one file per module naming the
+# facts read out of it.
+#
+# Run last because it reads what the steps above wrote — the filenames under
+# `ir/` and the module set — rather than re-deriving either. The app never opens
+# `ir.json`; that stays as the archive.
 node "$(dirname "$0")/build-indexes.mjs" "$OUT/ir.json" "$OUT/index" > /dev/null
 
 # One manifest, so a reader can tell what it is holding without listing a

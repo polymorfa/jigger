@@ -3,11 +3,53 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "installCommand": "npm install",
-  "outputDirectory": ".next",
+  "outputDirectory": "out",
   "git": {
     "deploymentEnabled": {
       "data": false,
       "artifacts": false
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/source/:name+",
+      "destination": "/source/_.html"
+    },
+    {
+      "source": "/fact/:id+",
+      "destination": "/fact/_.html"
+    },
+    {
+      "source": "/ab/:slug+",
+      "destination": "/ab/_.html"
+    },
+    {
+      "source": "/wam/:slug+",
+      "destination": "/wam/_.html"
+    },
+    {
+      "source": "/iq/:slug+",
+      "destination": "/iq/_.html"
+    },
+    {
+      "source": "/mex/:slug+",
+      "destination": "/mex/_.html"
+    },
+    {
+      "source": "/sig/:slug+",
+      "destination": "/sig/_.html"
+    },
+    {
+      "source": "/proto/:slug+",
+      "destination": "/proto/_.html"
+    },
+    {
+      "source": "/enum/:slug+",
+      "destination": "/enum/_.html"
+    },
+    {
+      "source": "/appstate/:slug+",
+      "destination": "/appstate/_.html"
+    }
+  ]
 }
