@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMap.react"],"dependent_count":2,"exports":[{"name":"MapPlaceholderIcon","used_by":["WAWebAllGeneratedIcons","WAWebMap.react"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebCallLinkJoinCallLite.react","WAWebCallLinkPreviewThumbnail.react"],"dependent_count":3,"exports":[{"name":"VideoIcon","used_by":["WAWebAllGeneratedIcons","WAWebCallLinkJoinCallLite.react","WAWebCallLinkPreviewThumbnail.react"],"uses":3}]}

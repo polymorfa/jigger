@@ -1,0 +1,58 @@
+{
+  "id": "proto:WAE2E.Message.NewsletterAdminInviteMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.NewsletterAdminInviteMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "caption": {
+        "number": 4
+      },
+      "contextInfo": {
+        "number": 6,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "inviteExpiration": {
+        "number": 5
+      },
+      "jpegThumbnail": {
+        "number": 3
+      },
+      "newsletterJid": {
+        "number": 1
+      },
+      "newsletterName": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.NewsletterAdminInviteMessage\""
+  },
+  "literals": [
+    "NewsletterAdminInviteMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

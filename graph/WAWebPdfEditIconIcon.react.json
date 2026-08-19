@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMediaEditPdfButton.react","WAWebPdfReceiverApp.react"],"dependent_count":3,"exports":[{"name":"PdfEditIconIcon","used_by":["WAWebAllGeneratedIcons","WAWebMediaEditPdfButton.react","WAWebPdfReceiverApp.react"],"uses":3}]}

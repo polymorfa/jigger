@@ -1,0 +1,56 @@
+{
+  "id": "enum:ENUM_ALREADYCLAIMED_EXPIRED_INVALID_NOTFOUND_NOTOWNED_VALID",
+  "kind": "enum",
+  "name": "ENUM_ALREADYCLAIMED_EXPIRED_INVALID_NOTFOUND_NOTOWNED_VALID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInSmbMeteredMessagingAccountEnums",
+    "variants": [
+      {
+        "name": "already_claimed",
+        "value": "already_claimed"
+      },
+      {
+        "name": "expired",
+        "value": "expired"
+      },
+      {
+        "name": "invalid",
+        "value": "invalid"
+      },
+      {
+        "name": "not_found",
+        "value": "not_found"
+      },
+      {
+        "name": "not_owned",
+        "value": "not_owned"
+      },
+      {
+        "name": "valid",
+        "value": "valid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInSmbMeteredMessagingAccountEnums",
+    "matches": "ENUM_ALREADYCLAIMED_EXPIRED_INVALID_NOTFOUND_NOTOWNED_VALID\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ALREADYCLAIMED_EXPIRED_INVALID_NOTFOUND_NOTOWNED_VALID",
+    "already_claimed",
+    "expired",
+    "invalid",
+    "not_found",
+    "not_owned",
+    "valid"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInSmbMeteredMessagingAccountGetSMBMeteredMessagingCheckoutResponseSuccess"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

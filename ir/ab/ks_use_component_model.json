@@ -1,0 +1,42 @@
+{
+  "id": "ab:ks_use_component_model",
+  "kind": "ab",
+  "name": "ks_use_component_model",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26966,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ks_use_component_model:\\s*\\[\\s*26966"
+  },
+  "literals": [
+    "ks_use_component_model",
+    "26966"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "wam:2218",
+  "kind": "wam",
+  "name": "BusinessToolsClick",
+  "data": {
+    "kind": "wam",
+    "event_id": 2218,
+    "fields": {
+      "businessToolsEntryPoint": {
+        "id": 5,
+        "type": "BUSINESS_TOOLS_ENTRY_POINT_TYPE",
+        "wire": "business_tools_entry_point",
+        "enum_ref": "BUSINESS_TOOLS_ENTRY_POINT_TYPE"
+      },
+      "businessToolsEntryPointPlacement": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "business_tools_entry_point_placement"
+      },
+      "businessToolsItem": {
+        "id": 3,
+        "type": "BUSINESS_TOOLS_ITEM_TYPE",
+        "wire": "business_tools_item",
+        "enum_ref": "BUSINESS_TOOLS_ITEM_TYPE"
+      },
+      "businessToolsSequenceNumber": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "business_tools_sequence_number"
+      },
+      "businessToolsSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "business_tools_session_id"
+      },
+      "linkingTarget": {
+        "id": 4,
+        "type": "BUSINESS_TOOLS_LINKED_ACCOUNT_TYPE",
+        "wire": "linking_target",
+        "enum_ref": "BUSINESS_TOOLS_LINKED_ACCOUNT_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebBusinessToolsClickWamEvent",
+    "matches": "BusinessToolsClick:\\s*\\[\\s*2218"
+  },
+  "literals": [
+    "2218"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBusinessToolsEntryPointType",
+      "WAWebWamEnumBusinessToolsItemType",
+      "WAWebWamEnumBusinessToolsLinkedAccountType"
+    ],
+    "dependents": [
+      "WAWebBizToolsUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAWebProtobufsVnameCert.BizAccountPayload",
+  "kind": "proto",
+  "name": "WAWebProtobufsVnameCert.BizAccountPayload",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "bizAcctLinkInfo": {
+        "number": 2
+      },
+      "vnameCert": {
+        "number": 1,
+        "type_name": "WAWebProtobufsVnameCert.VerifiedNameCertificate"
+      }
+    },
+    "module": "WAWebProtobufsVnameCert.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsVnameCert.pb",
+    "matches": "name = \"BizAccountPayload\""
+  },
+  "literals": [
+    "BizAccountPayload"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebValidateBusinessCertificate"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBizSendOrderAction","WAWebChatGetters","WAWebConfirmPopup.react","WAWebConsumerPaymentsHomeLogger","WAWebFbtCommon","WAWebMobilePlatforms","WAWebModalManager","WAWebPixUserInfo.react","WAWebPixWamLogger","WAWebWamEnumPaymentActionTargets","WAWebWamEnumPaymentActionTypes","WDSText.react","react"],"dependents":[],"dependent_count":0,"exports":[]}

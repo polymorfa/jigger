@@ -1,0 +1,45 @@
+{
+  "id": "ab:animated_emoji_final_set_enabled",
+  "kind": "ab",
+  "name": "animated_emoji_final_set_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9757,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "animated_emoji_final_set_enabled:\\s*\\[\\s*9757"
+  },
+  "literals": [
+    "animated_emoji_final_set_enabled",
+    "9757"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebAnimatedEmojiGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

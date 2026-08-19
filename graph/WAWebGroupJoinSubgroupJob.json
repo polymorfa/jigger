@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WASmaxGroupsJoinLinkedGroupRPC","WAWebBackendErrors","WAWebGroupType","WAWebWidToJid","asyncToGeneratorRuntime"],"dependents":["WAWebJoinSubgroupAction"],"dependent_count":1,"exports":[{"name":"joinSubgroup","used_by":["WAWebJoinSubgroupAction"],"uses":1}]}

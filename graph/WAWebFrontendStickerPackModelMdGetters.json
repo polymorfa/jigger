@@ -1,0 +1,1 @@
+{"deps":["WAWebGetters","WAWebGettersCaches","WAWebStickerPackModelMdGetters"],"dependents":["WAWebStickersPackDetailsDrawerModal.react"],"dependent_count":1,"exports":[{"name":"getStickers","used_by":["WAWebStickersPackDetailsDrawerModal.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAStorageEstimator","WAWebChatCollection","WAWebCmd","WAWebCollectionConstants","WAWebContactCollection","WAWebEventEmitter","WAWebMsgCollection","WAWebNetworkType","WAWebStreamModel","WAWebWamQrCodeCount","WAWebWebcLoginWamEvent"],"dependents":["WAWebMainWrapper"],"dependent_count":1,"exports":[{"name":"initialize","used_by":["WAWebMainWrapper"],"uses":1}]}

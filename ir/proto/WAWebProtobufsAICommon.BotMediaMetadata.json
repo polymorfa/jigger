@@ -1,0 +1,65 @@
+{
+  "id": "proto:WAWebProtobufsAICommon.BotMediaMetadata",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommon.BotMediaMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "directPath": {
+        "number": 4
+      },
+      "fileEncSha256": {
+        "number": 3
+      },
+      "fileSha256": {
+        "number": 1
+      },
+      "mediaKey": {
+        "number": 2
+      },
+      "mediaKeyTimestamp": {
+        "number": 5
+      },
+      "mimetype": {
+        "number": 6
+      },
+      "orientationType": {
+        "number": 7
+      }
+    },
+    "module": "WAWebProtobufsAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommon.pb",
+    "matches": "name = \"BotMediaMetadata\""
+  },
+  "literals": [
+    "BotMediaMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadTypeUtils",
+      "WAWebBotLoggingUtils",
+      "WAWebBotModeSelectionProtoUtils",
+      "WAWebBotPluginCarouselWrapper.react",
+      "WAWebBotPluginMsgBubbleMeta.react",
+      "WAWebBotSignatureVerificationUtils",
+      "WAWebFrontendMsgGetters",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotMetadata",
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebMediaLinkPreviewContainer.react",
+      "WAWebMsgGetters",
+      "WAWebParseBotFeedbackProtocolMessageProto",
+      "WAWebParseBotSessionTransparencyNotice",
+      "WAWebProtobufsE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 15
+  }
+}

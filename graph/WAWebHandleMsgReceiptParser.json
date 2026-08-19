@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedWapParser","WALogger","WAWebAck","WAWebHandleMsgTypes.flow","WAWebJidToWid"],"dependents":["WAWebCreateReceiptStanzaReceiveMetric","WAWebHandleMsgReceipt"],"dependent_count":2,"exports":[{"name":"RECEIPT_TYPES_TO_ACK","used_by":["WAWebCreateReceiptStanzaReceiveMetric"],"uses":1},{"name":"msgReceiptParser","used_by":["WAWebHandleMsgReceipt"],"uses":1}]}

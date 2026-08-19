@@ -1,0 +1,44 @@
+{
+  "id": "proto:MAWArmadilloMediaTablesSchema.ChunkTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloMediaTablesSchema.ChunkTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "blobData": {
+        "number": 2
+      },
+      "chunkId": {
+        "number": 5
+      },
+      "hashedPlaintextHash": {
+        "number": 4
+      },
+      "mimetype": {
+        "number": 3
+      },
+      "plaintextHash": {
+        "number": 1
+      }
+    },
+    "module": "MAWArmadilloMediaTablesSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloMediaTablesSchema.pb",
+    "matches": "name = \"ChunkTableSchemaProto\""
+  },
+  "literals": [
+    "ChunkTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

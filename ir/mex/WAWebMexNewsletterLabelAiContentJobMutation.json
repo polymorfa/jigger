@@ -1,0 +1,63 @@
+{
+  "id": "mex:WAWebMexNewsletterLabelAiContentJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterLabelAiContentJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27909718265289596",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "server_id",
+      "message_type"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "server_id"
+      },
+      {
+        "name": "message_type"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_label_ai_content",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "message_type: $message_type",
+          "newsletter_id: $newsletter_id",
+          "server_id: $server_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_label_ai_content",
+    "document": "# persisted document 27909718265289596\nmutation MexNewsletterLabelAiContentJobMutation(\n  $newsletter_id\n  $server_id\n  $message_type\n) {\n  xwa2_newsletter_label_ai_content(message_type: $message_type, newsletter_id: $newsletter_id, server_id: $server_id) {  # XWA2NewsletterMutationResponse\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterLabelAiContentJobMutation.graphql",
+    "matches": "id:\\s*\"27909718265289596\""
+  },
+  "literals": [
+    "27909718265289596",
+    "WAWebMexNewsletterLabelAiContentJobMutation",
+    "xwa2_newsletter_label_ai_content"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterLabelAiContentJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

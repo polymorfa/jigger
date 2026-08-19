@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAWebProtobufsAICommonDeprecated.AIRichResponseMapMetadata.AIRichResponseMapAnnotation",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommonDeprecated.AIRichResponseMapMetadata.AIRichResponseMapAnnotation",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "annotationNumber": {
+        "number": 1
+      },
+      "body": {
+        "number": 5
+      },
+      "latitude": {
+        "number": 2
+      },
+      "longitude": {
+        "number": 3
+      },
+      "title": {
+        "number": 4
+      }
+    },
+    "module": "WAWebProtobufsAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseMapMetadata.AIRichResponseMapAnnotation\""
+  },
+  "literals": [
+    "AIRichResponseMapAnnotation"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebProtobufsE2E.pb",
+      "WAWebRichResponseGenerateUtils",
+      "WAWebRichResponseParseUtils",
+      "WAWebRichResponseUnknownFragmentUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

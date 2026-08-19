@@ -1,0 +1,1 @@
+{"deps":["Clipboard","I64","LSMessagingThreadTypeUtil","MAWThreadCutover","MWThreadListHoverButtonDropdownMenuIcons","MWXMenuItem.react","ReQL","ReQLSuspense","WAJids","react","react-compiler-runtime","toMsgrUserJid","useReStore"],"dependents":[],"dependent_count":0,"exports":[{"name":"default","used_by":[],"uses":0}]}

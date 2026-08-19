@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebListsIntroPopup.react","WAWebSMBListsIntroPopup.react"],"dependent_count":3,"exports":[{"name":"WdsIllContactFiltersIcon","used_by":["WAWebAllGeneratedIcons","WAWebListsIntroPopup.react","WAWebSMBListsIntroPopup.react"],"uses":3}]}

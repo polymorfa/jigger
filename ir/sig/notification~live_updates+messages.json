@@ -1,0 +1,35 @@
+{
+  "id": "sig:notification/live_updates+messages",
+  "kind": "sig",
+  "name": "NewslettersLiveUpdatesNotificationRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "live_updates",
+      "messages"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInNewslettersLiveUpdatesNotificationRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "live_updates",
+    "messages"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInNewslettersCommonNotificationMixin",
+      "WASmaxInNewslettersNewsletterMessageResponsePayloadMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxNewslettersLiveUpdatesNotificationRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

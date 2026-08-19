@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumCallSizeBucket","WAWebWamEnumCallSizeType","WAWebWamEnumCallType","WAWebWamEnumParticipantActionSource","WAWebWamEnumPreCallActionType"],"dependents":["WAWebCallInfoUserJourneyLogger"],"dependent_count":1,"exports":[{"name":"CallInfoUserJourneyWamEvent","used_by":[],"uses":0}]}

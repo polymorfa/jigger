@@ -1,0 +1,45 @@
+{
+  "id": "ab:mex_usync_username_query",
+  "kind": "ab",
+  "name": "mex_usync_username_query",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8421,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mex_usync_username_query:\\s*\\[\\s*8421"
+  },
+  "literals": [
+    "mex_usync_username_query",
+    "8421"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebQueryExistsJob"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

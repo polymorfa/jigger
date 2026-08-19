@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebNewChatMenuBarItem.react"],"dependent_count":2,"exports":[{"name":"NewChatOutlineIcon","used_by":["WAWebAllGeneratedIcons","WAWebNewChatMenuBarItem.react"],"uses":2}]}

@@ -1,0 +1,201 @@
+{
+  "id": "mex:WAWebMexCreateNewsletterJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCreateNewsletterJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25149874324715067",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_create",
+        "ty": "XWA2Newsletter",
+        "args": [
+          "newsletter_input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "state",
+            "ty": "XWA2NewsletterState",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "type",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "thread_metadata",
+            "ty": "XWA2NewsletterThreadMetadata",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "name",
+                "ty": "XWA2NewsletterName",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "text",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "update_time",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "description",
+                "ty": "XWA2NewsletterDescription",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "text",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "update_time",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "picture",
+                "ty": "XWA2Picture",
+                "args": [
+                  "type: \"IMAGE\""
+                ],
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "type",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "direct_path",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "picture",
+                "alias": "preview",
+                "ty": "XWA2Picture",
+                "args": [
+                  "type: \"PREVIEW\""
+                ],
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "type",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "direct_path",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "invite",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "handle",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "verification",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "subscribers_count",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "creation_time",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "viewer_metadata",
+            "ty": "XWA2NewsletterViewerMetadata",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "settings",
+                "ty": "XWA2NewsletterUserSetting",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "type",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "value",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "role",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_create",
+    "document": "# persisted document 25149874324715067\nmutation MexCreateNewsletterJobMutation(\n  $input\n) {\n  xwa2_newsletter_create(newsletter_input: $input) {  # XWA2Newsletter\n    id\n    state {  # XWA2NewsletterState\n      type\n    }\n    thread_metadata {  # XWA2NewsletterThreadMetadata\n      name {  # XWA2NewsletterName\n        id\n        text\n        update_time\n      }\n      description {  # XWA2NewsletterDescription\n        id\n        text\n        update_time\n      }\n      picture(type: \"IMAGE\") {  # XWA2Picture\n        id\n        type\n        direct_path\n      }\n      preview: picture(type: \"PREVIEW\") {  # XWA2Picture\n        id\n        type\n        direct_path\n      }\n      invite\n      handle\n      verification\n      subscribers_count\n      creation_time\n    }\n    viewer_metadata {  # XWA2NewsletterViewerMetadata\n      settings {  # [XWA2NewsletterUserSetting]\n        type\n        value\n      }\n      role\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexCreateNewsletterJobMutation.graphql",
+    "matches": "id:\\s*\"25149874324715067\""
+  },
+  "literals": [
+    "25149874324715067",
+    "WAWebMexCreateNewsletterJobMutation",
+    "xwa2_newsletter_create"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCreateNewsletterJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

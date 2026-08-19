@@ -1,0 +1,132 @@
+{
+  "id": "enum:COMMUNITY_CREATION_ACTION_TAKEN_TYPE",
+  "kind": "enum",
+  "name": "COMMUNITY_CREATION_ACTION_TAKEN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCommunityCreationActionTakenType",
+    "variants": [
+      {
+        "name": "ENTER",
+        "value": 1.0
+      },
+      {
+        "name": "GET_STARTED",
+        "value": 2.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 3.0
+      },
+      {
+        "name": "NEXT",
+        "value": 4.0
+      },
+      {
+        "name": "CREATE_GROUP",
+        "value": 5.0
+      },
+      {
+        "name": "LINK_GROUP",
+        "value": 6.0
+      },
+      {
+        "name": "CREATE_COMMUNITY",
+        "value": 7.0
+      },
+      {
+        "name": "EXIT",
+        "value": 8.0
+      },
+      {
+        "name": "UNLINK_GROUP",
+        "value": 9.0
+      },
+      {
+        "name": "CREATE_COMMUNITY_SUCCESS",
+        "value": 10.0
+      },
+      {
+        "name": "CREATE_COMMUNITY_FAIL",
+        "value": 11.0
+      },
+      {
+        "name": "HELP_ICON_CLICK",
+        "value": 12.0
+      },
+      {
+        "name": "LINK_GROUP_CONFIRMATION_OK",
+        "value": 13.0
+      },
+      {
+        "name": "LINK_GROUP_CONFIRMATION_CANCEL",
+        "value": 14.0
+      },
+      {
+        "name": "NEW_COMMUNITY",
+        "value": 15.0
+      },
+      {
+        "name": "EXISTING_COMMUNITY",
+        "value": 16.0
+      },
+      {
+        "name": "ADD_SUBGROUP_AS_CADMIN",
+        "value": 17.0
+      },
+      {
+        "name": "SUGGEST_SUBGROUP_AS_MEMBER",
+        "value": 19.0
+      },
+      {
+        "name": "CANCEL",
+        "value": 20.0
+      },
+      {
+        "name": "ADD_GROUP_TO_EXISTING_COMMUNITY_FAIL",
+        "value": 21.0
+      },
+      {
+        "name": "ADD_GROUP_TO_EXISTING_COMMUNITY_SUCCESS",
+        "value": 22.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCommunityCreationActionTakenType",
+    "matches": "COMMUNITY_CREATION_ACTION_TAKEN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "COMMUNITY_CREATION_ACTION_TAKEN_TYPE",
+    "ENTER",
+    "GET_STARTED",
+    "DISMISS",
+    "NEXT",
+    "CREATE_GROUP",
+    "LINK_GROUP",
+    "CREATE_COMMUNITY",
+    "EXIT",
+    "UNLINK_GROUP",
+    "CREATE_COMMUNITY_SUCCESS",
+    "CREATE_COMMUNITY_FAIL",
+    "HELP_ICON_CLICK",
+    "LINK_GROUP_CONFIRMATION_OK",
+    "LINK_GROUP_CONFIRMATION_CANCEL",
+    "NEW_COMMUNITY",
+    "EXISTING_COMMUNITY",
+    "ADD_SUBGROUP_AS_CADMIN",
+    "SUGGEST_SUBGROUP_AS_MEMBER",
+    "CANCEL",
+    "ADD_GROUP_TO_EXISTING_COMMUNITY_FAIL",
+    "ADD_GROUP_TO_EXISTING_COMMUNITY_SUCCESS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCommunityCreationFlowMetricUtils",
+      "WAWebCommunityCreationWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

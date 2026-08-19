@@ -1,0 +1,1 @@
+{"deps":["MAWDbVersionList"],"dependents":["MAWDbSchema.restore","MAWDbSchemaReStoreDexieUtils","MAWIndexedDb"],"dependent_count":3,"exports":[{"name":"dbSchema","used_by":["MAWDbSchema.restore","MAWDbSchemaReStoreDexieUtils"],"uses":2},{"name":"TABLES_TO_ENCRYPT","used_by":["MAWIndexedDb"],"uses":1}]}

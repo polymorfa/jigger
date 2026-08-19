@@ -1,0 +1,1 @@
+{"deps":["BaseTheme.react","FDSCircleButton.react","MWXSvgIcon","MWXThreadThemeColor","react","react-compiler-runtime"],"dependents":["MAWSecureThreadNonAddressableContactBanner.react","MWAddParticipantDialogContent.react","MWChatFileStatusIcon.react"],"dependent_count":3,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMediaThumbIcon.react"],"dependent_count":2,"exports":[{"name":"MsgAudioIcon","used_by":["WAWebAllGeneratedIcons","WAWebMediaThumbIcon.react"],"uses":2}]}

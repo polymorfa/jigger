@@ -1,0 +1,65 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterIsDomainPreviewableJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterIsDomainPreviewableJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9849510985088294",
+    "operation": "query",
+    "variables": [
+      "url_domains"
+    ],
+    "args": [
+      {
+        "name": "url_domains"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_message_integrity",
+        "ty": "XWA2NewsletterMessageIntegrityResponse",
+        "args": [
+          "input: …"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "url_previews",
+            "ty": "XWA2NewsletterMessageIntegrityPreviewURLResponse",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "url_domain",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "is_previewable",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_message_integrity",
+    "document": "# persisted document 9849510985088294\nquery MexFetchNewsletterIsDomainPreviewableJobQuery(\n  $url_domains\n) {\n  xwa2_newsletter_message_integrity(input: …) {  # XWA2NewsletterMessageIntegrityResponse\n    url_previews {  # [XWA2NewsletterMessageIntegrityPreviewURLResponse]\n      url_domain\n      is_previewable\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterIsDomainPreviewableJobQuery.graphql",
+    "matches": "id:\\s*\"9849510985088294\""
+  },
+  "literals": [
+    "9849510985088294",
+    "WAWebMexFetchNewsletterIsDomainPreviewableJobQuery",
+    "xwa2_newsletter_message_integrity"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterIsDomainPreviewableJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

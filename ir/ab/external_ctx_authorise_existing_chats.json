@@ -1,0 +1,45 @@
+{
+  "id": "ab:external_ctx_authorise_existing_chats",
+  "kind": "ab",
+  "name": "external_ctx_authorise_existing_chats",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 12761,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "external_ctx_authorise_existing_chats:\\s*\\[\\s*12761"
+  },
+  "literals": [
+    "external_ctx_authorise_existing_chats",
+    "12761"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebExternalCtxConfig"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebBlockEventsFsWamEvent","WAWebBlocklistUtils","WAWebMmSignalSharingGatingUtils","WAWebMmSignalSharingLoggingEvents"],"dependent_count":4,"exports":[{"name":"BLOCK_ENTRY_POINT","used_by":["WAWebBlockEventsFsWamEvent","WAWebBlocklistUtils","WAWebMmSignalSharingGatingUtils","WAWebMmSignalSharingLoggingEvents"],"uses":4}]}

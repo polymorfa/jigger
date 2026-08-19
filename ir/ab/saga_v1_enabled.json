@@ -1,0 +1,45 @@
+{
+  "id": "ab:saga_v1_enabled",
+  "kind": "ab",
+  "name": "saga_v1_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9942,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "saga_v1_enabled:\\s*\\[\\s*9942"
+  },
+  "literals": [
+    "saga_v1_enabled",
+    "9942"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebABPropsSaga"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "enum:CHAT_ACTION_CHAT_TYPE",
+  "kind": "enum",
+  "name": "CHAT_ACTION_CHAT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChatActionChatType",
+    "variants": [
+      {
+        "name": "INDIVIDUAL",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "BUSINESS",
+        "value": 3.0
+      },
+      {
+        "name": "BROADCAST_LIST",
+        "value": 4.0
+      },
+      {
+        "name": "CHANNEL",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChatActionChatType",
+    "matches": "CHAT_ACTION_CHAT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CHAT_ACTION_CHAT_TYPE",
+    "INDIVIDUAL",
+    "GROUP",
+    "BUSINESS",
+    "BROADCAST_LIST",
+    "CHANNEL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

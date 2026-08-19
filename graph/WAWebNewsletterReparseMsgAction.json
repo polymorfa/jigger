@@ -1,0 +1,1 @@
+{"deps":["WAWebBackendApi","WAWebHandleMsgTypes.flow","WAWebNewsletterFutureProofUtils","WAWebNewsletterUpdateMsgsRecordsJob","asyncToGeneratorRuntime"],"dependents":["WAWebFutureproofReparseMsgsAction"],"dependent_count":1,"exports":[{"name":"reparseNewsletterMsg","used_by":["WAWebFutureproofReparseMsgsAction"],"uses":1}]}

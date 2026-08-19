@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebDesktopUpsellQRCodeSlimBanner.react"],"dependent_count":2,"exports":[{"name":"WebLoginDesktopUpsellIllustrationIcon","used_by":["WAWebAllGeneratedIcons","WAWebDesktopUpsellQRCodeSlimBanner.react"],"uses":2}]}

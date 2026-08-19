@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumStickerMakerSourceType","WAWebWamEnumStickerSendMessageType","WAWebWamEnumStickerSendOriginType"],"dependents":["WAWebMediaEditor.react","WAWebMediaForwardMediaMsg","WAWebSendStickerAction"],"dependent_count":3,"exports":[{"name":"StickerSendWamEvent","used_by":[],"uses":0}]}

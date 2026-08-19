@@ -1,0 +1,65 @@
+{
+  "id": "mex:WAWebMexGroupStoreInviteSmsJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexGroupStoreInviteSmsJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26810859745268181",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_store_invites_sms",
+        "ty": "XWA2GroupStoreInvitesResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "group_jid",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "participant_responses",
+            "ty": "XWA2GroupStoreInvitesParticpantResponse",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "error_code",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_store_invites_sms",
+    "document": "# persisted document 26810859745268181\nmutation MexGroupStoreInviteSmsJobMutation(\n  $input\n) {\n  xwa2_group_store_invites_sms(input: $input) {  # XWA2GroupStoreInvitesResponse\n    group_jid\n    participant_responses {  # [XWA2GroupStoreInvitesParticpantResponse]\n      error_code\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexGroupStoreInviteSmsJobMutation.graphql",
+    "matches": "id:\\s*\"26810859745268181\""
+  },
+  "literals": [
+    "26810859745268181",
+    "WAWebMexGroupStoreInviteSmsJobMutation",
+    "xwa2_group_store_invites_sms"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGroupStoreInviteSmsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

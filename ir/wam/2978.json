@@ -1,0 +1,117 @@
+{
+  "id": "wam:2978",
+  "kind": "wam",
+  "name": "StatusMute",
+  "data": {
+    "kind": "wam",
+    "event_id": 2978,
+    "fields": {
+      "cid": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "isPosterBiz": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "is_poster_biz"
+      },
+      "isPosterInAddressBook": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "is_poster_in_address_book"
+      },
+      "muteAction": {
+        "id": 8,
+        "type": "MUTE_ACTION",
+        "wire": "mute_action",
+        "enum_ref": "MUTE_ACTION"
+      },
+      "muteOrigin": {
+        "id": 6,
+        "type": "MUTE_ORIGIN",
+        "wire": "mute_origin",
+        "enum_ref": "MUTE_ORIGIN"
+      },
+      "psaCampaignId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "psa_campaign_id"
+      },
+      "psaCampaignIds": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "psa_campaign_ids"
+      },
+      "psaCampaignItemIndex": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "psa_campaign_item_index"
+      },
+      "statusCategory": {
+        "id": 13,
+        "type": "STATUS_CATEGORY",
+        "wire": "status_category",
+        "enum_ref": "STATUS_CATEGORY"
+      },
+      "statusItemIndex": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "status_item_index"
+      },
+      "statusPosterContactType": {
+        "id": 14,
+        "type": "STATUS_POSTER_CONTACT_TYPE",
+        "wire": "status_poster_contact_type",
+        "enum_ref": "STATUS_POSTER_CONTACT_TYPE"
+      },
+      "statusSessionId": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "status_session_id"
+      },
+      "statusViewerSessionId": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "status_viewer_session_id"
+      },
+      "unifiedSessionId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStatusMuteWamEvent",
+    "matches": "StatusMute:\\s*\\[\\s*2978"
+  },
+  "literals": [
+    "2978"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMuteAction",
+      "WAWebWamEnumMuteOrigin",
+      "WAWebWamEnumStatusCategory",
+      "WAWebWamEnumStatusPosterContactType"
+    ],
+    "dependents": [
+      "WAWebLogStatusMute"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

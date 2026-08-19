@@ -1,0 +1,57 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterAdminCapabilitiesJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterAdminCapabilitiesJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9801384413216421",
+    "operation": "query",
+    "variables": [
+      "newsletter_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_admin",
+        "ty": "XWA2NewsletterAdmin",
+        "args": [
+          "newsletter_id: $newsletter_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "capabilities",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_admin",
+    "document": "# persisted document 9801384413216421\nquery MexFetchNewsletterAdminCapabilitiesJobQuery(\n  $newsletter_id\n) {\n  xwa2_newsletter_admin(newsletter_id: $newsletter_id) {  # XWA2NewsletterAdmin\n    capabilities\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterAdminCapabilitiesJobQuery.graphql",
+    "matches": "id:\\s*\"9801384413216421\""
+  },
+  "literals": [
+    "9801384413216421",
+    "WAWebMexFetchNewsletterAdminCapabilitiesJobQuery",
+    "xwa2_newsletter_admin"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterAdminCapabilitiesJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

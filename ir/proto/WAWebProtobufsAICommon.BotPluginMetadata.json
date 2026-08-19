@@ -1,0 +1,80 @@
+{
+  "id": "proto:WAWebProtobufsAICommon.BotPluginMetadata",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommon.BotPluginMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "deprecatedField": {
+        "number": 11
+      },
+      "expectedLinksCount": {
+        "number": 7
+      },
+      "faviconCdnUrl": {
+        "number": 13
+      },
+      "parentPluginMessageKey": {
+        "number": 10
+      },
+      "parentPluginType": {
+        "number": 12
+      },
+      "pluginType": {
+        "number": 2
+      },
+      "profilePhotoCdnUrl": {
+        "number": 4
+      },
+      "provider": {
+        "number": 1
+      },
+      "referenceIndex": {
+        "number": 6
+      },
+      "searchProviderUrl": {
+        "number": 5
+      },
+      "searchQuery": {
+        "number": 9
+      },
+      "thumbnailCdnUrl": {
+        "number": 3
+      }
+    },
+    "module": "WAWebProtobufsAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommon.pb",
+    "matches": "name = \"BotPluginMetadata\""
+  },
+  "literals": [
+    "BotPluginMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadTypeUtils",
+      "WAWebBotLoggingUtils",
+      "WAWebBotModeSelectionProtoUtils",
+      "WAWebBotPluginCarouselWrapper.react",
+      "WAWebBotPluginMsgBubbleMeta.react",
+      "WAWebBotSignatureVerificationUtils",
+      "WAWebFrontendMsgGetters",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotMetadata",
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebMediaLinkPreviewContainer.react",
+      "WAWebMsgGetters",
+      "WAWebParseBotFeedbackProtocolMessageProto",
+      "WAWebParseBotSessionTransparencyNotice",
+      "WAWebProtobufsE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 15
+  }
+}

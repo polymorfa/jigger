@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_attach_icon_variant",
+  "kind": "ab",
+  "name": "wa_web_attach_icon_variant",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26386,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_attach_icon_variant:\\s*\\[\\s*26386"
+  },
+  "literals": [
+    "wa_web_attach_icon_variant",
+    "26386"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

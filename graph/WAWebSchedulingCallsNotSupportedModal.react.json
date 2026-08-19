@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebModalManager","react","react-compiler-runtime"],"dependents":["WAWebContactMenuDropdown.react","WAWebGroupCallDropdownContent.react","WAWebGroupCallParticipantSelector.react","WAWebVoipCallsTabEmptyStateButtons.react"],"dependent_count":4,"exports":[]}

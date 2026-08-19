@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebBoolFunc","WAWebModelStorageUtils","WAWebSchemaOptOutList","WAWebWidFactory"],"dependents":["WAWebQueryOptOutListJob"],"dependent_count":1,"exports":[{"name":"updateOptOutList","used_by":["WAWebQueryOptOutListJob"],"uses":1},{"name":"getOptOutList","used_by":[],"uses":0}]}

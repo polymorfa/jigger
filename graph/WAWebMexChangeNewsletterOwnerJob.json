@@ -1,0 +1,1 @@
+{"deps":["WAWebLidMigrationUtils","WAWebMexChangeNewsletterOwnerJobMutation.graphql","WAWebMexClient","WAWebNewsletterRpcUtils","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterChangeOwnerJob"],"dependent_count":1,"exports":[{"name":"mexChangeNewsletterOwner","used_by":["WAWebNewsletterChangeOwnerJob"],"uses":1}]}

@@ -1,0 +1,42 @@
+{
+  "id": "enum:PTT_RESULT_TYPE",
+  "kind": "enum",
+  "name": "PTT_RESULT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPttResultType",
+    "variants": [
+      {
+        "name": "SENT",
+        "value": 1.0
+      },
+      {
+        "name": "CANCELLED",
+        "value": 2.0
+      },
+      {
+        "name": "TOO_SHORT",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPttResultType",
+    "matches": "PTT_RESULT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PTT_RESULT_TYPE",
+    "SENT",
+    "CANCELLED",
+    "TOO_SHORT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPttComposerRecordingSession",
+      "WAWebPttWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

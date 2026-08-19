@@ -1,0 +1,315 @@
+{
+  "id": "wam:1658",
+  "kind": "wam",
+  "name": "StatusItemView",
+  "data": {
+    "kind": "wam",
+    "event_id": 1658,
+    "fields": {
+      "bytesDownloadedStartView": {
+        "id": 47,
+        "type": "NUMBER",
+        "wire": "bytes_downloaded_start_view"
+      },
+      "estimatedBandwidth": {
+        "id": 48,
+        "type": "NUMBER",
+        "wire": "estimated_bandwidth"
+      },
+      "externalSourceDomainType": {
+        "id": 34,
+        "type": "INLINE_VIDEO_TYPE",
+        "wire": "external_source_domain_type",
+        "enum_ref": "INLINE_VIDEO_TYPE"
+      },
+      "isAlreadyDownloaded": {
+        "id": 35,
+        "type": "BOOLEAN",
+        "wire": "is_already_downloaded"
+      },
+      "isForwardable": {
+        "id": 44,
+        "type": "BOOLEAN",
+        "wire": "is_forwardable"
+      },
+      "isForwarded": {
+        "id": 45,
+        "type": "BOOLEAN",
+        "wire": "is_forwarded"
+      },
+      "isPosterBiz": {
+        "id": 23,
+        "type": "BOOLEAN",
+        "wire": "is_poster_biz"
+      },
+      "isPosterInAddressBook": {
+        "id": 25,
+        "type": "BOOLEAN",
+        "wire": "is_poster_in_address_book"
+      },
+      "isResharable": {
+        "id": 37,
+        "type": "BOOLEAN",
+        "wire": "is_resharable"
+      },
+      "isReshare": {
+        "id": 40,
+        "type": "BOOLEAN",
+        "wire": "is_reshare"
+      },
+      "isSubscribed": {
+        "id": 52,
+        "type": "BOOLEAN",
+        "wire": "is_subscribed"
+      },
+      "isViewedInLandscape": {
+        "id": 29,
+        "type": "BOOLEAN",
+        "wire": "is_viewed_in_landscape"
+      },
+      "mediaFileSize": {
+        "id": 49,
+        "type": "INTEGER",
+        "wire": "media_file_size"
+      },
+      "mediaType": {
+        "id": 4,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "musicBlocked": {
+        "id": 32,
+        "type": "BOOLEAN",
+        "wire": "music_blocked"
+      },
+      "pairedMediaType": {
+        "id": 38,
+        "type": "PAIRED_MEDIA_TYPE",
+        "wire": "paired_media_type",
+        "enum_ref": "PAIRED_MEDIA_TYPE"
+      },
+      "psaCampaignId": {
+        "id": 17,
+        "type": "STRING",
+        "wire": "psa_campaign_id"
+      },
+      "psaCampaignItemIndex": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "psa_campaign_item_index"
+      },
+      "psaLinkAvailable": {
+        "id": 19,
+        "type": "BOOLEAN",
+        "wire": "psa_link_available"
+      },
+      "psaLinkClick": {
+        "id": 22,
+        "type": "BOOLEAN",
+        "wire": "psa_link_click"
+      },
+      "psaLinkLoadTime": {
+        "id": 21,
+        "type": "TIMER",
+        "wire": "psa_link_load_time"
+      },
+      "psaLinkOpenResult": {
+        "id": 20,
+        "type": "PSA_LINK_OPEN_RESULT",
+        "wire": "psa_link_open_result",
+        "enum_ref": "PSA_LINK_OPEN_RESULT"
+      },
+      "reshareSource": {
+        "id": 41,
+        "type": "RESHARE_SOURCE",
+        "wire": "reshare_source",
+        "enum_ref": "RESHARE_SOURCE"
+      },
+      "statusCategory": {
+        "id": 46,
+        "type": "STATUS_CATEGORY",
+        "wire": "status_category",
+        "enum_ref": "STATUS_CATEGORY"
+      },
+      "statusContainsMusic": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "status_contains_music"
+      },
+      "statusContainsQuestion": {
+        "id": 51,
+        "type": "BOOLEAN",
+        "wire": "status_contains_question"
+      },
+      "statusContainsReactionSticker": {
+        "id": 56,
+        "type": "BOOLEAN",
+        "wire": "status_contains_reaction_sticker"
+      },
+      "statusId": {
+        "id": 53,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "statusItem3sViewCount": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "status_item3s_view_count"
+      },
+      "statusItemImpressionCount": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "status_item_impression_count"
+      },
+      "statusItemIndex": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "status_item_index"
+      },
+      "statusItemLength": {
+        "id": 7,
+        "type": "TIMER",
+        "wire": "status_item_length"
+      },
+      "statusItemLoadTime": {
+        "id": 5,
+        "type": "TIMER",
+        "wire": "status_item_load_time"
+      },
+      "statusItemReplied": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "status_item_replied"
+      },
+      "statusItemUnread": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "status_item_unread"
+      },
+      "statusItemViewCount": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "status_item_view_count"
+      },
+      "statusItemViewResult": {
+        "id": 3,
+        "type": "STATUS_ITEM_VIEW_RESULT",
+        "wire": "status_item_view_result",
+        "enum_ref": "STATUS_ITEM_VIEW_RESULT"
+      },
+      "statusItemViewTime": {
+        "id": 6,
+        "type": "TIMER",
+        "wire": "status_item_view_time"
+      },
+      "statusMediaHeight": {
+        "id": 42,
+        "type": "INTEGER",
+        "wire": "status_media_height"
+      },
+      "statusMediaWidth": {
+        "id": 43,
+        "type": "INTEGER",
+        "wire": "status_media_width"
+      },
+      "statusPairedMediaQuality": {
+        "id": 39,
+        "type": "STATUS_PAIRED_MEDIA_QUALITY",
+        "wire": "status_paired_media_quality",
+        "enum_ref": "STATUS_PAIRED_MEDIA_QUALITY"
+      },
+      "statusPosterContactType": {
+        "id": 57,
+        "type": "STATUS_POSTER_CONTACT_TYPE",
+        "wire": "status_poster_contact_type",
+        "enum_ref": "STATUS_POSTER_CONTACT_TYPE"
+      },
+      "statusRowIndex": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "status_row_index"
+      },
+      "statusRowSection": {
+        "id": 11,
+        "type": "STATUS_ROW_SECTION",
+        "wire": "status_row_section",
+        "enum_ref": "STATUS_ROW_SECTION"
+      },
+      "statusType": {
+        "id": 36,
+        "type": "STATUS_TYPE",
+        "wire": "status_type",
+        "enum_ref": "STATUS_TYPE"
+      },
+      "statusViewerSessionId": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "status_viewer_session_id"
+      },
+      "traceIdInt": {
+        "id": 58,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      },
+      "unifiedSessionId": {
+        "id": 54,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 55,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      },
+      "urlStatusClicked": {
+        "id": 26,
+        "type": "URL_STATUS_CLICKED",
+        "wire": "url_status_clicked",
+        "enum_ref": "URL_STATUS_CLICKED"
+      },
+      "urlStatusType": {
+        "id": 27,
+        "type": "URL_STATUS_TYPE",
+        "wire": "url_status_type",
+        "enum_ref": "URL_STATUS_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStatusItemViewWamEvent",
+    "matches": "StatusItemView:\\s*\\[\\s*1658"
+  },
+  "literals": [
+    "1658"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumInlineVideoType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumPairedMediaType",
+      "WAWebWamEnumPsaLinkOpenResult",
+      "WAWebWamEnumReshareSource",
+      "WAWebWamEnumStatusCategory",
+      "WAWebWamEnumStatusItemViewResult",
+      "WAWebWamEnumStatusPairedMediaQuality",
+      "WAWebWamEnumStatusPosterContactType",
+      "WAWebWamEnumStatusRowSection",
+      "WAWebWamEnumStatusType",
+      "WAWebWamEnumUrlStatusClicked",
+      "WAWebWamEnumUrlStatusType"
+    ],
+    "dependents": [
+      "WAWebStatusPlayer.react"
+    ],
+    "dep_count": 14,
+    "dependent_count": 1
+  }
+}

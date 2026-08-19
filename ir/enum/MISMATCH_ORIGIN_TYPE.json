@@ -1,0 +1,54 @@
+{
+  "id": "enum:MISMATCH_ORIGIN_TYPE",
+  "kind": "enum",
+  "name": "MISMATCH_ORIGIN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMismatchOriginType",
+    "variants": [
+      {
+        "name": "INCOMING_GROUP_MESSAGE",
+        "value": 1.0
+      },
+      {
+        "name": "ACK_OUTGOING_MESSAGE",
+        "value": 2.0
+      },
+      {
+        "name": "GROUP_NOTIFICATION",
+        "value": 3.0
+      },
+      {
+        "name": "GROUP_PROFILE_PICTURE_NOTIFICATION",
+        "value": 4.0
+      },
+      {
+        "name": "IQ_RESPONSES",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMismatchOriginType",
+    "matches": "MISMATCH_ORIGIN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MISMATCH_ORIGIN_TYPE",
+    "INCOMING_GROUP_MESSAGE",
+    "ACK_OUTGOING_MESSAGE",
+    "GROUP_NOTIFICATION",
+    "GROUP_PROFILE_PICTURE_NOTIFICATION",
+    "IQ_RESPONSES"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAddressingModeMismatchWamEvent",
+      "WAWebGroupQueryBridgeOneAlreadyInFlightLogger",
+      "WAWebMessageProcessorCache",
+      "WAWebSendGroupSkmsgJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

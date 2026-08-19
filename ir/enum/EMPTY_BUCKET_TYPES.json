@@ -1,0 +1,50 @@
+{
+  "id": "enum:EMPTY_BUCKET_TYPES",
+  "kind": "enum",
+  "name": "EMPTY_BUCKET_TYPES",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "FRIEND_BUCKET",
+        "value": "FRIEND_BUCKET"
+      },
+      {
+        "name": "SELF_BUCKET",
+        "value": "SELF_BUCKET"
+      },
+      {
+        "name": "UNSELECTED",
+        "value": "UNSELECTED"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "EMPTY_BUCKET_TYPES\\s*[:=]"
+  },
+  "literals": [
+    "EMPTY_BUCKET_TYPES",
+    "FRIEND_BUCKET",
+    "SELF_BUCKET",
+    "UNSELECTED"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

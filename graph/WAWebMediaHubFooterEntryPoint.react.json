@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebMediaHubEmptyGalleryEntryPoint.react","WAWebMediaHubLogger","WAWebMediaHubModalLoadable","WAWebModalManager","WAWebWamEnumActionCode","WAWebWamEnumEntryPointType","WDSButton.react","WDSIconIcFilter.react","react","react-compiler-runtime"],"dependents":["WAWebMediaGallery.react","WAWebMessageGallery.react"],"dependent_count":2,"exports":[]}

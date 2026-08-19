@@ -1,0 +1,1 @@
+{"deps":["WAWebIdentityFunction","sumBy"],"dependents":["WAWebBulkQueriesTable.react","WAWebFrequentQueriesTable.react","WAWebSlowestQueriesTable.react"],"dependent_count":3,"exports":[{"name":"calculateQueryStats","used_by":["WAWebBulkQueriesTable.react","WAWebFrequentQueriesTable.react","WAWebSlowestQueriesTable.react"],"uses":3}]}

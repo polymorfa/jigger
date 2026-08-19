@@ -1,0 +1,78 @@
+__d("WAWebAiThreadPinSyncUtils", [
+	"WALogger",
+	"WALongInt",
+	"WATimeUtils",
+	"WAWebAiThreadCreationUtils",
+	"WAWebBackendApi",
+	"WAWebBulkCreateOrUpdateThreadsMetadata",
+	"WAWebProtobufSyncAction.pb",
+	"WAWebSchemaThreadsMetadata",
+	"WAWebSyncdConst",
+	"WAWebSyncdDb",
+	"WAWebThreadId",
+	"WAWebThreadUtils",
+	"WAWebThreadsMetadataIdUtils",
+	"WAWebWid",
+	"WAWebWidFactory",
+	"WAWebWidToJid",
+	"decodeProtobuf"
+], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	var e, s = 3;
+	function u(e, t, n) {
+		var r, a, i = o("WATimeUtils").castToUnixTime((r = t.lastMessageTimestamp) != null ? r : 0), l = o("WATimeUtils").castToUnixTime((a = t.creationTimestamp) != null ? a : 0), s = {
+			threadId: e,
+			chatId: e.key.remote,
+			lastMessageTimestamp: i,
+			creationTimestamp: l,
+			pinThreadTimestamp: n
+		};
+		return o("WAWebBulkCreateOrUpdateThreadsMetadata").bulkCreateOrUpdateThreadsMetadata([s]).then(function() {
+			o("WAWebBackendApi").frontendFireAndForget("updateChatAiThreads", { aiThreads: [s] });
+		});
+	}
+	async function c(e) {
+		var t = o("WAWebWidFactory").createWid(e), n = o("WAWebThreadsMetadataIdUtils").craftThreadsMetadataInternalIdPrefixForChatAndThreadType(o("WAWebWidToJid").widToChatJid(t), o("WAWebThreadUtils").ThreadType.AiThread), a = await o("WAWebSchemaThreadsMetadata").getThreadsMetadataTable().startsWithAnyOf(["internalId"], [n]), i = [];
+		for (var l of a) {
+			var s = l.pinThreadTimestamp;
+			if (s != null && s > 0 && l.aiThreadInfo != null) {
+				var u = r("WAWebThreadId").tryFrom(l.id);
+				u != null && i.push({
+					threadId: u,
+					timestamp: s,
+					dbRow: l
+				});
+			}
+		}
+		var c = await d(e);
+		return [].concat(i, c);
+	}
+	async function d(t) {
+		var n = await o("WAWebSyncdDb").getSyncActionsRows(["action"], [o("WAWebSyncdConst").Actions.AiThreadPin]), a = [];
+		for (var i of n) if (i.actionState === o("WAWebSyncdConst").SyncActionState.Orphan) try {
+			var l = JSON.parse(i.index);
+			if (l.length < s) continue;
+			var u = l[1];
+			if (u !== t) continue;
+			var c = o("decodeProtobuf").decodeProtobuf(o("WAWebProtobufSyncAction.pb").SyncActionDataSpec, i.binarySyncData).value;
+			if ((c == null ? void 0 : c.threadPinAction) == null || (c == null ? void 0 : c.threadPinAction.pinned) !== !0) continue;
+			var d = l[2];
+			if (r("WAWebWid").isWid(u)) {
+				var m = o("WAWebWidFactory").createWid(u);
+				if (m.isBot()) {
+					var p, _ = o("WAWebWidFactory").asBotWidOrThrow(m), f = o("WAWebAiThreadCreationUtils").createAiThreadFromMutationIndex(_, d);
+					a.push({
+						threadId: f,
+						timestamp: o("WALongInt").numberOrThrowIfTooLarge((p = c.timestamp) != null ? p : 0),
+						isOrphan: !0
+					});
+				}
+			}
+		} catch (t) {
+			o("WALogger").WARN(e || (e = babelHelpers.taggedTemplateLiteralLoose(["[syncd][ai-thread-pin] failed to parse orphan sync action row"])));
+			continue;
+		}
+		return a;
+	}
+	l.updatePinState = u, l.getLocalThreadPins = c;
+}), 98);

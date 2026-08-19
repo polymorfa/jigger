@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFlex.react","WAWebHatchApprovalReviewDialog.react","WDSButton.react","WDSDialogBridge","WDSText.react","react","react-compiler-runtime","useWAWebPendingHatchApprovals"],"dependents":["useWAWebConversationPanelCanCompose"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_preload_conversation_chat_open",
+  "kind": "ab",
+  "name": "wa_web_preload_conversation_chat_open",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25937,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_preload_conversation_chat_open:\\s*\\[\\s*25937"
+  },
+  "literals": [
+    "wa_web_preload_conversation_chat_open",
+    "25937"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebConversationPreloadGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

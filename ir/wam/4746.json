@@ -1,0 +1,80 @@
+{
+  "id": "wam:4746",
+  "kind": "wam",
+  "name": "PsChannelPostForward",
+  "data": {
+    "kind": "wam",
+    "event_id": 4746,
+    "fields": {
+      "channelForwardContentType": {
+        "id": 6,
+        "type": "CHANNEL_FORWARD_CONTENT_TYPE",
+        "wire": "channel_forward_content_type",
+        "enum_ref": "CHANNEL_FORWARD_CONTENT_TYPE"
+      },
+      "channelForwardGroupType": {
+        "id": 1,
+        "type": "MESSAGE_CHAT_TYPE",
+        "wire": "channel_forward_group_type",
+        "enum_ref": "MESSAGE_CHAT_TYPE"
+      },
+      "cid": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "destinationChannelId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "destination_channel_id"
+      },
+      "destinationPostId": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "destination_post_id"
+      },
+      "isSecondOrder": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "is_second_order"
+      },
+      "mediaType": {
+        "id": 3,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "postId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "post_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsChannelPostForwardWamEvent",
+    "matches": "PsChannelPostForward:\\s*\\[\\s*4746"
+  },
+  "literals": [
+    "4746"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelForwardContentType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageChatType"
+    ],
+    "dependents": [
+      "WAWebLogNewsletterMessageForward"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

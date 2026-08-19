@@ -1,0 +1,42 @@
+{
+  "id": "ab:bug_reporting_using_graphql",
+  "kind": "ab",
+  "name": "bug_reporting_using_graphql",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24161,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "bug_reporting_using_graphql:\\s*\\[\\s*24161"
+  },
+  "literals": [
+    "bug_reporting_using_graphql",
+    "24161"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

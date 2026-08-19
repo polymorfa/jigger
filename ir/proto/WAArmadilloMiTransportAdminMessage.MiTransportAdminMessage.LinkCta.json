@@ -1,0 +1,40 @@
+{
+  "id": "proto:WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.LinkCta",
+  "kind": "proto",
+  "name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.LinkCta",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "ukOsaAdminText": {
+        "number": 1,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.LinkCta.UkOsaAdminText"
+      }
+    },
+    "module": "WAArmadilloMiTransportAdminMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloMiTransportAdminMessage.pb",
+    "matches": "name = \"MiTransportAdminMessage.LinkCta\""
+  },
+  "literals": [
+    "LinkCta"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleNotification",
+      "MAWMpsBridgeHandlers",
+      "MAWProtobufDeserializers",
+      "MpsAdminMsgToBridge",
+      "MpsThreadContentsPostProcessor",
+      "MpsToUIPostProcessor",
+      "WABuildMpsPayload",
+      "WmiMessengerE2EEIrisDeltaHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

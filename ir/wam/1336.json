@@ -1,0 +1,98 @@
+{
+  "id": "wam:1336",
+  "kind": "wam",
+  "name": "MemoryStat",
+  "data": {
+    "kind": "wam",
+    "event_id": 1336,
+    "fields": {
+      "appContext": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "app_context"
+      },
+      "appContextBitfield": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "app_context_bitfield"
+      },
+      "hasVerifiedNumber": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "has_verified_number"
+      },
+      "numMessages": {
+        "id": 8,
+        "type": "NUMBER",
+        "wire": "num_messages"
+      },
+      "privateBytes": {
+        "id": 3,
+        "type": "NUMBER",
+        "wire": "private_bytes"
+      },
+      "processType": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "process_type"
+      },
+      "sharedBytes": {
+        "id": 4,
+        "type": "NUMBER",
+        "wire": "shared_bytes"
+      },
+      "uptime": {
+        "id": 6,
+        "type": "NUMBER",
+        "wire": "uptime"
+      },
+      "workingSetPeakSize": {
+        "id": 2,
+        "type": "NUMBER",
+        "wire": "working_set_peak_size"
+      },
+      "workingSetSize": {
+        "id": 1,
+        "type": "NUMBER",
+        "wire": "working_set_size"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMemoryStatWamEvent",
+    "matches": "MemoryStat:\\s*\\[\\s*1336"
+  },
+  "literals": [
+    "1336"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebWamMemoryStat",
+      "WAWebWindowsHybridBridgeWam",
+      "WAWebWindowsHybridBridgeWam.v2619",
+      "WAWebWindowsHybridBridgeWam.v2620",
+      "WAWebWindowsHybridBridgeWam.v2621",
+      "WAWebWindowsHybridBridgeWam.v2622",
+      "WAWebWindowsHybridBridgeWam.v2623",
+      "WAWebWindowsHybridBridgeWam.v2624",
+      "WAWebWindowsHybridBridgeWam.v2625",
+      "WAWebWindowsHybridBridgeWam.v2626",
+      "WAWebWindowsHybridBridgeWam.v2627",
+      "WAWebWindowsHybridBridgeWam.v2628",
+      "WAWebWindowsHybridBridgeWam.v2629",
+      "WAWebWindowsHybridBridgeWam.v2630",
+      "WAWebWindowsHybridBridgeWam.v2631"
+    ],
+    "dep_count": 1,
+    "dependent_count": 15
+  }
+}

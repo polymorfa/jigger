@@ -1,0 +1,124 @@
+{
+  "id": "mex:WAWebMexFetchGroupIsInternalJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchGroupIsInternalJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "34119218944390847",
+    "operation": "query",
+    "variables": [
+      "id"
+    ],
+    "args": [
+      {
+        "name": "id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_query_by_id",
+        "args": [
+          "group_input: …"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on XWA2CommunityGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "properties",
+                "ty": "XWA2CommunityProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "internal",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2CommunityDefaultSubGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "properties",
+                "ty": "XWA2CommunityDefaultSubGroupProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "internal",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2CommunitySubGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "properties",
+                "ty": "XWA2CommunitySubGroupProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "internal",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2GroupRegularGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "properties",
+                "ty": "XWA2GroupRegularGroupProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "internal",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_query_by_id",
+    "document": "# persisted document 34119218944390847\nquery MexFetchGroupIsInternalJobQuery(\n  $id\n) {\n  xwa2_group_query_by_id(group_input: …) {\n    __typename\n    ... on XWA2CommunityGroup {\n      properties {  # XWA2CommunityProperties\n        internal\n      }\n    }\n    ... on XWA2CommunityDefaultSubGroup {\n      properties {  # XWA2CommunityDefaultSubGroupProperties\n        internal\n      }\n    }\n    ... on XWA2CommunitySubGroup {\n      properties {  # XWA2CommunitySubGroupProperties\n        internal\n      }\n    }\n    ... on XWA2GroupRegularGroup {\n      properties {  # XWA2GroupRegularGroupProperties\n        internal\n      }\n    }\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchGroupIsInternalJobQuery.graphql",
+    "matches": "id:\\s*\"34119218944390847\""
+  },
+  "literals": [
+    "34119218944390847",
+    "WAWebMexFetchGroupIsInternalJobQuery",
+    "xwa2_group_query_by_id"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchGroupIsInternalJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

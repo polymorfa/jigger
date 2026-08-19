@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebE2eMessageRecvWamEvent","WAWebE2eMessageSendWamEvent"],"dependent_count":2,"exports":[{"name":"GROUP_ENCRYPTION_TYPE","used_by":["WAWebE2eMessageRecvWamEvent","WAWebE2eMessageSendWamEvent"],"uses":2}]}

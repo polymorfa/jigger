@@ -1,0 +1,56 @@
+{
+  "id": "enum:MESSAGE_CAPPING_ACTION_TYPE",
+  "kind": "enum",
+  "name": "MESSAGE_CAPPING_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMessageCappingActionType",
+    "variants": [
+      {
+        "name": "CLICK",
+        "value": 0.0
+      },
+      {
+        "name": "VIEW",
+        "value": 1.0
+      },
+      {
+        "name": "API",
+        "value": 2.0
+      },
+      {
+        "name": "ENTER",
+        "value": 3.0
+      },
+      {
+        "name": "DEBUG",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMessageCappingActionType",
+    "matches": "MESSAGE_CAPPING_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MESSAGE_CAPPING_ACTION_TYPE",
+    "CLICK",
+    "VIEW",
+    "API",
+    "ENTER",
+    "DEBUG"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebIndividualNewChatMessageCappingLogEvents",
+      "WAWebMessageCappingWamEvent",
+      "WAWebMexFetchNewChatMessageCappingInfoJob",
+      "WAWebMexRequestOTEJob",
+      "WAWebNewChatMessageCappingNotificationHandler",
+      "WAWebSendMsgRecordAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

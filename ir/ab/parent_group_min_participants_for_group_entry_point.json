@@ -1,0 +1,45 @@
+{
+  "id": "ab:parent_group_min_participants_for_group_entry_point",
+  "kind": "ab",
+  "name": "parent_group_min_participants_for_group_entry_point",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2382,
+    "type": "int",
+    "default": 20,
+    "alt_default": 1
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "parent_group_min_participants_for_group_entry_point:\\s*\\[\\s*2382"
+  },
+  "literals": [
+    "parent_group_min_participants_for_group_entry_point",
+    "2382"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGroupInfoCreateCommunitySection.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

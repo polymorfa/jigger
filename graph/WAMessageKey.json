@@ -1,0 +1,1 @@
+{"deps":["WAGlobals","WAJids","WAStanzaUtils","err"],"dependents":["MAWParseBumpExistingMessageMsg","WAParseConsumerMessageProtocol"],"dependent_count":2,"exports":[{"name":"extractProtocolMessageId","used_by":["MAWParseBumpExistingMessageMsg","WAParseConsumerMessageProtocol"],"uses":2}]}

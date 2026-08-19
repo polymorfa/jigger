@@ -1,0 +1,1 @@
+{"deps":["WAWebGetters","WAWebGettersCaches","sumBy"],"dependents":["WAWebCartOrderDetailDrawer.react","WAWebOrderModel"],"dependent_count":2,"exports":[{"name":"clearOrderGetterCacheFor","used_by":["WAWebOrderModel"],"uses":1},{"name":"getTotalItemCount","used_by":["WAWebCartOrderDetailDrawer.react"],"uses":1}]}

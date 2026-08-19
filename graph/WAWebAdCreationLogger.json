@@ -1,0 +1,1 @@
+{"deps":["WAWebLwiScreenWamEvent","WAWebUserPrefsCTWA","WAWebWamEnumLwiAdsIdentityType","WAWebWamEnumLwiScreenReference"],"dependents":["WAWebChatlistUtils"],"dependent_count":1,"exports":[{"name":"getLwiAdsIdentityTypeFromActiveAccountInfo","used_by":["WAWebChatlistUtils"],"uses":1},{"name":"logLwiAdCreationNuxScreen","used_by":["WAWebChatlistUtils"],"uses":1}]}

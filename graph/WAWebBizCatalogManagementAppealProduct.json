@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBizCatalogManagementAppealProductMutation.graphql","WAWebFetchAdAccountToken","WAWebGraphQLServerError","WAWebNetworkStatus","WAWebRelayClient"],"dependents":["WAWebBizCatalogAppealProductJob","WAWebDebugCatalog"],"dependent_count":2,"exports":[{"name":"appealProduct","used_by":["WAWebBizCatalogAppealProductJob","WAWebDebugCatalog"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","decodeProtobuf"],"dependents":["WADecodeIncomingMsg","WAHandleAppdataMessageProtocol"],"dependent_count":2,"exports":[{"name":"parseMessageTransport","used_by":["WADecodeIncomingMsg","WAHandleAppdataMessageProtocol"],"uses":2}]}

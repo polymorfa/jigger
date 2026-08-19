@@ -1,0 +1,45 @@
+{
+  "id": "ab:recommended_channels_background_refresh",
+  "kind": "ab",
+  "name": "recommended_channels_background_refresh",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4309,
+    "type": "int",
+    "default": "144e5",
+    "alt_default": "144e5"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "recommended_channels_background_refresh:\\s*\\[\\s*4309"
+  },
+  "literals": [
+    "recommended_channels_background_refresh",
+    "4309"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUserPrefsNewsletter"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

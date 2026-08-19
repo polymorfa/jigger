@@ -1,0 +1,53 @@
+{
+  "id": "mex:WAWebMexCreateInviteCodeJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCreateInviteCodeJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26155584267463745",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_growth_create_invite_code",
+        "ty": "XWA2GrowthInviteCodeMutationResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "code",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_growth_create_invite_code",
+    "document": "# persisted document 26155584267463745\nmutation MexCreateInviteCodeJobMutation(\n  $input\n) {\n  xwa2_growth_create_invite_code(input: $input) {  # XWA2GrowthInviteCodeMutationResponse\n    code\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexCreateInviteCodeJobMutation.graphql",
+    "matches": "id:\\s*\"26155584267463745\""
+  },
+  "literals": [
+    "26155584267463745",
+    "WAWebMexCreateInviteCodeJobMutation",
+    "xwa2_growth_create_invite_code"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCreateInviteCodeJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "id": "wam:3790",
+  "kind": "wam",
+  "name": "QbmIncomingMessage",
+  "data": {
+    "kind": "wam",
+    "event_id": 3790,
+    "fields": {
+      "apiDailyThreadCount7d": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "api_daily_thread_count7d"
+      },
+      "apiMessageCount1d": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "api_message_count1d"
+      },
+      "apiMessageCount7d": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "api_message_count7d"
+      },
+      "apiTotalMessageCount": {
+        "id": 26,
+        "type": "INTEGER",
+        "wire": "api_total_message_count"
+      },
+      "apiTotalNewThreadCount": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "api_total_new_thread_count"
+      },
+      "apiUniqueThreadCount1d": {
+        "id": 24,
+        "type": "INTEGER",
+        "wire": "api_unique_thread_count1d"
+      },
+      "apiUniqueThreadCount7d": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "api_unique_thread_count7d"
+      },
+      "bizTrustTier": {
+        "id": 36,
+        "type": "STRING",
+        "wire": "biz_trust_tier"
+      },
+      "bodyUrlCountInt": {
+        "id": 52,
+        "type": "INTEGER",
+        "wire": "body_url_count_int"
+      },
+      "bodyUrlUniqueCountInt": {
+        "id": 53,
+        "type": "INTEGER",
+        "wire": "body_url_unique_count_int"
+      },
+      "buttonValueJsonArray": {
+        "id": 45,
+        "type": "STRING",
+        "wire": "button_value_json_array"
+      },
+      "chatsFolderType": {
+        "id": 1,
+        "type": "CHATS_FOLDER_TYPE",
+        "wire": "chats_folder_type",
+        "enum_ref": "CHATS_FOLDER_TYPE"
+      },
+      "companionDevices": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "companion_devices"
+      },
+      "contactType": {
+        "id": 2,
+        "type": "CONTACT_TYPE",
+        "wire": "contact_type",
+        "enum_ref": "CONTACT_TYPE"
+      },
+      "ctaUrlUniqueCountInt": {
+        "id": 54,
+        "type": "INTEGER",
+        "wire": "cta_url_unique_count_int"
+      },
+      "decisionId": {
+        "id": 41,
+        "type": "STRING",
+        "wire": "decision_id"
+      },
+      "entSourceSubplatform": {
+        "id": 40,
+        "type": "STRING",
+        "wire": "ent_source_subplatform"
+      },
+      "fmxCardShown": {
+        "id": 43,
+        "type": "BOOLEAN",
+        "wire": "fmx_card_shown"
+      },
+      "gapRules": {
+        "id": 58,
+        "type": "STRING",
+        "wire": "gap_rules"
+      },
+      "geEvaluationTimestamp": {
+        "id": 59,
+        "type": "INTEGER",
+        "wire": "ge_evaluation_timestamp"
+      },
+      "hsmTagStr": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "hsm_tag_str"
+      },
+      "iasEntryPoint": {
+        "id": 60,
+        "type": "SIGNUP_ENTRY_POINT",
+        "wire": "ias_entry_point",
+        "enum_ref": "SIGNUP_ENTRY_POINT"
+      },
+      "iasOptinDs": {
+        "id": 61,
+        "type": "STRING",
+        "wire": "ias_optin_ds"
+      },
+      "isBizIntent": {
+        "id": 37,
+        "type": "BOOLEAN",
+        "wire": "is_biz_intent"
+      },
+      "isBroadcastMessage": {
+        "id": 38,
+        "type": "BOOLEAN",
+        "wire": "is_broadcast_message"
+      },
+      "isCoex": {
+        "id": 56,
+        "type": "BOOLEAN",
+        "wire": "is_coex"
+      },
+      "isFromAdsManagerMm": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "is_from_ads_manager_mm"
+      },
+      "isFromCapi": {
+        "id": 16,
+        "type": "BOOLEAN",
+        "wire": "is_from_capi"
+      },
+      "isFromPill": {
+        "id": 63,
+        "type": "BOOLEAN",
+        "wire": "is_from_pill"
+      },
+      "isIasSubscriber": {
+        "id": 62,
+        "type": "BOOLEAN",
+        "wire": "is_ias_subscriber"
+      },
+      "isInsubContact": {
+        "id": 39,
+        "type": "BOOLEAN",
+        "wire": "is_insub_contact"
+      },
+      "isMuted": {
+        "id": 20,
+        "type": "BOOLEAN",
+        "wire": "is_muted"
+      },
+      "isOba": {
+        "id": 44,
+        "type": "BOOLEAN",
+        "wire": "is_oba"
+      },
+      "isThroughDecisionService": {
+        "id": 57,
+        "type": "BOOLEAN",
+        "wire": "is_through_decision_service"
+      },
+      "keepChatsArchivedEnabled": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "keep_chats_archived_enabled"
+      },
+      "lastOutgoingMessageDeltaTime": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "last_outgoing_message_delta_time"
+      },
+      "lastOutgoingMessageDeltaTimeReceived": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "last_outgoing_message_delta_time_received"
+      },
+      "messageFieldJsonArray": {
+        "id": 46,
+        "type": "STRING",
+        "wire": "message_field_json_array"
+      },
+      "messageHasButton": {
+        "id": 18,
+        "type": "BOOLEAN",
+        "wire": "message_has_button"
+      },
+      "messageHasUrl": {
+        "id": 19,
+        "type": "BOOLEAN",
+        "wire": "message_has_url"
+      },
+      "messageIdHmac": {
+        "id": 17,
+        "type": "STRING",
+        "wire": "message_id_hmac"
+      },
+      "messageTypeStr": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "message_type_str"
+      },
+      "muted": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "muted"
+      },
+      "notificationEnabled": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "notification_enabled"
+      },
+      "pillEntryPoint": {
+        "id": 64,
+        "type": "PILL_ENTRY_POINT",
+        "wire": "pill_entry_point",
+        "enum_ref": "PILL_ENTRY_POINT"
+      },
+      "qbmFlag": {
+        "id": 6,
+        "type": "QBM_FLAG",
+        "wire": "qbm_flag",
+        "enum_ref": "QBM_FLAG"
+      },
+      "qbmFlagStr": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "qbm_flag_str"
+      },
+      "readReceiptsEnabled": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "read_receipts_enabled"
+      },
+      "smbDailyThreadCount7d": {
+        "id": 28,
+        "type": "INTEGER",
+        "wire": "smb_daily_thread_count7d"
+      },
+      "smbMessageCount1d": {
+        "id": 29,
+        "type": "INTEGER",
+        "wire": "smb_message_count1d"
+      },
+      "smbMessageCount7d": {
+        "id": 30,
+        "type": "INTEGER",
+        "wire": "smb_message_count7d"
+      },
+      "smbTotalMessageCount": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "smb_total_message_count"
+      },
+      "smbTotalNewThreadCount": {
+        "id": 32,
+        "type": "INTEGER",
+        "wire": "smb_total_new_thread_count"
+      },
+      "smbUniqueThreadCount1d": {
+        "id": 33,
+        "type": "INTEGER",
+        "wire": "smb_unique_thread_count1d"
+      },
+      "smbUniqueThreadCount7d": {
+        "id": 34,
+        "type": "INTEGER",
+        "wire": "smb_unique_thread_count7d"
+      },
+      "submessageFieldJsonArray": {
+        "id": 47,
+        "type": "STRING",
+        "wire": "submessage_field_json_array"
+      },
+      "threadCreationTime": {
+        "id": 35,
+        "type": "THREAD_CREATION_TIME",
+        "wire": "thread_creation_time",
+        "enum_ref": "THREAD_CREATION_TIME"
+      },
+      "threadIdHmac": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      },
+      "threadLidHmac": {
+        "id": 42,
+        "type": "STRING",
+        "wire": "thread_lid_hmac"
+      },
+      "urlUniqueCountInt": {
+        "id": 55,
+        "type": "INTEGER",
+        "wire": "url_unique_count_int"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebQbmIncomingMessageWamEvent",
+    "matches": "QbmIncomingMessage:\\s*\\[\\s*3790"
+  },
+  "literals": [
+    "3790"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatsFolderType",
+      "WAWebWamEnumContactType",
+      "WAWebWamEnumPillEntryPoint",
+      "WAWebWamEnumQbmFlag",
+      "WAWebWamEnumSignupEntryPoint",
+      "WAWebWamEnumThreadCreationTime"
+    ],
+    "dependents": [
+      "WAWebQbmIncomingMessageLogger"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

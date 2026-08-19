@@ -1,0 +1,45 @@
+{
+  "id": "ab:private_osa_reporting_enabled",
+  "kind": "ab",
+  "name": "private_osa_reporting_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 12990,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "private_osa_reporting_enabled:\\s*\\[\\s*12990"
+  },
+  "literals": [
+    "private_osa_reporting_enabled",
+    "12990"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebReportGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

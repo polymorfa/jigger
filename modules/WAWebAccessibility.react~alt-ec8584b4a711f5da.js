@@ -1,0 +1,40 @@
+__d("WAWebAccessibility.react", ["react"], (function(t, n, r, o, a, i, l) {
+	var e, s = e || (e = o("react")), u = e, c = u.useEffect, d = u.useState;
+	function m(e) {
+		var t = e.children;
+		return s.jsx("span", { "aria-label": t });
+	}
+	m.displayName = m.name + " [from " + i.id + "]";
+	function p(e) {
+		var t = e.assertive, n = t === void 0 ? !1 : t, r = e.startWithText, o = r === void 0 ? !1 : r, a = e.text, i = d(o ? a : ""), l = i[0], u = i[1];
+		return c(function() {
+			window.setTimeout(function() {
+				u(a);
+			}, 10);
+		}, [a]), s.jsx("span", {
+			"aria-live": n ? "assertive" : "polite",
+			"aria-atomic": "true",
+			className: "xzpqnlu x1hyvwdk xjm9jq1 x6ikm8r x10wlt62 x10l6tqk x1i1rx1s",
+			children: l
+		});
+	}
+	p.displayName = p.name + " [from " + i.id + "]";
+	function _(e) {
+		var t = e.disabled, n = e.onClick, r = function(t) {
+			return n == null ? void 0 : n(t);
+		}, o = function(n) {
+			t !== !0 && r(n);
+		}, a = function(t) {
+			var e = t.key === "Enter" || t.key === " " || t.key === "Spacebar" || t.which === 13 || t.which === 32;
+			e && (t.preventDefault(), r(t));
+		};
+		return {
+			onClick: o,
+			onKeyPress: a,
+			disabled: t,
+			tabIndex: t === !0 ? -1 : 0,
+			role: "button"
+		};
+	}
+	l.InvisibleLabel = m, l.InvisibleAnnouncement = p, l.accessibleClickableButtonProps = _;
+}), 98);

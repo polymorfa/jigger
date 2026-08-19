@@ -1,0 +1,1 @@
+{"deps":["WABase64","WABinary","WAResultOrError","WASmaxMdSetToCompanionRPC"],"dependents":["WACreateHandleIq"],"dependent_count":1,"exports":[{"name":"generateRegistrationQrCodeString","used_by":["WACreateHandleIq"],"uses":1},{"name":"parsePairDevice","used_by":["WACreateHandleIq"],"uses":1}]}

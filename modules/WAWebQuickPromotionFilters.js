@@ -1,0 +1,33 @@
+__d("WAWebQuickPromotionFilters", [
+	"WAWebBizBroadcastDeviceCapabilityQuickPromotionFilter",
+	"WAWebBizBroadcastDeviceCapabilitySyncQuickPromotionFilter",
+	"WAWebBizBroadcastMarketingMessagesEligibilityQuickPromotionFilter",
+	"WAWebBizBroadcastSmbaPlatformQuickPromotionFilter",
+	"WAWebBizBroadcastSmbiPlatformQuickPromotionFilter",
+	"WAWebBizBroadcastWebSendEnabledNoExposureQuickPromotionFilter",
+	"WAWebCompanionModeQuickPromotionFilter",
+	"WAWebMaibaOnboardedQuickPromotionFilter",
+	"WAWebProfilePhotoRemovedQuickPromotionFilter",
+	"WAWebQuickPromotionFilterOtherPromotionEvent",
+	"WAWebQuickPromotionFilterSecondsSinceLastImpression",
+	"WAWebUserHasExitedGroupQuickPromotionFilter"
+], (function(t, n, r, o, a, i, l) {
+	var e = new Map([
+		[o("WAWebBizBroadcastDeviceCapabilityQuickPromotionFilter").bizBroadcastDeviceCapabilityFilter.name, o("WAWebBizBroadcastDeviceCapabilityQuickPromotionFilter").bizBroadcastDeviceCapabilityFilter],
+		[o("WAWebBizBroadcastDeviceCapabilitySyncQuickPromotionFilter").bizBroadcastDeviceCapabilitySyncFilter.name, o("WAWebBizBroadcastDeviceCapabilitySyncQuickPromotionFilter").bizBroadcastDeviceCapabilitySyncFilter],
+		[o("WAWebBizBroadcastMarketingMessagesEligibilityQuickPromotionFilter").bizBroadcastMarketingMessagesEligibilityFilter.name, o("WAWebBizBroadcastMarketingMessagesEligibilityQuickPromotionFilter").bizBroadcastMarketingMessagesEligibilityFilter],
+		[o("WAWebBizBroadcastSmbaPlatformQuickPromotionFilter").bizBroadcastSmbaPlatformFilter.name, o("WAWebBizBroadcastSmbaPlatformQuickPromotionFilter").bizBroadcastSmbaPlatformFilter],
+		[o("WAWebBizBroadcastSmbiPlatformQuickPromotionFilter").bizBroadcastSmbiPlatformFilter.name, o("WAWebBizBroadcastSmbiPlatformQuickPromotionFilter").bizBroadcastSmbiPlatformFilter],
+		[o("WAWebBizBroadcastWebSendEnabledNoExposureQuickPromotionFilter").bizBroadcastWebSendEnabledNoExposureFilter.name, o("WAWebBizBroadcastWebSendEnabledNoExposureQuickPromotionFilter").bizBroadcastWebSendEnabledNoExposureFilter],
+		[o("WAWebCompanionModeQuickPromotionFilter").companionModeFilter.name, o("WAWebCompanionModeQuickPromotionFilter").companionModeFilter],
+		[o("WAWebMaibaOnboardedQuickPromotionFilter").maibaOnboardedFilter.name, o("WAWebMaibaOnboardedQuickPromotionFilter").maibaOnboardedFilter],
+		[o("WAWebQuickPromotionFilterOtherPromotionEvent").otherPromotionEventFilter.name, o("WAWebQuickPromotionFilterOtherPromotionEvent").otherPromotionEventFilter],
+		[o("WAWebQuickPromotionFilterSecondsSinceLastImpression").secondsSinceLastImpressionFilter.name, o("WAWebQuickPromotionFilterSecondsSinceLastImpression").secondsSinceLastImpressionFilter],
+		[o("WAWebUserHasExitedGroupQuickPromotionFilter").userHasExitedGroupFilter.name, o("WAWebUserHasExitedGroupQuickPromotionFilter").userHasExitedGroupFilter],
+		[o("WAWebProfilePhotoRemovedQuickPromotionFilter").profilePhotoRemovedFilter.name, o("WAWebProfilePhotoRemovedQuickPromotionFilter").profilePhotoRemovedFilter]
+	]);
+	function s(t) {
+		return e.get(t);
+	}
+	l.getFilterValidator = s;
+}), 98);

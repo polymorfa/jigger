@@ -1,0 +1,1 @@
+{"deps":["WAWebModelStorageUtils","WAWebModelStorageVersions","WAWebStorageMutationBuilder"],"dependents":["WAWebApiAbPropConfig","WAWebDebugABProps","WAWebModelStorageInitialize"],"dependent_count":3,"exports":[{"name":"getAbpropConfigsTable","used_by":["WAWebApiAbPropConfig","WAWebDebugABProps"],"uses":2},{"name":"addTable","used_by":["WAWebModelStorageInitialize"],"uses":1}]}

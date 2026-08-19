@@ -1,0 +1,42 @@
+{
+  "id": "ab:group_history_settings",
+  "kind": "ab",
+  "name": "group_history_settings",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21261,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_history_settings:\\s*\\[\\s*21261"
+  },
+  "literals": [
+    "group_history_settings",
+    "21261"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_ctwa_web_hide_ad_context_if_soft_dismissed_in_primary",
+  "kind": "ab",
+  "name": "wa_ctwa_web_hide_ad_context_if_soft_dismissed_in_primary",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9729,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_ctwa_web_hide_ad_context_if_soft_dismissed_in_primary:\\s*\\[\\s*9729"
+  },
+  "literals": [
+    "wa_ctwa_web_hide_ad_context_if_soft_dismissed_in_primary",
+    "9729"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCTWAGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

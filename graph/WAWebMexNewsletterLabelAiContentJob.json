@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebMexClient","WAWebMexNewsletterLabelAiContentJobMutation.graphql","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterAddAiContentLabelJob"],"dependent_count":1,"exports":[{"name":"mexNewsletterLabelAiContentJob","used_by":["WAWebNewsletterAddAiContentLabelJob"],"uses":1}]}

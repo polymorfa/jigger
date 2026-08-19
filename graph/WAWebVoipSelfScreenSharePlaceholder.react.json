@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFlex.react","WAWebVoipStackInterface","WDSButton.react","WDSIconIcStopScreenShare.react","WDSText.react","asyncToGeneratorRuntime","react","react-compiler-runtime"],"dependents":["WAWebVoipUiSpeakerModeLayout.react"],"dependent_count":1,"exports":[]}

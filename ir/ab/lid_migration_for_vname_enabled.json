@@ -1,0 +1,42 @@
+{
+  "id": "ab:lid_migration_for_vname_enabled",
+  "kind": "ab",
+  "name": "lid_migration_for_vname_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11049,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "lid_migration_for_vname_enabled:\\s*\\[\\s*11049"
+  },
+  "literals": [
+    "lid_migration_for_vname_enabled",
+    "11049"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

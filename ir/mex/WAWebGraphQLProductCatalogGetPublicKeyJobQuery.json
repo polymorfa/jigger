@@ -1,0 +1,66 @@
+{
+  "id": "mex:WAWebGraphQLProductCatalogGetPublicKeyJobQuery",
+  "kind": "mex",
+  "name": "WAWebGraphQLProductCatalogGetPublicKeyJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "WAWebGraphQLProductCatalogGetPublicKeyJobQuery",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "args": [
+      {
+        "name": "request"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_product_catalog_get_public_key",
+        "ty": "XWAProductCatalogGetPublicKeyResponseSuccess",
+        "args": [
+          "request: $request"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "public_key_certificate_pem",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "public_key_with_signature",
+            "ty": "XWAPublicKeyWithSignature",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "public_key_pem",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "public_key_signature",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document WAWebGraphQLProductCatalogGetPublicKeyJobQuery\nquery GraphQLProductCatalogGetPublicKeyJobQuery(\n  $request\n) {\n  xwa_product_catalog_get_public_key(request: $request) {  # XWAProductCatalogGetPublicKeyResponseSuccess\n    public_key_certificate_pem\n    public_key_with_signature {  # XWAPublicKeyWithSignature\n      public_key_pem\n      public_key_signature\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebGraphQLProductCatalogGetPublicKeyJobQuery.graphql",
+    "matches": "id:\\s*\"WAWebGraphQLProductCatalogGetPublicKeyJobQuery\""
+  },
+  "literals": [
+    "WAWebGraphQLProductCatalogGetPublicKeyJobQuery",
+    "WAWebGraphQLProductCatalogGetPublicKeyJobQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGraphQLProductCatalogGetPublicKeyJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedSendIq","WADeprecatedWapParser","WALogger","WAPersistedJobManager","WATimeUtils","WAWaitForComms","WAWap","asyncToGeneratorRuntime"],"dependents":["MAWBridgeHandlers","MAWHandleSpam"],"dependent_count":2,"exports":[{"name":"getSpamsImpl","used_by":["MAWBridgeHandlers","MAWHandleSpam"],"uses":2}]}

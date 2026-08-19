@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumChatsFolderType","WAWebWamEnumContactType","WAWebWamEnumPillEntryPoint","WAWebWamEnumQbmFlag","WAWebWamEnumQbmMessageClickButtonClickedType","WAWebWamEnumSignupEntryPoint","WAWebWamEnumThumbnailType"],"dependents":["WAWebQbmMessageClickLogEvent"],"dependent_count":1,"exports":[{"name":"QbmMessageClickWamEvent","used_by":[],"uses":0}]}

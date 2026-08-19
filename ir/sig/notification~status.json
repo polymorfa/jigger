@@ -1,0 +1,32 @@
+{
+  "id": "sig:notification/status",
+  "kind": "sig",
+  "name": "AccountSyncNotificationStatusNotificationMixin",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "status"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAccountSyncNotificationStatusNotificationMixin",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "status"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInAccountSyncStatusNotificationType",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInAccountSyncNotificationType"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

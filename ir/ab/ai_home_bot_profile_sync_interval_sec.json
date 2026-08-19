@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_home_bot_profile_sync_interval_sec",
+  "kind": "ab",
+  "name": "ai_home_bot_profile_sync_interval_sec",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11168,
+    "type": "int",
+    "default": 86400,
+    "alt_default": 86400
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_home_bot_profile_sync_interval_sec:\\s*\\[\\s*11168"
+  },
+  "literals": [
+    "ai_home_bot_profile_sync_interval_sec",
+    "11168"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

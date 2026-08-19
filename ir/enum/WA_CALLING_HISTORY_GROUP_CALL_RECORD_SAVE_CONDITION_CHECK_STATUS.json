@@ -1,0 +1,76 @@
+{
+  "id": "enum:WA_CALLING_HISTORY_GROUP_CALL_RECORD_SAVE_CONDITION_CHECK_STATUS",
+  "kind": "enum",
+  "name": "WA_CALLING_HISTORY_GROUP_CALL_RECORD_SAVE_CONDITION_CHECK_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWaCallingHistoryGroupCallRecordSaveConditionCheckStatus",
+    "variants": [
+      {
+        "name": "INVALID",
+        "value": 0.0
+      },
+      {
+        "name": "NOT_GROUP_CALL",
+        "value": 1.0
+      },
+      {
+        "name": "NOT_START_FROM_VIDEO_CALL",
+        "value": 2.0
+      },
+      {
+        "name": "HAS_AV_SWITCH",
+        "value": 3.0
+      },
+      {
+        "name": "SELF_CAMERA_OFF",
+        "value": 4.0
+      },
+      {
+        "name": "PEER_CAMERA_OFF",
+        "value": 5.0
+      },
+      {
+        "name": "SELF_HAS_NETWORK_TRANSITION",
+        "value": 6.0
+      },
+      {
+        "name": "PEER_HAS_NETWORK_TRANSITION",
+        "value": 7.0
+      },
+      {
+        "name": "CALL_TOO_SHORT",
+        "value": 8.0
+      },
+      {
+        "name": "PASS",
+        "value": 100.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWaCallingHistoryGroupCallRecordSaveConditionCheckStatus",
+    "matches": "WA_CALLING_HISTORY_GROUP_CALL_RECORD_SAVE_CONDITION_CHECK_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "WA_CALLING_HISTORY_GROUP_CALL_RECORD_SAVE_CONDITION_CHECK_STATUS",
+    "INVALID",
+    "NOT_GROUP_CALL",
+    "NOT_START_FROM_VIDEO_CALL",
+    "HAS_AV_SWITCH",
+    "SELF_CAMERA_OFF",
+    "PEER_CAMERA_OFF",
+    "SELF_HAS_NETWORK_TRANSITION",
+    "PEER_HAS_NETWORK_TRANSITION",
+    "CALL_TOO_SHORT",
+    "PASS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

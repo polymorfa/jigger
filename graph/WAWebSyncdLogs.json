@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebPriorLogs","WAWebSyncdConst","asyncToGeneratorRuntime","compactMap"],"dependents":["WAWebSyncdDbCallbacksApi","WAWebSyncdFatal"],"dependent_count":2,"exports":[{"name":"printSyncdLogs","used_by":["WAWebSyncdDbCallbacksApi","WAWebSyncdFatal"],"uses":2},{"name":"writeSyncdLogImpl","used_by":["WAWebSyncdDbCallbacksApi"],"uses":1}]}

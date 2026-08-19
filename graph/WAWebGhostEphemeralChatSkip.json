@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgType"],"dependents":["WAWebCheckChatExistsOrCreate","WAWebProcessMultipleMsgsAction"],"dependent_count":2,"exports":[{"name":"isSkippableIncomingEphemeralSettingMsg","used_by":["WAWebCheckChatExistsOrCreate","WAWebProcessMultipleMsgsAction"],"uses":2}]}

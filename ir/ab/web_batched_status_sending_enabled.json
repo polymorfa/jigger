@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_batched_status_sending_enabled",
+  "kind": "ab",
+  "name": "web_batched_status_sending_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34366,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_batched_status_sending_enabled:\\s*\\[\\s*34366"
+  },
+  "literals": [
+    "web_batched_status_sending_enabled",
+    "34366"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.DocumentMessage",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.DocumentMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "document": {
+        "number": 1
+      },
+      "fileName": {
+        "number": 2
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.DocumentMessage\""
+  },
+  "literals": [
+    "DocumentMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

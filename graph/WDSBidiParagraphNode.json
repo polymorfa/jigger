@@ -1,0 +1,1 @@
+{"deps":["Lexical","Locale","WABidi","err"],"dependents":["WAWebBidiParagraphNode","WDSRichTextField.react"],"dependent_count":2,"exports":[{"name":"WDSBidiParagraphNode","used_by":["WAWebBidiParagraphNode","WDSRichTextField.react"],"uses":2},{"name":"isBidiNodeType","used_by":["WDSRichTextField.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumMdBootstrapHistoryPayloadType","WAWebWamEnumMdBootstrapPayloadType"],"dependents":["WAWebGetHistorySyncMetrics","WAWebWamProcessWorkerData"],"dependent_count":2,"exports":[{"name":"MdBootstrapHistoryDataStartDownloadingWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

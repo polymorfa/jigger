@@ -1,0 +1,1 @@
+{"deps":["fbt","JSResourceForInteraction","WAWebLazyLoadedRetriable","WAWebLoadable","WAWebLoadingDrawer.react","asyncToGeneratorRuntime","react"],"dependents":["WAWebCommunityFlow.react","WAWebGroupNotificationContextCard.react","WAWebInfoFlow.react","WAWebMessageCommunityEmptySubgroupWelcome.react","WAWebPrefetchLoadables"],"dependent_count":5,"exports":[]}

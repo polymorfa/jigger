@@ -1,0 +1,1 @@
+{"deps":["WAWebChevronCustomIcons","WAWebChipButton.react","WAWebDropdownItem.react","WAWebL10N","WAWebText_DONOTUSE.react","WAWebUimUie.react","WAWebUimUieMenu.react","WDSPaddings.stylex","react","stylex"],"dependents":["WAWebOrderDetailAmountTypeSelector"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

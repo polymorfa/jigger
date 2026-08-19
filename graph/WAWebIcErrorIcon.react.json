@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebWindowsSettingsBanner.react"],"dependent_count":2,"exports":[{"name":"IcErrorIcon","used_by":["WAWebAllGeneratedIcons","WAWebWindowsSettingsBanner.react"],"uses":2}]}

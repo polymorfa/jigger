@@ -1,0 +1,1 @@
+{"deps":["FBLogger"],"dependents":["LWICometRegulatedCategoryUtils","WAWebBizAdCreationAudienceUtils","WAWebBuildWABizAdCreationLWIAudienceMap","WAWebGetSavedAudiencesFromQuery","useWAWebBizAdCreationAudienceSpec","useWAWebBizAdCreationOpenTargetingModal"],"dependent_count":6,"exports":[{"name":"default","used_by":[],"uses":0}]}

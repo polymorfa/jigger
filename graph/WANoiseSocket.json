@@ -1,0 +1,1 @@
+{"deps":["Promise","WACryptoDependencies","WALogger","WAPromiseQueue","asyncToGeneratorRuntime"],"dependents":["WAFakeSocket","WANoiseHandshake"],"dependent_count":2,"exports":[{"name":"NoiseSocket","used_by":["WAFakeSocket"],"uses":1}]}

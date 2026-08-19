@@ -1,0 +1,42 @@
+{
+  "id": "ab:kill_switch_ctwa_ml_entry_point_config",
+  "kind": "ab",
+  "name": "kill_switch_ctwa_ml_entry_point_config",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6215,
+    "type": "bool",
+    "default": true,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "kill_switch_ctwa_ml_entry_point_config:\\s*\\[\\s*6215"
+  },
+  "literals": [
+    "kill_switch_ctwa_ml_entry_point_config",
+    "6215"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

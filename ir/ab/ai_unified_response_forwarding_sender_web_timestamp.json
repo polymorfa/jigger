@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_unified_response_forwarding_sender_web_timestamp",
+  "kind": "ab",
+  "name": "ai_unified_response_forwarding_sender_web_timestamp",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32008,
+    "type": "int",
+    "default": 1781582400,
+    "alt_default": 1781582400
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_unified_response_forwarding_sender_web_timestamp:\\s*\\[\\s*32008"
+  },
+  "literals": [
+    "ai_unified_response_forwarding_sender_web_timestamp",
+    "32008"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotUnifiedResponseGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

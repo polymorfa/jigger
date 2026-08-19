@@ -1,0 +1,45 @@
+{
+  "id": "ab:blue_education_enabled",
+  "kind": "ab",
+  "name": "blue_education_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5295,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "blue_education_enabled:\\s*\\[\\s*5295"
+  },
+  "literals": [
+    "blue_education_enabled",
+    "5295"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMiscGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

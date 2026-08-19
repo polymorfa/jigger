@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebStatusViewerInfoCellImage.react"],"dependent_count":2,"exports":[{"name":"StatusLikeIcon","used_by":["WAWebAllGeneratedIcons","WAWebStatusViewerInfoCellImage.react"],"uses":2}]}

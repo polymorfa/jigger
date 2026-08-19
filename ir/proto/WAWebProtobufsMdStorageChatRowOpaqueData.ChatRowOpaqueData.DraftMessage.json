@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData.DraftMessage",
+  "kind": "proto",
+  "name": "WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData.DraftMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "ctwaContext": {
+        "number": 4,
+        "type_name": "WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData.DraftMessage.CtwaContextData"
+      },
+      "ctwaContextLinkData": {
+        "number": 3,
+        "type_name": "WAWebProtobufsMdStorageChatRowOpaqueData.ChatRowOpaqueData.DraftMessage.CtwaContextLinkData"
+      },
+      "omittedUrl": {
+        "number": 2
+      },
+      "text": {
+        "number": 1
+      },
+      "timestamp": {
+        "number": 5
+      }
+    },
+    "module": "WAWebProtobufsMdStorageChatRowOpaqueData.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMdStorageChatRowOpaqueData.pb",
+    "matches": "name = \"ChatRowOpaqueData.DraftMessage\""
+  },
+  "literals": [
+    "DraftMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDBChatSerialization"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

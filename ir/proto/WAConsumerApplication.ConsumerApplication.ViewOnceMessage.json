@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.ViewOnceMessage",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.ViewOnceMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "imageMessage": {
+        "number": 1,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ImageMessage"
+      },
+      "videoMessage": {
+        "number": 2,
+        "type_name": "WAConsumerApplication.ConsumerApplication.VideoMessage"
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.ViewOnceMessage\""
+  },
+  "literals": [
+    "ViewOnceMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

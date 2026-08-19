@@ -1,0 +1,1 @@
+{"deps":["WAWebMessagePluginQuotedMsgThumbnailIconRegistry","WAWebPluginCreateRegistryLookup"],"dependents":["WAWebQuotedMsgQuotedMedia.react"],"dependent_count":1,"exports":[{"name":"quotedMsgThumbailIconComponent","used_by":["WAWebQuotedMsgQuotedMedia.react"],"uses":1}]}

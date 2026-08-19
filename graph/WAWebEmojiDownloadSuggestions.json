@@ -1,0 +1,1 @@
+{"deps":["JSResource","Promise","WAWebABProps","WAWebABPropsCache","WAWebL10nGetRenderedLocale","asyncToGeneratorRuntime"],"dependents":["WAWebEmojiKeywordToUnicode","WAWebEmojis.story"],"dependent_count":2,"exports":[{"name":"downloadEmojiSuggestions","used_by":["WAWebEmojiKeywordToUnicode","WAWebEmojis.story"],"uses":2}]}

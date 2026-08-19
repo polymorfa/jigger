@@ -1,0 +1,1 @@
+{"deps":["WAMsgTransport.pb","WAParseMessageTransport","WAResultOrError","decodeProtobuf"],"dependents":["MAWHandleAppdataMessage"],"dependent_count":1,"exports":[{"name":"decodeAppdata","used_by":["MAWHandleAppdataMessage"],"uses":1}]}

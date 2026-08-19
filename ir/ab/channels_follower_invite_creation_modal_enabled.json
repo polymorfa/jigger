@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_follower_invite_creation_modal_enabled",
+  "kind": "ab",
+  "name": "channels_follower_invite_creation_modal_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26120,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_follower_invite_creation_modal_enabled:\\s*\\[\\s*26120"
+  },
+  "literals": [
+    "channels_follower_invite_creation_modal_enabled",
+    "26120"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

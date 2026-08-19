@@ -1,0 +1,106 @@
+__d("WAWebBotFeedbackModal.react", [
+	"fbt",
+	"WAWebBotTypes",
+	"WAWebConfirmPopup.react",
+	"WAWebModalManager",
+	"WAWebMsgType",
+	"WAWebRadio.react",
+	"WAWebText.react",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u = e || (e = o("react")), c = e.useState;
+	function d(e) {
+		var t = e.msg, n = e.onSubmit, r = c(), a = r[0], i = r[1], l = t.type === o("WAWebMsgType").MSG_TYPE.IMAGE, d = function(t) {
+			switch (t) {
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_HELPFUL: return s._(
+					/*BTDS*/
+					""
+				);
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_INTERESTING: return s._(
+					/*BTDS*/
+					""
+				);
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_REFUSED: return s._(
+					/*BTDS*/
+					""
+				);
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_ACCURATE: return s._(
+					/*BTDS*/
+					""
+				);
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_SAFE: return s._(
+					/*BTDS*/
+					""
+				);
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_OTHER: return s._(
+					/*BTDS*/
+					""
+				);
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_NOT_VISUALLY_APPEALING: return s._(
+					/*BTDS*/
+					""
+				);
+				case o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_NOT_RELEVANT_TO_TEXT: return s._(
+					/*BTDS*/
+					""
+				);
+				default: return "";
+			}
+		}, m = function() {
+			var e = l ? [
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_NOT_VISUALLY_APPEALING,
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_NOT_RELEVANT_TO_TEXT,
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_SAFE,
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_OTHER
+			] : [
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_HELPFUL,
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_ACCURATE,
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_INTERESTING,
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_SAFE,
+				o("WAWebBotTypes").BotFeedbackKind.NEGATIVE_OTHER
+			];
+			return e.map(function(e) {
+				return {
+					value: e,
+					label: d(e),
+					onChange: function() {
+						return i(e);
+					}
+				};
+			});
+		}, p = async function() {
+			a != null && n(a);
+		};
+		return u.jsxs(o("WAWebConfirmPopup.react").ConfirmPopup, {
+			title: s._(
+				/*BTDS*/
+				""
+			),
+			okText: s._(
+				/*BTDS*/
+				""
+			),
+			onOK: p,
+			okDisabled: a == null,
+			onCancel: o("WAWebModalManager").closeModalManager,
+			testid: "bot-feedback-modal",
+			children: [u.jsx(o("WAWebText.react").WAWebTextSmall, {
+				color: "secondaryLighter",
+				paddingTop: 4,
+				paddingBottom: 12,
+				children: l ? s._(
+					/*BTDS*/
+					""
+				) : s._(
+					/*BTDS*/
+					""
+				)
+			}), u.jsx(o("WAWebRadio.react").RadioGroup, {
+				name: "feedback",
+				checkedValue: a != null ? a : null,
+				options: m()
+			})]
+		});
+	}
+	d.displayName = d.name + " [from " + i.id + "]", l.default = d;
+}), 226);

@@ -1,0 +1,257 @@
+{
+  "id": "enum:STATUS_PRIVACY_SETTINGS_ACTION",
+  "kind": "enum",
+  "name": "STATUS_PRIVACY_SETTINGS_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusPrivacySettingsAction",
+    "variants": [
+      {
+        "name": "AUDIENCE_SELECTION_ENTRYPOINT_CLICKED",
+        "value": 1.0
+      },
+      {
+        "name": "INCLUDE_CONTACT_LIST_LAUNCHED",
+        "value": 2.0
+      },
+      {
+        "name": "EXCLUDE_CONTACT_LIST_LAUNCHED",
+        "value": 3.0
+      },
+      {
+        "name": "MY_CONTACTS_CLICKED",
+        "value": 4.0
+      },
+      {
+        "name": "MY_CONTACTS_EXCEPT_CLICKED",
+        "value": 5.0
+      },
+      {
+        "name": "ONLY_SHARE_WITH_CLICKED",
+        "value": 6.0
+      },
+      {
+        "name": "UPDATED_STATUS_PRIVACY_SETTING",
+        "value": 7.0
+      },
+      {
+        "name": "ALLOW_RESHARING_CLICKED",
+        "value": 8.0
+      },
+      {
+        "name": "ALLOW_FORWARDING_CLICKED",
+        "value": 9.0
+      },
+      {
+        "name": "UPDATED_STATUS_FORWARD_SETTING",
+        "value": 10.0
+      },
+      {
+        "name": "UPDATED_STATUS_INCLUDE_CLOSE_FRIENDS_LAUNCHED",
+        "value": 11.0
+      },
+      {
+        "name": "LIST_CONTACT_SELECTED",
+        "value": 12.0
+      },
+      {
+        "name": "LIST_CONTACT_DESELECTED",
+        "value": 13.0
+      },
+      {
+        "name": "MERGED_AUDIENCE_EDIT_CLICKED",
+        "value": 14.0
+      },
+      {
+        "name": "CREATE_CUSTOM_AUDIENCE_CLICKED",
+        "value": 15.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_CONTACT_LIST_LAUNCHED",
+        "value": 16.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_EMOJI_CHANGED",
+        "value": 17.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_CREATED",
+        "value": 18.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_DELETED",
+        "value": 19.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_UPDATED",
+        "value": 20.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_CLICKED",
+        "value": 21.0
+      },
+      {
+        "name": "CLOSE_FRIENDS_CLICKED",
+        "value": 22.0
+      },
+      {
+        "name": "CLOSE_FRIENDS__LIST_LAUNCHED",
+        "value": 23.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_SELECT_ALL_CLICK",
+        "value": 24.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_UNSELECT_ALL_CLICK",
+        "value": 25.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_GROUP_BUILDER_DESELECTED_ON_SEARCH",
+        "value": 26.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_GROUP_BUILDER_SELECTED_ON_SEARCH",
+        "value": 27.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_CONTACT_SEARCH_TAP",
+        "value": 28.0
+      },
+      {
+        "name": "SEE_ALL_BUILDERS_DONE_CLICKED",
+        "value": 29.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_OSW_BUILDER_DESELECTED_ON_SEE_ALL_BUILDERS",
+        "value": 30.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_OSW_BUILDER_SELECTED_ON_SEE_ALL_BUILDERS",
+        "value": 31.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_GROUP_BUILDER_DESELECTED_ON_SEE_ALL_BUILDERS",
+        "value": 32.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_GROUP_BUILDER_SELECTED_ON_SEE_ALL_BUILDERS",
+        "value": 33.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_GROUP_BUILDER_DESELECTED_ON_CONTACT_PICKER",
+        "value": 34.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_GROUP_BUILDER_SELECTED_ON_CONTACT_PICKER",
+        "value": 35.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_OSW_BUILDER_DESELECTED_ON_CONTACT_PICKER",
+        "value": 36.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_OSW_BUILDER_SELECTED_ON_CONTACT_PICKER",
+        "value": 37.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_BUILDERS_SEE_ALL_CLICK",
+        "value": 38.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_BUILDER_DETAILS_CLICK",
+        "value": 39.0
+      },
+      {
+        "name": "AUDIENCE_SELECTION_ENTRYPOINT_CREATE_YOUR_OWN_CLICKED",
+        "value": 40.0
+      },
+      {
+        "name": "AUDIENCE_SELECTION_ENTRYPOINT_ADD_TO_CF_CLICKED",
+        "value": 41.0
+      },
+      {
+        "name": "CREATE_CLOSE_FRIENDS_CLICKED",
+        "value": 42.0
+      },
+      {
+        "name": "CLOSE_FRIENDS_CREATED",
+        "value": 43.0
+      },
+      {
+        "name": "CUSTOM_AUDIENCE_CONTACT_PICKER_NEXT_CLICKED",
+        "value": 44.0
+      },
+      {
+        "name": "GROUP_STATUS_PICKER_LAUNCHED",
+        "value": 45.0
+      },
+      {
+        "name": "GROUP_STATUS_CLICKED",
+        "value": 46.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusPrivacySettingsAction",
+    "matches": "STATUS_PRIVACY_SETTINGS_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_PRIVACY_SETTINGS_ACTION",
+    "AUDIENCE_SELECTION_ENTRYPOINT_CLICKED",
+    "INCLUDE_CONTACT_LIST_LAUNCHED",
+    "EXCLUDE_CONTACT_LIST_LAUNCHED",
+    "MY_CONTACTS_CLICKED",
+    "MY_CONTACTS_EXCEPT_CLICKED",
+    "ONLY_SHARE_WITH_CLICKED",
+    "UPDATED_STATUS_PRIVACY_SETTING",
+    "ALLOW_RESHARING_CLICKED",
+    "ALLOW_FORWARDING_CLICKED",
+    "UPDATED_STATUS_FORWARD_SETTING",
+    "UPDATED_STATUS_INCLUDE_CLOSE_FRIENDS_LAUNCHED",
+    "LIST_CONTACT_SELECTED",
+    "LIST_CONTACT_DESELECTED",
+    "MERGED_AUDIENCE_EDIT_CLICKED",
+    "CREATE_CUSTOM_AUDIENCE_CLICKED",
+    "CUSTOM_AUDIENCE_CONTACT_LIST_LAUNCHED",
+    "CUSTOM_AUDIENCE_EMOJI_CHANGED",
+    "CUSTOM_AUDIENCE_CREATED",
+    "CUSTOM_AUDIENCE_DELETED",
+    "CUSTOM_AUDIENCE_UPDATED",
+    "CUSTOM_AUDIENCE_CLICKED",
+    "CLOSE_FRIENDS_CLICKED",
+    "CLOSE_FRIENDS__LIST_LAUNCHED",
+    "CUSTOM_AUDIENCE_SELECT_ALL_CLICK",
+    "CUSTOM_AUDIENCE_UNSELECT_ALL_CLICK",
+    "CUSTOM_AUDIENCE_GROUP_BUILDER_DESELECTED_ON_SEARCH",
+    "CUSTOM_AUDIENCE_GROUP_BUILDER_SELECTED_ON_SEARCH",
+    "CUSTOM_AUDIENCE_CONTACT_SEARCH_TAP",
+    "SEE_ALL_BUILDERS_DONE_CLICKED",
+    "CUSTOM_AUDIENCE_OSW_BUILDER_DESELECTED_ON_SEE_ALL_BUILDERS",
+    "CUSTOM_AUDIENCE_OSW_BUILDER_SELECTED_ON_SEE_ALL_BUILDERS",
+    "CUSTOM_AUDIENCE_GROUP_BUILDER_DESELECTED_ON_SEE_ALL_BUILDERS",
+    "CUSTOM_AUDIENCE_GROUP_BUILDER_SELECTED_ON_SEE_ALL_BUILDERS",
+    "CUSTOM_AUDIENCE_GROUP_BUILDER_DESELECTED_ON_CONTACT_PICKER",
+    "CUSTOM_AUDIENCE_GROUP_BUILDER_SELECTED_ON_CONTACT_PICKER",
+    "CUSTOM_AUDIENCE_OSW_BUILDER_DESELECTED_ON_CONTACT_PICKER",
+    "CUSTOM_AUDIENCE_OSW_BUILDER_SELECTED_ON_CONTACT_PICKER",
+    "CUSTOM_AUDIENCE_BUILDERS_SEE_ALL_CLICK",
+    "CUSTOM_AUDIENCE_BUILDER_DETAILS_CLICK",
+    "AUDIENCE_SELECTION_ENTRYPOINT_CREATE_YOUR_OWN_CLICKED",
+    "AUDIENCE_SELECTION_ENTRYPOINT_ADD_TO_CF_CLICKED",
+    "CREATE_CLOSE_FRIENDS_CLICKED",
+    "CLOSE_FRIENDS_CREATED",
+    "CUSTOM_AUDIENCE_CONTACT_PICKER_NEXT_CLICKED",
+    "GROUP_STATUS_PICKER_LAUNCHED",
+    "GROUP_STATUS_CLICKED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLogStatusPrivacySettings",
+      "WAWebStatusPrivacySettingsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

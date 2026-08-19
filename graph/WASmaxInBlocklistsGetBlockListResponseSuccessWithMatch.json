@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxParseReference","WASmaxParseUtils"],"dependents":["WASmaxBlocklistsGetBlockListRPC"],"dependent_count":1,"exports":[{"name":"parseGetBlockListResponseSuccessWithMatch","used_by":["WASmaxBlocklistsGetBlockListRPC"],"uses":1}]}

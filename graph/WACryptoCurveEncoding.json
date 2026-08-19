@@ -1,0 +1,1 @@
+{"deps":["err"],"dependents":["WACryptoCurveKeyCanonicalCheck","WACryptoCurveTransformations"],"dependent_count":2,"exports":[{"name":"bytesToBigIntLE","used_by":["WACryptoCurveKeyCanonicalCheck","WACryptoCurveTransformations"],"uses":2},{"name":"bigIntTo32LE","used_by":["WACryptoCurveTransformations"],"uses":1},{"name":"hexToU8","used_by":[],"uses":0}]}

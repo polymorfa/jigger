@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebComposeBox.react","WAWebQuickRepliesPluginLogEvents","WAWebQuickReplyLogging","WAWebQuickReplyWamEvent"],"dependent_count":4,"exports":[{"name":"QUICK_REPLY_ENTRY_POINT","used_by":["WAWebComposeBox.react","WAWebQuickRepliesPluginLogEvents","WAWebQuickReplyLogging","WAWebQuickReplyWamEvent"],"uses":4}]}

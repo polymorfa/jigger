@@ -1,0 +1,150 @@
+{
+  "id": "wam:4692",
+  "kind": "wam",
+  "name": "ChannelCoreEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 4692,
+    "fields": {
+      "channelCoreEventSequenceNumber": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "channel_core_event_sequence_number"
+      },
+      "channelCoreEventType": {
+        "id": 1,
+        "type": "CHANNEL_EVENT_TYPE",
+        "wire": "channel_core_event_type",
+        "enum_ref": "CHANNEL_EVENT_TYPE"
+      },
+      "channelDirectorySessionId": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "channel_directory_session_id"
+      },
+      "channelDiscoveryQueryId": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "channel_discovery_query_id"
+      },
+      "channelDiscoverySearchId": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "channel_discovery_search_id"
+      },
+      "channelEntryPoint": {
+        "id": 2,
+        "type": "CHANNEL_ENTRY_POINT",
+        "wire": "channel_entry_point",
+        "enum_ref": "CHANNEL_ENTRY_POINT"
+      },
+      "channelEntryPointApp": {
+        "id": 3,
+        "type": "CHANNEL_ENTRY_POINT_APP",
+        "wire": "channel_entry_point_app",
+        "enum_ref": "CHANNEL_ENTRY_POINT_APP"
+      },
+      "channelEntryPointMetadata": {
+        "id": 10,
+        "type": "CHANNEL_ENTRY_POINT_METADATA",
+        "wire": "channel_entry_point_metadata",
+        "enum_ref": "CHANNEL_ENTRY_POINT_METADATA"
+      },
+      "channelEventUnit": {
+        "id": 12,
+        "type": "CHANNEL_EVENT_UNIT",
+        "wire": "channel_event_unit",
+        "enum_ref": "CHANNEL_EVENT_UNIT"
+      },
+      "channelRequestMetadata": {
+        "id": 19,
+        "type": "STRING",
+        "wire": "channel_request_metadata"
+      },
+      "cid": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "coreEventTrigger": {
+        "id": 21,
+        "type": "CORE_EVENT_TRIGGER_TYPE",
+        "wire": "core_event_trigger",
+        "enum_ref": "CORE_EVENT_TRIGGER_TYPE"
+      },
+      "directoryChannelIndex": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "directory_channel_index"
+      },
+      "discoverySurface": {
+        "id": 14,
+        "type": "TS_SURFACE",
+        "wire": "discovery_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "entryPointMetadata": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "entry_point_metadata"
+      },
+      "eventSurface": {
+        "id": 6,
+        "type": "CHANNEL_EVENT_SURFACE",
+        "wire": "event_surface",
+        "enum_ref": "CHANNEL_EVENT_SURFACE"
+      },
+      "similarChannelsSessionId": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "similar_channels_session_id"
+      },
+      "traceIdInt": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      },
+      "unifiedSessionId": {
+        "id": 17,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelCoreEventWamEvent",
+    "matches": "ChannelCoreEvent:\\s*\\[\\s*4692"
+  },
+  "literals": [
+    "4692"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelEntryPoint",
+      "WAWebWamEnumChannelEntryPointApp",
+      "WAWebWamEnumChannelEntryPointMetadata",
+      "WAWebWamEnumChannelEventSurface",
+      "WAWebWamEnumChannelEventType",
+      "WAWebWamEnumChannelEventUnit",
+      "WAWebWamEnumCoreEventTriggerType",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebNewsletterAttributionLogging"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

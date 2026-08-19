@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MWXMAV2IsDataclassLiveLocationXMA"],"dependents":["MAWParseXMAProtocol"],"dependent_count":1,"exports":[{"name":"parseCollapsibleIdFromXMADataClass","used_by":["MAWParseXMAProtocol"],"uses":1}]}

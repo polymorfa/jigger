@@ -1,0 +1,64 @@
+{
+  "id": "mex:WAWebMexDeleteNewsletterJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexDeleteNewsletterJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "30062808666639665",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_delete_v2",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "newsletter_id: $newsletter_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "state",
+            "ty": "XWA2NewsletterState",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "type",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_delete_v2",
+    "document": "# persisted document 30062808666639665\nmutation MexDeleteNewsletterJobMutation(\n  $newsletter_id\n) {\n  xwa2_newsletter_delete_v2(newsletter_id: $newsletter_id) {  # XWA2NewsletterMutationResponse\n    id\n    state {  # XWA2NewsletterState\n      type\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexDeleteNewsletterJobMutation.graphql",
+    "matches": "id:\\s*\"30062808666639665\""
+  },
+  "literals": [
+    "30062808666639665",
+    "WAWebMexDeleteNewsletterJobMutation",
+    "xwa2_newsletter_delete_v2"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexDeleteNewsletterJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

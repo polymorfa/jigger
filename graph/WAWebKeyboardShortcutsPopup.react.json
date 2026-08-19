@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebActions","WAWebConfirmPopup.react","WAWebEnvironment","WAWebFbtCommon","WAWebKeyboardShortcut.react","WAWebKeyboardShortcuts","WAWebModal.react","WAWebModalManager","WAWebPrivacyModeGating","WAWebText.react","WAWebUA","react"],"dependents":["WAWebMain.react","WAWebMeTabFlow.react","WAWebSettingsFlow.react"],"dependent_count":3,"exports":[]}

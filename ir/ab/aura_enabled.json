@@ -1,0 +1,45 @@
+{
+  "id": "ab:aura_enabled",
+  "kind": "ab",
+  "name": "aura_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23270,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "aura_enabled:\\s*\\[\\s*23270"
+  },
+  "literals": [
+    "aura_enabled",
+    "23270"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebAuraGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

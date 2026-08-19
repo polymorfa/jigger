@@ -1,0 +1,1 @@
+{"deps":["WAWebConsumerPixStrings","WAWebFlex.react","WAWebNoop","WDSIconIcChevronDown.react","WDSMenu.react","WDSMenuItem.react","WDSTextField.react","react","react-compiler-runtime","useWDSMenu"],"dependents":["WAWebBizPaymentsBrazilAddPixModalRefreshed.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

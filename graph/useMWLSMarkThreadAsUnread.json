@@ -1,0 +1,1 @@
+{"deps":["LSFactory","LSOptimisticMarkThreadUnreadStoredProcedure","MWThreadKey.react","MessengerWebUXLogger","promiseDone","react","react-compiler-runtime","useReStore"],"dependents":["MAWMarkThreadAsReadMenuItem.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

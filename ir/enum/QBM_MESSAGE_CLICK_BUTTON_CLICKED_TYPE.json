@@ -1,0 +1,145 @@
+{
+  "id": "enum:QBM_MESSAGE_CLICK_BUTTON_CLICKED_TYPE",
+  "kind": "enum",
+  "name": "QBM_MESSAGE_CLICK_BUTTON_CLICKED_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumQbmMessageClickButtonClickedType",
+    "variants": [
+      {
+        "name": "URL",
+        "value": 0.0
+      },
+      {
+        "name": "QUICK_REPLY",
+        "value": 1.0
+      },
+      {
+        "name": "PHONE_NUMBER",
+        "value": 2.0
+      },
+      {
+        "name": "COPY_CODE",
+        "value": 3.0
+      },
+      {
+        "name": "CATALOG",
+        "value": 4.0
+      },
+      {
+        "name": "MPM",
+        "value": 5.0
+      },
+      {
+        "name": "FLOW",
+        "value": 6.0
+      },
+      {
+        "name": "OTHER",
+        "value": 7.0
+      },
+      {
+        "name": "HEADER_URL",
+        "value": 8.0
+      },
+      {
+        "name": "BODY_URL",
+        "value": 9.0
+      },
+      {
+        "name": "FOOTER_URL",
+        "value": 10.0
+      },
+      {
+        "name": "APP",
+        "value": 11.0
+      },
+      {
+        "name": "IMAGE_HEADER_URL",
+        "value": 12.0
+      },
+      {
+        "name": "FULLSCREEN_IMAGE_CTA_URL",
+        "value": 13.0
+      },
+      {
+        "name": "FULLSCREEN_VIDEO_CTA_URL",
+        "value": 14.0
+      },
+      {
+        "name": "VIEW_PRODUCT",
+        "value": 15.0
+      },
+      {
+        "name": "TEXT_HEADER_URL",
+        "value": 16.0
+      },
+      {
+        "name": "FULLSCREEN_ALBUM_CTA_URL",
+        "value": 17.0
+      },
+      {
+        "name": "WATCH_AND_BROWSE_VIDEO",
+        "value": 18.0
+      },
+      {
+        "name": "CTA_REMIND_ME",
+        "value": 19.0
+      },
+      {
+        "name": "CTA_CANCEL_REMINDER",
+        "value": 20.0
+      },
+      {
+        "name": "SUGGESTED_QUICK_REPLY",
+        "value": 21.0
+      },
+      {
+        "name": "QUICK_REPLY_PILL",
+        "value": 22.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumQbmMessageClickButtonClickedType",
+    "matches": "QBM_MESSAGE_CLICK_BUTTON_CLICKED_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "QBM_MESSAGE_CLICK_BUTTON_CLICKED_TYPE",
+    "URL",
+    "QUICK_REPLY",
+    "PHONE_NUMBER",
+    "COPY_CODE",
+    "CATALOG",
+    "MPM",
+    "FLOW",
+    "OTHER",
+    "HEADER_URL",
+    "BODY_URL",
+    "FOOTER_URL",
+    "APP",
+    "IMAGE_HEADER_URL",
+    "FULLSCREEN_IMAGE_CTA_URL",
+    "FULLSCREEN_VIDEO_CTA_URL",
+    "VIEW_PRODUCT",
+    "TEXT_HEADER_URL",
+    "FULLSCREEN_ALBUM_CTA_URL",
+    "WATCH_AND_BROWSE_VIDEO",
+    "CTA_REMIND_ME",
+    "CTA_CANCEL_REMINDER",
+    "SUGGESTED_QUICK_REPLY",
+    "QUICK_REPLY_PILL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetGalaxyFlowsActionFromButton",
+      "WAWebGetInteractiveActionsFromButtons",
+      "WAWebMmSignalSharingUIUtils",
+      "WAWebQbmMessageClickLogEvent",
+      "WAWebQbmMessageClickWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

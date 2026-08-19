@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebEncryptAndSendGroupMsg","WAWebGenerateProtocolUnscheduleMessageProto","WAWebSendUserMsgJob","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["WAWebUnscheduleMsgAction"],"dependent_count":1,"exports":[{"name":"sendUnscheduleStanza","used_by":["WAWebUnscheduleMsgAction"],"uses":1}]}

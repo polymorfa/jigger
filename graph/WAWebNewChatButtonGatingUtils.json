@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum","gkx"],"dependents":["WAWebNewChatMenuBarItem.react"],"dependent_count":1,"exports":[{"name":"NewChatButtonVariant","used_by":["WAWebNewChatMenuBarItem.react"],"uses":1},{"name":"getNewChatButtonVariant","used_by":["WAWebNewChatMenuBarItem.react"],"uses":1}]}

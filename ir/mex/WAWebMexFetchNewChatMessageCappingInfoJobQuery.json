@@ -1,0 +1,96 @@
+{
+  "id": "mex:WAWebMexFetchNewChatMessageCappingInfoJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewChatMessageCappingInfoJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27910975521856601",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_message_capping_info",
+        "ty": "XWA2MessageCappingInfo",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "total_quota",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "used_quota",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "cycle_start_timestamp",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "cycle_end_timestamp",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "server_sent_timestamp",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "ote_status",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "mv_status",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "capping_status",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "subscription_status",
+            "ty": "XWA2MessageCappingSubscriptionStatus",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "status",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "name",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_message_capping_info",
+    "document": "# persisted document 27910975521856601\nquery MexFetchNewChatMessageCappingInfoJobQuery(\n  $input\n) {\n  xwa2_message_capping_info(input: $input) {  # XWA2MessageCappingInfo\n    total_quota\n    used_quota\n    cycle_start_timestamp\n    cycle_end_timestamp\n    server_sent_timestamp\n    ote_status\n    mv_status\n    capping_status\n    subscription_status {  # XWA2MessageCappingSubscriptionStatus\n      status\n      name\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewChatMessageCappingInfoJobQuery.graphql",
+    "matches": "id:\\s*\"27910975521856601\""
+  },
+  "literals": [
+    "27910975521856601",
+    "WAWebMexFetchNewChatMessageCappingInfoJobQuery",
+    "xwa2_message_capping_info"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewChatMessageCappingInfoJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

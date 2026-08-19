@@ -1,0 +1,327 @@
+{
+  "id": "wam:6364",
+  "kind": "wam",
+  "name": "StatusPostImpression",
+  "data": {
+    "kind": "wam",
+    "event_id": 6364,
+    "fields": {
+      "aiProvenanceLabelEnabled": {
+        "id": 54,
+        "type": "BOOLEAN",
+        "wire": "ai_provenance_label_enabled"
+      },
+      "aiProvenanceLabelShown": {
+        "id": 55,
+        "type": "BOOLEAN",
+        "wire": "ai_provenance_label_shown"
+      },
+      "channelStatusId": {
+        "id": 46,
+        "type": "INTEGER",
+        "wire": "channel_status_id"
+      },
+      "channelUserType": {
+        "id": 47,
+        "type": "CHANNEL_USER_TYPE",
+        "wire": "channel_user_type",
+        "enum_ref": "CHANNEL_USER_TYPE"
+      },
+      "cid": {
+        "id": 48,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "entryMethod": {
+        "id": 29,
+        "type": "STATUS_VIEW_ENTRY_METHOD",
+        "wire": "entry_method",
+        "enum_ref": "STATUS_VIEW_ENTRY_METHOD"
+      },
+      "externalSourceDomainType": {
+        "id": 1,
+        "type": "INLINE_VIDEO_TYPE",
+        "wire": "external_source_domain_type",
+        "enum_ref": "INLINE_VIDEO_TYPE"
+      },
+      "groupStatusSizeBucket": {
+        "id": 41,
+        "type": "GROUP_STATUS_SIZE_BUCKET",
+        "wire": "group_status_size_bucket",
+        "enum_ref": "GROUP_STATUS_SIZE_BUCKET"
+      },
+      "isCloseSharingPost": {
+        "id": 42,
+        "type": "BOOLEAN",
+        "wire": "is_close_sharing_post"
+      },
+      "isEngagementCard": {
+        "id": 45,
+        "type": "BOOLEAN",
+        "wire": "is_engagement_card"
+      },
+      "isFirstView": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "is_first_view"
+      },
+      "isGroupMentioned": {
+        "id": 53,
+        "type": "BOOLEAN",
+        "wire": "is_group_mentioned"
+      },
+      "isLastStatus": {
+        "id": 43,
+        "type": "BOOLEAN",
+        "wire": "is_last_status"
+      },
+      "isPosterBiz": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "is_poster_biz"
+      },
+      "isResharable": {
+        "id": 49,
+        "type": "BOOLEAN",
+        "wire": "is_resharable"
+      },
+      "isReshare": {
+        "id": 50,
+        "type": "BOOLEAN",
+        "wire": "is_reshare"
+      },
+      "isSelfView": {
+        "id": 24,
+        "type": "BOOLEAN",
+        "wire": "is_self_view"
+      },
+      "isSubImpression": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_sub_impression"
+      },
+      "isSubscribed": {
+        "id": 33,
+        "type": "BOOLEAN",
+        "wire": "is_subscribed"
+      },
+      "isSuccessfulView": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "is_successful_view"
+      },
+      "isViewedInLandscape": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "is_viewed_in_landscape"
+      },
+      "musicBlocked": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "music_blocked"
+      },
+      "pairedMediaType": {
+        "id": 51,
+        "type": "PAIRED_MEDIA_TYPE",
+        "wire": "paired_media_type",
+        "enum_ref": "PAIRED_MEDIA_TYPE"
+      },
+      "pogViewSequenceIndex": {
+        "id": 37,
+        "type": "INTEGER",
+        "wire": "pog_view_sequence_index"
+      },
+      "psaCampaignId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "psa_campaign_id"
+      },
+      "psaLinkAvailable": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "psa_link_available"
+      },
+      "statusAttributionTypes": {
+        "id": 38,
+        "type": "STRING",
+        "wire": "status_attribution_types"
+      },
+      "statusCategory": {
+        "id": 25,
+        "type": "STATUS_CATEGORY",
+        "wire": "status_category",
+        "enum_ref": "STATUS_CATEGORY"
+      },
+      "statusContainsMusic": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "status_contains_music"
+      },
+      "statusContainsQuestion": {
+        "id": 28,
+        "type": "BOOLEAN",
+        "wire": "status_contains_question"
+      },
+      "statusContainsReactionSticker": {
+        "id": 34,
+        "type": "BOOLEAN",
+        "wire": "status_contains_reaction_sticker"
+      },
+      "statusContentType": {
+        "id": 10,
+        "type": "STATUS_CONTENT_TYPE",
+        "wire": "status_content_type",
+        "enum_ref": "STATUS_CONTENT_TYPE"
+      },
+      "statusGroupId": {
+        "id": 39,
+        "type": "STRING",
+        "wire": "status_group_id"
+      },
+      "statusId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "statusItemViewResult": {
+        "id": 31,
+        "type": "STATUS_ITEM_VIEW_RESULT",
+        "wire": "status_item_view_result",
+        "enum_ref": "STATUS_ITEM_VIEW_RESULT"
+      },
+      "statusLoadTime": {
+        "id": 12,
+        "type": "TIMER",
+        "wire": "status_load_time"
+      },
+      "statusMediaType": {
+        "id": 13,
+        "type": "MEDIA_TYPE",
+        "wire": "status_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "statusPlaceholderType": {
+        "id": 56,
+        "type": "STATUS_PLACEHOLDER_TYPE",
+        "wire": "status_placeholder_type",
+        "enum_ref": "STATUS_PLACEHOLDER_TYPE"
+      },
+      "statusPogIndex": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "status_pog_index"
+      },
+      "statusPostIndex": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "status_post_index"
+      },
+      "statusPostPlaybackDuration": {
+        "id": 17,
+        "type": "TIMER",
+        "wire": "status_post_playback_duration"
+      },
+      "statusPosterContactType": {
+        "id": 35,
+        "type": "STATUS_POSTER_CONTACT_TYPE",
+        "wire": "status_poster_contact_type",
+        "enum_ref": "STATUS_POSTER_CONTACT_TYPE"
+      },
+      "statusPosterHashId": {
+        "id": 26,
+        "type": "STRING",
+        "wire": "status_poster_hash_id"
+      },
+      "statusPosterId": {
+        "id": 40,
+        "type": "STRING",
+        "wire": "status_poster_id"
+      },
+      "statusViewEntrypoint": {
+        "id": 18,
+        "type": "STATUS_ROW_SECTION",
+        "wire": "status_view_entrypoint",
+        "enum_ref": "STATUS_ROW_SECTION"
+      },
+      "statusViewExitMethod": {
+        "id": 44,
+        "type": "STATUS_VIEW_EXIT_METHOD",
+        "wire": "status_view_exit_method",
+        "enum_ref": "STATUS_VIEW_EXIT_METHOD"
+      },
+      "statusViewTime": {
+        "id": 19,
+        "type": "TIMER",
+        "wire": "status_view_time"
+      },
+      "statusViewerSessionId": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "status_viewer_session_id"
+      },
+      "traceIdInt": {
+        "id": 52,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      },
+      "unifiedSessionId": {
+        "id": 21,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      },
+      "urlStatusType": {
+        "id": 23,
+        "type": "URL_STATUS_TYPE",
+        "wire": "url_status_type",
+        "enum_ref": "URL_STATUS_TYPE"
+      },
+      "viewSequenceIndex": {
+        "id": 32,
+        "type": "INTEGER",
+        "wire": "view_sequence_index"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStatusPostImpressionWamEvent",
+    "matches": "StatusPostImpression:\\s*\\[\\s*6364"
+  },
+  "literals": [
+    "6364"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelUserType",
+      "WAWebWamEnumGroupStatusSizeBucket",
+      "WAWebWamEnumInlineVideoType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumPairedMediaType",
+      "WAWebWamEnumStatusCategory",
+      "WAWebWamEnumStatusContentType",
+      "WAWebWamEnumStatusItemViewResult",
+      "WAWebWamEnumStatusPlaceholderType",
+      "WAWebWamEnumStatusPosterContactType",
+      "WAWebWamEnumStatusRowSection",
+      "WAWebWamEnumStatusViewEntryMethod",
+      "WAWebWamEnumStatusViewExitMethod",
+      "WAWebWamEnumUrlStatusType"
+    ],
+    "dependents": [
+      "WAWebMerlinImpressionManager"
+    ],
+    "dep_count": 15,
+    "dependent_count": 1
+  }
+}

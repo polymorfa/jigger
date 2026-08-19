@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebDeactivateCommunityAction","WAWebModalManager","react","react-compiler-runtime","useWAWebModelValues"],"dependents":["WAWebCommunityDeactivationInfoDrawer.react"],"dependent_count":1,"exports":[]}

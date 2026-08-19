@@ -1,0 +1,1 @@
+{"deps":["justknobx","useGetMediaGroupStyles"],"dependents":["MAWAttachmentSizeUtils","MAWSecureImageAttachmentContent.react","MWAnimatedImageThumbnailWithPlayButton.react"],"dependent_count":3,"exports":[{"name":"getMaxPreviewHeightAndWidth","used_by":["MAWAttachmentSizeUtils","MAWSecureImageAttachmentContent.react","MWAnimatedImageThumbnailWithPlayButton.react"],"uses":3}]}

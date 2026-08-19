@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_e2e_backfill_expire_time",
+  "kind": "ab",
+  "name": "web_e2e_backfill_expire_time",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3234,
+    "type": "int",
+    "default": 5,
+    "alt_default": 60
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_e2e_backfill_expire_time:\\s*\\[\\s*3234"
+  },
+  "literals": [
+    "web_e2e_backfill_expire_time",
+    "3234"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSendMsgCommonApi"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_fmx_agm_enabled",
+  "kind": "ab",
+  "name": "wa_web_fmx_agm_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13597,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_fmx_agm_enabled:\\s*\\[\\s*13597"
+  },
+  "literals": [
+    "wa_web_fmx_agm_enabled",
+    "13597"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

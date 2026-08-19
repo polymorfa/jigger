@@ -1,0 +1,1 @@
+{"deps":["WAWebBizHomeCardCarouselLogger","WAWebNoop","react","react-compiler-runtime","useWAWebOnScreen"],"dependents":["WAWebRecUnitCardWithViewTracking.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

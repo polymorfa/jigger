@@ -1,0 +1,1 @@
+{"deps":["WAWebContactCollection","WAWebFrontendContactGetters","WAWebLabelCollection","WAWebListItemParentType","WAWebNoteCollection"],"dependents":["WAWebContactManagerExportAction"],"dependent_count":1,"exports":[{"name":"buildCustomerExportRecords","used_by":["WAWebContactManagerExportAction"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebSettingsStepIcon.react"],"dependent_count":2,"exports":[{"name":"IcComputerIcon","used_by":["WAWebAllGeneratedIcons","WAWebSettingsStepIcon.react"],"uses":2}]}

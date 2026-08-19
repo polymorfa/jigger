@@ -1,0 +1,1 @@
+{"deps":["Promise","UserAgent"],"dependents":["MAWDebugThreadListMenuItem"],"dependent_count":1,"exports":[{"name":"copy","used_by":["MAWDebugThreadListMenuItem"],"uses":1},{"name":"copyAsync","used_by":[],"uses":0},{"name":"copyDOM","used_by":[],"uses":0},{"name":"isSupported","used_by":[],"uses":0}]}

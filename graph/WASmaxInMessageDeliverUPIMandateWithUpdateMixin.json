@@ -1,0 +1,1 @@
+{"deps":["WASmaxInMessageDeliverUPIMandateUpdateBaseMixin","WASmaxParseUtils"],"dependents":["WASmaxInMessageDeliverUPITransactionWithMandateMixin"],"dependent_count":1,"exports":[{"name":"parseUPIMandateWithUpdateMixin","used_by":["WASmaxInMessageDeliverUPITransactionWithMandateMixin"],"uses":1}]}

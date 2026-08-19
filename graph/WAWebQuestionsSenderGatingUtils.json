@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgType","WAWebQuestionsAdminGatingUtils","WAWebQuestionsGatingUtils"],"dependents":["WAWebAttachMenuPopup.react","WAWebQuestionsRenderingUtils"],"dependent_count":2,"exports":[{"name":"isQuestionReplySenderEnabled","used_by":["WAWebQuestionsRenderingUtils"],"uses":1},{"name":"isQuestionSenderEnabled","used_by":["WAWebAttachMenuPopup.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebLidMigrationUtils"],"dependents":["WAWebChatBridgeApi","WAWebRestoreChatsAndMessages"],"dependent_count":2,"exports":[{"name":"getOfflineMetaPreviewForChat","used_by":["WAWebChatBridgeApi","WAWebRestoreChatsAndMessages"],"uses":2}]}

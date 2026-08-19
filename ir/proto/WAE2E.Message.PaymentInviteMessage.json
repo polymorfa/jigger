@@ -1,0 +1,54 @@
+{
+  "id": "proto:WAE2E.Message.PaymentInviteMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.PaymentInviteMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "expiryTimestamp": {
+        "number": 2
+      },
+      "incentiveEligible": {
+        "number": 3
+      },
+      "inviteType": {
+        "number": 5
+      },
+      "referralId": {
+        "number": 4
+      },
+      "serviceType": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.PaymentInviteMessage\""
+  },
+  "literals": [
+    "PaymentInviteMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

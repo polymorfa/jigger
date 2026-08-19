@@ -1,0 +1,1 @@
+{"deps":["gkx"],"dependents":["WAWebForwardMessageModal.react","WAWebForwardWithCaptionPreview.react","WAWebMediaForwardMediaMsg","WAWebMsgModelUtils"],"dependent_count":4,"exports":[{"name":"isForwardDocCaptionEnabled","used_by":["WAWebForwardMessageModal.react","WAWebForwardWithCaptionPreview.react","WAWebMediaForwardMediaMsg","WAWebMsgModelUtils"],"uses":4}]}

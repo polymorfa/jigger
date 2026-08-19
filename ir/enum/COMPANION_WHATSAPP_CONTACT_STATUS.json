@@ -1,0 +1,36 @@
+{
+  "id": "enum:COMPANION_WHATSAPP_CONTACT_STATUS",
+  "kind": "enum",
+  "name": "COMPANION_WHATSAPP_CONTACT_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCompanionWhatsappContactStatus",
+    "variants": [
+      {
+        "name": "IN_NETWORK",
+        "value": 0.0
+      },
+      {
+        "name": "OUT_OF_NETWORK",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCompanionWhatsappContactStatus",
+    "matches": "COMPANION_WHATSAPP_CONTACT_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "COMPANION_WHATSAPP_CONTACT_STATUS",
+    "IN_NETWORK",
+    "OUT_OF_NETWORK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCompanionsContactEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WALongInt","WAWebAddOnParseWebMsgInfo","WAWebE2EProtoUtils","WAWebProtobufsWeb.pb","WAWebWid","WAWebWidFactory","getErrorSafe","nullthrows"],"dependents":["WAWebReactionFromHistorySyncMsg"],"dependent_count":1,"exports":[{"name":"parseWebMsgInfoReaction","used_by":["WAWebReactionFromHistorySyncMsg"],"uses":1}]}

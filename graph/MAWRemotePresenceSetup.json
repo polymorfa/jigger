@@ -1,0 +1,1 @@
+{"deps":["MAWCurrentUser","MAWDeviceRegistrationInitWorker","MAWIndexedDbMetadata","MAWODSProxy","MessengerWebInitData","MultipleTabsLogger","QuickPerformanceLogger","WAOdsEnums","WASignalDB","asyncToGeneratorRuntime","justknobx","qpl","requireDeferred"],"dependents":[],"dependent_count":0,"exports":[{"name":"setupArmadilloWebForRP","used_by":[],"uses":0}]}

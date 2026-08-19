@@ -1,0 +1,1 @@
+{"deps":["WAWebModelStorageUtils","WAWebModelStorageVersions","WAWebStorageMutationBuilder"],"dependents":["WAWebDBReportingTokenUtils","WAWebModelStorageInitialize"],"dependent_count":2,"exports":[{"name":"addTable","used_by":["WAWebModelStorageInitialize"],"uses":1},{"name":"getReportingTokenTable","used_by":["WAWebDBReportingTokenUtils"],"uses":1}]}

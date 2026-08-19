@@ -1,0 +1,1 @@
+{"deps":["CurrentWebWorker"],"dependents":["WAWebFtsWorkerDelegate","WAWebWorkerConnect"],"dependent_count":2,"exports":[{"name":"getFtsWorkerContext","used_by":["WAWebFtsWorkerDelegate","WAWebWorkerConnect"],"uses":2}]}

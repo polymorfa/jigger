@@ -1,0 +1,1 @@
+{"deps":["WASmaxInReceiptDeliverAppDataPeerRequest","WASmaxOutReceiptDeliverAppDataPeerResponseSuccess","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WACreateHandlePeerAppdataReceiptBranch"],"dependent_count":1,"exports":[{"name":"receiveDeliverAppDataPeerRPC","used_by":["WACreateHandlePeerAppdataReceiptBranch"],"uses":1}]}

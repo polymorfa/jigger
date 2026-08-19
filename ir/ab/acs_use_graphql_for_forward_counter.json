@@ -1,0 +1,42 @@
+{
+  "id": "ab:acs_use_graphql_for_forward_counter",
+  "kind": "ab",
+  "name": "acs_use_graphql_for_forward_counter",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29218,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "acs_use_graphql_for_forward_counter:\\s*\\[\\s*29218"
+  },
+  "literals": [
+    "acs_use_graphql_for_forward_counter",
+    "29218"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

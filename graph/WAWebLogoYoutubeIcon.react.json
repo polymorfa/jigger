@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPipAttributionIcon"],"dependent_count":2,"exports":[{"name":"LogoYoutubeIcon","used_by":["WAWebAllGeneratedIcons","WAWebPipAttributionIcon"],"uses":2}]}

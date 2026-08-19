@@ -1,0 +1,179 @@
+__d("WAWebFilterLogging", [
+	"WAWebChatFilterEventWamEvent",
+	"WAWebChatSearchFilters",
+	"WAWebChatThreadLogging",
+	"WAWebConnModel",
+	"WAWebInboxFiltersGatingUtils",
+	"WAWebLabelCollection",
+	"WAWebListUtils",
+	"WAWebListsGatingUtils",
+	"WAWebListsLabelGatingUtils",
+	"WAWebListsLogging",
+	"WAWebWamEnumChatFilterActionTypes",
+	"WAWebWamEnumChatFilterTargetScreen",
+	"WAWebWamEnumChatFilterTypes",
+	"WAWebWamEnumChatSearchResultType",
+	"asyncToGeneratorRuntime"
+], (function(t, n, r, o, a, i, l) {
+	function e(e) {
+		if (e == null || !e.kind && (e.label == null || e.label === "")) return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.NONE;
+		if (!e.kind) return o("WAWebConnModel").Conn.isSMB ? o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.OTHER_LABELS : o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.NONE;
+		switch (e.kind) {
+			case o("WAWebChatSearchFilters").SearchFilters.UNREAD: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.UNREAD;
+			case o("WAWebChatSearchFilters").SearchFilters.FAVORITES: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.FAVORITES;
+			case o("WAWebChatSearchFilters").SearchFilters.GROUP: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.GROUP;
+			case o("WAWebChatSearchFilters").SearchFilters.COMMUNITY: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.COMMUNITY;
+			case o("WAWebChatSearchFilters").SearchFilters.BROADCAST: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.BROADCAST_LIST;
+			case o("WAWebChatSearchFilters").SearchFilters.CONTACT: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.CONTACT;
+			case o("WAWebChatSearchFilters").SearchFilters.NON_CONTACT: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.NON_CONTACT;
+			case o("WAWebChatSearchFilters").SearchFilters.ASSIGNED_TO_YOU: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.ASSIGNED_TO_YOU;
+			case o("WAWebChatSearchFilters").SearchFilters.PERSONAL: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.PERSONAL;
+			case o("WAWebChatSearchFilters").SearchFilters.BUSINESS: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.BUSINESS;
+			case o("WAWebChatSearchFilters").SearchFilters.LABELS: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.LABEL;
+			case o("WAWebChatSearchFilters").SearchFilters.CHANNELS: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.NONE;
+			case o("WAWebChatSearchFilters").SearchFilters.AI_RESPONDING:
+			case o("WAWebChatSearchFilters").SearchFilters.AI_HANDOFF: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.BUSINESS_AI;
+			case o("WAWebChatSearchFilters").SearchFilters.TO_YOU: return o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.NONE;
+		}
+	}
+	var s = function(t) {
+		var e = t.eventData, n = t.filter, r = t.threadId;
+		if (o("WAWebInboxFiltersGatingUtils").inboxFiltersEnabled() && n != null) {
+			e.targetScreen = o("WAWebWamEnumChatFilterTargetScreen").CHAT_FILTER_TARGET_SCREEN.CHAT_LIST;
+			var a;
+			if (n.label != null && (a = o("WAWebLabelCollection").LabelCollection.get(n.label)), a == null) {
+				var i = o("WAWebListUtils").getListTypeFromFilter(n.kind);
+				i != null && o("WAWebListUtils").isBuiltInList(i) && (a = o("WAWebLabelCollection").LabelCollection.findFirst(function(e) {
+					return e.type === i;
+				}));
+			}
+			if (a != null && (a.predefinedId != null && (e.predefinedId = a.predefinedId), a.name != null && (e.labelName = a.name), o("WAWebListsGatingUtils").isListsEnabled())) {
+				var l = parseInt(a.id, 10);
+				isNaN(l) || (e.listId = l);
+				var s = o("WAWebListsLogging").getListType(a.type);
+				s != null && (e.listType = s);
+				var u = o("WAWebLabelCollection").LabelCollection.getActiveLists().indexOf(a) + 1;
+				e.listIndex = u, r != null && (e.threadId = r);
+			}
+		}
+	};
+	function u(e) {
+		var t = new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent({
+			actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.OPEN,
+			filterType: o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.NONE,
+			sessionId: e
+		});
+		o("WAWebListsLabelGatingUtils").smartFiltersEnabled() && (t.targetScreen = o("WAWebWamEnumChatFilterTargetScreen").CHAT_FILTER_TARGET_SCREEN.CHAT_LIST), t.commit();
+	}
+	function c(t, n) {
+		var r = e(n);
+		if (r !== o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.NONE) {
+			var a = {
+				actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.SELECT_FILTER,
+				filterType: r,
+				sessionId: t
+			};
+			o("WAWebListsLabelGatingUtils").smartFiltersEnabled() && (a.targetScreen = o("WAWebWamEnumChatFilterTargetScreen").CHAT_FILTER_TARGET_SCREEN.CHAT_LIST), s({
+				eventData: a,
+				filter: n
+			}), new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent(a).commit();
+		}
+	}
+	function d(t, n) {
+		var r = {
+			actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.FILTER_EMPTY_STATE_VIEWED,
+			filterType: e(n),
+			targetScreen: o("WAWebWamEnumChatFilterTargetScreen").CHAT_FILTER_TARGET_SCREEN.CHAT_LIST,
+			sessionId: t
+		};
+		s({
+			eventData: r,
+			filter: n
+		}), new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent(r).commit();
+	}
+	function m(e) {
+		var t;
+		switch (e) {
+			case "chat":
+				t = o("WAWebWamEnumChatSearchResultType").CHAT_SEARCH_RESULT_TYPE.CHAT;
+				break;
+			case "message":
+				t = o("WAWebWamEnumChatSearchResultType").CHAT_SEARCH_RESULT_TYPE.MESSAGE;
+				break;
+			case "contact":
+				t = o("WAWebWamEnumChatSearchResultType").CHAT_SEARCH_RESULT_TYPE.CONTACT;
+				break;
+			case "group":
+				t = o("WAWebWamEnumChatSearchResultType").CHAT_SEARCH_RESULT_TYPE.GROUP;
+				break;
+		}
+		return t;
+	}
+	function p(t, n) {
+		var r = {
+			actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.SEARCH,
+			filterType: e(n),
+			targetScreen: o("WAWebWamEnumChatFilterTargetScreen").CHAT_FILTER_TARGET_SCREEN.CHAT_LIST,
+			sessionId: t
+		};
+		s({
+			eventData: r,
+			filter: n
+		}), new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent(r).commit();
+	}
+	function _(e) {
+		var t = new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent({
+			actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.SEARCH_WITH_FILTER,
+			filterType: o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.OTHER_LABELS,
+			sessionId: e
+		});
+		t.commit();
+	}
+	function f(e) {
+		return g.apply(this, arguments);
+	}
+	function g() {
+		return g = n("asyncToGeneratorRuntime").asyncToGenerator(function* (t) {
+			var n = t.chatId, r = t.filter, a = t.searchResult, i = t.sessionId, l = {
+				actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.SEARCH_ITEM_SELECTED,
+				filterType: e(r),
+				searchResultType: m(a),
+				targetScreen: o("WAWebWamEnumChatFilterTargetScreen").CHAT_FILTER_TARGET_SCREEN.CHAT_LIST,
+				sessionId: i
+			}, u = n != null ? yield o("WAWebChatThreadLogging").getChatThreadID(n.toJid()) : null;
+			s({
+				eventData: l,
+				filter: r,
+				threadId: u
+			}), new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent(l).commit();
+		}), g.apply(this, arguments);
+	}
+	function h(e, t, n, r) {
+		return y.apply(this, arguments);
+	}
+	function y() {
+		return y = n("asyncToGeneratorRuntime").asyncToGenerator(function* (t, n, r, a) {
+			var i = {
+				actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.SEARCH_MSG_SENT,
+				filterType: e(n),
+				searchResultType: m(r),
+				sessionId: t
+			}, l = a != null ? yield o("WAWebChatThreadLogging").getChatThreadID(a.toJid()) : null;
+			s({
+				eventData: i,
+				filter: n,
+				threadId: l
+			}), new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent(i).commit();
+		}), y.apply(this, arguments);
+	}
+	function C(e) {
+		var t = {
+			actionType: o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES.FILTER_VIEWED,
+			filterType: o("WAWebWamEnumChatFilterTypes").CHAT_FILTER_TYPES.LABEL,
+			targetScreen: o("WAWebWamEnumChatFilterTargetScreen").CHAT_FILTER_TARGET_SCREEN.CHAT_LIST,
+			sessionId: e
+		};
+		new (o("WAWebChatFilterEventWamEvent")).ChatFilterEventWamEvent(t).commit();
+	}
+	l.logOpenFilterEvent = u, l.logSelectFilterEvent = c, l.logEmptyStateViewedFilterEvent = d, l.logSearchFilterEvent = p, l.logSearchWithFilterEvent = _, l.logSearchItemSelectedFilterEvent = f, l.logSearchMsgSentFilterEvent = h, l.logLabelDropdownShownEvent = C;
+}), 98);

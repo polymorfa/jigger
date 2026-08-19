@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAStanzaUtils","WAWebModalManager","WAWebNetworkStatus","WAWebSupportAiSessionWamEvent","WAWebSupportMessageFeedbackSubmitMutation","WAWebSupportOfflinePopUp.react","WAWebToast.react","WAWebToastManager","WAWebWamEnumSupportAiEventType","asyncToGeneratorRuntime","react"],"dependents":["WAWebMessageWrapper.react"],"dependent_count":1,"exports":[]}

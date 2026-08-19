@@ -1,0 +1,42 @@
+{
+  "id": "ab:waweb_crossposting_attributions",
+  "kind": "ab",
+  "name": "waweb_crossposting_attributions",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26138,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "waweb_crossposting_attributions:\\s*\\[\\s*26138"
+  },
+  "literals": [
+    "waweb_crossposting_attributions",
+    "26138"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

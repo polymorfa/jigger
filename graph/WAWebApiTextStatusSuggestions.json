@@ -1,0 +1,1 @@
+{"deps":["WAWebUserPrefsIndexedDBStorage","WAWebUserPrefsKeys","asyncToGeneratorRuntime"],"dependents":["WAWebTextStatusAction"],"dependent_count":1,"exports":[{"name":"getTextStatusSuggestions","used_by":["WAWebTextStatusAction"],"uses":1},{"name":"setTextStatusSuggestions","used_by":["WAWebTextStatusAction"],"uses":1}]}

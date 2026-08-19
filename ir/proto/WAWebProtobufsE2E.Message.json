@@ -1,0 +1,540 @@
+{
+  "id": "proto:WAWebProtobufsE2E.Message",
+  "kind": "proto",
+  "name": "WAWebProtobufsE2E.Message",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "albumMessage": {
+        "number": 83,
+        "type_name": "WAWebProtobufsE2E.Message.AlbumMessage"
+      },
+      "associatedChildMessage": {
+        "number": 91,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "audioMessage": {
+        "number": 8,
+        "type_name": "WAWebProtobufsE2E.Message.AudioMessage"
+      },
+      "bcallMessage": {
+        "number": 72,
+        "type_name": "WAWebProtobufsE2E.Message.BCallMessage"
+      },
+      "botForwardedMessage": {
+        "number": 104,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "botInvokeMessage": {
+        "number": 67,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "botPlatformRegistrationSuccessMessage": {
+        "number": 131,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "botTaskMessage": {
+        "number": 100,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "buttonsMessage": {
+        "number": 42,
+        "type_name": "WAWebProtobufsE2E.Message.ButtonsMessage"
+      },
+      "buttonsResponseMessage": {
+        "number": 43,
+        "type_name": "WAWebProtobufsE2E.Message.ButtonsResponseMessage"
+      },
+      "call": {
+        "number": 10,
+        "type_name": "WAWebProtobufsE2E.Message.Call"
+      },
+      "callLogMesssage": {
+        "number": 69,
+        "type_name": "WAWebProtobufsE2E.Message.CallLogMessage"
+      },
+      "cancelPaymentRequestMessage": {
+        "number": 24,
+        "type_name": "WAWebProtobufsE2E.Message.CancelPaymentRequestMessage"
+      },
+      "chat": {
+        "number": 11,
+        "type_name": "WAWebProtobufsE2E.Message.Chat"
+      },
+      "commentMessage": {
+        "number": 77,
+        "type_name": "WAWebProtobufsE2E.Message.CommentMessage"
+      },
+      "conditionalRevealMessage": {
+        "number": 120,
+        "type_name": "WAWebProtobufsE2E.Message.ConditionalRevealMessage"
+      },
+      "contactMessage": {
+        "number": 4,
+        "type_name": "WAWebProtobufsE2E.Message.ContactMessage"
+      },
+      "contactsArrayMessage": {
+        "number": 13,
+        "type_name": "WAWebProtobufsE2E.Message.ContactsArrayMessage"
+      },
+      "conversation": {
+        "number": 1
+      },
+      "declinePaymentRequestMessage": {
+        "number": 23,
+        "type_name": "WAWebProtobufsE2E.Message.DeclinePaymentRequestMessage"
+      },
+      "deviceSentMessage": {
+        "number": 31,
+        "type_name": "WAWebProtobufsE2E.Message.DeviceSentMessage"
+      },
+      "documentMessage": {
+        "number": 7,
+        "type_name": "WAWebProtobufsE2E.Message.DocumentMessage"
+      },
+      "documentWithCaptionMessage": {
+        "number": 53,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "editedMessage": {
+        "number": 58,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "encCommentMessage": {
+        "number": 71,
+        "type_name": "WAWebProtobufsE2E.Message.EncCommentMessage"
+      },
+      "encEventResponseMessage": {
+        "number": 76,
+        "type_name": "WAWebProtobufsE2E.Message.EncEventResponseMessage"
+      },
+      "encReactionMessage": {
+        "number": 56,
+        "type_name": "WAWebProtobufsE2E.Message.EncReactionMessage"
+      },
+      "ephemeralMessage": {
+        "number": 40,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "eventCoverImage": {
+        "number": 85,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "eventInviteMessage": {
+        "number": 122,
+        "type_name": "WAWebProtobufsE2E.Message.EventInviteMessage"
+      },
+      "eventMessage": {
+        "number": 75,
+        "type_name": "WAWebProtobufsE2E.Message.EventMessage"
+      },
+      "extendedTextMessage": {
+        "number": 6,
+        "type_name": "WAWebProtobufsE2E.Message.ExtendedTextMessage"
+      },
+      "fastRatchetKeySenderKeyDistributionMessage": {
+        "number": 15,
+        "type_name": "WAWebProtobufsE2E.Message.SenderKeyDistributionMessage"
+      },
+      "groupInviteMessage": {
+        "number": 28,
+        "type_name": "WAWebProtobufsE2E.Message.GroupInviteMessage"
+      },
+      "groupMentionedMessage": {
+        "number": 62,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "groupRootKeyShare": {
+        "number": 123,
+        "type_name": "WAWebProtobufsE2E.GroupRootKeyShare"
+      },
+      "groupStatusMentionMessage": {
+        "number": 92,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "groupStatusMessage": {
+        "number": 96,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "groupStatusMessageV2": {
+        "number": 103,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "highlyStructuredMessage": {
+        "number": 14,
+        "type_name": "WAWebProtobufsE2E.Message.HighlyStructuredMessage"
+      },
+      "imageMessage": {
+        "number": 3,
+        "type_name": "WAWebProtobufsE2E.Message.ImageMessage"
+      },
+      "interactiveMessage": {
+        "number": 45,
+        "type_name": "WAWebProtobufsE2E.Message.InteractiveMessage"
+      },
+      "interactiveResponseMessage": {
+        "number": 48,
+        "type_name": "WAWebProtobufsE2E.Message.InteractiveResponseMessage"
+      },
+      "invoiceMessage": {
+        "number": 41,
+        "type_name": "WAWebProtobufsE2E.Message.InvoiceMessage"
+      },
+      "keepInChatMessage": {
+        "number": 51,
+        "type_name": "WAWebProtobufsE2E.Message.KeepInChatMessage"
+      },
+      "limitSharingMessage": {
+        "number": 99,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "listMessage": {
+        "number": 36,
+        "type_name": "WAWebProtobufsE2E.Message.ListMessage"
+      },
+      "listResponseMessage": {
+        "number": 39,
+        "type_name": "WAWebProtobufsE2E.Message.ListResponseMessage"
+      },
+      "liveLocationMessage": {
+        "number": 18,
+        "type_name": "WAWebProtobufsE2E.Message.LiveLocationMessage"
+      },
+      "locationMessage": {
+        "number": 5,
+        "type_name": "WAWebProtobufsE2E.Message.LocationMessage"
+      },
+      "lottieStickerMessage": {
+        "number": 74,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "messageContextInfo": {
+        "number": 35,
+        "type_name": "WAWebProtobufsE2E.MessageContextInfo"
+      },
+      "messageHistoryBundle": {
+        "number": 70,
+        "type_name": "WAWebProtobufsE2E.Message.MessageHistoryBundle"
+      },
+      "messageHistoryNotice": {
+        "number": 102,
+        "type_name": "WAWebProtobufsE2E.Message.MessageHistoryNotice"
+      },
+      "musicMessage": {
+        "number": 129,
+        "type_name": "WAWebProtobufsE2E.Message.MusicMessage"
+      },
+      "newsletterAdminInviteMessage": {
+        "number": 78,
+        "type_name": "WAWebProtobufsE2E.Message.NewsletterAdminInviteMessage"
+      },
+      "newsletterAdminProfileMessage": {
+        "number": 116,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "newsletterAdminProfileMessageV2": {
+        "number": 117,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "newsletterAdminProfileStatusMessage": {
+        "number": 126,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "newsletterFollowerInviteMessageV2": {
+        "number": 113,
+        "type_name": "WAWebProtobufsE2E.Message.NewsletterFollowerInviteMessage"
+      },
+      "orderMessage": {
+        "number": 38,
+        "type_name": "WAWebProtobufsE2E.Message.OrderMessage"
+      },
+      "paymentInviteMessage": {
+        "number": 44,
+        "type_name": "WAWebProtobufsE2E.Message.PaymentInviteMessage"
+      },
+      "paymentReminderMessage": {
+        "number": 124,
+        "type_name": "WAWebProtobufsE2E.Message.PaymentReminderMessage"
+      },
+      "pinInChatMessage": {
+        "number": 63,
+        "type_name": "WAWebProtobufsE2E.Message.PinInChatMessage"
+      },
+      "placeholderMessage": {
+        "number": 80,
+        "type_name": "WAWebProtobufsE2E.Message.PlaceholderMessage"
+      },
+      "pollAddOptionMessage": {
+        "number": 121,
+        "type_name": "WAWebProtobufsE2E.Message.PollAddOptionMessage"
+      },
+      "pollCreationMessage": {
+        "number": 49,
+        "type_name": "WAWebProtobufsE2E.Message.PollCreationMessage"
+      },
+      "pollCreationMessageV2": {
+        "number": 60,
+        "type_name": "WAWebProtobufsE2E.Message.PollCreationMessage"
+      },
+      "pollCreationMessageV3": {
+        "number": 64,
+        "type_name": "WAWebProtobufsE2E.Message.PollCreationMessage"
+      },
+      "pollCreationMessageV4": {
+        "number": 93,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "pollCreationMessageV5": {
+        "number": 111,
+        "type_name": "WAWebProtobufsE2E.Message.PollCreationMessage"
+      },
+      "pollCreationMessageV6": {
+        "number": 119,
+        "type_name": "WAWebProtobufsE2E.Message.PollCreationMessage"
+      },
+      "pollCreationOptionImageMessage": {
+        "number": 90,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "pollResultSnapshotMessage": {
+        "number": 88,
+        "type_name": "WAWebProtobufsE2E.Message.PollResultSnapshotMessage"
+      },
+      "pollResultSnapshotMessageV3": {
+        "number": 115,
+        "type_name": "WAWebProtobufsE2E.Message.PollResultSnapshotMessage"
+      },
+      "pollUpdateMessage": {
+        "number": 50,
+        "type_name": "WAWebProtobufsE2E.Message.PollUpdateMessage"
+      },
+      "productMessage": {
+        "number": 30,
+        "type_name": "WAWebProtobufsE2E.Message.ProductMessage"
+      },
+      "protocolMessage": {
+        "number": 12,
+        "type_name": "WAWebProtobufsE2E.Message.ProtocolMessage"
+      },
+      "ptvMessage": {
+        "number": 66,
+        "type_name": "WAWebProtobufsE2E.Message.VideoMessage"
+      },
+      "questionMessage": {
+        "number": 101,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "questionReplyMessage": {
+        "number": 106,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "questionResponseMessage": {
+        "number": 107,
+        "type_name": "WAWebProtobufsE2E.Message.QuestionResponseMessage"
+      },
+      "reactionMessage": {
+        "number": 46,
+        "type_name": "WAWebProtobufsE2E.Message.ReactionMessage"
+      },
+      "requestPaymentMessage": {
+        "number": 22,
+        "type_name": "WAWebProtobufsE2E.Message.RequestPaymentMessage"
+      },
+      "requestPhoneNumberMessage": {
+        "number": 54,
+        "type_name": "WAWebProtobufsE2E.Message.RequestPhoneNumberMessage"
+      },
+      "richResponseMessage": {
+        "number": 97,
+        "type_name": "WAWebProtobufsE2E.AIRichResponseMessage"
+      },
+      "rootSecretDistributeMessage": {
+        "number": 127,
+        "type_name": "WAWebProtobufsE2E.Message.RootSecretDistributeMessage"
+      },
+      "scheduledCallCreationMessage": {
+        "number": 61,
+        "type_name": "WAWebProtobufsE2E.Message.ScheduledCallCreationMessage"
+      },
+      "scheduledCallEditMessage": {
+        "number": 65,
+        "type_name": "WAWebProtobufsE2E.Message.ScheduledCallEditMessage"
+      },
+      "secretEncryptedMessage": {
+        "number": 82,
+        "type_name": "WAWebProtobufsE2E.Message.SecretEncryptedMessage"
+      },
+      "sendPaymentMessage": {
+        "number": 16,
+        "type_name": "WAWebProtobufsE2E.Message.SendPaymentMessage"
+      },
+      "senderKeyDistributionMessage": {
+        "number": 2,
+        "type_name": "WAWebProtobufsE2E.Message.SenderKeyDistributionMessage"
+      },
+      "splitPaymentMessage": {
+        "number": 125,
+        "type_name": "WAWebProtobufsE2E.Message.SplitPaymentMessage"
+      },
+      "splitPaymentUpdateMessage": {
+        "number": 128,
+        "type_name": "WAWebProtobufsE2E.Message.SplitPaymentUpdateMessage"
+      },
+      "spoilerMessage": {
+        "number": 118,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "statusAddYours": {
+        "number": 95,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "statusLinkPreviewMetadata": {
+        "number": 130,
+        "type_name": "WAWebProtobufsE2E.Message.StatusLinkPreviewMetadata"
+      },
+      "statusMentionMessage": {
+        "number": 87,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "statusNotificationMessage": {
+        "number": 98,
+        "type_name": "WAWebProtobufsE2E.Message.StatusNotificationMessage"
+      },
+      "statusQuestionAnswerMessage": {
+        "number": 105,
+        "type_name": "WAWebProtobufsE2E.Message.StatusQuestionAnswerMessage"
+      },
+      "statusQuotedMessage": {
+        "number": 109,
+        "type_name": "WAWebProtobufsE2E.Message.StatusQuotedMessage"
+      },
+      "statusStickerInteractionMessage": {
+        "number": 110,
+        "type_name": "WAWebProtobufsE2E.Message.StatusStickerInteractionMessage"
+      },
+      "stickerMessage": {
+        "number": 26,
+        "type_name": "WAWebProtobufsE2E.Message.StickerMessage"
+      },
+      "stickerPackMessage": {
+        "number": 86,
+        "type_name": "WAWebProtobufsE2E.Message.StickerPackMessage"
+      },
+      "stickerSyncRmrMessage": {
+        "number": 47,
+        "type_name": "WAWebProtobufsE2E.Message.StickerSyncRMRMessage"
+      },
+      "templateButtonReplyMessage": {
+        "number": 29,
+        "type_name": "WAWebProtobufsE2E.Message.TemplateButtonReplyMessage"
+      },
+      "templateMessage": {
+        "number": 25,
+        "type_name": "WAWebProtobufsE2E.Message.TemplateMessage"
+      },
+      "videoMessage": {
+        "number": 9,
+        "type_name": "WAWebProtobufsE2E.Message.VideoMessage"
+      },
+      "viewOnceMessage": {
+        "number": 37,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "viewOnceMessageV2": {
+        "number": 55,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      },
+      "viewOnceMessageV2Extension": {
+        "number": 59,
+        "type_name": "WAWebProtobufsE2E.Message.FutureProofMessage"
+      }
+    },
+    "module": "WAWebProtobufsE2E.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsE2E.pb",
+    "matches": "name = \"Message\""
+  },
+  "literals": [
+    "Message"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsAICommon.pb",
+      "WAWebProtobufsAICommonDeprecated.pb",
+      "WAWebProtobufsAdv.pb",
+      "WAWebProtobufsAea.pb",
+      "WAWebProtobufsCompanionReg.pb",
+      "WAWebProtobufsMmsRetry.pb",
+      "WAWebProtobufsProtocol.pb",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebProtobufsStatusAttributions.pb"
+    ],
+    "dependents": [
+      "PaymentLinkWamLogger",
+      "WAWebAIAgentAIReplyUtils",
+      "WAWebAccountLinkingNonceFetchAPI",
+      "WAWebAddonEncryption",
+      "WAWebApiPrepareCtwaContextSend",
+      "WAWebAssociationProtoUtils",
+      "WAWebBizAiAgentStatusUtils",
+      "WAWebBizAiSmartComposerMode",
+      "WAWebBizAiThreadControlExtraJson",
+      "WAWebBizBroadcastInsightsContactListHandler",
+      "WAWebBizBroadcastInsightsPeerOps",
+      "WAWebBizCtwaContext.react",
+      "WAWebBizLinkPreviewCatalogUtils",
+      "WAWebBizOrderDetailAction",
+      "WAWebBizProductDetailsFlow.react",
+      "WAWebBotMessageSecret",
+      "WAWebButtonsMessageProtoUtils",
+      "WAWebCanonicalRecoveryActions",
+      "WAWebCartOrderDetailDrawer.react",
+      "WAWebChatAssignmentUtils",
+      "WAWebChatLastMsg.react",
+      "WAWebChatMessageSearch",
+      "WAWebChatModel",
+      "WAWebChatlistTertiaryPillsRow.react",
+      "WAWebComposeBox.react",
+      "WAWebConditionalRevealPreProcessor",
+      "WAWebContactMenuDropdown.react",
+      "WAWebConversationLoadMoreMessagesHistorySync",
+      "WAWebConversationMenusDevOnly",
+      "WAWebCreateEncryptedEventEditMsgData",
+      "WAWebCreateEncryptedMessageEditMsgData",
+      "WAWebDebug",
+      "WAWebDebugPins",
+      "WAWebDebugSyncd",
+      "WAWebDirectConnectionGatingUtils",
+      "WAWebDisappearingModeProtoUtils",
+      "WAWebE2EProtoGenerator",
+      "WAWebE2EProtoParser",
+      "WAWebE2EProtoParserApi",
+      "WAWebE2EProtoUtils",
+      "WAWebEncryptAndSendGroupMsg",
+      "WAWebEncryptAndSendStatusMsg",
+      "WAWebEphemeralKeepInChatUtils",
+      "WAWebEphemeralKeepInChatWamUtils",
+      "WAWebEphemeralityUtils",
+      "WAWebEventEditDecryptedMsgDataConversion",
+      "WAWebEventInfoDrawer.react",
+      "WAWebEventPreviewBlock.react",
+      "WAWebEventResponseDBSerialization",
+      "WAWebEventUtils",
+      "WAWebEventsDrawerEventCell.react",
+      "WAWebEventsGenerateEventEditMessageProto",
+      "WAWebEventsMessageComponent.react",
+      "WAWebEventsParseEventEditEncryptedMessageProto",
+      "WAWebEventsRSVPPopup.react",
+      "WAWebGalaxyFlows.react",
+      "WAWebGalaxyFlowsResponseDownloadFlow.react",
+      "WAWebGenerateAiMediaCollectionProtocolMsg",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotRequestWelcomeMessageProto"
+    ],
+    "dep_count": 11,
+    "dependent_count": 215
+  }
+}

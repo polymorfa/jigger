@@ -1,0 +1,1 @@
+{"deps":["Promise","WAHandleChatStateProtocol","WAResultOrError","WASmaxChatstateServerNotificationRPC"],"dependents":["WAServerRPC","WAWebCommsHandleLoggedInStanza"],"dependent_count":2,"exports":[{"name":"createHandleChatState","used_by":["WAServerRPC","WAWebCommsHandleLoggedInStanza"],"uses":2}]}

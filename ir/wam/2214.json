@@ -1,0 +1,61 @@
+{
+  "id": "wam:2214",
+  "kind": "wam",
+  "name": "SettingsClick",
+  "data": {
+    "kind": "wam",
+    "event_id": 2214,
+    "fields": {
+      "isBookmarkAppInstalled": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_bookmark_app_installed"
+      },
+      "settingsClickEntryPoint": {
+        "id": 2,
+        "type": "SETTINGS_CLICK_ENTRY_POINT",
+        "wire": "settings_click_entry_point",
+        "enum_ref": "SETTINGS_CLICK_ENTRY_POINT"
+      },
+      "settingsItem": {
+        "id": 1,
+        "type": "SETTINGS_ITEM_TYPE",
+        "wire": "settings_item",
+        "enum_ref": "SETTINGS_ITEM_TYPE"
+      },
+      "settingsPageType": {
+        "id": 3,
+        "type": "SETTINGS_PAGE_TYPE",
+        "wire": "settings_page_type",
+        "enum_ref": "SETTINGS_PAGE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSettingsClickWamEvent",
+    "matches": "SettingsClick:\\s*\\[\\s*2214"
+  },
+  "literals": [
+    "2214"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumSettingsClickEntryPoint",
+      "WAWebWamEnumSettingsItemType",
+      "WAWebWamEnumSettingsPageType"
+    ],
+    "dependents": [
+      "WAWebSettingsDrawer.react",
+      "WAWebSettingsLoggerUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 2
+  }
+}

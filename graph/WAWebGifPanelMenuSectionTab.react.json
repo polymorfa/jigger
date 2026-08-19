@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebGifPanelGifSections","WAWebGifPanelMenuSectionIcon.react","WAWebPanelsDisplayLocation","WAWebPanelsMenuTab.react","react","react-compiler-runtime","useWAWebForwardRefSetter"],"dependents":["WAWebGifPanel.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebWorkerQplTypes"],"dependents":["WAWebStartBackendWorker","WAWebUploadManagerWorkerBridge"],"dependent_count":2,"exports":[{"name":"handleQplBridgeMessage","used_by":["WAWebStartBackendWorker"],"uses":1},{"name":"serializeQplForBridge","used_by":["WAWebUploadManagerWorkerBridge"],"uses":1}]}

@@ -1,0 +1,124 @@
+{
+  "id": "proto:WAWebProtobufsE2E.Message.ListMessage",
+  "kind": "proto",
+  "name": "WAWebProtobufsE2E.Message.ListMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "buttonText": {
+        "number": 3
+      },
+      "contextInfo": {
+        "number": 8,
+        "type_name": "WAWebProtobufsE2E.ContextInfo"
+      },
+      "description": {
+        "number": 2
+      },
+      "footerText": {
+        "number": 7
+      },
+      "listType": {
+        "number": 4
+      },
+      "productListInfo": {
+        "number": 6,
+        "type_name": "WAWebProtobufsE2E.Message.ListMessage.ProductListInfo"
+      },
+      "sections": {
+        "number": 5,
+        "type_name": "WAWebProtobufsE2E.Message.ListMessage.Section"
+      },
+      "title": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsE2E.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsE2E.pb",
+    "matches": "name = \"Message.ListMessage\""
+  },
+  "literals": [
+    "ListMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsAICommon.pb",
+      "WAWebProtobufsAICommonDeprecated.pb",
+      "WAWebProtobufsAdv.pb",
+      "WAWebProtobufsAea.pb",
+      "WAWebProtobufsCompanionReg.pb",
+      "WAWebProtobufsMmsRetry.pb",
+      "WAWebProtobufsProtocol.pb",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebProtobufsStatusAttributions.pb"
+    ],
+    "dependents": [
+      "PaymentLinkWamLogger",
+      "WAWebAIAgentAIReplyUtils",
+      "WAWebAccountLinkingNonceFetchAPI",
+      "WAWebAddonEncryption",
+      "WAWebApiPrepareCtwaContextSend",
+      "WAWebAssociationProtoUtils",
+      "WAWebBizAiAgentStatusUtils",
+      "WAWebBizAiSmartComposerMode",
+      "WAWebBizAiThreadControlExtraJson",
+      "WAWebBizBroadcastInsightsContactListHandler",
+      "WAWebBizBroadcastInsightsPeerOps",
+      "WAWebBizCtwaContext.react",
+      "WAWebBizLinkPreviewCatalogUtils",
+      "WAWebBizOrderDetailAction",
+      "WAWebBizProductDetailsFlow.react",
+      "WAWebBotMessageSecret",
+      "WAWebButtonsMessageProtoUtils",
+      "WAWebCanonicalRecoveryActions",
+      "WAWebCartOrderDetailDrawer.react",
+      "WAWebChatAssignmentUtils",
+      "WAWebChatLastMsg.react",
+      "WAWebChatMessageSearch",
+      "WAWebChatModel",
+      "WAWebChatlistTertiaryPillsRow.react",
+      "WAWebComposeBox.react",
+      "WAWebConditionalRevealPreProcessor",
+      "WAWebContactMenuDropdown.react",
+      "WAWebConversationLoadMoreMessagesHistorySync",
+      "WAWebConversationMenusDevOnly",
+      "WAWebCreateEncryptedEventEditMsgData",
+      "WAWebCreateEncryptedMessageEditMsgData",
+      "WAWebDebug",
+      "WAWebDebugPins",
+      "WAWebDebugSyncd",
+      "WAWebDirectConnectionGatingUtils",
+      "WAWebDisappearingModeProtoUtils",
+      "WAWebE2EProtoGenerator",
+      "WAWebE2EProtoParser",
+      "WAWebE2EProtoParserApi",
+      "WAWebE2EProtoUtils",
+      "WAWebEncryptAndSendGroupMsg",
+      "WAWebEncryptAndSendStatusMsg",
+      "WAWebEphemeralKeepInChatUtils",
+      "WAWebEphemeralKeepInChatWamUtils",
+      "WAWebEphemeralityUtils",
+      "WAWebEventEditDecryptedMsgDataConversion",
+      "WAWebEventInfoDrawer.react",
+      "WAWebEventPreviewBlock.react",
+      "WAWebEventResponseDBSerialization",
+      "WAWebEventUtils",
+      "WAWebEventsDrawerEventCell.react",
+      "WAWebEventsGenerateEventEditMessageProto",
+      "WAWebEventsMessageComponent.react",
+      "WAWebEventsParseEventEditEncryptedMessageProto",
+      "WAWebEventsRSVPPopup.react",
+      "WAWebGalaxyFlows.react",
+      "WAWebGalaxyFlowsResponseDownloadFlow.react",
+      "WAWebGenerateAiMediaCollectionProtocolMsg",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotRequestWelcomeMessageProto"
+    ],
+    "dep_count": 11,
+    "dependent_count": 215
+  }
+}

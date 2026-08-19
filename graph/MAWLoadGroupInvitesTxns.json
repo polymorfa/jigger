@@ -1,0 +1,1 @@
+{"deps":["MAWBridgeTypesCreators","MAWDbGroupInviteTxns","MAWDexieTable","MAWIndexedDb","MAWUserJidWrapper","WAJids","emptyFunction"],"dependents":["MAWLoadThreadsTxns","MAWThreadFetchAndEmitTxns"],"dependent_count":2,"exports":[{"name":"loadGroupInvites","used_by":["MAWLoadThreadsTxns","MAWThreadFetchAndEmitTxns"],"uses":2}]}

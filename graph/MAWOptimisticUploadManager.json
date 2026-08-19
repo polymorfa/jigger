@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWGetDownloadableThumbnailForMediaApi","MAWGetMediaPlaintextApi","MAWOptimisticUploadMedia"],"dependent_count":3,"exports":[{"name":"getOptimisticUploadManager","used_by":["MAWGetDownloadableThumbnailForMediaApi","MAWGetMediaPlaintextApi","MAWOptimisticUploadMedia"],"uses":3},{"name":"clearOptimisticUploadManager","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebBotSignatureVerificationGating","WAWebUnifiedResponseUtils"],"dependents":["WAWebRichResponseMessage.react","useWAWebForwardedAiBotMessageClickHandler"],"dependent_count":2,"exports":[{"name":"getForwardedBotDisplayMode","used_by":["WAWebRichResponseMessage.react","useWAWebForwardedAiBotMessageClickHandler"],"uses":2}]}

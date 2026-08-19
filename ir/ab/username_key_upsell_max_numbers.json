@@ -1,0 +1,45 @@
+{
+  "id": "ab:username_key_upsell_max_numbers",
+  "kind": "ab",
+  "name": "username_key_upsell_max_numbers",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25789,
+    "type": "int",
+    "default": 1,
+    "alt_default": 1
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_key_upsell_max_numbers:\\s*\\[\\s*25789"
+  },
+  "literals": [
+    "username_key_upsell_max_numbers",
+    "25789"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUsernameGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

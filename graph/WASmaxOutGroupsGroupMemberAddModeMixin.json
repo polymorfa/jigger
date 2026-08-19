@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins","WASmaxOutGroupsMemberAddModes"],"dependents":["WASmaxOutGroupsCreateRequest","WASmaxOutGroupsCreateSubGroupSuggestionSuggestionForNewGroupMixin"],"dependent_count":2,"exports":[{"name":"mergeGroupMemberAddModeMixin","used_by":["WASmaxOutGroupsCreateRequest","WASmaxOutGroupsCreateSubGroupSuggestionSuggestionForNewGroupMixin"],"uses":2}]}

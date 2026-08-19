@@ -1,0 +1,1 @@
+{"deps":["BaseContextualLayerAnchorRootContext","BaseDOMContainer.react","ExecutionEnvironment","react","react-compiler-runtime","useStable","useUnsafeRef_DEPRECATED"],"dependents":["WAWebCallLinkCometRoot","WAWebVoipUiDocPip.react","WAWebVoipUiPopoutWindow.react","WDSContextualLayer.react"],"dependent_count":4,"exports":[{"name":"default","used_by":[],"uses":0}]}

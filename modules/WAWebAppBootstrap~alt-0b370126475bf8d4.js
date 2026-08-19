@@ -1,0 +1,101 @@
+__d("WAWebAppBootstrap", [
+	"WACryptoLibraryConfig",
+	"WAJids",
+	"WALogger",
+	"WAWap",
+	"WAWebABProps",
+	"WAWebABPropsCache",
+	"WAWebAdaptiveLayoutGatingUtils",
+	"WAWebAppSwInitializer",
+	"WAWebBrokerBackendInterface",
+	"WAWebBuildConstants",
+	"WAWebCacheStoreGatingUtil",
+	"WAWebClientFeatureFlags",
+	"WAWebConfigureWindowEvents",
+	"WAWebDebugSetup",
+	"WAWebDeleteGuestSessionOnWebLoad",
+	"WAWebDesktopUpsellUtils",
+	"WAWebEmojiKeywordToUnicode",
+	"WAWebEnvironment",
+	"WAWebEventSamplingCache",
+	"WAWebFrontendL10nHelpers",
+	"WAWebGlobals",
+	"WAWebHandlePreviousLogout",
+	"WAWebInfraErrorLogger",
+	"WAWebInvocationInterface",
+	"WAWebKeyboardShortcuts",
+	"WAWebLoggerOnError",
+	"WAWebLoginBounceGuard",
+	"WAWebLoomStuckTraceEviction",
+	"WAWebMainThreadLogger",
+	"WAWebMetricsAttributionObservers",
+	"WAWebPQGatingUtils",
+	"WAWebPageLoadLoggingImpl",
+	"WAWebPrefetchHatchDetailsOnLogin",
+	"WAWebRunInTransaction",
+	"WAWebStorageErrorHandlingUtils",
+	"WAWebSyncdUploadFatalErrorMetric",
+	"WAWebTransitions",
+	"WAWebUim",
+	"WAWebUserPrefsBase",
+	"WAWebUserPrefsKeys",
+	"WAWebUserPrefsMeUser",
+	"WAWebWam",
+	"WAWebWamPageLoadReporter",
+	"WAWebWamWorkerSpecificEvents",
+	"WAWebWidToJid",
+	"WAWebWindowsHybridBridgeInitiator",
+	"WDSTooltipShortcutResolver",
+	"cr:13019",
+	"cr:17219",
+	"cr:2015",
+	"cr:34988",
+	"cr:5203",
+	"cr:6448",
+	"getErrorSafe",
+	"gkx",
+	"initWAWebPlatformWebPage",
+	"velocity-animate",
+	"velocity-animate-ui"
+], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	var e, s, u, c, d = (e = n("cr:13019")) != null ? e : {}, m = d.reportPotentialWebDataLoss, p = null;
+	async function _() {
+		return p != null || (p = f()), p;
+	}
+	async function f() {
+		var e, t, a, i;
+		n("cr:6448") == null || n("cr:6448").incr("web.app.bootstrap"), n("cr:5203") == null || n("cr:5203")(), o("WAWebMainThreadLogger").initializeWAWebMainThreadLogger(), o("WDSTooltipShortcutResolver").registerWDSTooltipShortcutResolver(o("WAWebKeyboardShortcuts").getWDSShortcuts), o("WAWebInfraErrorLogger").addListenerToErrorPubSub(), window.onerror = o("WAWebLoggerOnError").onErrorHandler, window.onunhandledrejection = o("WAWebLoggerOnError").onUnhandledPromiseRejection, r("initWAWebPlatformWebPage")(), o("WAWebSyncdUploadFatalErrorMetric").initialiseFatalErrorMetricUploading(), await o("WAWebDeleteGuestSessionOnWebLoad").maybeDeleteGuestSessionOnWebLoad(), await o("WAWebHandlePreviousLogout").handlePreviousLogoutFailures(), o("WAWebLoginBounceGuard").resetLoginBounceCount(), o("WAWebPageLoadLoggingImpl").setPageLoadLoggingImpl(), o("WAWebABPropsCache").initializeABPropsCache(), o("WAWebClientFeatureFlags").overwriteDebugFeatures();
+		var l = (e = n("cr:17219")) == null ? void 0 : e.getWindowsBridge(r("WAWebWindowsHybridBridgeInitiator").WAWebAppBootstrap), d = (t = n("cr:34988")) != null ? t : {}, p = d.initializeWindowsSettingChangeHandlers;
+		p == null || p(), r("WAWebEnvironment").isWindows && o("WAWebUserPrefsBase").userPreferencesStoreBase.set(o("WAWebUserPrefsKeys").UserPrefs.WindowsIsAdaptiveLayoutEnabled, o("WAWebAdaptiveLayoutGatingUtils").getIsAdaptiveLayoutEnabled()), l == null || (a = l.abProps) == null || a.initialize(), o("WAWebEventSamplingCache").initializeEventSamplingCache(), o("WAWebWam").initWamRuntime(), l == null || (i = l.wam) == null || i.initialize(), o("WAWebMetricsAttributionObservers").initializeMetricsAttributionObservers(), o("WAWebLoomStuckTraceEviction").initWebLoomStuckTraceEviction(), n("WAWebWamWorkerSpecificEvents"), o("WAWebWamPageLoadReporter").exeTimer.start(), window.Velocity = n("velocity-animate"), n("velocity-animate-ui"), n("WAWebTransitions").registerEffects(), o("WAWebInvocationInterface").set(r("WAWebBrokerBackendInterface")), o("WAWebDebugSetup").setupDebugGlobal(), o("WAWebConfigureWindowEvents").configureWindowEvents();
+		try {
+			o("WAWebEmojiKeywordToUnicode").updateEmojiTrie();
+		} catch (e) {
+			var _ = r("getErrorSafe")(e);
+			o("WALogger").WARN(s || (s = babelHelpers.taggedTemplateLiteralLoose([
+				"[emoji-trie] EmojiKeywordToUnicode setup failed: ",
+				", stack: ",
+				""
+			])), e, _.stack).sendLogs("[emoji-trie] EmojiKeywordToUnicode setup failed: " + _.message);
+		}
+		o("WAWebFrontendL10nHelpers").extendWAWebLocalePrefCookieTtl(), o("WAWebFrontendL10nHelpers").mungeWAWebLocaleOverrideFromUrlIfNecessary(), o("WAWebWamPageLoadReporter").exeTimer.end(), r("gkx")("26258") || o("WAWap").enableXMLFormat(), o("WAWebDesktopUpsellUtils").isWebUserOnSupportedWindowsOSForUWPAsync();
+		var f = o("WAWebUserPrefsMeUser").getMaybeMeDevicePn(), g = o("WAWebWidToJid").widToMyJids(f);
+		o("WAWebGlobals").setGlobals({
+			jidUtils: o("WAJids").createJidUtils({ platform: "whatsapp" }),
+			myJids: g,
+			runInTransaction: o("WAWebRunInTransaction").runInTransaction,
+			newClockSkewCalculation: function() {
+				return !1;
+			}
+		}), o("WACryptoLibraryConfig").setCryptoLibraryConfig({
+			signalFutureMessagesMax: o("WAWebABProps").getABPropConfigValue("web_signal_future_messages_max"),
+			S508658AutoAcknowledgeStaleSessions: !0,
+			isPqKeysUploadEnabled: o("WAWebPQGatingUtils").isPqKeysUploadEnabled(),
+			isPq1on1MessageEnabled: o("WAWebPQGatingUtils").isPq1on1MessageEnabled()
+		}), o("WAWebCacheStoreGatingUtil").initStorageOptimizationFlags(), o("WAWebAppSwInitializer").initializeSw({
+			swScriptPath: "/sw.js",
+			swScope: "/"
+		}), o("WAWebStorageErrorHandlingUtils").persistAppReloadMarker(), r("WAWebEnvironment").isWindows && f == null && (m == null || m()), o("WAWebUim").setupUimListeners(), o("WAWebPrefetchHatchDetailsOnLogin").initHatchDetailsPrefetchOnLogin(), n("cr:2015") == null || n("cr:2015").init(), o("WALogger").LOG(u || (u = babelHelpers.taggedTemplateLiteralLoose(["[app] bootstrap done"]))), o("WALogger").LOG(c || (c = babelHelpers.taggedTemplateLiteralLoose(["[app] version: ", ""])), o("WAWebBuildConstants").VERSION_STR);
+	}
+	l.bootstrapApp = _;
+}), 98);

@@ -1,0 +1,42 @@
+{
+  "id": "ab:calling_av_sync_webrtc",
+  "kind": "ab",
+  "name": "calling_av_sync_webrtc",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24599,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "calling_av_sync_webrtc:\\s*\\[\\s*24599"
+  },
+  "literals": [
+    "calling_av_sync_webrtc",
+    "24599"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

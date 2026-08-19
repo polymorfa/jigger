@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMediaEditorUtilsShapes"],"dependent_count":2,"exports":[{"name":"MediaEditorLineIcon","used_by":["WAWebAllGeneratedIcons","WAWebMediaEditorUtilsShapes"],"uses":2}]}

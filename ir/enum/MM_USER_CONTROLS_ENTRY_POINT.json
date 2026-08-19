@@ -1,0 +1,104 @@
+{
+  "id": "enum:MM_USER_CONTROLS_ENTRY_POINT",
+  "kind": "enum",
+  "name": "MM_USER_CONTROLS_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMmUserControlsEntryPoint",
+    "variants": [
+      {
+        "name": "MESSAGE_BUBBLE",
+        "value": 1.0
+      },
+      {
+        "name": "BOTTOM_SHEET",
+        "value": 2.0
+      },
+      {
+        "name": "SYSTEM_MESSAGE",
+        "value": 3.0
+      },
+      {
+        "name": "FMX_CARD",
+        "value": 4.0
+      },
+      {
+        "name": "BUSINESS_PROFILE",
+        "value": 5.0
+      },
+      {
+        "name": "TOAST",
+        "value": 6.0
+      },
+      {
+        "name": "BLOCK_BOTTOM_SHEET_OTHER",
+        "value": 7.0
+      },
+      {
+        "name": "BLOCK_BOTTOM_SHEET_CHAT_LIST",
+        "value": 8.0
+      },
+      {
+        "name": "BLOCK_BOTTOM_SHEET_PROFILE",
+        "value": 9.0
+      },
+      {
+        "name": "BLOCK_BOTTOM_SHEET_FMX",
+        "value": 10.0
+      },
+      {
+        "name": "MESSAGE_CONTEXT_MENU",
+        "value": 11.0
+      },
+      {
+        "name": "MESSAGE_THUMBS",
+        "value": 12.0
+      },
+      {
+        "name": "POST_SEND_SYSTEM_MESSAGE",
+        "value": 13.0
+      },
+      {
+        "name": "NUDGE_CHAT",
+        "value": 14.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMmUserControlsEntryPoint",
+    "matches": "MM_USER_CONTROLS_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "MM_USER_CONTROLS_ENTRY_POINT",
+    "MESSAGE_BUBBLE",
+    "BOTTOM_SHEET",
+    "SYSTEM_MESSAGE",
+    "FMX_CARD",
+    "BUSINESS_PROFILE",
+    "TOAST",
+    "BLOCK_BOTTOM_SHEET_OTHER",
+    "BLOCK_BOTTOM_SHEET_CHAT_LIST",
+    "BLOCK_BOTTOM_SHEET_PROFILE",
+    "BLOCK_BOTTOM_SHEET_FMX",
+    "MESSAGE_CONTEXT_MENU",
+    "MESSAGE_THUMBS",
+    "POST_SEND_SYSTEM_MESSAGE",
+    "NUDGE_CHAT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMarketingMessageUserControlsJourneyWamEvent",
+      "WAWebMarketingMessagesFeedbackResumeConfirmation.react",
+      "WAWebMarketingMessagesFeedbackStopConfirmation.react",
+      "WAWebMarketingMessagesFeedbackSubmittedPopup.react",
+      "WAWebMarketingMessagesUserControlsPopup.react",
+      "WAWebMessageNotification.react",
+      "WAWebOptOutUserJob",
+      "WAWebStopMessagesRow.react",
+      "WAWebWrapperHandlers"
+    ],
+    "dep_count": 0,
+    "dependent_count": 9
+  }
+}

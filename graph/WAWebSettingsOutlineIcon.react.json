@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebListsIntroPopup.react","WAWebNewsletterInfoDrawer.react"],"dependent_count":3,"exports":[{"name":"SettingsOutlineIcon","used_by":["WAWebAllGeneratedIcons","WAWebListsIntroPopup.react","WAWebNewsletterInfoDrawer.react"],"uses":3}]}

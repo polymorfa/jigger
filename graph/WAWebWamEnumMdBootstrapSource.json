@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCollectionHandlerWamMutation","WAWebGetHistorySyncMetrics","WAWebMdBootstrapDataAppliedWamEvent","WAWebSyncBootstrap"],"dependent_count":4,"exports":[{"name":"MD_BOOTSTRAP_SOURCE","used_by":["WAWebCollectionHandlerWamMutation","WAWebGetHistorySyncMetrics","WAWebMdBootstrapDataAppliedWamEvent","WAWebSyncBootstrap"],"uses":4}]}

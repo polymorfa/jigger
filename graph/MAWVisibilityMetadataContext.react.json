@@ -1,0 +1,1 @@
+{"deps":["react"],"dependents":["MAWVisibilityMetadataProvider.react"],"dependent_count":1,"exports":[{"name":"MAWVisibilityMetadataContext","used_by":["MAWVisibilityMetadataProvider.react"],"uses":1},{"name":"useMAWVisibilityMetadata","used_by":[],"uses":0}]}

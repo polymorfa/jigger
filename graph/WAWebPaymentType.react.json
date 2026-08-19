@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebContactCollection","WAWebContactGetters","WAWebFormatPaymentMsg","WAWebName.react","WAWebWidFormat","react","react-compiler-runtime"],"dependents":["WAWebPaymentInfo.react","WAWebPaymentType.story","WAWebQuotedMsgContent.react"],"dependent_count":3,"exports":[]}

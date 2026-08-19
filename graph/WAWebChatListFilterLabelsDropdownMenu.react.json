@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebDropdownItem.react","WAWebLabelCollection","WAWebLabels.react","WAWebListUtils","WAWebListsGatingUtils","react","react-compiler-runtime"],"dependents":["WAWebChatListFiltersLabelsPill.react","WAWebChatListSearch.react"],"dependent_count":2,"exports":[]}

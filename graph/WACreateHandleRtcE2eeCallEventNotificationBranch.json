@@ -1,0 +1,1 @@
+{"deps":["Promise","WAParseRtcE2eeCallEventNotification","WAResultOrError","WATagsLogger","WAUnknownStanzaError"],"dependents":["WACreateHandleNotification"],"dependent_count":1,"exports":[{"name":"createHandleRtcE2eeCallEventNotification","used_by":["WACreateHandleNotification"],"uses":1}]}

@@ -1,0 +1,72 @@
+{
+  "id": "wam:3934",
+  "kind": "wam",
+  "name": "WebcNativeUpsellCta",
+  "data": {
+    "kind": "wam",
+    "event_id": 3934,
+    "fields": {
+      "webcNativeUpsellCtaEventType": {
+        "id": 2,
+        "type": "WEBC_NATIVE_UPSELL_CTA_EVENT_TYPE",
+        "wire": "webc_native_upsell_cta_event_type",
+        "enum_ref": "WEBC_NATIVE_UPSELL_CTA_EVENT_TYPE"
+      },
+      "webcNativeUpsellCtaIsBetaUser": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "webc_native_upsell_cta_is_beta_user"
+      },
+      "webcNativeUpsellCtaQrScreenExperimentGroup": {
+        "id": 3,
+        "type": "WEBC_NATIVE_UPSELL_CTA_QR_SCREEN_EXPERIMENT_GROUP",
+        "wire": "webc_native_upsell_cta_qr_screen_experiment_group",
+        "enum_ref": "WEBC_NATIVE_UPSELL_CTA_QR_SCREEN_EXPERIMENT_GROUP"
+      },
+      "webcNativeUpsellCtaReleaseChannel": {
+        "id": 4,
+        "type": "WEBC_NATIVE_UPSELL_CTA_RELEASE_CHANNEL",
+        "wire": "webc_native_upsell_cta_release_channel",
+        "enum_ref": "WEBC_NATIVE_UPSELL_CTA_RELEASE_CHANNEL"
+      },
+      "webcNativeUpsellCtaSource": {
+        "id": 1,
+        "type": "WEBC_NATIVE_UPSELL_CTA_SOURCE_TYPE",
+        "wire": "webc_native_upsell_cta_source",
+        "enum_ref": "WEBC_NATIVE_UPSELL_CTA_SOURCE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcNativeUpsellCtaWamEvent",
+    "matches": "WebcNativeUpsellCta:\\s*\\[\\s*3934"
+  },
+  "literals": [
+    "3934"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcNativeUpsellCtaEventType",
+      "WAWebWamEnumWebcNativeUpsellCtaQrScreenExperimentGroup",
+      "WAWebWamEnumWebcNativeUpsellCtaReleaseChannel",
+      "WAWebWamEnumWebcNativeUpsellCtaSourceType"
+    ],
+    "dependents": [
+      "WAWebDesktopUpsellCallingMissedCall.react",
+      "WAWebDesktopUpsellCallingUnavailablePopover.react",
+      "WAWebDesktopUpsellChatlistToastbar.react",
+      "WAWebDesktopUpsellStoreOpener",
+      "WAWebMacBetaUpsellToastbar.react",
+      "useWAWebDesktopUpsellWamImpression"
+    ],
+    "dep_count": 5,
+    "dependent_count": 6
+  }
+}

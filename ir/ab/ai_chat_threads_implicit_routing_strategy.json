@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_chat_threads_implicit_routing_strategy",
+  "kind": "ab",
+  "name": "ai_chat_threads_implicit_routing_strategy",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27519,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_chat_threads_implicit_routing_strategy:\\s*\\[\\s*27519"
+  },
+  "literals": [
+    "ai_chat_threads_implicit_routing_strategy",
+    "27519"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

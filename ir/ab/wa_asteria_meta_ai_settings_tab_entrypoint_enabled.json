@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_asteria_meta_ai_settings_tab_entrypoint_enabled",
+  "kind": "ab",
+  "name": "wa_asteria_meta_ai_settings_tab_entrypoint_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27118,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_asteria_meta_ai_settings_tab_entrypoint_enabled:\\s*\\[\\s*27118"
+  },
+  "literals": [
+    "wa_asteria_meta_ai_settings_tab_entrypoint_enabled",
+    "27118"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

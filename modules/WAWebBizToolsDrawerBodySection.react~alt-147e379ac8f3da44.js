@@ -1,0 +1,38 @@
+__d("WAWebBizToolsDrawerBodySection.react", ["WDSText.react", "react"], (function(t, n, r, o, a, i, l) {
+	var e, s = e || (e = o("react")), u = {
+		paddingInline20: {
+			paddingInlineStart: "x1phvje8",
+			paddingInlineEnd: "xcldk2z",
+			paddingLeft: null,
+			paddingRight: null,
+			$$css: !0
+		},
+		paddingStart24: {
+			paddingInlineStart: "xb0esv5",
+			$$css: !0
+		},
+		paddingTop8Only: {
+			paddingBottom: "xvpt6g3",
+			paddingTop: "x16ovd2e",
+			$$css: !0
+		},
+		paddingVert8: {
+			paddingTop: "x16ovd2e",
+			paddingBottom: "x12xbjc7",
+			$$css: !0
+		}
+	};
+	function c(e) {
+		var t = e.children, n = e.headerText, o = e.hideDivider, a = e.theme, i = a === "biz-ai-home" ? u.paddingInline20 : u.paddingStart24;
+		return s.jsxs("div", babelHelpers.extends({ "data-testid": "biz-tools-drawer-body-section" }, {
+			0: { className: "x16ovd2e x12xbjc7" },
+			1: { className: "x120ee7l x1q0q8m5 xso031l x16ovd2e x12xbjc7" }
+		}[!o << 0], { children: [n != null ? s.jsx(r("WDSText.react"), {
+			type: "Body1Emphasized",
+			colorName: "contentDefault",
+			xstyle: [a === "biz-ai-home" ? u.paddingTop8Only : u.paddingVert8, i],
+			children: n
+		}) : null, t] }));
+	}
+	c.displayName = c.name + " [from " + i.id + "]", l.default = c;
+}), 98);

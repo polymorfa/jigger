@@ -1,0 +1,1 @@
+{"deps":["WAWebAppRootInteractionContext.react","WAWebNewsletterGetRecommendedNewslettersAction","react","useWAWebUnmountSignal"],"dependents":["WAWebNewsletterTabDrawerContent.react"],"dependent_count":1,"exports":[{"name":"useRecommendedNewsletters","used_by":["WAWebNewsletterTabDrawerContent.react"],"uses":1}]}

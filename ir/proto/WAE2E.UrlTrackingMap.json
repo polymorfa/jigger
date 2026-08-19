@@ -1,0 +1,43 @@
+{
+  "id": "proto:WAE2E.UrlTrackingMap",
+  "kind": "proto",
+  "name": "WAE2E.UrlTrackingMap",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "urlTrackingMapElements": {
+        "number": 1,
+        "type_name": "WAE2E.UrlTrackingMap.UrlTrackingMapElement"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"UrlTrackingMap\""
+  },
+  "literals": [
+    "UrlTrackingMap"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

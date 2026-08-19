@@ -1,0 +1,1 @@
+{"deps":["WASmaxChildren","WASmaxJsx","WASmaxMixins","WAWap"],"dependents":["WASmaxOutReceiptSenderAggregatedPublishOrSingleMixinGroup"],"dependent_count":1,"exports":[{"name":"mergeSenderAggregatedPublishMixin","used_by":["WASmaxOutReceiptSenderAggregatedPublishOrSingleMixinGroup"],"uses":1},{"name":"makeSenderAggregatedPublishListItem","used_by":[],"uses":0}]}

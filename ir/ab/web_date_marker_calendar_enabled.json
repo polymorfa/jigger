@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_date_marker_calendar_enabled",
+  "kind": "ab",
+  "name": "web_date_marker_calendar_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25811,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_date_marker_calendar_enabled:\\s*\\[\\s*25811"
+  },
+  "literals": [
+    "web_date_marker_calendar_enabled",
+    "25811"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSearchByTypeAndDateGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

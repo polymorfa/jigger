@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","react","react-compiler-runtime","stylex"],"dependents":["WAWebWrapperGetTailIcon"],"dependent_count":1,"exports":[{"name":"MessageTailInIcon","used_by":["WAWebWrapperGetTailIcon"],"uses":1},{"name":"MessageTailOutIcon","used_by":["WAWebWrapperGetTailIcon"],"uses":1}]}

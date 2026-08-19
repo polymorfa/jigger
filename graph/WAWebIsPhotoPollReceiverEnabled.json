@@ -1,0 +1,1 @@
+{"deps":["WAWebNewsletterCommonGatingUtils","WAWebNewsletterIsNewsletterMsg"],"dependents":["WAWebParseImageMessageProto","WAWebPollsParsePollCreationMessageProto"],"dependent_count":2,"exports":[{"name":"isPhotoPollReceiverEnabled","used_by":["WAWebParseImageMessageProto","WAWebPollsParsePollCreationMessageProto"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["WAFlowJSONActionSchema","WAFlowJSONConstants","WAFlowJSONSchemaUtils"],"dependents":["WAFlowJSONChildrenSchema","WAFlowJSONOptInComponentSchemaV600"],"dependent_count":2,"exports":[{"name":"getOptInComponentSchemaV500","used_by":["WAFlowJSONChildrenSchema","WAFlowJSONOptInComponentSchemaV600"],"uses":2}]}

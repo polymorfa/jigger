@@ -1,0 +1,42 @@
+{
+  "id": "ab:channel_views_vpv_definition_enabled",
+  "kind": "ab",
+  "name": "channel_views_vpv_definition_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23616,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channel_views_vpv_definition_enabled:\\s*\\[\\s*23616"
+  },
+  "literals": [
+    "channel_views_vpv_definition_enabled",
+    "23616"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

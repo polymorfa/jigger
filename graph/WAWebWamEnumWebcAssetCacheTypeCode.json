@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebAssetLoader","WAWebWebcAssetLoadWamEvent"],"dependent_count":2,"exports":[{"name":"WEBC_ASSET_CACHE_TYPE_CODE","used_by":["WAWebAssetLoader","WAWebWebcAssetLoadWamEvent"],"uses":2}]}

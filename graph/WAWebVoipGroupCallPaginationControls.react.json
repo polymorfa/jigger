@@ -1,0 +1,1 @@
+{"deps":["fbt","WDSButton.react","WDSIconIcChevronLeft.react","WDSIconIcChevronRight.react","WDSText.react","WDSTooltip.react","react","react-compiler-runtime","useWAWebVoipWindowPopoutTooltipProps"],"dependents":["WAWebVoipUiSpeakerModeLayout.react","WAWebVoipUiVideoGroupCall.react"],"dependent_count":2,"exports":[]}

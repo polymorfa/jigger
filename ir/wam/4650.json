@@ -1,0 +1,84 @@
+{
+  "id": "wam:4650",
+  "kind": "wam",
+  "name": "MdBootstrapHistoryDataStartDownloading",
+  "data": {
+    "kind": "wam",
+    "event_id": 4650,
+    "fields": {
+      "historySyncChunkOrder": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "history_sync_chunk_order"
+      },
+      "historySyncRetryRequestId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "history_sync_retry_request_id"
+      },
+      "historySyncStageProgress": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "history_sync_stage_progress"
+      },
+      "mdBootstrapHistoryPayloadType": {
+        "id": 3,
+        "type": "MD_BOOTSTRAP_HISTORY_PAYLOAD_TYPE",
+        "wire": "md_bootstrap_history_payload_type",
+        "enum_ref": "MD_BOOTSTRAP_HISTORY_PAYLOAD_TYPE"
+      },
+      "mdBootstrapPayloadSize": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "md_bootstrap_payload_size"
+      },
+      "mdBootstrapPayloadType": {
+        "id": 5,
+        "type": "MD_BOOTSTRAP_PAYLOAD_TYPE",
+        "wire": "md_bootstrap_payload_type",
+        "enum_ref": "MD_BOOTSTRAP_PAYLOAD_TYPE"
+      },
+      "mdBootstrapStepDuration": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "md_bootstrap_step_duration"
+      },
+      "mdSessionId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "md_session_id"
+      },
+      "mdTimestamp": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "md_timestamp"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdBootstrapHistoryDataStartDownloadingWamEvent",
+    "matches": "MdBootstrapHistoryDataStartDownloading:\\s*\\[\\s*4650"
+  },
+  "literals": [
+    "4650"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMdBootstrapHistoryPayloadType",
+      "WAWebWamEnumMdBootstrapPayloadType"
+    ],
+    "dependents": [
+      "WAWebGetHistorySyncMetrics",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

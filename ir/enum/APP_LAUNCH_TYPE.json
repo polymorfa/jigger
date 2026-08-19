@@ -1,0 +1,43 @@
+{
+  "id": "enum:APP_LAUNCH_TYPE",
+  "kind": "enum",
+  "name": "APP_LAUNCH_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAppLaunchType",
+    "variants": [
+      {
+        "name": "COLD",
+        "value": 1.0
+      },
+      {
+        "name": "WARM",
+        "value": 2.0
+      },
+      {
+        "name": "LUKEWARM",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAppLaunchType",
+    "matches": "APP_LAUNCH_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "APP_LAUNCH_TYPE",
+    "COLD",
+    "WARM",
+    "LUKEWARM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAppLaunchWamEvent",
+      "WAWebWamAppLaunchReporter",
+      "WAWebWindowsWamAppLaunchReporter"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

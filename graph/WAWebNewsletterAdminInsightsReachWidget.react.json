@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChartUtils","WAWebDeltaText.react","WAWebDonutChart.react","WAWebFlex.react","WAWebL10N","WAWebNewsletterMetricUtils","WAWebPaymentSendIcon.react","WAWebText.react","react","react-compiler-runtime","stylex"],"dependents":["WAWebNewsletterAdminInsightsReachWidget.story","WAWebNewsletterAdminInsightsReachWidgetContainer.react"],"dependent_count":2,"exports":[]}

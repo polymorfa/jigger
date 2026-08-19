@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatDisappearingSetting",
+  "kind": "proto",
+  "name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatDisappearingSetting",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "disappearingSettingActorFbid": {
+        "number": 3
+      },
+      "disappearingSettingTime": {
+        "number": 1
+      },
+      "newEphemeralityType": {
+        "number": 4
+      },
+      "oldDisappearingSettingTime": {
+        "number": 2
+      },
+      "oldEphemeralityType": {
+        "number": 5
+      }
+    },
+    "module": "WAArmadilloMiTransportAdminMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloMiTransportAdminMessage.pb",
+    "matches": "name = \"MiTransportAdminMessage.XmatDisappearingSetting\""
+  },
+  "literals": [
+    "XmatDisappearingSetting"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleNotification",
+      "MAWMpsBridgeHandlers",
+      "MAWProtobufDeserializers",
+      "MpsAdminMsgToBridge",
+      "MpsThreadContentsPostProcessor",
+      "MpsToUIPostProcessor",
+      "WABuildMpsPayload",
+      "WmiMessengerE2EEIrisDeltaHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

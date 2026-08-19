@@ -1,0 +1,1 @@
+{"deps":["WAWebBox.react","WAWebClickable.react","WAWebFbtCommon","WAWebFlex.react","WAWebPopoverContext.react","WAWebTooltip.react","WAWebUimUie.react","WDSIconIcClose.react","WDSText.react","react","useWAWebStableCallback"],"dependents":["WAWebVoipCallingNavNux.react","WAWebVoipCallingNux.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

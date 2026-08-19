@@ -1,0 +1,1 @@
+{"deps":["WAWebAck","WAWebGetters","WAWebGettersCaches","WAWebNewsletterPollVotesGetters"],"dependents":["WAWebNewsletterPollVotesModel","useWAWebPollVotesToResend"],"dependent_count":2,"exports":[{"name":"clearFrontendNewsletterPollVotesGetterCacheFor","used_by":["WAWebNewsletterPollVotesModel"],"uses":1},{"name":"getIsFailed","used_by":["useWAWebPollVotesToResend"],"uses":1}]}

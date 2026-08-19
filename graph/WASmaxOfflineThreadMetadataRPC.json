@@ -1,0 +1,1 @@
+{"deps":["WASmaxInOfflineThreadMetadataRequest","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WACreateHandleInfoBulletin"],"dependent_count":1,"exports":[{"name":"receiveThreadMetadataRPC","used_by":["WACreateHandleInfoBulletin"],"uses":1}]}

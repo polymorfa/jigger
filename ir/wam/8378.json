@@ -1,0 +1,124 @@
+{
+  "id": "wam:8378",
+  "kind": "wam",
+  "name": "GroupHistorySenderUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 8378,
+    "fields": {
+      "bundleSendSource": {
+        "id": 1,
+        "type": "BUNDLE_SEND_SOURCE",
+        "wire": "bundle_send_source",
+        "enum_ref": "BUNDLE_SEND_SOURCE"
+      },
+      "groupHistoryMessagesCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "group_history_messages_count"
+      },
+      "groupHistoryOutWindowPinsCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "group_history_out_window_pins_count"
+      },
+      "groupHistoryPinsCount": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "group_history_pins_count"
+      },
+      "groupHistorySenderActionType": {
+        "id": 5,
+        "type": "GROUP_HISTORY_SENDER_ACTION_TYPE",
+        "wire": "group_history_sender_action_type",
+        "enum_ref": "GROUP_HISTORY_SENDER_ACTION_TYPE"
+      },
+      "groupHistorySystemMessageType": {
+        "id": 6,
+        "type": "GROUP_HISTORY_SYSTEM_MESSAGE_TYPE",
+        "wire": "group_history_system_message_type",
+        "enum_ref": "GROUP_HISTORY_SYSTEM_MESSAGE_TYPE"
+      },
+      "groupHistoryUncountedMessagesCount": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "group_history_uncounted_messages_count"
+      },
+      "groupSize": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "group_size"
+      },
+      "ineligibleReason": {
+        "id": 9,
+        "type": "GROUP_HISTORY_INELIGIBILITY_REASON",
+        "wire": "ineligible_reason",
+        "enum_ref": "GROUP_HISTORY_INELIGIBILITY_REASON"
+      },
+      "isGroupHistoryToggledOn": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "is_group_history_toggled_on"
+      },
+      "isTeeBotNoticeOnly": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_tee_bot_notice_only"
+      },
+      "recipientCount": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "recipient_count"
+      },
+      "uiSurface": {
+        "id": 11,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyTs": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "user_journey_ts"
+      },
+      "xIneligibleReasons": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "x_ineligible_reasons"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGroupHistorySenderUserJourneyWamEvent",
+    "matches": "GroupHistorySenderUserJourney:\\s*\\[\\s*8378"
+  },
+  "literals": [
+    "8378"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBundleSendSource",
+      "WAWebWamEnumGroupHistoryIneligibilityReason",
+      "WAWebWamEnumGroupHistorySenderActionType",
+      "WAWebWamEnumGroupHistorySystemMessageType",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebGroupHistorySenderUserJourneyLogger"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

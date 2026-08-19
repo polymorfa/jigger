@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WACrossWorkerPortal","WAWebBackendWorkerV2","WAWebCommsBackendWorkerHandlers","WAWebStartBackendWorker"],"dependent_count":4,"exports":[{"name":"withTransferables","used_by":["WAWebBackendWorkerV2","WAWebCommsBackendWorkerHandlers","WAWebStartBackendWorker"],"uses":3},{"name":"TransferableResult","used_by":["WACrossWorkerPortal"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WABinary"],"dependents":["WAWebWamLibContext"],"dependent_count":1,"exports":[{"name":"writeEvent","used_by":["WAWebWamLibContext"],"uses":1},{"name":"writeField","used_by":["WAWebWamLibContext"],"uses":1},{"name":"writeGlobalAttribute","used_by":["WAWebWamLibContext"],"uses":1}]}

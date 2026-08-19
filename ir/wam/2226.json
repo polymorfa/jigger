@@ -1,0 +1,54 @@
+{
+  "id": "wam:2226",
+  "kind": "wam",
+  "name": "WebcProgressiveImage",
+  "data": {
+    "kind": "wam",
+    "event_id": 2226,
+    "fields": {
+      "webcFirstRenderScans": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "webc_first_render_scans"
+      },
+      "webcFirstRenderT": {
+        "id": 2,
+        "type": "TIMER",
+        "wire": "webc_first_render_t"
+      },
+      "webcFullQualityT": {
+        "id": 4,
+        "type": "TIMER",
+        "wire": "webc_full_quality_t"
+      },
+      "webcMidQualityT": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "webc_mid_quality_t"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      10
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcProgressiveImageWamEvent",
+    "matches": "WebcProgressiveImage:\\s*\\[\\s*2226"
+  },
+  "literals": [
+    "2226"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebMediaMmsV4Download"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

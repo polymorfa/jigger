@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBrazilPixKeyFormattingUtils","WAWebFlex.react","WAWebPencilRefreshedIcon.react","WAWebPixLogoIcon.react","WAWebSvgButton.react","WDSText.react","react","react-compiler-runtime"],"dependents":["WAWebSendPixConfirmModal.react","WAWebSendPixPaymentRequestHybridModal.react"],"dependent_count":2,"exports":[]}

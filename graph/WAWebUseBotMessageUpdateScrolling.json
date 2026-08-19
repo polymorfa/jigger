@@ -1,0 +1,1 @@
+{"deps":["WAWebBotFrontendUtils","WAWebCmd","WAWebMsgGetters","react","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebRichResponseMessage.react","WAWebUnifiedResponseBubble.react"],"dependent_count":2,"exports":[{"name":"useBotMessageUpdateScrolling","used_by":["WAWebRichResponseMessage.react","WAWebUnifiedResponseBubble.react"],"uses":2}]}

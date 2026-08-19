@@ -1,0 +1,45 @@
+{
+  "id": "ab:smbw_business_broadcast_smart_column_detection_enabled",
+  "kind": "ab",
+  "name": "smbw_business_broadcast_smart_column_detection_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27999,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smbw_business_broadcast_smart_column_detection_enabled:\\s*\\[\\s*27999"
+  },
+  "literals": [
+    "smbw_business_broadcast_smart_column_detection_enabled",
+    "27999"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizBroadcastsUploadModal.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

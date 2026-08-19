@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps"],"dependents":["WAWebGroupChatProfilePicture.react","WAWebMessageAuthor.react"],"dependent_count":2,"exports":[{"name":"isGroupHoverCardEnabled","used_by":["WAWebGroupChatProfilePicture.react","WAWebMessageAuthor.react"],"uses":2}]}

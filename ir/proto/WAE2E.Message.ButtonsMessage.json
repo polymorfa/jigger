@@ -1,0 +1,75 @@
+{
+  "id": "proto:WAE2E.Message.ButtonsMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.ButtonsMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "buttons": {
+        "number": 9,
+        "type_name": "WAE2E.Message.ButtonsMessage.Button"
+      },
+      "contentText": {
+        "number": 6
+      },
+      "contextInfo": {
+        "number": 8,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "documentMessage": {
+        "number": 2,
+        "type_name": "WAE2E.Message.DocumentMessage"
+      },
+      "footerText": {
+        "number": 7
+      },
+      "headerType": {
+        "number": 10
+      },
+      "imageMessage": {
+        "number": 3,
+        "type_name": "WAE2E.Message.ImageMessage"
+      },
+      "locationMessage": {
+        "number": 5,
+        "type_name": "WAE2E.Message.LocationMessage"
+      },
+      "text": {
+        "number": 1
+      },
+      "videoMessage": {
+        "number": 4,
+        "type_name": "WAE2E.Message.VideoMessage"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.ButtonsMessage\""
+  },
+  "literals": [
+    "ButtonsMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

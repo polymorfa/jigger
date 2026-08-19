@@ -1,0 +1,42 @@
+{
+  "id": "ab:default_endpoint_thread_poll_timeout",
+  "kind": "ab",
+  "name": "default_endpoint_thread_poll_timeout",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11129,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "default_endpoint_thread_poll_timeout:\\s*\\[\\s*11129"
+  },
+  "literals": [
+    "default_endpoint_thread_poll_timeout",
+    "11129"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

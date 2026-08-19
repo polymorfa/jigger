@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps"],"dependents":["WAWebOfflineHandler"],"dependent_count":1,"exports":[{"name":"getNonBlockingOfflineResumeMaxMessageCount","used_by":["WAWebOfflineHandler"],"uses":1},{"name":"getOfflineDynamicBatchConfig","used_by":["WAWebOfflineHandler"],"uses":1}]}

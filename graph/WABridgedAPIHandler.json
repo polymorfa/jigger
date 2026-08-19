@@ -1,0 +1,1 @@
+{"deps":["WAAPI"],"dependents":["MAWRegisterBridgeHandlers"],"dependent_count":1,"exports":[{"name":"waapi","used_by":["MAWRegisterBridgeHandlers"],"uses":1}]}

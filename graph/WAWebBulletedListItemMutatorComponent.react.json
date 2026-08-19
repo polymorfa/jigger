@@ -1,0 +1,1 @@
+{"deps":["fbt","WABidi","WAWebCopyPasteSelectable.react","WAWebFormatComponentUtils","WAWebL10N","react","react-compiler-runtime"],"dependents":["WAWebBulletedListItemFormatMutator","WAWebTextMutatorComponentUtils"],"dependent_count":2,"exports":[]}

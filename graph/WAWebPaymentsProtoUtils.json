@@ -1,0 +1,1 @@
+{"deps":["WAWebE2EProtoGenerator","WAWebE2EProtoUtils"],"dependents":["WAWebGenerateRequestPaymentMessageProto","WAWebGenerateSendPaymentMessageProto"],"dependent_count":2,"exports":[{"name":"generatePaymentsNoteMessage","used_by":["WAWebGenerateRequestPaymentMessageProto","WAWebGenerateSendPaymentMessageProto"],"uses":2}]}

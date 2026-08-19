@@ -1,0 +1,1 @@
+{"deps":["WAFranking","WAFrankingTypes"],"dependents":["WAHandleAvailableIndividualMsg","WAHandleGroupMsg"],"dependent_count":2,"exports":[{"name":"getReportingMeta","used_by":["WAHandleAvailableIndividualMsg","WAHandleGroupMsg"],"uses":2}]}

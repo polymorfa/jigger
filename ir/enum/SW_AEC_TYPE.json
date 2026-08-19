@@ -1,0 +1,51 @@
+{
+  "id": "enum:SW_AEC_TYPE",
+  "kind": "enum",
+  "name": "SW_AEC_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSwAecType",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 1.0
+      },
+      {
+        "name": "SPEEX",
+        "value": 2.0
+      },
+      {
+        "name": "WEBRTC",
+        "value": 3.0
+      },
+      {
+        "name": "MWEBRTC",
+        "value": 4.0
+      },
+      {
+        "name": "ECHOSUPPRESSOR",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSwAecType",
+    "matches": "SW_AEC_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SW_AEC_TYPE",
+    "NONE",
+    "SPEEX",
+    "WEBRTC",
+    "MWEBRTC",
+    "ECHOSUPPRESSOR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

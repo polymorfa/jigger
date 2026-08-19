@@ -1,0 +1,45 @@
+{
+  "id": "ab:paa_support_for_disabled_epehemerality",
+  "kind": "ab",
+  "name": "paa_support_for_disabled_epehemerality",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21235,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "paa_support_for_disabled_epehemerality:\\s*\\[\\s*21235"
+  },
+  "literals": [
+    "paa_support_for_disabled_epehemerality",
+    "21235"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUsyncDisappearingMode"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

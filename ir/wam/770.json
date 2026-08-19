@@ -1,0 +1,42 @@
+{
+  "id": "wam:770",
+  "kind": "wam",
+  "name": "WebcStreamModeChange",
+  "data": {
+    "kind": "wam",
+    "event_id": 770,
+    "fields": {
+      "webcStreamMode": {
+        "id": 1,
+        "type": "WEBC_STREAM_MODE_CODE",
+        "wire": "webc_stream_mode",
+        "enum_ref": "WEBC_STREAM_MODE_CODE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcStreamModeChangeWamEvent",
+    "matches": "WebcStreamModeChange:\\s*\\[\\s*770"
+  },
+  "literals": [
+    "770"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcStreamModeCode"
+    ],
+    "dependents": [
+      "WAWebStreamModel",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

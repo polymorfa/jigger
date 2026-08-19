@@ -1,0 +1,1 @@
+{"deps":["WAWebBotTypes","WAWebBotUnifiedResponseGating","WAWebGetPlainTextFromBotMsg"],"dependents":["WAWebMsgReply"],"dependent_count":1,"exports":[{"name":"canReplyRichResponse","used_by":["WAWebMsgReply"],"uses":1},{"name":"botMsgHasExtractableText","used_by":[],"uses":0}]}

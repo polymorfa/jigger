@@ -1,0 +1,1 @@
+{"deps":["WAWebChatGetters","WAWebGroupUnreadMessageType","WAWebUnreadMentionModel"],"dependents":["WAWebChatModel"],"dependent_count":1,"exports":[{"name":"handleUnreadMention","used_by":["WAWebChatModel"],"uses":1},{"name":"initializeUnreadMentions","used_by":["WAWebChatModel"],"uses":1}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:payments_link_to_lite_consumer_enabled",
+  "kind": "ab",
+  "name": "payments_link_to_lite_consumer_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3051,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "payments_link_to_lite_consumer_enabled:\\s*\\[\\s*3051"
+  },
+  "literals": [
+    "payments_link_to_lite_consumer_enabled",
+    "3051"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPaymentsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

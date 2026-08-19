@@ -1,0 +1,35 @@
+{
+  "id": "appstate:primary_version",
+  "kind": "appstate",
+  "name": "PrimaryVersion",
+  "data": {
+    "kind": "appstate",
+    "index_name": "primary_version",
+    "collection": "regular_low",
+    "version": 7,
+    "value_field": "primaryVersionAction"
+  },
+  "evidence": {
+    "module": "WAWebPrimaryVersionSync",
+    "matches": "Actions\\.PrimaryVersion"
+  },
+  "literals": [
+    "primary_version",
+    "PrimaryVersion",
+    "primaryVersionAction"
+  ],
+  "graph": {
+    "deps": [
+      "WALogger",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

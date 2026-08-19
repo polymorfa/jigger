@@ -1,0 +1,1 @@
+{"deps":["WAWebCmd","WAWebCopyPasteSelectable.react","WAWebLongLinkPop.react","WAWebModalManager","WAWebStatusContext","WAWebSuspiciousLinkMutatorComponent.react","react","react-compiler-runtime","stylex"],"dependents":["WAWebStatusLinkFormatMutator"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

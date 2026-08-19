@@ -1,0 +1,42 @@
+{
+  "id": "ab:wamo_sub_admin_enabled_v2",
+  "kind": "ab",
+  "name": "wamo_sub_admin_enabled_v2",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11020,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wamo_sub_admin_enabled_v2:\\s*\\[\\s*11020"
+  },
+  "literals": [
+    "wamo_sub_admin_enabled_v2",
+    "11020"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

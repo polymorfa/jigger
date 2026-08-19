@@ -1,0 +1,124 @@
+{
+  "id": "wam:6552",
+  "kind": "wam",
+  "name": "MmDisclosureStateEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 6552,
+    "fields": {
+      "businessLidOrJid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "business_lid_or_jid"
+      },
+      "deltaTimeReceived": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "delta_time_received"
+      },
+      "disclosureEventType": {
+        "id": 3,
+        "type": "DISCLOSURE_EVENT_TYPE",
+        "wire": "disclosure_event_type",
+        "enum_ref": "DISCLOSURE_EVENT_TYPE"
+      },
+      "disclosureInteraction": {
+        "id": 4,
+        "type": "DISCLOSURE_INTERACTION",
+        "wire": "disclosure_interaction",
+        "enum_ref": "DISCLOSURE_INTERACTION"
+      },
+      "disclosureSource": {
+        "id": 5,
+        "type": "DISCLOSURE_SOURCE",
+        "wire": "disclosure_source",
+        "enum_ref": "DISCLOSURE_SOURCE"
+      },
+      "disclosureSuppressionReason": {
+        "id": 6,
+        "type": "DISCLOSURE_SUPPRESSION_REASON",
+        "wire": "disclosure_suppression_reason",
+        "enum_ref": "DISCLOSURE_SUPPRESSION_REASON"
+      },
+      "disclosureSurface": {
+        "id": 7,
+        "type": "DISCLOSURE_SURFACE",
+        "wire": "disclosure_surface",
+        "enum_ref": "DISCLOSURE_SURFACE"
+      },
+      "entSourceSubplatform": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "ent_source_subplatform"
+      },
+      "isCompanionDevice": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_companion_device"
+      },
+      "isNetworkAvailable": {
+        "id": 18,
+        "type": "BOOLEAN",
+        "wire": "is_network_available"
+      },
+      "isUserDisclosed": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_user_disclosed"
+      },
+      "mmDisclosureFlags": {
+        "id": 19,
+        "type": "INTEGER",
+        "wire": "mm_disclosure_flags"
+      },
+      "mmHasDisclosedUrl": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "mm_has_disclosed_url"
+      },
+      "mmHasShowDisclosureFlag": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "mm_has_show_disclosure_flag"
+      },
+      "templateId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "template_id"
+      },
+      "userBecameDisclosed": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "user_became_disclosed"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebMmDisclosureStateEventWamEvent",
+    "matches": "MmDisclosureStateEvent:\\s*\\[\\s*6552"
+  },
+  "literals": [
+    "6552"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDisclosureEventType",
+      "WAWebWamEnumDisclosureInteraction",
+      "WAWebWamEnumDisclosureSource",
+      "WAWebWamEnumDisclosureSuppressionReason",
+      "WAWebWamEnumDisclosureSurface"
+    ],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

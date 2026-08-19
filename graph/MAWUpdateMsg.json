@@ -1,0 +1,1 @@
+{"deps":["MAWBridgeBuildMsg","MAWMsgFetchLSReplyMsgAndAttachment","asyncToGeneratorRuntime"],"dependents":["MAWBridgeMsgUpdatedHandler"],"dependent_count":1,"exports":[{"name":"call","used_by":["MAWBridgeMsgUpdatedHandler"],"uses":1}]}

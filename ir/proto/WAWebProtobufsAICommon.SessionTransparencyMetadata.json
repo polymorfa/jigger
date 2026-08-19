@@ -1,0 +1,53 @@
+{
+  "id": "proto:WAWebProtobufsAICommon.SessionTransparencyMetadata",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommon.SessionTransparencyMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "disclaimerText": {
+        "number": 1
+      },
+      "hcaId": {
+        "number": 2
+      },
+      "sessionTransparencyType": {
+        "number": 3
+      }
+    },
+    "module": "WAWebProtobufsAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommon.pb",
+    "matches": "name = \"SessionTransparencyMetadata\""
+  },
+  "literals": [
+    "SessionTransparencyMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadTypeUtils",
+      "WAWebBotLoggingUtils",
+      "WAWebBotModeSelectionProtoUtils",
+      "WAWebBotPluginCarouselWrapper.react",
+      "WAWebBotPluginMsgBubbleMeta.react",
+      "WAWebBotSignatureVerificationUtils",
+      "WAWebFrontendMsgGetters",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotMetadata",
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebMediaLinkPreviewContainer.react",
+      "WAWebMsgGetters",
+      "WAWebParseBotFeedbackProtocolMessageProto",
+      "WAWebParseBotSessionTransparencyNotice",
+      "WAWebProtobufsE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 15
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebClickableLink.react","WAWebConfirmPopup.react","WAWebEmojiText.react","WAWebExternalLink.react","WAWebFaqUrl","WAWebFbtCommon","WAWebModalManager","react"],"dependents":["WAWebBusinessName.react","WAWebContactInfoCard.react","WAWebEditFormEditFieldsForm.react"],"dependent_count":3,"exports":[]}

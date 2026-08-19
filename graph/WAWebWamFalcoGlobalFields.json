@@ -1,0 +1,1 @@
+{"deps":["WAWebFalcoCanonicalFieldMapping"],"dependents":["WAWebWamFalcoLogger"],"dependent_count":1,"exports":[{"name":"getCanonicalFieldsForFalco","used_by":["WAWebWamFalcoLogger"],"uses":1}]}

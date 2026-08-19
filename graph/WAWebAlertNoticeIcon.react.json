@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebButterbar.react"],"dependent_count":2,"exports":[{"name":"AlertNoticeIcon","used_by":["WAWebAllGeneratedIcons","WAWebButterbar.react"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["gkx"],"dependents":["WAWebEmoji"],"dependent_count":1,"exports":[{"name":"getEmojiSpritesExperimentalPath","used_by":["WAWebEmoji"],"uses":1},{"name":"getGlyphExperimentalPath","used_by":["WAWebEmoji"],"uses":1}]}

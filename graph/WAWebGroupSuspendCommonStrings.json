@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebGroupGatingUtils"],"dependents":["WAWebChatGroupSuspendedMessagePreview.react","WAWebCommunitySuspendedMessagePreview.react","WAWebGroupAppealApprovedModal.react","WAWebGroupAppealInReviewModal.react","WAWebGroupAppealRejectedModal.react","WAWebSuspendedGroupRedesignModal.react"],"dependent_count":6,"exports":[]}

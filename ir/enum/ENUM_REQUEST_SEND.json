@@ -1,0 +1,97 @@
+{
+  "id": "enum:ENUM_REQUEST_SEND",
+  "kind": "enum",
+  "name": "ENUM_REQUEST_SEND",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessageDeliverEnums",
+    "variants": [
+      {
+        "name": "request",
+        "value": "request"
+      },
+      {
+        "name": "send",
+        "value": "send"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverEnums",
+    "matches": "ENUM_REQUEST_SEND\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_REQUEST_SEND",
+    "request",
+    "send"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverAppdataMetaAttributeMixin",
+      "WASmaxInMessageDeliverAuthMixin",
+      "WASmaxInMessageDeliverBRMessageDeliverSendNodeMixin",
+      "WASmaxInMessageDeliverBRP2MHPPTransactionMixin",
+      "WASmaxInMessageDeliverBasePayNodeMixin",
+      "WASmaxInMessageDeliverBillMetadataMixin",
+      "WASmaxInMessageDeliverBizAutoResponseMixin",
+      "WASmaxInMessageDeliverBizEngagementDataMixin",
+      "WASmaxInMessageDeliverBizROIMetricsGatingFlagsMixin",
+      "WASmaxInMessageDeliverBotResponseMixin",
+      "WASmaxInMessageDeliverBroadcastContextMixin",
+      "WASmaxInMessageDeliverBroadcastMixin",
+      "WASmaxInMessageDeliverBusinessBotGatingMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageFeedbackRequestedMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageMixin",
+      "WASmaxInMessageDeliverClientReportingTokenValidationPolicyMixin",
+      "WASmaxInMessageDeliverCoExV2ProactiveMetaMixin",
+      "WASmaxInMessageDeliverCollectionContentTypeMixin",
+      "WASmaxInMessageDeliverContentTypeEventMixin",
+      "WASmaxInMessageDeliverContentTypeMixin",
+      "WASmaxInMessageDeliverConversionRecipientStatusMixin",
+      "WASmaxInMessageDeliverDeliveryContextMixin",
+      "WASmaxInMessageDeliverEncMediaTypeDeprecatedMixin",
+      "WASmaxInMessageDeliverEncMediaTypeMixin",
+      "WASmaxInMessageDeliverEncStateMixin",
+      "WASmaxInMessageDeliverEncTypeIndividualMixin",
+      "WASmaxInMessageDeliverFrequencyRuleMixin",
+      "WASmaxInMessageDeliverFullTransactionBaseMixin",
+      "WASmaxInMessageDeliverGroupAddressingModeMixin",
+      "WASmaxInMessageDeliverGroupCAPIShardRoutingStrategyMetaAttributeMixin",
+      "WASmaxInMessageDeliverGroupMixin",
+      "WASmaxInMessageDeliverHSMReviewMetadataMixin",
+      "WASmaxInMessageDeliverIndividualMixin",
+      "WASmaxInMessageDeliverLIDSessionDeprecationMixin",
+      "WASmaxInMessageDeliverLiveLocationModeMixin",
+      "WASmaxInMessageDeliverMediaTypeMixin",
+      "WASmaxInMessageDeliverMemberTagsMessageMetaAttributeMixin",
+      "WASmaxInMessageDeliverMessageAssociationTypeMixin",
+      "WASmaxInMessageDeliverMessageTargetMixin",
+      "WASmaxInMessageDeliverMetaIsGroupStatusMixin",
+      "WASmaxInMessageDeliverNativeFlowMixin",
+      "WASmaxInMessageDeliverNewsletterMediaMixin",
+      "WASmaxInMessageDeliverP2MHybridExternalPaymentMethodMixin",
+      "WASmaxInMessageDeliverPayNodeTypeMixin",
+      "WASmaxInMessageDeliverPaymentInitiatorMixin",
+      "WASmaxInMessageDeliverPeerRequest",
+      "WASmaxInMessageDeliverProductListDeprecatedMixin",
+      "WASmaxInMessageDeliverQualityControlMixin",
+      "WASmaxInMessageDeliverRecipientMixin",
+      "WASmaxInMessageDeliverSMBBroadcastSourceMixin",
+      "WASmaxInMessageDeliverSenderAccountKindMixin",
+      "WASmaxInMessageDeliverSingleSelectListMixin",
+      "WASmaxInMessageDeliverStatusMentionSourceMixin",
+      "WASmaxInMessageDeliverStatusMentionedUsersMixin",
+      "WASmaxInMessageDeliverStatusSettingMixin",
+      "WASmaxInMessageDeliverTransactionNUXReceiverMixin",
+      "WASmaxInMessageDeliverTransactionSyncStatusMixin",
+      "WASmaxInMessageDeliverTransactionTypeMixin",
+      "WASmaxInMessageDeliverUPILiteDetailsMixin",
+      "WASmaxInMessageDeliverUPIMandateBaseMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 72
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "iq:w:comms:chat/set/blocking",
+  "kind": "iq",
+  "name": "PsaChatBlockSet",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:comms:chat",
+    "type": "set",
+    "tags": [
+      "blocking"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:comms:chat",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "blocking",
+          "attrs": [
+            {
+              "name": "action",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxPsaChatBlockSetRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInPsaChatBlockSetResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "blocking",
+              "attrs": [
+                {
+                  "name": "status",
+                  "ty": "stringenum",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInPsaChatBlockSetResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorInternalServerError",
+          "IQErrorRateOverlimit",
+          "IQErrorRequestTimeout",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutPsaChatBlockSetRequest",
+    "matches": "smax\\(\"blocking\""
+  },
+  "literals": [
+    "w:comms:chat",
+    "blocking"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutPsaBaseIQSetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxPsaChatBlockSetRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

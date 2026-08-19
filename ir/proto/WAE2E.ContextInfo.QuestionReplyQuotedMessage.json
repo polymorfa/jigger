@@ -1,0 +1,50 @@
+{
+  "id": "proto:WAE2E.ContextInfo.QuestionReplyQuotedMessage",
+  "kind": "proto",
+  "name": "WAE2E.ContextInfo.QuestionReplyQuotedMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "quotedQuestion": {
+        "number": 2,
+        "type_name": "WAE2E.Message"
+      },
+      "quotedResponse": {
+        "number": 3,
+        "type_name": "WAE2E.Message"
+      },
+      "serverQuestionId": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"ContextInfo.QuestionReplyQuotedMessage\""
+  },
+  "literals": [
+    "QuestionReplyQuotedMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

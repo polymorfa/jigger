@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebContactMsgInfoDrawer.react","WAWebGroupMsgInfoDrawer.react"],"dependent_count":3,"exports":[{"name":"MicIcon","used_by":["WAWebAllGeneratedIcons","WAWebContactMsgInfoDrawer.react","WAWebGroupMsgInfoDrawer.react"],"uses":3}]}

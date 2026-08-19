@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMediaHubListMsg.react"],"dependent_count":2,"exports":[{"name":"StarFilledIcon","used_by":["WAWebAllGeneratedIcons","WAWebMediaHubListMsg.react"],"uses":2}]}

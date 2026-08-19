@@ -1,0 +1,31 @@
+{
+  "id": "sig:receipt/padding",
+  "kind": "sig",
+  "name": "ReceiptPaddingMixin",
+  "data": {
+    "kind": "sig",
+    "root": "receipt",
+    "children": [
+      "padding"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptPaddingMixin",
+    "matches": "assertTag\\([a-z], \"receipt\"\\)"
+  },
+  "literals": [
+    "receipt",
+    "padding"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInReceiptKeyBundleMixin"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

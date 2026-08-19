@@ -1,0 +1,67 @@
+{
+  "id": "mex:WAWebSupportContactFormSubmitMutation",
+  "kind": "mex",
+  "name": "WAWebSupportContactFormSubmitMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26494666453460666",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_wa_support_contact_form_submit",
+        "ty": "XWAWASupportContactFormResponsePayload",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_code",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_message",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "ticket_id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "support_phone_number_jid",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26494666453460666\nmutation SupportContactFormSubmitMutation(\n  $input\n) {\n  xwa_wa_support_contact_form_submit(input: $input) {  # XWAWASupportContactFormResponsePayload\n    success\n    error_code\n    error_message\n    ticket_id\n    support_phone_number_jid\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebSupportContactFormSubmitMutation.graphql",
+    "matches": "id:\\s*\"26494666453460666\""
+  },
+  "literals": [
+    "26494666453460666",
+    "WAWebSupportContactFormSubmitMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSupportContactFormSubmitMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

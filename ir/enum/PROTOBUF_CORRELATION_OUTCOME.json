@@ -1,0 +1,41 @@
+{
+  "id": "enum:PROTOBUF_CORRELATION_OUTCOME",
+  "kind": "enum",
+  "name": "PROTOBUF_CORRELATION_OUTCOME",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumProtobufCorrelationOutcome",
+    "variants": [
+      {
+        "name": "LEGACY_NO_INTERACTION",
+        "value": 0.0
+      },
+      {
+        "name": "LEGACY_REJECTED",
+        "value": 1.0
+      },
+      {
+        "name": "LEGACY_ACCEPTED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumProtobufCorrelationOutcome",
+    "matches": "PROTOBUF_CORRELATION_OUTCOME\\s*[:=]"
+  },
+  "literals": [
+    "PROTOBUF_CORRELATION_OUTCOME",
+    "LEGACY_NO_INTERACTION",
+    "LEGACY_REJECTED",
+    "LEGACY_ACCEPTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebProtobufValidationErrorWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

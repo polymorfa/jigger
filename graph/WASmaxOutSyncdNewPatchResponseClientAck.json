@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxParseJid","WASmaxParseReference","WASmaxParseUtils","WASmaxParsingFailure","WAWap"],"dependents":["WASmaxSyncdNewPatchRPC"],"dependent_count":1,"exports":[{"name":"makeNewPatchResponseClientAck","used_by":["WASmaxSyncdNewPatchRPC"],"uses":1}]}

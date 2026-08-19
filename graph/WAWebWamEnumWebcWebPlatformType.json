@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebPwaEventListeners","WAWebWam","WAWebWamGlobals"],"dependent_count":3,"exports":[{"name":"WEBC_WEB_PLATFORM_TYPE","used_by":["WAWebPwaEventListeners","WAWebWam","WAWebWamGlobals"],"uses":3}]}

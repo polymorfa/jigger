@@ -1,0 +1,37 @@
+{
+  "id": "enum:FETCH_RESULT_ENUM",
+  "kind": "enum",
+  "name": "FETCH_RESULT_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumFetchResultEnum",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 0.0
+      },
+      {
+        "name": "EXCEPTION",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumFetchResultEnum",
+    "matches": "FETCH_RESULT_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "FETCH_RESULT_ENUM",
+    "SUCCESS",
+    "EXCEPTION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSmbQpCallHealthLogger",
+      "WAWebSmbQpCallHealthWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

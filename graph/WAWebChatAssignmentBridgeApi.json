@@ -1,0 +1,1 @@
+{"deps":["WAWebBizChatAssignmentAction","WAWebChatAssignmentCollection","WAWebChatAssignmentGatingUtils","WAWebSchemaChatAssignment","asyncToGeneratorRuntime"],"dependents":["WAWebSetFrontendHandlerApi"],"dependent_count":1,"exports":[{"name":"ChatAssignmentBridgeApi","used_by":["WAWebSetFrontendHandlerApi"],"uses":1}]}

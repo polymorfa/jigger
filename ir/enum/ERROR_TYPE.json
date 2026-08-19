@@ -1,0 +1,41 @@
+{
+  "id": "enum:ERROR_TYPE",
+  "kind": "enum",
+  "name": "ERROR_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumErrorType",
+    "variants": [
+      {
+        "name": "ERROR_FETCHING_AGENT_NAME",
+        "value": 0.0
+      },
+      {
+        "name": "ERROR_FETCHING_CHAT",
+        "value": 1.0
+      },
+      {
+        "name": "ERROR_OTHER",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumErrorType",
+    "matches": "ERROR_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ERROR_TYPE",
+    "ERROR_FETCHING_AGENT_NAME",
+    "ERROR_FETCHING_CHAT",
+    "ERROR_OTHER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdChatAssignmentSecondaryActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebReactionsCollection"],"dependents":["WAWebReactionsBridgeApi"],"dependent_count":1,"exports":[{"name":"hasReactionsInCollection","used_by":["WAWebReactionsBridgeApi"],"uses":1}]}

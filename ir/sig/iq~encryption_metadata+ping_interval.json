@@ -1,0 +1,36 @@
+{
+  "id": "sig:iq/encryption_metadata+ping_interval",
+  "kind": "sig",
+  "name": "WaffleGenerateAccessTokensResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "encryption_metadata",
+      "ping_interval"
+    ],
+    "responds_to": "WaffleGenerateAccessTokens"
+  },
+  "evidence": {
+    "module": "WASmaxInWaffleGenerateAccessTokensResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "encryption_metadata",
+    "ping_interval"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInWaffleIQResultResponseMixin",
+      "WASmaxInWaffleRSAEncryptionMetadataMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxWaffleGenerateAccessTokensRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

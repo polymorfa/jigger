@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebLid1X1MigrationGating","WAWebLidMigrationUtils","WAWebMessageProcessUtils","WAWebUserPrefsMeUser","WAWebWidFactory","asyncToGeneratorRuntime"],"dependents":["WAWebVoipBackendSwCallPlaceholderWriter"],"dependent_count":1,"exports":[{"name":"getCallLogTargetDetailsWorker","used_by":["WAWebVoipBackendSwCallPlaceholderWriter"],"uses":1}]}

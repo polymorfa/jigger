@@ -1,0 +1,42 @@
+{
+  "id": "ab:bb_chat_list_banner_8",
+  "kind": "ab",
+  "name": "bb_chat_list_banner_8",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32215,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "bb_chat_list_banner_8:\\s*\\[\\s*32215"
+  },
+  "literals": [
+    "bb_chat_list_banner_8",
+    "32215"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

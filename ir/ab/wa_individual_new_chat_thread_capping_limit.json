@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_individual_new_chat_thread_capping_limit",
+  "kind": "ab",
+  "name": "wa_individual_new_chat_thread_capping_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29369,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_individual_new_chat_thread_capping_limit:\\s*\\[\\s*29369"
+  },
+  "literals": [
+    "wa_individual_new_chat_thread_capping_limit",
+    "29369"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebIndividualNewChatMessageCappingLimitGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

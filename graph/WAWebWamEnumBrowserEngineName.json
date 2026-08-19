@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebFPUtils","WAWebPlatformEstimate","WAWebWebcFingerprintWamEvent"],"dependent_count":3,"exports":[{"name":"BROWSER_ENGINE_NAME","used_by":["WAWebFPUtils","WAWebPlatformEstimate","WAWebWebcFingerprintWamEvent"],"uses":3}]}

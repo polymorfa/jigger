@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebVoipWebWasmWorker"],"dependent_count":1,"exports":[{"name":"resolveParticipantKnownContactSync","used_by":["WAWebVoipWebWasmWorker"],"uses":1}]}

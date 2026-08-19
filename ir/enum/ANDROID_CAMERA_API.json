@@ -1,0 +1,36 @@
+{
+  "id": "enum:ANDROID_CAMERA_API",
+  "kind": "enum",
+  "name": "ANDROID_CAMERA_API",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAndroidCameraApi",
+    "variants": [
+      {
+        "name": "API_1",
+        "value": 1.0
+      },
+      {
+        "name": "API_2",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAndroidCameraApi",
+    "matches": "ANDROID_CAMERA_API\\s*[:=]"
+  },
+  "literals": [
+    "ANDROID_CAMERA_API",
+    "API_1",
+    "API_2"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

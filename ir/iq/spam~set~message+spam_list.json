@@ -1,0 +1,186 @@
+{
+  "id": "iq:spam/set/message+spam_list",
+  "kind": "iq",
+  "name": "SpamNewsletterReport",
+  "data": {
+    "kind": "iq",
+    "xmlns": "spam",
+    "type": "set",
+    "tags": [
+      "message",
+      "spam_list"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "spam",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "spam_list",
+          "attrs": [
+            {
+              "name": "jid",
+              "ty": "jid",
+              "optional": false
+            },
+            {
+              "name": "spam_flow",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "subject",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "message",
+              "attrs": [
+                {
+                  "name": "from",
+                  "ty": "jid",
+                  "optional": false
+                }
+              ],
+              "card": "repeated"
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxSpamNewsletterReportRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInSpamNewsletterReportResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "jidenum",
+              "optional": true
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "report",
+              "attrs": [
+                {
+                  "name": "id",
+                  "ty": "string",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInSpamNewsletterReportResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "jidenum",
+              "optional": true
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFeatureNotImplemented",
+          "IQErrorForbidden",
+          "IQErrorInternalServerError",
+          "IQErrorRateOverlimit",
+          "IQErrorReportTokenValidationFail"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutSpamNewsletterReportRequest",
+    "matches": "smax\\(\"message\""
+  },
+  "literals": [
+    "spam",
+    "message",
+    "spam_list"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxOutSpamBaseIQSetRequestMixin",
+      "WASmaxOutSpamBaseReportMixin",
+      "WASmaxOutSpamEntitySubjectMixin",
+      "WASmaxOutSpamMessageMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxSpamNewsletterReportRPC"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

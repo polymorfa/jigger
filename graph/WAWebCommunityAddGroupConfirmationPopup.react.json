@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCellBorder.react","WAWebConfirmPopup.react","WAWebFlex.react","WAWebPeopleIcon.react","WAWebText.react","WDSIconIcNotifications.react","WDSPaddings.stylex","react","react-compiler-runtime"],"dependents":["WAWebCommunityExistingGroupsConfirmationDrawer.react","WAWebNewCommunityInfoDrawer.react"],"dependent_count":2,"exports":[]}

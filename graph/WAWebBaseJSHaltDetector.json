@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebEventEmitter"],"dependents":["WAWebAlarm","WAWebJSHaltDetector","WAWebVoipFocusTracker"],"dependent_count":3,"exports":[{"name":"JS_HALT_EVENT","used_by":["WAWebAlarm","WAWebVoipFocusTracker"],"uses":2},{"name":"CLOCK_CHANGE_BACKWARDS_EVENT","used_by":["WAWebAlarm"],"uses":1},{"name":"BaseJsHaltDetector","used_by":[],"uses":0}]}

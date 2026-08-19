@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/passive",
+  "kind": "sig",
+  "name": "PassiveModePassiveIQResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "passive"
+    ],
+    "responds_to": "PassiveModePassiveIQ"
+  },
+  "evidence": {
+    "module": "WASmaxInPassiveModePassiveIQResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "passive"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseJid",
+      "WASmaxParseReference",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxPassiveModePassiveIQRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

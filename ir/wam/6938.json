@@ -1,0 +1,79 @@
+{
+  "id": "wam:6938",
+  "kind": "wam",
+  "name": "PsRichOrderStatusMessageInconsistentPayloadReceived",
+  "data": {
+    "kind": "wam",
+    "event_id": 6938,
+    "fields": {
+      "businessJid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "business_jid"
+      },
+      "hasCurrencyChanged": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "has_currency_changed"
+      },
+      "hasHeaderImageChanged": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "has_header_image_changed"
+      },
+      "hasItemImageChanged": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "has_item_image_changed"
+      },
+      "hasItemNameChanged": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "has_item_name_changed"
+      },
+      "hasItemNumberChanged": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "has_item_number_changed"
+      },
+      "hasItemPriceChanged": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "has_item_price_changed"
+      },
+      "hasItemQuantityChanged": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "has_item_quantity_changed"
+      },
+      "hasItemVariantChanged": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "has_item_variant_changed"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsRichOrderStatusMessageInconsistentPayloadReceivedWamEvent",
+    "matches": "PsRichOrderStatusMessageInconsistentPayloadReceived:\\s*\\[\\s*6938"
+  },
+  "literals": [
+    "6938"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebRichOrderStatusLogger"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

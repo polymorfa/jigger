@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebBaseL10N","WAWebMsgViewCount"],"dependent_count":2,"exports":[{"name":"M","used_by":["WAWebMsgViewCount"],"uses":1},{"name":"l10nNumberFormattersRegister","used_by":["WAWebBaseL10N"],"uses":1}]}

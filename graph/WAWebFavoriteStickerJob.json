@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebFavoriteStickerCollection","WAWebStickersFavoriteSyncAction","WAWebSyncdCoreApi"],"dependents":["WAWebFavoriteStickerAction"],"dependent_count":1,"exports":[{"name":"sendFavoriteStickerMutation","used_by":["WAWebFavoriteStickerAction"],"uses":1}]}

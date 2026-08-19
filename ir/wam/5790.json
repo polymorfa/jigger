@@ -1,0 +1,79 @@
+{
+  "id": "wam:5790",
+  "kind": "wam",
+  "name": "WebcMessageProcessingPerf",
+  "data": {
+    "kind": "wam",
+    "event_id": 5790,
+    "fields": {
+      "dbStoringT": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "db_storing_t"
+      },
+      "decryptionT": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "decryption_t"
+      },
+      "isOffline": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "is_offline"
+      },
+      "lidProcessingT": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "lid_processing_t"
+      },
+      "parsingT": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "parsing_t"
+      },
+      "postProcessingT": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "post_processing_t"
+      },
+      "preProcessingT": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "pre_processing_t"
+      },
+      "processingT": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "processing_t"
+      },
+      "reportTokenValidationT": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "report_token_validation_t"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      100
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcMessageProcessingPerfWamEvent",
+    "matches": "WebcMessageProcessingPerf:\\s*\\[\\s*5790"
+  },
+  "literals": [
+    "5790"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebOfflineResumeMsgProcessReporter"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

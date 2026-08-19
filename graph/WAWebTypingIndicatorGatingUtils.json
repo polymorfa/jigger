@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebGroupSubtitle.react","WAWebMessageList.react","WAWebUserSubtitle.react"],"dependent_count":3,"exports":[{"name":"isTypingIndicatorMessageBubbleEnabled","used_by":["WAWebGroupSubtitle.react","WAWebUserSubtitle.react"],"uses":2},{"name":"shouldShowMessageListTypingIndicator","used_by":["WAWebMessageList.react"],"uses":1}]}

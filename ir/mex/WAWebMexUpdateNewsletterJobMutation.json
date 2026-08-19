@@ -1,0 +1,193 @@
+{
+  "id": "mex:WAWebMexUpdateNewsletterJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexUpdateNewsletterJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24250201037901610",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "updates"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "updates"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_update",
+        "ty": "XWA2Newsletter",
+        "args": [
+          "newsletter_id: $newsletter_id",
+          "updates: $updates"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "state",
+            "ty": "XWA2NewsletterState",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "type",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "thread_metadata",
+            "ty": "XWA2NewsletterThreadMetadata",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "name",
+                "ty": "XWA2NewsletterName",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "text",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "update_time",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "description",
+                "ty": "XWA2NewsletterDescription",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "text",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "update_time",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "picture",
+                "ty": "XWA2Picture",
+                "args": [
+                  "type: \"IMAGE\""
+                ],
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "type",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "direct_path",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "picture",
+                "alias": "preview",
+                "ty": "XWA2Picture",
+                "args": [
+                  "type: \"PREVIEW\""
+                ],
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "type",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "direct_path",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "invite",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "handle",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "verification",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "settings",
+                "ty": "XWA2NewsletterThreadSettings",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "reaction_codes",
+                    "ty": "XWA2NewsletterReactionCodesSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "value",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_update",
+    "document": "# persisted document 24250201037901610\nmutation MexUpdateNewsletterJobMutation(\n  $newsletter_id\n  $updates\n) {\n  xwa2_newsletter_update(newsletter_id: $newsletter_id, updates: $updates) {  # XWA2Newsletter\n    id\n    state {  # XWA2NewsletterState\n      type\n    }\n    thread_metadata {  # XWA2NewsletterThreadMetadata\n      name {  # XWA2NewsletterName\n        id\n        text\n        update_time\n      }\n      description {  # XWA2NewsletterDescription\n        id\n        text\n        update_time\n      }\n      picture(type: \"IMAGE\") {  # XWA2Picture\n        id\n        type\n        direct_path\n      }\n      preview: picture(type: \"PREVIEW\") {  # XWA2Picture\n        id\n        type\n        direct_path\n      }\n      invite\n      handle\n      verification\n      creation_time\n      settings {  # XWA2NewsletterThreadSettings\n        reaction_codes {  # XWA2NewsletterReactionCodesSetting\n          value\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexUpdateNewsletterJobMutation.graphql",
+    "matches": "id:\\s*\"24250201037901610\""
+  },
+  "literals": [
+    "24250201037901610",
+    "WAWebMexUpdateNewsletterJobMutation",
+    "xwa2_newsletter_update"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexUpdateNewsletterJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

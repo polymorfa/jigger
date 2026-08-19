@@ -1,0 +1,1 @@
+{"deps":["WATimeUtils"],"dependents":["WAWebNewsletterBackendAddOnsUtils","WAWebStoreNewsletterMessageAddOns"],"dependent_count":2,"exports":[{"name":"mapFrontendReactionToBackend","used_by":["WAWebStoreNewsletterMessageAddOns"],"uses":1},{"name":"mapReactionDataToDbRecord","used_by":["WAWebNewsletterBackendAddOnsUtils"],"uses":1}]}

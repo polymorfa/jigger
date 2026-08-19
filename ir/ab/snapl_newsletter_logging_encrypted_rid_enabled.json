@@ -1,0 +1,45 @@
+{
+  "id": "ab:snapl_newsletter_logging_encrypted_rid_enabled",
+  "kind": "ab",
+  "name": "snapl_newsletter_logging_encrypted_rid_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32239,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "snapl_newsletter_logging_encrypted_rid_enabled:\\s*\\[\\s*32239"
+  },
+  "literals": [
+    "snapl_newsletter_logging_encrypted_rid_enabled",
+    "32239"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSNAPLUserPrefs"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

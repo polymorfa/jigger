@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebDetailImage.react","useWAWebPhotoPickerCore"],"dependent_count":3,"exports":[{"name":"DefaultNewsletterIcon","used_by":["WAWebAllGeneratedIcons","WAWebDetailImage.react","useWAWebPhotoPickerCore"],"uses":3}]}

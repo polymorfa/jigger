@@ -1,0 +1,47 @@
+{
+  "id": "enum:CALL_SIZE_BUCKET",
+  "kind": "enum",
+  "name": "CALL_SIZE_BUCKET",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallSizeBucket",
+    "variants": [
+      {
+        "name": "SMALL",
+        "value": 1.0
+      },
+      {
+        "name": "MEDIUM",
+        "value": 2.0
+      },
+      {
+        "name": "LARGE",
+        "value": 3.0
+      },
+      {
+        "name": "XLARGE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallSizeBucket",
+    "matches": "CALL_SIZE_BUCKET\\s*[:=]"
+  },
+  "literals": [
+    "CALL_SIZE_BUCKET",
+    "SMALL",
+    "MEDIUM",
+    "LARGE",
+    "XLARGE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallInfoLoggingUtils",
+      "WAWebCallInfoUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

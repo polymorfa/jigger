@@ -1,0 +1,1 @@
+{"deps":["WACryptoUtils","WADbIdentityTxns","WADbSignal","WAJids","WASignalKeys","asyncToGeneratorRuntime"],"dependents":["WAGetRegistrationInfoApi"],"dependent_count":1,"exports":[{"name":"compareIdentity","used_by":["WAGetRegistrationInfoApi"],"uses":1}]}

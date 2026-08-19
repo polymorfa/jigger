@@ -1,0 +1,1 @@
+{"deps":["WACryptoManager","WASignalSignatures","asyncToGeneratorRuntime","err"],"dependents":["MAWDeviceRegistrationUtilWorker","MAWDeviceRegistrationWorker"],"dependent_count":2,"exports":[{"name":"makeRegistrationData","used_by":["MAWDeviceRegistrationUtilWorker"],"uses":1},{"name":"serializeRegistrationData","used_by":["MAWDeviceRegistrationWorker"],"uses":1}]}

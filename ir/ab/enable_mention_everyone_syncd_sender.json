@@ -1,0 +1,45 @@
+{
+  "id": "ab:enable_mention_everyone_syncd_sender",
+  "kind": "ab",
+  "name": "enable_mention_everyone_syncd_sender",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24244,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_mention_everyone_syncd_sender:\\s*\\[\\s*24244"
+  },
+  "literals": [
+    "enable_mention_everyone_syncd_sender",
+    "24244"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMuteChatSync"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

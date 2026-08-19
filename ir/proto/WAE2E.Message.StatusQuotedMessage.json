@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAE2E.Message.StatusQuotedMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.StatusQuotedMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "originalStatusId": {
+        "number": 4
+      },
+      "text": {
+        "number": 2
+      },
+      "thumbnail": {
+        "number": 3
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.StatusQuotedMessage\""
+  },
+  "literals": [
+    "StatusQuotedMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

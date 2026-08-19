@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_enable_profile_pic_thumb_db_caching",
+  "kind": "ab",
+  "name": "web_enable_profile_pic_thumb_db_caching",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2018,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_enable_profile_pic_thumb_db_caching:\\s*\\[\\s*2018"
+  },
+  "literals": [
+    "web_enable_profile_pic_thumb_db_caching",
+    "2018"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

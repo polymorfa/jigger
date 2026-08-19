@@ -1,0 +1,47 @@
+{
+  "id": "ab:payments_br_pix_on_web",
+  "kind": "ab",
+  "name": "payments_br_pix_on_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16156,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "payments_br_pix_on_web:\\s*\\[\\s*16156"
+  },
+  "literals": [
+    "payments_br_pix_on_web",
+    "16156"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebAddEditPixFeature",
+      "WAWebBizFrontendGatingUtils",
+      "WAWebPaymentTosSync"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

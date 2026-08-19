@@ -1,0 +1,104 @@
+{
+  "id": "enum:ACTION_ENTRY_POINT",
+  "kind": "enum",
+  "name": "ACTION_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumActionEntryPoint",
+    "variants": [
+      {
+        "name": "CHAT_INFO",
+        "value": 0.0
+      },
+      {
+        "name": "CHAT_CONTEXT_MENU",
+        "value": 1.0
+      },
+      {
+        "name": "NOTIFICATIONS",
+        "value": 2.0
+      },
+      {
+        "name": "CONTACTS",
+        "value": 3.0
+      },
+      {
+        "name": "CHAT_LIST",
+        "value": 4.0
+      },
+      {
+        "name": "UNKNOWN",
+        "value": 5.0
+      },
+      {
+        "name": "PRIVATE_REPLY",
+        "value": 6.0
+      },
+      {
+        "name": "STATUS_REPLY",
+        "value": 7.0
+      },
+      {
+        "name": "SEARCH",
+        "value": 8.0
+      },
+      {
+        "name": "DIRECT_MESSAGE",
+        "value": 9.0
+      },
+      {
+        "name": "PRIVACY_SETTINGS",
+        "value": 10.0
+      },
+      {
+        "name": "CHAT_LONG_PRESS_OPTIONS",
+        "value": 11.0
+      },
+      {
+        "name": "CHAT_MORE_OPTIONS",
+        "value": 12.0
+      },
+      {
+        "name": "SIDEBAR",
+        "value": 13.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumActionEntryPoint",
+    "matches": "ACTION_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "ACTION_ENTRY_POINT",
+    "CHAT_INFO",
+    "CHAT_CONTEXT_MENU",
+    "NOTIFICATIONS",
+    "CONTACTS",
+    "CHAT_LIST",
+    "UNKNOWN",
+    "PRIVATE_REPLY",
+    "STATUS_REPLY",
+    "SEARCH",
+    "DIRECT_MESSAGE",
+    "PRIVACY_SETTINGS",
+    "CHAT_LONG_PRESS_OPTIONS",
+    "CHAT_MORE_OPTIONS",
+    "SIDEBAR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatContextMenuItemLock.react",
+      "WAWebChatContextMenuItemUnlock.react",
+      "WAWebChatLockActionWamEvent",
+      "WAWebChatLockWAMUtils",
+      "WAWebChatLockedEntryPoint.react",
+      "WAWebContactInfoDrawer.react",
+      "WAWebGetChatLockEntryPoint",
+      "WAWebGroupInfoDrawer.react",
+      "WAWebWindowsLockedChatsNavBarItem.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 9
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WABridge","WAGenerateAndUploadPreKeysProtocol","WALoggerTag","WAOdsEnums","WATagsLogger","err"],"dependents":["WAAPIEager","WARequestPreKeyDigest","WARotateSignedPreKey"],"dependent_count":3,"exports":[{"name":"generateAndUploadPreKeys","used_by":["WAAPIEager","WARequestPreKeyDigest","WARotateSignedPreKey"],"uses":3}]}

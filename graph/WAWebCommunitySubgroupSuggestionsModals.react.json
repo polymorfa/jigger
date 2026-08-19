@@ -1,0 +1,1 @@
+{"deps":["fbt","Promise","WAWebConfirmPopup.react","WAWebModalManager","react","react-compiler-runtime"],"dependents":["WAWebCommunitySettingsDrawer.react","WAWebSubgroupSuggestionAction"],"dependent_count":2,"exports":[]}

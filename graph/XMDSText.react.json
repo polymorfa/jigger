@@ -1,0 +1,1 @@
+{"deps":["BaseHeading.react","BaseText.react","CDSTextConfig","JSResourceForInteraction","XMDSTextStyleContext.react","react","react-compiler-runtime","xplatToDOMRef"],"dependents":["WAWebPDFNMetaModal.react","XMDSButton.react","XMDSDialogHeader.react"],"dependent_count":3,"exports":[{"name":"default","used_by":[],"uses":0}]}

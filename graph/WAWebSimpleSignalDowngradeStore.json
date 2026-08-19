@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebUserPrefsIndexedDBStorage"],"dependents":["WAWebMsgProcessingApiUtils","WAWebSendMsgCreateFanoutStanza"],"dependent_count":2,"exports":[{"name":"isCoexUserDowngradedFromSimpleSignal","used_by":["WAWebSendMsgCreateFanoutStanza"],"uses":1},{"name":"markCoexUserDowngradedFromSimpleSignal","used_by":["WAWebMsgProcessingApiUtils"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["invariant","WAWebQuickReplyCollection","WAWebQuickReplyGatingUtils","WAWebQuickReplyLogging","WAWebSendQuickReplyAddOrEditMutation","asyncToGeneratorRuntime"],"dependents":["WAWebBizQuickRepliesModal.react"],"dependent_count":1,"exports":[]}

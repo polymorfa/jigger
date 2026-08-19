@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCommonNewsletterStrings","WAWebEmptyState.react","WAWebFlex.react","WAWebNetworkStatus","WAWebSpinner.react","react","react-compiler-runtime","useWAWebEventTargetValue"],"dependents":["WAWebNewsletterDirectoryCategoriesPreviewDrawerContent.react","WAWebNewsletterDirectoryListDrawerContent.react"],"dependent_count":2,"exports":[]}

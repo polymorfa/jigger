@@ -1,0 +1,1 @@
+{"deps":["WAWebCellMenuItem.react","WDSSwitch.react","react","react-compiler-runtime"],"dependents":["WAWebMenuItems.react"],"dependent_count":1,"exports":[{"name":"SwitchMenuItem","used_by":["WAWebMenuItems.react"],"uses":1}]}

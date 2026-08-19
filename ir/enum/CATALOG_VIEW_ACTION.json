@@ -1,0 +1,269 @@
+{
+  "id": "enum:CATALOG_VIEW_ACTION",
+  "kind": "enum",
+  "name": "CATALOG_VIEW_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCatalogViewAction",
+    "variants": [
+      {
+        "name": "ACTION_CARD_ITEM_CLICK",
+        "value": 2.0
+      },
+      {
+        "name": "ACTION_CARD_MORE_CLICK",
+        "value": 3.0
+      },
+      {
+        "name": "ACTION_LIST_IMPRESSION",
+        "value": 4.0
+      },
+      {
+        "name": "ACTION_DETAIL_IMAGE_CLICK",
+        "value": 6.0
+      },
+      {
+        "name": "ACTION_DETAIL_LINK_CLICK",
+        "value": 7.0
+      },
+      {
+        "name": "ACTION_FULL_IMAGE_SWIPE",
+        "value": 11.0
+      },
+      {
+        "name": "ACTION_DETAIL_IMPRESSION",
+        "value": 12.0
+      },
+      {
+        "name": "ACTION_REPORT_PRODUCT",
+        "value": 13.0
+      },
+      {
+        "name": "ACTION_SEND_PRODUCT_MESSAGE",
+        "value": 14.0
+      },
+      {
+        "name": "ACTION_REPORT_PRODUCT_SUCCESS",
+        "value": 15.0
+      },
+      {
+        "name": "ACTION_REPORT_PRODUCT_FAILURE",
+        "value": 16.0
+      },
+      {
+        "name": "ACTION_QUOTED_PRODUCT_IN_CONVERSATION_CLICK",
+        "value": 17.0
+      },
+      {
+        "name": "ACTION_PRODUCT_IN_CONVERSATION_CLICK",
+        "value": 18.0
+      },
+      {
+        "name": "ACTION_SHARE_CATALOG_LINK_CLICK",
+        "value": 19.0
+      },
+      {
+        "name": "ACTION_SHARE_PRODUCT_LINK_CLICK",
+        "value": 20.0
+      },
+      {
+        "name": "ACTION_CATALOG_IN_CONVERSATION_CLICK",
+        "value": 21.0
+      },
+      {
+        "name": "ACTION_SHARE_CATALOG_VIA_WA_LINK_CLICK",
+        "value": 22.0
+      },
+      {
+        "name": "ACTION_SHARE_PRODUCT_VIA_WA_LINK_CLICK",
+        "value": 23.0
+      },
+      {
+        "name": "ACTION_SHARE_CATALOG_COPY_LINK_CLICK",
+        "value": 24.0
+      },
+      {
+        "name": "ACTION_SHARE_PRODUCT_COPY_LINK_CLICK",
+        "value": 25.0
+      },
+      {
+        "name": "ACTION_CHAT_CATALOG_ICON_CLICK",
+        "value": 26.0
+      },
+      {
+        "name": "ACTION_MESSAGE_BUSINESS_BUTTON_CLICK",
+        "value": 27.0
+      },
+      {
+        "name": "ACTION_CART_ADD_PRODUCT",
+        "value": 28.0
+      },
+      {
+        "name": "ACTION_CART_EDIT_PRODUCT",
+        "value": 29.0
+      },
+      {
+        "name": "ACTION_CART_DELETE_PRODUCT",
+        "value": 30.0
+      },
+      {
+        "name": "ACTION_CART_ABANDON",
+        "value": 31.0
+      },
+      {
+        "name": "ACTION_CART_ICON_CLICK",
+        "value": 32.0
+      },
+      {
+        "name": "ACTION_CART_SNACKBAR_CLICK",
+        "value": 33.0
+      },
+      {
+        "name": "ACTION_SEND_ORDER_MESSAGE",
+        "value": 34.0
+      },
+      {
+        "name": "ACTION_ORDER_LIST_IMPRESSION",
+        "value": 35.0
+      },
+      {
+        "name": "ACTION_QUOTED_PRODUCT_MESSAGE_SEND",
+        "value": 36.0
+      },
+      {
+        "name": "ACTION_CART_LIST_IMPRESSION",
+        "value": 37.0
+      },
+      {
+        "name": "ACTION_ORDER_MESSAGE_CLICK",
+        "value": 38.0
+      },
+      {
+        "name": "ACTION_ORDER_LIST_ITEM_CLICK",
+        "value": 39.0
+      },
+      {
+        "name": "ACTION_PLM_CART_CTA_CLICK",
+        "value": 40.0
+      },
+      {
+        "name": "ACTION_CART_CHAT_ICON_CLICK",
+        "value": 42.0
+      },
+      {
+        "name": "ACTION_CREATE_CART",
+        "value": 43.0
+      },
+      {
+        "name": "ACTION_PLP_PRODUCT_VARIANT_BOTTOM_SHEET_OPEN",
+        "value": 44.0
+      },
+      {
+        "name": "ACTION_PLP_PRODUCT_VARIANT_CHANGE",
+        "value": 45.0
+      },
+      {
+        "name": "ACTION_PDP_PRODUCT_VARIANT_CHANGE",
+        "value": 46.0
+      },
+      {
+        "name": "ACTION_PLP_BOTTOM_SHEET_SEE_MORE_DETAILS",
+        "value": 47.0
+      },
+      {
+        "name": "ACTION_UPDATE_VARIANT_SELECTION",
+        "value": 48.0
+      },
+      {
+        "name": "ACTION_VIEW_PRODUCT_VARIANTS_BOTTOM_SHEET",
+        "value": 49.0
+      },
+      {
+        "name": "ACTION_WATCH_PRODUCT_VIDEO",
+        "value": 50.0
+      },
+      {
+        "name": "ACTION_DETAIL_VIDEO_CLICK",
+        "value": 51.0
+      },
+      {
+        "name": "ACTION_FULL_VIDEO_SWIPE",
+        "value": 52.0
+      },
+      {
+        "name": "ACTION_LIST_LOAD",
+        "value": 53.0
+      },
+      {
+        "name": "ACTION_DETAIL_LOAD",
+        "value": 54.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCatalogViewAction",
+    "matches": "CATALOG_VIEW_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "CATALOG_VIEW_ACTION",
+    "ACTION_CARD_ITEM_CLICK",
+    "ACTION_CARD_MORE_CLICK",
+    "ACTION_LIST_IMPRESSION",
+    "ACTION_DETAIL_IMAGE_CLICK",
+    "ACTION_DETAIL_LINK_CLICK",
+    "ACTION_FULL_IMAGE_SWIPE",
+    "ACTION_DETAIL_IMPRESSION",
+    "ACTION_REPORT_PRODUCT",
+    "ACTION_SEND_PRODUCT_MESSAGE",
+    "ACTION_REPORT_PRODUCT_SUCCESS",
+    "ACTION_REPORT_PRODUCT_FAILURE",
+    "ACTION_QUOTED_PRODUCT_IN_CONVERSATION_CLICK",
+    "ACTION_PRODUCT_IN_CONVERSATION_CLICK",
+    "ACTION_SHARE_CATALOG_LINK_CLICK",
+    "ACTION_SHARE_PRODUCT_LINK_CLICK",
+    "ACTION_CATALOG_IN_CONVERSATION_CLICK",
+    "ACTION_SHARE_CATALOG_VIA_WA_LINK_CLICK",
+    "ACTION_SHARE_PRODUCT_VIA_WA_LINK_CLICK",
+    "ACTION_SHARE_CATALOG_COPY_LINK_CLICK",
+    "ACTION_SHARE_PRODUCT_COPY_LINK_CLICK",
+    "ACTION_CHAT_CATALOG_ICON_CLICK",
+    "ACTION_MESSAGE_BUSINESS_BUTTON_CLICK",
+    "ACTION_CART_ADD_PRODUCT",
+    "ACTION_CART_EDIT_PRODUCT",
+    "ACTION_CART_DELETE_PRODUCT",
+    "ACTION_CART_ABANDON",
+    "ACTION_CART_ICON_CLICK",
+    "ACTION_CART_SNACKBAR_CLICK",
+    "ACTION_SEND_ORDER_MESSAGE",
+    "ACTION_ORDER_LIST_IMPRESSION",
+    "ACTION_QUOTED_PRODUCT_MESSAGE_SEND",
+    "ACTION_CART_LIST_IMPRESSION",
+    "ACTION_ORDER_MESSAGE_CLICK",
+    "ACTION_ORDER_LIST_ITEM_CLICK",
+    "ACTION_PLM_CART_CTA_CLICK",
+    "ACTION_CART_CHAT_ICON_CLICK",
+    "ACTION_CREATE_CART",
+    "ACTION_PLP_PRODUCT_VARIANT_BOTTOM_SHEET_OPEN",
+    "ACTION_PLP_PRODUCT_VARIANT_CHANGE",
+    "ACTION_PDP_PRODUCT_VARIANT_CHANGE",
+    "ACTION_PLP_BOTTOM_SHEET_SEE_MORE_DETAILS",
+    "ACTION_UPDATE_VARIANT_SELECTION",
+    "ACTION_VIEW_PRODUCT_VARIANTS_BOTTOM_SHEET",
+    "ACTION_WATCH_PRODUCT_VIDEO",
+    "ACTION_DETAIL_VIDEO_CLICK",
+    "ACTION_FULL_VIDEO_SWIPE",
+    "ACTION_LIST_LOAD",
+    "ACTION_DETAIL_LOAD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCatalogViewWamEvent",
+      "WAWebCartLogEvents",
+      "WAWebOrderLogEvents",
+      "WAWebProductCatalogLogEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

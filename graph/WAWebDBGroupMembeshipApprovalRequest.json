@@ -1,0 +1,1 @@
+{"deps":["WABatcher","WAWebModelStorageUtils","asyncToGeneratorRuntime"],"dependents":["WAWebGroupsMembershipApprovalRequestsApi"],"dependent_count":1,"exports":[{"name":"removeMembershipApprovalRequests","used_by":["WAWebGroupsMembershipApprovalRequestsApi"],"uses":1}]}

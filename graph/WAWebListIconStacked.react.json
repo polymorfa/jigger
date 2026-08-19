@@ -1,0 +1,1 @@
+{"deps":["WAWebLabelCollection","WAWebListUtils","react","react-compiler-runtime","stylex"],"dependents":["WAWebHeaderLabelRendering","WAWebLabelChatHeaderButton.react","WAWebLabels.react"],"dependent_count":3,"exports":[{"name":"default","used_by":[],"uses":0}]}

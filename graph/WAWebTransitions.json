@@ -1,0 +1,1 @@
+{"deps":["velocity-animate"],"dependents":["WAWebAppBootstrap","WAWebVelocityTransition"],"dependent_count":2,"exports":[{"name":"Transitions","used_by":["WAWebVelocityTransition"],"uses":1},{"name":"registerEffects","used_by":["WAWebAppBootstrap"],"uses":1}]}

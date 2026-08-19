@@ -1,0 +1,1 @@
+{"deps":["fbt","FDSMenuSeparator.react","LSFactory","LSInitiateThreadCutoverStoredProcedure","MWThreadListHoverButtonDropdownMenuIcons","MWXMenuItem.react","isThreadLevelCutoverEnabled","promiseDone","react","react-compiler-runtime","useMAWCanThreadBeCutover","useReStore"],"dependents":[],"dependent_count":0,"exports":[]}

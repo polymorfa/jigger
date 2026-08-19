@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebSocialMediaTrustSignals.react"],"dependent_count":2,"exports":[{"name":"WdsIcLogoFacebookIcon","used_by":["WAWebAllGeneratedIcons","WAWebSocialMediaTrustSignals.react"],"uses":2}]}

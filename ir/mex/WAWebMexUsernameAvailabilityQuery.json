@@ -1,0 +1,67 @@
+{
+  "id": "mex:WAWebMexUsernameAvailabilityQuery",
+  "kind": "mex",
+  "name": "WAWebMexUsernameAvailabilityQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26122779627399568",
+    "operation": "query",
+    "variables": [
+      "input",
+      "source",
+      "session_id"
+    ],
+    "args": [
+      {
+        "name": "input"
+      },
+      {
+        "name": "source"
+      },
+      {
+        "name": "session_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_username_check",
+        "ty": "XWA2UsernameCheckResponse",
+        "args": [
+          "session_id: $session_id",
+          "source: $source",
+          "username: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "result",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "suggestions",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_username_check",
+    "document": "# persisted document 26122779627399568\nquery MexUsernameAvailabilityQuery(\n  $input\n  $source\n  $session_id\n) {\n  xwa2_username_check(session_id: $session_id, source: $source, username: $input) {  # XWA2UsernameCheckResponse\n    result\n    suggestions\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexUsernameAvailabilityQuery.graphql",
+    "matches": "id:\\s*\"26122779627399568\""
+  },
+  "literals": [
+    "26122779627399568",
+    "WAWebMexUsernameAvailabilityQuery",
+    "xwa2_username_check"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexUsernameAvailability"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

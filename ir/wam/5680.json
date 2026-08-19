@@ -1,0 +1,97 @@
+{
+  "id": "wam:5680",
+  "kind": "wam",
+  "name": "PreCallUserJourneyCallsTab",
+  "data": {
+    "kind": "wam",
+    "event_id": 5680,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "callSizeType": {
+        "id": 7,
+        "type": "CALL_SIZE_TYPE",
+        "wire": "call_size_type",
+        "enum_ref": "CALL_SIZE_TYPE"
+      },
+      "callsTabSource": {
+        "id": 2,
+        "type": "CALLS_TAB_SOURCE",
+        "wire": "calls_tab_source",
+        "enum_ref": "CALLS_TAB_SOURCE"
+      },
+      "genaiBots": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "genai_bots"
+      },
+      "itemPosition": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "item_position"
+      },
+      "preCallActionType": {
+        "id": 3,
+        "type": "PRE_CALL_ACTION_TYPE",
+        "wire": "pre_call_action_type",
+        "enum_ref": "PRE_CALL_ACTION_TYPE"
+      },
+      "selectedItemCount": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "selected_item_count"
+      },
+      "subSurface": {
+        "id": 4,
+        "type": "SUB_SURFACE",
+        "wire": "sub_surface",
+        "enum_ref": "SUB_SURFACE"
+      },
+      "surfaceSessionId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "surface_session_id"
+      },
+      "userJourneyEventMs": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "userJourneyFunnelId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPreCallUserJourneyCallsTabWamEvent",
+    "matches": "PreCallUserJourneyCallsTab:\\s*\\[\\s*5680"
+  },
+  "literals": [
+    "5680"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCallSizeType",
+      "WAWebWamEnumCallsTabSource",
+      "WAWebWamEnumPreCallActionType",
+      "WAWebWamEnumSubSurface"
+    ],
+    "dependents": [
+      "WAWebPreCallUserJourneyLogger"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

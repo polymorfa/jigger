@@ -1,0 +1,1 @@
+{"deps":["Promise","WAResultOrError","WASmaxAccountSyncNotificationRPC","WAUnknownStanzaError"],"dependents":["WACreateHandleNotification"],"dependent_count":1,"exports":[{"name":"createHandleAccountSyncNotification","used_by":["WACreateHandleNotification"],"uses":1}]}

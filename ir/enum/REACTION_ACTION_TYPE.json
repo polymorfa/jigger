@@ -1,0 +1,44 @@
+{
+  "id": "enum:REACTION_ACTION_TYPE",
+  "kind": "enum",
+  "name": "REACTION_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumReactionActionType",
+    "variants": [
+      {
+        "name": "OPEN_TRAY",
+        "value": 1.0
+      },
+      {
+        "name": "DELETE",
+        "value": 2.0
+      },
+      {
+        "name": "UPDATE",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumReactionActionType",
+    "matches": "REACTION_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "REACTION_ACTION_TYPE",
+    "OPEN_TRAY",
+    "DELETE",
+    "UPDATE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMessageHoverBarContainer.react",
+      "WAWebReactionActionsWamEvent",
+      "WAWebRightClickReactionBarContainer.react",
+      "WAWebSendReactionsTrayContainer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

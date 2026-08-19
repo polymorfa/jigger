@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumWebcChatType","WAWebWamEnumWebcMessageQueryDirection","WAWebWamEnumWebcQueryTriggerType"],"dependents":["WAWebMsgCountReporter"],"dependent_count":1,"exports":[{"name":"WebcMessageQueryWamEvent","used_by":[],"uses":0}]}

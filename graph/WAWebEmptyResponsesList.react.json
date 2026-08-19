@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebABProps","WAWebFbtCommon","WAWebFlex.react","WAWebQuestions.flow","WAWebUnstyledButton.react","WDSText.react","WDSTextLayout.react","react","useWAWebNewsletterResponseMessages"],"dependents":["WAWebResponsesListDrawer.react"],"dependent_count":1,"exports":[]}

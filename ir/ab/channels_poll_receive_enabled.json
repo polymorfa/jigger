@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_poll_receive_enabled",
+  "kind": "ab",
+  "name": "channels_poll_receive_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6191,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_poll_receive_enabled:\\s*\\[\\s*6191"
+  },
+  "literals": [
+    "channels_poll_receive_enabled",
+    "6191"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

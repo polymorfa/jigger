@@ -1,0 +1,1 @@
+{"deps":["FBLogger","Lexical"],"dependents":["MAWSecureComposerText","MessengerLexicalActorNode"],"dependent_count":2,"exports":[{"name":"MessengerLexicalEntityTextNode","used_by":["MessengerLexicalActorNode"],"uses":1},{"name":"isMessengerLexicalEntityTextNode","used_by":["MAWSecureComposerText"],"uses":1}]}

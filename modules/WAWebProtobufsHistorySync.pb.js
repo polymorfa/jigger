@@ -1,0 +1,370 @@
+__d("WAWebProtobufsHistorySync.pb", [
+	"$InternalEnum",
+	"WAProtoConst",
+	"WAWebProtobufSyncAction.pb",
+	"WAWebProtobufsChatLockSettings.pb",
+	"WAWebProtobufsE2E.pb",
+	"WAWebProtobufsProtocol.pb",
+	"WAWebProtobufsWeb.pb"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u = (s = n("$InternalEnum"))({
+		IN_WAITLIST: 0,
+		AI_AVAILABLE: 1
+	}), c = s({
+		INITIAL_BOOTSTRAP: 0,
+		INITIAL_STATUS_V3: 1,
+		FULL: 2,
+		RECENT: 3,
+		PUSH_NAME: 4,
+		NON_BLOCKING_DATA: 5,
+		ON_DEMAND: 6
+	}), d = s({
+		NO_APPEAL: 0,
+		APPEAL_IN_REVIEW: 1,
+		APPEAL_APPROVED: 2,
+		APPEAL_REJECTED: 3
+	}), m = s({
+		COMPLETE_BUT_MORE_MESSAGES_REMAIN_ON_PRIMARY: 0,
+		COMPLETE_AND_NO_MORE_MESSAGE_REMAIN_ON_PRIMARY: 1,
+		COMPLETE_ON_DEMAND_SYNC_BUT_MORE_MSG_REMAIN_ON_PRIMARY: 2,
+		COMPLETE_ON_DEMAND_SYNC_WITH_MORE_MSG_ON_PRIMARY_BUT_NO_ACCESS: 3
+	}), p = s({
+		REGULAR: 0,
+		ADMIN: 1,
+		SUPERADMIN: 2
+	}), _ = s({
+		DEFAULT: 0,
+		OFF: 1,
+		ON: 2
+	}), f = s({
+		LEFT: 0,
+		REMOVED: 1
+	}), g = s({
+		E2EE_MSG: 1,
+		NE2EE_SELF: 2,
+		NE2EE_OTHER: 3
+	}), h = {}, y = {}, C = {}, b = {}, v = {}, S = {}, R = {}, L = {}, E = {}, k = {}, I = {}, T = {}, D = {}, x = {}, $ = {}, P = {}, N = {};
+	h.name = "HistorySync", h.internalSpec = {
+		syncType: [
+			1,
+			(e = o("WAProtoConst")).FLAGS.REQUIRED | e.TYPES.ENUM,
+			c
+		],
+		conversations: [
+			2,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			y
+		],
+		statusV3Messages: [
+			3,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			o("WAWebProtobufsWeb.pb").WebMessageInfoSpec
+		],
+		chunkOrder: [5, e.TYPES.UINT32],
+		progress: [6, e.TYPES.UINT32],
+		pushnames: [
+			7,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			L
+		],
+		globalSettings: [
+			8,
+			e.TYPES.MESSAGE,
+			I
+		],
+		threadIdUserSecret: [9, e.TYPES.BYTES],
+		threadDsTimeframeOffset: [10, e.TYPES.UINT32],
+		recentStickers: [
+			11,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			D
+		],
+		pastParticipants: [
+			12,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			x
+		],
+		callLogRecords: [
+			13,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			o("WAWebProtobufSyncAction.pb").CallLogRecordSpec
+		],
+		aiWaitListState: [
+			14,
+			e.TYPES.ENUM,
+			u
+		],
+		phoneNumberToLidMappings: [
+			15,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			b
+		],
+		companionMetaNonce: [16, e.TYPES.STRING],
+		shareableChatIdentifierEncryptionKey: [17, e.TYPES.BYTES],
+		accounts: [
+			18,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			S
+		],
+		nctSalt: [19, e.TYPES.BYTES],
+		inlineContacts: [
+			20,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			v
+		],
+		inlineContactsProvided: [21, e.TYPES.BOOL]
+	}, y.name = "Conversation", y.internalSpec = {
+		id: [1, e.FLAGS.REQUIRED | e.TYPES.STRING],
+		messages: [
+			2,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			R
+		],
+		newJid: [3, e.TYPES.STRING],
+		oldJid: [4, e.TYPES.STRING],
+		lastMsgTimestamp: [5, e.TYPES.UINT64],
+		unreadCount: [6, e.TYPES.UINT32],
+		readOnly: [7, e.TYPES.BOOL],
+		endOfHistoryTransfer: [8, e.TYPES.BOOL],
+		ephemeralExpiration: [9, e.TYPES.UINT32],
+		ephemeralSettingTimestamp: [10, e.TYPES.INT64],
+		endOfHistoryTransferType: [
+			11,
+			e.TYPES.ENUM,
+			m
+		],
+		conversationTimestamp: [12, e.TYPES.UINT64],
+		name: [13, e.TYPES.STRING],
+		pHash: [14, e.TYPES.STRING],
+		notSpam: [15, e.TYPES.BOOL],
+		archived: [16, e.TYPES.BOOL],
+		disappearingMode: [
+			17,
+			e.TYPES.MESSAGE,
+			o("WAWebProtobufsE2E.pb").DisappearingModeSpec
+		],
+		unreadMentionCount: [18, e.TYPES.UINT32],
+		markedAsUnread: [19, e.TYPES.BOOL],
+		participant: [
+			20,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			E
+		],
+		tcToken: [21, e.TYPES.BYTES],
+		tcTokenTimestamp: [22, e.TYPES.UINT64],
+		contactPrimaryIdentityKey: [23, e.TYPES.BYTES],
+		pinned: [24, e.TYPES.UINT32],
+		muteEndTime: [25, e.TYPES.UINT64],
+		wallpaper: [
+			26,
+			e.TYPES.MESSAGE,
+			k
+		],
+		mediaVisibility: [
+			27,
+			e.TYPES.ENUM,
+			_
+		],
+		tcTokenSenderTimestamp: [28, e.TYPES.UINT64],
+		suspended: [29, e.TYPES.BOOL],
+		terminated: [30, e.TYPES.BOOL],
+		createdAt: [31, e.TYPES.UINT64],
+		createdBy: [32, e.TYPES.STRING],
+		description: [33, e.TYPES.STRING],
+		support: [34, e.TYPES.BOOL],
+		isParentGroup: [35, e.TYPES.BOOL],
+		parentGroupId: [37, e.TYPES.STRING],
+		isDefaultSubgroup: [36, e.TYPES.BOOL],
+		displayName: [38, e.TYPES.STRING],
+		pnJid: [39, e.TYPES.STRING],
+		shareOwnPn: [40, e.TYPES.BOOL],
+		pnhDuplicateLidThread: [41, e.TYPES.BOOL],
+		lidJid: [42, e.TYPES.STRING],
+		username: [43, e.TYPES.STRING],
+		lidOriginType: [44, e.TYPES.STRING],
+		commentsCount: [45, e.TYPES.UINT32],
+		locked: [46, e.TYPES.BOOL],
+		systemMessageToInsert: [
+			47,
+			e.TYPES.ENUM,
+			g
+		],
+		capiCreatedGroup: [48, e.TYPES.BOOL],
+		accountLid: [49, e.TYPES.STRING],
+		limitSharing: [50, e.TYPES.BOOL],
+		limitSharingSettingTimestamp: [51, e.TYPES.INT64],
+		limitSharingTrigger: [
+			52,
+			e.TYPES.ENUM,
+			o("WAWebProtobufsProtocol.pb").LimitSharing$Trigger
+		],
+		limitSharingInitiatedByMe: [53, e.TYPES.BOOL],
+		maibaAiThreadEnabled: [54, e.TYPES.BOOL],
+		isMarketingMessageThread: [55, e.TYPES.BOOL],
+		isSenderNewAccount: [56, e.TYPES.BOOL],
+		afterReadDuration: [57, e.TYPES.UINT32],
+		isSenderSuspicious: [58, e.TYPES.BOOL],
+		appealStatus: [
+			59,
+			e.TYPES.ENUM,
+			d
+		],
+		appealUpdateTime: [60, e.TYPES.UINT64],
+		authAgentParentCompanyName: [61, e.TYPES.STRING],
+		authAgentObaPhoneNumber: [62, e.TYPES.STRING],
+		identityVerification: [
+			63,
+			e.TYPES.MESSAGE,
+			C
+		]
+	}, C.name = "IdentityVerificationState", C.internalSpec = {
+		verified: [1, e.TYPES.BOOL],
+		actionSeq: [2, e.TYPES.UINT64]
+	}, b.name = "PhoneNumberToLIDMapping", b.internalSpec = {
+		pnJid: [1, e.TYPES.STRING],
+		lidJid: [2, e.TYPES.STRING]
+	}, v.name = "InlineContact", v.internalSpec = {
+		pnJid: [1, e.TYPES.STRING],
+		lidJid: [2, e.TYPES.STRING],
+		fullName: [3, e.TYPES.STRING],
+		firstName: [4, e.TYPES.STRING],
+		username: [5, e.TYPES.STRING]
+	}, S.name = "Account", S.internalSpec = {
+		lid: [1, e.TYPES.STRING],
+		username: [2, e.TYPES.STRING],
+		countryCode: [3, e.TYPES.STRING],
+		isUsernameDeleted: [4, e.TYPES.BOOL]
+	}, R.name = "HistorySyncMsg", R.internalSpec = {
+		message: [
+			1,
+			e.TYPES.MESSAGE,
+			o("WAWebProtobufsWeb.pb").WebMessageInfoSpec
+		],
+		msgOrderId: [2, e.TYPES.UINT64]
+	}, L.name = "Pushname", L.internalSpec = {
+		id: [1, e.TYPES.STRING],
+		pushname: [2, e.TYPES.STRING]
+	}, E.name = "GroupParticipant", E.internalSpec = {
+		userJid: [1, e.FLAGS.REQUIRED | e.TYPES.STRING],
+		rank: [
+			2,
+			e.TYPES.ENUM,
+			p
+		],
+		memberLabel: [
+			3,
+			e.TYPES.MESSAGE,
+			o("WAWebProtobufsE2E.pb").MemberLabelSpec
+		]
+	}, k.name = "WallpaperSettings", k.internalSpec = {
+		filename: [1, e.TYPES.STRING],
+		opacity: [2, e.TYPES.UINT32],
+		isGenAi: [3, e.TYPES.BOOL]
+	}, I.name = "GlobalSettings", I.internalSpec = {
+		lightThemeWallpaper: [
+			1,
+			e.TYPES.MESSAGE,
+			k
+		],
+		mediaVisibility: [
+			2,
+			e.TYPES.ENUM,
+			_
+		],
+		darkThemeWallpaper: [
+			3,
+			e.TYPES.MESSAGE,
+			k
+		],
+		autoDownloadWiFi: [
+			4,
+			e.TYPES.MESSAGE,
+			T
+		],
+		autoDownloadCellular: [
+			5,
+			e.TYPES.MESSAGE,
+			T
+		],
+		autoDownloadRoaming: [
+			6,
+			e.TYPES.MESSAGE,
+			T
+		],
+		showIndividualNotificationsPreview: [7, e.TYPES.BOOL],
+		showGroupNotificationsPreview: [8, e.TYPES.BOOL],
+		disappearingModeDuration: [9, e.TYPES.INT32],
+		disappearingModeTimestamp: [10, e.TYPES.INT64],
+		avatarUserSettings: [
+			11,
+			e.TYPES.MESSAGE,
+			P
+		],
+		fontSize: [12, e.TYPES.INT32],
+		securityNotifications: [13, e.TYPES.BOOL],
+		autoUnarchiveChats: [14, e.TYPES.BOOL],
+		videoQualityMode: [15, e.TYPES.INT32],
+		photoQualityMode: [16, e.TYPES.INT32],
+		individualNotificationSettings: [
+			17,
+			e.TYPES.MESSAGE,
+			N
+		],
+		groupNotificationSettings: [
+			18,
+			e.TYPES.MESSAGE,
+			N
+		],
+		chatLockSettings: [
+			19,
+			e.TYPES.MESSAGE,
+			o("WAWebProtobufsChatLockSettings.pb").ChatLockSettingsSpec
+		],
+		chatDbLidMigrationTimestamp: [20, e.TYPES.INT64]
+	}, T.name = "AutoDownloadSettings", T.internalSpec = {
+		downloadImages: [1, e.TYPES.BOOL],
+		downloadAudio: [2, e.TYPES.BOOL],
+		downloadVideo: [3, e.TYPES.BOOL],
+		downloadDocuments: [4, e.TYPES.BOOL]
+	}, D.name = "StickerMetadata", D.internalSpec = {
+		url: [1, e.TYPES.STRING],
+		fileSha256: [2, e.TYPES.BYTES],
+		fileEncSha256: [3, e.TYPES.BYTES],
+		mediaKey: [4, e.TYPES.BYTES],
+		mimetype: [5, e.TYPES.STRING],
+		height: [6, e.TYPES.UINT32],
+		width: [7, e.TYPES.UINT32],
+		directPath: [8, e.TYPES.STRING],
+		fileLength: [9, e.TYPES.UINT64],
+		weight: [10, e.TYPES.FLOAT],
+		lastStickerSentTs: [11, e.TYPES.INT64],
+		isLottie: [12, e.TYPES.BOOL],
+		imageHash: [13, e.TYPES.STRING],
+		isAvatarSticker: [14, e.TYPES.BOOL]
+	}, x.name = "PastParticipants", x.internalSpec = {
+		groupJid: [1, e.TYPES.STRING],
+		pastParticipants: [
+			2,
+			e.FLAGS.REPEATED | e.TYPES.MESSAGE,
+			$
+		]
+	}, $.name = "PastParticipant", $.internalSpec = {
+		userJid: [1, e.TYPES.STRING],
+		leaveReason: [
+			2,
+			e.TYPES.ENUM,
+			f
+		],
+		leaveTs: [3, e.TYPES.UINT64]
+	}, P.name = "AvatarUserSettings", P.internalSpec = {
+		fbid: [1, e.TYPES.STRING],
+		password: [2, e.TYPES.STRING]
+	}, N.name = "NotificationSettings", N.internalSpec = {
+		messageVibrate: [1, e.TYPES.STRING],
+		messagePopup: [2, e.TYPES.STRING],
+		messageLight: [3, e.TYPES.STRING],
+		lowPriorityNotifications: [4, e.TYPES.BOOL],
+		reactionsMuted: [5, e.TYPES.BOOL],
+		callVibrate: [6, e.TYPES.STRING]
+	}, l.HistorySync$BotAIWaitListState = u, l.HistorySync$HistorySyncType = c, l.Conversation$GroupAppealStatus = d, l.Conversation$EndOfHistoryTransferType = m, l.GroupParticipant$Rank = p, l.MediaVisibility = _, l.PastParticipant$LeaveReason = f, l.PrivacySystemMessage = g, l.HistorySyncSpec = h, l.ConversationSpec = y, l.IdentityVerificationStateSpec = C, l.PhoneNumberToLIDMappingSpec = b, l.InlineContactSpec = v, l.AccountSpec = S, l.HistorySyncMsgSpec = R, l.PushnameSpec = L, l.GroupParticipantSpec = E, l.WallpaperSettingsSpec = k, l.GlobalSettingsSpec = I, l.AutoDownloadSettingsSpec = T, l.StickerMetadataSpec = D, l.PastParticipantsSpec = x, l.PastParticipantSpec = $, l.AvatarUserSettingsSpec = P, l.NotificationSettingsSpec = N;
+}), 98);

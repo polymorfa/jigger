@@ -1,0 +1,126 @@
+__d("WAWebFlexItem.react", [
+	"WAWebClassnames",
+	"WAWebStructureStyles",
+	"react",
+	"stylex"
+], (function(t, n, r, o, a, i, l) {
+	var e = ["ref"], s = [
+		"align",
+		"as",
+		"basis",
+		"children",
+		"className",
+		"columnGap",
+		"gap",
+		"grow",
+		"inline",
+		"isFlexContainer",
+		"justify",
+		"margin",
+		"marginBottom",
+		"marginEnd",
+		"marginStart",
+		"marginTop",
+		"order",
+		"padding",
+		"paddingBottom",
+		"paddingEnd",
+		"paddingStart",
+		"paddingTop",
+		"rowGap",
+		"shrink",
+		"style",
+		"testid",
+		"wrap",
+		"xstyle"
+	], u, c, d = c || (c = o("react")), m = {
+		flexItem: {
+			flexGrow: "x1c4vz4f",
+			flexShrink: "xs83m0k",
+			flexBasis: "xdl72j9",
+			order: "x1g77sc7",
+			minWidth: "xeuugli",
+			minHeight: "x2lwn1j",
+			$$css: !0
+		},
+		displayFlex: {
+			display: "x78zum5",
+			$$css: !0
+		},
+		displayInlineFlex: {
+			display: "x3nfvp2",
+			$$css: !0
+		}
+	}, p = {
+		nowrap: {
+			flexWrap: "xozqiw3",
+			$$css: !0
+		},
+		wrap: {
+			flexWrap: "x1a02dak",
+			$$css: !0
+		},
+		wrapReverse: {
+			flexWrap: "x8hhl5t",
+			$$css: !0
+		}
+	}, _ = {
+		auto: {
+			alignSelf: "x1oa3qoh",
+			$$css: !0
+		},
+		start: {
+			alignSelf: "xqcrz7y",
+			$$css: !0
+		},
+		center: {
+			alignSelf: "xamitd3",
+			$$css: !0
+		},
+		end: {
+			alignSelf: "xpvyfi4",
+			$$css: !0
+		},
+		stretch: {
+			alignSelf: "xkh2ocl",
+			$$css: !0
+		},
+		baseline: {
+			alignSelf: "xoi2r2e",
+			$$css: !0
+		}
+	}, f = {
+		auto: {
+			justifySelf: "x12fk4p8",
+			$$css: !0
+		},
+		start: {
+			justifySelf: "xwldb3t",
+			$$css: !0
+		},
+		center: {
+			justifySelf: "x7v7x1q",
+			$$css: !0
+		},
+		end: {
+			justifySelf: "x15bdqvn",
+			$$css: !0
+		},
+		stretch: {
+			justifySelf: "xuy72oy",
+			$$css: !0
+		}
+	};
+	function g(t) {
+		var n = t.ref, a = babelHelpers.objectWithoutPropertiesLoose(t, e), i = a.align, l = i === void 0 ? "auto" : i, c = a.as, g = c === void 0 ? "div" : c, h = a.basis, y = a.children, C = a.className, b = a.columnGap, v = a.gap, S = a.grow, R = a.inline, L = a.isFlexContainer, E = a.justify, k = E === void 0 ? "auto" : E, I = a.margin, T = a.marginBottom, D = a.marginEnd, x = a.marginStart, $ = a.marginTop, P = a.order, N = a.padding, M = a.paddingBottom, w = a.paddingEnd, A = a.paddingStart, F = a.paddingTop, O = a.rowGap, B = a.shrink, W = a.style, q = a.testid, U = a.wrap, V = U === void 0 ? "nowrap" : U, H = a.xstyle, G = babelHelpers.objectWithoutPropertiesLoose(a, s), z = {};
+		typeof h == "string" ? z.flexBasis = h : h != null && (z.flexBasis = h + "px"), S != null && (z.flexGrow = S), B != null && (z.flexShrink = B), P != null && (z.order = P);
+		var j = o("WAWebStructureStyles").getStructureStyles(a);
+		return d.jsx(g, babelHelpers.extends({
+			className: o("WAWebClassnames").classnamesConvertMeToStylexPlease((u || (u = r("stylex")))(m.flexItem, L === !0 && m.displayFlex, R === !0 && m.displayInlineFlex, p[V], _[l], f[k], j, H), C),
+			"data-testid": q,
+			ref: n,
+			style: babelHelpers.extends({}, W, z)
+		}, G, { children: y }));
+	}
+	g.displayName = g.name + " [from " + i.id + "]", l.default = g;
+}), 98);

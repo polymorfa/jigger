@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_maiba_wass_migration_receiving",
+  "kind": "ab",
+  "name": "ai_maiba_wass_migration_receiving",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27083,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_maiba_wass_migration_receiving:\\s*\\[\\s*27083"
+  },
+  "literals": [
+    "ai_maiba_wass_migration_receiving",
+    "27083"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizAiAgentGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

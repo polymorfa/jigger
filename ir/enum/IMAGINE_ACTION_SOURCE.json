@@ -1,0 +1,157 @@
+{
+  "id": "enum:IMAGINE_ACTION_SOURCE",
+  "kind": "enum",
+  "name": "IMAGINE_ACTION_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumImagineActionSource",
+    "variants": [
+      {
+        "name": "CHAT_TRAY",
+        "value": 0.0
+      },
+      {
+        "name": "ATTACHMEMT_TRAY",
+        "value": 1.0
+      },
+      {
+        "name": "SETTINGS",
+        "value": 2.0
+      },
+      {
+        "name": "SEARCH",
+        "value": 3.0
+      },
+      {
+        "name": "RETAKE_INLINE",
+        "value": 4.0
+      },
+      {
+        "name": "USER_PROFILE_PAGE_PICTURE",
+        "value": 5.0
+      },
+      {
+        "name": "GROUP_PROFILE_PAGE_PICTURE",
+        "value": 6.0
+      },
+      {
+        "name": "AI_CREATION_EDIT",
+        "value": 7.0
+      },
+      {
+        "name": "AI_CREATION_NEW_CREATE",
+        "value": 8.0
+      },
+      {
+        "name": "AR_EFFECTS_IN_CALLING",
+        "value": 9.0
+      },
+      {
+        "name": "AR_EFFECTS_IN_PRECAPTURE",
+        "value": 10.0
+      },
+      {
+        "name": "STATUS",
+        "value": 11.0
+      },
+      {
+        "name": "CHAT_THEMES",
+        "value": 12.0
+      },
+      {
+        "name": "MESSAGE_QUICK_ACTION",
+        "value": 13.0
+      },
+      {
+        "name": "CHAT_WALLPAPER",
+        "value": 14.0
+      },
+      {
+        "name": "CHAT_THEME",
+        "value": 15.0
+      },
+      {
+        "name": "MEDIA_PICKER",
+        "value": 16.0
+      },
+      {
+        "name": "CAMERA",
+        "value": 17.0
+      },
+      {
+        "name": "MIMICRY",
+        "value": 18.0
+      },
+      {
+        "name": "MIMICRY_ATTRIBUTION",
+        "value": 19.0
+      },
+      {
+        "name": "MEDIA_VIEWER",
+        "value": 20.0
+      },
+      {
+        "name": "EVENT_COVER_BOTTOM_SHEET",
+        "value": 21.0
+      },
+      {
+        "name": "FORWARD",
+        "value": 22.0
+      },
+      {
+        "name": "DEEP_LINK",
+        "value": 23.0
+      },
+      {
+        "name": "AI_TAB",
+        "value": 24.0
+      },
+      {
+        "name": "AI_SEASONAL_UPSELL",
+        "value": 25.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumImagineActionSource",
+    "matches": "IMAGINE_ACTION_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "IMAGINE_ACTION_SOURCE",
+    "CHAT_TRAY",
+    "ATTACHMEMT_TRAY",
+    "SETTINGS",
+    "SEARCH",
+    "RETAKE_INLINE",
+    "USER_PROFILE_PAGE_PICTURE",
+    "GROUP_PROFILE_PAGE_PICTURE",
+    "AI_CREATION_EDIT",
+    "AI_CREATION_NEW_CREATE",
+    "AR_EFFECTS_IN_CALLING",
+    "AR_EFFECTS_IN_PRECAPTURE",
+    "STATUS",
+    "CHAT_THEMES",
+    "MESSAGE_QUICK_ACTION",
+    "CHAT_WALLPAPER",
+    "CHAT_THEME",
+    "MEDIA_PICKER",
+    "CAMERA",
+    "MIMICRY",
+    "MIMICRY_ATTRIBUTION",
+    "MEDIA_VIEWER",
+    "EVENT_COVER_BOTTOM_SHEET",
+    "FORWARD",
+    "DEEP_LINK",
+    "AI_TAB",
+    "AI_SEASONAL_UPSELL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebImagineActionsWamEvent",
+      "WAWebLogImagineAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

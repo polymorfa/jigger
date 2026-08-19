@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebStopMessagesRow.react"],"dependent_count":2,"exports":[{"name":"SettingsNotificationsIcon","used_by":["WAWebAllGeneratedIcons","WAWebStopMessagesRow.react"],"uses":2}]}

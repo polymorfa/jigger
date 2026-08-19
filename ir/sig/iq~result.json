@@ -1,0 +1,32 @@
+{
+  "id": "sig:iq/result",
+  "kind": "sig",
+  "name": "BizAccessTokenRequestSilentNonceResponseRecoveryRequired",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "result"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizAccessTokenRequestSilentNonceResponseRecoveryRequired",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "result"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInBizAccessTokenHackBaseIQResultResponseMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxBizAccessTokenRequestSilentNonceRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAE2E.HydratedTemplateButton.HydratedQuickReplyButton",
+  "kind": "proto",
+  "name": "WAE2E.HydratedTemplateButton.HydratedQuickReplyButton",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "displayText": {
+        "number": 1
+      },
+      "id": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"HydratedTemplateButton.HydratedQuickReplyButton\""
+  },
+  "literals": [
+    "HydratedQuickReplyButton"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

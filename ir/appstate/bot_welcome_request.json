@@ -1,0 +1,48 @@
+{
+  "id": "appstate:bot_welcome_request",
+  "kind": "appstate",
+  "name": "BotWelcomeRequest",
+  "data": {
+    "kind": "appstate",
+    "index_name": "bot_welcome_request",
+    "collection": "regular_low",
+    "version": 2,
+    "value_field": "botWelcomeRequestAction",
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebBotWelcomeRequestSync",
+    "matches": "Actions\\.BotWelcomeRequest"
+  },
+  "literals": [
+    "bot_welcome_request",
+    "BotWelcomeRequest",
+    "botWelcomeRequestAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebBackendApi",
+      "WAWebDBUpdateChatTable",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdIndexUtils",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebHandleBizBotWelcomeMsgProtocolModeAction",
+      "WAWebSendBotRequestWelcomeAction"
+    ],
+    "dep_count": 13,
+    "dependent_count": 3
+  }
+}

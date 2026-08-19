@@ -1,0 +1,142 @@
+{
+  "id": "proto:WAE2E.Message.ExtendedTextMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.ExtendedTextMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "backgroundArgb": {
+        "number": 8
+      },
+      "contextInfo": {
+        "number": 17,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "description": {
+        "number": 5
+      },
+      "doNotPlayInline": {
+        "number": 18
+      },
+      "endCardTiles": {
+        "number": 36,
+        "type_name": "WAE2E.Message.VideoEndCard"
+      },
+      "faviconMMSMetadata": {
+        "number": 33,
+        "type_name": "WAE2E.Message.MMSThumbnailMetadata"
+      },
+      "font": {
+        "number": 9
+      },
+      "inviteLinkGroupType": {
+        "number": 26
+      },
+      "inviteLinkGroupTypeV2": {
+        "number": 29
+      },
+      "inviteLinkParentGroupSubjectV2": {
+        "number": 27
+      },
+      "inviteLinkParentGroupThumbnailV2": {
+        "number": 28
+      },
+      "jpegThumbnail": {
+        "number": 16
+      },
+      "linkPreviewMetadata": {
+        "number": 34,
+        "type_name": "WAE2E.Message.LinkPreviewMetadata"
+      },
+      "matchedText": {
+        "number": 2
+      },
+      "mediaKey": {
+        "number": 22
+      },
+      "mediaKeyTimestamp": {
+        "number": 23
+      },
+      "musicMetadata": {
+        "number": 38,
+        "type_name": "WAE2E.EmbeddedMusic"
+      },
+      "paymentExtendedMetadata": {
+        "number": 39,
+        "type_name": "WAE2E.Message.PaymentExtendedMetadata"
+      },
+      "paymentLinkMetadata": {
+        "number": 35,
+        "type_name": "WAE2E.Message.PaymentLinkMetadata"
+      },
+      "previewType": {
+        "number": 10
+      },
+      "text": {
+        "number": 1
+      },
+      "textArgb": {
+        "number": 7
+      },
+      "thumbnailDirectPath": {
+        "number": 19
+      },
+      "thumbnailEncSha256": {
+        "number": 21
+      },
+      "thumbnailHeight": {
+        "number": 24
+      },
+      "thumbnailSha256": {
+        "number": 20
+      },
+      "thumbnailWidth": {
+        "number": 25
+      },
+      "title": {
+        "number": 6
+      },
+      "videoContentUrl": {
+        "number": 37
+      },
+      "videoHeight": {
+        "number": 31
+      },
+      "videoWidth": {
+        "number": 32
+      },
+      "viewOnce": {
+        "number": 30
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.ExtendedTextMessage\""
+  },
+  "literals": [
+    "ExtendedTextMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

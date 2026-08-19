@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAWebLabyrinthWaWasm.RotateEpochInput",
+  "kind": "proto",
+  "name": "WAWebLabyrinthWaWasm.RotateEpochInput",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "currentEpochAnonId": {
+        "number": 2
+      },
+      "currentEpochFbid": {
+        "number": 3
+      },
+      "currentEpochRootKey": {
+        "number": 1
+      },
+      "epochStoragePrivateKey": {
+        "number": 5
+      },
+      "members": {
+        "number": 6,
+        "type_name": "WAWebLabyrinthWaWasm.RotateEpochMemberInput"
+      },
+      "newEpochFbid": {
+        "number": 4
+      }
+    },
+    "module": "WAWebLabyrinthWaWasm.pb"
+  },
+  "evidence": {
+    "module": "WAWebLabyrinthWaWasm.pb",
+    "matches": "name = \"RotateEpochInput\""
+  },
+  "literals": [
+    "RotateEpochInput"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebLabyrinthWasmCreateBackup",
+      "WAWebLabyrinthWasmDecryptMessage",
+      "WAWebLabyrinthWasmDeriveMessageKey",
+      "WAWebLabyrinthWasmEncryptMessage",
+      "WAWebLabyrinthWasmOrfThreadId"
+    ],
+    "dep_count": 1,
+    "dependent_count": 5
+  }
+}

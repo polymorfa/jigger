@@ -1,0 +1,59 @@
+{
+  "id": "enum:CHANNEL_LINK_SHARE_ENTRY_POINT",
+  "kind": "enum",
+  "name": "CHANNEL_LINK_SHARE_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChannelLinkShareEntryPoint",
+    "variants": [
+      {
+        "name": "CHANNEL_INFO_PAGE",
+        "value": 1.0
+      },
+      {
+        "name": "CHANNEL_THREAD",
+        "value": 2.0
+      },
+      {
+        "name": "PRODUCER_CONTEXT_CARD",
+        "value": 3.0
+      },
+      {
+        "name": "UPDATES_TAB",
+        "value": 4.0
+      },
+      {
+        "name": "SHARE_LINK_SCREEN",
+        "value": 5.0
+      },
+      {
+        "name": "CHANNEL_ADMIN_ONBOARDING",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChannelLinkShareEntryPoint",
+    "matches": "CHANNEL_LINK_SHARE_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "CHANNEL_LINK_SHARE_ENTRY_POINT",
+    "CHANNEL_INFO_PAGE",
+    "CHANNEL_THREAD",
+    "PRODUCER_CONTEXT_CARD",
+    "UPDATES_TAB",
+    "SHARE_LINK_SCREEN",
+    "CHANNEL_ADMIN_ONBOARDING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelLinkShareWamEvent",
+      "WAWebInfoFlow.react",
+      "WAWebNewsletterConversationPanelHeader.react",
+      "WAWebNewsletterMessageAdminContextCard.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

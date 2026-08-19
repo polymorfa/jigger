@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_noncritical_history_sync_message_processing_break_iteration",
+  "kind": "ab",
+  "name": "web_noncritical_history_sync_message_processing_break_iteration",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5106,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_noncritical_history_sync_message_processing_break_iteration:\\s*\\[\\s*5106"
+  },
+  "literals": [
+    "web_noncritical_history_sync_message_processing_break_iteration",
+    "5106"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSyncGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

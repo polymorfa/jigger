@@ -1,0 +1,61 @@
+{
+  "id": "enum:ENGAGEMENT_CARD_VARIANT",
+  "kind": "enum",
+  "name": "ENGAGEMENT_CARD_VARIANT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEngagementCardVariant",
+    "variants": [
+      {
+        "name": "MIMICRY",
+        "value": 1.0
+      },
+      {
+        "name": "MUSIC",
+        "value": 2.0
+      },
+      {
+        "name": "CREATIVE_TOOLS",
+        "value": 3.0
+      },
+      {
+        "name": "CONTINUE_CHAIN",
+        "value": 4.0
+      },
+      {
+        "name": "MIMICRY_UPDATES_TAB",
+        "value": 5.0
+      },
+      {
+        "name": "AD4AD_BOOST_POPULAR_ALL_STATUSES",
+        "value": 6.0
+      },
+      {
+        "name": "CHANNEL_PROMO",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEngagementCardVariant",
+    "matches": "ENGAGEMENT_CARD_VARIANT\\s*[:=]"
+  },
+  "literals": [
+    "ENGAGEMENT_CARD_VARIANT",
+    "MIMICRY",
+    "MUSIC",
+    "CREATIVE_TOOLS",
+    "CONTINUE_CHAIN",
+    "MIMICRY_UPDATES_TAB",
+    "AD4AD_BOOST_POPULAR_ALL_STATUSES",
+    "CHANNEL_PROMO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPosterActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

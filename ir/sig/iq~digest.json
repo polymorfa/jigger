@@ -1,0 +1,35 @@
+{
+  "id": "sig:iq/digest",
+  "kind": "sig",
+  "name": "PreKeysFetchDigestResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "digest"
+    ],
+    "responds_to": "PreKeysFetchDigest"
+  },
+  "evidence": {
+    "module": "WASmaxInPreKeysFetchDigestResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "digest"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInPreKeysIQResultResponseMixin",
+      "WASmaxInPreKeysIdentityDigestBundleMixin",
+      "WASmaxParseReference",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxPreKeysFetchDigestRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

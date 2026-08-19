@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPollMessageHeader"],"dependent_count":2,"exports":[{"name":"IcCheckCircleFilledIcon","used_by":["WAWebAllGeneratedIcons","WAWebPollMessageHeader"],"uses":2}]}

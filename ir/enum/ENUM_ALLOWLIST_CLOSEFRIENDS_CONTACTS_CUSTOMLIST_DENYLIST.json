@@ -1,0 +1,54 @@
+{
+  "id": "enum:ENUM_ALLOWLIST_CLOSEFRIENDS_CONTACTS_CUSTOMLIST_DENYLIST",
+  "kind": "enum",
+  "name": "ENUM_ALLOWLIST_CLOSEFRIENDS_CONTACTS_CUSTOMLIST_DENYLIST",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInStatusDeliverEnums",
+    "variants": [
+      {
+        "name": "allowlist",
+        "value": "allowlist"
+      },
+      {
+        "name": "closefriends",
+        "value": "closefriends"
+      },
+      {
+        "name": "contacts",
+        "value": "contacts"
+      },
+      {
+        "name": "customlist",
+        "value": "customlist"
+      },
+      {
+        "name": "denylist",
+        "value": "denylist"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInStatusDeliverEnums",
+    "matches": "ENUM_ALLOWLIST_CLOSEFRIENDS_CONTACTS_CUSTOMLIST_DENYLIST\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ALLOWLIST_CLOSEFRIENDS_CONTACTS_CUSTOMLIST_DENYLIST",
+    "allowlist",
+    "closefriends",
+    "contacts",
+    "customlist",
+    "denylist"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInStatusDeliverStatusNewsletterMediaMixin",
+      "WASmaxOutStatusDeliverStatusAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

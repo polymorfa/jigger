@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebEditFormEditFieldsForm.react"],"dependent_count":2,"exports":[{"name":"BusinessCategoryIcon","used_by":["WAWebAllGeneratedIcons","WAWebEditFormEditFieldsForm.react"],"uses":2}]}

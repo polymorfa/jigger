@@ -1,0 +1,45 @@
+{
+  "id": "ab:smart_filters_enabled_consumer",
+  "kind": "ab",
+  "name": "smart_filters_enabled_consumer",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1287,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smart_filters_enabled_consumer:\\s*\\[\\s*1287"
+  },
+  "literals": [
+    "smart_filters_enabled_consumer",
+    "1287"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebListsLabelGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

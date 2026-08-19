@@ -1,0 +1,52 @@
+{
+  "id": "proto:MAWArmadilloPendingMutationsTableSchema.PendingMutationsTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloPendingMutationsTableSchema.PendingMutationsTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "action": {
+        "number": 8
+      },
+      "binarySyncAction": {
+        "number": 4
+      },
+      "collection": {
+        "number": 2
+      },
+      "id": {
+        "number": 1
+      },
+      "index": {
+        "number": 3
+      },
+      "operation": {
+        "number": 6
+      },
+      "timestamp": {
+        "number": 7
+      },
+      "version": {
+        "number": 5
+      }
+    },
+    "module": "MAWArmadilloPendingMutationsTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloPendingMutationsTableSchema.pb",
+    "matches": "name = \"PendingMutationsTableSchemaProto\""
+  },
+  "literals": [
+    "PendingMutationsTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

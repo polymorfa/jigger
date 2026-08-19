@@ -1,0 +1,37 @@
+{
+  "id": "enum:ENUM_INELIGIBLE_RECOVERYREQUIRED",
+  "kind": "enum",
+  "name": "ENUM_INELIGIBLE_RECOVERYREQUIRED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBizCtwaAdAccountEnums",
+    "variants": [
+      {
+        "name": "Ineligible",
+        "value": "Ineligible"
+      },
+      {
+        "name": "RecoveryRequired",
+        "value": "RecoveryRequired"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizCtwaAdAccountEnums",
+    "matches": "ENUM_INELIGIBLE_RECOVERYREQUIRED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_INELIGIBLE_RECOVERYREQUIRED",
+    "Ineligible",
+    "RecoveryRequired"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBizCtwaAdAccountGetAccessTokenAndSessionCookiesResponseSuccess",
+      "WASmaxInBizCtwaAdAccountSendAccountRecoveryNonceResponseMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

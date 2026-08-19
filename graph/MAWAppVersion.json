@@ -1,0 +1,1 @@
+{"deps":["SiteData"],"dependents":["MAWClientPayload","MAWDeviceRegistrationUtilWorker","MAWMainThreadLogger","MWSharedS2SBaseAnnotations"],"dependent_count":4,"exports":[{"name":"getVersionNumber","used_by":["MAWDeviceRegistrationUtilWorker","MAWMainThreadLogger","MWSharedS2SBaseAnnotations"],"uses":3},{"name":"getAppVersionParts","used_by":["MAWClientPayload"],"uses":1}]}

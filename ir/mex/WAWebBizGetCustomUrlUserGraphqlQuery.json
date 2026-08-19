@@ -1,0 +1,74 @@
+{
+  "id": "mex:WAWebBizGetCustomUrlUserGraphqlQuery",
+  "kind": "mex",
+  "name": "WAWebBizGetCustomUrlUserGraphqlQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "WAWebBizGetCustomUrlUserGraphqlQuery",
+    "operation": "query",
+    "variables": [
+      "data"
+    ],
+    "args": [
+      {
+        "name": "data"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_custom_url_get_user",
+        "ty": "WAWebBizGetCustomUrlUserGraphqlQueryResponse",
+        "args": [
+          "data: $data"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "ty": "boolean",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "user",
+            "ty": "WAWebBizGetCustomUrlUser",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "jid",
+                "ty": "string",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "error_code",
+            "ty": "number",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_text",
+            "ty": "string",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document WAWebBizGetCustomUrlUserGraphqlQuery\nquery BizGetCustomUrlUserGraphqlQuery(\n  $data\n) {\n  xwa_custom_url_get_user(data: $data) {  # WAWebBizGetCustomUrlUserGraphqlQueryResponse\n    success  # boolean\n    user {  # WAWebBizGetCustomUrlUser\n      jid  # string\n    }\n    error_code  # number\n    error_text  # string\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebBizGetCustomUrlUserGraphqlQuery.graphql",
+    "matches": "id:\\s*\"WAWebBizGetCustomUrlUserGraphqlQuery\""
+  },
+  "literals": [
+    "WAWebBizGetCustomUrlUserGraphqlQuery",
+    "WAWebBizGetCustomUrlUserGraphqlQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizGetCustomUrlUserGraphql"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

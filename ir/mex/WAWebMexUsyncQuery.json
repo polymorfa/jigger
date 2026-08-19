@@ -1,0 +1,177 @@
+{
+  "id": "mex:WAWebMexUsyncQuery",
+  "kind": "mex",
+  "name": "WAWebMexUsyncQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "29829202653362039",
+    "operation": "query",
+    "variables": [
+      "input",
+      "include_username",
+      "include_about_status",
+      "include_country_code"
+    ],
+    "args": [
+      {
+        "name": "input"
+      },
+      {
+        "name": "include_username"
+      },
+      {
+        "name": "include_about_status"
+      },
+      {
+        "name": "include_country_code"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_fetch_wa_users",
+        "plural": true,
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "jid",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "@include(if: $include_country_code)",
+            "kind": "Condition",
+            "selections": [
+              {
+                "name": "country_code",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "@include(if: $include_username)",
+            "kind": "Condition",
+            "selections": [
+              {
+                "name": "username_info",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "__typename",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "... on XWA2Username",
+                    "kind": "InlineFragment",
+                    "selections": [
+                      {
+                        "name": "username",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "state",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "timestamp",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "pin",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "... on XWA2ResponseStatus",
+                    "kind": "InlineFragment",
+                    "selections": [
+                      {
+                        "name": "status",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "@include(if: $include_about_status)",
+            "kind": "Condition",
+            "selections": [
+              {
+                "name": "about_status_info",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "__typename",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "... on XWA2AboutStatus",
+                    "kind": "InlineFragment",
+                    "selections": [
+                      {
+                        "name": "text",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "timestamp",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "... on XWA2ResponseStatus",
+                    "kind": "InlineFragment",
+                    "selections": [
+                      {
+                        "name": "status",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2User",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_fetch_wa_users",
+    "document": "# persisted document 29829202653362039\nquery MexUsyncQuery(\n  $input\n  $include_username\n  $include_about_status\n  $include_country_code\n) {\n  xwa2_fetch_wa_users(input: $input) {  # list\n    __typename\n    jid\n    @include(if: $include_country_code) {\n      country_code\n    }\n    @include(if: $include_username) {\n      username_info {\n        __typename\n        ... on XWA2Username {\n          username\n          state\n          timestamp\n          pin\n        }\n        ... on XWA2ResponseStatus {\n          status\n        }\n      }\n    }\n    @include(if: $include_about_status) {\n      about_status_info {\n        __typename\n        ... on XWA2AboutStatus {\n          text\n          timestamp\n        }\n        ... on XWA2ResponseStatus {\n          status\n        }\n      }\n    }\n    ... on XWA2User {\n      id\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexUsyncQuery.graphql",
+    "matches": "id:\\s*\"29829202653362039\""
+  },
+  "literals": [
+    "29829202653362039",
+    "WAWebMexUsyncQuery",
+    "xwa2_fetch_wa_users"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexUsync"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:mm_signal_sharing_verification_system_lid_enabled",
+  "kind": "ab",
+  "name": "mm_signal_sharing_verification_system_lid_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16727,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_signal_sharing_verification_system_lid_enabled:\\s*\\[\\s*16727"
+  },
+  "literals": [
+    "mm_signal_sharing_verification_system_lid_enabled",
+    "16727"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMmSignalSharingGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

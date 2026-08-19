@@ -1,0 +1,161 @@
+{
+  "id": "enum:CALL_SETUP_ERROR_TYPE",
+  "kind": "enum",
+  "name": "CALL_SETUP_ERROR_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallSetupErrorType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 1.0
+      },
+      {
+        "name": "CALL_ACCEPT_FAILED",
+        "value": 2.0
+      },
+      {
+        "name": "INIT_MEDIA_STREAM_FAILED",
+        "value": 3.0
+      },
+      {
+        "name": "START_MEDIA_STREAM_FAILED",
+        "value": 4.0
+      },
+      {
+        "name": "AUDIO_INIT_ERROR",
+        "value": 5.0
+      },
+      {
+        "name": "HANDLE_OFFER_FAILED",
+        "value": 6.0
+      },
+      {
+        "name": "HANDLE_ACCEPT_FAILED",
+        "value": 7.0
+      },
+      {
+        "name": "SOUND_PORT_CREATE_FAILED",
+        "value": 8.0
+      },
+      {
+        "name": "P2P_TRANSPORT_CREATE_FAILED",
+        "value": 9.0
+      },
+      {
+        "name": "P2P_TRANSPORT_MEDIA_CREATE_FAILED",
+        "value": 10.0
+      },
+      {
+        "name": "INCOMPATIBLE_SRTP_KEY_EXCHANGE",
+        "value": 11.0
+      },
+      {
+        "name": "SRTP_KEY_GENERATION_ERROR",
+        "value": 12.0
+      },
+      {
+        "name": "UNSUPPORTED_AUDIO_CAPS",
+        "value": 13.0
+      },
+      {
+        "name": "P2P_TRANSPORT_START_FAILED",
+        "value": 14.0
+      },
+      {
+        "name": "RELAY_BIND_FAILED",
+        "value": 15.0
+      },
+      {
+        "name": "CANNOT_INITIALIZE_AUDIO_RECORD_OBJECT",
+        "value": 16.0
+      },
+      {
+        "name": "PEER_RELAY_BIND_FAILED",
+        "value": 17.0
+      },
+      {
+        "name": "VIDEO_CAPTURE_INIT_FAILED",
+        "value": 18.0
+      },
+      {
+        "name": "VIDEO_CAPTURE_START_FAILED",
+        "value": 19.0
+      },
+      {
+        "name": "VIDEO_RENDER_INIT_FAILED",
+        "value": 20.0
+      },
+      {
+        "name": "VIDEO_RENDER_START_FAILED",
+        "value": 21.0
+      },
+      {
+        "name": "VIDEO_ENCODER_OPEN_FAILED",
+        "value": 22.0
+      },
+      {
+        "name": "VIDEO_DECODER_OPEN_FAILED",
+        "value": 23.0
+      },
+      {
+        "name": "VIDEO_STREAM_CREATE_FAILED",
+        "value": 24.0
+      },
+      {
+        "name": "VIDEO_STREAM_SETUP_FAILED",
+        "value": 25.0
+      },
+      {
+        "name": "PEER_SETUP_FAILED",
+        "value": 26.0
+      },
+      {
+        "name": "HANDLE_PREACCEPT_FAILED",
+        "value": 27.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallSetupErrorType",
+    "matches": "CALL_SETUP_ERROR_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CALL_SETUP_ERROR_TYPE",
+    "UNKNOWN",
+    "CALL_ACCEPT_FAILED",
+    "INIT_MEDIA_STREAM_FAILED",
+    "START_MEDIA_STREAM_FAILED",
+    "AUDIO_INIT_ERROR",
+    "HANDLE_OFFER_FAILED",
+    "HANDLE_ACCEPT_FAILED",
+    "SOUND_PORT_CREATE_FAILED",
+    "P2P_TRANSPORT_CREATE_FAILED",
+    "P2P_TRANSPORT_MEDIA_CREATE_FAILED",
+    "INCOMPATIBLE_SRTP_KEY_EXCHANGE",
+    "SRTP_KEY_GENERATION_ERROR",
+    "UNSUPPORTED_AUDIO_CAPS",
+    "P2P_TRANSPORT_START_FAILED",
+    "RELAY_BIND_FAILED",
+    "CANNOT_INITIALIZE_AUDIO_RECORD_OBJECT",
+    "PEER_RELAY_BIND_FAILED",
+    "VIDEO_CAPTURE_INIT_FAILED",
+    "VIDEO_CAPTURE_START_FAILED",
+    "VIDEO_RENDER_INIT_FAILED",
+    "VIDEO_RENDER_START_FAILED",
+    "VIDEO_ENCODER_OPEN_FAILED",
+    "VIDEO_DECODER_OPEN_FAILED",
+    "VIDEO_STREAM_CREATE_FAILED",
+    "VIDEO_STREAM_SETUP_FAILED",
+    "PEER_SETUP_FAILED",
+    "HANDLE_PREACCEPT_FAILED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

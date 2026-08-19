@@ -1,0 +1,1 @@
+{"deps":["WALogger","err"],"dependents":["WAWebWamCodegenUtils","WAWebWamCodegenWamEvent"],"dependent_count":2,"exports":[{"name":"TypeHash","used_by":["WAWebWamCodegenUtils","WAWebWamCodegenWamEvent"],"uses":2},{"name":"defineTypeHash","used_by":["WAWebWamCodegenUtils"],"uses":1}]}

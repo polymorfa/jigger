@@ -1,0 +1,275 @@
+{
+  "id": "enum:BOT_ENTRY_POINT_TYPE",
+  "kind": "enum",
+  "name": "BOT_ENTRY_POINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBotEntryPointType",
+    "variants": [
+      {
+        "name": "WA_CHAT",
+        "value": 1.0
+      },
+      {
+        "name": "STATUS",
+        "value": 2.0
+      },
+      {
+        "name": "NEW_CHAT",
+        "value": 3.0
+      },
+      {
+        "name": "INVOKE",
+        "value": 4.0
+      },
+      {
+        "name": "SHARED_AI",
+        "value": 5.0
+      },
+      {
+        "name": "NOTIFICATION",
+        "value": 6.0
+      },
+      {
+        "name": "BANNER",
+        "value": 7.0
+      },
+      {
+        "name": "AI_CHATS_LIST_BUTTON",
+        "value": 8.0
+      },
+      {
+        "name": "AI_CONTACT_ON_WA",
+        "value": 9.0
+      },
+      {
+        "name": "DEEPLINK_USER_SHARED",
+        "value": 10.0
+      },
+      {
+        "name": "DEEPLINK_QP",
+        "value": 11.0
+      },
+      {
+        "name": "AI_SEARCH_CHATS_LIST",
+        "value": 12.0
+      },
+      {
+        "name": "CHAT_INFO_PAGE",
+        "value": 13.0
+      },
+      {
+        "name": "AI_VOICE",
+        "value": 14.0
+      },
+      {
+        "name": "AI_CHAT_SHORTCUT",
+        "value": 15.0
+      },
+      {
+        "name": "AI_IMAGINE_BOTTOM_SHEET",
+        "value": 16.0
+      },
+      {
+        "name": "AI_HOME_PREVIEW",
+        "value": 17.0
+      },
+      {
+        "name": "AI_SEARCH_CHATS_LIST_VOICE",
+        "value": 18.0
+      },
+      {
+        "name": "AI_CHAT_THREAD_VOICE",
+        "value": 19.0
+      },
+      {
+        "name": "AI_FAB_VOICE",
+        "value": 20.0
+      },
+      {
+        "name": "CHAT_INFO_SETTINGS",
+        "value": 21.0
+      },
+      {
+        "name": "CHAT_THREAD",
+        "value": 22.0
+      },
+      {
+        "name": "AI_MEMORY_BOTTOM_SHEET",
+        "value": 23.0
+      },
+      {
+        "name": "FORWARD",
+        "value": 24.0
+      },
+      {
+        "name": "AI_MEMORY_SYSTEM_MESSAGE",
+        "value": 25.0
+      },
+      {
+        "name": "AI_WIDGET",
+        "value": 26.0
+      },
+      {
+        "name": "SHARE",
+        "value": 27.0
+      },
+      {
+        "name": "AI_NEW_FAB_VOICE",
+        "value": 28.0
+      },
+      {
+        "name": "AI_TAB_DISCOVERY",
+        "value": 29.0
+      },
+      {
+        "name": "CHAT_LIST",
+        "value": 30.0
+      },
+      {
+        "name": "AI_TAB",
+        "value": 31.0
+      },
+      {
+        "name": "AI_HOME_IN_TAB",
+        "value": 32.0
+      },
+      {
+        "name": "AI_NULL_STATE",
+        "value": 33.0
+      },
+      {
+        "name": "AI_STUDIO_CREATION",
+        "value": 34.0
+      },
+      {
+        "name": "AI_STUDIO_PROFILE_EDIT",
+        "value": 35.0
+      },
+      {
+        "name": "BOT_SETTINGS",
+        "value": 36.0
+      },
+      {
+        "name": "META_AI_LONG_PRESS_CONTEXT_MENU",
+        "value": 37.0
+      },
+      {
+        "name": "FAB",
+        "value": 38.0
+      },
+      {
+        "name": "AI_NEW_FAB_VOICE_CALL_HISTORY",
+        "value": 39.0
+      },
+      {
+        "name": "AI_STUDIO_CREATION_FAB",
+        "value": 40.0
+      },
+      {
+        "name": "INVOKE_META_AI_1ON1",
+        "value": 41.0
+      },
+      {
+        "name": "INVOKE_META_AI_GROUP",
+        "value": 42.0
+      },
+      {
+        "name": "AI_STUDIO_YOUR_AI",
+        "value": 43.0
+      },
+      {
+        "name": "ASK_META_AI_CONTEXT_MENU",
+        "value": 44.0
+      },
+      {
+        "name": "META_AI_SETTINGS",
+        "value": 45.0
+      },
+      {
+        "name": "AI_STICKERS_BOTTOM_SHEET",
+        "value": 46.0
+      },
+      {
+        "name": "AI_WEB_NAVIGATION_BAR",
+        "value": 47.0
+      },
+      {
+        "name": "AI_WEB_INTRO_PANEL",
+        "value": 48.0
+      },
+      {
+        "name": "AI_CONTACTS_TAB",
+        "value": 49.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBotEntryPointType",
+    "matches": "BOT_ENTRY_POINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "BOT_ENTRY_POINT_TYPE",
+    "WA_CHAT",
+    "STATUS",
+    "NEW_CHAT",
+    "INVOKE",
+    "SHARED_AI",
+    "NOTIFICATION",
+    "BANNER",
+    "AI_CHATS_LIST_BUTTON",
+    "AI_CONTACT_ON_WA",
+    "DEEPLINK_USER_SHARED",
+    "DEEPLINK_QP",
+    "AI_SEARCH_CHATS_LIST",
+    "CHAT_INFO_PAGE",
+    "AI_VOICE",
+    "AI_CHAT_SHORTCUT",
+    "AI_IMAGINE_BOTTOM_SHEET",
+    "AI_HOME_PREVIEW",
+    "AI_SEARCH_CHATS_LIST_VOICE",
+    "AI_CHAT_THREAD_VOICE",
+    "AI_FAB_VOICE",
+    "CHAT_INFO_SETTINGS",
+    "CHAT_THREAD",
+    "AI_MEMORY_BOTTOM_SHEET",
+    "FORWARD",
+    "AI_MEMORY_SYSTEM_MESSAGE",
+    "AI_WIDGET",
+    "SHARE",
+    "AI_NEW_FAB_VOICE",
+    "AI_TAB_DISCOVERY",
+    "CHAT_LIST",
+    "AI_TAB",
+    "AI_HOME_IN_TAB",
+    "AI_NULL_STATE",
+    "AI_STUDIO_CREATION",
+    "AI_STUDIO_PROFILE_EDIT",
+    "BOT_SETTINGS",
+    "META_AI_LONG_PRESS_CONTEXT_MENU",
+    "FAB",
+    "AI_NEW_FAB_VOICE_CALL_HISTORY",
+    "AI_STUDIO_CREATION_FAB",
+    "INVOKE_META_AI_1ON1",
+    "INVOKE_META_AI_GROUP",
+    "AI_STUDIO_YOUR_AI",
+    "ASK_META_AI_CONTEXT_MENU",
+    "META_AI_SETTINGS",
+    "AI_STICKERS_BOTTOM_SHEET",
+    "AI_WEB_NAVIGATION_BAR",
+    "AI_WEB_INTRO_PANEL",
+    "AI_CONTACTS_TAB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBotJourneyWamEvent",
+      "WAWebBotLogging",
+      "WAWebBotLoggingUtils",
+      "WAWebContactInfoHatchDisconnectButton.react",
+      "WAWebMentionPickerPlugin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

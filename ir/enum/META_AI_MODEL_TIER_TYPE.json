@@ -1,0 +1,36 @@
+{
+  "id": "enum:META_AI_MODEL_TIER_TYPE",
+  "kind": "enum",
+  "name": "META_AI_MODEL_TIER_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMetaAiModelTierType",
+    "variants": [
+      {
+        "name": "BASE",
+        "value": 0.0
+      },
+      {
+        "name": "PREMIUM",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMetaAiModelTierType",
+    "matches": "META_AI_MODEL_TIER_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "META_AI_MODEL_TIER_TYPE",
+    "BASE",
+    "PREMIUM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDailyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

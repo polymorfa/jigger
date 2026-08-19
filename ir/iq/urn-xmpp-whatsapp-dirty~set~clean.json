@@ -1,0 +1,136 @@
+{
+  "id": "iq:urn:xmpp:whatsapp:dirty/set/clean",
+  "kind": "iq",
+  "name": "DirtyBitsClean",
+  "data": {
+    "kind": "iq",
+    "xmlns": "urn:xmpp:whatsapp:dirty",
+    "type": "set",
+    "tags": [
+      "clean"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "urn:xmpp:whatsapp:dirty",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "clean",
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxDirtyBitsCleanRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInDirtyBitsCleanResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInDirtyBitsCleanResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFeatureNotImplemented",
+          "IQErrorInternalServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutDirtyBitsCleanRequest",
+    "matches": "smax\\(\"clean\""
+  },
+  "literals": [
+    "urn:xmpp:whatsapp:dirty",
+    "clean"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutDirtyBitsBaseIQSetRequestMixin",
+      "WASmaxOutDirtyBitsTypeCleanOrCleanWithTimestampMixinGroup",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxDirtyBitsCleanRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebCountriesUtils","asyncToGeneratorRuntime","react","react-compiler-runtime","useWAWebEventTargetValue","useWAWebModelValues"],"dependents":["WAWebNewsletterChannelAlertsBanner.react"],"dependent_count":1,"exports":[{"name":"useNewsletterGeosuspendedCountries","used_by":["WAWebNewsletterChannelAlertsBanner.react"],"uses":1}]}

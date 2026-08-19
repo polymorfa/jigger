@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseModel"],"dependents":["WAWebCTWASuggestionCollection","WAWebNewCTWASuggestionAction"],"dependent_count":2,"exports":[{"name":"CTWASuggestionModel","used_by":["WAWebCTWASuggestionCollection"],"uses":1}]}

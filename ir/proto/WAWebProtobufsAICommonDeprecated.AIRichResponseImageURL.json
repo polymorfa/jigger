@@ -1,0 +1,42 @@
+{
+  "id": "proto:WAWebProtobufsAICommonDeprecated.AIRichResponseImageURL",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommonDeprecated.AIRichResponseImageURL",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "imageHighResUrl": {
+        "number": 2
+      },
+      "imagePreviewUrl": {
+        "number": 1
+      },
+      "sourceUrl": {
+        "number": 3
+      }
+    },
+    "module": "WAWebProtobufsAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseImageURL\""
+  },
+  "literals": [
+    "AIRichResponseImageURL"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebProtobufsE2E.pb",
+      "WAWebRichResponseGenerateUtils",
+      "WAWebRichResponseParseUtils",
+      "WAWebRichResponseUnknownFragmentUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

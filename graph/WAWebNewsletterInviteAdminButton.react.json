@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCellV2.react","WAWebNewsletterAdminSelectionFlow.react","WAWebNewsletterGatingUtils","WAWebPlusIcon.react","WAWebRoundShape.react","WAWebText.react","react","react-compiler-runtime","useWAWebModelValues"],"dependents":["WAWebNewsletterSubscriberListSection.react"],"dependent_count":1,"exports":[]}

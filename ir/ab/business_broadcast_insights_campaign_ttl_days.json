@@ -1,0 +1,42 @@
+{
+  "id": "ab:business_broadcast_insights_campaign_ttl_days",
+  "kind": "ab",
+  "name": "business_broadcast_insights_campaign_ttl_days",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27218,
+    "type": "int",
+    "default": 30,
+    "alt_default": 30
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "business_broadcast_insights_campaign_ttl_days:\\s*\\[\\s*27218"
+  },
+  "literals": [
+    "business_broadcast_insights_campaign_ttl_days",
+    "27218"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

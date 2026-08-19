@@ -1,0 +1,204 @@
+{
+  "id": "iq:w:g2/get/add_request+query",
+  "kind": "iq",
+  "name": "GroupsGetGroupInfo",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "get",
+    "tags": [
+      "add_request",
+      "query"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsGetGroupInfoRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsGetGroupInfoResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "group",
+              "attrs": [
+                {
+                  "name": "size",
+                  "ty": "int",
+                  "optional": true
+                }
+              ],
+              "card": "optional"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "AdminAddMode",
+          "AdminLinkMode",
+          "AdminShareMode",
+          "AllMembersAddMode",
+          "AllMembersLinkMode",
+          "AllMembersShareMode",
+          "GroupInfoParticipantAdmin",
+          "GroupInfoParticipantNonAdmin",
+          "NamedSubject",
+          "UnknownAddMode",
+          "UnknownLinkMode",
+          "UnknownShareMode",
+          "UnnamedSubjectFallback"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsGetGroupInfoResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFallbackClient",
+          "IQErrorForbidden",
+          "IQErrorGone",
+          "IQErrorItemNotFound",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsGetGroupInfoResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsGetGroupInfoRequest",
+    "matches": "smax\\(\"add_request\""
+  },
+  "literals": [
+    "w:g2",
+    "add_request",
+    "query"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxMixins",
+      "WASmaxOutGroupsAddRequestMixin",
+      "WASmaxOutGroupsBaseGetGroupMixin",
+      "WASmaxOutGroupsCodeMixin",
+      "WASmaxOutGroupsGetGroupInfoRequestTypeMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxGroupsGetGroupInfoRPC"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

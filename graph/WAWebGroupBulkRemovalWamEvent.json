@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumGroupBulkRemovalAction","WAWebWamEnumGroupBulkRemovalEntryPoint"],"dependents":["WAWebLinkJoinedMembersUtils"],"dependent_count":1,"exports":[{"name":"GroupBulkRemovalWamEvent","used_by":[],"uses":0}]}

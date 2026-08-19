@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCellFrame.react","WAWebClock","WAWebContactGetters","WAWebDetailImage.react","WAWebFrontendContactGetters","WAWebLeaveReasonType","WAWebUserPrefsMeUser","react","react-compiler-runtime","useWAWebContactValues"],"dependents":["WAWebGroupMemberUpdatesPanel.react"],"dependent_count":1,"exports":[]}

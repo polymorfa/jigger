@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPipCloseButton.react"],"dependent_count":2,"exports":[{"name":"VideoXIcon","used_by":["WAWebAllGeneratedIcons","WAWebPipCloseButton.react"],"uses":2}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_pdfn_tos_invoke_notice_id",
+  "kind": "ab",
+  "name": "ai_pdfn_tos_invoke_notice_id",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9483,
+    "type": "string",
+    "default": " ",
+    "alt_default": " "
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_pdfn_tos_invoke_notice_id:\\s*\\[\\s*9483"
+  },
+  "literals": [
+    "ai_pdfn_tos_invoke_notice_id",
+    "9483"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotTosIds"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "sig:iq/list",
+  "kind": "sig",
+  "name": "BlocklistsUpdateBlockListResponseSuccessWithMatch",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "list"
+    ],
+    "responds_to": "BlocklistsUpdateBlockList"
+  },
+  "evidence": {
+    "module": "WASmaxInBlocklistsUpdateBlockListResponseSuccessWithMatch",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "list"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseReference",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxBlocklistsUpdateBlockListRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

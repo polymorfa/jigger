@@ -1,0 +1,1 @@
+{"deps":["MAWDbMsgTxns","MAWDexieTable","MAWInMemoryThreadStore","MAWIndexedDb","MAWMarkThreadAsReadTxns","MAWTransactionMode"],"dependents":["MAWMarkThreadAsRead"],"dependent_count":1,"exports":[{"name":"markThreadAsReadUpTo","used_by":["MAWMarkThreadAsRead"],"uses":1}]}

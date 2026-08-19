@@ -1,0 +1,34 @@
+{
+  "id": "proto:WAMediaEntryData.MediaEntry.ProgressiveJpegDetails",
+  "kind": "proto",
+  "name": "WAMediaEntryData.MediaEntry.ProgressiveJpegDetails",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "scanLengths": {
+        "number": 1
+      },
+      "sidecar": {
+        "number": 2
+      }
+    },
+    "module": "WAMediaEntryData.pb"
+  },
+  "evidence": {
+    "module": "WAMediaEntryData.pb",
+    "matches": "name = \"MediaEntry.ProgressiveJpegDetails\""
+  },
+  "literals": [
+    "ProgressiveJpegDetails"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAMediaUtils"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

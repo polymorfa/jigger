@@ -1,0 +1,1 @@
+{"deps":["fbt","Promise","WAWebActionToast.react","WAWebFbtCommon","WAWebToast.react","WAWebToastManager","react"],"dependents":["WAWebBlockNewsletterQuestionResponsePopup.react","WAWebDeleteNewsletterQuestionResponsePopup.react","WAWebNewsletterToggleStarQuestionResponseAction","WAWebReportNewsletterQuestionResponsePopup.react"],"dependent_count":4,"exports":[]}

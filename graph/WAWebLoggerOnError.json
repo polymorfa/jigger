@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebCoreActionsODS","WAWebCrashlog","WAWebDbErrors","WAWebLoggerImpl","WAWebNoop","WAWebUim","gkx"],"dependents":["WAWebAppBootstrap"],"dependent_count":1,"exports":[{"name":"onErrorHandler","used_by":["WAWebAppBootstrap"],"uses":1},{"name":"onUnhandledPromiseRejection","used_by":["WAWebAppBootstrap"],"uses":1}]}

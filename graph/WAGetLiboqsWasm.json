@@ -1,0 +1,1 @@
+{"deps":["WALiboqsWasm","WALogger","WAResolvable","WAWasmModuleCache","bx","getErrorSafe"],"dependents":[],"dependent_count":0,"exports":[{"name":"WALiboqsWasmUrl","used_by":[],"uses":0},{"name":"loadLiboqsWasm","used_by":[],"uses":0}]}

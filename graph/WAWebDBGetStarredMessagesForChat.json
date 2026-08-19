@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebDBMessageSerialization","WAWebDBMessageUtils","WAWebSchemaMessage"],"dependents":["WAWebChatThreadLoggingEventStore","WAWebDBMessageFindLocal"],"dependent_count":2,"exports":[{"name":"getStarredMessagesForChat","used_by":["WAWebChatThreadLoggingEventStore","WAWebDBMessageFindLocal"],"uses":2}]}

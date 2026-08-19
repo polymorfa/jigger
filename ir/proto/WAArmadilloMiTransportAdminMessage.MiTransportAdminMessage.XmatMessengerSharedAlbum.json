@@ -1,0 +1,39 @@
+{
+  "id": "proto:WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerSharedAlbum",
+  "kind": "proto",
+  "name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerSharedAlbum",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "xmaDataclass": {
+        "number": 1
+      }
+    },
+    "module": "WAArmadilloMiTransportAdminMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloMiTransportAdminMessage.pb",
+    "matches": "name = \"MiTransportAdminMessage.XmatMessengerSharedAlbum\""
+  },
+  "literals": [
+    "XmatMessengerSharedAlbum"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleNotification",
+      "MAWMpsBridgeHandlers",
+      "MAWProtobufDeserializers",
+      "MpsAdminMsgToBridge",
+      "MpsThreadContentsPostProcessor",
+      "MpsToUIPostProcessor",
+      "WABuildMpsPayload",
+      "WmiMessengerE2EEIrisDeltaHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

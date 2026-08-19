@@ -1,0 +1,1 @@
+{"deps":["WAWebBotBaseGating","WAWebBotProfileGetters","WAWebMsgGetters","WAWebUseBusinessProfile.react","WAWebUserPrefsMeUser","react-compiler-runtime","useWAWebMsgValues","useWAWebOptionalBotProfileValues"],"dependents":["WAWebMessageText.react"],"dependent_count":1,"exports":[{"name":"useBotCommands","used_by":["WAWebMessageText.react"],"uses":1}]}

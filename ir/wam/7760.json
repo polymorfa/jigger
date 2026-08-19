@@ -1,0 +1,94 @@
+{
+  "id": "wam:7760",
+  "kind": "wam",
+  "name": "ConsumerBizInteractionJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 7760,
+    "fields": {
+      "businessJid": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "business_jid"
+      },
+      "consumerBizActionTarget": {
+        "id": 1,
+        "type": "CONSUMER_BIZ_ACTION_TARGET_ENUM",
+        "wire": "consumer_biz_action_target",
+        "enum_ref": "CONSUMER_BIZ_ACTION_TARGET_ENUM"
+      },
+      "consumerBizActionType": {
+        "id": 2,
+        "type": "CONSUMER_BIZ_ACTION_TYPE_ENUM",
+        "wire": "consumer_biz_action_type",
+        "enum_ref": "CONSUMER_BIZ_ACTION_TYPE_ENUM"
+      },
+      "consumerBizEntryPoint": {
+        "id": 3,
+        "type": "CONSUMER_BIZ_ENTRY_POINT_ENUM",
+        "wire": "consumer_biz_entry_point",
+        "enum_ref": "CONSUMER_BIZ_ENTRY_POINT_ENUM"
+      },
+      "consumerBizExtraAttributes": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "consumer_biz_extra_attributes"
+      },
+      "consumerBizFeature": {
+        "id": 5,
+        "type": "CONSUMER_BIZ_FEATURE_ENUM",
+        "wire": "consumer_biz_feature",
+        "enum_ref": "CONSUMER_BIZ_FEATURE_ENUM"
+      },
+      "consumerBizSeqId": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "consumer_biz_seq_id"
+      },
+      "consumerBizSessionId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "consumer_biz_session_id"
+      },
+      "consumerBizSurface": {
+        "id": 8,
+        "type": "CONSUMER_BIZ_SURFACE_ENUM",
+        "wire": "consumer_biz_surface",
+        "enum_ref": "CONSUMER_BIZ_SURFACE_ENUM"
+      },
+      "sensitiveExtraAttributes": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "sensitive_extra_attributes"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebConsumerBizInteractionJourneyWamEvent",
+    "matches": "ConsumerBizInteractionJourney:\\s*\\[\\s*7760"
+  },
+  "literals": [
+    "7760"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumConsumerBizActionTargetEnum",
+      "WAWebWamEnumConsumerBizActionTypeEnum",
+      "WAWebWamEnumConsumerBizEntryPointEnum",
+      "WAWebWamEnumConsumerBizFeatureEnum",
+      "WAWebWamEnumConsumerBizSurfaceEnum"
+    ],
+    "dependents": [
+      "WAWebAuthAgentConsumerJourneyLogger"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

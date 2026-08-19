@@ -1,0 +1,1 @@
+{"deps":["WAWebBotBaseGating","WAWebBotProfileCollection","WAWebBotUtils","WAWebMsgGetters","WAWebWidFactory"],"dependents":["WAWebChatForwardMessage","WAWebMediaForwardMediaMsg"],"dependent_count":2,"exports":[{"name":"getAiBotContextForForwardedMsg","used_by":["WAWebChatForwardMessage","WAWebMediaForwardMediaMsg"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["WABatcher","WAJobOrchestratorTypes","WASmaxReceiptPublishViewRPC","WAStanzaUtils","WAWap","WAWebNewsletterDBUtils","WAWebOrchestratorNonPersistedJob","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterSendViewReceiptAction"],"dependent_count":1,"exports":[{"name":"sendViewReceiptJob","used_by":["WAWebNewsletterSendViewReceiptAction"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChannelProducerInsightsNavigationWamEvent","WAWebNewsletterProducerInsightsLogger"],"dependent_count":2,"exports":[{"name":"CHANNEL_PRODUCER_INSIGHTS_SURFACE","used_by":["WAWebChannelProducerInsightsNavigationWamEvent","WAWebNewsletterProducerInsightsLogger"],"uses":2}]}

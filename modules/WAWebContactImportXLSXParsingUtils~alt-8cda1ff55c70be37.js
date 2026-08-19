@@ -1,0 +1,29 @@
+__d("WAWebContactImportXLSXParsingUtils", ["JSResourceForInteraction", "WALogger"], (function(t, n, r, o, a, i, l) {
+	var e, s, u, c;
+	async function d(t) {
+		var n;
+		try {
+			n = await r("JSResourceForInteraction")("xlsx").__setRef("WAWebContactImportXLSXParsingUtils").load(), o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["XLSX loaded ✓, processing file (", " bytes)"])), t.byteLength);
+		} catch (e) {
+			throw o("WALogger").ERROR(s || (s = babelHelpers.taggedTemplateLiteralLoose(["XLSX library loading failed: ", ""])), e).verbose().sendLogs("contact-import-xlsx-library-loading-failed", { sampling: 1 }), e;
+		}
+		try {
+			var a = n.read(t, { type: "array" }), i = a.SheetNames[0], l = a.Sheets[i], d = n.utils.sheet_to_json(l, {
+				header: 1,
+				raw: !1
+			}).map(function(e) {
+				return e.map(function(e) {
+					return e != null ? String(e) : "";
+				});
+			});
+			return o("WALogger").LOG(u || (u = babelHelpers.taggedTemplateLiteralLoose([
+				"Excel parsed ✓: ",
+				" rows from sheet \"",
+				"\""
+			])), d.length, i), d;
+		} catch (e) {
+			throw o("WALogger").ERROR(c || (c = babelHelpers.taggedTemplateLiteralLoose(["XLSX file parsing failed: ", ""])), e).verbose().sendLogs("contact-import-xlsx-file-parsing-failed", { sampling: 1 }), e;
+		}
+	}
+	l.loadXLSX = d;
+}), 98);

@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumMdAppStateKeyRotationReasonCode"],"dependents":["WAWebSyncdMetrics","WAWebWamProcessWorkerData"],"dependent_count":2,"exports":[{"name":"MdAppStateKeyRotationWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

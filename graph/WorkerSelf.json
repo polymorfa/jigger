@@ -1,0 +1,1 @@
+{"deps":["WorkerBanzaiLazyQueueChannelWorker","WorkerFuncChannel","WorkerQPLChannel"],"dependents":["WAMediaWasmWorker","WAWebMediaWasmWorker","WAWebVoipWebWasmWorker","WorkerBridgeAdaptor"],"dependent_count":4,"exports":[{"name":"init","used_by":["WAMediaWasmWorker","WAWebMediaWasmWorker","WAWebVoipWebWasmWorker","WorkerBridgeAdaptor"],"uses":4}]}

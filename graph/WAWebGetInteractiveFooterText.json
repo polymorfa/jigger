@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebABProps","WAWebInteractiveMessagesNativeFlowName","WAWebL10N","WAWebMsgType","WAWebOrderStatusButton","isStringNullOrEmpty"],"dependents":["WAWebBizFormatInteractiveMsg","WAWebInteractiveBubble.react","WAWebIsBloksOnlyMessage"],"dependent_count":3,"exports":[]}

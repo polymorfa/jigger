@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumWebScenarioCode","WAWebWamEnumWebTableLogReasonCode"],"dependents":["WAWebDBTableUsage","WAWebWamProcessWorkerData"],"dependent_count":2,"exports":[{"name":"WebDbTableUsageWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

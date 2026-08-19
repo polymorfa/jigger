@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_test_abprop_delete_me",
+  "kind": "ab",
+  "name": "web_test_abprop_delete_me",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27274,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_test_abprop_delete_me:\\s*\\[\\s*27274"
+  },
+  "literals": [
+    "web_test_abprop_delete_me",
+    "27274"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

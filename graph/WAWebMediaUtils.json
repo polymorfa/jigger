@@ -1,0 +1,1 @@
+{"deps":["WABinary"],"dependents":["WAWebBizProductListMessagePreview","WAWebListQuotedMsgThumbnailIcon","WAWebMsgNotification"],"dependent_count":3,"exports":[{"name":"convertToDataURI","used_by":["WAWebBizProductListMessagePreview","WAWebMsgNotification"],"uses":2},{"name":"convertToBase64","used_by":["WAWebListQuotedMsgThumbnailIcon"],"uses":1}]}

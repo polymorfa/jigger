@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChannelCoreEventWamEvent","WAWebChannelOpenWamEvent","WAWebNewsletterLoggingUtils"],"dependent_count":3,"exports":[{"name":"CHANNEL_ENTRY_POINT_METADATA","used_by":["WAWebChannelCoreEventWamEvent","WAWebChannelOpenWamEvent","WAWebNewsletterLoggingUtils"],"uses":3}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebChatGetters","WAWebNewsletterGatingUtils","WAWebNewsletterIsDomainPreviewableAction","WAWebStateUtils","asyncToGeneratorRuntime"],"dependents":["WAWebLinkPreviewChatAction"],"dependent_count":1,"exports":[{"name":"checkIfDomainIsPreviewable","used_by":["WAWebLinkPreviewChatAction"],"uses":1}]}

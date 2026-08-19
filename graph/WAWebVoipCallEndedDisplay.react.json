@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCallCollection","WAWebCallLogUtils","WAWebFlex.react","WAWebVoipWaCallEnums","WDSText.react","react","react-compiler-runtime"],"dependents":["WAWebVoipCallEndedScreen.react","WAWebVoipUiBody.react"],"dependent_count":2,"exports":[]}

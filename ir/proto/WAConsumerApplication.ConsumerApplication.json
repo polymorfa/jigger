@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "metadata": {
+        "number": 2,
+        "type_name": "WAConsumerApplication.ConsumerApplication.Metadata"
+      },
+      "payload": {
+        "number": 1,
+        "type_name": "WAConsumerApplication.ConsumerApplication.Payload"
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication\""
+  },
+  "literals": [
+    "ConsumerApplication"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

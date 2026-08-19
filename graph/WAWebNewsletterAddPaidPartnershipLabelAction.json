@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebDBMessageUtils","WAWebMsgCollection","WAWebNewsletterAddPaidPartnershipLabelJob","WAWebNewsletterDBUtils","asyncToGeneratorRuntime"],"dependents":["WAWebPaidPartnershipLabelModal.react"],"dependent_count":1,"exports":[{"name":"WAWebNewsletterAddPaidPartnershipLabelAction","used_by":["WAWebPaidPartnershipLabelModal.react"],"uses":1}]}

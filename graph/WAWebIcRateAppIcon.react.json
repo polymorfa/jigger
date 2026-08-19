@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebHelpItemIcon.react"],"dependent_count":2,"exports":[{"name":"IcRateAppIcon","used_by":["WAWebAllGeneratedIcons","WAWebHelpItemIcon.react"],"uses":2}]}

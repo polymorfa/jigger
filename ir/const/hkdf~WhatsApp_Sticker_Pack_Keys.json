@@ -1,0 +1,28 @@
+{
+  "id": "const:hkdf/WhatsApp Sticker Pack Keys",
+  "kind": "const",
+  "name": "WhatsApp Sticker Pack Keys",
+  "data": {
+    "kind": "const",
+    "group": "hkdf",
+    "value": "WhatsApp Sticker Pack Keys"
+  },
+  "evidence": {
+    "module": "WAWebCryptoMediaTypeInfo",
+    "matches": "WhatsApp Sticker Pack Keys"
+  },
+  "literals": [
+    "WhatsApp Sticker Pack Keys"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebMmsMediaTypes",
+      "err"
+    ],
+    "dependents": [
+      "WAWebCryptoCreateMediaKeys"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

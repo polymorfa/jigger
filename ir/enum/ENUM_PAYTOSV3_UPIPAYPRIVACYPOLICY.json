@@ -1,0 +1,37 @@
+{
+  "id": "enum:ENUM_PAYTOSV3_UPIPAYPRIVACYPOLICY",
+  "kind": "enum",
+  "name": "ENUM_PAYTOSV3_UPIPAYPRIVACYPOLICY",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInAccountEnums",
+    "variants": [
+      {
+        "name": "pay_tos_v3",
+        "value": "pay_tos_v3"
+      },
+      {
+        "name": "upi_pay_privacy_policy",
+        "value": "upi_pay_privacy_policy"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAccountEnums",
+    "matches": "ENUM_PAYTOSV3_UPIPAYPRIVACYPOLICY\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_PAYTOSV3_UPIPAYPRIVACYPOLICY",
+    "pay_tos_v3",
+    "upi_pay_privacy_policy"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInAccountSetPaymentsTOSv3BRConsumerPaymentsTOSv3ResponseMixin",
+      "WASmaxInAccountSetPaymentsTOSv3UPIConsumerPaymentsTOSv3ResponseMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

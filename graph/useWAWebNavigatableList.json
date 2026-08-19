@@ -1,0 +1,1 @@
+{"deps":["WAWebNavigatableList","WAWebSingleSelection","react","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebMenuController.react","WAWebSettingsDrawer.react"],"dependent_count":2,"exports":[{"name":"useNavigatableList","used_by":["WAWebMenuController.react","WAWebSettingsDrawer.react"],"uses":2}]}

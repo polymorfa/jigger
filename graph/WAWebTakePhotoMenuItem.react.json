@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebDropdownItem.react","WAWebEditCaptureFlowLoadable","WAWebModal.react","WAWebModalManager","WAWebProfileCropTool.react","react","react-compiler-runtime"],"dependents":["WAWebLegacyPhotoPickerImpl.react"],"dependent_count":1,"exports":[]}

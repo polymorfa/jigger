@@ -1,0 +1,42 @@
+{
+  "id": "ab:hand_raise_receiver_enabled",
+  "kind": "ab",
+  "name": "hand_raise_receiver_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13540,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "hand_raise_receiver_enabled:\\s*\\[\\s*13540"
+  },
+  "literals": [
+    "hand_raise_receiver_enabled",
+    "13540"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

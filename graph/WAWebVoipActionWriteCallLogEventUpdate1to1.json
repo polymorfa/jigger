@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebCallLogMsgData.flow","WAWebCallLogUtils","WAWebMsgKey","WAWebVoipActionWriteCallLogImpl","WAWebVoipWaCallEnums","asyncToGeneratorRuntime"],"dependents":["WAWebVoipBridgeCallLogHandlers"],"dependent_count":1,"exports":[{"name":"generateCallLogFromEventUpdate1to1","used_by":["WAWebVoipBridgeCallLogHandlers"],"uses":1}]}

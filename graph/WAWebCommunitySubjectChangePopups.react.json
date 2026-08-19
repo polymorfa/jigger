@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebModalManager","WAWebSetSubjectGroupAction","fbs","react"],"dependents":["WAWebCommunityHomeTopCard.react","WAWebSetSubjectGroupAction","useWAWebShowCommunitySubjectSyncIssue"],"dependent_count":3,"exports":[]}

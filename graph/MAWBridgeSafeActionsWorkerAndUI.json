@@ -1,0 +1,1 @@
+{"deps":["ExecutionEnvironment","FBLogger","MAWBridge","Promise","ifRequireable"],"dependents":["LSGetLatestThreadIds.nop"],"dependent_count":1,"exports":[{"name":"sendAndReceiveBackendWorkerAndUIShared","used_by":["LSGetLatestThreadIds.nop"],"uses":1},{"name":"fireAndForgetBackendWorkerAndUIShared","used_by":[],"uses":0}]}

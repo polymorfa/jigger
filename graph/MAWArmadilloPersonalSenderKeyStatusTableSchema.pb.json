@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst"],"dependents":["MAWDbObjDecode","MAWDbObjEncode"],"dependent_count":2,"exports":[{"name":"PersonalSenderKeyStatusTableSchemaProtoSpec","used_by":["MAWDbObjDecode","MAWDbObjEncode"],"uses":2}]}

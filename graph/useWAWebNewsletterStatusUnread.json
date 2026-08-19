@@ -1,0 +1,1 @@
+{"deps":["WAWebContactGetters","WAWebNewsletterCollection","WAWebNewsletterGatingUtils","WAWebStatusCollection","WAWebUserPrefsNewsletter","react","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebNewslettersNavBarItem.react"],"dependent_count":1,"exports":[{"name":"useWAWebNewsletterStatusUnread","used_by":["WAWebNewslettersNavBarItem.react"],"uses":1}]}

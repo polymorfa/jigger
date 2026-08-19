@@ -1,0 +1,1 @@
+{"deps":["WAWebSettingsConst","react-compiler-runtime","useWAWebBestQuickPromotionForSurface"],"dependents":["WAWebExitedGroupQPSurface.react","WAWebProfileQuickPromotionSurface.react"],"dependent_count":2,"exports":[{"name":"usePrivacyTipQuickPromotion","used_by":["WAWebExitedGroupQPSurface.react","WAWebProfileQuickPromotionSurface.react"],"uses":2}]}

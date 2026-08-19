@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebContactCollection","WAWebConversationBackground.react","WAWebDetailImage.react","WAWebFlex.react","WAWebFrontendContactGetters","WAWebTailInIcon.react","WAWebUserPrefsMeUser","WAWebWallpaper","WDSText.react","react","react-compiler-runtime"],"dependents":["WAWebMemberLabelCreateUpdateModal.react"],"dependent_count":1,"exports":[]}

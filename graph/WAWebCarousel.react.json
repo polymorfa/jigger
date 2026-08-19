@@ -1,0 +1,1 @@
+{"deps":["WAWebChevronCustomIcons","WAWebChevronIcon.react","WAWebResizeObserver","WAWebStopEvent","WDSIconIcChevronLeft.react","WDSIconIcChevronRight.react","react","react-compiler-runtime","useWAWebAnimationFrames"],"dependents":["WAWebInteractiveMessageCarousel.react","WAWebRecUnitCarouselSection.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

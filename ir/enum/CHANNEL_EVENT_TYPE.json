@@ -1,0 +1,116 @@
+{
+  "id": "enum:CHANNEL_EVENT_TYPE",
+  "kind": "enum",
+  "name": "CHANNEL_EVENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChannelEventType",
+    "variants": [
+      {
+        "name": "FOLLOW",
+        "value": 1.0
+      },
+      {
+        "name": "UNFOLLOW",
+        "value": 2.0
+      },
+      {
+        "name": "MUTE",
+        "value": 3.0
+      },
+      {
+        "name": "UNMUTE",
+        "value": 4.0
+      },
+      {
+        "name": "PREMIUM_SUBSCRIBE",
+        "value": 5.0
+      },
+      {
+        "name": "PREMIUM_UNSUBSCRIBE",
+        "value": 6.0
+      },
+      {
+        "name": "CHANNEL_PREMIUM_SETUP",
+        "value": 7.0
+      },
+      {
+        "name": "CHANNEL_PREMIUM_CANCEL",
+        "value": 8.0
+      },
+      {
+        "name": "HIDE",
+        "value": 9.0
+      },
+      {
+        "name": "UNHIDE",
+        "value": 10.0
+      },
+      {
+        "name": "CREATE",
+        "value": 11.0
+      },
+      {
+        "name": "DELETE",
+        "value": 12.0
+      },
+      {
+        "name": "ADMIN_PROFILE_CREATE",
+        "value": 13.0
+      },
+      {
+        "name": "ADMIN_PROFILE_UPDATE",
+        "value": 14.0
+      },
+      {
+        "name": "ADMIN_PROFILE_DELETE",
+        "value": 15.0
+      },
+      {
+        "name": "ADMIN_PROFILE_SETTING_ENABLE",
+        "value": 16.0
+      },
+      {
+        "name": "ADMIN_PROFILE_SETTING_DISABLE",
+        "value": 17.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChannelEventType",
+    "matches": "CHANNEL_EVENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CHANNEL_EVENT_TYPE",
+    "FOLLOW",
+    "UNFOLLOW",
+    "MUTE",
+    "UNMUTE",
+    "PREMIUM_SUBSCRIBE",
+    "PREMIUM_UNSUBSCRIBE",
+    "CHANNEL_PREMIUM_SETUP",
+    "CHANNEL_PREMIUM_CANCEL",
+    "HIDE",
+    "UNHIDE",
+    "CREATE",
+    "DELETE",
+    "ADMIN_PROFILE_CREATE",
+    "ADMIN_PROFILE_UPDATE",
+    "ADMIN_PROFILE_DELETE",
+    "ADMIN_PROFILE_SETTING_ENABLE",
+    "ADMIN_PROFILE_SETTING_DISABLE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelCoreEventWamEvent",
+      "WAWebNewNewsletterInfoDrawer.react",
+      "WAWebNewsletterDeleteModal.react",
+      "WAWebNewsletterSubscribeAction",
+      "WAWebNewsletterUnsubscribeAction",
+      "WAWebNewsletterUpdateUserSettingsAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

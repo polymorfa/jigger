@@ -1,0 +1,42 @@
+{
+  "id": "ab:evolve_about_m1_receiver_enabled",
+  "kind": "ab",
+  "name": "evolve_about_m1_receiver_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5839,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "evolve_about_m1_receiver_enabled:\\s*\\[\\s*5839"
+  },
+  "literals": [
+    "evolve_about_m1_receiver_enabled",
+    "5839"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

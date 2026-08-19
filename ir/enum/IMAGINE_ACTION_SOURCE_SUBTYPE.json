@@ -1,0 +1,36 @@
+{
+  "id": "enum:IMAGINE_ACTION_SOURCE_SUBTYPE",
+  "kind": "enum",
+  "name": "IMAGINE_ACTION_SOURCE_SUBTYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumImagineActionSourceSubtype",
+    "variants": [
+      {
+        "name": "IMAGINE_EDIT",
+        "value": 1.0
+      },
+      {
+        "name": "IMAGINE_ME",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumImagineActionSourceSubtype",
+    "matches": "IMAGINE_ACTION_SOURCE_SUBTYPE\\s*[:=]"
+  },
+  "literals": [
+    "IMAGINE_ACTION_SOURCE_SUBTYPE",
+    "IMAGINE_EDIT",
+    "IMAGINE_ME"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebImagineActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebAppealPictograms.react","WAWebReportPictograms.react"],"dependent_count":3,"exports":[{"name":"WdsPictoTextFeedbackNegativeIcon","used_by":["WAWebAllGeneratedIcons","WAWebAppealPictograms.react","WAWebReportPictograms.react"],"uses":3}]}

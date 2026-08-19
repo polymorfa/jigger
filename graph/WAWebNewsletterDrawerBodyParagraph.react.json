@@ -1,0 +1,1 @@
+{"deps":["WAWebText.react","WDSMargins.stylex","react","react-compiler-runtime","stylex"],"dependents":["WAWebNewsletterDeleteDrawer.react","WAWebNewsletterTransferOwnershipDrawer.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

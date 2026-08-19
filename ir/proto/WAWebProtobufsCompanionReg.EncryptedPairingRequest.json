@@ -1,0 +1,41 @@
+{
+  "id": "proto:WAWebProtobufsCompanionReg.EncryptedPairingRequest",
+  "kind": "proto",
+  "name": "WAWebProtobufsCompanionReg.EncryptedPairingRequest",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "encryptedPayload": {
+        "number": 1
+      },
+      "iv": {
+        "number": 2
+      }
+    },
+    "module": "WAWebProtobufsCompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsCompanionReg.pb",
+    "matches": "name = \"EncryptedPairingRequest\""
+  },
+  "literals": [
+    "EncryptedPairingRequest"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebHandlePairSuccess",
+      "WAWebProtobufsE2E.pb",
+      "WAWebShortcakeLinkingAlgorithm",
+      "WAWebShortcakeLinkingApi",
+      "WAWebShortcakeLinkingPairingRequest",
+      "WAWebShortcakeLinkingPasskeyPrologue"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

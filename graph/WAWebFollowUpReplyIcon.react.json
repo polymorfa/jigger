@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMessageMeta.react","WAWebViewRepliesLabel.react"],"dependent_count":3,"exports":[{"name":"FollowUpReplyIcon","used_by":["WAWebAllGeneratedIcons","WAWebMessageMeta.react","WAWebViewRepliesLabel.react"],"uses":3}]}

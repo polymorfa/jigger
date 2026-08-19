@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebWamInitQueue"],"dependents":["WAWebWam","WAWebWamCodegenUtils","WAWebWamCodegenWamEvent","WAWebWamInitQueue"],"dependent_count":4,"exports":[{"name":"getWamRuntime","used_by":["WAWebWamCodegenUtils","WAWebWamCodegenWamEvent","WAWebWamInitQueue"],"uses":3},{"name":"setWamRuntime","used_by":["WAWebWam"],"uses":1}]}

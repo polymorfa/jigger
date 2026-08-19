@@ -1,0 +1,91 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterMessageReactionSenderListJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterMessageReactionSenderListJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "29575462448733991",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletters_reaction_sender_list",
+        "ty": "XWA2NewsletterReactionSenderListResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "reactions",
+            "ty": "XWA2NewsletterReactionWithSenders",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "reaction_code",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "sender_list",
+                "ty": "XWA2NewsletterSubscriberConnection",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "edges",
+                    "ty": "XWA2NewsletterSubscriberEdge",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "node",
+                        "ty": "XWA2User",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "profile_pic_direct_path",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletters_reaction_sender_list",
+    "document": "# persisted document 29575462448733991\nquery MexFetchNewsletterMessageReactionSenderListJobQuery(\n  $input\n) {\n  xwa2_newsletters_reaction_sender_list(input: $input) {  # XWA2NewsletterReactionSenderListResponse\n    reactions {  # [XWA2NewsletterReactionWithSenders]\n      reaction_code\n      sender_list {  # XWA2NewsletterSubscriberConnection\n        edges {  # [XWA2NewsletterSubscriberEdge]\n          node {  # XWA2User\n            id\n            profile_pic_direct_path\n          }\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterMessageReactionSenderListJobQuery.graphql",
+    "matches": "id:\\s*\"29575462448733991\""
+  },
+  "literals": [
+    "29575462448733991",
+    "WAWebMexFetchNewsletterMessageReactionSenderListJobQuery",
+    "xwa2_newsletters_reaction_sender_list"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterMessageReactionSenderListJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

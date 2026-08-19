@@ -1,0 +1,1 @@
+{"deps":["fbt","WAShiftTimer","WAWebSocketModel","WAWebWamEnumWebcButterbarActionType","WAWebWamEnumWebcButterbarBbType","WAWebWebcButterbarEventWamEvent","WDSBanner.react","react","useLazyRef"],"dependents":["WAWebPrimaryButterbar.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebChatLockUtils","WAWebCmd","react","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebChatLockedEntryPoint.react"],"dependent_count":1,"exports":[{"name":"useChatLockEvents","used_by":["WAWebChatLockedEntryPoint.react"],"uses":1}]}

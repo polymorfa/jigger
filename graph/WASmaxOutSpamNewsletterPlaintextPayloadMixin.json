@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins"],"dependents":["WASmaxOutSpamStatusNewsletterMediaMixin","WASmaxOutSpamStatusNewsletterTextMixin"],"dependent_count":2,"exports":[{"name":"mergeNewsletterPlaintextPayloadMixin","used_by":["WASmaxOutSpamStatusNewsletterMediaMixin","WASmaxOutSpamStatusNewsletterTextMixin"],"uses":2}]}

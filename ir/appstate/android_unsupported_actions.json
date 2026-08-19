@@ -1,0 +1,41 @@
+{
+  "id": "appstate:android_unsupported_actions",
+  "kind": "appstate",
+  "name": "AndroidUnsupportedActions",
+  "data": {
+    "kind": "appstate",
+    "index_name": "android_unsupported_actions",
+    "collection": "regular_low",
+    "version": 4,
+    "value_field": "androidUnsupportedActions"
+  },
+  "evidence": {
+    "module": "WAWebAndroidUnsupportedActionsSync",
+    "matches": "Actions\\.AndroidUnsupportedActions"
+  },
+  "literals": [
+    "android_unsupported_actions",
+    "AndroidUnsupportedActions",
+    "androidUnsupportedActions"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebUserPrefsAppStateSync"
+    ],
+    "dependents": [
+      "WAWebArchiveSettingSync",
+      "WAWebClearChatSync",
+      "WAWebCollectionHandlerActions",
+      "WAWebDeleteChatSync",
+      "WAWebPinChatSync",
+      "WAWebSyncdDbCallbacksApi"
+    ],
+    "dep_count": 6,
+    "dependent_count": 6
+  }
+}

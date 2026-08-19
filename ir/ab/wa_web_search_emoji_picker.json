@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_search_emoji_picker",
+  "kind": "ab",
+  "name": "wa_web_search_emoji_picker",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27857,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_search_emoji_picker:\\s*\\[\\s*27857"
+  },
+  "literals": [
+    "wa_web_search_emoji_picker",
+    "27857"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

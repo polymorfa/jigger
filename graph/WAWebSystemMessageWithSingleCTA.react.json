@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebKeyboardIsKeyActivation","WAWebMsgType","WAWebWamEnumSystemMessageCategoryType","WDSFontTokenStyles","react","react-compiler-runtime","stylex"],"dependents":["WAWebMessageGroupNotification.react","WAWebMessageHistoryBundleMessage.react","WAWebMessageHistoryNoticeMessage.react","WAWebMessageNotification.react"],"dependent_count":4,"exports":[]}

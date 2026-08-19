@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebPttMessageUserJourneyLogger","WAWebPttMessageUserJourneyWamEvent"],"dependent_count":2,"exports":[{"name":"PTT_MESSAGE_USER_JOURNEY_ACTION","used_by":["WAWebPttMessageUserJourneyLogger","WAWebPttMessageUserJourneyWamEvent"],"uses":2}]}

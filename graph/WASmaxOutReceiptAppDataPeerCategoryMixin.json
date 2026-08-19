@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins"],"dependents":["WASmaxOutReceiptPublishAppDataPeerDeliveryRequest"],"dependent_count":1,"exports":[{"name":"mergeAppDataPeerCategoryMixin","used_by":["WASmaxOutReceiptPublishAppDataPeerDeliveryRequest"],"uses":1}]}

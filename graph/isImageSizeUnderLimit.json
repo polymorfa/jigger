@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAFlowsDynamicDataValidationUtils","WAFlowsMJVRules","WDSNativeImage.react"],"dependent_count":3,"exports":[{"name":"isImageSizeUnderLimit","used_by":["WAFlowsDynamicDataValidationUtils","WAFlowsMJVRules","WDSNativeImage.react"],"uses":3}]}

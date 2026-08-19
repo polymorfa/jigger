@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps","react","react-compiler-runtime","useWAWebStableCallback"],"dependents":["WAWebVoipUiVideoCallSelfPreview.react","useWAWebVoipVideoCallCanvasPolling","useWAWebVoipVideoCallContainerSize"],"dependent_count":3,"exports":[{"name":"current","used_by":[],"uses":0},{"name":"default","used_by":[],"uses":0}]}

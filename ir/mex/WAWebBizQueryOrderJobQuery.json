@@ -1,0 +1,151 @@
+{
+  "id": "mex:WAWebBizQueryOrderJobQuery",
+  "kind": "mex",
+  "name": "WAWebBizQueryOrderJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26593811266898374",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "args": [
+      {
+        "name": "request"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_checkout_get_order_info",
+        "ty": "XWACheckoutGetOrderInfoResponseSuccess",
+        "args": [
+          "request: $request"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "order",
+            "ty": "XWACheckoutGetOrderInfoResponseSuccessOrder",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "creation_time_stamp",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "products",
+                "ty": "XWACatalogProduct",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "name",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "price",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "currency",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "variant_info",
+                    "ty": "XWACatalogProductVariantInfo",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "variant_properties",
+                        "ty": "XWACatalogVariantProperties",
+                        "plural": true,
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "name",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "value",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "media",
+                    "ty": "XWAProductCatalogProductMedia",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "images",
+                        "ty": "XWAProductCatalogProductMediaImage",
+                        "plural": true,
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "request_image_url",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "quantity",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "price_details",
+                "ty": "XWACheckoutPriceDetails",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "subtotal_amount",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "currency",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "total_amount",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26593811266898374\nquery BizQueryOrderJobQuery(\n  $request\n) {\n  xwa_checkout_get_order_info(request: $request) {  # XWACheckoutGetOrderInfoResponseSuccess\n    order {  # XWACheckoutGetOrderInfoResponseSuccessOrder\n      creation_time_stamp\n      products {  # [XWACatalogProduct]\n        id\n        name\n        price\n        currency\n        variant_info {  # XWACatalogProductVariantInfo\n          variant_properties {  # [XWACatalogVariantProperties]\n            name\n            value\n          }\n        }\n        media {  # XWAProductCatalogProductMedia\n          images {  # [XWAProductCatalogProductMediaImage]\n            id\n            request_image_url\n          }\n        }\n        quantity\n      }\n      price_details {  # XWACheckoutPriceDetails\n        subtotal_amount\n        currency\n        total_amount\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebBizQueryOrderJobQuery.graphql",
+    "matches": "id:\\s*\"26593811266898374\""
+  },
+  "literals": [
+    "26593811266898374",
+    "WAWebBizQueryOrderJobQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizQueryOrderJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

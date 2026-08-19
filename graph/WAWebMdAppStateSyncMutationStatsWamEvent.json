@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumMutationCountBucket"],"dependents":["WAWebSyncdReportSyncdStatJob","WAWebWamProcessWorkerData"],"dependent_count":2,"exports":[{"name":"MdAppStateSyncMutationStatsWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

@@ -1,0 +1,683 @@
+__d("WAWebMexFetchGroupInfoJobQuery.graphql", [], (function(t, n, r, o, a, i) {
+	"use strict";
+	var e = (function() {
+		var e = {
+			defaultValue: null,
+			kind: "LocalArgument",
+			name: "id"
+		}, t = {
+			defaultValue: null,
+			kind: "LocalArgument",
+			name: "include_username"
+		}, n = {
+			defaultValue: null,
+			kind: "LocalArgument",
+			name: "participants_phash"
+		}, r = {
+			defaultValue: null,
+			kind: "LocalArgument",
+			name: "query_context"
+		}, o = [{
+			fields: [
+				{
+					kind: "Variable",
+					name: "group_id",
+					variableName: "id"
+				},
+				{
+					kind: "Variable",
+					name: "participants_phash",
+					variableName: "participants_phash"
+				},
+				{
+					kind: "Variable",
+					name: "query_context",
+					variableName: "query_context"
+				}
+			],
+			kind: "ObjectValue",
+			name: "group_input"
+		}], a = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "id",
+			storageKey: null
+		}, i = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "creation_time",
+			storageKey: null
+		}, l = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "lid",
+			storageKey: null
+		}, s = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "pn",
+			storageKey: null
+		}, u = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "username",
+				storageKey: null
+			}],
+			type: "XWA2Username",
+			abstractKey: null
+		}, c = {
+			condition: "include_username",
+			kind: "Condition",
+			passingValue: !0,
+			selections: [{
+				alias: null,
+				args: null,
+				concreteType: null,
+				kind: "LinkedField",
+				name: "username_info",
+				plural: !1,
+				selections: [u],
+				storageKey: null
+			}]
+		}, d = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2User",
+			kind: "LinkedField",
+			name: "creator",
+			plural: !1,
+			selections: [
+				a,
+				l,
+				s,
+				c
+			],
+			storageKey: null
+		}, m = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "state",
+			storageKey: null
+		}, p = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "value",
+			storageKey: null
+		}, _ = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "display_name",
+			storageKey: null
+		}, f = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "role",
+			storageKey: null
+		}, g = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "join_time",
+			storageKey: null
+		}, h = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "group_history_sent",
+			storageKey: null
+		}, y = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "participants_phash_match",
+			storageKey: null
+		}, C = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "total_participants_count",
+			storageKey: null
+		}, b = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "missing_participant_identification",
+			storageKey: null
+		}, v = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "appeal_status",
+			storageKey: null
+		}, S = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "appeal_update_time",
+			storageKey: null
+		}, R = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2GroupLimitSharingSetting",
+			kind: "LinkedField",
+			name: "limit_sharing",
+			plural: !1,
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "limit_sharing_enabled",
+				storageKey: null
+			}],
+			storageKey: null
+		}, L = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2GroupLIDMigrationState",
+			kind: "LinkedField",
+			name: "lid_migration_state",
+			plural: !1,
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "addressing_mode",
+				storageKey: null
+			}],
+			storageKey: null
+		}, E = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				concreteType: "XWA2CommunityProperties",
+				kind: "LinkedField",
+				name: "properties",
+				plural: !1,
+				selections: [
+					{
+						alias: null,
+						args: null,
+						kind: "ScalarField",
+						name: "allow_non_admin_sub_group_creation",
+						storageKey: null
+					},
+					{
+						alias: null,
+						args: null,
+						kind: "ScalarField",
+						name: "closed_by_membership_approval_mode",
+						storageKey: null
+					},
+					v,
+					S,
+					R,
+					L
+				],
+				storageKey: null
+			}],
+			type: "XWA2CommunityGroup",
+			abstractKey: null
+		}, k = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2GroupEphemeralSetting",
+			kind: "LinkedField",
+			name: "ephemeral",
+			plural: !1,
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "expiration_time_in_sec",
+				storageKey: null
+			}],
+			storageKey: null
+		}, I = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "locked",
+			storageKey: null
+		}, T = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2GroupGrowthLocked",
+			kind: "LinkedField",
+			name: "growth_locked2",
+			plural: !1,
+			selections: [I],
+			storageKey: null
+		}, D = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "member_add_mode",
+			storageKey: null
+		}, x = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "parent_group_jid",
+			storageKey: null
+		}, $ = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "group_safety_check",
+			storageKey: null
+		}, P = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				concreteType: "XWA2CommunityDefaultSubGroupProperties",
+				kind: "LinkedField",
+				name: "properties",
+				plural: !1,
+				selections: [
+					k,
+					T,
+					L,
+					D,
+					x,
+					$,
+					v,
+					S,
+					R
+				],
+				storageKey: null
+			}],
+			type: "XWA2CommunityDefaultSubGroup",
+			abstractKey: null
+		}, N = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "allow_admin_reports",
+			storageKey: null
+		}, M = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "announcement",
+			storageKey: null
+		}, w = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "member_link_mode",
+			storageKey: null
+		}, A = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "member_share_group_history_mode",
+			storageKey: null
+		}, F = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "membership_approval_mode_enabled",
+			storageKey: null
+		}, O = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "membership_approval_request",
+				storageKey: null
+			}, {
+				alias: null,
+				args: null,
+				concreteType: "XWA2CommunitySubGroupProperties",
+				kind: "LinkedField",
+				name: "properties",
+				plural: !1,
+				selections: [
+					N,
+					M,
+					k,
+					T,
+					L,
+					I,
+					D,
+					w,
+					A,
+					F,
+					x,
+					{
+						alias: null,
+						args: null,
+						kind: "ScalarField",
+						name: "general_chat",
+						storageKey: null
+					},
+					{
+						alias: null,
+						args: null,
+						kind: "ScalarField",
+						name: "auto_add_disabled",
+						storageKey: null
+					},
+					{
+						alias: null,
+						args: null,
+						kind: "ScalarField",
+						name: "hidden_group",
+						storageKey: null
+					},
+					$,
+					v,
+					S,
+					R
+				],
+				storageKey: null
+			}],
+			type: "XWA2CommunitySubGroup",
+			abstractKey: null
+		}, B = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				concreteType: "XWA2GroupRegularGroupProperties",
+				kind: "LinkedField",
+				name: "properties",
+				plural: !1,
+				selections: [
+					N,
+					M,
+					{
+						alias: null,
+						args: null,
+						kind: "ScalarField",
+						name: "capi",
+						storageKey: null
+					},
+					k,
+					T,
+					L,
+					I,
+					D,
+					w,
+					A,
+					F,
+					{
+						alias: null,
+						args: null,
+						kind: "ScalarField",
+						name: "support",
+						storageKey: null
+					},
+					$,
+					v,
+					S,
+					R
+				],
+				storageKey: null
+			}],
+			type: "XWA2GroupRegularGroup",
+			abstractKey: null
+		}, W = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "__typename",
+			storageKey: null
+		}, q = {
+			condition: "include_username",
+			kind: "Condition",
+			passingValue: !0,
+			selections: [{
+				alias: null,
+				args: null,
+				concreteType: null,
+				kind: "LinkedField",
+				name: "username_info",
+				plural: !1,
+				selections: [W, u],
+				storageKey: null
+			}]
+		}, U = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2User",
+			kind: "LinkedField",
+			name: "creator",
+			plural: !1,
+			selections: [
+				a,
+				l,
+				s,
+				q
+			],
+			storageKey: null
+		};
+		return {
+			fragment: {
+				argumentDefinitions: [
+					e,
+					t,
+					n,
+					r
+				],
+				kind: "Fragment",
+				metadata: null,
+				name: "WAWebMexFetchGroupInfoJobQuery",
+				selections: [{
+					alias: null,
+					args: o,
+					concreteType: null,
+					kind: "LinkedField",
+					name: "xwa2_group_query_by_id",
+					plural: !1,
+					selections: [
+						a,
+						i,
+						d,
+						m,
+						{
+							alias: null,
+							args: null,
+							concreteType: "XWA2GroupSubject",
+							kind: "LinkedField",
+							name: "subject",
+							plural: !1,
+							selections: [
+								d,
+								i,
+								p
+							],
+							storageKey: null
+						},
+						{
+							alias: null,
+							args: null,
+							concreteType: "XWA2GroupDescription",
+							kind: "LinkedField",
+							name: "description",
+							plural: !1,
+							selections: [
+								a,
+								i,
+								d,
+								p
+							],
+							storageKey: null
+						},
+						{
+							alias: null,
+							args: null,
+							concreteType: "XWA2GroupParticipantsConnection",
+							kind: "LinkedField",
+							name: "participants",
+							plural: !1,
+							selections: [{
+								alias: null,
+								args: null,
+								concreteType: "XWA2GroupParticipantEdge",
+								kind: "LinkedField",
+								name: "edges",
+								plural: !0,
+								selections: [
+									{
+										alias: null,
+										args: null,
+										concreteType: "XWA2User",
+										kind: "LinkedField",
+										name: "node",
+										plural: !1,
+										selections: [
+											a,
+											l,
+											s,
+											_,
+											c
+										],
+										storageKey: null
+									},
+									f,
+									g,
+									h
+								],
+								storageKey: null
+							}, y],
+							storageKey: null
+						},
+						C,
+						b,
+						E,
+						P,
+						O,
+						B
+					],
+					storageKey: null
+				}],
+				type: "Query",
+				abstractKey: null
+			},
+			kind: "Request",
+			operation: {
+				argumentDefinitions: [
+					e,
+					r,
+					t,
+					n
+				],
+				kind: "Operation",
+				name: "WAWebMexFetchGroupInfoJobQuery",
+				selections: [{
+					alias: null,
+					args: o,
+					concreteType: null,
+					kind: "LinkedField",
+					name: "xwa2_group_query_by_id",
+					plural: !1,
+					selections: [
+						W,
+						a,
+						i,
+						U,
+						m,
+						{
+							alias: null,
+							args: null,
+							concreteType: "XWA2GroupSubject",
+							kind: "LinkedField",
+							name: "subject",
+							plural: !1,
+							selections: [
+								U,
+								i,
+								p
+							],
+							storageKey: null
+						},
+						{
+							alias: null,
+							args: null,
+							concreteType: "XWA2GroupDescription",
+							kind: "LinkedField",
+							name: "description",
+							plural: !1,
+							selections: [
+								a,
+								i,
+								U,
+								p
+							],
+							storageKey: null
+						},
+						{
+							alias: null,
+							args: null,
+							concreteType: "XWA2GroupParticipantsConnection",
+							kind: "LinkedField",
+							name: "participants",
+							plural: !1,
+							selections: [{
+								alias: null,
+								args: null,
+								concreteType: "XWA2GroupParticipantEdge",
+								kind: "LinkedField",
+								name: "edges",
+								plural: !0,
+								selections: [
+									{
+										alias: null,
+										args: null,
+										concreteType: "XWA2User",
+										kind: "LinkedField",
+										name: "node",
+										plural: !1,
+										selections: [
+											a,
+											l,
+											s,
+											_,
+											q
+										],
+										storageKey: null
+									},
+									f,
+									g,
+									h
+								],
+								storageKey: null
+							}, y],
+							storageKey: null
+						},
+						C,
+						b,
+						E,
+						P,
+						O,
+						B
+					],
+					storageKey: null
+				}]
+			},
+			params: {
+				id: "27508847222068472",
+				metadata: {},
+				name: "WAWebMexFetchGroupInfoJobQuery",
+				operationKind: "query",
+				text: null
+			}
+		};
+	})();
+	a.exports = e;
+}), null);

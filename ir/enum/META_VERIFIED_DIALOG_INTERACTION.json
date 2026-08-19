@@ -1,0 +1,46 @@
+{
+  "id": "enum:META_VERIFIED_DIALOG_INTERACTION",
+  "kind": "enum",
+  "name": "META_VERIFIED_DIALOG_INTERACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMetaVerifiedDialogInteraction",
+    "variants": [
+      {
+        "name": "IMPRESSION",
+        "value": 1.0
+      },
+      {
+        "name": "CONFIRM",
+        "value": 2.0
+      },
+      {
+        "name": "LEARN_MORE",
+        "value": 3.0
+      },
+      {
+        "name": "CANCEL",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMetaVerifiedDialogInteraction",
+    "matches": "META_VERIFIED_DIALOG_INTERACTION\\s*[:=]"
+  },
+  "literals": [
+    "META_VERIFIED_DIALOG_INTERACTION",
+    "IMPRESSION",
+    "CONFIRM",
+    "LEARN_MORE",
+    "CANCEL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaVerifiedUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

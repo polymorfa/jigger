@@ -1,0 +1,41 @@
+{
+  "id": "mex:WAWebCanonicalHatchChannelUnlinkMutation",
+  "kind": "mex",
+  "name": "WAWebCanonicalHatchChannelUnlinkMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27856697387325731",
+    "operation": "mutation",
+    "variables": [],
+    "selections": [
+      {
+        "name": "wa_genai_hatch_channel_unlink",
+        "ty": "WaGenaiHatchChannelUnlinkResponsePayload",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 27856697387325731\nmutation CanonicalHatchChannelUnlinkMutation {\n  wa_genai_hatch_channel_unlink {  # WaGenaiHatchChannelUnlinkResponsePayload\n    success\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebCanonicalHatchChannelUnlinkMutation.graphql",
+    "matches": "id:\\s*\"27856697387325731\""
+  },
+  "literals": [
+    "27856697387325731",
+    "WAWebCanonicalHatchChannelUnlinkMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCanonicalHatchChannelUnlinkMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["emptyFunction","react","react-compiler-runtime"],"dependents":["MWV2ComposerEditContainer.react","useMAWEditMessageData","useTriggerEditAction"],"dependent_count":3,"exports":[{"name":"Context","used_by":["MWV2ComposerEditContainer.react","useMAWEditMessageData","useTriggerEditAction"],"uses":3},{"name":"MAWEditMessageContext","used_by":[],"uses":0}]}

@@ -1,0 +1,127 @@
+{
+  "id": "wam:2770",
+  "kind": "wam",
+  "name": "LwiEntryTap",
+  "data": {
+    "kind": "wam",
+    "event_id": 2770,
+    "fields": {
+      "activeItemsCount": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "active_items_count"
+      },
+      "archivedItemsCount": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "archived_items_count"
+      },
+      "businessToolsSessionId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "business_tools_session_id"
+      },
+      "catalogSessionId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "catalog_session_id"
+      },
+      "itemsCount": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "items_count"
+      },
+      "lwiEntryPoint": {
+        "id": 3,
+        "type": "LWI_ENTRY_POINT",
+        "wire": "lwi_entry_point",
+        "enum_ref": "LWI_ENTRY_POINT"
+      },
+      "lwiExtras": {
+        "id": 17,
+        "type": "STRING",
+        "wire": "lwi_extras"
+      },
+      "lwiFlowId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "lwi_flow_id"
+      },
+      "lwiSubEntryPoint": {
+        "id": 7,
+        "type": "LWI_SUB_ENTRY_POINT",
+        "wire": "lwi_sub_entry_point",
+        "enum_ref": "LWI_SUB_ENTRY_POINT"
+      },
+      "notificationLogId": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "notification_log_id"
+      },
+      "previousLwiFlowId": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "previous_lwi_flow_id"
+      },
+      "statusId": {
+        "id": 18,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "statusSessionId": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "status_session_id"
+      },
+      "statusTypeMedia": {
+        "id": 12,
+        "type": "STATUS_TYPE_MEDIA",
+        "wire": "status_type_media",
+        "enum_ref": "STATUS_TYPE_MEDIA"
+      },
+      "userHasLinkedFbPage": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "user_has_linked_fb_page"
+      },
+      "waCampaignId": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "wa_campaign_id"
+      },
+      "webFlowType": {
+        "id": 19,
+        "type": "WEB_FLOW_TYPE",
+        "wire": "web_flow_type",
+        "enum_ref": "WEB_FLOW_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebLwiEntryTapWamEvent",
+    "matches": "LwiEntryTap:\\s*\\[\\s*2770"
+  },
+  "literals": [
+    "2770"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumLwiEntryPoint",
+      "WAWebWamEnumLwiSubEntryPoint",
+      "WAWebWamEnumStatusTypeMedia",
+      "WAWebWamEnumWebFlowType"
+    ],
+    "dependents": [
+      "WAWebBizNativeAdsEntryTapLogger"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

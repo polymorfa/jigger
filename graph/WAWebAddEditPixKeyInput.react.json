@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBizPaymentsBrazilAddPixModal.react","WAWebBrazilPixKeyValidationUtils","WAWebFlex.react","WAWebPixWamLogger","WAWebUserPrefsTypes","WAWebWamEnumPaymentActionTargets","WAWebWamEnumPaymentActionTypes","WDSTextField.react","react","react-compiler-runtime"],"dependents":["WAWebBizPaymentsBrazilAddPixModalRefreshed.react"],"dependent_count":1,"exports":[]}

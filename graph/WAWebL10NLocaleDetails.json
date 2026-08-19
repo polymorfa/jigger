@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebLocaleCommandPalettePlugin"],"dependent_count":1,"exports":[{"name":"L10N_LOCALE_DETAILS","used_by":["WAWebLocaleCommandPalettePlugin"],"uses":1}]}

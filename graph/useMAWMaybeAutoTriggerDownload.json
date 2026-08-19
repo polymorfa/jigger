@@ -1,0 +1,1 @@
+{"deps":["MAWDownloadMediaInWorkerDeferred","MAWMediaDownloadStatus","MAWRetryReceiverFetchSticker","gkx","hero-tracing-placeholder","isReceiverFetchSticker","react","react-compiler-runtime","useAsyncReStore"],"dependents":["MAWAttachmentStateHandlerContentBase.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

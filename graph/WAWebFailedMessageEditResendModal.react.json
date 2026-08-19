@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFlex.react","WAWebModalManager","WAWebMsgActionCapability","WAWebSendMessageEditAction","WAWebText_DONOTUSE.react","react","react-compiler-runtime"],"dependents":["WAWebMsgSendFailIcon.react"],"dependent_count":1,"exports":[]}

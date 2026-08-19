@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWWebWorkerSingleton","MAWWorkerWatchdog"],"dependent_count":2,"exports":[{"name":"getWorkerRecoveryForWatchdog","used_by":["MAWWorkerWatchdog"],"uses":1},{"name":"setRecoveryForWatchdog","used_by":["MAWWebWorkerSingleton"],"uses":1}]}

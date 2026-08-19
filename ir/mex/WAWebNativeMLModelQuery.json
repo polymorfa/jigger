@@ -1,0 +1,156 @@
+{
+  "id": "mex:WAWebNativeMLModelQuery",
+  "kind": "mex",
+  "name": "WAWebNativeMLModelQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "32743078615336512",
+    "operation": "query",
+    "variables": [
+      "model_request_metadatas",
+      "client_capability_metadata"
+    ],
+    "args": [
+      {
+        "name": "model_request_metadatas"
+      },
+      {
+        "name": "client_capability_metadata"
+      }
+    ],
+    "selections": [
+      {
+        "name": "aim_model_batched_manifest",
+        "ty": "AIMModelManifest",
+        "args": [
+          "client_capability_metadata: $client_capability_metadata",
+          "model_request_metadatas: $model_request_metadatas"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "models",
+            "ty": "NativeMLModelMetadata",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "name",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "version",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "assets",
+                "ty": "NativeMLModelAssetMetadata",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "name",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "cache_key",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "source_content_hash",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "md5_hash",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "asset_handle",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "creation_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "url",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "filesize_bytes",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "compression_type",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "asset_type",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "properties",
+                "ty": "Pair",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "name",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "value",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "entry_point",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "asset_count",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "model_count",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "status",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "status_details",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 32743078615336512\nquery NativeMLModelQuery(\n  $model_request_metadatas\n  $client_capability_metadata\n) {\n  aim_model_batched_manifest(client_capability_metadata: $client_capability_metadata, model_request_metadatas: $model_request_metadatas) {  # AIMModelManifest\n    models {  # [NativeMLModelMetadata]\n      name\n      version\n      assets {  # [NativeMLModelAssetMetadata]\n        name\n        id\n        cache_key\n        source_content_hash\n        md5_hash\n        asset_handle\n        creation_time\n        url\n        filesize_bytes\n        compression_type\n        asset_type\n      }\n      properties {  # [Pair]\n        name\n        value\n      }\n    }\n    entry_point\n    asset_count\n    model_count\n    status\n    status_details\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebNativeMLModelQuery.graphql",
+    "matches": "id:\\s*\"32743078615336512\""
+  },
+  "literals": [
+    "32743078615336512",
+    "WAWebNativeMLModelQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNativeMLModelQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "enum:BACKGROUND_STYLE",
+  "kind": "enum",
+  "name": "BACKGROUND_STYLE",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "BLACK",
+        "value": "black"
+      },
+      {
+        "name": "DEFAULT",
+        "value": "default"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "BACKGROUND_STYLE\\s*[:=]"
+  },
+  "literals": [
+    "BACKGROUND_STYLE",
+    "BLACK",
+    "DEFAULT"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

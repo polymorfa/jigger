@@ -1,0 +1,1 @@
+{"deps":["fbt","WALongInt","WAWeb-moment","WAWebChatContactUtils","WAWebContactCollection","WAWebContactGetters","WAWebFrontendContactGetters"],"dependents":["WAWebFormatMsgText","WAWebMessageHistoryNoticeMessage.react"],"dependent_count":2,"exports":[]}

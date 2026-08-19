@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_3p_contacts_share_hybrid",
+  "kind": "ab",
+  "name": "enable_3p_contacts_share_hybrid",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 20849,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_3p_contacts_share_hybrid:\\s*\\[\\s*20849"
+  },
+  "literals": [
+    "enable_3p_contacts_share_hybrid",
+    "20849"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

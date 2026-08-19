@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAMediaTransport.StickerTransport",
+  "kind": "proto",
+  "name": "WAMediaTransport.StickerTransport",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "ancillary": {
+        "number": 2,
+        "type_name": "WAMediaTransport.StickerTransport.Ancillary"
+      },
+      "integral": {
+        "number": 1,
+        "type_name": "WAMediaTransport.StickerTransport.Integral"
+      }
+    },
+    "module": "WAMediaTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMediaTransport.pb",
+    "matches": "name = \"StickerTransport\""
+  },
+  "literals": [
+    "StickerTransport"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EncryptedBackupsCreateAttachmentContext",
+      "MAWAsConsumerApplication",
+      "MAWEncodeMediaTransportProtocol",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWMpsMigrationProtobufCorrectnessCheckerArmadilloComparisons",
+      "MAWParseNoteReplyMsg",
+      "MAWParseRavenMsg",
+      "MAWProtobufDeserializers",
+      "WAParseConsumerMessageProtocol",
+      "WAParseMediaTransportProtocol",
+      "getMediaTypeFromConsumerMessage"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

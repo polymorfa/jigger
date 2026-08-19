@@ -1,0 +1,1 @@
+{"deps":["SiteData"],"dependents":["MAWCometStickerPickerSearchResultsRootGQL.entrypoint"],"dependent_count":1,"exports":[{"name":"get","used_by":["MAWCometStickerPickerSearchResultsRootGQL.entrypoint"],"uses":1}]}

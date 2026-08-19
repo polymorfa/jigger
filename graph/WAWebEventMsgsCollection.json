@@ -1,0 +1,1 @@
+{"deps":["Promise","WAFilteredCatch","WALogger","WAWebBackendErrors","WAWebBaseCollection","WAWebCollectionConstants","WAWebFrontendMsgGetters","WAWebMsgModel","WAWebMsgQueryUtils","WAWebNoop","WAWebSocketConstants","WAWebSocketModel"],"dependents":["WAWebChatModel"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

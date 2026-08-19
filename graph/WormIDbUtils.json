@@ -1,0 +1,1 @@
+{"deps":["Promise","WAIDBTypes","err"],"dependents":["WASignalDB","WormIDbDriver"],"dependent_count":2,"exports":[{"name":"openIDb","used_by":["WormIDbDriver"],"uses":1},{"name":"promisifyIDbRequest","used_by":["WASignalDB"],"uses":1}]}

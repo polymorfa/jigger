@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCatalogCollection","WAWebProductCatalogSendCatalogButton.react","WAWebSelectModal.react","nullthrows","react","react-compiler-runtime"],"dependents":["WAWebBizAttachProductModal.react","WAWebBizBroadcastMessageAttachmentSection.react"],"dependent_count":2,"exports":[]}

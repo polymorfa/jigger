@@ -1,0 +1,1 @@
+{"deps":["Int64Hooks","MAWMessageIntegrityCheckDeferred","MAWMessageIntegrityCheckFlytrapQueue","MetaConfig","Random","WATimeUtils","cr:10710","react-compiler-runtime","useMWEntrypoint"],"dependents":["MAWMessageList.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

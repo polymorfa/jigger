@@ -1,0 +1,1 @@
+{"deps":["WACryptoManager","WAGetKeysForUpload","WAGlobals","WAMakeSignedPreKeyMixin","WAPromiseRetryLoop","WAResultOrError","WARetryUtils","WASmaxPreKeysSetRPC","WATagsLogger","WAWap","asyncToGeneratorRuntime"],"dependents":["WAGenerateAndUploadPreKeys"],"dependent_count":1,"exports":[{"name":"generateAndUploadPreKeysProtocol","used_by":["WAGenerateAndUploadPreKeys"],"uses":1}]}

@@ -1,0 +1,69 @@
+{
+  "id": "enum:WEBC_STICKER_MAKER_EVENT_NAME_TYPE",
+  "kind": "enum",
+  "name": "WEBC_STICKER_MAKER_EVENT_NAME_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcStickerMakerEventNameType",
+    "variants": [
+      {
+        "name": "STICKER_MAKER_BUTTON_TAP",
+        "value": 0.0
+      },
+      {
+        "name": "IMAGE_UPLOADED",
+        "value": 1.0
+      },
+      {
+        "name": "IMAGE_CROPPED",
+        "value": 2.0
+      },
+      {
+        "name": "EMOJI_ADDED",
+        "value": 3.0
+      },
+      {
+        "name": "STICKER_ADDED",
+        "value": 4.0
+      },
+      {
+        "name": "TEXT_ADDED",
+        "value": 5.0
+      },
+      {
+        "name": "IMAGE_OUTLINED",
+        "value": 6.0
+      },
+      {
+        "name": "SEND_STICKER",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcStickerMakerEventNameType",
+    "matches": "WEBC_STICKER_MAKER_EVENT_NAME_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_STICKER_MAKER_EVENT_NAME_TYPE",
+    "STICKER_MAKER_BUTTON_TAP",
+    "IMAGE_UPLOADED",
+    "IMAGE_CROPPED",
+    "EMOJI_ADDED",
+    "STICKER_ADDED",
+    "TEXT_ADDED",
+    "IMAGE_OUTLINED",
+    "SEND_STICKER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAttachMenuPopupItemStickers.react",
+      "WAWebComposeBox.react",
+      "WAWebMediaEditor.react",
+      "WAWebWebcStickerMakerEventsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

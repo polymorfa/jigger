@@ -1,0 +1,1 @@
+{"deps":["WALogger","WATagsLogger","asyncToGeneratorRuntime","once"],"dependents":["WAWebAppInitializer.react"],"dependent_count":1,"exports":[{"name":"requestPersistentStore","used_by":["WAWebAppInitializer.react"],"uses":1}]}

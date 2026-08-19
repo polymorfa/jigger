@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCreateEmojiIcon","WAWebKeyboardHotKeys.react","WAWebKeyboardRotateFocusArrows.react","WAWebL10N","WAWebReactionGatingUtils","WAWebReactionUserJourneyLogger","WDSButton.react","WDSGlobalContext","WDSIconIcAdd.react","react","react-compiler-runtime","stylex","useWAWebOnUnmount"],"dependents":["WAWebSendReactionsTray.react"],"dependent_count":1,"exports":[]}

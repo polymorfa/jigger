@@ -1,0 +1,1 @@
+{"deps":["WABase64","WASignalKeys","WAWebDbEncryptionKey","WAWebUserPrefsCacheStorage","WAWebUserPrefsKeys","asyncToGeneratorRuntime"],"dependents":["WAWebWorkerChatSocketPlatformDetails"],"dependent_count":1,"exports":[{"name":"getWaNoiseInfo","used_by":["WAWebWorkerChatSocketPlatformDetails"],"uses":1}]}

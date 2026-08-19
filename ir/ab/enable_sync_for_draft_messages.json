@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_sync_for_draft_messages",
+  "kind": "ab",
+  "name": "enable_sync_for_draft_messages",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29314,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_sync_for_draft_messages:\\s*\\[\\s*29314"
+  },
+  "literals": [
+    "enable_sync_for_draft_messages",
+    "29314"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:aura_media_offload_benefit_active",
+  "kind": "ab",
+  "name": "aura_media_offload_benefit_active",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29308,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "aura_media_offload_benefit_active:\\s*\\[\\s*29308"
+  },
+  "literals": [
+    "aura_media_offload_benefit_active",
+    "29308"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

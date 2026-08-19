@@ -1,0 +1,47 @@
+{
+  "id": "ab:favorites_limit",
+  "kind": "ab",
+  "name": "favorites_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7267,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "favorites_limit:\\s*\\[\\s*7267"
+  },
+  "literals": [
+    "favorites_limit",
+    "7267"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebAddToFavoritesAction",
+      "WAWebAddToFavoritesModal.react",
+      "WAWebCreateOrEditListDrawer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "wam:1124",
+  "kind": "wam",
+  "name": "GifFromProviderSent",
+  "data": {
+    "kind": "wam",
+    "event_id": 1124,
+    "fields": {
+      "gifSearchProvider": {
+        "id": 1,
+        "type": "GIF_SEARCH_PROVIDER",
+        "wire": "gif_search_provider",
+        "enum_ref": "GIF_SEARCH_PROVIDER"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGifFromProviderSentWamEvent",
+    "matches": "GifFromProviderSent:\\s*\\[\\s*1124"
+  },
+  "literals": [
+    "1124"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGifSearchProvider"
+    ],
+    "dependents": [
+      "WAWebGifPanelGifSearch.react"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

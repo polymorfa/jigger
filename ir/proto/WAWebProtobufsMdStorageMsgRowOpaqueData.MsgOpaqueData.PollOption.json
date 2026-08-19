@@ -1,0 +1,38 @@
+{
+  "id": "proto:WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.PollOption",
+  "kind": "proto",
+  "name": "WAWebProtobufsMdStorageMsgRowOpaqueData.MsgOpaqueData.PollOption",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "hash": {
+        "number": 2
+      },
+      "name": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsMdStorageMsgRowOpaqueData.pb",
+    "matches": "name = \"MsgOpaqueData.PollOption\""
+  },
+  "literals": [
+    "PollOption"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebDBMessageSerialization",
+      "WAWebFtsV3MessageSource",
+      "WAWebMsgOpaqueData",
+      "WAWebPollCreationUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

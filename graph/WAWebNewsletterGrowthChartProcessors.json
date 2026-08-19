@@ -1,0 +1,1 @@
+{"deps":["WALogger","WATimeUtils","WAWebNewsletterMetricUtils"],"dependents":["WAWebPopulateNewsletterInsightsAction"],"dependent_count":1,"exports":[{"name":"FOLLOWER_GROWTH_PROCESSOR","used_by":["WAWebPopulateNewsletterInsightsAction"],"uses":1}]}

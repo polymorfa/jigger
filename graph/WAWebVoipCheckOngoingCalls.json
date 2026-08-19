@@ -1,0 +1,1 @@
+{"deps":["WAWebVoipOngoingCallCollection","WAWebVoipStackInterface","asyncToGeneratorRuntime"],"dependents":["WAWebCallsNavBarItem.react","WAWebVoipRevalidateOngoingCallsOnResume"],"dependent_count":2,"exports":[{"name":"checkOngoingCalls","used_by":["WAWebCallsNavBarItem.react","WAWebVoipRevalidateOngoingCallsOnResume"],"uses":2}]}

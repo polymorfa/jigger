@@ -1,0 +1,1 @@
+{"deps":["WAWebL10N","WAWebWrapperTailIcon.react"],"dependents":["WAWebMessageAlbumWrapper.react","WAWebMessageContainer.react","WAWebMessageWrapper.react","WAWebTypingIndicator.react"],"dependent_count":4,"exports":[{"name":"getTailIcon","used_by":["WAWebMessageAlbumWrapper.react","WAWebMessageContainer.react","WAWebMessageWrapper.react","WAWebTypingIndicator.react"],"uses":4}]}

@@ -1,0 +1,1 @@
+{"deps":["MAWDexieTable","MAWIndexedDb","MAWTransactionMode"],"dependents":["MAWBridgeHandlers","MAWPreloadEBMetadataCache","MAWWarmInMemoryParticipantStore"],"dependent_count":3,"exports":[{"name":"getLatestChatJids","used_by":["MAWBridgeHandlers","MAWPreloadEBMetadataCache","MAWWarmInMemoryParticipantStore"],"uses":3}]}

@@ -1,0 +1,1 @@
+{"deps":["I64","MAWMiActOnMiThreadExistsForJid__DO_NOT_USE","Promise","ServerTime","WAChatState","emptyFunction"],"dependents":["MAWBridgeUIEventHandler","MAWSetupBridge"],"dependent_count":2,"exports":[{"name":"call","used_by":["MAWBridgeUIEventHandler","MAWSetupBridge"],"uses":2}]}

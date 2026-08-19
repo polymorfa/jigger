@@ -1,0 +1,1 @@
+{"deps":["WAWebPonyfillsCryptoRandomUUID"],"dependents":["WAWebSNAPLUserPrefs"],"dependent_count":1,"exports":[{"name":"castToSNAPLPersistentId","used_by":["WAWebSNAPLUserPrefs"],"uses":1},{"name":"computeSNAPLPersistentId","used_by":["WAWebSNAPLUserPrefs"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebDisplayType","WAWebFrontendMsgGetters","WAWebMessagePosition","WAWebMsgGetters","WAWebMsgType","WAWebNewsletterGatingUtils","WAWebPipIsParsableOnlineVideoUrl","WAWebWid"],"dependents":["WAWebMessageWrapper.react"],"dependent_count":1,"exports":[{"name":"shouldDisplayAuthor","used_by":["WAWebMessageWrapper.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseModel"],"dependents":["WAWebNewsletterEnforcementAlertCollection","WAWebNewsletterEnforcementAlertModel"],"dependent_count":2,"exports":[{"name":"NewsletterEnforcementAppeal","used_by":["WAWebNewsletterEnforcementAlertModel"],"uses":1}]}

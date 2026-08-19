@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCommonMsgSubtypeTypes","WAWebFbtCommon","WAWebGroupHistoryPostJoinEligibility","WAWebGroupHistoryPostJoinSubtype","WAWebMsgType","WAWebText_DONOTUSE.react","WAWebUserPrefsMeUser","WAWebWid","react"],"dependents":["WAWebLimitSharingUIUtils","WAWebMessageGroupNotification.react","WAWebMessageNotification.react"],"dependent_count":3,"exports":[]}

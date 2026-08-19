@@ -1,0 +1,62 @@
+__d("WAWebGroupMemberUpdateUsernameRow.react", [
+	"fbt",
+	"WAWebCellFrame.react",
+	"WAWebClock",
+	"WAWebContactCollection",
+	"WAWebContactGetters",
+	"WAWebDetailImage.react",
+	"WAWebFrontendContactGetters",
+	"WAWebWamEnumOppositeVisibleIdentificationType",
+	"WAWebWid",
+	"WAWebWidFactory",
+	"isStringNullOrEmpty",
+	"react",
+	"useWAWebContactValues"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u = e || (e = o("react"));
+	function c(e) {
+		var t, n, a = e.msg, i = e.onClick, l = (t = a.templateParams) != null ? t : [], s = typeof l[0] == "string" ? l[0] : "", c = typeof l[1] == "string" ? l[1] : "", m = l[2], p = null;
+		m != null && m instanceof r("WAWebWid") ? p = m : typeof m == "string" && (p = o("WAWebWidFactory").createUserWidOrThrow(m));
+		var _ = p != null ? o("WAWebContactCollection").ContactCollection.get(p) : null, f = (n = _ == null ? void 0 : _.id) != null ? n : p, g = o("useWAWebContactValues").useContactValues(f != null ? f : a.id.remote, [o("WAWebContactGetters").getId]), h = g[0], y;
+		if (_ != null) {
+			var C = o("WAWebFrontendContactGetters").getFormattedSavedNameOrPushnameWithType(_);
+			C != null ? y = C.type === o("WAWebWamEnumOppositeVisibleIdentificationType").OPPOSITE_VISIBLE_IDENTIFICATION_TYPE.PUSHNAME ? "~" + C.displayName : C.displayName : y = null;
+		} else y = null;
+		var b = d(y, s, c), v = o("WAWebClock").Clock.pastParticipantOnDateAtTime(a.t, "");
+		return u.jsx(r("WAWebCellFrame.react"), {
+			image: h != null ? u.jsx(o("WAWebDetailImage.react").DetailImage, { id: h }) : null,
+			primary: b,
+			secondary: v,
+			onClick: i
+		});
+	}
+	c.displayName = c.name + " [from " + i.id + "]";
+	function d(e, t, n) {
+		return r("isStringNullOrEmpty")(t) && !r("isStringNullOrEmpty")(n) ? e != null ? s._(
+			/*BTDS*/
+			"",
+			[s._param("name", e), s._param("username", n)]
+		) : s._(
+			/*BTDS*/
+			"",
+			[s._param("username", n)]
+		) : !r("isStringNullOrEmpty")(t) && r("isStringNullOrEmpty")(n) ? e != null ? s._(
+			/*BTDS*/
+			"",
+			[s._param("name", e)]
+		) : s._(
+			/*BTDS*/
+			"",
+			[s._param("username", t)]
+		) : e != null ? s._(
+			/*BTDS*/
+			"",
+			[s._param("name", e), s._param("username", n)]
+		) : s._(
+			/*BTDS*/
+			"",
+			[s._param("oldUsername", t), s._param("username", n)]
+		);
+	}
+	l.default = c;
+}), 226);

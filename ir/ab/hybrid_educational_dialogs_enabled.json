@@ -1,0 +1,42 @@
+{
+  "id": "ab:hybrid_educational_dialogs_enabled",
+  "kind": "ab",
+  "name": "hybrid_educational_dialogs_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14674,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "hybrid_educational_dialogs_enabled:\\s*\\[\\s*14674"
+  },
+  "literals": [
+    "hybrid_educational_dialogs_enabled",
+    "14674"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

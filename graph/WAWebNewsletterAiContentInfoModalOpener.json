@@ -1,0 +1,1 @@
+{"deps":["invariant","WAWebModalManager","WAWebNewsletterAiContentInfoModalLoadable","WAWebNewsletterAiContentInfoModalTypes","react"],"dependents":["WAWebMediaPanelHeader.react","WAWebNewsletterAILabelBanner.react","WAWebNewsletterAddAiContentLabelFlow","WAWebStatusSubtitle.react"],"dependent_count":4,"exports":[]}

@@ -1,0 +1,75 @@
+{
+  "id": "mex:WAWebFetchOHAIKeyConfigJobQuery",
+  "kind": "mex",
+  "name": "WAWebFetchOHAIKeyConfigJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "29366514836329275",
+    "operation": "query",
+    "variables": [],
+    "selections": [
+      {
+        "name": "xwa2_ohai_configurations",
+        "ty": "XWA2OHAIConfigsResponse",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "ohai_configs",
+            "ty": "XWA2OHAIConfig",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "aead_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "expiration_date",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "kdf_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "kem_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "key_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "last_updated_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "public_key",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_ohai_configurations",
+    "document": "# persisted document 29366514836329275\nquery FetchOHAIKeyConfigJobQuery {\n  xwa2_ohai_configurations {  # XWA2OHAIConfigsResponse\n    ohai_configs {  # [XWA2OHAIConfig]\n      aead_id\n      expiration_date\n      kdf_id\n      kem_id\n      key_id\n      last_updated_time\n      public_key\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebFetchOHAIKeyConfigJobQuery.graphql",
+    "matches": "id:\\s*\"29366514836329275\""
+  },
+  "literals": [
+    "29366514836329275",
+    "WAWebFetchOHAIKeyConfigJobQuery",
+    "xwa2_ohai_configurations"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebFetchOHAIKeyConfigJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

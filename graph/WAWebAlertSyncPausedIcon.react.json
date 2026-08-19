@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebConversationLoadMoreMessagesHistorySync"],"dependent_count":2,"exports":[{"name":"AlertSyncPausedIcon","used_by":["WAWebAllGeneratedIcons","WAWebConversationLoadMoreMessagesHistorySync"],"uses":2}]}

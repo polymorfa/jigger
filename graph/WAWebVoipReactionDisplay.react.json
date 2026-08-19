@@ -1,0 +1,1 @@
+{"deps":["WAWebEmoji","WAWebEmoji.react","react","react-compiler-runtime","stylex"],"dependents":["WAWebVoipSelfPreviewRaisedHandAndReactionsOverlay.react","WAWebVoipUiVideoCall.react","WAWebVoipUiVideoCallPeerVideo.react","WAWebVoipVoiceCallContainer.react"],"dependent_count":4,"exports":[{"name":"default","used_by":[],"uses":0}]}

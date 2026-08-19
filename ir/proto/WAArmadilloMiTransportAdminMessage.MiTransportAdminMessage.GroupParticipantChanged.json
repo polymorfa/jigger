@@ -1,0 +1,42 @@
+{
+  "id": "proto:WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.GroupParticipantChanged",
+  "kind": "proto",
+  "name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.GroupParticipantChanged",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "action": {
+        "number": 2
+      },
+      "targetUserId": {
+        "number": 1
+      }
+    },
+    "module": "WAArmadilloMiTransportAdminMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloMiTransportAdminMessage.pb",
+    "matches": "name = \"MiTransportAdminMessage.GroupParticipantChanged\""
+  },
+  "literals": [
+    "GroupParticipantChanged"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleNotification",
+      "MAWMpsBridgeHandlers",
+      "MAWProtobufDeserializers",
+      "MpsAdminMsgToBridge",
+      "MpsThreadContentsPostProcessor",
+      "MpsToUIPostProcessor",
+      "WABuildMpsPayload",
+      "WmiMessengerE2EEIrisDeltaHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

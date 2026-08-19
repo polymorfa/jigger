@@ -1,0 +1,77 @@
+{
+  "id": "enum:WEBC_STREAM_MODE_CODE",
+  "kind": "enum",
+  "name": "WEBC_STREAM_MODE_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcStreamModeCode",
+    "variants": [
+      {
+        "name": "QR",
+        "value": 0.0
+      },
+      {
+        "name": "MAIN",
+        "value": 1.0
+      },
+      {
+        "name": "SYNCING",
+        "value": 2.0
+      },
+      {
+        "name": "OFFLINE",
+        "value": 3.0
+      },
+      {
+        "name": "CONFLICT",
+        "value": 4.0
+      },
+      {
+        "name": "PROXYBLOCK",
+        "value": 5.0
+      },
+      {
+        "name": "TOS_BLOCK",
+        "value": 6.0
+      },
+      {
+        "name": "SMB_TOS_BLOCK",
+        "value": 7.0
+      },
+      {
+        "name": "DEPRECATED_VERSION",
+        "value": 8.0
+      },
+      {
+        "name": "LOCK",
+        "value": 9.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcStreamModeCode",
+    "matches": "WEBC_STREAM_MODE_CODE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_STREAM_MODE_CODE",
+    "QR",
+    "MAIN",
+    "SYNCING",
+    "OFFLINE",
+    "CONFLICT",
+    "PROXYBLOCK",
+    "TOS_BLOCK",
+    "SMB_TOS_BLOCK",
+    "DEPRECATED_VERSION",
+    "LOCK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStreamModel",
+      "WAWebWebcStreamModeChangeWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

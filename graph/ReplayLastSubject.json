@@ -1,0 +1,1 @@
+{"deps":["relay-runtime"],"dependents":["MAWDumbRangeDataSource","MAWUISnippetsMessagesMetadataMapObservable","MessageRangeSet"],"dependent_count":3,"exports":[{"name":"ReplayLastSubject","used_by":["MAWUISnippetsMessagesMetadataMapObservable","MessageRangeSet"],"uses":2}]}

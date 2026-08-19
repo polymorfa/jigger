@@ -1,0 +1,1 @@
+{"deps":["WAFlowsComponentConstants","WAFlowsEnvContext.react","WAFlowsLabel.react","WAFlowsLocalization","getStyleValue","react","stylex"],"dependents":["WAFlowsGroupComponentLabel.react","WAFlowsSelectOptionList.react"],"dependent_count":2,"exports":[{"name":"WAFlowsLabelHeader","used_by":["WAFlowsGroupComponentLabel.react","WAFlowsSelectOptionList.react"],"uses":2}]}

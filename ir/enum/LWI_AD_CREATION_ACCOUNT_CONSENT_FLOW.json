@@ -1,0 +1,61 @@
+{
+  "id": "enum:LWI_AD_CREATION_ACCOUNT_CONSENT_FLOW",
+  "kind": "enum",
+  "name": "LWI_AD_CREATION_ACCOUNT_CONSENT_FLOW",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiAdCreationAccountConsentFlow",
+    "variants": [
+      {
+        "name": "SKIP_CONSENT_WITH_EXISTING_FB_CONSENT",
+        "value": 1.0
+      },
+      {
+        "name": "SKIP_CONSENT_WITHOUT_FB_WEBLOGIN_OPTION",
+        "value": 2.0
+      },
+      {
+        "name": "SKIP_CONSENT_WITH_FB_WEBLOGIN_OPTION",
+        "value": 3.0
+      },
+      {
+        "name": "SKIP_CONSENT_WITH_SUGGEST_FB_CONSENT",
+        "value": 4.0
+      },
+      {
+        "name": "ACCEPT_CONSENT_WITH_SUGGEST_FB_CONSENT",
+        "value": 5.0
+      },
+      {
+        "name": "ACCEPT_CONSENT_WITH_REQUIRE_FB_CONSENT",
+        "value": 6.0
+      },
+      {
+        "name": "RELOAD_BLOKS_SCREEN_ON_SUCCESS_FB_WEB_SSO",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiAdCreationAccountConsentFlow",
+    "matches": "LWI_AD_CREATION_ACCOUNT_CONSENT_FLOW\\s*[:=]"
+  },
+  "literals": [
+    "LWI_AD_CREATION_ACCOUNT_CONSENT_FLOW",
+    "SKIP_CONSENT_WITH_EXISTING_FB_CONSENT",
+    "SKIP_CONSENT_WITHOUT_FB_WEBLOGIN_OPTION",
+    "SKIP_CONSENT_WITH_FB_WEBLOGIN_OPTION",
+    "SKIP_CONSENT_WITH_SUGGEST_FB_CONSENT",
+    "ACCEPT_CONSENT_WITH_SUGGEST_FB_CONSENT",
+    "ACCEPT_CONSENT_WITH_REQUIRE_FB_CONSENT",
+    "RELOAD_BLOKS_SCREEN_ON_SUCCESS_FB_WEB_SSO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

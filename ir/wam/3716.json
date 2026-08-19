@@ -1,0 +1,84 @@
+{
+  "id": "wam:3716",
+  "kind": "wam",
+  "name": "MdChatAssignmentSecondaryAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 3716,
+    "fields": {
+      "mdChatAssignmentSecondaryActionAgentId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "md_chat_assignment_secondary_action_agent_id"
+      },
+      "mdChatAssignmentSecondaryActionAssignmentType": {
+        "id": 8,
+        "type": "MD_CHAT_ASSIGNMENT_ASSIGNMENT_TYPE",
+        "wire": "md_chat_assignment_secondary_action_assignment_type",
+        "enum_ref": "MD_CHAT_ASSIGNMENT_ASSIGNMENT_TYPE"
+      },
+      "mdChatAssignmentSecondaryActionBrowserId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "md_chat_assignment_secondary_action_browser_id"
+      },
+      "mdChatAssignmentSecondaryActionChatType": {
+        "id": 3,
+        "type": "MD_CHAT_ASSIGNMENT_CHAT_TYPE",
+        "wire": "md_chat_assignment_secondary_action_chat_type",
+        "enum_ref": "MD_CHAT_ASSIGNMENT_CHAT_TYPE"
+      },
+      "mdChatAssignmentSecondaryActionError": {
+        "id": 4,
+        "type": "ERROR_TYPE",
+        "wire": "md_chat_assignment_secondary_action_error",
+        "enum_ref": "ERROR_TYPE"
+      },
+      "mdChatAssignmentSecondaryActionMdId": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "md_chat_assignment_secondary_action_md_id"
+      },
+      "mdChatAssignmentSecondaryActionSource": {
+        "id": 6,
+        "type": "MD_CHAT_ASSIGNMENT_SOURCE_TYPE",
+        "wire": "md_chat_assignment_secondary_action_source",
+        "enum_ref": "MD_CHAT_ASSIGNMENT_SOURCE_TYPE"
+      },
+      "mdChatAssignmentSecondaryActionType": {
+        "id": 7,
+        "type": "MD_CHAT_ASSIGNMENT_SECONDARY_ACTION_TYPE",
+        "wire": "md_chat_assignment_secondary_action_type",
+        "enum_ref": "MD_CHAT_ASSIGNMENT_SECONDARY_ACTION_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdChatAssignmentSecondaryActionWamEvent",
+    "matches": "MdChatAssignmentSecondaryAction:\\s*\\[\\s*3716"
+  },
+  "literals": [
+    "3716"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumErrorType",
+      "WAWebWamEnumMdChatAssignmentAssignmentType",
+      "WAWebWamEnumMdChatAssignmentChatType",
+      "WAWebWamEnumMdChatAssignmentSecondaryActionType",
+      "WAWebWamEnumMdChatAssignmentSourceType"
+    ],
+    "dependents": [
+      "WAWebChatAssignmentLogEvents"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "id": "enum:GROUP_MEMBER_ADDING_ACTION_TYPE",
+  "kind": "enum",
+  "name": "GROUP_MEMBER_ADDING_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupMemberAddingActionType",
+    "variants": [
+      {
+        "name": "CONTACTS_PICKER_OPENED",
+        "value": 0.0
+      },
+      {
+        "name": "CONTACTS_LOADED",
+        "value": 1.0
+      },
+      {
+        "name": "CONTACT_SUGGESTED_CLICKED",
+        "value": 2.0
+      },
+      {
+        "name": "CONTACT_NOT_SUGGESTED_CLICKED",
+        "value": 3.0
+      },
+      {
+        "name": "CONTACT_SUGGESTED_UNCLICKED",
+        "value": 4.0
+      },
+      {
+        "name": "CONTACT_NOT_SUGGESTED_UNCLICKED",
+        "value": 5.0
+      },
+      {
+        "name": "GROUP_MEMBER_ADD_BUTTON_CLICKED",
+        "value": 6.0
+      },
+      {
+        "name": "GROUP_CREATION_SUBMIT_BUTTON_CLICKED",
+        "value": 7.0
+      },
+      {
+        "name": "GROUP_ALREADY_EXISTS_DIALOG_SHOWN",
+        "value": 8.0
+      },
+      {
+        "name": "GROUP_ALREADY_EXISTS_VIEW_GROUP_CLICKED",
+        "value": 9.0
+      },
+      {
+        "name": "GROUP_ALREADY_EXISTS_CREATE_NEW_CLICKED",
+        "value": 10.0
+      },
+      {
+        "name": "GROUP_ALREADY_EXISTS_CANCELED_CLICKED",
+        "value": 11.0
+      },
+      {
+        "name": "GROUP_NAME_ENTERED",
+        "value": 12.0
+      },
+      {
+        "name": "DISAPPEARING_MESSAGES_CLICKED",
+        "value": 13.0
+      },
+      {
+        "name": "GROUP_PERMISSIONS_CLICKED",
+        "value": 14.0
+      },
+      {
+        "name": "SET_PROFILE_PHOTO_CLICKED",
+        "value": 15.0
+      },
+      {
+        "name": "NEW_CHAT_CLICKED",
+        "value": 16.0
+      },
+      {
+        "name": "OVERFLOW_MENU_CLICKED",
+        "value": 17.0
+      },
+      {
+        "name": "NEW_GROUP_CLICKED",
+        "value": 18.0
+      },
+      {
+        "name": "GROUP_CREATION_SUCCEEDED",
+        "value": 19.0
+      },
+      {
+        "name": "GROUP_CREATION_FAILED",
+        "value": 20.0
+      },
+      {
+        "name": "CONTACT_ADDED_IN_SEARCH_BAR",
+        "value": 21.0
+      },
+      {
+        "name": "CONTACT_REMOVED_FROM_SEARCH_BAR",
+        "value": 22.0
+      },
+      {
+        "name": "MESSAGE_BUTTON_CLICKED",
+        "value": 23.0
+      },
+      {
+        "name": "MEMBER_SELECTOR_BACK_BUTTON_CLICKED",
+        "value": 24.0
+      },
+      {
+        "name": "GROUP_CREATE_FINAL_STEP_BACK_BUTTON_CLICKED",
+        "value": 25.0
+      },
+      {
+        "name": "MEMBER_SELECTOR_BACK_DISCARD_CONFIRM_DIALOG_SHOWN",
+        "value": 26.0
+      },
+      {
+        "name": "MEMBER_SELECTOR_BACK_DISCARD_CONFIRM_DIALOG_CANCEL_CLICKED",
+        "value": 27.0
+      },
+      {
+        "name": "MEMBER_SELECTOR_BACK_DISCARD_CONFIRM_DIALOG_DISCARD_CLICKED",
+        "value": 28.0
+      },
+      {
+        "name": "GROUP_HISTORY_SELECTABLE_MESSAGES_LOADED",
+        "value": 29.0
+      },
+      {
+        "name": "GROUP_HISTORY_FOOTER_DISPLAYED",
+        "value": 30.0
+      },
+      {
+        "name": "GROUP_HISTORY_TOGGLE_ON",
+        "value": 31.0
+      },
+      {
+        "name": "GROUP_HISTORY_TOGGLE_OFF",
+        "value": 32.0
+      },
+      {
+        "name": "GROUP_HISTORY_COUNT_CHANGE_ENTRY_POINT_CLICKED",
+        "value": 33.0
+      },
+      {
+        "name": "GROUP_HISTORY_COUNT_CHANGED",
+        "value": 34.0
+      },
+      {
+        "name": "GROUP_HISTORY_SPEED_BUMP_DIALOG_DISPLAYED",
+        "value": 35.0
+      },
+      {
+        "name": "GROUP_HISTORY_SPEED_BUMP_DIALOG_CONTINUED",
+        "value": 36.0
+      },
+      {
+        "name": "GROUP_HISTORY_SPEED_BUMP_DIALOG_CANCELED",
+        "value": 37.0
+      },
+      {
+        "name": "GROUP_HISTORY_BUNDLE_MESSAGE_SENT",
+        "value": 38.0
+      },
+      {
+        "name": "GROUP_HISTORY_NOTICE_MESSAGE_SENT",
+        "value": 39.0
+      },
+      {
+        "name": "META_AI_NULL_STATE_GROUPS_MENU_BUTTON_CLICKED",
+        "value": 40.0
+      },
+      {
+        "name": "META_AI_NULL_STATE_GROUPS_CAPABILITY_CLICKED",
+        "value": 41.0
+      },
+      {
+        "name": "GROUP_AI_DEEPLINK_CLICKED",
+        "value": 42.0
+      },
+      {
+        "name": "GROUP_MENTION_PICKER_ADD_AI_CLICKED",
+        "value": 43.0
+      },
+      {
+        "name": "ACTIVE_CALL_TOAST_SHOWN",
+        "value": 44.0
+      },
+      {
+        "name": "BOT_SELECTION_BOTTOM_SHEET_SHOWN",
+        "value": 45.0
+      },
+      {
+        "name": "TEE_BOT_IN_SELECTION_BOTTOM_SHEET_CLICKED",
+        "value": 46.0
+      },
+      {
+        "name": "OPEN_BOT_IN_SELECTION_BOTTOM_SHEET_CLICKED",
+        "value": 47.0
+      },
+      {
+        "name": "DONE_BUTTON_IN_BOT_SELECTION_BOTTOM_SHEET_CLICKED",
+        "value": 48.0
+      },
+      {
+        "name": "CANCEL_BUTTON_IN_BOT_SELECTION_BOTTOM_SHEET_CLICKED",
+        "value": 49.0
+      },
+      {
+        "name": "CHAT_MENTION_PICKER_CREATE_AI_GROUP_CHAT_CLICKED",
+        "value": 50.0
+      },
+      {
+        "name": "GROUP_MENTION_PICKER_ADD_AI_RENDERED",
+        "value": 51.0
+      },
+      {
+        "name": "CHAT_MENTION_PICKER_CREATE_AI_GROUP_CHAT_RENDERED",
+        "value": 52.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupMemberAddingActionType",
+    "matches": "GROUP_MEMBER_ADDING_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_MEMBER_ADDING_ACTION_TYPE",
+    "CONTACTS_PICKER_OPENED",
+    "CONTACTS_LOADED",
+    "CONTACT_SUGGESTED_CLICKED",
+    "CONTACT_NOT_SUGGESTED_CLICKED",
+    "CONTACT_SUGGESTED_UNCLICKED",
+    "CONTACT_NOT_SUGGESTED_UNCLICKED",
+    "GROUP_MEMBER_ADD_BUTTON_CLICKED",
+    "GROUP_CREATION_SUBMIT_BUTTON_CLICKED",
+    "GROUP_ALREADY_EXISTS_DIALOG_SHOWN",
+    "GROUP_ALREADY_EXISTS_VIEW_GROUP_CLICKED",
+    "GROUP_ALREADY_EXISTS_CREATE_NEW_CLICKED",
+    "GROUP_ALREADY_EXISTS_CANCELED_CLICKED",
+    "GROUP_NAME_ENTERED",
+    "DISAPPEARING_MESSAGES_CLICKED",
+    "GROUP_PERMISSIONS_CLICKED",
+    "SET_PROFILE_PHOTO_CLICKED",
+    "NEW_CHAT_CLICKED",
+    "OVERFLOW_MENU_CLICKED",
+    "NEW_GROUP_CLICKED",
+    "GROUP_CREATION_SUCCEEDED",
+    "GROUP_CREATION_FAILED",
+    "CONTACT_ADDED_IN_SEARCH_BAR",
+    "CONTACT_REMOVED_FROM_SEARCH_BAR",
+    "MESSAGE_BUTTON_CLICKED",
+    "MEMBER_SELECTOR_BACK_BUTTON_CLICKED",
+    "GROUP_CREATE_FINAL_STEP_BACK_BUTTON_CLICKED",
+    "MEMBER_SELECTOR_BACK_DISCARD_CONFIRM_DIALOG_SHOWN",
+    "MEMBER_SELECTOR_BACK_DISCARD_CONFIRM_DIALOG_CANCEL_CLICKED",
+    "MEMBER_SELECTOR_BACK_DISCARD_CONFIRM_DIALOG_DISCARD_CLICKED",
+    "GROUP_HISTORY_SELECTABLE_MESSAGES_LOADED",
+    "GROUP_HISTORY_FOOTER_DISPLAYED",
+    "GROUP_HISTORY_TOGGLE_ON",
+    "GROUP_HISTORY_TOGGLE_OFF",
+    "GROUP_HISTORY_COUNT_CHANGE_ENTRY_POINT_CLICKED",
+    "GROUP_HISTORY_COUNT_CHANGED",
+    "GROUP_HISTORY_SPEED_BUMP_DIALOG_DISPLAYED",
+    "GROUP_HISTORY_SPEED_BUMP_DIALOG_CONTINUED",
+    "GROUP_HISTORY_SPEED_BUMP_DIALOG_CANCELED",
+    "GROUP_HISTORY_BUNDLE_MESSAGE_SENT",
+    "GROUP_HISTORY_NOTICE_MESSAGE_SENT",
+    "META_AI_NULL_STATE_GROUPS_MENU_BUTTON_CLICKED",
+    "META_AI_NULL_STATE_GROUPS_CAPABILITY_CLICKED",
+    "GROUP_AI_DEEPLINK_CLICKED",
+    "GROUP_MENTION_PICKER_ADD_AI_CLICKED",
+    "ACTIVE_CALL_TOAST_SHOWN",
+    "BOT_SELECTION_BOTTOM_SHEET_SHOWN",
+    "TEE_BOT_IN_SELECTION_BOTTOM_SHEET_CLICKED",
+    "OPEN_BOT_IN_SELECTION_BOTTOM_SHEET_CLICKED",
+    "DONE_BUTTON_IN_BOT_SELECTION_BOTTOM_SHEET_CLICKED",
+    "CANCEL_BUTTON_IN_BOT_SELECTION_BOTTOM_SHEET_CLICKED",
+    "CHAT_MENTION_PICKER_CREATE_AI_GROUP_CHAT_CLICKED",
+    "GROUP_MENTION_PICKER_ADD_AI_RENDERED",
+    "CHAT_MENTION_PICKER_CREATE_AI_GROUP_CHAT_RENDERED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupMemberAddingUserJourneyLogger",
+      "WAWebGroupMemberAddingUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

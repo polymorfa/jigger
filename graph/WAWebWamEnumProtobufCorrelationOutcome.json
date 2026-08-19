@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebProtobufValidationErrorWamEvent"],"dependent_count":1,"exports":[{"name":"PROTOBUF_CORRELATION_OUTCOME","used_by":["WAWebProtobufValidationErrorWamEvent"],"uses":1}]}

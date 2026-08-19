@@ -1,0 +1,70 @@
+{
+  "id": "wam:8326",
+  "kind": "wam",
+  "name": "WebcQuickAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 8326,
+    "fields": {
+      "webcQuickActionEventType": {
+        "id": 1,
+        "type": "WEBC_QUICK_ACTION_EVENT_TYPE",
+        "wire": "webc_quick_action_event_type",
+        "enum_ref": "WEBC_QUICK_ACTION_EVENT_TYPE"
+      },
+      "webcQuickActionId": {
+        "id": 2,
+        "type": "WEBC_QUICK_ACTION_ID",
+        "wire": "webc_quick_action_id",
+        "enum_ref": "WEBC_QUICK_ACTION_ID"
+      },
+      "webcQuickActionIsCustomized": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "webc_quick_action_is_customized"
+      },
+      "webcQuickActionNumVisible": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "webc_quick_action_num_visible"
+      },
+      "webcQuickActionSlotPosition": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "webc_quick_action_slot_position"
+      },
+      "webcQuickActionSurface": {
+        "id": 6,
+        "type": "WEBC_QUICK_ACTION_SURFACE",
+        "wire": "webc_quick_action_surface",
+        "enum_ref": "WEBC_QUICK_ACTION_SURFACE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcQuickActionWamEvent",
+    "matches": "WebcQuickAction:\\s*\\[\\s*8326"
+  },
+  "literals": [
+    "8326"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcQuickActionEventType",
+      "WAWebWamEnumWebcQuickActionId",
+      "WAWebWamEnumWebcQuickActionSurface"
+    ],
+    "dependents": [
+      "WAWebQuickActionLogging"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

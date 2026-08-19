@@ -1,0 +1,42 @@
+{
+  "id": "enum:MD_BOOTSTRAP_STEP_RESULT",
+  "kind": "enum",
+  "name": "MD_BOOTSTRAP_STEP_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdBootstrapStepResult",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "FAILURE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdBootstrapStepResult",
+    "matches": "MD_BOOTSTRAP_STEP_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "MD_BOOTSTRAP_STEP_RESULT",
+    "SUCCESS",
+    "FAILURE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCollectionHandlerWamSyncUtil",
+      "WAWebHandleHistorySyncChunk",
+      "WAWebHistorySyncNotificationUtils",
+      "WAWebKmpWamLogger",
+      "WAWebMdBootstrapAppStateDataDownloadedWamEvent",
+      "WAWebMdBootstrapDataAppliedWamEvent",
+      "WAWebMdBootstrapHistoryDataDownloadedWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 7
+  }
+}

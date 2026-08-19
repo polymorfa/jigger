@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebPttComposerRecordingSession","WAWebPttTsExternalLogger","WAWebTsExternalWamEvent","WAWebVoipUiManager"],"dependent_count":4,"exports":[{"name":"TS_EXTERNAL_EVENT_SOURCE","used_by":["WAWebPttComposerRecordingSession","WAWebPttTsExternalLogger","WAWebTsExternalWamEvent","WAWebVoipUiManager"],"uses":4}]}

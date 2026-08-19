@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseModel","WAWebMsgKey"],"dependents":["WAWebNewsletterMessageDeliveryUpdateCollection"],"dependent_count":1,"exports":[{"name":"NewsletterMessageDeliveryUpdate","used_by":["WAWebNewsletterMessageDeliveryUpdateCollection"],"uses":1}]}

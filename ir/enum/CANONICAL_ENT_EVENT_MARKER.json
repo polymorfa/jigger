@@ -1,0 +1,42 @@
+{
+  "id": "enum:CANONICAL_ENT_EVENT_MARKER",
+  "kind": "enum",
+  "name": "CANONICAL_ENT_EVENT_MARKER",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCanonicalEntEventMarker",
+    "variants": [
+      {
+        "name": "START",
+        "value": 0.0
+      },
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "ERROR",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCanonicalEntEventMarker",
+    "matches": "CANONICAL_ENT_EVENT_MARKER\\s*[:=]"
+  },
+  "literals": [
+    "CANONICAL_ENT_EVENT_MARKER",
+    "START",
+    "SUCCESS",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCanonicalEntRecoveryCompanionWamEvent",
+      "WAWebCanonicalEntRecoveryWam"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

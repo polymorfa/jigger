@@ -1,0 +1,51 @@
+{
+  "id": "mex:WAWebMexFetchReachoutTimelockJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchReachoutTimelockJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "23983697327930364",
+    "operation": "query",
+    "variables": [],
+    "selections": [
+      {
+        "name": "xwa2_fetch_account_reachout_timelock",
+        "ty": "XWA2ReachoutTimelock",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "is_active",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "time_enforcement_ends",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "enforcement_type",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_fetch_account_reachout_timelock",
+    "document": "# persisted document 23983697327930364\nquery MexFetchReachoutTimelockJobQuery {\n  xwa2_fetch_account_reachout_timelock {  # XWA2ReachoutTimelock\n    is_active\n    time_enforcement_ends\n    enforcement_type\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchReachoutTimelockJobQuery.graphql",
+    "matches": "id:\\s*\"23983697327930364\""
+  },
+  "literals": [
+    "23983697327930364",
+    "WAWebMexFetchReachoutTimelockJobQuery",
+    "xwa2_fetch_account_reachout_timelock"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchReachoutTimelockJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

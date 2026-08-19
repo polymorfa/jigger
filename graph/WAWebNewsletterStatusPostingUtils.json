@@ -1,0 +1,1 @@
+{"deps":["WAWebNewsletterCollection","WAWebNewsletterGatingUtils"],"dependents":["WAWebNewsletterStatusSelectorDrawer.react"],"dependent_count":1,"exports":[{"name":"getStatusPostableNewsletters","used_by":["WAWebNewsletterStatusSelectorDrawer.react"],"uses":1}]}

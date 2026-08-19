@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum"],"dependents":["WAWebHatchMetadataOperationDecoder","WAWebParseHatchMetadataSyncProto"],"dependent_count":2,"exports":[{"name":"HatchDecodeError","used_by":["WAWebParseHatchMetadataSyncProto"],"uses":1},{"name":"HatchDecodeReason","used_by":["WAWebHatchMetadataOperationDecoder"],"uses":1}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:br_consumer_pix_actions_web_enabled",
+  "kind": "ab",
+  "name": "br_consumer_pix_actions_web_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33028,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "br_consumer_pix_actions_web_enabled:\\s*\\[\\s*33028"
+  },
+  "literals": [
+    "br_consumer_pix_actions_web_enabled",
+    "33028"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPaymentsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

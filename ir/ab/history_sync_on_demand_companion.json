@@ -1,0 +1,45 @@
+{
+  "id": "ab:history_sync_on_demand_companion",
+  "kind": "ab",
+  "name": "history_sync_on_demand_companion",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 17198,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "history_sync_on_demand_companion:\\s*\\[\\s*17198"
+  },
+  "literals": [
+    "history_sync_on_demand_companion",
+    "17198"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSyncGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

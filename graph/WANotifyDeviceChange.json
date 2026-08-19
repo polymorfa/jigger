@@ -1,0 +1,1 @@
+{"deps":["Promise","WAGlobals","WALogger","WAPersistedJobManager","WASmaxDevicesNotifyRPC","WATimeUtils","asyncToGeneratorRuntime","err"],"dependents":["WAAPIEager","WADeviceNotificationFlushable"],"dependent_count":2,"exports":[{"name":"notifyDeviceChange","used_by":["WAAPIEager","WADeviceNotificationFlushable"],"uses":2}]}

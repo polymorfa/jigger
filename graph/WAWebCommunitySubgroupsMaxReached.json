@@ -1,0 +1,1 @@
+{"deps":["WAWebCommunityGatingUtils","WAWebCommunitySubgroupsLimitReachedPopup.react","WAWebModalManager","react"],"dependents":["WAWebCommunityNavigation.react","WAWebCommunitySubgroupSwitcher.react"],"dependent_count":2,"exports":[{"name":"subgroupsMaxReached","used_by":["WAWebCommunityNavigation.react","WAWebCommunitySubgroupSwitcher.react"],"uses":2}]}

@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAE2E.TemplateButton.URLButton",
+  "kind": "proto",
+  "name": "WAE2E.TemplateButton.URLButton",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "displayText": {
+        "number": 1,
+        "type_name": "WAE2E.Message.HighlyStructuredMessage"
+      },
+      "url": {
+        "number": 2,
+        "type_name": "WAE2E.Message.HighlyStructuredMessage"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"TemplateButton.URLButton\""
+  },
+  "literals": [
+    "URLButton"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

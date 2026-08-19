@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebContactCollection","WAWebFrontendContactGetters","WAWebFrontendMsgGetters","WAWebLidMigrationUtils","WAWebWamEnumOppositeVisibleIdentificationType","WAWebWid","WAWebWidFactory","WAWebWidFormat","isStringNullOrEmpty"],"dependents":["WAWebFormatNotificationTemplateText"],"dependent_count":1,"exports":[]}

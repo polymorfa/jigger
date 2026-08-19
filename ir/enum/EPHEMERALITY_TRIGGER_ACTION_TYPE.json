@@ -1,0 +1,63 @@
+{
+  "id": "enum:EPHEMERALITY_TRIGGER_ACTION_TYPE",
+  "kind": "enum",
+  "name": "EPHEMERALITY_TRIGGER_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEphemeralityTriggerActionType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "CHAT_SETTINGS",
+        "value": 1.0
+      },
+      {
+        "name": "ACCOUNT_SETTINGS",
+        "value": 2.0
+      },
+      {
+        "name": "BULK_CHANGE",
+        "value": 3.0
+      },
+      {
+        "name": "BIZ_SUPPORTS_FB_HOSTING",
+        "value": 4.0
+      },
+      {
+        "name": "UNKNOWN_GROUP",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEphemeralityTriggerActionType",
+    "matches": "EPHEMERALITY_TRIGGER_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "EPHEMERALITY_TRIGGER_ACTION_TYPE",
+    "UNKNOWN",
+    "CHAT_SETTINGS",
+    "ACCOUNT_SETTINGS",
+    "BULK_CHANGE",
+    "BIZ_SUPPORTS_FB_HOSTING",
+    "UNKNOWN_GROUP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatMessageCountsWamEvent",
+      "WAWebChatThreadLoggingUtils",
+      "WAWebEphemeralSyncResponseReceiveWamEvent",
+      "WAWebEphemeralSyncResponseSendWamEvent",
+      "WAWebEphemeralityWAMUtils",
+      "WAWebForwardSendWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

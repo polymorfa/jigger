@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebDbUsageApiUtils","WAWebIndexedDB","WAWebScanDbRowApi","asyncToGeneratorRuntime","nullthrows"],"dependents":["WAWebDebug","WAWebTasksDailyStatsTask"],"dependent_count":2,"exports":[{"name":"getEstimatedFTSDbSize","used_by":["WAWebDebug","WAWebTasksDailyStatsTask"],"uses":2}]}

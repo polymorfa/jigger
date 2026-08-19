@@ -1,0 +1,52 @@
+{
+  "id": "enum:ENUM_DELIVER_DELIVERY",
+  "kind": "enum",
+  "name": "ENUM_DELIVER_DELIVERY",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInReceiptEnums",
+    "variants": [
+      {
+        "name": "deliver",
+        "value": "deliver"
+      },
+      {
+        "name": "delivery",
+        "value": "delivery"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptEnums",
+    "matches": "ENUM_DELIVER_DELIVERY\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_DELIVER_DELIVERY",
+    "deliver",
+    "delivery"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInReceiptAggregatedByMessageIdMixin",
+      "WASmaxInReceiptDeliverAggregatedByMessageIdStyleMixin",
+      "WASmaxInReceiptDeliverMessageAggregatedStyleMixin",
+      "WASmaxInReceiptDeliverPaidConversationAggregatedMixin",
+      "WASmaxInReceiptDeprecatedDeliveryTypeMixin",
+      "WASmaxInReceiptDeprecatedEditMixin",
+      "WASmaxInReceiptGroupMixin",
+      "WASmaxInReceiptHSMErrorTypeMixin",
+      "WASmaxInReceiptIndividualMixin",
+      "WASmaxInReceiptOrderStatusErrorTypeMixin",
+      "WASmaxInReceiptPublishSuccessMixin",
+      "WASmaxInReceiptRecipientMixin",
+      "WASmaxInReceiptRoiTemplateSourceMixin",
+      "WASmaxInReceiptServerErrorTypeMixin",
+      "WASmaxOutReceiptDeliverResponseSuccess"
+    ],
+    "dep_count": 1,
+    "dependent_count": 15
+  }
+}

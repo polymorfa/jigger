@@ -1,0 +1,170 @@
+{
+  "id": "mex:WAWebMexFetchAllSubgroupsJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchAllSubgroupsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9935467776504344",
+    "operation": "query",
+    "variables": [
+      "group_id",
+      "sub_group_hint_id",
+      "query_context"
+    ],
+    "args": [
+      {
+        "name": "group_id"
+      },
+      {
+        "name": "sub_group_hint_id"
+      },
+      {
+        "name": "query_context"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_query_by_id",
+        "args": [
+          "group_input: …"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on XWA2CommunityGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "default_sub_group",
+                "ty": "XWA2CommunityDefaultSubGroup",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "subject",
+                    "ty": "XWA2GroupSubject",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "value",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "creation_time",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "sub_groups",
+                "ty": "XWA2CommunitySubGroupsConnection",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "edges",
+                    "ty": "XWA2CommunitySubGroupEdge",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "node",
+                        "ty": "XWA2CommunitySubGroup",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "subject",
+                            "ty": "XWA2GroupSubject",
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "value",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "creation_time",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "properties",
+                            "ty": "XWA2CommunitySubGroupProperties",
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "general_chat",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "membership_approval_mode_enabled",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "hidden_group",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "membership_approval_requests",
+                            "ty": "XWA2GroupMembershipRequestConnection",
+                            "args": [
+                              "filter_input: …"
+                            ],
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "total_count",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_query_by_id",
+    "document": "# persisted document 9935467776504344\nquery MexFetchAllSubgroupsJobQuery(\n  $group_id\n  $sub_group_hint_id\n  $query_context\n) {\n  xwa2_group_query_by_id(group_input: …) {\n    id\n    __typename\n    ... on XWA2CommunityGroup {\n      default_sub_group {  # XWA2CommunityDefaultSubGroup\n        id\n        subject {  # XWA2GroupSubject\n          value\n          creation_time\n        }\n      }\n      sub_groups {  # XWA2CommunitySubGroupsConnection\n        edges {  # [XWA2CommunitySubGroupEdge]\n          node {  # XWA2CommunitySubGroup\n            id\n            subject {  # XWA2GroupSubject\n              value\n              creation_time\n            }\n            properties {  # XWA2CommunitySubGroupProperties\n              general_chat\n              membership_approval_mode_enabled\n              hidden_group\n            }\n            membership_approval_requests(filter_input: …) {  # XWA2GroupMembershipRequestConnection\n              total_count\n            }\n          }\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchAllSubgroupsJobQuery.graphql",
+    "matches": "id:\\s*\"9935467776504344\""
+  },
+  "literals": [
+    "9935467776504344",
+    "WAWebMexFetchAllSubgroupsJobQuery",
+    "xwa2_group_query_by_id"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchAllSubgroupsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

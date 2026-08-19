@@ -1,0 +1,61 @@
+__d("WAWebDesktopUpsellUtils", [
+	"$InternalEnum",
+	"WAWebABProps",
+	"WAWebBrowserInfo",
+	"WAWebEnvironment",
+	"WAWebUA",
+	"justknobx"
+], (function(t, n, r, o, a, i, l) {
+	var e = n("$InternalEnum").Mirrored(["WINDOWS", "MACOS"]), s, u = n("$InternalEnum").Mirrored([
+		"Control",
+		"Variant2",
+		"Variant3"
+	]);
+	function c() {
+		var e = o("WAWebABProps").getABPropConfigValue("wa_web_growth_empty_state_upsell_variant_m1");
+		return e === 2 || e === 3;
+	}
+	function d() {
+		var e = o("WAWebABProps").getABPropConfigValue("wa_web_growth_empty_state_upsell_variant_m1");
+		return e === 2 ? u.Variant2 : e === 3 ? u.Variant3 : u.Control;
+	}
+	function m() {
+		return s !== void 0 || (s = p()), s;
+	}
+	function p() {
+		var t = r("WAWebBrowserInfo")();
+		switch (t.os.toLowerCase()) {
+			case "windows": return e.WINDOWS;
+			case "mac os": return e.MACOS;
+		}
+		return null;
+	}
+	var _ = "8.0.0", f = 10, g = "12.0.0", h = null, y = null;
+	async function C() {
+		var e, t;
+		if (r("WAWebEnvironment").isWindows) return !1;
+		if (h != null) return h;
+		var n = await ((e = self.navigator) == null || (e = e.userAgentData) == null ? void 0 : e.getHighEntropyValues(["platformVersion"]));
+		if ((n == null ? void 0 : n.platformVersion) != null && ((t = n.platform) == null ? void 0 : t.toLowerCase()) === "windows" && n.platformVersion != null) h = v(_, n.platformVersion) <= 0;
+		else {
+			var o = r("WAWebBrowserInfo")();
+			h = o.os === "Windows" && parseInt(o.version, 10) >= f;
+		}
+		return h;
+	}
+	async function b() {
+		var e, t;
+		if (r("WAWebEnvironment").isWindows) return !1;
+		if (o("WAWebUA").UA.isSafari && r("justknobx")._("3037")) return !0;
+		if (y != null) return y;
+		var n = await ((e = self.navigator) == null || (e = e.userAgentData) == null ? void 0 : e.getHighEntropyValues(["platformVersion"]));
+		return (n == null ? void 0 : n.platformVersion) != null && ((t = n.platform) == null ? void 0 : t.toLowerCase()) === "macos" && n.platformVersion != null && (y = v(g, n.platformVersion) <= 0), y != null ? y : !1;
+	}
+	function v(e, t) {
+		return e.localeCompare(t, void 0, {
+			numeric: !0,
+			sensitivity: "base"
+		});
+	}
+	l.UserDesktopOs = e, l.EmptyStateUpsellBannerVariantEnum = u, l.isEmptyStateUpsellBannerVariantEnabled = c, l.getEmptyStateUpsellBannerVariant = d, l.getUserDesktopOs = m, l.isWebUserOnSupportedWindowsOSForUWPAsync = C, l.isWebUserOnSupportedMacOSForCatalystAsync = b;
+}), 98);

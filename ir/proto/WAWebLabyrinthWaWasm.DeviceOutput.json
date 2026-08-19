@@ -1,0 +1,59 @@
+{
+  "id": "proto:WAWebLabyrinthWaWasm.DeviceOutput",
+  "kind": "proto",
+  "name": "WAWebLabyrinthWaWasm.DeviceOutput",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "clientVersion": {
+        "number": 8
+      },
+      "encryptionVersionSignature": {
+        "number": 7
+      },
+      "epochAuthPublicKey": {
+        "number": 2
+      },
+      "epochAuthPublicKeySig": {
+        "number": 3
+      },
+      "epochStoragePublicKey": {
+        "number": 4
+      },
+      "epochStoragePublicKeySig": {
+        "number": 5
+      },
+      "ocmfClientState": {
+        "number": 9
+      },
+      "publicKey": {
+        "number": 1
+      },
+      "supportedEncryptionVersions": {
+        "number": 6
+      }
+    },
+    "module": "WAWebLabyrinthWaWasm.pb"
+  },
+  "evidence": {
+    "module": "WAWebLabyrinthWaWasm.pb",
+    "matches": "name = \"DeviceOutput\""
+  },
+  "literals": [
+    "DeviceOutput"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebLabyrinthWasmCreateBackup",
+      "WAWebLabyrinthWasmDecryptMessage",
+      "WAWebLabyrinthWasmDeriveMessageKey",
+      "WAWebLabyrinthWasmEncryptMessage",
+      "WAWebLabyrinthWasmOrfThreadId"
+    ],
+    "dep_count": 1,
+    "dependent_count": 5
+  }
+}

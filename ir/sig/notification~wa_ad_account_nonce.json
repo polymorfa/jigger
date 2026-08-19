@@ -1,0 +1,33 @@
+{
+  "id": "sig:notification/wa_ad_account_nonce",
+  "kind": "sig",
+  "name": "BizCtwaAdAccountNonceNotificationRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "wa_ad_account_nonce"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizCtwaAdAccountNonceNotificationRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "wa_ad_account_nonce"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInBizCtwaAdAccountServerNotificationMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxBizCtwaAdAccountNonceNotificationRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

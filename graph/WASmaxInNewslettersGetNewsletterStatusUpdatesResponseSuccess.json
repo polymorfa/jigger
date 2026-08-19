@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInNewslettersIQResultResponseMixin","WASmaxInNewslettersNewsletterStatusResponsePayloadMixin","WASmaxParseUtils"],"dependents":["WASmaxNewslettersGetNewsletterStatusUpdatesRPC"],"dependent_count":1,"exports":[{"name":"parseGetNewsletterStatusUpdatesResponseSuccess","used_by":["WASmaxNewslettersGetNewsletterStatusUpdatesRPC"],"uses":1}]}

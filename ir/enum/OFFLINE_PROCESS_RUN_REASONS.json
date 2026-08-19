@@ -1,0 +1,39 @@
+{
+  "id": "enum:OFFLINE_PROCESS_RUN_REASONS",
+  "kind": "enum",
+  "name": "OFFLINE_PROCESS_RUN_REASONS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOfflineProcessRunReasons",
+    "variants": [
+      {
+        "name": "PUSH_NOTIFICATION",
+        "value": 1.0
+      },
+      {
+        "name": "PERIODIC_BACKGROUND_SYNC",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOfflineProcessRunReasons",
+    "matches": "OFFLINE_PROCESS_RUN_REASONS\\s*[:=]"
+  },
+  "literals": [
+    "OFFLINE_PROCESS_RUN_REASONS",
+    "PUSH_NOTIFICATION",
+    "PERIODIC_BACKGROUND_SYNC"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSwPeriodicSyncHandler",
+      "WAWebSwPushHandler",
+      "WAWebWamWorkerOfflineProcessReporter",
+      "WAWebWebcOfflineNotificationProcessWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

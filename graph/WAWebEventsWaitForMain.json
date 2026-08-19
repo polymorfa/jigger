@@ -1,0 +1,1 @@
+{"deps":["WAResolvable"],"dependents":["WAWebApp.react","WAWebStartBackend"],"dependent_count":2,"exports":[{"name":"resolveMainLoaded","used_by":["WAWebApp.react"],"uses":1},{"name":"waitForMain","used_by":["WAWebStartBackend"],"uses":1}]}

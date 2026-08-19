@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgKey","WAWebWidFactory"],"dependents":["WAWebAddonPollVoteTableMode","WAWebDBPollsUpsertVotes"],"dependent_count":2,"exports":[{"name":"voteFromDbRow","used_by":["WAWebAddonPollVoteTableMode","WAWebDBPollsUpsertVotes"],"uses":2},{"name":"dbRowFromVote","used_by":["WAWebDBPollsUpsertVotes"],"uses":1}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:cci_compliance_ctwa_learn_more_hyperlink",
+  "kind": "ab",
+  "name": "cci_compliance_ctwa_learn_more_hyperlink",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25366,
+    "type": "string",
+    "default": "https://faq.whatsapp.com/785493319976156/",
+    "alt_default": "https://faq.whatsapp.com/785493319976156/"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "cci_compliance_ctwa_learn_more_hyperlink:\\s*\\[\\s*25366"
+  },
+  "literals": [
+    "cci_compliance_ctwa_learn_more_hyperlink",
+    "25366"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCTWAGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

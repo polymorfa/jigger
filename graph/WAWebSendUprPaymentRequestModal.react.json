@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBizSendOrderAction","WAWebConfirmPopup.react","WAWebCurrencyUtils","WAWebFbtCommon","WAWebFlex.react","WAWebModalManager","WAWebOrderDetailMath","WAWebSendPixPaymentRequestAmountInputHybridRow.react","WAWebUprPaymentMethodInfo.react","WDSText.react","asyncToGeneratorRuntime","react"],"dependents":[],"dependent_count":0,"exports":[]}

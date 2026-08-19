@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCmd","WAWebConversationBanner.react","WAWebFlex.react","WAWebFlexItem.react","WAWebGroupType","WAWebNux","WAWebSubgroupsNuxIcon.react","WAWebText.react","WAWebText_DONOTUSE.react","WAWebUimUie.react","react","react-compiler-runtime","useWAWebEventTargetValue","useWAWebNux"],"dependents":["WAWebConversationPanelBanner.react"],"dependent_count":1,"exports":[]}

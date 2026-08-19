@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","asyncToGeneratorRuntime"],"dependents":["WAWebVoipSctpConnectionManager"],"dependent_count":1,"exports":[{"name":"logPeerConnectionStatsForError","used_by":["WAWebVoipSctpConnectionManager"],"uses":1}]}

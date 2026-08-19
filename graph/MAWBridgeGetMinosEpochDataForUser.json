@@ -1,0 +1,1 @@
+{"deps":["EBMinosCheckWasmFeatureSupport","LSDatabaseSingleton","Promise","ReQL","asyncToGeneratorRuntime"],"dependents":["MAWSetupBridge"],"dependent_count":1,"exports":[{"name":"getMinosEpochDataForUser","used_by":["MAWSetupBridge"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAGetLocalPublicPrivateIdentityKeyApi","asyncToGeneratorRuntime"],"dependents":["MAWBridgeHandlers","WAAPIEager"],"dependent_count":2,"exports":[{"name":"getIdentityKeysInWorker","used_by":["MAWBridgeHandlers","WAAPIEager"],"uses":2}]}

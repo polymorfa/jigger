@@ -1,0 +1,50 @@
+{
+  "id": "ab:use_per_chat_wallpaper",
+  "kind": "ab",
+  "name": "use_per_chat_wallpaper",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9756,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "use_per_chat_wallpaper:\\s*\\[\\s*9756"
+  },
+  "literals": [
+    "use_per_chat_wallpaper",
+    "9756"
+  ],
+  "usage": {
+    "read_count": 6,
+    "readers": [
+      "WAWebChatlistFunctional.react",
+      "WAWebChatlist_DEPRECATED.react",
+      "WAWebCommunityAnnouncementsSection.react",
+      "WAWebContactInfoDrawer.react",
+      "WAWebConversation.react",
+      "WAWebGroupInfoDrawer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

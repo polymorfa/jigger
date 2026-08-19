@@ -1,0 +1,1 @@
+{"deps":["performance","performanceAbsoluteNowOnAdjust"],"dependents":["EncryptedBackupsUploadQueueV3Scheduler","FalcoLoggerInternal","FalcoLoggerTransports","MAWCacheServiceQPL","MAWChatSocketPlatformDetails","MAWQplProxy","MawMessageSendService","QuickPerformanceLogger","WorkerMessagePort"],"dependent_count":9,"exports":[{"name":"default","used_by":[],"uses":0}]}

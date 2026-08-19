@@ -1,0 +1,1 @@
+{"deps":["WAWebWamEnumUserRoleType"],"dependents":["WAWebCommunityGroupJourneyEventImpl","WAWebMessagingUserJourneyLogger"],"dependent_count":2,"exports":[{"name":"getUserRole","used_by":["WAWebCommunityGroupJourneyEventImpl","WAWebMessagingUserJourneyLogger"],"uses":2}]}

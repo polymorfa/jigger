@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChevronIcon.react","WAWebDrawerSection.react","WAWebEventPreviewBlock.react","WAWebFlex.react","WAWebL10N","WAWebSpinner.react","WDSMargins.stylex","WDSPaddings.stylex","react","react-compiler-runtime","stylex","useWAWebEventFutureEvents"],"dependents":["WAWebCommunityAnnouncementsSection.react","WAWebGroupInfoDrawer.react"],"dependent_count":2,"exports":[]}

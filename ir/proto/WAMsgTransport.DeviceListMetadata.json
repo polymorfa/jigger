@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAMsgTransport.DeviceListMetadata",
+  "kind": "proto",
+  "name": "WAMsgTransport.DeviceListMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "recipientKeyHash": {
+        "number": 8
+      },
+      "recipientTimestamp": {
+        "number": 9
+      },
+      "senderKeyHash": {
+        "number": 1
+      },
+      "senderTimestamp": {
+        "number": 2
+      }
+    },
+    "module": "WAMsgTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMsgTransport.pb",
+    "matches": "name = \"DeviceListMetadata\""
+  },
+  "literals": [
+    "DeviceListMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAAsMessageTransport",
+      "WADecodeIncomingMsg",
+      "WAEncGroupMsg",
+      "WAEncNode",
+      "WAHandleAppdataMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

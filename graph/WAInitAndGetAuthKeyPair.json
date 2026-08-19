@@ -1,0 +1,1 @@
+{"deps":["Promise","WACryptoCurve25519","WACryptoCurve25519Dependencies","WASetAuthKeyPair"],"dependents":["WACommsInit"],"dependent_count":1,"exports":[{"name":"initAndGetAuthKeyPair","used_by":["WACommsInit"],"uses":1}]}

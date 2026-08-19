@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebAttachMediaDrawerAttachMediaTypeStyles","WAWebAttachMediaModel","WAWebMediaEditorPreviewHeader.react","WAWebMediaEditorPreviewStyles","WAWebObjectFit.react","WAWebSpinner.react","WAWebVideo.react","react","react-compiler-runtime","stylex","useWAWebModelValues"],"dependents":["WAWebMediaEditor.react"],"dependent_count":1,"exports":[]}

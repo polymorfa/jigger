@@ -1,0 +1,40 @@
+{
+  "id": "wam:2416",
+  "kind": "wam",
+  "name": "WebcRawPlatforms",
+  "data": {
+    "kind": "wam",
+    "event_id": 2416,
+    "fields": {
+      "webcRawPlatform": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "webc_raw_platform"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcRawPlatformsWamEvent",
+    "matches": "WebcRawPlatforms:\\s*\\[\\s*2416"
+  },
+  "literals": [
+    "2416"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebConnModel",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

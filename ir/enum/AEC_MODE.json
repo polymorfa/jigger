@@ -1,0 +1,41 @@
+{
+  "id": "enum:AEC_MODE",
+  "kind": "enum",
+  "name": "AEC_MODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAecMode",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 1.0
+      },
+      {
+        "name": "SOFTWARE",
+        "value": 2.0
+      },
+      {
+        "name": "BUILTIN",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAecMode",
+    "matches": "AEC_MODE\\s*[:=]"
+  },
+  "literals": [
+    "AEC_MODE",
+    "NONE",
+    "SOFTWARE",
+    "BUILTIN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

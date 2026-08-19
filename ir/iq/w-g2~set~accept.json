@@ -1,0 +1,230 @@
+{
+  "id": "iq:w:g2/set/accept",
+  "kind": "iq",
+  "name": "GroupsAcceptGroupAdd",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "set",
+    "tags": [
+      "accept"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "accept",
+          "attrs": [
+            {
+              "name": "code",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "expiration",
+              "ty": "int",
+              "optional": false
+            },
+            {
+              "name": "admin",
+              "ty": "jid",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsAcceptGroupAddRPC",
+    "responses": [
+      {
+        "arm": "GroupJoinRequestSuccess",
+        "module": "WASmaxInGroupsAcceptGroupAddResponseGroupJoinRequestSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "membership_approval_request",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsAcceptGroupAddResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsAcceptGroupAddResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorAlreadyExists",
+          "IQErrorBadRequest",
+          "IQErrorConflict",
+          "IQErrorFallbackClient",
+          "IQErrorForbidden",
+          "IQErrorGone",
+          "IQErrorItemNotFound",
+          "IQErrorLocked",
+          "IQErrorNotAllowed",
+          "IQErrorNotAuthorized",
+          "IQErrorParentLinkedGroupsParticipantsResourceLimit",
+          "IQErrorResourceConstraint",
+          "IQErrorResourceLimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsAcceptGroupAddResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsAcceptGroupAddRequest",
+    "matches": "smax\\(\"accept\""
+  },
+  "literals": [
+    "w:g2",
+    "accept"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseSetGroupMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxGroupsAcceptGroupAddRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

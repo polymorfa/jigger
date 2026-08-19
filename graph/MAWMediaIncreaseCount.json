@@ -1,0 +1,1 @@
+{"deps":["FBLogger","I64","asyncToGeneratorRuntime","promiseDone"],"dependents":["MAWRetryReceiverFetchSticker"],"dependent_count":1,"exports":[{"name":"call","used_by":["MAWRetryReceiverFetchSticker"],"uses":1}]}

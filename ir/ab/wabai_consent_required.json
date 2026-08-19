@@ -1,0 +1,45 @@
+{
+  "id": "ab:wabai_consent_required",
+  "kind": "ab",
+  "name": "wabai_consent_required",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5747,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wabai_consent_required:\\s*\\[\\s*5747"
+  },
+  "literals": [
+    "wabai_consent_required",
+    "5747"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInNewslettersEnums","WASmaxParseUtils"],"dependents":["WASmaxInNewslettersNewsletterMediaMixin"],"dependent_count":1,"exports":[{"name":"parseMessageAssociationTypeMixin","used_by":["WASmaxInNewslettersNewsletterMediaMixin"],"uses":1}]}

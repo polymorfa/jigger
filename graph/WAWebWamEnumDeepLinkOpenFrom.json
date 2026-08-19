@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebBizCatalogViewWamEvent","WAWebCatalogBizWamEvent","WAWebDeepLinkOpenWamEvent","WAWebExecApiCmdHelpers"],"dependent_count":4,"exports":[{"name":"DEEP_LINK_OPEN_FROM","used_by":["WAWebBizCatalogViewWamEvent","WAWebCatalogBizWamEvent","WAWebDeepLinkOpenWamEvent","WAWebExecApiCmdHelpers"],"uses":4}]}

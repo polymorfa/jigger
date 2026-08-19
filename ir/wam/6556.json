@@ -1,0 +1,110 @@
+{
+  "id": "wam:6556",
+  "kind": "wam",
+  "name": "ChannelsVideoPlay",
+  "data": {
+    "kind": "wam",
+    "event_id": 6556,
+    "fields": {
+      "autoPlayT": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "auto_play_t"
+      },
+      "cid": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "finishCount": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "finish_count"
+      },
+      "height": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "height"
+      },
+      "postId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "post_id"
+      },
+      "videoDuration": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "video_duration"
+      },
+      "videoInitialBufferingT": {
+        "id": 6,
+        "type": "TIMER",
+        "wire": "video_initial_buffering_t"
+      },
+      "videoPlayOrigin": {
+        "id": 7,
+        "type": "VIDEO_PLAY_ORIGIN",
+        "wire": "video_play_origin",
+        "enum_ref": "VIDEO_PLAY_ORIGIN"
+      },
+      "videoPlayResult": {
+        "id": 8,
+        "type": "VIDEO_PLAY_RESULT",
+        "wire": "video_play_result",
+        "enum_ref": "VIDEO_PLAY_RESULT"
+      },
+      "videoPlayT": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "video_play_t"
+      },
+      "videoPlayType": {
+        "id": 10,
+        "type": "VIDEO_PLAY_TYPE",
+        "wire": "video_play_type",
+        "enum_ref": "VIDEO_PLAY_TYPE"
+      },
+      "videoSize": {
+        "id": 11,
+        "type": "NUMBER",
+        "wire": "video_size"
+      },
+      "watchingModule": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "watching_module"
+      },
+      "width": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "width"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelsVideoPlayWamEvent",
+    "matches": "ChannelsVideoPlay:\\s*\\[\\s*6556"
+  },
+  "literals": [
+    "6556"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumVideoPlayOrigin",
+      "WAWebWamEnumVideoPlayResult",
+      "WAWebWamEnumVideoPlayType"
+    ],
+    "dependents": [
+      "useWAWebNewsletterVideoPlayMetric"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

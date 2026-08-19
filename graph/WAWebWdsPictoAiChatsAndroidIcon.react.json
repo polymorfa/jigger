@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebSupportAINux.react"],"dependent_count":2,"exports":[{"name":"WdsPictoAiChatsAndroidIcon","used_by":["WAWebAllGeneratedIcons","WAWebSupportAINux.react"],"uses":2}]}

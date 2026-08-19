@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebRound.story"],"dependent_count":2,"exports":[{"name":"ReactIcon","used_by":["WAWebAllGeneratedIcons","WAWebRound.story"],"uses":2}]}

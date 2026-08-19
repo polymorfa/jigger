@@ -1,0 +1,1 @@
+{"deps":["WALogger","WASmaxQpSurfacesQPNotificationRPC","WATimeUtils","WAWebProtobufsQuickPromotionSurfaces.pb","decodeProtobuf"],"dependents":["WAWebHandleQPSurfacesNotification"],"dependent_count":1,"exports":[{"name":"parseQPSurfacesNotification","used_by":["WAWebHandleQPSurfacesNotification"],"uses":1}]}

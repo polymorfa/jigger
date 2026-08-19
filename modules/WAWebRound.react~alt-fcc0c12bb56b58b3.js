@@ -1,0 +1,232 @@
+__d("WAWebRound.react", [
+	"$InternalEnum",
+	"WAWebClassnames",
+	"WAWebKeyboardIsKeyActivation",
+	"WDSFocusStateStyles",
+	"react",
+	"stylex",
+	"useMergeRefs",
+	"useWAWebIsKeyboardUser",
+	"useWAWebStaticButtonA11y"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u = s || (s = o("react")), c = n("$InternalEnum").Mirrored([
+		"Default",
+		"XSmall",
+		"Small",
+		"Medium",
+		"Large",
+		"Inverted",
+		"NoShadow",
+		"SVGGrayButton",
+		"ReactionPickerButton",
+		"Approve",
+		"Reject",
+		"Disabled",
+		"QuickAction",
+		"QuickActionRefreshed",
+		"QuickActionRefreshedOverlay",
+		"DrawerFooter",
+		"Error"
+	]), d = {
+		btn: {
+			display: "x78zum5",
+			alignItems: "x6s0dn4",
+			justifyContent: "xl56j7k",
+			width: "x3x2bpi",
+			height: "xwvwv9b",
+			paddingTop: "xexx8yu",
+			paddingInlineEnd: "xyri2b",
+			paddingBottom: "x18d9i69",
+			paddingInlineStart: "x1c1uobl",
+			fontSize: "x1f6kntn",
+			fontWeight: "xk50ysn",
+			color: "x17t9dm2",
+			textTransform: "xtvhhri",
+			backgroundColor: "xfn3atn",
+			borderStartStartRadius: "x1c9tyrk",
+			borderStartEndRadius: "xeusxvb",
+			borderEndEndRadius: "x1pahc9y",
+			borderEndStartRadius: "x1ertn4p",
+			boxShadow: "xu306ak",
+			transitionDuration: "x12s1jxh",
+			transitionProperty: "xkdsq27",
+			transitionTimingFunction: "xwwtwea",
+			":active_boxShadow": "x1gfkgh9",
+			$$css: !0
+		},
+		approveRefreshed: {
+			width: "x100vrsf",
+			height: "x1vqgdyp",
+			boxShadow: "x1gnnqk1",
+			color: "xk4n5i7",
+			backgroundColor: "x1abdmlv",
+			$$css: !0
+		},
+		rejectRefreshed: {
+			width: "x100vrsf",
+			height: "x1vqgdyp",
+			boxShadow: "x1gnnqk1",
+			color: "xqnyt8g",
+			backgroundColor: "xrkjzwr",
+			$$css: !0
+		},
+		disabled: {
+			color: "xhslqc4",
+			cursor: "x1h6gzvc",
+			backgroundColor: "x3qdkio",
+			boxShadow: "x1gnnqk1",
+			":active_color": "x8idqv2",
+			":active_cursor": "x4xbgct",
+			":active_backgroundColor": "x71m2qp",
+			":active_boxShadow": "xpk4wdd",
+			$$css: !0
+		},
+		large: {
+			width: "x1247r65",
+			height: "xng8ra",
+			$$css: !0
+		},
+		medium: {
+			width: "x1guw455",
+			height: "x16wdlz0",
+			$$css: !0
+		},
+		small: {
+			width: "x1td3qas",
+			height: "x10w6t97",
+			$$css: !0
+		},
+		xsmall: {
+			width: "xo7uitg",
+			height: "x9fpu7x",
+			boxShadow: "x1gnnqk1",
+			":active_boxShadow": "xpk4wdd",
+			$$css: !0
+		},
+		inverted: {
+			width: "x1useyqa",
+			height: "xsdox4t",
+			marginTop: "xdj266r",
+			marginInlineEnd: "x11t971q",
+			marginBottom: "xat24cr",
+			marginInlineStart: "xvc5jky",
+			backgroundColor: "x1y1wcne",
+			boxShadow: "x1gnnqk1",
+			$$css: !0
+		},
+		invertedRefreshed: {
+			backgroundColor: "x4wrhlh",
+			$$css: !0
+		},
+		quickAction: {
+			width: "xezl2tj",
+			height: "xlrawln",
+			backgroundColor: "x1518k6t",
+			boxShadow: "x1gnnqk1",
+			":active_boxShadow": "xpk4wdd",
+			$$css: !0
+		},
+		quickActionRefreshed: {
+			width: "x23j0i4",
+			height: "xd7y6wv",
+			backgroundColor: "x1280gxy",
+			borderStartStartRadius: "x1c9tyrk",
+			borderStartEndRadius: "xeusxvb",
+			borderEndEndRadius: "x1pahc9y",
+			borderEndStartRadius: "x1ertn4p",
+			boxShadow: "xx43kwn",
+			$$css: !0
+		},
+		quickActionRefreshedOverlay: {
+			width: "xw4jnvo",
+			height: "x1qx5ct2",
+			backgroundColor: "x1bu39yj",
+			borderStartStartRadius: "x1c9tyrk",
+			borderStartEndRadius: "xeusxvb",
+			borderEndEndRadius: "x1pahc9y",
+			borderEndStartRadius: "x1ertn4p",
+			boxShadow: "x1gnnqk1",
+			$$css: !0
+		},
+		svgGrayButton: {
+			width: "x1useyqa",
+			height: "xsdox4t",
+			backgroundColor: "x4wrhlh",
+			boxShadow: "x1gnnqk1",
+			":active_boxShadow": "xpk4wdd",
+			$$css: !0
+		},
+		noShadow: {
+			width: "x1useyqa",
+			height: "xsdox4t",
+			boxShadow: "x1gnnqk1",
+			":active_boxShadow": "xpk4wdd",
+			$$css: !0
+		},
+		hideBackground: {
+			backgroundColor: "xjbqb8w",
+			$$css: !0
+		},
+		reactionPickerButton: {
+			width: "x1td3qas",
+			height: "x10w6t97",
+			backgroundColor: "x4wrhlh",
+			boxShadow: "x1gnnqk1",
+			$$css: !0
+		},
+		drawerFooter: {
+			backgroundColor: "x3qdkio",
+			$$css: !0
+		},
+		error: {
+			display: "x78zum5",
+			alignItems: "x6s0dn4",
+			justifyContent: "xl56j7k",
+			width: "xvy4d1p",
+			minWidth: "xnei2rj",
+			height: "xxk0z11",
+			color: "x17t9dm2",
+			pointerEvents: "x67bb7w",
+			backgroundColor: "xk0ssx3",
+			borderTopWidth: "x178xt8z",
+			borderInlineEndWidth: "x1lun4ml",
+			borderBottomWidth: "xso031l",
+			borderInlineStartWidth: "xpilrb4",
+			borderTopStyle: "x13fuv20",
+			borderInlineEndStyle: "x18b5jzi",
+			borderBottomStyle: "x1q0q8m5",
+			borderInlineStartStyle: "x1t7ytsu",
+			borderTopColor: "x1zfx7y",
+			borderInlineEndColor: "x1gj3efs",
+			borderBottomColor: "x151wx5t",
+			borderInlineStartColor: "xea0m3l",
+			borderStartStartRadius: "x1c9tyrk",
+			borderStartEndRadius: "xeusxvb",
+			borderEndEndRadius: "x1pahc9y",
+			borderEndStartRadius: "x1ertn4p",
+			$$css: !0
+		}
+	};
+	function m(t) {
+		var n = t.ariaPressed, a = t.children, i = t.className, l = t.dataTab, s = t.disabled, m = t.hideBackground, p = t.inverted, _ = t.label, f = t.large, g = t.medium, h = t.onClick, y = t.onContextMenu, C = t.onKeyDown, b = t.ref, v = t.small, S = t.tabIndex, R = t.testid, L = t.theme, E = t.title, k = t.xstyle, I = r("useWAWebIsKeyboardUser")(), T = I.isKeyboardUser, D = o("WAWebClassnames").classnamesConvertMeToStylexPlease(i, (e || (e = r("stylex")))(d.btn, (f === !0 || L === c.Large) && d.large, (g === !0 || L === c.Medium) && d.medium, (v === !0 || L === c.Small) && d.small, L === c.XSmall && d.xsmall, (p === !0 || L === c.Inverted) && d.inverted, (p === !0 || L === c.Inverted) && d.invertedRefreshed, m === !0 && d.hideBackground, (s === !0 || L === c.Disabled) && d.disabled, L === c.NoShadow && d.noShadow, L === c.SVGGrayButton && d.svgGrayButton, L === c.ReactionPickerButton && d.reactionPickerButton, L === c.Approve && d.approveRefreshed, L === c.Reject && d.rejectRefreshed, L === c.QuickAction && d.quickAction, L === c.QuickActionRefreshed && d.quickActionRefreshed, L === c.QuickActionRefreshedOverlay && d.quickActionRefreshedOverlay, L === c.DrawerFooter && s === !0 && d.drawerFooter, L === c.Error && d.error, !1, !1, T && o("WDSFocusStateStyles").WDSFocusStateStyles.genericFocus, k)), x = function(t) {
+			h == null || h(t), t.preventDefault();
+		}, $ = r("useWAWebStaticButtonA11y")(x, { disabled: s }), P = $[0], N = $[1], M = r("useMergeRefs")(P, b), w = C ? function(e) {
+			r("WAWebKeyboardIsKeyActivation")(e) && (e.preventDefault(), s !== !0 && C(e));
+		} : N.onKeyPress, A = S != null ? S : C != null || h != null ? 0 : -1;
+		return u.jsx("div", babelHelpers.extends({}, N, {
+			"data-testid": R,
+			role: "button",
+			"aria-pressed": n,
+			"aria-label": _,
+			tabIndex: A,
+			className: D,
+			onKeyDown: w,
+			ref: M,
+			title: E,
+			"data-tab": l,
+			onContextMenu: y,
+			children: a
+		}));
+	}
+	m.displayName = m.name + " [from " + i.id + "]", l.RoundTheme = c, l.Round = m;
+}), 98);

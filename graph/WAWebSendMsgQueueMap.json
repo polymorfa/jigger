@@ -1,0 +1,1 @@
+{"deps":["WAPromiseQueue"],"dependents":["WAWebEncryptAndSendGroupMsg","WAWebHandleRetryRequest"],"dependent_count":2,"exports":[{"name":"sendMsgQueueMap","used_by":["WAWebEncryptAndSendGroupMsg","WAWebHandleRetryRequest"],"uses":2}]}

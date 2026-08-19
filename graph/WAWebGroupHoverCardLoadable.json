@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WAWebLazyLoadedRetriable","WAWebLoadable","asyncToGeneratorRuntime","react"],"dependents":["WAWebGroupChatProfilePicture.react","WAWebMessageAuthor.react"],"dependent_count":2,"exports":[{"name":"GroupHoverCardLoadable","used_by":["WAWebGroupChatProfilePicture.react","WAWebMessageAuthor.react"],"uses":2}]}

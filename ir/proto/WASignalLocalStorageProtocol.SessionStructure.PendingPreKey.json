@@ -1,0 +1,46 @@
+{
+  "id": "proto:WASignalLocalStorageProtocol.SessionStructure.PendingPreKey",
+  "kind": "proto",
+  "name": "WASignalLocalStorageProtocol.SessionStructure.PendingPreKey",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "baseKey": {
+        "number": 2
+      },
+      "kyberCiphertext": {
+        "number": 5
+      },
+      "kyberPreKeyId": {
+        "number": 4
+      },
+      "preKeyId": {
+        "number": 1
+      },
+      "signedPreKeyId": {
+        "number": 3
+      }
+    },
+    "module": "WASignalLocalStorageProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalLocalStorageProtocol.pb",
+    "matches": "name = \"SessionStructure.PendingPreKey\""
+  },
+  "literals": [
+    "PendingPreKey"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WACryptoManager",
+      "WASignalKeys",
+      "WASignalSignatures",
+      "WAWebCryptoLibraryDbCallbacksApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

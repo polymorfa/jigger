@@ -1,0 +1,90 @@
+{
+  "id": "enum:CALL_LINK_ACTION",
+  "kind": "enum",
+  "name": "CALL_LINK_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallLinkAction",
+    "variants": [
+      {
+        "name": "COPY",
+        "value": 1.0
+      },
+      {
+        "name": "SHARE",
+        "value": 2.0
+      },
+      {
+        "name": "SHARE_VIA_WHATSAPP",
+        "value": 3.0
+      },
+      {
+        "name": "ADD_TO_CALENDAR",
+        "value": 4.0
+      },
+      {
+        "name": "CREATE_CALL_LINK",
+        "value": 5.0
+      },
+      {
+        "name": "EDIT_CALL_LINK",
+        "value": 6.0
+      },
+      {
+        "name": "DELETE_CALL_LINK",
+        "value": 7.0
+      },
+      {
+        "name": "SHARE_CALL_LINK_CHAT",
+        "value": 8.0
+      },
+      {
+        "name": "SHARE_CALL_LINK_CALENDAR",
+        "value": 9.0
+      },
+      {
+        "name": "SHARE_CALL_LINK_COPY",
+        "value": 10.0
+      },
+      {
+        "name": "SHARE_CALL_LINK_SHARE_SHEET",
+        "value": 11.0
+      },
+      {
+        "name": "TOGGLE_WAITING_ROOM",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallLinkAction",
+    "matches": "CALL_LINK_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "CALL_LINK_ACTION",
+    "COPY",
+    "SHARE",
+    "SHARE_VIA_WHATSAPP",
+    "ADD_TO_CALENDAR",
+    "CREATE_CALL_LINK",
+    "EDIT_CALL_LINK",
+    "DELETE_CALL_LINK",
+    "SHARE_CALL_LINK_CHAT",
+    "SHARE_CALL_LINK_CALENDAR",
+    "SHARE_CALL_LINK_COPY",
+    "SHARE_CALL_LINK_SHARE_SHEET",
+    "TOGGLE_WAITING_ROOM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallLinkActionEventWamEvent",
+      "WAWebEventsCreateEventModalFlow.react",
+      "WAWebVoipCallLinkSharePanel.react",
+      "WAWebVoipCallParticipantsDrawer.react",
+      "WAWebVoipCreateCallLinksPopup.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBweModelPathProvider","WAWebIDBFSStorageBackend","WAWebMLModelCacheManager","WAWebVoipPersistentFS"],"dependents":["WAWebVoipStackInterfaceWeb","WAWebVoipStackInterfaceWorkerProxy"],"dependent_count":2,"exports":[{"name":"initVoipStorageAndMLCache","used_by":["WAWebVoipStackInterfaceWeb","WAWebVoipStackInterfaceWorkerProxy"],"uses":2}]}

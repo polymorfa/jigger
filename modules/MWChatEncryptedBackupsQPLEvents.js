@@ -1,0 +1,5 @@
+__d("MWChatEncryptedBackupsQPLEvents", ["qpl"], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	var e, s = (e = r("qpl"))._(521476140, "378"), u = e._(521484256, "3212"), c = e._(521473384, "31"), d = e._(521482085, "409"), m = e._(521485406, "272"), p = e._(521482763, "296"), _ = e._(521484295, "1460"), f = e._(521482969, "1519"), g = e._(521479124, "1939"), h = e._(521474385, "263"), y = e._(521476098, "504"), C = e._(521482858, "1290"), b = e._(521473194, "1331"), v = e._(521471024, "2275"), S = e._(521476749, "3457"), R = e._(521473946, "3494");
+	l.pinCodeChangeQplEvent = s, l.resetBackupQplEvent = u, l.ebResetObserverQplEvent = c, l.backupSetupQplEvent = d, l.mobileOnboardingQplEvent = m, l.restoreQplEvent = p, l.restoreDeviceAuthQplEvent = _, l.messageRestoreQplEvent = f, l.restoreWithAutoRestoreConsentQplEvent = g, l.hsmFleetMigrationQplEvent = h, l.virtualDeviceRevocationQplEvent = y, l.onboardingAuthQplEvent = C, l.processBackupIdsQPLEvent = b, l.fetchBackupIdsQPLEvent = v, l.ebSettingsViewQplEvent = S, l.passkeyVDCreationQplEvent = R;
+}), 98);

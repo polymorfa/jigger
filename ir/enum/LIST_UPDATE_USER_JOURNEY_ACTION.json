@@ -1,0 +1,68 @@
+{
+  "id": "enum:LIST_UPDATE_USER_JOURNEY_ACTION",
+  "kind": "enum",
+  "name": "LIST_UPDATE_USER_JOURNEY_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumListUpdateUserJourneyAction",
+    "variants": [
+      {
+        "name": "START",
+        "value": 0.0
+      },
+      {
+        "name": "SELECT_PREDEFINED",
+        "value": 1.0
+      },
+      {
+        "name": "CREATE_LIST",
+        "value": 2.0
+      },
+      {
+        "name": "MORE_BOTTOM_SHEET_OPEN",
+        "value": 3.0
+      },
+      {
+        "name": "MORE_BUTTON_TAP",
+        "value": 4.0
+      },
+      {
+        "name": "LIST_ITEM_TAP",
+        "value": 5.0
+      },
+      {
+        "name": "CREATE_LIST_TAP",
+        "value": 6.0
+      },
+      {
+        "name": "EDIT_TAP",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumListUpdateUserJourneyAction",
+    "matches": "LIST_UPDATE_USER_JOURNEY_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "LIST_UPDATE_USER_JOURNEY_ACTION",
+    "START",
+    "SELECT_PREDEFINED",
+    "CREATE_LIST",
+    "MORE_BOTTOM_SHEET_OPEN",
+    "MORE_BUTTON_TAP",
+    "LIST_ITEM_TAP",
+    "CREATE_LIST_TAP",
+    "EDIT_TAP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCreateOrEditListDrawer.react",
+      "WAWebLabelEditInput.react",
+      "WAWebListUpdateUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

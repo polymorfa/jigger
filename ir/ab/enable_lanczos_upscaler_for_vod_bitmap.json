@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_lanczos_upscaler_for_vod_bitmap",
+  "kind": "ab",
+  "name": "enable_lanczos_upscaler_for_vod_bitmap",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34626,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_lanczos_upscaler_for_vod_bitmap:\\s*\\[\\s*34626"
+  },
+  "literals": [
+    "enable_lanczos_upscaler_for_vod_bitmap",
+    "34626"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

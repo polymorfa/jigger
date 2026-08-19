@@ -1,0 +1,1 @@
+{"deps":["invariant","WALogger","WATypeUtils","WAWebE2EProtoUtils","WAWebMsgType","WAWebStickerMimeUtils","WAWebWid","err"],"dependents":["WAWebMessagePluginGenerateProtobufRegistry"],"dependent_count":1,"exports":[]}

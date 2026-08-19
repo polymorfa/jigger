@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPipFullscreenToggleButton.react"],"dependent_count":2,"exports":[{"name":"VideoExitFullscreenIcon","used_by":["WAWebAllGeneratedIcons","WAWebPipFullscreenToggleButton.react"],"uses":2}]}

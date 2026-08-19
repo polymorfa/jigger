@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWSpamReportUtils"],"dependent_count":1,"exports":[{"name":"createInstamadilloAddMessageTransportPayload","used_by":["MAWSpamReportUtils"],"uses":1},{"name":"createInstamadilloDeleteMessageTransportPayload","used_by":[],"uses":0},{"name":"createInstamadilloSupplementMessageTransportPayload","used_by":[],"uses":0}]}

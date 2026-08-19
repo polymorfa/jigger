@@ -1,0 +1,1 @@
+{"deps":["MAWLocalizationType","WAJids","WALogger"],"dependents":["MAWThreadSnippetForReceiverFetchMsg","MAWThreadSnippetForStickerMsg"],"dependent_count":2,"exports":[{"name":"getMAWThreadSnippetForStickerMsg","used_by":["MAWThreadSnippetForReceiverFetchMsg","MAWThreadSnippetForStickerMsg"],"uses":2}]}

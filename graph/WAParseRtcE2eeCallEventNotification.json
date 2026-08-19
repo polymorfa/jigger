@@ -1,0 +1,1 @@
+{"deps":["WASmaxRtcE2eeCallEventNotifyCallEventNotificationRPC","WATimeUtils"],"dependents":["WACreateHandleRtcE2eeCallEventNotificationBranch"],"dependent_count":1,"exports":[{"name":"parseRtcE2eeCallEventNotification","used_by":["WACreateHandleRtcE2eeCallEventNotificationBranch"],"uses":1}]}

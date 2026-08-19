@@ -1,0 +1,1 @@
+{"deps":["Promise","WAHandleErrorStanzaProtocol","WALogger","WAResultOrError","WASmaxParseUtils","WASmaxSmaxInvalidErrorRPC","WAUnknownStanzaError"],"dependents":["WAServerRPC"],"dependent_count":1,"exports":[{"name":"createHandleErrorStanza","used_by":["WAServerRPC"],"uses":1}]}

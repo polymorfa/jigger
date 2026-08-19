@@ -1,0 +1,1 @@
+{"deps":["WAWebFlatList.react","WAWebFlatListContainer.react","WAWebFlatListController","WAWebMenuController.react","react","react-compiler-runtime"],"dependents":["WAWebLexicalWAWebMenu.react","WAWebPerformantSelect.react"],"dependent_count":2,"exports":[{"name":"WDSPerformantMenu","used_by":["WAWebLexicalWAWebMenu.react","WAWebPerformantSelect.react"],"uses":2}]}

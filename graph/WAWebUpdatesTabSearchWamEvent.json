@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumUpdateTabSearchEventType","WAWebWamEnumUpdatesTabSearchModeType","WAWebWamEnumUpdatesTabSearchResultType"],"dependents":["WAWebNewsletterInboxSearchLogging"],"dependent_count":1,"exports":[{"name":"UpdatesTabSearchWamEvent","used_by":[],"uses":0}]}

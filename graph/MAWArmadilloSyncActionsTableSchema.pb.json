@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst"],"dependents":["MAWDbObjDecode"],"dependent_count":1,"exports":[{"name":"SyncActionsTableSchemaProtoSpec","used_by":["MAWDbObjDecode"],"uses":1}]}

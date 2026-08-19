@@ -1,0 +1,42 @@
+{
+  "id": "proto:WASignalWhisperTextProtocol.SenderKeyDistributionMessage",
+  "kind": "proto",
+  "name": "WASignalWhisperTextProtocol.SenderKeyDistributionMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "chainKey": {
+        "number": 3
+      },
+      "id": {
+        "number": 1
+      },
+      "iteration": {
+        "number": 2
+      },
+      "signingKey": {
+        "number": 4
+      }
+    },
+    "module": "WASignalWhisperTextProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalWhisperTextProtocol.pb",
+    "matches": "name = \"SenderKeyDistributionMessage\""
+  },
+  "literals": [
+    "SenderKeyDistributionMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WASignalCipher",
+      "WASignalGroupCipher",
+      "WAWebCryptoLibraryUtilsApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

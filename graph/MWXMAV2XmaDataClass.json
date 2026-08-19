@@ -1,0 +1,1 @@
+{"deps":["FBLogger"],"dependents":["MAWHandleIncomingMsgApi","MAWParseXMAProtocol","MAWParseXMAUnsupportedMessageType"],"dependent_count":3,"exports":[{"name":"parseXmaDataClass","used_by":["MAWHandleIncomingMsgApi","MAWParseXMAProtocol","MAWParseXMAUnsupportedMessageType"],"uses":3}]}

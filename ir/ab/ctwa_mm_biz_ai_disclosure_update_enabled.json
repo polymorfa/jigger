@@ -1,0 +1,42 @@
+{
+  "id": "ab:ctwa_mm_biz_ai_disclosure_update_enabled",
+  "kind": "ab",
+  "name": "ctwa_mm_biz_ai_disclosure_update_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10379,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_mm_biz_ai_disclosure_update_enabled:\\s*\\[\\s*10379"
+  },
+  "literals": [
+    "ctwa_mm_biz_ai_disclosure_update_enabled",
+    "10379"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

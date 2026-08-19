@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatMessageCountsWamEvent","WAWebThreadInteractionDataBizWamEvent","WAWebThreadLoggingBiz"],"dependent_count":3,"exports":[{"name":"BIZ_CATALOG_TYPE","used_by":["WAWebChatMessageCountsWamEvent","WAWebThreadInteractionDataBizWamEvent","WAWebThreadLoggingBiz"],"uses":3}]}

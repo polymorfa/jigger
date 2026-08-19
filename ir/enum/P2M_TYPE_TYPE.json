@@ -1,0 +1,41 @@
+{
+  "id": "enum:P2M_TYPE_TYPE",
+  "kind": "enum",
+  "name": "P2M_TYPE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumP2mTypeType",
+    "variants": [
+      {
+        "name": "P2M_LITE",
+        "value": 1.0
+      },
+      {
+        "name": "P2M_PRO",
+        "value": 2.0
+      },
+      {
+        "name": "P2M_BASIC",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumP2mTypeType",
+    "matches": "P2M_TYPE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "P2M_TYPE_TYPE",
+    "P2M_LITE",
+    "P2M_PRO",
+    "P2M_BASIC"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPaymentsUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

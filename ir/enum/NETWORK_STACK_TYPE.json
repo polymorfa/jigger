@@ -1,0 +1,69 @@
+{
+  "id": "enum:NETWORK_STACK_TYPE",
+  "kind": "enum",
+  "name": "NETWORK_STACK_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumNetworkStackType",
+    "variants": [
+      {
+        "name": "NATIVE",
+        "value": 0.0
+      },
+      {
+        "name": "OK_HTTP",
+        "value": 1.0
+      },
+      {
+        "name": "LIGER",
+        "value": 2.0
+      },
+      {
+        "name": "APACHE",
+        "value": 3.0
+      },
+      {
+        "name": "WATLS",
+        "value": 4.0
+      },
+      {
+        "name": "CRONET",
+        "value": 5.0
+      },
+      {
+        "name": "TIGON_HUC",
+        "value": 6.0
+      },
+      {
+        "name": "TIGON_MNS",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumNetworkStackType",
+    "matches": "NETWORK_STACK_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "NETWORK_STACK_TYPE",
+    "NATIVE",
+    "OK_HTTP",
+    "LIGER",
+    "APACHE",
+    "WATLS",
+    "CRONET",
+    "TIGON_HUC",
+    "TIGON_MNS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCreateMediaDownloadMetrics",
+      "WAWebCreateMediaUploadMetrics",
+      "WAWebMediaDownload2WamEvent",
+      "WAWebMediaUpload2WamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

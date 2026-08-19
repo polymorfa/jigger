@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebMdLinkedDevicesWindowsXdrWamEvent"],"dependent_count":1,"exports":[{"name":"MD_XDR_TRANSPORT_TYPE","used_by":["WAWebMdLinkedDevicesWindowsXdrWamEvent"],"uses":1}]}

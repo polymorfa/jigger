@@ -1,0 +1,41 @@
+{
+  "id": "enum:PYTORCH_EDGE_LIB_LOAD_STATUS",
+  "kind": "enum",
+  "name": "PYTORCH_EDGE_LIB_LOAD_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPytorchEdgeLibLoadStatus",
+    "variants": [
+      {
+        "name": "PT_LOAD_STATUS_NONE",
+        "value": 0.0
+      },
+      {
+        "name": "PT_LOAD_STATUS_SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "PT_LOAD_STATUS_FAILED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPytorchEdgeLibLoadStatus",
+    "matches": "PYTORCH_EDGE_LIB_LOAD_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "PYTORCH_EDGE_LIB_LOAD_STATUS",
+    "PT_LOAD_STATUS_NONE",
+    "PT_LOAD_STATUS_SUCCESS",
+    "PT_LOAD_STATUS_FAILED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

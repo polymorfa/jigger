@@ -1,0 +1,1 @@
+{"deps":["emptyFunction","react","react-compiler-runtime"],"dependents":["WAManagerTriggerSendPicker","useMAIBASendMessageFromInsideChat"],"dependent_count":2,"exports":[{"name":"useMAIBAChatNavigationContext","used_by":["WAManagerTriggerSendPicker","useMAIBASendMessageFromInsideChat"],"uses":2},{"name":"MAIBAChatNavigationContextProvider","used_by":[],"uses":0}]}

@@ -1,0 +1,67 @@
+{
+  "id": "enum:MUTATION_COUNT_BUCKET",
+  "kind": "enum",
+  "name": "MUTATION_COUNT_BUCKET",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMutationCountBucket",
+    "variants": [
+      {
+        "name": "ZERO",
+        "value": 1.0
+      },
+      {
+        "name": "ONE",
+        "value": 2.0
+      },
+      {
+        "name": "LT10",
+        "value": 3.0
+      },
+      {
+        "name": "LT100",
+        "value": 4.0
+      },
+      {
+        "name": "LT500",
+        "value": 5.0
+      },
+      {
+        "name": "LT1K",
+        "value": 6.0
+      },
+      {
+        "name": "LT5K",
+        "value": 7.0
+      },
+      {
+        "name": "GTE5K",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMutationCountBucket",
+    "matches": "MUTATION_COUNT_BUCKET\\s*[:=]"
+  },
+  "literals": [
+    "MUTATION_COUNT_BUCKET",
+    "ZERO",
+    "ONE",
+    "LT10",
+    "LT100",
+    "LT500",
+    "LT1K",
+    "LT5K",
+    "GTE5K"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdAppStateSyncMutationStatsWamEvent",
+      "WAWebSyncdWamUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:genai_early_audio_pre_buf_size",
+  "kind": "ab",
+  "name": "genai_early_audio_pre_buf_size",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15306,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "genai_early_audio_pre_buf_size:\\s*\\[\\s*15306"
+  },
+  "literals": [
+    "genai_early_audio_pre_buf_size",
+    "15306"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebDrawerSection.react","WAWebLogStatusPrivacySettings","WAWebToast.react","WAWebToastManager","WAWebUserPrefsStatus","WDSFontTokenStyles","WDSIconIcRepeat.react","WDSSwitch.react","asyncToGeneratorRuntime","react","react-compiler-runtime","stylex","useWAWebAsync"],"dependents":["WAWebStatusPrivacySettingOptionsDrawer.react"],"dependent_count":1,"exports":[]}

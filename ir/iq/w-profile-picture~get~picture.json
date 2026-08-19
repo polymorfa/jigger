@@ -1,0 +1,288 @@
+{
+  "id": "iq:w:profile:picture/get/picture",
+  "kind": "iq",
+  "name": "ProfilePictureGet",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:profile:picture",
+    "type": "get",
+    "tags": [
+      "picture"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:profile:picture",
+          "optional": false
+        },
+        {
+          "name": "target",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxProfilePictureGetRPC",
+    "responses": [
+      {
+        "arm": "SuccessPictureURL",
+        "module": "WASmaxInProfilePictureGetResponseSuccessPictureURL",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "picture",
+              "attrs": [
+                {
+                  "name": "id",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "type",
+                  "ty": "stringenum",
+                  "optional": false
+                },
+                {
+                  "name": "url",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "direct_path",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "hash",
+                  "ty": "string",
+                  "optional": true
+                },
+                {
+                  "name": "has_staging",
+                  "ty": "stringenum",
+                  "optional": true
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "SuccessAvatarURLs",
+        "module": "WASmaxInProfilePictureGetResponseSuccessAvatarURLs",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "avatar",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "SuccessPictureBlob",
+        "module": "WASmaxInProfilePictureGetResponseSuccessPictureBlob",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "picture",
+              "attrs": [
+                {
+                  "name": "id",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "type",
+                  "ty": "stringenum",
+                  "optional": false
+                },
+                {
+                  "name": "has_staging",
+                  "ty": "stringenum",
+                  "optional": true
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "SuccessNoData",
+        "module": "WASmaxInProfilePictureGetResponseSuccessNoData",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInProfilePictureGetResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFeatureNotImplemented",
+          "IQErrorInternalServerError",
+          "IQErrorItemNotFound",
+          "IQErrorNotAuthorized",
+          "IQErrorRateOverlimit",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutProfilePictureGetRequest",
+    "matches": "smax\\(\"picture\""
+  },
+  "literals": [
+    "w:profile:picture",
+    "picture"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxJsx",
+      "WASmaxMixins",
+      "WASmaxOutProfilePictureAddRequestMixin",
+      "WASmaxOutProfilePictureAvatarMixin",
+      "WASmaxOutProfilePictureBaseGetIQMixin",
+      "WASmaxOutProfilePictureGetIQMixin",
+      "WASmaxOutProfilePictureTCTokenMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxProfilePictureGetRPC"
+    ],
+    "dep_count": 9,
+    "dependent_count": 1
+  }
+}

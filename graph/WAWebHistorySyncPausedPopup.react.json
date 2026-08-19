@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFaqUrl","WAWebHistorySyncUIText","WAWebModal.react","WAWebModalManager","WAWebText_DONOTUSE.react","react","react-compiler-runtime"],"dependents":["WAWebConversationLoadMoreMessagesHistorySync","WAWebHistorySyncSettingItem.react"],"dependent_count":2,"exports":[]}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:mm_tap_target_bloks_client_hydration_enabled",
+  "kind": "ab",
+  "name": "mm_tap_target_bloks_client_hydration_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28473,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_tap_target_bloks_client_hydration_enabled:\\s*\\[\\s*28473"
+  },
+  "literals": [
+    "mm_tap_target_bloks_client_hydration_enabled",
+    "28473"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

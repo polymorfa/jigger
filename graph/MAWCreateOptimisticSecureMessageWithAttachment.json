@@ -1,0 +1,1 @@
+{"deps":["I64","MAWCreateOptimisticSecureMessage","MAWOptimisticMessageUtils","MAWSendFileMsgTypes","QPLUserFlow","asyncToGeneratorRuntime","qpl"],"dependents":[],"dependent_count":0,"exports":[{"name":"createOptimisticMessageWithAttachment","used_by":[],"uses":0}]}

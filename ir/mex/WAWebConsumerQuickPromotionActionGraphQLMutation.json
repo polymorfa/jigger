@@ -1,0 +1,51 @@
+{
+  "id": "mex:WAWebConsumerQuickPromotionActionGraphQLMutation",
+  "kind": "mex",
+  "name": "WAWebConsumerQuickPromotionActionGraphQLMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25690382143972563",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "wa_consumer_quick_promotion_log_event",
+        "ty": "WaConsumerQuickPromotionLogEventResponsePayload",
+        "args": [
+          "data: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "client_mutation_id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 25690382143972563\nmutation ConsumerQuickPromotionActionGraphQLMutation(\n  $input\n) {\n  wa_consumer_quick_promotion_log_event(data: $input) {  # WaConsumerQuickPromotionLogEventResponsePayload\n    client_mutation_id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebConsumerQuickPromotionActionGraphQLMutation.graphql",
+    "matches": "id:\\s*\"25690382143972563\""
+  },
+  "literals": [
+    "25690382143972563",
+    "WAWebConsumerQuickPromotionActionGraphQLMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebConsumerQuickPromotionActionGraphQL"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

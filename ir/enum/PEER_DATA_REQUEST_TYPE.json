@@ -1,0 +1,74 @@
+{
+  "id": "enum:PEER_DATA_REQUEST_TYPE",
+  "kind": "enum",
+  "name": "PEER_DATA_REQUEST_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPeerDataRequestType",
+    "variants": [
+      {
+        "name": "UPLOAD_STICKER",
+        "value": 0.0
+      },
+      {
+        "name": "SEND_RECENT_STICKER_BOOTSTRAP",
+        "value": 1.0
+      },
+      {
+        "name": "GENERAL_LINK_PREVIEW",
+        "value": 2.0
+      },
+      {
+        "name": "HISTORY_SYNC_ON_DEMAND",
+        "value": 3.0
+      },
+      {
+        "name": "PLACEHOLDER_MESSAGE_RESEND",
+        "value": 4.0
+      },
+      {
+        "name": "WAFFLE_LINKING_NONCE_FETCH",
+        "value": 5.0
+      },
+      {
+        "name": "SYNCD_SNAPSHOT_RECOVERY",
+        "value": 6.0
+      },
+      {
+        "name": "HISTORY_SYNC_CHUNK_RETRY",
+        "value": 7.0
+      },
+      {
+        "name": "GALAXY_FLOW_ACTION",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPeerDataRequestType",
+    "matches": "PEER_DATA_REQUEST_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PEER_DATA_REQUEST_TYPE",
+    "UPLOAD_STICKER",
+    "SEND_RECENT_STICKER_BOOTSTRAP",
+    "GENERAL_LINK_PREVIEW",
+    "HISTORY_SYNC_ON_DEMAND",
+    "PLACEHOLDER_MESSAGE_RESEND",
+    "WAFFLE_LINKING_NONCE_FETCH",
+    "SYNCD_SNAPSHOT_RECOVERY",
+    "HISTORY_SYNC_CHUNK_RETRY",
+    "GALAXY_FLOW_ACTION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNonMessageDataRequestLoggingUtils",
+      "WAWebNonMessagePeerDataMediaUploadWamEvent",
+      "WAWebNonMessagePeerDataOperationResponseWamEvent",
+      "WAWebNonMessagePeerDataRequestWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

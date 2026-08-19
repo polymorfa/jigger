@@ -1,0 +1,41 @@
+{
+  "id": "appstate:removeRecentSticker",
+  "kind": "appstate",
+  "name": "RemoveRecentSticker",
+  "data": {
+    "kind": "appstate",
+    "index_name": "removeRecentSticker",
+    "collection": "regular_low",
+    "version": 7,
+    "value_field": "removeRecentStickerAction"
+  },
+  "evidence": {
+    "module": "WAWebStickersRemoveRecentSyncAction",
+    "matches": "Actions\\.RemoveRecentSticker"
+  },
+  "literals": [
+    "removeRecentSticker",
+    "RemoveRecentSticker",
+    "removeRecentStickerAction"
+  ],
+  "graph": {
+    "deps": [
+      "WALogger",
+      "WALongInt",
+      "WATimeUtils",
+      "WAWebMiscGatingUtils",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebRecentStickerCollectionMd",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebRemoveStickerJob"
+    ],
+    "dep_count": 10,
+    "dependent_count": 2
+  }
+}

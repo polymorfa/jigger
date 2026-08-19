@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebAttachMenuPopupItemOrders.react"],"dependent_count":2,"exports":[{"name":"ReceiptRefreshedFilledIcon","used_by":["WAWebAllGeneratedIcons","WAWebAttachMenuPopupItemOrders.react"],"uses":2}]}

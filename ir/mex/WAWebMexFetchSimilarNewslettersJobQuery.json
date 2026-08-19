@@ -1,0 +1,145 @@
+{
+  "id": "mex:WAWebMexFetchSimilarNewslettersJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchSimilarNewslettersJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26217043484590756",
+    "operation": "query",
+    "variables": [
+      "input",
+      "fetch_status_metadata"
+    ],
+    "args": [
+      {
+        "name": "input"
+      },
+      {
+        "name": "fetch_status_metadata"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletters_similar",
+        "ty": "XWA2NewsletterSearchResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "result",
+            "ty": "XWA2Newsletter",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "thread_metadata",
+                "ty": "XWA2NewsletterThreadMetadata",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "name",
+                    "ty": "XWA2NewsletterName",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "text",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "update_time",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "picture",
+                    "ty": "XWA2Picture",
+                    "args": [
+                      "type: \"PREVIEW\""
+                    ],
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "type",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "direct_path",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "verification",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "@include(if: $fetch_status_metadata)",
+                "kind": "Condition",
+                "selections": [
+                  {
+                    "name": "status_metadata",
+                    "ty": "XWA2NewsletterStatusMetadata",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "last_status_server_id",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "state",
+                "ty": "XWA2NewsletterState",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "type",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletters_similar",
+    "document": "# persisted document 26217043484590756\nquery MexFetchSimilarNewslettersJobQuery(\n  $input\n  $fetch_status_metadata\n) {\n  xwa2_newsletters_similar(input: $input) {  # XWA2NewsletterSearchResponse\n    result {  # [XWA2Newsletter]\n      id\n      thread_metadata {  # XWA2NewsletterThreadMetadata\n        name {  # XWA2NewsletterName\n          id\n          text\n          update_time\n        }\n        picture(type: \"PREVIEW\") {  # XWA2Picture\n          id\n          type\n          direct_path\n        }\n        verification\n      }\n      @include(if: $fetch_status_metadata) {\n        status_metadata {  # XWA2NewsletterStatusMetadata\n          last_status_server_id\n        }\n      }\n      state {  # XWA2NewsletterState\n        type\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchSimilarNewslettersJobQuery.graphql",
+    "matches": "id:\\s*\"26217043484590756\""
+  },
+  "literals": [
+    "26217043484590756",
+    "WAWebMexFetchSimilarNewslettersJobQuery",
+    "xwa2_newsletters_similar"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchSimilarNewslettersJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

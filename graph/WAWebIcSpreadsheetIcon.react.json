@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebDocumentFileIcon"],"dependent_count":2,"exports":[{"name":"IcSpreadsheetIcon","used_by":["WAWebAllGeneratedIcons","WAWebDocumentFileIcon"],"uses":2}]}

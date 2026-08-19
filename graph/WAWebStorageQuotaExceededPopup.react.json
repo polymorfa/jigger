@@ -1,0 +1,1 @@
+{"deps":["fbt","Promise","WALogger","WAWebLogoutReasonConstants","WAWebStorageErrorHandlingUtils","WAWebStorageRecoveryPopup.react","WAWebStorageUtilizationSnapshot","gkx","react","react-compiler-runtime"],"dependents":["WAWebApp.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,127 @@
+{
+  "id": "wam:6940",
+  "kind": "wam",
+  "name": "QbmRichOrderStatusInteraction",
+  "data": {
+    "kind": "wam",
+    "event_id": 6940,
+    "fields": {
+      "actionTypeRichOrderStatus": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "action_type_rich_order_status"
+      },
+      "chatsFolderType": {
+        "id": 2,
+        "type": "CHATS_FOLDER_TYPE",
+        "wire": "chats_folder_type",
+        "enum_ref": "CHATS_FOLDER_TYPE"
+      },
+      "contactType": {
+        "id": 3,
+        "type": "CONTACT_TYPE",
+        "wire": "contact_type",
+        "enum_ref": "CONTACT_TYPE"
+      },
+      "decisionId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "decision_id"
+      },
+      "deltaTime": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "delta_time"
+      },
+      "deltaTimeReceived": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "delta_time_received"
+      },
+      "entryPoint": {
+        "id": 7,
+        "type": "ENTRY_POINT",
+        "wire": "entry_point",
+        "enum_ref": "ENTRY_POINT"
+      },
+      "hsmTagStr": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "hsm_tag_str"
+      },
+      "isBizIntent": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "is_biz_intent"
+      },
+      "isBroadcastMessage": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "is_broadcast_message"
+      },
+      "isInsubContact": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "is_insub_contact"
+      },
+      "isMuted": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "is_muted"
+      },
+      "messageIdHmac": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "message_id_hmac"
+      },
+      "qbmFlag": {
+        "id": 14,
+        "type": "QBM_FLAG",
+        "wire": "qbm_flag",
+        "enum_ref": "QBM_FLAG"
+      },
+      "readReceiptsEnabled": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "read_receipts_enabled"
+      },
+      "threadIdHmac": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      },
+      "unifiedSessionId": {
+        "id": 17,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebQbmRichOrderStatusInteractionWamEvent",
+    "matches": "QbmRichOrderStatusInteraction:\\s*\\[\\s*6940"
+  },
+  "literals": [
+    "6940"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatsFolderType",
+      "WAWebWamEnumContactType",
+      "WAWebWamEnumEntryPoint",
+      "WAWebWamEnumQbmFlag"
+    ],
+    "dependents": [
+      "WAWebRichOrderStatusLogger"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

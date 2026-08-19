@@ -1,0 +1,42 @@
+{
+  "id": "ab:lid_one_on_one_migration_enabled",
+  "kind": "ab",
+  "name": "lid_one_on_one_migration_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9435,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "lid_one_on_one_migration_enabled:\\s*\\[\\s*9435"
+  },
+  "literals": [
+    "lid_one_on_one_migration_enabled",
+    "9435"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

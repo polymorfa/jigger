@@ -1,0 +1,2715 @@
+{
+  "id": "enum:LWI_SCREEN_ACTION",
+  "kind": "enum",
+  "name": "LWI_SCREEN_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiScreenAction",
+    "variants": [
+      {
+        "name": "LWI_ACTION_VIEW",
+        "value": 1.0
+      },
+      {
+        "name": "LWI_ACTION_BACK_BUTTON_TAPPED",
+        "value": 2.0
+      },
+      {
+        "name": "LWI_ACTION_CREATE_ADS_TAPPED",
+        "value": 3.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_ADS_TAPPED",
+        "value": 4.0
+      },
+      {
+        "name": "LWI_ACTION_LEARN_MORE_TAPPED",
+        "value": 5.0
+      },
+      {
+        "name": "LWI_ACTION_PRODUCT_SELECTED",
+        "value": 6.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TAPPED",
+        "value": 7.0
+      },
+      {
+        "name": "LWI_MANAGE_ADS_DISPLAYED",
+        "value": 8.0
+      },
+      {
+        "name": "LWI_ALERT",
+        "value": 9.0
+      },
+      {
+        "name": "LWI_ACTION_PROMOTE_CATALOG_ITEMS_TAPPED",
+        "value": 10.0
+      },
+      {
+        "name": "LWI_ACTION_PROMOTE_STATUSES_TAPPED",
+        "value": 11.0
+      },
+      {
+        "name": "LWI_ACTION_PROMOTE_NEW_CONTENT_TAPPED",
+        "value": 12.0
+      },
+      {
+        "name": "LWI_ACTION_CONTACT_US_TAPPED",
+        "value": 13.0
+      },
+      {
+        "name": "LWI_ACTION_HELP_TAPPED",
+        "value": 14.0
+      },
+      {
+        "name": "LWI_ACTION_STATUS_SELECTED",
+        "value": 15.0
+      },
+      {
+        "name": "LWI_ACTION_PRODUCT_DESELECTED",
+        "value": 16.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_CONTINUE_TAPPED",
+        "value": 17.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDED_CATALOG_ITEM_SELECTED",
+        "value": 18.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDED_STATUS_ITEM_SELECTED",
+        "value": 19.0
+      },
+      {
+        "name": "LWI_ACTION_NO_CATALOG_TO_ADVERTISE_TAPPED",
+        "value": 20.0
+      },
+      {
+        "name": "LWI_ACTION_NO_STATUS_TO_ADVERTISE_TAPPED",
+        "value": 21.0
+      },
+      {
+        "name": "LWI_CREATE_AD_DISPLAYED",
+        "value": 22.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_MEDIA_SELECTOR_TAPPED",
+        "value": 23.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DESCRIPTION_TAPPED",
+        "value": 24.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DESCRIPTION_SAVE_TAPPED",
+        "value": 25.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DESCRIPTION_CANCEL_TAPPED",
+        "value": 26.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_BUDGET_TAPPED",
+        "value": 27.0
+      },
+      {
+        "name": "LWI_ACTION_DAILY_BUDGET_SELECTED",
+        "value": 28.0
+      },
+      {
+        "name": "LWI_ACTION_CUSTOM_DAILY_BUDGET_TAPPED",
+        "value": 29.0
+      },
+      {
+        "name": "LWI_ACTION_CUSTOM_DAILY_BUDGET_SAVE_TAPPED",
+        "value": 30.0
+      },
+      {
+        "name": "LWI_ACTION_CUSTOM_DAILY_BUDGET_CANCEL_TAPPED",
+        "value": 31.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DURATION_UPDATED",
+        "value": 32.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_AUDIENCE_TAPPED",
+        "value": 33.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_AUDIENCE_LOCATION_TAPPED",
+        "value": 34.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_LOCATION_SELECTED",
+        "value": 35.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_LOCATION_DESELECTED",
+        "value": 36.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_AGE_RANGE_UPDATED",
+        "value": 37.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_GENDER_SELECTED",
+        "value": 38.0
+      },
+      {
+        "name": "LWI_ACTION_SPECIAL_ADS_CATEGORY_TAPPED",
+        "value": 39.0
+      },
+      {
+        "name": "LWI_ACTION_SPECIAL_ADS_CATEGORY_CONTINUE_TAPPED",
+        "value": 40.0
+      },
+      {
+        "name": "LWI_ACTION_SPECIAL_ADS_CATEGORY_CANCEL_TAPPED",
+        "value": 41.0
+      },
+      {
+        "name": "LWI_ACTION_ADD_PAYMENT_TAPPED",
+        "value": 42.0
+      },
+      {
+        "name": "LWI_ACTION_CREATE_AD_TAPPED",
+        "value": 43.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_ACCOUNT_TAPPED",
+        "value": 44.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_PAYMENT_TAPPED",
+        "value": 45.0
+      },
+      {
+        "name": "LWI_ACTION_REMOVE_ACCOUNT_TAPPED",
+        "value": 46.0
+      },
+      {
+        "name": "LWI_ACTION_REMOVE_ACCOUNT_REMOVE_TAPPED",
+        "value": 47.0
+      },
+      {
+        "name": "LWI_ACTION_REMOVE_ACCOUNT_CANCEL_TAPPED",
+        "value": 48.0
+      },
+      {
+        "name": "LWI_ACTION_CONSENT_CONTINUE_TAPPED",
+        "value": 49.0
+      },
+      {
+        "name": "LWI_ACTION_AD_CREATED_BANNER_IMPRESSION",
+        "value": 50.0
+      },
+      {
+        "name": "LWI_ACTION_AD_CREATED_BANNER_CLICK",
+        "value": 51.0
+      },
+      {
+        "name": "LWI_ACTION_AD_CREATED_BANNER_DISMISS",
+        "value": 52.0
+      },
+      {
+        "name": "LWI_ACTION_AD_SETTINGS_TAPPED",
+        "value": 53.0
+      },
+      {
+        "name": "LWI_ACTION_REFRESH_AD_DETAILS_SCREEN",
+        "value": 54.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_RECOMMENDED_STATUS_SELECTED",
+        "value": 55.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_PHONE_MEDIA_SELECTED",
+        "value": 56.0
+      },
+      {
+        "name": "LWI_ACTION_MEDIA_SELECTION_COMPLETE",
+        "value": 57.0
+      },
+      {
+        "name": "LWI_ACTION_CROP_IMAGE_DONE",
+        "value": 58.0
+      },
+      {
+        "name": "LWI_ACTION_CONSENT_NOT_YOU_TAPPED",
+        "value": 59.0
+      },
+      {
+        "name": "LWI_ACTION_SWITCH_ACCOUNT_TAPPED",
+        "value": 60.0
+      },
+      {
+        "name": "LWI_ACTION_SWITCH_ACCOUNT_SWITCH_TAPPED",
+        "value": 61.0
+      },
+      {
+        "name": "LWI_ACTION_SWITCH_ACCOUNT_CANCEL_TAPPED",
+        "value": 62.0
+      },
+      {
+        "name": "LWI_ACTION_WEB_LOGIN_PAGE_LOADED",
+        "value": 63.0
+      },
+      {
+        "name": "LWI_ACTION_WEB_LOGIN_SUCCESS",
+        "value": 64.0
+      },
+      {
+        "name": "LWI_ACTION_CONSENT_LOGIN_TAPPED",
+        "value": 65.0
+      },
+      {
+        "name": "LWI_ACTION_WEB_LOGIN_CANCELLED",
+        "value": 66.0
+      },
+      {
+        "name": "LWI_ACTION_WEB_LOGIN_TRY_AGAIN",
+        "value": 67.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_ADS_LOADED",
+        "value": 68.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CLICKED",
+        "value": 69.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_CLICKED",
+        "value": 70.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_ITEM_CLICKED",
+        "value": 71.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_EDUCATION_BANNER_SHOWN",
+        "value": 72.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_EDUCATION_BANNER_CANCELLED",
+        "value": 73.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_CONSENT_SHOWN",
+        "value": 74.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_CONSENT_ACCEPTED",
+        "value": 75.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_CONSENT_DIFFERENT_USER_SIGN_IN",
+        "value": 76.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_WEB_LOGIN_CONSENT_SCREEN_SHOWN",
+        "value": 77.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_CONSENT_WEB_LOGIN_SIGN_IN",
+        "value": 78.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_WEB_LOGIN_SUCCESSFUL",
+        "value": 79.0
+      },
+      {
+        "name": "LWI_MANAGE_ADS_TAPPED_V2",
+        "value": 80.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CREATED_BANNER_CANCELLED",
+        "value": 81.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CREATED_BANNER_BACK_PRESED",
+        "value": 82.0
+      },
+      {
+        "name": "LWI_NO_PERMISSION_TO_MANAGE_ADS_DIALOG_SHOWN",
+        "value": 83.0
+      },
+      {
+        "name": "LWI_SWITCH_ACCCOUNT_ON_NO_MANAGE_ADS_PERMISSION_DIALOG_PRESSED",
+        "value": 84.0
+      },
+      {
+        "name": "LWI_LOGIN_PRESSED_ON_SESSION_EXPIRED",
+        "value": 85.0
+      },
+      {
+        "name": "LWI_ASYNC_DATA",
+        "value": 86.0
+      },
+      {
+        "name": "LWI_ACTION_AD_ACCOUNTS_TAPPED",
+        "value": 87.0
+      },
+      {
+        "name": "LWI_ACTION_AD_ACCOUNT_SELECTED",
+        "value": 88.0
+      },
+      {
+        "name": "LWI_ACTION_AD_ACCOUNT_SWITCH_SUCCESS",
+        "value": 89.0
+      },
+      {
+        "name": "LWI_ACTION_AD_ACCOUNT_SWITCH_CANCELLED",
+        "value": 90.0
+      },
+      {
+        "name": "LWI_ACTION_SELECT_SAVED_AUDIENCE",
+        "value": 91.0
+      },
+      {
+        "name": "LWI_ACTION_SELECT_DEFAULT_AUDIENCE",
+        "value": 92.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_DEFAULT_AUDIENCE",
+        "value": 93.0
+      },
+      {
+        "name": "LWI_ACTION_NON_DISCRIMINATION_POLICY_ACCEPT_TAPPED",
+        "value": 94.0
+      },
+      {
+        "name": "LWI_ACTION_POLICY_REVIEW_REQUIRED_EXIT_TAPPED",
+        "value": 95.0
+      },
+      {
+        "name": "LWI_ACTION_POLICY_REVIEW_REQUIRED_REVIEW_TAPPED",
+        "value": 96.0
+      },
+      {
+        "name": "LWI_ACTION_NON_DISCRIMINATION_POLICY_ACCEPT_SUCCESS",
+        "value": 97.0
+      },
+      {
+        "name": "LWI_ACTION_NON_DISCRIMINATION_POLICY_CANCELLED",
+        "value": 98.0
+      },
+      {
+        "name": "LWI_ACTION_NON_DISCRIMINATION_POLICY_TRY_AGAIN",
+        "value": 99.0
+      },
+      {
+        "name": "LWI_ACTION_LOADED",
+        "value": 100.0
+      },
+      {
+        "name": "LWI_CTA_MENU_CLICKED",
+        "value": 101.0
+      },
+      {
+        "name": "LWI_ACTION_CTA_ITEM_CLICKED",
+        "value": 102.0
+      },
+      {
+        "name": "LWI_ACTION_AD_PREVIEW_TAPPED",
+        "value": 103.0
+      },
+      {
+        "name": "LWI_AD_PREVIEW_STARTED",
+        "value": 104.0
+      },
+      {
+        "name": "LWI_BILLING_LOADED",
+        "value": 105.0
+      },
+      {
+        "name": "LWI_BILLING_ERROR",
+        "value": 106.0
+      },
+      {
+        "name": "LWI_IMAGE_URL_DETAILS_LOADED",
+        "value": 107.0
+      },
+      {
+        "name": "LWI_ACTION_BILLING_RETRY_TAPPED",
+        "value": 108.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_DETAILED_INSIGHTS_TAPPED",
+        "value": 109.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_ADVANCED_AUDIENCE_TAPPED",
+        "value": 110.0
+      },
+      {
+        "name": "LWI_ACTION_PROMOTE_AGAIN_TAPPED",
+        "value": 111.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_ON_FACEBOOK_TAPPED",
+        "value": 113.0
+      },
+      {
+        "name": "LWI_ACTION_SWIPE_REFRESH",
+        "value": 114.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_FACEBOOK_AD_PREVIEW",
+        "value": 115.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_INSTAGRAM_AD_PREVIEW",
+        "value": 116.0
+      },
+      {
+        "name": "LWI_ACTION_NEXT_BUTTON_TAPPED",
+        "value": 117.0
+      },
+      {
+        "name": "LWI_ACTION_LOADING_ERROR",
+        "value": 118.0
+      },
+      {
+        "name": "LWI_ACTION_DIALOG_DISMISSED",
+        "value": 119.0
+      },
+      {
+        "name": "LWI_NETWORK_ERROR_SHOWN",
+        "value": 120.0
+      },
+      {
+        "name": "LWI_GENERIC_ERROR_SHOWN",
+        "value": 121.0
+      },
+      {
+        "name": "LWI_RETRY_BUTTON_TAPPED",
+        "value": 122.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDED_BUINESS_POFILE_ITEM_SELECTED",
+        "value": 123.0
+      },
+      {
+        "name": "LWI_ACTION_BUINESS_POFILE_ITEM_SELECTED",
+        "value": 124.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_RECOMMENDED_BUSINESS_PROFILE_SELECTED",
+        "value": 125.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_BUSINESS_PROFILE_SELECTED",
+        "value": 126.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_IMAGE_DONE",
+        "value": 127.0
+      },
+      {
+        "name": "LWI_ACTION_WA_PAGELESS_BUTTON_TAPPED",
+        "value": 128.0
+      },
+      {
+        "name": "LWI_ACTION_SWITCH_FACEBOOK_ACCOUNT_BUTTON_TAPPED",
+        "value": 129.0
+      },
+      {
+        "name": "LWI_ACTION_TRY_AGAIN_DIALOG_BUTTON_TAPPED",
+        "value": 130.0
+      },
+      {
+        "name": "LWI_ACTION_CANCEL_DIALOG_BUTTON_TAPPED",
+        "value": 131.0
+      },
+      {
+        "name": "LWI_PAGE_PERMISSION_ERROR_RESOLVED",
+        "value": 132.0
+      },
+      {
+        "name": "LWI_PAGE_PERMISSION_ERROR_UNRESOLVED",
+        "value": 133.0
+      },
+      {
+        "name": "LWI_ACTION_PROMOTE_TEXT_TAPPED",
+        "value": 134.0
+      },
+      {
+        "name": "LWI_ACTION_EXIT_CONF_SHOWN",
+        "value": 135.0
+      },
+      {
+        "name": "LWI_ACTION_EXIT_CONF_EXIT_TAPPED",
+        "value": 136.0
+      },
+      {
+        "name": "LWI_ACTION_EXIT_CONF_RETURN_TO_AD_TAPPED",
+        "value": 137.0
+      },
+      {
+        "name": "AD_WITH_ALERT_DISPLAYED",
+        "value": 138.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_CAMERA_SELECTED",
+        "value": 139.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_GALLERY_SELECTED",
+        "value": 140.0
+      },
+      {
+        "name": "LWI_ACTION_CAMERA_ITEM_SELECTED",
+        "value": 141.0
+      },
+      {
+        "name": "LWI_ACTION_GALLERY_ITEM_SELECTED",
+        "value": 142.0
+      },
+      {
+        "name": "LWI_ACTION_CHOOSE_DIFFERENT_MEDIA_CLICKED",
+        "value": 143.0
+      },
+      {
+        "name": "LWI_ACTION_GET_STARTED_CLICKED",
+        "value": 144.0
+      },
+      {
+        "name": "LWI_ACTION_SELECT_PHOTO_FROM_GALLERY",
+        "value": 145.0
+      },
+      {
+        "name": "LWI_ACTION_PUBLISH_FB_PAGE_BUTTON_TAPPED",
+        "value": 146.0
+      },
+      {
+        "name": "LWI_ACTION_ADMIN_RIGHTS_SUB_STEP_VIEW",
+        "value": 147.0
+      },
+      {
+        "name": "LWI_ACTION_SEND_CODE_BUTTON_TAPPED",
+        "value": 148.0
+      },
+      {
+        "name": "LWI_ACTION_OPEN_EMAIL_APP_TAPPED",
+        "value": 149.0
+      },
+      {
+        "name": "LWI_ACTION_CHANGE_EMAIL_TAPPED",
+        "value": 150.0
+      },
+      {
+        "name": "LWI_ACTION_RESEND_TAPPED",
+        "value": 151.0
+      },
+      {
+        "name": "LWI_ACTION_NONCE_SUBMIT",
+        "value": 152.0
+      },
+      {
+        "name": "LWI_ACTION_VERIFY_SUCCESS",
+        "value": 153.0
+      },
+      {
+        "name": "LWI_ACTION_CODE_FIELD_TAPPED",
+        "value": 154.0
+      },
+      {
+        "name": "LWI_ACTION_AD_ACC_SETTINGS_MENU_OPT_TAPPED",
+        "value": 155.0
+      },
+      {
+        "name": "LWI_ACTION_AD_PAYMENTS_ROW_TAPPED",
+        "value": 156.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DESIGN_UPDATE_TAPPED",
+        "value": 157.0
+      },
+      {
+        "name": "LWI_ACTION_AD_SETTINGS_UPDATE_TAPPED",
+        "value": 158.0
+      },
+      {
+        "name": "LWI_ACTION_CANCEL_BUTTON_TAPPED",
+        "value": 159.0
+      },
+      {
+        "name": "LWI_ACTION_SAVE_BUTTON_TAPPED",
+        "value": 160.0
+      },
+      {
+        "name": "LWI_EDIT_AD_ACC_EMAIL_SUCCESS",
+        "value": 161.0
+      },
+      {
+        "name": "LWI_ACTION_AD_APPEAL_BANNER_SHOWN",
+        "value": 164.0
+      },
+      {
+        "name": "LWI_ACTION_APPEAL_REQUEST_REVIEW_TAPPED",
+        "value": 165.0
+      },
+      {
+        "name": "LWI_ACTION_APPEAL_VIEW_STATUS_TAPPED",
+        "value": 166.0
+      },
+      {
+        "name": "LWI_ACTION_APPEAL_LEARN_MORE_TAPPED",
+        "value": 167.0
+      },
+      {
+        "name": "LWI_ACTION_AD_ACCOUNT_APPEAL_BANNER_SHOWN",
+        "value": 168.0
+      },
+      {
+        "name": "LWI_ACTION_SUBMIT_TAPPED",
+        "value": 169.0
+      },
+      {
+        "name": "LWI_MEDIA_PARSING_STARTED",
+        "value": 170.0
+      },
+      {
+        "name": "LWI_MEDIA_PARSING_SUCCESS",
+        "value": 171.0
+      },
+      {
+        "name": "LWI_MEDIA_PARSING_FAILURE",
+        "value": 172.0
+      },
+      {
+        "name": "LWI_ACTION_VIDEO_AD_PREVIEW_AUDIO_MUTE_TAPPED",
+        "value": 174.0
+      },
+      {
+        "name": "LWI_ACTION_VIDEO_AD_PREVIEW_AUDIO_UNMUTE_TAPPED",
+        "value": 175.0
+      },
+      {
+        "name": "SMB_STATUS_UPSELL_BOTTOM_SHEET_DISMISS",
+        "value": 178.0
+      },
+      {
+        "name": "LWI_ACTION_ITEM_SELECTED",
+        "value": 179.0
+      },
+      {
+        "name": "LWI_ACTION_CONTEXTUAL_HELP_OPENED",
+        "value": 180.0
+      },
+      {
+        "name": "LWI_ACTION_EMAIL_INPUT_STARTED",
+        "value": 181.0
+      },
+      {
+        "name": "LWI_ACTION_SEARCH_ADDRESS_TAPPED",
+        "value": 182.0
+      },
+      {
+        "name": "LWI_ACTION_SAVE_MAP_AUDIENCE_TAPPED",
+        "value": 183.0
+      },
+      {
+        "name": "LWI_ACTION_MAP_RADIUS_SELECTED",
+        "value": 184.0
+      },
+      {
+        "name": "LWI_ACTION_MAP_LOCATION_ITEM_TAPPED",
+        "value": 185.0
+      },
+      {
+        "name": "LWI_ACTION_SAVE_MAP_AUDIENCE_SUCCESS",
+        "value": 186.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_REGION_OPTION_SELECTED",
+        "value": 187.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_MAP_OPTION_SELECTED",
+        "value": 188.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_MAP_AUDIENCE_TAPPED",
+        "value": 189.0
+      },
+      {
+        "name": "LWI_ACTION_ESTIMATED_REACH_SUCCESS",
+        "value": 190.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_TO_STATUS_PICKER_SELECTED",
+        "value": 191.0
+      },
+      {
+        "name": "LWI_ACTION_ITEM_DESELECT",
+        "value": 192.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_MEDIA_CLICKED",
+        "value": 193.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_MEDIA_COMPLETE",
+        "value": 194.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_MEDIA_CANCELLED",
+        "value": 195.0
+      },
+      {
+        "name": "LWI_ACTION_AD_CREATION_HUB_DRAFT_AD_TAP",
+        "value": 196.0
+      },
+      {
+        "name": "LWI_ACTION_AD_CREATION_DRAFT_AD_SAVED",
+        "value": 197.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_STARTED_LOADING_ADS",
+        "value": 198.0
+      },
+      {
+        "name": "LWI_MANAGE_ADS_ITEM_MAIN_CTA_IMPRESSION",
+        "value": 199.0
+      },
+      {
+        "name": "LWI_MANAGE_ADS_ITEM_MAIN_CTA_TAP",
+        "value": 200.0
+      },
+      {
+        "name": "LWI_ACTION_WEB_LINK_CLICKED",
+        "value": 201.0
+      },
+      {
+        "name": "LWI_ACTION_NON_DISCRIMINATION_POLICY_HEC_CLICKED",
+        "value": 202.0
+      },
+      {
+        "name": "LWI_ACTION_NON_DISCRIMINATION_POLICY_FULL_CLICKED",
+        "value": 203.0
+      },
+      {
+        "name": "LWI_ACTION_BUDGET_DURATION_INFO_ICON_TAPPED",
+        "value": 204.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_INFO_ICON_TAPPED",
+        "value": 205.0
+      },
+      {
+        "name": "LWI_ACTION_REVIEW_AD_TAPPED",
+        "value": 206.0
+      },
+      {
+        "name": "LWI_SIMPLIFIED_LOADER_AUTO_DISMISSED",
+        "value": 207.0
+      },
+      {
+        "name": "LWI_PENDING_PAYMENT_REQUEST_STARTED",
+        "value": 208.0
+      },
+      {
+        "name": "LWI_ACTION_LOGIN_PROMPT_FOR_MAP_OPTION_SHOWN",
+        "value": 209.0
+      },
+      {
+        "name": "LWI_ACTION_MAP_USE_CURRENT_LOCATION_TAPPED",
+        "value": 210.0
+      },
+      {
+        "name": "LWI_ACTION_LOCATION_PERMISSION_ACCESS_ALLOW_TAPPED",
+        "value": 211.0
+      },
+      {
+        "name": "LWI_ACTION_LOCATION_PERMISSION_ACCESS_DENY_TAPPED",
+        "value": 212.0
+      },
+      {
+        "name": "LWI_ACTION_ITEM_DESELECTED",
+        "value": 213.0
+      },
+      {
+        "name": "LWI_ACTION_MEDIA_FILTER_APPLIED",
+        "value": 214.0
+      },
+      {
+        "name": "LWI_ACTION_MEDIA_FILTER_CLEARED",
+        "value": 215.0
+      },
+      {
+        "name": "LWI_ACTION_SCREEN_DESTROYED",
+        "value": 216.0
+      },
+      {
+        "name": "LWI_ACTION_GALLERY_REQUEST_PERMISSION_DIALOG_SHOWN",
+        "value": 217.0
+      },
+      {
+        "name": "LWI_ACTION_GALLERY_REQUEST_GRANTED",
+        "value": 218.0
+      },
+      {
+        "name": "LWI_ACTION_GALLERY_REQUEST_DENIED",
+        "value": 219.0
+      },
+      {
+        "name": "LWI_FAST_TRACK_STEP_LOADED",
+        "value": 220.0
+      },
+      {
+        "name": "LWI_FAST_TRACK_STEP_CLOSED",
+        "value": 221.0
+      },
+      {
+        "name": "LWI_CUSTOM_TAB_OPENED",
+        "value": 222.0
+      },
+      {
+        "name": "LWI_CUSTOM_TAB_REDIRECT_RECEIVED",
+        "value": 223.0
+      },
+      {
+        "name": "LWI_ACTION_CURRENT_LOCATION_APPLIED",
+        "value": 224.0
+      },
+      {
+        "name": "LWI_ACTION_PADDED_STATUS_IMAGE_DISPLAYED",
+        "value": 225.0
+      },
+      {
+        "name": "LWI_ACTION_GOOGLE_DIALOG_CANCELLED",
+        "value": 226.0
+      },
+      {
+        "name": "LWI_ACTION_GOOGLE_ACCOUNT_SELECTED",
+        "value": 227.0
+      },
+      {
+        "name": "LWI_ACTION_GOOGLE_SIGNIN_TAPPED",
+        "value": 228.0
+      },
+      {
+        "name": "LWI_ACTION_GOOGLE_ACCOUNT_SELECTION_FAILED",
+        "value": 229.0
+      },
+      {
+        "name": "LWI_ACTION_GOOGLE_ACCOUNT_ONBOARDING_FAILED",
+        "value": 230.0
+      },
+      {
+        "name": "LWI_ACTION_GOOGLE_ACCOUNT_ONBOARDING_SUCCESS",
+        "value": 231.0
+      },
+      {
+        "name": "LWI_ACTION_AD_STATUS_ISSUE_BANNER_SHOWN",
+        "value": 232.0
+      },
+      {
+        "name": "LWI_ACTION_AD_STATUS_ISSUE_BANNER_LEARN_MORE_TAPPED",
+        "value": 233.0
+      },
+      {
+        "name": "LWI_ACTION_CROP_MEDIA_CLICKED",
+        "value": 234.0
+      },
+      {
+        "name": "LWI_ACTION_CROP_MEDIA_COMPLETE",
+        "value": 235.0
+      },
+      {
+        "name": "LWI_ACTION_CROP_MEDIA_CANCELLED",
+        "value": 236.0
+      },
+      {
+        "name": "LWI_ACTION_USE_EMAIL_TAPPED",
+        "value": 237.0
+      },
+      {
+        "name": "LWI_ACTION_USE_FB_TAPPED",
+        "value": 238.0
+      },
+      {
+        "name": "LWI_ACTION_COUPON_PROMOTION_NUX_CONTINUE_TAPPED",
+        "value": 239.0
+      },
+      {
+        "name": "LWI_ACTION_SAVE_CHANGES_DIALOG_OPTION_TAPPED",
+        "value": 240.0
+      },
+      {
+        "name": "LWI_ACTION_GO_BACK_DIALOG_OPTION_TAPPED",
+        "value": 241.0
+      },
+      {
+        "name": "LWI_ACTION_LOCATION_SYSTEM_SETTING_TURN_ON_OK_TAPPED",
+        "value": 242.0
+      },
+      {
+        "name": "LWI_ACTION_LOCATION_SYSTEM_SETTING_TURN_ON_NO_THANKS_TAPPED",
+        "value": 243.0
+      },
+      {
+        "name": "LWI_ACTION_TAP_TO_PAUSE",
+        "value": 244.0
+      },
+      {
+        "name": "LWI_ACTION_RELEASE_TO_RESUME",
+        "value": 245.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_VIDEO_IMPRESSION",
+        "value": 246.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_VIDEO_PLAY_STARTED",
+        "value": 247.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_VIDEO_MUTED",
+        "value": 248.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_VIDEO_UNMUTED",
+        "value": 249.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_VIDEO_PAUSED",
+        "value": 250.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_VIDEO_RESUMED",
+        "value": 251.0
+      },
+      {
+        "name": "LWI_ACTION_NUX_VIDEO_PLAYER_FAILED",
+        "value": 252.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDATION_CARD_SHOWN",
+        "value": 253.0
+      },
+      {
+        "name": "LWI_ACTION_APPLY_RECOMMENDATION_CLICKED",
+        "value": 254.0
+      },
+      {
+        "name": "LWI_ACTION_CANCEL_RECOMMENDATION_CLICKED",
+        "value": 255.0
+      },
+      {
+        "name": "LWI_ACTION_PERFORMACE_INFO_CLICKED",
+        "value": 256.0
+      },
+      {
+        "name": "LWI_ACTION_MAP_PREVIEW_IMPRESSION",
+        "value": 257.0
+      },
+      {
+        "name": "LWI_ACTION_MAP_PREVIEW_SELECTED",
+        "value": 258.0
+      },
+      {
+        "name": "LWI_ACTION_MAP_ZOOM",
+        "value": 259.0
+      },
+      {
+        "name": "LWI_ACTION_MAP_PAN",
+        "value": 260.0
+      },
+      {
+        "name": "LWI_ACTION_AD_GENAI_TAPPED",
+        "value": 261.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_AD_PREVIEWS_TAPPED",
+        "value": 262.0
+      },
+      {
+        "name": "LWI_ACTION_ADD_MEDIA_TAPPED",
+        "value": 263.0
+      },
+      {
+        "name": "LWI_ACTION_DISCLAIMER_TIP_DISPLAYED",
+        "value": 264.0
+      },
+      {
+        "name": "LWI_ACTION_DISCLAIMER_TIP_CLICKED",
+        "value": 265.0
+      },
+      {
+        "name": "LWI_ACTION_IG_FIRST_BOTTOM_SHEET_DISPLAYED",
+        "value": 266.0
+      },
+      {
+        "name": "LWI_ACTION_IG_FIRST_BOTTOM_SHEET_DISMISSED",
+        "value": 267.0
+      },
+      {
+        "name": "LWI_ACTION_IG_FIRST_BOTTOM_SHEET_LEARN_MORE_TAPPED",
+        "value": 268.0
+      },
+      {
+        "name": "LWI_ACTION_IG_PREVIEW_TAB_DISPLAYED",
+        "value": 269.0
+      },
+      {
+        "name": "LWI_ACTION_IG_FIRST_NUX_DISPLAYED",
+        "value": 270.0
+      },
+      {
+        "name": "LWI_ACTION_IG_DISCLAIMER_TIP_DISMISSED",
+        "value": 271.0
+      },
+      {
+        "name": "LWI_ACTION_IG_FIRST_DISCLAIMER_TIP_DISPLAYED",
+        "value": 272.0
+      },
+      {
+        "name": "LWI_ACTION_IG_FIRST_DISCLAIMER_TIP_CLICKED",
+        "value": 273.0
+      },
+      {
+        "name": "LWI_ACTION_PAYMENT_PENDING_AD_MANAGE_ADS_DISPLAYED",
+        "value": 274.0
+      },
+      {
+        "name": "LWI_ACTION_PAYMENT_PENDING_MANAGE_ADS_CTA_CLICKED",
+        "value": 275.0
+      },
+      {
+        "name": "LWI_ACTION_PAYMENT_PENDING_AD_CREATION_HUB_DISPLAYED",
+        "value": 276.0
+      },
+      {
+        "name": "LWI_ACTION_PAYMENT_PENDING_AD_CREATION_HUB_CLICKED",
+        "value": 277.0
+      },
+      {
+        "name": "LWI_ACTION_TYPEAHEAD_LOADED",
+        "value": 278.0
+      },
+      {
+        "name": "LWI_ACTION_TYPEAHEAD_ERROR",
+        "value": 279.0
+      },
+      {
+        "name": "LWI_ACTION_SUGGESTION_LOADED",
+        "value": 280.0
+      },
+      {
+        "name": "LWI_ACTION_SUGGESTION_ERROR",
+        "value": 281.0
+      },
+      {
+        "name": "LWI_ACTION_TYPEAHEAD_RESULT_TAPPED",
+        "value": 282.0
+      },
+      {
+        "name": "LWI_ACTION_SUGGESTION_RESULT_TAPPED",
+        "value": 283.0
+      },
+      {
+        "name": "LWI_ACTION_INTEREST_UNSELECTED",
+        "value": 284.0
+      },
+      {
+        "name": "LWI_ACTION_ADD_INTEREST_TAPPED",
+        "value": 285.0
+      },
+      {
+        "name": "LWI_ACTION_BOOSTED_COMPONENT_LOADER_SHOWN",
+        "value": 286.0
+      },
+      {
+        "name": "LWI_ACTION_BOOSTED_COMPONENT_LOADER_DISMISSED",
+        "value": 287.0
+      },
+      {
+        "name": "LWI_ACTION_INTEREST_ROW_SHOWN",
+        "value": 288.0
+      },
+      {
+        "name": "LWI_ACTION_SEARCH_TEXT_UPDATED",
+        "value": 289.0
+      },
+      {
+        "name": "LWI_ACTION_TAIWAN_COMPLIANCE_LEARN_MORE_TAPPED",
+        "value": 290.0
+      },
+      {
+        "name": "LWI_ACTION_TAIWAN_COMPLIANCE_ACKNOWLEDGED",
+        "value": 291.0
+      },
+      {
+        "name": "LWI_ACTION_SINGAPORE_COMPLIANCE_MBS_REDIRECT_TAPPED",
+        "value": 292.0
+      },
+      {
+        "name": "LWI_ACTION_SINGAPORE_COMPLIANCE_FB_REDIRECT_TAPPED",
+        "value": 293.0
+      },
+      {
+        "name": "LWI_ACTION_SINGAPORE_COMPLIANCE_CANCEL_TAPPED",
+        "value": 294.0
+      },
+      {
+        "name": "LWI_ACTION_TAIWAN_COMPLIANCE_FINANCE_TOGGLE_SHOWN",
+        "value": 295.0
+      },
+      {
+        "name": "LWI_ACTION_AD_CREATION_FAB_TAPPED",
+        "value": 296.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_AD_DETAILS_CLICKED",
+        "value": 297.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_EDIT_ON_FACEBOOK_CLICKED",
+        "value": 298.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_PAUSE_CLICKED",
+        "value": 299.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_RESUME_CLICKED",
+        "value": 300.0
+      },
+      {
+        "name": "LWI_ACTION_PREVIEW_CLICKED",
+        "value": 301.0
+      },
+      {
+        "name": "LWI_ACTION_SEE_ALL_CLICKED",
+        "value": 302.0
+      },
+      {
+        "name": "LWI_ACTION_AD_ACCOUNT_CLICKED",
+        "value": 303.0
+      },
+      {
+        "name": "LWI_ACTION_PAYMENT_METHOD_CLICKED",
+        "value": 304.0
+      },
+      {
+        "name": "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_DELETE_CLICKED",
+        "value": 305.0
+      },
+      {
+        "name": "LWI_ACTION_LIST_LOAD_ERROR",
+        "value": 306.0
+      },
+      {
+        "name": "LWI_ACTION_SCROLL_TO_END",
+        "value": 307.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDATION_CARD_LOAD_ERROR",
+        "value": 308.0
+      },
+      {
+        "name": "LWI_ACTION_SEE_DETAILS_TAPPED",
+        "value": 309.0
+      },
+      {
+        "name": "LWI_ACTION_INSIGHTS_TILE_TAPPED",
+        "value": 310.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_TAB_TAPPED",
+        "value": 311.0
+      },
+      {
+        "name": "LWI_ACTION_INTERACTIONS_TAB_TAPPED",
+        "value": 312.0
+      },
+      {
+        "name": "LWI_ACTION_CONVERSATIONS_METRICS_INFO_TAPPED",
+        "value": 313.0
+      },
+      {
+        "name": "LWI_ACTION_LINKS_METRICS_INFO_TAPPED",
+        "value": 314.0
+      },
+      {
+        "name": "LWI_ACTION_REACH_METRICS_INFO_TAPPED",
+        "value": 315.0
+      },
+      {
+        "name": "LWI_ACTION_LOCATION_METRICS_INFO_TAPPED",
+        "value": 316.0
+      },
+      {
+        "name": "LWI_ACTION_GOAL_CHOICE_SCREEN_DISPLAYED",
+        "value": 317.0
+      },
+      {
+        "name": "LWI_ACTION_AWARENESS_GOAL_SELECTED",
+        "value": 318.0
+      },
+      {
+        "name": "LWI_ACTION_ENGAGEMENT_GOAL_SELECTED",
+        "value": 319.0
+      },
+      {
+        "name": "LWI_ACTION_SALES_GOAL_SELECTED",
+        "value": 320.0
+      },
+      {
+        "name": "LWI_ACTION_WESBITE_LINK_SUBMITTED",
+        "value": 321.0
+      },
+      {
+        "name": "LWI_ACTION_CATALOG_LINK_SUBMITTED",
+        "value": 322.0
+      },
+      {
+        "name": "LWI_ACTION_ERROR_ON_WEBSITE_ENTRY",
+        "value": 323.0
+      },
+      {
+        "name": "LWI_ACTION_DRAFT_AD_NUX_VISIBLE",
+        "value": 324.0
+      },
+      {
+        "name": "LWI_ACTION_CONTINUE_DRAFT_AD_CLICKED",
+        "value": 325.0
+      },
+      {
+        "name": "LWI_ACTION_CREATE_NEW_AD_CLICKED",
+        "value": 326.0
+      },
+      {
+        "name": "LWI_ACTION_WESBITE_LINK_SELECTED",
+        "value": 327.0
+      },
+      {
+        "name": "LWI_ACTION_CATALOG_LINK_SELECTED",
+        "value": 328.0
+      },
+      {
+        "name": "LWI_ACTION_CONFIRM_BUTTON_PRESSED",
+        "value": 329.0
+      },
+      {
+        "name": "LWI_ACTION_OUTCOME_WEBSITE_LINK_ENTRY_ERROR",
+        "value": 330.0
+      },
+      {
+        "name": "LWI_ACTION_BUDGET_PRESETS_SHOWN",
+        "value": 332.0
+      },
+      {
+        "name": "LWI_ACTION_BUDGET_PRESET_SELECTED",
+        "value": 333.0
+      },
+      {
+        "name": "LWI_ACTION_BUDGET_PRESETS_NOT_AVAILABLE",
+        "value": 334.0
+      },
+      {
+        "name": "LWI_ACTION_CONSENT_SKIP_TAPPED",
+        "value": 335.0
+      },
+      {
+        "name": "LWI_ADS_HUB_OVERVIEW_PERF_SUMMARY_LOADED",
+        "value": 336.0
+      },
+      {
+        "name": "LWI_ADS_HUB_OVERVIEW_PERF_SUMMARY_LOAD_ERROR",
+        "value": 337.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_HUB_PERF_SUMMARY_DATE_TAPPED",
+        "value": 338.0
+      },
+      {
+        "name": "LWI_ACTION_SKIP_TAPPED",
+        "value": 339.0
+      },
+      {
+        "name": "LWI_ACTION_LOGIN_WITH_FB_TAPPED",
+        "value": 340.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_GOAL_TAPPED",
+        "value": 341.0
+      },
+      {
+        "name": "LWI_ACTION_EDIT_GOAL_DIALOG_OPTION_TAPPED",
+        "value": 342.0
+      },
+      {
+        "name": "LWI_PAUSE_AD_GATING_BOTTOMSHEET_IMPRESSION",
+        "value": 343.0
+      },
+      {
+        "name": "LWI_PAUSE_AD_GATING_BOTTOMSHEET_PAUSE_AD_TAPPED",
+        "value": 344.0
+      },
+      {
+        "name": "LWI_PAUSE_AD_GATING_BOTTOMSHEET_DISMISSED",
+        "value": 345.0
+      },
+      {
+        "name": "LWI_ACTION_RESUME_AD_TAPPED",
+        "value": 346.0
+      },
+      {
+        "name": "LWI_ACTION_ESTIMATED_CONVERSATIONS_SUCCESS",
+        "value": 347.0
+      },
+      {
+        "name": "LWI_ACTION_TRY_TEMPLATE_CLICKED",
+        "value": 348.0
+      },
+      {
+        "name": "LWI_ACTION_TEMPLATE_APPLIED",
+        "value": 349.0
+      },
+      {
+        "name": "LWI_RESOLVE_PAYMENT_ISSUE_REQUEST_STARTED",
+        "value": 350.0
+      },
+      {
+        "name": "LWI_RESOLVE_PAYMENT_ISSUE_REQUEST_LOADED",
+        "value": 351.0
+      },
+      {
+        "name": "LWI_RESOLVE_PAYMENT_ISSUE_NO_ACTION_REQUIRED",
+        "value": 352.0
+      },
+      {
+        "name": "LWI_SUBMIT_AD_CREATION",
+        "value": 353.0
+      },
+      {
+        "name": "LWI_DRAFT_AD_QP_CARD_DISPLAYED",
+        "value": 354.0
+      },
+      {
+        "name": "LWI_ACTION_DRAFT_AD_QP_CARD_TAP",
+        "value": 355.0
+      },
+      {
+        "name": "LWI_ACTION_DISMISS_DRAFT_AD_QP_CARD",
+        "value": 356.0
+      },
+      {
+        "name": "LWI_ACTION_DRAFT_AD_DISPLAYED",
+        "value": 357.0
+      },
+      {
+        "name": "LWI_ACTION_PRE_BLOKS_LOAD_STARTED",
+        "value": 358.0
+      },
+      {
+        "name": "LWI_ACTION_RECREATE_FROM_PREVIOUS_ADS_TAPPED",
+        "value": 359.0
+      },
+      {
+        "name": "LWI_ACTION_PERFORMANCE_SUMMARY_IMPRESSION",
+        "value": 360.0
+      },
+      {
+        "name": "LWI_ACTION_PERFORMANCE_SUMMARY_CLICKED",
+        "value": 361.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_ROW_IMPRESSION",
+        "value": 362.0
+      },
+      {
+        "name": "LWI_ACTION_AD_PREVIEW_IMPRESSION",
+        "value": 363.0
+      },
+      {
+        "name": "LWI_ACTION_AD_PERFORMANCE_IMPRESSION",
+        "value": 364.0
+      },
+      {
+        "name": "LWI_ACTION_PLACEMENT_TAB_CLICKED",
+        "value": 365.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DETAILS_IMPRESSION",
+        "value": 366.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DETAILS_NAV_BAR_MENU_CLICKED",
+        "value": 367.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DETAILS_SETTINGS_CLICKED",
+        "value": 368.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDATION_CARD_IMPRESSION",
+        "value": 369.0
+      },
+      {
+        "name": "LWI_ACTION_BLOKS_ACCOUNT_SELECTION_STARTED",
+        "value": 370.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DETAILS_AD_PERFORMANCE_IMPRESSION",
+        "value": 371.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DETAILS_SETTINGS_IMPRESSION",
+        "value": 372.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DETAILS_PAYMENT_IMPRESSION",
+        "value": 373.0
+      },
+      {
+        "name": "LWI_ACTION_FETCH_LOOKALIKE_AUDIENCE_ID",
+        "value": 374.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_INLINE_RECREATE_CTA_IMPRESSION",
+        "value": 375.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_INLINE_RECREATE_CTA_CLICK",
+        "value": 376.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_INLINE_HIGH_PERF_LABEL_IMPRESSION",
+        "value": 377.0
+      },
+      {
+        "name": "LWI_ACTION_BLOKS_RESOLVE_PAGE_PERMISSION_STARTED",
+        "value": 378.0
+      },
+      {
+        "name": "LWI_ACTION_PROMOTE_FB_MEDIA_ITEMS_TAPPED",
+        "value": 379.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_INLINE_RESUME_CTA_CLICK",
+        "value": 380.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_INLINE_RESUME_CTA_IMPRESSION",
+        "value": 381.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_OPTIONS_MENU_PAUSE_CLICK",
+        "value": 382.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_OPTIONS_MENU_CANCEL_CLICK",
+        "value": 383.0
+      },
+      {
+        "name": "LWI_ACTION_PREVIOUS_ADS_AD_ROW_TAPPED",
+        "value": 384.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_DRAFT_AD_IMPRESSION",
+        "value": 385.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_DRAFT_AD_CLICK",
+        "value": 386.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_DRAFT_AD_OPTIONS_MENU_CLICK",
+        "value": 387.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_DRAFT_AD_OPTIONS_CONTINUE_CLICK",
+        "value": 388.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_DRAFT_AD_OPTIONS_DELETE_CLICK",
+        "value": 389.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_DRAFT_AD_SEE_ALL_CLICK",
+        "value": 390.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_DRAFT_AD_BACK_CTA_CLICK",
+        "value": 391.0
+      },
+      {
+        "name": "LWI_ACTION_SEE_DETAILS_VIEW",
+        "value": 392.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_AD_SEE_DETAILS_TAPPED",
+        "value": 393.0
+      },
+      {
+        "name": "LWI_ACTION_METRICS_INFO_ICON_CLICKED",
+        "value": 394.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LISTING_VIEW",
+        "value": 395.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LISTING_CLICKED",
+        "value": 396.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LISTING_THREE_DOTS_CLICKED",
+        "value": 397.0
+      },
+      {
+        "name": "LWI_ACTION_TOTAL_METRICS_VIEW",
+        "value": 398.0
+      },
+      {
+        "name": "LWI_ACTION_DATE_SELECTOR_TAPPED",
+        "value": 399.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_SELECTED",
+        "value": 400.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_APPLY_TAPPED",
+        "value": 401.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_APPLY_CANCELED",
+        "value": 402.0
+      },
+      {
+        "name": "LWI_ACTION_EXTEND_TAPPED",
+        "value": 403.0
+      },
+      {
+        "name": "LWI_ACTION_ADD_TAPPED",
+        "value": 404.0
+      },
+      {
+        "name": "LWI_ACTION_ASL_REACH_ADD_FUNDS_TAPPED",
+        "value": 405.0
+      },
+      {
+        "name": "LWI_ACTION_INTERACTIONS_TAB_IMPRESSION",
+        "value": 406.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_TAB_GENDER_SECTION_IMPRESSION",
+        "value": 407.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_TAB_AGE_SECTION_IMPRESSION",
+        "value": 408.0
+      },
+      {
+        "name": "LWI_ACTION_AUDIENCE_TAB_LOCATION_SECTION_IMPRESSION",
+        "value": 409.0
+      },
+      {
+        "name": "LWI_ACTION_PLACEMENTS_TAB_IMPRESSION",
+        "value": 410.0
+      },
+      {
+        "name": "LWI_ACTION_PROMOTE_IG_MEDIA_ITEMS_TAPPED",
+        "value": 411.0
+      },
+      {
+        "name": "LWI_ACTION_PEFORMANCE_INLINE_RECREATE_CTA_IMPRESSION",
+        "value": 412.0
+      },
+      {
+        "name": "LWI_ACTION_PEFORMANCE_INLINE_RECREATE_CTA_CLICK",
+        "value": 413.0
+      },
+      {
+        "name": "LWI_ACTION_PEFORMANCE_DROPDOWN_RECREATE_CTA_CLICK",
+        "value": 414.0
+      },
+      {
+        "name": "LWI_ACTION_PAUSE_AD_TAPPED",
+        "value": 415.0
+      },
+      {
+        "name": "LWI_ACTION_FB_MEDIA_LOAD_COMPLETE",
+        "value": 416.0
+      },
+      {
+        "name": "LWI_ACTION_IG_MEDIA_LOAD_COMPLETE",
+        "value": 417.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_ADS_QP_ADD_BUDGET_TAPPED",
+        "value": 418.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LIST_ADD_BUDGET_TAPPED",
+        "value": 419.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_UPDATE_DAILY_BUDGET",
+        "value": 420.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DAILY_BUDGET_SELECTED",
+        "value": 421.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DAILY_BUDGET_CANCEL_TAPPED",
+        "value": 422.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DAILY_BUDGET_CONFIRM_TAPPED",
+        "value": 423.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DAILY_BUDGET_INFO_ICON_CLICKED",
+        "value": 424.0
+      },
+      {
+        "name": "LWI_ACTION_ESTIMATED_RESULTS_LEARN_MORE_CLICKED",
+        "value": 425.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_TOOLS_QP_EXTEND_DURATION",
+        "value": 426.0
+      },
+      {
+        "name": "LWI_ACTION_TOOLS_QP_EXTEND_DURATION_TAPPED",
+        "value": 427.0
+      },
+      {
+        "name": "LWI_ACTION_CLOSE_TOOLS_QP_EXTEND_DURATION",
+        "value": 428.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_TOOLS_QP_ADD_BUDGET",
+        "value": 429.0
+      },
+      {
+        "name": "LWI_ACTION_TOOLS_QP_ADD_BUDGET_TAPPED",
+        "value": 430.0
+      },
+      {
+        "name": "LWI_ACTION_CLOSE_TOOLS_QP_ADD_BUDGET",
+        "value": 431.0
+      },
+      {
+        "name": "LWI_ACTION_MANAGE_ADS_QP_EXTEND_DURATION_TAPPED",
+        "value": 432.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LIST_EXTEND_DURATION_TAPPED",
+        "value": 433.0
+      },
+      {
+        "name": "LWI_ACTION_AD_SETTINGS_CLICKED",
+        "value": 434.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_UPDATE_DURATION",
+        "value": 435.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DURATION_SELECTED",
+        "value": 436.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DURATION_CANCEL_TAPPED",
+        "value": 437.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DURATION_CONFIRM_TAPPED",
+        "value": 438.0
+      },
+      {
+        "name": "LWI_ACTION_UPDATE_DURATION_INFO_ICON_CLICKED",
+        "value": 439.0
+      },
+      {
+        "name": "LWI_ACTION_BUDGET_UPDATED",
+        "value": 440.0
+      },
+      {
+        "name": "LWI_ACTION_AD_DURATION_UPDATE_ERROR",
+        "value": 441.0
+      },
+      {
+        "name": "LWI_ACTION_BUDGET_UPDATE_ERROR",
+        "value": 442.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LIST_UPDATE_BUDGET_TAPPED",
+        "value": 443.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LIST_RECREATE_AD_TAPPED",
+        "value": 444.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LIST_RESUME_AD_TAPPED",
+        "value": 445.0
+      },
+      {
+        "name": "LWI_ACTION_AFTERPARTY_BOTTOMSHEET_IMPRESSION",
+        "value": 446.0
+      },
+      {
+        "name": "LWI_ACTION_AFTERPARTY_BOTTOMSHEET_VIEW_ADS_CLICK",
+        "value": 447.0
+      },
+      {
+        "name": "LWI_ACTION_AFTERPARTY_BOTTOMSHEET_CUSTOMIZE_CHATS_CLICK",
+        "value": 448.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_ROOT_SCREEN_IMPRESSION",
+        "value": 449.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_DONE_CTA_CLICK",
+        "value": 450.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_PREVIEW_CTA_CLICK",
+        "value": 451.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_WELCOME_MESSAGE_CLICK",
+        "value": 452.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_WELCOME_SAVE_CLICK",
+        "value": 453.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_PREFILL_MESSAGE_CLICK",
+        "value": 454.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_PREFILL_SAVE_CLICK",
+        "value": 455.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LIST_ADD_BUDGET_VIEWED",
+        "value": 456.0
+      },
+      {
+        "name": "LWI_ACTION_ADS_LIST_EXTEND_DURATION_VIEWED",
+        "value": 457.0
+      },
+      {
+        "name": "LWI_ACTION_DELETE_AD_TAPPED",
+        "value": 458.0
+      },
+      {
+        "name": "LWI_ACTION_STATUS_COUNT_CAPPED",
+        "value": 459.0
+      },
+      {
+        "name": "LWI_ACTION_SNACKBAR_IMPRESSION",
+        "value": 460.0
+      },
+      {
+        "name": "LWI_ACTION_SNACKBAR_BOOST_TAPPED",
+        "value": 461.0
+      },
+      {
+        "name": "LWI_ACTION_SNACKBAR_VIEW_TAPPED",
+        "value": 462.0
+      },
+      {
+        "name": "LWI_ACTION_VIEWER_SHEET_BANNER_IMPRESSION",
+        "value": 463.0
+      },
+      {
+        "name": "LWI_ACTION_VIEWER_SHEET_BANNER_DISMISS",
+        "value": 464.0
+      },
+      {
+        "name": "LWI_ACTION_MY_STATUS_ROW_BANNER_IMPRESSION",
+        "value": 465.0
+      },
+      {
+        "name": "LWI_ACTION_MY_STATUS_ROW_BANNER_TAPPED",
+        "value": 466.0
+      },
+      {
+        "name": "LWI_ACTION_TOOLTIP_IMPRESSION",
+        "value": 467.0
+      },
+      {
+        "name": "LWI_ACTION_TOOLTIP_TAP",
+        "value": 468.0
+      },
+      {
+        "name": "LWI_ACTION_TOOLTIP_DISMISS",
+        "value": 469.0
+      },
+      {
+        "name": "LWI_ACTION_SELF_STATUS_BOOST_TAPPED",
+        "value": 470.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDATION_FETCH_SUCCESS",
+        "value": 471.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDATION_FETCH_ERROR",
+        "value": 472.0
+      },
+      {
+        "name": "LWI_ACTION_STATUS_PICKER_RECOMMENDATION_IMPRESSION",
+        "value": 473.0
+      },
+      {
+        "name": "LWI_ACTION_STATUS_PICKER_RECOMMENDATION_TAPPED",
+        "value": 474.0
+      },
+      {
+        "name": "LWI_ACTION_MY_STATUS_SCREEN_IMPRESSION",
+        "value": 475.0
+      },
+      {
+        "name": "LWI_ACTION_MESSAGE_TEMPLATES_CLOSE_PREVIEW_CLICK",
+        "value": 476.0
+      },
+      {
+        "name": "LWI_ACTION_RECOMMENDATION_FETCH_START",
+        "value": 477.0
+      },
+      {
+        "name": "LWI_ACTION_VIEWER_SHEET_BANNER_TAP",
+        "value": 478.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_DEFAULT_BOTTOMSHEET_IMPRESSION",
+        "value": 479.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_DEFAULT_VIEW_ADS_CLICK",
+        "value": 480.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_DEFAULT_CREATE_NEW_AD_CLICK",
+        "value": 481.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_ZO_BOTTOMSHEET_IMPRESSION",
+        "value": 482.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_ZO_CTA_CLICK",
+        "value": 483.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_ZO_DISMISS",
+        "value": 484.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SHORT_DURATION_BOTTOMSHEET_IMPRESSION",
+        "value": 485.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SHORT_DURATION_CTA_CLICK",
+        "value": 486.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SHORT_DURATION_DISMISS",
+        "value": 487.0
+      },
+      {
+        "name": "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_BOTTOMSHEET_IMPRESSION",
+        "value": 488.0
+      },
+      {
+        "name": "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_CTA_CLICK",
+        "value": 489.0
+      },
+      {
+        "name": "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_DISMISS",
+        "value": 490.0
+      },
+      {
+        "name": "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_ENABLE_SUCCESS",
+        "value": 491.0
+      },
+      {
+        "name": "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_ENABLE_ERROR",
+        "value": 492.0
+      },
+      {
+        "name": "LWI_ACTION_VIEW_WHATSAPP_AD_PREVIEW",
+        "value": 493.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SABR_V2_BOTTOMSHEET_IMPRESSION",
+        "value": 494.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SABR_V2_CTA_CLICK",
+        "value": 495.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SABR_V2_DISMISS",
+        "value": 496.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SABR_VSV_BOTTOMSHEET_IMPRESSION",
+        "value": 497.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SABR_VSV_CTA_CLICK",
+        "value": 498.0
+      },
+      {
+        "name": "LWI_ACTION_PAC_SABR_VSV_DISMISS",
+        "value": 499.0
+      },
+      {
+        "name": "LWI_BILLING_HUB_DEEPLINK_REQUEST_STARTED",
+        "value": 500.0
+      },
+      {
+        "name": "LWI_BILLING_HUB_DEEPLINK_REQUEST_LOADED",
+        "value": 501.0
+      },
+      {
+        "name": "LWI_DRAFT_AD_LOAD_STARTED",
+        "value": 502.0
+      },
+      {
+        "name": "LWI_DRAFT_AD_LOAD_COMPLETED",
+        "value": 503.0
+      },
+      {
+        "name": "LWI_ACTION_MEDIA_SIZE_WARNING_USE_ANYWAY_TAPPED",
+        "value": 504.0
+      },
+      {
+        "name": "LWI_ACTION_MEDIA_SIZE_WARNING_CHANGE_IMAGE_TAPPED",
+        "value": 505.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_MFR_OPTIONS_IMPRESSION",
+        "value": 506.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_MFR_CTA_CLICK",
+        "value": 507.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_MFR_DISMISS",
+        "value": 508.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_MFR_ENABLE_SUCCESS",
+        "value": 509.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_MFR_ENABLE_ERROR",
+        "value": 510.0
+      },
+      {
+        "name": "LWI_ACTION_DURATION_MFR_INVALID_CUSTOM_DURATION",
+        "value": 511.0
+      },
+      {
+        "name": "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_TOOLTIP_TOO_LOW_IMPRESSION",
+        "value": 512.0
+      },
+      {
+        "name": "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_TOOLTIP_LOW_IMPRESSION",
+        "value": 513.0
+      },
+      {
+        "name": "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_DIALOG_IMPRESSION",
+        "value": 514.0
+      },
+      {
+        "name": "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_DIALOG_CTA_CLICK",
+        "value": 515.0
+      },
+      {
+        "name": "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_PAC_SUPPRESSED",
+        "value": 516.0
+      },
+      {
+        "name": "LWI_ACTION_SWIPE_BACK",
+        "value": 517.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_START_LEARNING_CARD_IMPRESSION",
+        "value": 518.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_START_LEARNING_CTA_CLICK",
+        "value": 519.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_UNDERSTANDING_RESULTS_IMPRESSION",
+        "value": 520.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_UNDERSTANDING_RESULTS_DONE_CLICK",
+        "value": 521.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_PAC_BOTTOMSHEET_IMPRESSION",
+        "value": 522.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_PAC_MANAGE_ADS_CLICK",
+        "value": 523.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_PAC_BOTTOMSHEET_DISMISS",
+        "value": 524.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_IMPRESSION",
+        "value": 525.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_SEE_DETAILS_CLICK",
+        "value": 526.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_DISMISS",
+        "value": 527.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_COMPLETION_QP_CARD_IMPRESSION",
+        "value": 528.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_COMPLETION_QP_CARD_VIEW_DETAILS_CLICK",
+        "value": 529.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_COMPLETION_QP_CARD_DISMISS",
+        "value": 530.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_IMPRESSION",
+        "value": 531.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_SEE_DETAILS_CLICK",
+        "value": 532.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_DISMISS",
+        "value": 533.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_RECREATE_AD_CLICK",
+        "value": 534.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_CREATION_UNDERSTANDING_RESULTS_DISMISS",
+        "value": 535.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AUTO_OPEN_SUPPRESSED",
+        "value": 536.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_LOADING_ERROR",
+        "value": 537.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_LOADING_ERROR",
+        "value": 538.0
+      },
+      {
+        "name": "QR_SCANNER_ZOOM",
+        "value": 539.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_THRESHOLD_SCALE_CLICK",
+        "value": 540.0
+      },
+      {
+        "name": "LWI_ACTION_WINBACK_RECREATE_FLOW_STARTED",
+        "value": 541.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiScreenAction",
+    "matches": "LWI_SCREEN_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "LWI_SCREEN_ACTION",
+    "LWI_ACTION_VIEW",
+    "LWI_ACTION_BACK_BUTTON_TAPPED",
+    "LWI_ACTION_CREATE_ADS_TAPPED",
+    "LWI_ACTION_MANAGE_ADS_TAPPED",
+    "LWI_ACTION_LEARN_MORE_TAPPED",
+    "LWI_ACTION_PRODUCT_SELECTED",
+    "LWI_ACTION_CONTINUE_TAPPED",
+    "LWI_MANAGE_ADS_DISPLAYED",
+    "LWI_ALERT",
+    "LWI_ACTION_PROMOTE_CATALOG_ITEMS_TAPPED",
+    "LWI_ACTION_PROMOTE_STATUSES_TAPPED",
+    "LWI_ACTION_PROMOTE_NEW_CONTENT_TAPPED",
+    "LWI_ACTION_CONTACT_US_TAPPED",
+    "LWI_ACTION_HELP_TAPPED",
+    "LWI_ACTION_STATUS_SELECTED",
+    "LWI_ACTION_PRODUCT_DESELECTED",
+    "LWI_ACTION_NUX_CONTINUE_TAPPED",
+    "LWI_ACTION_RECOMMENDED_CATALOG_ITEM_SELECTED",
+    "LWI_ACTION_RECOMMENDED_STATUS_ITEM_SELECTED",
+    "LWI_ACTION_NO_CATALOG_TO_ADVERTISE_TAPPED",
+    "LWI_ACTION_NO_STATUS_TO_ADVERTISE_TAPPED",
+    "LWI_CREATE_AD_DISPLAYED",
+    "LWI_ACTION_CONTINUE_TO_MEDIA_SELECTOR_TAPPED",
+    "LWI_ACTION_AD_DESCRIPTION_TAPPED",
+    "LWI_ACTION_AD_DESCRIPTION_SAVE_TAPPED",
+    "LWI_ACTION_AD_DESCRIPTION_CANCEL_TAPPED",
+    "LWI_ACTION_EDIT_BUDGET_TAPPED",
+    "LWI_ACTION_DAILY_BUDGET_SELECTED",
+    "LWI_ACTION_CUSTOM_DAILY_BUDGET_TAPPED",
+    "LWI_ACTION_CUSTOM_DAILY_BUDGET_SAVE_TAPPED",
+    "LWI_ACTION_CUSTOM_DAILY_BUDGET_CANCEL_TAPPED",
+    "LWI_ACTION_AD_DURATION_UPDATED",
+    "LWI_ACTION_EDIT_AUDIENCE_TAPPED",
+    "LWI_ACTION_EDIT_AUDIENCE_LOCATION_TAPPED",
+    "LWI_ACTION_AUDIENCE_LOCATION_SELECTED",
+    "LWI_ACTION_AUDIENCE_LOCATION_DESELECTED",
+    "LWI_ACTION_AUDIENCE_AGE_RANGE_UPDATED",
+    "LWI_ACTION_AUDIENCE_GENDER_SELECTED",
+    "LWI_ACTION_SPECIAL_ADS_CATEGORY_TAPPED",
+    "LWI_ACTION_SPECIAL_ADS_CATEGORY_CONTINUE_TAPPED",
+    "LWI_ACTION_SPECIAL_ADS_CATEGORY_CANCEL_TAPPED",
+    "LWI_ACTION_ADD_PAYMENT_TAPPED",
+    "LWI_ACTION_CREATE_AD_TAPPED",
+    "LWI_ACTION_EDIT_ACCOUNT_TAPPED",
+    "LWI_ACTION_EDIT_PAYMENT_TAPPED",
+    "LWI_ACTION_REMOVE_ACCOUNT_TAPPED",
+    "LWI_ACTION_REMOVE_ACCOUNT_REMOVE_TAPPED",
+    "LWI_ACTION_REMOVE_ACCOUNT_CANCEL_TAPPED",
+    "LWI_ACTION_CONSENT_CONTINUE_TAPPED",
+    "LWI_ACTION_AD_CREATED_BANNER_IMPRESSION",
+    "LWI_ACTION_AD_CREATED_BANNER_CLICK",
+    "LWI_ACTION_AD_CREATED_BANNER_DISMISS",
+    "LWI_ACTION_AD_SETTINGS_TAPPED",
+    "LWI_ACTION_REFRESH_AD_DETAILS_SCREEN",
+    "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_RECOMMENDED_STATUS_SELECTED",
+    "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_PHONE_MEDIA_SELECTED",
+    "LWI_ACTION_MEDIA_SELECTION_COMPLETE",
+    "LWI_ACTION_CROP_IMAGE_DONE",
+    "LWI_ACTION_CONSENT_NOT_YOU_TAPPED",
+    "LWI_ACTION_SWITCH_ACCOUNT_TAPPED",
+    "LWI_ACTION_SWITCH_ACCOUNT_SWITCH_TAPPED",
+    "LWI_ACTION_SWITCH_ACCOUNT_CANCEL_TAPPED",
+    "LWI_ACTION_WEB_LOGIN_PAGE_LOADED",
+    "LWI_ACTION_WEB_LOGIN_SUCCESS",
+    "LWI_ACTION_CONSENT_LOGIN_TAPPED",
+    "LWI_ACTION_WEB_LOGIN_CANCELLED",
+    "LWI_ACTION_WEB_LOGIN_TRY_AGAIN",
+    "LWI_NEW_MANAGE_ADS_TAB_ADS_LOADED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CLICKED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_CLICKED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_ITEM_CLICKED",
+    "LWI_NEW_MANAGE_ADS_TAB_EDUCATION_BANNER_SHOWN",
+    "LWI_NEW_MANAGE_ADS_TAB_EDUCATION_BANNER_CANCELLED",
+    "LWI_NEW_MANAGE_ADS_TAB_CONSENT_SHOWN",
+    "LWI_NEW_MANAGE_ADS_TAB_CONSENT_ACCEPTED",
+    "LWI_NEW_MANAGE_ADS_TAB_CONSENT_DIFFERENT_USER_SIGN_IN",
+    "LWI_NEW_MANAGE_ADS_TAB_WEB_LOGIN_CONSENT_SCREEN_SHOWN",
+    "LWI_NEW_MANAGE_ADS_TAB_CONSENT_WEB_LOGIN_SIGN_IN",
+    "LWI_NEW_MANAGE_ADS_TAB_WEB_LOGIN_SUCCESSFUL",
+    "LWI_MANAGE_ADS_TAPPED_V2",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CREATED_BANNER_CANCELLED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CREATED_BANNER_BACK_PRESED",
+    "LWI_NO_PERMISSION_TO_MANAGE_ADS_DIALOG_SHOWN",
+    "LWI_SWITCH_ACCCOUNT_ON_NO_MANAGE_ADS_PERMISSION_DIALOG_PRESSED",
+    "LWI_LOGIN_PRESSED_ON_SESSION_EXPIRED",
+    "LWI_ASYNC_DATA",
+    "LWI_ACTION_AD_ACCOUNTS_TAPPED",
+    "LWI_ACTION_AD_ACCOUNT_SELECTED",
+    "LWI_ACTION_AD_ACCOUNT_SWITCH_SUCCESS",
+    "LWI_ACTION_AD_ACCOUNT_SWITCH_CANCELLED",
+    "LWI_ACTION_SELECT_SAVED_AUDIENCE",
+    "LWI_ACTION_SELECT_DEFAULT_AUDIENCE",
+    "LWI_ACTION_EDIT_DEFAULT_AUDIENCE",
+    "LWI_ACTION_NON_DISCRIMINATION_POLICY_ACCEPT_TAPPED",
+    "LWI_ACTION_POLICY_REVIEW_REQUIRED_EXIT_TAPPED",
+    "LWI_ACTION_POLICY_REVIEW_REQUIRED_REVIEW_TAPPED",
+    "LWI_ACTION_NON_DISCRIMINATION_POLICY_ACCEPT_SUCCESS",
+    "LWI_ACTION_NON_DISCRIMINATION_POLICY_CANCELLED",
+    "LWI_ACTION_NON_DISCRIMINATION_POLICY_TRY_AGAIN",
+    "LWI_ACTION_LOADED",
+    "LWI_CTA_MENU_CLICKED",
+    "LWI_ACTION_CTA_ITEM_CLICKED",
+    "LWI_ACTION_AD_PREVIEW_TAPPED",
+    "LWI_AD_PREVIEW_STARTED",
+    "LWI_BILLING_LOADED",
+    "LWI_BILLING_ERROR",
+    "LWI_IMAGE_URL_DETAILS_LOADED",
+    "LWI_ACTION_BILLING_RETRY_TAPPED",
+    "LWI_ACTION_VIEW_DETAILED_INSIGHTS_TAPPED",
+    "LWI_ACTION_VIEW_ADVANCED_AUDIENCE_TAPPED",
+    "LWI_ACTION_PROMOTE_AGAIN_TAPPED",
+    "LWI_ACTION_EDIT_ON_FACEBOOK_TAPPED",
+    "LWI_ACTION_SWIPE_REFRESH",
+    "LWI_ACTION_VIEW_FACEBOOK_AD_PREVIEW",
+    "LWI_ACTION_VIEW_INSTAGRAM_AD_PREVIEW",
+    "LWI_ACTION_NEXT_BUTTON_TAPPED",
+    "LWI_ACTION_LOADING_ERROR",
+    "LWI_ACTION_DIALOG_DISMISSED",
+    "LWI_NETWORK_ERROR_SHOWN",
+    "LWI_GENERIC_ERROR_SHOWN",
+    "LWI_RETRY_BUTTON_TAPPED",
+    "LWI_ACTION_RECOMMENDED_BUINESS_POFILE_ITEM_SELECTED",
+    "LWI_ACTION_BUINESS_POFILE_ITEM_SELECTED",
+    "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_RECOMMENDED_BUSINESS_PROFILE_SELECTED",
+    "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_BUSINESS_PROFILE_SELECTED",
+    "LWI_ACTION_EDIT_IMAGE_DONE",
+    "LWI_ACTION_WA_PAGELESS_BUTTON_TAPPED",
+    "LWI_ACTION_SWITCH_FACEBOOK_ACCOUNT_BUTTON_TAPPED",
+    "LWI_ACTION_TRY_AGAIN_DIALOG_BUTTON_TAPPED",
+    "LWI_ACTION_CANCEL_DIALOG_BUTTON_TAPPED",
+    "LWI_PAGE_PERMISSION_ERROR_RESOLVED",
+    "LWI_PAGE_PERMISSION_ERROR_UNRESOLVED",
+    "LWI_ACTION_PROMOTE_TEXT_TAPPED",
+    "LWI_ACTION_EXIT_CONF_SHOWN",
+    "LWI_ACTION_EXIT_CONF_EXIT_TAPPED",
+    "LWI_ACTION_EXIT_CONF_RETURN_TO_AD_TAPPED",
+    "AD_WITH_ALERT_DISPLAYED",
+    "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_CAMERA_SELECTED",
+    "LWI_ACTION_CONTINUE_TO_AD_SETTINGS_WITH_GALLERY_SELECTED",
+    "LWI_ACTION_CAMERA_ITEM_SELECTED",
+    "LWI_ACTION_GALLERY_ITEM_SELECTED",
+    "LWI_ACTION_CHOOSE_DIFFERENT_MEDIA_CLICKED",
+    "LWI_ACTION_GET_STARTED_CLICKED",
+    "LWI_ACTION_SELECT_PHOTO_FROM_GALLERY",
+    "LWI_ACTION_PUBLISH_FB_PAGE_BUTTON_TAPPED",
+    "LWI_ACTION_ADMIN_RIGHTS_SUB_STEP_VIEW",
+    "LWI_ACTION_SEND_CODE_BUTTON_TAPPED",
+    "LWI_ACTION_OPEN_EMAIL_APP_TAPPED",
+    "LWI_ACTION_CHANGE_EMAIL_TAPPED",
+    "LWI_ACTION_RESEND_TAPPED",
+    "LWI_ACTION_NONCE_SUBMIT",
+    "LWI_ACTION_VERIFY_SUCCESS",
+    "LWI_ACTION_CODE_FIELD_TAPPED",
+    "LWI_ACTION_AD_ACC_SETTINGS_MENU_OPT_TAPPED",
+    "LWI_ACTION_AD_PAYMENTS_ROW_TAPPED",
+    "LWI_ACTION_AD_DESIGN_UPDATE_TAPPED",
+    "LWI_ACTION_AD_SETTINGS_UPDATE_TAPPED",
+    "LWI_ACTION_CANCEL_BUTTON_TAPPED",
+    "LWI_ACTION_SAVE_BUTTON_TAPPED",
+    "LWI_EDIT_AD_ACC_EMAIL_SUCCESS",
+    "LWI_ACTION_AD_APPEAL_BANNER_SHOWN",
+    "LWI_ACTION_APPEAL_REQUEST_REVIEW_TAPPED",
+    "LWI_ACTION_APPEAL_VIEW_STATUS_TAPPED",
+    "LWI_ACTION_APPEAL_LEARN_MORE_TAPPED",
+    "LWI_ACTION_AD_ACCOUNT_APPEAL_BANNER_SHOWN",
+    "LWI_ACTION_SUBMIT_TAPPED",
+    "LWI_MEDIA_PARSING_STARTED",
+    "LWI_MEDIA_PARSING_SUCCESS",
+    "LWI_MEDIA_PARSING_FAILURE",
+    "LWI_ACTION_VIDEO_AD_PREVIEW_AUDIO_MUTE_TAPPED",
+    "LWI_ACTION_VIDEO_AD_PREVIEW_AUDIO_UNMUTE_TAPPED",
+    "SMB_STATUS_UPSELL_BOTTOM_SHEET_DISMISS",
+    "LWI_ACTION_ITEM_SELECTED",
+    "LWI_ACTION_CONTEXTUAL_HELP_OPENED",
+    "LWI_ACTION_EMAIL_INPUT_STARTED",
+    "LWI_ACTION_SEARCH_ADDRESS_TAPPED",
+    "LWI_ACTION_SAVE_MAP_AUDIENCE_TAPPED",
+    "LWI_ACTION_MAP_RADIUS_SELECTED",
+    "LWI_ACTION_MAP_LOCATION_ITEM_TAPPED",
+    "LWI_ACTION_SAVE_MAP_AUDIENCE_SUCCESS",
+    "LWI_ACTION_AUDIENCE_REGION_OPTION_SELECTED",
+    "LWI_ACTION_AUDIENCE_MAP_OPTION_SELECTED",
+    "LWI_ACTION_EDIT_MAP_AUDIENCE_TAPPED",
+    "LWI_ACTION_ESTIMATED_REACH_SUCCESS",
+    "LWI_ACTION_CONTINUE_TO_STATUS_PICKER_SELECTED",
+    "LWI_ACTION_ITEM_DESELECT",
+    "LWI_ACTION_EDIT_MEDIA_CLICKED",
+    "LWI_ACTION_EDIT_MEDIA_COMPLETE",
+    "LWI_ACTION_EDIT_MEDIA_CANCELLED",
+    "LWI_ACTION_AD_CREATION_HUB_DRAFT_AD_TAP",
+    "LWI_ACTION_AD_CREATION_DRAFT_AD_SAVED",
+    "LWI_NEW_MANAGE_ADS_TAB_STARTED_LOADING_ADS",
+    "LWI_MANAGE_ADS_ITEM_MAIN_CTA_IMPRESSION",
+    "LWI_MANAGE_ADS_ITEM_MAIN_CTA_TAP",
+    "LWI_ACTION_WEB_LINK_CLICKED",
+    "LWI_ACTION_NON_DISCRIMINATION_POLICY_HEC_CLICKED",
+    "LWI_ACTION_NON_DISCRIMINATION_POLICY_FULL_CLICKED",
+    "LWI_ACTION_BUDGET_DURATION_INFO_ICON_TAPPED",
+    "LWI_ACTION_AUDIENCE_INFO_ICON_TAPPED",
+    "LWI_ACTION_REVIEW_AD_TAPPED",
+    "LWI_SIMPLIFIED_LOADER_AUTO_DISMISSED",
+    "LWI_PENDING_PAYMENT_REQUEST_STARTED",
+    "LWI_ACTION_LOGIN_PROMPT_FOR_MAP_OPTION_SHOWN",
+    "LWI_ACTION_MAP_USE_CURRENT_LOCATION_TAPPED",
+    "LWI_ACTION_LOCATION_PERMISSION_ACCESS_ALLOW_TAPPED",
+    "LWI_ACTION_LOCATION_PERMISSION_ACCESS_DENY_TAPPED",
+    "LWI_ACTION_ITEM_DESELECTED",
+    "LWI_ACTION_MEDIA_FILTER_APPLIED",
+    "LWI_ACTION_MEDIA_FILTER_CLEARED",
+    "LWI_ACTION_SCREEN_DESTROYED",
+    "LWI_ACTION_GALLERY_REQUEST_PERMISSION_DIALOG_SHOWN",
+    "LWI_ACTION_GALLERY_REQUEST_GRANTED",
+    "LWI_ACTION_GALLERY_REQUEST_DENIED",
+    "LWI_FAST_TRACK_STEP_LOADED",
+    "LWI_FAST_TRACK_STEP_CLOSED",
+    "LWI_CUSTOM_TAB_OPENED",
+    "LWI_CUSTOM_TAB_REDIRECT_RECEIVED",
+    "LWI_ACTION_CURRENT_LOCATION_APPLIED",
+    "LWI_ACTION_PADDED_STATUS_IMAGE_DISPLAYED",
+    "LWI_ACTION_GOOGLE_DIALOG_CANCELLED",
+    "LWI_ACTION_GOOGLE_ACCOUNT_SELECTED",
+    "LWI_ACTION_GOOGLE_SIGNIN_TAPPED",
+    "LWI_ACTION_GOOGLE_ACCOUNT_SELECTION_FAILED",
+    "LWI_ACTION_GOOGLE_ACCOUNT_ONBOARDING_FAILED",
+    "LWI_ACTION_GOOGLE_ACCOUNT_ONBOARDING_SUCCESS",
+    "LWI_ACTION_AD_STATUS_ISSUE_BANNER_SHOWN",
+    "LWI_ACTION_AD_STATUS_ISSUE_BANNER_LEARN_MORE_TAPPED",
+    "LWI_ACTION_CROP_MEDIA_CLICKED",
+    "LWI_ACTION_CROP_MEDIA_COMPLETE",
+    "LWI_ACTION_CROP_MEDIA_CANCELLED",
+    "LWI_ACTION_USE_EMAIL_TAPPED",
+    "LWI_ACTION_USE_FB_TAPPED",
+    "LWI_ACTION_COUPON_PROMOTION_NUX_CONTINUE_TAPPED",
+    "LWI_ACTION_SAVE_CHANGES_DIALOG_OPTION_TAPPED",
+    "LWI_ACTION_GO_BACK_DIALOG_OPTION_TAPPED",
+    "LWI_ACTION_LOCATION_SYSTEM_SETTING_TURN_ON_OK_TAPPED",
+    "LWI_ACTION_LOCATION_SYSTEM_SETTING_TURN_ON_NO_THANKS_TAPPED",
+    "LWI_ACTION_TAP_TO_PAUSE",
+    "LWI_ACTION_RELEASE_TO_RESUME",
+    "LWI_ACTION_NUX_VIDEO_IMPRESSION",
+    "LWI_ACTION_NUX_VIDEO_PLAY_STARTED",
+    "LWI_ACTION_NUX_VIDEO_MUTED",
+    "LWI_ACTION_NUX_VIDEO_UNMUTED",
+    "LWI_ACTION_NUX_VIDEO_PAUSED",
+    "LWI_ACTION_NUX_VIDEO_RESUMED",
+    "LWI_ACTION_NUX_VIDEO_PLAYER_FAILED",
+    "LWI_ACTION_RECOMMENDATION_CARD_SHOWN",
+    "LWI_ACTION_APPLY_RECOMMENDATION_CLICKED",
+    "LWI_ACTION_CANCEL_RECOMMENDATION_CLICKED",
+    "LWI_ACTION_PERFORMACE_INFO_CLICKED",
+    "LWI_ACTION_MAP_PREVIEW_IMPRESSION",
+    "LWI_ACTION_MAP_PREVIEW_SELECTED",
+    "LWI_ACTION_MAP_ZOOM",
+    "LWI_ACTION_MAP_PAN",
+    "LWI_ACTION_AD_GENAI_TAPPED",
+    "LWI_ACTION_VIEW_AD_PREVIEWS_TAPPED",
+    "LWI_ACTION_ADD_MEDIA_TAPPED",
+    "LWI_ACTION_DISCLAIMER_TIP_DISPLAYED",
+    "LWI_ACTION_DISCLAIMER_TIP_CLICKED",
+    "LWI_ACTION_IG_FIRST_BOTTOM_SHEET_DISPLAYED",
+    "LWI_ACTION_IG_FIRST_BOTTOM_SHEET_DISMISSED",
+    "LWI_ACTION_IG_FIRST_BOTTOM_SHEET_LEARN_MORE_TAPPED",
+    "LWI_ACTION_IG_PREVIEW_TAB_DISPLAYED",
+    "LWI_ACTION_IG_FIRST_NUX_DISPLAYED",
+    "LWI_ACTION_IG_DISCLAIMER_TIP_DISMISSED",
+    "LWI_ACTION_IG_FIRST_DISCLAIMER_TIP_DISPLAYED",
+    "LWI_ACTION_IG_FIRST_DISCLAIMER_TIP_CLICKED",
+    "LWI_ACTION_PAYMENT_PENDING_AD_MANAGE_ADS_DISPLAYED",
+    "LWI_ACTION_PAYMENT_PENDING_MANAGE_ADS_CTA_CLICKED",
+    "LWI_ACTION_PAYMENT_PENDING_AD_CREATION_HUB_DISPLAYED",
+    "LWI_ACTION_PAYMENT_PENDING_AD_CREATION_HUB_CLICKED",
+    "LWI_ACTION_TYPEAHEAD_LOADED",
+    "LWI_ACTION_TYPEAHEAD_ERROR",
+    "LWI_ACTION_SUGGESTION_LOADED",
+    "LWI_ACTION_SUGGESTION_ERROR",
+    "LWI_ACTION_TYPEAHEAD_RESULT_TAPPED",
+    "LWI_ACTION_SUGGESTION_RESULT_TAPPED",
+    "LWI_ACTION_INTEREST_UNSELECTED",
+    "LWI_ACTION_ADD_INTEREST_TAPPED",
+    "LWI_ACTION_BOOSTED_COMPONENT_LOADER_SHOWN",
+    "LWI_ACTION_BOOSTED_COMPONENT_LOADER_DISMISSED",
+    "LWI_ACTION_INTEREST_ROW_SHOWN",
+    "LWI_ACTION_SEARCH_TEXT_UPDATED",
+    "LWI_ACTION_TAIWAN_COMPLIANCE_LEARN_MORE_TAPPED",
+    "LWI_ACTION_TAIWAN_COMPLIANCE_ACKNOWLEDGED",
+    "LWI_ACTION_SINGAPORE_COMPLIANCE_MBS_REDIRECT_TAPPED",
+    "LWI_ACTION_SINGAPORE_COMPLIANCE_FB_REDIRECT_TAPPED",
+    "LWI_ACTION_SINGAPORE_COMPLIANCE_CANCEL_TAPPED",
+    "LWI_ACTION_TAIWAN_COMPLIANCE_FINANCE_TOGGLE_SHOWN",
+    "LWI_ACTION_AD_CREATION_FAB_TAPPED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_AD_DETAILS_CLICKED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_EDIT_ON_FACEBOOK_CLICKED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_PAUSE_CLICKED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_RESUME_CLICKED",
+    "LWI_ACTION_PREVIEW_CLICKED",
+    "LWI_ACTION_SEE_ALL_CLICKED",
+    "LWI_ACTION_AD_ACCOUNT_CLICKED",
+    "LWI_ACTION_PAYMENT_METHOD_CLICKED",
+    "LWI_NEW_MANAGE_ADS_TAB_AD_CTA_MENU_DELETE_CLICKED",
+    "LWI_ACTION_LIST_LOAD_ERROR",
+    "LWI_ACTION_SCROLL_TO_END",
+    "LWI_ACTION_RECOMMENDATION_CARD_LOAD_ERROR",
+    "LWI_ACTION_SEE_DETAILS_TAPPED",
+    "LWI_ACTION_INSIGHTS_TILE_TAPPED",
+    "LWI_ACTION_AUDIENCE_TAB_TAPPED",
+    "LWI_ACTION_INTERACTIONS_TAB_TAPPED",
+    "LWI_ACTION_CONVERSATIONS_METRICS_INFO_TAPPED",
+    "LWI_ACTION_LINKS_METRICS_INFO_TAPPED",
+    "LWI_ACTION_REACH_METRICS_INFO_TAPPED",
+    "LWI_ACTION_LOCATION_METRICS_INFO_TAPPED",
+    "LWI_ACTION_GOAL_CHOICE_SCREEN_DISPLAYED",
+    "LWI_ACTION_AWARENESS_GOAL_SELECTED",
+    "LWI_ACTION_ENGAGEMENT_GOAL_SELECTED",
+    "LWI_ACTION_SALES_GOAL_SELECTED",
+    "LWI_ACTION_WESBITE_LINK_SUBMITTED",
+    "LWI_ACTION_CATALOG_LINK_SUBMITTED",
+    "LWI_ACTION_ERROR_ON_WEBSITE_ENTRY",
+    "LWI_ACTION_DRAFT_AD_NUX_VISIBLE",
+    "LWI_ACTION_CONTINUE_DRAFT_AD_CLICKED",
+    "LWI_ACTION_CREATE_NEW_AD_CLICKED",
+    "LWI_ACTION_WESBITE_LINK_SELECTED",
+    "LWI_ACTION_CATALOG_LINK_SELECTED",
+    "LWI_ACTION_CONFIRM_BUTTON_PRESSED",
+    "LWI_ACTION_OUTCOME_WEBSITE_LINK_ENTRY_ERROR",
+    "LWI_ACTION_BUDGET_PRESETS_SHOWN",
+    "LWI_ACTION_BUDGET_PRESET_SELECTED",
+    "LWI_ACTION_BUDGET_PRESETS_NOT_AVAILABLE",
+    "LWI_ACTION_CONSENT_SKIP_TAPPED",
+    "LWI_ADS_HUB_OVERVIEW_PERF_SUMMARY_LOADED",
+    "LWI_ADS_HUB_OVERVIEW_PERF_SUMMARY_LOAD_ERROR",
+    "LWI_ACTION_ADS_HUB_PERF_SUMMARY_DATE_TAPPED",
+    "LWI_ACTION_SKIP_TAPPED",
+    "LWI_ACTION_LOGIN_WITH_FB_TAPPED",
+    "LWI_ACTION_EDIT_GOAL_TAPPED",
+    "LWI_ACTION_EDIT_GOAL_DIALOG_OPTION_TAPPED",
+    "LWI_PAUSE_AD_GATING_BOTTOMSHEET_IMPRESSION",
+    "LWI_PAUSE_AD_GATING_BOTTOMSHEET_PAUSE_AD_TAPPED",
+    "LWI_PAUSE_AD_GATING_BOTTOMSHEET_DISMISSED",
+    "LWI_ACTION_RESUME_AD_TAPPED",
+    "LWI_ACTION_ESTIMATED_CONVERSATIONS_SUCCESS",
+    "LWI_ACTION_TRY_TEMPLATE_CLICKED",
+    "LWI_ACTION_TEMPLATE_APPLIED",
+    "LWI_RESOLVE_PAYMENT_ISSUE_REQUEST_STARTED",
+    "LWI_RESOLVE_PAYMENT_ISSUE_REQUEST_LOADED",
+    "LWI_RESOLVE_PAYMENT_ISSUE_NO_ACTION_REQUIRED",
+    "LWI_SUBMIT_AD_CREATION",
+    "LWI_DRAFT_AD_QP_CARD_DISPLAYED",
+    "LWI_ACTION_DRAFT_AD_QP_CARD_TAP",
+    "LWI_ACTION_DISMISS_DRAFT_AD_QP_CARD",
+    "LWI_ACTION_DRAFT_AD_DISPLAYED",
+    "LWI_ACTION_PRE_BLOKS_LOAD_STARTED",
+    "LWI_ACTION_RECREATE_FROM_PREVIOUS_ADS_TAPPED",
+    "LWI_ACTION_PERFORMANCE_SUMMARY_IMPRESSION",
+    "LWI_ACTION_PERFORMANCE_SUMMARY_CLICKED",
+    "LWI_ACTION_MANAGE_AD_ROW_IMPRESSION",
+    "LWI_ACTION_AD_PREVIEW_IMPRESSION",
+    "LWI_ACTION_AD_PERFORMANCE_IMPRESSION",
+    "LWI_ACTION_PLACEMENT_TAB_CLICKED",
+    "LWI_ACTION_AD_DETAILS_IMPRESSION",
+    "LWI_ACTION_AD_DETAILS_NAV_BAR_MENU_CLICKED",
+    "LWI_ACTION_AD_DETAILS_SETTINGS_CLICKED",
+    "LWI_ACTION_RECOMMENDATION_CARD_IMPRESSION",
+    "LWI_ACTION_BLOKS_ACCOUNT_SELECTION_STARTED",
+    "LWI_ACTION_AD_DETAILS_AD_PERFORMANCE_IMPRESSION",
+    "LWI_ACTION_AD_DETAILS_SETTINGS_IMPRESSION",
+    "LWI_ACTION_AD_DETAILS_PAYMENT_IMPRESSION",
+    "LWI_ACTION_FETCH_LOOKALIKE_AUDIENCE_ID",
+    "LWI_ACTION_MANAGE_AD_INLINE_RECREATE_CTA_IMPRESSION",
+    "LWI_ACTION_MANAGE_AD_INLINE_RECREATE_CTA_CLICK",
+    "LWI_ACTION_MANAGE_AD_INLINE_HIGH_PERF_LABEL_IMPRESSION",
+    "LWI_ACTION_BLOKS_RESOLVE_PAGE_PERMISSION_STARTED",
+    "LWI_ACTION_PROMOTE_FB_MEDIA_ITEMS_TAPPED",
+    "LWI_ACTION_MANAGE_AD_INLINE_RESUME_CTA_CLICK",
+    "LWI_ACTION_MANAGE_AD_INLINE_RESUME_CTA_IMPRESSION",
+    "LWI_ACTION_MANAGE_AD_OPTIONS_MENU_PAUSE_CLICK",
+    "LWI_ACTION_MANAGE_AD_OPTIONS_MENU_CANCEL_CLICK",
+    "LWI_ACTION_PREVIOUS_ADS_AD_ROW_TAPPED",
+    "LWI_ACTION_MANAGE_AD_DRAFT_AD_IMPRESSION",
+    "LWI_ACTION_MANAGE_AD_DRAFT_AD_CLICK",
+    "LWI_ACTION_MANAGE_AD_DRAFT_AD_OPTIONS_MENU_CLICK",
+    "LWI_ACTION_MANAGE_AD_DRAFT_AD_OPTIONS_CONTINUE_CLICK",
+    "LWI_ACTION_MANAGE_AD_DRAFT_AD_OPTIONS_DELETE_CLICK",
+    "LWI_ACTION_MANAGE_AD_DRAFT_AD_SEE_ALL_CLICK",
+    "LWI_ACTION_MANAGE_AD_DRAFT_AD_BACK_CTA_CLICK",
+    "LWI_ACTION_SEE_DETAILS_VIEW",
+    "LWI_ACTION_MANAGE_AD_SEE_DETAILS_TAPPED",
+    "LWI_ACTION_METRICS_INFO_ICON_CLICKED",
+    "LWI_ACTION_ADS_LISTING_VIEW",
+    "LWI_ACTION_ADS_LISTING_CLICKED",
+    "LWI_ACTION_ADS_LISTING_THREE_DOTS_CLICKED",
+    "LWI_ACTION_TOTAL_METRICS_VIEW",
+    "LWI_ACTION_DATE_SELECTOR_TAPPED",
+    "LWI_ACTION_DURATION_SELECTED",
+    "LWI_ACTION_DURATION_APPLY_TAPPED",
+    "LWI_ACTION_DURATION_APPLY_CANCELED",
+    "LWI_ACTION_EXTEND_TAPPED",
+    "LWI_ACTION_ADD_TAPPED",
+    "LWI_ACTION_ASL_REACH_ADD_FUNDS_TAPPED",
+    "LWI_ACTION_INTERACTIONS_TAB_IMPRESSION",
+    "LWI_ACTION_AUDIENCE_TAB_GENDER_SECTION_IMPRESSION",
+    "LWI_ACTION_AUDIENCE_TAB_AGE_SECTION_IMPRESSION",
+    "LWI_ACTION_AUDIENCE_TAB_LOCATION_SECTION_IMPRESSION",
+    "LWI_ACTION_PLACEMENTS_TAB_IMPRESSION",
+    "LWI_ACTION_PROMOTE_IG_MEDIA_ITEMS_TAPPED",
+    "LWI_ACTION_PEFORMANCE_INLINE_RECREATE_CTA_IMPRESSION",
+    "LWI_ACTION_PEFORMANCE_INLINE_RECREATE_CTA_CLICK",
+    "LWI_ACTION_PEFORMANCE_DROPDOWN_RECREATE_CTA_CLICK",
+    "LWI_ACTION_PAUSE_AD_TAPPED",
+    "LWI_ACTION_FB_MEDIA_LOAD_COMPLETE",
+    "LWI_ACTION_IG_MEDIA_LOAD_COMPLETE",
+    "LWI_ACTION_MANAGE_ADS_QP_ADD_BUDGET_TAPPED",
+    "LWI_ACTION_ADS_LIST_ADD_BUDGET_TAPPED",
+    "LWI_ACTION_VIEW_UPDATE_DAILY_BUDGET",
+    "LWI_ACTION_UPDATE_DAILY_BUDGET_SELECTED",
+    "LWI_ACTION_UPDATE_DAILY_BUDGET_CANCEL_TAPPED",
+    "LWI_ACTION_UPDATE_DAILY_BUDGET_CONFIRM_TAPPED",
+    "LWI_ACTION_UPDATE_DAILY_BUDGET_INFO_ICON_CLICKED",
+    "LWI_ACTION_ESTIMATED_RESULTS_LEARN_MORE_CLICKED",
+    "LWI_ACTION_VIEW_TOOLS_QP_EXTEND_DURATION",
+    "LWI_ACTION_TOOLS_QP_EXTEND_DURATION_TAPPED",
+    "LWI_ACTION_CLOSE_TOOLS_QP_EXTEND_DURATION",
+    "LWI_ACTION_VIEW_TOOLS_QP_ADD_BUDGET",
+    "LWI_ACTION_TOOLS_QP_ADD_BUDGET_TAPPED",
+    "LWI_ACTION_CLOSE_TOOLS_QP_ADD_BUDGET",
+    "LWI_ACTION_MANAGE_ADS_QP_EXTEND_DURATION_TAPPED",
+    "LWI_ACTION_ADS_LIST_EXTEND_DURATION_TAPPED",
+    "LWI_ACTION_AD_SETTINGS_CLICKED",
+    "LWI_ACTION_VIEW_UPDATE_DURATION",
+    "LWI_ACTION_UPDATE_DURATION_SELECTED",
+    "LWI_ACTION_UPDATE_DURATION_CANCEL_TAPPED",
+    "LWI_ACTION_UPDATE_DURATION_CONFIRM_TAPPED",
+    "LWI_ACTION_UPDATE_DURATION_INFO_ICON_CLICKED",
+    "LWI_ACTION_BUDGET_UPDATED",
+    "LWI_ACTION_AD_DURATION_UPDATE_ERROR",
+    "LWI_ACTION_BUDGET_UPDATE_ERROR",
+    "LWI_ACTION_ADS_LIST_UPDATE_BUDGET_TAPPED",
+    "LWI_ACTION_ADS_LIST_RECREATE_AD_TAPPED",
+    "LWI_ACTION_ADS_LIST_RESUME_AD_TAPPED",
+    "LWI_ACTION_AFTERPARTY_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_AFTERPARTY_BOTTOMSHEET_VIEW_ADS_CLICK",
+    "LWI_ACTION_AFTERPARTY_BOTTOMSHEET_CUSTOMIZE_CHATS_CLICK",
+    "LWI_ACTION_MESSAGE_TEMPLATES_ROOT_SCREEN_IMPRESSION",
+    "LWI_ACTION_MESSAGE_TEMPLATES_DONE_CTA_CLICK",
+    "LWI_ACTION_MESSAGE_TEMPLATES_PREVIEW_CTA_CLICK",
+    "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_WELCOME_MESSAGE_CLICK",
+    "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_WELCOME_SAVE_CLICK",
+    "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_PREFILL_MESSAGE_CLICK",
+    "LWI_ACTION_MESSAGE_TEMPLATES_EDIT_PREFILL_SAVE_CLICK",
+    "LWI_ACTION_ADS_LIST_ADD_BUDGET_VIEWED",
+    "LWI_ACTION_ADS_LIST_EXTEND_DURATION_VIEWED",
+    "LWI_ACTION_DELETE_AD_TAPPED",
+    "LWI_ACTION_STATUS_COUNT_CAPPED",
+    "LWI_ACTION_SNACKBAR_IMPRESSION",
+    "LWI_ACTION_SNACKBAR_BOOST_TAPPED",
+    "LWI_ACTION_SNACKBAR_VIEW_TAPPED",
+    "LWI_ACTION_VIEWER_SHEET_BANNER_IMPRESSION",
+    "LWI_ACTION_VIEWER_SHEET_BANNER_DISMISS",
+    "LWI_ACTION_MY_STATUS_ROW_BANNER_IMPRESSION",
+    "LWI_ACTION_MY_STATUS_ROW_BANNER_TAPPED",
+    "LWI_ACTION_TOOLTIP_IMPRESSION",
+    "LWI_ACTION_TOOLTIP_TAP",
+    "LWI_ACTION_TOOLTIP_DISMISS",
+    "LWI_ACTION_SELF_STATUS_BOOST_TAPPED",
+    "LWI_ACTION_RECOMMENDATION_FETCH_SUCCESS",
+    "LWI_ACTION_RECOMMENDATION_FETCH_ERROR",
+    "LWI_ACTION_STATUS_PICKER_RECOMMENDATION_IMPRESSION",
+    "LWI_ACTION_STATUS_PICKER_RECOMMENDATION_TAPPED",
+    "LWI_ACTION_MY_STATUS_SCREEN_IMPRESSION",
+    "LWI_ACTION_MESSAGE_TEMPLATES_CLOSE_PREVIEW_CLICK",
+    "LWI_ACTION_RECOMMENDATION_FETCH_START",
+    "LWI_ACTION_VIEWER_SHEET_BANNER_TAP",
+    "LWI_ACTION_PAC_DEFAULT_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_PAC_DEFAULT_VIEW_ADS_CLICK",
+    "LWI_ACTION_PAC_DEFAULT_CREATE_NEW_AD_CLICK",
+    "LWI_ACTION_PAC_ZO_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_PAC_ZO_CTA_CLICK",
+    "LWI_ACTION_PAC_ZO_DISMISS",
+    "LWI_ACTION_PAC_SHORT_DURATION_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_PAC_SHORT_DURATION_CTA_CLICK",
+    "LWI_ACTION_PAC_SHORT_DURATION_DISMISS",
+    "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_CTA_CLICK",
+    "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_DISMISS",
+    "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_ENABLE_SUCCESS",
+    "LWI_ACTION_ADVANTAGE_PLUS_AUDIENCE_MFR_ENABLE_ERROR",
+    "LWI_ACTION_VIEW_WHATSAPP_AD_PREVIEW",
+    "LWI_ACTION_PAC_SABR_V2_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_PAC_SABR_V2_CTA_CLICK",
+    "LWI_ACTION_PAC_SABR_V2_DISMISS",
+    "LWI_ACTION_PAC_SABR_VSV_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_PAC_SABR_VSV_CTA_CLICK",
+    "LWI_ACTION_PAC_SABR_VSV_DISMISS",
+    "LWI_BILLING_HUB_DEEPLINK_REQUEST_STARTED",
+    "LWI_BILLING_HUB_DEEPLINK_REQUEST_LOADED",
+    "LWI_DRAFT_AD_LOAD_STARTED",
+    "LWI_DRAFT_AD_LOAD_COMPLETED",
+    "LWI_ACTION_MEDIA_SIZE_WARNING_USE_ANYWAY_TAPPED",
+    "LWI_ACTION_MEDIA_SIZE_WARNING_CHANGE_IMAGE_TAPPED",
+    "LWI_ACTION_DURATION_MFR_OPTIONS_IMPRESSION",
+    "LWI_ACTION_DURATION_MFR_CTA_CLICK",
+    "LWI_ACTION_DURATION_MFR_DISMISS",
+    "LWI_ACTION_DURATION_MFR_ENABLE_SUCCESS",
+    "LWI_ACTION_DURATION_MFR_ENABLE_ERROR",
+    "LWI_ACTION_DURATION_MFR_INVALID_CUSTOM_DURATION",
+    "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_TOOLTIP_TOO_LOW_IMPRESSION",
+    "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_TOOLTIP_LOW_IMPRESSION",
+    "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_DIALOG_IMPRESSION",
+    "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_DIALOG_CTA_CLICK",
+    "LWI_ACTION_HIGH_FRICTION_DURATION_WARNING_PAC_SUPPRESSED",
+    "LWI_ACTION_SWIPE_BACK",
+    "LWI_ACTION_WINBACK_AD_CREATION_START_LEARNING_CARD_IMPRESSION",
+    "LWI_ACTION_WINBACK_AD_CREATION_START_LEARNING_CTA_CLICK",
+    "LWI_ACTION_WINBACK_AD_CREATION_UNDERSTANDING_RESULTS_IMPRESSION",
+    "LWI_ACTION_WINBACK_AD_CREATION_UNDERSTANDING_RESULTS_DONE_CLICK",
+    "LWI_ACTION_WINBACK_AD_CREATION_PAC_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_WINBACK_AD_CREATION_PAC_MANAGE_ADS_CLICK",
+    "LWI_ACTION_WINBACK_AD_CREATION_PAC_BOTTOMSHEET_DISMISS",
+    "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_SEE_DETAILS_CLICK",
+    "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_DISMISS",
+    "LWI_ACTION_WINBACK_AD_COMPLETION_QP_CARD_IMPRESSION",
+    "LWI_ACTION_WINBACK_AD_COMPLETION_QP_CARD_VIEW_DETAILS_CLICK",
+    "LWI_ACTION_WINBACK_AD_COMPLETION_QP_CARD_DISMISS",
+    "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_IMPRESSION",
+    "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_SEE_DETAILS_CLICK",
+    "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_DISMISS",
+    "LWI_ACTION_WINBACK_RECREATE_AD_CLICK",
+    "LWI_ACTION_WINBACK_AD_CREATION_UNDERSTANDING_RESULTS_DISMISS",
+    "LWI_ACTION_WINBACK_AUTO_OPEN_SUPPRESSED",
+    "LWI_ACTION_WINBACK_AD_COMPLETION_BOTTOMSHEET_LOADING_ERROR",
+    "LWI_ACTION_WINBACK_THRESHOLD_BOTTOMSHEET_LOADING_ERROR",
+    "QR_SCANNER_ZOOM",
+    "LWI_ACTION_WINBACK_THRESHOLD_SCALE_CLICK",
+    "LWI_ACTION_WINBACK_RECREATE_FLOW_STARTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizAdDetailsActionButtons.react",
+      "WAWebBizAdDetailsDrawer.react",
+      "WAWebBizAdDraftSaveOnExitRegistrar.react",
+      "WAWebBizAdManagementActionsCell.react",
+      "WAWebBizAdManagementDraftYourAdsCell.react",
+      "WAWebBizAdManagementFBLoginPrompt.react",
+      "WAWebBizAdManagementHeaderButtonGroup.react",
+      "WAWebBizAdManagementIdentityButton.react",
+      "WAWebBizAdManagementMenu.react",
+      "WAWebBizAdManagementNullView.react",
+      "WAWebBizAdManagementPastAdsNudge.react",
+      "WAWebBizAdManagementRootContent.react",
+      "WAWebBizAdManagementYourAdsCell.react",
+      "WAWebBizNativeAdsEnterFlowErrorLogger",
+      "WAWebBizNativeAdsIdentityLogger",
+      "WAWebChatlistUtils",
+      "WAWebLwiScreenWamEvent",
+      "useWAWebBizAdDeleteDraftModal",
+      "useWAWebBizContactUs",
+      "useWAWebBizNativeAdsIdentity"
+    ],
+    "dep_count": 0,
+    "dependent_count": 20
+  }
+}

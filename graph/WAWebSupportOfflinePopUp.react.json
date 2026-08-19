@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebFlex.react","WAWebModalManager","WAWebText.react","react"],"dependents":["WAWebSendSupportBotFeedbackActions","WAWebSupportAIStartChatNux.react"],"dependent_count":2,"exports":[]}

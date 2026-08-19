@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebContactManagerBulkActionToolbar.react","WAWebContactManagerListViewColumns"],"dependent_count":2,"exports":[{"name":"SELECT_COLUMN_WIDTH_PX","used_by":["WAWebContactManagerBulkActionToolbar.react","WAWebContactManagerListViewColumns"],"uses":2},{"name":"contactManagerColumnWidths","used_by":["WAWebContactManagerListViewColumns"],"uses":1}]}

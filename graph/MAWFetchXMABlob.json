@@ -1,0 +1,1 @@
+{"deps":["FBLogger","Promise"],"dependents":["MAWFetchXMADataUtils","MAWFowardMessageFromOpenThread"],"dependent_count":2,"exports":[{"name":"fetchBlob","used_by":["MAWFetchXMADataUtils","MAWFowardMessageFromOpenThread"],"uses":2}]}

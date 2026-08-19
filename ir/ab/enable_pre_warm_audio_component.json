@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_pre_warm_audio_component",
+  "kind": "ab",
+  "name": "enable_pre_warm_audio_component",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15994,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_pre_warm_audio_component:\\s*\\[\\s*15994"
+  },
+  "literals": [
+    "enable_pre_warm_audio_component",
+    "15994"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

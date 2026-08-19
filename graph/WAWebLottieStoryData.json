@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebLottieAnimation.story"],"dependent_count":1,"exports":[{"name":"bird","used_by":["WAWebLottieAnimation.story"],"uses":1},{"name":"loadingSticker","used_by":["WAWebLottieAnimation.story"],"uses":1},{"name":"toiletPaper","used_by":["WAWebLottieAnimation.story"],"uses":1}]}

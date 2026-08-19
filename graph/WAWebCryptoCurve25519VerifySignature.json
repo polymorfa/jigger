@@ -1,0 +1,1 @@
+{"deps":["WASignalOther","WASignalSignatures","err"],"dependents":["WAWebAdvKeyIndexSignatureVerify","WAWebAdvSignatureApi","WAWebGalaxyFlowsUnifiedEncryptionVerifier"],"dependent_count":3,"exports":[{"name":"verifySignature","used_by":["WAWebAdvKeyIndexSignatureVerify","WAWebAdvSignatureApi","WAWebGalaxyFlowsUnifiedEncryptionVerifier"],"uses":3}]}

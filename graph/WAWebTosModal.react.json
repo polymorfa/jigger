@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebConnModel","WAWebModalManager","WAWebSocketModel","react","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebMain.react"],"dependent_count":1,"exports":[]}

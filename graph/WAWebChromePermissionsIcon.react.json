@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebGuidePopup.react","WAWebVoipCameraUnavailableBanner.react"],"dependent_count":3,"exports":[{"name":"ChromePermissionsIcon","used_by":["WAWebAllGeneratedIcons","WAWebGuidePopup.react","WAWebVoipCameraUnavailableBanner.react"],"uses":3}]}

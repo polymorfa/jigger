@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatPreferenceCollection","WAWebClickable.react","WAWebEmojiPickerPlugin","WAWebFlex.react","WAWebFlexItem.react","WAWebRichTextInput.react","WAWebRichTextInputPlugins.react","WAWebSendMsgSharedUtils.react","react","react-compiler-runtime","useWAWebModelValues"],"dependents":["WAWebSendMsgModalImpl.react"],"dependent_count":1,"exports":[]}

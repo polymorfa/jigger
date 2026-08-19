@@ -1,0 +1,54 @@
+{
+  "id": "ab:wmi_worker_scheduler_web",
+  "kind": "ab",
+  "name": "wmi_worker_scheduler_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27237,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wmi_worker_scheduler_web:\\s*\\[\\s*27237"
+  },
+  "literals": [
+    "wmi_worker_scheduler_web",
+    "27237"
+  ],
+  "usage": {
+    "read_count": 10,
+    "readers": [
+      "WAWebAdvHandlerApi",
+      "WAWebCryptoDecryptMedia",
+      "WAWebCryptoEncryptMediaUsingDependencies",
+      "WAWebDBMessageFindLocal",
+      "WAWebHandleAdvDeviceNotificationUtils",
+      "WAWebProcessKeyBundleInWorker",
+      "WAWebReleaseToEventLoop",
+      "WAWebSignalProtocolStoreCacheApi",
+      "WAWebVoipLogDrainer",
+      "WAWebVoipOperationQueue"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

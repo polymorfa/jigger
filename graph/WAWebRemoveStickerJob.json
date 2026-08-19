@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebRecentStickerCollectionMd","WAWebStickersRemoveRecentSyncAction","WAWebSyncdCoreApi"],"dependents":["WAWebRecentStickerAction"],"dependent_count":1,"exports":[{"name":"sendRemoveStickerFromRecent","used_by":["WAWebRecentStickerAction"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["BackendInitLoggingUtils","FBLogger","MAWCurrentUser","MessengerWebInitData","WACryptoUtils"],"dependents":["MAWCommonMainWebWorker"],"dependent_count":1,"exports":[{"name":"didWorkerSetupArgsChange","used_by":["MAWCommonMainWebWorker"],"uses":1}]}

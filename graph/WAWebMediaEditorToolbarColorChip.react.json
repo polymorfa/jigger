@@ -1,0 +1,1 @@
+{"deps":["WAWebDropdownV2.react","WAWebMediaEditorEnumsColors","WAWebPopoverContext.react","WAWebRecalledIcon.react","WAWebTooltip.react","WDSFocusStateStyles","react","react-compiler-runtime","stylex"],"dependents":["WAWebMediaEditorToolbarColor.react","WAWebMediaEditorToolbarColorPickerInput.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

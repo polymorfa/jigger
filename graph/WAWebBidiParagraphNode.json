@@ -1,0 +1,1 @@
+{"deps":["Lexical","WAWebListBulletNode","WAWebListNumberNode","WAWebQuoteLineNode","WDSBidiParagraphNode","err"],"dependents":["WAWebRichTextInput.react","WAWebWDSRichTextFieldWithPlugins.story"],"dependent_count":2,"exports":[{"name":"BidiParagraphNode","used_by":["WAWebRichTextInput.react","WAWebWDSRichTextFieldWithPlugins.story"],"uses":2}]}

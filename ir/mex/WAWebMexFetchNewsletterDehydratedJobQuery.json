@@ -1,0 +1,150 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterDehydratedJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterDehydratedJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26944199458535748",
+    "operation": "query",
+    "variables": [
+      "input",
+      "fetch_wamo_sub",
+      "fetch_pinned_messages"
+    ],
+    "args": [
+      {
+        "name": "input"
+      },
+      {
+        "name": "fetch_wamo_sub"
+      },
+      {
+        "name": "fetch_pinned_messages"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter",
+        "ty": "XWA2Newsletter",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "thread_metadata",
+            "ty": "XWA2NewsletterThreadMetadata",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "subscribers_count",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "verification",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "settings",
+                "ty": "XWA2NewsletterThreadSettings",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "reaction_codes",
+                    "ty": "XWA2NewsletterReactionCodesSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "value",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "@include(if: $fetch_wamo_sub)",
+                "kind": "Condition",
+                "selections": [
+                  {
+                    "name": "wamo_sub",
+                    "ty": "XWA2NewsletterWamoSubMetadata",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "plan_id",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "@include(if: $fetch_pinned_messages)",
+                "kind": "Condition",
+                "selections": [
+                  {
+                    "name": "pinned_messages",
+                    "ty": "XWA2NewsletterPinnedMessage",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "message_id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "expiry_ts",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "@include(if: $fetch_wamo_sub)",
+            "kind": "Condition",
+            "selections": [
+              {
+                "name": "viewer_metadata",
+                "ty": "XWA2NewsletterViewerMetadata",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "wamo_sub_status",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter",
+    "document": "# persisted document 26944199458535748\nquery MexFetchNewsletterDehydratedJobQuery(\n  $input\n  $fetch_wamo_sub\n  $fetch_pinned_messages\n) {\n  xwa2_newsletter(input: $input) {  # XWA2Newsletter\n    id\n    thread_metadata {  # XWA2NewsletterThreadMetadata\n      subscribers_count\n      verification\n      settings {  # XWA2NewsletterThreadSettings\n        reaction_codes {  # XWA2NewsletterReactionCodesSetting\n          value\n        }\n      }\n      @include(if: $fetch_wamo_sub) {\n        wamo_sub {  # XWA2NewsletterWamoSubMetadata\n          plan_id\n        }\n      }\n      @include(if: $fetch_pinned_messages) {\n        pinned_messages {  # [XWA2NewsletterPinnedMessage]\n          message_id\n          expiry_ts\n        }\n      }\n    }\n    @include(if: $fetch_wamo_sub) {\n      viewer_metadata {  # XWA2NewsletterViewerMetadata\n        wamo_sub_status\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterDehydratedJobQuery.graphql",
+    "matches": "id:\\s*\"26944199458535748\""
+  },
+  "literals": [
+    "26944199458535748",
+    "WAWebMexFetchNewsletterDehydratedJobQuery",
+    "xwa2_newsletter"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterDehydratedJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

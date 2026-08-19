@@ -1,0 +1,309 @@
+{
+  "id": "enum:STATUS_POST_RESULT",
+  "kind": "enum",
+  "name": "STATUS_POST_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusPostResult",
+    "variants": [
+      {
+        "name": "OK",
+        "value": 1.0
+      },
+      {
+        "name": "CANCELLED",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR_UNKNOWN",
+        "value": 3.0
+      },
+      {
+        "name": "MEDIA_ERROR_REQUEST",
+        "value": 4.0
+      },
+      {
+        "name": "MEDIA_ERROR_UPLOAD",
+        "value": 5.0
+      },
+      {
+        "name": "MEDIA_ERROR_OOM",
+        "value": 6.0
+      },
+      {
+        "name": "MEDIA_ERROR_IO",
+        "value": 7.0
+      },
+      {
+        "name": "MEDIA_ERROR_NO_PERMISSIONS",
+        "value": 8.0
+      },
+      {
+        "name": "MEDIA_ERROR_BAD_MEDIA",
+        "value": 9.0
+      },
+      {
+        "name": "MEDIA_ERROR_INSUFFICIENT_SPACE",
+        "value": 10.0
+      },
+      {
+        "name": "MEDIA_ERROR_FNF",
+        "value": 11.0
+      },
+      {
+        "name": "MEDIA_ERROR_CANCEL",
+        "value": 12.0
+      },
+      {
+        "name": "MEDIA_ERROR_SERVER",
+        "value": 13.0
+      },
+      {
+        "name": "MEDIA_ERROR_REQUEST_TIMEOUT",
+        "value": 14.0
+      },
+      {
+        "name": "MEDIA_ERROR_NOT_FINALIZED",
+        "value": 15.0
+      },
+      {
+        "name": "MEDIA_ERROR_OPTIMISTIC_HASH",
+        "value": 16.0
+      },
+      {
+        "name": "MEDIA_ERROR_MEDIA_CONN",
+        "value": 17.0
+      },
+      {
+        "name": "MEDIA_ERROR_DNS",
+        "value": 18.0
+      },
+      {
+        "name": "MEDIA_ERROR_THROTTLE",
+        "value": 19.0
+      },
+      {
+        "name": "MEDIA_ERROR_SSL",
+        "value": 20.0
+      },
+      {
+        "name": "MEDIA_ERROR_NO_CLIENT_NETWORK",
+        "value": 21.0
+      },
+      {
+        "name": "MEDIA_DUPLICATE",
+        "value": 22.0
+      },
+      {
+        "name": "MEDIA_SWITCH_REQUIRED",
+        "value": 23.0
+      },
+      {
+        "name": "MEDIA_TOO_LARGE",
+        "value": 24.0
+      },
+      {
+        "name": "MEDIA_ERROR_WAMSYS",
+        "value": 25.0
+      },
+      {
+        "name": "MEDIA_ERROR_CONN",
+        "value": 26.0
+      },
+      {
+        "name": "MEDIA_ERROR_URL",
+        "value": 27.0
+      },
+      {
+        "name": "MEDIA_ERROR_NO_SUCH_ALGORITHM",
+        "value": 28.0
+      },
+      {
+        "name": "MEDIA_ERROR_OPTIMISTIC_NETWORK_UNSAFE",
+        "value": 29.0
+      },
+      {
+        "name": "MEDIA_ERROR_TRANSCODING_UKNOWN",
+        "value": 30.0
+      },
+      {
+        "name": "MEDIA_ERROR_FILE_FORMAT_UNSUPPORTED",
+        "value": 31.0
+      },
+      {
+        "name": "MEDIA_ERROR_TOO_LARG",
+        "value": 32.0
+      },
+      {
+        "name": "MEDIA_ERROR_UNKNOWN",
+        "value": 33.0
+      },
+      {
+        "name": "MEDIA_SKIPPED_EP_NO_PRIMARY_HOST",
+        "value": 34.0
+      },
+      {
+        "name": "MEDIA_ERROR_CRONET",
+        "value": 35.0
+      },
+      {
+        "name": "MEDIA_ERROR_NO_DIRECT_PATH",
+        "value": 36.0
+      },
+      {
+        "name": "ERROR_NETWORK",
+        "value": 37.0
+      },
+      {
+        "name": "ERROR_EXPIRED",
+        "value": 38.0
+      },
+      {
+        "name": "ERROR_UPLOAD",
+        "value": 39.0
+      },
+      {
+        "name": "ERROR_BACKFILL_USYNC_FAILED",
+        "value": 40.0
+      },
+      {
+        "name": "ERROR_PAYLOAD_TOO_BIG",
+        "value": 41.0
+      },
+      {
+        "name": "ERROR_LOCATION",
+        "value": 42.0
+      },
+      {
+        "name": "ERROR_INVALID_MESSAGE",
+        "value": 43.0
+      },
+      {
+        "name": "ERROR_E2EE",
+        "value": 44.0
+      },
+      {
+        "name": "ERROR_INVALID_PROTOBUF",
+        "value": 45.0
+      },
+      {
+        "name": "SERVER_ERROR",
+        "value": 46.0
+      },
+      {
+        "name": "EPHEMERALLY_EXPIRED",
+        "value": 47.0
+      },
+      {
+        "name": "USER_CANCELLED",
+        "value": 48.0
+      },
+      {
+        "name": "USER_DELETED_UNSENT_MESSAGE",
+        "value": 49.0
+      },
+      {
+        "name": "USER_MANUAL_RETRY",
+        "value": 50.0
+      },
+      {
+        "name": "ERROR_CLIENT_OUT_OF_MEMORY",
+        "value": 51.0
+      },
+      {
+        "name": "ERROR_RETRY_EXHAUSTED",
+        "value": 52.0
+      },
+      {
+        "name": "ERROR_EMPTY_TARGET_DEVICES",
+        "value": 53.0
+      },
+      {
+        "name": "ERROR_UNRECOVERABLE",
+        "value": 54.0
+      },
+      {
+        "name": "ERROR_ACK_TIMEOUT",
+        "value": 55.0
+      },
+      {
+        "name": "ERROR_INVALID_STATE",
+        "value": 56.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusPostResult",
+    "matches": "STATUS_POST_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_POST_RESULT",
+    "OK",
+    "CANCELLED",
+    "ERROR_UNKNOWN",
+    "MEDIA_ERROR_REQUEST",
+    "MEDIA_ERROR_UPLOAD",
+    "MEDIA_ERROR_OOM",
+    "MEDIA_ERROR_IO",
+    "MEDIA_ERROR_NO_PERMISSIONS",
+    "MEDIA_ERROR_BAD_MEDIA",
+    "MEDIA_ERROR_INSUFFICIENT_SPACE",
+    "MEDIA_ERROR_FNF",
+    "MEDIA_ERROR_CANCEL",
+    "MEDIA_ERROR_SERVER",
+    "MEDIA_ERROR_REQUEST_TIMEOUT",
+    "MEDIA_ERROR_NOT_FINALIZED",
+    "MEDIA_ERROR_OPTIMISTIC_HASH",
+    "MEDIA_ERROR_MEDIA_CONN",
+    "MEDIA_ERROR_DNS",
+    "MEDIA_ERROR_THROTTLE",
+    "MEDIA_ERROR_SSL",
+    "MEDIA_ERROR_NO_CLIENT_NETWORK",
+    "MEDIA_DUPLICATE",
+    "MEDIA_SWITCH_REQUIRED",
+    "MEDIA_TOO_LARGE",
+    "MEDIA_ERROR_WAMSYS",
+    "MEDIA_ERROR_CONN",
+    "MEDIA_ERROR_URL",
+    "MEDIA_ERROR_NO_SUCH_ALGORITHM",
+    "MEDIA_ERROR_OPTIMISTIC_NETWORK_UNSAFE",
+    "MEDIA_ERROR_TRANSCODING_UKNOWN",
+    "MEDIA_ERROR_FILE_FORMAT_UNSUPPORTED",
+    "MEDIA_ERROR_TOO_LARG",
+    "MEDIA_ERROR_UNKNOWN",
+    "MEDIA_SKIPPED_EP_NO_PRIMARY_HOST",
+    "MEDIA_ERROR_CRONET",
+    "MEDIA_ERROR_NO_DIRECT_PATH",
+    "ERROR_NETWORK",
+    "ERROR_EXPIRED",
+    "ERROR_UPLOAD",
+    "ERROR_BACKFILL_USYNC_FAILED",
+    "ERROR_PAYLOAD_TOO_BIG",
+    "ERROR_LOCATION",
+    "ERROR_INVALID_MESSAGE",
+    "ERROR_E2EE",
+    "ERROR_INVALID_PROTOBUF",
+    "SERVER_ERROR",
+    "EPHEMERALLY_EXPIRED",
+    "USER_CANCELLED",
+    "USER_DELETED_UNSENT_MESSAGE",
+    "USER_MANUAL_RETRY",
+    "ERROR_CLIENT_OUT_OF_MEMORY",
+    "ERROR_RETRY_EXHAUSTED",
+    "ERROR_EMPTY_TARGET_DEVICES",
+    "ERROR_UNRECOVERABLE",
+    "ERROR_ACK_TIMEOUT",
+    "ERROR_INVALID_STATE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLogStatusPost",
+      "WAWebStatusPostWamEvent",
+      "WAWebStatusPostingMediaView.react",
+      "WAWebStatusPostingTextView.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

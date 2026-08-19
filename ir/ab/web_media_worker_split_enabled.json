@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_media_worker_split_enabled",
+  "kind": "ab",
+  "name": "web_media_worker_split_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27753,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_media_worker_split_enabled:\\s*\\[\\s*27753"
+  },
+  "literals": [
+    "web_media_worker_split_enabled",
+    "27753"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

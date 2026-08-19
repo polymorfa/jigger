@@ -1,0 +1,110 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.Content",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.Content",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "audioMessage": {
+        "number": 8,
+        "type_name": "WAConsumerApplication.ConsumerApplication.AudioMessage"
+      },
+      "contactMessage": {
+        "number": 3,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ContactMessage"
+      },
+      "contactsArrayMessage": {
+        "number": 10,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ContactsArrayMessage"
+      },
+      "documentMessage": {
+        "number": 7,
+        "type_name": "WAConsumerApplication.ConsumerApplication.DocumentMessage"
+      },
+      "editMessage": {
+        "number": 19,
+        "type_name": "WAConsumerApplication.ConsumerApplication.EditMessage"
+      },
+      "extendedTextMessage": {
+        "number": 5,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ExtendedTextMessage"
+      },
+      "groupInviteMessage": {
+        "number": 13,
+        "type_name": "WAConsumerApplication.ConsumerApplication.GroupInviteMessage"
+      },
+      "imageMessage": {
+        "number": 2,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ImageMessage"
+      },
+      "liveLocationMessage": {
+        "number": 11,
+        "type_name": "WAConsumerApplication.ConsumerApplication.LiveLocationMessage"
+      },
+      "locationMessage": {
+        "number": 4,
+        "type_name": "WAConsumerApplication.ConsumerApplication.LocationMessage"
+      },
+      "messageText": {
+        "number": 1
+      },
+      "pollCreationMessage": {
+        "number": 17,
+        "type_name": "WAConsumerApplication.ConsumerApplication.PollCreationMessage"
+      },
+      "pollUpdateMessage": {
+        "number": 18,
+        "type_name": "WAConsumerApplication.ConsumerApplication.PollUpdateMessage"
+      },
+      "reactionMessage": {
+        "number": 16,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ReactionMessage"
+      },
+      "statusTextMessage": {
+        "number": 6,
+        "type_name": "WAConsumerApplication.ConsumerApplication.StatusTextMesage"
+      },
+      "stickerMessage": {
+        "number": 12,
+        "type_name": "WAConsumerApplication.ConsumerApplication.StickerMessage"
+      },
+      "videoMessage": {
+        "number": 9,
+        "type_name": "WAConsumerApplication.ConsumerApplication.VideoMessage"
+      },
+      "viewOnceMessage": {
+        "number": 14,
+        "type_name": "WAConsumerApplication.ConsumerApplication.ViewOnceMessage"
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.Content\""
+  },
+  "literals": [
+    "Content"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

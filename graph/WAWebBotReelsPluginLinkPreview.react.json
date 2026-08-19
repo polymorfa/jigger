@@ -1,0 +1,1 @@
+{"deps":["WABidi","WAWebBaseShimmerComponents.react","WAWebEmojiText.react","WAWebReelPluginVideoIcon.react","WDSHoverStateStyles","react","react-compiler-runtime","stylex"],"dependents":["WAWebMediaLinkPreviewContainer.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

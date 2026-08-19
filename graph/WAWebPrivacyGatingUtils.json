@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps"],"dependents":["WAWebMexFetchAboutStatusJob","WAWebMexFetchTextStatusListJob","WAWebPresenceModel"],"dependent_count":3,"exports":[{"name":"isProfileScrappingProtectionInMexFetchEnabled","used_by":["WAWebMexFetchAboutStatusJob","WAWebMexFetchTextStatusListJob"],"uses":2},{"name":"isDataPrivacyPhase2Enabled","used_by":["WAWebPresenceModel"],"uses":1}]}

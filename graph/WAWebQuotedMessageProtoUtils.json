@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebE2EProtoParser","WAWebMsgType"],"dependents":["WAWebE2EProtoParser","WAWebExtractQuoteFieldsFromScheduledMsg"],"dependent_count":2,"exports":[{"name":"parseQuotedMessage","used_by":["WAWebE2EProtoParser","WAWebExtractQuoteFieldsFromScheduledMsg"],"uses":2}]}

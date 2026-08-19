@@ -1,0 +1,57 @@
+{
+  "id": "enum:SETTING",
+  "kind": "enum",
+  "name": "SETTING",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSetting",
+    "variants": [
+      {
+        "name": "ALL_CONTACTS",
+        "value": 1.0
+      },
+      {
+        "name": "ALL_CONTACTS_EXCEPT",
+        "value": 2.0
+      },
+      {
+        "name": "ONLY_SHARE_WITH_CONTACTS",
+        "value": 3.0
+      },
+      {
+        "name": "ONLY_SHARE_WITH_CLOSE_FRIENDS",
+        "value": 4.0
+      },
+      {
+        "name": "ONLY_SHARE_WITH_CUSTOM_LIST",
+        "value": 5.0
+      },
+      {
+        "name": "GROUP_STATUS",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSetting",
+    "matches": "SETTING\\s*[:=]"
+  },
+  "literals": [
+    "SETTING",
+    "ALL_CONTACTS",
+    "ALL_CONTACTS_EXCEPT",
+    "ONLY_SHARE_WITH_CONTACTS",
+    "ONLY_SHARE_WITH_CLOSE_FRIENDS",
+    "ONLY_SHARE_WITH_CUSTOM_LIST",
+    "GROUP_STATUS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLogStatusPrivacySettings",
+      "WAWebStatusPrivacySettingsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

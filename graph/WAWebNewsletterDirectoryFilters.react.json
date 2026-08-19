@@ -1,0 +1,1 @@
+{"deps":["WAWebCommonNewsletterStrings","WAWebFlex.react","WAWebListFilterButton.react","WAWebNewsletterDirectoryFilterUtils","WAWebNewsletterDirectoryRegionSelector.react","WAWebNewsletterGatingUtils","react","react-compiler-runtime"],"dependents":["WAWebNewsletterDirectoryDrawer.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

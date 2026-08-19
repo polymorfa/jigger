@@ -1,0 +1,1 @@
+{"deps":["WDSSvgComponentBase.react","WDSSvgIconHelpers","react","stylex"],"dependents":["WAWebFloatingToolbarPlugin.react","WAWebTPEditPdfInWhatsappToolbar.react","WAWebTPMediaPdfEditInWhatsapp.react","WDSAllGeneratedIcons"],"dependent_count":4,"exports":[{"name":"default","used_by":[],"uses":0}]}

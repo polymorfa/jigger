@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/reply",
+  "kind": "sig",
+  "name": "WaffleGetCertificateResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "reply"
+    ],
+    "responds_to": "WaffleGetCertificate"
+  },
+  "evidence": {
+    "module": "WASmaxInWaffleGetCertificateResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "reply"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInWaffleGetCertificateResponseMixin",
+      "WASmaxInWaffleIQResultResponseMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxWaffleGetCertificateRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

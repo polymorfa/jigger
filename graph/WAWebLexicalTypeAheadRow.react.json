@@ -1,0 +1,1 @@
+{"deps":["ReactDOM","WAWebAccessibility.react","WAWebPortalThemeWrapper.react","WAWebUnstyledButton.react","react","react-compiler-runtime","useWAWebLexicalTypeAheadContainer","useWAWebLexicalTypeAheadKeyboardNavigation"],"dependents":["WAWebEmojiPickerPlugin"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

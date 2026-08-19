@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebSearchTheWebCommonUtils"],"dependent_count":2,"exports":[{"name":"SearchTextIcon","used_by":["WAWebAllGeneratedIcons","WAWebSearchTheWebCommonUtils"],"uses":2}]}

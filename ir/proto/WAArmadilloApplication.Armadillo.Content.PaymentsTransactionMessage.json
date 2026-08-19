@@ -1,0 +1,60 @@
+{
+  "id": "proto:WAArmadilloApplication.Armadillo.Content.PaymentsTransactionMessage",
+  "kind": "proto",
+  "name": "WAArmadilloApplication.Armadillo.Content.PaymentsTransactionMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "amount": {
+        "number": 2
+      },
+      "currency": {
+        "number": 3
+      },
+      "extendedContentMessage": {
+        "number": 5
+      },
+      "paymentStatus": {
+        "number": 4
+      },
+      "transactionId": {
+        "number": 1
+      }
+    },
+    "module": "WAArmadilloApplication.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloApplication.pb",
+    "matches": "name = \"Armadillo.Content.PaymentsTransactionMessage\""
+  },
+  "literals": [
+    "PaymentsTransactionMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAArmadilloXMA.pb",
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsArmadilloApplication",
+      "MAWAsMessageApplication",
+      "MAWEphemeralUtil",
+      "MAWEphemeralUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseArmadilloProtocol",
+      "MAWParseScreenshotActionMsg",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "MpsRavenToBridge",
+      "MpsScreenshotActionToBridgeMsg",
+      "SendMsgArgsToProtobuf",
+      "WAConvertAppData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 16
+  }
+}

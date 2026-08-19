@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebAttachmentMenuLogger","WAWebAttachmentTrayActionsWamEvent"],"dependent_count":2,"exports":[{"name":"ATTACHMENT_TRAY_ACTION_TYPE","used_by":["WAWebAttachmentMenuLogger","WAWebAttachmentTrayActionsWamEvent"],"uses":2}]}

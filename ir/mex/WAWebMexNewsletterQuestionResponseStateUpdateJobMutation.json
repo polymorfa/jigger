@@ -1,0 +1,68 @@
+{
+  "id": "mex:WAWebMexNewsletterQuestionResponseStateUpdateJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterQuestionResponseStateUpdateJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24636260219323456",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "server_id",
+      "response_server_id",
+      "state"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "server_id"
+      },
+      {
+        "name": "response_server_id"
+      },
+      {
+        "name": "state"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_question_response_state_update",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "newsletter_id: $newsletter_id",
+          "response_server_id: $response_server_id",
+          "server_id: $server_id",
+          "state: $state"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_question_response_state_update",
+    "document": "# persisted document 24636260219323456\nmutation MexNewsletterQuestionResponseStateUpdateJobMutation(\n  $newsletter_id\n  $server_id\n  $response_server_id\n  $state\n) {\n  xwa2_newsletter_question_response_state_update(newsletter_id: $newsletter_id, response_server_id: $response_server_id, server_id: $server_id, state: $state) {  # XWA2NewsletterMutationResponse\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterQuestionResponseStateUpdateJobMutation.graphql",
+    "matches": "id:\\s*\"24636260219323456\""
+  },
+  "literals": [
+    "24636260219323456",
+    "WAWebMexNewsletterQuestionResponseStateUpdateJobMutation",
+    "xwa2_newsletter_question_response_state_update"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterQuestionResponseStateUpdateJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

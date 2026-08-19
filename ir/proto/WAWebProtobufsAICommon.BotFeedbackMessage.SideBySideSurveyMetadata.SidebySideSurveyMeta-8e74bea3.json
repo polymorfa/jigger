@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAWebProtobufsAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyAbandonEventData",
+  "kind": "proto",
+  "name": "WAWebProtobufsAICommon.BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyAbandonEventData",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "abandonDwellTimeMsString": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsAICommon.pb",
+    "matches": "name = \"BotFeedbackMessage.SideBySideSurveyMetadata.SidebySideSurveyMetaAiAnalyticsData.SideBySideSurveyAbandonEventData\""
+  },
+  "literals": [
+    "SideBySideSurveyAbandonEventData"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadTypeUtils",
+      "WAWebBotLoggingUtils",
+      "WAWebBotModeSelectionProtoUtils",
+      "WAWebBotPluginCarouselWrapper.react",
+      "WAWebBotPluginMsgBubbleMeta.react",
+      "WAWebBotSignatureVerificationUtils",
+      "WAWebFrontendMsgGetters",
+      "WAWebGenerateBotFeedbackProtocolMessageProto",
+      "WAWebGenerateBotMetadata",
+      "WAWebGenerateRichResponseMessageProto",
+      "WAWebMediaLinkPreviewContainer.react",
+      "WAWebMsgGetters",
+      "WAWebParseBotFeedbackProtocolMessageProto",
+      "WAWebParseBotSessionTransparencyNotice",
+      "WAWebProtobufsE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 15
+  }
+}

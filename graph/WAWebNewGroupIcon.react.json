@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAddGroupToCommunityDrawer.react","WAWebAllGeneratedIcons","WAWebCommunityCells.react"],"dependent_count":3,"exports":[{"name":"NewGroupIcon","used_by":["WAWebAddGroupToCommunityDrawer.react","WAWebAllGeneratedIcons","WAWebCommunityCells.react"],"uses":3}]}

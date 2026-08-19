@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils"],"dependents":["WAWebWamResourceLoadReporter"],"dependent_count":1,"exports":[{"name":"WebcResourceLoadWamEvent","used_by":[],"uses":0}]}

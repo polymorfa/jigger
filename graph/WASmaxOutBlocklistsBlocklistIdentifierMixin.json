@@ -1,0 +1,1 @@
+{"deps":["WASmaxAttrs","WASmaxJsx","WASmaxMixins","WASmaxOutBlocklistsBlocklistIds","WAWap"],"dependents":["WASmaxOutBlocklistsUpdateBlockListMigratedBlockItemMixin"],"dependent_count":1,"exports":[{"name":"mergeBlocklistIdentifierMixin","used_by":["WASmaxOutBlocklistsUpdateBlockListMigratedBlockItemMixin"],"uses":1}]}

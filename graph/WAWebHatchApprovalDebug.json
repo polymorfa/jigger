@@ -1,0 +1,1 @@
+{"deps":["WAWebHandleHatchMetadataSync"],"dependents":["WAWebDebugHatch"],"dependent_count":1,"exports":[{"name":"debugInjectHatchApprovalRequest","used_by":["WAWebDebugHatch"],"uses":1},{"name":"debugResolveHatchApproval","used_by":["WAWebDebugHatch"],"uses":1}]}

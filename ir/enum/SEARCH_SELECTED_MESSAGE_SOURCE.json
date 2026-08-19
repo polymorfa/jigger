@@ -1,0 +1,41 @@
+{
+  "id": "enum:SEARCH_SELECTED_MESSAGE_SOURCE",
+  "kind": "enum",
+  "name": "SEARCH_SELECTED_MESSAGE_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSearchSelectedMessageSource",
+    "variants": [
+      {
+        "name": "FTS",
+        "value": 1.0
+      },
+      {
+        "name": "SEMANTIC",
+        "value": 2.0
+      },
+      {
+        "name": "FTS_AND_SEMANTIC",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSearchSelectedMessageSource",
+    "matches": "SEARCH_SELECTED_MESSAGE_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "SEARCH_SELECTED_MESSAGE_SOURCE",
+    "FTS",
+    "SEMANTIC",
+    "FTS_AND_SEMANTIC"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSearchUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

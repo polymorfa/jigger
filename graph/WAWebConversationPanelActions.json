@@ -1,0 +1,1 @@
+{"deps":["WAWebEventEmitter"],"dependents":["WAWebOpenNewsletterChat","useWAWebConversationPanelActionListeners"],"dependent_count":2,"exports":[{"name":"ConversationPanelActions","used_by":["WAWebOpenNewsletterChat","useWAWebConversationPanelActionListeners"],"uses":2}]}

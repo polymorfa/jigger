@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebContactInfoLinkedSocialAccounts.react"],"dependent_count":2,"exports":[{"name":"LogoInstagramColorIcon","used_by":["WAWebAllGeneratedIcons","WAWebContactInfoLinkedSocialAccounts.react"],"uses":2}]}

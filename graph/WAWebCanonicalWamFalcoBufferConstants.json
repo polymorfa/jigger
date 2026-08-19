@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCanonicalWamFalcoBuffer","WAWebClearFalcoBufferApi"],"dependent_count":2,"exports":[{"name":"CANONICAL_WAM_FALCO_BUFFER_STORAGE_KEY","used_by":["WAWebCanonicalWamFalcoBuffer","WAWebClearFalcoBufferApi"],"uses":2}]}

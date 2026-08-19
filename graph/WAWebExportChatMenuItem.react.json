@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebExportChatGatingUtils","WAWebExportChatModalLoadable","WAWebModalManager","WDSIconIcDownload.react","WDSMenuItem.react","react","react-compiler-runtime"],"dependents":["WAWebContactMenuDropdown.react","WAWebConversationMenus"],"dependent_count":2,"exports":[]}

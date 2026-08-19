@@ -1,0 +1,1 @@
+{"deps":["WAPromiseProps","WAWebBuildConstants","WAWebFeatureDetectionCryptoSupport","WAWebLocalStorage","WAWebSessionStorage"],"dependents":["WAWebAppInitializer.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

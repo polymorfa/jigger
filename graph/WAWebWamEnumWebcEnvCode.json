@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebFalcoCanonicalWebcEnv","WAWebWamGlobals","WAWebWamUtils"],"dependent_count":3,"exports":[{"name":"WEBC_ENV_CODE","used_by":["WAWebWamGlobals","WAWebWamUtils"],"uses":2}]}

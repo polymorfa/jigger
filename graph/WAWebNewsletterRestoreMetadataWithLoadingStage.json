@@ -1,0 +1,1 @@
+{"deps":["WAWebNewsletterLoadingStageManager","WAWebNewsletterMetadataInitFromStorage","WAWebUserPrefsMultiDevice","asyncToGeneratorRuntime"],"dependents":["WAWebStartBackend"],"dependent_count":1,"exports":[{"name":"restoreNewsletterMetadataWithLoadingStage","used_by":["WAWebStartBackend"],"uses":1}]}

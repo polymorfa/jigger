@@ -1,0 +1,1 @@
+{"deps":["WAWebAck","WAWebGetters","WAWebGettersCaches","WAWebPinInChatGetters","WAWebUserPrefsMeUser"],"dependents":["WAWebPinInChatCollection","WAWebPinInChatModel"],"dependent_count":2,"exports":[{"name":"clearFrontendPinInChatGetterCacheFor","used_by":["WAWebPinInChatModel"],"uses":1},{"name":"getIsFailed","used_by":["WAWebPinInChatCollection"],"uses":1}]}

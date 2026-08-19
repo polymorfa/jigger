@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAFingerprint.FingerprintData",
+  "kind": "proto",
+  "name": "WAFingerprint.FingerprintData",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "hashedPublicKey": {
+        "number": 6
+      },
+      "hostedState": {
+        "number": 5
+      },
+      "lidIdentifier": {
+        "number": 3
+      },
+      "pnIdentifier": {
+        "number": 2
+      },
+      "publicKey": {
+        "number": 1
+      },
+      "usernameIdentifier": {
+        "number": 4
+      }
+    },
+    "module": "WAFingerprint.pb"
+  },
+  "evidence": {
+    "module": "WAFingerprint.pb",
+    "matches": "name = \"FingerprintData\""
+  },
+  "literals": [
+    "FingerprintData"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAValidateFingerprints"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

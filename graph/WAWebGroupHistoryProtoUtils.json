@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebDecodeJid","WAWebProtobufMsgKeyUtils","WAWebWid"],"dependents":["WAWebParseWebMessageInfoApi"],"dependent_count":1,"exports":[{"name":"getGroupHistoryIndividualMessageInfoMetadataFromProto","used_by":["WAWebParseWebMessageInfoApi"],"uses":1}]}

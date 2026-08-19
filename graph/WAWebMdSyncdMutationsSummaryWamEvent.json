@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumMutationBundleType","WAWebWamEnumMutationDirectionType","WAWebWamEnumSyncdCollectionType"],"dependents":["WAWebKmpWamLogger","WAWebSyncdWamReportingUtils"],"dependent_count":2,"exports":[{"name":"MdSyncdMutationsSummaryWamEvent","used_by":[],"uses":0}]}

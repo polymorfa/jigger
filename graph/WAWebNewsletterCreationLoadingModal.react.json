@@ -1,0 +1,1 @@
+{"deps":["fbt","JSResourceForInteraction","WAWebFlex.react","WAWebImg.react","WAWebLottieAnimationLoadable","WAWebModal.react","WAWebNoop","WAWebWdsPictoSuccessTickIcon.react","WDSSpinner.react","WDSText.react","react","react-compiler-runtime","useWAWebTimeout"],"dependents":["WAWebNewNewsletterInfoDrawer.react"],"dependent_count":1,"exports":[]}

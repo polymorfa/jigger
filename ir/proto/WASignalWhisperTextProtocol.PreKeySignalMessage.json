@@ -1,0 +1,54 @@
+{
+  "id": "proto:WASignalWhisperTextProtocol.PreKeySignalMessage",
+  "kind": "proto",
+  "name": "WASignalWhisperTextProtocol.PreKeySignalMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "baseKey": {
+        "number": 2
+      },
+      "identityKey": {
+        "number": 3
+      },
+      "kyberCiphertext": {
+        "number": 8
+      },
+      "kyberPreKeyId": {
+        "number": 7
+      },
+      "message": {
+        "number": 4
+      },
+      "preKeyId": {
+        "number": 1
+      },
+      "registrationId": {
+        "number": 5
+      },
+      "signedPreKeyId": {
+        "number": 6
+      }
+    },
+    "module": "WASignalWhisperTextProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalWhisperTextProtocol.pb",
+    "matches": "name = \"PreKeySignalMessage\""
+  },
+  "literals": [
+    "PreKeySignalMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WASignalCipher",
+      "WASignalGroupCipher",
+      "WAWebCryptoLibraryUtilsApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

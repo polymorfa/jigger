@@ -1,0 +1,249 @@
+{
+  "id": "iq:w:g2/set/sub_group_suggestion",
+  "kind": "iq",
+  "name": "GroupsCreateSubGroupSuggestion",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "set",
+    "tags": [
+      "sub_group_suggestion"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "sub_group_suggestion",
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsCreateSubGroupSuggestionRPC",
+    "responses": [
+      {
+        "arm": "NewGroupSuggestionSuccess",
+        "module": "WASmaxInGroupsCreateSubGroupSuggestionResponseNewGroupSuggestionSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "sub_group_suggestion",
+              "attrs": [
+                {
+                  "name": "jid",
+                  "ty": "groupjid",
+                  "optional": false
+                },
+                {
+                  "name": "creator",
+                  "ty": "userjid",
+                  "optional": false
+                },
+                {
+                  "name": "creation",
+                  "ty": "int",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "description",
+              "card": "optional"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "ExistingGroupsSuggestionSuccess",
+        "module": "WASmaxInGroupsCreateSubGroupSuggestionResponseExistingGroupsSuggestionSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "sub_group_suggestion",
+              "card": "one"
+            },
+            {
+              "tag": "group",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "SubGroupBadRequest",
+          "SubGroupConflict",
+          "SubGroupNotAcceptable",
+          "SubGroupNotAuthorized",
+          "SubGroupNotExist",
+          "SubGroupResourceLimit",
+          "SubGroupServerError",
+          "SubGroupSuggestionNotAllowed"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsCreateSubGroupSuggestionResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFallbackClient",
+          "IQErrorForbidden",
+          "IQErrorItemNotFound",
+          "IQErrorNotAcceptable",
+          "IQErrorNotAllowed",
+          "IQErrorRateOverlimit",
+          "IQErrorResourceLimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsCreateSubGroupSuggestionResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsCreateSubGroupSuggestionRequest",
+    "matches": "smax\\(\"sub_group_suggestion\""
+  },
+  "literals": [
+    "w:g2",
+    "sub_group_suggestion"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseSetGroupMixin",
+      "WASmaxOutGroupsSuggestionForCreateSubGroupSuggestionNewGroupOrCreateSubGroupSuggestionExistingGroupsMixinGroup"
+    ],
+    "dependents": [
+      "WASmaxGroupsCreateSubGroupSuggestionRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

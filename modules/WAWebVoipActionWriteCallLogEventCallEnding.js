@@ -1,0 +1,89 @@
+__d("WAWebVoipActionWriteCallLogEventCallEnding", [
+	"fbt",
+	"WALogger",
+	"WAWebCallLogUtils",
+	"WAWebMsgKey",
+	"WAWebMsgType",
+	"WAWebToast.react",
+	"WAWebToastManager",
+	"WAWebUserPrefsMeUser",
+	"WAWebViewMode.flow",
+	"WAWebVoipActionWriteCallLogImpl",
+	"WAWebVoipOngoingCallCollection",
+	"asyncToGeneratorRuntime",
+	"compactMap",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	"use strict";
+	var e, u, c = u || (u = o("react"));
+	function d(e) {
+		return m.apply(this, arguments);
+	}
+	function m() {
+		return m = n("asyncToGeneratorRuntime").asyncToGenerator(function* (t) {
+			try {
+				var n = t.bytesReceived, a = t.bytesSent, i = t.callCreatorJid, l = t.callId, u = t.callLinkToken, d = t.connectTime, m = t.fromMe, p = t.groupJid, _ = t.isCallLink, f = t.participantEntries, g = t.peerJid, h = t.result, y = t.startTime, C = t.terminatedByDeviceSwitch, b = t.videoCall, v = a != null ? a : void 0, S = n != null ? n : void 0, R = o("WAWebCallLogUtils").getCallOutcomeFromCallLogResult(h, d);
+				C && o("WAWebToastManager").ToastManager.open(c.jsx(o("WAWebToast.react").Toast, { msg: s._(
+					/*BTDS*/
+					""
+				) }));
+				var L = o("WAWebVoipOngoingCallCollection").WAWebVoipOngoingCallCollection.getByCallId(l), E = i != null ? i : m ? o("WAWebUserPrefsMeUser").getMeDevicePnOrThrow_DO_NOT_USE() : g, k = yield o("WAWebCallLogUtils").getCallLogTargetDetails({
+					callCreatorWid: E,
+					peerWid: g,
+					callId: l,
+					groupJid: p,
+					participants: r("compactMap")(f, function(e) {
+						return e.jid;
+					})
+				}), I = k.callCreatorUserWid, T = k.chatId, D = k.msgKeyId, x = k.participant;
+				if (L != null) {
+					var $ = babelHelpers.extends({}, L.toJSON(), {
+						callDuration: d == null ? L.callDuration : d,
+						callOutcome: R,
+						finalCallOutcome: R,
+						terminatedByDeviceSwitch: C,
+						bytesSent: v,
+						bytesReceived: S
+					}), P = yield o("WAWebVoipActionWriteCallLogImpl").writeVoipCallLogMessageImpl(T, $, !1);
+					P != null && o("WAWebVoipActionWriteCallLogImpl").markCallIdProcessed(l);
+				} else {
+					if (p != null || _ === !0) return;
+					var N = {
+						id: new (r("WAWebMsgKey"))({
+							remote: T,
+							participant: x,
+							fromMe: m,
+							id: D
+						}),
+						type: o("WAWebMsgType").MSG_TYPE.CALL_LOG,
+						kind: o("WAWebMsgType").MsgKind.CallLog,
+						viewMode: o("WAWebViewMode.flow").ViewModeType.VISIBLE,
+						callOutcome: R,
+						isVideoCall: b != null ? b : !1,
+						callCreator: E,
+						callDuration: d == null ? void 0 : d,
+						from: I,
+						t: y,
+						callParticipants: f.map(function(e) {
+							return {
+								participant: e.jid,
+								outcome: e.result
+							};
+						}),
+						to: T,
+						isCallLink: !1,
+						callLinkToken: u != null ? u : void 0,
+						finalCallOutcome: R,
+						terminatedByDeviceSwitch: C,
+						bytesSent: v,
+						bytesReceived: S
+					}, M = yield o("WAWebVoipActionWriteCallLogImpl").writeVoipCallLogMessageImpl(T, N, !1);
+					M != null && o("WAWebVoipActionWriteCallLogImpl").markCallIdProcessed(l);
+				}
+			} catch (t) {
+				o("WALogger").ERROR(e || (e = babelHelpers.taggedTemplateLiteralLoose(["[generateCallLogFromCallSyncRecord] call log gen failed: ", ""])), t).tags("nexus-voip").sendLogs("generate-call-log-message-syncd-failed");
+			}
+		}), m.apply(this, arguments);
+	}
+	l.generateCallLogFromNativeCallEndingEvent = d;
+}), 226);

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebEphemeralKeepInChatWamUtils","WAWebExternalLink.react","WAWebFaqUrl","WAWebModalManager","WAWebProtobufsE2E.pb","WAWebWamEnumKicErrorCodeType","react","react-compiler-runtime"],"dependents":["WAWebKeepInChatActions"],"dependent_count":1,"exports":[]}

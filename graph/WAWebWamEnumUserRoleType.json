@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebGetUserRole","WAWebGroupJourneyWamEvent","WAWebMessagingUserJourneyWamEvent"],"dependent_count":3,"exports":[{"name":"USER_ROLE_TYPE","used_by":["WAWebGetUserRole","WAWebGroupJourneyWamEvent","WAWebMessagingUserJourneyWamEvent"],"uses":3}]}

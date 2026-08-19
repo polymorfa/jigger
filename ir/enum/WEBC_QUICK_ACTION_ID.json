@@ -1,0 +1,97 @@
+{
+  "id": "enum:WEBC_QUICK_ACTION_ID",
+  "kind": "enum",
+  "name": "WEBC_QUICK_ACTION_ID",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcQuickActionId",
+    "variants": [
+      {
+        "name": "TEXT_STATUS",
+        "value": 1.0
+      },
+      {
+        "name": "PHOTO_VIDEO",
+        "value": 2.0
+      },
+      {
+        "name": "CREATE_CHANNEL",
+        "value": 3.0
+      },
+      {
+        "name": "FIND_CHANNELS",
+        "value": 4.0
+      },
+      {
+        "name": "COMMUNITY_INFO",
+        "value": 5.0
+      },
+      {
+        "name": "COMMUNITY_MEMBERS",
+        "value": 6.0
+      },
+      {
+        "name": "COMMUNITY_SETTINGS",
+        "value": 7.0
+      },
+      {
+        "name": "COMMUNITY_NEW_GROUP",
+        "value": 8.0
+      },
+      {
+        "name": "COMMUNITY_EXISTING_GROUP",
+        "value": 9.0
+      },
+      {
+        "name": "SEND_DOCUMENT",
+        "value": 10.0
+      },
+      {
+        "name": "ADD_CONTACT",
+        "value": 11.0
+      },
+      {
+        "name": "ASK_META_AI",
+        "value": 12.0
+      },
+      {
+        "name": "START_CALL",
+        "value": 13.0
+      },
+      {
+        "name": "GO_TO_CALLS",
+        "value": 14.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcQuickActionId",
+    "matches": "WEBC_QUICK_ACTION_ID\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_QUICK_ACTION_ID",
+    "TEXT_STATUS",
+    "PHOTO_VIDEO",
+    "CREATE_CHANNEL",
+    "FIND_CHANNELS",
+    "COMMUNITY_INFO",
+    "COMMUNITY_MEMBERS",
+    "COMMUNITY_SETTINGS",
+    "COMMUNITY_NEW_GROUP",
+    "COMMUNITY_EXISTING_GROUP",
+    "SEND_DOCUMENT",
+    "ADD_CONTACT",
+    "ASK_META_AI",
+    "START_CALL",
+    "GO_TO_CALLS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebQuickActionLogging",
+      "WAWebWebcQuickActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

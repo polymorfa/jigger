@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebExportChatSystemMsgFormatter","WAWebGetPlainTextFromBotMsg","WAWebMsgGetters","WAWebMsgType","WAWebQuotedMsgModelUtils","WAWebUnformatMsg"],"dependents":["WAWebExportChatAction","WAWebExportChatPlainTextFormatter"],"dependent_count":2,"exports":[]}

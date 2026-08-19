@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatCollection","WAWebChatMessageSearch","WAWebChatSearchFilters","WAWebConfirmPopup.react","WAWebFrontendChatGetters","WAWebModalManager","WAWebUpdateUnreadChatAction","WDSIconWdsIcChat.react","WDSMenuItem.react","promiseDone","react","react-compiler-runtime"],"dependents":["WAWebChatlistHeaderDropdown.react"],"dependent_count":1,"exports":[]}

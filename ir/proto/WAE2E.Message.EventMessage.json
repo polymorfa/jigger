@@ -1,0 +1,77 @@
+{
+  "id": "proto:WAE2E.Message.EventMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.EventMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "contextInfo": {
+        "number": 1,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "description": {
+        "number": 4
+      },
+      "endTime": {
+        "number": 8
+      },
+      "extraGuestsAllowed": {
+        "number": 9
+      },
+      "hasReminder": {
+        "number": 11
+      },
+      "isCanceled": {
+        "number": 2
+      },
+      "isScheduleCall": {
+        "number": 10
+      },
+      "joinLink": {
+        "number": 6
+      },
+      "location": {
+        "number": 5,
+        "type_name": "WAE2E.Message.LocationMessage"
+      },
+      "name": {
+        "number": 3
+      },
+      "reminderOffsetSec": {
+        "number": 12
+      },
+      "startTime": {
+        "number": 7
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.EventMessage\""
+  },
+  "literals": [
+    "EventMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

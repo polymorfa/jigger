@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebCoreActionsODS","WAWebMiscBrowserUtils","WAWebModalManager","WAWebVoipBackendLoadable","WAWebVoipGatingUtils","WAWebVoipInitEventEmitter","asyncToGeneratorRuntime","react"],"dependents":["WAWebCallButtons.react","WAWebVoipInitReloadRecovery","WAWebVoipLinkPreviewCallLink","WAWebVoipStartCall"],"dependent_count":4,"exports":[]}

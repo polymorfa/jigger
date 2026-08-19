@@ -1,0 +1,1 @@
+{"deps":["fbt","CometRelay","WALogger","WAWebBizAIOAuthPopup","WAWebBizAiPrepareOAuthAppInstallationMutation","WAWebBizAiSaveUtils","WAWebToast.react","WAWebToastManager","react","react-compiler-runtime"],"dependents":["WAWebBizAIIntegrationAppDetailDrawer.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["WAWap","WAWebGdprConstants"],"dependents":["WAWebDebugGDPR","useWAWebGdprDelete","useWAWebGdprRequest","useWAWebGdprStatus"],"dependent_count":4,"exports":[{"name":"getGdprIq","used_by":["WAWebDebugGDPR","useWAWebGdprDelete","useWAWebGdprRequest","useWAWebGdprStatus"],"uses":4}]}

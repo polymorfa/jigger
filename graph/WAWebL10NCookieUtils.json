@@ -1,0 +1,1 @@
+{"deps":["WATimeUtils","WAWebCookieDomain","WAWebCookieManager","WAWebRuntimeEnvironmentUtils"],"dependents":["WAWebFrontendL10nHelpers","WAWebL10N"],"dependent_count":2,"exports":[{"name":"setWAWebLocalePrefCookieValue","used_by":["WAWebFrontendL10nHelpers","WAWebL10N"],"uses":2},{"name":"getWAWebLocalePrefCookieValue","used_by":["WAWebFrontendL10nHelpers"],"uses":1}]}

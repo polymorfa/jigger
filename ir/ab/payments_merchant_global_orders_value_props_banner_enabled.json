@@ -1,0 +1,45 @@
+{
+  "id": "ab:payments_merchant_global_orders_value_props_banner_enabled",
+  "kind": "ab",
+  "name": "payments_merchant_global_orders_value_props_banner_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3744,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "payments_merchant_global_orders_value_props_banner_enabled:\\s*\\[\\s*3744"
+  },
+  "literals": [
+    "payments_merchant_global_orders_value_props_banner_enabled",
+    "3744"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebOrdersExpansionUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumActiveTimeAfterPairing","WAWebWamEnumMdBootstrapHistoryPayloadType","WAWebWamEnumMdHistorySyncStatusResult"],"dependents":["WAWebLogHistorySyncStatusAfterPairingJob","WAWebWamProcessWorkerData"],"dependent_count":2,"exports":[{"name":"MdBootstrapHistorySyncStatusAfterPairingWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["MsgrSchedulerQPL","NativeSchedulerTickStrategy","TaskScheduler"],"dependents":["MAWMessageSendsCommon","MAWRemovePendingSendMsgs"],"dependent_count":2,"exports":[{"name":"messageSendScheduler","used_by":["MAWMessageSendsCommon","MAWRemovePendingSendMsgs"],"uses":2}]}

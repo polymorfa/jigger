@@ -1,0 +1,488 @@
+{
+  "id": "enum:CALL_FROM_UI",
+  "kind": "enum",
+  "name": "CALL_FROM_UI",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallFromUi",
+    "variants": [
+      {
+        "name": "CALLS_TAB_MISSED",
+        "value": 1.0
+      },
+      {
+        "name": "CALLS_TAB_OUTGOING",
+        "value": 2.0
+      },
+      {
+        "name": "SELECT_CONTACT",
+        "value": 3.0
+      },
+      {
+        "name": "CALL_INFO",
+        "value": 4.0
+      },
+      {
+        "name": "NOTIFICATION_MISSED",
+        "value": 5.0
+      },
+      {
+        "name": "CONTACT_INFO",
+        "value": 6.0
+      },
+      {
+        "name": "QUICK_CONTACT_INFO",
+        "value": 7.0
+      },
+      {
+        "name": "CONVERSATION",
+        "value": 8.0
+      },
+      {
+        "name": "CALLS_TAB_INCOMING",
+        "value": 9.0
+      },
+      {
+        "name": "GROUP_CHAT_INFO",
+        "value": 10.0
+      },
+      {
+        "name": "GROUP_CHAT_RECENT_LOCATION",
+        "value": 11.0
+      },
+      {
+        "name": "ANDROID_BROADCAST_DETAILS",
+        "value": 12.0
+      },
+      {
+        "name": "ANDROID_LIST_CHAT_INFO",
+        "value": 13.0
+      },
+      {
+        "name": "ANDROID_CONTACTS_APPLICATION",
+        "value": 14.0
+      },
+      {
+        "name": "CONTACT_VCARD",
+        "value": 15.0
+      },
+      {
+        "name": "CALLS_TAB_NEW_CALL",
+        "value": 16.0
+      },
+      {
+        "name": "VOICE_MAIL_CALL_BACK",
+        "value": 17.0
+      },
+      {
+        "name": "IOS_INTENT",
+        "value": 18.0
+      },
+      {
+        "name": "LIVE_LOCATION_MAP",
+        "value": 19.0
+      },
+      {
+        "name": "GROUP_CALL_INFO",
+        "value": 20.0
+      },
+      {
+        "name": "CALLS_TAB_BOTTOM_SHEET",
+        "value": 21.0
+      },
+      {
+        "name": "STATUS_VIEWER",
+        "value": 22.0
+      },
+      {
+        "name": "DEBUG_TOOL",
+        "value": 23.0
+      },
+      {
+        "name": "GROUP_CHAT_PICKER",
+        "value": 24.0
+      },
+      {
+        "name": "GROUP_CHAT_DIRECT",
+        "value": 25.0
+      },
+      {
+        "name": "STELLA",
+        "value": 26.0
+      },
+      {
+        "name": "CHAT_LIST",
+        "value": 27.0
+      },
+      {
+        "name": "NEW_CHAT",
+        "value": 28.0
+      },
+      {
+        "name": "CONVERSATION_OPTIONS",
+        "value": 29.0
+      },
+      {
+        "name": "CALL_FAILED_SCREEN",
+        "value": 30.0
+      },
+      {
+        "name": "BUSINESS_DIRECTORY",
+        "value": 31.0
+      },
+      {
+        "name": "CALL_LINK",
+        "value": 32.0
+      },
+      {
+        "name": "PHONE_NUMBER_LINK",
+        "value": 33.0
+      },
+      {
+        "name": "ANDROID_CUSTOM_SHORTCUT",
+        "value": 34.0
+      },
+      {
+        "name": "CALL_LOG_SEARCH",
+        "value": 35.0
+      },
+      {
+        "name": "INTERACTIVE_MESSAGE",
+        "value": 36.0
+      },
+      {
+        "name": "LARGE_GROUP_CHAT_PICKER",
+        "value": 37.0
+      },
+      {
+        "name": "SCHEDULED_CALL_CREATION_MESSAGE",
+        "value": 38.0
+      },
+      {
+        "name": "SYSTEM_MESSAGE",
+        "value": 39.0
+      },
+      {
+        "name": "LOCAL_REMINDER",
+        "value": 40.0
+      },
+      {
+        "name": "UPCOMING_CALL_LOG",
+        "value": 41.0
+      },
+      {
+        "name": "UWP_CALL_LOG_SYNCD",
+        "value": 42.0
+      },
+      {
+        "name": "UWP_CALL_LOG_HISTORY_SYNC",
+        "value": 43.0
+      },
+      {
+        "name": "CALLS_TAB_PLUS_BUTTON",
+        "value": 44.0
+      },
+      {
+        "name": "CALL_LOG_MESSAGE_MISSED",
+        "value": 45.0
+      },
+      {
+        "name": "CALL_LOG_MESSAGE_ENDED",
+        "value": 46.0
+      },
+      {
+        "name": "CALL_LOG_MESSAGE_FAILED",
+        "value": 47.0
+      },
+      {
+        "name": "GROUP_CALL_PSA",
+        "value": 48.0
+      },
+      {
+        "name": "FAVORITES",
+        "value": 49.0
+      },
+      {
+        "name": "CALLS_TAB_MISSED_CALL_FILTER",
+        "value": 50.0
+      },
+      {
+        "name": "HEDWIG",
+        "value": 51.0
+      },
+      {
+        "name": "CLICK_TO_CALL_DEEP_LINK",
+        "value": 52.0
+      },
+      {
+        "name": "DIALER_CONTACT",
+        "value": 53.0
+      },
+      {
+        "name": "DIALER_NON_CONTACT",
+        "value": 54.0
+      },
+      {
+        "name": "GENAI_SHEET",
+        "value": 55.0
+      },
+      {
+        "name": "CALLS_OS_CASTING",
+        "value": 56.0
+      },
+      {
+        "name": "CONVERSATION_OVERSCROLL",
+        "value": 57.0
+      },
+      {
+        "name": "CALL_PHONE_NUMBER_DEEPLINK",
+        "value": 58.0
+      },
+      {
+        "name": "CONVERSATION_VOICE_CHAT_FAB",
+        "value": 59.0
+      },
+      {
+        "name": "CONFIRMATION_SHEET_OS_CALL_LOG",
+        "value": 60.0
+      },
+      {
+        "name": "NOTIFICATION_INVITEE_JOINED",
+        "value": 61.0
+      },
+      {
+        "name": "CALL_LOG_MESSAGE_INVITE",
+        "value": 62.0
+      },
+      {
+        "name": "CALL_LOG_MESSAGE_INVITE_MISSED",
+        "value": 63.0
+      },
+      {
+        "name": "CALLS_TAB_SUGGESTION",
+        "value": 64.0
+      },
+      {
+        "name": "CLICK_TO_CALL_WHATSAPP_AD",
+        "value": 65.0
+      },
+      {
+        "name": "CONTACTLESS_USERNAME_SEARCH_CALLS_TAB",
+        "value": 66.0
+      },
+      {
+        "name": "CONTACTLESS_USERNAME_SEARCH_CALLS_TAB_NEW_CALL",
+        "value": 67.0
+      },
+      {
+        "name": "FAVORITES_FULL_LIST",
+        "value": 68.0
+      },
+      {
+        "name": "CALLS_TAB_CALL_INVITE",
+        "value": 69.0
+      },
+      {
+        "name": "CALLS_TAB_MISSED_CALL_INVITE",
+        "value": 70.0
+      },
+      {
+        "name": "CALLS_TAB_CONTACT_INFO",
+        "value": 71.0
+      },
+      {
+        "name": "CALLS_TAB_GROUP_CALL_INFO",
+        "value": 72.0
+      },
+      {
+        "name": "CALLS_TAB_ADHOC_GROUP_CALL_INFO",
+        "value": 73.0
+      },
+      {
+        "name": "CALLS_TAB_GENAI_SHEET",
+        "value": 74.0
+      },
+      {
+        "name": "CALLS_TAB_QUICK_CONTACT_INFO",
+        "value": 75.0
+      },
+      {
+        "name": "SYSTEM_DIALER",
+        "value": 76.0
+      },
+      {
+        "name": "PERIPHERAL_DEVICE",
+        "value": 77.0
+      },
+      {
+        "name": "CALL_INFO_1X1",
+        "value": 78.0
+      },
+      {
+        "name": "CALL_INFO_AHGC",
+        "value": 79.0
+      },
+      {
+        "name": "CALL_INFO_AHGC_PARTICIPANT",
+        "value": 80.0
+      },
+      {
+        "name": "CALL_INFO_AHGC_MINI_CONTACT_SHEET",
+        "value": 81.0
+      },
+      {
+        "name": "CALL_INFO_LGC",
+        "value": 82.0
+      },
+      {
+        "name": "CALL_INFO_LGC_MINI_CONTACT_SHEET",
+        "value": 83.0
+      },
+      {
+        "name": "CALLS_TAB_GROUP_INFO",
+        "value": 84.0
+      },
+      {
+        "name": "CALL_INFO_CALL_LINK",
+        "value": 85.0
+      },
+      {
+        "name": "CALL_INFO_CALL_LINK_PARTICIPANT",
+        "value": 86.0
+      },
+      {
+        "name": "CALL_INFO_CALL_LINK_MINI_CONTACT_SHEET",
+        "value": 87.0
+      },
+      {
+        "name": "GROUP_INFO_BOTTOM_SHEET_CHATS_TAB",
+        "value": 88.0
+      },
+      {
+        "name": "GROUP_INFO_BOTTOM_SHEET_CALLS_TAB",
+        "value": 89.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallFromUi",
+    "matches": "CALL_FROM_UI\\s*[:=]"
+  },
+  "literals": [
+    "CALL_FROM_UI",
+    "CALLS_TAB_MISSED",
+    "CALLS_TAB_OUTGOING",
+    "SELECT_CONTACT",
+    "CALL_INFO",
+    "NOTIFICATION_MISSED",
+    "CONTACT_INFO",
+    "QUICK_CONTACT_INFO",
+    "CONVERSATION",
+    "CALLS_TAB_INCOMING",
+    "GROUP_CHAT_INFO",
+    "GROUP_CHAT_RECENT_LOCATION",
+    "ANDROID_BROADCAST_DETAILS",
+    "ANDROID_LIST_CHAT_INFO",
+    "ANDROID_CONTACTS_APPLICATION",
+    "CONTACT_VCARD",
+    "CALLS_TAB_NEW_CALL",
+    "VOICE_MAIL_CALL_BACK",
+    "IOS_INTENT",
+    "LIVE_LOCATION_MAP",
+    "GROUP_CALL_INFO",
+    "CALLS_TAB_BOTTOM_SHEET",
+    "STATUS_VIEWER",
+    "DEBUG_TOOL",
+    "GROUP_CHAT_PICKER",
+    "GROUP_CHAT_DIRECT",
+    "STELLA",
+    "CHAT_LIST",
+    "NEW_CHAT",
+    "CONVERSATION_OPTIONS",
+    "CALL_FAILED_SCREEN",
+    "BUSINESS_DIRECTORY",
+    "CALL_LINK",
+    "PHONE_NUMBER_LINK",
+    "ANDROID_CUSTOM_SHORTCUT",
+    "CALL_LOG_SEARCH",
+    "INTERACTIVE_MESSAGE",
+    "LARGE_GROUP_CHAT_PICKER",
+    "SCHEDULED_CALL_CREATION_MESSAGE",
+    "SYSTEM_MESSAGE",
+    "LOCAL_REMINDER",
+    "UPCOMING_CALL_LOG",
+    "UWP_CALL_LOG_SYNCD",
+    "UWP_CALL_LOG_HISTORY_SYNC",
+    "CALLS_TAB_PLUS_BUTTON",
+    "CALL_LOG_MESSAGE_MISSED",
+    "CALL_LOG_MESSAGE_ENDED",
+    "CALL_LOG_MESSAGE_FAILED",
+    "GROUP_CALL_PSA",
+    "FAVORITES",
+    "CALLS_TAB_MISSED_CALL_FILTER",
+    "HEDWIG",
+    "CLICK_TO_CALL_DEEP_LINK",
+    "DIALER_CONTACT",
+    "DIALER_NON_CONTACT",
+    "GENAI_SHEET",
+    "CALLS_OS_CASTING",
+    "CONVERSATION_OVERSCROLL",
+    "CALL_PHONE_NUMBER_DEEPLINK",
+    "CONVERSATION_VOICE_CHAT_FAB",
+    "CONFIRMATION_SHEET_OS_CALL_LOG",
+    "NOTIFICATION_INVITEE_JOINED",
+    "CALL_LOG_MESSAGE_INVITE",
+    "CALL_LOG_MESSAGE_INVITE_MISSED",
+    "CALLS_TAB_SUGGESTION",
+    "CLICK_TO_CALL_WHATSAPP_AD",
+    "CONTACTLESS_USERNAME_SEARCH_CALLS_TAB",
+    "CONTACTLESS_USERNAME_SEARCH_CALLS_TAB_NEW_CALL",
+    "FAVORITES_FULL_LIST",
+    "CALLS_TAB_CALL_INVITE",
+    "CALLS_TAB_MISSED_CALL_INVITE",
+    "CALLS_TAB_CONTACT_INFO",
+    "CALLS_TAB_GROUP_CALL_INFO",
+    "CALLS_TAB_ADHOC_GROUP_CALL_INFO",
+    "CALLS_TAB_GENAI_SHEET",
+    "CALLS_TAB_QUICK_CONTACT_INFO",
+    "SYSTEM_DIALER",
+    "PERIPHERAL_DEVICE",
+    "CALL_INFO_1X1",
+    "CALL_INFO_AHGC",
+    "CALL_INFO_AHGC_PARTICIPANT",
+    "CALL_INFO_AHGC_MINI_CONTACT_SHEET",
+    "CALL_INFO_LGC",
+    "CALL_INFO_LGC_MINI_CONTACT_SHEET",
+    "CALLS_TAB_GROUP_INFO",
+    "CALL_INFO_CALL_LINK",
+    "CALL_INFO_CALL_LINK_PARTICIPANT",
+    "CALL_INFO_CALL_LINK_MINI_CONTACT_SHEET",
+    "GROUP_INFO_BOTTOM_SHEET_CHATS_TAB",
+    "GROUP_INFO_BOTTOM_SHEET_CALLS_TAB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizBookingConfirmationDrawer.react",
+      "WAWebCallInfoLoggingUtils",
+      "WAWebCallWamEvent",
+      "WAWebCometLiteCallActions.react",
+      "WAWebContactCallButtons.react",
+      "WAWebContactInfoTopCard.react",
+      "WAWebDialerContactWithCallButtons.react",
+      "WAWebDialerUnknownContactWithCallButtons.react",
+      "WAWebExecApiCmdNewCall",
+      "WAWebFavoriteCell.react",
+      "WAWebGroupCallDropdownContent.react",
+      "WAWebGroupCallParticipantSelector.react",
+      "WAWebGroupHoverCard.react",
+      "WAWebGroupInfoTopCard.react",
+      "WAWebHeader.react",
+      "WAWebOneOnOneIcceCallBubble.react",
+      "WAWebVoipCallsTabDrawerNewCall.react",
+      "WAWebVoipNewGroupCallContactPicker.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 18
+  }
+}

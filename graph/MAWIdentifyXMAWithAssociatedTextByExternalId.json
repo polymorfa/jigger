@@ -1,0 +1,1 @@
+{"deps":["MAWDbXMATxns","MAWIndexedDb","MAWTransactionMode","asyncToGeneratorRuntime"],"dependents":["MAWBridgeHandlers"],"dependent_count":1,"exports":[{"name":"identifyXMAWithAssociatedTextByExternalId","used_by":["MAWBridgeHandlers"],"uses":1}]}

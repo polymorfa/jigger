@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatEphemerality","WAWebMsgGetters","WAWebOrderEphemeralExemptionUtil","WAWebOrderGatingUtils"],"dependents":["WAWebMessageWrapper.react","WAWebWrapperHandlers"],"dependent_count":2,"exports":[]}

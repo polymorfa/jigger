@@ -1,0 +1,1 @@
+{"deps":["WASmaxReceiptPublishAppDataPeerDeliveryRPC"],"dependents":["WACreateHandleAppdata"],"dependent_count":1,"exports":[{"name":"sendAppdataDeliveryReceiptProtocol","used_by":["WACreateHandleAppdata"],"uses":1}]}

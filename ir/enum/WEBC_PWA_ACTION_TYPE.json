@@ -1,0 +1,32 @@
+{
+  "id": "enum:WEBC_PWA_ACTION_TYPE",
+  "kind": "enum",
+  "name": "WEBC_PWA_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcPwaActionType",
+    "variants": [
+      {
+        "name": "INSTALL",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcPwaActionType",
+    "matches": "WEBC_PWA_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_PWA_ACTION_TYPE",
+    "INSTALL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPwaEventListeners",
+      "WAWebWebcPwaEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

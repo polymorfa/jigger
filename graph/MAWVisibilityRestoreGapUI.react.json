@@ -1,0 +1,1 @@
+{"deps":["fbt","BaseTheme.react","MWXButton.react","MWXText.react","react","react-compiler-runtime","useMAWVisibilityRestoreGapUIController"],"dependents":["MAWVisibilityRestoreGapUIBySurface.react"],"dependent_count":1,"exports":[]}

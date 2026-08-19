@@ -1,0 +1,25 @@
+__d("WAWebSendMsgModalImplLoadable", [
+	"fbt",
+	"JSResourceForInteraction",
+	"WAWebLazyLoadedRetriable",
+	"WAWebLoadingModal.react",
+	"react",
+	"react-loadable"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u = e || (e = o("react")), c = r("WAWebLazyLoadedRetriable")(async function() {
+		var e = await r("JSResourceForInteraction")("WAWebSendMsgModalImpl.react").__setRef("WAWebSendMsgModalImplLoadable").load();
+		return e;
+	}, "SendMsgModalImpl"), d = r("react-loadable")({
+		loader: c,
+		loading: function(t) {
+			return u.jsx(r("WAWebLoadingModal.react"), {
+				title: s._(
+					/*BTDS*/
+					""
+				),
+				error: !!t.error
+			});
+		}
+	});
+	l.SendMsgModalImplLoadable = d;
+}), 226);

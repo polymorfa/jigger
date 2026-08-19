@@ -1,0 +1,41 @@
+{
+  "id": "enum:CTWA_DIRECTION_FROM",
+  "kind": "enum",
+  "name": "CTWA_DIRECTION_FROM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCtwaDirectionFrom",
+    "variants": [
+      {
+        "name": "CUSTOMER",
+        "value": 0.0
+      },
+      {
+        "name": "BUSINESS",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCtwaDirectionFrom",
+    "matches": "CTWA_DIRECTION_FROM\\s*[:=]"
+  },
+  "literals": [
+    "CTWA_DIRECTION_FROM",
+    "CUSTOMER",
+    "BUSINESS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwa1pdConversionWamEvent",
+      "WAWebCtwa3pdAggregatedConversionWamEvent",
+      "WAWebCtwa3pdConversionWamEvent",
+      "WAWebHandleNewMsgAction",
+      "WAWebSmb1pdConversionSignalAction",
+      "WAWebSmb3pdAggregatedConversionSignalAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCustomerDataCollection","WAWebCustomerDataFieldSaver","WAWebLeadStage","WAWebLeadStageNames","WAWebStopEvent","WDSChip.react","WDSMenu.react","WDSMenuItem.react","react","react-compiler-runtime","useWAWebListener","useWDSMenu"],"dependents":["WAWebContactManagerListViewColumns"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["gkx"],"dependents":["MAWMainThreadLogger","MAWWebWorkerLogger"],"dependent_count":2,"exports":[{"name":"logToConsole","used_by":["MAWMainThreadLogger","MAWWebWorkerLogger"],"uses":2}]}

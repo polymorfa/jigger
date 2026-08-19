@@ -1,0 +1,1 @@
+{"deps":["WAWebChartUtils","WAWebNewsletterAdminInsightsNoData.react","WAWebNewsletterAdminInsightsTimelineWidget.react","WAWebThemeContext","react","react-compiler-runtime","useWAWebModelValues"],"dependents":["WAWebNewsletterInsightsGrowthSection.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

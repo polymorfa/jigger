@@ -1,0 +1,1 @@
+{"deps":["WAWebCTWAGatingUtils","WAWebMsgSelectors"],"dependents":["WAWebMessageMenu.react","WAWebMessageViaAdIndicator.react"],"dependent_count":2,"exports":[{"name":"shouldShowAdAttribution","used_by":["WAWebMessageMenu.react","WAWebMessageViaAdIndicator.react"],"uses":2}]}

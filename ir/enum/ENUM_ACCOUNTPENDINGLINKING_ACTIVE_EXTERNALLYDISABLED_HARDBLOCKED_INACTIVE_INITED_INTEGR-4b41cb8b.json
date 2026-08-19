@@ -1,0 +1,82 @@
+{
+  "id": "enum:ENUM_ACCOUNTPENDINGLINKING_ACTIVE_EXTERNALLYDISABLED_HARDBLOCKED_INACTIVE_INITED_INTEGRITYBLOCKED_PENDING_SOFTBLOCKED",
+  "kind": "enum",
+  "name": "ENUM_ACCOUNTPENDINGLINKING_ACTIVE_EXTERNALLYDISABLED_HARDBLOCKED_INACTIVE_INITED_INTEGRITYBLOCKED_PENDING_SOFTBLOCKED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBrPaymentEnums",
+    "variants": [
+      {
+        "name": "ACCOUNT_PENDING_LINKING",
+        "value": "ACCOUNT_PENDING_LINKING"
+      },
+      {
+        "name": "ACTIVE",
+        "value": "ACTIVE"
+      },
+      {
+        "name": "EXTERNALLY_DISABLED",
+        "value": "EXTERNALLY_DISABLED"
+      },
+      {
+        "name": "HARD_BLOCKED",
+        "value": "HARD_BLOCKED"
+      },
+      {
+        "name": "INACTIVE",
+        "value": "INACTIVE"
+      },
+      {
+        "name": "INITED",
+        "value": "INITED"
+      },
+      {
+        "name": "INTEGRITY_BLOCKED",
+        "value": "INTEGRITY_BLOCKED"
+      },
+      {
+        "name": "PENDING",
+        "value": "PENDING"
+      },
+      {
+        "name": "SOFT_BLOCKED",
+        "value": "SOFT_BLOCKED"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBrPaymentEnums",
+    "matches": "ENUM_ACCOUNTPENDINGLINKING_ACTIVE_EXTERNALLYDISABLED_HARDBLOCKED_INACTIVE_INITED_INTEGRITYBLOCKED_PENDING_SOFTBLOCKED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ACCOUNTPENDINGLINKING_ACTIVE_EXTERNALLYDISABLED_HARDBLOCKED_INACTIVE_INITED_INTEGRITYBLOCKED_PENDING_SOFTBLOCKED",
+    "ACCOUNT_PENDING_LINKING",
+    "ACTIVE",
+    "EXTERNALLY_DISABLED",
+    "HARD_BLOCKED",
+    "INACTIVE",
+    "INITED",
+    "INTEGRITY_BLOCKED",
+    "PENDING",
+    "SOFT_BLOCKED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBrPaymentBRCardMixin",
+      "WASmaxInBrPaymentBRMerchantMixin",
+      "WASmaxInBrPaymentCardBaseMixin",
+      "WASmaxInBrPaymentCardCapabilitiesBaseMixin",
+      "WASmaxInBrPaymentComboCardCapabilitiesMixin",
+      "WASmaxInBrPaymentConsumerBaseMixin",
+      "WASmaxInBrPaymentCustomPaymentMethodMixin",
+      "WASmaxInBrPaymentMerchantBaseMixin",
+      "WASmaxInBrPaymentMethodBaseMixin",
+      "WASmaxInBrPaymentPayoutBankMixin",
+      "WASmaxInBrPaymentUPIAliasMixin",
+      "WASmaxInBrPaymentUPIBankMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

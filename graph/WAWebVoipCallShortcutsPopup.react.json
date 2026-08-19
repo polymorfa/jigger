@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebActions","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebKeyboardShortcut.react","WAWebKeyboardShortcuts","WAWebModal.react","WAWebUA","WDSText.react","react","useWAWebVoipModalManager"],"dependents":["WAWebVoipPopoutKeyboardShortcutsHotkey.react"],"dependent_count":1,"exports":[]}

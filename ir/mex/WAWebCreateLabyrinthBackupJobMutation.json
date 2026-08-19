@@ -1,0 +1,86 @@
+{
+  "id": "mex:WAWebCreateLabyrinthBackupJobMutation",
+  "kind": "mex",
+  "name": "WAWebCreateLabyrinthBackupJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "28017003717917462",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "wa_labyrinth_create_backup",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on WALabyrinthCreateBackupData",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "mailbox_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "backup_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "device_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "epoch_id",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "... on WALabyrinthCreateBackupError",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "status",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "message",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 28017003717917462\nmutation CreateLabyrinthBackupJobMutation(\n  $input\n) {\n  wa_labyrinth_create_backup(input: $input) {\n    __typename\n    ... on WALabyrinthCreateBackupData {\n      mailbox_id\n      backup_id\n      device_id\n      epoch_id\n    }\n    ... on WALabyrinthCreateBackupError {\n      status\n      message\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebCreateLabyrinthBackupJobMutation.graphql",
+    "matches": "id:\\s*\"28017003717917462\""
+  },
+  "literals": [
+    "28017003717917462",
+    "WAWebCreateLabyrinthBackupJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCreateLabyrinthBackupJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

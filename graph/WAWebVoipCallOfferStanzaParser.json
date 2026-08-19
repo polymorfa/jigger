@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedWapParser","WATimeUtils","WAWebJidToWid"],"dependents":["WAWebVoipBackendEnqueueCallOfferPlaceholder","WAWebVoipBackendSwCallPlaceholderWriter"],"dependent_count":2,"exports":[{"name":"parseCallOfferStanza","used_by":["WAWebVoipBackendEnqueueCallOfferPlaceholder","WAWebVoipBackendSwCallPlaceholderWriter"],"uses":2}]}

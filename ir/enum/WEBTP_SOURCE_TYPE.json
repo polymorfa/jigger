@@ -1,0 +1,77 @@
+{
+  "id": "enum:WEBTP_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "WEBTP_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebtpSourceType",
+    "variants": [
+      {
+        "name": "CHAT",
+        "value": 1.0
+      },
+      {
+        "name": "MEDIA_HUB",
+        "value": 2.0
+      },
+      {
+        "name": "CHAT_MEDIA",
+        "value": 3.0
+      },
+      {
+        "name": "THUMBNAIL",
+        "value": 4.0
+      },
+      {
+        "name": "MEDIA_VIEWER_HEADER",
+        "value": 5.0
+      },
+      {
+        "name": "MESSAGE_BUBBLE",
+        "value": 6.0
+      },
+      {
+        "name": "PDF_VIEWER_ERROR_SCREEN",
+        "value": 7.0
+      },
+      {
+        "name": "PDF_VIEWER",
+        "value": 8.0
+      },
+      {
+        "name": "PDF_SHARER",
+        "value": 9.0
+      },
+      {
+        "name": "PDF_RECEIVER",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebtpSourceType",
+    "matches": "WEBTP_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBTP_SOURCE_TYPE",
+    "CHAT",
+    "MEDIA_HUB",
+    "CHAT_MEDIA",
+    "THUMBNAIL",
+    "MEDIA_VIEWER_HEADER",
+    "MESSAGE_BUBBLE",
+    "PDF_VIEWER_ERROR_SCREEN",
+    "PDF_VIEWER",
+    "PDF_SHARER",
+    "PDF_RECEIVER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebTPLoggingUtils",
+      "WAWebWebcWebtpPdfViewerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

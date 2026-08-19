@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebEphemeralSyncResponse","WAWebEphemeralSyncResponseReceiveWamEvent","WAWebEphemeralSyncResponseSendWamEvent"],"dependent_count":3,"exports":[{"name":"ESR_FAILURE_REASON_TYPE","used_by":["WAWebEphemeralSyncResponse","WAWebEphemeralSyncResponseReceiveWamEvent","WAWebEphemeralSyncResponseSendWamEvent"],"uses":3}]}

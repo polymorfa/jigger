@@ -1,0 +1,45 @@
+{
+  "id": "ab:order_messages_ephemeral_exception_enabled",
+  "kind": "ab",
+  "name": "order_messages_ephemeral_exception_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3240,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "order_messages_ephemeral_exception_enabled:\\s*\\[\\s*3240"
+  },
+  "literals": [
+    "order_messages_ephemeral_exception_enabled",
+    "3240"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebOrderGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebProtobufsVnameCert.pb","decodeProtobuf","err"],"dependents":["WAWebCommonParsersVerifiedName"],"dependent_count":1,"exports":[{"name":"extractCertificateDetailsParams","used_by":["WAWebCommonParsersVerifiedName"],"uses":1},{"name":"getParsedProtoObjects","used_by":["WAWebCommonParsersVerifiedName"],"uses":1}]}

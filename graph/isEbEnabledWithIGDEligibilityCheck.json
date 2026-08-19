@@ -1,0 +1,1 @@
+{"deps":["EBIsEbEnabled","Promise","gkx"],"dependents":["MAWFTSRestoreSync"],"dependent_count":1,"exports":[{"name":"isEbEnabledWithIGDEligibilityCheck","used_by":["MAWFTSRestoreSync"],"uses":1}]}

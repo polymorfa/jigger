@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFbtCommon","WAWebFlex.react","WAWebModalManager","WAWebNewsletterPhoneNumberPrivacyNux.react","WDSButton.react","WDSIconIcClose.react","WDSTextualLink.react","WDSTooltip.react","react"],"dependents":["useWAWebNewsletterPrivacyBanner"],"dependent_count":1,"exports":[]}

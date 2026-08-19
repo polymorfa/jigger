@@ -1,0 +1,41 @@
+__d("WAWebNotificationsDeviceSwitchNotification", [
+	"fbt",
+	"WAWebBaseNotification",
+	"WAWebNotificationHelpers",
+	"WAWebNotificationIconUtils",
+	"WAWebNotificationMuteReason"
+], (function(t, n, r, o, a, i, l, s) {
+	var e = (function(e) {
+		function t(t) {
+			var n, r = t.otpCode, o = t.wid;
+			return n = e.call(this) || this, n.wid = o, n.otpCode = r, n;
+		}
+		babelHelpers.inheritsLoose(t, e);
+		var n = t.prototype;
+		return n.shouldMute = function(t) {
+			return o("WAWebNotificationHelpers").appIsActive() ? r("WAWebNotificationMuteReason").AppState : null;
+		}, n.buildKey = function() {
+			return "registration:" + this.wid.toString();
+		}, n.getChatKind = function() {
+			return null;
+		}, n.getIcon = async function() {
+			return o("WAWebNotificationIconUtils").getNotificationIconByWid(this.wid, this.abortController.signal, o("WAWebNotificationIconUtils").USER_DEFAULT_ICON);
+		}, n.getBannerOptions = function() {
+			var e = s._(
+				/*BTDS*/
+				"",
+				[s._param("otpCode", this.otpCode)]
+			).toString(), t = s._(
+				/*BTDS*/
+				""
+			).toString();
+			return {
+				wid: this.wid,
+				title: t,
+				body: e,
+				doNotOpenChat: !0
+			};
+		}, t;
+	})(o("WAWebBaseNotification").WABaseNotification);
+	l.WADeviceSwitchNotification = e;
+}), 226);

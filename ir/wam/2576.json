@@ -1,0 +1,103 @@
+{
+  "id": "wam:2576",
+  "kind": "wam",
+  "name": "MdLinkDeviceCompanion",
+  "data": {
+    "kind": "wam",
+    "event_id": 2576,
+    "fields": {
+      "appContext": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "app_context"
+      },
+      "appContextBitfield": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "app_context_bitfield"
+      },
+      "applicationState": {
+        "id": 12,
+        "type": "APPLICATION_STATE",
+        "wire": "application_state",
+        "enum_ref": "APPLICATION_STATE"
+      },
+      "mdCompanionRefHash": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "md_companion_ref_hash"
+      },
+      "mdDurationS": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "md_duration_s"
+      },
+      "mdLinkDeviceCompanionErrorCode": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "md_link_device_companion_error_code"
+      },
+      "mdLinkDeviceCompanionStage": {
+        "id": 4,
+        "type": "MD_LINK_DEVICE_COMPANION_STAGE",
+        "wire": "md_link_device_companion_stage",
+        "enum_ref": "MD_LINK_DEVICE_COMPANION_STAGE"
+      },
+      "mdLinkDeviceExperienceId": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "md_link_device_experience_id"
+      },
+      "mdRegAttemptId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "md_reg_attempt_id"
+      },
+      "mdSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "md_session_id"
+      },
+      "mdTimestampS": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "md_timestamp_s"
+      },
+      "mdWasUpgraded": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "md_was_upgraded"
+      },
+      "userLocale": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "user_locale"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdLinkDeviceCompanionWamEvent",
+    "matches": "MdLinkDeviceCompanion:\\s*\\[\\s*2576"
+  },
+  "literals": [
+    "2576"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumApplicationState",
+      "WAWebWamEnumMdLinkDeviceCompanionStage"
+    ],
+    "dependents": [
+      "WAWebWamDeviceLinkReporter"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

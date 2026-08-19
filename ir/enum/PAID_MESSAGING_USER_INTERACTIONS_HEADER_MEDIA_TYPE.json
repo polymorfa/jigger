@@ -1,0 +1,57 @@
+{
+  "id": "enum:PAID_MESSAGING_USER_INTERACTIONS_HEADER_MEDIA_TYPE",
+  "kind": "enum",
+  "name": "PAID_MESSAGING_USER_INTERACTIONS_HEADER_MEDIA_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsHeaderMediaType",
+    "variants": [
+      {
+        "name": "TEXT",
+        "value": 0.0
+      },
+      {
+        "name": "IMAGE",
+        "value": 1.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 2.0
+      },
+      {
+        "name": "LOCATION",
+        "value": 3.0
+      },
+      {
+        "name": "DOCUMENT",
+        "value": 4.0
+      },
+      {
+        "name": "GIF",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsHeaderMediaType",
+    "matches": "PAID_MESSAGING_USER_INTERACTIONS_HEADER_MEDIA_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PAID_MESSAGING_USER_INTERACTIONS_HEADER_MEDIA_TYPE",
+    "TEXT",
+    "IMAGE",
+    "VIDEO",
+    "LOCATION",
+    "DOCUMENT",
+    "GIF"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebInteractiveMessageCarouselLogEvents",
+      "WAWebPaidMessagingUserInteractionsLoggerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAAbProps","WAAbPropsHelpers","WAGetAbPropsProtocol","WALogger","WAPromiseManagement","WAResultOrError","WATimeUtils","asyncToGeneratorRuntime"],"dependents":["WASyncAbProps"],"dependent_count":1,"exports":[{"name":"syncAbProps","used_by":["WASyncAbProps"],"uses":1}]}

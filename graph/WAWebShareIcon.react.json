@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebUsernameCreationInfoDrawer.react"],"dependent_count":2,"exports":[{"name":"ShareIcon","used_by":["WAWebAllGeneratedIcons","WAWebUsernameCreationInfoDrawer.react"],"uses":2}]}

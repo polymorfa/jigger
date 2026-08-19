@@ -1,0 +1,30 @@
+{
+  "id": "sig:chatstate/paused",
+  "kind": "sig",
+  "name": "ChatstatePausedMixin",
+  "data": {
+    "kind": "sig",
+    "root": "chatstate",
+    "children": [
+      "paused"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInChatstatePausedMixin",
+    "matches": "assertTag\\([a-z], \"chatstate\"\\)"
+  },
+  "literals": [
+    "chatstate",
+    "paused"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInChatstateStateTypes"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebThreadInteractionDataBizWamEvent","WAWebWamEnumBizCatalogType","getErrorSafe"],"dependents":["WAWebChatThreadLoggingEventUploader"],"dependent_count":1,"exports":[{"name":"ThreadInteractionBizWamTrigger","used_by":["WAWebChatThreadLoggingEventUploader"],"uses":1}]}

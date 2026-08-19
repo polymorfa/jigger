@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebButton.react","WAWebFlex.react","WAWebText.react","WAWebVoipGatingUtils","WAWebVoipJsWorkerThread","WAWebVoipWebWasmSampleContainer.react","asyncToGeneratorRuntime","react","react-compiler-runtime"],"dependents":["WAWebVoipWebWasmSamples"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,102 @@
+{
+  "id": "enum:BUSINESS_PROFILE_ENTRY_POINT",
+  "kind": "enum",
+  "name": "BUSINESS_PROFILE_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBusinessProfileEntryPoint",
+    "variants": [
+      {
+        "name": "REGISTRATION",
+        "value": 1.0
+      },
+      {
+        "name": "SETTINGS",
+        "value": 2.0
+      },
+      {
+        "name": "COMPLIANCE",
+        "value": 3.0
+      },
+      {
+        "name": "QUICK_REPLY_SMART_DEFAULT",
+        "value": 4.0
+      },
+      {
+        "name": "WA_PAGES",
+        "value": 5.0
+      },
+      {
+        "name": "PROFILE_COMPLETENESS",
+        "value": 6.0
+      },
+      {
+        "name": "DIRECTORY_ONBOARDING",
+        "value": 7.0
+      },
+      {
+        "name": "BUSINESS_HOME",
+        "value": 8.0
+      },
+      {
+        "name": "DEEPLINK",
+        "value": 9.0
+      },
+      {
+        "name": "CHAT_BANNER",
+        "value": 10.0
+      },
+      {
+        "name": "BUSINESS_SEARCH",
+        "value": 11.0
+      },
+      {
+        "name": "META_VERIFIED",
+        "value": 12.0
+      },
+      {
+        "name": "UNKNOWN",
+        "value": 13.0
+      },
+      {
+        "name": "QUICK_REPLY_SETTINGS",
+        "value": 14.0
+      },
+      {
+        "name": "EVENT_COMPOSER",
+        "value": 15.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBusinessProfileEntryPoint",
+    "matches": "BUSINESS_PROFILE_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "BUSINESS_PROFILE_ENTRY_POINT",
+    "REGISTRATION",
+    "SETTINGS",
+    "COMPLIANCE",
+    "QUICK_REPLY_SMART_DEFAULT",
+    "WA_PAGES",
+    "PROFILE_COMPLETENESS",
+    "DIRECTORY_ONBOARDING",
+    "BUSINESS_HOME",
+    "DEEPLINK",
+    "CHAT_BANNER",
+    "BUSINESS_SEARCH",
+    "META_VERIFIED",
+    "UNKNOWN",
+    "QUICK_REPLY_SETTINGS",
+    "EVENT_COMPOSER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebEditBusinessProfileWamEvent",
+      "WAWebEditFormLogEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

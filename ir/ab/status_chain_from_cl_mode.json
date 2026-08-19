@@ -1,0 +1,42 @@
+{
+  "id": "ab:status_chain_from_cl_mode",
+  "kind": "ab",
+  "name": "status_chain_from_cl_mode",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27343,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "status_chain_from_cl_mode:\\s*\\[\\s*27343"
+  },
+  "literals": [
+    "status_chain_from_cl_mode",
+    "27343"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

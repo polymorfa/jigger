@@ -1,0 +1,35 @@
+{
+  "id": "wam:2186",
+  "kind": "wam",
+  "name": "HfmTextSearchComplete",
+  "data": {
+    "kind": "wam",
+    "event_id": 2186,
+    "fields": {},
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebHfmTextSearchCompleteWamEvent",
+    "matches": "HfmTextSearchComplete:\\s*\\[\\s*2186"
+  },
+  "literals": [
+    "2186"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebSearchTheWebCommonUtils",
+      "WAWebSearchTheWebModal.react",
+      "WAWebWebSearchPopup.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

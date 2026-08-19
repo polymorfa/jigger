@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebImg.react","WAWebMessageLargeEmoji.react","useWAWebVoipParticipantAvatarPrefetch"],"dependent_count":3,"exports":[{"name":"ONE_BY_ONE_TRANS_GIF","used_by":["WAWebImg.react","WAWebMessageLargeEmoji.react","useWAWebVoipParticipantAvatarPrefetch"],"uses":3}]}

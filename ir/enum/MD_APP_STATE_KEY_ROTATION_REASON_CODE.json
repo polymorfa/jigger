@@ -1,0 +1,42 @@
+{
+  "id": "enum:MD_APP_STATE_KEY_ROTATION_REASON_CODE",
+  "kind": "enum",
+  "name": "MD_APP_STATE_KEY_ROTATION_REASON_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdAppStateKeyRotationReasonCode",
+    "variants": [
+      {
+        "name": "APP_STATE_SYNC_KEY_EXPIRY",
+        "value": 1.0
+      },
+      {
+        "name": "DEVICE_DEREGISTERATION",
+        "value": 2.0
+      },
+      {
+        "name": "NO_KEYS",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdAppStateKeyRotationReasonCode",
+    "matches": "MD_APP_STATE_KEY_ROTATION_REASON_CODE\\s*[:=]"
+  },
+  "literals": [
+    "MD_APP_STATE_KEY_ROTATION_REASON_CODE",
+    "APP_STATE_SYNC_KEY_EXPIRY",
+    "DEVICE_DEREGISTERATION",
+    "NO_KEYS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdAppStateKeyRotationWamEvent",
+      "WAWebSyncdMetrics"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

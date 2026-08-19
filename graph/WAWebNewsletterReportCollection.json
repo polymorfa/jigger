@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseCollection","WAWebNewsletterReportModel"],"dependents":["WAWebDebugCollections","WAWebNewsletterRouteBridgeApi","useWAWebNewsletterReports"],"dependent_count":3,"exports":[{"name":"NewsletterReportCollection","used_by":["WAWebDebugCollections","WAWebNewsletterRouteBridgeApi","useWAWebNewsletterReports"],"uses":3}]}

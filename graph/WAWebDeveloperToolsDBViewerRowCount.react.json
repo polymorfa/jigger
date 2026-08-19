@@ -1,0 +1,1 @@
+{"deps":["WAWebKeyboardHotKeys.react","WAWebL10N","WAWebText.react","react","react-compiler-runtime","useWAWebToggle"],"dependents":["WAWebDeveloperToolsDBViewerControlCenter.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

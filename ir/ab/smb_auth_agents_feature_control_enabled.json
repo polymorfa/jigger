@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_auth_agents_feature_control_enabled",
+  "kind": "ab",
+  "name": "smb_auth_agents_feature_control_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27585,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_auth_agents_feature_control_enabled:\\s*\\[\\s*27585"
+  },
+  "literals": [
+    "smb_auth_agents_feature_control_enabled",
+    "27585"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizCoexGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

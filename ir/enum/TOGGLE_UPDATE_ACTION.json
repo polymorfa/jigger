@@ -1,0 +1,37 @@
+{
+  "id": "enum:TOGGLE_UPDATE_ACTION",
+  "kind": "enum",
+  "name": "TOGGLE_UPDATE_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumToggleUpdateAction",
+    "variants": [
+      {
+        "name": "TURN_ON",
+        "value": 0.0
+      },
+      {
+        "name": "TURN_OFF",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumToggleUpdateAction",
+    "matches": "TOGGLE_UPDATE_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "TOGGLE_UPDATE_ACTION",
+    "TURN_ON",
+    "TURN_OFF"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLimitSharingSettingUpdateWamEvent",
+      "WAWebLimitSharingUIUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

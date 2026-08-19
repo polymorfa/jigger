@@ -1,0 +1,60 @@
+{
+  "id": "proto:WAE2E.Message.ProductMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.ProductMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "body": {
+        "number": 5
+      },
+      "businessOwnerJid": {
+        "number": 2
+      },
+      "catalog": {
+        "number": 4,
+        "type_name": "WAE2E.Message.ProductMessage.CatalogSnapshot"
+      },
+      "contextInfo": {
+        "number": 17,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "footer": {
+        "number": 6
+      },
+      "product": {
+        "number": 1,
+        "type_name": "WAE2E.Message.ProductMessage.ProductSnapshot"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.ProductMessage\""
+  },
+  "literals": [
+    "ProductMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

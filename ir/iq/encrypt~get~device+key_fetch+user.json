@@ -1,0 +1,241 @@
+{
+  "id": "iq:encrypt/get/device+key_fetch+user",
+  "kind": "iq",
+  "name": "PreKeysFetchMissingPreKeys",
+  "data": {
+    "kind": "iq",
+    "xmlns": "encrypt",
+    "type": "get",
+    "tags": [
+      "device",
+      "key_fetch",
+      "user"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "encrypt",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "key_fetch",
+          "attrs": [
+            {
+              "name": "pqsupport",
+              "ty": "string",
+              "literal": "true",
+              "optional": true
+            },
+            {
+              "name": "context_jid",
+              "ty": "jid",
+              "optional": true
+            }
+          ],
+          "children": [
+            {
+              "tag": "user",
+              "attrs": [
+                {
+                  "name": "jid",
+                  "ty": "jid",
+                  "optional": false
+                },
+                {
+                  "name": "reason",
+                  "ty": "string",
+                  "literal": "identity",
+                  "optional": true
+                }
+              ],
+              "children": [
+                {
+                  "tag": "device",
+                  "attrs": [
+                    {
+                      "name": "id",
+                      "ty": "int",
+                      "optional": false
+                    }
+                  ],
+                  "card": "repeated"
+                }
+              ],
+              "card": "repeated"
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxPreKeysFetchMissingPreKeysRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInPreKeysFetchMissingPreKeysResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "list",
+              "card": "one"
+            },
+            {
+              "tag": "user",
+              "card": "one"
+            },
+            {
+              "tag": "padding",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "FetchMissingPreKeysUserError",
+          "FetchMissingPreKeysUserErrorFallback",
+          "FetchMissingPreKeysUserSuccess"
+        ]
+      },
+      {
+        "arm": "RequestError",
+        "module": "WASmaxInPreKeysFetchMissingPreKeysResponseRequestError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFallbackClient",
+          "IQErrorNoValidJID"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInPreKeysFetchMissingPreKeysResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutPreKeysFetchMissingPreKeysRequest",
+    "matches": "smax\\(\"device\""
+  },
+  "literals": [
+    "encrypt",
+    "device",
+    "key_fetch",
+    "user"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxOutPreKeysClientRequestMixin",
+      "WASmaxOutPreKeysRegistrationIDMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxPreKeysFetchMissingPreKeysRPC"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

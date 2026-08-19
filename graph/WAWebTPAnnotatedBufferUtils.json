@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAPromiseDelays","WAWebPdfViewerEventEmitter"],"dependents":["WAWebMediaEditPdfModal.react","WAWebMediaPdfAutoShareButton.react"],"dependent_count":2,"exports":[{"name":"getAnnotatedPdfBuffer","used_by":["WAWebMediaEditPdfModal.react","WAWebMediaPdfAutoShareButton.react"],"uses":2}]}

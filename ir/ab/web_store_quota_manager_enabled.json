@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_store_quota_manager_enabled",
+  "kind": "ab",
+  "name": "web_store_quota_manager_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3133,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_store_quota_manager_enabled:\\s*\\[\\s*3133"
+  },
+  "literals": [
+    "web_store_quota_manager_enabled",
+    "3133"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

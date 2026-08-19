@@ -1,0 +1,46 @@
+{
+  "id": "enum:VOIP_SETTING_RELEASE_TYPE",
+  "kind": "enum",
+  "name": "VOIP_SETTING_RELEASE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumVoipSettingReleaseType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "PROD",
+        "value": 1.0
+      },
+      {
+        "name": "FALLBACK",
+        "value": 2.0
+      },
+      {
+        "name": "CANARY",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumVoipSettingReleaseType",
+    "matches": "VOIP_SETTING_RELEASE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "VOIP_SETTING_RELEASE_TYPE",
+    "UNKNOWN",
+    "PROD",
+    "FALLBACK",
+    "CANARY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

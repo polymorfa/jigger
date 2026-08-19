@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebVoipFullScreenContext","WAWebVoipPopoutWindowState","WAWebVoipUiDocPipPortalContainer.react","WAWebVoipUiPopoutWindowContext","react","useWAWebListener","useWAWebStableCallback"],"dependents":["WAWebVoipUiVideoCallPeerVideo.react","useWAWebVoipGroupCallRxSubscription"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

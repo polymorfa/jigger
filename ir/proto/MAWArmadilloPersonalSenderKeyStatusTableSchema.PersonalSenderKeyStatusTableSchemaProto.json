@@ -1,0 +1,44 @@
+{
+  "id": "proto:MAWArmadilloPersonalSenderKeyStatusTableSchema.PersonalSenderKeyStatusTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloPersonalSenderKeyStatusTableSchema.PersonalSenderKeyStatusTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "groupJid": {
+        "number": 1
+      },
+      "hasSenderKey": {
+        "number": 6
+      },
+      "rotateSenderKey": {
+        "number": 4
+      },
+      "senderKeyId": {
+        "number": 2
+      },
+      "senderKeyTs": {
+        "number": 5
+      }
+    },
+    "module": "MAWArmadilloPersonalSenderKeyStatusTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloPersonalSenderKeyStatusTableSchema.pb",
+    "matches": "name = \"PersonalSenderKeyStatusTableSchemaProto\""
+  },
+  "literals": [
+    "PersonalSenderKeyStatusTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

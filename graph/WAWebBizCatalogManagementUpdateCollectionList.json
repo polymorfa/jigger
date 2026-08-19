@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBizCatalogManagementUpdateCollectionListMutation.graphql","WAWebFetchAdAccountToken","WAWebGraphQLServerError","WAWebNetworkStatus","WAWebRelayClient"],"dependents":["WAWebDebugCatalog","WAWebProductCollectionsJob"],"dependent_count":2,"exports":[{"name":"updateCollectionList","used_by":["WAWebDebugCatalog","WAWebProductCollectionsJob"],"uses":2}]}

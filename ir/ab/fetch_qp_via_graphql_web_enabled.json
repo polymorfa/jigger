@@ -1,0 +1,45 @@
+{
+  "id": "ab:fetch_qp_via_graphql_web_enabled",
+  "kind": "ab",
+  "name": "fetch_qp_via_graphql_web_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28158,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "fetch_qp_via_graphql_web_enabled:\\s*\\[\\s*28158"
+  },
+  "literals": [
+    "fetch_qp_via_graphql_web_enabled",
+    "28158"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebQuickPromotionGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

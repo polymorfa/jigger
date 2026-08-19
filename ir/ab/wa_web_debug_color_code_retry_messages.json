@@ -1,0 +1,47 @@
+{
+  "id": "ab:wa_web_debug_color_code_retry_messages",
+  "kind": "ab",
+  "name": "wa_web_debug_color_code_retry_messages",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16138,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_debug_color_code_retry_messages:\\s*\\[\\s*16138"
+  },
+  "literals": [
+    "wa_web_debug_color_code_retry_messages",
+    "16138"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebHandleMsgProcess",
+      "WAWebMessageSpacerText.react",
+      "WAWebNonMessageDataRequestHandlerPlaceholderResend"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

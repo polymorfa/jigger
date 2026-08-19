@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_catalog_recovery_flow_enabled",
+  "kind": "ab",
+  "name": "web_catalog_recovery_flow_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14294,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_catalog_recovery_flow_enabled:\\s*\\[\\s*14294"
+  },
+  "literals": [
+    "web_catalog_recovery_flow_enabled",
+    "14294"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

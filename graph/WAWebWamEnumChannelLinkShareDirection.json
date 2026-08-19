@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChannelLinkShareWamEvent","useWAWebNewsletterInviteLink"],"dependent_count":2,"exports":[{"name":"CHANNEL_LINK_SHARE_DIRECTION","used_by":["WAWebChannelLinkShareWamEvent","useWAWebNewsletterInviteLink"],"uses":2}]}

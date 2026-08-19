@@ -1,0 +1,45 @@
+{
+  "id": "ab:wamo_privacy_tos_show_channels_nux_enabled",
+  "kind": "ab",
+  "name": "wamo_privacy_tos_show_channels_nux_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15254,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wamo_privacy_tos_show_channels_nux_enabled:\\s*\\[\\s*15254"
+  },
+  "literals": [
+    "wamo_privacy_tos_show_channels_nux_enabled",
+    "15254"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebWamoNewsletterGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

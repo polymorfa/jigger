@@ -1,0 +1,43 @@
+{
+  "id": "enum:CTWA_AD_ACCOUNT_TYPE",
+  "kind": "enum",
+  "name": "CTWA_AD_ACCOUNT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCtwaAdAccountType",
+    "variants": [
+      {
+        "name": "CTWA_FB_PAGE_LINKED_ACCOUNT",
+        "value": 0.0
+      },
+      {
+        "name": "CTWA_FB_PAGELESS_ACCOUNT",
+        "value": 1.0
+      },
+      {
+        "name": "CTWA_WA_AD_ACCOUNT",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCtwaAdAccountType",
+    "matches": "CTWA_AD_ACCOUNT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CTWA_AD_ACCOUNT_TYPE",
+    "CTWA_FB_PAGE_LINKED_ACCOUNT",
+    "CTWA_FB_PAGELESS_ACCOUNT",
+    "CTWA_WA_AD_ACCOUNT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizNativeAdsCtwaAdAccountType",
+      "WAWebCtwaAdCreationAndManagementJourneyWamEvent",
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebAddonConstants","WAWebAddonInfraError","WAWebEventResponseDBSerialization","WAWebEventResponsesSchema","WAWebMsgGetters","WAWebMsgType","asyncToGeneratorRuntime","nullthrows"],"dependents":["WAWebAddonDBTable"],"dependent_count":1,"exports":[{"name":"eventResponseTableMode","used_by":["WAWebAddonDBTable"],"uses":1}]}

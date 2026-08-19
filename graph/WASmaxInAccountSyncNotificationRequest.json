@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInAccountSyncNotificationType","WASmaxInAccountSyncServerNotificationMixin","WASmaxParseJid","WASmaxParseUtils"],"dependents":["WASmaxAccountSyncNotificationRPC"],"dependent_count":1,"exports":[{"name":"parseNotificationRequest","used_by":["WASmaxAccountSyncNotificationRPC"],"uses":1}]}

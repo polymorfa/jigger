@@ -1,0 +1,5 @@
+__d("MAWParseSubprotocolVersionConsts", [], (function(t, n, r, o, a, i) {
+	"use strict";
+	var e = 2, l = 2, s = 1, u = 2, c = 1, d = 1;
+	i.ASSOCIATED_MESSAGE_SUBPROTOCOL_VERSION = e, i.XMA_PREVIEW_SUBPROTOCOL_VERSION = l, i.XMA_FAVICON_SUBPROTOCOL_VERSION = s, i.XMA_HEADER_SUBPROTOCOL_VERSION = u, i.RAVEN_IMAGE_MESSAGE_SUBPROTOCOL_VERSION = c, i.RAVEN_VIDEO_MESSAGE_SUBPROTOCOL_VERSION = d;
+}), 66);

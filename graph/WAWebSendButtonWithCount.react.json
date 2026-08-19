@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebRound.react","WAWebStatusCheckIcon.react","WAWebWdsIcSendFilledIcon.react","WDSTooltip.react","react","react-compiler-runtime"],"dependents":["WAWebMediaEditor.react","WAWebMediaEditorCaptionInput.react","WAWebNewsletterWamoSubMessageTypePopup.story","WAWebSendButtonWithCount.story","WAWebStatusPostingTextView.react"],"dependent_count":5,"exports":[]}

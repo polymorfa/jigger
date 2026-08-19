@@ -1,0 +1,68 @@
+{
+  "id": "mex:WAWebMexSetUsernameJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexSetUsernameJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25757341163897635",
+    "operation": "mutation",
+    "variables": [
+      "input",
+      "reserved",
+      "source",
+      "session_id"
+    ],
+    "args": [
+      {
+        "name": "input"
+      },
+      {
+        "name": "reserved"
+      },
+      {
+        "name": "source"
+      },
+      {
+        "name": "session_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_username_set",
+        "ty": "XWA2UsernameSetMutationResponse",
+        "args": [
+          "reserved: $reserved",
+          "session_id: $session_id",
+          "source: $source",
+          "username: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "result",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_username_set",
+    "document": "# persisted document 25757341163897635\nmutation MexSetUsernameJobMutation(\n  $input\n  $reserved\n  $source\n  $session_id\n) {\n  xwa2_username_set(reserved: $reserved, session_id: $session_id, source: $source, username: $input) {  # XWA2UsernameSetMutationResponse\n    result\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexSetUsernameJobMutation.graphql",
+    "matches": "id:\\s*\"25757341163897635\""
+  },
+  "literals": [
+    "25757341163897635",
+    "WAWebMexSetUsernameJobMutation",
+    "xwa2_username_set"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexSetUsernameJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

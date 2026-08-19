@@ -1,0 +1,36 @@
+{
+  "id": "enum:IMPLEMENTATION_TYPE",
+  "kind": "enum",
+  "name": "IMPLEMENTATION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumImplementationType",
+    "variants": [
+      {
+        "name": "NATIVE",
+        "value": 0.0
+      },
+      {
+        "name": "GENAI",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumImplementationType",
+    "matches": "IMPLEMENTATION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "IMPLEMENTATION_TYPE",
+    "NATIVE",
+    "GENAI"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebImagineActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "id": "enum:BANNER_TYPES",
+  "kind": "enum",
+  "name": "BANNER_TYPES",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBannerTypes",
+    "variants": [
+      {
+        "name": "GROUP",
+        "value": 1.0
+      },
+      {
+        "name": "SMB_WELCOME",
+        "value": 2.0
+      },
+      {
+        "name": "CROSS_SELL_PROFILE_INTERSTITIAL",
+        "value": 11.0
+      },
+      {
+        "name": "CROSS_SELL_CHATS_INTERSTITIAL",
+        "value": 12.0
+      },
+      {
+        "name": "CROSS_SELL_CHATS_BANNER",
+        "value": 13.0
+      },
+      {
+        "name": "BUSINESS_ACCOUNT_SYSTEM_MESSAGE",
+        "value": 14.0
+      },
+      {
+        "name": "SMB_CATALOG_CART_INTERSTITIAL",
+        "value": 15.0
+      },
+      {
+        "name": "PAYMENTS_ONBOARD_BANNER",
+        "value": 16.0
+      },
+      {
+        "name": "SMB_DIRECTORY_UPSELL",
+        "value": 17.0
+      },
+      {
+        "name": "SMB_CATALG_LIST_LWI_ADVERTISE_BANNER",
+        "value": 18.0
+      },
+      {
+        "name": "SMB_LWI_AD_HUB_EDUCATIONAL_BANNER",
+        "value": 19.0
+      },
+      {
+        "name": "SMB_COLLECTION_CREATION",
+        "value": 20.0
+      },
+      {
+        "name": "SMB_AWAY_MESSAGE",
+        "value": 21.0
+      },
+      {
+        "name": "PAYMENTS_INCENTIVE_BANNER",
+        "value": 23.0
+      },
+      {
+        "name": "SMB_ADSCREATION_CONVERSATIONS_BANNER_WITH_VALID_PRODUCT",
+        "value": 24.0
+      },
+      {
+        "name": "SMB_ADSCREATION_CONVERSATIONS_BANNER_WITHOUT_VALID_PRODUCT",
+        "value": 25.0
+      },
+      {
+        "name": "SMB_MD_AWARENESS",
+        "value": 26.0
+      },
+      {
+        "name": "BACKUP_QUOTA",
+        "value": 27.0
+      },
+      {
+        "name": "PAYMENTS_MERCHANT_ONBOARDING_BANNER",
+        "value": 29.0
+      },
+      {
+        "name": "SMB_PAYMENTS_MERCHANT_ACCOUNT_STATUS_BANNER",
+        "value": 30.0
+      },
+      {
+        "name": "SMB_CTWA_AD_ACTION_BANNER",
+        "value": 31.0
+      },
+      {
+        "name": "BIZ_INTEGRITY_WARNING_BANNER",
+        "value": 32.0
+      },
+      {
+        "name": "SMB_CTWA_AUTO_LABEL_BANNER",
+        "value": 33.0
+      },
+      {
+        "name": "SMB_UPDATE_CATEGORY_BANNER",
+        "value": 34.0
+      },
+      {
+        "name": "SMB_PREMIUM_SUBS_PAYMENT_FAILED_BANNER",
+        "value": 36.0
+      },
+      {
+        "name": "SMB_PREMIUM_SUBS_UNINTENTIONAL_CANCELED_BANNER",
+        "value": 37.0
+      },
+      {
+        "name": "SMB_CLICK_GET_PAID_ON_WA",
+        "value": 38.0
+      },
+      {
+        "name": "SMB_CONTINUE_AD_CREATION_REMINDER_BANNER",
+        "value": 39.0
+      },
+      {
+        "name": "SMB_CONTINUE_AD_CREATION_REMINDER_BOTTOM_SHEET",
+        "value": 40.0
+      },
+      {
+        "name": "P2M_ORDER_HOME_BANNER",
+        "value": 41.0
+      },
+      {
+        "name": "SMB_ADSCREATION_HOME_BANNER",
+        "value": 42.0
+      },
+      {
+        "name": "PRIORITY_INBOX_BANNER",
+        "value": 43.0
+      },
+      {
+        "name": "SMB_BUSINESS_HOME_BANNER",
+        "value": 44.0
+      },
+      {
+        "name": "SMB_CHAT_LIST_QP_BANNER",
+        "value": 45.0
+      },
+      {
+        "name": "SMB_ARCHIVE_STATUS_SETTINGS_BANNER",
+        "value": 46.0
+      },
+      {
+        "name": "QP_BANNER_GROUP_INFO",
+        "value": 47.0
+      },
+      {
+        "name": "P2M_TOOLS_ORDERS",
+        "value": 48.0
+      },
+      {
+        "name": "PRIVACY_CHECKUP",
+        "value": 49.0
+      },
+      {
+        "name": "QP_BANNER_PROFILE",
+        "value": 50.0
+      },
+      {
+        "name": "ANDROID_BACKUP_SETTINGS_BANNER",
+        "value": 51.0
+      },
+      {
+        "name": "ORDERS_UPSELL_BANNER_FROM_ORDERS_HOME",
+        "value": 52.0
+      },
+      {
+        "name": "BACKUP_ERROR",
+        "value": 53.0
+      },
+      {
+        "name": "CURRENT_LOCATION_BANNER",
+        "value": 54.0
+      },
+      {
+        "name": "ORDERS_EDUCATION_BANNER_FROM_ORDERS_HOME",
+        "value": 55.0
+      },
+      {
+        "name": "COLOR_REFRESH_NUX_BANNER",
+        "value": 56.0
+      },
+      {
+        "name": "MV_ONBOARD_FROM_BIZ_PROFILE",
+        "value": 57.0
+      },
+      {
+        "name": "MV_BIZ_TOOLS_SUBSCRIPTION_ACTIVATED",
+        "value": 58.0
+      },
+      {
+        "name": "MV_BIZ_TOOLS_SUBSCRIPTION_NOT_ACTIVE",
+        "value": 59.0
+      },
+      {
+        "name": "MV_BIZ_TOOLS_SUBSCRIPTION_CANCELED",
+        "value": 60.0
+      },
+      {
+        "name": "MV_BIZ_TOOLS_PENDING_BIZ_VERIFICATION",
+        "value": 61.0
+      },
+      {
+        "name": "MANAGE_GOOGLE_STORAGE_BUTTON",
+        "value": 62.0
+      },
+      {
+        "name": "GOOGLE_STORAGE_80_PERCENT_FULL",
+        "value": 63.0
+      },
+      {
+        "name": "GOOGLE_STORAGE_90_PERCENT_FULL",
+        "value": 64.0
+      },
+      {
+        "name": "GOOGLE_BACKUP_GB_THRESHOLD",
+        "value": 65.0
+      },
+      {
+        "name": "PAYMENTS_PIX_ONBOARDING_BANNER",
+        "value": 66.0
+      },
+      {
+        "name": "P2M_PIX_ORDER_HOME_BANNER",
+        "value": 67.0
+      },
+      {
+        "name": "DESKTOP_CROSS_SELL",
+        "value": 68.0
+      },
+      {
+        "name": "SQUID",
+        "value": 69.0
+      },
+      {
+        "name": "GOOGLE_STORAGE_50_PERCENT_FULL",
+        "value": 70.0
+      },
+      {
+        "name": "GOOGLE_STORAGE_60_PERCENT_FULL",
+        "value": 71.0
+      },
+      {
+        "name": "GOOGLE_STORAGE_70_PERCENT_FULL",
+        "value": 72.0
+      },
+      {
+        "name": "QP_BANNER_SETTINGS",
+        "value": 73.0
+      },
+      {
+        "name": "QP_BANNER_CALL_LIST",
+        "value": 74.0
+      },
+      {
+        "name": "QP_BANNER_CHAT_LIST",
+        "value": 75.0
+      },
+      {
+        "name": "QP_BANNER_UPDATES_TAB",
+        "value": 76.0
+      },
+      {
+        "name": "APP_LOCK_UPSELL",
+        "value": 77.0
+      },
+      {
+        "name": "OFFLINE_NOTIFICATIONS_UPSELL",
+        "value": 78.0
+      },
+      {
+        "name": "MV_BIZ_TOOLS_SUBSCRIPTION_GRACE_PERIOD_REMINDER",
+        "value": 79.0
+      },
+      {
+        "name": "MV_BIZ_TOOLS_SUBSCRIPTION_FAILED_PAYMENT_GRACE_PERIOD_FINAL_REMINDER",
+        "value": 81.0
+      },
+      {
+        "name": "MV_BIZ_TOOLS_SUBSCRIPTION_FAILED_PAYMENT_GRACE_PERIOD_REMINDER",
+        "value": 82.0
+      },
+      {
+        "name": "BACKUP_ERROR_GENERIC",
+        "value": 83.0
+      },
+      {
+        "name": "BACKUP_ERROR_TOO_LARGE",
+        "value": 84.0
+      },
+      {
+        "name": "BACKUP_ERROR_NOT_ENOUGH_STORAGE",
+        "value": 85.0
+      },
+      {
+        "name": "BACKUP_ERROR_NOT_ICLOUD_QUOTA",
+        "value": 86.0
+      },
+      {
+        "name": "BACKUP_ERROR_NOT_SIGNED_IN",
+        "value": 87.0
+      },
+      {
+        "name": "QP_PRIVACY_FOOTER_UPDATES_TAB",
+        "value": 88.0
+      },
+      {
+        "name": "QP_UPSELL_BANNER_SEND_FILE",
+        "value": 89.0
+      },
+      {
+        "name": "QP_UPSELLL_FOOTER_PREVIEW_FILE",
+        "value": 90.0
+      },
+      {
+        "name": "QP_UPSELL_BANNER_CHAT_DOCUMENT_GALLERY",
+        "value": 91.0
+      },
+      {
+        "name": "RECOVER_GOOGLE_BACKUP",
+        "value": 92.0
+      },
+      {
+        "name": "CONVERSATION_STARTER",
+        "value": 93.0
+      },
+      {
+        "name": "CF_MIGRATION",
+        "value": 94.0
+      },
+      {
+        "name": "AVATAR_BOTTOMSHEET",
+        "value": 95.0
+      },
+      {
+        "name": "QP_BANNER_META_AI_CONTACT_INFO",
+        "value": 96.0
+      },
+      {
+        "name": "WEB_META_AI_GLASSES_CTA_BANNER",
+        "value": 97.0
+      },
+      {
+        "name": "QP_BANNER_CONTACT_PICKER",
+        "value": 98.0
+      },
+      {
+        "name": "QP_BANNER_NEW_CHAT_LIST",
+        "value": 99.0
+      },
+      {
+        "name": "QP_BANNER_NEW_CALL_LIST",
+        "value": 100.0
+      },
+      {
+        "name": "PAYMENTS_HOME_NUX_BANNER",
+        "value": 101.0
+      },
+      {
+        "name": "PAYMENTS_HOME_PUX_BANNER",
+        "value": 102.0
+      },
+      {
+        "name": "PAYMENTS_HOME_MIGRATION_BANNER",
+        "value": 103.0
+      },
+      {
+        "name": "QP_BANNER_STICKER_STORE",
+        "value": 104.0
+      },
+      {
+        "name": "QP_BANNER_UPDATES_TAB_STATUS_HEADER",
+        "value": 105.0
+      },
+      {
+        "name": "AVATAR_DEPRECATION",
+        "value": 106.0
+      },
+      {
+        "name": "QP_BANNER_STICKER_TRAY",
+        "value": 107.0
+      },
+      {
+        "name": "QP_BANNER_UPDATES_TAB_CHANNELS_HEADER",
+        "value": 108.0
+      },
+      {
+        "name": "QP_NEW_USER_CHECKLIST_ME_TAB",
+        "value": 109.0
+      },
+      {
+        "name": "META_AI_APP_PROMO",
+        "value": 110.0
+      },
+      {
+        "name": "SMB_BIZ_AI_GDRIVE_L1_RECONNECT",
+        "value": 111.0
+      },
+      {
+        "name": "SMB_BIZ_AI_GDRIVE_L1_SYNC_FAILED",
+        "value": 112.0
+      },
+      {
+        "name": "SMB_BIZ_AI_GDRIVE_L2_RECONNECT",
+        "value": 113.0
+      },
+      {
+        "name": "NOTIFICATION_SETTING_RE_ENABLE",
+        "value": 114.0
+      },
+      {
+        "name": "INTEGRITY_SCAM_ALERT_UPSELL",
+        "value": 115.0
+      },
+      {
+        "name": "SMB_PAYMENT_MERCHANT_ONBOARDING_COMPLETE_BANNER",
+        "value": 116.0
+      },
+      {
+        "name": "SMB_PAYMENT_MERCHANT_INACTIVE_ACCOUNT_STATUS_BANNER",
+        "value": 117.0
+      },
+      {
+        "name": "SMB_PAYMENT_MERCHANT_HARD_BLOCKED_ACCOUNT_STATUS_BANNER",
+        "value": 118.0
+      },
+      {
+        "name": "SMB_PAYMENT_MERCHANT_SOFT_BLOCKED_ACCOUNT_STATUS_BANNER",
+        "value": 119.0
+      },
+      {
+        "name": "SMB_PAYMENT_MERCHANT_INTEGRITY_BLOCKED_ACCOUNT_STATUS_BANNER",
+        "value": 120.0
+      },
+      {
+        "name": "SMB_SHOP_SUNSET_BANNER",
+        "value": 121.0
+      },
+      {
+        "name": "CHANNEL_ADMIN_PROFILES_ADOPTION",
+        "value": 122.0
+      },
+      {
+        "name": "BACKUPS_AUTH_ERROR",
+        "value": 123.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBannerTypes",
+    "matches": "BANNER_TYPES\\s*[:=]"
+  },
+  "literals": [
+    "BANNER_TYPES",
+    "GROUP",
+    "SMB_WELCOME",
+    "CROSS_SELL_PROFILE_INTERSTITIAL",
+    "CROSS_SELL_CHATS_INTERSTITIAL",
+    "CROSS_SELL_CHATS_BANNER",
+    "BUSINESS_ACCOUNT_SYSTEM_MESSAGE",
+    "SMB_CATALOG_CART_INTERSTITIAL",
+    "PAYMENTS_ONBOARD_BANNER",
+    "SMB_DIRECTORY_UPSELL",
+    "SMB_CATALG_LIST_LWI_ADVERTISE_BANNER",
+    "SMB_LWI_AD_HUB_EDUCATIONAL_BANNER",
+    "SMB_COLLECTION_CREATION",
+    "SMB_AWAY_MESSAGE",
+    "PAYMENTS_INCENTIVE_BANNER",
+    "SMB_ADSCREATION_CONVERSATIONS_BANNER_WITH_VALID_PRODUCT",
+    "SMB_ADSCREATION_CONVERSATIONS_BANNER_WITHOUT_VALID_PRODUCT",
+    "SMB_MD_AWARENESS",
+    "BACKUP_QUOTA",
+    "PAYMENTS_MERCHANT_ONBOARDING_BANNER",
+    "SMB_PAYMENTS_MERCHANT_ACCOUNT_STATUS_BANNER",
+    "SMB_CTWA_AD_ACTION_BANNER",
+    "BIZ_INTEGRITY_WARNING_BANNER",
+    "SMB_CTWA_AUTO_LABEL_BANNER",
+    "SMB_UPDATE_CATEGORY_BANNER",
+    "SMB_PREMIUM_SUBS_PAYMENT_FAILED_BANNER",
+    "SMB_PREMIUM_SUBS_UNINTENTIONAL_CANCELED_BANNER",
+    "SMB_CLICK_GET_PAID_ON_WA",
+    "SMB_CONTINUE_AD_CREATION_REMINDER_BANNER",
+    "SMB_CONTINUE_AD_CREATION_REMINDER_BOTTOM_SHEET",
+    "P2M_ORDER_HOME_BANNER",
+    "SMB_ADSCREATION_HOME_BANNER",
+    "PRIORITY_INBOX_BANNER",
+    "SMB_BUSINESS_HOME_BANNER",
+    "SMB_CHAT_LIST_QP_BANNER",
+    "SMB_ARCHIVE_STATUS_SETTINGS_BANNER",
+    "QP_BANNER_GROUP_INFO",
+    "P2M_TOOLS_ORDERS",
+    "PRIVACY_CHECKUP",
+    "QP_BANNER_PROFILE",
+    "ANDROID_BACKUP_SETTINGS_BANNER",
+    "ORDERS_UPSELL_BANNER_FROM_ORDERS_HOME",
+    "BACKUP_ERROR",
+    "CURRENT_LOCATION_BANNER",
+    "ORDERS_EDUCATION_BANNER_FROM_ORDERS_HOME",
+    "COLOR_REFRESH_NUX_BANNER",
+    "MV_ONBOARD_FROM_BIZ_PROFILE",
+    "MV_BIZ_TOOLS_SUBSCRIPTION_ACTIVATED",
+    "MV_BIZ_TOOLS_SUBSCRIPTION_NOT_ACTIVE",
+    "MV_BIZ_TOOLS_SUBSCRIPTION_CANCELED",
+    "MV_BIZ_TOOLS_PENDING_BIZ_VERIFICATION",
+    "MANAGE_GOOGLE_STORAGE_BUTTON",
+    "GOOGLE_STORAGE_80_PERCENT_FULL",
+    "GOOGLE_STORAGE_90_PERCENT_FULL",
+    "GOOGLE_BACKUP_GB_THRESHOLD",
+    "PAYMENTS_PIX_ONBOARDING_BANNER",
+    "P2M_PIX_ORDER_HOME_BANNER",
+    "DESKTOP_CROSS_SELL",
+    "SQUID",
+    "GOOGLE_STORAGE_50_PERCENT_FULL",
+    "GOOGLE_STORAGE_60_PERCENT_FULL",
+    "GOOGLE_STORAGE_70_PERCENT_FULL",
+    "QP_BANNER_SETTINGS",
+    "QP_BANNER_CALL_LIST",
+    "QP_BANNER_CHAT_LIST",
+    "QP_BANNER_UPDATES_TAB",
+    "APP_LOCK_UPSELL",
+    "OFFLINE_NOTIFICATIONS_UPSELL",
+    "MV_BIZ_TOOLS_SUBSCRIPTION_GRACE_PERIOD_REMINDER",
+    "MV_BIZ_TOOLS_SUBSCRIPTION_FAILED_PAYMENT_GRACE_PERIOD_FINAL_REMINDER",
+    "MV_BIZ_TOOLS_SUBSCRIPTION_FAILED_PAYMENT_GRACE_PERIOD_REMINDER",
+    "BACKUP_ERROR_GENERIC",
+    "BACKUP_ERROR_TOO_LARGE",
+    "BACKUP_ERROR_NOT_ENOUGH_STORAGE",
+    "BACKUP_ERROR_NOT_ICLOUD_QUOTA",
+    "BACKUP_ERROR_NOT_SIGNED_IN",
+    "QP_PRIVACY_FOOTER_UPDATES_TAB",
+    "QP_UPSELL_BANNER_SEND_FILE",
+    "QP_UPSELLL_FOOTER_PREVIEW_FILE",
+    "QP_UPSELL_BANNER_CHAT_DOCUMENT_GALLERY",
+    "RECOVER_GOOGLE_BACKUP",
+    "CONVERSATION_STARTER",
+    "CF_MIGRATION",
+    "AVATAR_BOTTOMSHEET",
+    "QP_BANNER_META_AI_CONTACT_INFO",
+    "WEB_META_AI_GLASSES_CTA_BANNER",
+    "QP_BANNER_CONTACT_PICKER",
+    "QP_BANNER_NEW_CHAT_LIST",
+    "QP_BANNER_NEW_CALL_LIST",
+    "PAYMENTS_HOME_NUX_BANNER",
+    "PAYMENTS_HOME_PUX_BANNER",
+    "PAYMENTS_HOME_MIGRATION_BANNER",
+    "QP_BANNER_STICKER_STORE",
+    "QP_BANNER_UPDATES_TAB_STATUS_HEADER",
+    "AVATAR_DEPRECATION",
+    "QP_BANNER_STICKER_TRAY",
+    "QP_BANNER_UPDATES_TAB_CHANNELS_HEADER",
+    "QP_NEW_USER_CHECKLIST_ME_TAB",
+    "META_AI_APP_PROMO",
+    "SMB_BIZ_AI_GDRIVE_L1_RECONNECT",
+    "SMB_BIZ_AI_GDRIVE_L1_SYNC_FAILED",
+    "SMB_BIZ_AI_GDRIVE_L2_RECONNECT",
+    "NOTIFICATION_SETTING_RE_ENABLE",
+    "INTEGRITY_SCAM_ALERT_UPSELL",
+    "SMB_PAYMENT_MERCHANT_ONBOARDING_COMPLETE_BANNER",
+    "SMB_PAYMENT_MERCHANT_INACTIVE_ACCOUNT_STATUS_BANNER",
+    "SMB_PAYMENT_MERCHANT_HARD_BLOCKED_ACCOUNT_STATUS_BANNER",
+    "SMB_PAYMENT_MERCHANT_SOFT_BLOCKED_ACCOUNT_STATUS_BANNER",
+    "SMB_PAYMENT_MERCHANT_INTEGRITY_BLOCKED_ACCOUNT_STATUS_BANNER",
+    "SMB_SHOP_SUNSET_BANNER",
+    "CHANNEL_ADMIN_PROFILES_ADOPTION",
+    "BACKUPS_AUTH_ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBannerEventWamEvent",
+      "WAWebBizAddPixKeyButton.react",
+      "WAWebBizAddPixKeyPromo.react",
+      "WAWebBizChargesInfoBanner.react",
+      "WAWebBizNativeAdsEntryPointUtils",
+      "WAWebBizPixKeyPromo.react",
+      "WAWebContextualBannerConfig",
+      "WAWebNuxCollectionsBanner.react",
+      "WAWebNuxCtwaSuggestionBanner.react",
+      "WAWebSmbUpsellBusinessInfoWithUpsellModal.react",
+      "WAWebSmbUpsellSmbAppUpsellModal.react",
+      "WAWebUpdatesTabPrivacyFooter.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

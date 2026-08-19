@@ -1,0 +1,36 @@
+__d("WAWebBroadcastDuplicateFromThreadHandler", [
+	"WALogger",
+	"WAWebBizBroadcastCampaignAPI",
+	"WAWebBizBroadcastContextualEntrypointUtils",
+	"WAWebBizBroadcastCreationQPLLogger",
+	"WAWebBizBroadcastNewBroadcastFlowLoadable",
+	"WAWebDrawerManager",
+	"WAWebKeyboardTabUtils",
+	"WAWebWamEnumEntryPoint",
+	"getErrorSafe",
+	"react"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u = s || (s = o("react"));
+	async function c(t) {
+		o("WAWebBizBroadcastCreationQPLLogger").BizBroadcastCreationQPLLogger.start(o("WAWebBizBroadcastCreationQPLLogger").CreateBroadcastEntryPoint.BB_THREAD_INFO_DRAWER, !1);
+		try {
+			var n, a, i = await o("WAWebBizBroadcastContextualEntrypointUtils").getAttachmentDataFromMsg(t), l = (i == null ? void 0 : i.file) != null && (n = await o("WAWebBizBroadcastContextualEntrypointUtils").getAttachmentDataFromFile(i.file)) != null ? n : i, s = o("WAWebBizBroadcastContextualEntrypointUtils").getCTAButtonDataFromMsgText(t), c = o("WAWebBizBroadcastContextualEntrypointUtils").getMessageFromMsg(t), d = await o("WAWebBizBroadcastCampaignAPI").getBizBroadcastCampaignByMsgId(t.id.id);
+			o("WAWebDrawerManager").DrawerManager.openDrawerFullscreen(u.jsx(o("WAWebBizBroadcastNewBroadcastFlowLoadable").WAWebBizBroadcastNewBroadcastFlowLoadable, {
+				entryPoint: o("WAWebWamEnumEntryPoint").ENTRY_POINT.BB_THREAD,
+				onBack: function() {
+					return o("WAWebDrawerManager").DrawerManager.closeDrawerFullscreen();
+				},
+				sourceBroadcastMessageData: {
+					attachmentData: l,
+					campaignId: (a = d == null ? void 0 : d.campaignId) != null ? a : null,
+					ctaButtonData: s,
+					isDuplicateBroadcast: !0,
+					message: c
+				}
+			}), { focusType: o("WAWebKeyboardTabUtils").FocusType.TABBABLE });
+		} catch (t) {
+			o("WAWebBizBroadcastCreationQPLLogger").BizBroadcastCreationQPLLogger.end(3), o("WALogger").ERROR(e || (e = babelHelpers.taggedTemplateLiteralLoose(["Failed to duplicate broadcast from thread"]))).catching(r("getErrorSafe")(t)).sendLogs("thread-duplicate-broadcast-failed");
+		}
+	}
+	l.default = c;
+}), 98);

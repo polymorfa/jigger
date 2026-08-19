@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizLabelItemDrawer.react"],"dependent_count":2,"exports":[{"name":"PaletteOutlineIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizLabelItemDrawer.react"],"uses":2}]}

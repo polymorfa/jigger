@@ -1,0 +1,79 @@
+__d("WAWebMoment-dv", ["WAWeb-moment"], (function(t, n, r, o, a, i, l) {
+	var e = [
+		"ޖެނުއަރީ",
+		"ފެބްރުއަރީ",
+		"މާރިޗު",
+		"އޭޕްރީލު",
+		"މޭ",
+		"ޖޫން",
+		"ޖުލައި",
+		"އޯގަސްޓު",
+		"ސެޕްޓެމްބަރު",
+		"އޮކްޓޯބަރު",
+		"ނޮވެމްބަރު",
+		"ޑިސެމްބަރު"
+	], s = [
+		"އާދިއްތަ",
+		"ހޯމަ",
+		"އަންގާރަ",
+		"ބުދަ",
+		"ބުރާސްފަތި",
+		"ހުކުރު",
+		"ހޮނިހިރު"
+	], u = r("WAWeb-moment").defineLocale("dv", {
+		months: e,
+		monthsShort: e,
+		weekdays: s,
+		weekdaysShort: s,
+		weekdaysMin: "އާދި_ހޯމަ_އަން_ބުދަ_ބުރާ_ހުކު_ހޮނި".split("_"),
+		longDateFormat: {
+			LT: "HH:mm",
+			LTS: "HH:mm:ss",
+			L: "D/M/YYYY",
+			LL: "D MMMM YYYY",
+			LLL: "D MMMM YYYY HH:mm",
+			LLLL: "dddd D MMMM YYYY HH:mm"
+		},
+		meridiemParse: /މކ|މފ/,
+		isPM: function(t) {
+			return t === "މފ";
+		},
+		meridiem: function(t, n, r) {
+			return t < 12 ? "މކ" : "މފ";
+		},
+		calendar: {
+			sameDay: "[މިއަދު] LT",
+			nextDay: "[މާދަމާ] LT",
+			nextWeek: "dddd LT",
+			lastDay: "[އިއްޔެ] LT",
+			lastWeek: "[ފާއިތުވި] dddd LT",
+			sameElse: "L"
+		},
+		relativeTime: {
+			future: "ތެރޭގައި %s",
+			past: "ކުރިން %s",
+			s: "ސިކުންތުކޮޅެއް",
+			ss: "d% ސިކުންތު",
+			m: "މިނިޓެއް",
+			mm: "މިނިޓު %d",
+			h: "ގަޑިއިރެއް",
+			hh: "ގަޑިއިރު %d",
+			d: "ދުވަހެއް",
+			dd: "ދުވަސް %d",
+			M: "މަހެއް",
+			MM: "މަސް %d",
+			y: "އަހަރެއް",
+			yy: "އަހަރު %d"
+		},
+		preparse: function(t) {
+			return t.replace(/،/g, ",");
+		},
+		postformat: function(t) {
+			return t.replace(/,/g, "،");
+		},
+		week: {
+			dow: 7,
+			doy: 12
+		}
+	});
+}), 34);

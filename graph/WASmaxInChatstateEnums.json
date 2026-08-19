@@ -1,0 +1,1 @@
+{"deps":["WAJids"],"dependents":["WASmaxInChatstateFromGroupMixin","WASmaxInChatstateFromUserMixin"],"dependent_count":2,"exports":[{"name":"USERJID_USERJID_USERJID","used_by":["WASmaxInChatstateFromGroupMixin"],"uses":1},{"name":"USERJID_USERJID_USERJID_USERJID","used_by":["WASmaxInChatstateFromUserMixin"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMediaThumb.react","WAWebMessageMeta.react"],"dependent_count":3,"exports":[{"name":"PinnedSmallIcon","used_by":["WAWebAllGeneratedIcons","WAWebMediaThumb.react","WAWebMessageMeta.react"],"uses":3}]}

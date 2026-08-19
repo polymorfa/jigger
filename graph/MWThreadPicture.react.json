@@ -1,0 +1,1 @@
+{"deps":["MWReQLCMThreadPictureCustomThreadCommunity.react","MWReQLFacepile.react","MWThreadPictureCustomThread.react","ReQL","ReQLSuspense","getLSMediaThreadPictureUrl","mwCMIsAnyCMThread","react","react-compiler-runtime","useReStore"],"dependents":["MAWGroupInviteDialog.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebEphemeralDrawer.react"],"dependent_count":2,"exports":[{"name":"WdsIllDisappearingMessagesIcon","used_by":["WAWebAllGeneratedIcons","WAWebEphemeralDrawer.react"],"uses":2}]}

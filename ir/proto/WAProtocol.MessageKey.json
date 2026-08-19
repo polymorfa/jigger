@@ -1,0 +1,42 @@
+{
+  "id": "proto:WAProtocol.MessageKey",
+  "kind": "proto",
+  "name": "WAProtocol.MessageKey",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "fromMe": {
+        "number": 2
+      },
+      "id": {
+        "number": 3
+      },
+      "participant": {
+        "number": 4
+      },
+      "remoteJid": {
+        "number": 1
+      }
+    },
+    "module": "WAProtocol.pb"
+  },
+  "evidence": {
+    "module": "WAProtocol.pb",
+    "matches": "name = \"MessageKey\""
+  },
+  "literals": [
+    "MessageKey"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAAICommon.pb",
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

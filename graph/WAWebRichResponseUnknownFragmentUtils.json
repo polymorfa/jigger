@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebProtobufsAICommonDeprecated.pb","WAWebRichResponse.flow"],"dependents":["WAWebFormatRichResponseMessageText","WAWebRichResponseUnknownFragment.react"],"dependent_count":2,"exports":[]}

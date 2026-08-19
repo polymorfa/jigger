@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizOrderStatusDrawer.react"],"dependent_count":2,"exports":[{"name":"IcNumbersIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizOrderStatusDrawer.react"],"uses":2}]}

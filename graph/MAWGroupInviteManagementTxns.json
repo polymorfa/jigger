@@ -1,0 +1,1 @@
+{"deps":["MAWDbGroupInviteTxns","MAWDbParticipantTxns","MAWDexieTable","MAWUserJidWrapper"],"dependents":["MAWThreadManagementTxns"],"dependent_count":1,"exports":[{"name":"deleteGroupInvitesByThread","used_by":["MAWThreadManagementTxns"],"uses":1}]}

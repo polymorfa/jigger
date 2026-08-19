@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps","WAWebABPropsCache","WAWebGlobals","WAWebLowEndDeviceApi"],"dependents":["WAWebAppBootstrap"],"dependent_count":1,"exports":[{"name":"initStorageOptimizationFlags","used_by":["WAWebAppBootstrap"],"uses":1}]}

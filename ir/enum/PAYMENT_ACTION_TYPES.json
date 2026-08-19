@@ -1,0 +1,68 @@
+{
+  "id": "enum:PAYMENT_ACTION_TYPES",
+  "kind": "enum",
+  "name": "PAYMENT_ACTION_TYPES",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaymentActionTypes",
+    "variants": [
+      {
+        "name": "VIEW",
+        "value": 0.0
+      },
+      {
+        "name": "CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "ENTER",
+        "value": 2.0
+      },
+      {
+        "name": "API",
+        "value": 3.0
+      },
+      {
+        "name": "SHOW_ERROR",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaymentActionTypes",
+    "matches": "PAYMENT_ACTION_TYPES\\s*[:=]"
+  },
+  "literals": [
+    "PAYMENT_ACTION_TYPES",
+    "VIEW",
+    "CLICK",
+    "ENTER",
+    "API",
+    "SHOW_ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAddEditPixKeyInput.react",
+      "WAWebBizPaymentDetail.react",
+      "WAWebBizPaymentsBrazilAddPixModal.react",
+      "WAWebBizPaymentsBrazilAddPixModalRefreshed.react",
+      "WAWebBizPaymentsHomeManagementDrawer.react",
+      "WAWebBizPaymentsHomeManagementFlow.react",
+      "WAWebBizPaymentsHomeManagementPaymentMethodsSection.react",
+      "WAWebBizSeeAllPaymentsDrawer.react",
+      "WAWebConsumerPaymentsHomeLogger",
+      "WAWebPaymentsUserActionLogging",
+      "WAWebPaymentsUserActionWamEvent",
+      "WAWebQuickReplyPickerPlugin",
+      "WAWebQuickReplySuggestions.react",
+      "WAWebSendPixConfirmModal.react",
+      "WAWebSendPixPaymentRequestAmountInputRow.react",
+      "WAWebSendPixPaymentRequestHybridModal.react",
+      "WAWebSendPixPaymentRequestModal.react",
+      "WAWebSendPixPaymentRequestOptionalModal.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 18
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:newsletter_forward_counter_bump_second_order_forwards",
+  "kind": "ab",
+  "name": "newsletter_forward_counter_bump_second_order_forwards",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22205,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "newsletter_forward_counter_bump_second_order_forwards:\\s*\\[\\s*22205"
+  },
+  "literals": [
+    "newsletter_forward_counter_bump_second_order_forwards",
+    "22205"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebUserPrefsMeUser","WAWebWidFactory"],"dependents":["WAWebProductCatalogLogEvents"],"dependent_count":1,"exports":[{"name":"isSelfCatalogOwnerJid","used_by":["WAWebProductCatalogLogEvents"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WDNativeImageComponentConstant","WDSFlex.stylex","WDSMargins.stylex","WDSNativeImagePlaceholder.react","isImageSizeUnderLimit","react","stylex","unsafeCast"],"dependents":["WAFlowsImage.react","WDSNativeImageCarousel.react"],"dependent_count":2,"exports":[]}

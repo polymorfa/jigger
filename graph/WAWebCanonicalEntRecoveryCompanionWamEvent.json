@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumCanonicalEntEventMarker","WAWebWamEnumCanonicalEntRecoveryCompanionEvent"],"dependents":["WAWebCanonicalEntRecoveryWam"],"dependent_count":1,"exports":[{"name":"CanonicalEntRecoveryCompanionWamEvent","used_by":[],"uses":0}]}

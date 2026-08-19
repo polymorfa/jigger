@@ -1,0 +1,1 @@
+{"deps":["justknobx"],"dependents":["WAWebDBProcessMessage","WAWebVoipActionWriteCallLogCallStateChanged","WAWebVoipActionWriteCallLogImpl"],"dependent_count":3,"exports":[{"name":"isWebVoipCallLogAnrOptimizationEnabled","used_by":["WAWebDBProcessMessage","WAWebVoipActionWriteCallLogCallStateChanged","WAWebVoipActionWriteCallLogImpl"],"uses":3}]}

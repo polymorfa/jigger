@@ -1,0 +1,1 @@
+{"deps":["WAWebChatInfoDescriptionSection.react","WAWebCmd","WAWebSetDescAction","nullthrows","react","react-compiler-runtime","useWAWebEventTargetValue","useWAWebListener","useWAWebModelValues"],"dependents":["WAWebCommunityHomeDescriptionSection.react","WAWebGroupInfoDescriptionSection.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

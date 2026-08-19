@@ -1,0 +1,1 @@
+{"deps":["WAWebChatLockSettings","react","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebChatLockedEntryPoint.react","WAWebChatlistPanelWrapper.react","WAWebNavigationBar.react"],"dependent_count":3,"exports":[{"name":"useChatLockSettings","used_by":["WAWebChatLockedEntryPoint.react","WAWebChatlistPanelWrapper.react","WAWebNavigationBar.react"],"uses":3}]}

@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAE2E.Message.VideoEndCard",
+  "kind": "proto",
+  "name": "WAE2E.Message.VideoEndCard",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "caption": {
+        "number": 2
+      },
+      "profilePictureUrl": {
+        "number": 4
+      },
+      "thumbnailImageUrl": {
+        "number": 3
+      },
+      "username": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.VideoEndCard\""
+  },
+  "literals": [
+    "VideoEndCard"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

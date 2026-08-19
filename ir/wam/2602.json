@@ -1,0 +1,39 @@
+{
+  "id": "wam:2602",
+  "kind": "wam",
+  "name": "MdAppStateOfflineNotifications",
+  "data": {
+    "kind": "wam",
+    "event_id": 2602,
+    "fields": {
+      "redundantCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "redundant_count"
+      }
+    },
+    "weights": [
+      1,
+      20,
+      1000
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdAppStateOfflineNotificationsWamEvent",
+    "matches": "MdAppStateOfflineNotifications:\\s*\\[\\s*2602"
+  },
+  "literals": [
+    "2602"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebHandleReportServerSyncNotification"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

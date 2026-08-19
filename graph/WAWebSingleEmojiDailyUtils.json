@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum","WAWebDailyAggregatedStatsCollection","WAWebFrontendMsgGetters","WAWebMsgGetters"],"dependents":["WAWebSendMsgRecordAction"],"dependent_count":1,"exports":[{"name":"maybeIncrementSingleEmojiDailyStatsCount","used_by":["WAWebSendMsgRecordAction"],"uses":1}]}

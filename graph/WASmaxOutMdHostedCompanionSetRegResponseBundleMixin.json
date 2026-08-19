@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins"],"dependents":["WASmaxOutMdSetRegResponseHostedClientResponse"],"dependent_count":1,"exports":[{"name":"mergeHostedCompanionSetRegResponseBundleMixin","used_by":["WASmaxOutMdSetRegResponseHostedClientResponse"],"uses":1}]}

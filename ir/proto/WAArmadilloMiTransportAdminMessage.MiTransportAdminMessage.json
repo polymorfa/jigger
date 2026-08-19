@@ -1,0 +1,209 @@
+{
+  "id": "proto:WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage",
+  "kind": "proto",
+  "name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "chatThemeChanged": {
+        "number": 1,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.ChatThemeChanged"
+      },
+      "disappearingSettingChanged": {
+        "number": 12,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.DisappearingSettingChanged"
+      },
+      "groupAdminChanged": {
+        "number": 4,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.GroupAdminChanged"
+      },
+      "groupImageChanged": {
+        "number": 8,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.GroupImageChanged"
+      },
+      "groupMembershipAddModeChanged": {
+        "number": 6,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.GroupMembershipAddModeChanged"
+      },
+      "groupNameChanged": {
+        "number": 5,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.GroupNameChanged"
+      },
+      "groupParticipantChanged": {
+        "number": 3,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.GroupParticipantChanged"
+      },
+      "iconChanged": {
+        "number": 11,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.IconChanged"
+      },
+      "limitSharingChanged": {
+        "number": 13,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.LimitSharingChanged"
+      },
+      "linkCta": {
+        "number": 10,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.LinkCta"
+      },
+      "messagePinned": {
+        "number": 7,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.MessagePinned"
+      },
+      "nicknameChanged": {
+        "number": 2,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.NicknameChanged"
+      },
+      "quickReactionChanged": {
+        "number": 9,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.QuickReactionChanged"
+      },
+      "readonlyMetadataDataclass": {
+        "number": 36
+      },
+      "skipBumpThread": {
+        "number": 34
+      },
+      "skipSnippetUpdate": {
+        "number": 35
+      },
+      "xmatAddParticipants": {
+        "number": 37,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatAddParticipants"
+      },
+      "xmatChangeThreadAdmins": {
+        "number": 39,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatChangeThreadAdmins"
+      },
+      "xmatChangeThreadName": {
+        "number": 40,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatChangeThreadName"
+      },
+      "xmatDisappearingSetting": {
+        "number": 14,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatDisappearingSetting"
+      },
+      "xmatFriendRequestConfirmedEncrypted": {
+        "number": 15,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatFriendRequestConfirmedEncrypted"
+      },
+      "xmatGenaiTaskAdd": {
+        "number": 33,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatGenAITaskAdd"
+      },
+      "xmatGroupThreadCreated": {
+        "number": 41,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatGroupThreadCreated"
+      },
+      "xmatInstantGameEncryptedDynamicCustomUpdate": {
+        "number": 16,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatInstantGameEncryptedDynamicCustomUpdate"
+      },
+      "xmatLinkCta": {
+        "number": 17,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatLinkCTA"
+      },
+      "xmatMagicWords": {
+        "number": 18,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMagicWords"
+      },
+      "xmatMessagingLimitSharing": {
+        "number": 19,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessagingLimitSharing"
+      },
+      "xmatMessengerMessageReminderSet": {
+        "number": 43,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerMessageReminderSet"
+      },
+      "xmatMessengerMessageReminderTriggered": {
+        "number": 44,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerMessageReminderTriggered"
+      },
+      "xmatMessengerQrCodeScanned": {
+        "number": 20,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerQRCodeScanned"
+      },
+      "xmatMessengerSharedAlbum": {
+        "number": 25,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerSharedAlbum"
+      },
+      "xmatMessengerSharedAlbumAddition": {
+        "number": 21,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerSharedAlbumAddition"
+      },
+      "xmatMessengerSharedAlbumContentRemoval": {
+        "number": 22,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerSharedAlbumContentRemoval"
+      },
+      "xmatMessengerSharedAlbumDeletion": {
+        "number": 23,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerSharedAlbumDeletion"
+      },
+      "xmatMessengerSharedAlbumRename": {
+        "number": 24,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatMessengerSharedAlbumRename"
+      },
+      "xmatPinMessageV2": {
+        "number": 31,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatPinMessageV2"
+      },
+      "xmatRemoveParticipant": {
+        "number": 38,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatRemoveParticipant"
+      },
+      "xmatSetParticipantUpdateMode": {
+        "number": 42,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatSetParticipantUpdateMode"
+      },
+      "xmatThemeColor": {
+        "number": 26,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatThemeColor"
+      },
+      "xmatThreadIcon": {
+        "number": 27,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatThreadIcon"
+      },
+      "xmatThreadNickname": {
+        "number": 28,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatThreadNickname"
+      },
+      "xmatThreadQuickReaction": {
+        "number": 29,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatThreadQuickReaction"
+      },
+      "xmatUnpinMessageV2": {
+        "number": 32,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatUnpinMessageV2"
+      },
+      "xmatUpdatePayments": {
+        "number": 30,
+        "type_name": "WAArmadilloMiTransportAdminMessage.MiTransportAdminMessage.XmatUpdatePayments"
+      }
+    },
+    "module": "WAArmadilloMiTransportAdminMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloMiTransportAdminMessage.pb",
+    "matches": "name = \"MiTransportAdminMessage\""
+  },
+  "literals": [
+    "MiTransportAdminMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleNotification",
+      "MAWMpsBridgeHandlers",
+      "MAWProtobufDeserializers",
+      "MpsAdminMsgToBridge",
+      "MpsThreadContentsPostProcessor",
+      "MpsToUIPostProcessor",
+      "WABuildMpsPayload",
+      "WmiMessengerE2EEIrisDeltaHandler"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

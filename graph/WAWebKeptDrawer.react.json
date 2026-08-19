@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatGetters","WAWebChatThreadLogging","WAWebDisappearingMessageKeepInChatWamEvent","WAWebDisplayType","WAWebEmptyState.react","WAWebKicNux.react","WAWebMsgDrawer.react","WAWebWamEnumKicActionNameType","WAWebWamEnumKicEntryPointType","WAWebWamEnumTriggerType","react"],"dependents":["WAWebInfoFlow.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["FBLogger","UFICommentFileInputAcceptValues.experimental"],"dependents":["MAWSupportedImageTypes","MAWSupportedVideoTypes"],"dependent_count":2,"exports":[{"name":"isMimeTypeForPhoto","used_by":["MAWSupportedImageTypes"],"uses":1},{"name":"isMimeTypeForVideo","used_by":["MAWSupportedVideoTypes"],"uses":1},{"name":"isMimeTypeForFile","used_by":[],"uses":0}]}

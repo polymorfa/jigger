@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebFtsStorage","WAWebRuntimeEnvironmentUtils","WAWebSchemaFtsIndexingQueue","WAWebWorkerSafeBackendApi","asyncToGeneratorRuntime"],"dependents":[],"dependent_count":0,"exports":[{"name":"ftsLightClient","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInNewslettersNewsletterStatusContentTypeMixins","WASmaxParseUtils"],"dependents":["WASmaxInNewslettersStatusNewsletterHistoryMixin"],"dependent_count":1,"exports":[{"name":"parseStatusNewsletterContentMixin","used_by":["WASmaxInNewslettersStatusNewsletterHistoryMixin"],"uses":1}]}

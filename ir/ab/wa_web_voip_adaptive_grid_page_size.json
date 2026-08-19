@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_voip_adaptive_grid_page_size",
+  "kind": "ab",
+  "name": "wa_web_voip_adaptive_grid_page_size",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28909,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_voip_adaptive_grid_page_size:\\s*\\[\\s*28909"
+  },
+  "literals": [
+    "wa_web_voip_adaptive_grid_page_size",
+    "28909"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipGridPageSize"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

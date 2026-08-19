@@ -1,0 +1,60 @@
+{
+  "id": "enum:NAV_DIRECTIONS",
+  "kind": "enum",
+  "name": "NAV_DIRECTIONS",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "NEXT_BUCKET",
+        "value": "next-bucket"
+      },
+      {
+        "name": "NEXT_CARD",
+        "value": "next-card"
+      },
+      {
+        "name": "PREV_BUCKET",
+        "value": "prev-bucket"
+      },
+      {
+        "name": "PREV_CARD",
+        "value": "prev-card"
+      },
+      {
+        "name": "STAY_HERE",
+        "value": "stay_here"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "NAV_DIRECTIONS\\s*[:=]"
+  },
+  "literals": [
+    "NAV_DIRECTIONS",
+    "NEXT_BUCKET",
+    "NEXT_CARD",
+    "PREV_BUCKET",
+    "PREV_CARD",
+    "STAY_HERE"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

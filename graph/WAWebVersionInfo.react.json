@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBuildConstants","WAWebCopyPasteSelectable.react","WAWebHistorySyncLidChatGating","WAWebLid1X1MigrationGating","WAWebPrimaryVersion","WAWebUserPrefsMeUser","cr:21012","gkx","react","react-compiler-runtime","useWAWebExternalBetaOptIn"],"dependents":["WAWebHelpDrawer.react"],"dependent_count":1,"exports":[]}

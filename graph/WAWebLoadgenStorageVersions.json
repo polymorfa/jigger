@@ -1,0 +1,1 @@
+{"deps":["WAWebLoadgenStorageUtils"],"dependents":["WAWebSchemaFtsLoadgenMetadata"],"dependent_count":1,"exports":[{"name":"ftsMetaDataCreateTable","used_by":["WAWebSchemaFtsLoadgenMetadata"],"uses":1}]}

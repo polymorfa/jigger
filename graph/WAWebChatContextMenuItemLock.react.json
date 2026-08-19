@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatLockCodeModal.react","WAWebChatLockUtils","WAWebStateUtils","WAWebWamEnumActionEntryPoint","WDSIconWdsIcChatlockOutline.react","WDSMenuItem.react","react","react-compiler-runtime","useWAWebModelValues"],"dependents":["WAWebChatContextMenu","WAWebContactMenuDropdown.react","WAWebConversationMenus"],"dependent_count":3,"exports":[]}

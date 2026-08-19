@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxOutStatusPublishClientPostNewsletterStatusAndServerOrPostNewsletterStatusIDMixinGroup","WAWap"],"dependents":["WASmaxStatusPublishPostNewsletterStatusRPC"],"dependent_count":1,"exports":[{"name":"makePostNewsletterStatusRequest","used_by":["WASmaxStatusPublishPostNewsletterStatusRPC"],"uses":1}]}

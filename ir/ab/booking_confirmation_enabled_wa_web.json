@@ -1,0 +1,42 @@
+{
+  "id": "ab:booking_confirmation_enabled_wa_web",
+  "kind": "ab",
+  "name": "booking_confirmation_enabled_wa_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23559,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "booking_confirmation_enabled_wa_web:\\s*\\[\\s*23559"
+  },
+  "literals": [
+    "booking_confirmation_enabled_wa_web",
+    "23559"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:similar_channels_max_limit",
+  "kind": "ab",
+  "name": "similar_channels_max_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7559,
+    "type": "int",
+    "default": 10,
+    "alt_default": 10
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "similar_channels_max_limit:\\s*\\[\\s*7559"
+  },
+  "literals": [
+    "similar_channels_max_limit",
+    "7559"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterDirectorySearchAction"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

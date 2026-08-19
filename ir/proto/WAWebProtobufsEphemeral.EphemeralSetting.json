@@ -1,0 +1,35 @@
+{
+  "id": "proto:WAWebProtobufsEphemeral.EphemeralSetting",
+  "kind": "proto",
+  "name": "WAWebProtobufsEphemeral.EphemeralSetting",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "duration": {
+        "number": 1
+      },
+      "timestamp": {
+        "number": 2
+      }
+    },
+    "module": "WAWebProtobufsEphemeral.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsEphemeral.pb",
+    "matches": "name = \"EphemeralSetting\""
+  },
+  "literals": [
+    "EphemeralSetting"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebEphemeralDecodeBroadcastSetting",
+      "WAWebEphemeralEncodeBroadcastSetting"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

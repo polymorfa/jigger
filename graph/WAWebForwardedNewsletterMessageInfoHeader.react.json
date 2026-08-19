@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBoolFunc","WAWebFlex.react","WAWebForwardedInfoHeaderLink.react","WAWebMessageMeta.react","react","react-compiler-runtime","useWAWebForwardedNewsletterMessageClickHandler"],"dependents":["WAWebMessageForwardedIndicator.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_internal_in_app_bug_reporting_enable",
+  "kind": "ab",
+  "name": "web_internal_in_app_bug_reporting_enable",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4681,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_internal_in_app_bug_reporting_enable:\\s*\\[\\s*4681"
+  },
+  "literals": [
+    "web_internal_in_app_bug_reporting_enable",
+    "4681"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSettingsHierarchy"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

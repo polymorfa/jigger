@@ -1,0 +1,31 @@
+__d("WAWebTPExtensionDetection", [
+	"WAWebBrowserInfo",
+	"WAWebEnvironment",
+	"WAWebTP3PPDFExtensionFetchDetection",
+	"WAWebTPPdfViewerGatingUtils",
+	"WAWebUA"
+], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	var e = {
+		extensionDetected: !1,
+		extensionViewerUrl: null
+	};
+	function s(e) {
+		if (r("WAWebEnvironment").isWindows) return null;
+		var t = r("WAWebBrowserInfo")().name.toLowerCase();
+		return t === o("WAWebUA").BROWSER_TYPE.CHROME && e.chromeExtensionId != null ? "chrome-extension://" + e.chromeExtensionId : t === o("WAWebUA").BROWSER_TYPE.EDGE && e.edgeExtensionId != null ? "chrome-extension://" + e.edgeExtensionId : null;
+	}
+	async function u(t) {
+		if (!o("WAWebTPPdfViewerGatingUtils").isWebTP3PExtensionSharingEnabled()) return e;
+		var n = t.extensionKey;
+		if (n == null) return e;
+		var r = s(t);
+		if (r == null) return e;
+		var a = r + "/extension-detection.html";
+		return await o("WAWebTP3PPDFExtensionFetchDetection").hasWebTP3PPDFExtensionFetch(a) ? {
+			extensionDetected: !0,
+			extensionViewerUrl: r
+		} : e;
+	}
+	l.getExtensionViewerUrl = s, l.detectBrowserExtension = u;
+}), 98);

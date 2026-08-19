@@ -1,0 +1,1 @@
+{"deps":["invariant","WorkerBootstrap","emptyFunction","memoize"],"dependents":["WAWebFtsWorker","WAWebFtsWorkerContext","WAWebOpusRecorderWorker","WAWebRgbaToWebpWorker","WAWebWebpToAnimationFramesWorker","WAWebWebpToRgbaWorker"],"dependent_count":6,"exports":[]}

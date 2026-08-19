@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatCollection","WAWebChatEntryPoint","WAWebCmd","WAWebEmojiText.react","WAWebFindChatAction","WAWebGroupMetadataCollection","react","react-compiler-runtime"],"dependents":["WAWebComposeBoxPopupPanels.react","WAWebMessageComponent.react"],"dependent_count":2,"exports":[]}

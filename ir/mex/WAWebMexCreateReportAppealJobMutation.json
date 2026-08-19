@@ -1,0 +1,185 @@
+{
+  "id": "mex:WAWebMexCreateReportAppealJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCreateReportAppealJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27103316329328467",
+    "operation": "mutation",
+    "variables": [
+      "report_id",
+      "reason"
+    ],
+    "args": [
+      {
+        "name": "report_id"
+      },
+      {
+        "name": "reason"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_create_channel_report_appeal_v2",
+        "ty": "XWA2ChannelsReport",
+        "args": [
+          "reason: $reason",
+          "report_id: $report_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "report_id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "status",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "creation_time",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "last_update_time",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "channel_name",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "channel_jid",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "appeal_reason_options",
+            "ty": "XWA2ReportAppealReasonOption",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "reason",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "label",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "reported_content_data",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "__typename",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "... on XWA2ChannelServerMsgData",
+                "kind": "InlineFragment",
+                "selections": [
+                  {
+                    "name": "server_msg_id",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "... on XWA2ChannelStatusData",
+                "kind": "InlineFragment",
+                "selections": [
+                  {
+                    "name": "server_id",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "... on XWA2ChannelQuestionResponseData",
+                "kind": "InlineFragment",
+                "selections": [
+                  {
+                    "name": "server_response_id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "notify_name",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "question_data",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "__typename",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "... on XWA2ChannelServerMsgData",
+                        "kind": "InlineFragment",
+                        "selections": [
+                          {
+                            "name": "server_msg_id",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "appeal",
+            "ty": "XWA2ReportAppeal",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "state",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_reason",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "report_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_id",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_create_channel_report_appeal_v2",
+    "document": "# persisted document 27103316329328467\nmutation MexCreateReportAppealJobMutation(\n  $report_id\n  $reason\n) {\n  xwa2_create_channel_report_appeal_v2(reason: $reason, report_id: $report_id) {  # XWA2ChannelsReport\n    report_id\n    status\n    creation_time\n    last_update_time\n    channel_name\n    channel_jid\n    appeal_reason_options {  # [XWA2ReportAppealReasonOption]\n      reason\n      label\n    }\n    reported_content_data {\n      __typename\n      ... on XWA2ChannelServerMsgData {\n        server_msg_id\n      }\n      ... on XWA2ChannelStatusData {\n        server_id\n      }\n      ... on XWA2ChannelQuestionResponseData {\n        server_response_id\n        notify_name\n        question_data {\n          __typename\n          ... on XWA2ChannelServerMsgData {\n            server_msg_id\n          }\n        }\n      }\n    }\n    appeal {  # XWA2ReportAppeal\n      state\n      appeal_reason\n      creation_time\n      report_id\n      appeal_id\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexCreateReportAppealJobMutation.graphql",
+    "matches": "id:\\s*\"27103316329328467\""
+  },
+  "literals": [
+    "27103316329328467",
+    "WAWebMexCreateReportAppealJobMutation",
+    "xwa2_create_channel_report_appeal_v2"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCreateReportAppealJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

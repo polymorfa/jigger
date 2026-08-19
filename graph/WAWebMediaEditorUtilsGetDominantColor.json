@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaEditorUtilsColor"],"dependents":["WAWebMediaEditorData"],"dependent_count":1,"exports":[{"name":"DEFAULT_DOMINANT_COLOR","used_by":["WAWebMediaEditorData"],"uses":1},{"name":"getDominantColor","used_by":["WAWebMediaEditorData"],"uses":1}]}

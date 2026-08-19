@@ -1,0 +1,49 @@
+{
+  "id": "wam:5024",
+  "kind": "wam",
+  "name": "StickerError",
+  "data": {
+    "kind": "wam",
+    "event_id": 5024,
+    "fields": {
+      "stickerErrorType": {
+        "id": 1,
+        "type": "STICKER_ERROR_TYPE",
+        "wire": "sticker_error_type",
+        "enum_ref": "STICKER_ERROR_TYPE"
+      },
+      "stickerMessageType": {
+        "id": 2,
+        "type": "STICKER_SEND_MESSAGE_TYPE",
+        "wire": "sticker_message_type",
+        "enum_ref": "STICKER_SEND_MESSAGE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStickerErrorWamEvent",
+    "matches": "StickerError:\\s*\\[\\s*5024"
+  },
+  "literals": [
+    "5024"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumStickerErrorType",
+      "WAWebWamEnumStickerSendMessageType"
+    ],
+    "dependents": [
+      "WAWebInMemoryLottieStickerCache",
+      "WAWebMediaMmsV4Download"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

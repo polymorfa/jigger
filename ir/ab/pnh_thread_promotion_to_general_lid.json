@@ -1,0 +1,45 @@
+{
+  "id": "ab:pnh_thread_promotion_to_general_lid",
+  "kind": "ab",
+  "name": "pnh_thread_promotion_to_general_lid",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16632,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pnh_thread_promotion_to_general_lid:\\s*\\[\\s*16632"
+  },
+  "literals": [
+    "pnh_thread_promotion_to_general_lid",
+    "16632"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebDBPnhThreadMigrationToGeneralLid"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

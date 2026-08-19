@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebEmojiText.react","WAWebModalManager","WAWebSendUnstarAllChatAction","react"],"dependents":["WAWebStarredHeaderDropdown.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebBackendErrors","WAWebBizCatalogGatingUtils","WAWebBizCreateOrderJob","WAWebBizLogQplEvents","WAWebBizQueryOrderJob","WAWebBusinessDirectConnectionBridge"],"dependents":["WAWebBizOrderAction"],"dependent_count":1,"exports":[{"name":"createOrder","used_by":["WAWebBizOrderAction"],"uses":1},{"name":"queryOrder","used_by":["WAWebBizOrderAction"],"uses":1}]}

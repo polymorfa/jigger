@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps"],"dependents":["WAWebVoipStackInterfaceWeb","WAWebVoipStackInterfaceWorkerProxy"],"dependent_count":2,"exports":[{"name":"shouldDisableSoftwareAudioProcessing","used_by":["WAWebVoipStackInterfaceWeb","WAWebVoipStackInterfaceWorkerProxy"],"uses":2}]}

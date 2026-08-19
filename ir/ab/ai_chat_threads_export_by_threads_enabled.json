@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_chat_threads_export_by_threads_enabled",
+  "kind": "ab",
+  "name": "ai_chat_threads_export_by_threads_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34081,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_chat_threads_export_by_threads_enabled:\\s*\\[\\s*34081"
+  },
+  "literals": [
+    "ai_chat_threads_export_by_threads_enabled",
+    "34081"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

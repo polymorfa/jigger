@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedWapParser","WAJids"],"dependents":["WADeprecatedSendIq"],"dependent_count":1,"exports":[{"name":"AckParser","used_by":["WADeprecatedSendIq"],"uses":1},{"name":"ackMatchesTemplate","used_by":["WADeprecatedSendIq"],"uses":1},{"name":"fromJidsAreEqual","used_by":[],"uses":0}]}

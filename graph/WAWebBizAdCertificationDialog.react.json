@@ -1,0 +1,1 @@
+{"deps":["fbt","CometRelay","WAWebBizAdCertificationContent.react","WAWebBizAdLogger","WAWebConfirmPopup.react","WAWebFlex.react","WAWebModal.react","WAWebModalManager","WAWebXIcon.react","WDSButton.react","react","react-compiler-runtime","useWAWebBizAdCertifyMutation"],"dependents":["useWAWebBizAdCreationMaybeOpenCertificationDialog"],"dependent_count":1,"exports":[]}

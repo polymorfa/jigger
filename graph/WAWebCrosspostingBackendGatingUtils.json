@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps"],"dependents":["WAWebStatusPrivacySettingSync","WAWebStatusSetAndSyncPrivacy"],"dependent_count":2,"exports":[{"name":"crosspostSettingsSyncSenderEnabled","used_by":["WAWebStatusPrivacySettingSync","WAWebStatusSetAndSyncPrivacy"],"uses":2},{"name":"crosspostSettingsSyncReceiverEnabled","used_by":["WAWebStatusPrivacySettingSync"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebUpdatesTabSearchWamEvent"],"dependents":["WAWebNewsletterInboxSearch.react","WAWebNewsletterTabDrawerContent.react"],"dependent_count":2,"exports":[{"name":"logNewsletterInboxSearchEvent","used_by":["WAWebNewsletterInboxSearch.react","WAWebNewsletterTabDrawerContent.react"],"uses":2}]}

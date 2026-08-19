@@ -1,0 +1,42 @@
+{
+  "id": "ab:member_name_tag_sender_enabled",
+  "kind": "ab",
+  "name": "member_name_tag_sender_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13524,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "member_name_tag_sender_enabled:\\s*\\[\\s*13524"
+  },
+  "literals": [
+    "member_name_tag_sender_enabled",
+    "13524"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

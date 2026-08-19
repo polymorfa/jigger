@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_voip_outgoing_call_setup_latency_mode",
+  "kind": "ab",
+  "name": "web_voip_outgoing_call_setup_latency_mode",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33122,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_voip_outgoing_call_setup_latency_mode:\\s*\\[\\s*33122"
+  },
+  "literals": [
+    "web_voip_outgoing_call_setup_latency_mode",
+    "33122"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipOutgoingSetupLatencyMode"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

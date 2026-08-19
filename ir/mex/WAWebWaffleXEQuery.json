@@ -1,0 +1,136 @@
+{
+  "id": "mex:WAWebWaffleXEQuery",
+  "kind": "mex",
+  "name": "WAWebWaffleXEQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "32172601809054525",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "waffle_xe_root",
+        "ty": "WaffleXEResponse",
+        "args": [
+          "input_params: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "purpose_public_keys",
+            "ty": "WafflePurposePublicKeys",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "purpose_public_ek",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "purpose_public_ik",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "purpose_public_ik_sig",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "purpose_public_ik_enc_certificate",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "purpose_dummy_ciphertext",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "purpose_dummy_nonce",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "waffle_unique_ids",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "waffle_d",
+            "ty": "WaffleD",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "waffle_xas",
+                "ty": "WaffleXASObject",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "waffle_xan",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "waffle_xs",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "waffle_di",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "waffle_xps",
+            "ty": "WaffleXPS",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "waffle_xas",
+                "ty": "WaffleXASObject",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "waffle_xan",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "waffle_xs",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "waffle_hcbc",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 32172601809054525\nmutation WaffleXEQuery(\n  $input\n) {\n  waffle_xe_root(input_params: $input) {  # WaffleXEResponse\n    purpose_public_keys {  # WafflePurposePublicKeys\n      purpose_public_ek\n      purpose_public_ik\n      purpose_public_ik_sig\n      purpose_public_ik_enc_certificate\n      purpose_dummy_ciphertext\n      purpose_dummy_nonce\n    }\n    waffle_unique_ids\n    waffle_d {  # [WaffleD]\n      waffle_xas {  # WaffleXASObject\n        waffle_xan\n        waffle_xs\n      }\n      waffle_di\n    }\n    waffle_xps {  # [WaffleXPS]\n      waffle_xas {  # WaffleXASObject\n        waffle_xan\n        waffle_xs\n      }\n      waffle_hcbc\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebWaffleXEQuery.graphql",
+    "matches": "id:\\s*\"32172601809054525\""
+  },
+  "literals": [
+    "32172601809054525",
+    "WAWebWaffleXEQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWaffleXEQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

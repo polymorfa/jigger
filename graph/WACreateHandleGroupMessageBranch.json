@@ -1,0 +1,1 @@
+{"deps":["WAHandleGroupMessageProtocol","WAResultOrError","WASendDeliveryReceiptProtocol"],"dependents":["WACreateHandleMessage"],"dependent_count":1,"exports":[{"name":"createHandleGroupMessageBranch","used_by":["WACreateHandleMessage"],"uses":1}]}

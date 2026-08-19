@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatGetters","WAWebEventsCreateEventModalFlow.react","WAWebModalManager","WAWebPrepareMessageSendingAction","WAWebSharableEventCreationNotSupportedModal.react","WAWebSharableEventGatingUtils","WDSIconIcCalendarMonthFilled.react","WDSMenuItem.react","react","react-compiler-runtime"],"dependents":["WAWebAttachMenuPopup.react"],"dependent_count":1,"exports":[]}

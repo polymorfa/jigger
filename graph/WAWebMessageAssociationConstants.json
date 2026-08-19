@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgType"],"dependents":["WAWebAddonSortUtils","WAWebHandleMsgProcess","WAWebReactionsBEUtils"],"dependent_count":3,"exports":[{"name":"orphanIneligibleFutureproofTypes","used_by":["WAWebAddonSortUtils","WAWebHandleMsgProcess","WAWebReactionsBEUtils"],"uses":3}]}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:shimmed_links_in_the_marketing_message_body_enabled",
+  "kind": "ab",
+  "name": "shimmed_links_in_the_marketing_message_body_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 12995,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "shimmed_links_in_the_marketing_message_body_enabled:\\s*\\[\\s*12995"
+  },
+  "literals": [
+    "shimmed_links_in_the_marketing_message_body_enabled",
+    "12995"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "enum:STATUS_TYPE",
+  "kind": "enum",
+  "name": "STATUS_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusType",
+    "variants": [
+      {
+        "name": "IMAGE",
+        "value": 1.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 2.0
+      },
+      {
+        "name": "GIF",
+        "value": 3.0
+      },
+      {
+        "name": "AUDIO",
+        "value": 4.0
+      },
+      {
+        "name": "TEXT",
+        "value": 5.0
+      },
+      {
+        "name": "MUSIC_STANDALONE",
+        "value": 6.0
+      },
+      {
+        "name": "FUTURE",
+        "value": 7.0
+      },
+      {
+        "name": "PLACEHOLDER",
+        "value": 8.0
+      },
+      {
+        "name": "INLINE_VIDEO",
+        "value": 9.0
+      },
+      {
+        "name": "LOCATION",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusType",
+    "matches": "STATUS_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_TYPE",
+    "IMAGE",
+    "VIDEO",
+    "GIF",
+    "AUDIO",
+    "TEXT",
+    "MUSIC_STANDALONE",
+    "FUTURE",
+    "PLACEHOLDER",
+    "INLINE_VIDEO",
+    "LOCATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusItemViewWamEvent",
+      "WAWebStatusPostWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

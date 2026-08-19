@@ -1,0 +1,1 @@
+{"deps":["WDSChip.react","WDSMenu.react","WDSMenuItem.react","react","react-compiler-runtime","useWDSMenu"],"dependents":["WAWebContactManagerDrawer.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

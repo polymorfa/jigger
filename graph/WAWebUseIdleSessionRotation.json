@@ -1,0 +1,1 @@
+{"deps":["WAWebUnifiedSession","WAWebUseUnifiedSession","justknobx","react","react-compiler-runtime","useWAWebListener","useWAWebTimeout"],"dependents":["WAWebWamTimeSpentLogger"],"dependent_count":1,"exports":[{"name":"useIdleSessionRotation","used_by":["WAWebWamTimeSpentLogger"],"uses":1}]}

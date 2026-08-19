@@ -1,0 +1,92 @@
+{
+  "id": "proto:WAArmadilloApplication.Armadillo.Content",
+  "kind": "proto",
+  "name": "WAArmadilloApplication.Armadillo.Content",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "bumpExistingMessage": {
+        "number": 11,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.BumpExistingMessage"
+      },
+      "commonSticker": {
+        "number": 1,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.CommonSticker"
+      },
+      "extendedContentMessage": {
+        "number": 4
+      },
+      "extendedMessageContentWithSear": {
+        "number": 7,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.ExtendedContentMessageWithSear"
+      },
+      "imageGalleryMessage": {
+        "number": 8,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.ImageGalleryMessage"
+      },
+      "networkVerificationMessage": {
+        "number": 15,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.NetworkVerificationMessage"
+      },
+      "noteReplyMessage": {
+        "number": 13,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.NoteReplyMessage"
+      },
+      "paymentsTransactionMessage": {
+        "number": 10,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.PaymentsTransactionMessage"
+      },
+      "ravenActionNotifMessage": {
+        "number": 6,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.RavenActionNotifMessage"
+      },
+      "ravenMessage": {
+        "number": 5,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.RavenMessage"
+      },
+      "ravenMessageMsgr": {
+        "number": 14,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.RavenMessage"
+      },
+      "screenshotAction": {
+        "number": 3,
+        "type_name": "WAArmadilloApplication.Armadillo.Content.ScreenshotAction"
+      }
+    },
+    "module": "WAArmadilloApplication.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloApplication.pb",
+    "matches": "name = \"Armadillo.Content\""
+  },
+  "literals": [
+    "Content"
+  ],
+  "graph": {
+    "deps": [
+      "WAArmadilloXMA.pb",
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsArmadilloApplication",
+      "MAWAsMessageApplication",
+      "MAWEphemeralUtil",
+      "MAWEphemeralUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseArmadilloProtocol",
+      "MAWParseScreenshotActionMsg",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "MpsRavenToBridge",
+      "MpsScreenshotActionToBridgeMsg",
+      "SendMsgArgsToProtobuf",
+      "WAConvertAppData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 16
+  }
+}

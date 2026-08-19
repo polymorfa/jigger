@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFlex.react","WAWebNoop","WAWebSpinner.react","WAWebThemeContext","WDSColorStyles.stylex","WDSText.react","WDSThemes","react","react-compiler-runtime"],"dependents":["WAWebVoipUi.react","WAWebVoipUiLoadable"],"dependent_count":2,"exports":[]}

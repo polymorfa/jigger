@@ -1,0 +1,132 @@
+{
+  "id": "proto:WAE2E.Message.ProtocolMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.ProtocolMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "afterReadDuration": {
+        "number": 29
+      },
+      "aiMediaCollectionMessage": {
+        "number": 28
+      },
+      "aiPsiMetadata": {
+        "number": 25
+      },
+      "aiQueryFanout": {
+        "number": 26,
+        "type_name": "WAE2E.AIQueryFanout"
+      },
+      "appStateFatalExceptionNotification": {
+        "number": 10,
+        "type_name": "WAE2E.Message.AppStateFatalExceptionNotification"
+      },
+      "appStateSyncKeyRequest": {
+        "number": 8,
+        "type_name": "WAE2E.Message.AppStateSyncKeyRequest"
+      },
+      "appStateSyncKeyShare": {
+        "number": 7,
+        "type_name": "WAE2E.Message.AppStateSyncKeyShare"
+      },
+      "botFeedbackMessage": {
+        "number": 18
+      },
+      "cloudApiThreadControlNotification": {
+        "number": 22,
+        "type_name": "WAE2E.Message.CloudAPIThreadControlNotification"
+      },
+      "disappearingMode": {
+        "number": 11,
+        "type_name": "WAE2E.DisappearingMode"
+      },
+      "editedMessage": {
+        "number": 14,
+        "type_name": "WAE2E.Message"
+      },
+      "ephemeralExpiration": {
+        "number": 4
+      },
+      "ephemeralSettingTimestamp": {
+        "number": 5
+      },
+      "historySyncNotification": {
+        "number": 6,
+        "type_name": "WAE2E.Message.HistorySyncNotification"
+      },
+      "initialSecurityNotificationSettingSync": {
+        "number": 9,
+        "type_name": "WAE2E.Message.InitialSecurityNotificationSettingSync"
+      },
+      "invokerJid": {
+        "number": 19
+      },
+      "key": {
+        "number": 1
+      },
+      "lidMigrationMappingSyncMessage": {
+        "number": 23,
+        "type_name": "WAE2E.LIDMigrationMappingSyncMessage"
+      },
+      "limitSharing": {
+        "number": 24
+      },
+      "mediaNotifyMessage": {
+        "number": 21,
+        "type_name": "WAE2E.MediaNotifyMessage"
+      },
+      "memberLabel": {
+        "number": 27,
+        "type_name": "WAE2E.MemberLabel"
+      },
+      "peerDataOperationRequestMessage": {
+        "number": 16,
+        "type_name": "WAE2E.Message.PeerDataOperationRequestMessage"
+      },
+      "peerDataOperationRequestResponseMessage": {
+        "number": 17,
+        "type_name": "WAE2E.Message.PeerDataOperationRequestResponseMessage"
+      },
+      "requestWelcomeMessageMetadata": {
+        "number": 20,
+        "type_name": "WAE2E.Message.RequestWelcomeMessageMetadata"
+      },
+      "timestampMs": {
+        "number": 15
+      },
+      "type": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.ProtocolMessage\""
+  },
+  "literals": [
+    "ProtocolMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

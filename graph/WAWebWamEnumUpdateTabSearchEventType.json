@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebNewsletterInboxSearch.react","WAWebNewsletterTabDrawerContent.react","WAWebUpdatesTabSearchWamEvent"],"dependent_count":3,"exports":[{"name":"UPDATE_TAB_SEARCH_EVENT_TYPE","used_by":["WAWebNewsletterInboxSearch.react","WAWebNewsletterTabDrawerContent.react","WAWebUpdatesTabSearchWamEvent"],"uses":3}]}

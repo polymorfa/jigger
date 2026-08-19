@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInVoipCallAckBaseMixin","WASmaxInVoipEnums","WASmaxParseJid","WASmaxParseUtils"],"dependents":["WASmaxVoipLinkQueryRPC"],"dependent_count":1,"exports":[{"name":"parseLinkQueryResponseLinkQueryAck","used_by":["WASmaxVoipLinkQueryRPC"],"uses":1},{"name":"parseLinkQueryResponseLinkQueryAckLinkQueryWaitingRoom","used_by":[],"uses":0}]}

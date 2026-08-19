@@ -1,0 +1,1 @@
+{"deps":["MAWDbMsg","MAWDbParticipantTxns","MAWDbReceiptTxns","MAWDexieTable","MAWMarkThreadAsReadTxns","WAJids","WALogger","WAMsg","WATimeUtils"],"dependents":["MAWHandleIncomingMsgApi"],"dependent_count":1,"exports":[{"name":"processPendingReceipts","used_by":["MAWHandleIncomingMsgApi"],"uses":1}]}

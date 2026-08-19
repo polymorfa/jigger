@@ -1,0 +1,1 @@
+{"deps":["WAJobOrchestratorTypes","WAWebMexChangeNewsletterOwnerJob","WAWebOrchestratorNonPersistedJob","asyncToGeneratorRuntime"],"dependents":["WAWebChangeNewsletterOwnerAction"],"dependent_count":1,"exports":[{"name":"changeNewsletterOwner","used_by":["WAWebChangeNewsletterOwnerAction"],"uses":1}]}

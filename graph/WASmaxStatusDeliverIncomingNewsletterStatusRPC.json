@@ -1,0 +1,1 @@
+{"deps":["WASmaxInStatusDeliverIncomingNewsletterStatusRequest","WASmaxOutStatusDeliverIncomingNewsletterStatusResponseSuccess","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WAWebHandleNewsletterStatus"],"dependent_count":1,"exports":[{"name":"receiveIncomingNewsletterStatusRPC","used_by":["WAWebHandleNewsletterStatus"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["BaseThemeProvider.react","BaseView.react","react","react-compiler-runtime"],"dependents":["MAWMessageList.react","MAWVisibilityInThreadRestoreGapUI.react","MAWVisibilityRestoreGapUI.react","MWPTypingIndicators.react","MWV2TombstonedMessage.react","MWXCircleButton.react","MWXMenuItem.react"],"dependent_count":7,"exports":[{"name":"default","used_by":[],"uses":0}]}

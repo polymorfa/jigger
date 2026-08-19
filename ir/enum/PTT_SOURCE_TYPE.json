@@ -1,0 +1,37 @@
+{
+  "id": "enum:PTT_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "PTT_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPttSourceType",
+    "variants": [
+      {
+        "name": "FROM_CONVERSATION",
+        "value": 0.0
+      },
+      {
+        "name": "FROM_VOICEMAIL",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPttSourceType",
+    "matches": "PTT_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PTT_SOURCE_TYPE",
+    "FROM_CONVERSATION",
+    "FROM_VOICEMAIL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPttComposerRecordingSession",
+      "WAWebPttWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

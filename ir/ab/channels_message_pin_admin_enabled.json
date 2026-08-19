@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_message_pin_admin_enabled",
+  "kind": "ab",
+  "name": "channels_message_pin_admin_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29516,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_message_pin_admin_enabled:\\s*\\[\\s*29516"
+  },
+  "literals": [
+    "channels_message_pin_admin_enabled",
+    "29516"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

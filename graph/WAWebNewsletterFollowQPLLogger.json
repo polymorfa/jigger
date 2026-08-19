@@ -1,0 +1,1 @@
+{"deps":["WAWebEncryptedRid","WAWebNewsletterQplGatingUtils","WAWebQplFlowWrapper","WAWebQplQuickPerformanceLoggerMarkerIds","qpl"],"dependents":["WAWebFollowNewsletter","WAWebNewsletterUnsubscribeAction"],"dependent_count":2,"exports":[{"name":"WAWebNewsletterFollowQPLLogger","used_by":[],"uses":0}]}

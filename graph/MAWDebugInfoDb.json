@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWCurrentUser","MAWIndexedDbMetadata","MAWWormOdsLogger","MessengerWebInitData","WAHex","Worm","WormEAR","WormIDbDriver","asyncToGeneratorRuntime","qpl"],"dependents":["MAWEBInitRestoreLogging"],"dependent_count":1,"exports":[{"name":"getMAWDebugInfoDb","used_by":["MAWEBInitRestoreLogging"],"uses":1}]}

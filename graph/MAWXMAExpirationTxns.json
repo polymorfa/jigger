@@ -1,0 +1,1 @@
+{"deps":["MAWAuthor","MAWDbMsgTxns","MAWDexieTable","MAWXMAUtils"],"dependents":["MAWRemoveExpiredXMAMsgsContentApi"],"dependent_count":1,"exports":[{"name":"getXMAShareReplyMsgsToUpdate","used_by":["MAWRemoveExpiredXMAMsgsContentApi"],"uses":1},{"name":"updateExpiredStoryReplyMsg","used_by":["MAWRemoveExpiredXMAMsgsContentApi"],"uses":1}]}

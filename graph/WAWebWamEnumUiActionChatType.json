@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebUiActionWamEvent","useWAWebConversationPanelMetrics"],"dependent_count":2,"exports":[{"name":"UI_ACTION_CHAT_TYPE","used_by":["WAWebUiActionWamEvent","useWAWebConversationPanelMetrics"],"uses":2}]}

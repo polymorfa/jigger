@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumCatalogBizAction","WAWebWamEnumCatalogEntryPoint","WAWebWamEnumDeepLinkOpenFrom","WAWebWamEnumLastMessageDirection"],"dependents":["WAWebCartLogEvents","WAWebProductCatalogEventUtils","WAWebProductCatalogLogEvents","WAWebProductCollectionLogEvents"],"dependent_count":4,"exports":[{"name":"CatalogBizWamEvent","used_by":[],"uses":0}]}

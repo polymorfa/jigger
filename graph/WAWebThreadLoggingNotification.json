@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebThreadInteractionDataNotificationWamEvent","err"],"dependents":["WAWebChatThreadLoggingEventUploader"],"dependent_count":1,"exports":[{"name":"ThreadInteractionNotificationWamTrigger","used_by":["WAWebChatThreadLoggingEventUploader"],"uses":1}]}

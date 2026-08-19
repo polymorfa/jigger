@@ -1,0 +1,1 @@
+{"deps":["decodeProtobuf"],"dependents":["MAWHandleEchoProtobufsRestoreApi","MAWParseXMAProtocol","MAWProtobufDeserializers","WADecodeIncomingMsg"],"dependent_count":4,"exports":[{"name":"parseMessageApplication","used_by":["MAWHandleEchoProtobufsRestoreApi","MAWParseXMAProtocol","MAWProtobufDeserializers","WADecodeIncomingMsg"],"uses":4}]}

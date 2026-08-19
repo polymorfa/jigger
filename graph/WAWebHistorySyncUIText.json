@@ -1,0 +1,1 @@
+{"deps":["fbt","react"],"dependents":["WAWebConversationLoadMoreMessagesHistorySync","WAWebHistorySyncComponents.react","WAWebHistorySyncInProgressPopup.react","WAWebHistorySyncPausedPopup.react","WAWebHistorySyncSettingItem.react","WAWebLoadingScreen.react"],"dependent_count":6,"exports":[]}

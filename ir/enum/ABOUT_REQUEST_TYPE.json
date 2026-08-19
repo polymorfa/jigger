@@ -1,0 +1,42 @@
+{
+  "id": "enum:ABOUT_REQUEST_TYPE",
+  "kind": "enum",
+  "name": "ABOUT_REQUEST_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAboutRequestType",
+    "variants": [
+      {
+        "name": "CREATE_NEW",
+        "value": 1.0
+      },
+      {
+        "name": "UPDATE_EXISTING",
+        "value": 2.0
+      },
+      {
+        "name": "CLEAR_EXISTING",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAboutRequestType",
+    "matches": "ABOUT_REQUEST_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ABOUT_REQUEST_TYPE",
+    "CREATE_NEW",
+    "UPDATE_EXISTING",
+    "CLEAR_EXISTING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAboutCreationWamEvent",
+      "WAWebAboutWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","CometRelay","WAWebBizAdCreationContinuousDurationUtils","WAWebBizAdCreationCurrencyUtils","WAWebBizAdCreationSummaryTotalsLineItems_estimatedTax.graphql","WAWebBizSummaryLineItem.react","WAWebFlex.react","react","react-compiler-runtime","withWAWebBizAdCreationSpecContext"],"dependents":["WAWebBizAdCreationSummaryContent.react"],"dependent_count":1,"exports":[]}

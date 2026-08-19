@@ -1,0 +1,118 @@
+{
+  "id": "mex:WAWebWaffleFXServiceDataQueryV2Mutation",
+  "kind": "mex",
+  "name": "WAWebWaffleFXServiceDataQueryV2Mutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9475021792620702",
+    "operation": "mutation",
+    "variables": [],
+    "selections": [
+      {
+        "name": "waffle_fx_service_data",
+        "ty": "WaffleFXServiceDataResponse",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "services",
+            "ty": "WaffleFXServiceData",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "waffle_sxs",
+                "ty": "WaffleCAL",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "waffle_di",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "waffle_da",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "waffle_xss",
+                    "ty": "WaffleXSetting",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "waffle_iaxe",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "waffle_x_surface",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "waffle_afs",
+                "ty": "WaffleAfsEligibility",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "waffle_wes",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "foa_to_wa_link_eligibility",
+                "ty": "WhatsAppFoaToWaLinkEligibility",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "is_eligible_to_link_to_unlinked_fb",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_eligible_to_link_to_linked_fb",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_eligible_to_link_to_unlinked_ig",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_eligible_to_link_to_linked_ig",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_eligible_to_link_to_unlinked_rl",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_eligible_to_link_to_linked_rl",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 9475021792620702\nmutation WaffleFXServiceDataQueryV2Mutation {\n  waffle_fx_service_data {  # WaffleFXServiceDataResponse\n    services {  # WaffleFXServiceData\n      waffle_sxs {  # [WaffleCAL]\n        waffle_di\n        waffle_da\n        waffle_xss {  # [WaffleXSetting]\n          waffle_iaxe\n          waffle_x_surface\n        }\n      }\n      waffle_afs {  # WaffleAfsEligibility\n        waffle_wes\n      }\n      foa_to_wa_link_eligibility {  # WhatsAppFoaToWaLinkEligibility\n        is_eligible_to_link_to_unlinked_fb\n        is_eligible_to_link_to_linked_fb\n        is_eligible_to_link_to_unlinked_ig\n        is_eligible_to_link_to_linked_ig\n        is_eligible_to_link_to_unlinked_rl\n        is_eligible_to_link_to_linked_rl\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebWaffleFXServiceDataQueryV2Mutation.graphql",
+    "matches": "id:\\s*\"9475021792620702\""
+  },
+  "literals": [
+    "9475021792620702",
+    "WAWebWaffleFXServiceDataQueryV2Mutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWaffleFXServiceDataQueryV2Mutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

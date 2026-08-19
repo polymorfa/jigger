@@ -1,0 +1,36 @@
+{
+  "id": "proto:WASignalWhisperTextProtocol.DeviceConsistencyCodeMessage",
+  "kind": "proto",
+  "name": "WASignalWhisperTextProtocol.DeviceConsistencyCodeMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "generation": {
+        "number": 1
+      },
+      "signature": {
+        "number": 2
+      }
+    },
+    "module": "WASignalWhisperTextProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalWhisperTextProtocol.pb",
+    "matches": "name = \"DeviceConsistencyCodeMessage\""
+  },
+  "literals": [
+    "DeviceConsistencyCodeMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WASignalCipher",
+      "WASignalGroupCipher",
+      "WAWebCryptoLibraryUtilsApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

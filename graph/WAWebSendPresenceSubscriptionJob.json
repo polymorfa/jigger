@@ -1,0 +1,1 @@
+{"deps":["WASmaxPresenceSubscribeRPC","WAWebGetChatRecordByAccountLid","WAWebWidToJid","asyncToGeneratorRuntime"],"dependents":["WAWebContactPresenceBridge"],"dependent_count":1,"exports":[{"name":"sendGroupPresenceSubscription","used_by":["WAWebContactPresenceBridge"],"uses":1},{"name":"sendUserPresenceSubscription","used_by":["WAWebContactPresenceBridge"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseCollection","WAWebBizLabelUtils","WAWebLabelItemModel"],"dependents":["WAWebLabelModel"],"dependent_count":1,"exports":[{"name":"LabelItemCollection","used_by":[],"uses":0}]}

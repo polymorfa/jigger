@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBaseNotification","WAWebChatFlowTypes","WAWebContactCollection","WAWebNotificationHelpers","WAWebNotificationIconUtils","WAWebParticipantListUtils","WAWebUserPrefsMeUser","WAWebWidFormat","asyncToGeneratorRuntime"],"dependents":["WAWebShowNewsletterRoleChangeNotification"],"dependent_count":1,"exports":[]}

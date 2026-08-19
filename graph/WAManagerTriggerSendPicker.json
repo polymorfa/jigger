@@ -1,0 +1,1 @@
+{"deps":["GeoSelector.react","GeoSelectorItem.react","MAIBAChatNavigationContext","MAIBAMessageContext","react","react-compiler-runtime","useJSON","useMAIBASendMessageFromInsideChat"],"dependents":[],"dependent_count":0,"exports":[{"name":"default","used_by":[],"uses":0}]}

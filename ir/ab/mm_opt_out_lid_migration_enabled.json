@@ -1,0 +1,45 @@
+{
+  "id": "ab:mm_opt_out_lid_migration_enabled",
+  "kind": "ab",
+  "name": "mm_opt_out_lid_migration_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16952,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_opt_out_lid_migration_enabled:\\s*\\[\\s*16952"
+  },
+  "literals": [
+    "mm_opt_out_lid_migration_enabled",
+    "16952"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMarketingMessagesUserFeedbackGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

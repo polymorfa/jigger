@@ -1,0 +1,1 @@
+{"deps":["WAWebFeatureFlagCollection"],"dependents":["WAWebAgentModelUtils","WAWebChatAssignmentUtils"],"dependent_count":2,"exports":[{"name":"isSubscriptionFeatureFlagEnabled","used_by":["WAWebAgentModelUtils","WAWebChatAssignmentUtils"],"uses":2}]}

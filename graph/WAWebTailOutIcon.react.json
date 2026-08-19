@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizBroadcastPreviewMessageBubble.react"],"dependent_count":2,"exports":[{"name":"TailOutIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizBroadcastPreviewMessageBubble.react"],"uses":2}]}

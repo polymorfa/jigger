@@ -1,0 +1,45 @@
+{
+  "id": "ab:group_history_new_user_threshold_secs",
+  "kind": "ab",
+  "name": "group_history_new_user_threshold_secs",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 30333,
+    "type": "int",
+    "default": "2592e3",
+    "alt_default": "2592e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_history_new_user_threshold_secs:\\s*\\[\\s*30333"
+  },
+  "literals": [
+    "group_history_new_user_threshold_secs",
+    "30333"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGroupHistoryPostJoinEligibility"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebOrderDetailStatusPill.react"],"dependent_count":2,"exports":[{"name":"LocalShippingIcon","used_by":["WAWebAllGeneratedIcons","WAWebOrderDetailStatusPill.react"],"uses":2}]}

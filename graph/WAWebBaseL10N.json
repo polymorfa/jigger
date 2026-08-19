@@ -1,0 +1,1 @@
+{"deps":["Locale","WAWeb-moment","WAWebEventEmitter","WAWebL10NNumbersPluginRegistry","WAWebLocaleToTranslation","WAWebSupportedLocales","err","filesize"],"dependents":["WAWebL10N"],"dependent_count":1,"exports":[{"name":"WAWebBaseL10n","used_by":["WAWebL10N"],"uses":1}]}

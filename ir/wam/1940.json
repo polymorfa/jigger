@@ -1,0 +1,50 @@
+{
+  "id": "wam:1940",
+  "kind": "wam",
+  "name": "WebcDbOpen",
+  "data": {
+    "kind": "wam",
+    "event_id": 1940,
+    "fields": {
+      "webcDbName": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "webc_db_name"
+      },
+      "webcDbOpenNumAttempts": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "webc_db_open_num_attempts"
+      },
+      "webcDbOpenWasSuccess": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "webc_db_open_was_success"
+      }
+    },
+    "weights": [
+      1,
+      1000,
+      2000
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcDbOpenWamEvent",
+    "matches": "WebcDbOpen:\\s*\\[\\s*1940"
+  },
+  "literals": [
+    "1940"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebWAWCStorage",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

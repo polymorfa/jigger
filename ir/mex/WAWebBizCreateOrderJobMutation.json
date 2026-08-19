@@ -1,0 +1,85 @@
+{
+  "id": "mex:WAWebBizCreateOrderJobMutation",
+  "kind": "mex",
+  "name": "WAWebBizCreateOrderJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26486627094287046",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_checkout_place_order",
+        "ty": "XWACheckoutPlaceOrderResponseSuccess",
+        "args": [
+          "request: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "order",
+            "ty": "XWACheckoutPlaceOrderResponseSuccessOrder",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "order_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "token",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "price",
+                "ty": "XWACheckoutPlaceOrderResponseSuccessPrice",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "currency",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "subtotal_amount",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "total_amount",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "price_status",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26486627094287046\nmutation BizCreateOrderJobMutation(\n  $input\n) {\n  xwa_checkout_place_order(request: $input) {  # XWACheckoutPlaceOrderResponseSuccess\n    order {  # XWACheckoutPlaceOrderResponseSuccessOrder\n      order_id\n      token\n      price {  # XWACheckoutPlaceOrderResponseSuccessPrice\n        currency\n        subtotal_amount\n        total_amount\n        price_status\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebBizCreateOrderJobMutation.graphql",
+    "matches": "id:\\s*\"26486627094287046\""
+  },
+  "literals": [
+    "26486627094287046",
+    "WAWebBizCreateOrderJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCreateOrderJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

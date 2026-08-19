@@ -1,0 +1,72 @@
+{
+  "id": "wam:1578",
+  "kind": "wam",
+  "name": "BannerEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 1578,
+    "fields": {
+      "bannerId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "banner_id"
+      },
+      "bannerOperation": {
+        "id": 2,
+        "type": "BANNER_OPERATIONS",
+        "wire": "banner_operation",
+        "enum_ref": "BANNER_OPERATIONS"
+      },
+      "bannerType": {
+        "id": 1,
+        "type": "BANNER_TYPES",
+        "wire": "banner_type",
+        "enum_ref": "BANNER_TYPES"
+      },
+      "deviceId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "device_id"
+      },
+      "notificationLogId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "notification_log_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebBannerEventWamEvent",
+    "matches": "BannerEvent:\\s*\\[\\s*1578"
+  },
+  "literals": [
+    "1578"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBannerOperations",
+      "WAWebWamEnumBannerTypes"
+    ],
+    "dependents": [
+      "WAWebBizAddPixKeyButton.react",
+      "WAWebBizAddPixKeyPromo.react",
+      "WAWebBizChargesInfoBanner.react",
+      "WAWebBizPixKeyPromo.react",
+      "WAWebNuxCoolOff",
+      "WAWebQuickPromotionCustomHandlingUtils",
+      "WAWebSmbUpsellBusinessInfoWithUpsellModal.react",
+      "WAWebSmbUpsellSmbAppUpsellModal.react",
+      "WAWebUpdatesTabPrivacyFooter.react",
+      "useWAWebContextualBanner"
+    ],
+    "dep_count": 3,
+    "dependent_count": 10
+  }
+}

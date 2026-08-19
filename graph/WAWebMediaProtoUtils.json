@@ -1,0 +1,1 @@
+{"deps":["isEmptyObject"],"dependents":["WAWebParseImageMessageProto","WAWebParseVideoMessageProto"],"dependent_count":2,"exports":[{"name":"isEmptyImageMessage","used_by":["WAWebParseImageMessageProto"],"uses":1},{"name":"isEmptyVideoMessage","used_by":["WAWebParseVideoMessageProto"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBusinessProfileLabels","WAWebFlex.react","WAWebPlusIcon.react","WAWebProductCollection","WDSButton.react","WDSIconIcGridOn.react","WDSIconIcSchedule.react","WDSText.react","react","react-compiler-runtime","useWAWebAddItemModal","useWDSMenu"],"dependents":["WAWebBusinessProductsAndServicesProfile.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,36 @@
+{
+  "id": "enum:ENUM_COMPLETE_CONTINUE",
+  "kind": "enum",
+  "name": "ENUM_COMPLETE_CONTINUE",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessageRequestEnums",
+    "variants": [
+      {
+        "name": "complete",
+        "value": "complete"
+      },
+      {
+        "name": "continue",
+        "value": "continue"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageRequestEnums",
+    "matches": "ENUM_COMPLETE_CONTINUE\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_COMPLETE_CONTINUE",
+    "complete",
+    "continue"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInMessageRequestSpamMarkerRequest"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

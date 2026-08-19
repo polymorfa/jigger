@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebModalManager","react"],"dependents":["WAWebDeleteChatDialogV2.react","WAWebDeleteChatPopup.react"],"dependent_count":2,"exports":[]}

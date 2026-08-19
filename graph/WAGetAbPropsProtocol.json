@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAResultOrError","WASmaxAbPropsGetExperimentConfigRPC","asyncToGeneratorRuntime"],"dependents":["WAAbPropsSync","WAWebAbPropsSyncJob"],"dependent_count":2,"exports":[{"name":"getAbPropsProtocol","used_by":["WAAbPropsSync","WAWebAbPropsSyncJob"],"uses":2}]}

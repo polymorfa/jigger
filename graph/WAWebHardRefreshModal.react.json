@@ -1,0 +1,1 @@
+{"deps":["fbt","$InternalEnum","WAWebDialogEventLogger","WAWebFbtCommon","WAWebModal.react","WAWebModalManager","WAWebUpdater","WAWebWamEnumDialogNameType","WDSButtonGroup.react","WDSText.react","react"],"dependents":["WAWebApp.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:kmp_syncd_engine_outgoing_processor_enabled",
+  "kind": "ab",
+  "name": "kmp_syncd_engine_outgoing_processor_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18234,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "kmp_syncd_engine_outgoing_processor_enabled:\\s*\\[\\s*18234"
+  },
+  "literals": [
+    "kmp_syncd_engine_outgoing_processor_enabled",
+    "18234"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSyncdRequestBuilder"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_biz_payment_template_click_signals",
+  "kind": "ab",
+  "name": "wa_biz_payment_template_click_signals",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33170,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_biz_payment_template_click_signals:\\s*\\[\\s*33170"
+  },
+  "literals": [
+    "wa_biz_payment_template_click_signals",
+    "33170"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

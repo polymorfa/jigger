@@ -1,0 +1,34 @@
+{
+  "id": "sig:message/key+meta",
+  "kind": "sig",
+  "name": "MessageDeliverMetaScheduledMessageMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "key",
+      "meta"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverMetaScheduledMessageMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "key",
+    "meta"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverDeliverLinkedDeviceScheduleMessageMixin",
+      "WASmaxInMessageDeliverGroupMixin"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

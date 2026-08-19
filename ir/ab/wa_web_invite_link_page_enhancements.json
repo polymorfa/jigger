@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_invite_link_page_enhancements",
+  "kind": "ab",
+  "name": "wa_web_invite_link_page_enhancements",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31210,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_invite_link_page_enhancements:\\s*\\[\\s*31210"
+  },
+  "literals": [
+    "wa_web_invite_link_page_enhancements",
+    "31210"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "mex:WAWebCanonicalHatchCommandGetQuery",
+  "kind": "mex",
+  "name": "WAWebCanonicalHatchCommandGetQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26009612435376221",
+    "operation": "query",
+    "variables": [],
+    "selections": [
+      {
+        "name": "wa_genai_hatch_command_get",
+        "ty": "WAGenAIHatchCommandGetResponse",
+        "plural": true,
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "name",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "description",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "prompt",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26009612435376221\nquery CanonicalHatchCommandGetQuery {\n  wa_genai_hatch_command_get {  # [WAGenAIHatchCommandGetResponse]\n    id\n    name\n    description\n    prompt\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebCanonicalHatchCommandGetQuery.graphql",
+    "matches": "id:\\s*\"26009612435376221\""
+  },
+  "literals": [
+    "26009612435376221",
+    "WAWebCanonicalHatchCommandGetQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCanonicalHatchCommandGetQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

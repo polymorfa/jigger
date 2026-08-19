@@ -1,0 +1,1 @@
+{"deps":["UserAgent"],"dependents":["MawSharedWorkerV4Gating","SharedWorkerBundleResource","SharedWorkerMigrationUtils","SharedWorkerV2ResourceExperimental","SharedWorkerV4Resource","WAWebStartBackendWorker","WebWorkerV2Resource","WebWorkerV4Resource"],"dependent_count":8,"exports":[{"name":"default","used_by":[],"uses":0}]}

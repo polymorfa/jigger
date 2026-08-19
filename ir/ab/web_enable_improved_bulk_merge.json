@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_enable_improved_bulk_merge",
+  "kind": "ab",
+  "name": "web_enable_improved_bulk_merge",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 19854,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_enable_improved_bulk_merge:\\s*\\[\\s*19854"
+  },
+  "literals": [
+    "web_enable_improved_bulk_merge",
+    "19854"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCacheStoreGatingUtil"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

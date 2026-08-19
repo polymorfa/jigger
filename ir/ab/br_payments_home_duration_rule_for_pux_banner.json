@@ -1,0 +1,45 @@
+{
+  "id": "ab:br_payments_home_duration_rule_for_pux_banner",
+  "kind": "ab",
+  "name": "br_payments_home_duration_rule_for_pux_banner",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22249,
+    "type": "int",
+    "default": 604800,
+    "alt_default": 604800
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "br_payments_home_duration_rule_for_pux_banner:\\s*\\[\\s*22249"
+  },
+  "literals": [
+    "br_payments_home_duration_rule_for_pux_banner",
+    "22249"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPaymentsPixBannerUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

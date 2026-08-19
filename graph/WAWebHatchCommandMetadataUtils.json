@@ -1,0 +1,1 @@
+{"deps":["WAWebBotUtils","WAWebHatchCommandCache","WAWebHatchGating"],"dependents":["WAWebSendTextMsgChatAction"],"dependent_count":1,"exports":[{"name":"resolveHatchCommandMetadata","used_by":["WAWebSendTextMsgChatAction"],"uses":1}]}

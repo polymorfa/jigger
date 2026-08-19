@@ -1,0 +1,1 @@
+{"deps":["WATagsLogger","gkx"],"dependents":["WAWebFtsWorker","WAWebVoipWebWasmWorker"],"dependent_count":2,"exports":[{"name":"initializeWAWebLogger","used_by":["WAWebFtsWorker","WAWebVoipWebWasmWorker"],"uses":2}]}

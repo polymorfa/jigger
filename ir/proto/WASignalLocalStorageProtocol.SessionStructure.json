@@ -1,0 +1,74 @@
+{
+  "id": "proto:WASignalLocalStorageProtocol.SessionStructure",
+  "kind": "proto",
+  "name": "WASignalLocalStorageProtocol.SessionStructure",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "aliceBaseKey": {
+        "number": 13
+      },
+      "localIdentityPublic": {
+        "number": 2
+      },
+      "localRegistrationId": {
+        "number": 11
+      },
+      "needsRefresh": {
+        "number": 12
+      },
+      "pendingKeyExchange": {
+        "number": 8,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure.PendingKeyExchange"
+      },
+      "pendingPreKey": {
+        "number": 9,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure.PendingPreKey"
+      },
+      "previousCounter": {
+        "number": 5
+      },
+      "receiverChains": {
+        "number": 7,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure.Chain"
+      },
+      "remoteIdentityPublic": {
+        "number": 3
+      },
+      "remoteRegistrationId": {
+        "number": 10
+      },
+      "rootKey": {
+        "number": 4
+      },
+      "senderChain": {
+        "number": 6,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure.Chain"
+      },
+      "sessionVersion": {
+        "number": 1
+      }
+    },
+    "module": "WASignalLocalStorageProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalLocalStorageProtocol.pb",
+    "matches": "name = \"SessionStructure\""
+  },
+  "literals": [
+    "SessionStructure"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WACryptoManager",
+      "WASignalKeys",
+      "WASignalSignatures",
+      "WAWebCryptoLibraryDbCallbacksApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

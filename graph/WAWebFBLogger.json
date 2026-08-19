@@ -1,0 +1,1 @@
+{"deps":["FBLogger"],"dependents":["WAWebAppWrapper.react","WAWebContactEditDrawer.react","WAWebInfraErrorLogger","WAWebLogger"],"dependent_count":4,"exports":[{"name":"WAWebFBLogger","used_by":["WAWebAppWrapper.react","WAWebContactEditDrawer.react","WAWebLogger"],"uses":3},{"name":"PROJECT","used_by":["WAWebInfraErrorLogger"],"uses":1}]}

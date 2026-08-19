@@ -1,0 +1,1 @@
+{"deps":["WAWebCallTimer.react","WAWebVoipCallStateUtils","WDSText.react","react","react-compiler-runtime","useWAWebIsKeyboardUser","useWAWebStableCallback","useWAWebThrottledCallback","useWAWebVoipCallHeaderVisibility"],"dependents":["WAWebVoipUiVideoCall.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxParseJid","WASmaxParseUtils"],"dependents":["WASmaxEdgeEdgeRoutingRPC"],"dependent_count":1,"exports":[{"name":"parseEdgeRoutingRequest","used_by":["WASmaxEdgeEdgeRoutingRPC"],"uses":1}]}

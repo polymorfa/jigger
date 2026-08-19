@@ -1,0 +1,1 @@
+{"deps":["WASmaxInSyncdNewPatchRequest","WASmaxOutSyncdNewPatchResponseClientAck","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WACreateHandleServerSyncNotificationBranch"],"dependent_count":1,"exports":[{"name":"receiveNewPatchRPC","used_by":["WACreateHandleServerSyncNotificationBranch"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAHashUtils","WATagsLogger"],"dependents":["WAMediaManager","WAMediaManagerCache"],"dependent_count":2,"exports":[{"name":"baseLogger","used_by":["WAMediaManagerCache"],"uses":1},{"name":"createDownloadLogger","used_by":["WAMediaManager"],"uses":1},{"name":"createUploadLogger","used_by":["WAMediaManager"],"uses":1}]}

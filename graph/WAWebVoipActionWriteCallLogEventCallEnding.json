@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebCallLogUtils","WAWebMsgKey","WAWebMsgType","WAWebToast.react","WAWebToastManager","WAWebUserPrefsMeUser","WAWebViewMode.flow","WAWebVoipActionWriteCallLogImpl","WAWebVoipOngoingCallCollection","asyncToGeneratorRuntime","compactMap","react"],"dependents":["WAWebVoipBridgeCallLogHandlers"],"dependent_count":1,"exports":[]}

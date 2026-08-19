@@ -1,0 +1,1 @@
+{"deps":["fbt","FBLogger","I64","LSIntEnum","LSReplyMessageAttachmentType","MAWBumpMessageMsgReplySnippet","MAWCurrentUser","MAWPostMentionXMASnippetFbt","MAWReplyBuilder"],"dependents":["MAWBridgeBuildMsg","MAWCreateOptimisticSecureMessage"],"dependent_count":2,"exports":[]}

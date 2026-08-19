@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBlockContactUtils","WAWebBlockContants","WAWebCmd","WAWebDeleteIcon.react","WAWebFbtCommon","WAWebFlex.react","WAWebSettingsBlockedIcon.react","WAWebTabOrder","WDSButton.react","react"],"dependents":["useWAWebConversationPanelCanCompose"],"dependent_count":1,"exports":[]}

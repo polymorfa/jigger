@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins"],"dependents":["WASmaxOutMessagePublishIndividualIndividualSingleMixin"],"dependent_count":1,"exports":[{"name":"mergeIndividualSingleContentBindingMixin","used_by":["WASmaxOutMessagePublishIndividualIndividualSingleMixin"],"uses":1}]}

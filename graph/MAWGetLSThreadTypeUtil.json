@@ -1,0 +1,1 @@
+{"deps":["LSIntEnum","WAJids"],"dependents":["MAWBridgeOccamadilloCreateE2EEMetadataThreadHandlerV2","MAWReportSendMessageSuccessResult"],"dependent_count":2,"exports":[{"name":"getLSThreadTypeFromJid","used_by":["MAWBridgeOccamadilloCreateE2EEMetadataThreadHandlerV2","MAWReportSendMessageSuccessResult"],"uses":2}]}

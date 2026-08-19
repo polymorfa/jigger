@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebInteractiveMessagesNativeFlowName","WAWebMsgType"],"dependents":["WAWebFormatMsgText","WAWebGalaxyFlowResponseLastMsg.react"],"dependent_count":2,"exports":[{"name":"isGalaxyFlowsResponseBubble","used_by":["WAWebFormatMsgText","WAWebGalaxyFlowResponseLastMsg.react"],"uses":2}]}

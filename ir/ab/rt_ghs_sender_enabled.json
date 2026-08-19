@@ -1,0 +1,45 @@
+{
+  "id": "ab:rt_ghs_sender_enabled",
+  "kind": "ab",
+  "name": "rt_ghs_sender_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24741,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "rt_ghs_sender_enabled:\\s*\\[\\s*24741"
+  },
+  "literals": [
+    "rt_ghs_sender_enabled",
+    "24741"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGroupHistoryGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

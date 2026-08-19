@@ -1,0 +1,1 @@
+{"deps":["WAGetMetaApi"],"dependents":["WAAbPropsInit"],"dependent_count":1,"exports":[{"name":"getAbProps","used_by":["WAAbPropsInit"],"uses":1}]}

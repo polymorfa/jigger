@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumFavoritesUpdateEntryPoint"],"dependents":["WAWebFavoritesLogging"],"dependent_count":1,"exports":[{"name":"MessagingFavoritesUpdateWamEvent","used_by":[],"uses":0}]}

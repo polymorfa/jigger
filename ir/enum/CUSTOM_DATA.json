@@ -1,0 +1,48 @@
+{
+  "id": "enum:CUSTOM_DATA",
+  "kind": "enum",
+  "name": "CUSTOM_DATA",
+  "data": {
+    "kind": "enum",
+    "module": "CustomConversionRuleEnum",
+    "variants": [
+      {
+        "name": "description",
+        "value": "Filter events that meet certain custom data"
+      },
+      {
+        "name": "name",
+        "value": "Custom Data"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "CustomConversionRuleEnum",
+    "matches": "CUSTOM_DATA\\s*[:=]"
+  },
+  "literals": [
+    "CUSTOM_DATA",
+    "description",
+    "name"
+  ],
+  "graph": {
+    "deps": [
+      "AdsCustomConversionAdvancedOperators",
+      "fbt"
+    ],
+    "dependents": [
+      "AdsEventsManagerCustomConversionCreationUtils",
+      "AdsEventsManagerCustomConversionPixelRuleContainer.react",
+      "AdsEventsManagerCustomConversionRule.react",
+      "AdsEventsManagerCustomConversionRuleUtils",
+      "AdsEventsManagerCustomConversionTokenizer.react",
+      "AdsEventsManagerLongConsiderationCustomConversionCreationDialog.react",
+      "AdsEventsManagerPostConversionCustomConversionRuleSelectorContainer.react",
+      "CustomConversionCreationUtils",
+      "CustomConversionRuleDefaultValues",
+      "DataSourceToRuleTypeMapping"
+    ],
+    "dep_count": 2,
+    "dependent_count": 10
+  }
+}

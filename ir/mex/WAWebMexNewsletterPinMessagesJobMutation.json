@@ -1,0 +1,81 @@
+{
+  "id": "mex:WAWebMexNewsletterPinMessagesJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterPinMessagesJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27165709459706559",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "input"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_pin_messages",
+        "ty": "XWA2Newsletter",
+        "args": [
+          "input: $input",
+          "newsletter_id: $newsletter_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "thread_metadata",
+            "ty": "XWA2NewsletterThreadMetadata",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "pinned_messages",
+                "ty": "XWA2NewsletterPinnedMessage",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "message_id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "expiry_ts",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_pin_messages",
+    "document": "# persisted document 27165709459706559\nmutation MexNewsletterPinMessagesJobMutation(\n  $newsletter_id\n  $input\n) {\n  xwa2_newsletter_pin_messages(input: $input, newsletter_id: $newsletter_id) {  # XWA2Newsletter\n    id\n    thread_metadata {  # XWA2NewsletterThreadMetadata\n      pinned_messages {  # [XWA2NewsletterPinnedMessage]\n        message_id\n        expiry_ts\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterPinMessagesJobMutation.graphql",
+    "matches": "id:\\s*\"27165709459706559\""
+  },
+  "literals": [
+    "27165709459706559",
+    "WAWebMexNewsletterPinMessagesJobMutation",
+    "xwa2_newsletter_pin_messages"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterPinMessagesJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

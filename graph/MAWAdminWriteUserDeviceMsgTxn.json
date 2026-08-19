@@ -1,0 +1,1 @@
+{"deps":["MAWDbMsgTxns","MAWDexieTable","MAWExternalId","MAWGetUserDeviceChangeAdminType","MAWLocalizationUtils","MAWUserJidWrapper","MAWWriteMsgTxns","WAJids","emptyFunction"],"dependents":[],"dependent_count":0,"exports":[{"name":"DeviceChange","used_by":[],"uses":0},{"name":"writeUserDeviceAdminMsg","used_by":[],"uses":0}]}

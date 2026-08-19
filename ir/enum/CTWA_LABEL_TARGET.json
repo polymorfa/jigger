@@ -1,0 +1,37 @@
+{
+  "id": "enum:CTWA_LABEL_TARGET",
+  "kind": "enum",
+  "name": "CTWA_LABEL_TARGET",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCtwaLabelTarget",
+    "variants": [
+      {
+        "name": "CHAT",
+        "value": 0.0
+      },
+      {
+        "name": "MESSAGE",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCtwaLabelTarget",
+    "matches": "CTWA_LABEL_TARGET\\s*[:=]"
+  },
+  "literals": [
+    "CTWA_LABEL_TARGET",
+    "CHAT",
+    "MESSAGE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwaLabelSignalWamEvent",
+      "WAWebSmbMarkAsXLabelAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "wam:3944",
+  "kind": "wam",
+  "name": "WaFsGroupJoinRequestAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 3944,
+    "fields": {
+      "groupJid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "group_jid"
+      },
+      "groupJoinRequestAction": {
+        "id": 2,
+        "type": "GROUP_JOIN_REQUEST_ACTION_TYPE",
+        "wire": "group_join_request_action",
+        "enum_ref": "GROUP_JOIN_REQUEST_ACTION_TYPE"
+      },
+      "groupJoinRequestEntrypoint": {
+        "id": 6,
+        "type": "GROUP_JOIN_REQUEST_ENTRYPOINT_TYPE",
+        "wire": "group_join_request_entrypoint",
+        "enum_ref": "GROUP_JOIN_REQUEST_ENTRYPOINT_TYPE"
+      },
+      "groupJoinRequestGroupsInCommon": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "group_join_request_groups_in_common"
+      },
+      "isSuccessful": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "is_successful"
+      },
+      "serverResponseTime": {
+        "id": 4,
+        "type": "TIMER",
+        "wire": "server_response_time"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWaFsGroupJoinRequestActionWamEvent",
+    "matches": "WaFsGroupJoinRequestAction:\\s*\\[\\s*3944"
+  },
+  "literals": [
+    "3944"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGroupJoinRequestActionType",
+      "WAWebWamEnumGroupJoinRequestEntrypointType"
+    ],
+    "dependents": [
+      "WAWebGroupJoinRequestMetricUtils"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

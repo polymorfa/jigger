@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebComposeBoxActions","WAWebCopyToClipboard","WAWebModalManager","WAWebOpenChatFlow.react","WAWebPsPhoneNumberHyperlinkWamEvent","WAWebToast.react","WAWebToastManager","WAWebUserPrefsMeUser","WAWebWamEnumPhoneNumHyperlinkActionType","react"],"dependents":["WAWebPhoneNumberWrapperMutatorComponent.react"],"dependent_count":1,"exports":[]}

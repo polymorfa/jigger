@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumChannelMembershipActionResult"],"dependents":["WAWebNewsletterMembershipActionLogger"],"dependent_count":1,"exports":[{"name":"ChannelMembershipActionEventWamEvent","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAiThreadContextMenu","WAWebAllGeneratedIcons"],"dependent_count":2,"exports":[{"name":"IcEditIcon","used_by":["WAWebAiThreadContextMenu","WAWebAllGeneratedIcons"],"uses":2}]}

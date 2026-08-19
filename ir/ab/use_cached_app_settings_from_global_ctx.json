@@ -1,0 +1,42 @@
+{
+  "id": "ab:use_cached_app_settings_from_global_ctx",
+  "kind": "ab",
+  "name": "use_cached_app_settings_from_global_ctx",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13428,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "use_cached_app_settings_from_global_ctx:\\s*\\[\\s*13428"
+  },
+  "literals": [
+    "use_cached_app_settings_from_global_ctx",
+    "13428"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

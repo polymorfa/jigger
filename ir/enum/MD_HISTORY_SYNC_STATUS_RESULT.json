@@ -1,0 +1,92 @@
+{
+  "id": "enum:MD_HISTORY_SYNC_STATUS_RESULT",
+  "kind": "enum",
+  "name": "MD_HISTORY_SYNC_STATUS_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdHistorySyncStatusResult",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "UNFINISHED",
+        "value": 2.0
+      },
+      {
+        "name": "FAIL_TO_DOWNLOAD",
+        "value": 3.0
+      },
+      {
+        "name": "MISSING_CHUNK",
+        "value": 4.0
+      },
+      {
+        "name": "PROTOBUF_ERROR",
+        "value": 5.0
+      },
+      {
+        "name": "FAIL_TO_STORE",
+        "value": 6.0
+      },
+      {
+        "name": "OTHER_ERROR",
+        "value": 7.0
+      },
+      {
+        "name": "IN_PROGRESS",
+        "value": 8.0
+      },
+      {
+        "name": "FAIL_TO_RECEIVE",
+        "value": 9.0
+      },
+      {
+        "name": "FAIL_TO_STORE_CHUNK",
+        "value": 10.0
+      },
+      {
+        "name": "FAIL_TO_FETCH",
+        "value": 11.0
+      },
+      {
+        "name": "FAIL_TO_PREPROCESS",
+        "value": 12.0
+      },
+      {
+        "name": "FAIL_TO_ENCRYPT",
+        "value": 13.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdHistorySyncStatusResult",
+    "matches": "MD_HISTORY_SYNC_STATUS_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "MD_HISTORY_SYNC_STATUS_RESULT",
+    "SUCCESS",
+    "UNFINISHED",
+    "FAIL_TO_DOWNLOAD",
+    "MISSING_CHUNK",
+    "PROTOBUF_ERROR",
+    "FAIL_TO_STORE",
+    "OTHER_ERROR",
+    "IN_PROGRESS",
+    "FAIL_TO_RECEIVE",
+    "FAIL_TO_STORE_CHUNK",
+    "FAIL_TO_FETCH",
+    "FAIL_TO_PREPROCESS",
+    "FAIL_TO_ENCRYPT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLogHistorySyncStatusAfterPairingJob",
+      "WAWebMdBootstrapHistorySyncStatusAfterPairingWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

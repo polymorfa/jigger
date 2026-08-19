@@ -1,0 +1,62 @@
+{
+  "id": "mex:WAWebMexChangeNewsletterOwnerJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexChangeNewsletterOwnerJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9546742745432473",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "user_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "user_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_change_owner",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "newsletter_id: $newsletter_id",
+          "user_id: $user_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_change_owner",
+    "document": "# persisted document 9546742745432473\nmutation MexChangeNewsletterOwnerJobMutation(\n  $newsletter_id\n  $user_id\n) {\n  xwa2_newsletter_change_owner(newsletter_id: $newsletter_id, user_id: $user_id) {  # XWA2NewsletterMutationResponse\n    __typename\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexChangeNewsletterOwnerJobMutation.graphql",
+    "matches": "id:\\s*\"9546742745432473\""
+  },
+  "literals": [
+    "9546742745432473",
+    "WAWebMexChangeNewsletterOwnerJobMutation",
+    "xwa2_newsletter_change_owner"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexChangeNewsletterOwnerJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

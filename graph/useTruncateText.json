@@ -1,0 +1,1 @@
+{"deps":["react"],"dependents":["WAFlowsChip.react","WAFlowsChipsSelector.react","WAFlowsMediaPicker.react","WAFlowsOptIn.react","WaFlowsItemDetailDescription.react"],"dependent_count":5,"exports":[{"name":"useTruncateText","used_by":["WAFlowsChip.react","WAFlowsChipsSelector.react","WAFlowsMediaPicker.react","WAFlowsOptIn.react","WaFlowsItemDetailDescription.react"],"uses":5}]}

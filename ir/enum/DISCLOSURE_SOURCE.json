@@ -1,0 +1,43 @@
+{
+  "id": "enum:DISCLOSURE_SOURCE",
+  "kind": "enum",
+  "name": "DISCLOSURE_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDisclosureSource",
+    "variants": [
+      {
+        "name": "BLOCKING",
+        "value": 0.0
+      },
+      {
+        "name": "NON_BLOCKING",
+        "value": 1.0
+      },
+      {
+        "name": "INFO",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDisclosureSource",
+    "matches": "DISCLOSURE_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "DISCLOSURE_SOURCE",
+    "BLOCKING",
+    "NON_BLOCKING",
+    "INFO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMmDisclosureStateEventWamEvent",
+      "WAWebMmDisclosureStateFsEventWamEvent",
+      "WAWebMmSignalSharingLoggingEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

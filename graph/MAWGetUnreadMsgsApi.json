@@ -1,0 +1,1 @@
+{"deps":["MAWDbMsg","MAWDbMsgTxns","MAWDexieTable","MAWInMemoryThreadStore","MAWIndexedDb","MAWTransactionMode","WAJids","WAMsgType"],"dependents":["MAWMarkThreadAsRead"],"dependent_count":1,"exports":[{"name":"getUnreadMsgs","used_by":["MAWMarkThreadAsRead"],"uses":1},{"name":"length","used_by":[],"uses":0}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:enhanced_mention_suggestions_min_mention_char_count",
+  "kind": "ab",
+  "name": "enhanced_mention_suggestions_min_mention_char_count",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28089,
+    "type": "int",
+    "default": -1,
+    "alt_default": -1
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enhanced_mention_suggestions_min_mention_char_count:\\s*\\[\\s*28089"
+  },
+  "literals": [
+    "enhanced_mention_suggestions_min_mention_char_count",
+    "28089"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMentionPickerPlugin"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

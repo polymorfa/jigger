@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebStickerPanelContentStickerPackStickersFavorite.react","WAWebStickerPanelContentStickerPackStickersRecentMd.react"],"dependent_count":2,"exports":[{"name":"filterAvatarStickers","used_by":["WAWebStickerPanelContentStickerPackStickersFavorite.react","WAWebStickerPanelContentStickerPackStickersRecentMd.react"],"uses":2}]}

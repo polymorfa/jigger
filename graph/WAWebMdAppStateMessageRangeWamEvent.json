@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils"],"dependents":["WAWebCollectionHandlerWamMutation","WAWebWamProcessWorkerData"],"dependent_count":2,"exports":[{"name":"MdAppStateMessageRangeWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

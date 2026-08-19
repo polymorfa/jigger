@@ -1,0 +1,1 @@
+{"deps":["fbt","DangerouslyAccessReactElementInternals_DO_NOT_USE_IN_NEW_CODE","GeoPrivateMakeComponent","GeoTabDropdown.react","GeoTabFocusGroup","GeoTabGroupContext","emptyFunction","gkx","react","react-compiler-runtime","stylex","useGeoPrivateResponsiveTabs","useGeoTheme","usePrevious"],"dependents":["WAMFlowsCTWAEditorModal.react"],"dependent_count":1,"exports":[]}

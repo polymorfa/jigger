@@ -1,0 +1,67 @@
+{
+  "id": "enum:MEDIA_DOWNLOAD_MODE_TYPE",
+  "kind": "enum",
+  "name": "MEDIA_DOWNLOAD_MODE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMediaDownloadModeType",
+    "variants": [
+      {
+        "name": "MANUAL",
+        "value": 1.0
+      },
+      {
+        "name": "FULL",
+        "value": 2.0
+      },
+      {
+        "name": "PREFETCH",
+        "value": 3.0
+      },
+      {
+        "name": "HEADER",
+        "value": 4.0
+      },
+      {
+        "name": "THUMBNAIL",
+        "value": 5.0
+      },
+      {
+        "name": "EXPRESS_PATH_DOWNLOAD",
+        "value": 6.0
+      },
+      {
+        "name": "PREFETCH_FOR_THUMB_PREVIEW",
+        "value": 7.0
+      },
+      {
+        "name": "FULL_FOR_THUMB_PREVIEW",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMediaDownloadModeType",
+    "matches": "MEDIA_DOWNLOAD_MODE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MEDIA_DOWNLOAD_MODE_TYPE",
+    "MANUAL",
+    "FULL",
+    "PREFETCH",
+    "HEADER",
+    "THUMBNAIL",
+    "EXPRESS_PATH_DOWNLOAD",
+    "PREFETCH_FOR_THUMB_PREVIEW",
+    "FULL_FOR_THUMB_PREVIEW"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaDownload2WamEvent",
+      "WAWebWamMediaMetricUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["CurrentUser","WAWebCanonicalUtils","err"],"dependents":["WAWebDebugLabyrinth","WAWebLabyrinthWasmCreateBackup"],"dependent_count":2,"exports":[{"name":"getWaCanonicalUserFbid","used_by":["WAWebDebugLabyrinth","WAWebLabyrinthWasmCreateBackup"],"uses":2}]}

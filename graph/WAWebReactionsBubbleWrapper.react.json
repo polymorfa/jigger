@@ -1,0 +1,1 @@
+{"deps":["WAWebAddOnBubblesContainerConditions","WAWebKeyboardHotKeys.react","WAWebReactionsBubble.react","WAWebReactionsUtils","WAWebUimUie.react","WAWebUimUieMenu.react","react","react-compiler-runtime"],"dependents":["WAWebNewsletterReactionsBubbleContainer.react","WAWebReactionsBubbleContainer.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

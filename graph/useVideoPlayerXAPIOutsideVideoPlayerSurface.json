@@ -1,0 +1,1 @@
+{"deps":["emptyObject","react","react-compiler-runtime","useStable"],"dependents":["WAWebStatusPlayer.react","WAWebVideo.react"],"dependent_count":2,"exports":[{"name":"useVideoPlayerXAPIOutsideVideoPlayerSurface","used_by":["WAWebStatusPlayer.react","WAWebVideo.react"],"uses":2}]}

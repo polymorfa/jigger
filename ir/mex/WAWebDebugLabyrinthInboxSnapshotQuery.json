@@ -1,0 +1,132 @@
+{
+  "id": "mex:WAWebDebugLabyrinthInboxSnapshotQuery",
+  "kind": "mex",
+  "name": "WAWebDebugLabyrinthInboxSnapshotQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26544537655223129",
+    "operation": "query",
+    "variables": [
+      "params"
+    ],
+    "args": [
+      {
+        "name": "params"
+      }
+    ],
+    "selections": [
+      {
+        "name": "get_wa_mailbox",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "snapshot_threads_with_messages",
+            "ty": "WAMailboxSnapshotResponse",
+            "args": [
+              "params: $params"
+            ],
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "items_with_messages",
+                "ty": "WAMailboxSnapshotItemWithMessages",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "item",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "__typename",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "messages",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "__typename",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "encrypted_payload",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "encryption_version",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on WABusinessMessagingUser",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "... on WALabyrinthAccount",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "... on WAWhatsAppMailboxAccount",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26544537655223129\nquery DebugLabyrinthInboxSnapshotQuery(\n  $params\n) {\n  get_wa_mailbox {\n    __typename\n    snapshot_threads_with_messages(params: $params) {  # WAMailboxSnapshotResponse\n      items_with_messages {  # [WAMailboxSnapshotItemWithMessages]\n        item {\n          __typename\n          id\n        }\n        messages {  # list\n          __typename\n          encrypted_payload\n          encryption_version\n          id\n        }\n      }\n    }\n    ... on WABusinessMessagingUser {\n      id\n    }\n    ... on WALabyrinthAccount {\n      id\n    }\n    ... on WAWhatsAppMailboxAccount {\n      id\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebDebugLabyrinthInboxSnapshotQuery.graphql",
+    "matches": "id:\\s*\"26544537655223129\""
+  },
+  "literals": [
+    "26544537655223129",
+    "WAWebDebugLabyrinthInboxSnapshotQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDebugLabyrinthInboxSnapshotQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

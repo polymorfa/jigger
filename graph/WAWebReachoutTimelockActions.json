@@ -1,0 +1,1 @@
+{"deps":["WAWebChatCollection","WAWebReachoutTimelockUtils"],"dependents":["WAWebMultiSelectChatList.react","WAWebNewChatDrawer.react"],"dependent_count":2,"exports":[{"name":"maybeSetCanSendMsgWhileTimelockedProp","used_by":["WAWebMultiSelectChatList.react","WAWebNewChatDrawer.react"],"uses":2}]}

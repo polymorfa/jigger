@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_chat_threads_pin_max_count",
+  "kind": "ab",
+  "name": "ai_chat_threads_pin_max_count",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25520,
+    "type": "int",
+    "default": 3,
+    "alt_default": 3
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_chat_threads_pin_max_count:\\s*\\[\\s*25520"
+  },
+  "literals": [
+    "ai_chat_threads_pin_max_count",
+    "25520"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

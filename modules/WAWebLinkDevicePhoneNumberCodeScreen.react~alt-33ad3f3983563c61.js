@@ -1,0 +1,191 @@
+__d("WAWebLinkDevicePhoneNumberCodeScreen.react", [
+	"fbt",
+	"WALogger",
+	"WATimeUtils",
+	"WAWebAltDeviceLinkingApi",
+	"WAWebAltDeviceLinkingQpl",
+	"WAWebAlternateDeviceLinkingLink.react",
+	"WAWebClickableLink.react",
+	"WAWebCmd",
+	"WAWebFlex.react",
+	"WAWebLinkDeviceAction",
+	"WAWebLinkDeviceCodeView.react",
+	"WAWebLinkDeviceCodeViewCodeType",
+	"WAWebLinkDeviceEvents",
+	"WAWebLinkDevicePhoneNumberCodeCells.react",
+	"WAWebPhoneUtils",
+	"WAWebRefreshLargeIcon.react",
+	"WAWebSpinner.react",
+	"WAWebUnstyledButton.react",
+	"WDSMargins.stylex",
+	"WDSPaddings.stylex",
+	"nullthrows",
+	"react",
+	"useWAWebListener",
+	"useWAWebOnUnmount",
+	"useWAWebStableCallback",
+	"useWAWebTimeout"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u, c, d, m, p, _ = p || (p = o("react")), f = p, g = f.useEffect, h = f.useState, y = { marginInlineEnd10: {
+		marginInlineEnd: "x1sa5p1d",
+		$$css: !0
+	} }, C = 5, b = "link-device-phone-number-code-screen-instructions", v = {
+		phoneCodeWarning: {
+			backgroundColor: "x1c2u55m",
+			color: "x10e1pyi",
+			borderStartStartRadius: "x1rgw4pv",
+			borderStartEndRadius: "x1vjm0to",
+			borderEndEndRadius: "xnqoqkk",
+			borderEndStartRadius: "x16lu3ki",
+			height: "xng8ra",
+			width: "xdzyupr",
+			marginTop: "x1rdy4ex",
+			$$css: !0
+		},
+		phoneCodeWarningIcon: {
+			color: "x10e1pyi",
+			$$css: !0
+		},
+		errorTitle: {
+			lineHeight: "x1u7k74",
+			$$css: !0
+		},
+		errorAction: {
+			fontWeight: "x1ny7uwr",
+			fontSize: "x1f6kntn",
+			$$css: !0
+		}
+	};
+	function S(t) {
+		var n = t.code, a = h(0), i = a[0], l = a[1], p = h(!0), f = p[0], y = p[1], v = h(!1), S = v[0], L = v[1];
+		g(function() {
+			y(!1), o("WAWebCmd").Cmd.onInitialLoadReadyFromBridge();
+		}, []);
+		var E = n == null || i > C, k = h(!1), I = k[0], T = k[1], D = r("useWAWebStableCallback")(function(t) {
+			var n = i + 1;
+			t != null && t.resetRefreshCount ? n = 0 : n = i + 1, l(n), L(!1), T(!1), n <= C && (o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["alt pairing: regenerating link code..."]))), o("WAWebLinkDeviceAction").refreshAltLinkingCode());
+		}), x = o("useWAWebTimeout").useTimeout(function() {
+			o("WAWebAltDeviceLinkingQpl").addPointToCurrentMarker("primary_hello_expire"), D();
+		}, 1 * o("WATimeUtils").MINUTE_MILLISECONDS), $ = x[0], P = x[1];
+		o("useWAWebListener").useListener(o("WAWebLinkDeviceEvents").WAWebLinkDeviceEvents, "link_device_events:primary_hello_received", function() {
+			o("WALogger").LOG(u || (u = babelHelpers.taggedTemplateLiteralLoose(["alt pairing: primary hello rcvd, 1min code regen timer"]))), $();
+		}), o("useWAWebListener").useListener(o("WAWebLinkDeviceEvents").WAWebLinkDeviceEvents, "link_device_events:force_manual_refresh", function() {
+			o("WALogger").LOG(c || (c = babelHelpers.taggedTemplateLiteralLoose(["alt pairing: force manual refresh received"]))), o("WAWebAltDeviceLinkingQpl").addPointToCurrentMarker("force_manual_refresh"), L(!0), o("WAWebAltDeviceLinkingApi").initializeAltDeviceLinking();
+		});
+		var N = o("useWAWebTimeout").useTimeout(function() {
+			o("WALogger").LOG(d || (d = babelHelpers.taggedTemplateLiteralLoose(["alt pairing: regen code, 6min TTL expired"]))), o("WAWebAltDeviceLinkingQpl").addPointToCurrentMarker("code_ttl_expire"), D();
+		}, 3.25 * o("WATimeUtils").MINUTE_MILLISECONDS), M = N[0], w = N[1];
+		g(function() {
+			E || M();
+		}, [M, E]);
+		var A = r("useWAWebStableCallback")(function() {
+			P(), w();
+		});
+		g(function() {
+			if (i > C || S) {
+				A(), T(!0);
+				return;
+			}
+		}, [
+			i,
+			S,
+			D,
+			A
+		]), r("useWAWebOnUnmount")(function() {
+			o("WALogger").LOG(m || (m = babelHelpers.taggedTemplateLiteralLoose(["alt pairing: canceling link code timers"]))), A();
+		});
+		var F;
+		f || E ? F = _.jsx("div", {
+			className: "x78zum5 x6s0dn4 xl56j7k x10wjd1d",
+			children: _.jsx(o("WAWebSpinner.react").Spinner, {})
+		}) : I ? F = _.jsx(R, { onClick: function() {
+			D({ resetRefreshCount: !0 });
+		} }) : F = _.jsx(r("WAWebLinkDevicePhoneNumberCodeCells.react"), {
+			code: r("nullthrows")(t.code),
+			"aria-details": b
+		});
+		var O = o("WAWebPhoneUtils").formatPhone(t.phoneNumber);
+		return _.jsx(o("WAWebLinkDeviceCodeView.react").LinkDeviceCodeView, {
+			codeType: o("WAWebLinkDeviceCodeViewCodeType").LinkDeviceCodeViewCodeType.PHONE_NUMBER_LINK_CODE,
+			apiCmd: t.apiCmd,
+			title: s._(
+				/*BTDS*/
+				""
+			),
+			subtitle: s._(
+				/*BTDS*/
+				"",
+				[s._implicitParam("=m2", _.jsx("strong", { children: s._(
+					/*BTDS*/
+					"",
+					[s._param("phone-number", _.jsx("span", {
+						dir: "ltr",
+						children: O
+					}))]
+				) })), s._implicitParam("=m5", _.jsx(r("WAWebClickableLink.react"), {
+					className: "x1v5yvga",
+					onClick: t.onClickEditPhoneNumber,
+					children: s._(
+						/*BTDS*/
+						""
+					)
+				}))]
+			),
+			alternativeLinkDeviceMethodHint: _.jsx(r("WAWebAlternateDeviceLinkingLink.react"), {
+				codeType: o("WAWebLinkDeviceCodeViewCodeType").LinkDeviceCodeViewCodeType.PHONE_NUMBER_LINK_CODE,
+				onClick: t.onClickLinkWithQr
+			}),
+			children: _.jsx("div", babelHelpers.extends({}, {
+				0: { className: "x1n2onr6 x78zum5 x1okw0bk x6s0dn4 xl56j7k" },
+				1: { className: "x1n2onr6 x78zum5 x1okw0bk x6s0dn4 xl56j7k x14atkfc" }
+			}[!E << 0], {
+				dir: "ltr",
+				"aria-live": "polite",
+				"aria-atomic": "true",
+				"aria-label": s._(
+					/*BTDS*/
+					""
+				),
+				children: F
+			}))
+		});
+	}
+	S.displayName = S.name + " [from " + i.id + "]";
+	function R(e) {
+		var t;
+		return _.jsx(r("WAWebUnstyledButton.react"), {
+			xstyle: [
+				v.phoneCodeWarning,
+				o("WDSMargins.stylex").wdsMargins.marginHorAuto,
+				o("WDSPaddings.stylex").wdsPaddings.paddingHor20
+			],
+			onClick: e.onClick,
+			children: _.jsxs((t = o("WAWebFlex.react")).FlexRow, { children: [_.jsx(t.FlexItem, {
+				align: "center",
+				xstyle: y.marginInlineEnd10,
+				children: _.jsx(o("WAWebRefreshLargeIcon.react").RefreshLargeIcon, {
+					width: 32,
+					height: 32,
+					iconXstyle: v.phoneCodeWarningIcon
+				})
+			}), _.jsxs(t.FlexColumn, {
+				align: "start",
+				justify: "start",
+				children: [_.jsx(t.FlexItem, {
+					xstyle: v.errorTitle,
+					children: s._(
+						/*BTDS*/
+						""
+					)
+				}), _.jsx(t.FlexItem, {
+					xstyle: v.errorAction,
+					children: s._(
+						/*BTDS*/
+						""
+					)
+				})]
+			})] })
+		}, "expiry");
+	}
+	R.displayName = R.name + " [from " + i.id + "]", l.default = S;
+}), 226);

@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins","WASmaxOutNewslettersMessageDirections","WAWap"],"dependents":["WASmaxOutNewslettersNewsletterMessageRequestIQPayloadMixin"],"dependent_count":1,"exports":[{"name":"mergeNewsletterMessageRequestPayloadMixin","used_by":["WASmaxOutNewslettersNewsletterMessageRequestIQPayloadMixin"],"uses":1}]}

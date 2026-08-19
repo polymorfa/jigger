@@ -1,0 +1,1 @@
+{"deps":["WATimeUtils","WAWebApiPeerMessageStore","WAWebMsgKey","WAWebMsgType","WAWebOutgoingPeerMsgKey","WAWebSendAppStateSyncMsgJob","WAWebUserPrefsMeUser","asyncToGeneratorRuntime"],"dependents":["WAWebSyncdFatal"],"dependent_count":1,"exports":[{"name":"sendAppStateFatalExceptionNotification","used_by":["WAWebSyncdFatal"],"uses":1}]}

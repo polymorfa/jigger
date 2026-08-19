@@ -1,0 +1,1 @@
+{"deps":["FBLogger","WebAsyncStorage","asyncToGeneratorRuntime","promiseDone","react","react-compiler-runtime"],"dependents":["MAWCommonSetup"],"dependent_count":1,"exports":[{"name":"useIsIDBOperational","used_by":["MAWCommonSetup"],"uses":1},{"name":"isIDBOperational","used_by":[],"uses":0}]}

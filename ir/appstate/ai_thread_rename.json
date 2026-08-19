@@ -1,0 +1,55 @@
+{
+  "id": "appstate:ai_thread_rename",
+  "kind": "appstate",
+  "name": "AiThreadRename",
+  "data": {
+    "kind": "appstate",
+    "index_name": "ai_thread_rename",
+    "collection": "regular_low",
+    "version": 7,
+    "value_field": "aiThreadRenameAction",
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebAiThreadRenameSync",
+    "matches": "Actions\\.AiThreadRename"
+  },
+  "literals": [
+    "ai_thread_rename",
+    "AiThreadRename",
+    "aiThreadRenameAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebAiThreadCreationUtils",
+      "WAWebAiThreadTypeUtils",
+      "WAWebBackendApi",
+      "WAWebBotBaseGating",
+      "WAWebBulkCreateOrUpdateThreadsMetadata",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdCoreApi",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdGetThread",
+      "WAWebSyncdIndexUtils",
+      "WAWebWid",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime",
+      "isStringNotNullAndNotWhitespaceOnly",
+      "nullthrows"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebRenameAiThreadAction"
+    ],
+    "dep_count": 21,
+    "dependent_count": 2
+  }
+}

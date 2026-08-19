@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebMsgType","fbs"],"dependents":["WAWebAiThreadCell.react","WAWebMaybeGetAppendedAiThreadAttributes"],"dependent_count":2,"exports":[{"name":"createAiThreadTitleForMessage","used_by":["WAWebAiThreadCell.react","WAWebMaybeGetAppendedAiThreadAttributes"],"uses":2}]}

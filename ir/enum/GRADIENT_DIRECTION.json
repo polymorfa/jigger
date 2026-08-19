@@ -1,0 +1,75 @@
+{
+  "id": "enum:GRADIENT_DIRECTION",
+  "kind": "enum",
+  "name": "GRADIENT_DIRECTION",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "BL_TR",
+        "value": "BL_TR"
+      },
+      {
+        "name": "BOTTOM_TOP",
+        "value": "BOTTOM_TOP"
+      },
+      {
+        "name": "BR_TL",
+        "value": "BR_TL"
+      },
+      {
+        "name": "LEFT_RIGHT",
+        "value": "LEFT_RIGHT"
+      },
+      {
+        "name": "RIGHT_LEFT",
+        "value": "RIGHT_LEFT"
+      },
+      {
+        "name": "TL_BR",
+        "value": "TL_BR"
+      },
+      {
+        "name": "TOP_BOTTOM",
+        "value": "TOP_BOTTOM"
+      },
+      {
+        "name": "TR_BL",
+        "value": "TR_BL"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "GRADIENT_DIRECTION\\s*[:=]"
+  },
+  "literals": [
+    "GRADIENT_DIRECTION",
+    "BL_TR",
+    "BOTTOM_TOP",
+    "BR_TL",
+    "LEFT_RIGHT",
+    "RIGHT_LEFT",
+    "TL_BR",
+    "TOP_BOTTOM",
+    "TR_BL"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

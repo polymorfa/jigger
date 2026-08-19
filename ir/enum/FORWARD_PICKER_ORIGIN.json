@@ -1,0 +1,36 @@
+{
+  "id": "enum:FORWARD_PICKER_ORIGIN",
+  "kind": "enum",
+  "name": "FORWARD_PICKER_ORIGIN",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumForwardPickerOrigin",
+    "variants": [
+      {
+        "name": "STATUS_VIEWER",
+        "value": 1.0
+      },
+      {
+        "name": "PTT_WIDGET",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumForwardPickerOrigin",
+    "matches": "FORWARD_PICKER_ORIGIN\\s*[:=]"
+  },
+  "literals": [
+    "FORWARD_PICKER_ORIGIN",
+    "STATUS_VIEWER",
+    "PTT_WIDGET"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebForwardSendWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

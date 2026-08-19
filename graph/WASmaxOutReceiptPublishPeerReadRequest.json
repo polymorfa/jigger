@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxOutReceiptHistorySyncTypeMixin","WASmaxOutReceiptIndividualDeviceMixin","WASmaxOutReceiptSingleMixin"],"dependents":["WASmaxReceiptPublishPeerReadRPC"],"dependent_count":1,"exports":[{"name":"makePublishPeerReadRequest","used_by":["WASmaxReceiptPublishPeerReadRPC"],"uses":1}]}

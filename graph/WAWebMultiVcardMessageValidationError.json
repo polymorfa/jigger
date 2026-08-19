@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum","WAWebHandleMsgError"],"dependents":["WAWebParseMultiVcardMessageProto"],"dependent_count":1,"exports":[{"name":"MultiVcardValidationErrorCode","used_by":["WAWebParseMultiVcardMessageProto"],"uses":1},{"name":"MultiVcardMessageValidationError","used_by":[],"uses":0}]}

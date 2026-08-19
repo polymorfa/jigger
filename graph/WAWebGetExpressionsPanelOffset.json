@@ -1,0 +1,1 @@
+{"deps":["WAWebDropdown.react","WAWebL10N"],"dependents":["WAWebExpressionsPanelPicker.react"],"dependent_count":1,"exports":[{"name":"getExpressionsPanelOffset","used_by":["WAWebExpressionsPanelPicker.react"],"uses":1}]}

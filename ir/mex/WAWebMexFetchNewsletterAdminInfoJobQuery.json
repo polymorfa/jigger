@@ -1,0 +1,98 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterAdminInfoJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterAdminInfoJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26278439461859188",
+    "operation": "query",
+    "variables": [
+      "newsletter_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_admin",
+        "ty": "XWA2NewsletterAdmin",
+        "args": [
+          "newsletter_id: $newsletter_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "admin_count",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "admin_profile",
+            "ty": "XWA2NewsletterAdminProfile",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "name",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "picture",
+                "ty": "XWA2Picture",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "direct_path",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "admin_settings",
+            "ty": "XWA2NewsletterAdminSettings",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "admin_profiles_enabled",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_admin",
+    "document": "# persisted document 26278439461859188\nquery MexFetchNewsletterAdminInfoJobQuery(\n  $newsletter_id\n) {\n  xwa2_newsletter_admin(newsletter_id: $newsletter_id) {  # XWA2NewsletterAdmin\n    admin_count\n    admin_profile {  # XWA2NewsletterAdminProfile\n      id\n      name\n      picture {  # XWA2Picture\n        id\n        direct_path\n      }\n    }\n    admin_settings {  # XWA2NewsletterAdminSettings\n      admin_profiles_enabled\n    }\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterAdminInfoJobQuery.graphql",
+    "matches": "id:\\s*\"26278439461859188\""
+  },
+  "literals": [
+    "26278439461859188",
+    "WAWebMexFetchNewsletterAdminInfoJobQuery",
+    "xwa2_newsletter_admin"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterAdminInfoJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

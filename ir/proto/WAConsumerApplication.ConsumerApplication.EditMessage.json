@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.EditMessage",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.EditMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "key": {
+        "number": 1
+      },
+      "message": {
+        "number": 2
+      },
+      "timestampMs": {
+        "number": 3
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.EditMessage\""
+  },
+  "literals": [
+    "EditMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

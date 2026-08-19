@@ -1,0 +1,1 @@
+{"deps":["WAWebChatStatus","WAWebChatTextStatusWrapper","WAWebContactGetters","WAWebContactImage.react","WAWebListsLabelGatingUtils","WAWebName.react","WAWebTextStatusGatingUtils","react"],"dependents":["WAWebContact.MenuItem"],"dependent_count":1,"exports":[{"name":"getContactCellContent","used_by":["WAWebContact.MenuItem"],"uses":1}]}

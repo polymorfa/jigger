@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatListSearch.react","WAWebChatlistPanelFunctionalLegacy.react","WAWebSearchUserJourneyLogger","WAWebSearchUserJourneyWamEvent"],"dependent_count":4,"exports":[{"name":"SEARCH_UJ_ITEM_TYPE","used_by":["WAWebChatListSearch.react","WAWebChatlistPanelFunctionalLegacy.react","WAWebSearchUserJourneyLogger","WAWebSearchUserJourneyWamEvent"],"uses":4}]}

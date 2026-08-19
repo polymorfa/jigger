@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebApiDeviceList","WAWebCoexV2GatingUtils","WAWebCoexV2HostedContactUtils","WAWebUserPrefsMeUser","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["WAWebSendMsgChatAction","WAWebSendTextMsgChatAction"],"dependent_count":2,"exports":[{"name":"genIsCoexV2RelayEligibleSend","used_by":["WAWebSendMsgChatAction","WAWebSendTextMsgChatAction"],"uses":2}]}

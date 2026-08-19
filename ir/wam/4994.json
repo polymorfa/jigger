@@ -1,0 +1,132 @@
+{
+  "id": "wam:4994",
+  "kind": "wam",
+  "name": "StatusCrosspostRequest",
+  "data": {
+    "kind": "wam",
+    "event_id": 4994,
+    "fields": {
+      "cacSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "cac_session_id"
+      },
+      "crosspostDestination": {
+        "id": 2,
+        "type": "CROSSPOST_DESTINATION_TYPE",
+        "wire": "crosspost_destination",
+        "enum_ref": "CROSSPOST_DESTINATION_TYPE"
+      },
+      "crosspostErrorType": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "crosspost_error_type"
+      },
+      "crosspostOrigin": {
+        "id": 4,
+        "type": "CROSSPOST_ORIGIN_TYPE",
+        "wire": "crosspost_origin",
+        "enum_ref": "CROSSPOST_ORIGIN_TYPE"
+      },
+      "defaultStatusPrivacySettings": {
+        "id": 5,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "default_status_privacy_settings",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "isAutoCrosspostEnabledInSettings": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "is_auto_crosspost_enabled_in_settings"
+      },
+      "isAutoCrossposted": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "is_auto_crossposted"
+      },
+      "statusCrossPostPerPostStatusPrivacySetting": {
+        "id": 8,
+        "type": "PRIVACY_SETTINGS_VALUE_TYPE",
+        "wire": "status_cross_post_per_post_status_privacy_setting",
+        "enum_ref": "PRIVACY_SETTINGS_VALUE_TYPE"
+      },
+      "statusCrosspostEntryPoint": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "status_crosspost_entry_point"
+      },
+      "statusCrosspostEventType": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "status_crosspost_event_type"
+      },
+      "statusCrosspostFlowTraceId": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "status_crosspost_flow_trace_id"
+      },
+      "statusCrosspostMediaType": {
+        "id": 9,
+        "type": "MEDIA_TYPE",
+        "wire": "status_crosspost_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "statusCrosspostResult": {
+        "id": 10,
+        "type": "CROSSPOST_RESULT_TYPE",
+        "wire": "status_crosspost_result",
+        "enum_ref": "CROSSPOST_RESULT_TYPE"
+      },
+      "statusCrosspostShareType": {
+        "id": 13,
+        "type": "STATUS_CROSSPOST_SHARE_TYPE_ENUM",
+        "wire": "status_crosspost_share_type",
+        "enum_ref": "STATUS_CROSSPOST_SHARE_TYPE_ENUM"
+      },
+      "statusCrosspostTraceId": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "status_crosspost_trace_id"
+      },
+      "statusId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "status_id"
+      },
+      "userJourneyEventMs": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStatusCrosspostRequestWamEvent",
+    "matches": "StatusCrosspostRequest:\\s*\\[\\s*4994"
+  },
+  "literals": [
+    "4994"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCrosspostDestinationType",
+      "WAWebWamEnumCrosspostOriginType",
+      "WAWebWamEnumCrosspostResultType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumPrivacySettingsValueType",
+      "WAWebWamEnumStatusCrosspostShareTypeEnum"
+    ],
+    "dependents": [
+      "WAWebCrosspostingHelper"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

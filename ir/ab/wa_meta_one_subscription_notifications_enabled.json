@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_meta_one_subscription_notifications_enabled",
+  "kind": "ab",
+  "name": "wa_meta_one_subscription_notifications_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29866,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_meta_one_subscription_notifications_enabled:\\s*\\[\\s*29866"
+  },
+  "literals": [
+    "wa_meta_one_subscription_notifications_enabled",
+    "29866"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

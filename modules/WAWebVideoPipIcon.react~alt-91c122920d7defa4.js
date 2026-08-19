@@ -1,0 +1,62 @@
+__d("WAWebVideoPipIcon.react", [
+	"WAWebSvgComponentBase",
+	"WAWebSvgIconHelpers",
+	"react",
+	"stylex"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u = s || (s = o("react")), c = "video-pip";
+	function d(t) {
+		var n = o("WAWebSvgIconHelpers").resolveSvgIcon(t, c, 24, 24, "0 0 24 24");
+		return u.jsx(o("WAWebSvgComponentBase").BaseSvgSpan, babelHelpers.extends({}, n.otherProps, {
+			name: n.iconName,
+			children: u.jsxs("svg", {
+				viewBox: n.viewBox,
+				height: n.height,
+				width: n.width,
+				preserveAspectRatio: "xMidYMid meet",
+				className: (e || (e = r("stylex")))(n.iconXstyle),
+				version: "1.1",
+				children: [
+					u.jsx("title", { children: n.iconName }),
+					u.jsx("defs", { children: u.jsxs("filter", {
+						id: "WAWebVideoPipIcon__a",
+						width: "173.7%",
+						height: "200%",
+						x: "-39.5%",
+						y: "-46.4%",
+						filterUnits: "objectBoundingBox",
+						children: [
+							u.jsx("feOffset", {
+								dy: 1,
+								in: "SourceAlpha",
+								result: "shadowOffsetOuter1"
+							}),
+							u.jsx("feGaussianBlur", {
+								in: "shadowOffsetOuter1",
+								result: "shadowBlurOuter1",
+								stdDeviation: 1
+							}),
+							u.jsx("feColorMatrix", {
+								in: "shadowBlurOuter1",
+								result: "shadowMatrixOuter1",
+								values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+							}),
+							u.jsxs("feMerge", { children: [u.jsx("feMergeNode", { in: "shadowMatrixOuter1" }), u.jsx("feMergeNode", { in: "SourceGraphic" })] })
+						]
+					}) }),
+					u.jsxs("g", {
+						fill: "#FFFFFF",
+						fillRule: "evenodd",
+						filter: "url(#WAWebVideoPipIcon__a)",
+						transform: "translate(3 4)",
+						children: [u.jsx("path", { d: "M11.35 6h6c.66 0 1.2-.54 1.2-1.2V1.2c0-.66-.54-1.2-1.2-1.2h-6c-.66 0-1.2.54-1.2 1.2v3.6c0 .66.54 1.2 1.2 1.2" }), u.jsx("path", {
+							fillRule: "nonzero",
+							d: "M8.65 1.87v1.5H1.2c-.25 0-.45.2-.45.45v8.6c0 .25.2.45.45.45h13.4c.25 0 .45-.2.45-.45V7.17h1.5v5.25c0 1.08-.87 1.95-1.95 1.95H1.2a1.95 1.95 0 0 1-1.95-1.95v-8.6c0-1.07.87-1.95 1.95-1.95h7.45Z"
+						})]
+					})
+				]
+			})
+		}));
+	}
+	d.displayName = d.name + " [from " + i.id + "]", l.VideoPipIcon = d;
+}), 98);

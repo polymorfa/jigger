@@ -1,0 +1,35 @@
+{
+  "id": "appstate:detected_outcomes_status_action",
+  "kind": "appstate",
+  "name": "DetectedOutcomeStatus",
+  "data": {
+    "kind": "appstate",
+    "index_name": "detected_outcomes_status_action",
+    "collection": "regular",
+    "version": 1
+  },
+  "evidence": {
+    "module": "WAWebDetectedOutcomesStatusSync",
+    "matches": "Actions\\.DetectedOutcomeStatus"
+  },
+  "literals": [
+    "detected_outcomes_status_action",
+    "DetectedOutcomeStatus"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebBackendApi",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "enum:DEVICE_ARCH",
+  "kind": "enum",
+  "name": "DEVICE_ARCH",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDeviceArch",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "ARM64",
+        "value": 1.0
+      },
+      {
+        "name": "ARMV7",
+        "value": 2.0
+      },
+      {
+        "name": "X86",
+        "value": 3.0
+      },
+      {
+        "name": "X86_64",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDeviceArch",
+    "matches": "DEVICE_ARCH\\s*[:=]"
+  },
+  "literals": [
+    "DEVICE_ARCH",
+    "UNKNOWN",
+    "ARM64",
+    "ARMV7",
+    "X86",
+    "X86_64"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

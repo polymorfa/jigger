@@ -1,0 +1,1 @@
+{"deps":["err"],"dependents":["MAWFTSIndexedDb","MAWJobsIndexedDb","MAWLogIndexedDb","MAWTransactor"],"dependent_count":4,"exports":[{"name":"getErrorObject","used_by":["MAWFTSIndexedDb","MAWJobsIndexedDb","MAWLogIndexedDb","MAWTransactor"],"uses":4}]}

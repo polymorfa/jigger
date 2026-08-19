@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMemberLabelCreateUpdateModalPreview.react"],"dependent_count":2,"exports":[{"name":"TailInIcon","used_by":["WAWebAllGeneratedIcons","WAWebMemberLabelCreateUpdateModalPreview.react"],"uses":2}]}

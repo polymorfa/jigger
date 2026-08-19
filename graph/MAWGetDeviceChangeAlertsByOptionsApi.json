@@ -1,0 +1,1 @@
+{"deps":["WmiMetadataDeviceChangeAlertsReader"],"dependents":["MAWBridgeHandlers"],"dependent_count":1,"exports":[{"name":"getDeviceChangeAlertsByOptions","used_by":["MAWBridgeHandlers"],"uses":1}]}

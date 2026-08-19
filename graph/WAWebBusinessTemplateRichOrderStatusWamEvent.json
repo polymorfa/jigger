@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumChatsFolderType","WAWebWamEnumContactType"],"dependents":["WAWebRichOrderStatusLogger"],"dependent_count":1,"exports":[{"name":"BusinessTemplateRichOrderStatusWamEvent","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WATimeUtils","WAWebLidMigrationUtils","WAWebMexClient","WAWebMexCreateNewsletterAdminInviteJobMutation.graphql","WAWebNewsletterRpcUtils","asyncToGeneratorRuntime","nullthrows"],"dependents":["WAWebNewsletterSendMsgAction"],"dependent_count":1,"exports":[{"name":"createNewsletterAdminInvite","used_by":["WAWebNewsletterSendMsgAction"],"uses":1}]}

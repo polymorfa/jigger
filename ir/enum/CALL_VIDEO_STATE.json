@@ -1,0 +1,66 @@
+{
+  "id": "enum:CALL_VIDEO_STATE",
+  "kind": "enum",
+  "name": "CALL_VIDEO_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallVideoState",
+    "variants": [
+      {
+        "name": "DISABLED",
+        "value": 0.0
+      },
+      {
+        "name": "ENABLED",
+        "value": 1.0
+      },
+      {
+        "name": "PAUSED",
+        "value": 2.0
+      },
+      {
+        "name": "UPGRADE_REQUEST",
+        "value": 3.0
+      },
+      {
+        "name": "MUTED",
+        "value": 6.0
+      },
+      {
+        "name": "UNKNOWN_PEER",
+        "value": 10.0
+      },
+      {
+        "name": "XR_2D_CODEC_AVATAR_ENABLED",
+        "value": 12.0
+      },
+      {
+        "name": "ERROR",
+        "value": 20.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallVideoState",
+    "matches": "CALL_VIDEO_STATE\\s*[:=]"
+  },
+  "literals": [
+    "CALL_VIDEO_STATE",
+    "DISABLED",
+    "ENABLED",
+    "PAUSED",
+    "UPGRADE_REQUEST",
+    "MUTED",
+    "UNKNOWN_PEER",
+    "XR_2D_CODEC_AVATAR_ENABLED",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

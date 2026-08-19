@@ -1,0 +1,1 @@
+{"deps":["MAWBridge","MAWEBLSInWorkerSwitch"],"dependents":["MAWBackend","MAWBridgeHandlers","MAWStartupMI"],"dependent_count":3,"exports":[{"name":"listenForEBLSEbEnabledStateChangesAndSendToMainThread","used_by":["MAWBackend","MAWStartupMI"],"uses":2},{"name":"sendEBLSEbEnabledStateToMainThread","used_by":["MAWBridgeHandlers"],"uses":1}]}

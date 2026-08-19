@@ -1,0 +1,1 @@
+{"deps":["WAWebNewsletterGatingUtils"],"dependents":["useWAWebForwardedNewsletterMessageClickHandler"],"dependent_count":1,"exports":[{"name":"showForwardedNewsletterMessageIndicator","used_by":["useWAWebForwardedNewsletterMessageClickHandler"],"uses":1}]}

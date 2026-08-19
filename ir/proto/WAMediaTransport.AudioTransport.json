@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAMediaTransport.AudioTransport",
+  "kind": "proto",
+  "name": "WAMediaTransport.AudioTransport",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "ancillary": {
+        "number": 2,
+        "type_name": "WAMediaTransport.AudioTransport.Ancillary"
+      },
+      "integral": {
+        "number": 1,
+        "type_name": "WAMediaTransport.AudioTransport.Integral"
+      }
+    },
+    "module": "WAMediaTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMediaTransport.pb",
+    "matches": "name = \"AudioTransport\""
+  },
+  "literals": [
+    "AudioTransport"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "EncryptedBackupsCreateAttachmentContext",
+      "MAWAsConsumerApplication",
+      "MAWEncodeMediaTransportProtocol",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWMpsMigrationProtobufCorrectnessCheckerArmadilloComparisons",
+      "MAWParseNoteReplyMsg",
+      "MAWParseRavenMsg",
+      "MAWProtobufDeserializers",
+      "WAParseConsumerMessageProtocol",
+      "WAParseMediaTransportProtocol",
+      "getMediaTypeFromConsumerMessage"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

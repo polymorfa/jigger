@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebDeveloperMenuDeveloperDrawer.react"],"dependent_count":2,"exports":[{"name":"E2EStatusIcon","used_by":["WAWebAllGeneratedIcons","WAWebDeveloperMenuDeveloperDrawer.react"],"uses":2}]}

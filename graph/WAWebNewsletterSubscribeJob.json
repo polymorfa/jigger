@@ -1,0 +1,1 @@
+{"deps":["WAJobOrchestratorTypes","WAWebMexJoinNewsletterJob","WAWebOrchestratorNonPersistedJob"],"dependents":["WAWebNewsletterSubscribeAction"],"dependent_count":1,"exports":[{"name":"subscribeToNewsletter","used_by":["WAWebNewsletterSubscribeAction"],"uses":1}]}

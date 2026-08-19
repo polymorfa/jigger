@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumWebContactListStartNewChatType"],"dependents":["WAWebNewChatMetricUtils"],"dependent_count":1,"exports":[{"name":"WebContactListStartNewChatWamEvent","used_by":[],"uses":0}]}

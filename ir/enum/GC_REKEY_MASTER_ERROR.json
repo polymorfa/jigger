@@ -1,0 +1,41 @@
+{
+  "id": "enum:GC_REKEY_MASTER_ERROR",
+  "kind": "enum",
+  "name": "GC_REKEY_MASTER_ERROR",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGcRekeyMasterError",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 0.0
+      },
+      {
+        "name": "FAILED_TO_GENERATE_NEW_E2EE_KEYS",
+        "value": 1.0
+      },
+      {
+        "name": "FAILED_TO_UPDATE_PARTICIPANT_KEYS",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGcRekeyMasterError",
+    "matches": "GC_REKEY_MASTER_ERROR\\s*[:=]"
+  },
+  "literals": [
+    "GC_REKEY_MASTER_ERROR",
+    "NONE",
+    "FAILED_TO_GENERATE_NEW_E2EE_KEYS",
+    "FAILED_TO_UPDATE_PARTICIPANT_KEYS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

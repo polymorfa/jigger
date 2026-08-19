@@ -1,0 +1,1 @@
+{"deps":["WAWebUprGating","WAWebUprPaymentRequest"],"dependents":["WAWebMessageComponent.react"],"dependent_count":1,"exports":[{"name":"isUprPayload","used_by":["WAWebMessageComponent.react"],"uses":1},{"name":"isUprMessage","used_by":[],"uses":0}]}

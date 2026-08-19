@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAArmadilloApplication.Armadillo.SubProtocolPayload",
+  "kind": "proto",
+  "name": "WAArmadilloApplication.Armadillo.SubProtocolPayload",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "futureProof": {
+        "number": 1
+      }
+    },
+    "module": "WAArmadilloApplication.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloApplication.pb",
+    "matches": "name = \"Armadillo.SubProtocolPayload\""
+  },
+  "literals": [
+    "SubProtocolPayload"
+  ],
+  "graph": {
+    "deps": [
+      "WAArmadilloXMA.pb",
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsArmadilloApplication",
+      "MAWAsMessageApplication",
+      "MAWEphemeralUtil",
+      "MAWEphemeralUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseArmadilloProtocol",
+      "MAWParseScreenshotActionMsg",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "MpsRavenToBridge",
+      "MpsScreenshotActionToBridgeMsg",
+      "SendMsgArgsToProtobuf",
+      "WAConvertAppData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 16
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "enum:SESSION_SCOPE_TYPE",
+  "kind": "enum",
+  "name": "SESSION_SCOPE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSessionScopeType",
+    "variants": [
+      {
+        "name": "DEFAULT",
+        "value": 0.0
+      },
+      {
+        "name": "STATUS",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSessionScopeType",
+    "matches": "SESSION_SCOPE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SESSION_SCOPE_TYPE",
+    "DEFAULT",
+    "STATUS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebE2eRetryRejectWamEvent",
+      "WAWebIncomingMessageDropWamEvent",
+      "WAWebMessageHighRetryCountWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent",
+      "WAWebSessionScopeWamUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

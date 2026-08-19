@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_pdfn_tos_master_notice_id",
+  "kind": "ab",
+  "name": "ai_pdfn_tos_master_notice_id",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15295,
+    "type": "string",
+    "default": " ",
+    "alt_default": " "
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_pdfn_tos_master_notice_id:\\s*\\[\\s*15295"
+  },
+  "literals": [
+    "ai_pdfn_tos_master_notice_id",
+    "15295"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

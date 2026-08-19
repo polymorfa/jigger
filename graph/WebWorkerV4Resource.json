@@ -1,0 +1,1 @@
+{"deps":["Promise","WebWorkerV4DedicatedDynamicData","err","forEachObject","getAsyncParamsFromCurrentPageURI","getWorkerInitScriptSPINParams","nullthrows","supportsModuleWorker"],"dependents":["WAWebStartBackendWorker"],"dependent_count":1,"exports":[{"name":"createDedicatedV4WebWorker","used_by":["WAWebStartBackendWorker"],"uses":1}]}

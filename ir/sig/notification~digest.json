@@ -1,0 +1,33 @@
+{
+  "id": "sig:notification/digest",
+  "kind": "sig",
+  "name": "PreKeysNotificationDigestRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "digest"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPreKeysNotificationDigestRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "digest"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInPreKeysServerNotificationMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxPreKeysNotificationDigestRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

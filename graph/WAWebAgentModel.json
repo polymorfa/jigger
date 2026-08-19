@@ -1,0 +1,1 @@
+{"deps":["WAWebAgentCollection","WAWebBaseModel"],"dependents":["WAWebAgentCollection","WAWebAssignedAgentsCollection"],"dependent_count":2,"exports":[{"name":"Agent","used_by":["WAWebAgentCollection","WAWebAssignedAgentsCollection"],"uses":2}]}

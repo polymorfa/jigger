@@ -1,0 +1,342 @@
+__d("WAWebProcessCampaignNotificationAction", [
+	"WALogger",
+	"WAWebBizBroadcastCampaignAPI",
+	"WAWebBizBroadcastCampaignMsgKeyUtils",
+	"WAWebBizBroadcastCampaignNotifier",
+	"WAWebBizBroadcastMediaProcessor",
+	"WAWebBizBroadcastSystemMessageManager",
+	"WAWebBroadcastCampaignSync",
+	"WAWebBroadcastDatabaseJob",
+	"WAWebBroadcastMsgDataUtils",
+	"WAWebBusinessBroadcastUserJourneyLogger",
+	"WAWebCatalogCollection",
+	"WAWebFileUtils",
+	"WAWebMsgType",
+	"WAWebPendingBusinessBroadcastAPI",
+	"WAWebPendingBusinessBroadcastSerialization",
+	"WAWebProductCatalogMessage",
+	"WAWebSchemaBusinessBroadcastCampaign",
+	"WAWebSchemaPendingBusinessBroadcastMessage",
+	"WAWebSendBroadcastMsgAction",
+	"WAWebSendMsgResultAction",
+	"WAWebUserPrefsMeUser",
+	"WAWebWidFactory",
+	"getErrorSafe"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u, c, d, m, p, _, f, g, h, y, C, b, v, S, R, L, E, k, I, T, D;
+	function x(e) {
+		switch (e) {
+			case 400: return "bad_request";
+			case 401: return "not_authorized";
+			case 402: return "no_available_funds";
+			case 405: return "invalid_campaign";
+			case 420: return "invalid_campaign_for_sending";
+			case 429: return "insufficient_free_quota";
+			case 482: return "integrity_permanent_blocked";
+			default: return "unknown";
+		}
+	}
+	async function $(e) {
+		var t, n = await o("WAWebBizBroadcastCampaignAPI").getBizBroadcastCampaignByAdGroupId(e);
+		if (n == null) return null;
+		var r = n.pendingBroadcastMessageId;
+		if (r == null) {
+			var a;
+			return {
+				adGroupId: (a = n.adGroupId) != null ? a : "",
+				broadcastJid: n.broadcastJid,
+				ctaButtonJson: null,
+				mediaFile: null,
+				messageBody: null,
+				sendTimestamp: n.scheduledTimestamp
+			};
+		}
+		var i = await o("WAWebSchemaPendingBusinessBroadcastMessage").getPendingBusinessBroadcastMessageTable().get(r);
+		if (i == null) {
+			var l;
+			return {
+				adGroupId: (l = n.adGroupId) != null ? l : "",
+				broadcastJid: n.broadcastJid,
+				ctaButtonJson: null,
+				mediaFile: null,
+				messageBody: null,
+				sendTimestamp: n.scheduledTimestamp
+			};
+		}
+		var s = {
+			adGroupId: (t = n.adGroupId) != null ? t : "",
+			broadcastJid: n.broadcastJid,
+			freeReservedMsgs: n.reservedQuota,
+			pendingBroadcastMessageId: r,
+			sendTimestamp: n.scheduledTimestamp
+		};
+		return o("WAWebPendingBusinessBroadcastSerialization").deserializePendingBusinessBroadcast(s, i);
+	}
+	function P(e) {
+		var t, n, r, o, a;
+		return {
+			adId: (t = e.adId) != null ? t : void 0,
+			broadcastJid: e.broadcastJid,
+			createTimestamp: e.createdTimestamp,
+			deviceId: e.deviceId,
+			msgId: (n = e.msgId) != null ? n : void 0,
+			name: (r = e.campaignName) != null ? r : void 0,
+			reservedQuota: (o = e.reservedQuota) != null ? o : void 0,
+			scheduledTimestamp: (a = e.scheduledTimestamp) != null ? a : void 0,
+			status: e.status
+		};
+	}
+	async function N(t, n, a) {
+		var i = await o("WAWebBizBroadcastCampaignAPI").getBizBroadcastCampaignByAdGroupId(t);
+		if (i != null) {
+			var l = i.pendingBroadcastMessageId, s = {
+				adId: n,
+				msgId: a != null ? a : i.msgId,
+				pendingBroadcastMessageId: null,
+				status: o("WAWebSchemaBusinessBroadcastCampaign").BusinessBroadcastCampaignStatus.SENT
+			}, u = babelHelpers.extends({}, i, s), c = Date.now(), d = r("WAWebBroadcastCampaignSync").getCampaignMutation(i.campaignId, P(u), c);
+			await o("WAWebBizBroadcastCampaignNotifier").updateCampaignWithSyncAndNotify(i.campaignId, s, [d]), o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Updated campaign status to SENT"]))), l != null && await o("WAWebSchemaPendingBusinessBroadcastMessage").getPendingBusinessBroadcastMessageTable().remove(l);
+		}
+	}
+	async function M(e, t) {
+		var n = await o("WAWebBizBroadcastCampaignAPI").getBizBroadcastCampaignByAdGroupId(e);
+		if (n != null) {
+			var a = {
+				adId: t,
+				status: o("WAWebSchemaBusinessBroadcastCampaign").BusinessBroadcastCampaignStatus.FAILED
+			}, i = babelHelpers.extends({}, n, a), l = Date.now(), u = r("WAWebBroadcastCampaignSync").getCampaignMutation(n.campaignId, P(i), l);
+			await o("WAWebBizBroadcastCampaignNotifier").updateCampaignWithSyncAndNotify(n.campaignId, a, [u]), o("WALogger").LOG(s || (s = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Updated campaign status to FAILED"])));
+		}
+	}
+	async function w(e, t, n, r, a, i) {
+		var l = o("WAWebWidFactory").createWid(e);
+		await o("WAWebCatalogCollection").CatalogCollection.findProduct({
+			catalogWid: l,
+			productId: t
+		});
+		var s = o("WAWebCatalogCollection").CatalogCollection.get(l), d = s == null ? void 0 : s.productCollection.get(t);
+		if (d == null) return o("WALogger").LOG(u || (u = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Product not found in catalog after findProduct"]))), null;
+		var m = o("WAWebProductCatalogMessage").createProductMsgSnapshot(d), p = d.getProductImageCollectionHead();
+		p != null && await p.triggerImageUpdate();
+		var _ = d.getHeadImageFile();
+		if (_ == null) return o("WALogger").LOG(c || (c = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Product image not available after triggerImageUpdate"]))), null;
+		var f = await o("WAWebBizBroadcastMediaProcessor").processMediaForBroadcast(_, n.length, r, a), g = f.freshMedia, h = f.mediaMsgData, y = o("WAWebBroadcastMsgDataUtils").createBroadcastProductMsgData(h, m);
+		return o("WAWebSendBroadcastMsgAction").sendBroadcastMsgAction({
+			beforeSend: o("WAWebBizBroadcastMediaProcessor").createBroadcastMediaUploadCallback(g.type),
+			businessMetadata: i,
+			msgData: y,
+			recipients: n
+		});
+	}
+	async function A(e, t, n, r, a, i) {
+		var l = o("WAWebWidFactory").createWid(e);
+		await o("WAWebCatalogCollection").CatalogCollection.find(l);
+		var s = o("WAWebCatalogCollection").CatalogCollection.get(l), u = s == null ? void 0 : s.getMostRecentlyApprovedProduct(), c = u == null ? void 0 : u.getProductImageCollectionHead();
+		c != null && await c.triggerImageUpdate();
+		var m = u == null ? void 0 : u.getHeadImageFile();
+		if (m == null) return o("WALogger").ERROR(d || (d = babelHelpers.taggedTemplateLiteralLoose([
+			"[broadcast:campaign-notification] Full catalog send failed: product image unavailable after fetch. catalogWid=",
+			", hasProduct=",
+			", hasHeadImage=",
+			""
+		])), e, String(u != null), String((u == null ? void 0 : u.getProductImageCollectionHead()) != null)).sendLogs("business-broadcast-full-catalog-send-failed"), null;
+		var p = JSON.parse(a), _ = await o("WAWebBizBroadcastMediaProcessor").processMediaWithCTAForBroadcast(m, t.length, n, r, p), f = _.freshMedia, g = _.mediaMsgData, h = await o("WAWebSendBroadcastMsgAction").sendBroadcastMsgAction({
+			beforeSend: o("WAWebBizBroadcastMediaProcessor").createBroadcastMediaUploadCallback(f.type),
+			businessMetadata: i,
+			msgData: g,
+			recipients: t
+		});
+		return {
+			mediaType: f.type,
+			result: h
+		};
+	}
+	async function F(e, t, n) {
+		await o("WAWebPendingBusinessBroadcastAPI").deletePendingBroadcast(e), await M(e, t), await o("WAWebBizBroadcastSystemMessageManager").updateBizBroadcastSystemMessage(n);
+	}
+	async function O(e, t) {
+		var n = e.adGroupId, r = e.adId, a = e.broadcastJid, i = e.businessMetadata, l = e.catalogWid, s = e.ctaButtonJson, u = e.productId, c = e.recipients;
+		if (l == null) return null;
+		var d = o("WAWebBizBroadcastMediaProcessor").getAttachmentType(l, u, null);
+		if (u != null) {
+			o("WALogger").LOG(m || (m = babelHelpers.taggedTemplateLiteralLoose([
+				"[broadcast:campaign-notification] Sending single product broadcast, listId=",
+				", catalogWid=",
+				", productId=",
+				""
+			])), a, l, u);
+			var f = await w(l, u, c, a, t, i);
+			return f == null ? (await F(n, r, a), o("WAWebBusinessBroadcastUserJourneyLogger").BusinessBroadcastUserJourneyLogger.sendBroadcastResult(c.length, "failure", null, "Product fetch or image download failed", "unknown", d), null) : {
+				mediaType: null,
+				result: f
+			};
+		}
+		if (s != null) {
+			o("WALogger").LOG(p || (p = babelHelpers.taggedTemplateLiteralLoose([
+				"[broadcast:campaign-notification] Sending full catalog broadcast, listId=",
+				", catalogWid=",
+				""
+			])), a, l);
+			var g = await A(l, c, a, t, s, i);
+			return g == null ? (await F(n, r, a), o("WAWebBusinessBroadcastUserJourneyLogger").BusinessBroadcastUserJourneyLogger.sendBroadcastResult(c.length, "failure", null, "Catalog product or image not available", "unknown", d), null) : g;
+		}
+		return o("WALogger").LOG(_ || (_ = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Invalid catalog state: catalogWid=", " but no productId or ctaButtonJson"])), l), await F(n, r, a), o("WAWebBusinessBroadcastUserJourneyLogger").BusinessBroadcastUserJourneyLogger.sendBroadcastResult(c.length, "failure", null, "Invalid catalog state: missing productId and ctaButtonJson", "invalid_catalog_state", d), null;
+	}
+	async function B(e) {
+		var t = e.broadcastJid, n = e.businessMetadata, r = e.catalogWid, a = e.ctaButtonJson, i = e.mediaFile, l = e.messageBody, s = e.recipients, u = l.trim(), c, d = null;
+		if (i != null && a != null) {
+			o("WALogger").LOG(f || (f = babelHelpers.taggedTemplateLiteralLoose([
+				"[broadcast:campaign-notification] Sending interactive broadcast with media + CTA, listId=",
+				", recipients=",
+				""
+			])), t, s.length);
+			var m = JSON.parse(a), p = await o("WAWebBizBroadcastMediaProcessor").processMediaWithCTAForBroadcast(i, s.length, t, u, m), _ = p.freshMedia, y = p.mediaMsgData;
+			d = _.type, c = await o("WAWebSendBroadcastMsgAction").sendBroadcastMsgAction({
+				beforeSend: o("WAWebBizBroadcastMediaProcessor").createBroadcastMediaUploadCallback(_.type),
+				businessMetadata: n,
+				msgData: y,
+				recipients: s
+			});
+		} else {
+			if (r != null) return O(e, u);
+			if (i != null) {
+				o("WALogger").LOG(g || (g = babelHelpers.taggedTemplateLiteralLoose([
+					"[broadcast:campaign-notification] Sending media broadcast with fresh processing, listId=",
+					", recipients=",
+					""
+				])), t, s.length);
+				var C = await o("WAWebBizBroadcastMediaProcessor").processMediaForBroadcast(i, s.length, t, u), b = C.freshMedia, v = C.mediaMsgData;
+				d = b.type, c = await o("WAWebSendBroadcastMsgAction").sendBroadcastMsgAction({
+					beforeSend: o("WAWebBizBroadcastMediaProcessor").createBroadcastMediaUploadCallback(b.type),
+					businessMetadata: n,
+					msgData: v,
+					recipients: s
+				});
+			} else if (a != null) {
+				o("WALogger").LOG(h || (h = babelHelpers.taggedTemplateLiteralLoose([
+					"[broadcast:campaign-notification] Sending interactive broadcast, listId=",
+					", recipients=",
+					""
+				])), t, s.length);
+				var S = JSON.parse(a), R = await o("WAWebBroadcastMsgDataUtils").createBroadcastInteractiveMsgData(t, u, S);
+				c = await o("WAWebSendBroadcastMsgAction").sendBroadcastMsgAction({
+					businessMetadata: n,
+					msgData: R,
+					recipients: s
+				});
+			} else {
+				var L = await o("WAWebBroadcastMsgDataUtils").createBroadcastTextMsgData(t, u);
+				c = await o("WAWebSendBroadcastMsgAction").sendBroadcastMsgAction({
+					businessMetadata: n,
+					msgData: L,
+					recipients: s
+				});
+			}
+		}
+		return {
+			mediaType: d,
+			result: c
+		};
+	}
+	async function W(e) {
+		var t = e.adGroupId, n = e.adId;
+		if (t == null || n == null) return o("WALogger").ERROR(y || (y = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Missing required params"]))), !1;
+		o("WALogger").LOG(C || (C = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Retrieving pending broadcast for ad_group_id: ", ""])), t);
+		var a = await o("WAWebBizBroadcastCampaignAPI").getBizBroadcastCampaignByAdGroupId(t);
+		if (a == null) return o("WALogger").LOG(b || (b = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Ad Group ID not found, presuming notification was meant for primary device"]))), !1;
+		var i = o("WAWebUserPrefsMeUser").getMeDevicePnOrThrow_DO_NOT_USE().getDeviceId();
+		if (a.deviceId !== i) return o("WALogger").LOG(v || (v = babelHelpers.taggedTemplateLiteralLoose([
+			"[broadcast:campaign-notification] Campaign was created on device ",
+			", skipping on current device ",
+			""
+		])), a.deviceId, i), !1;
+		if (e.status === "INTEGRITY_NOT_CLEARED") {
+			o("WALogger").LOG(S || (S = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Integrity not cleared for campaign, ad_group_id: ", ""])), t), await o("WAWebPendingBusinessBroadcastAPI").deletePendingBroadcast(t), await M(t, n);
+			var l = await o("WAWebBizBroadcastCampaignAPI").getBizBroadcastCampaignByAdGroupId(t);
+			return (l == null ? void 0 : l.broadcastJid) != null && await o("WAWebBizBroadcastSystemMessageManager").updateBizBroadcastSystemMessage(l.broadcastJid), o("WAWebBusinessBroadcastUserJourneyLogger").BusinessBroadcastUserJourneyLogger.sendBroadcastResult(0, "failure", null, "integrity_permanent_blocked", "integrity_permanent_blocked"), !1;
+		}
+		var s = null, u = 0, c = null, d = null, m = null, p = null;
+		try {
+			var _, f = await $(t);
+			if (f == null) return o("WALogger").LOG(R || (R = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Pending broadcast data not found for campaign"]))), !1;
+			var g = f.broadcastJid, h = f.catalogWid, D = f.ctaButtonJson, x = f.freeReservedMsgs, P = f.mediaFile, w = f.messageBody, A = f.productId;
+			s = g, c = P, d = h, m = A;
+			var O = babelHelpers.extends({ campaign_id: n }, x != null ? { free_reserved_msgs: String(x) } : null);
+			if (w == null || g == null) return o("WALogger").LOG(L || (L = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Message not found for broadcast"]))), g != null && await F(t, n, g), !1;
+			var W = o("WAWebWidFactory").createWid(g), U = await o("WAWebBroadcastDatabaseJob").getBroadcastMetadataJob(W), V = ((_ = U == null ? void 0 : U.recipients) != null ? _ : []).map(function(e) {
+				return o("WAWebWidFactory").createUserLidOrThrow(e);
+			});
+			u = V.length, o("WALogger").LOG(E || (E = babelHelpers.taggedTemplateLiteralLoose([
+				"[broadcast:campaign-notification] retrieved metadata with recipients count: ",
+				" for broadcast list ID: ",
+				""
+			])), V.length, g);
+			var H = await B({
+				adGroupId: t,
+				adId: n,
+				broadcastJid: g,
+				businessMetadata: O,
+				catalogWid: h,
+				ctaButtonJson: D,
+				freeReservedMsgs: x,
+				mediaFile: P,
+				messageBody: w,
+				productId: A,
+				recipients: V
+			});
+			if (H == null) return !1;
+			var G = H.mediaType, z = H.result;
+			if (p = G, z.messageSendResult === o("WAWebSendMsgResultAction").SendMsgResult.OK) {
+				var j, K, Q, X;
+				return o("WALogger").LOG(k || (k = babelHelpers.taggedTemplateLiteralLoose([
+					"[broadcast:campaign-notification] Broadcast sent successfully, recipients count: ",
+					", broadcast list ID: ",
+					", campaign_id: ",
+					""
+				])), V.length, g, n), await N(t, n, z.msgId != null ? o("WAWebBizBroadcastCampaignMsgKeyUtils").extractStanzaId(z.msgId) : null), await o("WAWebBizBroadcastSystemMessageManager").updateBizBroadcastSystemMessage(g), o("WAWebBusinessBroadcastUserJourneyLogger").BusinessBroadcastUserJourneyLogger.sendCampaignAck({
+					attachment_type: (j = o("WAWebBizBroadcastMediaProcessor").getAttachmentType(h, A, G)) != null ? j : void 0,
+					campaign_id: n,
+					campaign_send_ts: (K = f.sendTimestamp) != null ? K : void 0,
+					character_cnt: w.length,
+					client_campaign_id: a == null ? void 0 : a.campaignId,
+					created_from_client_campaign_id: (Q = a == null ? void 0 : a.sourceCampaignId) != null ? Q : void 0,
+					has_catalog: h != null,
+					has_document_attachments: G === o("WAWebMsgType").MSG_TYPE.DOCUMENT,
+					has_trackable_link: D != null,
+					integrity_status: e.status,
+					is_duplicate_bb: (a == null ? void 0 : a.isDuplicate) === !0 ? !0 : void 0,
+					is_web_imported_list: (X = U == null ? void 0 : U.isWebCreatedList) != null ? X : !1,
+					photo_cnt: G === o("WAWebMsgType").MSG_TYPE.IMAGE ? 1 : 0,
+					recipient_cnt: V.length,
+					scheduled: !1,
+					video_cnt: G === o("WAWebMsgType").MSG_TYPE.VIDEO ? 1 : 0
+				}), !0;
+			}
+			await q(z, t, n, g, V, h, A, G, P);
+		} catch (e) {
+			var Y, J, Z;
+			if (e === o("WAWebPendingBusinessBroadcastAPI").AD_GROUP_NOT_FOUND_ERROR) return o("WALogger").LOG(I || (I = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Ad Group ID not found, presuming notification was meant for primary device"]))), !1;
+			o("WALogger").ERROR(T || (T = babelHelpers.taggedTemplateLiteralLoose(["[broadcast:campaign-notification] Failed to create pending broadcast"]))).catching(r("getErrorSafe")(e)), s != null && await F(t, n, s), o("WAWebBusinessBroadcastUserJourneyLogger").BusinessBroadcastUserJourneyLogger.sendBroadcastResult(u, "failure", ((Y = c) == null ? void 0 : Y.name) != null ? o("WAWebFileUtils").getFileExtension(c.name) : null, String((J = (Z = r("getErrorSafe")(e)) == null ? void 0 : Z.message) != null ? J : e), "unknown", o("WAWebBizBroadcastMediaProcessor").getAttachmentType(d, m, p));
+		}
+		return !1;
+	}
+	async function q(e, t, n, r, a, i, l, s, u) {
+		var c = e.ackErrorCode;
+		o("WALogger").LOG(D || (D = babelHelpers.taggedTemplateLiteralLoose([
+			"[broadcast:campaign-notification] Failed to send broadcast, recipients count: ",
+			", broadcast list ID: ",
+			", campaign_id: ",
+			", ackError: ",
+			""
+		])), a.length, r, n, c);
+		var d = e == null ? void 0 : e.msgId;
+		if (d != null) {
+			var m = await o("WAWebBizBroadcastCampaignAPI").getBizBroadcastCampaignByAdGroupId(t);
+			m != null && await o("WAWebBizBroadcastCampaignAPI").updateBizBroadcastCampaignMsgId(m.campaignId, o("WAWebBizBroadcastCampaignMsgKeyUtils").extractStanzaId(d));
+		}
+		await F(t, n, r);
+		var p = x(c);
+		o("WAWebBusinessBroadcastUserJourneyLogger").BusinessBroadcastUserJourneyLogger.sendBroadcastResult(a.length, "failure", (u == null ? void 0 : u.name) != null ? o("WAWebFileUtils").getFileExtension(u.name) : null, "Broadcast message send failed", p, o("WAWebBizBroadcastMediaProcessor").getAttachmentType(i, l, s));
+	}
+	l.processCampaignNotification = W;
+}), 98);

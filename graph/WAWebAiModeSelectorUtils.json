@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBotModeSelectionTypes","WAWebDynamicAIModesCache","WAWebMetaAiRingAssetResolver","WDSIconIcBolt.react","WDSIconIcShoppingBag.react","WDSIconWdsIcMetaAiReasoning.react"],"dependents":["WAWebAiModeSelector.react","useWAWebResolvedBotMode"],"dependent_count":2,"exports":[]}

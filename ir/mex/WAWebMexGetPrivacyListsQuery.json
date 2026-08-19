@@ -1,0 +1,110 @@
+{
+  "id": "mex:WAWebMexGetPrivacyListsQuery",
+  "kind": "mex",
+  "name": "WAWebMexGetPrivacyListsQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26806428515612550",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_fetch_wa_users",
+        "plural": true,
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on XWA2User",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "privacy_contact_list",
+                "ty": "XWA2ContactListResponse",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "dhash",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "contacts",
+                    "ty": "XWA2ContactEntry",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "jid",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "pn_jid",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "username_info",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "__typename",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "... on XWA2Username",
+                            "kind": "InlineFragment",
+                            "selections": [
+                              {
+                                "name": "username",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_fetch_wa_users",
+    "document": "# persisted document 26806428515612550\nquery MexGetPrivacyListsQuery(\n  $input\n) {\n  xwa2_fetch_wa_users(input: $input) {  # list\n    __typename\n    ... on XWA2User {\n      privacy_contact_list {  # XWA2ContactListResponse\n        dhash\n        contacts {  # [XWA2ContactEntry]\n          jid\n          pn_jid\n          username_info {\n            __typename\n            ... on XWA2Username {\n              username\n            }\n          }\n        }\n      }\n      id\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexGetPrivacyListsQuery.graphql",
+    "matches": "id:\\s*\"26806428515612550\""
+  },
+  "literals": [
+    "26806428515612550",
+    "WAWebMexGetPrivacyListsQuery",
+    "xwa2_fetch_wa_users"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGetPrivacyList"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

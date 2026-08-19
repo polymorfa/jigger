@@ -1,0 +1,1 @@
+{"deps":["invariant","WAWebMsgType"],"dependents":["WAWebAddonReactionTableMode","WAWebReactAddonMessageProcessorUtils","WAWebStoreMsgs"],"dependent_count":3,"exports":[]}

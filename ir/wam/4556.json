@@ -1,0 +1,68 @@
+{
+  "id": "wam:4556",
+  "kind": "wam",
+  "name": "ChannelAdmin",
+  "data": {
+    "kind": "wam",
+    "event_id": 4556,
+    "fields": {
+      "adminFlowActionSequenceNumber": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "admin_flow_action_sequence_number"
+      },
+      "adminFlowType": {
+        "id": 2,
+        "type": "ADMIN_FLOW_TYPE",
+        "wire": "admin_flow_type",
+        "enum_ref": "ADMIN_FLOW_TYPE"
+      },
+      "channelAdminAction": {
+        "id": 3,
+        "type": "CHANNEL_ADMIN_ACTION",
+        "wire": "channel_admin_action",
+        "enum_ref": "CHANNEL_ADMIN_ACTION"
+      },
+      "channelAdminSessionId": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "channel_admin_session_id"
+      },
+      "unifiedSessionId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelAdminWamEvent",
+    "matches": "ChannelAdmin:\\s*\\[\\s*4556"
+  },
+  "literals": [
+    "4556"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAdminFlowType",
+      "WAWebWamEnumChannelAdminAction"
+    ],
+    "dependents": [
+      "WAWebNewsletterAdminFunnelLogging"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

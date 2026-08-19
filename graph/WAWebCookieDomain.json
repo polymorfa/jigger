@@ -1,0 +1,1 @@
+{"deps":["gkx"],"dependents":["WAWebL10NCookieUtils"],"dependent_count":1,"exports":[{"name":"COOKIE_DOMAIN","used_by":["WAWebL10NCookieUtils"],"uses":1}]}

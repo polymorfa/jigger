@@ -1,0 +1,38 @@
+{
+  "id": "enum:INTERACTION_ENTRY_POINT",
+  "kind": "enum",
+  "name": "INTERACTION_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumInteractionEntryPoint",
+    "variants": [
+      {
+        "name": "ALERT_BANNER",
+        "value": 0.0
+      },
+      {
+        "name": "INFO_DRAWER_ALERT_OPTION",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumInteractionEntryPoint",
+    "matches": "INTERACTION_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "INTERACTION_ENTRY_POINT",
+    "ALERT_BANNER",
+    "INFO_DRAWER_ALERT_OPTION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNewsletterChannelAlertsBanner.react",
+      "WAWebNewsletterEnforcementEventsWamEvent",
+      "WAWebNewsletterInfoDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

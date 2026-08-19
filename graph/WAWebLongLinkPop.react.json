@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCmd","WAWebConfirmPopup.react","WAWebExternalLink.react","WAWebModal.react","WAWebModalManager","WAWebWamEnumUrlStatusClicked","react","react-compiler-runtime"],"dependents":["WAWebLongLinkMutatorComponent.react","WAWebMediaLinkPreviewContainer.react"],"dependent_count":2,"exports":[]}

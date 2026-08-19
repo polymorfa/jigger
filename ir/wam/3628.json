@@ -1,0 +1,63 @@
+{
+  "id": "wam:3628",
+  "kind": "wam",
+  "name": "SnackbarDeleteUndo",
+  "data": {
+    "kind": "wam",
+    "event_id": 3628,
+    "fields": {
+      "isAGroup": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "is_a_group"
+      },
+      "mediaType": {
+        "id": 6,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messagesUndeleted": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "messages_undeleted"
+      },
+      "snackbarActionType": {
+        "id": 3,
+        "type": "SNACKBAR_ACTION_TYPE",
+        "wire": "snackbar_action_type",
+        "enum_ref": "SNACKBAR_ACTION_TYPE"
+      },
+      "threadId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "thread_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSnackbarDeleteUndoWamEvent",
+    "matches": "SnackbarDeleteUndo:\\s*\\[\\s*3628"
+  },
+  "literals": [
+    "3628"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumSnackbarActionType"
+    ],
+    "dependents": [
+      "WAWebActionListenerHelpers"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

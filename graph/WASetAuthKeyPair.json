@@ -1,0 +1,1 @@
+{"deps":["WASetMetaApi"],"dependents":["WAInitAndGetAuthKeyPair"],"dependent_count":1,"exports":[{"name":"setAuthKeyPair","used_by":["WAInitAndGetAuthKeyPair"],"uses":1}]}

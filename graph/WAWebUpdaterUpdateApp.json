@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebToast.react","WAWebToastManager","WAWebUpdater","WAWebUpdaterDownloadStateType","asyncToGeneratorRuntime","react"],"dependents":["WAWebGroupInviteLinkModal.react","WAWebNewsletterNotAvailableModal.react","WAWebSubgroupJoinModal.react","WAWebUnsupportedMessage"],"dependent_count":4,"exports":[]}

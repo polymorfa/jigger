@@ -1,0 +1,46 @@
+{
+  "id": "ab:web_anr_async_contacts_restore_from_db_enabled",
+  "kind": "ab",
+  "name": "web_anr_async_contacts_restore_from_db_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27775,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_anr_async_contacts_restore_from_db_enabled:\\s*\\[\\s*27775"
+  },
+  "literals": [
+    "web_anr_async_contacts_restore_from_db_enabled",
+    "27775"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebOfflineResumeUtils",
+      "WAWebRestoreGroupsAndContacts"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

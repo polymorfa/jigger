@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebTPEditPdfInWhatsappContext.react","WAWebTPEditPdfThicknessSelector.react"],"dependent_count":2,"exports":[{"name":"ANNOTATION_THICKNESS_OPTIONS","used_by":["WAWebTPEditPdfThicknessSelector.react"],"uses":1},{"name":"DEFAULT_ANNOTATION_THICKNESS","used_by":["WAWebTPEditPdfInWhatsappContext.react"],"uses":1}]}

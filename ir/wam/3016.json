@@ -1,0 +1,44 @@
+{
+  "id": "wam:3016",
+  "kind": "wam",
+  "name": "MdSyncdDogfoodingFeatureUsage",
+  "data": {
+    "kind": "wam",
+    "event_id": 3016,
+    "fields": {
+      "mdSyncdDogfoodingFeature": {
+        "id": 1,
+        "type": "MD_FEATURE_CODE",
+        "wire": "md_syncd_dogfooding_feature",
+        "enum_ref": "MD_FEATURE_CODE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdSyncdDogfoodingFeatureUsageWamEvent",
+    "matches": "MdSyncdDogfoodingFeatureUsage:\\s*\\[\\s*3016"
+  },
+  "literals": [
+    "3016"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMdFeatureCode"
+    ],
+    "dependents": [
+      "WAWebClearChatSync",
+      "WAWebDeleteChatSync",
+      "WAWebPinChatSync",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 2,
+    "dependent_count": 4
+  }
+}

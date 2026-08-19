@@ -1,0 +1,42 @@
+{
+  "id": "ab:channels_ptv_receiving_enabled",
+  "kind": "ab",
+  "name": "channels_ptv_receiving_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13559,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_ptv_receiving_enabled:\\s*\\[\\s*13559"
+  },
+  "literals": [
+    "channels_ptv_receiving_enabled",
+    "13559"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebManageAdsDropdownItem.react"],"dependent_count":2,"exports":[{"name":"AdsStackRefreshedIcon","used_by":["WAWebAllGeneratedIcons","WAWebManageAdsDropdownItem.react"],"uses":2}]}

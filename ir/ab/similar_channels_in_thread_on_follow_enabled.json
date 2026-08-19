@@ -1,0 +1,42 @@
+{
+  "id": "ab:similar_channels_in_thread_on_follow_enabled",
+  "kind": "ab",
+  "name": "similar_channels_in_thread_on_follow_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7472,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "similar_channels_in_thread_on_follow_enabled:\\s*\\[\\s*7472"
+  },
+  "literals": [
+    "similar_channels_in_thread_on_follow_enabled",
+    "7472"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

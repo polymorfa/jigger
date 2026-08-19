@@ -1,0 +1,53 @@
+{
+  "id": "enum:GROUP_TYPE_CLIENT",
+  "kind": "enum",
+  "name": "GROUP_TYPE_CLIENT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupTypeClient",
+    "variants": [
+      {
+        "name": "REGULAR_GROUP",
+        "value": 1.0
+      },
+      {
+        "name": "SUB_GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "DEFAULT_SUB_GROUP",
+        "value": 3.0
+      },
+      {
+        "name": "PARENT_GROUP",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupTypeClient",
+    "matches": "GROUP_TYPE_CLIENT\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_TYPE_CLIENT",
+    "REGULAR_GROUP",
+    "SUB_GROUP",
+    "DEFAULT_SUB_GROUP",
+    "PARENT_GROUP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupSuspensionAppealEventsWamEvent",
+      "WAWebGroupType",
+      "WAWebMentionPickerActionWamEvent",
+      "WAWebNotificationEngagementWamEvent",
+      "WAWebPinInChatInteractionWamEvent",
+      "WAWebPinInChatMessageSendWamEvent",
+      "WAWebPinInChatMetricUtils",
+      "WAWebThreadInteractionDataNotificationWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

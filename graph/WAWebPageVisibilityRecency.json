@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebVoipStartCall"],"dependent_count":1,"exports":[{"name":"getLastHiddenDurationMs","used_by":["WAWebVoipStartCall"],"uses":1},{"name":"getMsSinceDocumentVisible","used_by":["WAWebVoipStartCall"],"uses":1},{"name":"wasDocumentHiddenWithinMs","used_by":["WAWebVoipStartCall"],"uses":1}]}

@@ -1,0 +1,208 @@
+{
+  "id": "mex:WAWebMexFetchRecommendedNewslettersJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchRecommendedNewslettersJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25806748772361516",
+    "operation": "query",
+    "variables": [
+      "input",
+      "fetch_status_metadata"
+    ],
+    "args": [
+      {
+        "name": "input"
+      },
+      {
+        "name": "fetch_status_metadata"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletters_recommended",
+        "ty": "XWA2NewsletterSearchResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "page_info",
+            "ty": "XWA2PageInfo",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "hasNextPage",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "hasPreviousPage",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "startCursor",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "endCursor",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "result",
+            "ty": "XWA2Newsletter",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "state",
+                "ty": "XWA2NewsletterState",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "type",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "thread_metadata",
+                "ty": "XWA2NewsletterThreadMetadata",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "creation_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "name",
+                    "ty": "XWA2NewsletterName",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "text",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "update_time",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "description",
+                    "ty": "XWA2NewsletterDescription",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "text",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "update_time",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "picture",
+                    "alias": "preview",
+                    "ty": "XWA2Picture",
+                    "args": [
+                      "type: \"PREVIEW\""
+                    ],
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "type",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "direct_path",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "invite",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "handle",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "verification",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "subscribers_count",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "@include(if: $fetch_status_metadata)",
+                "kind": "Condition",
+                "selections": [
+                  {
+                    "name": "status_metadata",
+                    "ty": "XWA2NewsletterStatusMetadata",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "last_status_server_id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "last_status_sent_time",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletters_recommended",
+    "document": "# persisted document 25806748772361516\nquery MexFetchRecommendedNewslettersJobQuery(\n  $input\n  $fetch_status_metadata\n) {\n  xwa2_newsletters_recommended(input: $input) {  # XWA2NewsletterSearchResponse\n    page_info {  # XWA2PageInfo\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n    }\n    result {  # [XWA2Newsletter]\n      id\n      state {  # XWA2NewsletterState\n        type\n      }\n      thread_metadata {  # XWA2NewsletterThreadMetadata\n        creation_time\n        name {  # XWA2NewsletterName\n          id\n          text\n          update_time\n        }\n        description {  # XWA2NewsletterDescription\n          id\n          text\n          update_time\n        }\n        preview: picture(type: \"PREVIEW\") {  # XWA2Picture\n          id\n          type\n          direct_path\n        }\n        invite\n        handle\n        verification\n        subscribers_count\n      }\n      @include(if: $fetch_status_metadata) {\n        status_metadata {  # XWA2NewsletterStatusMetadata\n          last_status_server_id\n          last_status_sent_time\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchRecommendedNewslettersJobQuery.graphql",
+    "matches": "id:\\s*\"25806748772361516\""
+  },
+  "literals": [
+    "25806748772361516",
+    "WAWebMexFetchRecommendedNewslettersJobQuery",
+    "xwa2_newsletters_recommended"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchRecommendedNewslettersJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

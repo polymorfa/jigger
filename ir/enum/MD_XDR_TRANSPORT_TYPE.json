@@ -1,0 +1,36 @@
+{
+  "id": "enum:MD_XDR_TRANSPORT_TYPE",
+  "kind": "enum",
+  "name": "MD_XDR_TRANSPORT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdXdrTransportType",
+    "variants": [
+      {
+        "name": "WNS",
+        "value": 1.0
+      },
+      {
+        "name": "SDK",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdXdrTransportType",
+    "matches": "MD_XDR_TRANSPORT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MD_XDR_TRANSPORT_TYPE",
+    "WNS",
+    "SDK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdLinkedDevicesWindowsXdrWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

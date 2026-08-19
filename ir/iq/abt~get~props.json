@@ -1,0 +1,235 @@
+{
+  "id": "iq:abt/get/props",
+  "kind": "iq",
+  "name": "AbPropsGetExperimentConfig",
+  "data": {
+    "kind": "iq",
+    "xmlns": "abt",
+    "type": "get",
+    "tags": [
+      "props"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "abt",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "props",
+          "attrs": [
+            {
+              "name": "protocol",
+              "ty": "string",
+              "literal": "1",
+              "optional": false
+            },
+            {
+              "name": "hash",
+              "ty": "string",
+              "optional": true
+            },
+            {
+              "name": "refresh_id",
+              "ty": "int",
+              "optional": true
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxAbPropsGetExperimentConfigRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInAbPropsGetExperimentConfigResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "props",
+              "attrs": [
+                {
+                  "name": "protocol",
+                  "ty": "string",
+                  "literal": "1",
+                  "optional": false
+                },
+                {
+                  "name": "ab_key",
+                  "ty": "string",
+                  "optional": true
+                },
+                {
+                  "name": "hash",
+                  "ty": "string",
+                  "optional": true
+                },
+                {
+                  "name": "refresh",
+                  "ty": "int",
+                  "optional": true
+                },
+                {
+                  "name": "refresh_id",
+                  "ty": "int",
+                  "optional": true
+                },
+                {
+                  "name": "delta_update",
+                  "ty": "stringenum",
+                  "optional": true
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "erid",
+              "card": "optional"
+            },
+            {
+              "tag": "prop",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "ExperimentConfig",
+          "SamplingConfig"
+        ]
+      },
+      {
+        "arm": "ErrorNoRetry",
+        "module": "WASmaxInAbPropsGetExperimentConfigResponseErrorNoRetry",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFeatureNotImplemented"
+        ]
+      },
+      {
+        "arm": "ErrorRetry",
+        "module": "WASmaxInAbPropsGetExperimentConfigResponseErrorRetry",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutAbPropsGetExperimentConfigRequest",
+    "matches": "smax\\(\"props\""
+  },
+  "literals": [
+    "abt",
+    "props"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxJsx",
+      "WASmaxOutAbPropsBaseIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxAbPropsGetExperimentConfigRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

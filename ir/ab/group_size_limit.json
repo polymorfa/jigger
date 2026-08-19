@@ -1,0 +1,47 @@
+{
+  "id": "ab:group_size_limit",
+  "kind": "ab",
+  "name": "group_size_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1304,
+    "type": "int",
+    "default": 257,
+    "alt_default": 257
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_size_limit:\\s*\\[\\s*1304"
+  },
+  "literals": [
+    "group_size_limit",
+    "1304"
+  ],
+  "usage": {
+    "read_count": 3,
+    "readers": [
+      "WAWebAttachVcardsFlow.react",
+      "WAWebMiscGatingUtils",
+      "WAWebSendContactsModal.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebLidAwareContactsDB","WAWebSyncContactJob","WAWebWidFactory","asyncToGeneratorRuntime"],"dependents":["WAWebDebugContacts","WAWebHandleContactNotification","WAWebTasksDefinitions"],"dependent_count":3,"exports":[{"name":"doFullContactSync","used_by":["WAWebDebugContacts","WAWebHandleContactNotification","WAWebTasksDefinitions"],"uses":3}]}

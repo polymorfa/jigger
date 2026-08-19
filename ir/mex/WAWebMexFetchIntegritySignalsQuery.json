@@ -1,0 +1,87 @@
+{
+  "id": "mex:WAWebMexFetchIntegritySignalsQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchIntegritySignalsQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26438847999065394",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_fetch_wa_users",
+        "plural": true,
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "integrity_signals_info",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "__typename",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "... on XWA2IntegritySignals",
+                "kind": "InlineFragment",
+                "selections": [
+                  {
+                    "name": "is_suspicious_start_chat",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_new_account",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2User",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_fetch_wa_users",
+    "document": "# persisted document 26438847999065394\nquery MexFetchIntegritySignalsQuery(\n  $input\n) {\n  xwa2_fetch_wa_users(input: $input) {  # list\n    __typename\n    integrity_signals_info {\n      __typename\n      ... on XWA2IntegritySignals {\n        is_suspicious_start_chat\n        is_new_account\n      }\n    }\n    ... on XWA2User {\n      id\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchIntegritySignalsQuery.graphql",
+    "matches": "id:\\s*\"26438847999065394\""
+  },
+  "literals": [
+    "26438847999065394",
+    "WAWebMexFetchIntegritySignalsQuery",
+    "xwa2_fetch_wa_users"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchIntegritySignals"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

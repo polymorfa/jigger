@@ -1,0 +1,34 @@
+{
+  "id": "proto:WACert.NoiseCertificate",
+  "kind": "proto",
+  "name": "WACert.NoiseCertificate",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "details": {
+        "number": 1
+      },
+      "signature": {
+        "number": 2
+      }
+    },
+    "module": "WACert.pb"
+  },
+  "evidence": {
+    "module": "WACert.pb",
+    "matches": "name = \"NoiseCertificate\""
+  },
+  "literals": [
+    "NoiseCertificate"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAVerifyChainCertificateWA6"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["Promise"],"dependents":["MAWFetchEBDeanonMessagesMetadata","MAWMessageRangeDataSourceV2"],"dependent_count":2,"exports":[{"name":"getMessagesRangesV2ExternalIdsIfChanged","used_by":["MAWMessageRangeDataSourceV2"],"uses":1},{"name":"getRangeExternalIdForDirection","used_by":["MAWFetchEBDeanonMessagesMetadata"],"uses":1}]}

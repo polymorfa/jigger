@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInSpamEnums","WASmaxInSpamSpamIqErrors","WASmaxParseJid","WASmaxParseReference","WASmaxParseUtils"],"dependents":["WASmaxSpamNewsletterReportRPC"],"dependent_count":1,"exports":[{"name":"parseNewsletterReportResponseError","used_by":["WASmaxSpamNewsletterReportRPC"],"uses":1}]}

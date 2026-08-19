@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBuildType","WAWebProtobufsWa6.pb","asyncToGeneratorRuntime","cr:9565"],"dependents":["WAWebClientPayload","WAWebWorkerClientPayload"],"dependent_count":2,"exports":[{"name":"getReleaseChannel","used_by":["WAWebClientPayload","WAWebWorkerClientPayload"],"uses":2}]}

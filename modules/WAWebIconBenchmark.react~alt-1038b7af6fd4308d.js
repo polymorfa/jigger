@@ -1,0 +1,123 @@
+__d("WAWebIconBenchmark.react", [
+	"fbt",
+	"WAWebAllGeneratedIcons",
+	"WAWebModalManager",
+	"WDSButton.react",
+	"WDSIconIcClose.react",
+	"WDSText.react",
+	"WDSThemes",
+	"react",
+	"stylex"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u, c = u || (u = o("react")), d = u.useState, m = 24, p = function(t) {
+		return t.includes("Ill") || t.includes("Picto") || t.includes("Anim");
+	}, _ = r("WAWebAllGeneratedIcons").filter(function(e) {
+		var t = e.name;
+		return !p(t);
+	}), f = r("WAWebAllGeneratedIcons").filter(function(e) {
+		var t = e.name;
+		return p(t);
+	}), g = { overlay: {
+		position: "xixxii4",
+		top: "x13vifvy",
+		bottom: "x1ey2m1c",
+		insetInlineStart: "x1o0tod",
+		insetInlineEnd: "xtijo5x",
+		left: null,
+		right: null,
+		zIndex: "xfo81ep",
+		display: "x78zum5",
+		flexDirection: "xdt5ytf",
+		backgroundColor: "x1280gxy",
+		$$css: !0
+	} };
+	function h() {
+		var t = d(!0), n = t[0], a = t[1], i = function() {
+			a(function(e) {
+				return !e;
+			});
+		};
+		return c.jsxs("div", babelHelpers.extends({}, (e || (e = r("stylex"))).props(o("WDSThemes").WDSLightTheme, g.overlay), {
+			"data-testid": "web_icon_benchmark_overlay",
+			children: [
+				c.jsxs("div", {
+					className: "x78zum5 x6s0dn4 x1qughib xyamay9 x1l90r2v x106a9eq x1xnnf8n xso031l x1q0q8m5 x120ee7l x2lah0s",
+					children: [c.jsx(r("WDSText.react"), {
+						type: "Headline2",
+						colorName: "contentDefault",
+						children: s._(
+							/*BTDS*/
+							""
+						)
+					}), c.jsx(r("WDSButton.react"), {
+						variant: "borderless",
+						Icon: r("WDSIconIcClose.react"),
+						"aria-label": s._(
+							/*BTDS*/
+							""
+						),
+						onPress: y,
+						testid: "web_icon_benchmark_close_button"
+					})]
+				}),
+				c.jsxs("div", {
+					className: "x78zum5 x6s0dn4 x40hh3e xz9dl7a xsag5q8 x106a9eq x1xnnf8n xso031l x1q0q8m5 x120ee7l x2lah0s",
+					children: [c.jsx(r("WDSText.react"), {
+						type: "Body2Emphasized",
+						colorName: "contentDeemphasized",
+						children: s._(
+							/*BTDS*/
+							"",
+							[s._param("count", r("WAWebAllGeneratedIcons").length)]
+						)
+					}), c.jsx("div", {
+						className: "xvc5jky",
+						children: n ? c.jsx(r("WDSButton.react"), {
+							variant: "filled",
+							type: "destructive",
+							label: s._(
+								/*BTDS*/
+								""
+							),
+							onPress: i,
+							testid: "web_icon_benchmark_unmount_button"
+						}) : c.jsx(r("WDSButton.react"), {
+							variant: "filled",
+							label: s._(
+								/*BTDS*/
+								""
+							),
+							onPress: i,
+							testid: "web_icon_benchmark_mount_button"
+						})
+					})]
+				}),
+				c.jsx("div", {
+					className: "x1iyjqo2 xw2csxc x1odjw0f xyamay9 xv54qhq x1l90r2v xf7dkkf",
+					children: n ? c.jsxs(c.Fragment, { children: [
+						c.jsx("div", {
+							className: "x78zum5 x1a02dak x6s0dn4 x1o0lzc5 xq5c7ks x14ug900",
+							children: _.map(function(e) {
+								var t = e.Component, n = e.name;
+								return c.jsx(t, { height: m }, n);
+							})
+						}),
+						c.jsx("hr", { className: "xh8yej3 x18oe1m7 x1sy0etr xstzfhl x178xt8z x13fuv20 xx42vgk xqui205 x1hq5gj4" }),
+						c.jsx("div", {
+							className: "x78zum5 x1a02dak x6s0dn4 x1o0lzc5 xq5c7ks x14ug900",
+							children: f.map(function(e) {
+								var t = e.Component, n = e.name;
+								return c.jsx(t, {}, n);
+							})
+						})
+					] }) : null
+				})
+			]
+		}));
+	}
+	h.displayName = h.name + " [from " + i.id + "]";
+	function y() {
+		o("WAWebModalManager").ModalManager.close();
+	}
+	l.default = h;
+}), 226);

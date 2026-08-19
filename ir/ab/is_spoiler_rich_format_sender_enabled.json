@@ -1,0 +1,49 @@
+{
+  "id": "ab:is_spoiler_rich_format_sender_enabled",
+  "kind": "ab",
+  "name": "is_spoiler_rich_format_sender_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24210,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "is_spoiler_rich_format_sender_enabled:\\s*\\[\\s*24210"
+  },
+  "literals": [
+    "is_spoiler_rich_format_sender_enabled",
+    "24210"
+  ],
+  "usage": {
+    "read_count": 5,
+    "readers": [
+      "WAWebFloatingToolbarPlugin.react",
+      "WAWebMediaPrep",
+      "WAWebPollsSendPollCreationMsgAction",
+      "WAWebSendTextMsgChatAction",
+      "WAWebSpoilerGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

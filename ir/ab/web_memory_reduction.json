@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_memory_reduction",
+  "kind": "ab",
+  "name": "web_memory_reduction",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 30394,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_memory_reduction:\\s*\\[\\s*30394"
+  },
+  "literals": [
+    "web_memory_reduction",
+    "30394"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMediaViewerFlow.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

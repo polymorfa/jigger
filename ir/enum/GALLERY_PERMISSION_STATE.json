@@ -1,0 +1,41 @@
+{
+  "id": "enum:GALLERY_PERMISSION_STATE",
+  "kind": "enum",
+  "name": "GALLERY_PERMISSION_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGalleryPermissionState",
+    "variants": [
+      {
+        "name": "FULL",
+        "value": 1.0
+      },
+      {
+        "name": "PARTIAL",
+        "value": 2.0
+      },
+      {
+        "name": "NONE",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGalleryPermissionState",
+    "matches": "GALLERY_PERMISSION_STATE\\s*[:=]"
+  },
+  "literals": [
+    "GALLERY_PERMISSION_STATE",
+    "FULL",
+    "PARTIAL",
+    "NONE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDailyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

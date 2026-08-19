@@ -1,0 +1,1 @@
+{"deps":["WALogger"],"dependents":["WAWebReportSpamJob","WAWebVoipReportCallJob"],"dependent_count":2,"exports":[{"name":"parseIndividualReportResponse","used_by":["WAWebReportSpamJob","WAWebVoipReportCallJob"],"uses":2},{"name":"parseGroupReportResponse","used_by":["WAWebReportSpamJob"],"uses":1}]}

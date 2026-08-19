@@ -1,0 +1,29 @@
+__d("WAWebGetQuickPayAction", [
+	"fbt",
+	"WAWebOrderGatingUtils",
+	"WAWebShowMessageActionFallbackErrorAction"
+], (function(t, n, r, o, a, i, l, s) {
+	var e = function(t) {
+		return {
+			label: s._(
+				/*BTDS*/
+				""
+			),
+			disabled: t,
+			onClick: function() {
+				return r("WAWebShowMessageActionFallbackErrorAction")({
+					title: s._(
+						/*BTDS*/
+						""
+					),
+					body: ""
+				});
+			}
+		};
+	};
+	function u(t, n, r) {
+		var a = o("WAWebOrderGatingUtils").QuickPayProductTypeGating.cast(n);
+		return a && o("WAWebOrderGatingUtils").isOrderDetailsQuickPayEnabled(a) ? e(r) : null;
+	}
+	l.getQuickPayAction = u;
+}), 226);

@@ -1,0 +1,41 @@
+{
+  "id": "appstate:sentinel",
+  "kind": "appstate",
+  "name": "Sentinel",
+  "data": {
+    "kind": "appstate",
+    "index_name": "sentinel",
+    "collection": "regular_low",
+    "version": 3
+  },
+  "evidence": {
+    "module": "WAWebSentinelMutationSync",
+    "matches": "Actions\\.Sentinel"
+  },
+  "literals": [
+    "sentinel",
+    "Sentinel"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATagsLogger",
+      "WATimeUtils",
+      "WAWebGetSyncKey",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebSyncdKeyManagement",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebSentinel"
+    ],
+    "dep_count": 12,
+    "dependent_count": 2
+  }
+}

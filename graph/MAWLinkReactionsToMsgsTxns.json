@@ -1,0 +1,1 @@
+{"deps":["MAWDbMsgTxns","WAMsgMap"],"dependents":["MAWBulkHandleIncomingMsgApi"],"dependent_count":1,"exports":[{"name":"getReactionLinkUpdatesForExternalIds","used_by":["MAWBulkHandleIncomingMsgApi"],"uses":1},{"name":"updateReactionLinks","used_by":["MAWBulkHandleIncomingMsgApi"],"uses":1}]}

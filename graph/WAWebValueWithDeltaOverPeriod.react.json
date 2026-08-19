@@ -1,0 +1,1 @@
+{"deps":["WAWebCommonNewsletterStrings","WAWebDeltaText.react","WAWebFlex.react","WAWebL10N","WAWebText.react","react","react-compiler-runtime"],"dependents":["WAWebInsightSection.story","WAWebNewsletterAdminInsigthsFollowerOverviewWidgetContainer.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

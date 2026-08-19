@@ -1,0 +1,50 @@
+{
+  "id": "proto:WAWebProtobufsGroupHistory.GroupHistoryWithMessageBytes",
+  "kind": "proto",
+  "name": "WAWebProtobufsGroupHistory.GroupHistoryWithMessageBytes",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "commentMessages": {
+        "number": 3,
+        "type_name": "WAWebProtobufsGroupHistory.WebMessageInfoWithMessageBytes"
+      },
+      "messages": {
+        "number": 1,
+        "type_name": "WAWebProtobufsGroupHistory.WebMessageInfoWithMessageBytes"
+      },
+      "outOfWindowPinnedMessages": {
+        "number": 4,
+        "type_name": "WAWebProtobufsGroupHistory.WebMessageInfoWithMessageBytes"
+      },
+      "uncountedAssociatedMessageLists": {
+        "number": 2,
+        "type_name": "WAWebProtobufsGroupHistory.UnCountedAssociatedMessageListWithMessageBytes"
+      }
+    },
+    "module": "WAWebProtobufsGroupHistory.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsGroupHistory.pb",
+    "matches": "name = \"GroupHistoryWithMessageBytes\""
+  },
+  "literals": [
+    "GroupHistoryWithMessageBytes"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst",
+      "WAWebProtobufsE2E.pb",
+      "WAWebProtobufsProtocol.pb",
+      "WAWebProtobufsWeb.pb"
+    ],
+    "dependents": [
+      "WAWebGroupHistoryBundleProcessor",
+      "WAWebGroupHistoryReportingTokenGenerator",
+      "WAWebGroupHistoryReportingTokenValidator",
+      "WAWebSerializeGroupHistoryMessages"
+    ],
+    "dep_count": 4,
+    "dependent_count": 4
+  }
+}

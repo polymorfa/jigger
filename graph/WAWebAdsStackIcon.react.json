@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizToolsFlow.react"],"dependent_count":2,"exports":[{"name":"AdsStackIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizToolsFlow.react"],"uses":2}]}

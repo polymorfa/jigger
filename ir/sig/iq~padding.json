@@ -1,0 +1,32 @@
+{
+  "id": "sig:iq/padding",
+  "kind": "sig",
+  "name": "PreKeysResponsePaddingMixin",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "padding"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPreKeysResponsePaddingMixin",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "padding"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInPreKeysFetchKeyBundlesResponseSuccess",
+      "WASmaxInPreKeysFetchMissingPreKeysResponseSuccess"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

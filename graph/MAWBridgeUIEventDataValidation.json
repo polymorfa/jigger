@@ -1,0 +1,1 @@
+{"deps":["FBLogger","I64","getErrorSafe"],"dependents":["MAWBridgeThreadUpdatedHandler","MAWBridgeXMAUtils"],"dependent_count":2,"exports":[{"name":"stringToI64Opt","used_by":["MAWBridgeThreadUpdatedHandler","MAWBridgeXMAUtils"],"uses":2}]}

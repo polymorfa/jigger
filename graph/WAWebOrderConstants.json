@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebOrderDetailTextComposer","WAWebOrderStatusUpdateDrawer.react"],"dependent_count":2,"exports":[{"name":"MAX_CART_MESSAGE_LENGTH","used_by":["WAWebOrderDetailTextComposer","WAWebOrderStatusUpdateDrawer.react"],"uses":2}]}

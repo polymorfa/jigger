@@ -1,0 +1,46 @@
+{
+  "id": "wam:4560",
+  "kind": "wam",
+  "name": "WebContactListStartNewChat",
+  "data": {
+    "kind": "wam",
+    "event_id": 4560,
+    "fields": {
+      "webContactListStartNewChatSearch": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "web_contact_list_start_new_chat_search"
+      },
+      "webContactListStartNewChatType": {
+        "id": 2,
+        "type": "WEB_CONTACT_LIST_START_NEW_CHAT_TYPE",
+        "wire": "web_contact_list_start_new_chat_type",
+        "enum_ref": "WEB_CONTACT_LIST_START_NEW_CHAT_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebContactListStartNewChatWamEvent",
+    "matches": "WebContactListStartNewChat:\\s*\\[\\s*4560"
+  },
+  "literals": [
+    "4560"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebContactListStartNewChatType"
+    ],
+    "dependents": [
+      "WAWebNewChatMetricUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

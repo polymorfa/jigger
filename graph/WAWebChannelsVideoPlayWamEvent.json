@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumVideoPlayOrigin","WAWebWamEnumVideoPlayResult","WAWebWamEnumVideoPlayType"],"dependents":["useWAWebNewsletterVideoPlayMetric"],"dependent_count":1,"exports":[{"name":"ChannelsVideoPlayWamEvent","used_by":[],"uses":0}]}

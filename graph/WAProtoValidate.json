@@ -1,0 +1,1 @@
+{"deps":["WAHasProperty","WALogger","WAProtoCompile","WAProtoConst"],"dependents":["decodeProtobuf","encodeProtobuf"],"dependent_count":2,"exports":[{"name":"checkRequirements","used_by":["decodeProtobuf"],"uses":1},{"name":"checkValid","used_by":["encodeProtobuf"],"uses":1}]}

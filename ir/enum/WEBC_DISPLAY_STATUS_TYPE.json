@@ -1,0 +1,57 @@
+{
+  "id": "enum:WEBC_DISPLAY_STATUS_TYPE",
+  "kind": "enum",
+  "name": "WEBC_DISPLAY_STATUS_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcDisplayStatusType",
+    "variants": [
+      {
+        "name": "SHOWED_PREVIEW_TO_USER",
+        "value": 1.0
+      },
+      {
+        "name": "PREVIEW_TIMEOUT",
+        "value": 2.0
+      },
+      {
+        "name": "PREVIEW_MALFORMED",
+        "value": 3.0
+      },
+      {
+        "name": "PREVIEW_NOT_FOUND",
+        "value": 4.0
+      },
+      {
+        "name": "PREVIEW_GENERAL_ERROR",
+        "value": 5.0
+      },
+      {
+        "name": "PREVIEW_DECRYPTION_ERROR",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcDisplayStatusType",
+    "matches": "WEBC_DISPLAY_STATUS_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_DISPLAY_STATUS_TYPE",
+    "SHOWED_PREVIEW_TO_USER",
+    "PREVIEW_TIMEOUT",
+    "PREVIEW_MALFORMED",
+    "PREVIEW_NOT_FOUND",
+    "PREVIEW_GENERAL_ERROR",
+    "PREVIEW_DECRYPTION_ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLinkPreviewChatAction",
+      "WAWebWebcLinkPreviewDisplayWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

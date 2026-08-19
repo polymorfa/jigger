@@ -1,0 +1,46 @@
+{
+  "id": "ab:m2_audience_dynamic_rules",
+  "kind": "ab",
+  "name": "m2_audience_dynamic_rules",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28099,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "m2_audience_dynamic_rules:\\s*\\[\\s*28099"
+  },
+  "literals": [
+    "m2_audience_dynamic_rules",
+    "28099"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebBizBroadcastAudienceRefreshJob",
+      "WAWebBroadcastMetadataCollection"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

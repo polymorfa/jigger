@@ -1,0 +1,38 @@
+{
+  "id": "proto:WAWebLabyrinthWaWasm.OrfThreadIdInput",
+  "kind": "proto",
+  "name": "WAWebLabyrinthWaWasm.OrfThreadIdInput",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "orfClientState": {
+        "number": 1
+      },
+      "threadId": {
+        "number": 2
+      }
+    },
+    "module": "WAWebLabyrinthWaWasm.pb"
+  },
+  "evidence": {
+    "module": "WAWebLabyrinthWaWasm.pb",
+    "matches": "name = \"OrfThreadIdInput\""
+  },
+  "literals": [
+    "OrfThreadIdInput"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebLabyrinthWasmCreateBackup",
+      "WAWebLabyrinthWasmDecryptMessage",
+      "WAWebLabyrinthWasmDeriveMessageKey",
+      "WAWebLabyrinthWasmEncryptMessage",
+      "WAWebLabyrinthWasmOrfThreadId"
+    ],
+    "dep_count": 1,
+    "dependent_count": 5
+  }
+}

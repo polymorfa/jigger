@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebVoipStackInterfaceWebCallbacks","WAWebVoipWatchdog"],"dependent_count":2,"exports":[{"name":"getEncodedFrameSnapshot","used_by":["WAWebVoipWatchdog"],"uses":1},{"name":"recordEncodedVideoFrame","used_by":["WAWebVoipStackInterfaceWebCallbacks"],"uses":1},{"name":"resetEncodedFrameCounters","used_by":["WAWebVoipWatchdog"],"uses":1}]}

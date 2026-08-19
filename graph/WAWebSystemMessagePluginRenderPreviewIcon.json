@@ -1,0 +1,1 @@
+{"deps":["WAWebPluginCreateRegistryLookup","WAWebSystemMessagePluginRenderPreviewIconRegistry","react"],"dependents":["WAWebChatMsgSymbol.react"],"dependent_count":1,"exports":[{"name":"renderPreviewIcon","used_by":["WAWebChatMsgSymbol.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAComms","WASmaxInSpamNewsletterReportResponseError","WASmaxInSpamNewsletterReportResponseSuccess","WASmaxOutSpamNewsletterReportRequest","WASmaxParsingFailure","WASmaxRpcUtils","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterReportUtils"],"dependent_count":1,"exports":[{"name":"sendNewsletterReportRPC","used_by":["WAWebNewsletterReportUtils"],"uses":1}]}

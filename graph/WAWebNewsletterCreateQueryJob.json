@@ -1,0 +1,1 @@
+{"deps":["WAWebMexCreateNewsletterJob","WAWebMexNewsletterParseUtils","WAWebNewsletterRpcUtils","WAWebURLUtils","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterCreateJob"],"dependent_count":1,"exports":[{"name":"createNewsletterQuery","used_by":["WAWebNewsletterCreateJob"],"uses":1}]}

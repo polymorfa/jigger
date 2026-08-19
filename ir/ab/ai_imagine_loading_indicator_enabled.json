@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_imagine_loading_indicator_enabled",
+  "kind": "ab",
+  "name": "ai_imagine_loading_indicator_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22795,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_imagine_loading_indicator_enabled:\\s*\\[\\s*22795"
+  },
+  "literals": [
+    "ai_imagine_loading_indicator_enabled",
+    "22795"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

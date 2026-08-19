@@ -1,0 +1,45 @@
+{
+  "id": "ab:order_details_quick_pay",
+  "kind": "ab",
+  "name": "order_details_quick_pay",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1600,
+    "type": "string",
+    "default": "{\\\"allowed_product_type\\\":\\\"none\\\"}",
+    "alt_default": "{\\\"allowed_product_type\\\":\\\"none\\\"}"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "order_details_quick_pay:\\s*\\[\\s*1600"
+  },
+  "literals": [
+    "order_details_quick_pay",
+    "1600"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebOrderGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

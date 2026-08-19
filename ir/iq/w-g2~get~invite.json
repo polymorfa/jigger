@@ -1,0 +1,203 @@
+{
+  "id": "iq:w:g2/get/invite",
+  "kind": "iq",
+  "name": "GroupsGetInviteGroupInfo",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "get",
+    "tags": [
+      "invite"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "string",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "invite",
+          "attrs": [
+            {
+              "name": "code",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsGetInviteGroupInfoRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsGetInviteGroupInfoResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "group",
+              "attrs": [
+                {
+                  "name": "size",
+                  "ty": "int",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "GroupInfoParticipantAdmin",
+          "GroupInfoParticipantNonAdmin",
+          "NamedSubject",
+          "UnnamedSubjectFallback"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsGetInviteGroupInfoResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFallbackClient",
+          "IQErrorGone",
+          "IQErrorGrowthLocked",
+          "IQErrorItemNotFound",
+          "IQErrorLocked",
+          "IQErrorNotAcceptable",
+          "IQErrorNotAuthorized",
+          "IQErrorParentGroupSuspended"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsGetInviteGroupInfoResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsGetInviteGroupInfoRequest",
+    "matches": "smax\\(\"invite\""
+  },
+  "literals": [
+    "w:g2",
+    "invite"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseGetServerMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxGroupsGetInviteGroupInfoRPC"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

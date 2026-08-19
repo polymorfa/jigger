@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebEnvironment","WAWebUserPrefsHistorySync","asyncToGeneratorRuntime"],"dependents":["WAWebHandleHistorySyncNotification"],"dependent_count":1,"exports":[{"name":"handleHistorySyncMessageAccessStatusChange","used_by":["WAWebHandleHistorySyncNotification"],"uses":1}]}

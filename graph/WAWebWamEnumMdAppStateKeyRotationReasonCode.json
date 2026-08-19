@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebMdAppStateKeyRotationWamEvent","WAWebSyncdMetrics"],"dependent_count":2,"exports":[{"name":"MD_APP_STATE_KEY_ROTATION_REASON_CODE","used_by":["WAWebMdAppStateKeyRotationWamEvent","WAWebSyncdMetrics"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["MAWCryptoConsts","MAWFTSIndexedDb","MAWKeychainCrypto","MAWSubtleCrypto","MAWTransactionMode","WABase64","asyncToGeneratorRuntime"],"dependents":["MAWFTSVersionsInformation"],"dependent_count":1,"exports":[{"name":"fetchOrGenerateFTSCryptoKey","used_by":["MAWFTSVersionsInformation"],"uses":1}]}

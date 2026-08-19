@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseModel","WAWebFavoriteCollection"],"dependents":["WAWebFavoriteCollection"],"dependent_count":1,"exports":[{"name":"Favorite","used_by":["WAWebFavoriteCollection"],"uses":1}]}

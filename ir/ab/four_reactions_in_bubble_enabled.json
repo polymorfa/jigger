@@ -1,0 +1,42 @@
+{
+  "id": "ab:four_reactions_in_bubble_enabled",
+  "kind": "ab",
+  "name": "four_reactions_in_bubble_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2378,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "four_reactions_in_bubble_enabled:\\s*\\[\\s*2378"
+  },
+  "literals": [
+    "four_reactions_in_bubble_enabled",
+    "2378"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

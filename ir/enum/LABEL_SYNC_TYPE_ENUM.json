@@ -1,0 +1,42 @@
+{
+  "id": "enum:LABEL_SYNC_TYPE_ENUM",
+  "kind": "enum",
+  "name": "LABEL_SYNC_TYPE_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLabelSyncTypeEnum",
+    "variants": [
+      {
+        "name": "LABEL_JID",
+        "value": 1.0
+      },
+      {
+        "name": "LABEL_EDIT",
+        "value": 2.0
+      },
+      {
+        "name": "LABEL_REORDER",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLabelSyncTypeEnum",
+    "matches": "LABEL_SYNC_TYPE_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "LABEL_SYNC_TYPE_ENUM",
+    "LABEL_JID",
+    "LABEL_EDIT",
+    "LABEL_REORDER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdLabelSyncTrackingWamEvent",
+      "WAWebWamLabelSyncTrackingReporter"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

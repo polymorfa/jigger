@@ -1,0 +1,289 @@
+__d("WAWebMexFetchNewsletterReportsJobQuery.graphql", [], (function(t, n, r, o, a, i) {
+	"use strict";
+	var e = (function() {
+		var e = [{
+			defaultValue: null,
+			kind: "LocalArgument",
+			name: "locale"
+		}], t = [{
+			kind: "Variable",
+			name: "locale",
+			variableName: "locale"
+		}], n = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "report_id",
+			storageKey: null
+		}, r = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "status",
+			storageKey: null
+		}, o = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "creation_time",
+			storageKey: null
+		}, a = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "last_update_time",
+			storageKey: null
+		}, i = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "channel_name",
+			storageKey: null
+		}, l = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "channel_jid",
+			storageKey: null
+		}, s = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2ReportAppealReasonOption",
+			kind: "LinkedField",
+			name: "appeal_reason_options",
+			plural: !0,
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "reason",
+				storageKey: null
+			}, {
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "label",
+				storageKey: null
+			}],
+			storageKey: null
+		}, u = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "server_msg_id",
+				storageKey: null
+			}],
+			type: "XWA2ChannelServerMsgData",
+			abstractKey: null
+		}, c = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "server_id",
+				storageKey: null
+			}],
+			type: "XWA2ChannelStatusData",
+			abstractKey: null
+		}, d = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "server_response_id",
+			storageKey: null
+		}, m = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "notify_name",
+			storageKey: null
+		}, p = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2ReportAppeal",
+			kind: "LinkedField",
+			name: "appeal",
+			plural: !1,
+			selections: [
+				{
+					alias: null,
+					args: null,
+					kind: "ScalarField",
+					name: "state",
+					storageKey: null
+				},
+				{
+					alias: null,
+					args: null,
+					kind: "ScalarField",
+					name: "appeal_reason",
+					storageKey: null
+				},
+				o,
+				n,
+				{
+					alias: null,
+					args: null,
+					kind: "ScalarField",
+					name: "appeal_id",
+					storageKey: null
+				}
+			],
+			storageKey: null
+		}, _ = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "__typename",
+			storageKey: null
+		};
+		return {
+			fragment: {
+				argumentDefinitions: e,
+				kind: "Fragment",
+				metadata: null,
+				name: "WAWebMexFetchNewsletterReportsJobQuery",
+				selections: [{
+					alias: null,
+					args: t,
+					concreteType: "XWA2UserChannelsReportList",
+					kind: "LinkedField",
+					name: "xwa2_channels_reports",
+					plural: !1,
+					selections: [{
+						alias: null,
+						args: null,
+						concreteType: "XWA2ChannelsReport",
+						kind: "LinkedField",
+						name: "channels_reports",
+						plural: !0,
+						selections: [
+							n,
+							r,
+							o,
+							a,
+							i,
+							l,
+							s,
+							{
+								alias: null,
+								args: null,
+								concreteType: null,
+								kind: "LinkedField",
+								name: "reported_content_data",
+								plural: !1,
+								selections: [
+									u,
+									c,
+									{
+										kind: "InlineFragment",
+										selections: [
+											d,
+											m,
+											{
+												alias: null,
+												args: null,
+												concreteType: null,
+												kind: "LinkedField",
+												name: "question_data",
+												plural: !1,
+												selections: [u],
+												storageKey: null
+											}
+										],
+										type: "XWA2ChannelQuestionResponseData",
+										abstractKey: null
+									}
+								],
+								storageKey: null
+							},
+							p
+						],
+						storageKey: null
+					}],
+					storageKey: null
+				}],
+				type: "Query",
+				abstractKey: null
+			},
+			kind: "Request",
+			operation: {
+				argumentDefinitions: e,
+				kind: "Operation",
+				name: "WAWebMexFetchNewsletterReportsJobQuery",
+				selections: [{
+					alias: null,
+					args: t,
+					concreteType: "XWA2UserChannelsReportList",
+					kind: "LinkedField",
+					name: "xwa2_channels_reports",
+					plural: !1,
+					selections: [{
+						alias: null,
+						args: null,
+						concreteType: "XWA2ChannelsReport",
+						kind: "LinkedField",
+						name: "channels_reports",
+						plural: !0,
+						selections: [
+							n,
+							r,
+							o,
+							a,
+							i,
+							l,
+							s,
+							{
+								alias: null,
+								args: null,
+								concreteType: null,
+								kind: "LinkedField",
+								name: "reported_content_data",
+								plural: !1,
+								selections: [
+									_,
+									u,
+									c,
+									{
+										kind: "InlineFragment",
+										selections: [
+											d,
+											m,
+											{
+												alias: null,
+												args: null,
+												concreteType: null,
+												kind: "LinkedField",
+												name: "question_data",
+												plural: !1,
+												selections: [_, u],
+												storageKey: null
+											}
+										],
+										type: "XWA2ChannelQuestionResponseData",
+										abstractKey: null
+									}
+								],
+								storageKey: null
+							},
+							p
+						],
+						storageKey: null
+					}],
+					storageKey: null
+				}]
+			},
+			params: {
+				id: "35936238352686172",
+				metadata: {},
+				name: "WAWebMexFetchNewsletterReportsJobQuery",
+				operationKind: "query",
+				text: null
+			}
+		};
+	})();
+	a.exports = e;
+}), null);

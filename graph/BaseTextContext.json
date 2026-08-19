@@ -1,0 +1,1 @@
+{"deps":["react","react-compiler-runtime"],"dependents":["MAWVisibilityRestoreChatTabBanner.react","WDSTextContainer.react"],"dependent_count":2,"exports":[{"name":"BaseTextContextProvider","used_by":["MAWVisibilityRestoreChatTabBanner.react","WDSTextContainer.react"],"uses":2},{"name":"useBaseTextContext","used_by":[],"uses":0}]}

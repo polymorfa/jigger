@@ -1,0 +1,1 @@
+{"deps":["WALongInt","WAWebHatchDecodeError","WAWebHatchJsonReaders","cr:7454"],"dependents":["WAWebParseHatchMetadataSyncProto"],"dependent_count":1,"exports":[{"name":"decodeHatchMetadataOperation","used_by":["WAWebParseHatchMetadataSyncProto"],"uses":1}]}

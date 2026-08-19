@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebConsumerTransparencyModalDialog.react"],"dependent_count":2,"exports":[{"name":"SettingsSecurityIcon","used_by":["WAWebAllGeneratedIcons","WAWebConsumerTransparencyModalDialog.react"],"uses":2}]}

@@ -1,0 +1,44 @@
+{
+  "id": "proto:WAWebProtobufsVnameCert.BizAccountLinkInfo",
+  "kind": "proto",
+  "name": "WAWebProtobufsVnameCert.BizAccountLinkInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accountType": {
+        "number": 5
+      },
+      "hostStorage": {
+        "number": 4
+      },
+      "issueTime": {
+        "number": 3
+      },
+      "whatsappAcctNumber": {
+        "number": 2
+      },
+      "whatsappBizAcctFbid": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsVnameCert.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsVnameCert.pb",
+    "matches": "name = \"BizAccountLinkInfo\""
+  },
+  "literals": [
+    "BizAccountLinkInfo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebValidateBusinessCertificate"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

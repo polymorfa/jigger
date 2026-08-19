@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBoolFunc","getErrorSafe"],"dependents":["WAWebCampaignNotificationListener","WAWebHandleBusinessNotification"],"dependent_count":2,"exports":[{"name":"marketingCampaignNotificationEmitter","used_by":["WAWebCampaignNotificationListener","WAWebHandleBusinessNotification"],"uses":2}]}

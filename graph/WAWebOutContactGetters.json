@@ -1,0 +1,1 @@
+{"deps":["WAWebGetters","WAWebGettersCaches"],"dependents":["WAWebOutContactCell.react","WAWebOutContactPillItem.react"],"dependent_count":2,"exports":[{"name":"getName","used_by":["WAWebOutContactCell.react","WAWebOutContactPillItem.react"],"uses":2},{"name":"getPhoneNumber","used_by":["WAWebOutContactCell.react"],"uses":1}]}

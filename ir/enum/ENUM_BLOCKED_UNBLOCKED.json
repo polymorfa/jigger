@@ -1,0 +1,40 @@
+{
+  "id": "enum:ENUM_BLOCKED_UNBLOCKED",
+  "kind": "enum",
+  "name": "ENUM_BLOCKED_UNBLOCKED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInPsaEnums",
+    "variants": [
+      {
+        "name": "blocked",
+        "value": "blocked"
+      },
+      {
+        "name": "unblocked",
+        "value": "unblocked"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPsaEnums",
+    "matches": "ENUM_BLOCKED_UNBLOCKED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_BLOCKED_UNBLOCKED",
+    "blocked",
+    "unblocked"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInPsaChatBlockGetResponseSuccess",
+      "WASmaxInPsaChatBlockSetResponseSuccess",
+      "WASmaxOutPsaNotificationClientAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

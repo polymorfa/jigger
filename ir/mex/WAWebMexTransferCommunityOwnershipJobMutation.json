@@ -1,0 +1,64 @@
+{
+  "id": "mex:WAWebMexTransferCommunityOwnershipJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexTransferCommunityOwnershipJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "29643783178598899",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_update_users_role",
+        "ty": "XWA2GroupParticipantsRolesUpdateResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "group_id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "lid_migration_state",
+            "ty": "XWA2GroupLIDMigrationState",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "addressing_mode",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_update_users_role",
+    "document": "# persisted document 29643783178598899\nmutation MexTransferCommunityOwnershipJobMutation(\n  $input\n) {\n  xwa2_group_update_users_role(input: $input) {  # XWA2GroupParticipantsRolesUpdateResponse\n    group_id\n    lid_migration_state {  # XWA2GroupLIDMigrationState\n      addressing_mode\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexTransferCommunityOwnershipJobMutation.graphql",
+    "matches": "id:\\s*\"29643783178598899\""
+  },
+  "literals": [
+    "29643783178598899",
+    "WAWebMexTransferCommunityOwnershipJobMutation",
+    "xwa2_group_update_users_role"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexTransferCommunityOwnershipJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

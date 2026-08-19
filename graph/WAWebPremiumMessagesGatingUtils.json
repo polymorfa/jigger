@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps","WAWebMobilePlatforms"],"dependents":["WAWebExternalLinkPopup.react","WAWebGetInteractiveActionsFromButtons"],"dependent_count":2,"exports":[{"name":"isPremiumMessagesNewLeavingWAContentEnabled","used_by":["WAWebExternalLinkPopup.react"],"uses":1},{"name":"isPremiumMessagesUrlCtaDialogEnabled","used_by":["WAWebGetInteractiveActionsFromButtons"],"uses":1}]}

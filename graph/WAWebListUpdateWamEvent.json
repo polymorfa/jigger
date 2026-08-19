@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumListAction","WAWebWamEnumListType","WAWebWamEnumUpdateEntryPoint"],"dependents":["WAWebListsLogging"],"dependent_count":1,"exports":[{"name":"ListUpdateWamEvent","used_by":[],"uses":0}]}

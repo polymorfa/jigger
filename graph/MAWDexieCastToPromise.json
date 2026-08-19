@@ -1,0 +1,1 @@
+{"deps":["Promise"],"dependents":["MAWGroupInfoStore","MAWMediaManagementTxns","MAWMessageStore","MAWParticipantsStore"],"dependent_count":4,"exports":[{"name":"dexieCastToPromise_I_KNOW_WHAT_I_AM_DOING","used_by":["MAWGroupInfoStore","MAWMediaManagementTxns","MAWMessageStore","MAWParticipantsStore"],"uses":4}]}

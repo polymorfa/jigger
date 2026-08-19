@@ -1,0 +1,75 @@
+{
+  "id": "mex:WAWebACSServerProviderConfigQuery",
+  "kind": "mex",
+  "name": "WAWebACSServerProviderConfigQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25133761326299603",
+    "operation": "query",
+    "variables": [
+      "project_name"
+    ],
+    "args": [
+      {
+        "name": "project_name"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_wa_acs_config",
+        "ty": "TACSServerUpdateType",
+        "args": [
+          "project_name: $project_name"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "cipher_suite",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "expire_time",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "max_evals",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "public_key",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "redemption_limit",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "token_ttl",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 25133761326299603\nquery ACSServerProviderConfigQuery(\n  $project_name\n) {\n  xwa_wa_acs_config(project_name: $project_name) {  # TACSServerUpdateType\n    cipher_suite\n    expire_time\n    id\n    max_evals\n    public_key\n    redemption_limit\n    token_ttl\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebACSServerProviderConfigQuery.graphql",
+    "matches": "id:\\s*\"25133761326299603\""
+  },
+  "literals": [
+    "25133761326299603",
+    "WAWebACSServerProviderConfigQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebACSServerProvider"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

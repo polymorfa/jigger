@@ -1,0 +1,45 @@
+{
+  "id": "ab:newsletter_nux_notice_id",
+  "kind": "ab",
+  "name": "newsletter_nux_notice_id",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15255,
+    "type": "string",
+    "default": "20610210",
+    "alt_default": "20610210"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "newsletter_nux_notice_id:\\s*\\[\\s*15255"
+  },
+  "literals": [
+    "newsletter_nux_notice_id",
+    "15255"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebWamoNewsletterGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

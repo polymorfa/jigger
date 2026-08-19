@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebL10N","WAWebNewsletterBridgeApi","WAWebNewsletterGetNewsletterReportsJob","WAWebNewsletterMetadataCollection","asyncToGeneratorRuntime"],"dependents":["WAWebDebugNewsletter","useWAWebNewsletterReports"],"dependent_count":2,"exports":[{"name":"getNewsletterReportsAction","used_by":["WAWebDebugNewsletter","useWAWebNewsletterReports"],"uses":2}]}

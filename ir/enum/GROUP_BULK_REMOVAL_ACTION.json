@@ -1,0 +1,43 @@
+{
+  "id": "enum:GROUP_BULK_REMOVAL_ACTION",
+  "kind": "enum",
+  "name": "GROUP_BULK_REMOVAL_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupBulkRemovalAction",
+    "variants": [
+      {
+        "name": "TAP_SYSTEM_MESSAGE",
+        "value": 1.0
+      },
+      {
+        "name": "TAP_REMOVE_BUTTON",
+        "value": 2.0
+      },
+      {
+        "name": "TAP_CONFIRMATION_BUTTON",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupBulkRemovalAction",
+    "matches": "GROUP_BULK_REMOVAL_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_BULK_REMOVAL_ACTION",
+    "TAP_SYSTEM_MESSAGE",
+    "TAP_REMOVE_BUTTON",
+    "TAP_CONFIRMATION_BUTTON"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupBulkRemovalWamEvent",
+      "WAWebMessageGroupNotification.react",
+      "WAWebRemoveLinkJoinedMembersModal.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

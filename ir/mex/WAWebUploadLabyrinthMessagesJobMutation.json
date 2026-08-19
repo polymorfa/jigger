@@ -1,0 +1,90 @@
+{
+  "id": "mex:WAWebUploadLabyrinthMessagesJobMutation",
+  "kind": "mex",
+  "name": "WAWebUploadLabyrinthMessagesJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "28023438937253549",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "wa_labyrinth_upload_messages",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on WALabyrinthUploadMessagesData",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "results",
+                "ty": "WALabyrinthMessageUploadResult",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "offline_threading_id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "success",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "error",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on WALabyrinthUploadMessagesError",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "status",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "message",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 28023438937253549\nmutation UploadLabyrinthMessagesJobMutation(\n  $input\n) {\n  wa_labyrinth_upload_messages(input: $input) {\n    __typename\n    ... on WALabyrinthUploadMessagesData {\n      results {  # [WALabyrinthMessageUploadResult]\n        offline_threading_id\n        success\n        error\n      }\n    }\n    ... on WALabyrinthUploadMessagesError {\n      status\n      message\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebUploadLabyrinthMessagesJobMutation.graphql",
+    "matches": "id:\\s*\"28023438937253549\""
+  },
+  "literals": [
+    "28023438937253549",
+    "WAWebUploadLabyrinthMessagesJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebUploadLabyrinthMessagesJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","CometRelay","WAWebBizAdManagementAdPaymentModalMutation.graphql","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebFlex.react","WAWebModal.react","WDSButton.react","WDSText.react","react"],"dependents":["useWAWebBizAdManagementOpenAdPaymentModal"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,48 @@
+{
+  "id": "enum:ENUM_AUDIO_GIF_IMAGE_VIDEO",
+  "kind": "enum",
+  "name": "ENUM_AUDIO_GIF_IMAGE_VIDEO",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInNewslettersEnums",
+    "variants": [
+      {
+        "name": "audio",
+        "value": "audio"
+      },
+      {
+        "name": "gif",
+        "value": "gif"
+      },
+      {
+        "name": "image",
+        "value": "image"
+      },
+      {
+        "name": "video",
+        "value": "video"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInNewslettersEnums",
+    "matches": "ENUM_AUDIO_GIF_IMAGE_VIDEO\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_AUDIO_GIF_IMAGE_VIDEO",
+    "audio",
+    "gif",
+    "image",
+    "video"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInNewslettersMessageAssociationTypeMixin",
+      "WASmaxInNewslettersNewsletterMediaMixin",
+      "WASmaxInNewslettersStatusNewsletterMediaMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

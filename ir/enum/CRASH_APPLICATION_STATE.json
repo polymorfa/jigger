@@ -1,0 +1,84 @@
+{
+  "id": "enum:CRASH_APPLICATION_STATE",
+  "kind": "enum",
+  "name": "CRASH_APPLICATION_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCrashApplicationState",
+    "variants": [
+      {
+        "name": "FOREGROUND",
+        "value": 1.0
+      },
+      {
+        "name": "BACKGROUND",
+        "value": 2.0
+      },
+      {
+        "name": "APP_INIT",
+        "value": 3.0
+      },
+      {
+        "name": "VISIBLE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCrashApplicationState",
+    "matches": "CRASH_APPLICATION_STATE\\s*[:=]"
+  },
+  "literals": [
+    "CRASH_APPLICATION_STATE",
+    "FOREGROUND",
+    "BACKGROUND",
+    "APP_INIT",
+    "VISIBLE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCrashLogWamEvent",
+      "WAWebCrashlog",
+      "WAWebCriticalEventWamEvent",
+      "WAWebWindowsHybridBridgeWam",
+      "WAWebWindowsHybridBridgeWam.v2586",
+      "WAWebWindowsHybridBridgeWam.v2587",
+      "WAWebWindowsHybridBridgeWam.v2589",
+      "WAWebWindowsHybridBridgeWam.v2590",
+      "WAWebWindowsHybridBridgeWam.v2591",
+      "WAWebWindowsHybridBridgeWam.v2601",
+      "WAWebWindowsHybridBridgeWam.v2602",
+      "WAWebWindowsHybridBridgeWam.v2603",
+      "WAWebWindowsHybridBridgeWam.v2604",
+      "WAWebWindowsHybridBridgeWam.v2605",
+      "WAWebWindowsHybridBridgeWam.v2606",
+      "WAWebWindowsHybridBridgeWam.v2607",
+      "WAWebWindowsHybridBridgeWam.v2608",
+      "WAWebWindowsHybridBridgeWam.v2609",
+      "WAWebWindowsHybridBridgeWam.v2610",
+      "WAWebWindowsHybridBridgeWam.v2611",
+      "WAWebWindowsHybridBridgeWam.v2613",
+      "WAWebWindowsHybridBridgeWam.v2614",
+      "WAWebWindowsHybridBridgeWam.v2615",
+      "WAWebWindowsHybridBridgeWam.v2616",
+      "WAWebWindowsHybridBridgeWam.v2617",
+      "WAWebWindowsHybridBridgeWam.v2618",
+      "WAWebWindowsHybridBridgeWam.v2619",
+      "WAWebWindowsHybridBridgeWam.v2620",
+      "WAWebWindowsHybridBridgeWam.v2621",
+      "WAWebWindowsHybridBridgeWam.v2622",
+      "WAWebWindowsHybridBridgeWam.v2623",
+      "WAWebWindowsHybridBridgeWam.v2624",
+      "WAWebWindowsHybridBridgeWam.v2625",
+      "WAWebWindowsHybridBridgeWam.v2626",
+      "WAWebWindowsHybridBridgeWam.v2627",
+      "WAWebWindowsHybridBridgeWam.v2628",
+      "WAWebWindowsHybridBridgeWam.v2629",
+      "WAWebWindowsHybridBridgeWam.v2630",
+      "WAWebWindowsHybridBridgeWam.v2631"
+    ],
+    "dep_count": 0,
+    "dependent_count": 39
+  }
+}

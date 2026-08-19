@@ -1,0 +1,69 @@
+{
+  "id": "enum:QUICK_REPLY_ENTRY_POINT",
+  "kind": "enum",
+  "name": "QUICK_REPLY_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumQuickReplyEntryPoint",
+    "variants": [
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_KEYBOARD",
+        "value": 1.0
+      },
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_ATTACHMENT_PANEL",
+        "value": 2.0
+      },
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_SETTINGS_MENU",
+        "value": 3.0
+      },
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_BANNERS",
+        "value": 4.0
+      },
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_NUX",
+        "value": 5.0
+      },
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_ACTION_BAR",
+        "value": 6.0
+      },
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_DEEPLINK",
+        "value": 7.0
+      },
+      {
+        "name": "QUICK_REPLY_ENTRY_POINT_MESSAGE_BUBBLE",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumQuickReplyEntryPoint",
+    "matches": "QUICK_REPLY_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "QUICK_REPLY_ENTRY_POINT",
+    "QUICK_REPLY_ENTRY_POINT_KEYBOARD",
+    "QUICK_REPLY_ENTRY_POINT_ATTACHMENT_PANEL",
+    "QUICK_REPLY_ENTRY_POINT_SETTINGS_MENU",
+    "QUICK_REPLY_ENTRY_POINT_BANNERS",
+    "QUICK_REPLY_ENTRY_POINT_NUX",
+    "QUICK_REPLY_ENTRY_POINT_ACTION_BAR",
+    "QUICK_REPLY_ENTRY_POINT_DEEPLINK",
+    "QUICK_REPLY_ENTRY_POINT_MESSAGE_BUBBLE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebComposeBox.react",
+      "WAWebQuickRepliesPluginLogEvents",
+      "WAWebQuickReplyLogging",
+      "WAWebQuickReplyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

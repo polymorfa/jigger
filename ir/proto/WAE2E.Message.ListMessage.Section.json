@@ -1,0 +1,46 @@
+{
+  "id": "proto:WAE2E.Message.ListMessage.Section",
+  "kind": "proto",
+  "name": "WAE2E.Message.ListMessage.Section",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "rows": {
+        "number": 2,
+        "type_name": "WAE2E.Message.ListMessage.Row"
+      },
+      "title": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.ListMessage.Section\""
+  },
+  "literals": [
+    "Section"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

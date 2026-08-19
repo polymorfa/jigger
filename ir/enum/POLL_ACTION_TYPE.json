@@ -1,0 +1,72 @@
+{
+  "id": "enum:POLL_ACTION_TYPE",
+  "kind": "enum",
+  "name": "POLL_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPollActionType",
+    "variants": [
+      {
+        "name": "OPEN_CREATE_MODAL",
+        "value": 1.0
+      },
+      {
+        "name": "CREATE_POLL",
+        "value": 2.0
+      },
+      {
+        "name": "VIEW_RESULTS_MODAL",
+        "value": 4.0
+      },
+      {
+        "name": "REMOVE_VOTE",
+        "value": 5.0
+      },
+      {
+        "name": "VOTE",
+        "value": 6.0
+      },
+      {
+        "name": "CHANGE_VOTE",
+        "value": 7.0
+      },
+      {
+        "name": "EDIT_POLL_INITIATED",
+        "value": 8.0
+      },
+      {
+        "name": "EDIT_POLL_COMPLETED",
+        "value": 9.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPollActionType",
+    "matches": "POLL_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "POLL_ACTION_TYPE",
+    "OPEN_CREATE_MODAL",
+    "CREATE_POLL",
+    "VIEW_RESULTS_MODAL",
+    "REMOVE_VOTE",
+    "VOTE",
+    "CHANGE_VOTE",
+    "EDIT_POLL_INITIATED",
+    "EDIT_POLL_COMPLETED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMessageEditFlow.react",
+      "WAWebNewsletterSendVoteMsgAction",
+      "WAWebPollsActionsMetricUtils",
+      "WAWebPollsActionsWamEvent",
+      "WAWebPollsDetailsFlow",
+      "WAWebPollsSendPollCreationMsgAction",
+      "WAWebPollsSendVoteMsgAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 7
+  }
+}

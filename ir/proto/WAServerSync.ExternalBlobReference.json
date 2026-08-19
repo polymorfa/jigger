@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAServerSync.ExternalBlobReference",
+  "kind": "proto",
+  "name": "WAServerSync.ExternalBlobReference",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "directPath": {
+        "number": 2
+      },
+      "fileEncSha256": {
+        "number": 6
+      },
+      "fileSha256": {
+        "number": 5
+      },
+      "fileSizeBytes": {
+        "number": 4
+      },
+      "handle": {
+        "number": 3
+      },
+      "mediaKey": {
+        "number": 1
+      }
+    },
+    "module": "WAServerSync.pb"
+  },
+  "evidence": {
+    "module": "WAServerSync.pb",
+    "matches": "name = \"ExternalBlobReference\""
+  },
+  "literals": [
+    "ExternalBlobReference"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

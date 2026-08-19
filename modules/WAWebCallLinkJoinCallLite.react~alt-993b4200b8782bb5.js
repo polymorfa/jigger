@@ -1,0 +1,266 @@
+__d("WAWebCallLinkJoinCallLite.react", [
+	"fbt",
+	"WAWebCallLinkJoinCallLiteFooter.react",
+	"WAWebCallLinkJoinCallLiteHeader.react",
+	"WAWebExternalLink.react",
+	"WAWebFlex.react",
+	"WAWebLinkDeviceScreenPrimaryButton.react",
+	"WAWebPhoneIcon.react",
+	"WAWebVideoIcon.react",
+	"WDSIllustrationWdsPictoDownloadDesktop.react",
+	"WDSThemes",
+	"react",
+	"stylex",
+	"useWAWebTimeout"
+], (function(t, n, r, o, a, i, l, s) {
+	"use strict";
+	var e, u, c = u || (u = o("react")), d = u, m = d.useCallback, p = d.useEffect, _ = "https://www.whatsapp.com/download", f = "https://web.whatsapp.com/", g = 2e3;
+	function h(e, t) {
+		p(function() {
+			window.location.href = b(e, t);
+		}, [e, t]);
+	}
+	var y = {
+		page: {
+			fontFamily: "xnogrbr",
+			backgroundColor: "x1fgb4vj",
+			width: "xh8yej3",
+			minWidth: "x15hv16n",
+			minHeight: "x1us19tq",
+			height: "x5yr21d",
+			display: "x78zum5",
+			flexDirection: "xdt5ytf",
+			overflowX: "xw2csxc",
+			overflowY: "x1odjw0f",
+			color: "xowvryd",
+			boxSizing: "x9f619",
+			$$css: !0
+		},
+		contentRegion: {
+			alignSelf: "xkh2ocl",
+			flexGrow: "x1iyjqo2",
+			flexShrink: "x2lah0s",
+			display: "x78zum5",
+			flexDirection: "xdt5ytf",
+			paddingInlineStart: "xu7uy1i x1e5xhrn",
+			paddingLeft: null,
+			paddingRight: null,
+			paddingInlineEnd: "x1t7qo4d x9lt2cq",
+			boxSizing: "x9f619",
+			$$css: !0
+		},
+		cardArea: {
+			width: "xh8yej3",
+			flexGrow: "x1iyjqo2",
+			flexShrink: "x2lah0s",
+			rowGap: "x1f0uite",
+			paddingTop: "x9orja2",
+			paddingBottom: "xbaz6xv",
+			justifyContent: "xl56j7k x176qze7",
+			$$css: !0
+		},
+		card: {
+			backgroundColor: "xb1i3fl",
+			borderStartStartRadius: "x1g83kfv",
+			borderStartEndRadius: "x3qq2k7",
+			borderEndEndRadius: "x2x8art",
+			borderEndStartRadius: "x1qor8vf",
+			borderTopWidth: "x178xt8z",
+			borderInlineEndWidth: "x1lun4ml",
+			borderBottomWidth: "xso031l",
+			borderInlineStartWidth: "xpilrb4",
+			borderTopStyle: "x13fuv20",
+			borderInlineEndStyle: "x18b5jzi",
+			borderBottomStyle: "x1q0q8m5",
+			borderInlineStartStyle: "x1t7ytsu",
+			borderTopColor: "xuvddsd",
+			borderInlineEndColor: "x8vtej4",
+			borderBottomColor: "xa1pj8o",
+			borderInlineStartColor: "x10nbx9m",
+			paddingTop: "x4i7bpe xiaro03",
+			paddingInlineEnd: "x15zmtp0 xcm4ngb",
+			paddingBottom: "x1sgudl8 x17ud9ob",
+			paddingInlineStart: "x1oiqv2n xomcbdp",
+			maxWidth: "x65f84u",
+			width: "xh8yej3",
+			boxSizing: "x9f619",
+			rowGap: "xi32cqo",
+			$$css: !0
+		},
+		heroButton: {
+			width: "x13oubkp",
+			height: "xjp8j0k",
+			borderStartStartRadius: "x1c9tyrk",
+			borderStartEndRadius: "xeusxvb",
+			borderEndEndRadius: "x1pahc9y",
+			borderEndStartRadius: "x1ertn4p",
+			backgroundColor: "x1bbfg41",
+			display: "x78zum5",
+			alignItems: "x6s0dn4",
+			justifyContent: "xl56j7k",
+			flexShrink: "x2lah0s",
+			$$css: !0
+		},
+		heroGlyph: {
+			color: "xz5x636",
+			$$css: !0
+		},
+		joinButtonOverride: {
+			minWidth: "x15x72sd",
+			borderTopColor: "xuvddsd",
+			borderInlineEndColor: "x8vtej4",
+			borderBottomColor: "xa1pj8o",
+			borderInlineStartColor: "x10nbx9m",
+			color: "xipbhat xmp5vt6",
+			$$css: !0
+		},
+		downloadCard: {
+			backgroundColor: "xb1i3fl",
+			borderStartStartRadius: "x1g83kfv",
+			borderStartEndRadius: "x3qq2k7",
+			borderEndEndRadius: "x2x8art",
+			borderEndStartRadius: "x1qor8vf",
+			borderTopWidth: "x178xt8z",
+			borderInlineEndWidth: "x1lun4ml",
+			borderBottomWidth: "xso031l",
+			borderInlineStartWidth: "xpilrb4",
+			borderTopStyle: "x13fuv20",
+			borderInlineEndStyle: "x18b5jzi",
+			borderBottomStyle: "x1q0q8m5",
+			borderInlineStartStyle: "x1t7ytsu",
+			borderTopColor: "xuvddsd",
+			borderInlineEndColor: "x8vtej4",
+			borderBottomColor: "xa1pj8o",
+			borderInlineStartColor: "x10nbx9m",
+			paddingTop: "xl7twdi xf7h00z",
+			paddingInlineEnd: "xyo0t3i x19viewb",
+			paddingBottom: "xvg22vi xp9ekdk",
+			paddingInlineStart: "xb0esv5 xaacwwv",
+			columnGap: "xrdqr27",
+			rowGap: "x1qvou4u",
+			width: "xh8yej3",
+			maxWidth: "x65f84u",
+			boxSizing: "x9f619",
+			$$css: !0
+		},
+		downloadCardIllustration: {
+			flexShrink: "x2lah0s",
+			$$css: !0
+		},
+		downloadButtonOverride: {
+			minWidth: "x15x72sd",
+			whiteSpace: "xuxw1ft",
+			flexShrink: "x2lah0s",
+			backgroundColor: "xb1i3fl x19qpkoy",
+			borderTopColor: "xuvddsd",
+			borderInlineEndColor: "x8vtej4",
+			borderBottomColor: "xa1pj8o",
+			borderInlineStartColor: "x10nbx9m",
+			color: "xipbhat xmp5vt6",
+			$$css: !0
+		}
+	};
+	function C(t) {
+		var n = t.callType, a = t.idHash, i = t.locales;
+		h(n, a);
+		var l = o("useWAWebTimeout").useManualTimeout(function() {
+			document.visibilityState === "visible" && (window.location.href = _);
+		}), u = l[0], d = m(async function() {
+			window.location.href = b(n, a), u(g);
+		}, [
+			n,
+			a,
+			u
+		]), p = m(async function() {
+			window.location.href = _;
+		}, []), C = m(async function() {
+			window.location.href = f;
+		}, []);
+		return c.jsxs("div", babelHelpers.extends({}, (e || (e = r("stylex"))).props(o("WDSThemes").WDSLightTheme, y.page), { children: [c.jsxs(o("WAWebFlex.react").FlexColumn, {
+			xstyle: y.contentRegion,
+			children: [c.jsx(r("WAWebCallLinkJoinCallLiteHeader.react"), {
+				onLogin: C,
+				onDownload: p
+			}), c.jsxs(o("WAWebFlex.react").FlexColumn, {
+				align: "center",
+				xstyle: y.cardArea,
+				children: [c.jsxs(o("WAWebFlex.react").FlexColumn, {
+					align: "center",
+					xstyle: y.card,
+					children: [
+						c.jsx(o("WAWebExternalLink.react").ExternalLink, {
+							href: _,
+							testid: "call-link-join-call-lite-hero",
+							"aria-label": s._(
+								/*BTDS*/
+								""
+							),
+							xstyle: y.heroButton,
+							children: n === "video" ? c.jsx(o("WAWebVideoIcon.react").VideoIcon, {
+								"aria-hidden": !0,
+								height: 48,
+								width: 48,
+								iconXstyle: y.heroGlyph
+							}) : c.jsx(o("WAWebPhoneIcon.react").PhoneIcon, {
+								"aria-hidden": !0,
+								height: 48,
+								width: 48,
+								iconXstyle: y.heroGlyph
+							})
+						}),
+						c.jsx("h1", {
+							className: "xdj266r x14z9mp xat24cr x1lziwak x579bpy xo1l8bm x1ud3kw6 xiaed6b xipbhat x2b8uid",
+							children: s._(
+								/*BTDS*/
+								""
+							)
+						}),
+						c.jsx(r("WAWebLinkDeviceScreenPrimaryButton.react"), {
+							onClick: d,
+							testId: "call-link-join-call-lite-join-button",
+							text: s._(
+								/*BTDS*/
+								""
+							),
+							xstyle: y.joinButtonOverride
+						})
+					]
+				}), c.jsxs(o("WAWebFlex.react").FlexRow, {
+					align: "center",
+					justify: "all",
+					xstyle: y.downloadCard,
+					children: [
+						c.jsx(r("WDSIllustrationWdsPictoDownloadDesktop.react"), {
+							"aria-hidden": !0,
+							xstyle: y.downloadCardIllustration
+						}),
+						c.jsx("span", {
+							className: "x1iyjqo2 x1c3i2sq xk50ysn x1o2sk6j xy4aiz4 x1yc453h",
+							children: s._(
+								/*BTDS*/
+								""
+							)
+						}),
+						c.jsx(r("WAWebLinkDeviceScreenPrimaryButton.react"), {
+							onClick: p,
+							testId: "call-link-join-call-lite-download-button",
+							text: s._(
+								/*BTDS*/
+								""
+							),
+							xstyle: y.downloadButtonOverride
+						})
+					]
+				})]
+			})]
+		}), c.jsx(r("WAWebCallLinkJoinCallLiteFooter.react"), {
+			locales: i,
+			onDownload: p
+		})] }));
+	}
+	C.displayName = C.name + " [from " + i.id + "]";
+	function b(e, t) {
+		return "whatsapp://call/" + encodeURIComponent(e) + "/" + encodeURIComponent(t);
+	}
+	l.default = C;
+}), 226);

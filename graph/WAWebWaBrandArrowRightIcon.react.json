@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebWaBrandArrowRightIconWrapper.react"],"dependent_count":2,"exports":[{"name":"WaBrandArrowRightIcon","used_by":["WAWebAllGeneratedIcons","WAWebWaBrandArrowRightIconWrapper.react"],"uses":2}]}

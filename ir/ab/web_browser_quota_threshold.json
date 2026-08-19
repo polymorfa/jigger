@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_browser_quota_threshold",
+  "kind": "ab",
+  "name": "web_browser_quota_threshold",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3134,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_browser_quota_threshold:\\s*\\[\\s*3134"
+  },
+  "literals": [
+    "web_browser_quota_threshold",
+    "3134"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStoreQuotaManager"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

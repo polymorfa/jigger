@@ -1,0 +1,1 @@
+{"deps":["WAWebEmojiKeywordToUnicode","WAWebEmojiSuggestionsPanel.react","WAWebRecentEmojiCollection","react","react-compiler-runtime","useWAWebLexicalTypeAhead"],"dependents":["WAWebStatusComposeBox.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

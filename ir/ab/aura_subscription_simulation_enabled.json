@@ -1,0 +1,45 @@
+{
+  "id": "ab:aura_subscription_simulation_enabled",
+  "kind": "ab",
+  "name": "aura_subscription_simulation_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26086,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "aura_subscription_simulation_enabled:\\s*\\[\\s*26086"
+  },
+  "literals": [
+    "aura_subscription_simulation_enabled",
+    "26086"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebAuraGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

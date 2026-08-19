@@ -1,0 +1,1 @@
+{"deps":["MAWBridge","MAWSharedOfflineResumeUINotifier","Promise","WALogger"],"dependents":["MAWBackendHandlers","MAWServerRPC"],"dependent_count":2,"exports":[{"name":"handleThreadMetadata","used_by":["MAWBackendHandlers","MAWServerRPC"],"uses":2}]}

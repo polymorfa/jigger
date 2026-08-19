@@ -1,0 +1,33 @@
+{
+  "id": "enum:COMMUNITY_UI_FEATURE_TYPE",
+  "kind": "enum",
+  "name": "COMMUNITY_UI_FEATURE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCommunityUiFeatureType",
+    "variants": [
+      {
+        "name": "SUBGROUP_SWITCH",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCommunityUiFeatureType",
+    "matches": "COMMUNITY_UI_FEATURE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "COMMUNITY_UI_FEATURE_TYPE",
+    "SUBGROUP_SWITCH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCommunityFeatureUsageWamEvent",
+      "WAWebCommunitySubgroupSwitcher.react",
+      "WAWebSubgroupSwitcherButton.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

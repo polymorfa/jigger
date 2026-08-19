@@ -1,0 +1,47 @@
+{
+  "id": "enum:CONNECTION_ORIGIN_TYPE",
+  "kind": "enum",
+  "name": "CONNECTION_ORIGIN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumConnectionOriginType",
+    "variants": [
+      {
+        "name": "PERSON",
+        "value": 1.0
+      },
+      {
+        "name": "PUSH",
+        "value": 2.0
+      },
+      {
+        "name": "OTHER",
+        "value": 3.0
+      },
+      {
+        "name": "BACKOFF",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumConnectionOriginType",
+    "matches": "CONNECTION_ORIGIN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CONNECTION_ORIGIN_TYPE",
+    "PERSON",
+    "PUSH",
+    "OTHER",
+    "BACKOFF"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLoginWamEvent",
+      "WAWebWorkerHandleSuccessApi"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

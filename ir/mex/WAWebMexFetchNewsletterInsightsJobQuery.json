@@ -1,0 +1,108 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterInsightsJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterInsightsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9853618868050977",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_admin_insights",
+        "ty": "XWA2NewsletterAdminInsightsResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "newsletter_id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "state",
+            "ty": "XWA2NewsletterState",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "type",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "last_update_time",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "metrics_status",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "result",
+            "ty": "XWA2NewsletterAdminInsightsMetricResult",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "values",
+                "ty": "XWA2NewsletterAdminInsightsValues",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "value",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "country",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "role",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "timestamp",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_admin_insights",
+    "document": "# persisted document 9853618868050977\nquery MexFetchNewsletterInsightsJobQuery(\n  $input\n) {\n  xwa2_newsletter_admin_insights(input: $input) {  # XWA2NewsletterAdminInsightsResponse\n    newsletter_id\n    state {  # XWA2NewsletterState\n      type\n    }\n    last_update_time\n    metrics_status\n    result {  # [XWA2NewsletterAdminInsightsMetricResult]\n      id\n      values {  # [XWA2NewsletterAdminInsightsValues]\n        value\n        country\n        role\n        timestamp\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterInsightsJobQuery.graphql",
+    "matches": "id:\\s*\"9853618868050977\""
+  },
+  "literals": [
+    "9853618868050977",
+    "WAWebMexFetchNewsletterInsightsJobQuery",
+    "xwa2_newsletter_admin_insights"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterInsightsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

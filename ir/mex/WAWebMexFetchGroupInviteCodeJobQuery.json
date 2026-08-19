@@ -1,0 +1,64 @@
+{
+  "id": "mex:WAWebMexFetchGroupInviteCodeJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchGroupInviteCodeJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "29247029834912157",
+    "operation": "query",
+    "variables": [
+      "id",
+      "query_context"
+    ],
+    "args": [
+      {
+        "name": "id"
+      },
+      {
+        "name": "query_context"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_query_by_id",
+        "args": [
+          "group_input: …"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "invite_code",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_query_by_id",
+    "document": "# persisted document 29247029834912157\nquery MexFetchGroupInviteCodeJobQuery(\n  $id\n  $query_context\n) {\n  xwa2_group_query_by_id(group_input: …) {\n    __typename\n    invite_code\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchGroupInviteCodeJobQuery.graphql",
+    "matches": "id:\\s*\"29247029834912157\""
+  },
+  "literals": [
+    "29247029834912157",
+    "WAWebMexFetchGroupInviteCodeJobQuery",
+    "xwa2_group_query_by_id"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchGroupInviteCodeJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","Promise","WALogger","WAWebApiParse","WAWebEnsureVoipInited","WAWebFrontendContactGetters","WAWebToast.react","WAWebToastManager","WAWebVoipAcquireMediaStream","WAWebVoipCreateCallLink","WAWebVoipStackInterface","asyncToGeneratorRuntime","err","react"],"dependents":["WAWebVoipCallsTabEmptyStateButtons.react"],"dependent_count":1,"exports":[]}

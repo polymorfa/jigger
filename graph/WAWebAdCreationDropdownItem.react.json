@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebBizNativeAdsWamLogger","WAWebChatlistUtils","WAWebMegaphoneRefreshedIcon.react","WDSMenuItem.react","react"],"dependents":["WAWebAdsCreationChatlistHeaderDropdownItem.react","WAWebProductCatalogCatalogDrawerMenu.react"],"dependent_count":2,"exports":[]}

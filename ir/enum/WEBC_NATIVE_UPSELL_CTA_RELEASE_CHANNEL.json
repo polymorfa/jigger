@@ -1,0 +1,42 @@
+{
+  "id": "enum:WEBC_NATIVE_UPSELL_CTA_RELEASE_CHANNEL",
+  "kind": "enum",
+  "name": "WEBC_NATIVE_UPSELL_CTA_RELEASE_CHANNEL",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcNativeUpsellCtaReleaseChannel",
+    "variants": [
+      {
+        "name": "PRODUCTION",
+        "value": 1.0
+      },
+      {
+        "name": "BETA",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcNativeUpsellCtaReleaseChannel",
+    "matches": "WEBC_NATIVE_UPSELL_CTA_RELEASE_CHANNEL\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_NATIVE_UPSELL_CTA_RELEASE_CHANNEL",
+    "PRODUCTION",
+    "BETA"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDesktopUpsellCallingMissedCall.react",
+      "WAWebDesktopUpsellCallingUnavailablePopover.react",
+      "WAWebDesktopUpsellChatlistToastbar.react",
+      "WAWebDesktopUpsellStoreOpener",
+      "WAWebMacBetaUpsellToastbar.react",
+      "WAWebWebcNativeUpsellCtaWamEvent",
+      "useWAWebDesktopUpsellWamImpression"
+    ],
+    "dep_count": 0,
+    "dependent_count": 7
+  }
+}

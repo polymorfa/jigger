@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebMdSyncdMutationWamEvent","WAWebSyncdWamReportingUtils"],"dependent_count":2,"exports":[{"name":"MUTATION_OPERATION_TYPE","used_by":["WAWebMdSyncdMutationWamEvent","WAWebSyncdWamReportingUtils"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebNotificationIcon","react","react-compiler-runtime"],"dependents":["WAWebAppUI","WAWebTempBanScreen.react"],"dependent_count":2,"exports":[{"name":"ErrorFavicon","used_by":["WAWebAppUI","WAWebTempBanScreen.react"],"uses":2},{"name":"DefaultFavicon","used_by":["WAWebAppUI"],"uses":1}]}

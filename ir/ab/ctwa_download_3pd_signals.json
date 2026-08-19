@@ -1,0 +1,46 @@
+{
+  "id": "ab:ctwa_download_3pd_signals",
+  "kind": "ab",
+  "name": "ctwa_download_3pd_signals",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13385,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_download_3pd_signals:\\s*\\[\\s*13385"
+  },
+  "literals": [
+    "ctwa_download_3pd_signals",
+    "13385"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebCTWAGatingUtils",
+      "WAWebTasksDefinitions"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

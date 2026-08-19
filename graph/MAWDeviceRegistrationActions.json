@@ -1,0 +1,1 @@
+{"deps":["MAWLoggerUtils","MAWODSProxy","MWFBLogger","MessengerWebInitData","WADbSignal","WAGetRegistrationInfoApi","WAOdsEnums","WASignedKeyApi","asyncToGeneratorRuntime"],"dependents":["MAWDeviceRegistrationWorker"],"dependent_count":1,"exports":[{"name":"getRegistrationMetaWorm","used_by":["MAWDeviceRegistrationWorker"],"uses":1}]}

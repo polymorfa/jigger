@@ -1,0 +1,54 @@
+{
+  "id": "proto:WAWebProtobufsStatusAttributions.StatusAttribution.Music",
+  "kind": "proto",
+  "name": "WAWebProtobufsStatusAttributions.StatusAttribution.Music",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "artistAttribution": {
+        "number": 5
+      },
+      "author": {
+        "number": 4
+      },
+      "authorName": {
+        "number": 1
+      },
+      "isExplicit": {
+        "number": 6
+      },
+      "songId": {
+        "number": 2
+      },
+      "title": {
+        "number": 3
+      }
+    },
+    "module": "WAWebProtobufsStatusAttributions.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsStatusAttributions.pb",
+    "matches": "name = \"StatusAttribution.Music\""
+  },
+  "literals": [
+    "Music"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebE2EProtoGenerator",
+      "WAWebMsgGetters",
+      "WAWebNewsletterSendStatusAction",
+      "WAWebProtobufsE2E.pb",
+      "WAWebStatusExternalShareUtils",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusReshareAction",
+      "WAWebStatusSubtitle.react"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

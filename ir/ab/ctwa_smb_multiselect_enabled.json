@@ -1,0 +1,45 @@
+{
+  "id": "ab:ctwa_smb_multiselect_enabled",
+  "kind": "ab",
+  "name": "ctwa_smb_multiselect_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26719,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_smb_multiselect_enabled:\\s*\\[\\s*26719"
+  },
+  "literals": [
+    "ctwa_smb_multiselect_enabled",
+    "26719"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizFrontendGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

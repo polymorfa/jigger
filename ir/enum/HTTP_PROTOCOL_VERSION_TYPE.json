@@ -1,0 +1,42 @@
+{
+  "id": "enum:HTTP_PROTOCOL_VERSION_TYPE",
+  "kind": "enum",
+  "name": "HTTP_PROTOCOL_VERSION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumHttpProtocolVersionType",
+    "variants": [
+      {
+        "name": "HTTP1",
+        "value": 0.0
+      },
+      {
+        "name": "HTTP2",
+        "value": 1.0
+      },
+      {
+        "name": "HTTP3",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumHttpProtocolVersionType",
+    "matches": "HTTP_PROTOCOL_VERSION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "HTTP_PROTOCOL_VERSION_TYPE",
+    "HTTP1",
+    "HTTP2",
+    "HTTP3"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaDownload2WamEvent",
+      "WAWebMediaUpload2WamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

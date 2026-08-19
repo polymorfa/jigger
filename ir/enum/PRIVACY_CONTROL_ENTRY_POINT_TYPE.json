@@ -1,0 +1,87 @@
+{
+  "id": "enum:PRIVACY_CONTROL_ENTRY_POINT_TYPE",
+  "kind": "enum",
+  "name": "PRIVACY_CONTROL_ENTRY_POINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPrivacyControlEntryPointType",
+    "variants": [
+      {
+        "name": "PRIVACY_SETTINGS",
+        "value": 0.0
+      },
+      {
+        "name": "PROFILE_PHOTO_JIT",
+        "value": 1.0
+      },
+      {
+        "name": "SETTINGS_SEARCH",
+        "value": 2.0
+      },
+      {
+        "name": "DEEP_LINK",
+        "value": 3.0
+      },
+      {
+        "name": "PRIVACY_CHECKUP_BANNER",
+        "value": 4.0
+      },
+      {
+        "name": "PRIVACY_CHECKUP_DEEP_LINK",
+        "value": 5.0
+      },
+      {
+        "name": "PRIVACY_CHECKUP_WA_CHAT",
+        "value": 6.0
+      },
+      {
+        "name": "PRIVACY_CHECKUP_SETTINGS_SEARCH",
+        "value": 7.0
+      },
+      {
+        "name": "DEFENSE_MODE_LOCKED_INTERSTITIAL",
+        "value": 8.0
+      },
+      {
+        "name": "STICKER_INFO_SHEET",
+        "value": 9.0
+      },
+      {
+        "name": "DEFENSE_MODE_QUARANTINED_INTERSTITIAL",
+        "value": 10.0
+      },
+      {
+        "name": "DEFENSE_MODE_SETTINGS_REMINDER_BANNER",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPrivacyControlEntryPointType",
+    "matches": "PRIVACY_CONTROL_ENTRY_POINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PRIVACY_CONTROL_ENTRY_POINT_TYPE",
+    "PRIVACY_SETTINGS",
+    "PROFILE_PHOTO_JIT",
+    "SETTINGS_SEARCH",
+    "DEEP_LINK",
+    "PRIVACY_CHECKUP_BANNER",
+    "PRIVACY_CHECKUP_DEEP_LINK",
+    "PRIVACY_CHECKUP_WA_CHAT",
+    "PRIVACY_CHECKUP_SETTINGS_SEARCH",
+    "DEFENSE_MODE_LOCKED_INTERSTITIAL",
+    "STICKER_INFO_SHEET",
+    "DEFENSE_MODE_QUARANTINED_INTERSTITIAL",
+    "DEFENSE_MODE_SETTINGS_REMINDER_BANNER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPrivacySettingsClickWamEvent",
+      "WAWebPrivacySettingsDrawer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

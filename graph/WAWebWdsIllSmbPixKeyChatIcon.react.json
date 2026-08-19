@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizPixKeyPromo.react"],"dependent_count":2,"exports":[{"name":"WdsIllSmbPixKeyChatIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizPixKeyPromo.react"],"uses":2}]}

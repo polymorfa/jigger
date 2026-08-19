@@ -1,0 +1,1 @@
+{"deps":["fbt","WATimeUtils","WAWebAfterReadUtils","WAWebClockDurationFormatters","WAWebDrawerSection.react","WAWebMsgGetters","WDSText.react","react","react-compiler-runtime","useWAWebInterval","useWAWebMsgValues"],"dependents":["WAWebContactMsgInfoDrawer.react","WAWebGroupMsgInfoDrawer.react"],"dependent_count":2,"exports":[]}

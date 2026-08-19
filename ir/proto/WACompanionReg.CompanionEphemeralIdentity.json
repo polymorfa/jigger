@@ -1,0 +1,38 @@
+{
+  "id": "proto:WACompanionReg.CompanionEphemeralIdentity",
+  "kind": "proto",
+  "name": "WACompanionReg.CompanionEphemeralIdentity",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "deviceType": {
+        "number": 2
+      },
+      "publicKey": {
+        "number": 1
+      },
+      "ref": {
+        "number": 3
+      }
+    },
+    "module": "WACompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WACompanionReg.pb",
+    "matches": "name = \"CompanionEphemeralIdentity\""
+  },
+  "literals": [
+    "CompanionEphemeralIdentity"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

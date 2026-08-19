@@ -1,0 +1,112 @@
+{
+  "id": "enum:EDIT_PROFILE_ACTION",
+  "kind": "enum",
+  "name": "EDIT_PROFILE_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumEditProfileAction",
+    "variants": [
+      {
+        "name": "ACTION_OPEN",
+        "value": 1.0
+      },
+      {
+        "name": "ACTION_SAVE",
+        "value": 2.0
+      },
+      {
+        "name": "ACTION_DISCARD",
+        "value": 3.0
+      },
+      {
+        "name": "ACTION_PROFILE_FIELD_OPEN",
+        "value": 4.0
+      },
+      {
+        "name": "ACTION_PROFILE_FIELD_SAVE",
+        "value": 5.0
+      },
+      {
+        "name": "ACTION_PROFILE_FIELD_DISCARD",
+        "value": 6.0
+      },
+      {
+        "name": "ACTION_FACEBOOK_ENABLED",
+        "value": 7.0
+      },
+      {
+        "name": "ACTION_FACEBOOK_DISABLED",
+        "value": 8.0
+      },
+      {
+        "name": "ACTION_INSTAGRAM_ENABLED",
+        "value": 9.0
+      },
+      {
+        "name": "ACTION_INSTAGRAM_DISABLED",
+        "value": 10.0
+      },
+      {
+        "name": "ACTION_FB_IG_POP_SHOWN",
+        "value": 11.0
+      },
+      {
+        "name": "ACTION_EDIT_COVER_PHOTO_CLICK",
+        "value": 12.0
+      },
+      {
+        "name": "ACTION_REMOVE_COVER_PHOTO",
+        "value": 13.0
+      },
+      {
+        "name": "UPGRADE_TO_CUSTOM_LINK_CLICK",
+        "value": 14.0
+      },
+      {
+        "name": "DIALOG_BOX_GEOCODE_IMPRESSION",
+        "value": 15.0
+      },
+      {
+        "name": "DIALOG_BOX_GEOCODE_ACCEPT",
+        "value": 16.0
+      },
+      {
+        "name": "DIALOG_BOX_GEOCODE_REVOKE",
+        "value": 17.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumEditProfileAction",
+    "matches": "EDIT_PROFILE_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "EDIT_PROFILE_ACTION",
+    "ACTION_OPEN",
+    "ACTION_SAVE",
+    "ACTION_DISCARD",
+    "ACTION_PROFILE_FIELD_OPEN",
+    "ACTION_PROFILE_FIELD_SAVE",
+    "ACTION_PROFILE_FIELD_DISCARD",
+    "ACTION_FACEBOOK_ENABLED",
+    "ACTION_FACEBOOK_DISABLED",
+    "ACTION_INSTAGRAM_ENABLED",
+    "ACTION_INSTAGRAM_DISABLED",
+    "ACTION_FB_IG_POP_SHOWN",
+    "ACTION_EDIT_COVER_PHOTO_CLICK",
+    "ACTION_REMOVE_COVER_PHOTO",
+    "UPGRADE_TO_CUSTOM_LINK_CLICK",
+    "DIALOG_BOX_GEOCODE_IMPRESSION",
+    "DIALOG_BOX_GEOCODE_ACCEPT",
+    "DIALOG_BOX_GEOCODE_REVOKE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebEditBusinessProfileWamEvent",
+      "WAWebEditFormLogEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

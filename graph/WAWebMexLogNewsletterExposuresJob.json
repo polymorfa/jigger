@@ -1,0 +1,1 @@
+{"deps":["WAWebMexClient","WAWebMexLogNewsletterExposuresJobMutation.graphql","WAWebNewsletterQueryUtils","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterLogExposuresJob"],"dependent_count":1,"exports":[{"name":"mexLogNewsletterExposures","used_by":["WAWebNewsletterLogExposuresJob"],"uses":1}]}

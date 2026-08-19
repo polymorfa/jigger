@@ -1,0 +1,34 @@
+{
+  "id": "sig:notification/call_event",
+  "kind": "sig",
+  "name": "RtcE2eeCallEventNotifyCallEventNotificationRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "call_event"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInRtcE2eeCallEventNotifyCallEventNotificationRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "call_event"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInRtcE2eeCallEventNotifyEnums",
+      "WASmaxInRtcE2eeCallEventNotifyServerNotificationMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxRtcE2eeCallEventNotifyCallEventNotificationRPC"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

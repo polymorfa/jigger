@@ -1,0 +1,99 @@
+__d("WAWebChatThemeMerinoTeal.stylex", ["WDSVars.stylex"], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	var e, s = "@media (prefers-color-scheme: dark)", u = {
+		xoeyzqq: "x1ap9q8h xoeyzqq",
+		$$css: !0
+	}, c = {
+		xoeyzqq: "xflmpx9 xoeyzqq",
+		$$css: !0
+	}, d = {
+		xoeyzqq: "x1m007ez xoeyzqq",
+		$$css: !0
+	}, m = {
+		xoeyzqq: "xco0loo xoeyzqq",
+		$$css: !0
+	}, p = {
+		"--WDS-accent": (e = o("WDSVars.stylex")).WDSBaseColor.teal500,
+		"--WDS-accent-RGB": "2, 131, 119",
+		"--WDS-accent-deemphasized": e.WDSBaseColor.teal100,
+		"--WDS-accent-emphasized": e.WDSBaseColor.teal700,
+		"--WDS-content-action-emphasized": e.WDSBaseColor.teal500,
+		"--WDS-content-external-link": e.WDSBaseColor.teal500,
+		"--WDS-content-read": e.WDSBaseColor.cobalt300,
+		"--WDS-systems-bubble-surface-incoming": e.WDSBaseColor.whiteOpaque,
+		"--WDS-systems-bubble-surface-incoming-RGB": "255, 255, 255",
+		"--WDS-systems-bubble-surface-outgoing": e.WDSBaseColor.teal500,
+		"--WDS-systems-bubble-surface-outgoing-RGB": "2, 131, 119",
+		"--WDS-systems-bubble-surface-overlay": e.WDSBaseColor.warmGray300Alpha15,
+		"--WDS-systems-bubble-surface-overlay-RGB": "194, 189, 184"
+	}, _ = babelHelpers.extends({}, p, {
+		"--WDS-systems-chat-foreground-wallpaper": "rgb(212, 231, 230)",
+		"--WDS-systems-chat-background-wallpaper": e.WDSBaseColor.cream75,
+		"--WDS-systems-chat-background-wallpaper-RGB": "245, 241, 235"
+	}), f = {
+		xoeyzqq: "x17kz5ml xoeyzqq",
+		$$css: !0
+	}, g = {
+		"--WDS-accent": e.WDSBaseColor.teal400,
+		"--WDS-accent-RGB": "2, 166, 152",
+		"--WDS-accent-deemphasized": e.WDSBaseColor.teal800,
+		"--WDS-accent-emphasized": e.WDSBaseColor.teal100,
+		"--WDS-content-action-emphasized": e.WDSBaseColor.teal400,
+		"--WDS-content-external-link": e.WDSBaseColor.teal400,
+		"--WDS-content-read": e.WDSBaseColor.cobalt300,
+		"--WDS-systems-bubble-surface-incoming": e.WDSBaseColor.neutralGray800,
+		"--WDS-systems-bubble-surface-incoming-RGB": "36, 38, 38",
+		"--WDS-systems-bubble-surface-outgoing": "rgb(4, 93, 86)",
+		"--WDS-systems-bubble-surface-outgoing-RGB": "4, 93, 86",
+		"--WDS-systems-bubble-surface-overlay": e.WDSBaseColor.blackAlpha20,
+		"--WDS-systems-bubble-surface-overlay-RGB": "0, 0, 0"
+	}, h = babelHelpers.extends({}, g, {
+		"--WDS-systems-chat-foreground-wallpaper": "rgb(7, 37, 39)",
+		"--WDS-systems-chat-background-wallpaper": e.WDSBaseColor.neutralGray1000,
+		"--WDS-systems-chat-background-wallpaper-RGB": "10, 10, 10"
+	}), y = {
+		xoeyzqq: "x1hymig0 xoeyzqq",
+		$$css: !0
+	}, C = {
+		"--WDS-accent": e.WDSBaseColor.teal500,
+		"--WDS-accent-RGB": "2, 131, 119",
+		"--WDS-accent-deemphasized": e.WDSBaseColor.teal100,
+		"--WDS-accent-emphasized": e.WDSBaseColor.teal700,
+		"--WDS-content-action-emphasized": e.WDSBaseColor.teal500,
+		"--WDS-content-external-link": e.WDSBaseColor.teal500,
+		"--WDS-content-read": e.WDSBaseColor.cobalt400,
+		"--WDS-systems-bubble-surface-incoming": e.WDSBaseColor.whiteOpaque,
+		"--WDS-systems-bubble-surface-incoming-RGB": "255, 255, 255",
+		"--WDS-systems-bubble-surface-outgoing": e.WDSBaseColor.teal100,
+		"--WDS-systems-bubble-surface-outgoing-RGB": "203, 242, 238",
+		"--WDS-systems-bubble-surface-overlay": e.WDSBaseColor.warmGray300Alpha15,
+		"--WDS-systems-bubble-surface-overlay-RGB": "194, 189, 184"
+	}, b = {
+		"--WDS-accent": e.WDSBaseColor.teal400,
+		"--WDS-accent-RGB": "2, 166, 152",
+		"--WDS-accent-deemphasized": e.WDSBaseColor.teal800,
+		"--WDS-accent-emphasized": e.WDSBaseColor.teal100,
+		"--WDS-content-action-emphasized": e.WDSBaseColor.teal400,
+		"--WDS-content-external-link": e.WDSBaseColor.teal400,
+		"--WDS-content-read": e.WDSBaseColor.cobalt300,
+		"--WDS-systems-bubble-surface-incoming": e.WDSBaseColor.neutralGray800,
+		"--WDS-systems-bubble-surface-incoming-RGB": "36, 38, 38",
+		"--WDS-systems-bubble-surface-outgoing": "rgb(10, 62, 62)",
+		"--WDS-systems-bubble-surface-outgoing-RGB": "10, 62, 62",
+		"--WDS-systems-bubble-surface-overlay": e.WDSBaseColor.blackAlpha20,
+		"--WDS-systems-bubble-surface-overlay-RGB": "0, 0, 0"
+	}, v = {
+		xoeyzqq: "x16dzmp4 xoeyzqq",
+		$$css: !0
+	}, S = {
+		xoeyzqq: "xiwt0mi xoeyzqq",
+		$$css: !0
+	}, R = {
+		xoeyzqq: "xiailj8 xoeyzqq",
+		$$css: !0
+	}, L = {
+		xoeyzqq: "x1ff4y0m xoeyzqq",
+		$$css: !0
+	};
+	l.tonalSystem = u, l.tonalLight = c, l.tonalDark = d, l.vibrantSystem = m, l.vibrantLight = f, l.vibrantDark = y, l.bubbleLight = v, l.bubbleDark = S, l.bubbleTonalLight = R, l.bubbleTonalDark = L;
+}), 98);

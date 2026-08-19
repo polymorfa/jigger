@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInMessageDeliverEnums","WASmaxInMessageDeliverFrequencyRuleMixin","WASmaxInMessageDeliverMoneyMixin","WASmaxParseUtils"],"dependents":["WASmaxInMessageDeliverUPITransactionWithMandateMixin"],"dependent_count":1,"exports":[{"name":"parseUPIMandateBaseMixin","used_by":["WASmaxInMessageDeliverUPITransactionWithMandateMixin"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebApiContact","WAWebWidFactory","WAWebWidToJid","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["WAWebHandleVoipCallOffer","WAWebVoipHandleNativeCallEvent"],"dependent_count":2,"exports":[{"name":"isCallerNotContact","used_by":["WAWebHandleVoipCallOffer","WAWebVoipHandleNativeCallEvent"],"uses":2}]}

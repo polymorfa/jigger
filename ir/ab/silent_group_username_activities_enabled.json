@@ -1,0 +1,42 @@
+{
+  "id": "ab:silent_group_username_activities_enabled",
+  "kind": "ab",
+  "name": "silent_group_username_activities_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24269,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "silent_group_username_activities_enabled:\\s*\\[\\s*24269"
+  },
+  "literals": [
+    "silent_group_username_activities_enabled",
+    "24269"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

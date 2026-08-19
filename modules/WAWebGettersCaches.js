@@ -1,0 +1,17 @@
+__d("WAWebGettersCaches", [
+	"WAWebABProps",
+	"WAWebDummyCacheMap",
+	"WAWebEnvironment",
+	"WAWebLruCacheMap"
+], (function(t, n, r, o, a, i, l) {
+	var e = function() {
+		var e = o("WAWebABProps").getABPropConfigValue("web_getters_lru_cache_size_limit");
+		return e > 0 ? new (o("WAWebLruCacheMap")).LruCacheMap({ sizeLimit: e }) : r("WAWebEnvironment").isWindows ? new (o("WAWebDummyCacheMap")).FakeCacheMap() : new Map();
+	}, s = function() {
+		return e();
+	}, u = function() {
+		var e = o("WAWebABProps").getABPropConfigValue("web_getters_lru_cache_size_limit");
+		return e > 0 ? new (o("WAWebLruCacheMap")).LruCacheMap({ sizeLimit: e }) : new Map();
+	}, c = s, d = s, m = s, p = s, _ = u, f = u, g = s, h = s, y = s, C = s, b = s, v = s, S = s, R = s, L = s, E = s, k = s, I = s, T = s, D = s, x = s, $ = s, P = s, N = s, M = s, w = s, A = s, F = s, O = s;
+	l.createMessagesCache = c, l.createFrontendMessagesCache = d, l.createChatCache = m, l.createFrontendChatCache = p, l.createContactsCache = _, l.createFrontendContactsCache = f, l.createLabelsCache = g, l.createMuteCache = h, l.createPinInChatsCache = y, l.createFrontendPinInChatsCache = C, l.createMsgInfosCache = b, l.createPollVotesCache = v, l.createFrontendPollVotesCache = S, l.createNewsletterPollVotesCache = R, l.createFrontendNewsletterPollVotesCache = L, l.createSettingsCache = E, l.createStickerModelMdCache = k, l.createMediaEditControllerCache = I, l.createOrderCache = T, l.createOrderItemCache = D, l.createQuickReplyCache = x, l.createFrontendQuickReplyCache = $, l.createStatusCache = P, l.createFrontendStatusCache = N, l.createRecordingSessionCache = M, l.createEventResponseCache = w, l.createFrontendEventResponseCache = A, l.createCartCache = F, l.createCatalogCache = O;
+}), 98);

@@ -1,0 +1,1 @@
+{"deps":["WASmaxMessagePublishNewsletterRPC","WAStanzaUtils","WAWebNewsletterValidationUtils","asyncToGeneratorRuntime","err"],"dependents":["WAWebNewsletterSendMessageJob"],"dependent_count":1,"exports":[{"name":"querySendNewsletterMessage","used_by":["WAWebNewsletterSendMessageJob"],"uses":1}]}

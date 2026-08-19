@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebConfirmPopup.react","WAWebVoipStackInterface","WAWebVoipVideoRendererInterface","WAWebVoipVideoRendererRegistry","WDSText.react","asyncToGeneratorRuntime","react"],"dependents":["useWAWebVoipCameraHealthCheck"],"dependent_count":1,"exports":[]}

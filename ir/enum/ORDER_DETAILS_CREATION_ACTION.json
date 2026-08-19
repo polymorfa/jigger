@@ -1,0 +1,336 @@
+{
+  "id": "enum:ORDER_DETAILS_CREATION_ACTION",
+  "kind": "enum",
+  "name": "ORDER_DETAILS_CREATION_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOrderDetailsCreationAction",
+    "variants": [
+      {
+        "name": "CLICK_VIEW_RECEIVED_CART",
+        "value": 1.0
+      },
+      {
+        "name": "SEND_DECLINE_CART",
+        "value": 2.0
+      },
+      {
+        "name": "USER_DELETED_CART",
+        "value": 3.0
+      },
+      {
+        "name": "CLICK_CREATE_ORDER_DETAILS_FROM_CART",
+        "value": 4.0
+      },
+      {
+        "name": "CLICK_ORDER_FROM_ICON_MENU",
+        "value": 5.0
+      },
+      {
+        "name": "CLICK_CREATE_ORDER_DETAILS_FROM_FAB",
+        "value": 6.0
+      },
+      {
+        "name": "SEND_ORDER_DETAILS",
+        "value": 7.0
+      },
+      {
+        "name": "VIEW_ORDER_DETAILS_HUB",
+        "value": 8.0
+      },
+      {
+        "name": "VIEW_ORDER_DETAILS",
+        "value": 9.0
+      },
+      {
+        "name": "CLICK_SORT_ORDERS",
+        "value": 10.0
+      },
+      {
+        "name": "CLICK_UPDATE_ORDER_STATUS",
+        "value": 11.0
+      },
+      {
+        "name": "SEND_ORDER_STATUS",
+        "value": 12.0
+      },
+      {
+        "name": "CLICK_PAYMENT_DETAILS",
+        "value": 13.0
+      },
+      {
+        "name": "SEND_MARK_AS_PAID",
+        "value": 14.0
+      },
+      {
+        "name": "SEND_MARK_AS_UNPAID",
+        "value": 15.0
+      },
+      {
+        "name": "CLICK_HELP",
+        "value": 16.0
+      },
+      {
+        "name": "CLICK_MESSAGE_CUSTOMER",
+        "value": 17.0
+      },
+      {
+        "name": "CLICK_ADD_PAYMENT_OPTION",
+        "value": 18.0
+      },
+      {
+        "name": "CLICK_SAVE_ADD_PAYMENT_OPTION",
+        "value": 19.0
+      },
+      {
+        "name": "CLICK_SAVE_EDIT_PAYMENT_OPTION",
+        "value": 20.0
+      },
+      {
+        "name": "CLICK_EDIT_PAYMENT_OPTION",
+        "value": 21.0
+      },
+      {
+        "name": "CLICK_DELETE_PAYMENT_OPTION",
+        "value": 22.0
+      },
+      {
+        "name": "CLICK_GET_PAID_ON_WA",
+        "value": 23.0
+      },
+      {
+        "name": "CLICK_SEE_ALL_OTHER_ORDERS",
+        "value": 24.0
+      },
+      {
+        "name": "ADD_PAYMENT_OPTION_TO_OD",
+        "value": 25.0
+      },
+      {
+        "name": "EDIT_PAYMENT_OPTION_IN_OD",
+        "value": 26.0
+      },
+      {
+        "name": "CLICK_ADD_CUSTOM_ITEM_TO_ORDER",
+        "value": 27.0
+      },
+      {
+        "name": "ADD_ADDITIONAL_CHARGES_TO_ORDER",
+        "value": 28.0
+      },
+      {
+        "name": "CLICK_ADD_ITEM",
+        "value": 29.0
+      },
+      {
+        "name": "CLICK_ADD_ADDITIONAL_CHARGES",
+        "value": 30.0
+      },
+      {
+        "name": "VIEW_EPHEMERAL_MESSAGES_PROMPT",
+        "value": 31.0
+      },
+      {
+        "name": "CONFIRM_SENDING_ORDER_DETAILS",
+        "value": 32.0
+      },
+      {
+        "name": "CANCEL_SENDING_ORDER_DETAILS",
+        "value": 33.0
+      },
+      {
+        "name": "DO_NOT_SHOW_EPHEMERAL_MESSAGES_PROMPT",
+        "value": 34.0
+      },
+      {
+        "name": "DISMISS_EPHEMERAL_MESSAGES_PROMPT",
+        "value": 35.0
+      },
+      {
+        "name": "VIEW_EVENT_SHARING_TOS_PROMPT",
+        "value": 37.0
+      },
+      {
+        "name": "DISMISS_EVENT_SHARING_TOS_PROMPT",
+        "value": 38.0
+      },
+      {
+        "name": "CLICK_EVENT_SHARING_TOS",
+        "value": 39.0
+      },
+      {
+        "name": "ACCEPT_EVENT_SHARING_TOS",
+        "value": 40.0
+      },
+      {
+        "name": "REJECT_EVENT_SHARING_TOS",
+        "value": 41.0
+      },
+      {
+        "name": "VIEW_CREATE_ORDER",
+        "value": 42.0
+      },
+      {
+        "name": "DISPLAY_ORDER_STATUS_SHARING_TOS",
+        "value": 43.0
+      },
+      {
+        "name": "CLICK_ORDER_STATUS_SHARING_TOS",
+        "value": 44.0
+      },
+      {
+        "name": "CLICK_EDIT_INSTALLMENTS",
+        "value": 45.0
+      },
+      {
+        "name": "VIEW_EDIT_INSTALLMENTS_PROMPT",
+        "value": 46.0
+      },
+      {
+        "name": "SET_DEFAULT_INSTALLMENTS",
+        "value": 47.0
+      },
+      {
+        "name": "SAVE_DEFAULT_INSTALLMENTS",
+        "value": 48.0
+      },
+      {
+        "name": "DISMISS_EDIT_INSTALLMENTS_PROMPT",
+        "value": 49.0
+      },
+      {
+        "name": "VIEW_ORDERS_VALUE_PROP",
+        "value": 50.0
+      },
+      {
+        "name": "CONTINUE_FROM_ORDERS_VALUE_PROP",
+        "value": 51.0
+      },
+      {
+        "name": "DISMISS_ORDERS_VALUE_PROP",
+        "value": 52.0
+      },
+      {
+        "name": "CLICK_SEE_ALL_ORDER_REQUESTS",
+        "value": 53.0
+      },
+      {
+        "name": "BIZ_ACTION_BAR",
+        "value": 54.0
+      },
+      {
+        "name": "CLICK_ADD_ITEMS",
+        "value": 55.0
+      },
+      {
+        "name": "CANCEL_ORDER_REQUEST",
+        "value": 56.0
+      },
+      {
+        "name": "CONTINUE_ORDER_REQUEST",
+        "value": 57.0
+      },
+      {
+        "name": "VIEW_PROMPT",
+        "value": 58.0
+      },
+      {
+        "name": "CLICK_PROCEED_WITHOUT_CATALOG",
+        "value": 59.0
+      },
+      {
+        "name": "CLICK_CREATE_ORDER_DETAILS_FROM_PAYMENT_METHOD_ADDED_PROMPT",
+        "value": 60.0
+      },
+      {
+        "name": "VIEW_UPDATE_STATUS",
+        "value": 61.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOrderDetailsCreationAction",
+    "matches": "ORDER_DETAILS_CREATION_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "ORDER_DETAILS_CREATION_ACTION",
+    "CLICK_VIEW_RECEIVED_CART",
+    "SEND_DECLINE_CART",
+    "USER_DELETED_CART",
+    "CLICK_CREATE_ORDER_DETAILS_FROM_CART",
+    "CLICK_ORDER_FROM_ICON_MENU",
+    "CLICK_CREATE_ORDER_DETAILS_FROM_FAB",
+    "SEND_ORDER_DETAILS",
+    "VIEW_ORDER_DETAILS_HUB",
+    "VIEW_ORDER_DETAILS",
+    "CLICK_SORT_ORDERS",
+    "CLICK_UPDATE_ORDER_STATUS",
+    "SEND_ORDER_STATUS",
+    "CLICK_PAYMENT_DETAILS",
+    "SEND_MARK_AS_PAID",
+    "SEND_MARK_AS_UNPAID",
+    "CLICK_HELP",
+    "CLICK_MESSAGE_CUSTOMER",
+    "CLICK_ADD_PAYMENT_OPTION",
+    "CLICK_SAVE_ADD_PAYMENT_OPTION",
+    "CLICK_SAVE_EDIT_PAYMENT_OPTION",
+    "CLICK_EDIT_PAYMENT_OPTION",
+    "CLICK_DELETE_PAYMENT_OPTION",
+    "CLICK_GET_PAID_ON_WA",
+    "CLICK_SEE_ALL_OTHER_ORDERS",
+    "ADD_PAYMENT_OPTION_TO_OD",
+    "EDIT_PAYMENT_OPTION_IN_OD",
+    "CLICK_ADD_CUSTOM_ITEM_TO_ORDER",
+    "ADD_ADDITIONAL_CHARGES_TO_ORDER",
+    "CLICK_ADD_ITEM",
+    "CLICK_ADD_ADDITIONAL_CHARGES",
+    "VIEW_EPHEMERAL_MESSAGES_PROMPT",
+    "CONFIRM_SENDING_ORDER_DETAILS",
+    "CANCEL_SENDING_ORDER_DETAILS",
+    "DO_NOT_SHOW_EPHEMERAL_MESSAGES_PROMPT",
+    "DISMISS_EPHEMERAL_MESSAGES_PROMPT",
+    "VIEW_EVENT_SHARING_TOS_PROMPT",
+    "DISMISS_EVENT_SHARING_TOS_PROMPT",
+    "CLICK_EVENT_SHARING_TOS",
+    "ACCEPT_EVENT_SHARING_TOS",
+    "REJECT_EVENT_SHARING_TOS",
+    "VIEW_CREATE_ORDER",
+    "DISPLAY_ORDER_STATUS_SHARING_TOS",
+    "CLICK_ORDER_STATUS_SHARING_TOS",
+    "CLICK_EDIT_INSTALLMENTS",
+    "VIEW_EDIT_INSTALLMENTS_PROMPT",
+    "SET_DEFAULT_INSTALLMENTS",
+    "SAVE_DEFAULT_INSTALLMENTS",
+    "DISMISS_EDIT_INSTALLMENTS_PROMPT",
+    "VIEW_ORDERS_VALUE_PROP",
+    "CONTINUE_FROM_ORDERS_VALUE_PROP",
+    "DISMISS_ORDERS_VALUE_PROP",
+    "CLICK_SEE_ALL_ORDER_REQUESTS",
+    "BIZ_ACTION_BAR",
+    "CLICK_ADD_ITEMS",
+    "CANCEL_ORDER_REQUEST",
+    "CONTINUE_ORDER_REQUEST",
+    "VIEW_PROMPT",
+    "CLICK_PROCEED_WITHOUT_CATALOG",
+    "CLICK_CREATE_ORDER_DETAILS_FROM_PAYMENT_METHOD_ADDED_PROMPT",
+    "VIEW_UPDATE_STATUS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAttachMenuPopupItemOrders.react",
+      "WAWebBizOrderManagementFlow.react",
+      "WAWebBizProductDetailsFlow.react",
+      "WAWebCartOrderDetailDrawer.react",
+      "WAWebMessageBizOrder",
+      "WAWebOrderDetailDrawerContainer.react",
+      "WAWebOrderDetailsActionsSmbWamEvent",
+      "WAWebOrderDetailsCreationActionWamEventUtil",
+      "WAWebOrderRequestDrawer.react",
+      "WAWebOrderStatusUpdateDrawer.react",
+      "WAWebOrdersChatlistHeaderDropdownItem.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 11
+  }
+}

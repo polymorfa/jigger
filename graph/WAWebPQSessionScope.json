@@ -1,0 +1,1 @@
+{"deps":["WAWebPQGatingUtils","WAWebSessionScope","WAWebSignalSessionApi","asyncToGeneratorRuntime"],"dependents":["WAWebSendMsgCreateDeviceStanza"],"dependent_count":1,"exports":[{"name":"resolvePqSendScope","used_by":["WAWebSendMsgCreateDeviceStanza"],"uses":1}]}

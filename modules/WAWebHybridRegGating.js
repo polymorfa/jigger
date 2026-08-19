@@ -1,0 +1,22 @@
+__d("WAWebHybridRegGating", ["WAWebEnvironment", "gkx"], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	function e() {
+		return r("gkx")("3701") ? "test" : "control";
+	}
+	function s() {
+		return r("WAWebEnvironment").getIsShowroom() ? "test" : r("WAWebEnvironment").isWindows && r("gkx")("4131") ? e() : "none";
+	}
+	function u() {
+		return s() === "test";
+	}
+	function c() {
+		return r("WAWebEnvironment").isWindows;
+	}
+	function d() {
+		return !u() || m();
+	}
+	function m() {
+		return r("gkx")("26259");
+	}
+	l.getHybridRegExperiment = s, l.isHybridRegEnabled = u, l.shouldFollowAppTheme = c, l.shouldShowCountrySelector = d;
+}), 98);

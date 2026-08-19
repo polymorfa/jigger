@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebABProps","WAWebDetailImage.react","WAWebFlex.react","WAWebFlexItem.react","WAWebProfilePicPicker.react","WDSButton.react","WDSIconIcPhotoCamera.react","react","react-compiler-runtime","useWAWebModelValues"],"dependents":["WAWebProfileDrawer.react"],"dependent_count":1,"exports":[]}

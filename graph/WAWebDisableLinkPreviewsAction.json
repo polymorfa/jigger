@@ -1,0 +1,1 @@
+{"deps":["WAWebDisableLinkPreviewsSync","WAWebUserPrefsGeneral"],"dependents":["WAWebDisableLinkPreviewsSync","WAWebPrivacySettingsDrawer.react"],"dependent_count":2,"exports":[{"name":"setDisableLinkPreviews","used_by":["WAWebPrivacySettingsDrawer.react"],"uses":1},{"name":"setDisableLinkPreviewsToUserPrefs","used_by":["WAWebDisableLinkPreviewsSync"],"uses":1}]}

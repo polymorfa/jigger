@@ -1,0 +1,1 @@
+{"deps":["CurrentWorkerMessagePort","FalcoLoggerTransports","MAWBackend","MAWCommonMainWebWorker","MAWLowLevelApiImpl","MAWMainWebWorkerConfig","WABridge","WADynamicRouterSync","WorkerBridgeAdaptor","cr:12423","cr:40092","gkx"],"dependents":["MAWMainV4WebWorker","MAWMainWebWorkerV2"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

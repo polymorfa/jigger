@@ -1,0 +1,38 @@
+{
+  "id": "proto:WAAICommon.AIThreadInfo",
+  "kind": "proto",
+  "name": "WAAICommon.AIThreadInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "clientInfo": {
+        "number": 2,
+        "type_name": "WAAICommon.AIThreadInfo.AIThreadClientInfo"
+      },
+      "serverInfo": {
+        "number": 1,
+        "type_name": "WAAICommon.AIThreadInfo.AIThreadServerInfo"
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"AIThreadInfo\""
+  },
+  "literals": [
+    "AIThreadInfo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

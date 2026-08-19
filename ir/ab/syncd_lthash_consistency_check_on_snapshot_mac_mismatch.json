@@ -1,0 +1,45 @@
+{
+  "id": "ab:syncd_lthash_consistency_check_on_snapshot_mac_mismatch",
+  "kind": "ab",
+  "name": "syncd_lthash_consistency_check_on_snapshot_mac_mismatch",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1783,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "syncd_lthash_consistency_check_on_snapshot_mac_mismatch:\\s*\\[\\s*1783"
+  },
+  "literals": [
+    "syncd_lthash_consistency_check_on_snapshot_mac_mismatch",
+    "1783"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebKmpAbProps"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

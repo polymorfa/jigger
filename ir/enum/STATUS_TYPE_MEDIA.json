@@ -1,0 +1,36 @@
+{
+  "id": "enum:STATUS_TYPE_MEDIA",
+  "kind": "enum",
+  "name": "STATUS_TYPE_MEDIA",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusTypeMedia",
+    "variants": [
+      {
+        "name": "IMAGE",
+        "value": 1.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusTypeMedia",
+    "matches": "STATUS_TYPE_MEDIA\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_TYPE_MEDIA",
+    "IMAGE",
+    "VIDEO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiEntryTapWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

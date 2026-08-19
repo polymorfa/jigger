@@ -1,0 +1,1 @@
+{"deps":["WAWebClientFeatureFlags","WAWebDebugCommandCollection","WAWebDebugCommandsPluginResult.react","WAWebDeveloperMenuUtils","WAWebListSuggestionsPanel.react","react","useWAWebForceUpdate","useWAWebLexicalTypeAhead","useWAWebListener"],"dependents":["WAWebRichTextInput.story"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

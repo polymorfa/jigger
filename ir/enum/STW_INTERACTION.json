@@ -1,0 +1,98 @@
+{
+  "id": "enum:STW_INTERACTION",
+  "kind": "enum",
+  "name": "STW_INTERACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStwInteraction",
+    "variants": [
+      {
+        "name": "ENTRY_POINT_SURFACED",
+        "value": 0.0
+      },
+      {
+        "name": "ENTRY_POINT_CLICKED",
+        "value": 1.0
+      },
+      {
+        "name": "LINK_SEARCH_CLICKED",
+        "value": 2.0
+      },
+      {
+        "name": "IMAGE_SEARCH_CLICKED",
+        "value": 3.0
+      },
+      {
+        "name": "TEXT_SEARCH_CLICKED",
+        "value": 4.0
+      },
+      {
+        "name": "SEARCH_CLICKED",
+        "value": 5.0
+      },
+      {
+        "name": "STW_DISMISSED",
+        "value": 6.0
+      },
+      {
+        "name": "LEARN_MORE_CLICKED",
+        "value": 7.0
+      },
+      {
+        "name": "LINK_OPEN_CLICKED",
+        "value": 8.0
+      },
+      {
+        "name": "LINK_COPY_CLICKED",
+        "value": 9.0
+      },
+      {
+        "name": "LINK_ADD_TO_READING_LIST",
+        "value": 10.0
+      },
+      {
+        "name": "IMAGE_SEARCH_REDIRECT",
+        "value": 11.0
+      },
+      {
+        "name": "IMAGE_SEARCH_FAILED",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStwInteraction",
+    "matches": "STW_INTERACTION\\s*[:=]"
+  },
+  "literals": [
+    "STW_INTERACTION",
+    "ENTRY_POINT_SURFACED",
+    "ENTRY_POINT_CLICKED",
+    "LINK_SEARCH_CLICKED",
+    "IMAGE_SEARCH_CLICKED",
+    "TEXT_SEARCH_CLICKED",
+    "SEARCH_CLICKED",
+    "STW_DISMISSED",
+    "LEARN_MORE_CLICKED",
+    "LINK_OPEN_CLICKED",
+    "LINK_COPY_CLICKED",
+    "LINK_ADD_TO_READING_LIST",
+    "IMAGE_SEARCH_REDIRECT",
+    "IMAGE_SEARCH_FAILED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaPanelHeader.react",
+      "WAWebMessageForwardedIndicatorSearchTheWeb.react",
+      "WAWebMultiSearchModal.react",
+      "WAWebSearchTheWebButton.react",
+      "WAWebSearchTheWebCommonUtils",
+      "WAWebSearchTheWebFunnelWamEvent",
+      "WAWebSearchTheWebGetSupportedSearchOptions",
+      "WAWebSearchTheWebModal.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

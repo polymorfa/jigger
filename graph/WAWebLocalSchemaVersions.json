@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWeb-dexie","WAWebSchemaVersions","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["WAWebDbRolloutUtil","WAWebReportDbVerionsJob"],"dependent_count":2,"exports":[{"name":"getLocalSchemaVersions","used_by":["WAWebDbRolloutUtil","WAWebReportDbVerionsJob"],"uses":2},{"name":"getLocalVersion","used_by":[],"uses":0}]}

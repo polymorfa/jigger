@@ -1,0 +1,32 @@
+{
+  "id": "enum:DIALOG_EVENT_TYPE",
+  "kind": "enum",
+  "name": "DIALOG_EVENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDialogEventType",
+    "variants": [
+      {
+        "name": "CLICK",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDialogEventType",
+    "matches": "DIALOG_EVENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DIALOG_EVENT_TYPE",
+    "CLICK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDialogEventLogger",
+      "WAWebDialogEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

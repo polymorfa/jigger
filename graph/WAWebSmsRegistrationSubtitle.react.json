@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFbtCommon","WAWebFlex.react","WAWebHybridRegGating","WAWebLinkDeviceCommonInstructions.react","WDSText.react","react","react-compiler-runtime"],"dependents":["WAWebLandingFooter.react","WAWebSmsRegistrationPhoneNumberInput.react","WAWebWindowsWelcomePromo.react"],"dependent_count":3,"exports":[]}

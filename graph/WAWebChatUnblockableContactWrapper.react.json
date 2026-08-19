@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBlockContactAction","WAWebChatContact.react","WAWebContactGetters","WAWebDropdownItem.react","WAWebFrontendContactGetters","WAWebNoop","WAWebUimUie.react","WAWebUimUieMenu.react","react","react-compiler-runtime","useWAWebContactValues"],"dependents":["WAWebMultiSelectChatList.react","WAWebMultiSelectContactList.react"],"dependent_count":2,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["invariant","Promise","WAWebBrokerConnectionManager","WAWebBrokerProtocolHandshake","WAWebFtsWorkerContext","WAWebInvocationDispatcher","WAWebInvocationHandler","WAWebInvocationInterface","WAWebWorkerFrontendInterface","nullthrows"],"dependents":["WAWebFtsWorker"],"dependent_count":1,"exports":[]}

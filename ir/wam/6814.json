@@ -1,0 +1,41 @@
+{
+  "id": "wam:6814",
+  "kind": "wam",
+  "name": "AboutConsumption",
+  "data": {
+    "kind": "wam",
+    "event_id": 6814,
+    "fields": {
+      "aboutConsumptionSurface": {
+        "id": 1,
+        "type": "ABOUT_CONSUMPTION_SURFACE_TYPE",
+        "wire": "about_consumption_surface",
+        "enum_ref": "ABOUT_CONSUMPTION_SURFACE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebAboutConsumptionWamEvent",
+    "matches": "AboutConsumption:\\s*\\[\\s*6814"
+  },
+  "literals": [
+    "6814"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAboutConsumptionSurfaceType"
+    ],
+    "dependents": [
+      "WAWebAboutWamLogger"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

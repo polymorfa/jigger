@@ -1,0 +1,1 @@
+{"deps":["WAGlobals","WAJids","WAMsg","WASentBytesCacheApi","WATagsLogger","WATimeUtils","WAWaitForUserUnblocked","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["WAPublishMessage","WASendMsgUtilV2"],"dependent_count":2,"exports":[{"name":"sentBytesCache","used_by":["WAPublishMessage","WASendMsgUtilV2"],"uses":2},{"name":"SentBytesCache","used_by":[],"uses":0}]}

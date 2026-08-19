@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_hide_unsupported_currency_price",
+  "kind": "ab",
+  "name": "smb_hide_unsupported_currency_price",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1203,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_hide_unsupported_currency_price:\\s*\\[\\s*1203"
+  },
+  "literals": [
+    "smb_hide_unsupported_currency_price",
+    "1203"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

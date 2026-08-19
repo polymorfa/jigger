@@ -1,0 +1,71 @@
+{
+  "id": "wam:3652",
+  "kind": "wam",
+  "name": "GroupProfilePicture",
+  "data": {
+    "kind": "wam",
+    "event_id": 3652,
+    "fields": {
+      "groupCreationDs": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "group_creation_ds"
+      },
+      "groupProfileAction": {
+        "id": 7,
+        "type": "GROUP_PROFILE_ACTION_TYPE",
+        "wire": "group_profile_action",
+        "enum_ref": "GROUP_PROFILE_ACTION_TYPE"
+      },
+      "hasProfilePicture": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "has_profile_picture"
+      },
+      "isAdmin": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_admin"
+      },
+      "preciseGroupSizeBucket": {
+        "id": 5,
+        "type": "PRECISE_SIZE_BUCKET",
+        "wire": "precise_group_size_bucket",
+        "enum_ref": "PRECISE_SIZE_BUCKET"
+      },
+      "profilePictureType": {
+        "id": 6,
+        "type": "PROFILE_PICTURE_TYPE",
+        "wire": "profile_picture_type",
+        "enum_ref": "PROFILE_PICTURE_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGroupProfilePictureWamEvent",
+    "matches": "GroupProfilePicture:\\s*\\[\\s*3652"
+  },
+  "literals": [
+    "3652"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGroupProfileActionType",
+      "WAWebWamEnumPreciseSizeBucket",
+      "WAWebWamEnumProfilePictureType"
+    ],
+    "dependents": [
+      "WAWebGroupInfoPhoto.react",
+      "WAWebGroupNotificationContextCard.react"
+    ],
+    "dep_count": 4,
+    "dependent_count": 2
+  }
+}

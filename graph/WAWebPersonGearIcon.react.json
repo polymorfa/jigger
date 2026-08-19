@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebExistingGroupPermissionsDrawer.react"],"dependent_count":2,"exports":[{"name":"PersonGearIcon","used_by":["WAWebAllGeneratedIcons","WAWebExistingGroupPermissionsDrawer.react"],"uses":2}]}

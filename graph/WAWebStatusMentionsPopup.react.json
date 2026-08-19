@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebFlex.react","WAWebModal.react","WAWebPeopleIcon.react","WAWebRepeatIcon.react","WAWebText.react","WAWebWdsPictoPrivateMentionIcon.react","WAWebWdsPictoSecurePrivateMentionLockIcon.react","WDSIconIcBackHand.react","react"],"dependents":["WAWebStatusPlayer.react"],"dependent_count":1,"exports":[]}

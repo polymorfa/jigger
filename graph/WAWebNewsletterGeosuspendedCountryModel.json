@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseModel"],"dependents":["WAWebNewsletterGeosuspendedCountryCollection"],"dependent_count":1,"exports":[{"name":"GeosuspendedCountry","used_by":["WAWebNewsletterGeosuspendedCountryCollection"],"uses":1}]}

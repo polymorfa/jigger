@@ -1,0 +1,1 @@
+{"deps":["WAWebVoipGatingUtils","cr:10605","cr:10606","cr:8103","nullthrows"],"dependents":[],"dependent_count":0,"exports":[{"name":"getVoipStackInterfaceImpl","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WALogger","WASmaxNewslettersGetNewsletterStatusUpdatesRPC","WAWebJidToWid","WAWebNewsletterStatusUtils","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["WAWebDebugNewsletterReaction","WAWebStatusPlayer.react"],"dependent_count":2,"exports":[{"name":"fetchNewsletterStatusUpdates","used_by":["WAWebDebugNewsletterReaction","WAWebStatusPlayer.react"],"uses":2}]}

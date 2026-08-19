@@ -1,0 +1,121 @@
+__d("WAWebSlider.react", [
+	"$InternalEnum",
+	"WAWebFlex.react",
+	"react",
+	"stylex"
+], (function(t, n, r, o, a, i, l) {
+	var e = [
+		"displayValue",
+		"theme",
+		"width"
+	], s, u, c = u || (u = o("react")), d = u, m = d.useRef, p = d.useState, _ = {
+		bar: {
+			WebkitAppearance: "x1lugfcp",
+			backgroundColor: "x1ailiqk",
+			width: "xh8yej3",
+			height: "x1fwsm1s",
+			borderStartStartRadius: "x1fqc64z",
+			borderStartEndRadius: "xs83zq4",
+			borderEndEndRadius: "xt6ovg4",
+			borderEndStartRadius: "x1ru8ea5",
+			outline: "x1a2a7pz",
+			"::-webkit-slider-thumb_WebkitAppearance": "x1hzk0bc",
+			"::-webkit-slider-thumb_backgroundColor": "xh18d09",
+			"::-webkit-slider-thumb_width": "xgzf28c",
+			"::-webkit-slider-thumb_height": "x7wbnsr",
+			"::-webkit-slider-thumb_borderStartStartRadius": "x1th4nss",
+			"::-webkit-slider-thumb_borderStartEndRadius": "x1rizj1e",
+			"::-webkit-slider-thumb_borderEndEndRadius": "x1y66t81",
+			"::-webkit-slider-thumb_borderEndStartRadius": "xpx3ic3",
+			"::-moz-range-thumb_backgroundColor": "xwa9bx0",
+			"::-moz-range-thumb_width": "xjz7cho",
+			"::-moz-range-thumb_height": "xm8lljt",
+			"::-moz-range-thumb_borderStartStartRadius": "xwuopey",
+			"::-moz-range-thumb_borderStartEndRadius": "x3xuhg7",
+			"::-moz-range-thumb_borderEndEndRadius": "x1myhkec",
+			"::-moz-range-thumb_borderEndStartRadius": "xkl7mu5",
+			"::-ms-thumb_backgroundColor": "x1yor4gt",
+			"::-ms-thumb_width": "x1vvv04b",
+			"::-ms-thumb_height": "x13wl5o1",
+			"::-ms-thumb_borderStartStartRadius": "xb6vld1",
+			"::-ms-thumb_borderStartEndRadius": "xn30xcg",
+			"::-ms-thumb_borderEndEndRadius": "xis6u53",
+			"::-ms-thumb_borderEndStartRadius": "x1ld7pix",
+			$$css: !0
+		},
+		crescendoBarContainer: {
+			position: "x1n2onr6",
+			"::before_content": "x1cpjm7i",
+			"::before_position": "x1hmns74",
+			"::before_top": "x1knuo7r",
+			"::before_transform": "xkjykve",
+			"::before_width": "x1rmj1tg",
+			"::before_height": "x17zp9gg",
+			"::before_background": "xsjmkkv",
+			"::before_clipPath": "xrhovct",
+			$$css: !0
+		},
+		crescendoBar: {
+			WebkitAppearance: "x1lugfcp",
+			appearance: "xjyslct",
+			width: "xh8yej3",
+			background: "x1md70p1",
+			outline: "x1a2a7pz",
+			position: "x1n2onr6",
+			"::-webkit-slider-thumb_WebkitAppearance": "x1hzk0bc",
+			"::-webkit-slider-thumb_backgroundColor": "xh18d09",
+			"::-webkit-slider-thumb_width": "xgzf28c",
+			"::-webkit-slider-thumb_height": "x7wbnsr",
+			"::-webkit-slider-thumb_cursor": "x5pni9w",
+			"::-webkit-slider-thumb_borderStartStartRadius": "x1th4nss",
+			"::-webkit-slider-thumb_borderStartEndRadius": "x1rizj1e",
+			"::-webkit-slider-thumb_borderEndEndRadius": "x1y66t81",
+			"::-webkit-slider-thumb_borderEndStartRadius": "xpx3ic3",
+			"::-moz-range-thumb_backgroundColor": "xwa9bx0",
+			"::-moz-range-thumb_width": "xjz7cho",
+			"::-moz-range-thumb_height": "xm8lljt",
+			"::-moz-range-thumb_cursor": "xvs8oyn",
+			"::-moz-range-thumb_borderStartStartRadius": "xwuopey",
+			"::-moz-range-thumb_borderStartEndRadius": "x3xuhg7",
+			"::-moz-range-thumb_borderEndEndRadius": "x1myhkec",
+			"::-moz-range-thumb_borderEndStartRadius": "xkl7mu5",
+			"::-ms-thumb_backgroundColor": "x1yor4gt",
+			"::-ms-thumb_width": "x1vvv04b",
+			"::-ms-thumb_height": "x13wl5o1",
+			"::-ms-thumb_cursor": "x1mdmqyy",
+			"::-ms-thumb_borderStartStartRadius": "xb6vld1",
+			"::-ms-thumb_borderStartEndRadius": "xn30xcg",
+			"::-ms-thumb_borderEndEndRadius": "xis6u53",
+			"::-ms-thumb_borderEndStartRadius": "x1ld7pix",
+			$$css: !0
+		}
+	}, f = n("$InternalEnum").Mirrored(["Default", "Crescendo"]);
+	function g(t) {
+		var n = t.displayValue, a = n === void 0 ? !1 : n, i = t.theme, l = i === void 0 ? f.Default : i, u = t.width, d = u === void 0 ? 128 : u, g = babelHelpers.objectWithoutPropertiesLoose(t, e), h = m(!1), y = p(g.value), C = y[0], b = y[1], v = function(t) {
+			h.current = !0;
+		}, S = function(t) {
+			h.current = !1;
+		}, R = function(t) {
+			t.preventDefault(), g.onChange(parseInt(t.target.value, 10), h.current), b(parseInt(t.target.value, 10)), h.current = !1;
+		};
+		return c.jsxs(o("WAWebFlex.react").FlexRow, {
+			align: "center",
+			xstyle: l === f.Crescendo && _.crescendoBarContainer,
+			children: [c.jsx("input", {
+				type: "range",
+				className: (s || (s = r("stylex")))([l === f.Default && _.bar, l === f.Crescendo && _.crescendoBar]),
+				style: { width: d },
+				min: g.min,
+				max: g.max,
+				value: C,
+				onMouseDown: v,
+				onMouseUp: S,
+				onChange: R
+			}), a ? c.jsx("span", {
+				className: "xvy4d1p x1f6kntn xhslqc4 x1hm9lzh x1ty9z65",
+				children: C
+			}) : null]
+		});
+	}
+	g.displayName = g.name + " [from " + i.id + "]", l.SliderTheme = f, l.Slider = g;
+}), 98);

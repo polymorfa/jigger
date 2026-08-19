@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_web_ask_meta_ai_improvement_enabled",
+  "kind": "ab",
+  "name": "ai_web_ask_meta_ai_improvement_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34586,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_web_ask_meta_ai_improvement_enabled:\\s*\\[\\s*34586"
+  },
+  "literals": [
+    "ai_web_ask_meta_ai_improvement_enabled",
+    "34586"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

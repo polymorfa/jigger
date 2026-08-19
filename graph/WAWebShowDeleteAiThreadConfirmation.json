@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBotFrontendUtils","WAWebChatCollection","WAWebChatEntryPoint","WAWebConfirmPopup.react","WAWebDeleteAiThreadsAction","WAWebModalManager","WAWebToast.react","WAWebToastManager","react"],"dependents":["WAWebAiThreadContextMenu","WAWebContactMenuDropdown.react"],"dependent_count":2,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["invariant","JSScheduler","gkx","requestIdleCallback"],"dependents":["CTWAAdsOptimizationStoreUtils","CTXChatBuilderWAFlowsUtils","StartConversationsTemplateGreetingSection.react","WAFlowsPreviewDeviceScreenCTWA.react","WAMFlowsCTWAEditorAddComponentButton.react","WAMFlowsCTWAEditorModal.react","WAMFlowsCTWAEditorModalEditor.react"],"dependent_count":7,"exports":[]}

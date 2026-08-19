@@ -1,0 +1,51 @@
+{
+  "id": "enum:LWI_ACTION_TYPE",
+  "kind": "enum",
+  "name": "LWI_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiActionType",
+    "variants": [
+      {
+        "name": "START_LOADING",
+        "value": 1.0
+      },
+      {
+        "name": "STOP_LOADING",
+        "value": 2.0
+      },
+      {
+        "name": "RESUME_LOADING",
+        "value": 3.0
+      },
+      {
+        "name": "ERROR_LOADING",
+        "value": 4.0
+      },
+      {
+        "name": "PAUSE_LOADING",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiActionType",
+    "matches": "LWI_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LWI_ACTION_TYPE",
+    "START_LOADING",
+    "STOP_LOADING",
+    "RESUME_LOADING",
+    "ERROR_LOADING",
+    "PAUSE_LOADING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwaAdCreationAndManagementJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

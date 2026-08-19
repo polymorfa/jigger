@@ -1,0 +1,42 @@
+{
+  "id": "ab:group_history_support_history_sync_receiver_pre_chat",
+  "kind": "ab",
+  "name": "group_history_support_history_sync_receiver_pre_chat",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 20658,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "group_history_support_history_sync_receiver_pre_chat:\\s*\\[\\s*20658"
+  },
+  "literals": [
+    "group_history_support_history_sync_receiver_pre_chat",
+    "20658"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

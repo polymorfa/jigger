@@ -1,0 +1,52 @@
+{
+  "id": "enum:ACTIVE_TIME_AFTER_PAIRING",
+  "kind": "enum",
+  "name": "ACTIVE_TIME_AFTER_PAIRING",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumActiveTimeAfterPairing",
+    "variants": [
+      {
+        "name": "MINS_10",
+        "value": 1.0
+      },
+      {
+        "name": "MINS_20",
+        "value": 2.0
+      },
+      {
+        "name": "MINS_40",
+        "value": 3.0
+      },
+      {
+        "name": "MINS_60",
+        "value": 4.0
+      },
+      {
+        "name": "MINS_5",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumActiveTimeAfterPairing",
+    "matches": "ACTIVE_TIME_AFTER_PAIRING\\s*[:=]"
+  },
+  "literals": [
+    "ACTIVE_TIME_AFTER_PAIRING",
+    "MINS_10",
+    "MINS_20",
+    "MINS_40",
+    "MINS_60",
+    "MINS_5"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLogHistorySyncStatusAfterPairingJob",
+      "WAWebMdBootstrapHistorySyncStatusAfterPairingWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

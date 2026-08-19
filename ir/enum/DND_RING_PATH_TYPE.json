@@ -1,0 +1,41 @@
+{
+  "id": "enum:DND_RING_PATH_TYPE",
+  "kind": "enum",
+  "name": "DND_RING_PATH_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDndRingPathType",
+    "variants": [
+      {
+        "name": "IMPERATIVE",
+        "value": 1.0
+      },
+      {
+        "name": "CHANNEL",
+        "value": 2.0
+      },
+      {
+        "name": "NONE",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDndRingPathType",
+    "matches": "DND_RING_PATH_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DND_RING_PATH_TYPE",
+    "IMPERATIVE",
+    "CHANNEL",
+    "NONE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

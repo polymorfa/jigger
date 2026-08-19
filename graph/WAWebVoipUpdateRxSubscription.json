@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum","WALogger","WAWebVoipStackInterface","asyncToGeneratorRuntime","nullthrows"],"dependents":["useWAWebVoipGroupCallRxSubscription"],"dependent_count":1,"exports":[{"name":"VideoQuality","used_by":["useWAWebVoipGroupCallRxSubscription"],"uses":1},{"name":"updateRxSubscription","used_by":["useWAWebVoipGroupCallRxSubscription"],"uses":1}]}

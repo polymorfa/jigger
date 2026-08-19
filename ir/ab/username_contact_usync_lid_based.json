@@ -1,0 +1,42 @@
+{
+  "id": "ab:username_contact_usync_lid_based",
+  "kind": "ab",
+  "name": "username_contact_usync_lid_based",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14565,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_contact_usync_lid_based:\\s*\\[\\s*14565"
+  },
+  "literals": [
+    "username_contact_usync_lid_based",
+    "14565"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

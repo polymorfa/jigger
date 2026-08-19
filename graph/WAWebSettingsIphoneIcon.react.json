@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebLinkDeviceCommonInstructions.react"],"dependent_count":2,"exports":[{"name":"SettingsIphoneIcon","used_by":["WAWebAllGeneratedIcons","WAWebLinkDeviceCommonInstructions.react"],"uses":2}]}

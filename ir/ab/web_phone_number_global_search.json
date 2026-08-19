@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_phone_number_global_search",
+  "kind": "ab",
+  "name": "web_phone_number_global_search",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22603,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_phone_number_global_search:\\s*\\[\\s*22603"
+  },
+  "literals": [
+    "web_phone_number_global_search",
+    "22603"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebChatlistPanelWrapper.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

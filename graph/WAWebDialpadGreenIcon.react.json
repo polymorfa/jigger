@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebRequestPhoneNumberMessage.react"],"dependent_count":2,"exports":[{"name":"DialpadGreenIcon","used_by":["WAWebAllGeneratedIcons","WAWebRequestPhoneNumberMessage.react"],"uses":2}]}

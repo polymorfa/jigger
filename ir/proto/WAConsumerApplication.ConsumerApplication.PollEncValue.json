@@ -1,0 +1,45 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.PollEncValue",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.PollEncValue",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "encIv": {
+        "number": 2
+      },
+      "encPayload": {
+        "number": 1
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.PollEncValue\""
+  },
+  "literals": [
+    "PollEncValue"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

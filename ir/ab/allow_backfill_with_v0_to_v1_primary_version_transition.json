@@ -1,0 +1,42 @@
+{
+  "id": "ab:allow_backfill_with_v0_to_v1_primary_version_transition",
+  "kind": "ab",
+  "name": "allow_backfill_with_v0_to_v1_primary_version_transition",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32186,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "allow_backfill_with_v0_to_v1_primary_version_transition:\\s*\\[\\s*32186"
+  },
+  "literals": [
+    "allow_backfill_with_v0_to_v1_primary_version_transition",
+    "32186"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

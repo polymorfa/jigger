@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAAICommon.BotMessageSharingInfo",
+  "kind": "proto",
+  "name": "WAAICommon.BotMessageSharingInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "botEntryPointOrigin": {
+        "number": 1
+      },
+      "forwardScore": {
+        "number": 2
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotMessageSharingInfo\""
+  },
+  "literals": [
+    "BotMessageSharingInfo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

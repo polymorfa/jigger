@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger"],"dependents":["MAWChatSocketPlatformDetails","WAInitAndGetAuthKeyPair","WAOpenChatSocket","WAWebWorkerChatSocketPlatformDetails"],"dependent_count":4,"exports":[{"name":"Curve25519","used_by":[],"uses":0}]}

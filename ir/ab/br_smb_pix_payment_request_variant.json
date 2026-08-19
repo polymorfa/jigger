@@ -1,0 +1,45 @@
+{
+  "id": "ab:br_smb_pix_payment_request_variant",
+  "kind": "ab",
+  "name": "br_smb_pix_payment_request_variant",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24388,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "br_smb_pix_payment_request_variant:\\s*\\[\\s*24388"
+  },
+  "literals": [
+    "br_smb_pix_payment_request_variant",
+    "24388"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPixPaymentRequestFeature"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

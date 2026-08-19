@@ -1,0 +1,683 @@
+{
+  "id": "mex:WAWebMexFetchGroupInfoJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchGroupInfoJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27508847222068472",
+    "operation": "query",
+    "variables": [
+      "id",
+      "query_context",
+      "include_username",
+      "participants_phash"
+    ],
+    "args": [
+      {
+        "name": "id"
+      },
+      {
+        "name": "query_context"
+      },
+      {
+        "name": "include_username"
+      },
+      {
+        "name": "participants_phash"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_query_by_id",
+        "args": [
+          "group_input: …"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "creation_time",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "creator",
+            "ty": "XWA2User",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "lid",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "pn",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "@include(if: $include_username)",
+                "kind": "Condition",
+                "selections": [
+                  {
+                    "name": "username_info",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "__typename",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "... on XWA2Username",
+                        "kind": "InlineFragment",
+                        "selections": [
+                          {
+                            "name": "username",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "subject",
+            "ty": "XWA2GroupSubject",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "creator",
+                "ty": "XWA2User",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "lid",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "pn",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "@include(if: $include_username)",
+                    "kind": "Condition",
+                    "selections": [
+                      {
+                        "name": "username_info",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "__typename",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "... on XWA2Username",
+                            "kind": "InlineFragment",
+                            "selections": [
+                              {
+                                "name": "username",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "value",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "description",
+            "ty": "XWA2GroupDescription",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "creator",
+                "ty": "XWA2User",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "lid",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "pn",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "@include(if: $include_username)",
+                    "kind": "Condition",
+                    "selections": [
+                      {
+                        "name": "username_info",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "__typename",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "... on XWA2Username",
+                            "kind": "InlineFragment",
+                            "selections": [
+                              {
+                                "name": "username",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "value",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "participants",
+            "ty": "XWA2GroupParticipantsConnection",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "edges",
+                "ty": "XWA2GroupParticipantEdge",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "node",
+                    "ty": "XWA2User",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "lid",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "pn",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "display_name",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "@include(if: $include_username)",
+                        "kind": "Condition",
+                        "selections": [
+                          {
+                            "name": "username_info",
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "__typename",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "... on XWA2Username",
+                                "kind": "InlineFragment",
+                                "selections": [
+                                  {
+                                    "name": "username",
+                                    "kind": "ScalarField"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "role",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "join_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "group_history_sent",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "participants_phash_match",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "total_participants_count",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "missing_participant_identification",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on XWA2CommunityGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "properties",
+                "ty": "XWA2CommunityProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "allow_non_admin_sub_group_creation",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "closed_by_membership_approval_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_status",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_update_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "limit_sharing",
+                    "ty": "XWA2GroupLimitSharingSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "limit_sharing_enabled",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lid_migration_state",
+                    "ty": "XWA2GroupLIDMigrationState",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "addressing_mode",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2CommunityDefaultSubGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "properties",
+                "ty": "XWA2CommunityDefaultSubGroupProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "ephemeral",
+                    "ty": "XWA2GroupEphemeralSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "expiration_time_in_sec",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "growth_locked2",
+                    "ty": "XWA2GroupGrowthLocked",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "locked",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lid_migration_state",
+                    "ty": "XWA2GroupLIDMigrationState",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "addressing_mode",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "member_add_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "parent_group_jid",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "group_safety_check",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_status",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_update_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "limit_sharing",
+                    "ty": "XWA2GroupLimitSharingSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "limit_sharing_enabled",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2CommunitySubGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "membership_approval_request",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "properties",
+                "ty": "XWA2CommunitySubGroupProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "allow_admin_reports",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "announcement",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "ephemeral",
+                    "ty": "XWA2GroupEphemeralSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "expiration_time_in_sec",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "growth_locked2",
+                    "ty": "XWA2GroupGrowthLocked",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "locked",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lid_migration_state",
+                    "ty": "XWA2GroupLIDMigrationState",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "addressing_mode",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "locked",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "member_add_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "member_link_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "member_share_group_history_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "membership_approval_mode_enabled",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "parent_group_jid",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "general_chat",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "auto_add_disabled",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "hidden_group",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "group_safety_check",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_status",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_update_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "limit_sharing",
+                    "ty": "XWA2GroupLimitSharingSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "limit_sharing_enabled",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "... on XWA2GroupRegularGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "properties",
+                "ty": "XWA2GroupRegularGroupProperties",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "allow_admin_reports",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "announcement",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "capi",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "ephemeral",
+                    "ty": "XWA2GroupEphemeralSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "expiration_time_in_sec",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "growth_locked2",
+                    "ty": "XWA2GroupGrowthLocked",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "locked",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lid_migration_state",
+                    "ty": "XWA2GroupLIDMigrationState",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "addressing_mode",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "locked",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "member_add_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "member_link_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "member_share_group_history_mode",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "membership_approval_mode_enabled",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "support",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "group_safety_check",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_status",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_update_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "limit_sharing",
+                    "ty": "XWA2GroupLimitSharingSetting",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "limit_sharing_enabled",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_query_by_id",
+    "document": "# persisted document 27508847222068472\nquery MexFetchGroupInfoJobQuery(\n  $id\n  $query_context\n  $include_username\n  $participants_phash\n) {\n  xwa2_group_query_by_id(group_input: …) {\n    __typename\n    id\n    creation_time\n    creator {  # XWA2User\n      id\n      lid\n      pn\n      @include(if: $include_username) {\n        username_info {\n          __typename\n          ... on XWA2Username {\n            username\n          }\n        }\n      }\n    }\n    state\n    subject {  # XWA2GroupSubject\n      creator {  # XWA2User\n        id\n        lid\n        pn\n        @include(if: $include_username) {\n          username_info {\n            __typename\n            ... on XWA2Username {\n              username\n            }\n          }\n        }\n      }\n      creation_time\n      value\n    }\n    description {  # XWA2GroupDescription\n      id\n      creation_time\n      creator {  # XWA2User\n        id\n        lid\n        pn\n        @include(if: $include_username) {\n          username_info {\n            __typename\n            ... on XWA2Username {\n              username\n            }\n          }\n        }\n      }\n      value\n    }\n    participants {  # XWA2GroupParticipantsConnection\n      edges {  # [XWA2GroupParticipantEdge]\n        node {  # XWA2User\n          id\n          lid\n          pn\n          display_name\n          @include(if: $include_username) {\n            username_info {\n              __typename\n              ... on XWA2Username {\n                username\n              }\n            }\n          }\n        }\n        role\n        join_time\n        group_history_sent\n      }\n      participants_phash_match\n    }\n    total_participants_count\n    missing_participant_identification\n    ... on XWA2CommunityGroup {\n      properties {  # XWA2CommunityProperties\n        allow_non_admin_sub_group_creation\n        closed_by_membership_approval_mode\n        appeal_status\n        appeal_update_time\n        limit_sharing {  # XWA2GroupLimitSharingSetting\n          limit_sharing_enabled\n        }\n        lid_migration_state {  # XWA2GroupLIDMigrationState\n          addressing_mode\n        }\n      }\n    }\n    ... on XWA2CommunityDefaultSubGroup {\n      properties {  # XWA2CommunityDefaultSubGroupProperties\n        ephemeral {  # XWA2GroupEphemeralSetting\n          expiration_time_in_sec\n        }\n        growth_locked2 {  # XWA2GroupGrowthLocked\n          locked\n        }\n        lid_migration_state {  # XWA2GroupLIDMigrationState\n          addressing_mode\n        }\n        member_add_mode\n        parent_group_jid\n        group_safety_check\n        appeal_status\n        appeal_update_time\n        limit_sharing {  # XWA2GroupLimitSharingSetting\n          limit_sharing_enabled\n        }\n      }\n    }\n    ... on XWA2CommunitySubGroup {\n      membership_approval_request\n      properties {  # XWA2CommunitySubGroupProperties\n        allow_admin_reports\n        announcement\n        ephemeral {  # XWA2GroupEphemeralSetting\n          expiration_time_in_sec\n        }\n        growth_locked2 {  # XWA2GroupGrowthLocked\n          locked\n        }\n        lid_migration_state {  # XWA2GroupLIDMigrationState\n          addressing_mode\n        }\n        locked\n        member_add_mode\n        member_link_mode\n        member_share_group_history_mode\n        membership_approval_mode_enabled\n        parent_group_jid\n        general_chat\n        auto_add_disabled\n        hidden_group\n        group_safety_check\n        appeal_status\n        appeal_update_time\n        limit_sharing {  # XWA2GroupLimitSharingSetting\n          limit_sharing_enabled\n        }\n      }\n    }\n    ... on XWA2GroupRegularGroup {\n      properties {  # XWA2GroupRegularGroupProperties\n        allow_admin_reports\n        announcement\n        capi\n        ephemeral {  # XWA2GroupEphemeralSetting\n          expiration_time_in_sec\n        }\n        growth_locked2 {  # XWA2GroupGrowthLocked\n          locked\n        }\n        lid_migration_state {  # XWA2GroupLIDMigrationState\n          addressing_mode\n        }\n        locked\n        member_add_mode\n        member_link_mode\n        member_share_group_history_mode\n        membership_approval_mode_enabled\n        support\n        group_safety_check\n        appeal_status\n        appeal_update_time\n        limit_sharing {  # XWA2GroupLimitSharingSetting\n          limit_sharing_enabled\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchGroupInfoJobQuery.graphql",
+    "matches": "id:\\s*\"27508847222068472\""
+  },
+  "literals": [
+    "27508847222068472",
+    "WAWebMexFetchGroupInfoJobQuery",
+    "xwa2_group_query_by_id"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchGroupInfoJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

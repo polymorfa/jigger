@@ -1,0 +1,67 @@
+{
+  "id": "mex:WAWebSupportBugReportSubmitMutation",
+  "kind": "mex",
+  "name": "WAWebSupportBugReportSubmitMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25952242091096312",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_wa_support_bug_report_submit",
+        "ty": "XWAWASupportBugReportingResponsePayload",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_code",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_message",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "bug_report_id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "task_id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 25952242091096312\nmutation SupportBugReportSubmitMutation(\n  $input\n) {\n  xwa_wa_support_bug_report_submit(input: $input) {  # XWAWASupportBugReportingResponsePayload\n    success\n    error_code\n    error_message\n    bug_report_id\n    task_id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebSupportBugReportSubmitMutation.graphql",
+    "matches": "id:\\s*\"25952242091096312\""
+  },
+  "literals": [
+    "25952242091096312",
+    "WAWebSupportBugReportSubmitMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSupportBugReportSubmitMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

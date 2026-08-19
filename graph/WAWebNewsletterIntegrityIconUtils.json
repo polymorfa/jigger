@@ -1,0 +1,1 @@
+{"deps":["WAWebSettingsDocumentIcon.react","WDSIconIcSchedule.react","react"],"dependents":["WAWebNewsletterEnforcementAlertDrawer.react"],"dependent_count":1,"exports":[{"name":"getBadgeIconForOutcomeListBasedOnAppealState","used_by":["WAWebNewsletterEnforcementAlertDrawer.react"],"uses":1}]}

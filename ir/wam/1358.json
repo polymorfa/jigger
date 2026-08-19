@@ -1,0 +1,61 @@
+{
+  "id": "wam:1358",
+  "kind": "wam",
+  "name": "WebcAssetLoad",
+  "data": {
+    "kind": "wam",
+    "event_id": 1358,
+    "fields": {
+      "webcAssetCacheType": {
+        "id": 4,
+        "type": "WEBC_ASSET_CACHE_TYPE_CODE",
+        "wire": "webc_asset_cache_type",
+        "enum_ref": "WEBC_ASSET_CACHE_TYPE_CODE"
+      },
+      "webcAssetFromCache": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "webc_asset_from_cache"
+      },
+      "webcAssetLoadT": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "webc_asset_load_t"
+      },
+      "webcAssetName": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "webc_asset_name"
+      },
+      "webcAssetSize": {
+        "id": 5,
+        "type": "NUMBER",
+        "wire": "webc_asset_size"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcAssetLoadWamEvent",
+    "matches": "WebcAssetLoad:\\s*\\[\\s*1358"
+  },
+  "literals": [
+    "1358"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebcAssetCacheTypeCode"
+    ],
+    "dependents": [
+      "WAWebAssetLoader"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAAbPropsSync","WALogger","asyncToGeneratorRuntime"],"dependents":["WAAPIEager"],"dependent_count":1,"exports":[{"name":"syncAbProps","used_by":["WAAPIEager"],"uses":1}]}

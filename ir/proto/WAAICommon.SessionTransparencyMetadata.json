@@ -1,0 +1,39 @@
+{
+  "id": "proto:WAAICommon.SessionTransparencyMetadata",
+  "kind": "proto",
+  "name": "WAAICommon.SessionTransparencyMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "disclaimerText": {
+        "number": 1
+      },
+      "hcaId": {
+        "number": 2
+      },
+      "sessionTransparencyType": {
+        "number": 3
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"SessionTransparencyMetadata\""
+  },
+  "literals": [
+    "SessionTransparencyMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

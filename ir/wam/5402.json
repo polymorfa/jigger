@@ -1,0 +1,118 @@
+{
+  "id": "wam:5402",
+  "kind": "wam",
+  "name": "PttMessageUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 5402,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "chatbarInitialState": {
+        "id": 7,
+        "type": "CHATBAR_INITIAL_STATE",
+        "wire": "chatbar_initial_state",
+        "enum_ref": "CHATBAR_INITIAL_STATE"
+      },
+      "isMetaAiThread": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "is_meta_ai_thread"
+      },
+      "pttIntensityAggregateValue": {
+        "id": 14,
+        "type": "NUMBER",
+        "wire": "ptt_intensity_aggregate_value"
+      },
+      "pttMessageUserJourneyAction": {
+        "id": 2,
+        "type": "PTT_MESSAGE_USER_JOURNEY_ACTION",
+        "wire": "ptt_message_user_journey_action",
+        "enum_ref": "PTT_MESSAGE_USER_JOURNEY_ACTION"
+      },
+      "pttMessageUserJourneyContainsQuotedItem": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "ptt_message_user_journey_contains_quoted_item"
+      },
+      "pttMessageUserJourneyFailureReason": {
+        "id": 9,
+        "type": "PTT_MESSAGE_USER_JOURNEY_FAILURE_REASON",
+        "wire": "ptt_message_user_journey_failure_reason",
+        "enum_ref": "PTT_MESSAGE_USER_JOURNEY_FAILURE_REASON"
+      },
+      "pttMessageUserJourneyStage": {
+        "id": 3,
+        "type": "PTT_MESSAGE_USER_JOURNEY_STAGE",
+        "wire": "ptt_message_user_journey_stage",
+        "enum_ref": "PTT_MESSAGE_USER_JOURNEY_STAGE"
+      },
+      "pttWaveformResult": {
+        "id": 13,
+        "type": "PTT_WAVEFORM_RESULT",
+        "wire": "ptt_waveform_result",
+        "enum_ref": "PTT_WAVEFORM_RESULT"
+      },
+      "uiSurface": {
+        "id": 4,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyChatType": {
+        "id": 5,
+        "type": "USER_JOURNEY_CHAT_TYPE",
+        "wire": "user_journey_chat_type",
+        "enum_ref": "USER_JOURNEY_CHAT_TYPE"
+      },
+      "userJourneyEventMs": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "userJourneyFunnelId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPttMessageUserJourneyWamEvent",
+    "matches": "PttMessageUserJourney:\\s*\\[\\s*5402"
+  },
+  "literals": [
+    "5402"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatbarInitialState",
+      "WAWebWamEnumPttMessageUserJourneyAction",
+      "WAWebWamEnumPttMessageUserJourneyFailureReason",
+      "WAWebWamEnumPttMessageUserJourneyStage",
+      "WAWebWamEnumPttWaveformResult",
+      "WAWebWamEnumTsSurface",
+      "WAWebWamEnumUserJourneyChatType"
+    ],
+    "dependents": [
+      "WAWebPttMessageUserJourneyLogger"
+    ],
+    "dep_count": 8,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "id": "iq:w:g2/get/reports",
+  "kind": "iq",
+  "name": "GroupsGetReportedMessages",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:g2",
+    "type": "get",
+    "tags": [
+      "reports"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:g2",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "reports",
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxGroupsGetReportedMessagesRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInGroupsGetReportedMessagesResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "reports",
+              "card": "one"
+            },
+            {
+              "tag": "report",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "PhoneNumber",
+          "PhoneNumberAndUsernameAtt",
+          "UsernameAtt"
+        ]
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInGroupsGetReportedMessagesResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorItemNotFound",
+          "IQErrorLocked",
+          "IQErrorNotAuthorized",
+          "IQErrorRateOverlimit"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInGroupsGetReportedMessagesResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorFallbackServer",
+          "IQErrorInternalServerError",
+          "IQErrorPartialServerError",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutGroupsGetReportedMessagesRequest",
+    "matches": "smax\\(\"reports\""
+  },
+  "literals": [
+    "w:g2",
+    "reports"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WASmaxOutGroupsBaseGetGroupMixin"
+    ],
+    "dependents": [
+      "WASmaxGroupsGetReportedMessagesRPC"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

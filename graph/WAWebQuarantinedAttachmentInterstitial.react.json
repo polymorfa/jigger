@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebDefenseModeQuarantineLogger","WAWebDefenseModeUtils","WAWebFbtCommon","WAWebModalManager","WAWebQuarantineDataStore","WAWebUnquarantineMessageJob","asyncToGeneratorRuntime","react"],"dependents":["WAWebMessageQuarantined.react"],"dependent_count":1,"exports":[]}

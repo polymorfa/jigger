@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCellFrame.react","WAWebClickableLink.react","WAWebEmojiText.react","WAWebProductCollection","WAWebStopEvent","WAWebText.react","WAWebUtilsLogQplEvents","react","react-compiler-runtime"],"dependents":["WAWebProductCollectionsList.react"],"dependent_count":1,"exports":[]}

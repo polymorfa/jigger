@@ -1,0 +1,77 @@
+{
+  "id": "wam:7112",
+  "kind": "wam",
+  "name": "NewsletterEnforcementEvents",
+  "data": {
+    "kind": "wam",
+    "event_id": 7112,
+    "fields": {
+      "cid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "enforcementInteractionEvent": {
+        "id": 2,
+        "type": "ENFORCEMENT_INTERACTION_EVENT",
+        "wire": "enforcement_interaction_event",
+        "enum_ref": "ENFORCEMENT_INTERACTION_EVENT"
+      },
+      "enforcementType": {
+        "id": 3,
+        "type": "ENFORCEMENT_TYPE",
+        "wire": "enforcement_type",
+        "enum_ref": "ENFORCEMENT_TYPE"
+      },
+      "interactionEntryPoint": {
+        "id": 4,
+        "type": "INTERACTION_ENTRY_POINT",
+        "wire": "interaction_entry_point",
+        "enum_ref": "INTERACTION_ENTRY_POINT"
+      },
+      "interactionSurface": {
+        "id": 5,
+        "type": "INTERACTION_SURFACE",
+        "wire": "interaction_surface",
+        "enum_ref": "INTERACTION_SURFACE"
+      },
+      "newsletterEnforcementSessionId": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "newsletter_enforcement_session_id"
+      },
+      "violationCategory": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "violation_category"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebNewsletterEnforcementEventsWamEvent",
+    "matches": "NewsletterEnforcementEvents:\\s*\\[\\s*7112"
+  },
+  "literals": [
+    "7112"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumEnforcementInteractionEvent",
+      "WAWebWamEnumEnforcementType",
+      "WAWebWamEnumInteractionEntryPoint",
+      "WAWebWamEnumInteractionSurface"
+    ],
+    "dependents": [
+      "WAWebEnforcementActionLogging"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

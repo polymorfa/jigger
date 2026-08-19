@@ -1,0 +1,55 @@
+{
+  "id": "mex:WAWebReportProductJobMutation",
+  "kind": "mex",
+  "name": "WAWebReportProductJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27419506181072609",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_whatsapp_catalog_report_product",
+        "ty": "XWAWhatsAppCatalogReportProductResponse",
+        "args": [
+          "request: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 27419506181072609\nmutation ReportProductJobMutation(\n  $input\n) {\n  xwa_whatsapp_catalog_report_product(request: $input) {  # XWAWhatsAppCatalogReportProductResponse\n    __typename\n    success\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebReportProductJobMutation.graphql",
+    "matches": "id:\\s*\"27419506181072609\""
+  },
+  "literals": [
+    "27419506181072609",
+    "WAWebReportProductJobMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebReportProductJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

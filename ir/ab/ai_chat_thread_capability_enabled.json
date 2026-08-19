@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_chat_thread_capability_enabled",
+  "kind": "ab",
+  "name": "ai_chat_thread_capability_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22038,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_chat_thread_capability_enabled:\\s*\\[\\s*22038"
+  },
+  "literals": [
+    "ai_chat_thread_capability_enabled",
+    "22038"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

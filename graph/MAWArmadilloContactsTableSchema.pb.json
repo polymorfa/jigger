@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst"],"dependents":["MAWArmadilloMessagesTableSchema.pb","MAWArmadilloUnrenderedMessagesTableSchema.pb"],"dependent_count":2,"exports":[{"name":"EphemeralSettingProtoSpec","used_by":["MAWArmadilloMessagesTableSchema.pb","MAWArmadilloUnrenderedMessagesTableSchema.pb"],"uses":2},{"name":"EphemeralSyncResponseBackoffInfoSpec","used_by":[],"uses":0}]}

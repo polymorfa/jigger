@@ -1,0 +1,1 @@
+{"deps":["WAWebThreadJourneyLogger","WAWebThreadMsgUtils"],"dependents":["WAWebSendMsgChatAction","WAWebSendTextMsgChatAction"],"dependent_count":2,"exports":[{"name":"maybeLogFirstPromptSentInAiThread","used_by":["WAWebSendMsgChatAction","WAWebSendTextMsgChatAction"],"uses":2}]}

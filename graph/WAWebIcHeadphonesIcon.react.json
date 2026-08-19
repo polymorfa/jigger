@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebRenderAudioPreviewIcon"],"dependent_count":2,"exports":[{"name":"IcHeadphonesIcon","used_by":["WAWebAllGeneratedIcons","WAWebRenderAudioPreviewIcon"],"uses":2}]}

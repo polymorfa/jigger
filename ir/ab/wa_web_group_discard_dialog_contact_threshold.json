@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_group_discard_dialog_contact_threshold",
+  "kind": "ab",
+  "name": "wa_web_group_discard_dialog_contact_threshold",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25682,
+    "type": "int",
+    "default": -1,
+    "alt_default": 2
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_group_discard_dialog_contact_threshold:\\s*\\[\\s*25682"
+  },
+  "literals": [
+    "wa_web_group_discard_dialog_contact_threshold",
+    "25682"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGroupGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

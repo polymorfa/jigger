@@ -1,0 +1,233 @@
+__d("WAWebEmojiSearch", [
+	"WALogger",
+	"WATrie",
+	"WAWebABProps",
+	"WAWebEmoji",
+	"WAWebRecentEmojiCollection",
+	"compactMap",
+	"justknobx",
+	"once",
+	"requireDeferred"
+], (function(t, n, r, o, a, i, l) {
+	var e, s = r("requireDeferred")("WAFtsMultiLangTokenizer").__setRef("WAWebEmojiSearch"), u = [
+		"😂",
+		"🤣",
+		"❤",
+		"🥺",
+		"🥰",
+		"😘",
+		"😭",
+		"😍",
+		"😁",
+		"🙏",
+		"😅",
+		"😆",
+		"😊",
+		"🙂",
+		"😔",
+		"🥳",
+		"😒",
+		"☺",
+		"🎂",
+		"👍",
+		"💖",
+		"😢",
+		"🙄",
+		"😏",
+		"😎",
+		"💋",
+		"😞",
+		"😉",
+		"👏",
+		"🙃",
+		"😡",
+		"😀",
+		"😄",
+		"😇",
+		"🤩",
+		"😌",
+		"🤔",
+		"🌹",
+		"😋",
+		"💗",
+		"🤗",
+		"💕",
+		"💔",
+		"😚",
+		"☹",
+		"😃",
+		"🎉",
+		"🔥",
+		"🥴",
+		"😳"
+	], c = [
+		"SMILEYS_PEOPLE",
+		"ANIMALS_NATURE",
+		"FOOD_DRINK",
+		"ACTIVITY",
+		"TRAVEL_PLACES",
+		"OBJECTS",
+		"SYMBOLS",
+		"FLAGS",
+		"VARIATION"
+	], d = 36, m = 50, p = 1841, _ = 1e8, f = 1e6, g = 1e4;
+	function h(e, t) {
+		var n = [];
+		if (e) {
+			var r = L(e.toLowerCase(), t);
+			n = Array.from(new Set(r));
+		}
+		return n;
+	}
+	function y(e, t) {
+		if (!t) return [];
+		if (e.length <= 5) return t.getMatches(e);
+		var n = e.substring(0, 5).trim(), r = t.getMatches(n);
+		return r = r.filter(function(t) {
+			return t.keyword.startsWith(e);
+		}), r;
+	}
+	function C(e) {
+		return r("compactMap")(e, o("WAWebEmoji").EmojiUtil.normalizeEmoji);
+	}
+	function b(e) {
+		var t, n, r, o = e.emoji, a = e.emojiToPickerPosition, i = e.recentEmojiToRank, l = e.top50EmojiToRank, s = e.wordMatchCount, u = Math.min(Math.max(s, 0), 99), c = (t = i.get(o)) != null ? t : 0, d = Math.min(Math.max(c, 0), 99), m = (n = l.get(o)) != null ? n : 0, h = Math.min(Math.max(m, 0), 99), y = (r = a.get(o)) != null ? r : p, C = Math.min(Math.max(p - y, 1), 9999);
+		return u * _ + d * f + h * g + C;
+	}
+	function v() {
+		var e = new Map(), t = C(o("WAWebRecentEmojiCollection").RecentEmojiCollection.map(function(e) {
+			return e.id;
+		}));
+		return t.forEach(function(t, n) {
+			e.set(t, d - n);
+		}), e;
+	}
+	var S = r("once")(function() {
+		var e = new Map(), t = C(u);
+		return t.forEach(function(t, n) {
+			e.set(t, m - n);
+		}), e;
+	});
+	function R(e, t) {
+		var n = e.split(" ").filter(function(e) {
+			return e.length > 0;
+		});
+		if (n.length === 0) return [];
+		var r = new Map();
+		for (var o of n) {
+			var a = y(o, t), i = C(a.flatMap(function(e) {
+				return e.value;
+			})), l = new Set(i);
+			for (var s of l) {
+				var u, c = (u = r.get(s)) != null ? u : 0;
+				r.set(s, c + 1);
+			}
+		}
+		var d = v(), m = S(), p = E(), _ = [];
+		for (var f of r) {
+			var g = f[0], h = f[1], R = b({
+				emoji: g,
+				emojiToPickerPosition: p,
+				recentEmojiToRank: d,
+				top50EmojiToRank: m,
+				wordMatchCount: h
+			});
+			_.push({
+				emoji: g,
+				rank: R
+			});
+		}
+		return _.sort(function(e, t) {
+			return t.rank - e.rank;
+		}), _.map(function(e) {
+			return e.emoji;
+		});
+	}
+	function L(t, n) {
+		if (o("WAWebABProps").getABPropConfigValue("emoji_search_cldr")) return R(t, n);
+		var a, i = s.getModuleIfRequireable();
+		i ? a = new i() : o("WALogger").WARN(e || (e = babelHelpers.taggedTemplateLiteralLoose(["WAFtsMultiLangTokenizer not loaded"]))).sendLogs("WAFtsMultiLangTokenizer not loaded");
+		var l;
+		if (a && r("justknobx")._("2148")) {
+			var c = Array.from(a.tokenize(t)), d = c.map(function(e) {
+				return y(e, n);
+			});
+			d.length === 0 ? l = [] : d.length === 1 ? l = d[0] : l = d.reduce(function(e, t) {
+				return e.filter(function(e) {
+					return t.map(function(e) {
+						return e.value;
+					}).includes(e.value);
+				});
+			}, d[0]);
+		} else l = y(t, n);
+		var m = C(l.flatMap(function(e) {
+			return e.value;
+		})), p = C(l.filter(function(e) {
+			return e.keyword === t;
+		}).flatMap(function(e) {
+			return e.value;
+		})), _ = D(C(o("WAWebRecentEmojiCollection").RecentEmojiCollection.map(function(e) {
+			return e.id;
+		})), m), f = D(C(u), m), g = D(x(_, f), p);
+		return x(g, k(p), _, f, k(m));
+	}
+	var E = r("once")(function() {
+		var e = new Map(), t = 0;
+		for (var n of c) {
+			var r = o("WAWebEmoji").EmojiUtil.getEmojisInCategory(n);
+			for (var a of r) e.set(a, t), t++;
+		}
+		return e;
+	});
+	function k(e) {
+		var t = E();
+		return e.toSorted(function(e, n) {
+			var r, o, a = (r = t.get(e)) != null ? r : Number.MAX_SAFE_INTEGER, i = (o = t.get(n)) != null ? o : Number.MAX_SAFE_INTEGER;
+			return a - i;
+		});
+	}
+	async function I(e) {
+		if (e.length === 0) return T([], "shortKeyword");
+		var t = e[0];
+		e.length > 1 && (t = babelHelpers.extends({}, t, e[1]));
+		var n = await s.load(), o = new n(), a;
+		return r("justknobx")._("2148") ? a = Object.entries(t).flatMap(function(e) {
+			var t = e[0], n = e[1], r = t.toLowerCase(), a = Array.from(o.tokenize(r));
+			return a.map(function(e) {
+				return {
+					value: n,
+					keyword: e,
+					shortKeyword: e.substring(0, 5)
+				};
+			});
+		}) : a = Object.entries(t).flatMap(function(e) {
+			var t = e[0], n = e[1], r = t.toLowerCase(), o = r.substring(0, 5);
+			return {
+				value: n,
+				keyword: r,
+				shortKeyword: o
+			};
+		}), T(a, "shortKeyword");
+	}
+	function T(e, t) {
+		var n = r("WATrie").fromForwardsStrings(e.map(function(e) {
+			return e[t];
+		}), e);
+		return { getMatches: function(t) {
+			return n.search(t);
+		} };
+	}
+	function D() {
+		for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+		return t.length === 0 ? [] : t.length === 1 ? t[0] : t.reduce(function(e, t) {
+			return e.filter(function(e) {
+				return t.includes(e);
+			});
+		}, t[0]);
+	}
+	function x() {
+		for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+		return Array.from(new Set(t.flat(1)));
+	}
+	l.emojiSearch = h, l.emojiLocaleDictsToTrie = I;
+}), 98);

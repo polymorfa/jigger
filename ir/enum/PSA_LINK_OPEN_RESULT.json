@@ -1,0 +1,41 @@
+{
+  "id": "enum:PSA_LINK_OPEN_RESULT",
+  "kind": "enum",
+  "name": "PSA_LINK_OPEN_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPsaLinkOpenResult",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "CANCEL",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPsaLinkOpenResult",
+    "matches": "PSA_LINK_OPEN_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "PSA_LINK_OPEN_RESULT",
+    "SUCCESS",
+    "CANCEL",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusItemViewWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

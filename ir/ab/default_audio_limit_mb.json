@@ -1,0 +1,45 @@
+{
+  "id": "ab:default_audio_limit_mb",
+  "kind": "ab",
+  "name": "default_audio_limit_mb",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3657,
+    "type": "int",
+    "default": 16,
+    "alt_default": 64
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "default_audio_limit_mb:\\s*\\[\\s*3657"
+  },
+  "literals": [
+    "default_audio_limit_mb",
+    "3657"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMediaGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

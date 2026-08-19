@@ -1,0 +1,234 @@
+{
+  "id": "enum:STATUS_ROW_SECTION",
+  "kind": "enum",
+  "name": "STATUS_ROW_SECTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusRowSection",
+    "variants": [
+      {
+        "name": "RECENT_STORIES",
+        "value": 1.0
+      },
+      {
+        "name": "PREVIOUS_STORIES",
+        "value": 2.0
+      },
+      {
+        "name": "MUTED_STORIES",
+        "value": 3.0
+      },
+      {
+        "name": "MY_STATUS",
+        "value": 4.0
+      },
+      {
+        "name": "CHAT_LIST",
+        "value": 5.0
+      },
+      {
+        "name": "GROUP_PARTICIPANT",
+        "value": 6.0
+      },
+      {
+        "name": "CONTACT_CARD",
+        "value": 7.0
+      },
+      {
+        "name": "PROFILE_PAGE",
+        "value": 8.0
+      },
+      {
+        "name": "CHAT_LIST_SEARCH",
+        "value": 9.0
+      },
+      {
+        "name": "UPDATES_TAB_SEARCH",
+        "value": 10.0
+      },
+      {
+        "name": "CHAT_TOP_BAR",
+        "value": 11.0
+      },
+      {
+        "name": "SEE_ALL_RECENT",
+        "value": 12.0
+      },
+      {
+        "name": "SEE_ALL_VIEWED",
+        "value": 13.0
+      },
+      {
+        "name": "SEE_ALL_MUTED",
+        "value": 14.0
+      },
+      {
+        "name": "SEE_ALL_SEARCH",
+        "value": 15.0
+      },
+      {
+        "name": "NOTIFICATION",
+        "value": 16.0
+      },
+      {
+        "name": "STATUS_VIEWER_SHEET",
+        "value": 17.0
+      },
+      {
+        "name": "WAMO_PREVIEW",
+        "value": 18.0
+      },
+      {
+        "name": "GROUP_CHAT_THREAD",
+        "value": 19.0
+      },
+      {
+        "name": "GROUP_INFO_PAGE",
+        "value": 20.0
+      },
+      {
+        "name": "GROUP_INFO_PROFILE_RING",
+        "value": 21.0
+      },
+      {
+        "name": "GROUP_INFO_GROUP_STATUS_ROW",
+        "value": 22.0
+      },
+      {
+        "name": "UNKNOWN",
+        "value": 23.0
+      },
+      {
+        "name": "QUOTED_MESSAGE_IN_CHAT",
+        "value": 24.0
+      },
+      {
+        "name": "GROUP_STATUS_TAB_SELF_POG",
+        "value": 25.0
+      },
+      {
+        "name": "WIDGET",
+        "value": 26.0
+      },
+      {
+        "name": "CHANNEL_INFO_PAGE",
+        "value": 27.0
+      },
+      {
+        "name": "CHANNEL_THREAD_PAGE",
+        "value": 28.0
+      },
+      {
+        "name": "CHANNEL_SUBSCRIBER_LIST",
+        "value": 29.0
+      },
+      {
+        "name": "CHANNEL_RECOMMENDED_LIST",
+        "value": 30.0
+      },
+      {
+        "name": "CHANNEL_DIRECTORY_LIST",
+        "value": 31.0
+      },
+      {
+        "name": "CHANNEL_STATUS_MY_LIST",
+        "value": 34.0
+      },
+      {
+        "name": "CHATS_TAB_STATUS_TRAY",
+        "value": 35.0
+      },
+      {
+        "name": "CHANNEL_INFO_SCREEN",
+        "value": 36.0
+      },
+      {
+        "name": "CHANNEL_THREAD_SCREEN",
+        "value": 37.0
+      },
+      {
+        "name": "ARCHIVE_STATUS_VIEWER",
+        "value": 38.0
+      },
+      {
+        "name": "ARCHIVE_STORAGE",
+        "value": 39.0
+      },
+      {
+        "name": "ME_TAB",
+        "value": 40.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusRowSection",
+    "matches": "STATUS_ROW_SECTION\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_ROW_SECTION",
+    "RECENT_STORIES",
+    "PREVIOUS_STORIES",
+    "MUTED_STORIES",
+    "MY_STATUS",
+    "CHAT_LIST",
+    "GROUP_PARTICIPANT",
+    "CONTACT_CARD",
+    "PROFILE_PAGE",
+    "CHAT_LIST_SEARCH",
+    "UPDATES_TAB_SEARCH",
+    "CHAT_TOP_BAR",
+    "SEE_ALL_RECENT",
+    "SEE_ALL_VIEWED",
+    "SEE_ALL_MUTED",
+    "SEE_ALL_SEARCH",
+    "NOTIFICATION",
+    "STATUS_VIEWER_SHEET",
+    "WAMO_PREVIEW",
+    "GROUP_CHAT_THREAD",
+    "GROUP_INFO_PAGE",
+    "GROUP_INFO_PROFILE_RING",
+    "GROUP_INFO_GROUP_STATUS_ROW",
+    "UNKNOWN",
+    "QUOTED_MESSAGE_IN_CHAT",
+    "GROUP_STATUS_TAB_SELF_POG",
+    "WIDGET",
+    "CHANNEL_INFO_PAGE",
+    "CHANNEL_THREAD_PAGE",
+    "CHANNEL_SUBSCRIBER_LIST",
+    "CHANNEL_RECOMMENDED_LIST",
+    "CHANNEL_DIRECTORY_LIST",
+    "CHANNEL_STATUS_MY_LIST",
+    "CHATS_TAB_STATUS_TRAY",
+    "CHANNEL_INFO_SCREEN",
+    "CHANNEL_THREAD_SCREEN",
+    "ARCHIVE_STATUS_VIEWER",
+    "ARCHIVE_STORAGE",
+    "ME_TAB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChat.react",
+      "WAWebContactImage.react",
+      "WAWebContactInfoTopCard.react",
+      "WAWebHeaderStatus.react",
+      "WAWebLegacyPhotoPickerImpl.react",
+      "WAWebNewsletterDirectoryCell.react",
+      "WAWebQuotedMsg.react",
+      "WAWebStatusChainFromMyBoundary",
+      "WAWebStatusInteractionSentWamEvent",
+      "WAWebStatusItemViewWamEvent",
+      "WAWebStatusList.react",
+      "WAWebStatusListHeader.react",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusPogImpressionWamEvent",
+      "WAWebStatusPostImpressionWamEvent",
+      "WAWebStatusProfilePhotoRing.react",
+      "WAWebStatusRowViewWamEvent",
+      "WAWebStatusViewer.react",
+      "WAWebWDSPhotoPickerImpl.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 19
+  }
+}

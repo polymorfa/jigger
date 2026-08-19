@@ -1,0 +1,73 @@
+{
+  "id": "enum:ABOUT_CONSUMPTION_SURFACE_TYPE",
+  "kind": "enum",
+  "name": "ABOUT_CONSUMPTION_SURFACE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAboutConsumptionSurfaceType",
+    "variants": [
+      {
+        "name": "ONE_ON_ONE_CHAT",
+        "value": 1.0
+      },
+      {
+        "name": "NEW_MESSAGE_CONTACTS",
+        "value": 2.0
+      },
+      {
+        "name": "GROUP_MEMBERS_LIST",
+        "value": 3.0
+      },
+      {
+        "name": "COMMUNITY_MEMBERS_LIST",
+        "value": 4.0
+      },
+      {
+        "name": "FORWARD_CONTACTS",
+        "value": 5.0
+      },
+      {
+        "name": "PROFILE_INFO_BOTTOM_SHEET",
+        "value": 6.0
+      },
+      {
+        "name": "PROFILE_INFO",
+        "value": 7.0
+      },
+      {
+        "name": "CONTACTS_TAB_FAVORITES",
+        "value": 8.0
+      },
+      {
+        "name": "CONTACTS_TAB_LIST",
+        "value": 9.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAboutConsumptionSurfaceType",
+    "matches": "ABOUT_CONSUMPTION_SURFACE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ABOUT_CONSUMPTION_SURFACE_TYPE",
+    "ONE_ON_ONE_CHAT",
+    "NEW_MESSAGE_CONTACTS",
+    "GROUP_MEMBERS_LIST",
+    "COMMUNITY_MEMBERS_LIST",
+    "FORWARD_CONTACTS",
+    "PROFILE_INFO_BOTTOM_SHEET",
+    "PROFILE_INFO",
+    "CONTACTS_TAB_FAVORITES",
+    "CONTACTS_TAB_LIST"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAboutConsumptionWamEvent",
+      "WAWebAboutInteractionWamEvent",
+      "WAWebAboutWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

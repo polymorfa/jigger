@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_native_ads_xplat_draft_ads_ms1a_enabled",
+  "kind": "ab",
+  "name": "wa_native_ads_xplat_draft_ads_ms1a_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33372,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_native_ads_xplat_draft_ads_ms1a_enabled:\\s*\\[\\s*33372"
+  },
+  "literals": [
+    "wa_native_ads_xplat_draft_ads_ms1a_enabled",
+    "33372"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

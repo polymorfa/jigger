@@ -1,0 +1,1 @@
+{"deps":["MAWLocalizationType"],"dependents":["MAWBridgeBuildAdminMsg","MAWBridgeBuildMsgMentions"],"dependent_count":2,"exports":[{"name":"nicknameOnlyForFirstParticipantChecking","used_by":["MAWBridgeBuildAdminMsg","MAWBridgeBuildMsgMentions"],"uses":2},{"name":"skipNicknameCheck","used_by":["MAWBridgeBuildAdminMsg","MAWBridgeBuildMsgMentions"],"uses":2}]}

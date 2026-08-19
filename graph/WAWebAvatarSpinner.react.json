@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebClassnames","WAWebSpinner.react","react","react-compiler-runtime","stylex"],"dependents":["WAWebDetailImage.react","WAWebImgWithFallback.react","WAWebLoadingPhotoPicker.react","useWAWebPhotoPickerCore"],"dependent_count":4,"exports":[]}

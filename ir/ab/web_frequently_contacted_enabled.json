@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_frequently_contacted_enabled",
+  "kind": "ab",
+  "name": "web_frequently_contacted_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29063,
+    "type": "int",
+    "default": -1,
+    "alt_default": -1
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_frequently_contacted_enabled:\\s*\\[\\s*29063"
+  },
+  "literals": [
+    "web_frequently_contacted_enabled",
+    "29063"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

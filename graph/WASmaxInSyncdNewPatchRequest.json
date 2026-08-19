@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInSyncdServerNotificationMixin","WASmaxParseJid","WASmaxParseUtils"],"dependents":["WASmaxSyncdNewPatchRPC"],"dependent_count":1,"exports":[{"name":"parseNewPatchRequest","used_by":["WASmaxSyncdNewPatchRPC"],"uses":1},{"name":"parseNewPatchRequestCollection","used_by":[],"uses":0}]}

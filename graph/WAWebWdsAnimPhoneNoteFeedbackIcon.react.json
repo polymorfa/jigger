@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebFeedbackIntroNuxModal.react"],"dependent_count":2,"exports":[{"name":"WdsAnimPhoneNoteFeedbackIcon","used_by":["WAWebAllGeneratedIcons","WAWebFeedbackIntroNuxModal.react"],"uses":2}]}

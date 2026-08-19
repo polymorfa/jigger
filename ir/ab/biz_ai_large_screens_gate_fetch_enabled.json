@@ -1,0 +1,45 @@
+{
+  "id": "ab:biz_ai_large_screens_gate_fetch_enabled",
+  "kind": "ab",
+  "name": "biz_ai_large_screens_gate_fetch_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31880,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "biz_ai_large_screens_gate_fetch_enabled:\\s*\\[\\s*31880"
+  },
+  "literals": [
+    "biz_ai_large_screens_gate_fetch_enabled",
+    "31880"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebFetchBizAiLargeScreensGate"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

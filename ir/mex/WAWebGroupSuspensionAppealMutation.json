@@ -1,0 +1,59 @@
+{
+  "id": "mex:WAWebGroupSuspensionAppealMutation",
+  "kind": "mex",
+  "name": "WAWebGroupSuspensionAppealMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25946115325088226",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "wa_create_group_suspension_appeal",
+        "ty": "WAGroupSuspensionAppealResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "response_code",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_message",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "appeal_creation_time",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 25946115325088226\nmutation GroupSuspensionAppealMutation(\n  $input\n) {\n  wa_create_group_suspension_appeal(input: $input) {  # WAGroupSuspensionAppealResponse\n    response_code\n    error_message\n    appeal_creation_time\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebGroupSuspensionAppealMutation.graphql",
+    "matches": "id:\\s*\"25946115325088226\""
+  },
+  "literals": [
+    "25946115325088226",
+    "WAWebGroupSuspensionAppealMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupSuspensionAppealMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "enum:META_AI_ACTION_ENTRY_POINT",
+  "kind": "enum",
+  "name": "META_AI_ACTION_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMetaAiActionEntryPoint",
+    "variants": [
+      {
+        "name": "THREE_DOT_MENU",
+        "value": 1.0
+      },
+      {
+        "name": "THREAD_LIST_VIEW",
+        "value": 2.0
+      },
+      {
+        "name": "TOP_NAV",
+        "value": 3.0
+      },
+      {
+        "name": "CHAT_LIST",
+        "value": 4.0
+      },
+      {
+        "name": "NAVIGATION_BAR_BUTTON",
+        "value": 5.0
+      },
+      {
+        "name": "CONTINUE_CHAT_MODULE",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMetaAiActionEntryPoint",
+    "matches": "META_AI_ACTION_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "META_AI_ACTION_ENTRY_POINT",
+    "THREE_DOT_MENU",
+    "THREAD_LIST_VIEW",
+    "TOP_NAV",
+    "CHAT_LIST",
+    "NAVIGATION_BAR_BUTTON",
+    "CONTINUE_CHAT_MODULE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAiThreadCell.react",
+      "WAWebAiThreadsUserJourneyWamEvent",
+      "WAWebBotLoggingUtils",
+      "WAWebMetaAiThreadDrawer.react",
+      "WAWebMetaBotNavBarItem.react",
+      "WAWebThreadJourneyLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

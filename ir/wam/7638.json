@@ -1,0 +1,92 @@
+{
+  "id": "wam:7638",
+  "kind": "wam",
+  "name": "MdLabelSyncTracking",
+  "data": {
+    "kind": "wam",
+    "event_id": 7638,
+    "fields": {
+      "labelSyncDeviceRole": {
+        "id": 1,
+        "type": "LABEL_SYNC_DEVICE_ROLE_TYPE",
+        "wire": "label_sync_device_role",
+        "enum_ref": "LABEL_SYNC_DEVICE_ROLE_TYPE"
+      },
+      "labelSyncDirection": {
+        "id": 2,
+        "type": "LABEL_SYNC_DIRECTION_TYPE",
+        "wire": "label_sync_direction",
+        "enum_ref": "LABEL_SYNC_DIRECTION_TYPE"
+      },
+      "labelSyncHasPending": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "label_sync_has_pending"
+      },
+      "labelSyncHash": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "label_sync_hash"
+      },
+      "labelSyncIsCapiHosted": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "label_sync_is_capi_hosted"
+      },
+      "labelSyncIsLabeled": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "label_sync_is_labeled"
+      },
+      "labelSyncPredefinedId": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "label_sync_predefined_id"
+      },
+      "labelSyncResult": {
+        "id": 7,
+        "type": "LABEL_SYNC_RESULT_TYPE",
+        "wire": "label_sync_result",
+        "enum_ref": "LABEL_SYNC_RESULT_TYPE"
+      },
+      "labelSyncTimestamp": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "label_sync_timestamp"
+      },
+      "labelSyncType": {
+        "id": 9,
+        "type": "LABEL_SYNC_TYPE_ENUM",
+        "wire": "label_sync_type",
+        "enum_ref": "LABEL_SYNC_TYPE_ENUM"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdLabelSyncTrackingWamEvent",
+    "matches": "MdLabelSyncTracking:\\s*\\[\\s*7638"
+  },
+  "literals": [
+    "7638"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumLabelSyncDeviceRoleType",
+      "WAWebWamEnumLabelSyncDirectionType",
+      "WAWebWamEnumLabelSyncResultType",
+      "WAWebWamEnumLabelSyncTypeEnum"
+    ],
+    "dependents": [
+      "WAWebWamLabelSyncTrackingReporter"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

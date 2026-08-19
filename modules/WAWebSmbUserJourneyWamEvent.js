@@ -1,0 +1,41 @@
+__d("WAWebSmbUserJourneyWamEvent", [
+	"WAWebWamCodegenUtils",
+	"WAWebWamEnumBbTierType",
+	"WAWebWamEnumChatFilterActionTypes",
+	"WAWebWamEnumEntryPoint",
+	"WAWebWamEnumOppositePlatformEnum",
+	"WAWebWamEnumSmbFeatureNameEnum",
+	"WAWebWamEnumSmbUserActionTypeEnum",
+	"WAWebWamEnumSurfaceType"
+], (function(t, n, r, o, a, i, l) {
+	var e, s = (e = o("WAWebWamCodegenUtils")).defineEvents({ SmbUserJourney: [
+		5462,
+		{
+			actionType: [1, o("WAWebWamEnumChatFilterActionTypes").CHAT_FILTER_ACTION_TYPES],
+			bbTier: [22, o("WAWebWamEnumBbTierType").BB_TIER_TYPE],
+			contactIsSaved: [2, e.TYPES.BOOLEAN],
+			entryPoint: [3, o("WAWebWamEnumEntryPoint").ENTRY_POINT],
+			entryPointDetails: [18, e.TYPES.STRING],
+			extraAttributes: [4, e.TYPES.STRING],
+			hasCatalog: [19, e.TYPES.BOOLEAN],
+			isCoexAccount: [20, e.TYPES.BOOLEAN],
+			isMvSubscriber: [21, e.TYPES.BOOLEAN],
+			oppositePlatform: [5, o("WAWebWamEnumOppositePlatformEnum").OPPOSITE_PLATFORM_ENUM],
+			prevSurface: [14, o("WAWebWamEnumSurfaceType").SURFACE_TYPE],
+			recipientSize: [12, e.TYPES.INTEGER],
+			seqId: [7, e.TYPES.INTEGER],
+			smbFeatureName: [8, o("WAWebWamEnumSmbFeatureNameEnum").SMB_FEATURE_NAME_ENUM],
+			smbUserActionType: [13, o("WAWebWamEnumSmbUserActionTypeEnum").SMB_USER_ACTION_TYPE_ENUM],
+			smbUserSessionId: [9, e.TYPES.STRING],
+			surface: [10, o("WAWebWamEnumSurfaceType").SURFACE_TYPE],
+			userActionTarget: [11, e.TYPES.STRING]
+		},
+		[
+			1,
+			1,
+			1
+		],
+		"regular"
+	] }, { SmbUserJourney: [] });
+	l.SmbUserJourneyWamEvent = s;
+}), 98);

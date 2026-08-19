@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWDexieTable","MAWInMemoryThreadStore","MAWLocalizationUtils","MAWWriteMsgTxns","MAWWriteUKOSAAdminMsgContent","WATimeUtils","emptyFunction"],"dependents":["MAWWriteAdminMessageForUKOSAApi"],"dependent_count":1,"exports":[{"name":"writeUKOSAAdminMsg","used_by":["MAWWriteAdminMessageForUKOSAApi"],"uses":1}]}

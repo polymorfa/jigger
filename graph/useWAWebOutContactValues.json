@@ -1,0 +1,1 @@
+{"deps":["WAWebOutContactCollection","useWAWebCollectionValues"],"dependents":["WAWebOutContactCell.react","WAWebOutContactPillItem.react"],"dependent_count":2,"exports":[{"name":"useWAWebOutContactValues","used_by":["WAWebOutContactCell.react","WAWebOutContactPillItem.react"],"uses":2}]}

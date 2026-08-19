@@ -1,0 +1,42 @@
+{
+  "id": "ab:mm_optimized_delivery_unique_token_per_message_id_enabled",
+  "kind": "ab",
+  "name": "mm_optimized_delivery_unique_token_per_message_id_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29037,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_optimized_delivery_unique_token_per_message_id_enabled:\\s*\\[\\s*29037"
+  },
+  "literals": [
+    "mm_optimized_delivery_unique_token_per_message_id_enabled",
+    "29037"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

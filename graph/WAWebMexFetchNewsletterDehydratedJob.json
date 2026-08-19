@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebMexClient","WAWebMexFetchNewsletterDehydratedJobQuery.graphql","WAWebNewsletterPinGatingUtils","WAWebWid","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterHandleMexGetNewsletter"],"dependent_count":1,"exports":[{"name":"mexGetNewsletterDehydrated","used_by":["WAWebNewsletterHandleMexGetNewsletter"],"uses":1}]}

@@ -1,0 +1,40 @@
+{
+  "id": "proto:WASignalLocalStorageProtocol.PreKeyRecordStructure",
+  "kind": "proto",
+  "name": "WASignalLocalStorageProtocol.PreKeyRecordStructure",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "id": {
+        "number": 1
+      },
+      "privateKey": {
+        "number": 3
+      },
+      "publicKey": {
+        "number": 2
+      }
+    },
+    "module": "WASignalLocalStorageProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalLocalStorageProtocol.pb",
+    "matches": "name = \"PreKeyRecordStructure\""
+  },
+  "literals": [
+    "PreKeyRecordStructure"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WACryptoManager",
+      "WASignalKeys",
+      "WASignalSignatures",
+      "WAWebCryptoLibraryDbCallbacksApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

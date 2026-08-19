@@ -1,0 +1,1 @@
+{"deps":["WAWebEmoji"],"dependents":["WAWebEmojiSkinTonePicker.react"],"dependent_count":1,"exports":[{"name":"SKIN_TONE_VARIATIONS","used_by":["WAWebEmojiSkinTonePicker.react"],"uses":1}]}

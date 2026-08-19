@@ -1,0 +1,42 @@
+{
+  "id": "ab:mm_template_message_telemetry_is_first_mm_enabled",
+  "kind": "ab",
+  "name": "mm_template_message_telemetry_is_first_mm_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32482,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_template_message_telemetry_is_first_mm_enabled:\\s*\\[\\s*32482"
+  },
+  "literals": [
+    "mm_template_message_telemetry_is_first_mm_enabled",
+    "32482"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

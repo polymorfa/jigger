@@ -1,0 +1,52 @@
+{
+  "id": "enum:IS_PURE_SYNCD_SESSION_ENUM",
+  "kind": "enum",
+  "name": "IS_PURE_SYNCD_SESSION_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumIsPureSyncdSessionEnum",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 1.0
+      },
+      {
+        "name": "YES",
+        "value": 2.0
+      },
+      {
+        "name": "NO",
+        "value": 3.0
+      },
+      {
+        "name": "PROBABLY_YES",
+        "value": 4.0
+      },
+      {
+        "name": "PROBABLY_NO",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumIsPureSyncdSessionEnum",
+    "matches": "IS_PURE_SYNCD_SESSION_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "IS_PURE_SYNCD_SESSION_ENUM",
+    "UNKNOWN",
+    "YES",
+    "NO",
+    "PROBABLY_YES",
+    "PROBABLY_NO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdFatalErrorWamEvent",
+      "WAWebSyncdAntiTamperingLtHash"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

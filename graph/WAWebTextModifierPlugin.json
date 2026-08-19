@@ -1,0 +1,1 @@
+{"deps":["Lexical","LexicalComposerContext","WAWebLexicalUtils","WAWebMultilinePlugin","react-compiler-runtime","useWAWebLexicalEvent"],"dependents":["WAWebRichTextInputPlugins.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebStatusLastPostPreview.react"],"dependent_count":2,"exports":[{"name":"MsgTimeIcon","used_by":["WAWebAllGeneratedIcons","WAWebStatusLastPostPreview.react"],"uses":2}]}

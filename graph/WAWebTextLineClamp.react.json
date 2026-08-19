@@ -1,0 +1,1 @@
+{"deps":["invariant","WAWebClassnames","WAWebLineHeight","react","react-compiler-runtime","useWAWebPrevious","useWAWebWindowSize"],"dependents":["WAWebBugnubV2Popup.react","WAWebGroupJoinModalBase.react","WAWebNativeFlowOrderDetailsHeader","WAWebSendFeedbackModal.react","WAWebTextLineClamp.story"],"dependent_count":5,"exports":[]}

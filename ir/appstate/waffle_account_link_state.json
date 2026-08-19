@@ -1,0 +1,44 @@
+{
+  "id": "appstate:waffle_account_link_state",
+  "kind": "appstate",
+  "name": "WaffleAccountLinkState",
+  "data": {
+    "kind": "appstate",
+    "index_name": "waffle_account_link_state",
+    "collection": "regular_high",
+    "version": 1,
+    "value_field": "waffleAccountLinkStateAction"
+  },
+  "evidence": {
+    "module": "WAWebWaffleAccountLinkStateSync",
+    "matches": "Actions\\.WaffleAccountLinkState"
+  },
+  "literals": [
+    "waffle_account_link_state",
+    "WaffleAccountLinkState",
+    "waffleAccountLinkStateAction"
+  ],
+  "graph": {
+    "deps": [
+      "WALogger",
+      "WAWebAccountLinkingConstants",
+      "WAWebAccountLinkingDBOperationsAPI",
+      "WAWebAccountLinkingGatingUtils",
+      "WAWebAccountLinkingNonceFetchAPI",
+      "WAWebAccountLinkingUtils",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebWaffleLifecycleWamLogger",
+      "WAWebWamEnumWaffleLifecycleLinkStateType",
+      "WAWebWamEnumWaffleLifecycleTraceActionType",
+      "asyncToGeneratorRuntime",
+      "nullthrows"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 14,
+    "dependent_count": 1
+  }
+}

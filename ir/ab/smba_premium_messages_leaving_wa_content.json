@@ -1,0 +1,45 @@
+{
+  "id": "ab:smba_premium_messages_leaving_wa_content",
+  "kind": "ab",
+  "name": "smba_premium_messages_leaving_wa_content",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6693,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smba_premium_messages_leaving_wa_content:\\s*\\[\\s*6693"
+  },
+  "literals": [
+    "smba_premium_messages_leaving_wa_content",
+    "6693"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPremiumMessagesGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

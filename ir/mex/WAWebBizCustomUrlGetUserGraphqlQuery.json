@@ -1,0 +1,63 @@
+{
+  "id": "mex:WAWebBizCustomUrlGetUserGraphqlQuery",
+  "kind": "mex",
+  "name": "WAWebBizCustomUrlGetUserGraphqlQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26867176859566677",
+    "operation": "query",
+    "variables": [
+      "data"
+    ],
+    "args": [
+      {
+        "name": "data"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_custom_url_get_user",
+        "ty": "XWACustomUrlGetUserResponse",
+        "args": [
+          "request: $data"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "lid",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_code",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_text",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26867176859566677\nquery BizCustomUrlGetUserGraphqlQuery(\n  $data\n) {\n  xwa_custom_url_get_user(request: $data) {  # XWACustomUrlGetUserResponse\n    success\n    lid\n    error_code\n    error_text\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebBizCustomUrlGetUserGraphqlQuery.graphql",
+    "matches": "id:\\s*\"26867176859566677\""
+  },
+  "literals": [
+    "26867176859566677",
+    "WAWebBizCustomUrlGetUserGraphqlQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizCustomUrlGetUserGraphql"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_uwp_share_any_window",
+  "kind": "ab",
+  "name": "enable_uwp_share_any_window",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4801,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_uwp_share_any_window:\\s*\\[\\s*4801"
+  },
+  "literals": [
+    "enable_uwp_share_any_window",
+    "4801"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

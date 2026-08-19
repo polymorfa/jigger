@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebEnforcementActionLogging","WAWebNewsletterEnforcementEventsWamEvent"],"dependent_count":2,"exports":[{"name":"ENFORCEMENT_TYPE","used_by":["WAWebEnforcementActionLogging","WAWebNewsletterEnforcementEventsWamEvent"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWBulkEditMsgsTxns","MAWBulkHandleIncomingMsgApi","MAWBulkPutReactionsWithThreadUpdateTxn","MAWDbMsgTxns","MAWDbMsgUtil","MAWDbUnrenderedMsgTxns","MAWDeletedReactionsCache","MAWLinkReactionsToMsgsTxns","WAParseMediaTransportProtocol","WAParseProtocol"],"dependent_count":10,"exports":[{"name":"MsgMap","used_by":[],"uses":0}]}

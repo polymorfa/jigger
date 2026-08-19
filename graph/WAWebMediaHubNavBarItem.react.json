@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebIconButton.react","WAWebMediaHubLogger","WAWebMediaHubModalLoadable","WAWebModalManager","WAWebText.react","WAWebWamEnumActionCode","WAWebWamEnumEntryPointType","WDSIconIcFilter.react","WDSMenuBarItem.react","WDSPaddings.stylex","react","react-compiler-runtime"],"dependents":["WAWebNavigationBar.react"],"dependent_count":1,"exports":[]}

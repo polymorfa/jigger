@@ -1,0 +1,1 @@
+{"deps":["invariant","WABinary","WAWebAdvSignatureConstants","WAWebCryptoCurve25519VerifySignature"],"dependents":["WAWebDeviceSyncBackendWorker","WAWebHandleAdvDeviceNotificationUtils"],"dependent_count":2,"exports":[]}

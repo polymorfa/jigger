@@ -1,0 +1,51 @@
+{
+  "id": "enum:GROUP_STATUS_SIZE_BUCKET",
+  "kind": "enum",
+  "name": "GROUP_STATUS_SIZE_BUCKET",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupStatusSizeBucket",
+    "variants": [
+      {
+        "name": "EMPTY_GROUP",
+        "value": 1.0
+      },
+      {
+        "name": "X_SMALL",
+        "value": 2.0
+      },
+      {
+        "name": "SMALL",
+        "value": 3.0
+      },
+      {
+        "name": "MEDIUM",
+        "value": 4.0
+      },
+      {
+        "name": "LARGE",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupStatusSizeBucket",
+    "matches": "GROUP_STATUS_SIZE_BUCKET\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_STATUS_SIZE_BUCKET",
+    "EMPTY_GROUP",
+    "X_SMALL",
+    "SMALL",
+    "MEDIUM",
+    "LARGE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPostImpressionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

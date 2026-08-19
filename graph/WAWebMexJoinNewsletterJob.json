@@ -1,0 +1,1 @@
+{"deps":["WAWebBackendErrors","WAWebMexClient","WAWebMexJoinNewsletterJobMutation.graphql","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterSubscribeJob"],"dependent_count":1,"exports":[{"name":"mexJoinNewsletter","used_by":["WAWebNewsletterSubscribeJob"],"uses":1}]}

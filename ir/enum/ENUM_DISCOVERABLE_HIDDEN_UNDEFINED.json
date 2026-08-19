@@ -1,0 +1,56 @@
+{
+  "id": "enum:ENUM_DISCOVERABLE_HIDDEN_UNDEFINED",
+  "kind": "enum",
+  "name": "ENUM_DISCOVERABLE_HIDDEN_UNDEFINED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBizSettingsEnums",
+    "variants": [
+      {
+        "name": "DISCOVERABLE",
+        "value": "DISCOVERABLE"
+      },
+      {
+        "name": "HIDDEN",
+        "value": "HIDDEN"
+      },
+      {
+        "name": "UNDEFINED",
+        "value": "UNDEFINED"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizSettingsEnums",
+    "matches": "ENUM_DISCOVERABLE_HIDDEN_UNDEFINED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_DISCOVERABLE_HIDDEN_UNDEFINED",
+    "DISCOVERABLE",
+    "HIDDEN",
+    "UNDEFINED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBizSettingsSmbDataSharingSettingValueMixin",
+      "WAWebBizManageLabelModal.react",
+      "WAWebCommonCTWADataSharing",
+      "WAWebDataSharingOptOutOrUpsell.react",
+      "WAWebDebugDownFunnelSignals",
+      "WAWebLabelsDropdown.react",
+      "WAWebListsActions",
+      "WAWebOrderRequestDrawer.react",
+      "WAWebOrderStatusUpdateDrawer.react",
+      "WAWebOrderSummaryDrawer",
+      "WAWebPerCustomerDataSharingUtils",
+      "WAWebSMBDataSharingDrawer.react",
+      "WAWebSmb3pdConversionSignalAction",
+      "WAWebSmbDataSharingOptInModalDialog",
+      "WAWebSmbMarkAsXLabelAction",
+      "WAWebSmbMarkAsXOrderAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 16
+  }
+}

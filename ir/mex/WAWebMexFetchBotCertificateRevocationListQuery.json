@@ -1,0 +1,57 @@
+{
+  "id": "mex:WAWebMexFetchBotCertificateRevocationListQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchBotCertificateRevocationListQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "35807917542188393",
+    "operation": "query",
+    "variables": [
+      "crl_name"
+    ],
+    "args": [
+      {
+        "name": "crl_name"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_fetch_feature_pki_crl",
+        "ty": "XWA2FeaturePKICRL",
+        "args": [
+          "crl_name: $crl_name"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "crl",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "next_update",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_fetch_feature_pki_crl",
+    "document": "# persisted document 35807917542188393\nquery MexFetchBotCertificateRevocationListQuery(\n  $crl_name\n) {\n  xwa2_fetch_feature_pki_crl(crl_name: $crl_name) {  # XWA2FeaturePKICRL\n    crl\n    next_update\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchBotCertificateRevocationListQuery.graphql",
+    "matches": "id:\\s*\"35807917542188393\""
+  },
+  "literals": [
+    "35807917542188393",
+    "WAWebMexFetchBotCertificateRevocationListQuery",
+    "xwa2_fetch_feature_pki_crl"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchBotCertificateRevocationList"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

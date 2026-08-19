@@ -1,0 +1,1 @@
+{"deps":["WAWebTypedEventEmitter"],"dependents":["WAWebConversation.react","WAWebDesktopUpsellChatlistToastbar.react"],"dependent_count":2,"exports":[{"name":"WAWebDesktopUpsellEvents","used_by":["WAWebConversation.react","WAWebDesktopUpsellChatlistToastbar.react"],"uses":2}]}

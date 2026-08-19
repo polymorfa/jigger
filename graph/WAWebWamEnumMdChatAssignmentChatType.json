@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatModelDerivedMethods","WAWebMdChatAssignmentSecondaryActionWamEvent"],"dependent_count":2,"exports":[{"name":"MD_CHAT_ASSIGNMENT_CHAT_TYPE","used_by":["WAWebChatModelDerivedMethods","WAWebMdChatAssignmentSecondaryActionWamEvent"],"uses":2}]}

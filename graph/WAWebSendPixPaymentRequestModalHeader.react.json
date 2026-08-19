@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCloseRefreshedIcon.react","WAWebFbtCommon","WAWebFlex.react","WDSButton.react","WDSIconIcArrowBack.react","WDSText.react","react"],"dependents":["WAWebSendPixPaymentRequestModal.react","WAWebSendPixPaymentRequestOptionalModal.react"],"dependent_count":2,"exports":[]}

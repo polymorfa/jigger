@@ -1,0 +1,92 @@
+__d("WAWebScheduledMsgRevealKeyStore", [
+	"WATimeUtils",
+	"WAWebBackendApi",
+	"WAWebScheduledMsgConstants",
+	"WAWebSchemaScheduledMsgRevealKey",
+	"asyncToGeneratorRuntime"
+], (function(t, n, r, o, a, i, l) {
+	function e(e) {
+		return s.apply(this, arguments);
+	}
+	function s() {
+		return s = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e) {
+			var t = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable();
+			yield t.createOrReplace(e), o("WAWebBackendApi").frontendFireAndForget("triggerScheduledMsgChangedFromBridge", { chatId: e.chatId });
+		}), s.apply(this, arguments);
+	}
+	function u(e) {
+		return c.apply(this, arguments);
+	}
+	function c() {
+		return c = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e) {
+			var t = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable();
+			return t.get(e);
+		}), c.apply(this, arguments);
+	}
+	function d(e) {
+		return m.apply(this, arguments);
+	}
+	function m() {
+		return m = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e) {
+			var t, n = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable(), r = yield n.equals(["revealKeyId"], e);
+			return (t = r[0]) != null ? t : null;
+		}), m.apply(this, arguments);
+	}
+	function p(e) {
+		return _.apply(this, arguments);
+	}
+	function _() {
+		return _ = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e) {
+			var t = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable();
+			return t.equals(["chatId"], e);
+		}), _.apply(this, arguments);
+	}
+	function f(e, t) {
+		return g.apply(this, arguments);
+	}
+	function g() {
+		return g = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e, t) {
+			var n = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable();
+			yield n.merge(e, { status: t });
+			var r = yield n.get(e);
+			r != null && o("WAWebBackendApi").frontendFireAndForget("triggerScheduledMsgChangedFromBridge", { chatId: r.chatId });
+		}), g.apply(this, arguments);
+	}
+	function h(e) {
+		return y.apply(this, arguments);
+	}
+	function y() {
+		return y = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e) {
+			var t = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable();
+			yield t.remove(e), o("WAWebBackendApi").frontendFireAndForget("triggerScheduledMsgRevealedFromBridge", { msgId: e });
+		}), y.apply(this, arguments);
+	}
+	function C(e) {
+		return b.apply(this, arguments);
+	}
+	function b() {
+		return b = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e) {
+			var t = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable(), n = yield t.equals(["chatId"], e);
+			if (n.length === 0) return [];
+			var r = n.map(function(e) {
+				return e.msgId;
+			});
+			return yield t.bulkRemove(r), r;
+		}), b.apply(this, arguments);
+	}
+	function v() {
+		return S.apply(this, arguments);
+	}
+	function S() {
+		return S = n("asyncToGeneratorRuntime").asyncToGenerator(function* () {
+			var e = o("WAWebSchemaScheduledMsgRevealKey").getScheduledMsgRevealKeyTable(), t = o("WATimeUtils").unixTime() - o("WAWebScheduledMsgConstants").SCHEDULED_MSG_REVEAL_KEY_RETENTION_DAYS * o("WATimeUtils").DAY_SECONDS, n = yield e.all(), r = n.filter(function(e) {
+				var n = e.scheduledTimestampS > 0 ? e.scheduledTimestampS : e.createdAt;
+				return n < t;
+			}).map(function(e) {
+				return e.msgId;
+			});
+			r.length > 0 && (yield e.bulkRemove(r));
+		}), S.apply(this, arguments);
+	}
+	l.storeRevealKey = e, l.getRevealKeyByMsgId = u, l.getRevealKeyByRevealKeyId = d, l.getRevealKeysForChat = p, l.updateRevealKeyStatus = f, l.deleteRevealKey = h, l.deleteRevealKeysForChat = C, l.cleanupExpiredRevealKeys = v;
+}), 98);

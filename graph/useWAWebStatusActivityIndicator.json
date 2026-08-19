@@ -1,0 +1,1 @@
+{"deps":["WAWebCollectionConstants","WAWebContactCollection","WAWebContactGetters","WAWebStatusCollection","react","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebStatusNavBarItem.react"],"dependent_count":1,"exports":[{"name":"useWAWebStatusActivityIndicator","used_by":["WAWebStatusNavBarItem.react"],"uses":1}]}

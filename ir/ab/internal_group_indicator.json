@@ -1,0 +1,45 @@
+{
+  "id": "ab:internal_group_indicator",
+  "kind": "ab",
+  "name": "internal_group_indicator",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18109,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "internal_group_indicator:\\s*\\[\\s*18109"
+  },
+  "literals": [
+    "internal_group_indicator",
+    "18109"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebGroupQueryJob"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

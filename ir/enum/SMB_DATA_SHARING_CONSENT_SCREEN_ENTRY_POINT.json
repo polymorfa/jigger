@@ -1,0 +1,97 @@
+{
+  "id": "enum:SMB_DATA_SHARING_CONSENT_SCREEN_ENTRY_POINT",
+  "kind": "enum",
+  "name": "SMB_DATA_SHARING_CONSENT_SCREEN_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSmbDataSharingConsentScreenEntryPoint",
+    "variants": [
+      {
+        "name": "NEW_ORDER",
+        "value": 0.0
+      },
+      {
+        "name": "CART",
+        "value": 1.0
+      },
+      {
+        "name": "LABEL_CHAT",
+        "value": 2.0
+      },
+      {
+        "name": "LABEL_MESSAGE",
+        "value": 3.0
+      },
+      {
+        "name": "BLOCK",
+        "value": 4.0
+      },
+      {
+        "name": "REPORT",
+        "value": 5.0
+      },
+      {
+        "name": "CTWA_CHAT",
+        "value": 6.0
+      },
+      {
+        "name": "DATA_SHARING_TOOLS",
+        "value": 7.0
+      },
+      {
+        "name": "CONTACT_INFO_CARD",
+        "value": 8.0
+      },
+      {
+        "name": "DATA_SHARING_SYSTEM_MESSAGE",
+        "value": 9.0
+      },
+      {
+        "name": "LISTS_MANAGEMENT",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSmbDataSharingConsentScreenEntryPoint",
+    "matches": "SMB_DATA_SHARING_CONSENT_SCREEN_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "SMB_DATA_SHARING_CONSENT_SCREEN_ENTRY_POINT",
+    "NEW_ORDER",
+    "CART",
+    "LABEL_CHAT",
+    "LABEL_MESSAGE",
+    "BLOCK",
+    "REPORT",
+    "CTWA_CHAT",
+    "DATA_SHARING_TOOLS",
+    "CONTACT_INFO_CARD",
+    "DATA_SHARING_SYSTEM_MESSAGE",
+    "LISTS_MANAGEMENT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAttachMenuPopupItemOrders.react",
+      "WAWebBizProductDetailsFlow.react",
+      "WAWebBroadcastInfoOverflowMenu.react",
+      "WAWebCTWADebugDrawer.react",
+      "WAWebChatContextMenuItemEditLabel.react",
+      "WAWebConversation.react",
+      "WAWebDataSharingOptOutOrUpsell.react",
+      "WAWebDebugSmb",
+      "WAWebLabelChatHeaderButton.react",
+      "WAWebMessageNotification.react",
+      "WAWebMixedMultiSelectBar.react",
+      "WAWebMultiSelectAddToListMenuItem.react",
+      "WAWebPerCustomerDataSharingRow.react",
+      "WAWebSMBDataSharingDrawer.react",
+      "WAWebSmbDataSharingConsentScreenWamEvent",
+      "WAWebSmbDataSharingOptInModalDialog",
+      "WAWebSmbPerCustomerDataSharingControlWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 17
+  }
+}

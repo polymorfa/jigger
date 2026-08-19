@@ -1,0 +1,1 @@
+{"deps":["Promise","WASmaxNewslettersGetNewsletterMessageUpdatesRPC","WATimeUtils","WAWebBackendErrors","WAWebNewsletterRpcUtils","asyncToGeneratorRuntime","nullthrows"],"dependents":["WAWebNewsletterGetMessageUpdatesJob"],"dependent_count":1,"exports":[{"name":"getNewsletterMessageUpdatesQuery","used_by":["WAWebNewsletterGetMessageUpdatesJob"],"uses":1}]}

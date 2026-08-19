@@ -1,0 +1,1 @@
+{"deps":["ExecutionEnvironment","MAWODSProxy","WAOdsEnums"],"dependents":["MAWCrossWorkerPortal"],"dependent_count":1,"exports":[{"name":"logCrossWorkerPortalPortErrorODS","used_by":["MAWCrossWorkerPortal"],"uses":1}]}

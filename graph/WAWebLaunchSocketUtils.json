@@ -1,0 +1,1 @@
+{"deps":["Promise","WAComms","WAGzip","WAWebCommsConfig","WAWebCommsHandleStanza","asyncToGeneratorRuntime"],"dependents":["WAWebLaunchSocket"],"dependent_count":1,"exports":[{"name":"refreshQR","used_by":["WAWebLaunchSocket"],"uses":1},{"name":"startCommsAndHandleRequests","used_by":["WAWebLaunchSocket"],"uses":1}]}

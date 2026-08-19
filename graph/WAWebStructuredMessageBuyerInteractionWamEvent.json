@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumBizPlatform","WAWebWamEnumInteractionType","WAWebWamEnumMediaType","WAWebWamEnumStructuredMessageClass"],"dependents":["PaymentLinkWamLogger","WAWebBuyerEventLogger","WAWebPaymentRequestWamLogger"],"dependent_count":3,"exports":[{"name":"StructuredMessageBuyerInteractionWamEvent","used_by":[],"uses":0}]}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:lid_one_on_one_migration_peer_sync_timeout_in_seconds",
+  "kind": "ab",
+  "name": "lid_one_on_one_migration_peer_sync_timeout_in_seconds",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13936,
+    "type": "int",
+    "default": 300,
+    "alt_default": 300
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "lid_one_on_one_migration_peer_sync_timeout_in_seconds:\\s*\\[\\s*13936"
+  },
+  "literals": [
+    "lid_one_on_one_migration_peer_sync_timeout_in_seconds",
+    "13936"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

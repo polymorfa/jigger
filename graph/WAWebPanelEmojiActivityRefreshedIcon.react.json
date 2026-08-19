@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebEmojiPanelMenuSectionIcon.react"],"dependent_count":2,"exports":[{"name":"PanelEmojiActivityRefreshedIcon","used_by":["WAWebAllGeneratedIcons","WAWebEmojiPanelMenuSectionIcon.react"],"uses":2}]}

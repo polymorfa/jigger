@@ -1,0 +1,47 @@
+{
+  "id": "enum:ENUM_PAYONDELIVERY_PIXKEY",
+  "kind": "enum",
+  "name": "ENUM_PAYONDELIVERY_PIXKEY",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBrPaymentEnums",
+    "variants": [
+      {
+        "name": "pay_on_delivery",
+        "value": "pay_on_delivery"
+      },
+      {
+        "name": "pix_key",
+        "value": "pix_key"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBrPaymentEnums",
+    "matches": "ENUM_PAYONDELIVERY_PIXKEY\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_PAYONDELIVERY_PIXKEY",
+    "pay_on_delivery",
+    "pix_key"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBrPaymentBRCardMixin",
+      "WASmaxInBrPaymentBRMerchantMixin",
+      "WASmaxInBrPaymentCardBaseMixin",
+      "WASmaxInBrPaymentCardCapabilitiesBaseMixin",
+      "WASmaxInBrPaymentComboCardCapabilitiesMixin",
+      "WASmaxInBrPaymentConsumerBaseMixin",
+      "WASmaxInBrPaymentCustomPaymentMethodMixin",
+      "WASmaxInBrPaymentMerchantBaseMixin",
+      "WASmaxInBrPaymentMethodBaseMixin",
+      "WASmaxInBrPaymentPayoutBankMixin",
+      "WASmaxInBrPaymentUPIAliasMixin",
+      "WASmaxInBrPaymentUPIBankMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebWorkerStorageUtils"],"dependents":["WAWebSchemaDeferredMessagesStorage","WAWebSchemaLocalStorage"],"dependent_count":2,"exports":[{"name":"deferredMessagesStorageCreateTable","used_by":["WAWebSchemaDeferredMessagesStorage"],"uses":1},{"name":"localStorageCreateTable","used_by":["WAWebSchemaLocalStorage"],"uses":1}]}

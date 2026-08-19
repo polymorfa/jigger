@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebActionToast.react","WAWebBotBaseGating","WAWebBotUtils","WAWebMsgGetters","WAWebMsgType","WAWebToast.react","WAWebToastManager","react"],"dependents":["WAWebMessageForwardedIndicator.react","WAWebMessageWrapper.react","WAWebMultiSelectForward.react"],"dependent_count":3,"exports":[]}

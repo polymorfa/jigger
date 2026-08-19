@@ -1,0 +1,67 @@
+__d("WAWebProtobufsDeviceCapabilities.pb", ["$InternalEnum", "WAProtoConst"], (function(t, n, r, o, a, i, l) {
+	var e, s = n("$InternalEnum")({
+		NONE: 0,
+		INFRA: 1,
+		FULL: 2
+	}), u = n("$InternalEnum")({
+		DISABLED: 0,
+		RECEIVER_ENABLED: 1,
+		SENDER_ENABLED: 2
+	}), c = n("$InternalEnum")({
+		NONE: 0,
+		MINIMAL: 1,
+		FULL: 2
+	}), d = {}, m = {}, p = {}, _ = {}, f = {}, g = {}, h = {};
+	d.name = "DeviceCapabilities", d.internalSpec = {
+		chatLockSupportLevel: [
+			1,
+			(e = o("WAProtoConst")).TYPES.ENUM,
+			c
+		],
+		lidMigration: [
+			2,
+			e.TYPES.MESSAGE,
+			h
+		],
+		businessBroadcast: [
+			3,
+			e.TYPES.MESSAGE,
+			g
+		],
+		userHasAvatar: [
+			4,
+			e.TYPES.MESSAGE,
+			f
+		],
+		memberNameTagPrimarySupport: [
+			5,
+			e.TYPES.ENUM,
+			u
+		],
+		aiThread: [
+			6,
+			e.TYPES.MESSAGE,
+			_
+		],
+		aiFbidMigration: [
+			7,
+			e.TYPES.MESSAGE,
+			p
+		],
+		bizAiSettingsSync: [
+			8,
+			e.TYPES.MESSAGE,
+			m
+		]
+	}, m.name = "DeviceCapabilities$BizAiSettingsSync", m.internalSpec = { handoffRemovalTimingEnabled: [1, e.TYPES.BOOL] }, p.name = "DeviceCapabilities$AiFbidMigration", p.internalSpec = { chatDbMigrationTimestamp: [1, e.TYPES.UINT64] }, _.name = "DeviceCapabilities$AiThread", _.internalSpec = { supportLevel: [
+		1,
+		e.TYPES.ENUM,
+		s
+	] }, f.name = "DeviceCapabilities$UserHasAvatar", f.internalSpec = { userHasAvatar: [1, e.TYPES.BOOL] }, g.name = "DeviceCapabilities$BusinessBroadcast", g.internalSpec = {
+		importListEnabled: [1, e.TYPES.BOOL],
+		companionSupportEnabled: [2, e.TYPES.BOOL],
+		campaignSyncEnabled: [3, e.TYPES.BOOL],
+		insightsSyncEnabled: [4, e.TYPES.BOOL],
+		recipientLimit: [5, e.TYPES.INT32]
+	}, h.name = "DeviceCapabilities$LIDMigration", h.internalSpec = { chatDbMigrationTimestamp: [1, e.TYPES.UINT64] }, l.DeviceCapabilities$AiThread$SupportLevel = s, l.DeviceCapabilities$MemberNameTagPrimarySupport = u, l.DeviceCapabilities$ChatLockSupportLevel = c, l.DeviceCapabilitiesSpec = d, l.DeviceCapabilities$BizAiSettingsSyncSpec = m, l.DeviceCapabilities$AiFbidMigrationSpec = p, l.DeviceCapabilities$AiThreadSpec = _, l.DeviceCapabilities$UserHasAvatarSpec = f, l.DeviceCapabilities$BusinessBroadcastSpec = g, l.DeviceCapabilities$LIDMigrationSpec = h;
+}), 98);

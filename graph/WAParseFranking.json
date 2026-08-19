@@ -1,0 +1,1 @@
+{"deps":["WAFranking","WAFrankingTypes"],"dependents":["WAPublishAppDataProtocol","WASendMsgRPC"],"dependent_count":2,"exports":[{"name":"parseFrankingNode","used_by":["WAPublishAppDataProtocol","WASendMsgRPC"],"uses":2}]}

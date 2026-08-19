@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCellV2.react","WAWebContactCollection","WAWebDetailImage.react","WAWebElevatedPushNamesFlag","WAWebEmojiText.react","WAWebFormatEventDateString","WAWebName.react","WAWebTag.react","WAWebText.react","react","react-compiler-runtime","useWAWebContactFormattedUsernameOrPhoneByChat"],"dependents":["WAWebEventInfoDrawer.react"],"dependent_count":1,"exports":[]}

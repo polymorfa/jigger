@@ -1,0 +1,1 @@
+{"deps":["I64","LSFactory","LSIntEnum","LSUpsertAttachmentRangeStoredProcedure","MAWMediaGalleryEBTaggingUtils","MAWMiActOnMiThreadExistsForJid__DO_NOT_USE","cr:20238","emptyFunction"],"dependents":["MAWBridgeUIEventHandler"],"dependent_count":1,"exports":[{"name":"call","used_by":["MAWBridgeUIEventHandler"],"uses":1}]}

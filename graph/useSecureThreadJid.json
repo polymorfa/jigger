@@ -1,0 +1,1 @@
+{"deps":["I64","Int64Hooks","LSMessagingThreadTypeUtil","MAWMiActOnActThreadReady","Promise","ReQL","ReQLSuspense","promiseDone","react","react-compiler-runtime","useReStore"],"dependents":["MAWEphemeralAdminMsgCta.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

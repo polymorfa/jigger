@@ -1,0 +1,47 @@
+__d("WAWebSendMsgJob", [
+	"WALogger",
+	"WAWebABPropsSaga",
+	"WAWebE2EProtoGenerator",
+	"WAWebEncryptAndSendGroupMsg",
+	"WAWebEventsWaitForOfflineDeliveryEnd",
+	"WAWebMaibaWASSMigration",
+	"WAWebOutgoingMessage",
+	"WAWebPnlessStanzaMigration",
+	"WAWebScheduledMsgSenderJob",
+	"WAWebSendTcTokenChatAction",
+	"WAWebSendUserMsgJob",
+	"WAWebSimpleSignalPNToFBIDMigration",
+	"WAWebWid",
+	"err"
+], (function(t, n, r, o, a, i, l) {
+	var e;
+	async function s(t, n, a) {
+		var i = t.data, l = i.id, s = i.to, u = t.data.to;
+		if (await o("WAWebPnlessStanzaMigration").maybeReplaceWidWithAccountLid(t), o("WAWebSimpleSignalPNToFBIDMigration").maybeReplaceWidWithFbIdForBotSend(t), o("WAWebMaibaWASSMigration").maybeReplaceMaibaAiHubLidWithFbidForSend(t), o("WAWebSimpleSignalPNToFBIDMigration").maybeReplaceWidWithFbIdForInvoke(t, "invokedBotWid"), o("WAWebSimpleSignalPNToFBIDMigration").maybeReplaceWidWithFbIdForInvoke(t, "botRespOrInvocationRevokeBotWid"), o("WAWebEventsWaitForOfflineDeliveryEnd").isOfflineDeliveryEnd() || (o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["[messaging] waiting for offline delivery end ", ""])), l), await o("WAWebEventsWaitForOfflineDeliveryEnd").waitForOfflineDeliveryEnd()), !l || !l.id) return Promise.reject(r("err")("[messaging] sending message without an id"));
+		if (!s) return Promise.reject(r("err")("[messaging] sending message without an remote id"));
+		var c = o("WAWebOutgoingMessage").createOutgoingMessageProtobuf(o("WAWebOutgoingMessage").OutgoingMessageOriginType.Chat, t), d = await o("WAWebScheduledMsgSenderJob").maybeWrapScheduledMessageForSend({
+			msgProtobuf: c,
+			msgRecord: t,
+			remoteWid: s,
+			scheduledMsgMetadata: a
+		}), m = d.msgProtobuf, p = d.scheduledMsgMetadata;
+		if (s.isUser()) {
+			r("WAWebWid").isCAPISupportAccount(s) && o("WAWebABPropsSaga").getIsSagaV1Enabled() && o("WAWebABPropsSaga").getIsSagaV1ReengagementEnabled() && await o("WAWebE2EProtoGenerator").addDebugInfoSupportPayload(m);
+			var _ = o("WAWebSendUserMsgJob").encryptAndSendUserMsg({
+				chatId: u,
+				metricReporter: n,
+				msgProtobuf: m,
+				msgRecord: t,
+				scheduledMsgMetadata: p
+			});
+			return t.data.type !== "protocol" && o("WAWebSendTcTokenChatAction").sendTcToken(s), _;
+		} else if (s.isGroup()) return o("WAWebEncryptAndSendGroupMsg").encryptAndSendGroupMsg({
+			metricReporter: n,
+			msgProtobuf: m,
+			msgRecord: t,
+			scheduledMsgMetadata: p
+		});
+		return Promise.reject(r("err")("[messaging] unsupported remote jid type"));
+	}
+	l.encryptAndSendMsg = s;
+}), 98);

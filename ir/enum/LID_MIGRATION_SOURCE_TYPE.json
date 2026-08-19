@@ -1,0 +1,37 @@
+{
+  "id": "enum:LID_MIGRATION_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "LID_MIGRATION_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLidMigrationSourceType",
+    "variants": [
+      {
+        "name": "PEER",
+        "value": 1.0
+      },
+      {
+        "name": "HISTORY",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLidMigrationSourceType",
+    "matches": "LID_MIGRATION_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LID_MIGRATION_SOURCE_TYPE",
+    "PEER",
+    "HISTORY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLidMigrationDailyWamEvent",
+      "WAWebTasksDailyStatsTask"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum","WAWebVoipWebCodecsEncoderState"],"dependents":["WAWebVoipHandleNativeCallEventFieldstatsHandlers"],"dependent_count":1,"exports":[{"name":"getActiveVideoEncoderType","used_by":["WAWebVoipHandleNativeCallEventFieldstatsHandlers"],"uses":1},{"name":"VideoEncoderType","used_by":[],"uses":0}]}

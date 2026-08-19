@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebClickable.react","WAWebCmd","WAWebFlex.react","WAWebFlexItem.react","WAWebKeyboardIsKeyActivation","WAWebMsgBarActions","WAWebTabOrder","WDSTextualLink.react","react","react-compiler-runtime","useWAWebModelValues"],"dependents":["useWAWebConversationPanelCanCompose"],"dependent_count":1,"exports":[]}

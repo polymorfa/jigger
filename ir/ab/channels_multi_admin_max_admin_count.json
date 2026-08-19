@@ -1,0 +1,45 @@
+{
+  "id": "ab:channels_multi_admin_max_admin_count",
+  "kind": "ab",
+  "name": "channels_multi_admin_max_admin_count",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6461,
+    "type": "int",
+    "default": 16,
+    "alt_default": 16
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channels_multi_admin_max_admin_count:\\s*\\[\\s*6461"
+  },
+  "literals": [
+    "channels_multi_admin_max_admin_count",
+    "6461"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterAdminSelectionModal.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

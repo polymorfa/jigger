@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebModelStorageUtils","asyncToGeneratorRuntime"],"dependents":["WAWebLabelReorderingSync"],"dependent_count":1,"exports":[{"name":"updateLabelsSortOrder","used_by":["WAWebLabelReorderingSync"],"uses":1}]}

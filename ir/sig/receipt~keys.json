@@ -1,0 +1,41 @@
+{
+  "id": "sig:receipt/keys",
+  "kind": "sig",
+  "name": "ReceiptKeyBundleMixin",
+  "data": {
+    "kind": "sig",
+    "root": "receipt",
+    "children": [
+      "keys"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptKeyBundleMixin",
+    "matches": "assertTag\\([a-z], \"receipt\"\\)"
+  },
+  "literals": [
+    "receipt",
+    "keys"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInReceiptBotIdentityKeyAuthMixin",
+      "WASmaxInReceiptDeviceIdentityMixin",
+      "WASmaxInReceiptIdentityKeyMixin",
+      "WASmaxInReceiptKeyTypeMixin",
+      "WASmaxInReceiptPQPreKeyMixin",
+      "WASmaxInReceiptPaddingMixin",
+      "WASmaxInReceiptPreKeyMixin",
+      "WASmaxInReceiptSignedPreKeyMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInReceiptDeliverAppDataPeerPeerRetryMixin",
+      "WASmaxInReceiptDeliverPeerPeerRetryMixin",
+      "WASmaxInReceiptRetryMixin"
+    ],
+    "dep_count": 10,
+    "dependent_count": 3
+  }
+}

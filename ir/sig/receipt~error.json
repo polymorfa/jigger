@@ -1,0 +1,33 @@
+{
+  "id": "sig:receipt/error",
+  "kind": "sig",
+  "name": "ReceiptDeliverFeatureIncapableErrorTypeMixin",
+  "data": {
+    "kind": "sig",
+    "root": "receipt",
+    "children": [
+      "error"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptDeliverFeatureIncapableErrorTypeMixin",
+    "matches": "assertTag\\([a-z], \"receipt\"\\)"
+  },
+  "literals": [
+    "receipt",
+    "error"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInReceiptBizErrorType",
+      "WASmaxInReceiptDeliverBizFeatureIncapableTypeWithReasonMixin",
+      "WASmaxInReceiptDeliverLIDFeatureIncapableTypeMixin"
+    ],
+    "dep_count": 2,
+    "dependent_count": 3
+  }
+}

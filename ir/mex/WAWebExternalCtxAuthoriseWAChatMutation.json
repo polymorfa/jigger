@@ -1,0 +1,55 @@
+{
+  "id": "mex:WAWebExternalCtxAuthoriseWAChatMutation",
+  "kind": "mex",
+  "name": "WAWebExternalCtxAuthoriseWAChatMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9790465291023292",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_external_ctx_authorise_wa_chat",
+        "ty": "XWAExternalCtxAuthoriseWAChatResponse",
+        "args": [
+          "request: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "partner_name",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 9790465291023292\nmutation ExternalCtxAuthoriseWAChatMutation(\n  $input\n) {\n  xwa_external_ctx_authorise_wa_chat(request: $input) {  # XWAExternalCtxAuthoriseWAChatResponse\n    success\n    partner_name\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebExternalCtxAuthoriseWAChatMutation.graphql",
+    "matches": "id:\\s*\"9790465291023292\""
+  },
+  "literals": [
+    "9790465291023292",
+    "WAWebExternalCtxAuthoriseWAChatMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebExternalCtxAuthoriseWAChatMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

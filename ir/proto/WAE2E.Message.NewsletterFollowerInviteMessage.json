@@ -1,0 +1,55 @@
+{
+  "id": "proto:WAE2E.Message.NewsletterFollowerInviteMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.NewsletterFollowerInviteMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "caption": {
+        "number": 4
+      },
+      "contextInfo": {
+        "number": 5,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "jpegThumbnail": {
+        "number": 3
+      },
+      "newsletterJid": {
+        "number": 1
+      },
+      "newsletterName": {
+        "number": 2
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.NewsletterFollowerInviteMessage\""
+  },
+  "literals": [
+    "NewsletterFollowerInviteMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

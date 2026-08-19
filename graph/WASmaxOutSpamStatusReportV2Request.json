@@ -1,0 +1,1 @@
+{"deps":["WASmaxAttrs","WASmaxJsx","WASmaxMixins","WASmaxOutSpamBaseIQSetRequestMixin","WASmaxOutSpamBaseReportMixin","WASmaxOutSpamEntitySubjectMixin","WASmaxOutSpamReportableNewsletterStatusMixin","WAWap"],"dependents":["WASmaxSpamStatusReportV2RPC"],"dependent_count":1,"exports":[{"name":"makeStatusReportV2Request","used_by":["WASmaxSpamStatusReportV2RPC"],"uses":1}]}

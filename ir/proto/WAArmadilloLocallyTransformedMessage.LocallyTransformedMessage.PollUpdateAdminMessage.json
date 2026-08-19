@@ -1,0 +1,34 @@
+{
+  "id": "proto:WAArmadilloLocallyTransformedMessage.LocallyTransformedMessage.PollUpdateAdminMessage",
+  "kind": "proto",
+  "name": "WAArmadilloLocallyTransformedMessage.LocallyTransformedMessage.PollUpdateAdminMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "pollCreationMessageId": {
+        "number": 1
+      },
+      "pollUpdateMessageId": {
+        "number": 2
+      }
+    },
+    "module": "WAArmadilloLocallyTransformedMessage.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloLocallyTransformedMessage.pb",
+    "matches": "name = \"LocallyTransformedMessage.PollUpdateAdminMessage\""
+  },
+  "literals": [
+    "PollUpdateAdminMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWProtobufDeserializers"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

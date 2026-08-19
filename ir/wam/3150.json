@@ -1,0 +1,46 @@
+{
+  "id": "wam:3150",
+  "kind": "wam",
+  "name": "GatedChatOpened",
+  "data": {
+    "kind": "wam",
+    "event_id": 3150,
+    "fields": {
+      "chatGatedReason": {
+        "id": 1,
+        "type": "CHAT_GATED_REASON",
+        "wire": "chat_gated_reason",
+        "enum_ref": "CHAT_GATED_REASON"
+      },
+      "selfInitiated": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "self_initiated"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGatedChatOpenedWamEvent",
+    "matches": "GatedChatOpened:\\s*\\[\\s*3150"
+  },
+  "literals": [
+    "3150"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatGatedReason"
+    ],
+    "dependents": [
+      "useWAWebConversationPanelCanCompose"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

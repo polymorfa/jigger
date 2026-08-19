@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum","WAWebHandleMsgError"],"dependents":["WAWebReactionsEncryption","WAWebReactionsParseReactionMessageProto"],"dependent_count":2,"exports":[{"name":"ReactionValidationErrorCode","used_by":["WAWebReactionsEncryption","WAWebReactionsParseReactionMessageProto"],"uses":2},{"name":"ReactionValidationError","used_by":[],"uses":0}]}

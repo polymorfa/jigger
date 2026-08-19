@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/encryption_metadata",
+  "kind": "sig",
+  "name": "WaffleGenerateWAEntACUserResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "encryption_metadata"
+    ],
+    "responds_to": "WaffleGenerateWAEntACUser"
+  },
+  "evidence": {
+    "module": "WASmaxInWaffleGenerateWAEntACUserResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "encryption_metadata"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInWaffleIQResultResponseMixin",
+      "WASmaxInWaffleRSAEncryptionMetadataMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxWaffleGenerateWAEntACUserRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

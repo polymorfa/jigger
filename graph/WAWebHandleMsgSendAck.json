@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedSendIq","WALogger","WAWap","WAWebCommsWapMd","WAWebCreateNackFromStanza"],"dependents":["WAWebHandleMsgSendReceipt","WAWebSendOfflineDeliveryReceiptJob"],"dependent_count":2,"exports":[{"name":"sendNack","used_by":["WAWebHandleMsgSendReceipt","WAWebSendOfflineDeliveryReceiptJob"],"uses":2},{"name":"sendAck","used_by":["WAWebHandleMsgSendReceipt"],"uses":1}]}

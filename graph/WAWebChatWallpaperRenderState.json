@@ -1,0 +1,1 @@
+{"deps":["WAWebChatThemeValue","WAWebMinimalChatWallpaperOverrides","WAWebStockWallpaper","WAWebWallpaper"],"dependents":["useWAWebChatThemeRenderState","useWAWebWallpaperState"],"dependent_count":2,"exports":[{"name":"deriveChatWallpaperRenderState","used_by":["useWAWebChatThemeRenderState","useWAWebWallpaperState"],"uses":2}]}

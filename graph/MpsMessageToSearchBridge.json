@@ -1,0 +1,1 @@
+{"deps":["MpsMessageToBridgeWrapper"],"dependents":["MAWAsyncEBIssueBulkMessagesPointQuery","MAWFTSWorker"],"dependent_count":2,"exports":[{"name":"messageToSearchBridge","used_by":["MAWAsyncEBIssueBulkMessagesPointQuery"],"uses":1},{"name":"messageToSearchBridgeV2","used_by":["MAWFTSWorker"],"uses":1}]}

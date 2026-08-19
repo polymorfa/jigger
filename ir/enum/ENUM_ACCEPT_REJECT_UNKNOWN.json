@@ -1,0 +1,102 @@
+{
+  "id": "enum:ENUM_ACCEPT_REJECT_UNKNOWN",
+  "kind": "enum",
+  "name": "ENUM_ACCEPT_REJECT_UNKNOWN",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessageDeliverEnums",
+    "variants": [
+      {
+        "name": "ACCEPT",
+        "value": "ACCEPT"
+      },
+      {
+        "name": "REJECT",
+        "value": "REJECT"
+      },
+      {
+        "name": "UNKNOWN",
+        "value": "UNKNOWN"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverEnums",
+    "matches": "ENUM_ACCEPT_REJECT_UNKNOWN\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ACCEPT_REJECT_UNKNOWN",
+    "ACCEPT",
+    "REJECT",
+    "UNKNOWN"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverAppdataMetaAttributeMixin",
+      "WASmaxInMessageDeliverAuthMixin",
+      "WASmaxInMessageDeliverBRMessageDeliverSendNodeMixin",
+      "WASmaxInMessageDeliverBRP2MHPPTransactionMixin",
+      "WASmaxInMessageDeliverBasePayNodeMixin",
+      "WASmaxInMessageDeliverBillMetadataMixin",
+      "WASmaxInMessageDeliverBizAutoResponseMixin",
+      "WASmaxInMessageDeliverBizEngagementDataMixin",
+      "WASmaxInMessageDeliverBizROIMetricsGatingFlagsMixin",
+      "WASmaxInMessageDeliverBotResponseMixin",
+      "WASmaxInMessageDeliverBroadcastContextMixin",
+      "WASmaxInMessageDeliverBroadcastMixin",
+      "WASmaxInMessageDeliverBusinessBotGatingMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageFeedbackRequestedMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageMixin",
+      "WASmaxInMessageDeliverClientReportingTokenValidationPolicyMixin",
+      "WASmaxInMessageDeliverCoExV2ProactiveMetaMixin",
+      "WASmaxInMessageDeliverCollectionContentTypeMixin",
+      "WASmaxInMessageDeliverContentTypeEventMixin",
+      "WASmaxInMessageDeliverContentTypeMixin",
+      "WASmaxInMessageDeliverConversionRecipientStatusMixin",
+      "WASmaxInMessageDeliverDeliveryContextMixin",
+      "WASmaxInMessageDeliverEncMediaTypeDeprecatedMixin",
+      "WASmaxInMessageDeliverEncMediaTypeMixin",
+      "WASmaxInMessageDeliverEncStateMixin",
+      "WASmaxInMessageDeliverEncTypeIndividualMixin",
+      "WASmaxInMessageDeliverFrequencyRuleMixin",
+      "WASmaxInMessageDeliverFullTransactionBaseMixin",
+      "WASmaxInMessageDeliverGroupAddressingModeMixin",
+      "WASmaxInMessageDeliverGroupCAPIShardRoutingStrategyMetaAttributeMixin",
+      "WASmaxInMessageDeliverGroupMixin",
+      "WASmaxInMessageDeliverHSMReviewMetadataMixin",
+      "WASmaxInMessageDeliverIndividualMixin",
+      "WASmaxInMessageDeliverLIDSessionDeprecationMixin",
+      "WASmaxInMessageDeliverLiveLocationModeMixin",
+      "WASmaxInMessageDeliverMediaTypeMixin",
+      "WASmaxInMessageDeliverMemberTagsMessageMetaAttributeMixin",
+      "WASmaxInMessageDeliverMessageAssociationTypeMixin",
+      "WASmaxInMessageDeliverMessageTargetMixin",
+      "WASmaxInMessageDeliverMetaIsGroupStatusMixin",
+      "WASmaxInMessageDeliverNativeFlowMixin",
+      "WASmaxInMessageDeliverNewsletterMediaMixin",
+      "WASmaxInMessageDeliverP2MHybridExternalPaymentMethodMixin",
+      "WASmaxInMessageDeliverPayNodeTypeMixin",
+      "WASmaxInMessageDeliverPaymentInitiatorMixin",
+      "WASmaxInMessageDeliverPeerRequest",
+      "WASmaxInMessageDeliverProductListDeprecatedMixin",
+      "WASmaxInMessageDeliverQualityControlMixin",
+      "WASmaxInMessageDeliverRecipientMixin",
+      "WASmaxInMessageDeliverSMBBroadcastSourceMixin",
+      "WASmaxInMessageDeliverSenderAccountKindMixin",
+      "WASmaxInMessageDeliverSingleSelectListMixin",
+      "WASmaxInMessageDeliverStatusMentionSourceMixin",
+      "WASmaxInMessageDeliverStatusMentionedUsersMixin",
+      "WASmaxInMessageDeliverStatusSettingMixin",
+      "WASmaxInMessageDeliverTransactionNUXReceiverMixin",
+      "WASmaxInMessageDeliverTransactionSyncStatusMixin",
+      "WASmaxInMessageDeliverTransactionTypeMixin",
+      "WASmaxInMessageDeliverUPILiteDetailsMixin",
+      "WASmaxInMessageDeliverUPIMandateBaseMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 72
+  }
+}

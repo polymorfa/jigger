@@ -1,0 +1,53 @@
+{
+  "id": "wam:6316",
+  "kind": "wam",
+  "name": "PsGroupExitExperienceExitDeleteConfirmationDialogUiInteraction",
+  "data": {
+    "kind": "wam",
+    "event_id": 6316,
+    "fields": {
+      "psGroupExitExperienceDeleteConfirmationDialogAction": {
+        "id": 1,
+        "type": "PS_GROUP_EXIT_EXPERIENCE_DELETE_CONFIRMATION_DIALOG_ACTIONS",
+        "wire": "ps_group_exit_experience_delete_confirmation_dialog_action",
+        "enum_ref": "PS_GROUP_EXIT_EXPERIENCE_DELETE_CONFIRMATION_DIALOG_ACTIONS"
+      },
+      "psGroupExitExperienceGroupJid": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "ps_group_exit_experience_group_jid"
+      },
+      "psGroupExitExperienceTouchPoint": {
+        "id": 4,
+        "type": "GROUP_EXIT_EXPERIENCE_ORIGIN",
+        "wire": "ps_group_exit_experience_touch_point",
+        "enum_ref": "GROUP_EXIT_EXPERIENCE_ORIGIN"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsGroupExitExperienceExitDeleteConfirmationDialogUiInteractionWamEvent",
+    "matches": "PsGroupExitExperienceExitDeleteConfirmationDialogUiInteraction:\\s*\\[\\s*6316"
+  },
+  "literals": [
+    "6316"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGroupExitExperienceOrigin",
+      "WAWebWamEnumPsGroupExitExperienceDeleteConfirmationDialogActions"
+    ],
+    "dependents": [
+      "WAWebGroupExitModalLoggingUtils"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

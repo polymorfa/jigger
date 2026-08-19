@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebConsumerTransparencyModalDialog.react","WAWebCtwaConsumerDisclosureWamEvent"],"dependent_count":2,"exports":[{"name":"DISCLOSURE_TYPE","used_by":["WAWebConsumerTransparencyModalDialog.react","WAWebCtwaConsumerDisclosureWamEvent"],"uses":2}]}

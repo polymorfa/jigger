@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCallLogUtils","WAWebDetailImage.react","WAWebFlex.react","WAWebParticipantListUtils","WDSIconIcArrowDropDown.react","WDSText.react","react","react-compiler-runtime","stylex"],"dependents":["WAWebVoipUiLobby.react"],"dependent_count":1,"exports":[]}

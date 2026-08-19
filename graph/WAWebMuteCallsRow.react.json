@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatGetters","WAWebChatInfoDrawerRow.react","WAWebConfirmPopup.react","WAWebModalManager","WAWebMuteGetters","WAWebMutePopup.react","WAWebStateUtils","WDSIconIcCall.react","WDSSwitch.react","react","react-compiler-runtime","useWAWebChatValues","useWAWebMuteValues"],"dependents":["WAWebChatNotificationSettingsDrawer.react"],"dependent_count":1,"exports":[]}

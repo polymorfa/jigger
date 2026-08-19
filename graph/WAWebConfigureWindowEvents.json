@@ -1,0 +1,1 @@
+{"deps":["WAComms","WALogger","WATypeUtils","WAWebApp.react","WAWebAppTracker","WAWebBuildConstants","WAWebExternalLink.react","WAWebMiscBrowserUtils","WAWebTrackBrowserTabHidden","fbs"],"dependents":["WAWebAppBootstrap"],"dependent_count":1,"exports":[{"name":"configureWindowEvents","used_by":["WAWebAppBootstrap"],"uses":1}]}

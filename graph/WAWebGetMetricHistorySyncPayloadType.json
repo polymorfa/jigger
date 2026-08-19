@@ -1,0 +1,1 @@
+{"deps":["WAWebWamEnumMdBootstrapHistoryPayloadType"],"dependents":["WAWebGetHistorySyncMetrics","WAWebHandleHistorySyncNotification"],"dependent_count":2,"exports":[{"name":"getMetricHistorySyncPayloadType","used_by":["WAWebGetHistorySyncMetrics","WAWebHandleHistorySyncNotification"],"uses":2}]}

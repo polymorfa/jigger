@@ -1,0 +1,1 @@
+{"deps":["WAWebChatGetters","WAWebFrontendChatGetters","WAWebStateUtils","WAWebWamEnumUploadOriginType"],"dependents":["WAWebChatForwardMessage","WAWebComposeBox.react","WAWebMediaPrep","WAWebMediaResumeUploadMsg","WAWebNewsletterSendMsgActionUtils","WAWebPttComposerRecordingSession","useWAWebLinkPreview"],"dependent_count":7,"exports":[{"name":"default","used_by":[],"uses":0}]}

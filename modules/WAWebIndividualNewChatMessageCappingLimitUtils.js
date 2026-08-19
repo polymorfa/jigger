@@ -1,0 +1,104 @@
+__d("WAWebIndividualNewChatMessageCappingLimitUtils", [
+	"WATimeUtils",
+	"WAWebContactGetters",
+	"WAWebIndividualNewChatMessageCappingLimitGatingUtils",
+	"WAWebUserPrefsIndexedDBStorage",
+	"WAWebUserPrefsTypes",
+	"asyncToGeneratorRuntime"
+], (function(t, n, r, o, a, i, l) {
+	var e = "WANewChatMessageCappingData";
+	function s() {
+		if (!o("WAWebIndividualNewChatMessageCappingLimitGatingUtils").isIndividualNewChatMessageCappingEnabled()) return !1;
+		var t = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+		if (t == null) return !1;
+		var n = o("WATimeUtils").unixTime(), r = n > t.cycle_end_timestamp;
+		return r ? (L(o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.NONE), !1) : t.capping_status === o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.CAPPED;
+	}
+	function u() {
+		var t = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e), n = typeof (t == null ? void 0 : t.capping_status) == "string" ? o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.cast(t.capping_status) : null;
+		return n != null ? n : o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.NONE;
+	}
+	function c() {
+		return o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+	}
+	function d(e) {
+		var t = e.chat, n = e.contact;
+		return !o("WAWebContactGetters").getIsUser(n) || o("WAWebContactGetters").getIsMe(n) || o("WAWebContactGetters").getIsEnterprise(n) || o("WAWebContactGetters").getIsSupportAccount(n) || n.id.isBot() || o("WAWebContactGetters").getIsBroadcast(n) || o("WAWebContactGetters").getIsPSA(n) ? !0 : (t == null ? void 0 : t.getTcToken()) != null;
+	}
+	function m(e) {
+		var t;
+		return (t = o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.cast(e)) != null ? t : o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.NONE;
+	}
+	function p(e) {
+		var t;
+		return (t = o("WAWebUserPrefsTypes").NewChatMessageCappingOTEStatusType.cast(e)) != null ? t : o("WAWebUserPrefsTypes").NewChatMessageCappingOTEStatusType.ELIGIBLE;
+	}
+	function _(e) {
+		var t;
+		return (t = o("WAWebUserPrefsTypes").NewChatMessageCappingMVStatusType.cast(e)) != null ? t : o("WAWebUserPrefsTypes").NewChatMessageCappingMVStatusType.NOT_ACTIVE;
+	}
+	function f(e) {
+		var t;
+		return (t = o("WAWebUserPrefsTypes").NewChatMessageCappingSubscriptionStatusType.cast(e)) != null ? t : o("WAWebUserPrefsTypes").NewChatMessageCappingSubscriptionStatusType.NOT_ACTIVE;
+	}
+	function g(e) {
+		var t;
+		return (t = o("WAWebUserPrefsTypes").NewChatMessageCappingSubscriptionName.cast(e)) != null ? t : o("WAWebUserPrefsTypes").NewChatMessageCappingSubscriptionName.UNKNOWN;
+	}
+	function h() {
+		if (!o("WAWebIndividualNewChatMessageCappingLimitGatingUtils").isIndividualNewChatMessageCappingEnabled()) return !1;
+		var t = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+		if (t == null) return !1;
+		var n = o("WATimeUtils").unixTime(), r = n > t.cycle_end_timestamp;
+		return r ? (L(o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.NONE), !1) : t.capping_status === o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.FIRST_WARNING || t.capping_status === o("WAWebUserPrefsTypes").NewChatMessageCappingStatusType.SECOND_WARNING;
+	}
+	function y() {
+		return h() ? u() : null;
+	}
+	function C() {
+		var t = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+		return t == null || t.total_quota === 0 ? 0 : Math.min(100, Math.max(0, t.used_quota / t.total_quota * 100));
+	}
+	function b(t) {
+		var n = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+		if (n == null || n.cycle_end_timestamp === 0) return "";
+		var r = new Date(n.cycle_end_timestamp * 1e3);
+		return r.toLocaleDateString(t, {
+			month: "long",
+			day: "numeric",
+			year: "numeric"
+		});
+	}
+	function v() {
+		var t = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+		return t == null ? !1 : t.ote_status === o("WAWebUserPrefsTypes").NewChatMessageCappingOTEStatusType.ELIGIBLE;
+	}
+	function S(e) {
+		return R.apply(this, arguments);
+	}
+	function R() {
+		return R = n("asyncToGeneratorRuntime").asyncToGenerator(function* (t) {
+			var n = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+			n != null && (yield o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.set(e, babelHelpers.extends({}, n, {
+				total_quota: t.total_quota,
+				used_quota: t.used_quota,
+				cycle_start_timestamp: Number(t.cycle_start_timestamp),
+				cycle_end_timestamp: Number(t.cycle_end_timestamp),
+				server_sent_timestamp: Number(t.server_sent_timestamp),
+				ote_status: p(t.ote_status),
+				mv_status: _(t.mv_status),
+				capping_status: m(t.capping_status)
+			})));
+		}), R.apply(this, arguments);
+	}
+	function L(e) {
+		return E.apply(this, arguments);
+	}
+	function E() {
+		return E = n("asyncToGeneratorRuntime").asyncToGenerator(function* (t) {
+			var n = o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.get(e);
+			n != null && (yield o("WAWebUserPrefsIndexedDBStorage").userPrefsIdb.set(e, babelHelpers.extends({}, n, { capping_status: t })));
+		}), E.apply(this, arguments);
+	}
+	l.NEW_CHAT_MESSAGE_CAPPING_IDB_KEY = e, l.isUserCapped = s, l.getCappingStatus = u, l.getCappingData = c, l.canSendMsgWhileCapped = d, l.getCappingStatusType = m, l.getCappingOTEStatusType = p, l.getCappingMVStatusType = _, l.getCappingSubscriptionStatusType = f, l.getCappingSubscriptionName = g, l.isUserWarned = h, l.getCappingWarningLevel = y, l.getUsagePercentage = C, l.getCycleEndDateFormatted = b, l.isOTEEligible = v, l.updateCappingDataFromOTEResponse = S, l.resetCappingStatus = L;
+}), 98);

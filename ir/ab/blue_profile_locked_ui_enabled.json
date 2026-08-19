@@ -1,0 +1,45 @@
+{
+  "id": "ab:blue_profile_locked_ui_enabled",
+  "kind": "ab",
+  "name": "blue_profile_locked_ui_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6337,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "blue_profile_locked_ui_enabled:\\s*\\[\\s*6337"
+  },
+  "literals": [
+    "blue_profile_locked_ui_enabled",
+    "6337"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMiscGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBetaNavBarItem.react"],"dependent_count":2,"exports":[{"name":"BetaIcon","used_by":["WAWebAllGeneratedIcons","WAWebBetaNavBarItem.react"],"uses":2}]}

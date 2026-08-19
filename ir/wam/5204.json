@@ -1,0 +1,85 @@
+{
+  "id": "wam:5204",
+  "kind": "wam",
+  "name": "CoexPrivacySysMsg",
+  "data": {
+    "kind": "wam",
+    "event_id": 5204,
+    "fields": {
+      "coexStatusReplyPrivacyDisclaimerUserAction": {
+        "id": 8,
+        "type": "COEX_STATUS_REPLY_PRIVACY_DISCLAIMER_USER_ACTION",
+        "wire": "coex_status_reply_privacy_disclaimer_user_action",
+        "enum_ref": "COEX_STATUS_REPLY_PRIVACY_DISCLAIMER_USER_ACTION"
+      },
+      "coexSysMsgBusinessId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "coex_sys_msg_business_id"
+      },
+      "coexSysMsgInsertionChannel": {
+        "id": 9,
+        "type": "COEX_SYS_MSG_INSERTION_CHANNEL",
+        "wire": "coex_sys_msg_insertion_channel",
+        "enum_ref": "COEX_SYS_MSG_INSERTION_CHANNEL"
+      },
+      "coexSysMsgInsertionErrorCode": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "coex_sys_msg_insertion_error_code"
+      },
+      "coexSysMsgInsertionErrorMsg": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "coex_sys_msg_insertion_error_msg"
+      },
+      "coexSysMsgInsertionSuccess": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "coex_sys_msg_insertion_success"
+      },
+      "coexSysMsgIsSelf": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "coex_sys_msg_is_self"
+      },
+      "coexSysMsgMultiDeviceId": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "coex_sys_msg_multi_device_id"
+      },
+      "coexSysMsgStateTransitionAttempt": {
+        "id": 7,
+        "type": "COEX_SYS_MSG_STATE_TRANSITION_ATTEMPT",
+        "wire": "coex_sys_msg_state_transition_attempt",
+        "enum_ref": "COEX_SYS_MSG_STATE_TRANSITION_ATTEMPT"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebCoexPrivacySysMsgWamEvent",
+    "matches": "CoexPrivacySysMsg:\\s*\\[\\s*5204"
+  },
+  "literals": [
+    "5204"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCoexStatusReplyPrivacyDisclaimerUserAction",
+      "WAWebWamEnumCoexSysMsgInsertionChannel",
+      "WAWebWamEnumCoexSysMsgStateTransitionAttempt"
+    ],
+    "dependents": [
+      "WAWebBizCoexUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

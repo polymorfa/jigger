@@ -1,0 +1,1 @@
+{"deps":["EBMessageMetadataQuery","FBLogger","WAJids","WAResultOrError","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["MAWFetchEBDeanonMessagesMetadata","MAWMessageIntegrityFetchMessagesData"],"dependent_count":2,"exports":[{"name":"fetchMessagesMetadataFromEBDeanon","used_by":["MAWFetchEBDeanonMessagesMetadata","MAWMessageIntegrityFetchMessagesData"],"uses":2}]}

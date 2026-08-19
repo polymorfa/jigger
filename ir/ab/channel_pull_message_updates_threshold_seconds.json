@@ -1,0 +1,45 @@
+{
+  "id": "ab:channel_pull_message_updates_threshold_seconds",
+  "kind": "ab",
+  "name": "channel_pull_message_updates_threshold_seconds",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4326,
+    "type": "int",
+    "default": 120,
+    "alt_default": 120
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "channel_pull_message_updates_threshold_seconds:\\s*\\[\\s*4326"
+  },
+  "literals": [
+    "channel_pull_message_updates_threshold_seconds",
+    "4326"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebNewsletterGetMessageUpdatesAction"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

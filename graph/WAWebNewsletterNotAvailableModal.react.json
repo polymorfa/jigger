@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebConfirmPopup.react","WAWebFbtAppName","WAWebModalManager","WAWebNewsletterCommonGatingUtils","WAWebUpdaterUpdateApp","react","react-compiler-runtime"],"dependents":["WAWebNewsletterExecApiCmd"],"dependent_count":1,"exports":[]}

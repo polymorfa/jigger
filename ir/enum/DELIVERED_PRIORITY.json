@@ -1,0 +1,41 @@
+{
+  "id": "enum:DELIVERED_PRIORITY",
+  "kind": "enum",
+  "name": "DELIVERED_PRIORITY",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDeliveredPriority",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "HIGH",
+        "value": 1.0
+      },
+      {
+        "name": "NORMAL",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDeliveredPriority",
+    "matches": "DELIVERED_PRIORITY\\s*[:=]"
+  },
+  "literals": [
+    "DELIVERED_PRIORITY",
+    "UNKNOWN",
+    "HIGH",
+    "NORMAL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

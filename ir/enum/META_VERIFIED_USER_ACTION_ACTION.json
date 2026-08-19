@@ -1,0 +1,528 @@
+{
+  "id": "enum:META_VERIFIED_USER_ACTION_ACTION",
+  "kind": "enum",
+  "name": "META_VERIFIED_USER_ACTION_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMetaVerifiedUserActionAction",
+    "variants": [
+      {
+        "name": "CLICK_SUPPORT",
+        "value": 1.0
+      },
+      {
+        "name": "CLICK_CUSTOM_WEBPAGE_AND_LINK",
+        "value": 2.0
+      },
+      {
+        "name": "CLICK_LINKED_DEVICES",
+        "value": 3.0
+      },
+      {
+        "name": "CLICK_MV_LEARN_MORE",
+        "value": 4.0
+      },
+      {
+        "name": "SYNC_VIA_NOTIFICATION",
+        "value": 5.0
+      },
+      {
+        "name": "SYNC_VIA_FETCH",
+        "value": 6.0
+      },
+      {
+        "name": "CLICK",
+        "value": 7.0
+      },
+      {
+        "name": "CLICK_MANAGE_SUBSCRIPTION",
+        "value": 8.0
+      },
+      {
+        "name": "CLICK_VERIFIED_CHANNEL",
+        "value": 9.0
+      },
+      {
+        "name": "CLICK_VERIFIED_BADGE",
+        "value": 10.0
+      },
+      {
+        "name": "CLICK_ACCOUNT_PROTECTION",
+        "value": 11.0
+      },
+      {
+        "name": "OPEN_MV_CHANNEL_CREATION_EDU",
+        "value": 12.0
+      },
+      {
+        "name": "OPEN_MV_CHANNEL_SELECT_TO_VERIFY",
+        "value": 13.0
+      },
+      {
+        "name": "OPEN_MV_CHANNEL_CREATION",
+        "value": 14.0
+      },
+      {
+        "name": "OPEN_MV_CHANNEL_VERIFICATION",
+        "value": 15.0
+      },
+      {
+        "name": "OPEN_MV_CHANNEL_UNVERIFICATION",
+        "value": 16.0
+      },
+      {
+        "name": "OPEN_MV_CHANNEL_EDIT",
+        "value": 17.0
+      },
+      {
+        "name": "CREATE_MV_CHANNEL",
+        "value": 18.0
+      },
+      {
+        "name": "VERIFY_MV_CHANNEL",
+        "value": 19.0
+      },
+      {
+        "name": "EDIT_MV_CHANNEL",
+        "value": 20.0
+      },
+      {
+        "name": "UNVERIFY_MV_CHANNEL",
+        "value": 21.0
+      },
+      {
+        "name": "VIEW_META_VERIFIED_BUTTON",
+        "value": 22.0
+      },
+      {
+        "name": "VIEW_GET_META_VERIFIED_BUTTON",
+        "value": 23.0
+      },
+      {
+        "name": "CLICK_GET_META_VERIFIED_BUTTON",
+        "value": 24.0
+      },
+      {
+        "name": "CLICK_CONTINUE",
+        "value": 25.0
+      },
+      {
+        "name": "CLICK_CANCEL",
+        "value": 26.0
+      },
+      {
+        "name": "VIEW",
+        "value": 27.0
+      },
+      {
+        "name": "CLICK_GET_WHATSAPP_BUSINESS",
+        "value": 28.0
+      },
+      {
+        "name": "CLICK_SIGN_UP_FOR_META_VERIFIED",
+        "value": 29.0
+      },
+      {
+        "name": "CLICK_VERIFIED_LABEL",
+        "value": 30.0
+      },
+      {
+        "name": "VIEW_VERIFIED_LABEL",
+        "value": 31.0
+      },
+      {
+        "name": "CONFIRM_EDIT_CHANNEL",
+        "value": 32.0
+      },
+      {
+        "name": "CLICK_GET_STARTED",
+        "value": 33.0
+      },
+      {
+        "name": "CREATE_WEBPAGE",
+        "value": 34.0
+      },
+      {
+        "name": "DELETE_WEB_PAGE",
+        "value": 35.0
+      },
+      {
+        "name": "COPY_WEB_PAGE_LINK",
+        "value": 36.0
+      },
+      {
+        "name": "SHARE_WEB_PAGE_LINK",
+        "value": 37.0
+      },
+      {
+        "name": "SCAN_WEB_PAGE_QR_CODE",
+        "value": 38.0
+      },
+      {
+        "name": "VIEW_LINKED_DEVICES_LIST",
+        "value": 39.0
+      },
+      {
+        "name": "ADD_LINKED_DEVICE",
+        "value": 40.0
+      },
+      {
+        "name": "ASSIGN_CHAT",
+        "value": 41.0
+      },
+      {
+        "name": "IAP_MV_FETCH_PRICE_START",
+        "value": 42.0
+      },
+      {
+        "name": "IAP_MV_FETCH_PRICE_FINISH",
+        "value": 43.0
+      },
+      {
+        "name": "IAP_MV_PURCHASE_START",
+        "value": 44.0
+      },
+      {
+        "name": "IAP_MV_PURCHASE_FINISH",
+        "value": 45.0
+      },
+      {
+        "name": "IDV_UPLOAD",
+        "value": 46.0
+      },
+      {
+        "name": "DOC_UPLOAD",
+        "value": 47.0
+      },
+      {
+        "name": "LOAD_META_VERIFIED_ENTRY_POINT",
+        "value": 48.0
+      },
+      {
+        "name": "EDIT_PROFILE_PICTURE",
+        "value": 49.0
+      },
+      {
+        "name": "VIEW_VERIFIED_BADGE",
+        "value": 50.0
+      },
+      {
+        "name": "AVAILABILITY_CHECK_START",
+        "value": 51.0
+      },
+      {
+        "name": "AVAILABILITY_CHECK_END",
+        "value": 52.0
+      },
+      {
+        "name": "EXIT_ONBOARDING_FLOW",
+        "value": 53.0
+      },
+      {
+        "name": "EXIT_BENEFITS_CENTER",
+        "value": 54.0
+      },
+      {
+        "name": "CLICK_PROTECTED_BUSINESS_ACCOUNTS",
+        "value": 55.0
+      },
+      {
+        "name": "CLICK_SELECT_BUSINESS_ACCOUNT",
+        "value": 56.0
+      },
+      {
+        "name": "SELECT_BUSINESS_ACCOUNT",
+        "value": 57.0
+      },
+      {
+        "name": "ADD_PROTECTED_BUSINESS_ACCOUNT",
+        "value": 58.0
+      },
+      {
+        "name": "REMOVE_PROTECTED_BUSINESS_ACCOUNT",
+        "value": 59.0
+      },
+      {
+        "name": "CLICK_VIEW_WEB_PAGE",
+        "value": 60.0
+      },
+      {
+        "name": "EDIT_WEB_PAGE_LINK",
+        "value": 61.0
+      },
+      {
+        "name": "CLICK_META_PRIVACY_POLICY_LINK",
+        "value": 62.0
+      },
+      {
+        "name": "VIEW_META_VERIFIED_HOME",
+        "value": 63.0
+      },
+      {
+        "name": "PROFILE_PICTURE_IN_REVIEW",
+        "value": 64.0
+      },
+      {
+        "name": "PROFILE_PICTURE_REVIEW_RESPONSE",
+        "value": 65.0
+      },
+      {
+        "name": "CLICK_GO_TO_SETTINGS",
+        "value": 66.0
+      },
+      {
+        "name": "CLICK_LEARN_MORE_BUSINESS_SEARCH",
+        "value": 67.0
+      },
+      {
+        "name": "CLICK_BUSINESS_SEARCH",
+        "value": 68.0
+      },
+      {
+        "name": "VIEW_CONTACT_SUPPORT",
+        "value": 69.0
+      },
+      {
+        "name": "ENTER_SUPPORT_REQUEST_INFO",
+        "value": 70.0
+      },
+      {
+        "name": "CLICK_LEARN_MORE",
+        "value": 71.0
+      },
+      {
+        "name": "CLICK_BACK_BUTTON",
+        "value": 72.0
+      },
+      {
+        "name": "UPDATE_BIZ_NAME_RESPONSE",
+        "value": 73.0
+      },
+      {
+        "name": "VIEW_WEB_META_VERIFIED_BUTTON",
+        "value": 74.0
+      },
+      {
+        "name": "CLICK_WEB_META_VERIFIED_BUTTON",
+        "value": 75.0
+      },
+      {
+        "name": "CLICK_META_VERIFIED_QP",
+        "value": 76.0
+      },
+      {
+        "name": "VIEW_EXAMPLE_WEB_PAGE",
+        "value": 77.0
+      },
+      {
+        "name": "CLICK_BUSINESS_BROADCAST",
+        "value": 78.0
+      },
+      {
+        "name": "CLICK_GOTO_BUSINESS_BROADCASTS",
+        "value": 79.0
+      },
+      {
+        "name": "BANNER_IMPRESSION",
+        "value": 80.0
+      },
+      {
+        "name": "BANNER_CLICK",
+        "value": 81.0
+      },
+      {
+        "name": "BANNER_DISMISS",
+        "value": 82.0
+      },
+      {
+        "name": "EDIT_BIZ_NAME_ELIGIBILITY",
+        "value": 83.0
+      },
+      {
+        "name": "EDIT_BIZ_NAME_SUBMIT",
+        "value": 84.0
+      },
+      {
+        "name": "CLICKED_LOCKED_PROFILE_FIELD",
+        "value": 85.0
+      },
+      {
+        "name": "LOCKED_FIELD_ELIGIBILITY_DIALOG_IMPRESSION",
+        "value": 86.0
+      },
+      {
+        "name": "VIEW_UPGRADE_META_VERIFIED",
+        "value": 87.0
+      },
+      {
+        "name": "CLICK_UPGRADE_META_VERIFIED",
+        "value": 88.0
+      },
+      {
+        "name": "CLICK_NEW_CHAT_MESSAGES",
+        "value": 89.0
+      },
+      {
+        "name": "CLICK_NEW_CHAT_MESSAGES_BANNER",
+        "value": 90.0
+      },
+      {
+        "name": "CLICK_MONTHLY_NEW_CHAT_MESSAGES",
+        "value": 91.0
+      },
+      {
+        "name": "VIEW_META_VERIFIED_NEW_CHAT_MESSAGE_EDUCTATION_SCREEN",
+        "value": 92.0
+      },
+      {
+        "name": "CLICK_TO_NEW_CHAT_MESSAGES",
+        "value": 93.0
+      },
+      {
+        "name": "SHOW_NEW_MESSAGE_CAPPING_META_VERIFIED_ACTIVE_TOAST",
+        "value": 94.0
+      },
+      {
+        "name": "VIEW_BB_CREDITS_HEADER_ADD_BUTTON",
+        "value": 95.0
+      },
+      {
+        "name": "CLICK_BB_CREDITS_HEADER_ADD_BUTTON",
+        "value": 96.0
+      },
+      {
+        "name": "VIEW_META_VERIFIED",
+        "value": 97.0
+      },
+      {
+        "name": "CLICK_META_VERIFIED",
+        "value": 98.0
+      },
+      {
+        "name": "LOCKED_FIELD_EDIT_CONFIRMATION_DIALOG_INTERACTION",
+        "value": 99.0
+      },
+      {
+        "name": "LOCKED_FIELD_EDIT_OUTCOME_NOTIFICATION_DIALOG_IMPRESSION",
+        "value": 100.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMetaVerifiedUserActionAction",
+    "matches": "META_VERIFIED_USER_ACTION_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "META_VERIFIED_USER_ACTION_ACTION",
+    "CLICK_SUPPORT",
+    "CLICK_CUSTOM_WEBPAGE_AND_LINK",
+    "CLICK_LINKED_DEVICES",
+    "CLICK_MV_LEARN_MORE",
+    "SYNC_VIA_NOTIFICATION",
+    "SYNC_VIA_FETCH",
+    "CLICK",
+    "CLICK_MANAGE_SUBSCRIPTION",
+    "CLICK_VERIFIED_CHANNEL",
+    "CLICK_VERIFIED_BADGE",
+    "CLICK_ACCOUNT_PROTECTION",
+    "OPEN_MV_CHANNEL_CREATION_EDU",
+    "OPEN_MV_CHANNEL_SELECT_TO_VERIFY",
+    "OPEN_MV_CHANNEL_CREATION",
+    "OPEN_MV_CHANNEL_VERIFICATION",
+    "OPEN_MV_CHANNEL_UNVERIFICATION",
+    "OPEN_MV_CHANNEL_EDIT",
+    "CREATE_MV_CHANNEL",
+    "VERIFY_MV_CHANNEL",
+    "EDIT_MV_CHANNEL",
+    "UNVERIFY_MV_CHANNEL",
+    "VIEW_META_VERIFIED_BUTTON",
+    "VIEW_GET_META_VERIFIED_BUTTON",
+    "CLICK_GET_META_VERIFIED_BUTTON",
+    "CLICK_CONTINUE",
+    "CLICK_CANCEL",
+    "VIEW",
+    "CLICK_GET_WHATSAPP_BUSINESS",
+    "CLICK_SIGN_UP_FOR_META_VERIFIED",
+    "CLICK_VERIFIED_LABEL",
+    "VIEW_VERIFIED_LABEL",
+    "CONFIRM_EDIT_CHANNEL",
+    "CLICK_GET_STARTED",
+    "CREATE_WEBPAGE",
+    "DELETE_WEB_PAGE",
+    "COPY_WEB_PAGE_LINK",
+    "SHARE_WEB_PAGE_LINK",
+    "SCAN_WEB_PAGE_QR_CODE",
+    "VIEW_LINKED_DEVICES_LIST",
+    "ADD_LINKED_DEVICE",
+    "ASSIGN_CHAT",
+    "IAP_MV_FETCH_PRICE_START",
+    "IAP_MV_FETCH_PRICE_FINISH",
+    "IAP_MV_PURCHASE_START",
+    "IAP_MV_PURCHASE_FINISH",
+    "IDV_UPLOAD",
+    "DOC_UPLOAD",
+    "LOAD_META_VERIFIED_ENTRY_POINT",
+    "EDIT_PROFILE_PICTURE",
+    "VIEW_VERIFIED_BADGE",
+    "AVAILABILITY_CHECK_START",
+    "AVAILABILITY_CHECK_END",
+    "EXIT_ONBOARDING_FLOW",
+    "EXIT_BENEFITS_CENTER",
+    "CLICK_PROTECTED_BUSINESS_ACCOUNTS",
+    "CLICK_SELECT_BUSINESS_ACCOUNT",
+    "SELECT_BUSINESS_ACCOUNT",
+    "ADD_PROTECTED_BUSINESS_ACCOUNT",
+    "REMOVE_PROTECTED_BUSINESS_ACCOUNT",
+    "CLICK_VIEW_WEB_PAGE",
+    "EDIT_WEB_PAGE_LINK",
+    "CLICK_META_PRIVACY_POLICY_LINK",
+    "VIEW_META_VERIFIED_HOME",
+    "PROFILE_PICTURE_IN_REVIEW",
+    "PROFILE_PICTURE_REVIEW_RESPONSE",
+    "CLICK_GO_TO_SETTINGS",
+    "CLICK_LEARN_MORE_BUSINESS_SEARCH",
+    "CLICK_BUSINESS_SEARCH",
+    "VIEW_CONTACT_SUPPORT",
+    "ENTER_SUPPORT_REQUEST_INFO",
+    "CLICK_LEARN_MORE",
+    "CLICK_BACK_BUTTON",
+    "UPDATE_BIZ_NAME_RESPONSE",
+    "VIEW_WEB_META_VERIFIED_BUTTON",
+    "CLICK_WEB_META_VERIFIED_BUTTON",
+    "CLICK_META_VERIFIED_QP",
+    "VIEW_EXAMPLE_WEB_PAGE",
+    "CLICK_BUSINESS_BROADCAST",
+    "CLICK_GOTO_BUSINESS_BROADCASTS",
+    "BANNER_IMPRESSION",
+    "BANNER_CLICK",
+    "BANNER_DISMISS",
+    "EDIT_BIZ_NAME_ELIGIBILITY",
+    "EDIT_BIZ_NAME_SUBMIT",
+    "CLICKED_LOCKED_PROFILE_FIELD",
+    "LOCKED_FIELD_ELIGIBILITY_DIALOG_IMPRESSION",
+    "VIEW_UPGRADE_META_VERIFIED",
+    "CLICK_UPGRADE_META_VERIFIED",
+    "CLICK_NEW_CHAT_MESSAGES",
+    "CLICK_NEW_CHAT_MESSAGES_BANNER",
+    "CLICK_MONTHLY_NEW_CHAT_MESSAGES",
+    "VIEW_META_VERIFIED_NEW_CHAT_MESSAGE_EDUCTATION_SCREEN",
+    "CLICK_TO_NEW_CHAT_MESSAGES",
+    "SHOW_NEW_MESSAGE_CAPPING_META_VERIFIED_ACTIVE_TOAST",
+    "VIEW_BB_CREDITS_HEADER_ADD_BUTTON",
+    "CLICK_BB_CREDITS_HEADER_ADD_BUTTON",
+    "VIEW_META_VERIFIED",
+    "CLICK_META_VERIFIED",
+    "LOCKED_FIELD_EDIT_CONFIRMATION_DIALOG_INTERACTION",
+    "LOCKED_FIELD_EDIT_OUTCOME_NOTIFICATION_DIALOG_IMPRESSION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaVerifiedActiveSubscriberModal.react",
+      "WAWebMetaVerifiedListItem.react",
+      "WAWebMetaVerifiedUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

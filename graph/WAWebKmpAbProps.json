@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebABProps","WAWebKmpKotlinUtils","WAWebSyncdWamReportingUtils"],"dependents":["WAWebKmpSyncdServiceLocator"],"dependent_count":1,"exports":[{"name":"abProps","used_by":["WAWebKmpSyncdServiceLocator"],"uses":1}]}

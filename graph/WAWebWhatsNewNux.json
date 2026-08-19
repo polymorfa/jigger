@@ -1,0 +1,1 @@
+{"deps":["WAWebNux","WAWebNuxCoolOff"],"dependents":["WAWebMain.react","WAWebWhatsNewModal.react","useWAWebNotificationsOptInModalTriggers"],"dependent_count":3,"exports":[{"name":"shouldShowWhatsNewNux","used_by":["WAWebMain.react","useWAWebNotificationsOptInModalTriggers"],"uses":2},{"name":"createWhatsNewNux","used_by":["WAWebWhatsNewModal.react"],"uses":1}]}

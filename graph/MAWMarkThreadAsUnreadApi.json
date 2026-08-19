@@ -1,0 +1,1 @@
+{"deps":["MAWDbMsgTxns","MAWDexieTable","MAWInMemoryThreadStore","MAWIndexedDb","MAWTimeUtils","MAWTransactionMode","MAWUpdateThreadUtil","WATimeUtils"],"dependents":["MAWBridgeHandlers"],"dependent_count":1,"exports":[{"name":"markThreadAsUnread","used_by":["MAWBridgeHandlers"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBizAiSmartComposerStyles.stylex","WAWebBizAiSmartComposerSuggestionStateMachine","WDSButton.react","WDSIconIcClose.react","WDSText.react","react","react-compiler-runtime","stylex","useWAWebInterval","useWAWebSmartComposerSuggestion"],"dependents":["WAWebBizAiSmartComposerWrapper.react"],"dependent_count":1,"exports":[]}

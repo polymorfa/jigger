@@ -1,0 +1,1 @@
+{"deps":["CurrentUser","FBLogger","WebResponsivenessConfig"],"dependents":["WAWebOneTraceSetup"],"dependent_count":1,"exports":[{"name":"getLoAFAppConfig","used_by":["WAWebOneTraceSetup"],"uses":1},{"name":"shouldLogLoAF","used_by":["WAWebOneTraceSetup"],"uses":1}]}

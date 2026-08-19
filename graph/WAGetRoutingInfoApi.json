@@ -1,0 +1,1 @@
+{"deps":["WAGetMetaApi"],"dependents":["MAWChatSocketPlatformDetails","WAHandleInfoBulletin"],"dependent_count":2,"exports":[{"name":"getRoutingInfo","used_by":["MAWChatSocketPlatformDetails","WAHandleInfoBulletin"],"uses":2}]}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:ctwa_ae_signal_3pd_enabled",
+  "kind": "ab",
+  "name": "ctwa_ae_signal_3pd_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34663,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_ae_signal_3pd_enabled:\\s*\\[\\s*34663"
+  },
+  "literals": [
+    "ctwa_ae_signal_3pd_enabled",
+    "34663"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

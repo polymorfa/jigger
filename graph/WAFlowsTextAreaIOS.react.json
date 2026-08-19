@@ -1,0 +1,1 @@
+{"deps":["fbt","WAFlowsComponentConstants","WAFlowsComponentsCommon","WAFlowsEnvContext.react","WAFlowsIcon.react","WAFlowsLabel.react","WAFlowsLocalization","WAFlowsScrollable.react","WAFlowsTextAreaCommon.react","react","stylex"],"dependents":["WAFlowsTextAreaAllModules.react"],"dependent_count":1,"exports":[]}

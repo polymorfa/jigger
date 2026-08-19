@@ -1,0 +1,1 @@
+{"deps":["WALogger","WATimeUtils","WAWebABProps","WAWebChatCollection","WAWebLidMigrationUtils","WAWebSchemaChat","WAWebSetPrivacyTokensJob","WAWebTrustedContactsUtils","asyncToGeneratorRuntime"],"dependents":["WAWebSendMsgJob","WAWebVoipStartCall"],"dependent_count":2,"exports":[{"name":"sendTcToken","used_by":["WAWebSendMsgJob","WAWebVoipStartCall"],"uses":2}]}

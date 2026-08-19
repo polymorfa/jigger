@@ -1,0 +1,1 @@
+{"deps":["MAWClientMediaStatusUtils","MAWDownloadMediaInWorkerDeferred","MAWMediaSetRetryingAndIncreaseCount","MAWRetryReceiverFetchSticker","isReceiverFetchSticker","react","react-compiler-runtime","useAsyncReStore","useClientMediaStatus"],"dependents":["MAWAttachmentStateHandlerContentBase.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

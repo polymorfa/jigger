@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatMessageCountsWamEvent","WAWebThreadInteractionDataAiWamEvent"],"dependent_count":2,"exports":[{"name":"AI_CHAT_ORIGINS_TYPE","used_by":["WAWebChatMessageCountsWamEvent","WAWebThreadInteractionDataAiWamEvent"],"uses":2}]}

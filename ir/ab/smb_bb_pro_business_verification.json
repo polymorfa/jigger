@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_bb_pro_business_verification",
+  "kind": "ab",
+  "name": "smb_bb_pro_business_verification",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34341,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_bb_pro_business_verification:\\s*\\[\\s*34341"
+  },
+  "literals": [
+    "smb_bb_pro_business_verification",
+    "34341"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

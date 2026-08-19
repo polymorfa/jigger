@@ -1,0 +1,1 @@
+{"deps":["WAJobOrchestratorTypes","WAWebNewsletterBackendAddOnsUtils","WAWebNewsletterGetMessageUpdatesQuery","WAWebOrchestratorNonPersistedJob","WAWebWidFactory","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterGetMessageUpdatesAction"],"dependent_count":1,"exports":[{"name":"getNewsletterMessageUpdates","used_by":["WAWebNewsletterGetMessageUpdatesAction"],"uses":1}]}

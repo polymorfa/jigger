@@ -1,0 +1,1 @@
+{"deps":["WAWebBizBroadcastDeviceCapabilityCommon","WAWebBizBroadcastMarketingMessagesEligibilityModel","WAWebCommonQPSurfacesTypes","WAWebMobilePlatforms"],"dependents":["WAWebQuickPromotionFilters"],"dependent_count":1,"exports":[{"name":"bizBroadcastDeviceCapabilityFilter","used_by":["WAWebQuickPromotionFilters"],"uses":1}]}

@@ -1,0 +1,126 @@
+{
+  "id": "wam:6094",
+  "kind": "wam",
+  "name": "ReportingTokenValidationFailureSender",
+  "data": {
+    "kind": "wam",
+    "event_id": 6094,
+    "fields": {
+      "clientMessageId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "client_message_id"
+      },
+      "e2eReceiverType": {
+        "id": 2,
+        "type": "DEVICE_TYPE",
+        "wire": "e2e_receiver_type",
+        "enum_ref": "DEVICE_TYPE"
+      },
+      "e2eSenderType": {
+        "id": 3,
+        "type": "E2E_DEVICE_TYPE",
+        "wire": "e2e_sender_type",
+        "enum_ref": "E2E_DEVICE_TYPE"
+      },
+      "editType": {
+        "id": 4,
+        "type": "EDIT_TYPE",
+        "wire": "edit_type",
+        "enum_ref": "EDIT_TYPE"
+      },
+      "groupHistoryBundleMessageId": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "group_history_bundle_message_id"
+      },
+      "isLid": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "is_lid"
+      },
+      "isMessageMediaRetry": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_message_media_retry"
+      },
+      "isMessageRetry": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "is_message_retry"
+      },
+      "isSecretEncryptedMsg": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "is_secret_encrypted_msg"
+      },
+      "messageIsForward": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "message_is_forward"
+      },
+      "messageMediaType": {
+        "id": 7,
+        "type": "MEDIA_TYPE",
+        "wire": "message_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messageType": {
+        "id": 8,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "offline": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "offline"
+      },
+      "reportingTokenValidationFailureReason": {
+        "id": 10,
+        "type": "REPORTING_TOKEN_VALIDATION_FAILURE_REASON",
+        "wire": "reporting_token_validation_failure_reason",
+        "enum_ref": "REPORTING_TOKEN_VALIDATION_FAILURE_REASON"
+      },
+      "reportingTokenVersion": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "reporting_token_version"
+      },
+      "senderJid": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "sender_jid"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebReportingTokenValidationFailureSenderWamEvent",
+    "matches": "ReportingTokenValidationFailureSender:\\s*\\[\\s*6094"
+  },
+  "literals": [
+    "6094"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDeviceType",
+      "WAWebWamEnumE2eDeviceType",
+      "WAWebWamEnumEditType",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumReportingTokenValidationFailureReason"
+    ],
+    "dependents": [
+      "WAWebWamReportingTokenMismatchReporter"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

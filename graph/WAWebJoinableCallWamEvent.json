@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumCallResultType","WAWebWamEnumCallSide","WAWebWamEnumLobbyEntryPointType","WAWebWamEnumLobbyExitType"],"dependents":["WAWebVoipHandleNativeCallEventFieldstatsHandlers","WAWebVoipInit"],"dependent_count":2,"exports":[{"name":"JoinableCallWamEvent","used_by":[],"uses":0}]}

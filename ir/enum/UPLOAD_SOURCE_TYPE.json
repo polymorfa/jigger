@@ -1,0 +1,47 @@
+{
+  "id": "enum:UPLOAD_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "UPLOAD_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUploadSourceType",
+    "variants": [
+      {
+        "name": "OTHER",
+        "value": 1.0
+      },
+      {
+        "name": "CAMERA",
+        "value": 2.0
+      },
+      {
+        "name": "GALLERY",
+        "value": 3.0
+      },
+      {
+        "name": "SHARE",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUploadSourceType",
+    "matches": "UPLOAD_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "UPLOAD_SOURCE_TYPE",
+    "OTHER",
+    "CAMERA",
+    "GALLERY",
+    "SHARE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMapFileOriginToUploadOrigin",
+      "WAWebMediaUpload2WamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

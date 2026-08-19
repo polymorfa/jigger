@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebRenderVideoPreviewIcon"],"dependent_count":2,"exports":[{"name":"GifRefreshedIcon","used_by":["WAWebAllGeneratedIcons","WAWebRenderVideoPreviewIcon"],"uses":2}]}

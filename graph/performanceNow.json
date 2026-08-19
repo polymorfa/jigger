@@ -1,0 +1,1 @@
+{"deps":["performance"],"dependents":["ComponentMountUnmountSubspanLogger.react","InteractionTracing","MAWAttachmentBlob.react","MAWGetAttachmentThumbnailBlob","MAWMICInternal","MLV2DataSourceLogger","OneTraceQPLLogger","QuickPerformanceLogger","WebWorker","fb-error"],"dependent_count":10,"exports":[{"name":"default","used_by":[],"uses":0}]}

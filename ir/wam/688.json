@@ -1,0 +1,49 @@
+{
+  "id": "wam:688",
+  "kind": "wam",
+  "name": "WebcResourceLoad",
+  "data": {
+    "kind": "wam",
+    "event_id": 688,
+    "fields": {
+      "webcResourceCached": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "webc_resource_cached"
+      },
+      "webcResourceDuration": {
+        "id": 2,
+        "type": "TIMER",
+        "wire": "webc_resource_duration"
+      },
+      "webcResourceName": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "webc_resource_name"
+      }
+    },
+    "weights": [
+      1,
+      1000,
+      2000
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebcResourceLoadWamEvent",
+    "matches": "WebcResourceLoad:\\s*\\[\\s*688"
+  },
+  "literals": [
+    "688"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebWamResourceLoadReporter"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

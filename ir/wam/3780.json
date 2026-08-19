@@ -1,0 +1,53 @@
+{
+  "id": "wam:3780",
+  "kind": "wam",
+  "name": "UiMessageYourselfAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 3780,
+    "fields": {
+      "uiMessageYourselfActionSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "ui_message_yourself_action_session_id"
+      },
+      "uiMessageYourselfActionType": {
+        "id": 2,
+        "type": "UI_MESSAGE_YOURSELF_ACTION_TYPE",
+        "wire": "ui_message_yourself_action_type",
+        "enum_ref": "UI_MESSAGE_YOURSELF_ACTION_TYPE"
+      },
+      "uiMessageYourselfFunnelName": {
+        "id": 3,
+        "type": "UI_MESSAGE_YOURSELF_FUNNEL_NAME",
+        "wire": "ui_message_yourself_funnel_name",
+        "enum_ref": "UI_MESSAGE_YOURSELF_FUNNEL_NAME"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebUiMessageYourselfActionWamEvent",
+    "matches": "UiMessageYourselfAction:\\s*\\[\\s*3780"
+  },
+  "literals": [
+    "3780"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumUiMessageYourselfActionType",
+      "WAWebWamEnumUiMessageYourselfFunnelName"
+    ],
+    "dependents": [
+      "WAWebMessageYourselfMetricUtils"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

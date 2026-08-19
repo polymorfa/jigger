@@ -1,0 +1,42 @@
+{
+  "id": "ab:bonsai_word_streaming_enabled",
+  "kind": "ab",
+  "name": "bonsai_word_streaming_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4974,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "bonsai_word_streaming_enabled:\\s*\\[\\s*4974"
+  },
+  "literals": [
+    "bonsai_word_streaming_enabled",
+    "4974"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

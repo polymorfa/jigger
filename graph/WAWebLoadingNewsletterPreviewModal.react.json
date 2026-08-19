@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebActionToast.react","WAWebCommonNewsletterIntegrityStrings","WAWebEmptyState.react","WAWebLoadNewsletterPreviewChatAction","WAWebModal.react","WAWebModalManager","WAWebToast.react","WAWebToastManager","asyncToGeneratorRuntime","err","react"],"dependents":["WAWebOpenNewsletterPreviewChat"],"dependent_count":1,"exports":[]}

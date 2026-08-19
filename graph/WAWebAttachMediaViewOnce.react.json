@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebAttachMediaViewOnceNux.react","WAWebModalManager","WAWebMsgType","WAWebNux","WAWebToast.react","WAWebToastManager","WDSButton.react","WDSIconWdsIcViewOnce.react","WDSIconWdsIcViewOnceFilled.react","WDSTooltip.react","react","stylex","useWAWebNux"],"dependents":["WAWebAttachMediaViewOnceInChat.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,78 @@
+{
+  "id": "mex:WAWebBizGetCategoriesQuery",
+  "kind": "mex",
+  "name": "WAWebBizGetCategoriesQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26266473919627648",
+    "operation": "query",
+    "variables": [
+      "query_params"
+    ],
+    "args": [
+      {
+        "name": "query_params"
+      }
+    ],
+    "selections": [
+      {
+        "name": "whatsapp_catkit_typeahead_proxy",
+        "ty": "CatkitTypeaheadResponse",
+        "args": [
+          "query_params: $query_params"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "categories",
+            "ty": "WhatsAppBizProfileCategory",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "display_name",
+                "kind": "ScalarField"
+              }
+            ]
+          },
+          {
+            "name": "not_a_biz",
+            "ty": "WhatsAppBizProfileCategory",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "display_name",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26266473919627648\nquery BizGetCategoriesQuery(\n  $query_params\n) {\n  whatsapp_catkit_typeahead_proxy(query_params: $query_params) {  # CatkitTypeaheadResponse\n    categories {  # [WhatsAppBizProfileCategory]\n      id\n      display_name\n    }\n    not_a_biz {  # WhatsAppBizProfileCategory\n      id\n      display_name\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebBizGetCategoriesQuery.graphql",
+    "matches": "id:\\s*\"26266473919627648\""
+  },
+  "literals": [
+    "26266473919627648",
+    "WAWebBizGetCategoriesQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizGetCategoriesQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

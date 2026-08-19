@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxOutGroupsBaseSetGroupMixin","WASmaxOutGroupsSuggestionForCreateSubGroupSuggestionNewGroupOrCreateSubGroupSuggestionExistingGroupsMixinGroup"],"dependents":["WASmaxGroupsCreateSubGroupSuggestionRPC"],"dependent_count":1,"exports":[{"name":"makeCreateSubGroupSuggestionRequest","used_by":["WASmaxGroupsCreateSubGroupSuggestionRPC"],"uses":1}]}

@@ -1,0 +1,35 @@
+{
+  "id": "sig:iq/report",
+  "kind": "sig",
+  "name": "SpamReportIdMixin",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "report"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInSpamReportIdMixin",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "report"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInSpamGroupReportResponseSuccess",
+      "WASmaxInSpamIndividualReportResponseSuccess",
+      "WASmaxInSpamNewsletterReportResponseSuccess",
+      "WASmaxInSpamStatusReportResponseSuccess",
+      "WASmaxInSpamStatusReportV2ResponseSuccess"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebChannelMembershipActionEventWamEvent"],"dependents":["WAWebNewsletterSubscribeAction","WAWebNewsletterUnsubscribeAction"],"dependent_count":2,"exports":[{"name":"logNewsletterMembershipActionEvent","used_by":["WAWebNewsletterSubscribeAction","WAWebNewsletterUnsubscribeAction"],"uses":2}]}

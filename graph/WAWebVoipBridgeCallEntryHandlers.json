@@ -1,0 +1,1 @@
+{"deps":["WAWebIncomingOfferNoticeVoipHandlerAction","WAWebVoipActionRequestOpenChat","WAWebVoipActivityTracker","WAWebVoipStartCall","WAWebWidFactory"],"dependents":["WAWebVoipWebBridgeApi"],"dependent_count":1,"exports":[{"name":"VoipBridgeCallEntryHandlers","used_by":["WAWebVoipWebBridgeApi"],"uses":1}]}

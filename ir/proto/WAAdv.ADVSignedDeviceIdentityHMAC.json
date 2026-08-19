@@ -1,0 +1,39 @@
+{
+  "id": "proto:WAAdv.ADVSignedDeviceIdentityHMAC",
+  "kind": "proto",
+  "name": "WAAdv.ADVSignedDeviceIdentityHMAC",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accountType": {
+        "number": 3
+      },
+      "details": {
+        "number": 1
+      },
+      "hmac": {
+        "number": 2
+      }
+    },
+    "module": "WAAdv.pb"
+  },
+  "evidence": {
+    "module": "WAAdv.pb",
+    "matches": "name = \"ADVSignedDeviceIdentityHMAC\""
+  },
+  "literals": [
+    "ADVSignedDeviceIdentityHMAC"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAAdv",
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

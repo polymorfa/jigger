@@ -1,0 +1,32 @@
+{
+  "id": "proto:WAStatusAttributions.StatusAttribution.RLAttribution",
+  "kind": "proto",
+  "name": "WAStatusAttributions.StatusAttribution.RLAttribution",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "source": {
+        "number": 1
+      }
+    },
+    "module": "WAStatusAttributions.pb"
+  },
+  "evidence": {
+    "module": "WAStatusAttributions.pb",
+    "matches": "name = \"StatusAttribution.RLAttribution\""
+  },
+  "literals": [
+    "RLAttribution"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

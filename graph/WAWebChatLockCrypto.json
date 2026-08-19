@@ -1,0 +1,1 @@
+{"deps":["WACryptoUtils","WALogger","WAWebProtobufsUserPassword.pb","asyncToGeneratorRuntime"],"dependents":["WAWebChatLockUtils","WAWebDebugChatLock"],"dependent_count":2,"exports":[{"name":"validateChatLockSecretCode","used_by":["WAWebChatLockUtils","WAWebDebugChatLock"],"uses":2},{"name":"_deriveBitsFromSecretCode","used_by":["WAWebDebugChatLock"],"uses":1}]}

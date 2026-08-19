@@ -1,0 +1,59 @@
+{
+  "id": "wam:2474",
+  "kind": "wam",
+  "name": "UserNoticeError",
+  "data": {
+    "kind": "wam",
+    "event_id": 2474,
+    "fields": {
+      "noticeType": {
+        "id": 4,
+        "type": "NOTICE_TYPE",
+        "wire": "notice_type",
+        "enum_ref": "NOTICE_TYPE"
+      },
+      "userNoticeContentVersion": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "user_notice_content_version"
+      },
+      "userNoticeErrorEvent": {
+        "id": 3,
+        "type": "USER_NOTICE_ERROR_EVENT",
+        "wire": "user_notice_error_event",
+        "enum_ref": "USER_NOTICE_ERROR_EVENT"
+      },
+      "userNoticeId": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "user_notice_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebUserNoticeErrorWamEvent",
+    "matches": "UserNoticeError:\\s*\\[\\s*2474"
+  },
+  "literals": [
+    "2474"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumNoticeType",
+      "WAWebWamEnumUserNoticeErrorEvent"
+    ],
+    "dependents": [
+      "WAWebGetUserDisclosuresContentsQueryJob",
+      "WAWebNoticeModel"
+    ],
+    "dep_count": 3,
+    "dependent_count": 2
+  }
+}

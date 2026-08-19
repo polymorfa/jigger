@@ -1,0 +1,61 @@
+{
+  "id": "enum:E2E_DESTINATION",
+  "kind": "enum",
+  "name": "E2E_DESTINATION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumE2eDestination",
+    "variants": [
+      {
+        "name": "INDIVIDUAL",
+        "value": 0.0
+      },
+      {
+        "name": "GROUP",
+        "value": 1.0
+      },
+      {
+        "name": "LIST",
+        "value": 2.0
+      },
+      {
+        "name": "STATUS",
+        "value": 3.0
+      },
+      {
+        "name": "CHANNEL",
+        "value": 4.0
+      },
+      {
+        "name": "INTEROP",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumE2eDestination",
+    "matches": "E2E_DESTINATION\\s*[:=]"
+  },
+  "literals": [
+    "E2E_DESTINATION",
+    "INDIVIDUAL",
+    "GROUP",
+    "LIST",
+    "STATUS",
+    "CHANNEL",
+    "INTEROP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebEncryptMsgProtobuf",
+      "WAWebGetMetricE2eDestination",
+      "WAWebHandleNewsletterMsgLogger",
+      "WAWebIncomingMessageDropWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

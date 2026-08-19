@@ -1,0 +1,1 @@
+{"deps":["WAWebMexFetchNewsletterPendingInvitesJob","WAWebNewsletterRpcUtils","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterPendingInvitesJob"],"dependent_count":1,"exports":[{"name":"getNewsletterPendingInvites","used_by":["WAWebNewsletterPendingInvitesJob"],"uses":1}]}

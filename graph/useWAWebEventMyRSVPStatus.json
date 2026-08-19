@@ -1,0 +1,1 @@
+{"deps":["WAWebProtobufsE2E.pb","WAWebUserPrefsMeUser","react-compiler-runtime","useWAWebEventResponses"],"dependents":["WAWebEventPreviewBlock.react"],"dependent_count":1,"exports":[{"name":"useEventMyRSVPStatus","used_by":["WAWebEventPreviewBlock.react"],"uses":1}]}

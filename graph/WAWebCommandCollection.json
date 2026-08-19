@@ -1,0 +1,1 @@
+{"deps":["WAWebActions","WAWebBaseCollection","WAWebCommandModel","WAWebL10NAccentFold","WAWebSettings"],"dependents":["WAWebChatlistPanelFunctionalLegacy.react"],"dependent_count":1,"exports":[{"name":"CommandCollection","used_by":["WAWebChatlistPanelFunctionalLegacy.react"],"uses":1}]}

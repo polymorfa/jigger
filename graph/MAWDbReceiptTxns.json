@@ -1,0 +1,1 @@
+{"deps":["MAWDexieTable","WAJids","WALogger"],"dependents":["MAWPendingReceiptProcessingTxns"],"dependent_count":1,"exports":[{"name":"writeReceiptsForDevices","used_by":["MAWPendingReceiptProcessingTxns"],"uses":1},{"name":"bulkDeleteAllReceiptsForMessages","used_by":[],"uses":0},{"name":"bulkWriteReceiptsForDevices","used_by":[],"uses":0}]}

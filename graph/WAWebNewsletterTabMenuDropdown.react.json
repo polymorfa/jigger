@@ -1,0 +1,1 @@
+{"deps":["WAWebCommonNewsletterStrings","WAWebNewsletterGatingUtils","WAWebWamEnumChannelDirectoryEntryPoint","WDSIconIcSearch.react","WDSIconWdsIcNewChannel.react","WDSMenu.react","WDSMenuItem.react","react","react-compiler-runtime"],"dependents":["WAWebNewsletterTabDrawer.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

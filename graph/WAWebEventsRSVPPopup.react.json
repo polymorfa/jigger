@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebProtobufsE2E.pb","WDSMenu.react","WDSMenuItem.react","react","react-compiler-runtime","useWDSMenu"],"dependents":["WAWebEventInfoDrawer.react","WAWebEventsMessageComponent.react"],"dependent_count":2,"exports":[]}

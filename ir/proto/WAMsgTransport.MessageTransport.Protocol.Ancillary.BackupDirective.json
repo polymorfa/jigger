@@ -1,0 +1,42 @@
+{
+  "id": "proto:WAMsgTransport.MessageTransport.Protocol.Ancillary.BackupDirective",
+  "kind": "proto",
+  "name": "WAMsgTransport.MessageTransport.Protocol.Ancillary.BackupDirective",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actionType": {
+        "number": 2
+      },
+      "messageId": {
+        "number": 1
+      },
+      "supplementalKey": {
+        "number": 3
+      }
+    },
+    "module": "WAMsgTransport.pb"
+  },
+  "evidence": {
+    "module": "WAMsgTransport.pb",
+    "matches": "name = \"MessageTransport.Protocol.Ancillary.BackupDirective\""
+  },
+  "literals": [
+    "BackupDirective"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAAsMessageTransport",
+      "WADecodeIncomingMsg",
+      "WAEncGroupMsg",
+      "WAEncNode",
+      "WAHandleAppdataMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

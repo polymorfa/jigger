@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebAiThreadTypeUtils","WAWebThreadUtils","WAWebThreadsMetadataIdUtils","WAWebWidToJid","nullthrows"],"dependents":["WAWebBulkCreateOrUpdateThreadsMetadata"],"dependent_count":1,"exports":[{"name":"getUpdatedThreadMetadataRecord","used_by":["WAWebBulkCreateOrUpdateThreadsMetadata"],"uses":1}]}

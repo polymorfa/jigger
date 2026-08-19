@@ -1,0 +1,1 @@
+{"deps":["WAWebAuraGating","WAWebFeatureFlagCollection"],"dependents":["WAWebSubscriptionsBridgeApi"],"dependent_count":1,"exports":[{"name":"initAuraBenefitFeatureFlagProvider","used_by":["WAWebSubscriptionsBridgeApi"],"uses":1}]}

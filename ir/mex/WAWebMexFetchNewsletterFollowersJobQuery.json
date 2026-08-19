@@ -1,0 +1,141 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterFollowersJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterFollowersJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27472091235714801",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_followers",
+        "ty": "XWA2NewsletterFollowersResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "followers",
+            "ty": "XWA2NewsletterFollowerConnection",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "edges",
+                "ty": "XWA2NewsletterFollowerEdge",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "node",
+                    "ty": "XWA2User",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "display_name",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "pn",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "username_info",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "__typename",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "... on XWA2Username",
+                            "kind": "InlineFragment",
+                            "selections": [
+                              {
+                                "name": "username",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "follow_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "role",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "admin_profile",
+                    "ty": "XWA2NewsletterAdminProfile",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "name",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "picture",
+                        "ty": "XWA2Picture",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "direct_path",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_followers",
+    "document": "# persisted document 27472091235714801\nquery MexFetchNewsletterFollowersJobQuery(\n  $input\n) {\n  xwa2_newsletter_followers(input: $input) {  # XWA2NewsletterFollowersResponse\n    followers {  # XWA2NewsletterFollowerConnection\n      edges {  # [XWA2NewsletterFollowerEdge]\n        node {  # XWA2User\n          id\n          display_name\n          pn\n          username_info {\n            __typename\n            ... on XWA2Username {\n              username\n            }\n          }\n        }\n        follow_time\n        role\n        admin_profile {  # XWA2NewsletterAdminProfile\n          id\n          name\n          picture {  # XWA2Picture\n            direct_path\n            id\n          }\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterFollowersJobQuery.graphql",
+    "matches": "id:\\s*\"27472091235714801\""
+  },
+  "literals": [
+    "27472091235714801",
+    "WAWebMexFetchNewsletterFollowersJobQuery",
+    "xwa2_newsletter_followers"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterFollowersJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

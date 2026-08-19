@@ -1,0 +1,60 @@
+{
+  "id": "mex:WAWebCanonicalHatchLinkedStatusGetQuery",
+  "kind": "mex",
+  "name": "WAWebCanonicalHatchLinkedStatusGetQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "35121461644169181",
+    "operation": "query",
+    "variables": [],
+    "selections": [
+      {
+        "name": "wa_genai_hatch_channel_metadata",
+        "ty": "WAGenAIHatchChannelMetadata",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "linked_status",
+            "ty": "WAGenAIHatchLinkedStatusResponse",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "has_channel",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "status",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "is_paired",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "channel_fbid",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 35121461644169181\nquery CanonicalHatchLinkedStatusGetQuery {\n  wa_genai_hatch_channel_metadata {  # WAGenAIHatchChannelMetadata\n    linked_status {  # WAGenAIHatchLinkedStatusResponse\n      has_channel\n      status\n      is_paired\n      channel_fbid\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebCanonicalHatchLinkedStatusGetQuery.graphql",
+    "matches": "id:\\s*\"35121461644169181\""
+  },
+  "literals": [
+    "35121461644169181",
+    "WAWebCanonicalHatchLinkedStatusGetQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCanonicalHatchLinkedStatusGetQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["I64","MAWMiActOnMiThreadExistsForJid__DO_NOT_USE"],"dependents":["MAWBridgeUIEventHandler","MAWPutMessagesToDB"],"dependent_count":2,"exports":[{"name":"call","used_by":["MAWBridgeUIEventHandler","MAWPutMessagesToDB"],"uses":2}]}

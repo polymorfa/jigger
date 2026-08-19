@@ -1,0 +1,1 @@
+{"deps":["Promise","WAIndexDBStorage","WAOpfsSyncStorage","WATestBenchmark","WAWebCacheStorage","asyncToGeneratorRuntime"],"dependents":["MAWDebug"],"dependent_count":1,"exports":[{"name":"runStorageBenchmark","used_by":["MAWDebug"],"uses":1}]}

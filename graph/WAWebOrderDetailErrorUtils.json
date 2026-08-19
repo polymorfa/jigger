@@ -1,0 +1,1 @@
+{"deps":["fbt","WATypeUtils","WAWebCurrencyUtils","WAWebOrderDetailMath","WAWebToast.react","WAWebToastManager","react","react-compiler-runtime"],"dependents":["WAWebOrderAdditionalChargesFormDrawer","WAWebOrderAdditionalChargesTextInput","WAWebOrderDetailAmountInput"],"dependent_count":3,"exports":[]}

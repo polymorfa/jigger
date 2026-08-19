@@ -1,0 +1,46 @@
+{
+  "id": "ab:unified_otp_copy_code_url",
+  "kind": "ab",
+  "name": "unified_otp_copy_code_url",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3827,
+    "type": "string",
+    "default": "https://www.whatsapp.com/otp/copy/",
+    "alt_default": "https://www.whatsapp.com/otp/copy/"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "unified_otp_copy_code_url:\\s*\\[\\s*3827"
+  },
+  "literals": [
+    "unified_otp_copy_code_url",
+    "3827"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebOTPHelper",
+      "WAWebOTPLoggingHelper"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

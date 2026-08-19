@@ -1,0 +1,1 @@
+{"deps":["WAWebSchemaMessageAssociation"],"dependents":["WAWebDBAssociatedMsgsAttachDetachAPI","WAWebDBMessageDelete"],"dependent_count":2,"exports":[{"name":"bulkGetMessagesByParentMsgKey","used_by":["WAWebDBAssociatedMsgsAttachDetachAPI","WAWebDBMessageDelete"],"uses":2}]}

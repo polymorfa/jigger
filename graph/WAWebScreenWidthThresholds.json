@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatListFiltersLabelsPill.react","WAWebLabelChatHeaderButton.react"],"dependent_count":2,"exports":[{"name":"NARROW_SCREEN_THRESHOLD","used_by":["WAWebChatListFiltersLabelsPill.react","WAWebLabelChatHeaderButton.react"],"uses":2}]}

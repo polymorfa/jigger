@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMessageNotification.react"],"dependent_count":2,"exports":[{"name":"DotTwoLoopsIntersectedIcon","used_by":["WAWebAllGeneratedIcons","WAWebMessageNotification.react"],"uses":2}]}

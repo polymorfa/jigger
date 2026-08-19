@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebMexClient","WAWebMexNewsletterAddPaidPartnershipLabelJobMutation.graphql","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterAddPaidPartnershipLabelJob"],"dependent_count":1,"exports":[{"name":"mexNewsletterAddPaidPartnershipLabelJob","used_by":["WAWebNewsletterAddPaidPartnershipLabelJob"],"uses":1}]}

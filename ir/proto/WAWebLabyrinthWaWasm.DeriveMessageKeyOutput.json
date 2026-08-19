@@ -1,0 +1,38 @@
+{
+  "id": "proto:WAWebLabyrinthWaWasm.DeriveMessageKeyOutput",
+  "kind": "proto",
+  "name": "WAWebLabyrinthWaWasm.DeriveMessageKeyOutput",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "error": {
+        "number": 2
+      },
+      "messageKey": {
+        "number": 1
+      }
+    },
+    "module": "WAWebLabyrinthWaWasm.pb"
+  },
+  "evidence": {
+    "module": "WAWebLabyrinthWaWasm.pb",
+    "matches": "name = \"DeriveMessageKeyOutput\""
+  },
+  "literals": [
+    "DeriveMessageKeyOutput"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebLabyrinthWasmCreateBackup",
+      "WAWebLabyrinthWasmDecryptMessage",
+      "WAWebLabyrinthWasmDeriveMessageKey",
+      "WAWebLabyrinthWasmEncryptMessage",
+      "WAWebLabyrinthWasmOrfThreadId"
+    ],
+    "dep_count": 1,
+    "dependent_count": 5
+  }
+}

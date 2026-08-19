@@ -1,0 +1,98 @@
+{
+  "id": "enum:DISCLOSURE_SUPPRESSION_REASON",
+  "kind": "enum",
+  "name": "DISCLOSURE_SUPPRESSION_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDisclosureSuppressionReason",
+    "variants": [
+      {
+        "name": "COOLDOWN_FROM_CTWA",
+        "value": 0.0
+      },
+      {
+        "name": "COOLDOWN_FROM_MM",
+        "value": 1.0
+      },
+      {
+        "name": "DISCLOSED",
+        "value": 2.0
+      },
+      {
+        "name": "OPT_OUT_TOS2016",
+        "value": 3.0
+      },
+      {
+        "name": "NO_SHOW_MM_DISCLOSURE_FLAG",
+        "value": 4.0
+      },
+      {
+        "name": "NOT_FROM_CAPI",
+        "value": 5.0
+      },
+      {
+        "name": "NOT_MARKETING_MESSAGE",
+        "value": 6.0
+      },
+      {
+        "name": "ABPROP_DISABLED",
+        "value": 7.0
+      },
+      {
+        "name": "OPT_OUT_TOS2021",
+        "value": 8.0
+      },
+      {
+        "name": "BODY_LINK_DISCLOSURE_AB_PROP_DISABLED",
+        "value": 9.0
+      },
+      {
+        "name": "ANOTHER_DIALOG_DISPLAYED",
+        "value": 10.0
+      },
+      {
+        "name": "EVENT_TYPE_AB_PROP_DISABLED",
+        "value": 11.0
+      },
+      {
+        "name": "BLOCKED",
+        "value": 12.0
+      },
+      {
+        "name": "ACCOUNT_LINKED",
+        "value": 13.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDisclosureSuppressionReason",
+    "matches": "DISCLOSURE_SUPPRESSION_REASON\\s*[:=]"
+  },
+  "literals": [
+    "DISCLOSURE_SUPPRESSION_REASON",
+    "COOLDOWN_FROM_CTWA",
+    "COOLDOWN_FROM_MM",
+    "DISCLOSED",
+    "OPT_OUT_TOS2016",
+    "NO_SHOW_MM_DISCLOSURE_FLAG",
+    "NOT_FROM_CAPI",
+    "NOT_MARKETING_MESSAGE",
+    "ABPROP_DISABLED",
+    "OPT_OUT_TOS2021",
+    "BODY_LINK_DISCLOSURE_AB_PROP_DISABLED",
+    "ANOTHER_DIALOG_DISPLAYED",
+    "EVENT_TYPE_AB_PROP_DISABLED",
+    "BLOCKED",
+    "ACCOUNT_LINKED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMmDisclosureStateEventWamEvent",
+      "WAWebMmDisclosureStateFsEventWamEvent",
+      "WAWebMmSignalSharingLoggingUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "iq:passive/set/active",
+  "kind": "iq",
+  "name": "PassiveModeActiveIQ",
+  "data": {
+    "kind": "iq",
+    "xmlns": "passive",
+    "type": "set",
+    "tags": [
+      "active"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "set",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "passive",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "active",
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxPassiveModeActiveIQRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInPassiveModeActiveIQResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "active",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutPassiveModeActiveIQRequest",
+    "matches": "smax\\(\"active\""
+  },
+  "literals": [
+    "passive",
+    "active"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxJsx",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxPassiveModeActiveIQRPC"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

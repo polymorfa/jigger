@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_meta_one_rollout_enabled",
+  "kind": "ab",
+  "name": "wa_meta_one_rollout_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28612,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_meta_one_rollout_enabled:\\s*\\[\\s*28612"
+  },
+  "literals": [
+    "wa_meta_one_rollout_enabled",
+    "28612"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

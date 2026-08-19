@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebRenderBizContentPlaceholderPreviewIcon"],"dependent_count":2,"exports":[{"name":"KeyIcon","used_by":["WAWebAllGeneratedIcons","WAWebRenderBizContentPlaceholderPreviewIcon"],"uses":2}]}

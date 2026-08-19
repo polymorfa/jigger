@@ -1,0 +1,42 @@
+{
+  "id": "enum:CHAT_ASSIGNMENT_ACTION_TYPE",
+  "kind": "enum",
+  "name": "CHAT_ASSIGNMENT_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChatAssignmentActionType",
+    "variants": [
+      {
+        "name": "ACTION_ASSIGNED",
+        "value": 0.0
+      },
+      {
+        "name": "ACTION_UNASSIGNED",
+        "value": 1.0
+      },
+      {
+        "name": "ACTION_REASSIGNED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChatAssignmentActionType",
+    "matches": "CHAT_ASSIGNMENT_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CHAT_ASSIGNMENT_ACTION_TYPE",
+    "ACTION_ASSIGNED",
+    "ACTION_UNASSIGNED",
+    "ACTION_REASSIGNED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatAssignmentLogEvents",
+      "WAWebMdChatAssignmentWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

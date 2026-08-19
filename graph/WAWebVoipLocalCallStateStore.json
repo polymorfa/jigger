@@ -1,0 +1,1 @@
+{"deps":["WAWebVoipWaCallEnums"],"dependents":["WAWebVoipHandleNativeCallEvent","WAWebVoipWebTransportConnectionManager"],"dependent_count":2,"exports":[{"name":"getLocalCallState","used_by":["WAWebVoipWebTransportConnectionManager"],"uses":1},{"name":"setLocalCallState","used_by":["WAWebVoipHandleNativeCallEvent"],"uses":1}]}

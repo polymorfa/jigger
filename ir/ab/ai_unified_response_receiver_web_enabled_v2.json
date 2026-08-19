@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_unified_response_receiver_web_enabled_v2",
+  "kind": "ab",
+  "name": "ai_unified_response_receiver_web_enabled_v2",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25929,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_unified_response_receiver_web_enabled_v2:\\s*\\[\\s*25929"
+  },
+  "literals": [
+    "ai_unified_response_receiver_web_enabled_v2",
+    "25929"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

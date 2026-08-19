@@ -1,0 +1,1 @@
+{"deps":["Promise","WABinary","WACryptoDependencies","WACryptoHkdf","WACryptoSha256","WAErrors","WANoiseSocket","WAResolvable","WATagsLogger","asyncToGeneratorRuntime"],"dependents":["WAOpenChatSocket","WAWebOpenChatSocket"],"dependent_count":2,"exports":[{"name":"NoiseHandshake","used_by":[],"uses":0}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:history_sync_on_demand_timeout_ms",
+  "kind": "ab",
+  "name": "history_sync_on_demand_timeout_ms",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3882,
+    "type": "int",
+    "default": "1e4",
+    "alt_default": "1e4"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "history_sync_on_demand_timeout_ms:\\s*\\[\\s*3882"
+  },
+  "literals": [
+    "history_sync_on_demand_timeout_ms",
+    "3882"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSendNonMessageDataRequest"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

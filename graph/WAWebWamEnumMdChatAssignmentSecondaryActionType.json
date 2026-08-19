@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatAssignmentLogEvents","WAWebMdChatAssignmentSecondaryActionWamEvent"],"dependent_count":2,"exports":[{"name":"MD_CHAT_ASSIGNMENT_SECONDARY_ACTION_TYPE","used_by":["WAWebChatAssignmentLogEvents","WAWebMdChatAssignmentSecondaryActionWamEvent"],"uses":2}]}

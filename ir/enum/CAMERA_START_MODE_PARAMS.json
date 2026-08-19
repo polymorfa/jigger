@@ -1,0 +1,46 @@
+{
+  "id": "enum:CAMERA_START_MODE_PARAMS",
+  "kind": "enum",
+  "name": "CAMERA_START_MODE_PARAMS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCameraStartModeParams",
+    "variants": [
+      {
+        "name": "DEFAULT",
+        "value": 0.0
+      },
+      {
+        "name": "CONSERVATIVE",
+        "value": 1.0
+      },
+      {
+        "name": "STRICT",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCameraStartModeParams",
+    "matches": "CAMERA_START_MODE_PARAMS\\s*[:=]"
+  },
+  "literals": [
+    "CAMERA_START_MODE_PARAMS",
+    "DEFAULT",
+    "CONSERVATIVE",
+    "STRICT",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebViewOnceSunset.react"],"dependent_count":2,"exports":[{"name":"ViewOnceSunsetIcon","used_by":["WAWebAllGeneratedIcons","WAWebViewOnceSunset.react"],"uses":2}]}

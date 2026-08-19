@@ -1,0 +1,41 @@
+{
+  "id": "enum:PAID_MESSAGING_USER_INTERACTIONS_MESSAGE_EXPAND_STATE",
+  "kind": "enum",
+  "name": "PAID_MESSAGING_USER_INTERACTIONS_MESSAGE_EXPAND_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsMessageExpandState",
+    "variants": [
+      {
+        "name": "NOT_APPLICABLE",
+        "value": 0.0
+      },
+      {
+        "name": "COLLAPSED",
+        "value": 1.0
+      },
+      {
+        "name": "EXPANDED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsMessageExpandState",
+    "matches": "PAID_MESSAGING_USER_INTERACTIONS_MESSAGE_EXPAND_STATE\\s*[:=]"
+  },
+  "literals": [
+    "PAID_MESSAGING_USER_INTERACTIONS_MESSAGE_EXPAND_STATE",
+    "NOT_APPLICABLE",
+    "COLLAPSED",
+    "EXPANDED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPaidMessagingUserInteractionsLoggerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

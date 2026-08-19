@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebHatchApprovalManager"],"dependents":["WAWebHandleHatchMetadataSync"],"dependent_count":1,"exports":[{"name":"handleHatchApproval","used_by":["WAWebHandleHatchMetadataSync"],"uses":1}]}

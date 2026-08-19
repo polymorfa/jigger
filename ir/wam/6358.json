@@ -1,0 +1,222 @@
+{
+  "id": "wam:6358",
+  "kind": "wam",
+  "name": "SearchUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 6358,
+    "fields": {
+      "searchDsSendContentType": {
+        "id": 32,
+        "type": "SEARCH_DS_SEND_CONTENT_TYPE",
+        "wire": "search_ds_send_content_type",
+        "enum_ref": "SEARCH_DS_SEND_CONTENT_TYPE"
+      },
+      "searchDsTimeSpentMs": {
+        "id": 33,
+        "type": "INTEGER",
+        "wire": "search_ds_time_spent_ms"
+      },
+      "searchFtsAndSemanticMessagesCount": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "search_fts_and_semantic_messages_count"
+      },
+      "searchFtsMessagesCount": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "search_fts_messages_count"
+      },
+      "searchHasSemanticSearchResults": {
+        "id": 23,
+        "type": "BOOLEAN",
+        "wire": "search_has_semantic_search_results"
+      },
+      "searchSelectedMessageSource": {
+        "id": 24,
+        "type": "SEARCH_SELECTED_MESSAGE_SOURCE",
+        "wire": "search_selected_message_source",
+        "enum_ref": "SEARCH_SELECTED_MESSAGE_SOURCE"
+      },
+      "searchSemanticMessagesCount": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "search_semantic_messages_count"
+      },
+      "searchSessionQueryId": {
+        "id": 26,
+        "type": "STRING",
+        "wire": "search_session_query_id"
+      },
+      "searchUjAiSuggestionCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "search_uj_ai_suggestion_count"
+      },
+      "searchUjBizCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "search_uj_biz_count"
+      },
+      "searchUjChatsCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "search_uj_chats_count"
+      },
+      "searchUjContactsCount": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "search_uj_contacts_count"
+      },
+      "searchUjCriteriaType": {
+        "id": 5,
+        "type": "SEARCH_UJ_CRITERIA_TYPE",
+        "wire": "search_uj_criteria_type",
+        "enum_ref": "SEARCH_UJ_CRITERIA_TYPE"
+      },
+      "searchUjDismissType": {
+        "id": 6,
+        "type": "SEARCH_UJ_DISMISS_TYPE",
+        "wire": "search_uj_dismiss_type",
+        "enum_ref": "SEARCH_UJ_DISMISS_TYPE"
+      },
+      "searchUjFilterCount": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "search_uj_filter_count"
+      },
+      "searchUjFilterType": {
+        "id": 8,
+        "type": "SEARCH_UJ_FILTER_TYPE",
+        "wire": "search_uj_filter_type",
+        "enum_ref": "SEARCH_UJ_FILTER_TYPE"
+      },
+      "searchUjGroupsInCommonCount": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "search_uj_groups_in_common_count"
+      },
+      "searchUjHasFuzzyResults": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "search_uj_has_fuzzy_results"
+      },
+      "searchUjInviteCount": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "search_uj_invite_count"
+      },
+      "searchUjItemType": {
+        "id": 11,
+        "type": "SEARCH_UJ_ITEM_TYPE",
+        "wire": "search_uj_item_type",
+        "enum_ref": "SEARCH_UJ_ITEM_TYPE"
+      },
+      "searchUjMessagesCount": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "search_uj_messages_count"
+      },
+      "searchUjPushnamesCount": {
+        "id": 34,
+        "type": "INTEGER",
+        "wire": "search_uj_pushnames_count"
+      },
+      "searchUjRecentSearchesGroupCount": {
+        "id": 29,
+        "type": "INTEGER",
+        "wire": "search_uj_recent_searches_group_count"
+      },
+      "searchUjRecentSearchesIndividualCount": {
+        "id": 30,
+        "type": "INTEGER",
+        "wire": "search_uj_recent_searches_individual_count"
+      },
+      "searchUjResultCount": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "search_uj_result_count"
+      },
+      "searchUjSelectedItemRank": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "search_uj_selected_item_rank"
+      },
+      "searchUniqueSessionId": {
+        "id": 27,
+        "type": "STRING",
+        "wire": "search_unique_session_id"
+      },
+      "searchUseCase": {
+        "id": 15,
+        "type": "SEARCH_USE_CASE",
+        "wire": "search_use_case",
+        "enum_ref": "SEARCH_USE_CASE"
+      },
+      "searchUserJourneyAction": {
+        "id": 16,
+        "type": "SEARCH_USER_JOURNEY_ACTION",
+        "wire": "search_user_journey_action",
+        "enum_ref": "SEARCH_USER_JOURNEY_ACTION"
+      },
+      "selectedMessageDistance": {
+        "id": 28,
+        "type": "NUMBER",
+        "wire": "selected_message_distance"
+      },
+      "uiSurface": {
+        "id": 17,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 18,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyEventMs": {
+        "id": 19,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "userJourneyFunnelId": {
+        "id": 20,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSearchUserJourneyWamEvent",
+    "matches": "SearchUserJourney:\\s*\\[\\s*6358"
+  },
+  "literals": [
+    "6358"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumSearchDsSendContentType",
+      "WAWebWamEnumSearchSelectedMessageSource",
+      "WAWebWamEnumSearchUjCriteriaType",
+      "WAWebWamEnumSearchUjDismissType",
+      "WAWebWamEnumSearchUjFilterType",
+      "WAWebWamEnumSearchUjItemType",
+      "WAWebWamEnumSearchUseCase",
+      "WAWebWamEnumSearchUserJourneyAction",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebSearchUserJourneyLogger"
+    ],
+    "dep_count": 10,
+    "dependent_count": 1
+  }
+}

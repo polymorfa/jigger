@@ -1,0 +1,45 @@
+{
+  "id": "ab:calls_tab_username_global_search_enabled",
+  "kind": "ab",
+  "name": "calls_tab_username_global_search_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 17698,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "calls_tab_username_global_search_enabled:\\s*\\[\\s*17698"
+  },
+  "literals": [
+    "calls_tab_username_global_search_enabled",
+    "17698"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipCallsTabDrawer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

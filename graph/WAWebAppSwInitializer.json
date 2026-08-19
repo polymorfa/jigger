@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebABProps","WAWebEnvironment","WAWebFeatureDetectionSwSupport","WAWebPwaDocumentMetadataUtils","WAWebSwUpdater","WAWebUA","asyncToGeneratorRuntime","getErrorSafe","gkx"],"dependents":["WAWebAppBootstrap"],"dependent_count":1,"exports":[{"name":"initializeSw","used_by":["WAWebAppBootstrap"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebDailyAggregatedStatsCollection"],"dependents":["WAWebChatCollection","WAWebChatLockSettings","WAWebChatLockWAMUtils"],"dependent_count":3,"exports":[{"name":"updateChatLockDailyStats","used_by":["WAWebChatCollection","WAWebChatLockSettings","WAWebChatLockWAMUtils"],"uses":3}]}

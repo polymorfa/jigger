@@ -1,0 +1,42 @@
+{
+  "id": "ab:companion_contact_refresh_receiver",
+  "kind": "ab",
+  "name": "companion_contact_refresh_receiver",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33635,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "companion_contact_refresh_receiver:\\s*\\[\\s*33635"
+  },
+  "literals": [
+    "companion_contact_refresh_receiver",
+    "33635"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

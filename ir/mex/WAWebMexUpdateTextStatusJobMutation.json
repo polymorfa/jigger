@@ -1,0 +1,53 @@
+{
+  "id": "mex:WAWebMexUpdateTextStatusJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexUpdateTextStatusJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9152604461510864",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_update_text_status",
+        "ty": "XWA2TextStatusMutationResponse",
+        "args": [
+          "text_status_input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "result",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_update_text_status",
+    "document": "# persisted document 9152604461510864\nmutation MexUpdateTextStatusJobMutation(\n  $input\n) {\n  xwa2_update_text_status(text_status_input: $input) {  # XWA2TextStatusMutationResponse\n    result\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexUpdateTextStatusJobMutation.graphql",
+    "matches": "id:\\s*\"9152604461510864\""
+  },
+  "literals": [
+    "9152604461510864",
+    "WAWebMexUpdateTextStatusJobMutation",
+    "xwa2_update_text_status"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexUpdateTextStatusJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

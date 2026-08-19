@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWMediaPreProcessQpl"],"dependent_count":1,"exports":[{"name":"getMemClass","used_by":["MAWMediaPreProcessQpl"],"uses":1},{"name":"getNumCpu","used_by":["MAWMediaPreProcessQpl"],"uses":1},{"name":"readCpuPerformanceClass","used_by":["MAWMediaPreProcessQpl"],"uses":1}]}

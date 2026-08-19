@@ -1,0 +1,75 @@
+{
+  "id": "wam:6036",
+  "kind": "wam",
+  "name": "ChatThemeScreen",
+  "data": {
+    "kind": "wam",
+    "event_id": 6036,
+    "fields": {
+      "appearanceType": {
+        "id": 1,
+        "type": "DEVICE_APPEARANCE_TYPE",
+        "wire": "appearance_type",
+        "enum_ref": "DEVICE_APPEARANCE_TYPE"
+      },
+      "chatThemeChangeApplied": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "chat_theme_change_applied"
+      },
+      "chatThemeId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "chat_theme_id"
+      },
+      "chatThemeSource": {
+        "id": 4,
+        "type": "CHAT_THEME_ENTRY_TYPE",
+        "wire": "chat_theme_source",
+        "enum_ref": "CHAT_THEME_ENTRY_TYPE"
+      },
+      "chatWallpaperType": {
+        "id": 5,
+        "type": "CHAT_WALLPAPER_TYPE",
+        "wire": "chat_wallpaper_type",
+        "enum_ref": "CHAT_WALLPAPER_TYPE"
+      },
+      "colorSchemeId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "color_scheme_id"
+      },
+      "wallpaperId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "wallpaper_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatThemeScreenWamEvent",
+    "matches": "ChatThemeScreen:\\s*\\[\\s*6036"
+  },
+  "literals": [
+    "6036"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatThemeEntryType",
+      "WAWebWamEnumChatWallpaperType",
+      "WAWebWamEnumDeviceAppearanceType"
+    ],
+    "dependents": [
+      "WAWebChatThemeLogger"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

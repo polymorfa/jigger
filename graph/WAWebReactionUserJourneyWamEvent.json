@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumMediaType","WAWebWamEnumMessageType","WAWebWamEnumReactionUserJourneyAction","WAWebWamEnumReactionUserJourneyEntryPoint","WAWebWamEnumTsSurface","WAWebWamEnumUserJourneyChatType"],"dependents":["WAWebReactionUserJourneyLogger"],"dependent_count":1,"exports":[{"name":"ReactionUserJourneyWamEvent","used_by":[],"uses":0}]}

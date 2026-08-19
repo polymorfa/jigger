@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WALogger","WAWebLazyLoadedRetriable","WAWebLoadable","WAWebVoipGatingUtils","asyncToGeneratorRuntime","react","react-compiler-runtime"],"dependents":["WAWebNavigationBar.react"],"dependent_count":1,"exports":[{"name":"CallsNavBarItemLoadable","used_by":["WAWebNavigationBar.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAJobOrchestratorTypes","WAWebMexDemoteNewsletterAdminJob","WAWebOrchestratorNonPersistedJob","asyncToGeneratorRuntime"],"dependents":["WAWebDemoteNewsletterAdminAction"],"dependent_count":1,"exports":[{"name":"demoteNewsletterAdmin","used_by":["WAWebDemoteNewsletterAdminAction"],"uses":1}]}

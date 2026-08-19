@@ -1,0 +1,1 @@
+{"deps":["WAFlowsCaretUtils","WAFlowsUseForwardRef","asyncToGeneratorRuntime","react","stylex","throttle","useThrottled"],"dependents":["WAFlowsScrollable.react","WDSNativeImageCarousel.react"],"dependent_count":2,"exports":[{"name":"WDSNativeScrollable","used_by":["WAFlowsScrollable.react","WDSNativeImageCarousel.react"],"uses":2}]}

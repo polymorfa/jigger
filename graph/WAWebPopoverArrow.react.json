@@ -1,0 +1,1 @@
+{"deps":["WAWebPopoverPosition","WAWebTriangle.react","react","react-compiler-runtime"],"dependents":["WAWebPopover.react"],"dependent_count":1,"exports":[{"name":"PopoverArrow","used_by":["WAWebPopover.react"],"uses":1},{"name":"PopoverAlignment","used_by":[],"uses":0},{"name":"PopoverPosition","used_by":[],"uses":0}]}

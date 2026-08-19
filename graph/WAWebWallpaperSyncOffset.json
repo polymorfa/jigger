@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebSettingsSyncBridge","WAWebWallpaper"],"dependent_count":2,"exports":[{"name":"SOLID_PALETTE_WALLPAPER_ID_OFFSET","used_by":["WAWebWallpaper"],"uses":1},{"name":"stripWallpaperSyncOffset","used_by":["WAWebSettingsSyncBridge"],"uses":1}]}

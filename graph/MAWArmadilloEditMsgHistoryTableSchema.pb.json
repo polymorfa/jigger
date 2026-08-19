@@ -1,0 +1,1 @@
+{"deps":["MAWArmadilloMessagesTableSchema.pb","WAProtoConst"],"dependents":["MAWDbObjDecode","MAWDbObjEncode"],"dependent_count":2,"exports":[{"name":"EditMsgHistoryTableSchemaProtoSpec","used_by":["MAWDbObjDecode","MAWDbObjEncode"],"uses":2}]}

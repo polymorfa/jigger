@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAWebProtobufsWa6.HandshakeMessage.ClientFinish",
+  "kind": "proto",
+  "name": "WAWebProtobufsWa6.HandshakeMessage.ClientFinish",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "extendedCiphertext": {
+        "number": 3
+      },
+      "paddedBytes": {
+        "number": 4
+      },
+      "payload": {
+        "number": 2
+      },
+      "simulateXxkemFs": {
+        "number": 5
+      },
+      "static": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsWa6.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsWa6.pb",
+    "matches": "name = \"HandshakeMessage.ClientFinish\""
+  },
+  "literals": [
+    "ClientFinish"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebClientPayloadReleaseChannel",
+      "WAWebCommonSocketPlatformDetails",
+      "WAWebOpenChatSocket",
+      "WAWebWorkerClientPayload"
+    ],
+    "dep_count": 2,
+    "dependent_count": 5
+  }
+}

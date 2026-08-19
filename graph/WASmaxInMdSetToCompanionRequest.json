@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInMdBaseIQSetRequestMixin","WASmaxParseJid","WASmaxParseUtils"],"dependents":["WASmaxMdSetToCompanionRPC"],"dependent_count":1,"exports":[{"name":"parseSetToCompanionRequest","used_by":["WASmaxMdSetToCompanionRPC"],"uses":1},{"name":"parseSetToCompanionRequestPairDeviceRef","used_by":[],"uses":0}]}

@@ -1,0 +1,94 @@
+{
+  "id": "wam:7054",
+  "kind": "wam",
+  "name": "PsFmxAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 7054,
+    "fields": {
+      "commonGroupNum": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "common_group_num"
+      },
+      "countryShown": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "country_shown"
+      },
+      "fmxEntryPoint": {
+        "id": 3,
+        "type": "FMX_ENTRY_POINT",
+        "wire": "fmx_entry_point",
+        "enum_ref": "FMX_ENTRY_POINT"
+      },
+      "fmxEvent": {
+        "id": 4,
+        "type": "FMX_EVENT",
+        "wire": "fmx_event",
+        "enum_ref": "FMX_EVENT"
+      },
+      "highlightGroupType": {
+        "id": 5,
+        "type": "HIGHLIGHT_GROUP_TYPE",
+        "wire": "highlight_group_type",
+        "enum_ref": "HIGHLIGHT_GROUP_TYPE"
+      },
+      "isDifferentCountry": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "is_different_country"
+      },
+      "isSenderSmb": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "is_sender_smb"
+      },
+      "isSuspiciousFmx": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_suspicious_fmx"
+      },
+      "newAccountShown": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "new_account_shown"
+      },
+      "notAContactShown": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "not_a_contact_shown"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsFmxActionWamEvent",
+    "matches": "PsFmxAction:\\s*\\[\\s*7054"
+  },
+  "literals": [
+    "7054"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumFmxEntryPoint",
+      "WAWebWamEnumFmxEvent",
+      "WAWebWamEnumHighlightGroupType"
+    ],
+    "dependents": [
+      "WAWebContactInfoCard.react",
+      "WAWebCreateChat",
+      "WAWebSafetyToolsModal.react",
+      "WAWebWamProcessWorkerData",
+      "useWAWebChatOpenMetrics"
+    ],
+    "dep_count": 4,
+    "dependent_count": 5
+  }
+}

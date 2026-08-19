@@ -1,0 +1,1 @@
+{"deps":["WAComms","WASmaxInReceiptPublishPeerReadResponseSuccess","WASmaxOutReceiptPublishPeerReadRequest","WASmaxParsingFailure","WASmaxRpcUtils","asyncToGeneratorRuntime"],"dependents":["WAHandlePeerMessageProtocol"],"dependent_count":1,"exports":[{"name":"sendPublishPeerReadRPC","used_by":["WAHandlePeerMessageProtocol"],"uses":1}]}

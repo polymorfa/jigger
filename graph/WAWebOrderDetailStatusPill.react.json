@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebAlertErrorIcon.react","WAWebLocalShippingIcon.react","WAWebOrderStatus","WAWebStatusClockIcon.react","WAWebText.react","WDSIconIcCheckCircleFilled.react","WDSIconWdsIcCurrencyRealFilled.react","WDSMargins.stylex","WDSPaddings.stylex","react","react-compiler-runtime"],"dependents":["WAWebOrderDetailDrawerContainer.react"],"dependent_count":1,"exports":[]}

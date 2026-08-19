@@ -1,0 +1,1 @@
+{"deps":["WAWebAiThreadComparator","WAWebAiThreadModel","WAWebChatCollection","WAWebCollection","WAWebMsgKey","WAWebThreadMetadataJob","WAWebWidToJid","asyncToGeneratorRuntime"],"dependents":["WAWebBotFrontendUtils","WAWebChatModel","WAWebThreadBridgeApi","useWAWebAiThreads"],"dependent_count":4,"exports":[{"name":"AiThreadCollection","used_by":[],"uses":0}]}

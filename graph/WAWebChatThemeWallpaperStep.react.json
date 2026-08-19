@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatInfoDrawerRow.react","WAWebDrawerBody.react","WAWebDrawerHeader.react","WAWebDrawerSection.react","WDSIconIcColorize.react","WDSIconIcRefresh.react","WDSMenuBarItem.react","react","react-compiler-runtime"],"dependents":["WAWebChatThemeDrawer.react"],"dependent_count":1,"exports":[]}

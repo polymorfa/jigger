@@ -1,0 +1,1 @@
+{"deps":["WASmaxChildren","WASmaxJsx","WASmaxMixins","WASmaxOutMessagePublishBeneficiaryMixin"],"dependents":["WASmaxOutMessagePublishOrderInPaymentMixin"],"dependent_count":1,"exports":[{"name":"mergeBeneficiariesMixin","used_by":["WASmaxOutMessagePublishOrderInPaymentMixin"],"uses":1},{"name":"makeBeneficiariesBeneficiary","used_by":[],"uses":0}]}

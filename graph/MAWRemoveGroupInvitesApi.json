@@ -1,0 +1,1 @@
+{"deps":["MAWDbGroupInviteTxns","MAWIndexedDb","MAWTransactionMode","WALogger"],"dependents":["MAWAcceptGroupInvite"],"dependent_count":1,"exports":[{"name":"removeGroupInvites","used_by":["MAWAcceptGroupInvite"],"uses":1}]}

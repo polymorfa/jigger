@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WAWebLazyLoadedRetriable","WAWebLoadingDrawer.react","asyncToGeneratorRuntime","react","react-loadable"],"dependents":["useWAWebConversationPanelChatActionListeners"],"dependent_count":1,"exports":[{"name":"MerchantDetailsDrawerLoadable","used_by":["useWAWebConversationPanelChatActionListeners"],"uses":1}]}

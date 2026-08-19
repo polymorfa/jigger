@@ -1,0 +1,1 @@
+{"deps":["WAWebDebugCommandCollection","useWAWebCollectionValues"],"dependents":["WAWebChatDebugCommand.react","WAWebDebugCommandsPluginResult.react"],"dependent_count":2,"exports":[{"name":"useDebugCommandValues","used_by":["WAWebChatDebugCommand.react","WAWebDebugCommandsPluginResult.react"],"uses":2}]}

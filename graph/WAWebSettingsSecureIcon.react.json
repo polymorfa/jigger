@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebNewsletterIntegrityDrawerUiComponents.react"],"dependent_count":2,"exports":[{"name":"SettingsSecureIcon","used_by":["WAWebAllGeneratedIcons","WAWebNewsletterIntegrityDrawerUiComponents.react"],"uses":2}]}

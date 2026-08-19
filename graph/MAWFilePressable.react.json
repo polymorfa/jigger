@@ -1,0 +1,1 @@
+{"deps":["CometErrorBoundary.react","FBLogger","I64","MAWAttachmentBlob.react","MWChatMessageId","MWFileUtils","MWXPressable.react","goUriOnNewWindow","react","react-compiler-runtime","useMWFileOnPress"],"dependents":["MAWChatFile.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

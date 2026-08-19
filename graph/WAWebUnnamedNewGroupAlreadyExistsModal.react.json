@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatEntryPoint","WAWebCmd","WAWebComposeBoxActions","WAWebConfirmPopup.react","WAWebFindChatAction","react","react-compiler-runtime"],"dependents":["WAWebNewGroupParticipantsDrawer.react"],"dependent_count":1,"exports":[]}

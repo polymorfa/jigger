@@ -1,0 +1,186 @@
+{
+  "id": "wam:6554",
+  "kind": "wam",
+  "name": "MmSignalSharingVerificationEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 6554,
+    "fields": {
+      "accountLinked": {
+        "id": 28,
+        "type": "BOOLEAN",
+        "wire": "account_linked"
+      },
+      "businessLidOrJid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "business_lid_or_jid"
+      },
+      "collectionWindowId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "collection_window_id"
+      },
+      "consentSource": {
+        "id": 29,
+        "type": "CONSENT_SOURCE",
+        "wire": "consent_source",
+        "enum_ref": "CONSENT_SOURCE"
+      },
+      "deltaTimeReceived": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "delta_time_received"
+      },
+      "entSourceSubplatform": {
+        "id": 17,
+        "type": "STRING",
+        "wire": "ent_source_subplatform"
+      },
+      "isCompanionDevice": {
+        "id": 16,
+        "type": "BOOLEAN",
+        "wire": "is_companion_device"
+      },
+      "isIabRestore": {
+        "id": 22,
+        "type": "BOOLEAN",
+        "wire": "is_iab_restore"
+      },
+      "isLatestConversionToken": {
+        "id": 24,
+        "type": "BOOLEAN",
+        "wire": "is_latest_conversion_token"
+      },
+      "isNetworkAvailable": {
+        "id": 20,
+        "type": "BOOLEAN",
+        "wire": "is_network_available"
+      },
+      "isShimmingSignal": {
+        "id": 21,
+        "type": "BOOLEAN",
+        "wire": "is_shimming_signal"
+      },
+      "isUserDisclosed": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_user_disclosed"
+      },
+      "mmConversationDepth": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "mm_conversation_depth"
+      },
+      "mmConversationRepeat": {
+        "id": 26,
+        "type": "INTEGER",
+        "wire": "mm_conversation_repeat"
+      },
+      "mmDirectionFrom": {
+        "id": 27,
+        "type": "MM_DIRECTION_FROM",
+        "wire": "mm_direction_from",
+        "enum_ref": "MM_DIRECTION_FROM"
+      },
+      "onePdSignalNotSharedReason": {
+        "id": 5,
+        "type": "ONE_PD_SIGNAL_NOT_SHARED_REASON",
+        "wire": "one_pd_signal_not_shared_reason",
+        "enum_ref": "ONE_PD_SIGNAL_NOT_SHARED_REASON"
+      },
+      "signalCanceledReason": {
+        "id": 6,
+        "type": "SIGNAL_CANCELED_REASON",
+        "wire": "signal_canceled_reason",
+        "enum_ref": "SIGNAL_CANCELED_REASON"
+      },
+      "signalMessageState": {
+        "id": 7,
+        "type": "SIGNAL_MESSAGE_STATE",
+        "wire": "signal_message_state",
+        "enum_ref": "SIGNAL_MESSAGE_STATE"
+      },
+      "signalMessageType": {
+        "id": 8,
+        "type": "SIGNAL_MESSAGE_TYPE",
+        "wire": "signal_message_type",
+        "enum_ref": "SIGNAL_MESSAGE_TYPE"
+      },
+      "signalOrigin": {
+        "id": 9,
+        "type": "SIGNAL_ORIGIN",
+        "wire": "signal_origin",
+        "enum_ref": "SIGNAL_ORIGIN"
+      },
+      "signalSharingStatus": {
+        "id": 10,
+        "type": "SIGNAL_SHARING_STATUS",
+        "wire": "signal_sharing_status",
+        "enum_ref": "SIGNAL_SHARING_STATUS"
+      },
+      "signalSurface": {
+        "id": 11,
+        "type": "SIGNAL_SURFACE",
+        "wire": "signal_surface",
+        "enum_ref": "SIGNAL_SURFACE"
+      },
+      "signalType": {
+        "id": 12,
+        "type": "SIGNAL_TYPE",
+        "wire": "signal_type",
+        "enum_ref": "SIGNAL_TYPE"
+      },
+      "signalTypeOrigin": {
+        "id": 23,
+        "type": "STRING",
+        "wire": "signal_type_origin"
+      },
+      "spSignalNotSharedReason": {
+        "id": 13,
+        "type": "SP_SIGNAL_NOT_SHARED_REASON",
+        "wire": "sp_signal_not_shared_reason",
+        "enum_ref": "SP_SIGNAL_NOT_SHARED_REASON"
+      },
+      "templateId": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "template_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebMmSignalSharingVerificationEventWamEvent",
+    "matches": "MmSignalSharingVerificationEvent:\\s*\\[\\s*6554"
+  },
+  "literals": [
+    "6554"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumConsentSource",
+      "WAWebWamEnumMmDirectionFrom",
+      "WAWebWamEnumOnePdSignalNotSharedReason",
+      "WAWebWamEnumSignalCanceledReason",
+      "WAWebWamEnumSignalMessageState",
+      "WAWebWamEnumSignalMessageType",
+      "WAWebWamEnumSignalOrigin",
+      "WAWebWamEnumSignalSharingStatus",
+      "WAWebWamEnumSignalSurface",
+      "WAWebWamEnumSignalType",
+      "WAWebWamEnumSpSignalNotSharedReason"
+    ],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils"
+    ],
+    "dep_count": 12,
+    "dependent_count": 1
+  }
+}

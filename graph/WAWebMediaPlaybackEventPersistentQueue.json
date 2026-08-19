@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAThrottle","WAWebCRUDOperationsMediaPlaybackEvent","WAWebPromiseQueue"],"dependents":["WAWebMediaPlaybackEventLogger"],"dependent_count":1,"exports":[{"name":"addToQueue","used_by":["WAWebMediaPlaybackEventLogger"],"uses":1},{"name":"WRITE_THROTTLE_INTERVAL","used_by":[],"uses":0},{"name":"writePromiseQueue","used_by":[],"uses":0}]}

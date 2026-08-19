@@ -1,0 +1,1 @@
+{"deps":["MAWBridgeXMA","MAWDbChunkTxns","MAWDexieTable","MAWIndexedDb"],"dependents":["MAWHandleMediaDownloadApi","MAWSendXMAShareMsgUtils","MAWWriteXMAMessageTxns"],"dependent_count":3,"exports":[{"name":"checkMediaChunkAndHandleXmaAfterTransaction","used_by":["MAWHandleMediaDownloadApi","MAWSendXMAShareMsgUtils","MAWWriteXMAMessageTxns"],"uses":3}]}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCurrencyUtils","WAWebEmojiText.react","WAWebFlex.react","WAWebMsgGetters","WAWebStylexVars.stylex","WDSIconIcShoppingCart.react","WDSMargins.stylex","WDSPaddings.stylex","WDSVars.stylex","react","react-compiler-runtime"],"dependents":["WAWebMessageBizOrder","WAWebQuotedMsgContent.react"],"dependent_count":2,"exports":[]}

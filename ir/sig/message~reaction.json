@@ -1,0 +1,32 @@
+{
+  "id": "sig:message/reaction",
+  "kind": "sig",
+  "name": "MessageDeliverNewsletterReactionMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "reaction"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverNewsletterReactionMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "reaction"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMessageDeliverContentTypeReactionMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverNewsletterMessageFanoutContent"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

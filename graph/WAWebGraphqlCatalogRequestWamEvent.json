@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumBusinessType","WAWebWamEnumGraphqlCatalogEndpoint","WAWebWamEnumGraphqlRequestResult"],"dependents":["WAWebCatalogEventLogger","WAWebWamProcessWorkerData"],"dependent_count":2,"exports":[{"name":"GraphqlCatalogRequestWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

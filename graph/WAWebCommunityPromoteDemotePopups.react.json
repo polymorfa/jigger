@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebEmojiText.react","WAWebFrontendContactGetters","WAWebModalManager","WAWebText_DONOTUSE.react","react","react-compiler-runtime"],"dependents":["WAWebCommunityAdminPromotionNotificationFlow.react","WAWebOpenCommunityParticipantDemoteConfirmation","WAWebOpenCommunityParticipantPromoteConfirmation"],"dependent_count":3,"exports":[]}

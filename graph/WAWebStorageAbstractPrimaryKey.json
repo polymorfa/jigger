@@ -1,0 +1,1 @@
+{"deps":["invariant","WAWebStorageMutation","err"],"dependents":["WAWebStorageAutoIncrementingPrimaryKey","WAWebStorageCompositePrimaryKey","WAWebStorageUserDefinedPrimaryKey"],"dependent_count":3,"exports":[]}

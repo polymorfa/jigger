@@ -1,0 +1,42 @@
+{
+  "id": "ab:fmx_persistent_country_trust_signal_enabled",
+  "kind": "ab",
+  "name": "fmx_persistent_country_trust_signal_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33926,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "fmx_persistent_country_trust_signal_enabled:\\s*\\[\\s*33926"
+  },
+  "literals": [
+    "fmx_persistent_country_trust_signal_enabled",
+    "33926"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

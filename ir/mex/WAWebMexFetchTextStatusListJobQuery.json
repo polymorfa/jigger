@@ -1,0 +1,77 @@
+{
+  "id": "mex:WAWebMexFetchTextStatusListJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchTextStatusListJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24072923595647473",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_text_status_list",
+        "ty": "XWA2TextStatus",
+        "plural": true,
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "jid",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "text",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "last_update_time",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "ephemeral_duration_sec",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "emoji",
+            "ty": "XWA2TextStatusEmoji",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "content",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_text_status_list",
+    "document": "# persisted document 24072923595647473\nquery MexFetchTextStatusListJobQuery(\n  $input\n) {\n  xwa2_text_status_list(input: $input) {  # [XWA2TextStatus]\n    jid\n    text\n    last_update_time\n    ephemeral_duration_sec\n    emoji {  # XWA2TextStatusEmoji\n      content\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchTextStatusListJobQuery.graphql",
+    "matches": "id:\\s*\"24072923595647473\""
+  },
+  "literals": [
+    "24072923595647473",
+    "WAWebMexFetchTextStatusListJobQuery",
+    "xwa2_text_status_list"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchTextStatusListJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

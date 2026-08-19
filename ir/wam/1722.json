@@ -1,0 +1,160 @@
+{
+  "id": "wam:1722",
+  "kind": "wam",
+  "name": "CatalogBiz",
+  "data": {
+    "kind": "wam",
+    "event_id": 1722,
+    "fields": {
+      "adId": {
+        "id": 19,
+        "type": "STRING",
+        "wire": "ad_id"
+      },
+      "cartToggle": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "cart_toggle"
+      },
+      "catalogAppealReason": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "catalog_appeal_reason"
+      },
+      "catalogBizAction": {
+        "id": 1,
+        "type": "CATALOG_BIZ_ACTION",
+        "wire": "catalog_biz_action",
+        "enum_ref": "CATALOG_BIZ_ACTION"
+      },
+      "catalogEntryPoint": {
+        "id": 7,
+        "type": "CATALOG_ENTRY_POINT",
+        "wire": "catalog_entry_point",
+        "enum_ref": "CATALOG_ENTRY_POINT"
+      },
+      "catalogSessionId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "catalog_session_id"
+      },
+      "collectionCount": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "collection_count"
+      },
+      "collectionId": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "collection_id"
+      },
+      "collectionIndex": {
+        "id": 15,
+        "type": "STRING",
+        "wire": "collection_index"
+      },
+      "deepLinkOpenFrom": {
+        "id": 8,
+        "type": "DEEP_LINK_OPEN_FROM",
+        "wire": "deep_link_open_from",
+        "enum_ref": "DEEP_LINK_OPEN_FROM"
+      },
+      "entryPointConversionSource": {
+        "id": 20,
+        "type": "STRING",
+        "wire": "entry_point_conversion_source"
+      },
+      "errorCode": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "error_code"
+      },
+      "extraAttributes": {
+        "id": 24,
+        "type": "STRING",
+        "wire": "extra_attributes"
+      },
+      "isOrderMsgAttached": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "is_order_msg_attached"
+      },
+      "lastMessageDirection": {
+        "id": 21,
+        "type": "LAST_MESSAGE_DIRECTION",
+        "wire": "last_message_direction",
+        "enum_ref": "LAST_MESSAGE_DIRECTION"
+      },
+      "messageDepth": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "message_depth"
+      },
+      "orderId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "order_id"
+      },
+      "productCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "product_count"
+      },
+      "productId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "product_id"
+      },
+      "productIds": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "product_ids"
+      },
+      "productIndex": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "product_index"
+      },
+      "quantity": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "quantity"
+      },
+      "threadIdHmac": {
+        "id": 23,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCatalogBizWamEvent",
+    "matches": "CatalogBiz:\\s*\\[\\s*1722"
+  },
+  "literals": [
+    "1722"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCatalogBizAction",
+      "WAWebWamEnumCatalogEntryPoint",
+      "WAWebWamEnumDeepLinkOpenFrom",
+      "WAWebWamEnumLastMessageDirection"
+    ],
+    "dependents": [
+      "WAWebCartLogEvents",
+      "WAWebProductCatalogEventUtils",
+      "WAWebProductCatalogLogEvents",
+      "WAWebProductCollectionLogEvents"
+    ],
+    "dep_count": 5,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "enum:ENUM_DARK_LIGHT",
+  "kind": "enum",
+  "name": "ENUM_DARK_LIGHT",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBotEnums",
+    "variants": [
+      {
+        "name": "dark",
+        "value": "dark"
+      },
+      {
+        "name": "light",
+        "value": "light"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBotEnums",
+    "matches": "ENUM_DARK_LIGHT\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_DARK_LIGHT",
+    "dark",
+    "light"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBotBotListResponseSuccessV2",
+      "WASmaxInBotBotListResponseSuccessV3"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

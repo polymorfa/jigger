@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebAck","WAWebDBPollsUpsertVotes","WAWebPollsPollVoteCollection","WAWebPollsVotesSchema","asyncToGeneratorRuntime"],"dependents":["WAWebMsgSendFailIcon.react"],"dependent_count":1,"exports":[{"name":"restoreLastSuccessfulVote","used_by":["WAWebMsgSendFailIcon.react"],"uses":1}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:search_the_web_url_offer",
+  "kind": "ab",
+  "name": "search_the_web_url_offer",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8473,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "search_the_web_url_offer:\\s*\\[\\s*8473"
+  },
+  "literals": [
+    "search_the_web_url_offer",
+    "8473"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSTWGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

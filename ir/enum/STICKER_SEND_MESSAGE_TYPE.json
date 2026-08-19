@@ -1,0 +1,42 @@
+{
+  "id": "enum:STICKER_SEND_MESSAGE_TYPE",
+  "kind": "enum",
+  "name": "STICKER_SEND_MESSAGE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStickerSendMessageType",
+    "variants": [
+      {
+        "name": "REGULAR",
+        "value": 1.0
+      },
+      {
+        "name": "PAYMENTS",
+        "value": 2.0
+      },
+      {
+        "name": "ANNOTATION",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStickerSendMessageType",
+    "matches": "STICKER_SEND_MESSAGE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STICKER_SEND_MESSAGE_TYPE",
+    "REGULAR",
+    "PAYMENTS",
+    "ANNOTATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStickerErrorWamEvent",
+      "WAWebStickerSendWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

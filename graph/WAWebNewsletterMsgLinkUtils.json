@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebCopyToClipboard","WAWebFrontendMsgGetters","WAWebToast.react","WAWebToastManager","react"],"dependents":["WAWebMessageWrapper.react","WAWebMultiSelectBar.react","WAWebNewsletterChatMenuDropdown.react","WAWebNewsletterContextMenu"],"dependent_count":4,"exports":[]}

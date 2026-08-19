@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebPathfinderLogger"],"dependent_count":1,"exports":[{"name":"RESERVED_METADATA_KEYS","used_by":["WAWebPathfinderLogger"],"uses":1},{"name":"dynamicPathfinderMetadata","used_by":[],"uses":0}]}

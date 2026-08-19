@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgType","WAWebWebcMessageQueryWamEvent"],"dependents":["WAWebChatLoadMessages","WAWebChatMessageSearch"],"dependent_count":2,"exports":[{"name":"newMessageQueryEvent","used_by":["WAWebChatLoadMessages","WAWebChatMessageSearch"],"uses":2},{"name":"logMessageCounts","used_by":["WAWebChatLoadMessages"],"uses":1}]}

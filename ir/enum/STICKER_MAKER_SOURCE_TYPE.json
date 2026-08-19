@@ -1,0 +1,61 @@
+{
+  "id": "enum:STICKER_MAKER_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "STICKER_MAKER_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStickerMakerSourceType",
+    "variants": [
+      {
+        "name": "CUTOUT_IMAGE",
+        "value": 1.0
+      },
+      {
+        "name": "WEB_STICKER_MAKER",
+        "value": 2.0
+      },
+      {
+        "name": "IOS_STICKER_MAKER",
+        "value": 3.0
+      },
+      {
+        "name": "ANDROID_STICKER_MAKER",
+        "value": 4.0
+      },
+      {
+        "name": "TRANSPARENT_IMAGE",
+        "value": 5.0
+      },
+      {
+        "name": "GIF",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStickerMakerSourceType",
+    "matches": "STICKER_MAKER_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STICKER_MAKER_SOURCE_TYPE",
+    "CUTOUT_IMAGE",
+    "WEB_STICKER_MAKER",
+    "IOS_STICKER_MAKER",
+    "ANDROID_STICKER_MAKER",
+    "TRANSPARENT_IMAGE",
+    "GIF"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaEditor.react",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent",
+      "WAWebStickerAddToFavoriteWamEvent",
+      "WAWebStickerSendWamEvent",
+      "WAWebWebpMetadata"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

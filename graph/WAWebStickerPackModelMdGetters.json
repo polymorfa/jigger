@@ -1,0 +1,1 @@
+{"deps":["WAWebGetters","WAWebGettersCaches"],"dependents":["WAWebFrontendStickerPackModelMdGetters"],"dependent_count":1,"exports":[{"name":"getStickerPackMdUnsafe","used_by":["WAWebFrontendStickerPackModelMdGetters"],"uses":1}]}

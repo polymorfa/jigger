@@ -1,0 +1,1 @@
+{"deps":["WASmaxChildren","WASmaxJsx","WAWap"],"dependents":["WASmaxBlocklistsGetBlockListRPC"],"dependent_count":1,"exports":[{"name":"makeGetBlockListRequest","used_by":["WASmaxBlocklistsGetBlockListRPC"],"uses":1},{"name":"makeGetBlockListRequestItem","used_by":[],"uses":0}]}

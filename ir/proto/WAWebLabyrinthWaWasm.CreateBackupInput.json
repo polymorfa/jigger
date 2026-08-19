@@ -1,0 +1,38 @@
+{
+  "id": "proto:WAWebLabyrinthWaWasm.CreateBackupInput",
+  "kind": "proto",
+  "name": "WAWebLabyrinthWaWasm.CreateBackupInput",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "recoveryCode": {
+        "number": 1
+      },
+      "userId": {
+        "number": 2
+      }
+    },
+    "module": "WAWebLabyrinthWaWasm.pb"
+  },
+  "evidence": {
+    "module": "WAWebLabyrinthWaWasm.pb",
+    "matches": "name = \"CreateBackupInput\""
+  },
+  "literals": [
+    "CreateBackupInput"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebLabyrinthWasmCreateBackup",
+      "WAWebLabyrinthWasmDecryptMessage",
+      "WAWebLabyrinthWasmDeriveMessageKey",
+      "WAWebLabyrinthWasmEncryptMessage",
+      "WAWebLabyrinthWasmOrfThreadId"
+    ],
+    "dep_count": 1,
+    "dependent_count": 5
+  }
+}

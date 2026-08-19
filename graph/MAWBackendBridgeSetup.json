@@ -1,0 +1,1 @@
+{"deps":["EBSMBridgeHandlers","MAWBridge","WAAPIBridgeHandlers","WACrossWorkerPortal","WAResultOrError","getErrorSafe","pageID"],"dependents":["MAWCommonMainWebWorker"],"dependent_count":1,"exports":[{"name":"initWorkerBridge","used_by":["MAWCommonMainWebWorker"],"uses":1}]}

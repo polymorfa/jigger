@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins"],"dependents":["WASmaxOutMessagePublishEncMediaTypeDeprecatedMixin","WASmaxOutMessagePublishEncMediaTypeMixin"],"dependent_count":2,"exports":[{"name":"mergeAvatarStickerTypeMixin","used_by":["WASmaxOutMessagePublishEncMediaTypeDeprecatedMixin","WASmaxOutMessagePublishEncMediaTypeMixin"],"uses":2}]}

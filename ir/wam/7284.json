@@ -1,0 +1,39 @@
+{
+  "id": "wam:7284",
+  "kind": "wam",
+  "name": "BroadcastInvalidChannelsContextSourceMessageDrop",
+  "data": {
+    "kind": "wam",
+    "event_id": 7284,
+    "fields": {
+      "wasDropped": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "was_dropped"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebBroadcastInvalidChannelsContextSourceMessageDropWamEvent",
+    "matches": "BroadcastInvalidChannelsContextSourceMessageDrop:\\s*\\[\\s*7284"
+  },
+  "literals": [
+    "7284"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebHandleMsgValidate"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebABProps","WAWebCommonTaskScheduler","WAWebReleaseToEventLoop","WAWebVoipPerfOptimizations","asyncToGeneratorRuntime"],"dependents":["WAWebVoipAudioCaptureAndPlayback","WAWebVoipVideoCaptureAndRendering"],"dependent_count":2,"exports":[{"name":"WAWebVoipOperationQueue","used_by":[],"uses":0}]}

@@ -1,0 +1,32 @@
+{
+  "id": "sig:message/ai_content+meta",
+  "kind": "sig",
+  "name": "MessageDeliverNewsletterAIContentMetaMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "ai_content",
+      "meta"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverNewsletterAIContentMetaMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "ai_content",
+    "meta"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverNewsletterMessageFanoutMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

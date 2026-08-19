@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebBizAISettingsCategoryHandlers","WAWebBizAISettingsVersionCollection"],"dependent_count":2,"exports":[{"name":"getCategoryHandler","used_by":["WAWebBizAISettingsVersionCollection"],"uses":1},{"name":"registerCategory","used_by":["WAWebBizAISettingsCategoryHandlers"],"uses":1}]}

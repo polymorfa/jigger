@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebClickableLink.react","WAWebConfirmPopup.react","WAWebExternalLink.react","WAWebFlex.react","WAWebModal.react","WAWebModalManager","WDSButtonGroup.react","WDSText.react","react","react-compiler-runtime"],"dependents":["WAWebBusinessGoogleProfilePreviewRatingRow.react","WAWebGoogleReviewsRow.react"],"dependent_count":2,"exports":[]}

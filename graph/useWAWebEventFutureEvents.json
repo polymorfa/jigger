@@ -1,0 +1,1 @@
+{"deps":["WAWebEventUtils","WAWebFrontendMsgGetters","react","react-compiler-runtime","useWAWebListener","useWAWebModelValues","useWAWebUnmountSignal"],"dependents":["WAWebGroupInfoEventsSection.react"],"dependent_count":1,"exports":[{"name":"useFutureEvents","used_by":["WAWebGroupInfoEventsSection.react"],"uses":1}]}

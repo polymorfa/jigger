@@ -1,0 +1,1 @@
+{"deps":["JSResourceReferenceImpl"],"dependents":["AdsPlacementsWhatsAppMarketingMessagePositionPlugin","JSResourceForInteraction","WAFlowsResponseHandler","WAWebEmojiDownloadSuggestions","WAWebLocaleModules","WAWebLocaleToLanguages","WAWebMomentLocales","WAWebOrderCreationFlowLoadable","vulture"],"dependent_count":9,"exports":[{"name":"default","used_by":[],"uses":0}]}

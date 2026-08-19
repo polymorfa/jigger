@@ -1,0 +1,1 @@
+{"deps":["WAWebNewsletterExtendedGatingUtils","WAWebNux","react-compiler-runtime","useWAWebModelValues","useWAWebNux"],"dependents":["WAWebConversationPanelBanner.react"],"dependent_count":1,"exports":[{"name":"useNewsletterNotificationSettingsBanner","used_by":["WAWebConversationPanelBanner.react"],"uses":1}]}

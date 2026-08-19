@@ -1,0 +1,1 @@
+{"deps":["WAWebMexClient","WAWebMexFetchNewsletterAdminCapabilitiesJobQuery.graphql","WAWebNewsletterModelUtils","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterGetAdminCapabilitiesJob"],"dependent_count":1,"exports":[{"name":"mexFetchNewsletterAdminCapabilities","used_by":["WAWebNewsletterGetAdminCapabilitiesJob"],"uses":1}]}

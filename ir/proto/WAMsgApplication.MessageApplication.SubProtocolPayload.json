@@ -1,0 +1,65 @@
+{
+  "id": "proto:WAMsgApplication.MessageApplication.SubProtocolPayload",
+  "kind": "proto",
+  "name": "WAMsgApplication.MessageApplication.SubProtocolPayload",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "armadillo": {
+        "number": 7
+      },
+      "businessMessage": {
+        "number": 3
+      },
+      "consumerMessage": {
+        "number": 2
+      },
+      "futureProof": {
+        "number": 1
+      },
+      "multiDevice": {
+        "number": 5
+      },
+      "paymentMessage": {
+        "number": 4
+      },
+      "voip": {
+        "number": 6
+      }
+    },
+    "module": "WAMsgApplication.pb"
+  },
+  "evidence": {
+    "module": "WAMsgApplication.pb",
+    "matches": "name = \"MessageApplication.SubProtocolPayload\""
+  },
+  "literals": [
+    "SubProtocolPayload"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsGenerateDeletionMessage",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseXMAProtocol",
+      "MAWProtobufDeserializers",
+      "MAWSpamReportUtils",
+      "MAWXMAEncodeUtils",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsMessageApplication",
+      "WADecodeIncomingMsg",
+      "WASendAppDataFanoutProtocol",
+      "WMIForwardMsgProcessor",
+      "WMIProtobufBuilder",
+      "WMIWAMessagePublisher"
+    ],
+    "dep_count": 2,
+    "dependent_count": 16
+  }
+}

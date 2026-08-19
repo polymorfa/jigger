@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseShimmerComponents.react","WAWebFlex.react","WAWebNewsletterAdminInsightsShimmerUtils","react","react-compiler-runtime","stylex"],"dependents":["WAWebNewsletterInsightsDrawer.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

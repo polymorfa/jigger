@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCheckBox.react","WAWebConfirmPopup.react","WAWebFrontendContactGetters","WAWebModalManager","WAWebOrderGatingUtils","WAWebText.react","WAWebUserPrefsKeys","WAWebUserPrefsStore","WDSMargins.stylex","react","react-compiler-runtime","stylex"],"dependents":["WAWebOrderSummaryDrawer"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["MWFBLogger","Promise","WAJids","WAQueryGroupsAndSync"],"dependents":["MAWSendChatStateFromComposerApi"],"dependent_count":1,"exports":[{"name":"callMessageComposingHooks","used_by":["MAWSendChatStateFromComposerApi"],"uses":1}]}

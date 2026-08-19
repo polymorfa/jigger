@@ -1,0 +1,1 @@
+{"deps":["WAWebSignalCommonUtils"],"dependents":["WAWebOfflineSimulatorMockSignal","WAWebSignalProtocolStoreUnifiedApi"],"dependent_count":2,"exports":[{"name":"stringifyIdentityKey","used_by":["WAWebOfflineSimulatorMockSignal","WAWebSignalProtocolStoreUnifiedApi"],"uses":2}]}

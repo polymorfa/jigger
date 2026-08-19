@@ -1,0 +1,1 @@
+{"deps":["WAWebPonyfillsCryptoRandomUUID"],"dependents":["WAWebTPBridge"],"dependent_count":1,"exports":[{"name":"decodeWAWebTPMessage","used_by":["WAWebTPBridge"],"uses":1},{"name":"encodeWAWebTPMessage","used_by":["WAWebTPBridge"],"uses":1}]}

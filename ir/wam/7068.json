@@ -1,0 +1,53 @@
+{
+  "id": "wam:7068",
+  "kind": "wam",
+  "name": "DialogEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 7068,
+    "fields": {
+      "dialogEventSource": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "dialog_event_source"
+      },
+      "dialogEventType": {
+        "id": 2,
+        "type": "DIALOG_EVENT_TYPE",
+        "wire": "dialog_event_type",
+        "enum_ref": "DIALOG_EVENT_TYPE"
+      },
+      "dialogName": {
+        "id": 3,
+        "type": "DIALOG_NAME_TYPE",
+        "wire": "dialog_name",
+        "enum_ref": "DIALOG_NAME_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebDialogEventWamEvent",
+    "matches": "DialogEvent:\\s*\\[\\s*7068"
+  },
+  "literals": [
+    "7068"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDialogEventType",
+      "WAWebWamEnumDialogNameType"
+    ],
+    "dependents": [
+      "WAWebDialogEventLogger"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

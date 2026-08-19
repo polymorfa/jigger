@@ -1,0 +1,1 @@
+{"deps":["MpsMessageToSearchBridge","MpsOverBridge","MpsTypes"],"dependents":[],"dependent_count":0,"exports":[{"name":"issueQueryAsPromiseForSearchResult","used_by":[],"uses":0}]}

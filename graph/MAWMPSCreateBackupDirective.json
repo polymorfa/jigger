@@ -1,0 +1,1 @@
+{"deps":["EBLogger","MpsMessageToBridgeWrapper","MpsTypes","WAStanzaUtils"],"dependents":[],"dependent_count":0,"exports":[{"name":"createBackupDirectiveFromMPSMessage","used_by":[],"uses":0},{"name":"getTargetProtocolMsgIdForMessage","used_by":[],"uses":0}]}

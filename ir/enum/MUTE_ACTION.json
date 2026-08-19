@@ -1,0 +1,37 @@
+{
+  "id": "enum:MUTE_ACTION",
+  "kind": "enum",
+  "name": "MUTE_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMuteAction",
+    "variants": [
+      {
+        "name": "MUTE",
+        "value": 1.0
+      },
+      {
+        "name": "UNMUTE",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMuteAction",
+    "matches": "MUTE_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "MUTE_ACTION",
+    "MUTE",
+    "UNMUTE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusMuteWamEvent",
+      "WAWebStatusPlayer.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

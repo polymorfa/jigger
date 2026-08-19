@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebSchemaMessageAssociation","compactMap"],"dependents":["WAWebDBStoreEncryptedMsgs","WAWebDBStoreMessage","WAWebDBStoreNewsletterEncryptedMsgs"],"dependent_count":3,"exports":[{"name":"bulkStoreMessageAssociations","used_by":["WAWebDBStoreEncryptedMsgs","WAWebDBStoreMessage","WAWebDBStoreNewsletterEncryptedMsgs"],"uses":3}]}

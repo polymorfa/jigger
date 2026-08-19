@@ -1,0 +1,57 @@
+{
+  "id": "mex:WAWebMexCreateEnforcementAppealJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCreateEnforcementAppealJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9848815108513025",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_create_enforcement_appeal",
+        "ty": "XWA2BaseEnforcementData",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "appeal_creation_time",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "appeal_state",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_create_enforcement_appeal",
+    "document": "# persisted document 9848815108513025\nmutation MexCreateEnforcementAppealJobMutation(\n  $input\n) {\n  xwa2_create_enforcement_appeal(input: $input) {  # XWA2BaseEnforcementData\n    appeal_creation_time\n    appeal_state\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexCreateEnforcementAppealJobMutation.graphql",
+    "matches": "id:\\s*\"9848815108513025\""
+  },
+  "literals": [
+    "9848815108513025",
+    "WAWebMexCreateEnforcementAppealJobMutation",
+    "xwa2_create_enforcement_appeal"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCreateEnforcementAppealJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

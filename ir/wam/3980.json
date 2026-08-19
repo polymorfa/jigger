@@ -1,0 +1,89 @@
+{
+  "id": "wam:3980",
+  "kind": "wam",
+  "name": "AttachmentTrayActions",
+  "data": {
+    "kind": "wam",
+    "event_id": 3980,
+    "fields": {
+      "actionDurationMs": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "action_duration_ms"
+      },
+      "actionThreadType": {
+        "id": 9,
+        "type": "ACTION_THREAD_TYPE_TYPE",
+        "wire": "action_thread_type",
+        "enum_ref": "ACTION_THREAD_TYPE_TYPE"
+      },
+      "attachmentTrayAction": {
+        "id": 2,
+        "type": "ATTACHMENT_TRAY_ACTION_TYPE",
+        "wire": "attachment_tray_action",
+        "enum_ref": "ATTACHMENT_TRAY_ACTION_TYPE"
+      },
+      "attachmentTrayActionTarget": {
+        "id": 3,
+        "type": "ATTACHMENT_TRAY_ACTION_TARGET_TYPE",
+        "wire": "attachment_tray_action_target",
+        "enum_ref": "ATTACHMENT_TRAY_ACTION_TARGET_TYPE"
+      },
+      "groupSizeBucket": {
+        "id": 4,
+        "type": "CLIENT_GROUP_SIZE_BUCKET",
+        "wire": "group_size_bucket",
+        "enum_ref": "CLIENT_GROUP_SIZE_BUCKET"
+      },
+      "isAGroup": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "is_a_group"
+      },
+      "isSuccessful": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "is_successful"
+      },
+      "sendMediaType": {
+        "id": 7,
+        "type": "SEND_MEDIA_TYPE_TYPE",
+        "wire": "send_media_type",
+        "enum_ref": "SEND_MEDIA_TYPE_TYPE"
+      },
+      "sendTime": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "send_time"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebAttachmentTrayActionsWamEvent",
+    "matches": "AttachmentTrayActions:\\s*\\[\\s*3980"
+  },
+  "literals": [
+    "3980"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumActionThreadTypeType",
+      "WAWebWamEnumAttachmentTrayActionTargetType",
+      "WAWebWamEnumAttachmentTrayActionType",
+      "WAWebWamEnumClientGroupSizeBucket",
+      "WAWebWamEnumSendMediaTypeType"
+    ],
+    "dependents": [
+      "WAWebAttachmentMenuLogger"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "enum:MANAGE_ADS_ENTRY_POINT",
+  "kind": "enum",
+  "name": "MANAGE_ADS_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumManageAdsEntryPoint",
+    "variants": [
+      {
+        "name": "WEB_OVERFLOW_MENU",
+        "value": 1.0
+      },
+      {
+        "name": "SMB_CHAT_LIST_CTWA_BANNER",
+        "value": 2.0
+      },
+      {
+        "name": "SMB_NATIVE_ADS_MANAGEMENT",
+        "value": 3.0
+      },
+      {
+        "name": "SMB_BUSINESS_TOOLS_MANAGE_ADS_LIST_ITEM",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumManageAdsEntryPoint",
+    "matches": "MANAGE_ADS_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "MANAGE_ADS_ENTRY_POINT",
+    "WEB_OVERFLOW_MENU",
+    "SMB_CHAT_LIST_CTWA_BANNER",
+    "SMB_NATIVE_ADS_MANAGEMENT",
+    "SMB_BUSINESS_TOOLS_MANAGE_ADS_LIST_ITEM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizToolsFlow.react",
+      "WAWebManageAdsDropdownItem.react",
+      "WAWebManageAdsEntryPointImpressionWamEvent",
+      "WAWebNewCTWASuggestionAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "id": "wam:5336",
+  "kind": "wam",
+  "name": "GroupMemberAddingUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 5336,
+    "fields": {
+      "addSelectedContactsCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "add_selected_contacts_count"
+      },
+      "appSessionId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "bundleSendSource": {
+        "id": 20,
+        "type": "BUNDLE_SEND_SOURCE",
+        "wire": "bundle_send_source",
+        "enum_ref": "BUNDLE_SEND_SOURCE"
+      },
+      "frequentlyContactedIndex": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "frequently_contacted_index"
+      },
+      "groupAddMemberEntryPoint": {
+        "id": 28,
+        "type": "ADD_MEMBERS_ENTRYPOINT_TYPE",
+        "wire": "group_add_member_entry_point",
+        "enum_ref": "ADD_MEMBERS_ENTRYPOINT_TYPE"
+      },
+      "groupCreateEntryPoint": {
+        "id": 16,
+        "type": "GROUP_CREATE_ENTRY_POINT",
+        "wire": "group_create_entry_point",
+        "enum_ref": "GROUP_CREATE_ENTRY_POINT"
+      },
+      "groupCreationGroupId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "group_creation_group_id"
+      },
+      "groupHistoryMessagesCount": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "group_history_messages_count"
+      },
+      "groupHistoryOutWindowPinsCount": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "group_history_out_window_pins_count"
+      },
+      "groupHistoryPinsCount": {
+        "id": 26,
+        "type": "INTEGER",
+        "wire": "group_history_pins_count"
+      },
+      "groupHistoryUncountedMessagesCount": {
+        "id": 27,
+        "type": "INTEGER",
+        "wire": "group_history_uncounted_messages_count"
+      },
+      "groupMemberAddingActionType": {
+        "id": 4,
+        "type": "GROUP_MEMBER_ADDING_ACTION_TYPE",
+        "wire": "group_member_adding_action_type",
+        "enum_ref": "GROUP_MEMBER_ADDING_ACTION_TYPE"
+      },
+      "groupMemberAddingMemberType": {
+        "id": 24,
+        "type": "GROUP_MEMBER_ADDING_MEMBER_TYPE",
+        "wire": "group_member_adding_member_type",
+        "enum_ref": "GROUP_MEMBER_ADDING_MEMBER_TYPE"
+      },
+      "groupServerErrorCode": {
+        "id": 18,
+        "type": "INTEGER",
+        "wire": "group_server_error_code"
+      },
+      "groupServerErrorCodeMsg": {
+        "id": 19,
+        "type": "STRING",
+        "wire": "group_server_error_code_msg"
+      },
+      "hasGroupName": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "has_group_name"
+      },
+      "hasProfilePicture": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "has_profile_picture"
+      },
+      "isAdmin": {
+        "id": 29,
+        "type": "BOOLEAN",
+        "wire": "is_admin"
+      },
+      "isGroupHistoryToggledOn": {
+        "id": 22,
+        "type": "BOOLEAN",
+        "wire": "is_group_history_toggled_on"
+      },
+      "isTeeBotNoticeOnly": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "is_tee_bot_notice_only"
+      },
+      "potentialTotalSuggestionCount": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "potential_total_suggestion_count"
+      },
+      "recentlyContactedIndex": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "recently_contacted_index"
+      },
+      "selectedMemberCnt": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "selected_member_cnt"
+      },
+      "suggestedContactsCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "suggested_contacts_count"
+      },
+      "suggestedContactsIndex": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "suggested_contacts_index"
+      },
+      "uiSurface": {
+        "id": 8,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 23,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyEventMs": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "userJourneyFunnelId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebGroupMemberAddingUserJourneyWamEvent",
+    "matches": "GroupMemberAddingUserJourney:\\s*\\[\\s*5336"
+  },
+  "literals": [
+    "5336"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAddMembersEntrypointType",
+      "WAWebWamEnumBundleSendSource",
+      "WAWebWamEnumGroupCreateEntryPoint",
+      "WAWebWamEnumGroupMemberAddingActionType",
+      "WAWebWamEnumGroupMemberAddingMemberType",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebGroupMemberAddingUserJourneyLogger"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

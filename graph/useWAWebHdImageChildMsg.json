@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaGatingUtils","WAWebMessageAssociation.flow","react","react-compiler-runtime","useWAWebAssociatedMessages"],"dependents":["WAWebMediaImage.react","WAWebMediaPanelHeaderButtons.react"],"dependent_count":2,"exports":[{"name":"useHdImageChildMsg","used_by":["WAWebMediaImage.react","WAWebMediaPanelHeaderButtons.react"],"uses":2}]}

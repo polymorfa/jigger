@@ -1,0 +1,66 @@
+{
+  "id": "proto:WAWebProtobufsStatusAttributions.StatusAttribution",
+  "kind": "proto",
+  "name": "WAWebProtobufsStatusAttributions.StatusAttribution",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actionUrl": {
+        "number": 2
+      },
+      "aiCreatedAttribution": {
+        "number": 8,
+        "type_name": "WAWebProtobufsStatusAttributions.StatusAttribution.AiCreatedAttribution"
+      },
+      "externalShare": {
+        "number": 4,
+        "type_name": "WAWebProtobufsStatusAttributions.StatusAttribution.ExternalShare"
+      },
+      "groupStatus": {
+        "number": 6,
+        "type_name": "WAWebProtobufsStatusAttributions.StatusAttribution.GroupStatus"
+      },
+      "music": {
+        "number": 5,
+        "type_name": "WAWebProtobufsStatusAttributions.StatusAttribution.Music"
+      },
+      "rlAttribution": {
+        "number": 7,
+        "type_name": "WAWebProtobufsStatusAttributions.StatusAttribution.RLAttribution"
+      },
+      "statusReshare": {
+        "number": 3,
+        "type_name": "WAWebProtobufsStatusAttributions.StatusAttribution.StatusReshare"
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsStatusAttributions.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsStatusAttributions.pb",
+    "matches": "name = \"StatusAttribution\""
+  },
+  "literals": [
+    "StatusAttribution"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebE2EProtoGenerator",
+      "WAWebMsgGetters",
+      "WAWebNewsletterSendStatusAction",
+      "WAWebProtobufsE2E.pb",
+      "WAWebStatusExternalShareUtils",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusReshareAction",
+      "WAWebStatusSubtitle.react"
+    ],
+    "dep_count": 2,
+    "dependent_count": 8
+  }
+}

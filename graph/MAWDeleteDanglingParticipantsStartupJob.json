@@ -1,0 +1,1 @@
+{"deps":["MAWDbVersion","MAWDexieTable","MAWInMemoryThreadStore","MAWIndexedDb","MAWODSProxy","MAWQplProxy","MAWTransactionMode","WALogger","WAOdsEnums","asyncToGeneratorRuntime","gkx","qpl"],"dependents":["MAWStartupJob"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

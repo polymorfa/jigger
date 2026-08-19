@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst"],"dependents":["MAWDbObjDecode","MAWDbObjEncode"],"dependent_count":2,"exports":[{"name":"AppMetaTableSchemaProtoSpec","used_by":["MAWDbObjDecode","MAWDbObjEncode"],"uses":2},{"name":"DbAppMetaValuesProtoSpec","used_by":[],"uses":0}]}

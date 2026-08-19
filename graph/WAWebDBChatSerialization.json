@@ -1,0 +1,1 @@
+{"deps":["WAWebProtobufsMdStorageChatRowOpaqueData.pb","decodeProtobuf","encodeProtobuf"],"dependents":["WAWebApiChat","WAWebDebug","WAWebUpdateDraftMessageChatJob"],"dependent_count":3,"exports":[{"name":"deserializeChat","used_by":["WAWebApiChat","WAWebDebug"],"uses":2},{"name":"serializeChat","used_by":["WAWebUpdateDraftMessageChatJob"],"uses":1}]}

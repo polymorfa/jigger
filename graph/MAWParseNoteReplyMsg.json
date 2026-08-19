@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWJids","MAWMsgType","WAJids","WALongInt","WAMediaTransport.pb","WAMsgType","WAParseMediaTransportProtocol","WAParseProtocolUtils","WAParseReadOnlyMetadataDataclassUtils","WATimeUtils","decodeProtobuf"],"dependents":["MAWParseArmadilloProtocol"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

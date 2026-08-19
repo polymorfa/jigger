@@ -1,0 +1,33 @@
+{
+  "id": "sig:ack/biz+pricing",
+  "kind": "sig",
+  "name": "MessagePublishAckPaidGroupConversationMixin",
+  "data": {
+    "kind": "sig",
+    "root": "ack",
+    "children": [
+      "biz",
+      "pricing"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessagePublishAckPaidGroupConversationMixin",
+    "matches": "assertTag\\([a-z], \"ack\"\\)"
+  },
+  "literals": [
+    "ack",
+    "biz",
+    "pricing"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessagePublishAckPaidAckPaidConversationOrAckPaidGroupConversationConversationMixinGroup"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

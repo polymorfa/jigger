@@ -1,0 +1,42 @@
+{
+  "id": "ab:wa_web_frequent_reactions_reacts_ago_threshold",
+  "kind": "ab",
+  "name": "wa_web_frequent_reactions_reacts_ago_threshold",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27712,
+    "type": "int",
+    "default": 10,
+    "alt_default": 10
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_frequent_reactions_reacts_ago_threshold:\\s*\\[\\s*27712"
+  },
+  "literals": [
+    "wa_web_frequent_reactions_reacts_ago_threshold",
+    "27712"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "enum:MM_DIRECTION_FROM",
+  "kind": "enum",
+  "name": "MM_DIRECTION_FROM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMmDirectionFrom",
+    "variants": [
+      {
+        "name": "CUSTOMER",
+        "value": 0.0
+      },
+      {
+        "name": "BUSINESS",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMmDirectionFrom",
+    "matches": "MM_DIRECTION_FROM\\s*[:=]"
+  },
+  "literals": [
+    "MM_DIRECTION_FROM",
+    "CUSTOMER",
+    "BUSINESS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMmSignalSharingVerificationEventWamEvent",
+      "WAWebMmSignalSharingVerificationFsEventWamEvent",
+      "WAWebMmSignalSharingVerificationWithSignalDataEventWamEvent",
+      "WAWebMmSignalWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

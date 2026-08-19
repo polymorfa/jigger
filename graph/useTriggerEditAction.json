@@ -1,0 +1,1 @@
+{"deps":["MAWEditMessageContext.react","MWPActor.react","MWPReplyContext.react","react","react-compiler-runtime","useLogMAWEditMessage"],"dependents":["MAWEditMenuItem.react","MWEditMessageOnUpArrowPlugin.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

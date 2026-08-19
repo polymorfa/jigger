@@ -1,0 +1,1 @@
+{"deps":["NativeSchedulerTickStrategy","Promise","TaskSchedulerPriority"],"dependents":["WAOneQueue","WAWaitForUserUnblocked"],"dependent_count":2,"exports":[{"name":"makeBlockingPriorityTickStrategy","used_by":["WAOneQueue","WAWaitForUserUnblocked"],"uses":2},{"name":"BlockingPriorityTickStrategy","used_by":[],"uses":0}]}

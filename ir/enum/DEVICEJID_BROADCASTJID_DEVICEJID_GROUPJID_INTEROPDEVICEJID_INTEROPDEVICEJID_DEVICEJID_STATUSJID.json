@@ -1,0 +1,92 @@
+{
+  "id": "enum:DEVICEJID_BROADCASTJID_DEVICEJID_GROUPJID_INTEROPDEVICEJID_INTEROPDEVICEJID_DEVICEJID_STATUSJID",
+  "kind": "enum",
+  "name": "DEVICEJID_BROADCASTJID_DEVICEJID_GROUPJID_INTEROPDEVICEJID_INTEROPDEVICEJID_DEVICEJID_STATUSJID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessageDeliverEnums",
+    "variants": [
+      {
+        "name": "typeName",
+        "value": "DeviceJid|BroadcastJid|DeviceJid|GroupJid|InteropDeviceJid|InteropDeviceJid|DeviceJid|StatusJid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverEnums",
+    "matches": "DEVICEJID_BROADCASTJID_DEVICEJID_GROUPJID_INTEROPDEVICEJID_INTEROPDEVICEJID_DEVICEJID_STATUSJID\\s*[:=]"
+  },
+  "literals": [
+    "DEVICEJID_BROADCASTJID_DEVICEJID_GROUPJID_INTEROPDEVICEJID_INTEROPDEVICEJID_DEVICEJID_STATUSJID",
+    "typeName"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverAppdataMetaAttributeMixin",
+      "WASmaxInMessageDeliverAuthMixin",
+      "WASmaxInMessageDeliverBRMessageDeliverSendNodeMixin",
+      "WASmaxInMessageDeliverBRP2MHPPTransactionMixin",
+      "WASmaxInMessageDeliverBasePayNodeMixin",
+      "WASmaxInMessageDeliverBillMetadataMixin",
+      "WASmaxInMessageDeliverBizAutoResponseMixin",
+      "WASmaxInMessageDeliverBizEngagementDataMixin",
+      "WASmaxInMessageDeliverBizROIMetricsGatingFlagsMixin",
+      "WASmaxInMessageDeliverBotResponseMixin",
+      "WASmaxInMessageDeliverBroadcastContextMixin",
+      "WASmaxInMessageDeliverBroadcastMixin",
+      "WASmaxInMessageDeliverBusinessBotGatingMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageFeedbackRequestedMixin",
+      "WASmaxInMessageDeliverBusinessBotMessageMixin",
+      "WASmaxInMessageDeliverClientReportingTokenValidationPolicyMixin",
+      "WASmaxInMessageDeliverCoExV2ProactiveMetaMixin",
+      "WASmaxInMessageDeliverCollectionContentTypeMixin",
+      "WASmaxInMessageDeliverContentTypeEventMixin",
+      "WASmaxInMessageDeliverContentTypeMixin",
+      "WASmaxInMessageDeliverConversionRecipientStatusMixin",
+      "WASmaxInMessageDeliverDeliveryContextMixin",
+      "WASmaxInMessageDeliverEncMediaTypeDeprecatedMixin",
+      "WASmaxInMessageDeliverEncMediaTypeMixin",
+      "WASmaxInMessageDeliverEncStateMixin",
+      "WASmaxInMessageDeliverEncTypeIndividualMixin",
+      "WASmaxInMessageDeliverFrequencyRuleMixin",
+      "WASmaxInMessageDeliverFullTransactionBaseMixin",
+      "WASmaxInMessageDeliverGroupAddressingModeMixin",
+      "WASmaxInMessageDeliverGroupCAPIShardRoutingStrategyMetaAttributeMixin",
+      "WASmaxInMessageDeliverGroupMixin",
+      "WASmaxInMessageDeliverHSMReviewMetadataMixin",
+      "WASmaxInMessageDeliverIndividualMixin",
+      "WASmaxInMessageDeliverLIDSessionDeprecationMixin",
+      "WASmaxInMessageDeliverLiveLocationModeMixin",
+      "WASmaxInMessageDeliverMediaTypeMixin",
+      "WASmaxInMessageDeliverMemberTagsMessageMetaAttributeMixin",
+      "WASmaxInMessageDeliverMessageAssociationTypeMixin",
+      "WASmaxInMessageDeliverMessageTargetMixin",
+      "WASmaxInMessageDeliverMetaIsGroupStatusMixin",
+      "WASmaxInMessageDeliverNativeFlowMixin",
+      "WASmaxInMessageDeliverNewsletterMediaMixin",
+      "WASmaxInMessageDeliverP2MHybridExternalPaymentMethodMixin",
+      "WASmaxInMessageDeliverPayNodeTypeMixin",
+      "WASmaxInMessageDeliverPaymentInitiatorMixin",
+      "WASmaxInMessageDeliverPeerRequest",
+      "WASmaxInMessageDeliverProductListDeprecatedMixin",
+      "WASmaxInMessageDeliverQualityControlMixin",
+      "WASmaxInMessageDeliverRecipientMixin",
+      "WASmaxInMessageDeliverSMBBroadcastSourceMixin",
+      "WASmaxInMessageDeliverSenderAccountKindMixin",
+      "WASmaxInMessageDeliverSingleSelectListMixin",
+      "WASmaxInMessageDeliverStatusMentionSourceMixin",
+      "WASmaxInMessageDeliverStatusMentionedUsersMixin",
+      "WASmaxInMessageDeliverStatusSettingMixin",
+      "WASmaxInMessageDeliverTransactionNUXReceiverMixin",
+      "WASmaxInMessageDeliverTransactionSyncStatusMixin",
+      "WASmaxInMessageDeliverTransactionTypeMixin",
+      "WASmaxInMessageDeliverUPILiteDetailsMixin",
+      "WASmaxInMessageDeliverUPIMandateBaseMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 72
+  }
+}

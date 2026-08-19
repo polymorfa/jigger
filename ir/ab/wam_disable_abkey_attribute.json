@@ -1,0 +1,42 @@
+{
+  "id": "ab:wam_disable_abkey_attribute",
+  "kind": "ab",
+  "name": "wam_disable_abkey_attribute",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 12390,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wam_disable_abkey_attribute:\\s*\\[\\s*12390"
+  },
+  "literals": [
+    "wam_disable_abkey_attribute",
+    "12390"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

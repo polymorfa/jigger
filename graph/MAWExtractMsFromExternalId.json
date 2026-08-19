@@ -1,0 +1,1 @@
+{"deps":["I64","MAWExternalId","WALogger"],"dependents":["MAWGetBumpTimestampMs","MAWMessageSortOrderUtils","MAWWAComms"],"dependent_count":3,"exports":[{"name":"extractMsFromExternalId","used_by":["MAWGetBumpTimestampMs","MAWMessageSortOrderUtils"],"uses":2},{"name":"extractMsFromStanzaId","used_by":["MAWWAComms"],"uses":1}]}

@@ -1,0 +1,177 @@
+{
+  "id": "wam:1802",
+  "kind": "wam",
+  "name": "VideoTranscoder",
+  "data": {
+    "kind": "wam",
+    "event_id": 1802,
+    "fields": {
+      "sourceAudioBitRate": {
+        "id": 12,
+        "type": "NUMBER",
+        "wire": "source_audio_bit_rate"
+      },
+      "sourceAudioCodec": {
+        "id": 23,
+        "type": "STRING",
+        "wire": "source_audio_codec"
+      },
+      "sourceContainerFormat": {
+        "id": 24,
+        "type": "STRING",
+        "wire": "source_container_format"
+      },
+      "sourceDuration": {
+        "id": 8,
+        "type": "TIMER",
+        "wire": "source_duration"
+      },
+      "sourceFileExtension": {
+        "id": 25,
+        "type": "STRING",
+        "wire": "source_file_extension"
+      },
+      "sourceFileSize": {
+        "id": 7,
+        "type": "NUMBER",
+        "wire": "source_file_size"
+      },
+      "sourceFormat": {
+        "id": 14,
+        "type": "VIDEO_TRANSCODER_SOURCE_FORMAT_TYPE",
+        "wire": "source_format",
+        "enum_ref": "VIDEO_TRANSCODER_SOURCE_FORMAT_TYPE"
+      },
+      "sourceFrameRate": {
+        "id": 13,
+        "type": "NUMBER",
+        "wire": "source_frame_rate"
+      },
+      "sourceHeight": {
+        "id": 10,
+        "type": "NUMBER",
+        "wire": "source_height"
+      },
+      "sourceMimeType": {
+        "id": 26,
+        "type": "STRING",
+        "wire": "source_mime_type"
+      },
+      "sourceVideoBitRate": {
+        "id": 11,
+        "type": "NUMBER",
+        "wire": "source_video_bit_rate"
+      },
+      "sourceVideoCodec": {
+        "id": 27,
+        "type": "STRING",
+        "wire": "source_video_codec"
+      },
+      "sourceWidth": {
+        "id": 9,
+        "type": "NUMBER",
+        "wire": "source_width"
+      },
+      "targetAudioBitRate": {
+        "id": 20,
+        "type": "NUMBER",
+        "wire": "target_audio_bit_rate"
+      },
+      "targetDuration": {
+        "id": 16,
+        "type": "TIMER",
+        "wire": "target_duration"
+      },
+      "targetFileSize": {
+        "id": 15,
+        "type": "NUMBER",
+        "wire": "target_file_size"
+      },
+      "targetFormat": {
+        "id": 22,
+        "type": "VIDEO_TRANSCODER_TARGET_FORMAT_TYPE",
+        "wire": "target_format",
+        "enum_ref": "VIDEO_TRANSCODER_TARGET_FORMAT_TYPE"
+      },
+      "targetFrameRate": {
+        "id": 21,
+        "type": "NUMBER",
+        "wire": "target_frame_rate"
+      },
+      "targetHeight": {
+        "id": 18,
+        "type": "NUMBER",
+        "wire": "target_height"
+      },
+      "targetVideoBitRate": {
+        "id": 19,
+        "type": "NUMBER",
+        "wire": "target_video_bit_rate"
+      },
+      "targetWidth": {
+        "id": 17,
+        "type": "NUMBER",
+        "wire": "target_width"
+      },
+      "transcoderAlgorithm": {
+        "id": 1,
+        "type": "VIDEO_TRANSCODER_ALGORITHM_TYPE",
+        "wire": "transcoder_algorithm",
+        "enum_ref": "VIDEO_TRANSCODER_ALGORITHM_TYPE"
+      },
+      "transcoderContainsVideocomposition": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "transcoder_contains_videocomposition"
+      },
+      "transcoderHasEdits": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "transcoder_has_edits"
+      },
+      "transcoderIsPassthrough": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "transcoder_is_passthrough"
+      },
+      "transcoderResult": {
+        "id": 2,
+        "type": "VIDEO_TRANSCODER_RESULT_TYPE",
+        "wire": "transcoder_result",
+        "enum_ref": "VIDEO_TRANSCODER_RESULT_TYPE"
+      },
+      "transcoderT": {
+        "id": 3,
+        "type": "TIMER",
+        "wire": "transcoder_t"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebVideoTranscoderWamEvent",
+    "matches": "VideoTranscoder:\\s*\\[\\s*1802"
+  },
+  "literals": [
+    "1802"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumVideoTranscoderAlgorithmType",
+      "WAWebWamEnumVideoTranscoderResultType",
+      "WAWebWamEnumVideoTranscoderSourceFormatType",
+      "WAWebWamEnumVideoTranscoderTargetFormatType"
+    ],
+    "dependents": [
+      "WAWebMediaDataUtils"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

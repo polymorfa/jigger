@@ -1,0 +1,1 @@
+{"deps":["I64"],"dependents":["MAWMessageIntegrityCheck","MAWMessageRangeDataSourceV2"],"dependent_count":2,"exports":[{"name":"getThreadThuncateState","used_by":["MAWMessageIntegrityCheck"],"uses":1},{"name":"setThreadLastUpsertedRange","used_by":["MAWMessageRangeDataSourceV2"],"uses":1},{"name":"setThreadThuncated","used_by":["MAWMessageRangeDataSourceV2"],"uses":1}]}

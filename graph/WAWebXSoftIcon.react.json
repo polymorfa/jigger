@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMessageViewOncePendingCancel"],"dependent_count":2,"exports":[{"name":"XSoftIcon","used_by":["WAWebAllGeneratedIcons","WAWebMessageViewOncePendingCancel"],"uses":2}]}

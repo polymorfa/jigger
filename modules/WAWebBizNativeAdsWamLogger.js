@@ -1,0 +1,28 @@
+__d("WAWebBizNativeAdsWamLogger", [
+	"WAWebLwiEntryPointImpressionWamEvent",
+	"WAWebLwiScreenWamEvent",
+	"WAWebManageAdsEntryPointImpressionWamEvent"
+], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	function e(e, t) {
+		new (o("WAWebLwiEntryPointImpressionWamEvent")).LwiEntryPointImpressionWamEvent({
+			lwiEntryPoint: e,
+			userHasLinkedFbPage: t
+		}).commit();
+	}
+	function s(e) {
+		new (o("WAWebManageAdsEntryPointImpressionWamEvent")).ManageAdsEntryPointImpressionWamEvent({ manageAdsEntryPoint: e }).commit();
+	}
+	function u(e, t, n, r, a, i, l) {
+		new (o("WAWebLwiScreenWamEvent")).LwiScreenWamEvent({
+			ctwaAdAccountType: l != null ? l : void 0,
+			lwiAdCampaignId: a != null ? a : void 0,
+			lwiAdsIdentityType: n,
+			lwiExtras: i != null ? i : void 0,
+			lwiFlowId: r,
+			lwiScreenAction: t,
+			lwiScreenReference: e
+		}).commit();
+	}
+	l.logAdCreationImpression = e, l.logManageAdsEntryPointImpression = s, l.logManageAdsScreenAction = u;
+}), 98);

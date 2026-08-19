@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebSecurityDrawer.react"],"dependent_count":2,"exports":[{"name":"SecurityLockIcon","used_by":["WAWebAllGeneratedIcons","WAWebSecurityDrawer.react"],"uses":2}]}

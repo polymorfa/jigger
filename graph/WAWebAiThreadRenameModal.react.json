@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCloseRefreshedIcon.react","WAWebFlex.react","WAWebModal.react","WAWebModalManager","WAWebRenameAiThreadAction","WDSButton.react","WDSText.react","WDSTextField.react","react","react-compiler-runtime"],"dependents":["WAWebAiThreadContextMenu"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,54 @@
+{
+  "id": "enum:PEER_DATA_RESPONSE_APPLY_RESULT_TYPE",
+  "kind": "enum",
+  "name": "PEER_DATA_RESPONSE_APPLY_RESULT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPeerDataResponseApplyResultType",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "OTHER_ERROR",
+        "value": 2.0
+      },
+      {
+        "name": "INVALID_RESPONSE",
+        "value": 3.0
+      },
+      {
+        "name": "FAIL_TO_DOWNLOAD",
+        "value": 4.0
+      },
+      {
+        "name": "REQUEST_TIMEOUT",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPeerDataResponseApplyResultType",
+    "matches": "PEER_DATA_RESPONSE_APPLY_RESULT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PEER_DATA_RESPONSE_APPLY_RESULT_TYPE",
+    "SUCCESS",
+    "OTHER_ERROR",
+    "INVALID_RESPONSE",
+    "FAIL_TO_DOWNLOAD",
+    "REQUEST_TIMEOUT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebHandleHistorySyncChunk",
+      "WAWebNonMessageDataRequestHandlerPlaceholderResend",
+      "WAWebNonMessagePeerDataOperationResponseWamEvent",
+      "WAWebSendNonMessageDataRequest"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

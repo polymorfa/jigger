@@ -1,0 +1,41 @@
+{
+  "id": "enum:MD_SYNCD_FATAL_ERROR_SOURCE",
+  "kind": "enum",
+  "name": "MD_SYNCD_FATAL_ERROR_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdSyncdFatalErrorSource",
+    "variants": [
+      {
+        "name": "SNAPSHOT",
+        "value": 1.0
+      },
+      {
+        "name": "EXTERNAL_PATCH",
+        "value": 2.0
+      },
+      {
+        "name": "INLINE_PATCH",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdSyncdFatalErrorSource",
+    "matches": "MD_SYNCD_FATAL_ERROR_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "MD_SYNCD_FATAL_ERROR_SOURCE",
+    "SNAPSHOT",
+    "EXTERNAL_PATCH",
+    "INLINE_PATCH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMdFatalErrorWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

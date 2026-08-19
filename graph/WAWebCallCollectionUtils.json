@@ -1,0 +1,1 @@
+{"deps":["WAWebCallModel"],"dependents":["WAWebCallCollection"],"dependent_count":1,"exports":[{"name":"assignCallPropsToCall","used_by":["WAWebCallCollection"],"uses":1},{"name":"buildCallPropsFromOffer","used_by":["WAWebCallCollection"],"uses":1},{"name":"createCallModel","used_by":["WAWebCallCollection"],"uses":1}]}

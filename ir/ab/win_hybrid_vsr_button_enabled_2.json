@@ -1,0 +1,42 @@
+{
+  "id": "ab:win_hybrid_vsr_button_enabled_2",
+  "kind": "ab",
+  "name": "win_hybrid_vsr_button_enabled_2",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34279,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "win_hybrid_vsr_button_enabled_2:\\s*\\[\\s*34279"
+  },
+  "literals": [
+    "win_hybrid_vsr_button_enabled_2",
+    "34279"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

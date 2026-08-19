@@ -1,0 +1,33 @@
+{
+  "id": "proto:WAAICommon.AIThreadInfo.AIThreadServerInfo",
+  "kind": "proto",
+  "name": "WAAICommon.AIThreadInfo.AIThreadServerInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "title": {
+        "number": 1
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"AIThreadInfo.AIThreadServerInfo\""
+  },
+  "literals": [
+    "AIThreadServerInfo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

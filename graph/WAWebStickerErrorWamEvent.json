@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumStickerErrorType","WAWebWamEnumStickerSendMessageType"],"dependents":["WAWebInMemoryLottieStickerCache","WAWebMediaMmsV4Download"],"dependent_count":2,"exports":[{"name":"StickerErrorWamEvent","used_by":[],"uses":0}]}

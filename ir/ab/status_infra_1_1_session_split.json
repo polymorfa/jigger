@@ -1,0 +1,45 @@
+{
+  "id": "ab:status_infra_1_1_session_split",
+  "kind": "ab",
+  "name": "status_infra_1_1_session_split",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25034,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "status_infra_1_1_session_split:\\s*\\[\\s*25034"
+  },
+  "literals": [
+    "status_infra_1_1_session_split",
+    "25034"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStatusSessionGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

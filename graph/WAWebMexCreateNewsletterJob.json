@@ -1,0 +1,1 @@
+{"deps":["WAWebMexClient","WAWebMexCreateNewsletterJobMutation.graphql","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterCreateQueryJob"],"dependent_count":1,"exports":[{"name":"mexCreateNewsletter","used_by":["WAWebNewsletterCreateQueryJob"],"uses":1}]}

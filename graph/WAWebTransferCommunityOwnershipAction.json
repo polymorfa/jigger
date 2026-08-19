@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebActionToast.react","WAWebFrontendContactGetters","WAWebMexTransferCommunityOwnershipJob","WAWebStateUtils","WAWebToastManager","react"],"dependents":["WAWebCommunityTransferOwnershipConfirmationDrawer.react"],"dependent_count":1,"exports":[]}

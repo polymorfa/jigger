@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxOutWaffleBaseIQGetRequestMixin","WAWap"],"dependents":["WASmaxWaffleForceSuspendStateRPC"],"dependent_count":1,"exports":[{"name":"makeForceSuspendStateRequest","used_by":["WASmaxWaffleForceSuspendStateRPC"],"uses":1}]}

@@ -1,0 +1,57 @@
+{
+  "id": "enum:UI_MESSAGE_YOURSELF_ACTION_TYPE",
+  "kind": "enum",
+  "name": "UI_MESSAGE_YOURSELF_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUiMessageYourselfActionType",
+    "variants": [
+      {
+        "name": "NEW_CHAT_PRESSED",
+        "value": 1.0
+      },
+      {
+        "name": "YOU_SELECTED",
+        "value": 2.0
+      },
+      {
+        "name": "SEARCH_BAR_PRESSED",
+        "value": 3.0
+      },
+      {
+        "name": "SEARCH_FULL_NAME_YOU_SELECTED",
+        "value": 4.0
+      },
+      {
+        "name": "NEW_NTS_CREATED",
+        "value": 5.0
+      },
+      {
+        "name": "EXISTING_NTS_OPENED",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUiMessageYourselfActionType",
+    "matches": "UI_MESSAGE_YOURSELF_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "UI_MESSAGE_YOURSELF_ACTION_TYPE",
+    "NEW_CHAT_PRESSED",
+    "YOU_SELECTED",
+    "SEARCH_BAR_PRESSED",
+    "SEARCH_FULL_NAME_YOU_SELECTED",
+    "NEW_NTS_CREATED",
+    "EXISTING_NTS_OPENED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMessageYourselfMetricUtils",
+      "WAWebUiMessageYourselfActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

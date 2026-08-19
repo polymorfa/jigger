@@ -1,0 +1,40 @@
+{
+  "id": "enum:CALL_LINK_MEDIA",
+  "kind": "enum",
+  "name": "CALL_LINK_MEDIA",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallLinkMedia",
+    "variants": [
+      {
+        "name": "VOICE",
+        "value": 1.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallLinkMedia",
+    "matches": "CALL_LINK_MEDIA\\s*[:=]"
+  },
+  "literals": [
+    "CALL_LINK_MEDIA",
+    "VOICE",
+    "VIDEO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallLinkActionEventWamEvent",
+      "WAWebEventsCreateEventModalFlow.react",
+      "WAWebVoipCallLinkSharePanel.react",
+      "WAWebVoipCallParticipantsDrawer.react",
+      "WAWebVoipCreateCallLinksPopup.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

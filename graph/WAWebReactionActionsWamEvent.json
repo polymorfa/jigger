@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumMediaType","WAWebWamEnumMessageType","WAWebWamEnumReactionActionType"],"dependents":["WAWebMessageHoverBarContainer.react","WAWebRightClickReactionBarContainer.react","WAWebSendReactionsTrayContainer.react"],"dependent_count":3,"exports":[{"name":"ReactionActionsWamEvent","used_by":[],"uses":0}]}

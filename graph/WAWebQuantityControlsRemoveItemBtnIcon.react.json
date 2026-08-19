@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebCommonQuantityControls.react"],"dependent_count":2,"exports":[{"name":"QuantityControlsRemoveItemBtnIcon","used_by":["WAWebAllGeneratedIcons","WAWebCommonQuantityControls.react"],"uses":2}]}

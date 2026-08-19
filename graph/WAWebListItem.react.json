@@ -1,0 +1,1 @@
+{"deps":["react","react-compiler-runtime","shallowEqual","stylex","useWAWebPrevious"],"dependents":["WAWebFlatList.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

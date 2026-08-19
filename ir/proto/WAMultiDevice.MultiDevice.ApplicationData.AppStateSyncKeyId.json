@@ -1,0 +1,31 @@
+{
+  "id": "proto:WAMultiDevice.MultiDevice.ApplicationData.AppStateSyncKeyId",
+  "kind": "proto",
+  "name": "WAMultiDevice.MultiDevice.ApplicationData.AppStateSyncKeyId",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "keyId": {
+        "number": 1
+      }
+    },
+    "module": "WAMultiDevice.pb"
+  },
+  "evidence": {
+    "module": "WAMultiDevice.pb",
+    "matches": "name = \"MultiDevice.ApplicationData.AppStateSyncKeyId\""
+  },
+  "literals": [
+    "AppStateSyncKeyId"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAConvertAppData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

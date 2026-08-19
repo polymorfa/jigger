@@ -1,0 +1,1 @@
+{"deps":["Promise","asyncToGeneratorRuntime"],"dependents":["WAWebDownloadManager","WAWebMainWrapper"],"dependent_count":2,"exports":[{"name":"checkKaleidoscopeWasmFeatureSupport","used_by":["WAWebDownloadManager","WAWebMainWrapper"],"uses":2}]}

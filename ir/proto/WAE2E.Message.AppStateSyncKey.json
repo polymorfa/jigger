@@ -1,0 +1,47 @@
+{
+  "id": "proto:WAE2E.Message.AppStateSyncKey",
+  "kind": "proto",
+  "name": "WAE2E.Message.AppStateSyncKey",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "keyData": {
+        "number": 2,
+        "type_name": "WAE2E.Message.AppStateSyncKeyData"
+      },
+      "keyId": {
+        "number": 1,
+        "type_name": "WAE2E.Message.AppStateSyncKeyId"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.AppStateSyncKey\""
+  },
+  "literals": [
+    "AppStateSyncKey"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

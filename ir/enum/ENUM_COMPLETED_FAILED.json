@@ -1,0 +1,38 @@
+{
+  "id": "enum:ENUM_COMPLETED_FAILED",
+  "kind": "enum",
+  "name": "ENUM_COMPLETED_FAILED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInCoexistenceEnums",
+    "variants": [
+      {
+        "name": "completed",
+        "value": "completed"
+      },
+      {
+        "name": "failed",
+        "value": "failed"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInCoexistenceEnums",
+    "matches": "ENUM_COMPLETED_FAILED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_COMPLETED_FAILED",
+    "completed",
+    "failed"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInCoexistenceOffboardingNotificationRequest",
+      "WASmaxInCoexistenceOnboardingStatusNotificationRequest",
+      "WASmaxInCoexistenceProductSurfaceMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

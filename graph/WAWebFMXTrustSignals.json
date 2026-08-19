@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebApiContactUsernameFields","WAWebCountriesUtils","WAWebFMXGatingUtils","WAWebFrontendContactGetters","WAWebUserPrefsMeUser","WDSText.react","asyncToGeneratorRuntime","react"],"dependents":["WAWebContactInfoCard.react","useWAWebChatOpenMetrics"],"dependent_count":2,"exports":[]}

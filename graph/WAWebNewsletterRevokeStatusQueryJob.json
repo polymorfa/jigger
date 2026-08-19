@@ -1,0 +1,1 @@
+{"deps":["WALogger","WASmaxStatusPublishPostNewsletterStatusRPC","WAStanzaUtils","WAWebNewsletterValidationUtils","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterRevokeStatusAction"],"dependent_count":1,"exports":[{"name":"queryRevokeNewsletterStatus","used_by":["WAWebNewsletterRevokeStatusAction"],"uses":1}]}

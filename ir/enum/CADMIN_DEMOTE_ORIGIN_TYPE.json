@@ -1,0 +1,38 @@
+{
+  "id": "enum:CADMIN_DEMOTE_ORIGIN_TYPE",
+  "kind": "enum",
+  "name": "CADMIN_DEMOTE_ORIGIN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCadminDemoteOriginType",
+    "variants": [
+      {
+        "name": "PROMOTION_NOTIFICATION",
+        "value": 1.0
+      },
+      {
+        "name": "MEMBER_LIST",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCadminDemoteOriginType",
+    "matches": "CADMIN_DEMOTE_ORIGIN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CADMIN_DEMOTE_ORIGIN_TYPE",
+    "PROMOTION_NOTIFICATION",
+    "MEMBER_LIST"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCadminDemoteWamEvent",
+      "WAWebCommunityAdminPromotionNotificationFlow.react",
+      "WAWebOpenCommunityParticipantDemoteConfirmation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

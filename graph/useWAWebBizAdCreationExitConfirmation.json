@@ -1,0 +1,1 @@
+{"deps":["fbt","FBLogger","Promise","WAWebConfirmPopup.react","WAWebModalManager","WAWebToast.react","WAWebToastManager","WDSText.react","asyncToGeneratorRuntime","getErrorSafe","react","react-compiler-runtime","useWAWebBeforeUnload"],"dependents":["WAWebBizNativeAdsFlow.react"],"dependent_count":1,"exports":[]}

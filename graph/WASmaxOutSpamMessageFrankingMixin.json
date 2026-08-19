@@ -1,0 +1,1 @@
+{"deps":["WASmaxChildren","WASmaxJsx","WASmaxMixins","WASmaxOutSpamClientFrankingTagMixin","WASmaxOutSpamRawV3Mixin","WASmaxOutSpamServerFrankingTagMixin"],"dependents":["WASmaxOutSpamMessageMixin"],"dependent_count":1,"exports":[{"name":"mergeMessageFrankingMixin","used_by":["WASmaxOutSpamMessageMixin"],"uses":1},{"name":"makeMessageFrankingRaw","used_by":[],"uses":0}]}

@@ -1,0 +1,159 @@
+{
+  "id": "enum:MESSAGE_DROP_REASON_TYPE",
+  "kind": "enum",
+  "name": "MESSAGE_DROP_REASON_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMessageDropReasonType",
+    "variants": [
+      {
+        "name": "SYNCD_DELETION",
+        "value": 1.0
+      },
+      {
+        "name": "ADMIN_REVOKE_NOT_ENABLED",
+        "value": 2.0
+      },
+      {
+        "name": "RECEIVED_WITH_OLD_COUNTER",
+        "value": 3.0
+      },
+      {
+        "name": "INVALID_STANZA",
+        "value": 4.0
+      },
+      {
+        "name": "INVALID_PROTOBUF",
+        "value": 5.0
+      },
+      {
+        "name": "MESSAGE_SECRET_ERROR",
+        "value": 6.0
+      },
+      {
+        "name": "INVALID_LID_ADDRESSED_MESSAGE",
+        "value": 7.0
+      },
+      {
+        "name": "UNKNOWN_MESSAGE_TYPE",
+        "value": 8.0
+      },
+      {
+        "name": "DB_OPERATION_FAILED",
+        "value": 9.0
+      },
+      {
+        "name": "INTERNAL_ERROR",
+        "value": 10.0
+      },
+      {
+        "name": "EXPIRED",
+        "value": 11.0
+      },
+      {
+        "name": "INVALID_HOSTED_COMPANION_STANZA",
+        "value": 12.0
+      },
+      {
+        "name": "MESSAGE_REVOKED",
+        "value": 13.0
+      },
+      {
+        "name": "PAYMENT_MESSAGE_REVOKED",
+        "value": 14.0
+      },
+      {
+        "name": "DUPLICATE_MESSAGE",
+        "value": 15.0
+      },
+      {
+        "name": "DUPLICATE_DELIVERY",
+        "value": 16.0
+      },
+      {
+        "name": "INVALID_MESSAGE_REFERENCE",
+        "value": 17.0
+      },
+      {
+        "name": "UNSUPPORTED_MESSAGE",
+        "value": 18.0
+      },
+      {
+        "name": "MALICIOUS_DUPLICATE_MESSAGE",
+        "value": 19.0
+      },
+      {
+        "name": "PEER_MESSAGE_FROM_OTHER_USER",
+        "value": 20.0
+      },
+      {
+        "name": "INVALID_PEER_MESSAGE",
+        "value": 21.0
+      },
+      {
+        "name": "INVALID_REPORTING_TOKEN",
+        "value": 22.0
+      },
+      {
+        "name": "MISSING_REPORTING_TOKEN",
+        "value": 23.0
+      },
+      {
+        "name": "APPDATA_MISMATCH",
+        "value": 24.0
+      },
+      {
+        "name": "COEX_V2_RECV_UNSUPPORTED",
+        "value": 25.0
+      },
+      {
+        "name": "COEX_V2_INVALID_SENDER",
+        "value": 26.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMessageDropReasonType",
+    "matches": "MESSAGE_DROP_REASON_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MESSAGE_DROP_REASON_TYPE",
+    "SYNCD_DELETION",
+    "ADMIN_REVOKE_NOT_ENABLED",
+    "RECEIVED_WITH_OLD_COUNTER",
+    "INVALID_STANZA",
+    "INVALID_PROTOBUF",
+    "MESSAGE_SECRET_ERROR",
+    "INVALID_LID_ADDRESSED_MESSAGE",
+    "UNKNOWN_MESSAGE_TYPE",
+    "DB_OPERATION_FAILED",
+    "INTERNAL_ERROR",
+    "EXPIRED",
+    "INVALID_HOSTED_COMPANION_STANZA",
+    "MESSAGE_REVOKED",
+    "PAYMENT_MESSAGE_REVOKED",
+    "DUPLICATE_MESSAGE",
+    "DUPLICATE_DELIVERY",
+    "INVALID_MESSAGE_REFERENCE",
+    "UNSUPPORTED_MESSAGE",
+    "MALICIOUS_DUPLICATE_MESSAGE",
+    "PEER_MESSAGE_FROM_OTHER_USER",
+    "INVALID_PEER_MESSAGE",
+    "INVALID_REPORTING_TOKEN",
+    "MISSING_REPORTING_TOKEN",
+    "APPDATA_MISMATCH",
+    "COEX_V2_RECV_UNSUPPORTED",
+    "COEX_V2_INVALID_SENDER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebHandleNewsletterMsgLogger",
+      "WAWebIncomingMessageDropWamEvent",
+      "WAWebPostIncomingMessageDropDBOperationFailedForMsgRows",
+      "WAWebPostIncomingMessageDropMetric"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

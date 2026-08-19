@@ -1,0 +1,36 @@
+{
+  "id": "enum:PROJECT_CODE",
+  "kind": "enum",
+  "name": "PROJECT_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumProjectCode",
+    "variants": [
+      {
+        "name": "DIT",
+        "value": 1.0
+      },
+      {
+        "name": "DIRECTORY_SEARCH",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumProjectCode",
+    "matches": "PROJECT_CODE\\s*[:=]"
+  },
+  "literals": [
+    "PROJECT_CODE",
+    "DIT",
+    "DIRECTORY_SEARCH"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSignCredentialWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

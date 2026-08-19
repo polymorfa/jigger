@@ -1,0 +1,1 @@
+{"deps":["WABinary","WACryptoPkcs7","WAJids","WAMsgTransport.pb"],"dependents":["WAEncGroupMsg","WAEncNode"],"dependent_count":2,"exports":[{"name":"asMessageTransport","used_by":["WAEncGroupMsg","WAEncNode"],"uses":2},{"name":"backupDirectiveActionType","used_by":[],"uses":0},{"name":"constructBackupDirective","used_by":[],"uses":0}]}

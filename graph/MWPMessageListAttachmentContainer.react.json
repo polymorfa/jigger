@@ -1,0 +1,1 @@
+{"deps":["MWPMessageHasXMA","MWPMessageListColumn.react","mwpMessageIsReply","mwpMessageWithAttachmentHasPoll","react","react-strict-dom","xmaLayouts"],"dependents":["MAWSecureAttachment.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

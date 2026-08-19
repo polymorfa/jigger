@@ -1,0 +1,62 @@
+{
+  "id": "proto:MAWArmadilloAppMetaTableSchema.DbAppMetaValuesProto",
+  "kind": "proto",
+  "name": "MAWArmadilloAppMetaTableSchema.DbAppMetaValuesProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "allowSecurityAlert": {
+        "number": 3
+      },
+      "allowSecurityAlertForSelf": {
+        "number": 11
+      },
+      "dbMigrationVersion": {
+        "number": 16
+      },
+      "deviceJid": {
+        "number": 14
+      },
+      "hasMigratedFromDexie": {
+        "number": 12
+      },
+      "hmacKey": {
+        "number": 2
+      },
+      "hotlikeSticker": {
+        "number": 4
+      },
+      "isBackfilledForOccamadillo": {
+        "number": 5
+      },
+      "msgTypeVersion": {
+        "number": 1
+      },
+      "restoreMigrationAttempts": {
+        "number": 13
+      },
+      "restoreToDexieMigrationComplete": {
+        "number": 15
+      }
+    },
+    "module": "MAWArmadilloAppMetaTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloAppMetaTableSchema.pb",
+    "matches": "name = \"DbAppMetaValuesProto\""
+  },
+  "literals": [
+    "DbAppMetaValuesProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

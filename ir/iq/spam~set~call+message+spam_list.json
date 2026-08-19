@@ -1,0 +1,128 @@
+{
+  "id": "iq:spam/set/call+message+spam_list",
+  "kind": "iq",
+  "name": "SpamGroupReport",
+  "data": {
+    "kind": "iq",
+    "xmlns": "spam",
+    "type": "set",
+    "tags": [
+      "call",
+      "message",
+      "spam_list"
+    ],
+    "rpc": "WASmaxSpamGroupReportRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInSpamGroupReportResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "jidenum",
+              "optional": true
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "report",
+              "attrs": [
+                {
+                  "name": "id",
+                  "ty": "string",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInSpamGroupReportResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "jidenum",
+              "optional": true
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFeatureNotImplemented",
+          "IQErrorForbidden",
+          "IQErrorInternalServerError",
+          "IQErrorRateOverlimit",
+          "IQErrorReportTokenValidationFail"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutSpamGroupReportRequest",
+    "matches": "smax\\(\"call\""
+  },
+  "literals": [
+    "spam",
+    "call",
+    "message",
+    "spam_list"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxMixins",
+      "WASmaxOutSpamBaseIQSetRequestMixin",
+      "WASmaxOutSpamBaseReportMixin",
+      "WASmaxOutSpamCallReportMixin",
+      "WASmaxOutSpamEntitySubjectMixin",
+      "WASmaxOutSpamFRXMixin",
+      "WASmaxOutSpamIsKnownChatMixin",
+      "WASmaxOutSpamMessageMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxSpamGroupReportRPC"
+    ],
+    "dep_count": 12,
+    "dependent_count": 1
+  }
+}

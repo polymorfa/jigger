@@ -1,0 +1,58 @@
+{
+  "id": "wam:6332",
+  "kind": "wam",
+  "name": "PsGroupExitExperienceGroupAction",
+  "data": {
+    "kind": "wam",
+    "event_id": 6332,
+    "fields": {
+      "psGroupExitExperienceAction": {
+        "id": 1,
+        "type": "PS_GROUP_EXIT_EXPERIENCE_ACTIONS",
+        "wire": "ps_group_exit_experience_action",
+        "enum_ref": "PS_GROUP_EXIT_EXPERIENCE_ACTIONS"
+      },
+      "psGroupExitExperienceEnabled": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "ps_group_exit_experience_enabled"
+      },
+      "psGroupExitExperienceGroupJid": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "ps_group_exit_experience_group_jid"
+      },
+      "psGroupExitExperienceTouchPoint": {
+        "id": 4,
+        "type": "GROUP_EXIT_EXPERIENCE_ORIGIN",
+        "wire": "ps_group_exit_experience_touch_point",
+        "enum_ref": "GROUP_EXIT_EXPERIENCE_ORIGIN"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsGroupExitExperienceGroupActionWamEvent",
+    "matches": "PsGroupExitExperienceGroupAction:\\s*\\[\\s*6332"
+  },
+  "literals": [
+    "6332"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGroupExitExperienceOrigin",
+      "WAWebWamEnumPsGroupExitExperienceActions"
+    ],
+    "dependents": [
+      "WAWebGroupExitModalLoggingUtils"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

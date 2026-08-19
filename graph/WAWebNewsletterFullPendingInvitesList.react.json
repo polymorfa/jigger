@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBoolFunc","WAWebContactsModal.react","react","react-compiler-runtime","useWAWebNewsletterPendingInvites","useWAWebNewsletterSubscribersContextMenu"],"dependents":["WAWebNewsletterSubscriberListModal.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,127 @@
+__d("WAWebProcessRetryKeyBundle", [
+	"WALogger",
+	"WAWebAddonRetryRequestUtils",
+	"WAWebApiContact",
+	"WAWebApiMessageInfoStore",
+	"WAWebCoexV2RetryAuthorization",
+	"WAWebDBMessageSerialization",
+	"WAWebE2eRetryRejectWamEvent",
+	"WAWebLidMigrationUtils",
+	"WAWebMsgKey",
+	"WAWebMsgModel",
+	"WAWebMsgType",
+	"WAWebPQGatingUtils",
+	"WAWebSchemaMessage",
+	"WAWebSendMsgTypes",
+	"WAWebSessionScope",
+	"WAWebSessionScopeWamUtils",
+	"WAWebSignal",
+	"WAWebUserPrefsMeUser",
+	"WAWebWamEnumDeviceType",
+	"WAWebWamEnumEncryptionTypeCode",
+	"WAWebWamEnumRetryRejectReason",
+	"WAWebWamMsgUtils",
+	"WAWebWidFactory"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u, c, d, m, p, _, f, g;
+	async function h(t) {
+		var n = t.chat, a = t.identity, i = t.originalMsgId, l = t.requester, c = t.retryCount, d = t.sessionScope, m = o("WAWebUserPrefsMeUser").getMeLidUserOrThrow(), p = m, _ = new (r("WAWebMsgKey"))({
+			id: i,
+			remote: n,
+			fromMe: !0,
+			participant: n.isUser() ? void 0 : p
+		}), f, g, h, y = await o("WAWebAddonRetryRequestUtils").getSentAddonMsgRecord(_);
+		if (y != null) h = a == null ? void 0 : a.sentAddonRowId, g = y.selfMsgRow.rowId, f = {
+			type: o("WAWebSendMsgTypes").SendMessageRecordType.Addon,
+			data: y.msgData
+		};
+		else {
+			var C = await o("WAWebSchemaMessage").getMessageTable().get(String(_));
+			if (!C) {
+				var b = o("WAWebLidMigrationUtils").getAlternateMsgKey(_);
+				if (b && (C = await o("WAWebSchemaMessage").getMessageTable().get(String(b))), !C) return o("WALogger").WARN(e || (e = babelHelpers.taggedTemplateLiteralLoose(["getMsgIfAuthorized: can not find msg ", "."])), _.toString()), null;
+			}
+			h = a == null ? void 0 : a.rowId, g = C.type === o("WAWebMsgType").MSG_TYPE.REVOKED ? C.protocolMessageRowId : C.rowId;
+			var v = new (o("WAWebMsgModel")).Msg(o("WAWebDBMessageSerialization").messageFromDbRow(C));
+			f = {
+				type: o("WAWebSendMsgTypes").SendMessageRecordType.Message,
+				data: v
+			};
+		}
+		if (g == null) return o("WALogger").WARN(s || (s = babelHelpers.taggedTemplateLiteralLoose(["getMsgIfAuthorized: msg missing rowId ", "."])), _.toString()), null;
+		var S = await o("WAWebCoexV2RetryAuthorization").getCoexV2RelayRetryEligibility(l, i), R = S != null ? S : await o("WAWebApiMessageInfoStore").isRetryEligible({
+			identityRowId: h,
+			messageRowId: g,
+			msgKey: _,
+			receiver: l
+		}), L = R === o("WAWebApiMessageInfoStore").RetryEligibilityResult.INELIGIBLE_RECORD_MISSING, E = L ? o("WAWebApiContact").getAlternateDeviceWid(o("WAWebWidFactory").createDeviceWidFromWidOrThrow(l)) : null;
+		E && (R = await o("WAWebApiMessageInfoStore").isRetryEligible({
+			identityRowId: h,
+			messageRowId: g,
+			msgKey: _,
+			receiver: E
+		})), f.type === o("WAWebSendMsgTypes").SendMessageRecordType.Message && await f.data.waitForPrep(), o("WALogger").LOG(u || (u = babelHelpers.taggedTemplateLiteralLoose([
+			"getMsgIfAuthorized: ",
+			", ",
+			" retry eligibility ",
+			""
+		])), i, String(l), R).tags("messaging");
+		var k = o("WAWebWamEnumRetryRejectReason").RETRY_REJECT_REASON.OTHER, I = !1;
+		switch (f.data.type === o("WAWebMsgType").MSG_TYPE.REVOKED && (I = !0, f.data.type = "protocol", f.data.subtype = f.data.subtype === "admin" ? "admin_revoke" : "sender_revoke"), R) {
+			case o("WAWebApiMessageInfoStore").RetryEligibilityResult.ELIGIBLE: return f;
+			case o("WAWebApiMessageInfoStore").RetryEligibilityResult.INELIGIBLE_ALREADY_DELIVERED:
+				k = o("WAWebWamEnumRetryRejectReason").RETRY_REJECT_REASON.DOUBLE_CHECKMARK;
+				break;
+			case o("WAWebApiMessageInfoStore").RetryEligibilityResult.INELIGIBLE_CHANGED_IDENTITY:
+				k = o("WAWebWamEnumRetryRejectReason").RETRY_REJECT_REASON.IDENTITY_CHANGE;
+				break;
+			default:
+				k = o("WAWebWamEnumRetryRejectReason").RETRY_REJECT_REASON.OTHER;
+				break;
+		}
+		var T = new (o("WAWebE2eRetryRejectWamEvent")).E2eRetryRejectWamEvent({
+			senderDeviceType: l.isCompanion() ? o("WAWebWamEnumDeviceType").DEVICE_TYPE.COMPANION : o("WAWebWamEnumDeviceType").DEVICE_TYPE.PRIMARY,
+			messageType: o("WAWebWamMsgUtils").getWamMessageType(f.data),
+			msgRetryCount: c,
+			retryRevoke: I,
+			retryRejectReason: k,
+			sessionScope: o("WAWebSessionScopeWamUtils").sessionScopeToWamType(d)
+		}), D = o("WAWebWamMsgUtils").getWamE2eSenderType(l);
+		return D != null && (T.e2eSenderType = D), l.isHosted() && (T.encryptionType = o("WAWebWamEnumEncryptionTypeCode").ENCRYPTION_TYPE_CODE.COEX), T.commit(), null;
+	}
+	async function y(e) {
+		var t = e.is1on1, n = e.keyBundle, r = e.offline, a = e.remoteRegId, i = e.requester, l = e.savedRegId, s = e.sessionScope;
+		if (a == null || !n || n.type === "regular_retry" && !n.key) return o("WALogger").LOG(c || (c = babelHelpers.taggedTemplateLiteralLoose(["processKeyBundle: skip due to missing key bundle"]))), !1;
+		if (r) {
+			if (l == null) return o("WALogger").LOG(d || (d = babelHelpers.taggedTemplateLiteralLoose(["processKeyBundle: missing session for retry"]))), await o("WAWebSignal").Session.deleteRemoteInfo(i), !1;
+			if (l !== a) return o("WALogger").LOG(m || (m = babelHelpers.taggedTemplateLiteralLoose([
+				"processKeyBundle: del session, reg mismatch saved=",
+				" recv=",
+				""
+			])), l, a), await o("WAWebSignal").Session.deleteRemoteInfo(i), !1;
+			o("WALogger").LOG(p || (p = babelHelpers.taggedTemplateLiteralLoose(["processKeyBundle: update session w/ retry bundle (offline)"])));
+		} else o("WALogger").LOG(_ || (_ = babelHelpers.taggedTemplateLiteralLoose(["processKeyBundle: update session w/ retry bundle"])));
+		if (await o("WAWebSignal").Session.createSignalSession({
+			wid: i,
+			regId: a,
+			identity: n.identity,
+			deviceIdentity: n.deviceIdentity,
+			key: n.key,
+			skey: n.skey
+		}, s), n.kyberKey != null && t === !0 && (s == null || s === o("WAWebSessionScope").SessionScope.DEFAULT) && !i.isBot() && !i.isFbidBot() && !i.isHosted() && o("WAWebPQGatingUtils").isPq1on1MessageEnabled()) try {
+			await o("WAWebSignal").Session.createSignalSession({
+				wid: i,
+				regId: a,
+				identity: n.identity,
+				deviceIdentity: n.deviceIdentity,
+				key: n.key,
+				skey: n.skey,
+				kyberKey: n.kyberKey
+			}, o("WAWebSessionScope").SessionScope.PQ), o("WALogger").LOG(f || (f = babelHelpers.taggedTemplateLiteralLoose(["processKeyBundle: established PQXDH session from retry bundle"])));
+		} catch (e) {
+			o("WALogger").WARN(g || (g = babelHelpers.taggedTemplateLiteralLoose(["processKeyBundle: failed to build PQXDH session from retry bundle: ", ""])), e).sendLogs("retry-pqxdh-session-fail");
+		}
+		return !0;
+	}
+	l.getMsgIfAuthorized = h, l.processKeyBundle = y;
+}), 98);

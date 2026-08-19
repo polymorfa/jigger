@@ -1,0 +1,48 @@
+{
+  "id": "ab:wa_web_quick_reactions",
+  "kind": "ab",
+  "name": "wa_web_quick_reactions",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28621,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_quick_reactions:\\s*\\[\\s*28621"
+  },
+  "literals": [
+    "wa_web_quick_reactions",
+    "28621"
+  ],
+  "usage": {
+    "read_count": 4,
+    "readers": [
+      "WAWebConversationMsgs.react",
+      "WAWebMessageHoverBar.react",
+      "WAWebMessageWrapper.react",
+      "WAWebWrapperQuickActionButton.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

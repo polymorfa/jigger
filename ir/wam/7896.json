@@ -1,0 +1,103 @@
+{
+  "id": "wam:7896",
+  "kind": "wam",
+  "name": "WaPlusBenefitUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 7896,
+    "fields": {
+      "wpbujAction": {
+        "id": 1,
+        "type": "WPBUJ_ACTION",
+        "wire": "wpbuj_action",
+        "enum_ref": "WPBUJ_ACTION"
+      },
+      "wpbujActionTarget": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "wpbuj_action_target"
+      },
+      "wpbujBenefitStatus": {
+        "id": 2,
+        "type": "WPBUJ_BENEFIT_STATUS",
+        "wire": "wpbuj_benefit_status",
+        "enum_ref": "WPBUJ_BENEFIT_STATUS"
+      },
+      "wpbujBenefitType": {
+        "id": 3,
+        "type": "WPBUJ_BENEFIT_TYPE",
+        "wire": "wpbuj_benefit_type",
+        "enum_ref": "WPBUJ_BENEFIT_TYPE"
+      },
+      "wpbujCustomFields": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "wpbuj_custom_fields"
+      },
+      "wpbujErrorMessage": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "wpbuj_error_message"
+      },
+      "wpbujOutcomeName": {
+        "id": 6,
+        "type": "WPBUJ_OUTCOME_NAME",
+        "wire": "wpbuj_outcome_name",
+        "enum_ref": "WPBUJ_OUTCOME_NAME"
+      },
+      "wpbujSessionId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "wpbuj_session_id"
+      },
+      "wpbujSource": {
+        "id": 8,
+        "type": "WPBUJ_SOURCE",
+        "wire": "wpbuj_source",
+        "enum_ref": "WPBUJ_SOURCE"
+      },
+      "wpbujSurface": {
+        "id": 9,
+        "type": "WPBUJ_SURFACE",
+        "wire": "wpbuj_surface",
+        "enum_ref": "WPBUJ_SURFACE"
+      },
+      "wsuaProductType": {
+        "id": 10,
+        "type": "WSUA_PRODUCT_TYPE",
+        "wire": "wsua_product_type",
+        "enum_ref": "WSUA_PRODUCT_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWaPlusBenefitUserJourneyWamEvent",
+    "matches": "WaPlusBenefitUserJourney:\\s*\\[\\s*7896"
+  },
+  "literals": [
+    "7896"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWpbujAction",
+      "WAWebWamEnumWpbujBenefitStatus",
+      "WAWebWamEnumWpbujBenefitType",
+      "WAWebWamEnumWpbujOutcomeName",
+      "WAWebWamEnumWpbujSource",
+      "WAWebWamEnumWpbujSurface",
+      "WAWebWamEnumWsuaProductType"
+    ],
+    "dependents": [
+      "WAWebWaPlusBenefitJourneyLogger"
+    ],
+    "dep_count": 8,
+    "dependent_count": 1
+  }
+}

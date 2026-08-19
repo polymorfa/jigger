@@ -1,0 +1,1 @@
+{"deps":["WAWebVoipAudioCaptureAndPlayback","WAWebVoipVideoRendererRegistry"],"dependents":["WAWebVoipWebBridgeApi"],"dependent_count":1,"exports":[{"name":"VoipBridgeAVSyncHandlers","used_by":["WAWebVoipWebBridgeApi"],"uses":1}]}

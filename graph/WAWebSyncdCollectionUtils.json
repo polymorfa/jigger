@@ -1,0 +1,1 @@
+{"deps":["WAWebSyncdConst"],"dependents":["WAWebHandleServerSyncNotification","WAWebSyncdCollectionHandler"],"dependent_count":2,"exports":[{"name":"isCriticalCollection","used_by":["WAWebHandleServerSyncNotification","WAWebSyncdCollectionHandler"],"uses":2},{"name":"isBootstrap","used_by":["WAWebSyncdCollectionHandler"],"uses":1}]}

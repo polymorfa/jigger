@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChannelsVideoPlayWamEvent","useWAWebNewsletterVideoPlayMetric"],"dependent_count":2,"exports":[{"name":"VIDEO_PLAY_ORIGIN","used_by":["WAWebChannelsVideoPlayWamEvent","useWAWebNewsletterVideoPlayMetric"],"uses":2}]}

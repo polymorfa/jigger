@@ -1,0 +1,1 @@
+{"deps":["WAWebDBStats","WAWebWebDbTableUsageWamEvent"],"dependents":["WAWebDBStats","WAWebDebugDB","WAWebWamOfflineResumeReporter"],"dependent_count":3,"exports":[{"name":"beginDBTableUsage","used_by":["WAWebDebugDB","WAWebWamOfflineResumeReporter"],"uses":2},{"name":"recordTableUsageStat","used_by":["WAWebDBStats"],"uses":1}]}

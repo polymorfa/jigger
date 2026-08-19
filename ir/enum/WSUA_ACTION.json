@@ -1,0 +1,42 @@
+{
+  "id": "enum:WSUA_ACTION",
+  "kind": "enum",
+  "name": "WSUA_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWsuaAction",
+    "variants": [
+      {
+        "name": "CLICK",
+        "value": 1.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 2.0
+      },
+      {
+        "name": "VIEW",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWsuaAction",
+    "matches": "WSUA_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "WSUA_ACTION",
+    "CLICK",
+    "DISMISS",
+    "VIEW"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaOneUpsellLogger",
+      "WAWebSubscriptionUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

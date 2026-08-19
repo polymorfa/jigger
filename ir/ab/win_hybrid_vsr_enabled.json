@@ -1,0 +1,42 @@
+{
+  "id": "ab:win_hybrid_vsr_enabled",
+  "kind": "ab",
+  "name": "win_hybrid_vsr_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34271,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "win_hybrid_vsr_enabled:\\s*\\[\\s*34271"
+  },
+  "literals": [
+    "win_hybrid_vsr_enabled",
+    "34271"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

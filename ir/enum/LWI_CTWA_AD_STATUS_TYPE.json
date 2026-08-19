@@ -1,0 +1,81 @@
+{
+  "id": "enum:LWI_CTWA_AD_STATUS_TYPE",
+  "kind": "enum",
+  "name": "LWI_CTWA_AD_STATUS_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiCtwaAdStatusType",
+    "variants": [
+      {
+        "name": "ACTIVE",
+        "value": 1.0
+      },
+      {
+        "name": "SCHEDULED",
+        "value": 2.0
+      },
+      {
+        "name": "PAUSED",
+        "value": 3.0
+      },
+      {
+        "name": "NOT_DELIVERING",
+        "value": 4.0
+      },
+      {
+        "name": "REJECTED",
+        "value": 5.0
+      },
+      {
+        "name": "FINISHED",
+        "value": 6.0
+      },
+      {
+        "name": "IN_REVIEW",
+        "value": 7.0
+      },
+      {
+        "name": "COMPLETED",
+        "value": 8.0
+      },
+      {
+        "name": "EXTENDABLE",
+        "value": 9.0
+      },
+      {
+        "name": "UNABLE_TO_CREATE",
+        "value": 10.0
+      },
+      {
+        "name": "LIMITED_DELIVERY",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiCtwaAdStatusType",
+    "matches": "LWI_CTWA_AD_STATUS_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LWI_CTWA_AD_STATUS_TYPE",
+    "ACTIVE",
+    "SCHEDULED",
+    "PAUSED",
+    "NOT_DELIVERING",
+    "REJECTED",
+    "FINISHED",
+    "IN_REVIEW",
+    "COMPLETED",
+    "EXTENDABLE",
+    "UNABLE_TO_CREATE",
+    "LIMITED_DELIVERY"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLwiScreenWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebNewsletterDirectoryCategoriesDropdown.react"],"dependent_count":2,"exports":[{"name":"ApplyIcon","used_by":["WAWebAllGeneratedIcons","WAWebNewsletterDirectoryCategoriesDropdown.react"],"uses":2}]}

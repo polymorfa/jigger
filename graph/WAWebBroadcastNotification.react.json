@@ -1,0 +1,1 @@
+{"deps":["WAWebFormatBroadcastNotification","WAWebMsgGetters","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebChatLastMsg.react","WAWebMessageComponent.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

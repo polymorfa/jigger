@@ -1,0 +1,45 @@
+{
+  "id": "ab:enable_agm_flow_cta",
+  "kind": "ab",
+  "name": "enable_agm_flow_cta",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22006,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_agm_flow_cta:\\s*\\[\\s*22006"
+  },
+  "literals": [
+    "enable_agm_flow_cta",
+    "22006"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizCtwaAGMUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

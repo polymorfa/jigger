@@ -1,0 +1,1 @@
+{"deps":["WAWebModelStorageUtils","WAWebModelStorageVersions","WAWebStorageMutationBuilder"],"dependents":["WAWebModelStorageInitialize","WAWebPriorLogs"],"dependent_count":2,"exports":[{"name":"addTable","used_by":["WAWebModelStorageInitialize"],"uses":1},{"name":"getSyncdLogsTable","used_by":["WAWebPriorLogs"],"uses":1}]}

@@ -1,0 +1,49 @@
+{
+  "id": "enum:ENUM_ELIGIBLEFORPARODYPENDINGACKNOWLEDGEMENT_ISPARODYANDACKNOWLEDGED_NOTELIGIBLEFORPARODY_UNSETORUNRECOGNIZEDENUMVALUE",
+  "kind": "enum",
+  "name": "ENUM_ELIGIBLEFORPARODYPENDINGACKNOWLEDGEMENT_ISPARODYANDACKNOWLEDGED_NOTELIGIBLEFORPARODY_UNSETORUNRECOGNIZEDENUMVALUE",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInUsyncEnums",
+    "variants": [
+      {
+        "name": "eligible_for_parody_pending_acknowledgement",
+        "value": "eligible_for_parody_pending_acknowledgement"
+      },
+      {
+        "name": "is_parody_and_acknowledged",
+        "value": "is_parody_and_acknowledged"
+      },
+      {
+        "name": "not_eligible_for_parody",
+        "value": "not_eligible_for_parody"
+      },
+      {
+        "name": "unset_or_unrecognized_enum_value",
+        "value": "unset_or_unrecognized_enum_value"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInUsyncEnums",
+    "matches": "ENUM_ELIGIBLEFORPARODYPENDINGACKNOWLEDGEMENT_ISPARODYANDACKNOWLEDGED_NOTELIGIBLEFORPARODY_UNSETORUNRECOGNIZEDENUMVALUE\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ELIGIBLEFORPARODYPENDINGACKNOWLEDGEMENT_ISPARODYANDACKNOWLEDGED_NOTELIGIBLEFORPARODY_UNSETORUNRECOGNIZEDENUMVALUE",
+    "eligible_for_parody_pending_acknowledgement",
+    "is_parody_and_acknowledged",
+    "not_eligible_for_parody",
+    "unset_or_unrecognized_enum_value"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInUsyncNotificationAddDevicesNotificationMixin",
+      "WASmaxInUsyncNotificationRemoveDevicesNotificationMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

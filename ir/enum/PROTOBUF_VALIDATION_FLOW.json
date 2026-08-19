@@ -1,0 +1,67 @@
+{
+  "id": "enum:PROTOBUF_VALIDATION_FLOW",
+  "kind": "enum",
+  "name": "PROTOBUF_VALIDATION_FLOW",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumProtobufValidationFlow",
+    "variants": [
+      {
+        "name": "STANZA_MESSAGE_RECEIVE",
+        "value": 0.0
+      },
+      {
+        "name": "STANZA_MESSAGE_SEND",
+        "value": 1.0
+      },
+      {
+        "name": "NOTIFICATION_EXTENSION_RECEIVE",
+        "value": 2.0
+      },
+      {
+        "name": "HISTORY_SYNC_RECEIVE",
+        "value": 3.0
+      },
+      {
+        "name": "STANZA_PSA_MESSAGE_RECEIVE",
+        "value": 4.0
+      },
+      {
+        "name": "FUTUREPROOF_PROCESSING",
+        "value": 5.0
+      },
+      {
+        "name": "CROSS_PLATFORM_MIGRATION_RECEIVE",
+        "value": 6.0
+      },
+      {
+        "name": "HISTORY_SYNC_SEND",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumProtobufValidationFlow",
+    "matches": "PROTOBUF_VALIDATION_FLOW\\s*[:=]"
+  },
+  "literals": [
+    "PROTOBUF_VALIDATION_FLOW",
+    "STANZA_MESSAGE_RECEIVE",
+    "STANZA_MESSAGE_SEND",
+    "NOTIFICATION_EXTENSION_RECEIVE",
+    "HISTORY_SYNC_RECEIVE",
+    "STANZA_PSA_MESSAGE_RECEIVE",
+    "FUTUREPROOF_PROCESSING",
+    "CROSS_PLATFORM_MIGRATION_RECEIVE",
+    "HISTORY_SYNC_SEND"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMessageSecretLocationUtils",
+      "WAWebProtobufValidationErrorWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebGetPendingMutation","WAWebSyncdConst","asyncToGeneratorRuntime","compactMap"],"dependents":["WAWebSyncdCollectionHandler"],"dependent_count":1,"exports":[{"name":"resolveConflict","used_by":["WAWebSyncdCollectionHandler"],"uses":1}]}

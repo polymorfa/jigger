@@ -1,0 +1,1 @@
+{"deps":["WAWebStorageMutationBuilder","WAWebStorageSchema","WAWebWorkerStorageUtils","WAWebWorkerStorageVersions"],"dependents":["WAWebApiDeferredMessagesStorage","WAWebWorkerStorage"],"dependent_count":2,"exports":[{"name":"getTable","used_by":["WAWebApiDeferredMessagesStorage","WAWebWorkerStorage"],"uses":2},{"name":"addTable","used_by":["WAWebWorkerStorage"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["MAWUISnippetsCacheService"],"dependents":["MAWUICacheServices"],"dependent_count":1,"exports":[{"name":"getUICacheServiceRegistry","used_by":["MAWUICacheServices"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebBloksAppLoader","WAWebBloksPrimitives","WAWebUnifiedResponseLoaderTemplate","WebBloksEnvironment","WebBloksHasteEnvironment","WebBloksUtils","react-compiler-runtime","waWebTraversalKeys"],"dependents":["WAWebBloksEntryPoint.react"],"dependent_count":1,"exports":[{"name":"useWAWebBloksEnvironment","used_by":["WAWebBloksEntryPoint.react"],"uses":1}]}

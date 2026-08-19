@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebInteractiveMessageCarousel.react","WAWebPaidMessageVpvImpressionWamEvent","useWAWebBizVPVData"],"dependent_count":3,"exports":[{"name":"MESSAGE_BODY_TYPE_ENUM","used_by":["WAWebInteractiveMessageCarousel.react","WAWebPaidMessageVpvImpressionWamEvent","useWAWebBizVPVData"],"uses":3}]}

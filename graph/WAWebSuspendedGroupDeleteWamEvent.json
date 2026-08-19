@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumDeleteSuspendedGroupBtn"],"dependents":["WAWebSuspendedGroupModalV2.react","WAWebSuspendedOrTerminatedGroupMsgBarV2.react"],"dependent_count":2,"exports":[{"name":"SuspendedGroupDeleteWamEvent","used_by":[],"uses":0}]}

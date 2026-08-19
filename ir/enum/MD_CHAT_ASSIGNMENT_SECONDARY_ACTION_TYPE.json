@@ -1,0 +1,52 @@
+{
+  "id": "enum:MD_CHAT_ASSIGNMENT_SECONDARY_ACTION_TYPE",
+  "kind": "enum",
+  "name": "MD_CHAT_ASSIGNMENT_SECONDARY_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdChatAssignmentSecondaryActionType",
+    "variants": [
+      {
+        "name": "ACTION_SYSTEM_MESSAGE_ADDED_TO_CHAT_HISTORY",
+        "value": 0.0
+      },
+      {
+        "name": "ACTION_SYSTEM_MESSAGE_CREATION_ERROR",
+        "value": 1.0
+      },
+      {
+        "name": "ACTION_SYSTEM_MESSAGE_RENDERED",
+        "value": 2.0
+      },
+      {
+        "name": "ACTION_CHAT_STATUS_TICKER_SHOWN",
+        "value": 3.0
+      },
+      {
+        "name": "ACTION_TOOLTIP_SHOWN",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdChatAssignmentSecondaryActionType",
+    "matches": "MD_CHAT_ASSIGNMENT_SECONDARY_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MD_CHAT_ASSIGNMENT_SECONDARY_ACTION_TYPE",
+    "ACTION_SYSTEM_MESSAGE_ADDED_TO_CHAT_HISTORY",
+    "ACTION_SYSTEM_MESSAGE_CREATION_ERROR",
+    "ACTION_SYSTEM_MESSAGE_RENDERED",
+    "ACTION_CHAT_STATUS_TICKER_SHOWN",
+    "ACTION_TOOLTIP_SHOWN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatAssignmentLogEvents",
+      "WAWebMdChatAssignmentSecondaryActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

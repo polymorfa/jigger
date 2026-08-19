@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebHandleHatchMetadataSync","WAWebHatchApprovalDebug","WAWebHatchApprovalDialog.react","WAWebHatchPayloadDebugStore","WDSDialogBridge","react"],"dependents":["WAWebDebug"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:smb_ctwa_irev_long_term_holdout_dummy_enabled",
+  "kind": "ab",
+  "name": "smb_ctwa_irev_long_term_holdout_dummy_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31959,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_ctwa_irev_long_term_holdout_dummy_enabled:\\s*\\[\\s*31959"
+  },
+  "literals": [
+    "smb_ctwa_irev_long_term_holdout_dummy_enabled",
+    "31959"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["react-compiler-runtime","useWAWebEventTargetValue"],"dependents":["WAWebCommentsBubbleContainer.react","WAWebCommentsModal.react"],"dependent_count":2,"exports":[{"name":"useWAWebCommentReplyCount","used_by":["WAWebCommentsBubbleContainer.react","WAWebCommentsModal.react"],"uses":2}]}

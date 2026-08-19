@@ -1,0 +1,110 @@
+{
+  "id": "proto:WAWebProtobufsCompanionReg.DeviceProps.HistorySyncConfig",
+  "kind": "proto",
+  "name": "WAWebProtobufsCompanionReg.DeviceProps.HistorySyncConfig",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "completeOnDemandReady": {
+        "number": 18
+      },
+      "fullSyncDaysLimit": {
+        "number": 1
+      },
+      "fullSyncSizeMbLimit": {
+        "number": 2
+      },
+      "initialSyncMaxMessagesPerChat": {
+        "number": 20
+      },
+      "inlineInitialPayloadInE2EeMsg": {
+        "number": 4
+      },
+      "onDemandReady": {
+        "number": 16
+      },
+      "recentSyncDaysLimit": {
+        "number": 5
+      },
+      "storageQuotaMb": {
+        "number": 3
+      },
+      "supportAddOnHistorySyncMigration": {
+        "number": 13
+      },
+      "supportBizHostedMsg": {
+        "number": 9
+      },
+      "supportBotUserAgentChatHistory": {
+        "number": 7
+      },
+      "supportCagReactionsAndPolls": {
+        "number": 8
+      },
+      "supportCallLogHistory": {
+        "number": 6
+      },
+      "supportFbidBotChatHistory": {
+        "number": 12
+      },
+      "supportGroupHistory": {
+        "number": 15
+      },
+      "supportGuestChat": {
+        "number": 17
+      },
+      "supportHatchHistory": {
+        "number": 22
+      },
+      "supportHostedGroupMsg": {
+        "number": 11
+      },
+      "supportInlineContacts": {
+        "number": 24
+      },
+      "supportManusHistory": {
+        "number": 21
+      },
+      "supportMessageAssociation": {
+        "number": 14
+      },
+      "supportNewsletter": {
+        "number": 25
+      },
+      "supportRecentSyncChunkMessageCountTuning": {
+        "number": 10
+      },
+      "supportedBotChannelFbids": {
+        "number": 23
+      },
+      "thumbnailSyncDaysLimit": {
+        "number": 19
+      }
+    },
+    "module": "WAWebProtobufsCompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsCompanionReg.pb",
+    "matches": "name = \"DeviceProps.HistorySyncConfig\""
+  },
+  "literals": [
+    "HistorySyncConfig"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebHandlePairSuccess",
+      "WAWebProtobufsE2E.pb",
+      "WAWebShortcakeLinkingAlgorithm",
+      "WAWebShortcakeLinkingApi",
+      "WAWebShortcakeLinkingPairingRequest",
+      "WAWebShortcakeLinkingPasskeyPrologue"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

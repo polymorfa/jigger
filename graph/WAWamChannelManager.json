@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWamStorage"],"dependent_count":1,"exports":[{"name":"closeChannelManager","used_by":["WAWamStorage"],"uses":1},{"name":"getChannelManager","used_by":["WAWamStorage"],"uses":1}]}

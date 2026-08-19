@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebDBStoreEncryptedMsgs","WAWebDBStoreNewsletterEncryptedMsgs"],"dependent_count":2,"exports":[{"name":"getLastRowId","used_by":["WAWebDBStoreEncryptedMsgs","WAWebDBStoreNewsletterEncryptedMsgs"],"uses":2},{"name":"INLINE_MESSAGE_STARTING_INDEX","used_by":["WAWebDBStoreEncryptedMsgs"],"uses":1}]}

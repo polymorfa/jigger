@@ -1,0 +1,1 @@
+{"deps":["WmiMetadataAppSettingsReader"],"dependents":["MAWBridgeHandlers"],"dependent_count":1,"exports":[{"name":"getSecurityAlertSettingForSelfAndContact","used_by":["MAWBridgeHandlers"],"uses":1}]}

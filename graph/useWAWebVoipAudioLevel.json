@@ -1,0 +1,1 @@
+{"deps":["WAWebCallCollection","WAWebVoipEventConstants","react","react-compiler-runtime","useWAWebThrottledCallback"],"dependents":["WAWebCallParticipantInfo.react","WAWebVoipUiVideoGroupCallParticipant.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

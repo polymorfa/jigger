@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebSchemaChat"],"dependents":["WAWebDBProcessReactionsMsgs","WAWebDBUpdateLastAddOnPreviewChat","WAWebDeleteLastAddOnsPreview"],"dependent_count":3,"exports":[{"name":"bulkUpdateChatLastAddOnPreview","used_by":["WAWebDBProcessReactionsMsgs","WAWebDBUpdateLastAddOnPreviewChat","WAWebDeleteLastAddOnsPreview"],"uses":3}]}

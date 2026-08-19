@@ -1,0 +1,1 @@
+{"deps":["fbt","LSMessagingThreadTypeUtil","MWXIconMenuItemTrash","MWXMenuItem.react","MessageRequestsLog","MessengerWebUXLogger","ODS","WebUserFlowLoggingDataContextProvider.react","react","react-compiler-runtime","useMWCMShowDeleteOrPauseDialog.react","uuidv4"],"dependents":["MAWHeaderSettingsMenuDeleteSecureThread.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,47 @@
+{
+  "id": "enum:BUSINESS_INTERACTION_ENTRY_POINT_APP",
+  "kind": "enum",
+  "name": "BUSINESS_INTERACTION_ENTRY_POINT_APP",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBusinessInteractionEntryPointApp",
+    "variants": [
+      {
+        "name": "FACEBOOK",
+        "value": 1.0
+      },
+      {
+        "name": "INSTAGRAM",
+        "value": 2.0
+      },
+      {
+        "name": "WHATSAPP",
+        "value": 3.0
+      },
+      {
+        "name": "EXTERNAL",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBusinessInteractionEntryPointApp",
+    "matches": "BUSINESS_INTERACTION_ENTRY_POINT_APP\\s*[:=]"
+  },
+  "literals": [
+    "BUSINESS_INTERACTION_ENTRY_POINT_APP",
+    "FACEBOOK",
+    "INSTAGRAM",
+    "WHATSAPP",
+    "EXTERNAL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBusinessInteractionWamEvent",
+      "WAWebCustomUrlLogEvents"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgGetters","WAWebNewsletterPollVotesModelCollection","WAWebNewsletterPollsUtils","WAWebPollCreationUtils","WAWebPollsPollVoteCollection","WAWebPollsUseResults"],"dependents":["WAWebChatForwardMessage"],"dependent_count":1,"exports":[{"name":"generatePollVotesSnapshotFromPoll","used_by":["WAWebChatForwardMessage"],"uses":1}]}

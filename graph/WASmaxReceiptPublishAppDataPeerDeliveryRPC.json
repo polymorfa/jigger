@@ -1,0 +1,1 @@
+{"deps":["WAComms","WASmaxOutReceiptPublishAppDataPeerDeliveryRequest","asyncToGeneratorRuntime"],"dependents":["WASendAppdataDeliveryReceiptProtocol"],"dependent_count":1,"exports":[{"name":"sendPublishAppDataPeerDeliveryRPC","used_by":["WASendAppdataDeliveryReceiptProtocol"],"uses":1}]}

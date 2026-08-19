@@ -1,0 +1,45 @@
+{
+  "id": "ab:canonical_ent_companion_server_cached_nonce_enabled",
+  "kind": "ab",
+  "name": "canonical_ent_companion_server_cached_nonce_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28399,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "canonical_ent_companion_server_cached_nonce_enabled:\\s*\\[\\s*28399"
+  },
+  "literals": [
+    "canonical_ent_companion_server_cached_nonce_enabled",
+    "28399"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCanonicalGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

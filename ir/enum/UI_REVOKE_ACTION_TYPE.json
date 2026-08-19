@@ -1,0 +1,57 @@
+{
+  "id": "enum:UI_REVOKE_ACTION_TYPE",
+  "kind": "enum",
+  "name": "UI_REVOKE_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUiRevokeActionType",
+    "variants": [
+      {
+        "name": "MESSAGE_SELECTED",
+        "value": 0.0
+      },
+      {
+        "name": "TRASH_CAN_SELECTED",
+        "value": 1.0
+      },
+      {
+        "name": "ADMIN_DELETE_FOR_EVERYONE",
+        "value": 2.0
+      },
+      {
+        "name": "SENDER_DELETE_FOR_EVERYONE",
+        "value": 3.0
+      },
+      {
+        "name": "ADMIN_AND_SENDER_DELETE_FOR_EVERYONE",
+        "value": 4.0
+      },
+      {
+        "name": "DELETE_FOR_EVERYONE_SELECTED",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUiRevokeActionType",
+    "matches": "UI_REVOKE_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "UI_REVOKE_ACTION_TYPE",
+    "MESSAGE_SELECTED",
+    "TRASH_CAN_SELECTED",
+    "ADMIN_DELETE_FOR_EVERYONE",
+    "SENDER_DELETE_FOR_EVERYONE",
+    "ADMIN_AND_SENDER_DELETE_FOR_EVERYONE",
+    "DELETE_FOR_EVERYONE_SELECTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebRevokeMetricUtils",
+      "WAWebUiRevokeActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

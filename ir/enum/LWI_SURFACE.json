@@ -1,0 +1,51 @@
+{
+  "id": "enum:LWI_SURFACE",
+  "kind": "enum",
+  "name": "LWI_SURFACE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiSurface",
+    "variants": [
+      {
+        "name": "AD_DESIGN",
+        "value": 1.0
+      },
+      {
+        "name": "FB_WEB_SSO",
+        "value": 2.0
+      },
+      {
+        "name": "LOGIN_ACCOUNT_SELECTION",
+        "value": 3.0
+      },
+      {
+        "name": "RESOLVE_PAGE_PERMISSION",
+        "value": 4.0
+      },
+      {
+        "name": "ACCOUNT_MANAGEMENT",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiSurface",
+    "matches": "LWI_SURFACE\\s*[:=]"
+  },
+  "literals": [
+    "LWI_SURFACE",
+    "AD_DESIGN",
+    "FB_WEB_SSO",
+    "LOGIN_ACCOUNT_SELECTION",
+    "RESOLVE_PAGE_PERMISSION",
+    "ACCOUNT_MANAGEMENT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwaAdCreationAndManagementJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

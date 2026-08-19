@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebVoipStackInterfaceWebCallbacks","WAWebVoipVideoCaptureOffThread"],"dependent_count":2,"exports":[{"name":"notifyVideoFrameConsumed","used_by":["WAWebVoipStackInterfaceWebCallbacks"],"uses":1},{"name":"subscribeToVideoFrameConsumed","used_by":["WAWebVoipVideoCaptureOffThread"],"uses":1}]}

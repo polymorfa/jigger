@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFlex.react","WAWebVoipStartCall","WAWebWamEnumCallFromUi","WAWebWamEnumLobbyEntryPointType","WDSButton.react","WDSIconIcCall.react","WDSIconIcVideocam.react","WDSText.react","react","react-compiler-runtime"],"dependents":["WAWebCometLiteContactDetail.react"],"dependent_count":1,"exports":[]}

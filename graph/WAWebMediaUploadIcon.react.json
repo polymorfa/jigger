@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebLimitSharingDrawer.react","WAWebMediaStateControls.react"],"dependent_count":3,"exports":[{"name":"MediaUploadIcon","used_by":["WAWebAllGeneratedIcons","WAWebLimitSharingDrawer.react","WAWebMediaStateControls.react"],"uses":3}]}

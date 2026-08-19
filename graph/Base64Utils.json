@@ -1,0 +1,1 @@
+{"deps":["XPlatReactTextEncoder","base64Binary"],"dependents":["EBMessageMetadataCache","EBMessagePointQuery","MAWMpsBridgeHandlers"],"dependent_count":3,"exports":[{"name":"toArrayBuffer","used_by":["EBMessageMetadataCache","MAWMpsBridgeHandlers"],"uses":2},{"name":"fromArrayBuffer","used_by":["EBMessagePointQuery"],"uses":1},{"name":"encodeUnicode","used_by":[],"uses":0}]}

@@ -1,0 +1,350 @@
+{
+  "id": "iq:w:biz/get/campaign+offer+participants+pending_campaigns+skip_dedupe+use_ad_account",
+  "kind": "iq",
+  "name": "SmbMeteredMessagingAccountGetSMBMeteredMessagingCheckout",
+  "data": {
+    "kind": "iq",
+    "xmlns": "w:biz",
+    "type": "get",
+    "tags": [
+      "campaign",
+      "offer",
+      "participants",
+      "pending_campaigns",
+      "skip_dedupe",
+      "use_ad_account"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "w:biz",
+          "optional": false
+        },
+        {
+          "name": "smax_id",
+          "ty": "int",
+          "optional": false
+        },
+        {
+          "name": "from",
+          "ty": "jid",
+          "optional": true
+        },
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "participants",
+          "children": [
+            {
+              "tag": "to",
+              "card": "repeated"
+            }
+          ],
+          "card": "one"
+        },
+        {
+          "tag": "use_ad_account",
+          "card": "repeated"
+        },
+        {
+          "tag": "skip_dedupe",
+          "card": "repeated"
+        },
+        {
+          "tag": "offer",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            }
+          ],
+          "card": "optional"
+        },
+        {
+          "tag": "pending_campaigns",
+          "children": [
+            {
+              "tag": "campaign",
+              "attrs": [
+                {
+                  "name": "free_reserved_msgs",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "send_timestamp",
+                  "ty": "int",
+                  "optional": true
+                }
+              ],
+              "card": "repeated"
+            }
+          ],
+          "card": "optional"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxSmbMeteredMessagingAccountGetSMBMeteredMessagingCheckoutRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInSmbMeteredMessagingAccountGetSMBMeteredMessagingCheckoutResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "cost",
+              "attrs": [
+                {
+                  "name": "before_tax",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "tax",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "offset",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "currency",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "base",
+                  "ty": "int",
+                  "optional": true
+                },
+                {
+                  "name": "base_formatted",
+                  "ty": "string",
+                  "optional": true
+                },
+                {
+                  "name": "discount_percent",
+                  "ty": "int",
+                  "optional": true
+                },
+                {
+                  "name": "before_discount",
+                  "ty": "int",
+                  "optional": true
+                },
+                {
+                  "name": "before_discount_formatted",
+                  "ty": "string",
+                  "optional": true
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "integrity",
+              "attrs": [
+                {
+                  "name": "is_eligible",
+                  "ty": "stringenum",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "account_balance",
+              "attrs": [
+                {
+                  "name": "billing",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "available",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "offset",
+                  "ty": "int",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "discounts",
+              "children": [
+                {
+                  "tag": "discount",
+                  "card": "one"
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "quota",
+              "attrs": [
+                {
+                  "name": "remaining",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "total_monthly",
+                  "ty": "int",
+                  "optional": false
+                },
+                {
+                  "name": "single_credits",
+                  "ty": "int",
+                  "optional": true
+                },
+                {
+                  "name": "total_available_credits",
+                  "ty": "int",
+                  "optional": true
+                }
+              ],
+              "card": "optional"
+            },
+            {
+              "tag": "offer_status",
+              "attrs": [
+                {
+                  "name": "value",
+                  "ty": "stringenum",
+                  "optional": false
+                }
+              ],
+              "card": "optional"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInSmbMeteredMessagingAccountGetSMBMeteredMessagingCheckoutResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "to",
+              "ty": "userjid",
+              "optional": true
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorFeatureLimit",
+          "IQErrorInternalServerError",
+          "IQErrorNotAllowed",
+          "IQErrorNotAuthorized",
+          "IQErrorRateOverlimit",
+          "IQErrorServiceUnavailable"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutSmbMeteredMessagingAccountGetSMBMeteredMessagingCheckoutRequest",
+    "matches": "smax\\(\"campaign\""
+  },
+  "literals": [
+    "w:biz",
+    "campaign",
+    "offer",
+    "participants",
+    "pending_campaigns",
+    "skip_dedupe",
+    "use_ad_account"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxChildren",
+      "WASmaxJsx",
+      "WASmaxOutSmbMeteredMessagingAccountHackBaseIQGetRequestMixin",
+      "WASmaxOutSmbMeteredMessagingAccountToUserMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxSmbMeteredMessagingAccountGetSMBMeteredMessagingCheckoutRPC"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

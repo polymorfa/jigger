@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebReactionGatingUtils","WAWebSpoilerParticlesCanvas.react"],"dependent_count":2,"exports":[{"name":"getPrefersReducedMotion","used_by":["WAWebReactionGatingUtils","WAWebSpoilerParticlesCanvas.react"],"uses":2}]}

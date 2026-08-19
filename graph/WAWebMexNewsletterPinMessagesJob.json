@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBackendErrors","WAWebMexClient","WAWebMexNewsletterParseUtils","WAWebMexNewsletterPinMessagesJobMutation.graphql","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterPinMessagesJob"],"dependent_count":1,"exports":[{"name":"mexNewsletterPinMessages","used_by":["WAWebNewsletterPinMessagesJob"],"uses":1}]}

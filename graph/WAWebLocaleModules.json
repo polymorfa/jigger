@@ -1,0 +1,1 @@
+{"deps":["JSResource","WAWebL10nGetRenderedLocale","asyncToGeneratorRuntime"],"dependents":["WAWebCountriesUtils","WAWebManageEditProductDrawer.react","WAWebMexFetchNewsletterEnforcementsJob"],"dependent_count":3,"exports":[{"name":"getCountryData","used_by":["WAWebCountriesUtils","WAWebManageEditProductDrawer.react","WAWebMexFetchNewsletterEnforcementsJob"],"uses":3}]}

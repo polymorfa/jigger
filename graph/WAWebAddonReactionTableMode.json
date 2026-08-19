@@ -1,0 +1,1 @@
+{"deps":["WAWebAddonConstants","WAWebAddonInfraError","WAWebCastToReactionMsg","WAWebMsgGetters","WAWebMsgType","WAWebReactionDataUtils","WAWebSchemaReactions","asyncToGeneratorRuntime","nullthrows"],"dependents":["WAWebAddonDBTable"],"dependent_count":1,"exports":[{"name":"reactionTableMode","used_by":["WAWebAddonDBTable"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["invariant","Promise","WAWebIdb","WAWebStorage","err"],"dependents":["WAWebOffdStorage","WAWebRegisterPassiveTasksForConnect","WAWebSchemaDanglingReceipt","WAWebSchemaPeerReadReceipt","WAWebSchemaPendingDeviceSync","WAWebSchemaReadReceipt"],"dependent_count":6,"exports":[]}

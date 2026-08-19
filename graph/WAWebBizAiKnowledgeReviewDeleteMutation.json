@@ -1,0 +1,1 @@
+{"deps":["WAWebBizAiKnowledgeReviewDeleteMutation.graphql","WAWebBoolFunc","WAWebRelayClient"],"dependents":["WAWebBizAIKnowledgeEntry.react","WAWebBizAiKnowledgeItemDetailDrawer.react"],"dependent_count":2,"exports":[{"name":"deletePendingData","used_by":["WAWebBizAIKnowledgeEntry.react","WAWebBizAiKnowledgeItemDetailDrawer.react"],"uses":2}]}

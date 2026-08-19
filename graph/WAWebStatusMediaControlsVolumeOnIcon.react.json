@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebWindowsDevicesSettingsDrawer.react"],"dependent_count":2,"exports":[{"name":"StatusMediaControlsVolumeOnIcon","used_by":["WAWebAllGeneratedIcons","WAWebWindowsDevicesSettingsDrawer.react"],"uses":2}]}

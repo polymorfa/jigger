@@ -1,0 +1,105 @@
+{
+  "id": "wam:3850",
+  "kind": "wam",
+  "name": "BugReportSession",
+  "data": {
+    "kind": "wam",
+    "event_id": 3850,
+    "fields": {
+      "bugReportErrorMessage": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "bug_report_error_message"
+      },
+      "bugReportFlowAction": {
+        "id": 1,
+        "type": "BUG_REPORT_FLOW_ACTION",
+        "wire": "bug_report_flow_action",
+        "enum_ref": "BUG_REPORT_FLOW_ACTION"
+      },
+      "bugReportImageCount": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "bug_report_image_count"
+      },
+      "bugReportMediaCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "bug_report_media_count"
+      },
+      "bugReportNumberOfChars": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "bug_report_number_of_chars"
+      },
+      "bugReportNumberOfWords": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "bug_report_number_of_words"
+      },
+      "bugReportTaskId": {
+        "id": 7,
+        "type": "STRING",
+        "wire": "bug_report_task_id"
+      },
+      "bugReportVideoCount": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "bug_report_video_count"
+      },
+      "bugReportingEndpoint": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "bug_reporting_endpoint"
+      },
+      "bugReportingEntryPoint": {
+        "id": 12,
+        "type": "BUG_REPORT_ENTRY_POINT_NAME",
+        "wire": "bug_reporting_entry_point",
+        "enum_ref": "BUG_REPORT_ENTRY_POINT_NAME"
+      },
+      "clientServerJoinKey": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "client_server_join_key"
+      },
+      "submitBugCategory": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "submit_bug_category"
+      },
+      "submitBugContainsTitle": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "submit_bug_contains_title"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebBugReportSessionWamEvent",
+    "matches": "BugReportSession:\\s*\\[\\s*3850"
+  },
+  "literals": [
+    "3850"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumBugReportEntryPointName",
+      "WAWebWamEnumBugReportFlowAction"
+    ],
+    "dependents": [
+      "WAWebBugnubScreenshotUpload.react",
+      "WAWebBugnubV2Popup.react",
+      "WAWebSendFeedbackModal.react"
+    ],
+    "dep_count": 3,
+    "dependent_count": 3
+  }
+}

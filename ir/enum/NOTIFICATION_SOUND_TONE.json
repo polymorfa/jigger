@@ -1,0 +1,37 @@
+{
+  "id": "enum:NOTIFICATION_SOUND_TONE",
+  "kind": "enum",
+  "name": "NOTIFICATION_SOUND_TONE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumNotificationSoundTone",
+    "variants": [
+      {
+        "name": "DEFAULT",
+        "value": 1.0
+      },
+      {
+        "name": "CUSTOM",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumNotificationSoundTone",
+    "matches": "NOTIFICATION_SOUND_TONE\\s*[:=]"
+  },
+  "literals": [
+    "NOTIFICATION_SOUND_TONE",
+    "DEFAULT",
+    "CUSTOM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNotificationSettingWamEvent",
+      "WAWebTasksDailyStatsTask"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

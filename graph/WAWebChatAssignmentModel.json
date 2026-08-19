@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseModel","WAWebChatAssignmentCollection"],"dependents":["WAWebBizChatAssignmentAction","WAWebChatAssignmentCollection"],"dependent_count":2,"exports":[{"name":"ChatAssignment","used_by":["WAWebChatAssignmentCollection"],"uses":1}]}

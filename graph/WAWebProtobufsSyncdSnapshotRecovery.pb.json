@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst","WAWebProtobufSyncAction.pb"],"dependents":["WAWebNonMessageDataRequestHandler"],"dependent_count":1,"exports":[{"name":"SyncdSnapshotRecoverySpec","used_by":["WAWebNonMessageDataRequestHandler"],"uses":1},{"name":"SyncdPlainTextRecordSpec","used_by":[],"uses":0},{"name":"SyncdVersionSpec","used_by":[],"uses":0}]}

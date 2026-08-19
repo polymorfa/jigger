@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps"],"dependents":["WAWebPtvMessageComponent"],"dependent_count":1,"exports":[{"name":"getPtvAutoplayLoopLimit","used_by":["WAWebPtvMessageComponent"],"uses":1},{"name":"getPtvMaxDurationSeconds","used_by":["WAWebPtvMessageComponent"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["JSResource","asyncToGeneratorRuntime"],"dependents":["WAWebLanguageDrawer.react","WAWebLanguageDropdownUtils"],"dependent_count":2,"exports":[{"name":"getLanguageNames","used_by":["WAWebLanguageDrawer.react","WAWebLanguageDropdownUtils"],"uses":2}]}

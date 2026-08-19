@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebMediaCryptoEligibilityUtils","WAWebMsgGetters","err"],"dependents":["WAWebMedia","WAWebNewsletterSendMessageJob"],"dependent_count":2,"exports":[{"name":"mediaMetadata","used_by":["WAWebNewsletterSendMessageJob"],"uses":1}]}

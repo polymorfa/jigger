@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebAttachMenuBarItem.react"],"dependent_count":2,"exports":[{"name":"IcAttachFileIcon","used_by":["WAWebAllGeneratedIcons","WAWebAttachMenuBarItem.react"],"uses":2}]}

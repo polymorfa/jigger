@@ -1,0 +1,1 @@
+{"deps":["fbt","$InternalEnum","WALogger","WAWebBizVerifyPostcodeBridge","WAWebConfirmPopup.react","WAWebExternalLink.react","WAWebFaqUrl","WAWebFbtCommon","WAWebRichTextField.react","WAWebText.react","WAWebText_DONOTUSE.react","asyncToGeneratorRuntime","react","useWAWebUnmountSignal"],"dependents":["WAWebProductCollectionCatalogPostcodeMenu"],"dependent_count":1,"exports":[]}

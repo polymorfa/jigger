@@ -1,0 +1,1 @@
+{"deps":["fbt","JSResourceForInteraction","WAWebLazyLoadedRetriable","WAWebTabOrder","WDSIconWdsIcBroadcastMessage.react","WDSMenuBarItem.react","WDSMenuItem.react","react","react-compiler-runtime"],"dependents":["WAWebForwardMessageModal.react","WAWebWrapperMessageDropdownMenu.react"],"dependent_count":2,"exports":[]}

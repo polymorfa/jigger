@@ -1,0 +1,42 @@
+{
+  "id": "ab:brigading_privacy_setting_enabled",
+  "kind": "ab",
+  "name": "brigading_privacy_setting_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9876,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "brigading_privacy_setting_enabled:\\s*\\[\\s*9876"
+  },
+  "literals": [
+    "brigading_privacy_setting_enabled",
+    "9876"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

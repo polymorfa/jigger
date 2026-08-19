@@ -1,0 +1,73 @@
+{
+  "id": "enum:UPDATE_TAB_SEARCH_EVENT_TYPE",
+  "kind": "enum",
+  "name": "UPDATE_TAB_SEARCH_EVENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUpdateTabSearchEventType",
+    "variants": [
+      {
+        "name": "SEARCH_TAP",
+        "value": 1.0
+      },
+      {
+        "name": "SEARCH",
+        "value": 5.0
+      },
+      {
+        "name": "SERP_LOADED",
+        "value": 6.0
+      },
+      {
+        "name": "SEARCH_RESULT_SCROLL",
+        "value": 7.0
+      },
+      {
+        "name": "SEARCH_SUBMIT",
+        "value": 8.0
+      },
+      {
+        "name": "ITEM_TAP",
+        "value": 9.0
+      },
+      {
+        "name": "ITEM_REMOVE",
+        "value": 10.0
+      },
+      {
+        "name": "FOLLOW",
+        "value": 11.0
+      },
+      {
+        "name": "UNFOLLOW",
+        "value": 12.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUpdateTabSearchEventType",
+    "matches": "UPDATE_TAB_SEARCH_EVENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "UPDATE_TAB_SEARCH_EVENT_TYPE",
+    "SEARCH_TAP",
+    "SEARCH",
+    "SERP_LOADED",
+    "SEARCH_RESULT_SCROLL",
+    "SEARCH_SUBMIT",
+    "ITEM_TAP",
+    "ITEM_REMOVE",
+    "FOLLOW",
+    "UNFOLLOW"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNewsletterInboxSearch.react",
+      "WAWebNewsletterTabDrawerContent.react",
+      "WAWebUpdatesTabSearchWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

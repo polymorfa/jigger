@@ -1,0 +1,39 @@
+{
+  "id": "enum:ENUM_CATALOGEXISTS_CATALOGNOTCREATED",
+  "kind": "enum",
+  "name": "ENUM_CATALOGEXISTS_CATALOGNOTCREATED",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInUsyncEnums",
+    "variants": [
+      {
+        "name": "catalog_exists",
+        "value": "catalog_exists"
+      },
+      {
+        "name": "catalog_not_created",
+        "value": "catalog_not_created"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInUsyncEnums",
+    "matches": "ENUM_CATALOGEXISTS_CATALOGNOTCREATED\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_CATALOGEXISTS_CATALOGNOTCREATED",
+    "catalog_exists",
+    "catalog_not_created"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInUsyncNotificationAddDevicesNotificationMixin",
+      "WASmaxInUsyncNotificationRemoveDevicesNotificationMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

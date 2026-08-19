@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPnhSelfDisplayName.react"],"dependent_count":2,"exports":[{"name":"PnhDisplayNameDarkIcon","used_by":["WAWebAllGeneratedIcons","WAWebPnhSelfDisplayName.react"],"uses":2}]}

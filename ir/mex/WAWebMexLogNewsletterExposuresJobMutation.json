@@ -1,0 +1,53 @@
+{
+  "id": "mex:WAWebMexLogNewsletterExposuresJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexLogNewsletterExposuresJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25260800823586918",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_log_exposures",
+        "ty": "XWA2NewsletterLogExposuresResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_log_exposures",
+    "document": "# persisted document 25260800823586918\nmutation MexLogNewsletterExposuresJobMutation(\n  $input\n) {\n  xwa2_newsletter_log_exposures(input: $input) {  # XWA2NewsletterLogExposuresResponse\n    __typename\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexLogNewsletterExposuresJobMutation.graphql",
+    "matches": "id:\\s*\"25260800823586918\""
+  },
+  "literals": [
+    "25260800823586918",
+    "WAWebMexLogNewsletterExposuresJobMutation",
+    "xwa2_newsletter_log_exposures"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexLogNewsletterExposuresJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

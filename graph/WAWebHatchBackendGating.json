@@ -1,0 +1,1 @@
+{"deps":["WAWebHatchGating","WAWebPrimaryFeatures"],"dependents":["WAWebPrefetchHatchLinkedStatusOnLogin"],"dependent_count":1,"exports":[{"name":"isHatchIntegrationEnabledOnBackend","used_by":["WAWebPrefetchHatchLinkedStatusOnLogin"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WASmaxInMessagePublishNegativeAckMixin","WASmaxParseUtils"],"dependents":["WASmaxMessagePublishNewsletterRPC"],"dependent_count":1,"exports":[{"name":"parseNewsletterResponseNegative","used_by":["WASmaxMessagePublishNewsletterRPC"],"uses":1}]}

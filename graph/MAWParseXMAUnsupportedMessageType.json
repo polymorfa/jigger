@@ -1,0 +1,1 @@
+{"deps":["MWXMAV2IsDataclassLiveLocationXMA","MWXMAV2XmaDataClass","WAArmadilloXMA.pb"],"dependents":["MAWParseXMAProtocol"],"dependent_count":1,"exports":[{"name":"getXMAUnsupportedMessageType","used_by":["MAWParseXMAProtocol"],"uses":1}]}

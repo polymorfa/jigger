@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCometRouterMetaManager","WAWebNavBarCometRouting","WAWebNavBarTypes","react","react-compiler-runtime","useCurrentRoute"],"dependents":["WAWebMain.react"],"dependent_count":1,"exports":[]}

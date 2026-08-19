@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebVoipAudioCaptureAndPlayback","WAWebVoipVideoRendererRegistry"],"dependent_count":2,"exports":[{"name":"getPlaybackSampleRate","used_by":["WAWebVoipAudioCaptureAndPlayback","WAWebVoipVideoRendererRegistry"],"uses":2},{"name":"updatePlaybackSampleRate","used_by":["WAWebVoipAudioCaptureAndPlayback"],"uses":1}]}

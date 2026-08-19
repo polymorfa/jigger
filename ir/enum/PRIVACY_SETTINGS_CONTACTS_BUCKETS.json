@@ -1,0 +1,97 @@
+{
+  "id": "enum:PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+  "kind": "enum",
+  "name": "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPrivacySettingsContactsBuckets",
+    "variants": [
+      {
+        "name": "B0",
+        "value": 1.0
+      },
+      {
+        "name": "B1",
+        "value": 2.0
+      },
+      {
+        "name": "B5",
+        "value": 3.0
+      },
+      {
+        "name": "B10",
+        "value": 4.0
+      },
+      {
+        "name": "B15",
+        "value": 5.0
+      },
+      {
+        "name": "B20",
+        "value": 6.0
+      },
+      {
+        "name": "B30",
+        "value": 7.0
+      },
+      {
+        "name": "B40",
+        "value": 8.0
+      },
+      {
+        "name": "B50",
+        "value": 9.0
+      },
+      {
+        "name": "B60",
+        "value": 10.0
+      },
+      {
+        "name": "B70",
+        "value": 11.0
+      },
+      {
+        "name": "B80",
+        "value": 12.0
+      },
+      {
+        "name": "B90",
+        "value": 13.0
+      },
+      {
+        "name": "B100",
+        "value": 14.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPrivacySettingsContactsBuckets",
+    "matches": "PRIVACY_SETTINGS_CONTACTS_BUCKETS\\s*[:=]"
+  },
+  "literals": [
+    "PRIVACY_SETTINGS_CONTACTS_BUCKETS",
+    "B0",
+    "B1",
+    "B5",
+    "B10",
+    "B15",
+    "B20",
+    "B30",
+    "B40",
+    "B50",
+    "B60",
+    "B70",
+    "B80",
+    "B90",
+    "B100"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDailyWamEvent",
+      "WAWebTasksDailyStatsTask"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

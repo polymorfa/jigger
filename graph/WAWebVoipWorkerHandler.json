@@ -1,0 +1,1 @@
+{"deps":["WAWebVoipNativeStackTraceLogger","WAWebVoipWasmHeapBuffer","err"],"dependents":["WAWebVoipJsWorkerMessageHandler"],"dependent_count":1,"exports":[{"name":"setupVoipRpcOnPort","used_by":["WAWebVoipJsWorkerMessageHandler"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["E2EEMetadataMailboxFetchGroupInfoV4Mutation.graphql","FBLogger","asyncToGeneratorRuntime","createWorkerMutation"],"dependents":["MAWQueryGroupOverGraphQL"],"dependent_count":1,"exports":[{"name":"fetchGroupInfoFromMIOverGraphQLV4","used_by":["MAWQueryGroupOverGraphQL"],"uses":1}]}

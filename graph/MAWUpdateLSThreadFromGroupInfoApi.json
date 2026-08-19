@@ -1,0 +1,1 @@
+{"deps":["MAWBridge","MAWBridgeTypesCreators","MAWInMemoryGroupInfoStore"],"dependents":["MAWBridgeHandlers","MAWUpdateGroupInfoNameApi"],"dependent_count":2,"exports":[{"name":"updateLSThreadFromGroupInfo","used_by":["MAWBridgeHandlers","MAWUpdateGroupInfoNameApi"],"uses":2}]}

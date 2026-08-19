@@ -1,0 +1,1 @@
+{"deps":["WebBloksApp","WebBloksEntryPointContainerContext","WebBloksEnvironmentContext","WebBloksMergeRefs","WebBloksServerData","WebBloksTheme","WebBloksUtils","WebBloksViewpointProvider","react","react-compiler-runtime","useWebBloksAnalytics"],"dependents":["WAWebBloksEntryPoint.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

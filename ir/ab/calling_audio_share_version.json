@@ -1,0 +1,45 @@
+{
+  "id": "ab:calling_audio_share_version",
+  "kind": "ab",
+  "name": "calling_audio_share_version",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6598,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "calling_audio_share_version:\\s*\\[\\s*6598"
+  },
+  "literals": [
+    "calling_audio_share_version",
+    "6598"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipAcquireMediaStream"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

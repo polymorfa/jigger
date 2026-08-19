@@ -1,0 +1,34 @@
+{
+  "id": "enum:GROUPJID_LIDUSERJID",
+  "kind": "enum",
+  "name": "GROUPJID_LIDUSERJID",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInStatusDeliverEnums",
+    "variants": [
+      {
+        "name": "typeName",
+        "value": "GroupJid|LidUserJid"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInStatusDeliverEnums",
+    "matches": "GROUPJID_LIDUSERJID\\s*[:=]"
+  },
+  "literals": [
+    "GROUPJID_LIDUSERJID",
+    "typeName"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInStatusDeliverStatusNewsletterMediaMixin",
+      "WASmaxOutStatusDeliverStatusAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

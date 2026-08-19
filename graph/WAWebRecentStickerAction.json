@@ -1,0 +1,1 @@
+{"deps":["WAWebRecentStickerCollectionMd","WAWebRemoveStickerJob","nullthrows"],"dependents":["WAWebStickerPanelContentStickerItem.react"],"dependent_count":1,"exports":[{"name":"isStickerIdInRecent","used_by":["WAWebStickerPanelContentStickerItem.react"],"uses":1},{"name":"removeStickerFromRecent","used_by":["WAWebStickerPanelContentStickerItem.react"],"uses":1}]}

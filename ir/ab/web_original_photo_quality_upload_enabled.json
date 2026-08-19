@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_original_photo_quality_upload_enabled",
+  "kind": "ab",
+  "name": "web_original_photo_quality_upload_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3136,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_original_photo_quality_upload_enabled:\\s*\\[\\s*3136"
+  },
+  "literals": [
+    "web_original_photo_quality_upload_enabled",
+    "3136"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMediaGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

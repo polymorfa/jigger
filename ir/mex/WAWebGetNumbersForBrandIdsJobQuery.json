@@ -1,0 +1,71 @@
+{
+  "id": "mex:WAWebGetNumbersForBrandIdsJobQuery",
+  "kind": "mex",
+  "name": "WAWebGetNumbersForBrandIdsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "33391034967211217",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_get_numbers_for_brand_ids",
+        "ty": "XWAGetPhoneNumbersForBrandIdsResponse",
+        "args": [
+          "request: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "brand_ids_data",
+            "ty": "XWAWhatsAppBrandIdData",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "brand_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "error",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "phone_numbers",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "lids",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 33391034967211217\nquery GetNumbersForBrandIdsJobQuery(\n  $input\n) {\n  xwa_get_numbers_for_brand_ids(request: $input) {  # XWAGetPhoneNumbersForBrandIdsResponse\n    brand_ids_data {  # [XWAWhatsAppBrandIdData]\n      brand_id\n      error\n      phone_numbers\n      lids\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebGetNumbersForBrandIdsJobQuery.graphql",
+    "matches": "id:\\s*\"33391034967211217\""
+  },
+  "literals": [
+    "33391034967211217",
+    "WAWebGetNumbersForBrandIdsJobQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetNumbersForBrandIdsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

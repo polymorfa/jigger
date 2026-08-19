@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedSendIq","WALogger","WASemaphore","WATimeUtils","WAWebSignCredentialWamEvent","WAWebWamEnumApplicationState","WAWebWamEnumSignCredentialResult","asyncToGeneratorRuntime","privateStatsToken"],"dependents":["WAWebUploadPrivateStatsBackend"],"dependent_count":1,"exports":[{"name":"getToken","used_by":["WAWebUploadPrivateStatsBackend"],"uses":1}]}

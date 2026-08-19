@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum","WAWebHandleMsgError"],"dependents":["WAWebParseNewsletterAdminInviteMessageProto"],"dependent_count":1,"exports":[{"name":"NewsletterAdminInviteMessageValidationErrorCode","used_by":["WAWebParseNewsletterAdminInviteMessageProto"],"uses":1},{"name":"NewsletterAdminInviteMessageValidationError","used_by":[],"uses":0}]}

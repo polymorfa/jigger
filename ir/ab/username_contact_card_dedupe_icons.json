@@ -1,0 +1,42 @@
+{
+  "id": "ab:username_contact_card_dedupe_icons",
+  "kind": "ab",
+  "name": "username_contact_card_dedupe_icons",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32614,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_contact_card_dedupe_icons:\\s*\\[\\s*32614"
+  },
+  "literals": [
+    "username_contact_card_dedupe_icons",
+    "32614"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

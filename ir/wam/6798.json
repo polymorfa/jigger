@@ -1,0 +1,156 @@
+{
+  "id": "wam:6798",
+  "kind": "wam",
+  "name": "MmSignalSharingVerificationFsEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 6798,
+    "fields": {
+      "accountLinked": {
+        "id": 19,
+        "type": "BOOLEAN",
+        "wire": "account_linked"
+      },
+      "consentSource": {
+        "id": 20,
+        "type": "CONSENT_SOURCE",
+        "wire": "consent_source",
+        "enum_ref": "CONSENT_SOURCE"
+      },
+      "isCompanionDevice": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "is_companion_device"
+      },
+      "isLatestConversionToken": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "is_latest_conversion_token"
+      },
+      "isShimmingSignal": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "is_shimming_signal"
+      },
+      "isUserDisclosed": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "is_user_disclosed"
+      },
+      "mmConversationDepth": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "mm_conversation_depth"
+      },
+      "mmConversationRepeat": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "mm_conversation_repeat"
+      },
+      "mmDirectionFrom": {
+        "id": 18,
+        "type": "MM_DIRECTION_FROM",
+        "wire": "mm_direction_from",
+        "enum_ref": "MM_DIRECTION_FROM"
+      },
+      "onePdSignalNotSharedReason": {
+        "id": 3,
+        "type": "ONE_PD_SIGNAL_NOT_SHARED_REASON",
+        "wire": "one_pd_signal_not_shared_reason",
+        "enum_ref": "ONE_PD_SIGNAL_NOT_SHARED_REASON"
+      },
+      "signalCanceledReason": {
+        "id": 4,
+        "type": "SIGNAL_CANCELED_REASON",
+        "wire": "signal_canceled_reason",
+        "enum_ref": "SIGNAL_CANCELED_REASON"
+      },
+      "signalMessageState": {
+        "id": 5,
+        "type": "SIGNAL_MESSAGE_STATE",
+        "wire": "signal_message_state",
+        "enum_ref": "SIGNAL_MESSAGE_STATE"
+      },
+      "signalMessageType": {
+        "id": 6,
+        "type": "SIGNAL_MESSAGE_TYPE",
+        "wire": "signal_message_type",
+        "enum_ref": "SIGNAL_MESSAGE_TYPE"
+      },
+      "signalOrigin": {
+        "id": 7,
+        "type": "SIGNAL_ORIGIN",
+        "wire": "signal_origin",
+        "enum_ref": "SIGNAL_ORIGIN"
+      },
+      "signalSharingStatus": {
+        "id": 8,
+        "type": "SIGNAL_SHARING_STATUS",
+        "wire": "signal_sharing_status",
+        "enum_ref": "SIGNAL_SHARING_STATUS"
+      },
+      "signalSurface": {
+        "id": 9,
+        "type": "SIGNAL_SURFACE",
+        "wire": "signal_surface",
+        "enum_ref": "SIGNAL_SURFACE"
+      },
+      "signalType": {
+        "id": 10,
+        "type": "SIGNAL_TYPE",
+        "wire": "signal_type",
+        "enum_ref": "SIGNAL_TYPE"
+      },
+      "signalTypeOrigin": {
+        "id": 14,
+        "type": "STRING",
+        "wire": "signal_type_origin"
+      },
+      "spSignalNotSharedReason": {
+        "id": 11,
+        "type": "SP_SIGNAL_NOT_SHARED_REASON",
+        "wire": "sp_signal_not_shared_reason",
+        "enum_ref": "SP_SIGNAL_NOT_SHARED_REASON"
+      },
+      "threadIdHmac": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMmSignalSharingVerificationFsEventWamEvent",
+    "matches": "MmSignalSharingVerificationFsEvent:\\s*\\[\\s*6798"
+  },
+  "literals": [
+    "6798"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumConsentSource",
+      "WAWebWamEnumMmDirectionFrom",
+      "WAWebWamEnumOnePdSignalNotSharedReason",
+      "WAWebWamEnumSignalCanceledReason",
+      "WAWebWamEnumSignalMessageState",
+      "WAWebWamEnumSignalMessageType",
+      "WAWebWamEnumSignalOrigin",
+      "WAWebWamEnumSignalSharingStatus",
+      "WAWebWamEnumSignalSurface",
+      "WAWebWamEnumSignalType",
+      "WAWebWamEnumSpSignalNotSharedReason"
+    ],
+    "dependents": [
+      "WAWebMmSignalSharingLoggingUtils"
+    ],
+    "dep_count": 12,
+    "dependent_count": 1
+  }
+}

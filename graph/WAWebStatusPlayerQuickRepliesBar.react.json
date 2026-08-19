@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebEmoji","WAWebEmoji.react","WAWebFlex.react","WAWebKeyboardRotateFocusArrows.react","WAWebNux","WAWebRound.react","WAWebStatusGatingUtils","WAWebTabOrder","react","useWAWebListener","useWAWebNux","useWAWebTimeout"],"dependents":["WAWebStatusComposeBox.react","WAWebStatusPlayerQuickRepliesBar.story"],"dependent_count":2,"exports":[]}

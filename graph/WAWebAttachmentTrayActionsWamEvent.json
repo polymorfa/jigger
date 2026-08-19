@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumActionThreadTypeType","WAWebWamEnumAttachmentTrayActionTargetType","WAWebWamEnumAttachmentTrayActionType","WAWebWamEnumClientGroupSizeBucket","WAWebWamEnumSendMediaTypeType"],"dependents":["WAWebAttachmentMenuLogger"],"dependent_count":1,"exports":[{"name":"AttachmentTrayActionsWamEvent","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebComposeBoxSendButton.react"],"dependent_count":2,"exports":[{"name":"SendAiIcon","used_by":["WAWebAllGeneratedIcons","WAWebComposeBoxSendButton.react"],"uses":2}]}

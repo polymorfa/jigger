@@ -1,0 +1,45 @@
+{
+  "id": "ab:search_the_web_design_experiment_v1",
+  "kind": "ab",
+  "name": "search_the_web_design_experiment_v1",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15423,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "search_the_web_design_experiment_v1:\\s*\\[\\s*15423"
+  },
+  "literals": [
+    "search_the_web_design_experiment_v1",
+    "15423"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSTWGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

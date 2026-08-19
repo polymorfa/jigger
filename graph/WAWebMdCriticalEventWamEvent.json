@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumCollection","WAWebWamEnumMdSyncdCriticalEventCode"],"dependents":["WAWebKmpWamLogger","WAWebSyncdMetrics","WAWebWamProcessWorkerData"],"dependent_count":3,"exports":[{"name":"MdCriticalEventWamEvent","used_by":["WAWebWamProcessWorkerData"],"uses":1}]}

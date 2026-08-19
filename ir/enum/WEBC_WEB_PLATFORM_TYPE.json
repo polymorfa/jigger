@@ -1,0 +1,83 @@
+{
+  "id": "enum:WEBC_WEB_PLATFORM_TYPE",
+  "kind": "enum",
+  "name": "WEBC_WEB_PLATFORM_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcWebPlatformType",
+    "variants": [
+      {
+        "name": "WEB",
+        "value": 1.0
+      },
+      {
+        "name": "WIN32",
+        "value": 2.0
+      },
+      {
+        "name": "DARWIN",
+        "value": 3.0
+      },
+      {
+        "name": "IOS_TABLET",
+        "value": 4.0
+      },
+      {
+        "name": "ANDROID_TABLET",
+        "value": 5.0
+      },
+      {
+        "name": "WINSTORE",
+        "value": 6.0
+      },
+      {
+        "name": "MACSTORE",
+        "value": 7.0
+      },
+      {
+        "name": "DARWIN_BETA",
+        "value": 8.0
+      },
+      {
+        "name": "WIN32_BETA",
+        "value": 9.0
+      },
+      {
+        "name": "PWA",
+        "value": 10.0
+      },
+      {
+        "name": "WIN_HYBRID",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcWebPlatformType",
+    "matches": "WEBC_WEB_PLATFORM_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_WEB_PLATFORM_TYPE",
+    "WEB",
+    "WIN32",
+    "DARWIN",
+    "IOS_TABLET",
+    "ANDROID_TABLET",
+    "WINSTORE",
+    "MACSTORE",
+    "DARWIN_BETA",
+    "WIN32_BETA",
+    "PWA",
+    "WIN_HYBRID"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPwaEventListeners",
+      "WAWebWam",
+      "WAWebWamGlobals"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

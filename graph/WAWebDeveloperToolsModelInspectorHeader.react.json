@@ -1,0 +1,1 @@
+{"deps":["WAStringCapitalize","WAWebDeveloperMenuUtils","WAWebFlex.react","WAWebUnstyledButton.react","WDSMargins.stylex","WDSPaddings.stylex","react","react-compiler-runtime"],"dependents":["WAWebDeveloperToolsModelInspectorNub.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

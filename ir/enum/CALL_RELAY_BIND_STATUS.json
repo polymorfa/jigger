@@ -1,0 +1,36 @@
+{
+  "id": "enum:CALL_RELAY_BIND_STATUS",
+  "kind": "enum",
+  "name": "CALL_RELAY_BIND_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallRelayBindStatus",
+    "variants": [
+      {
+        "name": "UNBOUND",
+        "value": 1.0
+      },
+      {
+        "name": "BINDED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallRelayBindStatus",
+    "matches": "CALL_RELAY_BIND_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "CALL_RELAY_BIND_STATUS",
+    "UNBOUND",
+    "BINDED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

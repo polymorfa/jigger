@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWDataSyncQueue","getErrorSafe"],"dependents":["MAWIndexedDb"],"dependent_count":1,"exports":[{"name":"getDataSyncMiddleware","used_by":["MAWIndexedDb"],"uses":1}]}

@@ -1,0 +1,51 @@
+{
+  "id": "wam:6242",
+  "kind": "wam",
+  "name": "PsGroupSafetyCheckUiInteractions",
+  "data": {
+    "kind": "wam",
+    "event_id": 6242,
+    "fields": {
+      "integrityGroupUserHashedId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "integrity_group_user_hashed_id"
+      },
+      "psSafetyCheckGroupJid": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "ps_safety_check_group_jid"
+      },
+      "psSafetyCheckInteraction": {
+        "id": 2,
+        "type": "PS_GROUP_SAFETY_CHECK_UI_INTERACTIONS",
+        "wire": "ps_safety_check_interaction",
+        "enum_ref": "PS_GROUP_SAFETY_CHECK_UI_INTERACTIONS"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebPsGroupSafetyCheckUiInteractionsWamEvent",
+    "matches": "PsGroupSafetyCheckUiInteractions:\\s*\\[\\s*6242"
+  },
+  "literals": [
+    "6242"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumPsGroupSafetyCheckUiInteractions"
+    ],
+    "dependents": [
+      "WAWebGroupSafetyCheckModalLoggingUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

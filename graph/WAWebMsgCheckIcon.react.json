@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebConversationPreview.react"],"dependent_count":2,"exports":[{"name":"MsgCheckIcon","used_by":["WAWebAllGeneratedIcons","WAWebConversationPreview.react"],"uses":2}]}

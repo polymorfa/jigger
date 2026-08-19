@@ -1,0 +1,45 @@
+{
+  "id": "ab:poll_hide_voters_receiving_enabled",
+  "kind": "ab",
+  "name": "poll_hide_voters_receiving_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24885,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "poll_hide_voters_receiving_enabled:\\s*\\[\\s*24885"
+  },
+  "literals": [
+    "poll_hide_voters_receiving_enabled",
+    "24885"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPollsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

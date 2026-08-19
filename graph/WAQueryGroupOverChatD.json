@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedSendIq","WADeprecatedWapParser","WAGroupParserUtils","WAResultOrError","WAWap","WmiOds","asyncToGeneratorRuntime"],"dependents":[],"dependent_count":0,"exports":[{"name":"parseQueryGroupResponse","used_by":[],"uses":0},{"name":"queryGroupOverChatD","used_by":[],"uses":0}]}

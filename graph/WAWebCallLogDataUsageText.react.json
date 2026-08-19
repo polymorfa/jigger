@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebL10nFilesize","WAWebMsgGetters","WAWebVoipGatingUtils","WDSText.react","react","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebCallLogEntryDetails.react"],"dependent_count":1,"exports":[]}

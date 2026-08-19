@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebWindowsDefaultProtocolActivationWamEvent"],"dependent_count":1,"exports":[{"name":"DEFAULT_PROTOCOL_SCHEME_TYPE","used_by":["WAWebWindowsDefaultProtocolActivationWamEvent"],"uses":1}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled",
+  "kind": "ab",
+  "name": "ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 21819,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled:\\s*\\[\\s*21819"
+  },
+  "literals": [
+    "ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled",
+    "21819"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebHandleMsgValidate"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

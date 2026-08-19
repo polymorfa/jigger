@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatGetters","WAWebCommonNewsletterStrings","WAWebFrontendChatGetters","WAWebNewsletterInviteSelectionModal.react","react","react-compiler-runtime","useWAWebChatValues","useWAWebNewsletterSubscribers"],"dependents":["WAWebNewsletterFollowerSelectionFlow.react"],"dependent_count":1,"exports":[]}

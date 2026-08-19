@@ -1,0 +1,53 @@
+{
+  "id": "wam:6746",
+  "kind": "wam",
+  "name": "SmbQpCallHealth",
+  "data": {
+    "kind": "wam",
+    "event_id": 6746,
+    "fields": {
+      "fetchExceptionMessage": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "fetch_exception_message"
+      },
+      "fetchMechanism": {
+        "id": 2,
+        "type": "FETCH_MECHANISM_ENUM",
+        "wire": "fetch_mechanism",
+        "enum_ref": "FETCH_MECHANISM_ENUM"
+      },
+      "fetchResult": {
+        "id": 3,
+        "type": "FETCH_RESULT_ENUM",
+        "wire": "fetch_result",
+        "enum_ref": "FETCH_RESULT_ENUM"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSmbQpCallHealthWamEvent",
+    "matches": "SmbQpCallHealth:\\s*\\[\\s*6746"
+  },
+  "literals": [
+    "6746"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumFetchMechanismEnum",
+      "WAWebWamEnumFetchResultEnum"
+    ],
+    "dependents": [
+      "WAWebSmbQpCallHealthLogger"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

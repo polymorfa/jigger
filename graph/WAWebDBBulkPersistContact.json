@@ -1,0 +1,1 @@
+{"deps":["WABatcher","WAWebLidAwareContactsDB","asyncToGeneratorRuntime"],"dependents":["WAWebHandlePushnameUpdate","WAWebUpdateContactExternalUserState"],"dependent_count":2,"exports":[{"name":"persistContactUpdateBatched","used_by":["WAWebHandlePushnameUpdate","WAWebUpdateContactExternalUserState"],"uses":2}]}

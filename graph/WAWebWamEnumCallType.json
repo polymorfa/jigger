@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCallInfoUserJourneyLogger","WAWebCallInfoUserJourneyWamEvent"],"dependent_count":2,"exports":[{"name":"CALL_TYPE","used_by":["WAWebCallInfoUserJourneyLogger","WAWebCallInfoUserJourneyWamEvent"],"uses":2}]}

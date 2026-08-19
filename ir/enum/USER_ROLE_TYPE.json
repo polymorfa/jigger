@@ -1,0 +1,43 @@
+{
+  "id": "enum:USER_ROLE_TYPE",
+  "kind": "enum",
+  "name": "USER_ROLE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumUserRoleType",
+    "variants": [
+      {
+        "name": "MEMBER",
+        "value": 0.0
+      },
+      {
+        "name": "ADMIN",
+        "value": 1.0
+      },
+      {
+        "name": "CADMIN",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumUserRoleType",
+    "matches": "USER_ROLE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "USER_ROLE_TYPE",
+    "MEMBER",
+    "ADMIN",
+    "CADMIN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetUserRole",
+      "WAWebGroupJourneyWamEvent",
+      "WAWebMessagingUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

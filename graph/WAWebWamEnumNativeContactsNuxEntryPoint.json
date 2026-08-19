@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebContactLogging","WAWebNativeContactsNuxEventWamEvent"],"dependent_count":2,"exports":[{"name":"NATIVE_CONTACTS_NUX_ENTRY_POINT","used_by":["WAWebContactLogging","WAWebNativeContactsNuxEventWamEvent"],"uses":2}]}

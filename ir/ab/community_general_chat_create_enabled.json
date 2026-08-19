@@ -1,0 +1,42 @@
+{
+  "id": "ab:community_general_chat_create_enabled",
+  "kind": "ab",
+  "name": "community_general_chat_create_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5453,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "community_general_chat_create_enabled:\\s*\\[\\s*5453"
+  },
+  "literals": [
+    "community_general_chat_create_enabled",
+    "5453"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

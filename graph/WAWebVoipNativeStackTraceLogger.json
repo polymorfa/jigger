@@ -1,0 +1,1 @@
+{"deps":["WALogger"],"dependents":["WAWebVoipStackInterfaceWeb","WAWebVoipWorkerHandler"],"dependent_count":2,"exports":[{"name":"logNativeStackTrace","used_by":["WAWebVoipStackInterfaceWeb","WAWebVoipWorkerHandler"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebAboutCreationDailyWamEvent","WAWebAboutCreationWamEvent","WAWebAboutWamLogger"],"dependent_count":3,"exports":[{"name":"ABOUT_ENTRYPOINT_TYPE","used_by":["WAWebAboutCreationDailyWamEvent","WAWebAboutCreationWamEvent","WAWebAboutWamLogger"],"uses":3}]}

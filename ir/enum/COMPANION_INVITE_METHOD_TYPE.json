@@ -1,0 +1,42 @@
+{
+  "id": "enum:COMPANION_INVITE_METHOD_TYPE",
+  "kind": "enum",
+  "name": "COMPANION_INVITE_METHOD_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCompanionInviteMethodType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "NATIVE_SMS",
+        "value": 1.0
+      },
+      {
+        "name": "SERVER_SMS",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCompanionInviteMethodType",
+    "matches": "COMPANION_INVITE_METHOD_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "COMPANION_INVITE_METHOD_TYPE",
+    "UNKNOWN",
+    "NATIVE_SMS",
+    "SERVER_SMS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCompanionInviteContactWamEvent",
+      "WAWebOutContactLoggingUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

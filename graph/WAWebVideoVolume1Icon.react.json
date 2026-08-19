@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPipVideoControls.react"],"dependent_count":2,"exports":[{"name":"VideoVolume1Icon","used_by":["WAWebAllGeneratedIcons","WAWebPipVideoControls.react"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebMentionPickerActionWamEvent","WAWebMentionPickerPlugin"],"dependent_count":2,"exports":[{"name":"MENTION_TYPE","used_by":["WAWebMentionPickerActionWamEvent","WAWebMentionPickerPlugin"],"uses":2}]}

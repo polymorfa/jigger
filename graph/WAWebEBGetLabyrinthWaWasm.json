@@ -1,0 +1,1 @@
+{"deps":["WAWasmModuleCache","bx"],"dependents":["WAWebEBLabyrinthWaWasmReactorSingleton"],"dependent_count":1,"exports":[{"name":"getLabyrinthWaWasm","used_by":["WAWebEBLabyrinthWaWasmReactorSingleton"],"uses":1}]}

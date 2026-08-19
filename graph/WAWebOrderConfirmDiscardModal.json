@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebModalManager","WAWebText.react","react","react-compiler-runtime"],"dependents":["WAWebBizOrderCreationFlow.react","WAWebCreateOrEditListDrawer.react","WAWebOrderAdditionalChargesFormDrawer","WAWebOrderCatalogFormDrawer","WAWebOrderCustomItemFormDrawer"],"dependent_count":5,"exports":[]}

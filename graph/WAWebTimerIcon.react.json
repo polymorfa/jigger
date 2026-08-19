@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebEphemeralKicNux.react"],"dependent_count":2,"exports":[{"name":"TimerIcon","used_by":["WAWebAllGeneratedIcons","WAWebEphemeralKicNux.react"],"uses":2}]}

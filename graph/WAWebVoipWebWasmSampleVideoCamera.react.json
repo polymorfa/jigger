@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebVoipWebWasmSampleVideoWebGL","WDSVars.stylex","asyncToGeneratorRuntime","react"],"dependents":["WAWebVoipWebWasmSampleVideo.react"],"dependent_count":1,"exports":[{"name":"height","used_by":[],"uses":0},{"name":"width","used_by":[],"uses":0}]}

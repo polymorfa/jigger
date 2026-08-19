@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_core_biz_profile_ux_refreshed",
+  "kind": "ab",
+  "name": "smb_core_biz_profile_ux_refreshed",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 19929,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_core_biz_profile_ux_refreshed:\\s*\\[\\s*19929"
+  },
+  "literals": [
+    "smb_core_biz_profile_ux_refreshed",
+    "19929"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizProfileGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

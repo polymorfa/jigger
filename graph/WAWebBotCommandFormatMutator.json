@@ -1,0 +1,1 @@
+{"deps":["WAWebBotCommandMutatorComponent.react","WAWebExtractRangesUsingRegex","WAWebFormatMutator","escapeRegex","react"],"dependents":["WAWebFormatConfigurationConversation","WAWebTextFormatParser"],"dependent_count":2,"exports":[{"name":"BotCommand","used_by":["WAWebFormatConfigurationConversation","WAWebTextFormatParser"],"uses":2}]}

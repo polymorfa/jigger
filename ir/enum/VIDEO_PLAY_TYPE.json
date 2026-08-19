@@ -1,0 +1,42 @@
+{
+  "id": "enum:VIDEO_PLAY_TYPE",
+  "kind": "enum",
+  "name": "VIDEO_PLAY_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumVideoPlayType",
+    "variants": [
+      {
+        "name": "FILE",
+        "value": 1.0
+      },
+      {
+        "name": "STREAM",
+        "value": 2.0
+      },
+      {
+        "name": "SENT",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumVideoPlayType",
+    "matches": "VIDEO_PLAY_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "VIDEO_PLAY_TYPE",
+    "FILE",
+    "STREAM",
+    "SENT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChannelsVideoPlayWamEvent",
+      "useWAWebNewsletterVideoPlayMetric"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

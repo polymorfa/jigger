@@ -1,0 +1,133 @@
+{
+  "id": "enum:ACTION_CODE",
+  "kind": "enum",
+  "name": "ACTION_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumActionCode",
+    "variants": [
+      {
+        "name": "OPEN_MEDIA_HUB",
+        "value": 1.0
+      },
+      {
+        "name": "SEARCH",
+        "value": 2.0
+      },
+      {
+        "name": "LIST",
+        "value": 3.0
+      },
+      {
+        "name": "ICON",
+        "value": 4.0
+      },
+      {
+        "name": "SCROLL",
+        "value": 5.0
+      },
+      {
+        "name": "CLICK",
+        "value": 6.0
+      },
+      {
+        "name": "CLOSE_MEDIA_HUB",
+        "value": 7.0
+      },
+      {
+        "name": "REPLY",
+        "value": 8.0
+      },
+      {
+        "name": "FORWARD",
+        "value": 9.0
+      },
+      {
+        "name": "DOWNLOAD",
+        "value": 10.0
+      },
+      {
+        "name": "STAR",
+        "value": 11.0
+      },
+      {
+        "name": "DELETE",
+        "value": 12.0
+      },
+      {
+        "name": "OPEN",
+        "value": 13.0
+      },
+      {
+        "name": "GO_TO_MESSAGE",
+        "value": 14.0
+      },
+      {
+        "name": "MULTISELECT",
+        "value": 15.0
+      },
+      {
+        "name": "SORT",
+        "value": 16.0
+      },
+      {
+        "name": "OPEN_MENU",
+        "value": 17.0
+      },
+      {
+        "name": "FILTER",
+        "value": 18.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumActionCode",
+    "matches": "ACTION_CODE\\s*[:=]"
+  },
+  "literals": [
+    "ACTION_CODE",
+    "OPEN_MEDIA_HUB",
+    "SEARCH",
+    "LIST",
+    "ICON",
+    "SCROLL",
+    "CLICK",
+    "CLOSE_MEDIA_HUB",
+    "REPLY",
+    "FORWARD",
+    "DOWNLOAD",
+    "STAR",
+    "DELETE",
+    "OPEN",
+    "GO_TO_MESSAGE",
+    "MULTISELECT",
+    "SORT",
+    "OPEN_MENU",
+    "FILTER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDocMsgIconAndName.react",
+      "WAWebMediaHubAllDocs.react",
+      "WAWebMediaHubAllLinks.react",
+      "WAWebMediaHubAllMedia.react",
+      "WAWebMediaHubContextProvider",
+      "WAWebMediaHubEmptyGalleryEntryPoint.react",
+      "WAWebMediaHubEmptyStates.react",
+      "WAWebMediaHubFooterEntryPoint.react",
+      "WAWebMediaHubGallery.react",
+      "WAWebMediaHubListMsg.react",
+      "WAWebMediaHubLogger",
+      "WAWebMediaHubMessageDropdownMenu.react",
+      "WAWebMediaHubNavBarItem.react",
+      "WAWebMediaHubSearchUtils",
+      "WAWebMediaHubSelectFooter.react",
+      "WAWebMediaHubTopBar.react",
+      "WAWebMediaHubUserJourneyWamEvent",
+      "useWAWebGalleryScrollLimit"
+    ],
+    "dep_count": 0,
+    "dependent_count": 18
+  }
+}

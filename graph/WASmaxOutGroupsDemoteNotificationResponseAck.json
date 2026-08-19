@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxOutGroupsNotificationClientAckMixin","WASmaxParseJid","WASmaxParseReference","WASmaxParsingFailure","WAWap"],"dependents":["WASmaxGroupsDemoteNotificationRPC"],"dependent_count":1,"exports":[{"name":"makeDemoteNotificationResponseAck","used_by":["WASmaxGroupsDemoteNotificationRPC"],"uses":1}]}

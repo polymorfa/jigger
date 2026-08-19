@@ -1,0 +1,64 @@
+{
+  "id": "mex:WAWebSignupMetadataQuery",
+  "kind": "mex",
+  "name": "WAWebSignupMetadataQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26378108788468347",
+    "operation": "query",
+    "variables": [
+      "signup_id",
+      "phone_number"
+    ],
+    "args": [
+      {
+        "name": "signup_id"
+      },
+      {
+        "name": "phone_number"
+      }
+    ],
+    "selections": [
+      {
+        "name": "wa_signup_metadata",
+        "ty": "WhatsAppBusinessSignup",
+        "args": [
+          "phone_number: $phone_number",
+          "signup_id: $signup_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "signup_message",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "privacy_policy_url",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26378108788468347\nquery SignupMetadataQuery(\n  $signup_id\n  $phone_number\n) {\n  wa_signup_metadata(phone_number: $phone_number, signup_id: $signup_id) {  # WhatsAppBusinessSignup\n    id\n    signup_message\n    privacy_policy_url\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebSignupMetadataQuery.graphql",
+    "matches": "id:\\s*\"26378108788468347\""
+  },
+  "literals": [
+    "26378108788468347",
+    "WAWebSignupMetadataQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSignupMetadataQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

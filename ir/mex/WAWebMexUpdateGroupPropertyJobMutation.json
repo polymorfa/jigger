@@ -1,0 +1,62 @@
+{
+  "id": "mex:WAWebMexUpdateGroupPropertyJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexUpdateGroupPropertyJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9418211574894172",
+    "operation": "mutation",
+    "variables": [
+      "group_id",
+      "update"
+    ],
+    "args": [
+      {
+        "name": "group_id"
+      },
+      {
+        "name": "update"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_update_property",
+        "ty": "XWA2GroupUpdateResponse",
+        "args": [
+          "group_id: $group_id",
+          "update: $update"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "state",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_update_property",
+    "document": "# persisted document 9418211574894172\nmutation MexUpdateGroupPropertyJobMutation(\n  $group_id\n  $update\n) {\n  xwa2_group_update_property(group_id: $group_id, update: $update) {  # XWA2GroupUpdateResponse\n    id\n    state\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexUpdateGroupPropertyJobMutation.graphql",
+    "matches": "id:\\s*\"9418211574894172\""
+  },
+  "literals": [
+    "9418211574894172",
+    "WAWebMexUpdateGroupPropertyJobMutation",
+    "xwa2_group_update_property"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexUpdateGroupPropertyJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAAICommon.BotSourcesMetadata.BotSourceItem",
+  "kind": "proto",
+  "name": "WAAICommon.BotSourcesMetadata.BotSourceItem",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "citationNumber": {
+        "number": 6
+      },
+      "faviconCdnUrl": {
+        "number": 5
+      },
+      "provider": {
+        "number": 1
+      },
+      "sourceProviderUrl": {
+        "number": 3
+      },
+      "sourceQuery": {
+        "number": 4
+      },
+      "sourceTitle": {
+        "number": 7
+      },
+      "thumbnailCdnUrl": {
+        "number": 2
+      }
+    },
+    "module": "WAAICommon.pb"
+  },
+  "evidence": {
+    "module": "WAAICommon.pb",
+    "matches": "name = \"BotSourcesMetadata.BotSourceItem\""
+  },
+  "literals": [
+    "BotSourceItem"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAProtocol.pb"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

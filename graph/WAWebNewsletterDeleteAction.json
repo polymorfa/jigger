@@ -1,0 +1,1 @@
+{"deps":["WAJids","WALogger","WAWebChatGetters","WAWebNewsletterBridgeApi","WAWebNewsletterDeleteJob","WAWebNewsletterQueues","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterDeleteModal.react"],"dependent_count":1,"exports":[{"name":"deleteNewsletterAction","used_by":["WAWebNewsletterDeleteModal.react"],"uses":1}]}

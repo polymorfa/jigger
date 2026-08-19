@@ -1,0 +1,1 @@
+{"deps":["WALogger","WALongInt","WAWebAddOnParseWebMsgInfo","WAWebCommentMsgDataConversion","WAWebMsgKeyUtils","WAWebMsgType","WAWebParseWebMessageInfoUtils","WAWebViewMode.flow","nullthrows"],"dependents":["WAWebAddonCommentMsgProcessor"],"dependent_count":1,"exports":[{"name":"parseWebMsgInfoComment","used_by":["WAWebAddonCommentMsgProcessor"],"uses":1}]}

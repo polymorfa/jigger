@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebRenderInteractivePreviewIcon"],"dependent_count":2,"exports":[{"name":"IcChatlistEventIcon","used_by":["WAWebAllGeneratedIcons","WAWebRenderInteractivePreviewIcon"],"uses":2}]}

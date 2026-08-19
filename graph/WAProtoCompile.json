@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst"],"dependents":["WAProtoValidate","WAWebE2EProtoGenerator","decodeProtobuf","encodeProtobuf"],"dependent_count":4,"exports":[{"name":"compileSpec","used_by":["WAProtoValidate","WAWebE2EProtoGenerator","decodeProtobuf","encodeProtobuf"],"uses":4},{"name":"Spec","used_by":[],"uses":0}]}

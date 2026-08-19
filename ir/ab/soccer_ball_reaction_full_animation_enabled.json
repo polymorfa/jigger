@@ -1,0 +1,42 @@
+{
+  "id": "ab:soccer_ball_reaction_full_animation_enabled",
+  "kind": "ab",
+  "name": "soccer_ball_reaction_full_animation_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27834,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "soccer_ball_reaction_full_animation_enabled:\\s*\\[\\s*27834"
+  },
+  "literals": [
+    "soccer_ball_reaction_full_animation_enabled",
+    "27834"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

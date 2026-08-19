@@ -1,0 +1,1 @@
+{"deps":["fbt","WAShiftTimer","WAWeb-moment","WAWebSocketModel","WAWebStreamModel","WAWebWamEnumWebcButterbarActionType","WAWebWamEnumWebcButterbarBbType","WAWebWebcButterbarEventWamEvent","WDSBanner.react","react","useWAWebForceUpdate","useWAWebListener"],"dependents":["WAWebPrimaryButterbar.react"],"dependent_count":1,"exports":[]}

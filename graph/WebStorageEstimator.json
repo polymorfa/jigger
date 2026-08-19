@@ -1,0 +1,1 @@
+{"deps":["FBLogger","Promise","getErrorSafe"],"dependents":["MAWDBUsageMetrics","MAWDebug"],"dependent_count":2,"exports":[{"name":"estimateStorage","used_by":["MAWDBUsageMetrics","MAWDebug"],"uses":2}]}

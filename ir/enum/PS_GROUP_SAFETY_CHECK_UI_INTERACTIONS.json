@@ -1,0 +1,82 @@
+{
+  "id": "enum:PS_GROUP_SAFETY_CHECK_UI_INTERACTIONS",
+  "kind": "enum",
+  "name": "PS_GROUP_SAFETY_CHECK_UI_INTERACTIONS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPsGroupSafetyCheckUiInteractions",
+    "variants": [
+      {
+        "name": "SEE_CHAT",
+        "value": 0.0
+      },
+      {
+        "name": "EXIT_GROUP",
+        "value": 1.0
+      },
+      {
+        "name": "EXIT_COMMUNITY",
+        "value": 2.0
+      },
+      {
+        "name": "SEE_SCAM_EXAMPLES",
+        "value": 3.0
+      },
+      {
+        "name": "PRIVACY_SETTINGS",
+        "value": 4.0
+      },
+      {
+        "name": "HOW_TO_REPORT",
+        "value": 5.0
+      },
+      {
+        "name": "DOUBLE_CHECK_LINKS",
+        "value": 6.0
+      },
+      {
+        "name": "DISMISS",
+        "value": 7.0
+      },
+      {
+        "name": "DRAG_DISMISS",
+        "value": 8.0
+      },
+      {
+        "name": "X_BUTTON",
+        "value": 9.0
+      },
+      {
+        "name": "BACK_BUTTON",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPsGroupSafetyCheckUiInteractions",
+    "matches": "PS_GROUP_SAFETY_CHECK_UI_INTERACTIONS\\s*[:=]"
+  },
+  "literals": [
+    "PS_GROUP_SAFETY_CHECK_UI_INTERACTIONS",
+    "SEE_CHAT",
+    "EXIT_GROUP",
+    "EXIT_COMMUNITY",
+    "SEE_SCAM_EXAMPLES",
+    "PRIVACY_SETTINGS",
+    "HOW_TO_REPORT",
+    "DOUBLE_CHECK_LINKS",
+    "DISMISS",
+    "DRAG_DISMISS",
+    "X_BUTTON",
+    "BACK_BUTTON"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupSafetyCheckModal.react",
+      "WAWebPsGroupSafetyCheckUiInteractionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

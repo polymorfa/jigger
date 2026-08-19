@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebEphemeralityDurations","WAWebExternalLink.react","WAWebFaqUrl","WAWebFbtCommon","WAWebModalManager","WAWebRadio.react","WAWebText.react","react"],"dependents":["WAWebEphemeralPopup.react","WAWebMultiSelectDdm.react","useWAWebHandleAfterReadingClick"],"dependent_count":3,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebBizCatalogViewWamEvent","WAWebCartLogEvents","WAWebOrderLogEvents","WAWebProductCatalogLogEvents"],"dependent_count":4,"exports":[{"name":"CATALOG_VIEW_ACTION","used_by":["WAWebBizCatalogViewWamEvent","WAWebCartLogEvents","WAWebOrderLogEvents","WAWebProductCatalogLogEvents"],"uses":4}]}

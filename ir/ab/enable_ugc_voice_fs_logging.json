@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_ugc_voice_fs_logging",
+  "kind": "ab",
+  "name": "enable_ugc_voice_fs_logging",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14641,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_ugc_voice_fs_logging:\\s*\\[\\s*14641"
+  },
+  "literals": [
+    "enable_ugc_voice_fs_logging",
+    "14641"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

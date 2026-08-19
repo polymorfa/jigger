@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAFtsV3Indexer","WAWebSchemaFtsV3Index"],"dependent_count":2,"exports":[{"name":"buildDBEntry","used_by":["WAWebSchemaFtsV3Index"],"uses":1},{"name":"buildEntry","used_by":["WAFtsV3Indexer"],"uses":1}]}

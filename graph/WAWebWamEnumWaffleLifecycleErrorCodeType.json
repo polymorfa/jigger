@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebWaffleCompanionStateLifecycleWamEvent","WAWebWaffleLifecycleWamLogger"],"dependent_count":2,"exports":[{"name":"WAFFLE_LIFECYCLE_ERROR_CODE_TYPE","used_by":["WAWebWaffleCompanionStateLifecycleWamEvent","WAWebWaffleLifecycleWamLogger"],"uses":2}]}

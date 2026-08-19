@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebLabelCollection"],"dependents":["WAWebLabelsBridgeApi","WAWebListsActions"],"dependent_count":2,"exports":[{"name":"reorderLabelsAction","used_by":["WAWebLabelsBridgeApi","WAWebListsActions"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatCollection","WAWebCommunityGeneralChatImage.react","WAWebGroupMetadataCollection","WAWebGroupType","WAWebLinkPreviewUtils","WAWebMediaDataUtils","WAWebProtobufsE2E.pb","asyncToGeneratorRuntime","bx"],"dependents":["WAWebLinkPreviewChatAction","WAWebMediaLinkPreview.react"],"dependent_count":2,"exports":[]}

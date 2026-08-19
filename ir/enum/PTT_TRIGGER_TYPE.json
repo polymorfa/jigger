@@ -1,0 +1,37 @@
+{
+  "id": "enum:PTT_TRIGGER_TYPE",
+  "kind": "enum",
+  "name": "PTT_TRIGGER_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPttTriggerType",
+    "variants": [
+      {
+        "name": "MANUAL",
+        "value": 0.0
+      },
+      {
+        "name": "SEQUENTIAL",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPttTriggerType",
+    "matches": "PTT_TRIGGER_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PTT_TRIGGER_TYPE",
+    "MANUAL",
+    "SEQUENTIAL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPttPlaybackLogger",
+      "WAWebPttPlaybackWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

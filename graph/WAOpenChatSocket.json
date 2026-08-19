@@ -1,0 +1,1 @@
+{"deps":["Promise","WABinary","WACryptoCurve25519","WAFrameSocket","WALogger","WANoiseHandshake","WAResultOrError","asyncToGeneratorRuntime","err"],"dependents":["MAWCommsConfig","WAWebInitializeWorkerBackend"],"dependent_count":2,"exports":[{"name":"openChatSocket","used_by":["MAWCommsConfig","WAWebInitializeWorkerBackend"],"uses":2}]}

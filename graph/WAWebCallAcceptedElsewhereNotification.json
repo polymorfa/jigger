@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBaseNotification","WAWebChatFlowTypes","WAWebNotificationIconUtils","asyncToGeneratorRuntime","bx"],"dependents":["WAWebNotificationBackend"],"dependent_count":1,"exports":[]}

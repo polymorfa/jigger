@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_ctwa_web_enable_continuous_duration",
+  "kind": "ab",
+  "name": "wa_ctwa_web_enable_continuous_duration",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31426,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_ctwa_web_enable_continuous_duration:\\s*\\[\\s*31426"
+  },
+  "literals": [
+    "wa_ctwa_web_enable_continuous_duration",
+    "31426"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizNativeAdsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

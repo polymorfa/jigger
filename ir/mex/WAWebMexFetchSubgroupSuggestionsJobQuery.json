@@ -1,0 +1,149 @@
+{
+  "id": "mex:WAWebMexFetchSubgroupSuggestionsJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchSubgroupSuggestionsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "23972005349071865",
+    "operation": "query",
+    "variables": [
+      "group_id",
+      "sub_group_hint_id",
+      "query_context"
+    ],
+    "args": [
+      {
+        "name": "group_id"
+      },
+      {
+        "name": "sub_group_hint_id"
+      },
+      {
+        "name": "query_context"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_group_query_by_id",
+        "args": [
+          "group_input: …"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on XWA2CommunityGroup",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "sub_group_suggestions",
+                "ty": "XWA2CommunitySubGroupSuggestionConnection",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "edges",
+                    "ty": "XWA2CommunitySubGroupSuggestionEdge",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "node",
+                        "ty": "XWA2CommunitySubGroupSuggestion",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "subject",
+                            "ty": "XWA2GroupSubject",
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "value",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "description",
+                            "ty": "XWA2GroupDescription",
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "value",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "id",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "creator",
+                            "ty": "XWA2User",
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "id",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "creation_time",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "total_participants_count",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "is_existing_group",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "hidden_group",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_group_query_by_id",
+    "document": "# persisted document 23972005349071865\nquery MexFetchSubgroupSuggestionsJobQuery(\n  $group_id\n  $sub_group_hint_id\n  $query_context\n) {\n  xwa2_group_query_by_id(group_input: …) {\n    __typename\n    id\n    ... on XWA2CommunityGroup {\n      sub_group_suggestions {  # XWA2CommunitySubGroupSuggestionConnection\n        edges {  # [XWA2CommunitySubGroupSuggestionEdge]\n          node {  # XWA2CommunitySubGroupSuggestion\n            id\n            subject {  # XWA2GroupSubject\n              value\n            }\n            description {  # XWA2GroupDescription\n              value\n              id\n            }\n            creator {  # XWA2User\n              id\n            }\n            creation_time\n            total_participants_count\n            is_existing_group\n            hidden_group\n          }\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchSubgroupSuggestionsJobQuery.graphql",
+    "matches": "id:\\s*\"23972005349071865\""
+  },
+  "literals": [
+    "23972005349071865",
+    "WAWebMexFetchSubgroupSuggestionsJobQuery",
+    "xwa2_group_query_by_id"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchSubgroupSuggestionsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

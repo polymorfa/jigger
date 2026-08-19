@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCurrencyUtils","WAWebOrderDetailErrorUtils","WAWebOrderDetailMath","WAWebRichTextField.react","react","react-compiler-runtime"],"dependents":["WAWebOrderCatalogProductPrice"],"dependent_count":1,"exports":[]}

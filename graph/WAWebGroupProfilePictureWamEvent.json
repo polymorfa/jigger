@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumGroupProfileActionType","WAWebWamEnumPreciseSizeBucket","WAWebWamEnumProfilePictureType"],"dependents":["WAWebGroupInfoPhoto.react","WAWebGroupNotificationContextCard.react"],"dependent_count":2,"exports":[{"name":"GroupProfilePictureWamEvent","used_by":[],"uses":0}]}

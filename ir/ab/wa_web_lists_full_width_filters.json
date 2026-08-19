@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_lists_full_width_filters",
+  "kind": "ab",
+  "name": "wa_web_lists_full_width_filters",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25805,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_lists_full_width_filters:\\s*\\[\\s*25805"
+  },
+  "literals": [
+    "wa_web_lists_full_width_filters",
+    "25805"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebChatListFilters.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

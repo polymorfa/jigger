@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebHarmfulFileWamLogger","WAWebWamEnumHarmfulFileWarningClickthroughAction","WDSTextualLink.react","react","useWAWebLogHarmfulFileDialogLifecycle"],"dependents":["WAWebMediaDocumentUtils"],"dependent_count":1,"exports":[]}

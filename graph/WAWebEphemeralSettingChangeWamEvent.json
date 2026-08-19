@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumEphemeralSettingEntryPointType","WAWebWamEnumPreciseSizeBucket","WAWebWamEnumPreviousEphemeralityType"],"dependents":["WAWebChangeEphemeralDurationChatAction"],"dependent_count":1,"exports":[{"name":"EphemeralSettingChangeWamEvent","used_by":[],"uses":0}]}

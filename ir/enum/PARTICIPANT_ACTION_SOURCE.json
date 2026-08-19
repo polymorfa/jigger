@@ -1,0 +1,48 @@
+{
+  "id": "enum:PARTICIPANT_ACTION_SOURCE",
+  "kind": "enum",
+  "name": "PARTICIPANT_ACTION_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumParticipantActionSource",
+    "variants": [
+      {
+        "name": "MINI_CONTACT_SHEET_AUDIO",
+        "value": 1.0
+      },
+      {
+        "name": "MINI_CONTACT_SHEET_VIDEO",
+        "value": 2.0
+      },
+      {
+        "name": "HEADER_AUDIO",
+        "value": 3.0
+      },
+      {
+        "name": "HEADER_VIDEO",
+        "value": 4.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumParticipantActionSource",
+    "matches": "PARTICIPANT_ACTION_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "PARTICIPANT_ACTION_SOURCE",
+    "MINI_CONTACT_SHEET_AUDIO",
+    "MINI_CONTACT_SHEET_VIDEO",
+    "HEADER_AUDIO",
+    "HEADER_VIDEO"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallInfoUserJourneyWamEvent",
+      "WAWebCallLogEntryDetails.react",
+      "WAWebCallLogParticipantsList.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

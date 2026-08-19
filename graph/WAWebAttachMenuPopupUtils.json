@@ -1,0 +1,1 @@
+{"deps":["WAWebAttachMenuPopupItemPhotos.react","WAWebBotGating","WAWebBotUtils","WAWebHatchGating"],"dependents":["WAWebAttachMenuPopup.react"],"dependent_count":1,"exports":[{"name":"getMediaSelectionType","used_by":["WAWebAttachMenuPopup.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebNewsletterDSAModals.react"],"dependent_count":2,"exports":[{"name":"StatusVcardIcon","used_by":["WAWebAllGeneratedIcons","WAWebNewsletterDSAModals.react"],"uses":2}]}

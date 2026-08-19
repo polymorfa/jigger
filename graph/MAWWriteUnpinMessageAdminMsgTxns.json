@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWDexieTable","MAWInMemoryThreadStore","MAWLocalizationUtils","MAWWriteMsgTxns","MAWWriteUnpinMessageAdminMsgContent","WATimeUtils","emptyFunction"],"dependents":["MAWWriteAdminMessageForUnpinMessageApi"],"dependent_count":1,"exports":[{"name":"writeUnpinMessageAdminMsg","used_by":["MAWWriteAdminMessageForUnpinMessageApi"],"uses":1}]}

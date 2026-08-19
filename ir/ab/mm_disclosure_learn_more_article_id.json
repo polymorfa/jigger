@@ -1,0 +1,45 @@
+{
+  "id": "ab:mm_disclosure_learn_more_article_id",
+  "kind": "ab",
+  "name": "mm_disclosure_learn_more_article_id",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 25021,
+    "type": "string",
+    "default": "263784176043634",
+    "alt_default": "263784176043634"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_disclosure_learn_more_article_id:\\s*\\[\\s*25021"
+  },
+  "literals": [
+    "mm_disclosure_learn_more_article_id",
+    "25021"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMmSignalSharingGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

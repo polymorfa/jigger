@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCtwaLabelSignalWamEvent","WAWebCtwaOrderSignalWamEvent","WAWebPerCustomerDataSharingUtils"],"dependent_count":3,"exports":[{"name":"CUSTOMER_ADS_SHARING_SETTING_ENABLED","used_by":["WAWebCtwaLabelSignalWamEvent","WAWebCtwaOrderSignalWamEvent","WAWebPerCustomerDataSharingUtils"],"uses":3}]}

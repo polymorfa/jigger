@@ -1,0 +1,36 @@
+{
+  "id": "enum:ENUM_INFO_WARNING",
+  "kind": "enum",
+  "name": "ENUM_INFO_WARNING",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBizCtwaActionEnums",
+    "variants": [
+      {
+        "name": "info",
+        "value": "info"
+      },
+      {
+        "name": "warning",
+        "value": "warning"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizCtwaActionEnums",
+    "matches": "ENUM_INFO_WARNING\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_INFO_WARNING",
+    "info",
+    "warning"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBizCtwaActionBannerSuggestionRequest"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

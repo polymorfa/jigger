@@ -1,0 +1,42 @@
+{
+  "id": "enum:WEBC_ASSET_CACHE_TYPE_CODE",
+  "kind": "enum",
+  "name": "WEBC_ASSET_CACHE_TYPE_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcAssetCacheTypeCode",
+    "variants": [
+      {
+        "name": "UNCACHED",
+        "value": 0.0
+      },
+      {
+        "name": "IDB",
+        "value": 1.0
+      },
+      {
+        "name": "SW",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcAssetCacheTypeCode",
+    "matches": "WEBC_ASSET_CACHE_TYPE_CODE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_ASSET_CACHE_TYPE_CODE",
+    "UNCACHED",
+    "IDB",
+    "SW"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAssetLoader",
+      "WAWebWebcAssetLoadWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

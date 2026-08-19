@@ -1,0 +1,28 @@
+__d("WAWebSharableEventInviteFormatMessageText", [
+	"fbt",
+	"WAWebFormatEventDateString",
+	"WAWebFrontendMsgGetters",
+	"WAWebMsgGetters",
+	"WAWebSharableEventInviteCoerceTimestampSeconds",
+	"nullthrows"
+], (function(t, n, r, o, a, i, l, s) {
+	function e(e) {
+		var t = e.msg, n = e.options, a = r("nullthrows")(o("WAWebFrontendMsgGetters").getAsSharableEventInvite(t));
+		if (n.formatAsLastMsg === !0) return o("WAWebMsgGetters").getIsSentByMe(a) ? s._(
+			/*BTDS*/
+			"",
+			[s._param("event-title", a.sharableEventInviteTitle)]
+		) : s._(
+			/*BTDS*/
+			"",
+			[s._param("event-title", a.sharableEventInviteTitle)]
+		);
+		var i = r("WAWebSharableEventInviteCoerceTimestampSeconds")(a.sharableEventInviteStartTime);
+		return i != null ? s._(
+			/*BTDS*/
+			"",
+			[s._param("event-title", a.sharableEventInviteTitle), s._param("event-time", o("WAWebFormatEventDateString").getEventDateStringFor(i))]
+		) : a.sharableEventInviteTitle;
+	}
+	l.default = e;
+}), 226);

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebCommunityCells.react","WAWebSubgroupSuggestionsBanner.react"],"dependent_count":3,"exports":[{"name":"SubgroupsNuxIcon","used_by":["WAWebAllGeneratedIcons","WAWebCommunityCells.react","WAWebSubgroupSuggestionsBanner.react"],"uses":3}]}

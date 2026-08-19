@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumChatAssignmentActionType","WAWebWamEnumChatAssignmentChatType","WAWebWamEnumChatAssignmentEntryPointType"],"dependents":["WAWebChatAssignmentLogEvents"],"dependent_count":1,"exports":[{"name":"MdChatAssignmentWamEvent","used_by":[],"uses":0}]}

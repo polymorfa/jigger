@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMediaEditorToolbarOutline"],"dependent_count":2,"exports":[{"name":"OutlineSmoothIcon","used_by":["WAWebAllGeneratedIcons","WAWebMediaEditorToolbarOutline"],"uses":2}]}

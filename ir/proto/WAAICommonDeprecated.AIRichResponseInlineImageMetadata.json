@@ -1,0 +1,42 @@
+{
+  "id": "proto:WAAICommonDeprecated.AIRichResponseInlineImageMetadata",
+  "kind": "proto",
+  "name": "WAAICommonDeprecated.AIRichResponseInlineImageMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "alignment": {
+        "number": 3
+      },
+      "imageText": {
+        "number": 2
+      },
+      "imageUrl": {
+        "number": 1,
+        "type_name": "WAAICommonDeprecated.AIRichResponseImageURL"
+      },
+      "tapLinkUrl": {
+        "number": 4
+      }
+    },
+    "module": "WAAICommonDeprecated.pb"
+  },
+  "evidence": {
+    "module": "WAAICommonDeprecated.pb",
+    "matches": "name = \"AIRichResponseInlineImageMetadata\""
+  },
+  "literals": [
+    "AIRichResponseInlineImageMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "proto:WAArmadilloBackupCommon.Metadata",
+  "kind": "proto",
+  "name": "WAArmadilloBackupCommon.Metadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "clientTimestampMs": {
+        "number": 8
+      },
+      "frankingMetadata": {
+        "number": 4,
+        "type_name": "WAArmadilloBackupCommon.FrankingMetadata"
+      },
+      "futureProofBehavior": {
+        "number": 6
+      },
+      "messageId": {
+        "number": 2
+      },
+      "payloadVersion": {
+        "number": 5
+      },
+      "senderId": {
+        "number": 1
+      },
+      "threadTypeTag": {
+        "number": 7
+      },
+      "timestampMs": {
+        "number": 3
+      }
+    },
+    "module": "WAArmadilloBackupCommon.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloBackupCommon.pb",
+    "matches": "name = \"Metadata\""
+  },
+  "literals": [
+    "Metadata"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAArmadilloBackupMessage.pb"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

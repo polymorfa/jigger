@@ -1,0 +1,38 @@
+{
+  "id": "enum:STATUS_PAIRED_MEDIA_QUALITY",
+  "kind": "enum",
+  "name": "STATUS_PAIRED_MEDIA_QUALITY",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusPairedMediaQuality",
+    "variants": [
+      {
+        "name": "SD",
+        "value": 0.0
+      },
+      {
+        "name": "HD",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusPairedMediaQuality",
+    "matches": "STATUS_PAIRED_MEDIA_QUALITY\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_PAIRED_MEDIA_QUALITY",
+    "SD",
+    "HD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusItemViewWamEvent",
+      "WAWebStatusPostWamEvent",
+      "WAWebStatusPosterActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

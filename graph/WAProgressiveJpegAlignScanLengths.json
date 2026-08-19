@@ -1,0 +1,1 @@
+{"deps":["WAAlignChunkLengthsToMultipleOfAesBlockSize"],"dependents":["WAProgressiveJpegGetPJpegDetails"],"dependent_count":1,"exports":[{"name":"progressiveJpegAlignChunkLengthsToMultipleOfAesBlockSize","used_by":["WAProgressiveJpegGetPJpegDetails"],"uses":1},{"name":"toProgressiveJpegAlignedScanLength","used_by":[],"uses":0}]}

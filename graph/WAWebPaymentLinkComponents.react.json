@@ -1,0 +1,1 @@
+{"deps":["fbt","PaymentLinkWamLogger","WALogger","WAWebExternalLink.react","WAWebLaunchIcon.react","WAWebMessageBubbleActions.react","WAWebMsgGetters","WAWebPaymentLinkWithCTAFeature","react","react-compiler-runtime"],"dependents":["WAWebMessageText.react"],"dependent_count":1,"exports":[]}

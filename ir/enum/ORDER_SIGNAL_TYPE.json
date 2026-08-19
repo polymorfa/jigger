@@ -1,0 +1,37 @@
+{
+  "id": "enum:ORDER_SIGNAL_TYPE",
+  "kind": "enum",
+  "name": "ORDER_SIGNAL_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOrderSignalType",
+    "variants": [
+      {
+        "name": "CREATED",
+        "value": 0.0
+      },
+      {
+        "name": "UPDATED",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOrderSignalType",
+    "matches": "ORDER_SIGNAL_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "ORDER_SIGNAL_TYPE",
+    "CREATED",
+    "UPDATED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwaOrderSignalWamEvent",
+      "WAWebSmbMarkAsXOrderAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

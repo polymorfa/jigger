@@ -1,0 +1,68 @@
+{
+  "id": "enum:MD_BOOTSTRAP_HISTORY_PAYLOAD_TYPE",
+  "kind": "enum",
+  "name": "MD_BOOTSTRAP_HISTORY_PAYLOAD_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMdBootstrapHistoryPayloadType",
+    "variants": [
+      {
+        "name": "INITIAL",
+        "value": 1.0
+      },
+      {
+        "name": "RECENT_HISTORY",
+        "value": 2.0
+      },
+      {
+        "name": "FULL_HISTORY",
+        "value": 3.0
+      },
+      {
+        "name": "PUSHNAME",
+        "value": 4.0
+      },
+      {
+        "name": "STATUS_V3",
+        "value": 5.0
+      },
+      {
+        "name": "NON_BLOCKING_DATA",
+        "value": 6.0
+      },
+      {
+        "name": "ON_DEMAND",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMdBootstrapHistoryPayloadType",
+    "matches": "MD_BOOTSTRAP_HISTORY_PAYLOAD_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MD_BOOTSTRAP_HISTORY_PAYLOAD_TYPE",
+    "INITIAL",
+    "RECENT_HISTORY",
+    "FULL_HISTORY",
+    "PUSHNAME",
+    "STATUS_V3",
+    "NON_BLOCKING_DATA",
+    "ON_DEMAND"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetMetricHistorySyncPayloadType",
+      "WAWebLogHistorySyncStatusAfterPairingJob",
+      "WAWebMdBootstrapAppStateDataDownloadedWamEvent",
+      "WAWebMdBootstrapDataAppliedWamEvent",
+      "WAWebMdBootstrapHistoryDataDownloadedWamEvent",
+      "WAWebMdBootstrapHistoryDataReceivedWamEvent",
+      "WAWebMdBootstrapHistoryDataStartDownloadingWamEvent",
+      "WAWebMdBootstrapHistorySyncStatusAfterPairingWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 8
+  }
+}

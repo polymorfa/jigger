@@ -1,0 +1,1 @@
+{"deps":["WAWebCarouselScrollButton.react","WAWebCommonNewsletterEnums","WAWebFlex.react","WAWebNewsletterRecommendedV2Item.react","react","react-compiler-runtime","useWAWebWindowSize"],"dependents":["WAWebSimilarNewslettersUnits.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,63 @@
+{
+  "id": "proto:WAE2E.ProcessedVideo",
+  "kind": "proto",
+  "name": "WAE2E.ProcessedVideo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "bitrate": {
+        "number": 6
+      },
+      "capabilities": {
+        "number": 8
+      },
+      "directPath": {
+        "number": 1
+      },
+      "fileLength": {
+        "number": 5
+      },
+      "fileSha256": {
+        "number": 2
+      },
+      "height": {
+        "number": 3
+      },
+      "quality": {
+        "number": 7
+      },
+      "width": {
+        "number": 4
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"ProcessedVideo\""
+  },
+  "literals": [
+    "ProcessedVideo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

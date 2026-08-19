@@ -1,0 +1,73 @@
+{
+  "id": "mex:WAWebFetchMetaAiNullStatePromptsGQLQuery",
+  "kind": "mex",
+  "name": "WAWebFetchMetaAiNullStatePromptsGQLQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27011415698537190",
+    "operation": "query",
+    "variables": [
+      "locale",
+      "null_state_source",
+      "exp_config"
+    ],
+    "args": [
+      {
+        "name": "locale"
+      },
+      {
+        "name": "null_state_source"
+      },
+      {
+        "name": "exp_config"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_genai_meta_ai_search_null_state",
+        "ty": "XWAMetaAISearchNullStateResponse",
+        "args": [
+          "exp_config: $exp_config",
+          "locale: $locale",
+          "null_state_source: $null_state_source"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "suggestions",
+            "ty": "XWAMetaAINullStateSuggestion",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "suggestion",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "query",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 27011415698537190\nquery FetchMetaAiNullStatePromptsGQLQuery(\n  $locale\n  $null_state_source\n  $exp_config\n) {\n  xwa_genai_meta_ai_search_null_state(exp_config: $exp_config, locale: $locale, null_state_source: $null_state_source) {  # XWAMetaAISearchNullStateResponse\n    suggestions {  # [XWAMetaAINullStateSuggestion]\n      suggestion\n      query\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebFetchMetaAiNullStatePromptsGQLQuery.graphql",
+    "matches": "id:\\s*\"27011415698537190\""
+  },
+  "literals": [
+    "27011415698537190",
+    "WAWebFetchMetaAiNullStatePromptsGQLQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebFetchMetaAiNullStatePromptsGQL"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

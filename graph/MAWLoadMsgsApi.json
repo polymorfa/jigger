@@ -1,0 +1,1 @@
+{"deps":["MAWIndexedDb","MAWLoadMsgsTxnsV2","MAWTransactionMode"],"dependents":["MAWBridgeHandlers","MAWDebug"],"dependent_count":2,"exports":[{"name":"loadMsgsByExternalId","used_by":["MAWBridgeHandlers"],"uses":1},{"name":"loadMsgsFromTs","used_by":["MAWDebug"],"uses":1},{"name":"loadMsgsRange","used_by":[],"uses":0}]}

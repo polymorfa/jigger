@@ -1,0 +1,45 @@
+{
+  "id": "ab:wmi_jm_to_ts_m1",
+  "kind": "ab",
+  "name": "wmi_jm_to_ts_m1",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32880,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wmi_jm_to_ts_m1:\\s*\\[\\s*32880"
+  },
+  "literals": [
+    "wmi_jm_to_ts_m1",
+    "32880"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPersistedJobManager"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

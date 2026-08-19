@@ -1,0 +1,32 @@
+__d("WAMsgType", [], (function(t, n, r, o, a, i) {
+	"use strict";
+	var e = "Text", l = "Futureproof", s = "Ciphertext", u = "Unavailable", c = "Image", d = "Video", m = "Ptt", p = "Admin", _ = "Revoked", f = "Gif", g = "Sticker", h = "DocumentFile", y = "ExpiredEphemeral", C = "EphemeralSettingAdmin", b = "EphemeralSyncResponse", v = "DeleteForMe", S = "EphemeralSettingChangeFromCurrentDevice", R = "GroupInvite", L = "NoteReply", E = "Reaction", k = "SenderKeyDistribution", I = "EditAction", T = "ReceiverFetch", D = "Raven", x = "GroupPollCreate", $ = "GroupPollUpdate", P = {
+		ADMIN: p,
+		CIPHERTEXT: s,
+		DELETE_FOR_ME: v,
+		DOCUMENT_FILE: h,
+		EDIT_ACTION: I,
+		EPHEMERAL_SETTING_ADMIN: C,
+		EPHEMERAL_SETTING_CHANGE_FROM_CURRENT_DEVICE: S,
+		EPHEMERAL_SYNC_RESPONSE: b,
+		EXPIRED_EPHEMERAL: y,
+		FUTUREPROOF: l,
+		GIF: f,
+		GROUP_INVITE: R,
+		IMAGE: c,
+		PTT: m,
+		REACTION: E,
+		REVOKED: _,
+		SK_DISTRIBUTION: k,
+		STICKER: g,
+		TEXT: e,
+		UNAVAILABLE: u,
+		VIDEO: d,
+		RECEIVER_FETCH: T,
+		RAVEN: D,
+		GROUP_POLL_CREATE: x,
+		GROUP_POLL_UPDATE: $,
+		NOTE_REPLY: L
+	};
+	i.TEXT = e, i.FUTUREPROOF = l, i.CIPHERTEXT = s, i.UNAVAILABLE = u, i.IMAGE = c, i.VIDEO = d, i.PTT = m, i.ADMIN = p, i.REVOKED = _, i.GIF = f, i.STICKER = g, i.DOCUMENT_FILE = h, i.EXPIRED_EPHEMERAL = y, i.EPHEMERAL_SETTING_ADMIN = C, i.EPHEMERAL_SYNC_RESPONSE = b, i.DELETE_FOR_ME = v, i.EPHEMERAL_SETTING_CHANGE_FROM_CURRENT_DEVICE = S, i.GROUP_INVITE = R, i.NOTE_REPLY = L, i.REACTION = E, i.SK_DISTRIBUTION = k, i.EDIT_ACTION = I, i.RECEIVER_FETCH = T, i.RAVEN = D, i.GROUP_POLL_CREATE = x, i.GROUP_POLL_UPDATE = $, i.MSG_TYPE = P;
+}), 66);

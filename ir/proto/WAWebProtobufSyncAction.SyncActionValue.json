@@ -1,0 +1,418 @@
+{
+  "id": "proto:WAWebProtobufSyncAction.SyncActionValue",
+  "kind": "proto",
+  "name": "WAWebProtobufSyncAction.SyncActionValue",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "agentAction": {
+        "number": 27,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.AgentAction"
+      },
+      "aiThreadRenameAction": {
+        "number": 76,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.AiThreadRenameAction"
+      },
+      "androidUnsupportedActions": {
+        "number": 26,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.AndroidUnsupportedActions"
+      },
+      "archiveChatAction": {
+        "number": 17,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.ArchiveChatAction"
+      },
+      "autoOrganizeBusinessChatSetting": {
+        "number": 86,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.AutoOrganizeBusinessChatSetting"
+      },
+      "avatarUpdatedAction": {
+        "number": 72,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.AvatarUpdatedAction"
+      },
+      "bizAiSettingsNudgeAction": {
+        "number": 87,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.BizAISettingsNudgeAction"
+      },
+      "botWelcomeRequestAction": {
+        "number": 45,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.BotWelcomeRequestAction"
+      },
+      "bubbleLockMessageAction": {
+        "number": 90,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.BubbleLockMessageAction"
+      },
+      "businessBroadcastCampaignAction": {
+        "number": 81,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.BusinessBroadcastCampaignAction"
+      },
+      "businessBroadcastInsightsAction": {
+        "number": 82,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.BusinessBroadcastInsightsAction"
+      },
+      "businessBroadcastListAction": {
+        "number": 69,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.BusinessBroadcastListAction"
+      },
+      "callLogAction": {
+        "number": 42,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.CallLogAction"
+      },
+      "chatAssignment": {
+        "number": 35,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.ChatAssignmentAction"
+      },
+      "chatAssignmentOpenedStatus": {
+        "number": 36,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.ChatAssignmentOpenedStatusAction"
+      },
+      "chatLockSettings": {
+        "number": 51
+      },
+      "clearChatAction": {
+        "number": 21,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.ClearChatAction"
+      },
+      "coexV2VersionAction": {
+        "number": 88,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.CoexV2VersionAction"
+      },
+      "contactAction": {
+        "number": 3,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.ContactAction"
+      },
+      "ctwaPerCustomerDataSharingAction": {
+        "number": 62,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.CtwaPerCustomerDataSharingAction"
+      },
+      "customPaymentMethodsAction": {
+        "number": 49,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.CustomPaymentMethodsAction"
+      },
+      "customerDataAction": {
+        "number": 83,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.CustomerDataAction"
+      },
+      "deleteChatAction": {
+        "number": 22,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.DeleteChatAction"
+      },
+      "deleteIndividualCallLog": {
+        "number": 46,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.DeleteIndividualCallLogAction"
+      },
+      "deleteMessageForMeAction": {
+        "number": 18,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.DeleteMessageForMeAction"
+      },
+      "detectedOutcomesStatusAction": {
+        "number": 66,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.DetectedOutcomesStatusAction"
+      },
+      "deviceCapabilities": {
+        "number": 54
+      },
+      "deviceCapabilitiesV2": {
+        "number": 92
+      },
+      "externalWebBetaAction": {
+        "number": 40,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.ExternalWebBetaAction"
+      },
+      "favoritesAction": {
+        "number": 56,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.FavoritesAction"
+      },
+      "interactiveMessageAction": {
+        "number": 77,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.InteractiveMessageAction"
+      },
+      "keyExpiration": {
+        "number": 19,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.KeyExpiration"
+      },
+      "labelAssociationAction": {
+        "number": 15,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.LabelAssociationAction"
+      },
+      "labelEditAction": {
+        "number": 14,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.LabelEditAction"
+      },
+      "labelReorderingAction": {
+        "number": 47,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.LabelReorderingAction"
+      },
+      "labelSublistAction": {
+        "number": 91,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.LabelSublistAction"
+      },
+      "lidContactAction": {
+        "number": 61,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.LidContactAction"
+      },
+      "localeSetting": {
+        "number": 16,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.LocaleSetting"
+      },
+      "lockChatAction": {
+        "number": 50,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.LockChatAction"
+      },
+      "maibaAiFeaturesControlAction": {
+        "number": 68,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.MaibaAIFeaturesControlAction"
+      },
+      "markChatAsReadAction": {
+        "number": 20,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.MarkChatAsReadAction"
+      },
+      "marketingMessageAction": {
+        "number": 38,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.MarketingMessageAction"
+      },
+      "marketingMessageBroadcastAction": {
+        "number": 39,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.MarketingMessageBroadcastAction"
+      },
+      "merchantPaymentPartnerAction": {
+        "number": 57,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.MerchantPaymentPartnerAction"
+      },
+      "musicUserIdAction": {
+        "number": 70,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.MusicUserIdAction"
+      },
+      "muteAction": {
+        "number": 4,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.MuteAction"
+      },
+      "nctSaltSyncAction": {
+        "number": 80,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.NctSaltSyncAction"
+      },
+      "newsletterSavedInterestsAction": {
+        "number": 75,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.NewsletterSavedInterestsAction"
+      },
+      "noteEditAction": {
+        "number": 55,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.NoteEditAction"
+      },
+      "notificationActivitySettingAction": {
+        "number": 60,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.NotificationActivitySettingAction"
+      },
+      "nuxAction": {
+        "number": 31,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.NuxAction"
+      },
+      "outContactAction": {
+        "number": 79,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.OutContactAction"
+      },
+      "paymentInfoAction": {
+        "number": 48,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PaymentInfoAction"
+      },
+      "paymentTosAction": {
+        "number": 63,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PaymentTosAction"
+      },
+      "pinAction": {
+        "number": 5,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PinAction"
+      },
+      "pnForLidChatAction": {
+        "number": 37,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PnForLidChatAction"
+      },
+      "primaryFeature": {
+        "number": 24,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PrimaryFeature"
+      },
+      "primaryVersionAction": {
+        "number": 32,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PrimaryVersionAction"
+      },
+      "privacySettingChannelsPersonalisedRecommendationAction": {
+        "number": 64,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PrivacySettingChannelsPersonalisedRecommendationAction"
+      },
+      "privacySettingDisableLinkPreviewsAction": {
+        "number": 53,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PrivacySettingDisableLinkPreviewsAction"
+      },
+      "privacySettingRelayAllCalls": {
+        "number": 41,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PrivacySettingRelayAllCalls"
+      },
+      "privateProcessingSettingAction": {
+        "number": 74,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PrivateProcessingSettingAction"
+      },
+      "pushNameSetting": {
+        "number": 7,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.PushNameSetting"
+      },
+      "quickReplyAction": {
+        "number": 8,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.QuickReplyAction"
+      },
+      "recentEmojiWeightsAction": {
+        "number": 11,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.RecentEmojiWeightsAction"
+      },
+      "removeRecentStickerAction": {
+        "number": 34,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.RemoveRecentStickerAction"
+      },
+      "settingsSyncAction": {
+        "number": 78,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.SettingsSyncAction"
+      },
+      "starAction": {
+        "number": 2,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.StarAction"
+      },
+      "statusPostOptInNotificationPreferencesAction": {
+        "number": 71,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.StatusPostOptInNotificationPreferencesAction"
+      },
+      "statusPrivacy": {
+        "number": 44,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.StatusPrivacyAction"
+      },
+      "stickerAction": {
+        "number": 33,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.StickerAction"
+      },
+      "subscriptionAction": {
+        "number": 28,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.SubscriptionAction"
+      },
+      "subscriptionsSyncV2Action": {
+        "number": 84,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.SubscriptionsSyncV2Action"
+      },
+      "threadPinAction": {
+        "number": 85,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.ThreadPinAction"
+      },
+      "timeFormatAction": {
+        "number": 30,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.TimeFormatAction"
+      },
+      "timestamp": {
+        "number": 1
+      },
+      "ugcBot": {
+        "number": 43,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.UGCBot"
+      },
+      "unarchiveChatsSetting": {
+        "number": 23,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.UnarchiveChatsSetting"
+      },
+      "userStatusMuteAction": {
+        "number": 29,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.UserStatusMuteAction"
+      },
+      "usernameChatStartMode": {
+        "number": 59,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.UsernameChatStartModeAction"
+      },
+      "waffleAccountLinkStateAction": {
+        "number": 58,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.WaffleAccountLinkStateAction"
+      },
+      "wamoUserIdentifierAction": {
+        "number": 52,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.WamoUserIdentifierAction"
+      },
+      "wasaRootSecretAction": {
+        "number": 89,
+        "type_name": "WAWebProtobufSyncAction.SyncActionValue.WASARootSecretAction"
+      }
+    },
+    "module": "WAWebProtobufSyncAction.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufSyncAction.pb",
+    "matches": "name = \"SyncActionValue\""
+  },
+  "literals": [
+    "SyncActionValue"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsChatLockSettings.pb",
+      "WAWebProtobufsDeviceCapabilities.pb",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebAiThreadPinSyncUtils",
+      "WAWebApiActiveMessageRanges",
+      "WAWebArchiveChatSync",
+      "WAWebArchiveSettingSync",
+      "WAWebBizAIInstructionsDrawer.react",
+      "WAWebBizAISettingsCategoryHandlers",
+      "WAWebBizAiBridgeApi",
+      "WAWebBizAiHandoffSettingsDrawer.react",
+      "WAWebBizAiSettingsFetchOnLaunch",
+      "WAWebBizBroadcastsDeviceCapability",
+      "WAWebBotDeviceCapabilities",
+      "WAWebCallLogSync",
+      "WAWebChatClearBridge",
+      "WAWebClearChatSync",
+      "WAWebDebugSyncd",
+      "WAWebDeleteChatSync",
+      "WAWebDeleteMessageForMeSync",
+      "WAWebDeviceCapabilitiesSyncBase",
+      "WAWebHandleForMessageRange",
+      "WAWebHandlePairSuccess",
+      "WAWebInteractiveMessageSync",
+      "WAWebLabelSync",
+      "WAWebMarkChatAsReadSync",
+      "WAWebMediaUploadQualitySettings.react",
+      "WAWebMessageRangeUtils",
+      "WAWebNoteSync",
+      "WAWebPaymentsTosJob",
+      "WAWebPinChatSync",
+      "WAWebPremiumMessageHydrateMessageAction",
+      "WAWebPrimaryDeviceCapabilities",
+      "WAWebPrimaryVersion",
+      "WAWebProtobufsHistorySync.pb",
+      "WAWebProtobufsSyncdSnapshotRecovery.pb",
+      "WAWebRequestSyncdSnapshotRecovery",
+      "WAWebSchemaBusinessBroadcastCampaign",
+      "WAWebSettingsBridgeApi",
+      "WAWebSettingsSync",
+      "WAWebSettingsSyncConst",
+      "WAWebStatusPrivacySettingSync",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdCollectionHandler",
+      "WAWebSyncdCollectionHandlerTypesConverter",
+      "WAWebSyncdDecode",
+      "WAWebSyncdDecryptMutations",
+      "WAWebSyncdEncryptMutations",
+      "WAWebSyncdKmpConversion",
+      "WAWebSyncdMetricCriticalBootstrapStage",
+      "WAWebSyncdRequestBuilderBuild",
+      "WAWebSyncdRequestBuilderTypesConverter",
+      "WAWebSyncdRequestEncode",
+      "WAWebSyncdUploadFatalErrorMetric",
+      "WAWebSyncdValidateMutations",
+      "WAWebSyncdValidateServerSyncProtobuf",
+      "WAWebUserPrefsPaymentTos",
+      "WAWebVoipWaCallEnums",
+      "WAWebWASARootSecretSync",
+      "WAWebWasaRootSecretWriter",
+      "WAWebWindowsShowNotificationBannerOption",
+      "WAWebWindowsTaskbarNotificationOption"
+    ],
+    "dep_count": 5,
+    "dependent_count": 59
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "mex:WAWebCustomLabel3pdEventQuery",
+  "kind": "mex",
+  "name": "WAWebCustomLabel3pdEventQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24247439618185103",
+    "operation": "query",
+    "variables": [
+      "custom_labels",
+      "expt_group"
+    ],
+    "args": [
+      {
+        "name": "custom_labels"
+      },
+      {
+        "name": "expt_group"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_get_3pd_event",
+        "ty": "XWACustomLabelTo3PDEvent",
+        "plural": true,
+        "args": [
+          "custom_labels: $custom_labels",
+          "expt_group: $expt_group"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "custom_label",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "ctwa_3pd_conversion_type",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "ctwa_3pd_conversion_subtype",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "ctwa_3pd_conversion_metadata",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 24247439618185103\nquery CustomLabel3pdEventQuery(\n  $custom_labels\n  $expt_group\n) {\n  xwa_get_3pd_event(custom_labels: $custom_labels, expt_group: $expt_group) {  # [XWACustomLabelTo3PDEvent]\n    custom_label\n    ctwa_3pd_conversion_type\n    ctwa_3pd_conversion_subtype\n    ctwa_3pd_conversion_metadata\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebCustomLabel3pdEventQuery.graphql",
+    "matches": "id:\\s*\"24247439618185103\""
+  },
+  "literals": [
+    "24247439618185103",
+    "WAWebCustomLabel3pdEventQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCustomLabel3pdEventQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

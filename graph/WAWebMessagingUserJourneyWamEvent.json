@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumActionType","WAWebWamEnumMediaType","WAWebWamEnumThreadType","WAWebWamEnumTsSurface","WAWebWamEnumUserRoleType"],"dependents":["WAWebMessagingUserJourneyLogger"],"dependent_count":1,"exports":[{"name":"MessagingUserJourneyWamEvent","used_by":[],"uses":0}]}

@@ -1,0 +1,36 @@
+__d("WAWebContactInfoSagaSection.react", [
+	"fbt",
+	"WAWebABPropsSaga",
+	"WAWebChatInfoDrawerRow.react",
+	"WAWebModalManager",
+	"WAWebSagaModal.react",
+	"WAWebSagaV1Modal.react",
+	"WAWebText.react",
+	"WDSIconWdsIcAiFilled.react",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u = e || (e = o("react"));
+	function c() {
+		var e = u.jsx(r("WDSIconWdsIcAiFilled.react"), {
+			colorName: "contentDeemphasized",
+			height: 20
+		}), t = s._(
+			/*BTDS*/
+			""
+		), n = s._(
+			/*BTDS*/
+			""
+		);
+		return u.jsx(o("WAWebChatInfoDrawerRow.react").ChatInfoDrawerRowRefreshed, {
+			onClick: d,
+			icon: e,
+			title: u.jsx(o("WAWebText.react").WAWebTextTitleRefreshed, { children: t }),
+			secondaryTitle: u.jsx(o("WAWebText.react").WAWebTextMutedRefreshed, { children: n })
+		});
+	}
+	c.displayName = c.name + " [from " + i.id + "]";
+	function d() {
+		o("WAWebModalManager").ModalManager.open(o("WAWebABPropsSaga").getIsSagaV1NuxEnabled() ? u.jsx(r("WAWebSagaV1Modal.react"), {}) : u.jsx(r("WAWebSagaModal.react"), {}));
+	}
+	l.default = c;
+}), 226);

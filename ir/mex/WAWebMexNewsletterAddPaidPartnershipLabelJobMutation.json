@@ -1,0 +1,63 @@
+{
+  "id": "mex:WAWebMexNewsletterAddPaidPartnershipLabelJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterAddPaidPartnershipLabelJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26102375079404865",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "server_id",
+      "message_type"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "server_id"
+      },
+      {
+        "name": "message_type"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_label_paid_partnership",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "message_type: $message_type",
+          "newsletter_id: $newsletter_id",
+          "server_id: $server_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_label_paid_partnership",
+    "document": "# persisted document 26102375079404865\nmutation MexNewsletterAddPaidPartnershipLabelJobMutation(\n  $newsletter_id\n  $server_id\n  $message_type\n) {\n  xwa2_newsletter_label_paid_partnership(message_type: $message_type, newsletter_id: $newsletter_id, server_id: $server_id) {  # XWA2NewsletterMutationResponse\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterAddPaidPartnershipLabelJobMutation.graphql",
+    "matches": "id:\\s*\"26102375079404865\""
+  },
+  "literals": [
+    "26102375079404865",
+    "WAWebMexNewsletterAddPaidPartnershipLabelJobMutation",
+    "xwa2_newsletter_label_paid_partnership"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterAddPaidPartnershipLabelJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

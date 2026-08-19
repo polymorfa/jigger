@@ -1,0 +1,38 @@
+__d("WAWebUprConstants", ["$InternalEnum"], (function(t, n, r, o, a, i) {
+	var e, l = "upr", s = (e = n("$InternalEnum"))({
+		PAYMENT_ACCOUNT: "payment_account",
+		PAYMENT_LINK: "payment_link"
+	}), u = e({
+		BANK_ACCOUNT: "bank_account",
+		DIGITAL_WALLET: "digital_wallet",
+		MOBILE_MONEY: "mobile_money",
+		QR_CODE: "qr_code"
+	}), c = e({
+		CLABE: "clabe",
+		QRIS: "qris",
+		PHONE_NUMBER: "phone_number",
+		ACCOUNT_NUMBER: "account_number",
+		ID_ACCOUNT_NUMBER: "id_account_number",
+		IBAN: "iban",
+		FPSID: "fpsid",
+		EMAIL: "email"
+	}), d = e({
+		PAYMENT_TYPE: "payment_type",
+		REFERENCE_ID: "reference_id",
+		CURRENCY: "currency",
+		TOTAL_AMOUNT: "total_amount",
+		PAYMENT_SETTINGS: "payment_settings",
+		ORDER: "order",
+		ITEMS: "items",
+		TYPE: "type",
+		PAYMENT_ACCOUNT: "payment_account",
+		PAYMENT_LINK: "payment_link",
+		ACCOUNT_TYPE: "account_type",
+		IDENTIFIER_TYPE: "identifier_type",
+		IDENTIFIER_VALUE: "identifier_value",
+		INSTITUTION_NAME: "institution_name",
+		BENEFICIARY_NAME: "beneficiary_name",
+		URI: "uri"
+	});
+	i.UPR_PAYMENT_TYPE = l, i.UprPaymentSettingType = s, i.UprPaymentAccountType = u, i.UprIdentifierType = c, i.UprWireFields = d;
+}), 66);

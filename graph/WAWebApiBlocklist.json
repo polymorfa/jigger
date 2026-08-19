@@ -1,0 +1,1 @@
+{"deps":["WAWebBoolFunc","WAWebModelStorageUtils","WAWebSchemaBlocklist","WAWebWidFactory"],"dependents":["WAWebFetchAndUpdateBlocklistJob"],"dependent_count":1,"exports":[{"name":"updateBlocklist","used_by":["WAWebFetchAndUpdateBlocklistJob"],"uses":1},{"name":"getBlocklist","used_by":[],"uses":0}]}

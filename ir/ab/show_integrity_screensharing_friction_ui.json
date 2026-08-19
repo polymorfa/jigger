@@ -1,0 +1,42 @@
+{
+  "id": "ab:show_integrity_screensharing_friction_ui",
+  "kind": "ab",
+  "name": "show_integrity_screensharing_friction_ui",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16411,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "show_integrity_screensharing_friction_ui:\\s*\\[\\s*16411"
+  },
+  "literals": [
+    "show_integrity_screensharing_friction_ui",
+    "16411"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

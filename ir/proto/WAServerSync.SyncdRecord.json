@@ -1,0 +1,41 @@
+{
+  "id": "proto:WAServerSync.SyncdRecord",
+  "kind": "proto",
+  "name": "WAServerSync.SyncdRecord",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "index": {
+        "number": 1,
+        "type_name": "WAServerSync.SyncdIndex"
+      },
+      "keyId": {
+        "number": 3,
+        "type_name": "WAServerSync.KeyId"
+      },
+      "value": {
+        "number": 2,
+        "type_name": "WAServerSync.SyncdValue"
+      }
+    },
+    "module": "WAServerSync.pb"
+  },
+  "evidence": {
+    "module": "WAServerSync.pb",
+    "matches": "name = \"SyncdRecord\""
+  },
+  "literals": [
+    "SyncdRecord"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

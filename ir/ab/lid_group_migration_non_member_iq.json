@@ -1,0 +1,45 @@
+{
+  "id": "ab:lid_group_migration_non_member_iq",
+  "kind": "ab",
+  "name": "lid_group_migration_non_member_iq",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 16104,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "lid_group_migration_non_member_iq:\\s*\\[\\s*16104"
+  },
+  "literals": [
+    "lid_group_migration_non_member_iq",
+    "16104"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUsernameGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaEditPdfModal.react","WAWebModalManager","WAWebTPLoggingUtils","react"],"dependents":["WAWebMediaEditPdfButton.react","WAWebMediaPanelHeader.react"],"dependent_count":2,"exports":[{"name":"openEditInAcrobatModal","used_by":["WAWebMediaEditPdfButton.react","WAWebMediaPanelHeader.react"],"uses":2}]}

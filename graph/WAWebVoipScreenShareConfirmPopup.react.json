@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebModalManager","WAWebVoipStackInterface","WDSText.react","asyncToGeneratorRuntime","react","react-compiler-runtime"],"dependents":["WAWebVoipScreenShareHelpers"],"dependent_count":1,"exports":[]}

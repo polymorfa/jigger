@@ -1,0 +1,45 @@
+{
+  "id": "ab:original_quality_image_min_edge",
+  "kind": "ab",
+  "name": "original_quality_image_min_edge",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3068,
+    "type": "int",
+    "default": 2560,
+    "alt_default": 2560
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "original_quality_image_min_edge:\\s*\\[\\s*3068"
+  },
+  "literals": [
+    "original_quality_image_min_edge",
+    "3068"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebHDMediaUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

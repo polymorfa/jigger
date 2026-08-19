@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPdfReceiverApp.react"],"dependent_count":2,"exports":[{"name":"ArrowOutlineIcon","used_by":["WAWebAllGeneratedIcons","WAWebPdfReceiverApp.react"],"uses":2}]}

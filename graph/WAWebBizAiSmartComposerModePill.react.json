@@ -1,0 +1,1 @@
+{"deps":["fbt","WDSChip.react","WDSIconIcEdit.react","WDSIconWdsIcAiFilled.react","WDSIconWdsIcPencilAi.react","WDSMenu.react","WDSMenuItem.react","react","react-compiler-runtime","useWAWebSmartComposerMode","useWDSMenu"],"dependents":["WAWebBizAiSmartComposerWrapper.react"],"dependent_count":1,"exports":[]}

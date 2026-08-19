@@ -1,0 +1,42 @@
+{
+  "id": "ab:events_m3_cover_image_receive",
+  "kind": "ab",
+  "name": "events_m3_cover_image_receive",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7511,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "events_m3_cover_image_receive:\\s*\\[\\s*7511"
+  },
+  "literals": [
+    "events_m3_cover_image_receive",
+    "7511"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

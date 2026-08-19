@@ -1,0 +1,160 @@
+{
+  "id": "wam:3796",
+  "kind": "wam",
+  "name": "NotificationEngagement",
+  "data": {
+    "kind": "wam",
+    "event_id": 3796,
+    "fields": {
+      "avgNotifEngagementT": {
+        "id": 1,
+        "type": "TIMER",
+        "wire": "avg_notif_engagement_t"
+      },
+      "groupSizeBucket": {
+        "id": 2,
+        "type": "CLIENT_GROUP_SIZE_BUCKET",
+        "wire": "group_size_bucket",
+        "enum_ref": "CLIENT_GROUP_SIZE_BUCKET"
+      },
+      "groupTypeClient": {
+        "id": 3,
+        "type": "GROUP_TYPE_CLIENT",
+        "wire": "group_type_client",
+        "enum_ref": "GROUP_TYPE_CLIENT"
+      },
+      "isAGroup": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_a_group"
+      },
+      "isWebBackgroundSyncNotif": {
+        "id": 18,
+        "type": "BOOLEAN",
+        "wire": "is_web_background_sync_notif"
+      },
+      "threadId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "thread_id"
+      },
+      "totalLinkReshareMessageNotifShown": {
+        "id": 19,
+        "type": "INTEGER",
+        "wire": "total_link_reshare_message_notif_shown"
+      },
+      "totalLinkReshareMessageNotifShownFb": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "total_link_reshare_message_notif_shown_fb"
+      },
+      "totalLinkReshareMessageNotifShownIg": {
+        "id": 22,
+        "type": "INTEGER",
+        "wire": "total_link_reshare_message_notif_shown_ig"
+      },
+      "totalLinkReshareMessageNotifTapToOpen": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "total_link_reshare_message_notif_tap_to_open"
+      },
+      "totalLinkReshareMessageNotifTapToOpenFb": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "total_link_reshare_message_notif_tap_to_open_fb"
+      },
+      "totalLinkReshareMessageNotifTapToOpenIg": {
+        "id": 24,
+        "type": "INTEGER",
+        "wire": "total_link_reshare_message_notif_tap_to_open_ig"
+      },
+      "totalMessageReminderNotifShown": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "total_message_reminder_notif_shown"
+      },
+      "totalMessageReminderNotifTapToOpen": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "total_message_reminder_notif_tap_to_open"
+      },
+      "totalNotifMarkAsRead": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "total_notif_mark_as_read"
+      },
+      "totalNotifMissedCallVoipCallback": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "total_notif_missed_call_voip_callback"
+      },
+      "totalNotifMissedCallVoipMessage": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "total_notif_missed_call_voip_message"
+      },
+      "totalNotifOthers": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "total_notif_others"
+      },
+      "totalNotifReply": {
+        "id": 10,
+        "type": "INTEGER",
+        "wire": "total_notif_reply"
+      },
+      "totalNotifRtcVoipAccept": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "total_notif_rtc_voip_accept"
+      },
+      "totalNotifRtcVoipDecline": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "total_notif_rtc_voip_decline"
+      },
+      "totalNotifShowPreview": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "total_notif_show_preview"
+      },
+      "totalNotifShown": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "total_notif_shown"
+      },
+      "totalNotifTapToOpen": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "total_notif_tap_to_open"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebNotificationEngagementWamEvent",
+    "matches": "NotificationEngagement:\\s*\\[\\s*3796"
+  },
+  "literals": [
+    "3796"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumClientGroupSizeBucket",
+      "WAWebWamEnumGroupTypeClient"
+    ],
+    "dependents": [
+      "WAWebMsgNotification",
+      "WAWebTasksDailyStatsTask",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 3
+  }
+}

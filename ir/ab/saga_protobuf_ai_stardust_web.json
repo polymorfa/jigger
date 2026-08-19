@@ -1,0 +1,45 @@
+{
+  "id": "ab:saga_protobuf_ai_stardust_web",
+  "kind": "ab",
+  "name": "saga_protobuf_ai_stardust_web",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 11756,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "saga_protobuf_ai_stardust_web:\\s*\\[\\s*11756"
+  },
+  "literals": [
+    "saga_protobuf_ai_stardust_web",
+    "11756"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebABPropsSaga"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

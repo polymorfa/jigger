@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebEmojiPickerConstants","WAWebStickerPanelContentEmpty.react","WAWebStickerPanelContentStickersScrollGridPresentational.react","WAWebStickerSearchCollection","react","useWAWebDebouncedCallback","useWAWebListener"],"dependents":["WAWebStickerPanelContent.react"],"dependent_count":1,"exports":[]}

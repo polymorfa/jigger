@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCellFrame.react","WAWebCheckBox.react","WAWebDrawerSection.react","WAWebFlex.react","WAWebListIcon.react","WAWebListUtils","WAWebNoop","WAWebSuggestedListsUtils","react","react-compiler-runtime"],"dependents":["WAWebCreateOrEditListDrawer.react","WAWebLabelsLabelListNewLabel.react","WAWebLabelsMultiSelectLabelList.react"],"dependent_count":3,"exports":[]}

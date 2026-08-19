@@ -1,0 +1,41 @@
+{
+  "id": "appstate:setting_pushName",
+  "kind": "appstate",
+  "name": "SettingPushName",
+  "data": {
+    "kind": "appstate",
+    "index_name": "setting_pushName",
+    "collection": "critical_block",
+    "version": 1
+  },
+  "evidence": {
+    "module": "WAWebPushNameSync",
+    "matches": "Actions\\.SettingPushName"
+  },
+  "literals": [
+    "setting_pushName",
+    "SettingPushName"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WASendPresenceStatusProtocol",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSetPushnameLocallyAction",
+      "WAWebSyncBootstrap",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdCriticalBootstrapProcessingApi",
+      "WAWebWamEnumBootstrapAppStateDataStageCode",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebPushNameBridge"
+    ],
+    "dep_count": 12,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "sig:iq/npr",
+  "kind": "sig",
+  "name": "WaffleForceSuspendStateResponseSuccess",
+  "data": {
+    "kind": "sig",
+    "root": "iq",
+    "children": [
+      "npr"
+    ],
+    "responds_to": "WaffleForceSuspendState"
+  },
+  "evidence": {
+    "module": "WASmaxInWaffleForceSuspendStateResponseSuccess",
+    "matches": "assertTag\\([a-z], \"iq\"\\)"
+  },
+  "literals": [
+    "iq",
+    "npr"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInWaffleEnums",
+      "WASmaxInWaffleIQResultResponseMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxWaffleForceSuspendStateRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

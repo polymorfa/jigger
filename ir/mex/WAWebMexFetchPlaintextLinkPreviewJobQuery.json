@@ -1,0 +1,81 @@
+{
+  "id": "mex:WAWebMexFetchPlaintextLinkPreviewJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchPlaintextLinkPreviewJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9101130456653613",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_link_preview",
+        "ty": "XWA2NewsletterLinkPreviewResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "description",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "direct_path",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "hash",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "preview_type",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "thumb_data",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "title",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "height",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "width",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_link_preview",
+    "document": "# persisted document 9101130456653613\nquery MexFetchPlaintextLinkPreviewJobQuery(\n  $input\n) {\n  xwa2_newsletter_link_preview(input: $input) {  # XWA2NewsletterLinkPreviewResponse\n    description\n    direct_path\n    hash\n    preview_type\n    thumb_data\n    title\n    height\n    width\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchPlaintextLinkPreviewJobQuery.graphql",
+    "matches": "id:\\s*\"9101130456653613\""
+  },
+  "literals": [
+    "9101130456653613",
+    "WAWebMexFetchPlaintextLinkPreviewJobQuery",
+    "xwa2_newsletter_link_preview"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchPlaintextLinkPreviewJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

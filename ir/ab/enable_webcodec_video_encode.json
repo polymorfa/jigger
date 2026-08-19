@@ -1,0 +1,46 @@
+{
+  "id": "ab:enable_webcodec_video_encode",
+  "kind": "ab",
+  "name": "enable_webcodec_video_encode",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26079,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_webcodec_video_encode:\\s*\\[\\s*26079"
+  },
+  "literals": [
+    "enable_webcodec_video_encode",
+    "26079"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebVoipStackInterfaceWeb",
+      "WAWebVoipStackInterfaceWorkerProxy"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

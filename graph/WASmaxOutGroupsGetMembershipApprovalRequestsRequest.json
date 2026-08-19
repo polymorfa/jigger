@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins","WASmaxOutGroupsBaseGetGroupMixin","WASmaxOutGroupsGetMembershipApprovalRequestsRequestorFetchMixin"],"dependents":["WASmaxGroupsGetMembershipApprovalRequestsRPC"],"dependent_count":1,"exports":[{"name":"makeGetMembershipApprovalRequestsRequest","used_by":["WASmaxGroupsGetMembershipApprovalRequestsRPC"],"uses":1}]}

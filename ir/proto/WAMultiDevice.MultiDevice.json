@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAMultiDevice.MultiDevice",
+  "kind": "proto",
+  "name": "WAMultiDevice.MultiDevice",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "metadata": {
+        "number": 2,
+        "type_name": "WAMultiDevice.MultiDevice.Metadata"
+      },
+      "payload": {
+        "number": 1,
+        "type_name": "WAMultiDevice.MultiDevice.Payload"
+      }
+    },
+    "module": "WAMultiDevice.pb"
+  },
+  "evidence": {
+    "module": "WAMultiDevice.pb",
+    "matches": "name = \"MultiDevice\""
+  },
+  "literals": [
+    "MultiDevice"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAConvertAppData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

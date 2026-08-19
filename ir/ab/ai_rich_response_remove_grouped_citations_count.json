@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_rich_response_remove_grouped_citations_count",
+  "kind": "ab",
+  "name": "ai_rich_response_remove_grouped_citations_count",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31010,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_rich_response_remove_grouped_citations_count:\\s*\\[\\s*31010"
+  },
+  "literals": [
+    "ai_rich_response_remove_grouped_citations_count",
+    "31010"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

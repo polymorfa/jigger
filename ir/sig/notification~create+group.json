@@ -1,0 +1,41 @@
+{
+  "id": "sig:notification/create+group",
+  "kind": "sig",
+  "name": "GroupsJoinNotificationRequest",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "create",
+      "group"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInGroupsJoinNotificationRequest",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "create",
+    "group"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInGroupsCommonNotificationMixin",
+      "WASmaxInGroupsDedupAttrsMixin",
+      "WASmaxInGroupsEnums",
+      "WASmaxInGroupsGroupAddressingModeMixin",
+      "WASmaxInGroupsGroupInfoMixin",
+      "WASmaxInGroupsOptionalContextGroupMixin",
+      "WASmaxInGroupsParticipantIdentityAndCountryCodeMixin",
+      "WASmaxParseJid",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxGroupsJoinNotificationRPC"
+    ],
+    "dep_count": 10,
+    "dependent_count": 1
+  }
+}

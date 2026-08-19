@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChangeNewsletterOwnerAction","WAWebContactCollection","WAWebDemoteNewsletterAdminAction","WAWebModalManager","WAWebName.react","WAWebUserConfirmationModal.react","react","react-compiler-runtime"],"dependents":["WAWebNewsletterTransferOwnershipDrawer.react"],"dependent_count":1,"exports":[]}

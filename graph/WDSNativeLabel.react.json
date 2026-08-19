@@ -1,0 +1,1 @@
+{"deps":["WAFlowsEmbeddedLink.react","WDSNativeResponsiveWrapper.react","filterObject","react","stylex"],"dependents":["WAFlowsLabel.react"],"dependent_count":1,"exports":[{"name":"WDSLabel","used_by":["WAFlowsLabel.react"],"uses":1},{"name":"WDSLabelCaption","used_by":["WAFlowsLabel.react"],"uses":1},{"name":"WDSLabelSmall","used_by":["WAFlowsLabel.react"],"uses":1}]}

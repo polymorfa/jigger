@@ -1,0 +1,1 @@
+{"deps":["WAWebSpoilerFormatRegex"],"dependents":["WAWebChatLastMsg.react","WAWebGetNotificationStrings"],"dependent_count":2,"exports":[{"name":"maskSpoilersForNotification","used_by":["WAWebChatLastMsg.react","WAWebGetNotificationStrings"],"uses":2}]}

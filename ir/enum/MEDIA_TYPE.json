@@ -1,0 +1,485 @@
+{
+  "id": "enum:MEDIA_TYPE",
+  "kind": "enum",
+  "name": "MEDIA_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMediaType",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 1.0
+      },
+      {
+        "name": "PHOTO",
+        "value": 2.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 3.0
+      },
+      {
+        "name": "AUDIO",
+        "value": 4.0
+      },
+      {
+        "name": "PTT",
+        "value": 5.0
+      },
+      {
+        "name": "LOCATION",
+        "value": 6.0
+      },
+      {
+        "name": "CONTACT",
+        "value": 7.0
+      },
+      {
+        "name": "DOCUMENT",
+        "value": 8.0
+      },
+      {
+        "name": "URL",
+        "value": 9.0
+      },
+      {
+        "name": "CALL",
+        "value": 10.0
+      },
+      {
+        "name": "GIF",
+        "value": 11.0
+      },
+      {
+        "name": "FUTURE",
+        "value": 12.0
+      },
+      {
+        "name": "CONTACT_ARRAY",
+        "value": 13.0
+      },
+      {
+        "name": "LIVE_LOCATION",
+        "value": 14.0
+      },
+      {
+        "name": "PROFILE_PIC",
+        "value": 15.0
+      },
+      {
+        "name": "STICKER",
+        "value": 16.0
+      },
+      {
+        "name": "HSM",
+        "value": 17.0
+      },
+      {
+        "name": "PRODUCT_IMAGE",
+        "value": 18.0
+      },
+      {
+        "name": "TEMPLATE",
+        "value": 19.0
+      },
+      {
+        "name": "MD_APP_STATE",
+        "value": 20.0
+      },
+      {
+        "name": "MD_HISTORY_SYNC",
+        "value": 21.0
+      },
+      {
+        "name": "CATALOG_LINK",
+        "value": 22.0
+      },
+      {
+        "name": "PRODUCT_LINK",
+        "value": 23.0
+      },
+      {
+        "name": "ORDER",
+        "value": 24.0
+      },
+      {
+        "name": "LIST",
+        "value": 25.0
+      },
+      {
+        "name": "LIST_REPLY",
+        "value": 26.0
+      },
+      {
+        "name": "BUTTON_MESSAGE",
+        "value": 27.0
+      },
+      {
+        "name": "BUTTON_RESPONSE_MESSAGE",
+        "value": 28.0
+      },
+      {
+        "name": "PRODUCT_LIST",
+        "value": 29.0
+      },
+      {
+        "name": "BUTTON_NFM",
+        "value": 30.0
+      },
+      {
+        "name": "VIEW_ONCE_IMAGE",
+        "value": 31.0
+      },
+      {
+        "name": "VIEW_ONCE_VIDEO",
+        "value": 32.0
+      },
+      {
+        "name": "SHOP_STOREFRONT",
+        "value": 33.0
+      },
+      {
+        "name": "REACTION",
+        "value": 34.0
+      },
+      {
+        "name": "INTERACTIVE_NFM",
+        "value": 35.0
+      },
+      {
+        "name": "INTERACTIVE_RESPONSE_NFM",
+        "value": 36.0
+      },
+      {
+        "name": "POLL_CREATE",
+        "value": 37.0
+      },
+      {
+        "name": "POLL_VOTE",
+        "value": 38.0
+      },
+      {
+        "name": "TEXT",
+        "value": 39.0
+      },
+      {
+        "name": "KEEP",
+        "value": 40.0
+      },
+      {
+        "name": "UNKEEP",
+        "value": 41.0
+      },
+      {
+        "name": "INVISIBLE_HELLO",
+        "value": 42.0
+      },
+      {
+        "name": "MEDIA_EXPRESS_NOTIFY",
+        "value": 43.0
+      },
+      {
+        "name": "UNDECRYPTED_MEDIA",
+        "value": 44.0
+      },
+      {
+        "name": "UNDECRYPTED_TEXT",
+        "value": 45.0
+      },
+      {
+        "name": "UNDECRYPTED_PAY",
+        "value": 46.0
+      },
+      {
+        "name": "UNDECRYPTED_POLL",
+        "value": 47.0
+      },
+      {
+        "name": "UNDECRYPTED_REACTION",
+        "value": 48.0
+      },
+      {
+        "name": "UNDECRYPTED_MEDIA_NOTIFY",
+        "value": 49.0
+      },
+      {
+        "name": "VIEW_ONCE_AUDIO",
+        "value": 50.0
+      },
+      {
+        "name": "SCHEDULED_CALL_CREATE",
+        "value": 51.0
+      },
+      {
+        "name": "SCHEDULED_CALL_CANCEL",
+        "value": 52.0
+      },
+      {
+        "name": "PUSH_TO_VIDEO",
+        "value": 53.0
+      },
+      {
+        "name": "PIN_IN_CHAT",
+        "value": 54.0
+      },
+      {
+        "name": "INTERACTIVE_CAROUSEL",
+        "value": 55.0
+      },
+      {
+        "name": "COMMENT",
+        "value": 56.0
+      },
+      {
+        "name": "EPHEMERAL_SYNC_RESPONSE",
+        "value": 57.0
+      },
+      {
+        "name": "EVENT_CREATE",
+        "value": 58.0
+      },
+      {
+        "name": "EVENT_RESPOND",
+        "value": 59.0
+      },
+      {
+        "name": "LOTTIE_STICKER",
+        "value": 60.0
+      },
+      {
+        "name": "INTERACTIVE_PRODUCT_CAROUSEL",
+        "value": 61.0
+      },
+      {
+        "name": "INTERACTIVE_PRODUCT",
+        "value": 62.0
+      },
+      {
+        "name": "MEDIA_ALBUM",
+        "value": 63.0
+      },
+      {
+        "name": "STICKER_PACK",
+        "value": 64.0
+      },
+      {
+        "name": "POLL_RESULT_SNAPSHOT",
+        "value": 65.0
+      },
+      {
+        "name": "MUSIC_ARTWORK",
+        "value": 66.0
+      },
+      {
+        "name": "RICH_RESPONSE",
+        "value": 67.0
+      },
+      {
+        "name": "MOTION_PHOTO",
+        "value": 68.0
+      },
+      {
+        "name": "MOTION_VIDEO",
+        "value": 69.0
+      },
+      {
+        "name": "APPDATA",
+        "value": 70.0
+      },
+      {
+        "name": "GROUP_HISTORY",
+        "value": 71.0
+      },
+      {
+        "name": "GROUP_HISTORY_NOTICE",
+        "value": 72.0
+      },
+      {
+        "name": "MEMBER_TAG",
+        "value": 73.0
+      },
+      {
+        "name": "DOC_COLLECTION",
+        "value": 74.0
+      },
+      {
+        "name": "VIDEO_COLLECTION",
+        "value": 75.0
+      },
+      {
+        "name": "MIXED_COLLECTION",
+        "value": 76.0
+      },
+      {
+        "name": "CONDITIONAL_REVEAL",
+        "value": 77.0
+      },
+      {
+        "name": "EVENT_INVITE",
+        "value": 78.0
+      },
+      {
+        "name": "STICKER_REACTION",
+        "value": 79.0
+      },
+      {
+        "name": "MUSIC",
+        "value": 80.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMediaType",
+    "matches": "MEDIA_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MEDIA_TYPE",
+    "NONE",
+    "PHOTO",
+    "VIDEO",
+    "AUDIO",
+    "PTT",
+    "LOCATION",
+    "CONTACT",
+    "DOCUMENT",
+    "URL",
+    "CALL",
+    "GIF",
+    "FUTURE",
+    "CONTACT_ARRAY",
+    "LIVE_LOCATION",
+    "PROFILE_PIC",
+    "STICKER",
+    "HSM",
+    "PRODUCT_IMAGE",
+    "TEMPLATE",
+    "MD_APP_STATE",
+    "MD_HISTORY_SYNC",
+    "CATALOG_LINK",
+    "PRODUCT_LINK",
+    "ORDER",
+    "LIST",
+    "LIST_REPLY",
+    "BUTTON_MESSAGE",
+    "BUTTON_RESPONSE_MESSAGE",
+    "PRODUCT_LIST",
+    "BUTTON_NFM",
+    "VIEW_ONCE_IMAGE",
+    "VIEW_ONCE_VIDEO",
+    "SHOP_STOREFRONT",
+    "REACTION",
+    "INTERACTIVE_NFM",
+    "INTERACTIVE_RESPONSE_NFM",
+    "POLL_CREATE",
+    "POLL_VOTE",
+    "TEXT",
+    "KEEP",
+    "UNKEEP",
+    "INVISIBLE_HELLO",
+    "MEDIA_EXPRESS_NOTIFY",
+    "UNDECRYPTED_MEDIA",
+    "UNDECRYPTED_TEXT",
+    "UNDECRYPTED_PAY",
+    "UNDECRYPTED_POLL",
+    "UNDECRYPTED_REACTION",
+    "UNDECRYPTED_MEDIA_NOTIFY",
+    "VIEW_ONCE_AUDIO",
+    "SCHEDULED_CALL_CREATE",
+    "SCHEDULED_CALL_CANCEL",
+    "PUSH_TO_VIDEO",
+    "PIN_IN_CHAT",
+    "INTERACTIVE_CAROUSEL",
+    "COMMENT",
+    "EPHEMERAL_SYNC_RESPONSE",
+    "EVENT_CREATE",
+    "EVENT_RESPOND",
+    "LOTTIE_STICKER",
+    "INTERACTIVE_PRODUCT_CAROUSEL",
+    "INTERACTIVE_PRODUCT",
+    "MEDIA_ALBUM",
+    "STICKER_PACK",
+    "POLL_RESULT_SNAPSHOT",
+    "MUSIC_ARTWORK",
+    "RICH_RESPONSE",
+    "MOTION_PHOTO",
+    "MOTION_VIDEO",
+    "APPDATA",
+    "GROUP_HISTORY",
+    "GROUP_HISTORY_NOTICE",
+    "MEMBER_TAG",
+    "DOC_COLLECTION",
+    "VIDEO_COLLECTION",
+    "MIXED_COLLECTION",
+    "CONDITIONAL_REVEAL",
+    "EVENT_INVITE",
+    "STICKER_REACTION",
+    "MUSIC"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAddonEncryptionError",
+      "WAWebAndroidMessageSendPerfWamEvent",
+      "WAWebBackendJobsCommon",
+      "WAWebBuyerEventLogger",
+      "WAWebChatPsaActionWamEvent",
+      "WAWebChatPsaReadWamEvent",
+      "WAWebChatPsaRemoveWamEvent",
+      "WAWebCrosspostingHelper",
+      "WAWebDisappearingMessageKeepInChatWamEvent",
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebE2eRetryRejectWamEvent",
+      "WAWebEditMessageSendWamEvent",
+      "WAWebExtensionsStructuredMessageInteractionWamEvent",
+      "WAWebForwardActionUserJourneyWamEvent",
+      "WAWebForwardMessageModal.react",
+      "WAWebForwardSendWamEvent",
+      "WAWebGetBrazilnteractiveActions",
+      "WAWebHandleNewsletterMsgLogger",
+      "WAWebIncomingMessageDropWamEvent",
+      "WAWebLogStatusPost",
+      "WAWebMdBadDeviceSentMessageWamEvent",
+      "WAWebMediaDownload2WamEvent",
+      "WAWebMediaPickerWamEvent",
+      "WAWebMediaStreamPlaybackWamEvent",
+      "WAWebMediaUpload2WamEvent",
+      "WAWebMessageDeleteActionsWamEvent",
+      "WAWebMessageHighRetryCountWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSecretErrorsWamEvent",
+      "WAWebMessageSendReporter",
+      "WAWebMessageSendWamEvent",
+      "WAWebMessagingUserJourneyWamEvent",
+      "WAWebNativeFlowMessage",
+      "WAWebOfflineCountTooHighWamEvent",
+      "WAWebOrderDetailsReceivedWamLogger",
+      "WAWebPaymentInfoReceivedWamLogger",
+      "WAWebPaymentRequestWamLogger",
+      "WAWebPinInChatInteractionWamEvent",
+      "WAWebPinInChatMessageSendWamEvent",
+      "WAWebPlaceholderActivityWamEvent",
+      "WAWebPsChannelPostForwardWamEvent",
+      "WAWebPsStructuredMessageInteractionWamEvent",
+      "WAWebQuotedMessageUserJourneyWamEvent",
+      "WAWebReactionActionsWamEvent",
+      "WAWebReactionUserJourneyWamEvent",
+      "WAWebReceiptStanzaReceiveWamEvent",
+      "WAWebReportingTokenValidationFailureSenderWamEvent",
+      "WAWebReportingTokenValidationFailureWamEvent",
+      "WAWebSendRevokeMessageWamEvent",
+      "WAWebSnackbarDeleteUndoWamEvent",
+      "WAWebStatusCrosspostRequestWamEvent",
+      "WAWebStatusItemViewWamEvent",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusPostImpressionWamEvent",
+      "WAWebStatusPostWamEvent",
+      "WAWebStatusPostingTextView.react",
+      "WAWebStatusRevokeWamEvent",
+      "WAWebStructuredMessageBuyerInteractionWamEvent",
+      "WAWebStructuredMessageBuyerReceiveWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 69
+  }
+}

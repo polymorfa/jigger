@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebNewsletterWamoSubMessageTypeContextMenu.react"],"dependent_count":2,"exports":[{"name":"PremiumChannelIcon","used_by":["WAWebAllGeneratedIcons","WAWebNewsletterWamoSubMessageTypeContextMenu.react"],"uses":2}]}

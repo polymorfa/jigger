@@ -1,0 +1,1 @@
+{"deps":["WAWebCallLogUtils","WAWebFlex.react","WAWebMultiParticipantCallImage.react","WDSText.react","react","react-compiler-runtime"],"dependents":["WAWebVoipCallActiveInExternalPlayer.react","WAWebVoipUiVideoCallCenteredParticipantInfo.react","WAWebVoipVoiceCallContainer.react"],"dependent_count":3,"exports":[{"name":"default","used_by":[],"uses":0}]}

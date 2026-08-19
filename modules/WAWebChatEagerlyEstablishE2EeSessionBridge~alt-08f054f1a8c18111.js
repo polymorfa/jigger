@@ -1,0 +1,59 @@
+__d("WAWebChatEagerlyEstablishE2EeSessionBridge", [
+	"WALogger",
+	"WAWebApiParticipantStore",
+	"WAWebBackendErrors",
+	"WAWebChatGetters",
+	"WAWebLidMigrationUtils",
+	"WAWebMaibaWASSMigration",
+	"WAWebManageE2ESessionsJob",
+	"WAWebPostPrekeysDepletionMetric",
+	"WAWebSendMsgDatabaseJob",
+	"WAWebSessionScope",
+	"WAWebSimpleSignalPNToFBIDMigration",
+	"WAWebStatusSessionGatingUtils",
+	"WAWebUserPrefsMeUser",
+	"WAWebUserPrefsStatus",
+	"WAWebWamEnumMessageType",
+	"WAWebWamEnumPrekeysFetchContext",
+	"WAWebWamNumberToSizeBucket",
+	"compactMap"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u, c, d = 406;
+	async function m(t) {
+		var n, a = null;
+		if (o("WAWebChatGetters").getIsGroup(t)) {
+			var i = await o("WAWebApiParticipantStore").getGroupSenderKeyList(t.id);
+			n = i.skDistribList, a = r("WAWebWamNumberToSizeBucket")(i.skDistribList.length + i.skList.length);
+		} else if (t.id.isStatus()) {
+			var l = await r("WAWebUserPrefsStatus").getStatusList();
+			l.list = r("compactMap")(l.list, o("WAWebLidMigrationUtils").toUserLid);
+			var m = o("WAWebUserPrefsMeUser").getMeDeviceLidOrThrow();
+			o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["eagerlyEstablishE2EESession: status eager session start, contacts=", ""])), l.list.length);
+			var p = await o("WAWebSendMsgDatabaseJob").getFanOutListJob([].concat(l.list, [m]), void 0, !0), _ = await r("WAWebUserPrefsStatus").getStatusSkDistribList(p, { isFullAudience: !1 }), f = _.skDistribList;
+			n = f, o("WALogger").LOG(s || (s = babelHelpers.taggedTemplateLiteralLoose([
+				"eagerlyEstablishE2EESession: status skDistribList=",
+				" allDevices=",
+				""
+			])), f.length, p.length);
+		} else {
+			var g = o("WAWebMaibaWASSMigration").maybeReplaceMaibaAiHubWidWithFbid(o("WAWebSimpleSignalPNToFBIDMigration").maybeReplaceDeprecatedBotPnWithFbid(t.id));
+			n = await o("WAWebSendMsgDatabaseJob").getFanOutListJob([g, o("WAWebUserPrefsMeUser").getMeDeviceLidOrThrow()]);
+		}
+		try {
+			var h = t.id.isStatus() && o("WAWebStatusSessionGatingUtils").shouldUseStatusSessionForOutgoingMessage() ? o("WAWebSessionScope").SessionScope.STATUS : o("WAWebSessionScope").SessionScope.DEFAULT, y = await o("WAWebManageE2ESessionsJob").ensureE2ESessions({
+				identityChanged: !1,
+				sessionScope: h,
+				wids: n
+			});
+			o("WAWebPostPrekeysDepletionMetric").maybePostPrekeysDepletionMetric({
+				count: y == null ? void 0 : y.depletedPrekeyCount,
+				prekeysFetchReason: o("WAWebWamEnumPrekeysFetchContext").PREKEYS_FETCH_CONTEXT.USER_INTENT_PREFETCH,
+				messageType: o("WAWebChatGetters").getIsGroup(t) ? o("WAWebWamEnumMessageType").MESSAGE_TYPE.GROUP : o("WAWebWamEnumMessageType").MESSAGE_TYPE.INDIVIDUAL,
+				deviceSizeBucket: a
+			});
+		} catch (e) {
+			e instanceof o("WAWebBackendErrors").ServerStatusCodeError && e.statusCode === d ? o("WALogger").LOG(u || (u = babelHelpers.taggedTemplateLiteralLoose(["eagerlyEstablishE2EESession: ignore prekey err, device unregistered ", ""])), e) : o("WALogger").ERROR(c || (c = babelHelpers.taggedTemplateLiteralLoose(["error: ", ""])), e).sendLogs("eagerlyEstablishE2EESession: failed");
+		}
+	}
+	l.eagerlyEstablishE2EESession = m;
+}), 98);

@@ -1,0 +1,1 @@
+{"deps":["WAWebDocumentVisibilityObserver","WAWebMainThreadStallReporter"],"dependents":["WAWebPerformanceObserver"],"dependent_count":1,"exports":[{"name":"WAWebLongTaskObserver","used_by":[],"uses":0}]}

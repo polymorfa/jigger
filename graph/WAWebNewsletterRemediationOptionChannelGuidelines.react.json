@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebEnforcementActionLogging","WAWebExternalLink.react","WAWebFaqUrl","WAWebNewsletterAlertsRowComponent.react","WDSIconWdsIcChannels.react","react","react-compiler-runtime"],"dependents":["WAWebNewsletterRemediationOptionsDrawer.react","WAWebNewsletterReportsRemediationOptionsDrawer.react"],"dependent_count":2,"exports":[]}

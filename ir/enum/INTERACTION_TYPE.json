@@ -1,0 +1,562 @@
+{
+  "id": "enum:INTERACTION_TYPE",
+  "kind": "enum",
+  "name": "INTERACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumInteractionType",
+    "variants": [
+      {
+        "name": "USER_START",
+        "value": 0.0
+      },
+      {
+        "name": "USER_CANCEL",
+        "value": 1.0
+      },
+      {
+        "name": "FLOW_SUCCESS",
+        "value": 2.0
+      },
+      {
+        "name": "FLOW_ERROR",
+        "value": 3.0
+      },
+      {
+        "name": "USER_VIEW",
+        "value": 4.0
+      },
+      {
+        "name": "USER_PAY_NOW",
+        "value": 5.0
+      },
+      {
+        "name": "USER_VIEW_BASKET",
+        "value": 6.0
+      },
+      {
+        "name": "CLICK_PAYMENT_DETAILS",
+        "value": 7.0
+      },
+      {
+        "name": "CLICK_MESSAGE_BUSINESS",
+        "value": 8.0
+      },
+      {
+        "name": "MODIFY_PAYMENT_METHOD",
+        "value": 9.0
+      },
+      {
+        "name": "CONFIRM_PAYMENT_METHOD",
+        "value": 10.0
+      },
+      {
+        "name": "USER_VIEW_SUMMARY",
+        "value": 11.0
+      },
+      {
+        "name": "USER_PAY_NOW_QUICK_BUY",
+        "value": 12.0
+      },
+      {
+        "name": "USER_SEND_PAYMENT",
+        "value": 13.0
+      },
+      {
+        "name": "USER_SEND_PAYMENT_QUICK_BUY",
+        "value": 14.0
+      },
+      {
+        "name": "CLICK_HELP",
+        "value": 15.0
+      },
+      {
+        "name": "CLICK_ORDER_SUMMARY",
+        "value": 16.0
+      },
+      {
+        "name": "USER_CONFIRM",
+        "value": 17.0
+      },
+      {
+        "name": "CLICK_REPORT_THIS_TRANSACTION",
+        "value": 18.0
+      },
+      {
+        "name": "USER_COMPLETED_PAYMENT_INTENT",
+        "value": 19.0
+      },
+      {
+        "name": "USER_SHARE_MENU_OPEN",
+        "value": 20.0
+      },
+      {
+        "name": "USER_OPEN_BROWSER",
+        "value": 21.0
+      },
+      {
+        "name": "USER_COPY_LINK",
+        "value": 22.0
+      },
+      {
+        "name": "USER_SHARE_LINK",
+        "value": 23.0
+      },
+      {
+        "name": "USER_SHARE_MENU_CANCEL",
+        "value": 24.0
+      },
+      {
+        "name": "USER_REFRESH",
+        "value": 25.0
+      },
+      {
+        "name": "USER_FORWARD",
+        "value": 26.0
+      },
+      {
+        "name": "USER_BACK",
+        "value": 27.0
+      },
+      {
+        "name": "VIEW_EVENT_SHARING_TOS_ALERT",
+        "value": 28.0
+      },
+      {
+        "name": "DISMISS_EVENT_SHARING_TOS_ALERT",
+        "value": 29.0
+      },
+      {
+        "name": "CLICK_EVENT_SHARING_TOS",
+        "value": 30.0
+      },
+      {
+        "name": "ACCEPT_EVENT_SHARING_TOS",
+        "value": 31.0
+      },
+      {
+        "name": "REJECT_EVENT_SHARING_TOS",
+        "value": 32.0
+      },
+      {
+        "name": "CLICK_TO_VIEW_EVENT_SHARING_TOS_ALERT",
+        "value": 33.0
+      },
+      {
+        "name": "START_CHAT_FROM_CTWA",
+        "value": 34.0
+      },
+      {
+        "name": "CLICK_CONFIRM_PENDING_PAYMENT",
+        "value": 35.0
+      },
+      {
+        "name": "COPY_PIX_CODE",
+        "value": 36.0
+      },
+      {
+        "name": "COPY_PIX_KEY",
+        "value": 37.0
+      },
+      {
+        "name": "USER_VIEW_PAYMENT_COMPLETE",
+        "value": 38.0
+      },
+      {
+        "name": "USER_VIEW_ATTACHMENT",
+        "value": 39.0
+      },
+      {
+        "name": "USER_DOWNLOAD_ATTACHMENT",
+        "value": 40.0
+      },
+      {
+        "name": "COPY_BOLETO_CODE",
+        "value": 41.0
+      },
+      {
+        "name": "WEBVIEW_ERROR",
+        "value": 42.0
+      },
+      {
+        "name": "USER_GRANT_CAMERA_PERMISSION",
+        "value": 43.0
+      },
+      {
+        "name": "USER_DENY_CAMERA_PERMISSION",
+        "value": 44.0
+      },
+      {
+        "name": "CAMERA_PERMISSION_REQUEST_DIALOG_POP_UP",
+        "value": 45.0
+      },
+      {
+        "name": "USER_APP_REDIRECT_ACCEPT",
+        "value": 46.0
+      },
+      {
+        "name": "USER_APP_REDIRECT_DENY",
+        "value": 47.0
+      },
+      {
+        "name": "USER_RESTORE",
+        "value": 48.0
+      },
+      {
+        "name": "CLICK_PAY_WITH_PIX",
+        "value": 49.0
+      },
+      {
+        "name": "PIX_CHANGE_BANK",
+        "value": 50.0
+      },
+      {
+        "name": "PIX_SELECT_BANK_VIEW",
+        "value": 51.0
+      },
+      {
+        "name": "PIX_SELECT_BANK",
+        "value": 52.0
+      },
+      {
+        "name": "PAY_WITH_PIX",
+        "value": 53.0
+      },
+      {
+        "name": "PAY_WITH_PIX_STATUS",
+        "value": 54.0
+      },
+      {
+        "name": "PIX_ENTER_AMOUNT",
+        "value": 55.0
+      },
+      {
+        "name": "PAY_WITH_PIX_VIEW",
+        "value": 56.0
+      },
+      {
+        "name": "PIX_ADD_CPF_VIEW",
+        "value": 57.0
+      },
+      {
+        "name": "PIX_ADD_CPF",
+        "value": 58.0
+      },
+      {
+        "name": "PAY_WITH_PIX_DI",
+        "value": 59.0
+      },
+      {
+        "name": "COPY_PIX_CODE_DI",
+        "value": 60.0
+      },
+      {
+        "name": "PAY_WITH_PIX_ERROR",
+        "value": 61.0
+      },
+      {
+        "name": "PAY_WITH_PIX_DEEP_LINK",
+        "value": 62.0
+      },
+      {
+        "name": "CLICK_PIX_MORE_WAYS_TO_PAY",
+        "value": 63.0
+      },
+      {
+        "name": "PAY_WITH_PIX_IMPRESSION",
+        "value": 64.0
+      },
+      {
+        "name": "CLICK_MORE_BANK_APPS",
+        "value": 65.0
+      },
+      {
+        "name": "CLICK_PIX_WHY_DO_WE_NEED_THIS",
+        "value": 66.0
+      },
+      {
+        "name": "CLICK_PIX_TERMS_OF_SERVICE",
+        "value": 67.0
+      },
+      {
+        "name": "CLICK_PIX_PRIVACY_POLICY",
+        "value": 68.0
+      },
+      {
+        "name": "CLICK_PIX_SHARE_RECEIPT",
+        "value": 69.0
+      },
+      {
+        "name": "CLICK_COPY_PAYMENT_KEY",
+        "value": 70.0
+      },
+      {
+        "name": "WATCH_AND_BROWSE_EXPANSION",
+        "value": 71.0
+      },
+      {
+        "name": "WATCH_AND_BROWSE_FULL_EXPANSION",
+        "value": 72.0
+      },
+      {
+        "name": "WATCH_AND_BROWSE_BROWSER_CLOSE",
+        "value": 73.0
+      },
+      {
+        "name": "PIX_BANK_SELECTED_FROM_GRID",
+        "value": 74.0
+      },
+      {
+        "name": "PIX_BANK_SELECTED_FROM_LIST",
+        "value": 75.0
+      },
+      {
+        "name": "PIX_UNDERAGE_ERROR_SHOWN",
+        "value": 76.0
+      },
+      {
+        "name": "PIX_CANNOT_CONNECT_TO_BANK_ERROR_SHOWN",
+        "value": 77.0
+      },
+      {
+        "name": "PIX_INVALID_ERROR_SHOWN",
+        "value": 78.0
+      },
+      {
+        "name": "PIX_ERROR_COPY_CLICKED",
+        "value": 79.0
+      },
+      {
+        "name": "PAY_WITH_PIX_COMPLETE_TRANSACTION_STATUS",
+        "value": 80.0
+      },
+      {
+        "name": "PIX_CONFIRM_BANK",
+        "value": 81.0
+      },
+      {
+        "name": "PAY_WITH_PIX_DI_STATUS",
+        "value": 82.0
+      },
+      {
+        "name": "PIX_AGE_VERIFICATION_NOTIFICATION_RECEIVED",
+        "value": 83.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_BANNER_CLICK",
+        "value": 84.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_BANNER_DISMISS",
+        "value": 85.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_CONNECT_BANK_CLICK",
+        "value": 86.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_REDIRECT_STATUS",
+        "value": 87.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_DEEP_LINK",
+        "value": 88.0
+      },
+      {
+        "name": "PIX_NATIVE_PASSKEY_PROMPT_VIEW",
+        "value": 89.0
+      },
+      {
+        "name": "PIX_NATIVE_FIDO_REGISTRATION",
+        "value": 90.0
+      },
+      {
+        "name": "PIX_NATIVE_BANK_CONNECTING",
+        "value": 91.0
+      },
+      {
+        "name": "PIX_NATIVE_BANK_CONNECTED",
+        "value": 92.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_STATUS",
+        "value": 93.0
+      },
+      {
+        "name": "PIX_NATIVE_BIOMETRIC_AUTH",
+        "value": 94.0
+      },
+      {
+        "name": "PIX_NATIVE_PAYMENT_DETAILS_VIEW",
+        "value": 95.0
+      },
+      {
+        "name": "PIX_NATIVE_BIOMETRIC_AUTH_ERROR",
+        "value": 96.0
+      },
+      {
+        "name": "PIX_NATIVE_PAYMENTS_HOME_VIEW",
+        "value": 97.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_SETTINGS_VIEW",
+        "value": 98.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_DELETE",
+        "value": 99.0
+      },
+      {
+        "name": "PIX_NATIVE_ENROLLMENT_BANNER_VIEW",
+        "value": 100.0
+      },
+      {
+        "name": "PIX_NATIVE_FIDO_REGISTRATION_OPTIONS",
+        "value": 101.0
+      },
+      {
+        "name": "PIX_NATIVE_PROMO_SCREEN_VIEW",
+        "value": 102.0
+      },
+      {
+        "name": "PAYMENT_TEXT_DETECTION_CLICK",
+        "value": 103.0
+      },
+      {
+        "name": "COPY_PIX_IMPRESSION",
+        "value": 104.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumInteractionType",
+    "matches": "INTERACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "INTERACTION_TYPE",
+    "USER_START",
+    "USER_CANCEL",
+    "FLOW_SUCCESS",
+    "FLOW_ERROR",
+    "USER_VIEW",
+    "USER_PAY_NOW",
+    "USER_VIEW_BASKET",
+    "CLICK_PAYMENT_DETAILS",
+    "CLICK_MESSAGE_BUSINESS",
+    "MODIFY_PAYMENT_METHOD",
+    "CONFIRM_PAYMENT_METHOD",
+    "USER_VIEW_SUMMARY",
+    "USER_PAY_NOW_QUICK_BUY",
+    "USER_SEND_PAYMENT",
+    "USER_SEND_PAYMENT_QUICK_BUY",
+    "CLICK_HELP",
+    "CLICK_ORDER_SUMMARY",
+    "USER_CONFIRM",
+    "CLICK_REPORT_THIS_TRANSACTION",
+    "USER_COMPLETED_PAYMENT_INTENT",
+    "USER_SHARE_MENU_OPEN",
+    "USER_OPEN_BROWSER",
+    "USER_COPY_LINK",
+    "USER_SHARE_LINK",
+    "USER_SHARE_MENU_CANCEL",
+    "USER_REFRESH",
+    "USER_FORWARD",
+    "USER_BACK",
+    "VIEW_EVENT_SHARING_TOS_ALERT",
+    "DISMISS_EVENT_SHARING_TOS_ALERT",
+    "CLICK_EVENT_SHARING_TOS",
+    "ACCEPT_EVENT_SHARING_TOS",
+    "REJECT_EVENT_SHARING_TOS",
+    "CLICK_TO_VIEW_EVENT_SHARING_TOS_ALERT",
+    "START_CHAT_FROM_CTWA",
+    "CLICK_CONFIRM_PENDING_PAYMENT",
+    "COPY_PIX_CODE",
+    "COPY_PIX_KEY",
+    "USER_VIEW_PAYMENT_COMPLETE",
+    "USER_VIEW_ATTACHMENT",
+    "USER_DOWNLOAD_ATTACHMENT",
+    "COPY_BOLETO_CODE",
+    "WEBVIEW_ERROR",
+    "USER_GRANT_CAMERA_PERMISSION",
+    "USER_DENY_CAMERA_PERMISSION",
+    "CAMERA_PERMISSION_REQUEST_DIALOG_POP_UP",
+    "USER_APP_REDIRECT_ACCEPT",
+    "USER_APP_REDIRECT_DENY",
+    "USER_RESTORE",
+    "CLICK_PAY_WITH_PIX",
+    "PIX_CHANGE_BANK",
+    "PIX_SELECT_BANK_VIEW",
+    "PIX_SELECT_BANK",
+    "PAY_WITH_PIX",
+    "PAY_WITH_PIX_STATUS",
+    "PIX_ENTER_AMOUNT",
+    "PAY_WITH_PIX_VIEW",
+    "PIX_ADD_CPF_VIEW",
+    "PIX_ADD_CPF",
+    "PAY_WITH_PIX_DI",
+    "COPY_PIX_CODE_DI",
+    "PAY_WITH_PIX_ERROR",
+    "PAY_WITH_PIX_DEEP_LINK",
+    "CLICK_PIX_MORE_WAYS_TO_PAY",
+    "PAY_WITH_PIX_IMPRESSION",
+    "CLICK_MORE_BANK_APPS",
+    "CLICK_PIX_WHY_DO_WE_NEED_THIS",
+    "CLICK_PIX_TERMS_OF_SERVICE",
+    "CLICK_PIX_PRIVACY_POLICY",
+    "CLICK_PIX_SHARE_RECEIPT",
+    "CLICK_COPY_PAYMENT_KEY",
+    "WATCH_AND_BROWSE_EXPANSION",
+    "WATCH_AND_BROWSE_FULL_EXPANSION",
+    "WATCH_AND_BROWSE_BROWSER_CLOSE",
+    "PIX_BANK_SELECTED_FROM_GRID",
+    "PIX_BANK_SELECTED_FROM_LIST",
+    "PIX_UNDERAGE_ERROR_SHOWN",
+    "PIX_CANNOT_CONNECT_TO_BANK_ERROR_SHOWN",
+    "PIX_INVALID_ERROR_SHOWN",
+    "PIX_ERROR_COPY_CLICKED",
+    "PAY_WITH_PIX_COMPLETE_TRANSACTION_STATUS",
+    "PIX_CONFIRM_BANK",
+    "PAY_WITH_PIX_DI_STATUS",
+    "PIX_AGE_VERIFICATION_NOTIFICATION_RECEIVED",
+    "PIX_NATIVE_ENROLLMENT_BANNER_CLICK",
+    "PIX_NATIVE_ENROLLMENT_BANNER_DISMISS",
+    "PIX_NATIVE_ENROLLMENT_CONNECT_BANK_CLICK",
+    "PIX_NATIVE_ENROLLMENT_REDIRECT_STATUS",
+    "PIX_NATIVE_ENROLLMENT_DEEP_LINK",
+    "PIX_NATIVE_PASSKEY_PROMPT_VIEW",
+    "PIX_NATIVE_FIDO_REGISTRATION",
+    "PIX_NATIVE_BANK_CONNECTING",
+    "PIX_NATIVE_BANK_CONNECTED",
+    "PIX_NATIVE_ENROLLMENT_STATUS",
+    "PIX_NATIVE_BIOMETRIC_AUTH",
+    "PIX_NATIVE_PAYMENT_DETAILS_VIEW",
+    "PIX_NATIVE_BIOMETRIC_AUTH_ERROR",
+    "PIX_NATIVE_PAYMENTS_HOME_VIEW",
+    "PIX_NATIVE_ENROLLMENT_SETTINGS_VIEW",
+    "PIX_NATIVE_ENROLLMENT_DELETE",
+    "PIX_NATIVE_ENROLLMENT_BANNER_VIEW",
+    "PIX_NATIVE_FIDO_REGISTRATION_OPTIONS",
+    "PIX_NATIVE_PROMO_SCREEN_VIEW",
+    "PAYMENT_TEXT_DETECTION_CLICK",
+    "COPY_PIX_IMPRESSION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "PaymentLinkWamLogger",
+      "WAWebExtensionsStructuredMessageInteractionWamEvent",
+      "WAWebGalaxyFlows.react",
+      "WAWebGalaxyFlowsCompleteAction",
+      "WAWebGalaxyFlowsDrawerGetFlowDataQuery",
+      "WAWebGetBrazilnteractiveActions",
+      "WAWebNativeFlowMessage",
+      "WAWebPaymentRequestWamLogger",
+      "WAWebPsStructuredMessageInteractionWamEvent",
+      "WAWebStructuredMessageBuyerInteractionWamEvent",
+      "WAWebStructuredMessageBuyerReceiveWamEvent",
+      "WAWebUprWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

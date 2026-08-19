@@ -1,0 +1,1 @@
+{"deps":["WAWebAck","WAWebMsgGetters","WAWebViewOnceState","WAWebViewOnceViewedIcon.react","WDSIconIcKeyboardVoiceFilled.react","WDSIconWdsIcViewOnce.react","react","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebMessagePluginRenderPreviewIconRegistry"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

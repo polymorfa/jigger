@@ -1,0 +1,139 @@
+{
+  "id": "wam:4316",
+  "kind": "wam",
+  "name": "ChannelOpen",
+  "data": {
+    "kind": "wam",
+    "event_id": 4316,
+    "fields": {
+      "channelDirectorySessionId": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "channel_directory_session_id"
+      },
+      "channelDiscoveryQueryId": {
+        "id": 18,
+        "type": "STRING",
+        "wire": "channel_discovery_query_id"
+      },
+      "channelDiscoverySearchId": {
+        "id": 19,
+        "type": "STRING",
+        "wire": "channel_discovery_search_id"
+      },
+      "channelEntryPoint": {
+        "id": 1,
+        "type": "CHANNEL_ENTRY_POINT",
+        "wire": "channel_entry_point",
+        "enum_ref": "CHANNEL_ENTRY_POINT"
+      },
+      "channelEntryPointMetadata": {
+        "id": 9,
+        "type": "CHANNEL_ENTRY_POINT_METADATA",
+        "wire": "channel_entry_point_metadata",
+        "enum_ref": "CHANNEL_ENTRY_POINT_METADATA"
+      },
+      "channelSessionId": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "channel_session_id"
+      },
+      "channelUserType": {
+        "id": 4,
+        "type": "CHANNEL_USER_TYPE",
+        "wire": "channel_user_type",
+        "enum_ref": "CHANNEL_USER_TYPE"
+      },
+      "cid": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "deeplinkSource": {
+        "id": 20,
+        "type": "DEEPLINK_SOURCE",
+        "wire": "deeplink_source",
+        "enum_ref": "DEEPLINK_SOURCE"
+      },
+      "discoverySurface": {
+        "id": 15,
+        "type": "TS_SURFACE",
+        "wire": "discovery_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "entryPointMetadata": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "entry_point_metadata"
+      },
+      "hasNetworkConnection": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "has_network_connection"
+      },
+      "isPremium": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "is_premium"
+      },
+      "similarChannelsSessionId": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "similar_channels_session_id"
+      },
+      "traceIdInt": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      },
+      "unifiedSessionId": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "unreadMessages": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "unread_messages"
+      },
+      "unreadPremiumMessages": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "unread_premium_messages"
+      },
+      "updatesTabSessionId": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelOpenWamEvent",
+    "matches": "ChannelOpen:\\s*\\[\\s*4316"
+  },
+  "literals": [
+    "4316"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelEntryPoint",
+      "WAWebWamEnumChannelEntryPointMetadata",
+      "WAWebWamEnumChannelUserType",
+      "WAWebWamEnumDeeplinkSource",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "useWAWebNewsletterOpenMetrics"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

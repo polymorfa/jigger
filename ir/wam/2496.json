@@ -1,0 +1,123 @@
+{
+  "id": "wam:2496",
+  "kind": "wam",
+  "name": "ReceiptStanzaReceive",
+  "data": {
+    "kind": "wam",
+    "event_id": 2496,
+    "fields": {
+      "dbReadsCount": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "db_reads_count"
+      },
+      "dbWritesCount": {
+        "id": 13,
+        "type": "INTEGER",
+        "wire": "db_writes_count"
+      },
+      "mediaType": {
+        "id": 2,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messageType": {
+        "id": 10,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "processingDeferred": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "processing_deferred"
+      },
+      "receiptAggregation": {
+        "id": 11,
+        "type": "RECEIPT_AGGREGATION_TYPE",
+        "wire": "receipt_aggregation",
+        "enum_ref": "RECEIPT_AGGREGATION_TYPE"
+      },
+      "receiptStanzaDuration": {
+        "id": 1,
+        "type": "TIMER",
+        "wire": "receipt_stanza_duration"
+      },
+      "receiptStanzaHasOrphaned": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "receipt_stanza_has_orphaned"
+      },
+      "receiptStanzaOfflineCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "receipt_stanza_offline_count"
+      },
+      "receiptStanzaProcessedCount": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "receipt_stanza_processed_count"
+      },
+      "receiptStanzaRetryVer": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "receipt_stanza_retry_ver"
+      },
+      "receiptStanzaStage": {
+        "id": 9,
+        "type": "RECEIPT_STANZA_STAGE",
+        "wire": "receipt_stanza_stage",
+        "enum_ref": "RECEIPT_STANZA_STAGE"
+      },
+      "receiptStanzaTotalCount": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "receipt_stanza_total_count"
+      },
+      "receiptStanzaType": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "receipt_stanza_type"
+      },
+      "stanzaBatchSize": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "stanza_batch_size"
+      },
+      "stanzaProcessCount": {
+        "id": 16,
+        "type": "INTEGER",
+        "wire": "stanza_process_count"
+      }
+    },
+    "weights": [
+      1,
+      1000,
+      2000
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebReceiptStanzaReceiveWamEvent",
+    "matches": "ReceiptStanzaReceive:\\s*\\[\\s*2496"
+  },
+  "literals": [
+    "2496"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumReceiptAggregationType",
+      "WAWebWamEnumReceiptStanzaStage"
+    ],
+    "dependents": [
+      "WAWebCreateReceiptStanzaReceiveMetric",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 5,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumActionTarget","WAWebWamEnumChannelProducerInsightsActionType","WAWebWamEnumChannelProducerInsightsEntryPoint","WAWebWamEnumChannelProducerInsightsSurface"],"dependents":["WAWebNewsletterProducerInsightsLogger"],"dependent_count":1,"exports":[{"name":"ChannelProducerInsightsNavigationWamEvent","used_by":[],"uses":0}]}

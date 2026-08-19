@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebWWAICacheStore","WAWebWWAILogging","WAWebWWAINUXState","WAWebWWAISendRequest","WAWebWWAISuggestionStateMachine","err","react","react-compiler-runtime","useWAWebUnmountSignal"],"dependents":["WAWebComposeBoxWWAIWrapper.react"],"dependent_count":1,"exports":[{"name":"useWWAISuggestions","used_by":["WAWebComposeBoxWWAIWrapper.react"],"uses":1}]}

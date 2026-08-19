@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_native_ads_web_creation_dummy",
+  "kind": "ab",
+  "name": "wa_native_ads_web_creation_dummy",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33640,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_native_ads_web_creation_dummy:\\s*\\[\\s*33640"
+  },
+  "literals": [
+    "wa_native_ads_web_creation_dummy",
+    "33640"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizNativeAdsGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

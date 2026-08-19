@@ -1,0 +1,42 @@
+{
+  "id": "ab:attach_invitee_user_pn_in_offer",
+  "kind": "ab",
+  "name": "attach_invitee_user_pn_in_offer",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34040,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "attach_invitee_user_pn_in_offer:\\s*\\[\\s*34040"
+  },
+  "literals": [
+    "attach_invitee_user_pn_in_offer",
+    "34040"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

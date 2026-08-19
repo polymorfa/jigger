@@ -1,0 +1,141 @@
+{
+  "id": "enum:GOOGLE_PLAY_SERVICES_STATUS",
+  "kind": "enum",
+  "name": "GOOGLE_PLAY_SERVICES_STATUS",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGooglePlayServicesStatus",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 0.0
+      },
+      {
+        "name": "SERVICE_MISSING",
+        "value": 1.0
+      },
+      {
+        "name": "SERVICE_VERSION_UPDATE_REQUIRED",
+        "value": 2.0
+      },
+      {
+        "name": "SERVICE_DISABLED",
+        "value": 3.0
+      },
+      {
+        "name": "SIGN_IN_REQUIRED",
+        "value": 4.0
+      },
+      {
+        "name": "INVALID_ACCOUNT",
+        "value": 5.0
+      },
+      {
+        "name": "RESOLUTION_REQUIRED",
+        "value": 6.0
+      },
+      {
+        "name": "NETWORK_ERROR",
+        "value": 7.0
+      },
+      {
+        "name": "INTERNAL_ERROR",
+        "value": 8.0
+      },
+      {
+        "name": "SERVICE_INVALID",
+        "value": 9.0
+      },
+      {
+        "name": "DEVELOPER_ERROR",
+        "value": 10.0
+      },
+      {
+        "name": "LICENSE_CHECK_FAILED",
+        "value": 11.0
+      },
+      {
+        "name": "CANCELED",
+        "value": 13.0
+      },
+      {
+        "name": "TIMEOUT",
+        "value": 14.0
+      },
+      {
+        "name": "INTERRUPTED",
+        "value": 15.0
+      },
+      {
+        "name": "API_UNAVAILABLE",
+        "value": 16.0
+      },
+      {
+        "name": "SIGN_IN_FAILED",
+        "value": 17.0
+      },
+      {
+        "name": "SERVICE_UPDATING",
+        "value": 18.0
+      },
+      {
+        "name": "SERVICE_MISSING_PERMISSION",
+        "value": 19.0
+      },
+      {
+        "name": "RESTRICTED_PROFILE",
+        "value": 20.0
+      },
+      {
+        "name": "RESOLUTION_ACTIVITY_NOT_FOUND",
+        "value": 22.0
+      },
+      {
+        "name": "API_DISABLED",
+        "value": 23.0
+      },
+      {
+        "name": "API_DISABLED_FOR_CONNECTION",
+        "value": 24.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGooglePlayServicesStatus",
+    "matches": "GOOGLE_PLAY_SERVICES_STATUS\\s*[:=]"
+  },
+  "literals": [
+    "GOOGLE_PLAY_SERVICES_STATUS",
+    "SUCCESS",
+    "SERVICE_MISSING",
+    "SERVICE_VERSION_UPDATE_REQUIRED",
+    "SERVICE_DISABLED",
+    "SIGN_IN_REQUIRED",
+    "INVALID_ACCOUNT",
+    "RESOLUTION_REQUIRED",
+    "NETWORK_ERROR",
+    "INTERNAL_ERROR",
+    "SERVICE_INVALID",
+    "DEVELOPER_ERROR",
+    "LICENSE_CHECK_FAILED",
+    "CANCELED",
+    "TIMEOUT",
+    "INTERRUPTED",
+    "API_UNAVAILABLE",
+    "SIGN_IN_FAILED",
+    "SERVICE_UPDATING",
+    "SERVICE_MISSING_PERMISSION",
+    "RESTRICTED_PROFILE",
+    "RESOLUTION_ACTIVITY_NOT_FOUND",
+    "API_DISABLED",
+    "API_DISABLED_FOR_CONNECTION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

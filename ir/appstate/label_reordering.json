@@ -1,0 +1,40 @@
+{
+  "id": "appstate:label_reordering",
+  "kind": "appstate",
+  "name": "LabelReordering",
+  "data": {
+    "kind": "appstate",
+    "index_name": "label_reordering",
+    "collection": "regular",
+    "version": 3,
+    "value_field": "labelReorderingAction"
+  },
+  "evidence": {
+    "module": "WAWebLabelReorderingSync",
+    "matches": "Actions\\.LabelReordering"
+  },
+  "literals": [
+    "label_reordering",
+    "LabelReordering",
+    "labelReorderingAction"
+  ],
+  "graph": {
+    "deps": [
+      "WALogger",
+      "WAPromiseEach",
+      "WAWebBackendApi",
+      "WAWebDBLabelsReorder",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebWamLabelSyncTrackingReporter",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebListsActions"
+    ],
+    "dep_count": 9,
+    "dependent_count": 2
+  }
+}

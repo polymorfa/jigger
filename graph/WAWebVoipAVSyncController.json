@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebVoipAVSyncMetricsCollector"],"dependents":["WAWebVoipVideoRendererRegistry"],"dependent_count":1,"exports":[{"name":"MAX_QUEUE_SIZE","used_by":[],"uses":0},{"name":"RECALIBRATION_THRESHOLD_MS","used_by":[],"uses":0},{"name":"SYNC_THRESHOLD_AHEAD_MS","used_by":[],"uses":0},{"name":"WAWebVoipAVSyncController","used_by":[],"uses":0}]}

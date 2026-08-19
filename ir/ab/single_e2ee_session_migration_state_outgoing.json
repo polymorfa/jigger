@@ -1,0 +1,46 @@
+{
+  "id": "ab:single_e2ee_session_migration_state_outgoing",
+  "kind": "ab",
+  "name": "single_e2ee_session_migration_state_outgoing",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7820,
+    "type": "int",
+    "default": 2,
+    "alt_default": 2
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "single_e2ee_session_migration_state_outgoing:\\s*\\[\\s*7820"
+  },
+  "literals": [
+    "single_e2ee_session_migration_state_outgoing",
+    "7820"
+  ],
+  "usage": {
+    "read_count": 2,
+    "readers": [
+      "WAWebAbPropsSyncJob",
+      "WAWebDebugABProps"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

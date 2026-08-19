@@ -1,0 +1,86 @@
+{
+  "id": "mex:WAWebMexGetPrivacySettingsQuery",
+  "kind": "mex",
+  "name": "WAWebMexGetPrivacySettingsQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25637004609323493",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_fetch_wa_users",
+        "plural": true,
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "... on XWA2User",
+            "kind": "InlineFragment",
+            "selections": [
+              {
+                "name": "privacy_settings",
+                "ty": "XWA2PrivacySettingsResponse",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "settings",
+                    "ty": "XWA2PrivacySetting",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "feature",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "setting",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_fetch_wa_users",
+    "document": "# persisted document 25637004609323493\nquery MexGetPrivacySettingsQuery(\n  $input\n) {\n  xwa2_fetch_wa_users(input: $input) {  # list\n    __typename\n    ... on XWA2User {\n      privacy_settings {  # XWA2PrivacySettingsResponse\n        settings {  # [XWA2PrivacySetting]\n          feature\n          setting\n        }\n      }\n      id\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexGetPrivacySettingsQuery.graphql",
+    "matches": "id:\\s*\"25637004609323493\""
+  },
+  "literals": [
+    "25637004609323493",
+    "WAWebMexGetPrivacySettingsQuery",
+    "xwa2_fetch_wa_users"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGetPrivacySetting"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

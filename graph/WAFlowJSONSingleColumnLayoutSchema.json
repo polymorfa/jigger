@@ -1,0 +1,1 @@
+{"deps":["WAFlowJSONChildrenSchema","WAFlowJSONConstants","WAFlowsTypes"],"dependents":["WAFlowJSONScreenDynamicDataValidatorV500","WAFlowJSONScreenLayoutSchema"],"dependent_count":2,"exports":[{"name":"getSingleColumnLayoutSchema","used_by":["WAFlowJSONScreenDynamicDataValidatorV500","WAFlowJSONScreenLayoutSchema"],"uses":2}]}

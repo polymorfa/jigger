@@ -1,0 +1,94 @@
+{
+  "id": "wam:4436",
+  "kind": "wam",
+  "name": "PinInChatInteraction",
+  "data": {
+    "kind": "wam",
+    "event_id": 4436,
+    "fields": {
+      "groupRole": {
+        "id": 1,
+        "type": "GROUP_ROLE_TYPE",
+        "wire": "group_role",
+        "enum_ref": "GROUP_ROLE_TYPE"
+      },
+      "groupSize": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "group_size"
+      },
+      "groupTypeClient": {
+        "id": 3,
+        "type": "GROUP_TYPE_CLIENT",
+        "wire": "group_type_client",
+        "enum_ref": "GROUP_TYPE_CLIENT"
+      },
+      "isAGroup": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "is_a_group"
+      },
+      "isSelfPin": {
+        "id": 8,
+        "type": "BOOLEAN",
+        "wire": "is_self_pin"
+      },
+      "mediaType": {
+        "id": 5,
+        "type": "MEDIA_TYPE",
+        "wire": "media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "pinCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "pin_count"
+      },
+      "pinInChatInteractionType": {
+        "id": 7,
+        "type": "PIN_IN_CHAT_INTERACTION_TYPE",
+        "wire": "pin_in_chat_interaction_type",
+        "enum_ref": "PIN_IN_CHAT_INTERACTION_TYPE"
+      },
+      "pinIndex": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "pin_index"
+      },
+      "uiSurface": {
+        "id": 10,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPinInChatInteractionWamEvent",
+    "matches": "PinInChatInteraction:\\s*\\[\\s*4436"
+  },
+  "literals": [
+    "4436"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumGroupRoleType",
+      "WAWebWamEnumGroupTypeClient",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumPinInChatInteractionType",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebPinInChatMetricUtils"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

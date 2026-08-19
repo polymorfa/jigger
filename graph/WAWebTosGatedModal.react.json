@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebModalManager","WAWebTos","WAWebTosGating","react","react-compiler-runtime","useWAWebListener"],"dependents":["useWAWebConversationPanelCanCompose"],"dependent_count":1,"exports":[]}

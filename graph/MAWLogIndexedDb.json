@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWCurrentUser","MAWErrorObject","MAWIndexedDbMetadata","MAWQplProxy","MAWTransactionMode","Promise","WAExceededStorageQuota","justknobx"],"dependents":["MAWDeleteOldLogsFromDisk","MAWSaveLogToDisk"],"dependent_count":2,"exports":[{"name":"makeLogMsgrTransactor","used_by":["MAWSaveLogToDisk"],"uses":1}]}

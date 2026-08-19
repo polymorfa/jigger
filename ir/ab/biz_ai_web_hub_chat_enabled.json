@@ -1,0 +1,42 @@
+{
+  "id": "ab:biz_ai_web_hub_chat_enabled",
+  "kind": "ab",
+  "name": "biz_ai_web_hub_chat_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 34203,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "biz_ai_web_hub_chat_enabled:\\s*\\[\\s*34203"
+  },
+  "literals": [
+    "biz_ai_web_hub_chat_enabled",
+    "34203"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

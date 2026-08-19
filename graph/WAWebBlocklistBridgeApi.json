@@ -1,0 +1,1 @@
+{"deps":["WAWebApiHydrateWidsUtil","WAWebBlocklistCollection","WAWebSchemaBlocklist","asyncToGeneratorRuntime"],"dependents":["WAWebSetFrontendHandlerApi"],"dependent_count":1,"exports":[{"name":"BlocklistBridgeApi","used_by":["WAWebSetFrontendHandlerApi"],"uses":1}]}

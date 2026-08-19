@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebVoipVideoCaptureWithConverter","err"],"dependents":["WAWebVoipVideoCaptureBase","WAWebVoipVideoCaptureWebGL","WAWebVoipVideoCaptureWebGPU","WAWebVoipWebWasmSampleVideoColorbars.react"],"dependent_count":4,"exports":[{"name":"CanvasVideoConverter","used_by":[],"uses":0},{"name":"WAWebVoipVideoCaptureCanvas","used_by":[],"uses":0}]}

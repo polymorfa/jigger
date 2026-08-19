@@ -1,0 +1,45 @@
+{
+  "id": "ab:smb_temp_cover_photo_privacy_messaging",
+  "kind": "ab",
+  "name": "smb_temp_cover_photo_privacy_messaging",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1913,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "smb_temp_cover_photo_privacy_messaging:\\s*\\[\\s*1913"
+  },
+  "literals": [
+    "smb_temp_cover_photo_privacy_messaging",
+    "1913"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBizCoverPhotoAction"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

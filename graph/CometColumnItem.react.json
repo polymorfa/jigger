@@ -1,0 +1,1 @@
+{"deps":["BaseView.react","CometColumnContext","CometErrorBoundary.react","CometPlaceholder.react","XPlatReactEnvironment","react","stylex"],"dependents":["CometColumn.react","MAWCometStickerPickerSearchResultsRootGQL.react","MAWLearnMoreCutoverDialog.react","MWXColumnItem.react"],"dependent_count":4,"exports":[{"name":"default","used_by":[],"uses":0}]}

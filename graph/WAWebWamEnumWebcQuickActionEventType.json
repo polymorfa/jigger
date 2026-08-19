@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebQuickActionLogging","WAWebWebcQuickActionWamEvent"],"dependent_count":2,"exports":[{"name":"WEBC_QUICK_ACTION_EVENT_TYPE","used_by":["WAWebQuickActionLogging","WAWebWebcQuickActionWamEvent"],"uses":2}]}

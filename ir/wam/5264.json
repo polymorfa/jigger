@@ -1,0 +1,65 @@
+{
+  "id": "wam:5264",
+  "kind": "wam",
+  "name": "ChatWallpaper",
+  "data": {
+    "kind": "wam",
+    "event_id": 5264,
+    "fields": {
+      "appearanceType": {
+        "id": 5,
+        "type": "DEVICE_APPEARANCE_TYPE",
+        "wire": "appearance_type",
+        "enum_ref": "DEVICE_APPEARANCE_TYPE"
+      },
+      "chatWallpaperChangeApplied": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "chat_wallpaper_change_applied"
+      },
+      "chatWallpaperSource": {
+        "id": 2,
+        "type": "CHAT_WALLPAPER_ENTRY_TYPE",
+        "wire": "chat_wallpaper_source",
+        "enum_ref": "CHAT_WALLPAPER_ENTRY_TYPE"
+      },
+      "chatWallpaperType": {
+        "id": 3,
+        "type": "CHAT_WALLPAPER_TYPE",
+        "wire": "chat_wallpaper_type",
+        "enum_ref": "CHAT_WALLPAPER_TYPE"
+      },
+      "chatWallpaperVisit": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "chat_wallpaper_visit"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatWallpaperWamEvent",
+    "matches": "ChatWallpaper:\\s*\\[\\s*5264"
+  },
+  "literals": [
+    "5264"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatWallpaperEntryType",
+      "WAWebWamEnumChatWallpaperType",
+      "WAWebWamEnumDeviceAppearanceType"
+    ],
+    "dependents": [
+      "WAWebChatThemeLogger"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

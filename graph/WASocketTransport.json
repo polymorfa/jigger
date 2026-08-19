@@ -1,0 +1,1 @@
+{"deps":["Promise","WABinary","WALogger","err"],"dependents":["MAWChatSocketPlatformDetails","WAWebWatchedSocket","WAWebWorkerChatSocketPlatformDetails"],"dependent_count":3,"exports":[{"name":"openWebSocket","used_by":["MAWChatSocketPlatformDetails","WAWebWorkerChatSocketPlatformDetails"],"uses":2},{"name":"WebSocketTransport","used_by":["WAWebWatchedSocket"],"uses":1}]}

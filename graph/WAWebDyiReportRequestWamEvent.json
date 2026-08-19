@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumDyiReportTypeCode","WAWebWamEnumDyiTriggerTypeCode"],"dependents":["useWAWebGdprRequest"],"dependent_count":1,"exports":[{"name":"DyiReportRequestWamEvent","used_by":[],"uses":0}]}

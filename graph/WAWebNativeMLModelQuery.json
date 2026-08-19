@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebGraphQLConstants","WAWebGraphQLServerError","WAWebNativeMLModelQuery.graphql","WAWebRelayClient","asyncToGeneratorRuntime"],"dependents":["WAWebMLModelMetadataFetcher"],"dependent_count":1,"exports":[{"name":"getNativeMLModel","used_by":["WAWebMLModelMetadataFetcher"],"uses":1}]}

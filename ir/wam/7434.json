@@ -1,0 +1,98 @@
+{
+  "id": "wam:7434",
+  "kind": "wam",
+  "name": "CanonicalEntRecoveryCompanion",
+  "data": {
+    "kind": "wam",
+    "event_id": 7434,
+    "fields": {
+      "canonicalEntEventCompanionMarker": {
+        "id": 1,
+        "type": "CANONICAL_ENT_EVENT_MARKER",
+        "wire": "canonical_ent_event_companion_marker",
+        "enum_ref": "CANONICAL_ENT_EVENT_MARKER"
+      },
+      "canonicalEntFeatureName": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "canonical_ent_feature_name"
+      },
+      "canonicalEntRecoveryCompanionEvent": {
+        "id": 2,
+        "type": "CANONICAL_ENT_RECOVERY_COMPANION_EVENT",
+        "wire": "canonical_ent_recovery_companion_event",
+        "enum_ref": "CANONICAL_ENT_RECOVERY_COMPANION_EVENT"
+      },
+      "canonicalEntRecoveryEventMetadata": {
+        "id": 12,
+        "type": "STRING",
+        "wire": "canonical_ent_recovery_event_metadata"
+      },
+      "canonicalEntRecoveryTimeoutSeconds": {
+        "id": 9,
+        "type": "INTEGER",
+        "wire": "canonical_ent_recovery_timeout_seconds"
+      },
+      "canonicalEntRegistrationTraceId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "canonical_ent_registration_trace_id"
+      },
+      "canonicalEntRequestId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "canonical_ent_request_id"
+      },
+      "canonicalEntSequenceNumberSinceLastRegistration": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "canonical_ent_sequence_number_since_last_registration"
+      },
+      "canonicalEntStorageSource": {
+        "id": 10,
+        "type": "STRING",
+        "wire": "canonical_ent_storage_source"
+      },
+      "deviceId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "device_id"
+      },
+      "familyDeviceId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "family_device_id"
+      },
+      "traceIdInt": {
+        "id": 11,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCanonicalEntRecoveryCompanionWamEvent",
+    "matches": "CanonicalEntRecoveryCompanion:\\s*\\[\\s*7434"
+  },
+  "literals": [
+    "7434"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCanonicalEntEventMarker",
+      "WAWebWamEnumCanonicalEntRecoveryCompanionEvent"
+    ],
+    "dependents": [
+      "WAWebCanonicalEntRecoveryWam"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

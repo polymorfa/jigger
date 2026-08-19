@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_memlab_fixes",
+  "kind": "ab",
+  "name": "web_memlab_fixes",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33563,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_memlab_fixes:\\s*\\[\\s*33563"
+  },
+  "literals": [
+    "web_memlab_fixes",
+    "33563"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebChatstateInfo.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["invariant","AdsBulkValueTypes","AdsEmptyUniformMixedBulkValueTypes","AdsEmptyValue","AdsMixedValue","AdsUniformValue","FBLogger","ImmutableObject","StrSet","areEqual","areSpecsEqual","curry","deepCompare","getByPath","setByPath"],"dependents":["WAMOAdsManagerBulkUtils"],"dependent_count":1,"exports":[]}

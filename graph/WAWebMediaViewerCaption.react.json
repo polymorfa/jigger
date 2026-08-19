@@ -1,0 +1,1 @@
+{"deps":["WAWebFormatConfigurationConversation","WAWebMsgGetters","WAWebMsgLinks","WAWebMsgMentionMap","WAWebMsgPhoneNumbers"],"dependents":["WAWebMediaViewerModal.react"],"dependent_count":1,"exports":[{"name":"getCaptionFormatters","used_by":["WAWebMediaViewerModal.react"],"uses":1}]}

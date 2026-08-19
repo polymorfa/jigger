@@ -1,0 +1,1 @@
+{"deps":["CometHeroInteractionImpl.react","cr:35630","react","react-compiler-runtime","stylex"],"dependents":["MWMessageRow.react","MWV2ChatImage.react","WAWebAppRootInteractionContext.react","buildCometRootComponent","createHeroInteractionRouterRoot"],"dependent_count":5,"exports":[{"name":"default","used_by":[],"uses":0}]}

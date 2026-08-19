@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WALogger","WAWebABProps","WAWebABPropsConfigs","WAWebCoreActionsODS","WAWebVoipGatingUtils","WAWebVoipWebWasmMemory","asyncToGeneratorRuntime","cr:12201"],"dependents":["WAWebVoipWebLoadable"],"dependent_count":1,"exports":[{"name":"loadVoipWasmVariant","used_by":["WAWebVoipWebLoadable"],"uses":1}]}

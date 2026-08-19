@@ -1,0 +1,33 @@
+{
+  "id": "sig:message/hsm",
+  "kind": "sig",
+  "name": "MessageDeliverHsmMixin",
+  "data": {
+    "kind": "sig",
+    "root": "message",
+    "children": [
+      "hsm"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessageDeliverHsmMixin",
+    "matches": "assertTag\\([a-z], \"message\"\\)"
+  },
+  "literals": [
+    "message",
+    "hsm"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInMessageDeliverHSMReviewMetadataMixin",
+      "WASmaxInMessageDeliverQualityTokenMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInMessageDeliverBizMixin"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

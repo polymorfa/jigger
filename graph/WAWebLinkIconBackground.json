@@ -1,0 +1,1 @@
+{"deps":["WAWebLinkIconUtils"],"dependents":["WAWebMediaHubLinkFavicon.react"],"dependent_count":1,"exports":[{"name":"getSupportedFaviconBackgroundColor","used_by":["WAWebMediaHubLinkFavicon.react"],"uses":1}]}

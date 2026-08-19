@@ -1,0 +1,1 @@
+{"deps":["WAJids","WALogger","WAWebBackendApi","WAWebDBMessageUtils","WAWebMsgAIProvenance","WAWebNewsletterDBUtils","WAWebNewsletterGatingUtils","WAWebSchemaMessage","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["WAWebHandleMexNotification"],"dependent_count":1,"exports":[{"name":"mexHandleNewsletterAIContent","used_by":["WAWebHandleMexNotification"],"uses":1}]}

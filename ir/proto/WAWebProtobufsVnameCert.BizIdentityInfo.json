@@ -1,0 +1,54 @@
+{
+  "id": "proto:WAWebProtobufsVnameCert.BizIdentityInfo",
+  "kind": "proto",
+  "name": "WAWebProtobufsVnameCert.BizIdentityInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actualActors": {
+        "number": 6
+      },
+      "featureControls": {
+        "number": 8
+      },
+      "hostStorage": {
+        "number": 5
+      },
+      "privacyModeTs": {
+        "number": 7
+      },
+      "revoked": {
+        "number": 4
+      },
+      "signed": {
+        "number": 3
+      },
+      "vlevel": {
+        "number": 1
+      },
+      "vnameCert": {
+        "number": 2,
+        "type_name": "WAWebProtobufsVnameCert.VerifiedNameCertificate"
+      }
+    },
+    "module": "WAWebProtobufsVnameCert.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsVnameCert.pb",
+    "matches": "name = \"BizIdentityInfo\""
+  },
+  "literals": [
+    "BizIdentityInfo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebValidateBusinessCertificate"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

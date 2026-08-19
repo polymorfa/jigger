@@ -1,0 +1,1 @@
+{"deps":["WAWebCommonQPSurfacesTypes","WAWebPersistedJobDefinitions","WAWebPersistedJobManagerWorkerCompatible","WAWebQuickPromotionValidatorUtils"],"dependents":["WAWebQuickPromotionEligibilityEvaluator"],"dependent_count":1,"exports":[{"name":"holdoutRuleValidator","used_by":["WAWebQuickPromotionEligibilityEvaluator"],"uses":1}]}

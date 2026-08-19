@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgKey","WAWebMsgType"],"dependents":["WAWebNewsletterBackendAddOnsUtils","WAWebNewsletterMsgStanzaAdapters"],"dependent_count":2,"exports":[{"name":"mapMsgToEditProtocolMsg","used_by":["WAWebNewsletterMsgStanzaAdapters"],"uses":1},{"name":"mapMsgToEditProtocolMsgLegacy","used_by":["WAWebNewsletterBackendAddOnsUtils"],"uses":1}]}

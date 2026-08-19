@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_session_transparency_meta_ai_enabled",
+  "kind": "ab",
+  "name": "ai_session_transparency_meta_ai_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23188,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_session_transparency_meta_ai_enabled:\\s*\\[\\s*23188"
+  },
+  "literals": [
+    "ai_session_transparency_meta_ai_enabled",
+    "23188"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebClickableLink.react","WAWebConfirmPopup.react","WAWebLogStatusPrivacySettings","WAWebModalManager","WAWebStatusPrivacySettingsFlowLoadable","WAWebText.react","react","react-compiler-runtime"],"dependents":["WAWebStatusPostingMediaView.react","WAWebStatusPostingTextView.react"],"dependent_count":2,"exports":[]}

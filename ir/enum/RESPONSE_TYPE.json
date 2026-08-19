@@ -1,0 +1,38 @@
+{
+  "id": "enum:RESPONSE_TYPE",
+  "kind": "enum",
+  "name": "RESPONSE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumResponseType",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "ERROR",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumResponseType",
+    "matches": "RESPONSE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "RESPONSE_TYPE",
+    "SUCCESS",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebEphemeralKeepInChatWamUtils",
+      "WAWebKeepInChatMsgAction",
+      "WAWebKeepInChatPerfWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

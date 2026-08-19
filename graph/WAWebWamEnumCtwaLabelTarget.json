@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCtwaLabelSignalWamEvent","WAWebSmbMarkAsXLabelAction"],"dependent_count":2,"exports":[{"name":"CTWA_LABEL_TARGET","used_by":["WAWebCtwaLabelSignalWamEvent","WAWebSmbMarkAsXLabelAction"],"uses":2}]}

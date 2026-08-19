@@ -1,0 +1,71 @@
+{
+  "id": "enum:ENUM_DEACTIVATEGENERALCHAT_DELETECAPI_DELETEPARENT_INTEGRITYDELETEPARENT",
+  "kind": "enum",
+  "name": "ENUM_DEACTIVATEGENERALCHAT_DELETECAPI_DELETEPARENT_INTEGRITYDELETEPARENT",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInGroupsEnums",
+    "variants": [
+      {
+        "name": "deactivate_general_chat",
+        "value": "deactivate_general_chat"
+      },
+      {
+        "name": "delete_capi",
+        "value": "delete_capi"
+      },
+      {
+        "name": "delete_parent",
+        "value": "delete_parent"
+      },
+      {
+        "name": "integrity_delete_parent",
+        "value": "integrity_delete_parent"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInGroupsEnums",
+    "matches": "ENUM_DEACTIVATEGENERALCHAT_DELETECAPI_DELETEPARENT_INTEGRITYDELETEPARENT\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_DEACTIVATEGENERALCHAT_DELETECAPI_DELETEPARENT_INTEGRITYDELETEPARENT",
+    "deactivate_general_chat",
+    "delete_capi",
+    "delete_parent",
+    "integrity_delete_parent"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInGroupsAddNotificationRequest",
+      "WASmaxInGroupsAddParticipantTimeRateLimitMixin",
+      "WASmaxInGroupsCreateParticipantAddedMixin",
+      "WASmaxInGroupsCreateParticipantAddedResponseMixin",
+      "WASmaxInGroupsCreateResponseSuccess",
+      "WASmaxInGroupsDedupAttrsMixin",
+      "WASmaxInGroupsDeleteNotificationRequest",
+      "WASmaxInGroupsDemoteNotificationRequest",
+      "WASmaxInGroupsGroupAddressingModeMixin",
+      "WASmaxInGroupsGroupInfoMixin",
+      "WASmaxInGroupsGroupInfoParticipantAdminMixin",
+      "WASmaxInGroupsJoinNotificationRequest",
+      "WASmaxInGroupsLinkedGroupInfoMixin",
+      "WASmaxInGroupsMembershipRequestMethodAttributeMixin",
+      "WASmaxInGroupsMembershipRequestsActionResponseSuccess",
+      "WASmaxInGroupsParticipantGroupJoinRequestMixin",
+      "WASmaxInGroupsParticipantMixin",
+      "WASmaxInGroupsProfilePictureTypeMixin",
+      "WASmaxInGroupsPromoteDemoteAdminResponseSuccessMultiAdmin",
+      "WASmaxInGroupsPromoteDemoteResponseSuccessDemote",
+      "WASmaxInGroupsPromoteDemoteResponseSuccessPromote",
+      "WASmaxInGroupsPromoteNotificationRequest",
+      "WASmaxInGroupsRemoveParticipantsResponseSuccess",
+      "WASmaxOutGroupsNotificationClientAckMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 24
+  }
+}

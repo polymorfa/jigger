@@ -1,0 +1,1 @@
+{"deps":["fbt","$InternalEnum","WAWebCountRenderingUtils","WAWebL10N","WDSText.react","react","react-compiler-runtime","stylex"],"dependents":["WAWebAiThreadCell.react","WAWebChatArchivedEntryPoint.react","WAWebChatIcons.react","WAWebGroupCatchUpButton.react","WAWebJumpToButtons.react","WAWebQuestionsRenderingUtils"],"dependent_count":6,"exports":[]}

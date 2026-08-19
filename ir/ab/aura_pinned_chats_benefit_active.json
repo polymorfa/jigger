@@ -1,0 +1,45 @@
+{
+  "id": "ab:aura_pinned_chats_benefit_active",
+  "kind": "ab",
+  "name": "aura_pinned_chats_benefit_active",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 23278,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "aura_pinned_chats_benefit_active:\\s*\\[\\s*23278"
+  },
+  "literals": [
+    "aura_pinned_chats_benefit_active",
+    "23278"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebAuraBenefitABPropsProvider"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

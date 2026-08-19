@@ -1,0 +1,1 @@
+{"deps":["fbt","WATimeUtils","WAWebClock","WAWebConfirmPopup.react","WAWebModalManager","WAWebNewsletterDBUtils","WAWebNewsletterErrorPopups.react","WAWebNewsletterPinDisplay","WAWebNewsletterPinMessageAction","asyncToGeneratorRuntime","react"],"dependents":["WAWebNewsletterPinnedMessagesBanner.react","WAWebWrapperMessageDropdownMenu.react"],"dependent_count":2,"exports":[]}

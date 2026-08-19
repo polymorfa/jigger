@@ -1,0 +1,1 @@
+{"deps":["WAWebBaseCollection","WAWebSubscriptionModel"],"dependents":["WAWebCollections","WAWebIndividualNewChatMessageCappingLimitGatingUtils","WAWebSubscriptionsBridgeApi"],"dependent_count":3,"exports":[{"name":"SubscriptionCollection","used_by":["WAWebCollections","WAWebIndividualNewChatMessageCappingLimitGatingUtils","WAWebSubscriptionsBridgeApi"],"uses":3}]}

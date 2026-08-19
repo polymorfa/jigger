@@ -1,0 +1,45 @@
+{
+  "id": "ab:hd_video_definition_min_edge",
+  "kind": "ab",
+  "name": "hd_video_definition_min_edge",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 4171,
+    "type": "int",
+    "default": 720,
+    "alt_default": 720
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "hd_video_definition_min_edge:\\s*\\[\\s*4171"
+  },
+  "literals": [
+    "hd_video_definition_min_edge",
+    "4171"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebHDMediaUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

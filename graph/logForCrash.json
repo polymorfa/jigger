@@ -1,0 +1,1 @@
+{"deps":["BrowserCrashStaticConfig","FBLogger","JSErrorLoggingConfig","Promise","getErrorSafe","gkx","justknobx","logForCrashUtils"],"dependents":["WAWebLogForCrash"],"dependent_count":1,"exports":[{"name":"clearCrashLog","used_by":[],"uses":0},{"name":"logForCrash","used_by":[],"uses":0},{"name":"onLogForCrashReady","used_by":[],"uses":0}]}

@@ -1,0 +1,75 @@
+{
+  "id": "enum:SMB_LIST_SURFACE_TYPE",
+  "kind": "enum",
+  "name": "SMB_LIST_SURFACE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSmbListSurfaceType",
+    "variants": [
+      {
+        "name": "BIZ_TOOLS",
+        "value": 1.0
+      },
+      {
+        "name": "MANAGE_LISTS",
+        "value": 2.0
+      },
+      {
+        "name": "NEW_LIST",
+        "value": 3.0
+      },
+      {
+        "name": "INBOX",
+        "value": 4.0
+      },
+      {
+        "name": "INBOX_CHAT_ROW_MORE",
+        "value": 5.0
+      },
+      {
+        "name": "INBOX_CHAT_BOTTOM_SHEET",
+        "value": 6.0
+      },
+      {
+        "name": "INBOX_CHAT_BOTTOM_SHEET_ADD_TO_LIST",
+        "value": 7.0
+      },
+      {
+        "name": "CHOOSE_LIST_SHEET",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSmbListSurfaceType",
+    "matches": "SMB_LIST_SURFACE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SMB_LIST_SURFACE_TYPE",
+    "BIZ_TOOLS",
+    "MANAGE_LISTS",
+    "NEW_LIST",
+    "INBOX",
+    "INBOX_CHAT_ROW_MORE",
+    "INBOX_CHAT_BOTTOM_SHEET",
+    "INBOX_CHAT_BOTTOM_SHEET_ADD_TO_LIST",
+    "CHOOSE_LIST_SHEET"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizLabelDrawer.react",
+      "WAWebBizManageLabelFlow.react",
+      "WAWebBizManageLabelModal.react",
+      "WAWebBizToolsFlow.react",
+      "WAWebChatContextMenuItemEditList.react",
+      "WAWebChatInfoListsSection.react",
+      "WAWebCreateOrEditListDrawer.react",
+      "WAWebLabelEventWamEvent",
+      "WAWebListsActions",
+      "WAWebSmbListEventWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 10
+  }
+}

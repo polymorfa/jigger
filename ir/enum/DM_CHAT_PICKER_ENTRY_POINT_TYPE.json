@@ -1,0 +1,42 @@
+{
+  "id": "enum:DM_CHAT_PICKER_ENTRY_POINT_TYPE",
+  "kind": "enum",
+  "name": "DM_CHAT_PICKER_ENTRY_POINT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDmChatPickerEntryPointType",
+    "variants": [
+      {
+        "name": "DEFAULT_MODE_SETTING",
+        "value": 0.0
+      },
+      {
+        "name": "STORAGE_SETTING",
+        "value": 1.0
+      },
+      {
+        "name": "PRIVACY_SETTING",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDmChatPickerEntryPointType",
+    "matches": "DM_CHAT_PICKER_ENTRY_POINT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DM_CHAT_PICKER_ENTRY_POINT_TYPE",
+    "DEFAULT_MODE_SETTING",
+    "STORAGE_SETTING",
+    "PRIVACY_SETTING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDefaultEphemeralityDrawer.react",
+      "WAWebDisappearingMessageChatPickerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

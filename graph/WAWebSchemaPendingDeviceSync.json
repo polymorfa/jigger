@@ -1,0 +1,1 @@
+{"deps":["WAWebOffdStorageUtils","WAWebStorageMutationBuilder"],"dependents":["WAWebApiPendingDeviceSync","WAWebOffdStorage"],"dependent_count":2,"exports":[{"name":"addTable","used_by":["WAWebOffdStorage"],"uses":1},{"name":"getTable","used_by":["WAWebApiPendingDeviceSync"],"uses":1}]}

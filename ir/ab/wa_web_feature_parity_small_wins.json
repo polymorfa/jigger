@@ -1,0 +1,48 @@
+{
+  "id": "ab:wa_web_feature_parity_small_wins",
+  "kind": "ab",
+  "name": "wa_web_feature_parity_small_wins",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26481,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_feature_parity_small_wins:\\s*\\[\\s*26481"
+  },
+  "literals": [
+    "wa_web_feature_parity_small_wins",
+    "26481"
+  ],
+  "usage": {
+    "read_count": 4,
+    "readers": [
+      "WAWebChatlistPanelFunctionalLegacy.react",
+      "WAWebConsumerMultiSelectBarOverflowMenu.react",
+      "WAWebSelectChatsChatlistHeaderDropdownItem.react",
+      "WAWebStarredDrawerV2.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

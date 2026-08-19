@@ -1,0 +1,42 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.SubProtocolPayload",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.SubProtocolPayload",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "futureProof": {
+        "number": 1
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.SubProtocolPayload\""
+  },
+  "literals": [
+    "SubProtocolPayload"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

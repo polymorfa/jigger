@@ -1,0 +1,36 @@
+{
+  "id": "enum:META_VERIFIED_USER_ACTION_RESULT",
+  "kind": "enum",
+  "name": "META_VERIFIED_USER_ACTION_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMetaVerifiedUserActionResult",
+    "variants": [
+      {
+        "name": "OK",
+        "value": 1.0
+      },
+      {
+        "name": "ERROR",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMetaVerifiedUserActionResult",
+    "matches": "META_VERIFIED_USER_ACTION_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "META_VERIFIED_USER_ACTION_RESULT",
+    "OK",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMetaVerifiedUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

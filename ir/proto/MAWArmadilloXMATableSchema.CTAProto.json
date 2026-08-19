@@ -1,0 +1,44 @@
+{
+  "id": "proto:MAWArmadilloXMATableSchema.CTAProto",
+  "kind": "proto",
+  "name": "MAWArmadilloXMATableSchema.CTAProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actionUrl": {
+        "number": 3
+      },
+      "buttonType": {
+        "number": 1
+      },
+      "ctaType": {
+        "number": 5
+      },
+      "nativeUrl": {
+        "number": 4
+      },
+      "title": {
+        "number": 2
+      }
+    },
+    "module": "MAWArmadilloXMATableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloXMATableSchema.pb",
+    "matches": "name = \"CTAProto\""
+  },
+  "literals": [
+    "CTAProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

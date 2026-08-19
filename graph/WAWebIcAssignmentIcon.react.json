@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebGalaxyFlowsResponseDownloadFlow.react"],"dependent_count":2,"exports":[{"name":"IcAssignmentIcon","used_by":["WAWebAllGeneratedIcons","WAWebGalaxyFlowsResponseDownloadFlow.react"],"uses":2}]}

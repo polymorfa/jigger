@@ -1,0 +1,39 @@
+{
+  "id": "proto:WASignalLocalStorageProtocol.RecordStructure",
+  "kind": "proto",
+  "name": "WASignalLocalStorageProtocol.RecordStructure",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "currentSession": {
+        "number": 1,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure"
+      },
+      "previousSessions": {
+        "number": 2,
+        "type_name": "WASignalLocalStorageProtocol.SessionStructure"
+      }
+    },
+    "module": "WASignalLocalStorageProtocol.pb"
+  },
+  "evidence": {
+    "module": "WASignalLocalStorageProtocol.pb",
+    "matches": "name = \"RecordStructure\""
+  },
+  "literals": [
+    "RecordStructure"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WACryptoManager",
+      "WASignalKeys",
+      "WASignalSignatures",
+      "WAWebCryptoLibraryDbCallbacksApi"
+    ],
+    "dep_count": 1,
+    "dependent_count": 4
+  }
+}

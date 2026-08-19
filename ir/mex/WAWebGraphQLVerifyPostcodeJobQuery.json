@@ -1,0 +1,62 @@
+{
+  "id": "mex:WAWebGraphQLVerifyPostcodeJobQuery",
+  "kind": "mex",
+  "name": "WAWebGraphQLVerifyPostcodeJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "WAWebGraphQLVerifyPostcodeJobQuery",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "args": [
+      {
+        "name": "request"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_product_catalog_get_verify_postcode",
+        "ty": "XWAProductCatalogGetVerifyPostcodeResponseSuccess",
+        "args": [
+          "request: $request"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "postcode_verification_result",
+            "ty": "XWAProductCatalogGetVerifyPostcodeResponseSuccessPostcodeVerificationResult",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "result_code",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "encrypted_location_name",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document WAWebGraphQLVerifyPostcodeJobQuery\nquery GraphQLVerifyPostcodeJobQuery(\n  $request\n) {\n  xwa_product_catalog_get_verify_postcode(request: $request) {  # XWAProductCatalogGetVerifyPostcodeResponseSuccess\n    postcode_verification_result {  # XWAProductCatalogGetVerifyPostcodeResponseSuccessPostcodeVerificationResult\n      result_code\n      encrypted_location_name\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebGraphQLVerifyPostcodeJobQuery.graphql",
+    "matches": "id:\\s*\"WAWebGraphQLVerifyPostcodeJobQuery\""
+  },
+  "literals": [
+    "WAWebGraphQLVerifyPostcodeJobQuery",
+    "WAWebGraphQLVerifyPostcodeJobQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGraphQLVerifyPostcodeJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

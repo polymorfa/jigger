@@ -1,0 +1,32 @@
+{
+  "id": "sig:receipt/biz",
+  "kind": "sig",
+  "name": "ReceiptDeliverBizFeatureIncapableTypeWithReasonMixin",
+  "data": {
+    "kind": "sig",
+    "root": "receipt",
+    "children": [
+      "biz"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInReceiptDeliverBizFeatureIncapableTypeWithReasonMixin",
+    "matches": "assertTag\\([a-z], \"receipt\"\\)"
+  },
+  "literals": [
+    "receipt",
+    "biz"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInReceiptDeliverFeatureIncapableErrorTypeMixin",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInReceiptBizErrorType"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

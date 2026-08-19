@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatLoadMessages","WAWebChatMessageSearch","WAWebHandleNewMsgAction","WAWebWebcMessageQueryWamEvent"],"dependent_count":4,"exports":[{"name":"WEBC_QUERY_TRIGGER_TYPE","used_by":["WAWebChatLoadMessages","WAWebChatMessageSearch","WAWebHandleNewMsgAction","WAWebWebcMessageQueryWamEvent"],"uses":4}]}

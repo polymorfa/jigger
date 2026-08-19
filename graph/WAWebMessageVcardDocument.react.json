@@ -1,0 +1,1 @@
+{"deps":["fbt","WAMemoizeOne","WAWebMessageMultiVcard.react","WAWebMessageVcard.react","WAWebMsgModelPropUtils","WAWebServerPropConstants","WAWebVcardGetNameFromParsed","WAWebWamEnumWebcRmrReasonCode","react","useWAWebModelValues"],"dependents":["WAWebMessageComponent.react"],"dependent_count":1,"exports":[]}

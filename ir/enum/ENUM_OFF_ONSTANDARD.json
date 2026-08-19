@@ -1,0 +1,39 @@
+{
+  "id": "enum:ENUM_OFF_ONSTANDARD",
+  "kind": "enum",
+  "name": "ENUM_OFF_ONSTANDARD",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInPrivacyEnums",
+    "variants": [
+      {
+        "name": "off",
+        "value": "off"
+      },
+      {
+        "name": "on_standard",
+        "value": "on_standard"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInPrivacyEnums",
+    "matches": "ENUM_OFF_ONSTANDARD\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_OFF_ONSTANDARD",
+    "off",
+    "on_standard"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInPrivacyDeprecatedIQErrorResponseOptionalFromMixin",
+      "WASmaxInPrivacyDeprecatedIQResultResponseOptionalFromMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

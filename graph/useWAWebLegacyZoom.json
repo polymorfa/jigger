@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaIncrementalZoom","WAWebMediaViewerConstants","react","react-compiler-runtime"],"dependents":["WAWebMediaIncrementalZoom"],"dependent_count":1,"exports":[{"name":"useWAWebLegacyZoom","used_by":["WAWebMediaIncrementalZoom"],"uses":1}]}

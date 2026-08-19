@@ -1,0 +1,37 @@
+{
+  "id": "appstate:pnForLidChat",
+  "kind": "appstate",
+  "name": "PnForLidChat",
+  "data": {
+    "kind": "appstate",
+    "index_name": "pnForLidChat",
+    "collection": "regular",
+    "version": 8,
+    "value_field": "pnForLidChatAction"
+  },
+  "evidence": {
+    "module": "WAWebPnForLidChatSync",
+    "matches": "Actions\\.PnForLidChat"
+  },
+  "literals": [
+    "pnForLidChat",
+    "PnForLidChat",
+    "pnForLidChatAction"
+  ],
+  "graph": {
+    "deps": [
+      "WALogger",
+      "WAWebDBCreateLidPnMappings",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 7,
+    "dependent_count": 1
+  }
+}

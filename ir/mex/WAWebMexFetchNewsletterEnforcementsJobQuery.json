@@ -1,0 +1,787 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterEnforcementsJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterEnforcementsJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27835373536068060",
+    "operation": "query",
+    "variables": [
+      "newsletter_id",
+      "locale"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "locale"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_channel_enforcements",
+        "ty": "XWA2ChannelEnforcementsResponse",
+        "args": [
+          "channel_id: $newsletter_id",
+          "locale: $locale"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "admin_profiles",
+            "ty": "XWA2BaseEnforcementData",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "enforcement_creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_state",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_violation_category",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_source",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_reason_options",
+                "ty": "XWA2EnforcementAppealReasonOption",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "reason",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "label",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "enforcement_extra_data",
+                "ty": "XWA2EnforcementExtraData",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "ip_violation_report_data",
+                    "ty": "XWA2IPViolationReportData",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "report_fbid",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "appeal_form_url",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "reporter_email",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "reporter_name",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "enforcement_target_data",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "__typename",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "... on XWA2NewsletterAdminProfile",
+                        "kind": "InlineFragment",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "name",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "picture",
+                            "ty": "XWA2Picture",
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "id",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "direct_path",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "enforcement_policy_information",
+                "ty": "XWA2EnforcementPolicyInformation",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "overview",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "headline",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "subtitle",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "explanation",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "admin_disclaimer",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "profile_picture_deletions",
+            "ty": "XWA2BaseEnforcementData",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "enforcement_creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_state",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_violation_category",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_source",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_reason_options",
+                "ty": "XWA2EnforcementAppealReasonOption",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "reason",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "label",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "enforcement_extra_data",
+                "ty": "XWA2EnforcementExtraData",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "ip_violation_report_data",
+                    "ty": "XWA2IPViolationReportData",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "report_fbid",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "appeal_form_url",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "reporter_email",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "reporter_name",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "enforcement_policy_information",
+                "ty": "XWA2EnforcementPolicyInformation",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "overview",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "headline",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "subtitle",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "explanation",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "admin_disclaimer",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "suspensions",
+            "ty": "XWA2BaseEnforcementData",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "appeal_creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_creation_time",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_state",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_violation_category",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "enforcement_source",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "appeal_reason_options",
+                "ty": "XWA2EnforcementAppealReasonOption",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "reason",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "label",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "enforcement_extra_data",
+                "ty": "XWA2EnforcementExtraData",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "ip_violation_report_data",
+                    "ty": "XWA2IPViolationReportData",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "report_fbid",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "appeal_form_url",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "reporter_email",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "reporter_name",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "enforcement_target_data",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "__typename",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "... on XWA2ChannelServerMsgData",
+                        "kind": "InlineFragment",
+                        "selections": [
+                          {
+                            "name": "server_msg_id",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "... on XWA2ChannelStatusData",
+                        "kind": "InlineFragment",
+                        "selections": [
+                          {
+                            "name": "server_id",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "... on XWA2NewsletterAdminProfile",
+                        "kind": "InlineFragment",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "appeal_extra_data",
+                    "ty": "XWA2AppealExtraData",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "appeal_form_url",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "enforcement_policy_information",
+                "ty": "XWA2EnforcementPolicyInformation",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "overview",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "headline",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "subtitle",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "explanation",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "admin_disclaimer",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "violating_messages",
+            "ty": "XWA2ViolatingMessagesEnforcementData",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "base_enforcement_data",
+                "ty": "XWA2BaseEnforcementData",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "enforcement_creation_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_creation_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_state",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "enforcement_id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "enforcement_violation_category",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "enforcement_source",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_reason_options",
+                    "ty": "XWA2EnforcementAppealReasonOption",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "reason",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "label",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "enforcement_extra_data",
+                    "ty": "XWA2EnforcementExtraData",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "ip_violation_report_data",
+                        "ty": "XWA2IPViolationReportData",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "report_fbid",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "appeal_form_url",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "reporter_email",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "reporter_name",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "enforcement_policy_information",
+                    "ty": "XWA2EnforcementPolicyInformation",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "overview",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "headline",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "subtitle",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "explanation",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "admin_disclaimer",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "content_data",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "__typename",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "... on XWA2ChannelServerMsgData",
+                    "kind": "InlineFragment",
+                    "selections": [
+                      {
+                        "name": "server_msg_id",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "... on XWA2ChannelStatusData",
+                    "kind": "InlineFragment",
+                    "selections": [
+                      {
+                        "name": "server_id",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "geosuspensions",
+            "ty": "XWA2GeosuspendedEnforcementData",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "base_enforcement_data",
+                "ty": "XWA2BaseEnforcementData",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "enforcement_creation_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_creation_time",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_state",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "enforcement_id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "enforcement_violation_category",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "enforcement_source",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "appeal_reason_options",
+                    "ty": "XWA2EnforcementAppealReasonOption",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "reason",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "label",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "enforcement_extra_data",
+                    "ty": "XWA2EnforcementExtraData",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "ip_violation_report_data",
+                        "ty": "XWA2IPViolationReportData",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "report_fbid",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "appeal_form_url",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "reporter_email",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "reporter_name",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "enforcement_target_data",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "__typename",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "... on XWA2ChannelServerMsgData",
+                            "kind": "InlineFragment",
+                            "selections": [
+                              {
+                                "name": "server_msg_id",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "... on XWA2ChannelStatusData",
+                            "kind": "InlineFragment",
+                            "selections": [
+                              {
+                                "name": "server_id",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "... on XWA2NewsletterAdminProfile",
+                            "kind": "InlineFragment",
+                            "selections": [
+                              {
+                                "name": "id",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "appeal_extra_data",
+                        "ty": "XWA2AppealExtraData",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "appeal_form_url",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "enforcing_entity_data",
+                        "ty": "XWA2EnforcingEntityData",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "name",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "enforcement_origin_workflow",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "enforcement_origin_legal_basis",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "enforcement_policy_information",
+                    "ty": "XWA2EnforcementPolicyInformation",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "overview",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "headline",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "subtitle",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "explanation",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "admin_disclaimer",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "country_codes",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_channel_enforcements",
+    "document": "# persisted document 27835373536068060\nquery MexFetchNewsletterEnforcementsJobQuery(\n  $newsletter_id\n  $locale\n) {\n  xwa2_channel_enforcements(channel_id: $newsletter_id, locale: $locale) {  # XWA2ChannelEnforcementsResponse\n    admin_profiles {  # [XWA2BaseEnforcementData]\n      enforcement_creation_time\n      appeal_creation_time\n      appeal_state\n      enforcement_violation_category\n      enforcement_source\n      enforcement_id\n      appeal_reason_options {  # [XWA2EnforcementAppealReasonOption]\n        reason\n        label\n      }\n      enforcement_extra_data {  # XWA2EnforcementExtraData\n        ip_violation_report_data {  # XWA2IPViolationReportData\n          report_fbid\n          appeal_form_url\n          reporter_email\n          reporter_name\n        }\n        enforcement_target_data {\n          __typename\n          ... on XWA2NewsletterAdminProfile {\n            id\n            name\n            picture {  # XWA2Picture\n              id\n              direct_path\n            }\n          }\n        }\n      }\n      enforcement_policy_information {  # XWA2EnforcementPolicyInformation\n        overview\n        headline\n        subtitle\n        explanation\n        admin_disclaimer\n      }\n    }\n    profile_picture_deletions {  # [XWA2BaseEnforcementData]\n      enforcement_creation_time\n      appeal_creation_time\n      appeal_state\n      enforcement_violation_category\n      enforcement_source\n      enforcement_id\n      appeal_reason_options {  # [XWA2EnforcementAppealReasonOption]\n        reason\n        label\n      }\n      enforcement_extra_data {  # XWA2EnforcementExtraData\n        ip_violation_report_data {  # XWA2IPViolationReportData\n          report_fbid\n          appeal_form_url\n          reporter_email\n          reporter_name\n        }\n      }\n      enforcement_policy_information {  # XWA2EnforcementPolicyInformation\n        overview\n        headline\n        subtitle\n        explanation\n        admin_disclaimer\n      }\n    }\n    suspensions {  # [XWA2BaseEnforcementData]\n      appeal_creation_time\n      enforcement_creation_time\n      appeal_state\n      enforcement_violation_category\n      enforcement_id\n      enforcement_source\n      appeal_reason_options {  # [XWA2EnforcementAppealReasonOption]\n        reason\n        label\n      }\n      enforcement_extra_data {  # XWA2EnforcementExtraData\n        ip_violation_report_data {  # XWA2IPViolationReportData\n          report_fbid\n          appeal_form_url\n          reporter_email\n          reporter_name\n        }\n        enforcement_target_data {\n          __typename\n          ... on XWA2ChannelServerMsgData {\n            server_msg_id\n          }\n          ... on XWA2ChannelStatusData {\n            server_id\n          }\n          ... on XWA2NewsletterAdminProfile {\n            id\n          }\n        }\n        appeal_extra_data {  # XWA2AppealExtraData\n          appeal_form_url\n        }\n      }\n      enforcement_policy_information {  # XWA2EnforcementPolicyInformation\n        overview\n        headline\n        subtitle\n        explanation\n        admin_disclaimer\n      }\n    }\n    violating_messages {  # [XWA2ViolatingMessagesEnforcementData]\n      base_enforcement_data {  # XWA2BaseEnforcementData\n        enforcement_creation_time\n        appeal_creation_time\n        appeal_state\n        enforcement_id\n        enforcement_violation_category\n        enforcement_source\n        appeal_reason_options {  # [XWA2EnforcementAppealReasonOption]\n          reason\n          label\n        }\n        enforcement_extra_data {  # XWA2EnforcementExtraData\n          ip_violation_report_data {  # XWA2IPViolationReportData\n            report_fbid\n            appeal_form_url\n            reporter_email\n            reporter_name\n          }\n        }\n        enforcement_policy_information {  # XWA2EnforcementPolicyInformation\n          overview\n          headline\n          subtitle\n          explanation\n          admin_disclaimer\n        }\n      }\n      content_data {\n        __typename\n        ... on XWA2ChannelServerMsgData {\n          server_msg_id\n        }\n        ... on XWA2ChannelStatusData {\n          server_id\n        }\n      }\n    }\n    geosuspensions {  # [XWA2GeosuspendedEnforcementData]\n      base_enforcement_data {  # XWA2BaseEnforcementData\n        enforcement_creation_time\n        appeal_creation_time\n        appeal_state\n        enforcement_id\n        enforcement_violation_category\n        enforcement_source\n        appeal_reason_options {  # [XWA2EnforcementAppealReasonOption]\n          reason\n          label\n        }\n        enforcement_extra_data {  # XWA2EnforcementExtraData\n          ip_violation_report_data {  # XWA2IPViolationReportData\n            report_fbid\n            appeal_form_url\n            reporter_email\n            reporter_name\n          }\n          enforcement_target_data {\n            __typename\n            ... on XWA2ChannelServerMsgData {\n              server_msg_id\n            }\n            ... on XWA2ChannelStatusData {\n              server_id\n            }\n            ... on XWA2NewsletterAdminProfile {\n              id\n            }\n          }\n          appeal_extra_data {  # XWA2AppealExtraData\n            appeal_form_url\n          }\n          enforcing_entity_data {  # XWA2EnforcingEntityData\n            name\n          }\n          enforcement_origin_workflow\n          enforcement_origin_legal_basis\n        }\n        enforcement_policy_information {  # XWA2EnforcementPolicyInformation\n          overview\n          headline\n          subtitle\n          explanation\n          admin_disclaimer\n        }\n      }\n      country_codes\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterEnforcementsJobQuery.graphql",
+    "matches": "id:\\s*\"27835373536068060\""
+  },
+  "literals": [
+    "27835373536068060",
+    "WAWebMexFetchNewsletterEnforcementsJobQuery",
+    "xwa2_channel_enforcements"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterEnforcementsJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

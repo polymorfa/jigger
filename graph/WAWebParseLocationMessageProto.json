@@ -1,0 +1,1 @@
+{"deps":["WALongInt","WAWebE2EProtoParserApi","WAWebE2EProtoUtils","WAWebMsgType"],"dependents":["WAWebButtonsMessageProtoUtils","WAWebMessagePluginParseProtobufRegistry","WAWebParseTemplateMessageProto"],"dependent_count":3,"exports":[{"name":"default","used_by":[],"uses":0}]}

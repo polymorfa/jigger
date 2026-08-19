@@ -1,0 +1,50 @@
+{
+  "id": "enum:WAFFLE_LIFECYCLE_LINK_STATE_TYPE",
+  "kind": "enum",
+  "name": "WAFFLE_LIFECYCLE_LINK_STATE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWaffleLifecycleLinkStateType",
+    "variants": [
+      {
+        "name": "NOT_APPLICABLE",
+        "value": 0.0
+      },
+      {
+        "name": "ACTIVE",
+        "value": 1.0
+      },
+      {
+        "name": "PAUSED",
+        "value": 2.0
+      },
+      {
+        "name": "UNLINKED",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWaffleLifecycleLinkStateType",
+    "matches": "WAFFLE_LIFECYCLE_LINK_STATE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WAFFLE_LIFECYCLE_LINK_STATE_TYPE",
+    "NOT_APPLICABLE",
+    "ACTIVE",
+    "PAUSED",
+    "UNLINKED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAccountLinkingHandler",
+      "WAWebAccountLinkingNotificationHandler",
+      "WAWebWaffleAccountLinkStateSync",
+      "WAWebWaffleCompanionStateLifecycleWamEvent",
+      "WAWebWaffleLifecycleWamLogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,173 @@
+__d("WAWebHistorySyncNotificationUtils", [
+	"$InternalEnum",
+	"Promise",
+	"WALogger",
+	"WALongInt",
+	"WATimeUtils",
+	"WAWebApiHistorySyncNotification",
+	"WAWebChatCollection",
+	"WAWebChatThreadLogging",
+	"WAWebDBGroupParticipant",
+	"WAWebDBGroupsGroupMetadata",
+	"WAWebEphemeralityUtils",
+	"WAWebGroupMetadataCollection",
+	"WAWebGroupParticipantModel",
+	"WAWebGroupParticipantsJob",
+	"WAWebHistorySyncLogUtils",
+	"WAWebLeaveReasonType",
+	"WAWebProtobufsHistorySync.pb",
+	"WAWebSchemaHistorySyncNotification",
+	"WAWebSignalProtocolStore",
+	"WAWebWamEnumMdBootstrapStepResult",
+	"WAWebWidFactory",
+	"asyncToGeneratorRuntime",
+	"nullthrows"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u, c, d, m, p = n("$InternalEnum").Mirrored([
+		"NewRecentSyncNotification",
+		"NewOnDemandSyncNotification",
+		"LastProcessedNotification",
+		"InitialSyncComplete",
+		"BackendStart",
+		"HistorySyncStatusCheck",
+		"ManualRestart"
+	]);
+	function _(e, t) {
+		return f.apply(this, arguments);
+	}
+	function f() {
+		return f = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e, t) {
+			var n = e.pastParticipants.map(function(e) {
+				return {
+					groupId: r("nullthrows")(e.groupJid),
+					pastParticipants: e.pastParticipants.map(function(e) {
+						return {
+							id: o("WAWebWidFactory").createWid(r("nullthrows")(e.userJid)),
+							leaveReason: e.leaveReason === o("WAWebProtobufsHistorySync.pb").PastParticipant$LeaveReason.LEFT ? o("WAWebLeaveReasonType").LeaveReason.Left : o("WAWebLeaveReasonType").LeaveReason.Removed,
+							leaveTs: o("WALongInt").numberOrThrowIfTooLarge(r("nullthrows")(e.leaveTs))
+						};
+					})
+				};
+			});
+			yield o("WAWebDBGroupParticipant").addPastParticipants(n), n.forEach(function(e) {
+				var t = o("WAWebChatCollection").ChatCollection.gadd(o("WAWebWidFactory").createWid(e.groupId)), n = t.groupMetadata;
+				n == null || n.pastParticipants.add(e.pastParticipants, { merge: !0 });
+			}), o("WALogger").LOG(c || (c = babelHelpers.taggedTemplateLiteralLoose(["[history sync] Past Participants completed, ", ""])), o("WAWebHistorySyncLogUtils").getHistorySyncLogDetailsString(t));
+		}), f.apply(this, arguments);
+	}
+	function g(e, t) {
+		return h.apply(this, arguments);
+	}
+	function h() {
+		return h = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e, t) {
+			var n = yield o("WAWebSignalProtocolStore").getPersistSignalProtocolStore().loadIdentityKey(e);
+			n != null && n !== t && o("WALogger").ERROR(d || (d = babelHelpers.taggedTemplateLiteralLoose([
+				"[history sync] get changed self identity key from history sync,\n     existing length: ",
+				", new length: ",
+				""
+			])), n.length, t.length).tags("history-sync").sendLogs("self-identity-change-from-history-sync");
+		}), h.apply(this, arguments);
+	}
+	function y(t, n) {
+		var a;
+		if (n.isGroup()) {
+			var i = (a = t.disappearingMode) == null ? void 0 : a.trigger, l;
+			if (i != null) {
+				var s = o("WAWebEphemeralityUtils").getDisappearingModeTriggerFromProtobuf(i);
+				s != null && (l = s);
+			}
+			if (t.suspended != null || t.terminated != null || t.createdBy != null || t.createdAt != null || t.description != null || t.support != null || t.isParentGroup != null || t.isDefaultSubgroup != null || t.parentGroupId != null || t.disappearingMode != null || t.appealStatus != null || t.appealUpdateTime != null) {
+				var u, c, d = {
+					id: n,
+					subject: t.name,
+					suspended: t.suspended,
+					terminated: t.terminated,
+					owner: t.createdBy != null ? o("WAWebWidFactory").createWid(t.createdBy) : void 0,
+					creation: t.createdAt,
+					desc: t.description,
+					support: t.support,
+					isParentGroup: t.isParentGroup,
+					defaultSubgroup: t.isDefaultSubgroup,
+					parentGroup: t.parentGroupId != null ? o("WAWebWidFactory").createWid(t.parentGroupId) : void 0,
+					disappearingModeInitiatedByMe: (u = t.disappearingMode) == null ? void 0 : u.initiatedByMe,
+					disappearingModeTrigger: l,
+					suspendAppealStatus: t.appealStatus != null ? t.appealStatus === o("WAWebProtobufsHistorySync.pb").Conversation$GroupAppealStatus.APPEAL_IN_REVIEW ? "IN_REVIEW" : t.appealStatus === o("WAWebProtobufsHistorySync.pb").Conversation$GroupAppealStatus.APPEAL_APPROVED ? "APPROVED" : t.appealStatus === o("WAWebProtobufsHistorySync.pb").Conversation$GroupAppealStatus.APPEAL_REJECTED ? "REJECTED" : t.appealStatus === o("WAWebProtobufsHistorySync.pb").Conversation$GroupAppealStatus.NO_APPEAL ? null : (function() {
+						throw Error("Match: No case succesfully matched. Make exhaustive or add a wildcard case using '_'. Argument: " + t.appealStatus);
+					})() : void 0,
+					suspendAppealUpdateTime: t.appealUpdateTime != null ? Number(t.appealUpdateTime) : void 0
+				};
+				o("WAWebDBGroupsGroupMetadata").persistGroupMetadata(n, babelHelpers.extends({}, d, {
+					id: d.id.toString(),
+					owner: d.owner !== void 0 ? d.owner.toString() : void 0,
+					creation: d.creation !== void 0 ? Number(d.creation) : void 0,
+					parentGroup: d.parentGroup !== void 0 ? String(d.parentGroup) : void 0
+				}));
+				var m = r("WAWebGroupMetadataCollection").add(babelHelpers.extends({}, d), { merge: !0 })[0], p = (c = t.participant) == null ? void 0 : c.map(function(e) {
+					var t = e.rank === o("WAWebProtobufsHistorySync.pb").GroupParticipant$Rank.SUPERADMIN, n = e.rank === o("WAWebProtobufsHistorySync.pb").GroupParticipant$Rank.ADMIN;
+					return new (r("WAWebGroupParticipantModel"))({
+						id: o("WAWebWidFactory").createWid(e.userJid),
+						isAdmin: n || t,
+						isSuperAdmin: t
+					});
+				});
+				m == null || m.participants.add(p, { merge: !0 }), (t.readOnly === !0 || p.length > 0) && o("WAWebGroupParticipantsJob").updateParticipantsJob({
+					group: n,
+					participants: p.map(function(e) {
+						return {
+							id: e.id,
+							isAdmin: e.isAdmin,
+							isSuperAdmin: e.isSuperAdmin
+						};
+					}),
+					skipDeviceSync: t.readOnly
+				}).catch(function(t) {
+					o("WALogger").WARN(e || (e = babelHelpers.taggedTemplateLiteralLoose(["updateParticipantsJob: failed: ", ""])), t);
+				});
+			}
+		}
+	}
+	function C(e) {
+		var t = (m || (m = n("Promise"))).resolve(), r = m.resolve();
+		return e.threadIdUserSecret != null ? t = o("WAWebChatThreadLogging").setThreadIdUserSecret(e.threadIdUserSecret) : o("WALogger").ERROR(s || (s = babelHelpers.taggedTemplateLiteralLoose(["[history sync] handleChatThreadLoggingMetadata: missing threadIdUserSecret"]))).sendLogs("ctl-missing-secret-history-sync"), e.threadDsTimeframeOffset != null ? r = o("WAWebChatThreadLogging").setThreadDsTimeframeOffset(e.threadDsTimeframeOffset) : o("WALogger").ERROR(u || (u = babelHelpers.taggedTemplateLiteralLoose(["[history sync] handleChatThreadLoggingMetadata: missing threadDsTimeframeOffset"]))).sendLogs("ctl-missing-offset-history-sync"), m.all([t, r]);
+	}
+	function b(e, t, n) {
+		e.mdTimestamp = n, e.mdBootstrapStepDuration = n - t, e.commit();
+	}
+	function v(e) {
+		var t = e.chunkDownloadFinishTimestamp, n = e.failureReason, r = e.historySyncDownloadMetric, a = e.isSuccess, i = e.startTs;
+		r.mdTimestamp = t, r.mdBootstrapStepDuration = t - i, r.mdBootstrapStepResult = a ? o("WAWebWamEnumMdBootstrapStepResult").MD_BOOTSTRAP_STEP_RESULT.SUCCESS : o("WAWebWamEnumMdBootstrapStepResult").MD_BOOTSTRAP_STEP_RESULT.FAILURE, n != null && (r.mdSyncFailureReason = n), r.commit();
+	}
+	function S(e) {
+		return R.apply(this, arguments);
+	}
+	function R() {
+		return R = n("asyncToGeneratorRuntime").asyncToGenerator(function* (e) {
+			var t = e.failureReason, n = e.forceFlushWamBuffer, r = e.historySyncDataAppliedMetric, a = e.isSuccess, i = e.startTs, l = o("WATimeUtils").unixTimeMs();
+			return r.mdTimestamp = l, r.mdBootstrapStepDuration = l - i, r.mdBootstrapStepResult = a ? o("WAWebWamEnumMdBootstrapStepResult").MD_BOOTSTRAP_STEP_RESULT.SUCCESS : o("WAWebWamEnumMdBootstrapStepResult").MD_BOOTSTRAP_STEP_RESULT.FAILURE, t != null && (r.mdSyncFailureReason = t), r.commitAndWaitForFlush(n);
+		}), R.apply(this, arguments);
+	}
+	function L(e) {
+		return [
+			o("WAWebProtobufsHistorySync.pb").HistorySync$HistorySyncType.INITIAL_BOOTSTRAP,
+			o("WAWebProtobufsHistorySync.pb").HistorySync$HistorySyncType.INITIAL_STATUS_V3,
+			o("WAWebProtobufsHistorySync.pb").HistorySync$HistorySyncType.PUSH_NAME,
+			o("WAWebProtobufsHistorySync.pb").HistorySync$HistorySyncType.ON_DEMAND
+		].includes(e.syncType) && e.initialHistBootstrapInlinePayload != null && (e == null ? void 0 : e.initialHistBootstrapInlinePayload.byteLength) > 0 ? e.initialHistBootstrapInlinePayload : null;
+	}
+	function E() {
+		return k.apply(this, arguments);
+	}
+	function k() {
+		return k = n("asyncToGeneratorRuntime").asyncToGenerator(function* () {
+			return o("WAWebSchemaHistorySyncNotification").getHistorySyncNotificationTable().equals(["processed", "syncType"], [0, o("WAWebProtobufsHistorySync.pb").HistorySync$HistorySyncType.RECENT], { shouldDecrypt: !1 }).then(function(e) {
+				return e.filter(function(e) {
+					return !o("WAWebApiHistorySyncNotification").inFlightChunk.has(e.msgKey) && !e.reuploadPending;
+				}).sort(function(e, t) {
+					var n, r;
+					return ((n = e.chunkOrder) != null ? n : 0) - ((r = t.chunkOrder) != null ? r : 0);
+				});
+			});
+		}), k.apply(this, arguments);
+	}
+	l.HistorySyncScheduleSource = p, l.processPastParticipants = _, l.getHistorySyncBasicChunkInfoString = o("WAWebHistorySyncLogUtils").getHistorySyncBasicChunkInfoString, l.getHistorySyncLogDetailsString = o("WAWebHistorySyncLogUtils").getHistorySyncLogDetailsString, l.checkSelfHistorySyncIdentity = g, l.saveGroupMetadataForLeftGroup = y, l.handleChatThreadLoggingMetadata = C, l.commitHistoryStartDownloadingMetric = b, l.commitHistoryDownloadedMetric = v, l.commitHistoryDataAppliedMetric = S, l.maybeGetInlinePayload = L, l.getUnprocessedRecentSyncNotifications = E;
+}), 98);

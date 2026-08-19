@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WAWebLazyLoadLoading.react","WAWebLazyLoadedRetriable","WAWebLoadable","asyncToGeneratorRuntime","react"],"dependents":["useWAWebConversationPanelCanCompose"],"dependent_count":1,"exports":[{"name":"IndividualNewChatMessageCappedComposeBarLoadable","used_by":["useWAWebConversationPanelCanCompose"],"uses":1}]}

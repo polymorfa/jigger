@@ -1,0 +1,1 @@
+{"deps":["WAWebAppTracker","WAWebCallCollection","WAWebNetworkStatus","WAWebVoipPhaseTracker","cr:13156","cr:13920"],"dependents":["WAWebAppBootstrap"],"dependent_count":1,"exports":[{"name":"initializeMetricsAttributionObservers","used_by":["WAWebAppBootstrap"],"uses":1}]}

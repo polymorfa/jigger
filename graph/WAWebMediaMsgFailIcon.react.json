@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFailIcon.react","WAWebFrontendMsgGetters","WAWebMediaMsgTooLargeFailIcon.react","WAWebMediaTypes","WAWebMsgGetters","WAWebMsgType","react","react-compiler-runtime","useWAWebModelValues","useWAWebMsgValues"],"dependents":["WAWebMsgFailIcon.react"],"dependent_count":1,"exports":[]}

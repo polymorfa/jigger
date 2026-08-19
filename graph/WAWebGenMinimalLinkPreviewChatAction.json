@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebLinkPreviewUtils","WAWebUserPrefsGeneral"],"dependents":["WAWebComposeBox.react","WAWebLinkPreviewChatAction","WAWebNewsletterFetchLinkPreviewAction"],"dependent_count":3,"exports":[{"name":"genMinimalLinkPreview","used_by":["WAWebComposeBox.react","WAWebLinkPreviewChatAction","WAWebNewsletterFetchLinkPreviewAction"],"uses":3}]}

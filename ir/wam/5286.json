@@ -1,0 +1,85 @@
+{
+  "id": "wam:5286",
+  "kind": "wam",
+  "name": "ChatThreadWallpaper",
+  "data": {
+    "kind": "wam",
+    "event_id": 5286,
+    "fields": {
+      "appearanceType": {
+        "id": 5,
+        "type": "DEVICE_APPEARANCE_TYPE",
+        "wire": "appearance_type",
+        "enum_ref": "DEVICE_APPEARANCE_TYPE"
+      },
+      "belongsToCommunity": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "belongs_to_community"
+      },
+      "chatThemeId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "chat_theme_id"
+      },
+      "chatThemeSource": {
+        "id": 7,
+        "type": "CHAT_THEME_ENTRY_TYPE",
+        "wire": "chat_theme_source",
+        "enum_ref": "CHAT_THEME_ENTRY_TYPE"
+      },
+      "chatType": {
+        "id": 2,
+        "type": "MESSAGE_CHAT_TYPE",
+        "wire": "chat_type",
+        "enum_ref": "MESSAGE_CHAT_TYPE"
+      },
+      "colorSchemeId": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "color_scheme_id"
+      },
+      "threadId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "thread_id"
+      },
+      "wallpaperApplied": {
+        "id": 4,
+        "type": "BOOLEAN",
+        "wire": "wallpaper_applied"
+      },
+      "wallpaperId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "wallpaper_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChatThreadWallpaperWamEvent",
+    "matches": "ChatThreadWallpaper:\\s*\\[\\s*5286"
+  },
+  "literals": [
+    "5286"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChatThemeEntryType",
+      "WAWebWamEnumDeviceAppearanceType",
+      "WAWebWamEnumMessageChatType"
+    ],
+    "dependents": [
+      "WAWebChatThemeLogger"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

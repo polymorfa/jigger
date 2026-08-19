@@ -1,0 +1,1 @@
+{"deps":["WAAsConsumerApplication","WAWebImageIcon.react","WAWebVideoPlaceholderIcon.react","WDSIconIcDescription.react","react","react-compiler-runtime","stylex"],"dependents":["WAWebSendMsgAttachmentPreview.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

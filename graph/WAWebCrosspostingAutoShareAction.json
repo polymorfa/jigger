@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebSettingsModel","WAWebStatusSetAndSyncPrivacy","WAWebUserPrefsStatus","WAWebUserPrefsStatusType","asyncToGeneratorRuntime"],"dependents":["WAWebStatusPrivacySettingOptionsDrawer.react"],"dependent_count":1,"exports":[{"name":"toggleCrosspostAutoShare","used_by":["WAWebStatusPrivacySettingOptionsDrawer.react"],"uses":1}]}

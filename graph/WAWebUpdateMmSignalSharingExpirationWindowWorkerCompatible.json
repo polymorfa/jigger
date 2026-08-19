@@ -1,0 +1,1 @@
+{"deps":["nullthrows"],"dependents":["WAWebBackendWorkerV2","WAWebE2EProtoParser","WAWebStartBackend","WAWebStartBackendWorker"],"dependent_count":4,"exports":[{"name":"setInstance","used_by":["WAWebBackendWorkerV2","WAWebStartBackend"],"uses":2},{"name":"updateMmSignalSharingExpirationWindow","used_by":["WAWebE2EProtoParser","WAWebStartBackendWorker"],"uses":2}]}

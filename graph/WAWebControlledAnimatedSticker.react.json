@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaAnimatedStickerUrlProvider","nullthrows","react","useWAWebIntersection","useWAWebListener","useWAWebSetModelValue","useWAWebTimeout"],"dependents":["WAWebSticker.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

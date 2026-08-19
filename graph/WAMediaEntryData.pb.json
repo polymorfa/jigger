@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst"],"dependents":["WAMediaUtils"],"dependent_count":1,"exports":[{"name":"MediaEntrySpec","used_by":["WAMediaUtils"],"uses":1},{"name":"MediaEntry$DownloadableThumbnailSpec","used_by":[],"uses":0},{"name":"MediaEntry$ProgressiveJpegDetailsSpec","used_by":[],"uses":0}]}

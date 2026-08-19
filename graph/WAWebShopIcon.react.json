@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebCommerceButton.react"],"dependent_count":2,"exports":[{"name":"ShopIcon","used_by":["WAWebAllGeneratedIcons","WAWebCommerceButton.react"],"uses":2}]}

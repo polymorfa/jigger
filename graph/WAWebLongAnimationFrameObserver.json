@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebDocumentVisibilityObserver","WAWebPdfViewerLongAnimationFrameTracker"],"dependents":["WAWebPerformanceObserver"],"dependent_count":1,"exports":[{"name":"WAWebLongAnimationFrameObserver","used_by":[],"uses":0}]}

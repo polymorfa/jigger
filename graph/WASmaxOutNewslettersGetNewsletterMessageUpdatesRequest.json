@@ -1,0 +1,1 @@
+{"deps":["WASmaxAttrs","WASmaxJsx","WASmaxOutNewslettersMessageUpdatesBeforeOrAfterMixinMixinGroup","WASmaxOutNewslettersNewsletterIQGetRequestMixin","WAWap"],"dependents":["WASmaxNewslettersGetNewsletterMessageUpdatesRPC"],"dependent_count":1,"exports":[{"name":"makeGetNewsletterMessageUpdatesRequest","used_by":["WASmaxNewslettersGetNewsletterMessageUpdatesRPC"],"uses":1}]}

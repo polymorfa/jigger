@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_status_resharer_flow_enabled",
+  "kind": "ab",
+  "name": "wa_web_status_resharer_flow_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28812,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_status_resharer_flow_enabled:\\s*\\[\\s*28812"
+  },
+  "literals": [
+    "wa_web_status_resharer_flow_enabled",
+    "28812"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStatusGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

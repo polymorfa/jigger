@@ -1,0 +1,1 @@
+{"deps":["WASmaxInRtcE2eeCallEventNotifyCallEventNotificationRequest","WASmaxOutRtcE2eeCallEventNotifyCallEventNotificationResponseAck","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WAParseRtcE2eeCallEventNotification"],"dependent_count":1,"exports":[{"name":"receiveCallEventNotificationRPC","used_by":["WAParseRtcE2eeCallEventNotification"],"uses":1}]}

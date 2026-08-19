@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_chat_meta_ai_glasses_banner_enabled",
+  "kind": "ab",
+  "name": "ai_chat_meta_ai_glasses_banner_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 20405,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_chat_meta_ai_glasses_banner_enabled:\\s*\\[\\s*20405"
+  },
+  "literals": [
+    "ai_chat_meta_ai_glasses_banner_enabled",
+    "20405"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

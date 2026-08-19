@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebGroupType","WAWebThreadInteractionDataCoreConsumerWamEvent","WAWebWamEnumChatMutedType","err"],"dependents":["WAWebChatThreadLoggingEventUploader"],"dependent_count":1,"exports":[{"name":"ThreadInteractionCoreConsumerWamTrigger","used_by":["WAWebChatThreadLoggingEventUploader"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCopyToClipboard","WAWebDrawerButton.react","WAWebToast.react","WAWebToastManager","WDSIconIcContentCopy.react","react","react-compiler-runtime"],"dependents":["WAWebGroupInviteLinkDrawer.react","WAWebProductCatalogCatalogLinkDrawer.react","WAWebProductCatalogProductLinkDrawer.react"],"dependent_count":3,"exports":[]}

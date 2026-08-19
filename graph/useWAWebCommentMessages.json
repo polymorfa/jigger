@@ -1,0 +1,1 @@
+{"deps":["WAWebAddonHydrationUtils","WAWebCommentCollection","WAWebMsgType","react","useWAWebAggregatedMultiple"],"dependents":["WAWebAddOnBubblesContainerConditions","WAWebCommentsModal.react"],"dependent_count":2,"exports":[{"name":"useHydrateAndAggregateComments","used_by":["WAWebAddOnBubblesContainerConditions","WAWebCommentsModal.react"],"uses":2}]}

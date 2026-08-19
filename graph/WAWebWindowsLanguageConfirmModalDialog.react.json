@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebModalManager","asyncToGeneratorRuntime","react"],"dependents":["WAWebWindowsLanguageDropdownButton.react"],"dependent_count":1,"exports":[]}

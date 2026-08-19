@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaEditorEnumsFonts"],"dependents":["WAWebMediaEditorLayersText"],"dependent_count":1,"exports":[{"name":"generateTextBackgroundPath","used_by":["WAWebMediaEditorLayersText"],"uses":1}]}

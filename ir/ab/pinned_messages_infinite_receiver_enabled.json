@@ -1,0 +1,42 @@
+{
+  "id": "ab:pinned_messages_infinite_receiver_enabled",
+  "kind": "ab",
+  "name": "pinned_messages_infinite_receiver_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31886,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pinned_messages_infinite_receiver_enabled:\\s*\\[\\s*31886"
+  },
+  "literals": [
+    "pinned_messages_infinite_receiver_enabled",
+    "31886"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebGroupGatingUtils","WAWebPresenceOrder","react","react-compiler-runtime"],"dependents":["WAWebTypingIndicator.react"],"dependent_count":1,"exports":[{"name":"useWAWebStableActiveUsers","used_by":["WAWebTypingIndicator.react"],"uses":1}]}

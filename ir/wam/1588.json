@@ -1,0 +1,371 @@
+{
+  "id": "wam:1588",
+  "kind": "wam",
+  "name": "MediaUpload2",
+  "data": {
+    "kind": "wam",
+    "event_id": 1588,
+    "fields": {
+      "appContext": {
+        "id": 63,
+        "type": "STRING",
+        "wire": "app_context"
+      },
+      "appContextBitfield": {
+        "id": 64,
+        "type": "INTEGER",
+        "wire": "app_context_bitfield"
+      },
+      "batchSize": {
+        "id": 57,
+        "type": "INTEGER",
+        "wire": "batch_size"
+      },
+      "connectionType": {
+        "id": 43,
+        "type": "CONNECTION_TYPE",
+        "wire": "connection_type",
+        "enum_ref": "CONNECTION_TYPE"
+      },
+      "debugMediaException": {
+        "id": 34,
+        "type": "STRING",
+        "wire": "debug_media_exception"
+      },
+      "debugMediaIp": {
+        "id": 32,
+        "type": "STRING",
+        "wire": "debug_media_ip"
+      },
+      "debugUrl": {
+        "id": 33,
+        "type": "STRING",
+        "wire": "debug_url"
+      },
+      "estimatedBandwidth": {
+        "id": 45,
+        "type": "NUMBER",
+        "wire": "estimated_bandwidth"
+      },
+      "estimatedBandwidthV2": {
+        "id": 61,
+        "type": "NUMBER",
+        "wire": "estimated_bandwidth_v2"
+      },
+      "fileHeight": {
+        "id": 55,
+        "type": "INTEGER",
+        "wire": "file_height"
+      },
+      "fileWidth": {
+        "id": 56,
+        "type": "INTEGER",
+        "wire": "file_width"
+      },
+      "finalizeConnectT": {
+        "id": 28,
+        "type": "TIMER",
+        "wire": "finalize_connect_t"
+      },
+      "finalizeHttpCode": {
+        "id": 31,
+        "type": "INTEGER",
+        "wire": "finalize_http_code"
+      },
+      "finalizeIsReuse": {
+        "id": 30,
+        "type": "BOOLEAN",
+        "wire": "finalize_is_reuse"
+      },
+      "finalizeNetworkT": {
+        "id": 29,
+        "type": "TIMER",
+        "wire": "finalize_network_t"
+      },
+      "httpProtocolVersionType": {
+        "id": 51,
+        "type": "HTTP_PROTOCOL_VERSION_TYPE",
+        "wire": "http_protocol_version_type",
+        "enum_ref": "HTTP_PROTOCOL_VERSION_TYPE"
+      },
+      "isViewOnce": {
+        "id": 49,
+        "type": "BOOLEAN",
+        "wire": "is_view_once"
+      },
+      "mediaCollectionId": {
+        "id": 60,
+        "type": "INTEGER",
+        "wire": "media_collection_id"
+      },
+      "mediaId": {
+        "id": 46,
+        "type": "INTEGER",
+        "wire": "media_id"
+      },
+      "messageKeyHash": {
+        "id": 58,
+        "type": "STRING",
+        "wire": "message_key_hash"
+      },
+      "networkStack": {
+        "id": 42,
+        "type": "NETWORK_STACK_TYPE",
+        "wire": "network_stack",
+        "enum_ref": "NETWORK_STACK_TYPE"
+      },
+      "originalSize": {
+        "id": 53,
+        "type": "INTEGER",
+        "wire": "original_size"
+      },
+      "overallAttemptCount": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "overall_attempt_count"
+      },
+      "overallConnBlockFetchT": {
+        "id": 10,
+        "type": "TIMER",
+        "wire": "overall_conn_block_fetch_t"
+      },
+      "overallConnectionClass": {
+        "id": 41,
+        "type": "STRING",
+        "wire": "overall_connection_class"
+      },
+      "overallCumT": {
+        "id": 37,
+        "type": "TIMER",
+        "wire": "overall_cum_t"
+      },
+      "overallCumUserVisibleT": {
+        "id": 38,
+        "type": "TIMER",
+        "wire": "overall_cum_user_visible_t"
+      },
+      "overallDomain": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "overall_domain"
+      },
+      "overallEncryptT": {
+        "id": 50,
+        "type": "TIMER",
+        "wire": "overall_encrypt_t"
+      },
+      "overallIsFinal": {
+        "id": 36,
+        "type": "BOOLEAN",
+        "wire": "overall_is_final"
+      },
+      "overallIsForward": {
+        "id": 16,
+        "type": "BOOLEAN",
+        "wire": "overall_is_forward"
+      },
+      "overallIsManual": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "overall_is_manual"
+      },
+      "overallLastUploadRetryPhase": {
+        "id": 11,
+        "type": "OVERALL_LAST_UPLOAD_RETRY_PHASE_TYPE",
+        "wire": "overall_last_upload_retry_phase",
+        "enum_ref": "OVERALL_LAST_UPLOAD_RETRY_PHASE_TYPE"
+      },
+      "overallMediaKeyReuse": {
+        "id": 40,
+        "type": "OVERALL_MEDIA_KEY_REUSE_TYPE",
+        "wire": "overall_media_key_reuse",
+        "enum_ref": "OVERALL_MEDIA_KEY_REUSE_TYPE"
+      },
+      "overallMediaSize": {
+        "id": 7,
+        "type": "NUMBER",
+        "wire": "overall_media_size"
+      },
+      "overallMediaType": {
+        "id": 1,
+        "type": "MEDIA_TYPE",
+        "wire": "overall_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "overallMmsVersion": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "overall_mms_version"
+      },
+      "overallOptimisticFlag": {
+        "id": 12,
+        "type": "OPTIMISTIC_FLAG_TYPE",
+        "wire": "overall_optimistic_flag",
+        "enum_ref": "OPTIMISTIC_FLAG_TYPE"
+      },
+      "overallQueueT": {
+        "id": 9,
+        "type": "TIMER",
+        "wire": "overall_queue_t"
+      },
+      "overallRetryCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "overall_retry_count"
+      },
+      "overallT": {
+        "id": 8,
+        "type": "TIMER",
+        "wire": "overall_t"
+      },
+      "overallTranscodeT": {
+        "id": 15,
+        "type": "TIMER",
+        "wire": "overall_transcode_t"
+      },
+      "overallUploadMode": {
+        "id": 39,
+        "type": "MEDIA_UPLOAD_MODE_TYPE",
+        "wire": "overall_upload_mode",
+        "enum_ref": "MEDIA_UPLOAD_MODE_TYPE"
+      },
+      "overallUploadOrigin": {
+        "id": 44,
+        "type": "UPLOAD_ORIGIN_TYPE",
+        "wire": "overall_upload_origin",
+        "enum_ref": "UPLOAD_ORIGIN_TYPE"
+      },
+      "overallUploadResult": {
+        "id": 35,
+        "type": "MEDIA_UPLOAD_RESULT_TYPE",
+        "wire": "overall_upload_result",
+        "enum_ref": "MEDIA_UPLOAD_RESULT_TYPE"
+      },
+      "overallUserVisibleT": {
+        "id": 14,
+        "type": "TIMER",
+        "wire": "overall_user_visible_t"
+      },
+      "pairedMediaType": {
+        "id": 62,
+        "type": "PAIRED_MEDIA_TYPE",
+        "wire": "paired_media_type",
+        "enum_ref": "PAIRED_MEDIA_TYPE"
+      },
+      "photoQualitySetting": {
+        "id": 52,
+        "type": "MEDIA_QUALITY",
+        "wire": "photo_quality_setting",
+        "enum_ref": "MEDIA_QUALITY"
+      },
+      "resumeConnectT": {
+        "id": 17,
+        "type": "TIMER",
+        "wire": "resume_connect_t"
+      },
+      "resumeHttpCode": {
+        "id": 20,
+        "type": "INTEGER",
+        "wire": "resume_http_code"
+      },
+      "resumeIsReuse": {
+        "id": 19,
+        "type": "BOOLEAN",
+        "wire": "resume_is_reuse"
+      },
+      "resumeNetworkT": {
+        "id": 18,
+        "type": "TIMER",
+        "wire": "resume_network_t"
+      },
+      "uploadBytesTransferred": {
+        "id": 27,
+        "type": "NUMBER",
+        "wire": "upload_bytes_transferred"
+      },
+      "uploadConnectT": {
+        "id": 22,
+        "type": "TIMER",
+        "wire": "upload_connect_t"
+      },
+      "uploadHttpCode": {
+        "id": 25,
+        "type": "INTEGER",
+        "wire": "upload_http_code"
+      },
+      "uploadIsReuse": {
+        "id": 24,
+        "type": "BOOLEAN",
+        "wire": "upload_is_reuse"
+      },
+      "uploadIsStreaming": {
+        "id": 26,
+        "type": "BOOLEAN",
+        "wire": "upload_is_streaming"
+      },
+      "uploadNetworkT": {
+        "id": 23,
+        "type": "TIMER",
+        "wire": "upload_network_t"
+      },
+      "uploadResumePoint": {
+        "id": 21,
+        "type": "INTEGER",
+        "wire": "upload_resume_point"
+      },
+      "uploadSource": {
+        "id": 48,
+        "type": "UPLOAD_SOURCE_TYPE",
+        "wire": "upload_source",
+        "enum_ref": "UPLOAD_SOURCE_TYPE"
+      },
+      "usedFallbackHint": {
+        "id": 47,
+        "type": "STRING",
+        "wire": "used_fallback_hint"
+      },
+      "videoQualitySetting": {
+        "id": 54,
+        "type": "MEDIA_QUALITY",
+        "wire": "video_quality_setting",
+        "enum_ref": "MEDIA_QUALITY"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMediaUpload2WamEvent",
+    "matches": "MediaUpload2:\\s*\\[\\s*1588"
+  },
+  "literals": [
+    "1588"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumConnectionType",
+      "WAWebWamEnumHttpProtocolVersionType",
+      "WAWebWamEnumMediaQuality",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMediaUploadModeType",
+      "WAWebWamEnumMediaUploadResultType",
+      "WAWebWamEnumNetworkStackType",
+      "WAWebWamEnumOptimisticFlagType",
+      "WAWebWamEnumOverallLastUploadRetryPhaseType",
+      "WAWebWamEnumOverallMediaKeyReuseType",
+      "WAWebWamEnumPairedMediaType",
+      "WAWebWamEnumUploadOriginType",
+      "WAWebWamEnumUploadSourceType"
+    ],
+    "dependents": [
+      "WAWebCreateMediaUploadMetrics"
+    ],
+    "dep_count": 14,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumSettingsClickEntryPoint","WAWebWamEnumSettingsItemType","WAWebWamEnumSettingsPageType"],"dependents":["WAWebSettingsDrawer.react","WAWebSettingsLoggerUtils"],"dependent_count":2,"exports":[{"name":"SettingsClickWamEvent","used_by":[],"uses":0}]}

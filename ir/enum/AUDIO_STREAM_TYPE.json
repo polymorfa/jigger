@@ -1,0 +1,36 @@
+{
+  "id": "enum:AUDIO_STREAM_TYPE",
+  "kind": "enum",
+  "name": "AUDIO_STREAM_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumAudioStreamType",
+    "variants": [
+      {
+        "name": "STREAM_MUSIC",
+        "value": 0.0
+      },
+      {
+        "name": "STREAM_VOICE_CALL",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumAudioStreamType",
+    "matches": "AUDIO_STREAM_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "AUDIO_STREAM_TYPE",
+    "STREAM_MUSIC",
+    "STREAM_VOICE_CALL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPttPlaybackWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

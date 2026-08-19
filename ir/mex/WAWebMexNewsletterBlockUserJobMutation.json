@@ -1,0 +1,63 @@
+{
+  "id": "mex:WAWebMexNewsletterBlockUserJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexNewsletterBlockUserJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24021389470875463",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "server_id",
+      "response_server_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "server_id"
+      },
+      {
+        "name": "response_server_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_block_user",
+        "ty": "XWA2NewsletterBlockUserResponse",
+        "args": [
+          "newsletter_id: $newsletter_id",
+          "response_server_id: $response_server_id",
+          "server_id: $server_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "newsletter_id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_block_user",
+    "document": "# persisted document 24021389470875463\nmutation MexNewsletterBlockUserJobMutation(\n  $newsletter_id\n  $server_id\n  $response_server_id\n) {\n  xwa2_newsletter_block_user(newsletter_id: $newsletter_id, response_server_id: $response_server_id, server_id: $server_id) {  # XWA2NewsletterBlockUserResponse\n    newsletter_id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexNewsletterBlockUserJobMutation.graphql",
+    "matches": "id:\\s*\"24021389470875463\""
+  },
+  "literals": [
+    "24021389470875463",
+    "WAWebMexNewsletterBlockUserJobMutation",
+    "xwa2_newsletter_block_user"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexNewsletterBlockUserJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

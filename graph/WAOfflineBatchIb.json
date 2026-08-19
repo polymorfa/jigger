@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedSendIq","WAWap"],"dependents":["WAPullMode"],"dependent_count":1,"exports":[{"name":"sendBatchRequestIb","used_by":["WAPullMode"],"uses":1}]}

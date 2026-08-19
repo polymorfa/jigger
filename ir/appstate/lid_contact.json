@@ -1,0 +1,52 @@
+{
+  "id": "appstate:lid_contact",
+  "kind": "appstate",
+  "name": "LidContact",
+  "data": {
+    "kind": "appstate",
+    "index_name": "lid_contact",
+    "collection": "critical_unblock_low",
+    "version": 1,
+    "value_field": "lidContactAction"
+  },
+  "evidence": {
+    "module": "WAWebLidContactSync",
+    "matches": "Actions\\.LidContact"
+  },
+  "literals": [
+    "lid_contact",
+    "LidContact",
+    "lidContactAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WAJids",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebApiContact",
+      "WAWebBackendApi",
+      "WAWebContactShortName",
+      "WAWebLidAwareContactsDB",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSetUsernameJob",
+      "WAWebSyncContactsJob",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebSyncdOrphan",
+      "WAWebUsernameGatingUtils",
+      "WAWebUsernameTypes",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime",
+      "isStringNullOrEmpty"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebContactEditSync"
+    ],
+    "dep_count": 21,
+    "dependent_count": 2
+  }
+}

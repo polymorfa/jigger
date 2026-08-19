@@ -1,0 +1,1 @@
+{"deps":["fbt","WATypeUtils","WAWebFbtIntlList","WAWebVcardParsingUtils","err"],"dependents":["WAWebFilenameManager","WAWebFormatMsgTextUtils","WAWebFormatMultiVcardMsgText","WAWebGetNotificationStrings","WAWebMessageMultiVcard.react","WAWebSendContactsAction","WAWebVcardModalDetails.react","WAWebVcardWidChoiceModal.react"],"dependent_count":8,"exports":[]}

@@ -1,0 +1,82 @@
+{
+  "id": "enum:DEFENSE_MODE_CLICK_DESIRED_STATE",
+  "kind": "enum",
+  "name": "DEFENSE_MODE_CLICK_DESIRED_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDefenseModeClickDesiredState",
+    "variants": [
+      {
+        "name": "NOBODY",
+        "value": 1.0
+      },
+      {
+        "name": "ONLY_SHARE_WITH",
+        "value": 2.0
+      },
+      {
+        "name": "MY_CONTACTS",
+        "value": 3.0
+      },
+      {
+        "name": "MY_CONTACTS_EXCEPT",
+        "value": 4.0
+      },
+      {
+        "name": "EVERYONE",
+        "value": 5.0
+      },
+      {
+        "name": "KNOWN",
+        "value": 6.0
+      },
+      {
+        "name": "CLOSE_FRIENDS",
+        "value": 7.0
+      },
+      {
+        "name": "MATCH_LAST_SEEN",
+        "value": 11.0
+      },
+      {
+        "name": "OFF",
+        "value": 8.0
+      },
+      {
+        "name": "ON",
+        "value": 9.0
+      },
+      {
+        "name": "ON_STANDARD",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDefenseModeClickDesiredState",
+    "matches": "DEFENSE_MODE_CLICK_DESIRED_STATE\\s*[:=]"
+  },
+  "literals": [
+    "DEFENSE_MODE_CLICK_DESIRED_STATE",
+    "NOBODY",
+    "ONLY_SHARE_WITH",
+    "MY_CONTACTS",
+    "MY_CONTACTS_EXCEPT",
+    "EVERYONE",
+    "KNOWN",
+    "CLOSE_FRIENDS",
+    "MATCH_LAST_SEEN",
+    "OFF",
+    "ON",
+    "ON_STANDARD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDefenseModeClickWamEvent",
+      "WAWebDefenseModeLockedInterstitial.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

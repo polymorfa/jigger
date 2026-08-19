@@ -1,0 +1,48 @@
+{
+  "id": "wam:4784",
+  "kind": "wam",
+  "name": "WebDbVersionsSource",
+  "data": {
+    "kind": "wam",
+    "event_id": 4784,
+    "fields": {
+      "webDbVersionSource": {
+        "id": 1,
+        "type": "WEB_DB_VERSION_SOURCE_TYPE",
+        "wire": "web_db_version_source",
+        "enum_ref": "WEB_DB_VERSION_SOURCE_TYPE"
+      },
+      "webSchemaInitiator": {
+        "id": 2,
+        "type": "WEB_SCHEMA_INITIATOR_TYPE",
+        "wire": "web_schema_initiator",
+        "enum_ref": "WEB_SCHEMA_INITIATOR_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebDbVersionsSourceWamEvent",
+    "matches": "WebDbVersionsSource:\\s*\\[\\s*4784"
+  },
+  "literals": [
+    "4784"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumWebDbVersionSourceType",
+      "WAWebWamEnumWebSchemaInitiatorType"
+    ],
+    "dependents": [
+      "WAWebDbRolloutUtil"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

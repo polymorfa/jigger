@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_chat_themes_solid_wallpaper_sync_encode",
+  "kind": "ab",
+  "name": "wa_web_chat_themes_solid_wallpaper_sync_encode",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32878,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_chat_themes_solid_wallpaper_sync_encode:\\s*\\[\\s*32878"
+  },
+  "literals": [
+    "wa_web_chat_themes_solid_wallpaper_sync_encode",
+    "32878"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebChatThemeGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

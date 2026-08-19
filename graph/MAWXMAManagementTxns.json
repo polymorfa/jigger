@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWDexieTable","MAWMediaManagementTxns","MAWXMAUtils"],"dependents":["MAWSendXMAShareMsgUtils","MAWWriteXMAMessageTxns"],"dependent_count":2,"exports":[{"name":"handleUnstoredXMAContent","used_by":["MAWWriteXMAMessageTxns"],"uses":1},{"name":"saveXMA","used_by":["MAWSendXMAShareMsgUtils"],"uses":1}]}

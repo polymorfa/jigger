@@ -1,0 +1,74 @@
+{
+  "id": "wam:7442",
+  "kind": "wam",
+  "name": "CanonicalEntRecoveryCriticalEvent",
+  "data": {
+    "kind": "wam",
+    "event_id": 7442,
+    "fields": {
+      "canonicalEntRecoveryCriticalEventMetadata": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "canonical_ent_recovery_critical_event_metadata"
+      },
+      "canonicalEntRecoveryCriticalEventName": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "canonical_ent_recovery_critical_event_name"
+      },
+      "canonicalEntRegistrationTraceId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "canonical_ent_registration_trace_id"
+      },
+      "canonicalEntRequestId": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "canonical_ent_request_id"
+      },
+      "canonicalEntSequenceNumberSinceLastRegistration": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "canonical_ent_sequence_number_since_last_registration"
+      },
+      "deviceId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "device_id"
+      },
+      "familyDeviceId": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "family_device_id"
+      },
+      "traceIdInt": {
+        "id": 8,
+        "type": "INTEGER",
+        "wire": "trace_id_int"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCanonicalEntRecoveryCriticalEventWamEvent",
+    "matches": "CanonicalEntRecoveryCriticalEvent:\\s*\\[\\s*7442"
+  },
+  "literals": [
+    "7442"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebCanonicalEntRecoveryWam"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

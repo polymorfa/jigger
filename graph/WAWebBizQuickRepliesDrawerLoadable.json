@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WAWebLazyLoadedRetriable","WAWebLoadingDrawer.react","asyncToGeneratorRuntime","react","react-loadable"],"dependents":["WAWebQuickReplyPickerPlugin"],"dependent_count":1,"exports":[{"name":"WAWebBizQuickRepliesDrawerLoadable","used_by":["WAWebQuickReplyPickerPlugin"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebCopyToClipboard","WAWebDataUrlToBlob","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebMediaEditorImage.react"],"dependent_count":1,"exports":[{"name":"copyEditorImage","used_by":["WAWebMediaEditorImage.react"],"uses":1},{"name":"useWAWebMediaEditorCopyImage","used_by":["WAWebMediaEditorImage.react"],"uses":1}]}

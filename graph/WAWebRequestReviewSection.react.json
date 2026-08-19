@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebButton.react","WAWebCommonNewsletterIntegrityStrings","WAWebNewsletterAlertsRowComponent.react","WDSIconWdsIcChatSupport.react","react","react-compiler-runtime"],"dependents":["WAWebNewsletterRemediationOptionsDrawer.react","WAWebNewsletterReportsRemediationOptionsDrawer.react"],"dependent_count":2,"exports":[]}

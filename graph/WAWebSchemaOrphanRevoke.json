@@ -1,0 +1,1 @@
+{"deps":["WAWebModelStorageUtils","WAWebModelStorageVersions","WAWebStorageMutationBuilder"],"dependents":["WAWebApiOrphanRevoke","WAWebModelStorageInitialize"],"dependent_count":2,"exports":[{"name":"addTable","used_by":["WAWebModelStorageInitialize"],"uses":1},{"name":"getOrphanRevokeTable","used_by":["WAWebApiOrphanRevoke"],"uses":1}]}

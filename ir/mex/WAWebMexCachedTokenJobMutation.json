@@ -1,0 +1,76 @@
+{
+  "id": "mex:WAWebMexCachedTokenJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexCachedTokenJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27013462064904056",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_ent_trade_canonical_nonce_for_access_tokens",
+        "ty": "XWA2EntTradeCanonicalNonceForAccessTokensResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "encrypted_access_tokens",
+            "ty": "XWA2TRSAWithAESArgs",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "key",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "data",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "tag",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "nonce",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "algorithm",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_ent_trade_canonical_nonce_for_access_tokens",
+    "document": "# persisted document 27013462064904056\nmutation MexCachedTokenJobMutation(\n  $input\n) {\n  xwa2_ent_trade_canonical_nonce_for_access_tokens(input: $input) {  # XWA2EntTradeCanonicalNonceForAccessTokensResponse\n    encrypted_access_tokens {  # XWA2TRSAWithAESArgs\n      key\n      data\n      tag\n      nonce\n      algorithm\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexCachedTokenJobMutation.graphql",
+    "matches": "id:\\s*\"27013462064904056\""
+  },
+  "literals": [
+    "27013462064904056",
+    "WAWebMexCachedTokenJobMutation",
+    "xwa2_ent_trade_canonical_nonce_for_access_tokens"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexCachedTokenJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

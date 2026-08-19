@@ -1,0 +1,1 @@
+{"deps":["WASmaxInAppdataDeliverPeerRequest","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WACreateHandleAppdata"],"dependent_count":1,"exports":[{"name":"receivePeerRPC","used_by":["WACreateHandleAppdata"],"uses":1}]}

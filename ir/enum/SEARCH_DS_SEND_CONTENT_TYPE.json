@@ -1,0 +1,71 @@
+{
+  "id": "enum:SEARCH_DS_SEND_CONTENT_TYPE",
+  "kind": "enum",
+  "name": "SEARCH_DS_SEND_CONTENT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSearchDsSendContentType",
+    "variants": [
+      {
+        "name": "TEXT",
+        "value": 1.0
+      },
+      {
+        "name": "PHOTO",
+        "value": 2.0
+      },
+      {
+        "name": "VIDEO",
+        "value": 3.0
+      },
+      {
+        "name": "PTT",
+        "value": 4.0
+      },
+      {
+        "name": "DOCUMENT",
+        "value": 5.0
+      },
+      {
+        "name": "STICKER",
+        "value": 6.0
+      },
+      {
+        "name": "GIF",
+        "value": 7.0
+      },
+      {
+        "name": "CONTACT_CARD",
+        "value": 8.0
+      },
+      {
+        "name": "LOCATION",
+        "value": 9.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSearchDsSendContentType",
+    "matches": "SEARCH_DS_SEND_CONTENT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SEARCH_DS_SEND_CONTENT_TYPE",
+    "TEXT",
+    "PHOTO",
+    "VIDEO",
+    "PTT",
+    "DOCUMENT",
+    "STICKER",
+    "GIF",
+    "CONTACT_CARD",
+    "LOCATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSearchUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

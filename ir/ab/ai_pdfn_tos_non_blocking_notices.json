@@ -1,0 +1,45 @@
+{
+  "id": "ab:ai_pdfn_tos_non_blocking_notices",
+  "kind": "ab",
+  "name": "ai_pdfn_tos_non_blocking_notices",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 15280,
+    "type": "string",
+    "default": "",
+    "alt_default": ""
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_pdfn_tos_non_blocking_notices:\\s*\\[\\s*15280"
+  },
+  "literals": [
+    "ai_pdfn_tos_non_blocking_notices",
+    "15280"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebBotGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

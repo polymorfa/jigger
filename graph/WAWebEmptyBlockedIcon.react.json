@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebEmptyState.react"],"dependent_count":2,"exports":[{"name":"EmptyBlockedIcon","used_by":["WAWebAllGeneratedIcons","WAWebEmptyState.react"],"uses":2}]}

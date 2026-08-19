@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebEnvironment","WAWebUnifiedSession","WAWebVoipGatingUtils","WAWebVoipInitReloadRecovery","WAWebVoipRelayAllCallsAction","WAWebVoipWebLoadable","err"],"dependents":["WAWebVoipWebBridgeApi"],"dependent_count":1,"exports":[{"name":"VoipBridgeInitHandlers","used_by":["WAWebVoipWebBridgeApi"],"uses":1}]}

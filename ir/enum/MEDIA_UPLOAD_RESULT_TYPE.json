@@ -1,0 +1,240 @@
+{
+  "id": "enum:MEDIA_UPLOAD_RESULT_TYPE",
+  "kind": "enum",
+  "name": "MEDIA_UPLOAD_RESULT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumMediaUploadResultType",
+    "variants": [
+      {
+        "name": "OK",
+        "value": 1.0
+      },
+      {
+        "name": "DUPLICATE",
+        "value": 3.0
+      },
+      {
+        "name": "ERROR_UNKNOWN",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR_REQUEST",
+        "value": 4.0
+      },
+      {
+        "name": "ERROR_UPLOAD",
+        "value": 5.0
+      },
+      {
+        "name": "ERROR_OOM",
+        "value": 6.0
+      },
+      {
+        "name": "ERROR_IO",
+        "value": 7.0
+      },
+      {
+        "name": "ERROR_NO_PERMISSIONS",
+        "value": 8.0
+      },
+      {
+        "name": "ERROR_BAD_MEDIA",
+        "value": 9.0
+      },
+      {
+        "name": "ERROR_INSUFFICIENT_SPACE",
+        "value": 10.0
+      },
+      {
+        "name": "ERROR_FNF",
+        "value": 11.0
+      },
+      {
+        "name": "ERROR_CANCEL",
+        "value": 12.0
+      },
+      {
+        "name": "ERROR_SERVER",
+        "value": 13.0
+      },
+      {
+        "name": "ERROR_REQUEST_TIMEOUT",
+        "value": 14.0
+      },
+      {
+        "name": "ERROR_NOT_FINALIZED",
+        "value": 15.0
+      },
+      {
+        "name": "ERROR_OPTIMISTIC_HASH",
+        "value": 16.0
+      },
+      {
+        "name": "ERROR_MEDIA_CONN",
+        "value": 17.0
+      },
+      {
+        "name": "ERROR_DNS",
+        "value": 18.0
+      },
+      {
+        "name": "ERROR_THROTTLE",
+        "value": 19.0
+      },
+      {
+        "name": "ERROR_SSL",
+        "value": 20.0
+      },
+      {
+        "name": "ERROR_NO_CLIENT_NETWORK",
+        "value": 21.0
+      },
+      {
+        "name": "SKIPPED_EP_NOT_ONLINE",
+        "value": 22.0
+      },
+      {
+        "name": "SKIPPED_EP_NOT_1TO1CHAT",
+        "value": 23.0
+      },
+      {
+        "name": "SKIPPED_EP_UPLOAD_FAILED",
+        "value": 24.0
+      },
+      {
+        "name": "SKIPPED_EP_MULTI_CHAT",
+        "value": 25.0
+      },
+      {
+        "name": "SKIPPED_EP_NO_PRIMARY_HOST",
+        "value": 26.0
+      },
+      {
+        "name": "ERROR_CRONET",
+        "value": 27.0
+      },
+      {
+        "name": "ERROR_INCOMPLETE_SERVER_RESPONSE",
+        "value": 28.0
+      },
+      {
+        "name": "ERROR_TRANSCODING",
+        "value": 29.0
+      },
+      {
+        "name": "ERROR_CANCEL_PROGRAMMATIC",
+        "value": 30.0
+      },
+      {
+        "name": "ERROR_NO_ROUTE",
+        "value": 31.0
+      },
+      {
+        "name": "ERROR_TOO_LARGE",
+        "value": 32.0
+      },
+      {
+        "name": "ERROR_CANNOT_TRANSCODE",
+        "value": 33.0
+      },
+      {
+        "name": "ERROR_UNKNOWN_MIMETYPE",
+        "value": 34.0
+      },
+      {
+        "name": "ERROR_UNSUPPORTED_MIMETYPE",
+        "value": 35.0
+      },
+      {
+        "name": "ERROR_SERVER_REJECTED_MEDIA",
+        "value": 36.0
+      },
+      {
+        "name": "ERROR_IO_ENCRYPTION",
+        "value": 37.0
+      },
+      {
+        "name": "ERROR_NO_ENCRYPTION_ALGORITHM",
+        "value": 38.0
+      },
+      {
+        "name": "ERROR_HOST_SWITCH_REQUIRED",
+        "value": 39.0
+      },
+      {
+        "name": "ERROR_WAMSYS",
+        "value": 40.0
+      },
+      {
+        "name": "ERROR_INVALID_URL",
+        "value": 41.0
+      },
+      {
+        "name": "INTEGRITY_CHECK_FAILURE",
+        "value": 42.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumMediaUploadResultType",
+    "matches": "MEDIA_UPLOAD_RESULT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "MEDIA_UPLOAD_RESULT_TYPE",
+    "OK",
+    "DUPLICATE",
+    "ERROR_UNKNOWN",
+    "ERROR_REQUEST",
+    "ERROR_UPLOAD",
+    "ERROR_OOM",
+    "ERROR_IO",
+    "ERROR_NO_PERMISSIONS",
+    "ERROR_BAD_MEDIA",
+    "ERROR_INSUFFICIENT_SPACE",
+    "ERROR_FNF",
+    "ERROR_CANCEL",
+    "ERROR_SERVER",
+    "ERROR_REQUEST_TIMEOUT",
+    "ERROR_NOT_FINALIZED",
+    "ERROR_OPTIMISTIC_HASH",
+    "ERROR_MEDIA_CONN",
+    "ERROR_DNS",
+    "ERROR_THROTTLE",
+    "ERROR_SSL",
+    "ERROR_NO_CLIENT_NETWORK",
+    "SKIPPED_EP_NOT_ONLINE",
+    "SKIPPED_EP_NOT_1TO1CHAT",
+    "SKIPPED_EP_UPLOAD_FAILED",
+    "SKIPPED_EP_MULTI_CHAT",
+    "SKIPPED_EP_NO_PRIMARY_HOST",
+    "ERROR_CRONET",
+    "ERROR_INCOMPLETE_SERVER_RESPONSE",
+    "ERROR_TRANSCODING",
+    "ERROR_CANCEL_PROGRAMMATIC",
+    "ERROR_NO_ROUTE",
+    "ERROR_TOO_LARGE",
+    "ERROR_CANNOT_TRANSCODE",
+    "ERROR_UNKNOWN_MIMETYPE",
+    "ERROR_UNSUPPORTED_MIMETYPE",
+    "ERROR_SERVER_REJECTED_MEDIA",
+    "ERROR_IO_ENCRYPTION",
+    "ERROR_NO_ENCRYPTION_ALGORITHM",
+    "ERROR_HOST_SWITCH_REQUIRED",
+    "ERROR_WAMSYS",
+    "ERROR_INVALID_URL",
+    "INTEGRITY_CHECK_FAILURE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCreateMediaUploadMetrics",
+      "WAWebMediaProduct",
+      "WAWebMediaUpload2WamEvent",
+      "WAWebMessageSendWamEvent",
+      "WAWebWamMediaMetricUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatInfoDrawerSection.react","WAWebCmd","WAWebCommonMsgUtils","WAWebDrawerButtonRefreshed.react","WDSIconIcDoNotDisturbOn.react","react","react-compiler-runtime","useWAWebABPropConfigValue"],"dependents":["WAWebContactInfoDrawer.react","WAWebGroupInfoDrawer.react"],"dependent_count":2,"exports":[]}

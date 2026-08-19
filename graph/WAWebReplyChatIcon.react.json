@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebGetInteractiveActionsFromButtons"],"dependent_count":2,"exports":[{"name":"ReplyChatIcon","used_by":["WAWebAllGeneratedIcons","WAWebGetInteractiveActionsFromButtons"],"uses":2}]}

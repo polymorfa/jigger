@@ -1,0 +1,53 @@
+{
+  "id": "enum:LWI_SUB_ENTRY_POINT",
+  "kind": "enum",
+  "name": "LWI_SUB_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiSubEntryPoint",
+    "variants": [
+      {
+        "name": "SMB_HOME_SCREEN_CONVERSATIONS_TAB",
+        "value": 1.0
+      },
+      {
+        "name": "SMB_HOME_SCREEN_STATUS_TAB",
+        "value": 2.0
+      },
+      {
+        "name": "SMB_HOME_SCREEN_CALL_HISTORY_TAB",
+        "value": 3.0
+      },
+      {
+        "name": "SMB_HOME_SCREEN_COMMUNITIES_TAB",
+        "value": 4.0
+      },
+      {
+        "name": "SMB_HOME_SCREEN_BIZ_HOME_TAB",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiSubEntryPoint",
+    "matches": "LWI_SUB_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "LWI_SUB_ENTRY_POINT",
+    "SMB_HOME_SCREEN_CONVERSATIONS_TAB",
+    "SMB_HOME_SCREEN_STATUS_TAB",
+    "SMB_HOME_SCREEN_CALL_HISTORY_TAB",
+    "SMB_HOME_SCREEN_COMMUNITIES_TAB",
+    "SMB_HOME_SCREEN_BIZ_HOME_TAB"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwaAdCreationAndManagementJourneyWamEvent",
+      "WAWebLwiEntryPointImpressionWamEvent",
+      "WAWebLwiEntryTapWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

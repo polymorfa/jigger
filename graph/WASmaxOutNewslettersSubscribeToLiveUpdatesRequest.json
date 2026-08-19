@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxOutNewslettersNewsletterIQSetRequestMixin"],"dependents":["WASmaxNewslettersSubscribeToLiveUpdatesRPC"],"dependent_count":1,"exports":[{"name":"makeSubscribeToLiveUpdatesRequest","used_by":["WASmaxNewslettersSubscribeToLiveUpdatesRPC"],"uses":1}]}

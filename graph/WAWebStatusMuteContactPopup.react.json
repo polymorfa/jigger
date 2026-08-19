@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebEmojiText.react","WAWebFlex.react","WAWebFrontendContactGetters","WAWebModal.react","WAWebStatusGatingUtils","WAWebText.react","react","react-compiler-runtime","useWAWebContactValues"],"dependents":["WAWebStatusPlayer.react"],"dependent_count":1,"exports":[]}

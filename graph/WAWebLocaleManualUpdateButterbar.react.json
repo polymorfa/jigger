@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebBuildConstants","WAWebL10N","WDSBanner.react","asyncToGeneratorRuntime","react","react-compiler-runtime","useWAWebAsync","useWAWebPrevious"],"dependents":["WAWebChatButterbar.react"],"dependent_count":1,"exports":[]}

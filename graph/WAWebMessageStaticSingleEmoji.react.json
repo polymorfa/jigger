@@ -1,0 +1,1 @@
+{"deps":["WAWebCopyPasteSelectable.react","WAWebEmoji","WAWebMessageLargeEmoji.react","WAWebMessageStickerLikeBubbleContainer.react","react"],"dependents":["WAWebMessageText.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

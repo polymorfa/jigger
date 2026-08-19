@@ -1,0 +1,1 @@
+{"deps":["Lexical","LexicalComposerContext","react","react-compiler-runtime","useWAWebLexicalEvent"],"dependents":["WAWebLexicalWAWebMenu.react"],"dependent_count":1,"exports":[{"name":"useLexicalMenuController","used_by":["WAWebLexicalWAWebMenu.react"],"uses":1}]}

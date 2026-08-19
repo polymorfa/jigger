@@ -1,0 +1,45 @@
+{
+  "id": "ab:android_inbox_mentions_replies_filter",
+  "kind": "ab",
+  "name": "android_inbox_mentions_replies_filter",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33633,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "android_inbox_mentions_replies_filter:\\s*\\[\\s*33633"
+  },
+  "literals": [
+    "android_inbox_mentions_replies_filter",
+    "33633"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebInboxFiltersGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

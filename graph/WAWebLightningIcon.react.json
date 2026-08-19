@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizBotLearnMoreContent.react"],"dependent_count":2,"exports":[{"name":"LightningIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizBotLearnMoreContent.react"],"uses":2}]}

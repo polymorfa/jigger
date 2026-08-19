@@ -1,0 +1,42 @@
+{
+  "id": "appstate:business_broadcast_list",
+  "kind": "appstate",
+  "name": "BusinessBroadcastList",
+  "data": {
+    "kind": "appstate",
+    "index_name": "business_broadcast_list",
+    "collection": "regular",
+    "version": 1,
+    "value_field": "businessBroadcastListAction"
+  },
+  "evidence": {
+    "module": "WAWebBroadcastListSync",
+    "matches": "Actions\\.BusinessBroadcastList"
+  },
+  "literals": [
+    "business_broadcast_list",
+    "BusinessBroadcastList",
+    "businessBroadcastListAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebAudienceExpressionTypes",
+      "WAWebBroadcastListStorageUtils",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "WAWebUserPrefsMeUser",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebBroadcastListAction",
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 11,
+    "dependent_count": 2
+  }
+}

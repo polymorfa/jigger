@@ -1,0 +1,1 @@
+{"deps":["WAWebAddonProcessMsgsUtils","WAWebDBStoreMessageOrphans","asyncToGeneratorRuntime"],"dependents":["WAWebCheckUpdateOrphanReactions","WAWebStoreMsgs"],"dependent_count":2,"exports":[{"name":"storeOrphans","used_by":["WAWebCheckUpdateOrphanReactions","WAWebStoreMsgs"],"uses":2}]}

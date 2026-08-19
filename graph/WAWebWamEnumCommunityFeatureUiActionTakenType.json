@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCommunityFeatureUsageWamEvent","WAWebCommunitySubgroupSwitcher.react","WAWebSubgroupSwitcherButton.react"],"dependent_count":3,"exports":[{"name":"COMMUNITY_FEATURE_UI_ACTION_TAKEN_TYPE","used_by":["WAWebCommunityFeatureUsageWamEvent","WAWebCommunitySubgroupSwitcher.react","WAWebSubgroupSwitcherButton.react"],"uses":3}]}

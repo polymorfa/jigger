@@ -1,0 +1,56 @@
+{
+  "id": "appstate:contact",
+  "kind": "appstate",
+  "name": "Contact",
+  "data": {
+    "kind": "appstate",
+    "index_name": "contact",
+    "collection": "critical_unblock_low",
+    "version": 2,
+    "value_field": "contactAction"
+  },
+  "evidence": {
+    "module": "WAWebContactSync",
+    "matches": "Actions\\.Contact"
+  },
+  "literals": [
+    "contact",
+    "Contact",
+    "contactAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebApiContact",
+      "WAWebBackendApi",
+      "WAWebContactCollection",
+      "WAWebContactShortName",
+      "WAWebContactUtils",
+      "WAWebCurrentUser",
+      "WAWebDBCreateLidPnMappings",
+      "WAWebLidAwareContactsDB",
+      "WAWebLidMigrationUtils",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncContactsJob",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdDbCallbacksApi",
+      "WAWebSyncdIndexUtils",
+      "WAWebSyncdOrphan",
+      "WAWebUsernameTypes",
+      "WAWebWidFactory",
+      "WAWebWidToJid",
+      "asyncToGeneratorRuntime",
+      "isStringNullOrEmpty"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebContactEditSync"
+    ],
+    "dep_count": 25,
+    "dependent_count": 2
+  }
+}

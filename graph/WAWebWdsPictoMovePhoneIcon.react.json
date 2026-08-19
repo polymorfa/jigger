@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebDeviceSwitchingPopup.react"],"dependent_count":2,"exports":[{"name":"WdsPictoMovePhoneIcon","used_by":["WAWebAllGeneratedIcons","WAWebDeviceSwitchingPopup.react"],"uses":2}]}

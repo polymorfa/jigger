@@ -1,0 +1,35 @@
+{
+  "id": "proto:MAWArmadilloContactsTableSchema.EphemeralSyncResponseBackoffInfo",
+  "kind": "proto",
+  "name": "MAWArmadilloContactsTableSchema.EphemeralSyncResponseBackoffInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "syncResponseRetries": {
+        "number": 1
+      },
+      "syncResponseSentTs": {
+        "number": 2
+      }
+    },
+    "module": "MAWArmadilloContactsTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloContactsTableSchema.pb",
+    "matches": "name = \"EphemeralSyncResponseBackoffInfo\""
+  },
+  "literals": [
+    "EphemeralSyncResponseBackoffInfo"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWArmadilloMessagesTableSchema.pb",
+      "MAWArmadilloUnrenderedMessagesTableSchema.pb"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebVoipCameraPrewarm","react","react-compiler-runtime"],"dependents":["WAWebVoipVoiceCallContainer.react","useWAWebVoipVideoCallDerivedState"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

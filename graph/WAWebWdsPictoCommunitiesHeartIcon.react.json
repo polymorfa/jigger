@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebCommunityAdminPromotionNotificationPopup.react"],"dependent_count":2,"exports":[{"name":"WdsPictoCommunitiesHeartIcon","used_by":["WAWebAllGeneratedIcons","WAWebCommunityAdminPromotionNotificationPopup.react"],"uses":2}]}

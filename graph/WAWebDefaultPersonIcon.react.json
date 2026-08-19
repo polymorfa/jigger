@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebDefaultProfilePicture.react"],"dependent_count":2,"exports":[{"name":"DefaultPersonIcon","used_by":["WAWebAllGeneratedIcons","WAWebDefaultProfilePicture.react"],"uses":2}]}

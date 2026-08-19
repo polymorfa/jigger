@@ -1,0 +1,60 @@
+{
+  "id": "wam:7134",
+  "kind": "wam",
+  "name": "ChannelOpenFromInvite",
+  "data": {
+    "kind": "wam",
+    "event_id": 7134,
+    "fields": {
+      "channelEntryPoint": {
+        "id": 1,
+        "type": "CHANNEL_ENTRY_POINT",
+        "wire": "channel_entry_point",
+        "enum_ref": "CHANNEL_ENTRY_POINT"
+      },
+      "channelUserType": {
+        "id": 2,
+        "type": "CHANNEL_USER_TYPE",
+        "wire": "channel_user_type",
+        "enum_ref": "CHANNEL_USER_TYPE"
+      },
+      "cid": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "cid"
+      },
+      "discoverySurface": {
+        "id": 3,
+        "type": "TS_SURFACE",
+        "wire": "discovery_surface",
+        "enum_ref": "TS_SURFACE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebChannelOpenFromInviteWamEvent",
+    "matches": "ChannelOpenFromInvite:\\s*\\[\\s*7134"
+  },
+  "literals": [
+    "7134"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelEntryPoint",
+      "WAWebWamEnumChannelUserType",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebNewsletterFollowerInviteMessageComponent.react"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

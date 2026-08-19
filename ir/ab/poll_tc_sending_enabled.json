@@ -1,0 +1,42 @@
+{
+  "id": "ab:poll_tc_sending_enabled",
+  "kind": "ab",
+  "name": "poll_tc_sending_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 31593,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "poll_tc_sending_enabled:\\s*\\[\\s*31593"
+  },
+  "literals": [
+    "poll_tc_sending_enabled",
+    "31593"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "enum:PSA_MESSAGE_REMOVE_ACTION",
+  "kind": "enum",
+  "name": "PSA_MESSAGE_REMOVE_ACTION",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPsaMessageRemoveAction",
+    "variants": [
+      {
+        "name": "BLOCK",
+        "value": 1.0
+      },
+      {
+        "name": "UNBLOCK",
+        "value": 2.0
+      },
+      {
+        "name": "ARCHIVE",
+        "value": 3.0
+      },
+      {
+        "name": "UNARCHIVE",
+        "value": 4.0
+      },
+      {
+        "name": "CLEAR",
+        "value": 5.0
+      },
+      {
+        "name": "DELETE_ALL",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPsaMessageRemoveAction",
+    "matches": "PSA_MESSAGE_REMOVE_ACTION\\s*[:=]"
+  },
+  "literals": [
+    "PSA_MESSAGE_REMOVE_ACTION",
+    "BLOCK",
+    "UNBLOCK",
+    "ARCHIVE",
+    "UNARCHIVE",
+    "CLEAR",
+    "DELETE_ALL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatPsaRemoveWamEvent",
+      "WAWebWamChatPSALogger"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

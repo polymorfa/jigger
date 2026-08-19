@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebEphemeralSettingChangeWamEvent","WAWebGroupProfilePictureWamEvent","WAWebWamNumberToPreciseSizeBucket"],"dependent_count":3,"exports":[{"name":"PRECISE_SIZE_BUCKET","used_by":["WAWebEphemeralSettingChangeWamEvent","WAWebGroupProfilePictureWamEvent","WAWebWamNumberToPreciseSizeBucket"],"uses":3}]}

@@ -1,0 +1,189 @@
+{
+  "id": "enum:CRASH_TYPE",
+  "kind": "enum",
+  "name": "CRASH_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCrashType",
+    "variants": [
+      {
+        "name": "CRASH",
+        "value": 0.0
+      },
+      {
+        "name": "OOM",
+        "value": 1.0
+      },
+      {
+        "name": "MAIN_THREAD_STALL_3_SECONDS",
+        "value": 15.0
+      },
+      {
+        "name": "MAIN_THREAD_STALL_5_SECONDS",
+        "value": 21.0
+      },
+      {
+        "name": "MAIN_THREAD_STALL_30_SECONDS",
+        "value": 2.0
+      },
+      {
+        "name": "MAIN_THREAD_STALL_60_SECONDS",
+        "value": 16.0
+      },
+      {
+        "name": "MAIN_THREAD_STALL_POKED",
+        "value": 17.0
+      },
+      {
+        "name": "MAIN_THREAD_STALL_DEBUG",
+        "value": 3.0
+      },
+      {
+        "name": "AUDIO_TRANSCODING_ERROR",
+        "value": 4.0
+      },
+      {
+        "name": "VIDEO_TRANSCODING_ERROR",
+        "value": 5.0
+      },
+      {
+        "name": "ANR",
+        "value": 6.0
+      },
+      {
+        "name": "CRITICAL_EVENT",
+        "value": 7.0
+      },
+      {
+        "name": "UNHANDLED_EXCEPTION",
+        "value": 8.0
+      },
+      {
+        "name": "APP_CRASH",
+        "value": 9.0
+      },
+      {
+        "name": "NATIVE_CRASH",
+        "value": 10.0
+      },
+      {
+        "name": "UFAD",
+        "value": 11.0
+      },
+      {
+        "name": "UX_BREAKING_EXCEPTION",
+        "value": 13.0
+      },
+      {
+        "name": "UX_GRACEFUL_RECOVERY_EXCEPTION",
+        "value": 14.0
+      },
+      {
+        "name": "WEB_UI_COMPONENT_FAILURE",
+        "value": 18.0
+      },
+      {
+        "name": "WEB_BROKEN_USER_EXPERIENCE",
+        "value": 19.0
+      },
+      {
+        "name": "WEB_FORCED_LOGOUT",
+        "value": 20.0
+      },
+      {
+        "name": "THREADPOOL_NOT_RESPONDING",
+        "value": 22.0
+      },
+      {
+        "name": "DISPATCHER_NOT_RESPONDING",
+        "value": 23.0
+      },
+      {
+        "name": "MS_CRASH",
+        "value": 24.0
+      },
+      {
+        "name": "MAIN_THREAD_STALL",
+        "value": 25.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCrashType",
+    "matches": "CRASH_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CRASH_TYPE",
+    "CRASH",
+    "OOM",
+    "MAIN_THREAD_STALL_3_SECONDS",
+    "MAIN_THREAD_STALL_5_SECONDS",
+    "MAIN_THREAD_STALL_30_SECONDS",
+    "MAIN_THREAD_STALL_60_SECONDS",
+    "MAIN_THREAD_STALL_POKED",
+    "MAIN_THREAD_STALL_DEBUG",
+    "AUDIO_TRANSCODING_ERROR",
+    "VIDEO_TRANSCODING_ERROR",
+    "ANR",
+    "CRITICAL_EVENT",
+    "UNHANDLED_EXCEPTION",
+    "APP_CRASH",
+    "NATIVE_CRASH",
+    "UFAD",
+    "UX_BREAKING_EXCEPTION",
+    "UX_GRACEFUL_RECOVERY_EXCEPTION",
+    "WEB_UI_COMPONENT_FAILURE",
+    "WEB_BROKEN_USER_EXPERIENCE",
+    "WEB_FORCED_LOGOUT",
+    "THREADPOOL_NOT_RESPONDING",
+    "DISPATCHER_NOT_RESPONDING",
+    "MS_CRASH",
+    "MAIN_THREAD_STALL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCrashContextUtils",
+      "WAWebCrashLogWamEvent",
+      "WAWebCrashlog",
+      "WAWebWindowsHybridBridgeWam",
+      "WAWebWindowsHybridBridgeWam.v2586",
+      "WAWebWindowsHybridBridgeWam.v2587",
+      "WAWebWindowsHybridBridgeWam.v2589",
+      "WAWebWindowsHybridBridgeWam.v2590",
+      "WAWebWindowsHybridBridgeWam.v2591",
+      "WAWebWindowsHybridBridgeWam.v2601",
+      "WAWebWindowsHybridBridgeWam.v2602",
+      "WAWebWindowsHybridBridgeWam.v2603",
+      "WAWebWindowsHybridBridgeWam.v2604",
+      "WAWebWindowsHybridBridgeWam.v2605",
+      "WAWebWindowsHybridBridgeWam.v2606",
+      "WAWebWindowsHybridBridgeWam.v2607",
+      "WAWebWindowsHybridBridgeWam.v2608",
+      "WAWebWindowsHybridBridgeWam.v2609",
+      "WAWebWindowsHybridBridgeWam.v2610",
+      "WAWebWindowsHybridBridgeWam.v2611",
+      "WAWebWindowsHybridBridgeWam.v2613",
+      "WAWebWindowsHybridBridgeWam.v2614",
+      "WAWebWindowsHybridBridgeWam.v2615",
+      "WAWebWindowsHybridBridgeWam.v2616",
+      "WAWebWindowsHybridBridgeWam.v2617",
+      "WAWebWindowsHybridBridgeWam.v2618",
+      "WAWebWindowsHybridBridgeWam.v2619",
+      "WAWebWindowsHybridBridgeWam.v2620",
+      "WAWebWindowsHybridBridgeWam.v2621",
+      "WAWebWindowsHybridBridgeWam.v2622",
+      "WAWebWindowsHybridBridgeWam.v2623",
+      "WAWebWindowsHybridBridgeWam.v2624",
+      "WAWebWindowsHybridBridgeWam.v2625",
+      "WAWebWindowsHybridBridgeWam.v2626",
+      "WAWebWindowsHybridBridgeWam.v2627",
+      "WAWebWindowsHybridBridgeWam.v2628",
+      "WAWebWindowsHybridBridgeWam.v2629",
+      "WAWebWindowsHybridBridgeWam.v2630",
+      "WAWebWindowsHybridBridgeWam.v2631"
+    ],
+    "dep_count": 0,
+    "dependent_count": 39
+  }
+}

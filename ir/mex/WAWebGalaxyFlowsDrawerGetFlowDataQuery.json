@@ -1,0 +1,116 @@
+{
+  "id": "mex:WAWebGalaxyFlowsDrawerGetFlowDataQuery",
+  "kind": "mex",
+  "name": "WAWebGalaxyFlowsDrawerGetFlowDataQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "32671434985780838",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "args": [
+      {
+        "name": "request"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_extensions_get_flow_data",
+        "ty": "XWAWhatsAppExtensionsGetFlowDataResponseSuccess",
+        "args": [
+          "request: $request"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "extensions_flow_data",
+            "ty": "XWAWhatsAppExtensionsFlowData",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "flow_id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "extensions",
+                "ty": "XWAWhatsAppExtensionsObject",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "metadata",
+                    "ty": "XWAWhatsAppExtensionsFlowDataMetaData",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "flow_name",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "state",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "categories",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "creation_source",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "www_proxy_secret",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "flow_token_signature",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "endpoint_public_key",
+            "ty": "XWAWhatsAppFlowsEndpointPublicKey",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "key",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "signature",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 32671434985780838\nquery GalaxyFlowsDrawerGetFlowDataQuery(\n  $request\n) {\n  xwa_extensions_get_flow_data(request: $request) {  # XWAWhatsAppExtensionsGetFlowDataResponseSuccess\n    __typename\n    extensions_flow_data {  # [XWAWhatsAppExtensionsFlowData]\n      flow_id\n      extensions {  # XWAWhatsAppExtensionsObject\n        metadata {  # XWAWhatsAppExtensionsFlowDataMetaData\n          flow_name\n          state\n          categories\n          creation_source\n          www_proxy_secret\n          flow_token_signature\n        }\n      }\n    }\n    endpoint_public_key {  # XWAWhatsAppFlowsEndpointPublicKey\n      key\n      signature\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebGalaxyFlowsDrawerGetFlowDataQuery.graphql",
+    "matches": "id:\\s*\"32671434985780838\""
+  },
+  "literals": [
+    "32671434985780838",
+    "WAWebGalaxyFlowsDrawerGetFlowDataQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGalaxyFlowsDrawerGetFlowDataQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

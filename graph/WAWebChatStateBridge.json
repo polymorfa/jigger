@@ -1,0 +1,1 @@
+{"deps":["WASendChatStateProtocol","WAWebWidToJid"],"dependents":["WAWebPresenceChatAction"],"dependent_count":1,"exports":[{"name":"sendChatStateComposing","used_by":["WAWebPresenceChatAction"],"uses":1},{"name":"sendChatStatePaused","used_by":["WAWebPresenceChatAction"],"uses":1},{"name":"sendChatStateRecording","used_by":["WAWebPresenceChatAction"],"uses":1}]}

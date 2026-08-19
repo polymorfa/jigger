@@ -1,0 +1,1 @@
+{"deps":["WAWebBotTypes","WAWebBotUnifiedResponseGating","WAWebFrontendMsgGetters","WAWebRichResponse.flow","WAWebUnifiedResponseUtils"],"dependents":["WAWebMsgActionCapability"],"dependent_count":1,"exports":[{"name":"isAiRichResponseForwardable","used_by":["WAWebMsgActionCapability"],"uses":1}]}

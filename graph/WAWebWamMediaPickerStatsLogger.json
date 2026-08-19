@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaPickerWamEvent","WAWebWamMediaPickerEvent"],"dependents":["WAWebAttachMediaCollection","WAWebCaptureDrawer.react"],"dependent_count":2,"exports":[{"name":"MediaPickerStatsLogger","used_by":[],"uses":0}]}

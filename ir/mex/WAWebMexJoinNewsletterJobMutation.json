@@ -1,0 +1,64 @@
+{
+  "id": "mex:WAWebMexJoinNewsletterJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexJoinNewsletterJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24404358912487870",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_join_v2",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "newsletter_id: $newsletter_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "state",
+            "ty": "XWA2NewsletterState",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "type",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_join_v2",
+    "document": "# persisted document 24404358912487870\nmutation MexJoinNewsletterJobMutation(\n  $newsletter_id\n) {\n  xwa2_newsletter_join_v2(newsletter_id: $newsletter_id) {  # XWA2NewsletterMutationResponse\n    id\n    state {  # XWA2NewsletterState\n      type\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexJoinNewsletterJobMutation.graphql",
+    "matches": "id:\\s*\"24404358912487870\""
+  },
+  "literals": [
+    "24404358912487870",
+    "WAWebMexJoinNewsletterJobMutation",
+    "xwa2_newsletter_join_v2"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexJoinNewsletterJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInQpSurfacesQPSurfacesMixin","WASmaxInQpSurfacesServerNotificationMixin","WASmaxParseJid","WASmaxParseUtils"],"dependents":["WASmaxQpSurfacesQPNotificationRPC"],"dependent_count":1,"exports":[{"name":"parseQPNotificationRequest","used_by":["WASmaxQpSurfacesQPNotificationRPC"],"uses":1}]}

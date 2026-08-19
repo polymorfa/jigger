@@ -1,0 +1,76 @@
+{
+  "id": "enum:CONNECTION_SEQUENCE_STEP_TYPE",
+  "kind": "enum",
+  "name": "CONNECTION_SEQUENCE_STEP_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumConnectionSequenceStepType",
+    "variants": [
+      {
+        "name": "PUSH_OVERRIDES",
+        "value": 1.0
+      },
+      {
+        "name": "PRIMARY",
+        "value": 2.0
+      },
+      {
+        "name": "PUSH_FALLBACKS",
+        "value": 4.0
+      },
+      {
+        "name": "HOST_FALLBACK",
+        "value": 5.0
+      },
+      {
+        "name": "NO_DNS",
+        "value": 6.0
+      },
+      {
+        "name": "SOFTLAYER",
+        "value": 7.0
+      },
+      {
+        "name": "PRIMARY_HTTP",
+        "value": 8.0
+      },
+      {
+        "name": "SOFTLAYER_HTTP",
+        "value": 9.0
+      },
+      {
+        "name": "HOST_FALLBACK_HTTP",
+        "value": 10.0
+      },
+      {
+        "name": "NO_DNS_HTTP",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumConnectionSequenceStepType",
+    "matches": "CONNECTION_SEQUENCE_STEP_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CONNECTION_SEQUENCE_STEP_TYPE",
+    "PUSH_OVERRIDES",
+    "PRIMARY",
+    "PUSH_FALLBACKS",
+    "HOST_FALLBACK",
+    "NO_DNS",
+    "SOFTLAYER",
+    "PRIMARY_HTTP",
+    "SOFTLAYER_HTTP",
+    "HOST_FALLBACK_HTTP",
+    "NO_DNS_HTTP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebLoginWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "mex:WAWebMexGetUsernameJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexGetUsernameJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "25347099718279209",
+    "operation": "query",
+    "variables": [],
+    "selections": [
+      {
+        "name": "xwa2_username_get",
+        "ty": "XWA2UsernameGetResponse",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "username_info",
+            "ty": "XWA2Username",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "username",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "state",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "pin",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_username_get",
+    "document": "# persisted document 25347099718279209\nquery MexGetUsernameJobQuery {\n  xwa2_username_get {  # XWA2UsernameGetResponse\n    username_info {  # XWA2Username\n      username\n      state\n      pin\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexGetUsernameJobQuery.graphql",
+    "matches": "id:\\s*\"25347099718279209\""
+  },
+  "literals": [
+    "25347099718279209",
+    "WAWebMexGetUsernameJobQuery",
+    "xwa2_username_get"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGetUsernameJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

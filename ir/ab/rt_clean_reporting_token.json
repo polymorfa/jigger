@@ -1,0 +1,45 @@
+{
+  "id": "ab:rt_clean_reporting_token",
+  "kind": "ab",
+  "name": "rt_clean_reporting_token",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 9567,
+    "type": "int",
+    "default": 31,
+    "alt_default": 31
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "rt_clean_reporting_token:\\s*\\[\\s*9567"
+  },
+  "literals": [
+    "rt_clean_reporting_token",
+    "9567"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMessagingGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

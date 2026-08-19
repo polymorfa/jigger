@@ -1,0 +1,45 @@
+{
+  "id": "ab:status_chain_from_my_interaction_limit",
+  "kind": "ab",
+  "name": "status_chain_from_my_interaction_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27011,
+    "type": "int",
+    "default": 3,
+    "alt_default": 3
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "status_chain_from_my_interaction_limit:\\s*\\[\\s*27011"
+  },
+  "literals": [
+    "status_chain_from_my_interaction_limit",
+    "27011"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebStatusGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

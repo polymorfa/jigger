@@ -1,0 +1,1 @@
+{"deps":["WASmaxInDevicesChangeNotificationRequest","WASmaxOutDevicesChangeNotificationResponseAck","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WACreateHandleFbDeviceChangeNotificationBranch"],"dependent_count":1,"exports":[{"name":"receiveChangeNotificationRPC","used_by":["WACreateHandleFbDeviceChangeNotificationBranch"],"uses":1}]}

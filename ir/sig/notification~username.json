@@ -1,0 +1,32 @@
+{
+  "id": "sig:notification/username",
+  "kind": "sig",
+  "name": "AccountSyncNotificationUsernameNotificationMixin",
+  "data": {
+    "kind": "sig",
+    "root": "notification",
+    "children": [
+      "username"
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAccountSyncNotificationUsernameNotificationMixin",
+    "matches": "assertTag\\([a-z], \"notification\"\\)"
+  },
+  "literals": [
+    "notification",
+    "username"
+  ],
+  "graph": {
+    "deps": [
+      "WAResultOrError",
+      "WASmaxInAccountSyncUsernameNotificationType",
+      "WASmaxParseUtils"
+    ],
+    "dependents": [
+      "WASmaxInAccountSyncNotificationType"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

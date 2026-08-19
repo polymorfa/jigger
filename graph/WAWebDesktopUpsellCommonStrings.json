@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebDesktopUpsellUtils"],"dependents":["WAWebDesktopUpsellCallingPopover.react","WAWebDesktopUpsellChatlistToastbar.react","WAWebDesktopUpsellQRCodeSlimBanner.react","WAWebDesktopUpsellSearchToastbar.react","WAWebIntroPanel.react","WAWebIntroPanelV2.react"],"dependent_count":6,"exports":[]}

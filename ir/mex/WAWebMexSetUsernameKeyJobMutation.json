@@ -1,0 +1,53 @@
+{
+  "id": "mex:WAWebMexSetUsernameKeyJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexSetUsernameKeyJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9749436995157074",
+    "operation": "mutation",
+    "variables": [
+      "pin"
+    ],
+    "args": [
+      {
+        "name": "pin"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_username_pin_set",
+        "ty": "XWA2UsernamePinSetMutationResponse",
+        "args": [
+          "pin: $pin"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "result",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_username_pin_set",
+    "document": "# persisted document 9749436995157074\nmutation MexSetUsernameKeyJobMutation(\n  $pin\n) {\n  xwa2_username_pin_set(pin: $pin) {  # XWA2UsernamePinSetMutationResponse\n    result\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexSetUsernameKeyJobMutation.graphql",
+    "matches": "id:\\s*\"9749436995157074\""
+  },
+  "literals": [
+    "9749436995157074",
+    "WAWebMexSetUsernameKeyJobMutation",
+    "xwa2_username_pin_set"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexSetUsernameKeyJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

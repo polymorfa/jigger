@@ -1,0 +1,1 @@
+{"deps":["WAWebBotBaseGating","WAWebBotFrontendUtils","WAWebBotGating","WAWebBotUtils","WAWebMsgType","WAWebThreadModelResolver","WAWebUserPrefsMeUser","react","react-compiler-runtime","useWAWebEventTargetValue"],"dependents":["WAWebComposeBox.react"],"dependent_count":1,"exports":[{"name":"useShouldShowBotSuggestions","used_by":["WAWebComposeBox.react"],"uses":1}]}

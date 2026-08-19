@@ -1,0 +1,39 @@
+{
+  "id": "enum:ENUM_FACEBOOK_INSTAGRAM",
+  "kind": "enum",
+  "name": "ENUM_FACEBOOK_INSTAGRAM",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBizCtwaNativeAdEnums",
+    "variants": [
+      {
+        "name": "FACEBOOK",
+        "value": "FACEBOOK"
+      },
+      {
+        "name": "INSTAGRAM",
+        "value": "INSTAGRAM"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBizCtwaNativeAdEnums",
+    "matches": "ENUM_FACEBOOK_INSTAGRAM\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_FACEBOOK_INSTAGRAM",
+    "FACEBOOK",
+    "INSTAGRAM"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInBizCtwaNativeAdDeprecatedIQErrorResponseOptionalFromMixin",
+      "WASmaxInBizCtwaNativeAdUploadAdMediaResponseSuccess"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

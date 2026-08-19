@@ -1,0 +1,1 @@
+{"deps":["WAWebFrontendConstants","react","react-compiler-runtime","useWAWebThrottledCallback"],"dependents":["useWAWebGetOrderRequests","useWAWebGetOrders"],"dependent_count":2,"exports":[{"name":"useLazyOrders","used_by":["useWAWebGetOrderRequests","useWAWebGetOrders"],"uses":2}]}

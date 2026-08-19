@@ -1,0 +1,153 @@
+__d("WAWebProfilePicThumbAction", [
+	"fbt",
+	"Promise",
+	"WAFilteredCatch",
+	"WALogger",
+	"WAWebActionToast.react",
+	"WAWebBackendErrors",
+	"WAWebContactProfilePicThumbBridge",
+	"WAWebMiscErrors",
+	"WAWebStateUtils",
+	"WAWebToastManager",
+	"WAWebUserPrefsMeUser",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u, c, d, m = d || (d = o("react"));
+	function p(e, t, n, r) {
+		return f(o("WAWebStateUtils").unproxy(e), t, n, r);
+	}
+	function _(e, t) {
+		return g({
+			onDismiss: t,
+			profilePicThumb: o("WAWebStateUtils").unproxy(e)
+		});
+	}
+	function f(t, r, a, i, l) {
+		l === void 0 && (l = o("WAWebActionToast.react").genId());
+		var u = t.id;
+		if (!t.canSet()) return (c || (c = n("Promise"))).reject(new (o("WAWebMiscErrors")).ActionError());
+		var d = o("WAWebContactProfilePicThumbBridge").sendSetPicture(u, r, a);
+		t.pendingPic = r;
+		var p = o("WAWebUserPrefsMeUser").isMeAccount(u), _ = p ? new (o("WAWebActionToast.react")).ActionType(s._(
+			/*BTDS*/
+			""
+		)) : new (o("WAWebActionToast.react")).ActionType(s._(
+			/*BTDS*/
+			""
+		)), g = d.catch(function(t) {
+			throw o("WALogger").WARN(e || (e = babelHelpers.taggedTemplateLiteralLoose(["models:ProfilePicThumb:setPicture dropped"]))), p ? new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			)) : new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			));
+		}).catch(o("WAFilteredCatch").filteredCatch(o("WAWebBackendErrors").ServerStatusCodeError, function(e) {
+			if (e.status >= 400) {
+				var n = p ? s._(
+					/*BTDS*/
+					""
+				) : s._(
+					/*BTDS*/
+					""
+				);
+				return new (o("WAWebActionToast.react")).ActionType(n, {
+					actionText: s._(
+						/*BTDS*/
+						""
+					),
+					actionHandler: function() {
+						return f(t, r, a, i, l);
+					}
+				});
+			}
+		})).then(function() {
+			return p ? new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			)) : new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			));
+		});
+		return o("WAWebToastManager").ToastManager.open(m.jsx(o("WAWebActionToast.react").ActionToast, {
+			id: l,
+			initialAction: _,
+			pendingAction: g,
+			onDismiss: i
+		})), d.then(function(e) {
+			t.set({
+				tag: e.tag,
+				eurl: e.eurl
+			});
+		}).finally(function() {
+			t.pendingPic = void 0;
+		});
+	}
+	function g(e) {
+		var t = e.onDismiss, r = e.profilePicThumb, a = e.toastId, i = a === void 0 ? o("WAWebActionToast.react").genId() : a, l = r.id;
+		if (!r.canDelete()) return (c || (c = n("Promise"))).reject(new (o("WAWebMiscErrors")).ActionError());
+		var d = o("WAWebContactProfilePicThumbBridge").requestDeletePicture(l);
+		r.pendingPic = r.fallbackType;
+		var p = o("WAWebUserPrefsMeUser").isMeAccount(l), _ = p ? new (o("WAWebActionToast.react")).ActionType(s._(
+			/*BTDS*/
+			""
+		)) : new (o("WAWebActionToast.react")).ActionType(s._(
+			/*BTDS*/
+			""
+		)), f = d.catch(function(e) {
+			throw o("WALogger").WARN(u || (u = babelHelpers.taggedTemplateLiteralLoose(["models:ProfilePicThumb:deletePicture dropped"]))), p ? new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			)) : new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			));
+		}).catch(o("WAFilteredCatch").filteredCatch(o("WAWebBackendErrors").ServerStatusCodeError, function(e) {
+			if (e.status >= 400) {
+				var n = p ? s._(
+					/*BTDS*/
+					""
+				) : s._(
+					/*BTDS*/
+					""
+				);
+				return new (o("WAWebActionToast.react")).ActionType(n, {
+					actionText: s._(
+						/*BTDS*/
+						""
+					),
+					actionHandler: function() {
+						return g({
+							onDismiss: t,
+							profilePicThumb: r,
+							toastId: i
+						});
+					}
+				});
+			}
+		})).then(function() {
+			return p ? new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			)) : new (o("WAWebActionToast.react")).ActionType(s._(
+				/*BTDS*/
+				""
+			));
+		});
+		return o("WAWebToastManager").ToastManager.open(m.jsx(o("WAWebActionToast.react").ActionToast, {
+			id: i,
+			initialAction: _,
+			pendingAction: f,
+			onDismiss: t
+		})), d.then(function() {
+			r.set({
+				tag: void 0,
+				eurl: void 0
+			});
+		}).finally(function() {
+			r.pendingPic = void 0;
+		});
+	}
+	l.setProfilePic = p, l.deleteProfilePic = _;
+}), 226);

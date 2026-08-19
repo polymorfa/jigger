@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFlex.react","WAWebModalManager","WAWebText.react","WAWebWdsPictoPrivacyBusinessIcon.react","react","react-compiler-runtime"],"dependents":["WAWebConversation.react","WAWebGroupInfoDrawer.react","WAWebMessageNotification.react"],"dependent_count":3,"exports":[]}

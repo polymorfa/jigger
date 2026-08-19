@@ -1,0 +1,34 @@
+{
+  "id": "mex:WAWebWaffleFXWAMOUpdateUOOMMutation",
+  "kind": "mex",
+  "name": "WAWebWaffleFXWAMOUpdateUOOMMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "10031635203620145",
+    "operation": "mutation",
+    "variables": [],
+    "selections": [
+      {
+        "name": "xfb_waffle_fx_wamo_update_uoom",
+        "kind": "ScalarField"
+      }
+    ],
+    "document": "# persisted document 10031635203620145\nmutation WaffleFXWAMOUpdateUOOMMutation {\n  xfb_waffle_fx_wamo_update_uoom\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebWaffleFXWAMOUpdateUOOMMutation.graphql",
+    "matches": "id:\\s*\"10031635203620145\""
+  },
+  "literals": [
+    "10031635203620145",
+    "WAWebWaffleFXWAMOUpdateUOOMMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWaffleFXWAMOUpdateUOOMMutation"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

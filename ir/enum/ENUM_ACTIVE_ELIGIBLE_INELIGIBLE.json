@@ -1,0 +1,44 @@
+{
+  "id": "enum:ENUM_ACTIVE_ELIGIBLE_INELIGIBLE",
+  "kind": "enum",
+  "name": "ENUM_ACTIVE_ELIGIBLE_INELIGIBLE",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInUsyncEnums",
+    "variants": [
+      {
+        "name": "active",
+        "value": "active"
+      },
+      {
+        "name": "eligible",
+        "value": "eligible"
+      },
+      {
+        "name": "ineligible",
+        "value": "ineligible"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInUsyncEnums",
+    "matches": "ENUM_ACTIVE_ELIGIBLE_INELIGIBLE\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ACTIVE_ELIGIBLE_INELIGIBLE",
+    "active",
+    "eligible",
+    "ineligible"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInUsyncNotificationAddDevicesNotificationMixin",
+      "WASmaxInUsyncNotificationRemoveDevicesNotificationMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

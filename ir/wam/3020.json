@@ -1,0 +1,41 @@
+{
+  "id": "wam:3020",
+  "kind": "wam",
+  "name": "StickerStoreOpened",
+  "data": {
+    "kind": "wam",
+    "event_id": 3020,
+    "fields": {
+      "stickerStoreOpenedOrigin": {
+        "id": 1,
+        "type": "STICKER_STORE_OPENED_ORIGIN_TYPE",
+        "wire": "sticker_store_opened_origin",
+        "enum_ref": "STICKER_STORE_OPENED_ORIGIN_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStickerStoreOpenedWamEvent",
+    "matches": "StickerStoreOpened:\\s*\\[\\s*3020"
+  },
+  "literals": [
+    "3020"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumStickerStoreOpenedOriginType"
+    ],
+    "dependents": [
+      "WAWebStickerPanel.react"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

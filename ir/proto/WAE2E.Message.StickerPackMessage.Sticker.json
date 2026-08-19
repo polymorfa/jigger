@@ -1,0 +1,60 @@
+{
+  "id": "proto:WAE2E.Message.StickerPackMessage.Sticker",
+  "kind": "proto",
+  "name": "WAE2E.Message.StickerPackMessage.Sticker",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilityLabel": {
+        "number": 4
+      },
+      "emojis": {
+        "number": 3
+      },
+      "fileName": {
+        "number": 1
+      },
+      "isAnimated": {
+        "number": 2
+      },
+      "isLottie": {
+        "number": 5
+      },
+      "mimetype": {
+        "number": 6
+      },
+      "premium": {
+        "number": 7
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.StickerPackMessage.Sticker\""
+  },
+  "literals": [
+    "Sticker"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

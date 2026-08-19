@@ -1,0 +1,42 @@
+{
+  "id": "ab:newsletter_rcat_field_generating_enabled",
+  "kind": "ab",
+  "name": "newsletter_rcat_field_generating_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 19303,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "newsletter_rcat_field_generating_enabled:\\s*\\[\\s*19303"
+  },
+  "literals": [
+    "newsletter_rcat_field_generating_enabled",
+    "19303"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

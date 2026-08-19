@@ -1,0 +1,1 @@
+{"deps":["WAWebOffdStorageUtils","WAWebStorageMutationBuilder"],"dependents":["WAWebMessageReceiptBatcher","WAWebOffdStorage","WAWebOffdStorageUpdateOfflinePeerReceipts"],"dependent_count":3,"exports":[{"name":"getTable","used_by":["WAWebMessageReceiptBatcher","WAWebOffdStorageUpdateOfflinePeerReceipts"],"uses":2},{"name":"addTable","used_by":["WAWebOffdStorage"],"uses":1}]}

@@ -1,0 +1,53 @@
+{
+  "id": "mex:WAWebMexGetDsbInfoJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexGetDsbInfoJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9982897848413251",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_get_dsb_info",
+        "ty": "XWA2DSBInfoCreationResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "reference_number",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_get_dsb_info",
+    "document": "# persisted document 9982897848413251\nmutation MexGetDsbInfoJobMutation(\n  $input\n) {\n  xwa2_get_dsb_info(input: $input) {  # XWA2DSBInfoCreationResponse\n    reference_number\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexGetDsbInfoJobMutation.graphql",
+    "matches": "id:\\s*\"9982897848413251\""
+  },
+  "literals": [
+    "9982897848413251",
+    "WAWebMexGetDsbInfoJobMutation",
+    "xwa2_get_dsb_info"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexGetDsbInfoJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

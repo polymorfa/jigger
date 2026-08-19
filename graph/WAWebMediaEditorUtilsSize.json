@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebMediaEditorImage.react","WAWebMediaEditorPreviewCropRotate.react"],"dependent_count":2,"exports":[{"name":"calculateContainScale","used_by":["WAWebMediaEditorImage.react","WAWebMediaEditorPreviewCropRotate.react"],"uses":2}]}

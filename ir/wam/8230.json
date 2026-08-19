@@ -1,0 +1,80 @@
+{
+  "id": "wam:8230",
+  "kind": "wam",
+  "name": "CompanionInviteContact",
+  "data": {
+    "kind": "wam",
+    "event_id": 8230,
+    "fields": {
+      "companionInviteAction": {
+        "id": 8,
+        "type": "COMPANION_INVITE_ACTION_TYPE",
+        "wire": "companion_invite_action",
+        "enum_ref": "COMPANION_INVITE_ACTION_TYPE"
+      },
+      "companionInviteCodeError": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "companion_invite_code_error"
+      },
+      "companionInviteMethod": {
+        "id": 2,
+        "type": "COMPANION_INVITE_METHOD_TYPE",
+        "wire": "companion_invite_method",
+        "enum_ref": "COMPANION_INVITE_METHOD_TYPE"
+      },
+      "companionInviteNumContactsAddressBook": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "companion_invite_num_contacts_address_book"
+      },
+      "companionInviteNumContactsWa": {
+        "id": 4,
+        "type": "INTEGER",
+        "wire": "companion_invite_num_contacts_wa"
+      },
+      "companionInviteOrigin": {
+        "id": 5,
+        "type": "COMPANION_INVITE_ORIGIN_TYPE",
+        "wire": "companion_invite_origin",
+        "enum_ref": "COMPANION_INVITE_ORIGIN_TYPE"
+      },
+      "companionInviteSessionId": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "companion_invite_session_id"
+      },
+      "companionValidInviteCode": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "companion_valid_invite_code"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebCompanionInviteContactWamEvent",
+    "matches": "CompanionInviteContact:\\s*\\[\\s*8230"
+  },
+  "literals": [
+    "8230"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumCompanionInviteActionType",
+      "WAWebWamEnumCompanionInviteMethodType",
+      "WAWebWamEnumCompanionInviteOriginType"
+    ],
+    "dependents": [
+      "WAWebOutContactLoggingUtils"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

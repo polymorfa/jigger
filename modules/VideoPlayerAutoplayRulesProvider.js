@@ -1,0 +1,282 @@
+__d("VideoPlayerAutoplayRulesProvider", [
+	"FBLogger",
+	"VideoPlayerViewabilityConstants",
+	"createEvaluateVideoAutoplayIgnoreOnInvisibleRule",
+	"createEvaluateVideoAutoplayIgnoreOnLowBandwidthRule",
+	"createEvaluateVideoAutoplayPauseOnInvisibleRule",
+	"createEvaluateVideoAutoplayPauseOnMutedInvisibleRule",
+	"evaluateVideoAutoplayDefaultIgnoreRule",
+	"evaluateVideoAutoplayIgnoreOnBackgroundedRule",
+	"evaluateVideoAutoplayIgnoreOnBroadcastEndedRule",
+	"evaluateVideoAutoplayIgnoreOnEndedRule",
+	"evaluateVideoAutoplayIgnoreOnFrozenRule",
+	"evaluateVideoAutoplayIgnoreOnProductPausedRule",
+	"evaluateVideoAutoplayIgnoreOnUnmuteRule",
+	"evaluateVideoAutoplayIgnoreOnUserPausedRule",
+	"evaluateVideoAutoplayIgnoreOnUserPlayRule",
+	"evaluateVideoAutoplayPauseOnAdBackgroundedRule",
+	"evaluateVideoAutoplayPauseOnAdInvisibleRule",
+	"evaluateVideoAutoplayPauseOnAdMutedBackgroundedRule",
+	"evaluateVideoAutoplayPauseOnBackgroundedRule",
+	"evaluateVideoAutoplayPauseOnBackgroundedSubtreeRule",
+	"evaluateVideoAutoplayPauseOnHiddenSubtreeRule",
+	"evaluateVideoAutoplayPauseOnMutedBackgroundedRule"
+], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	var e, s, u, c, d, m, p, _, f, g, h, y, C, b = 25e4, v = [
+		e = r("evaluateVideoAutoplayIgnoreOnFrozenRule"),
+		s = r("evaluateVideoAutoplayPauseOnAdInvisibleRule"),
+		(u = r("createEvaluateVideoAutoplayPauseOnInvisibleRule"))((c = r("VideoPlayerViewabilityConstants")).DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		d = r("evaluateVideoAutoplayPauseOnAdMutedBackgroundedRule"),
+		m = r("evaluateVideoAutoplayPauseOnHiddenSubtreeRule"),
+		p = r("evaluateVideoAutoplayIgnoreOnUnmuteRule"),
+		_ = r("evaluateVideoAutoplayIgnoreOnUserPausedRule"),
+		f = r("evaluateVideoAutoplayIgnoreOnUserPlayRule"),
+		g = r("evaluateVideoAutoplayIgnoreOnEndedRule")
+	], S = [
+		e,
+		s,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		h = r("evaluateVideoAutoplayPauseOnBackgroundedSubtreeRule"),
+		d,
+		m,
+		p,
+		_,
+		f,
+		g
+	], R = [
+		e,
+		s,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		(y = r("createEvaluateVideoAutoplayIgnoreOnLowBandwidthRule"))(b),
+		r("evaluateVideoAutoplayPauseOnAdBackgroundedRule"),
+		C = r("evaluateVideoAutoplayPauseOnMutedBackgroundedRule"),
+		m,
+		p,
+		_,
+		f,
+		g
+	], L = [
+		e,
+		y(b),
+		C,
+		p,
+		_,
+		f,
+		g
+	], E = [
+		e,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		m,
+		_,
+		f,
+		g
+	], k = [
+		e,
+		s,
+		d,
+		m,
+		y(b),
+		_
+	];
+	k.push(u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE)), k.push(r("evaluateVideoAutoplayIgnoreOnBroadcastEndedRule"));
+	var I = k.slice(), T = [
+		e,
+		s,
+		r("createEvaluateVideoAutoplayPauseOnMutedInvisibleRule")(.01),
+		d,
+		m,
+		p,
+		_,
+		f,
+		g
+	].filter(Boolean), D = [
+		e,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		m,
+		p,
+		_,
+		f,
+		g
+	], x = [
+		e,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		m,
+		p,
+		_,
+		f,
+		g
+	], $ = [
+		e,
+		s,
+		d,
+		m,
+		p,
+		_,
+		f,
+		g
+	], P = [
+		e,
+		s,
+		m,
+		_,
+		f,
+		g
+	], N = [
+		e,
+		m,
+		p,
+		_,
+		f,
+		g
+	], M = [
+		e,
+		m,
+		p,
+		_,
+		f,
+		g
+	], w = [
+		e,
+		s,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		d,
+		p,
+		_,
+		f,
+		g
+	], A = [r("evaluateVideoAutoplayDefaultIgnoreRule")], F = [u(0)], O = [u(0)], B = [
+		e,
+		u(.25),
+		r("evaluateVideoAutoplayPauseOnBackgroundedRule"),
+		m,
+		_,
+		h
+	], W = [
+		e,
+		m,
+		_
+	], q = [u(.25)], U = [
+		e,
+		C,
+		m,
+		p,
+		_,
+		f,
+		g,
+		u(.001)
+	], V = [
+		C,
+		m,
+		p
+	], H = [
+		C,
+		m,
+		p,
+		_,
+		f
+	], G = [
+		e,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		C,
+		h,
+		m,
+		p,
+		_,
+		f,
+		g
+	], z = [], j = [
+		e,
+		m,
+		_,
+		f,
+		g
+	], K = [
+		e,
+		s,
+		y(b),
+		C,
+		m,
+		p,
+		_,
+		f,
+		g
+	], Q = [
+		e,
+		m,
+		u(0),
+		p,
+		_,
+		f,
+		g
+	], X = [
+		e,
+		m,
+		h,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		p,
+		_,
+		f,
+		g
+	], Y = [
+		e,
+		m,
+		u(.25),
+		p,
+		_,
+		f,
+		g
+	], J = [r("evaluateVideoAutoplayIgnoreOnBackgroundedRule"), r("createEvaluateVideoAutoplayIgnoreOnInvisibleRule")(0)], Z = [
+		e,
+		s,
+		u(c.DEFAULT_VIEWABILITY_PERCENTAGE_FOR_PAUSE),
+		d,
+		m,
+		p,
+		_,
+		r("evaluateVideoAutoplayIgnoreOnProductPausedRule"),
+		f,
+		g
+	], ee = {
+		always_disable: A,
+		barcelona_carousel: V,
+		barcelona_carousel_v2: H,
+		barcelona_feed: G,
+		basic: v,
+		bulletin: F,
+		creator_studio: w,
+		creator_studio_sliding_tray_rules: O,
+		default_feed: R,
+		dolly: U,
+		focused_story_view: L,
+		gif: E,
+		igd_music_sticker: J,
+		kadabra_lightbox_feed: X,
+		kadabra_tile_feed: Y,
+		kds_video: Q,
+		live_producer: D,
+		live_studio: x,
+		music_at_post_level_experience: K,
+		polaris_feed: B,
+		polaris_grid: q,
+		polaris_live: W,
+		polaris_notes: z,
+		reels: S,
+		reels_audio: j,
+		stages: M,
+		tournament_hero: $,
+		wa_web: Z,
+		watch_feed: I,
+		watch_live_tab: T,
+		wns: P,
+		work_knowledge: N
+	}, te = function(t) {
+		var e = ee[t];
+		if (!e) throw r("FBLogger")("comet_video_player").mustfixThrow("Unknown VideoPlayerAutoplayRulesType passed to VideoPlayerAutoplayRulesProvider");
+		return e;
+	};
+	function ne(e) {
+		return e;
+	}
+	l.provideAutoplayRules = te, l.makeVideoPlayerAutoplayRules = ne;
+}), 98);

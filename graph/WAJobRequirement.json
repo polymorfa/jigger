@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger"],"dependents":["WAPersistedJobManager","WAPersistedJobManagerV2"],"dependent_count":2,"exports":[{"name":"joinRequirements","used_by":["WAPersistedJobManager","WAPersistedJobManagerV2"],"uses":2},{"name":"JobRequirement","used_by":[],"uses":0}]}

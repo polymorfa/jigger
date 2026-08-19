@@ -1,0 +1,1 @@
+{"deps":["WAWebMexClient","WAWebMexGetPrivacyListsQuery.graphql","asyncToGeneratorRuntime"],"dependents":["WAWebQueryPrivacyDisallowedListMexJob"],"dependent_count":1,"exports":[{"name":"fetchPrivacyList","used_by":["WAWebQueryPrivacyDisallowedListMexJob"],"uses":1}]}

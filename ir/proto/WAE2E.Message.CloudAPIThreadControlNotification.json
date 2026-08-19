@@ -1,0 +1,58 @@
+{
+  "id": "proto:WAE2E.Message.CloudAPIThreadControlNotification",
+  "kind": "proto",
+  "name": "WAE2E.Message.CloudAPIThreadControlNotification",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "consumerLid": {
+        "number": 3
+      },
+      "consumerPhoneNumber": {
+        "number": 4
+      },
+      "notificationContent": {
+        "number": 5,
+        "type_name": "WAE2E.Message.CloudAPIThreadControlNotification.CloudAPIThreadControlNotificationContent"
+      },
+      "senderNotificationTimestampMs": {
+        "number": 2
+      },
+      "shouldSuppressNotification": {
+        "number": 6
+      },
+      "status": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.CloudAPIThreadControlNotification\""
+  },
+  "literals": [
+    "CloudAPIThreadControlNotification"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

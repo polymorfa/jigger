@@ -1,0 +1,1 @@
+{"deps":["WACryptoCurveConstants","WACryptoCurveEd25519PointOps","WACryptoCurveEncoding","WACryptoCurveTransformations"],"dependents":["WASignalCipher"],"dependent_count":1,"exports":[{"name":"isCanonical","used_by":["WASignalCipher"],"uses":1},{"name":"isIdentity","used_by":[],"uses":0},{"name":"isInRange","used_by":[],"uses":0},{"name":"isTorsionFree","used_by":[],"uses":0}]}

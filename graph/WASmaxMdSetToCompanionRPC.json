@@ -1,0 +1,1 @@
+{"deps":["WASmaxInMdSetToCompanionRequest","WASmaxOutMdSetToCompanionResponseClientResponse","WASmaxParsingFailure","WASmaxRpcUtils"],"dependents":["WAHandlePairDeviceProtocol","WAWebHandlePairDevice"],"dependent_count":2,"exports":[{"name":"receiveSetToCompanionRPC","used_by":["WAHandlePairDeviceProtocol","WAWebHandlePairDevice"],"uses":2}]}

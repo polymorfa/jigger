@@ -1,0 +1,45 @@
+{
+  "id": "enum:ENUM_CBP_NBP_PMP",
+  "kind": "enum",
+  "name": "ENUM_CBP_NBP_PMP",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInMessagePublishEnums",
+    "variants": [
+      {
+        "name": "CBP",
+        "value": "CBP"
+      },
+      {
+        "name": "NBP",
+        "value": "NBP"
+      },
+      {
+        "name": "PMP",
+        "value": "PMP"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInMessagePublishEnums",
+    "matches": "ENUM_CBP_NBP_PMP\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_CBP_NBP_PMP",
+    "CBP",
+    "NBP",
+    "PMP"
+  ],
+  "graph": {
+    "deps": [
+      "WAJids"
+    ],
+    "dependents": [
+      "WASmaxInMessagePublishAckPaidConversationMixin",
+      "WASmaxInMessagePublishIndividualResponseSuccess",
+      "WASmaxInMessagePublishRefreshLIDMixin"
+    ],
+    "dep_count": 1,
+    "dependent_count": 3
+  }
+}

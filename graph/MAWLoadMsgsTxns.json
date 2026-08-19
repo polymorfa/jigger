@@ -1,0 +1,1 @@
+{"deps":["MAWIndexedDb","MAWLoadMsgsTxnsV2"],"dependents":["MAWBulkLoadMessagesForThread"],"dependent_count":1,"exports":[{"name":"loadMsgAndMedia_COMPAT","used_by":["MAWBulkLoadMessagesForThread"],"uses":1}]}

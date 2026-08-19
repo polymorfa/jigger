@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatAssignmentGatingUtils","WAWebConnModel","WAWebFeatureFlagName","WAWebSubscriptionFeatureFlagActions"],"dependents":["WAWebAgentCollection","WAWebAgentSync","WAWebBizAgentAction","WAWebBizChatAssignmentModal.react","WAWebMsgInfoUtils","useWAWebCanOpenInfoDrawer"],"dependent_count":6,"exports":[]}

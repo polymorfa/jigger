@@ -1,0 +1,1 @@
+{"deps":["WAAckLevel","WAAssertUnreachable","WAHex","WAMsgType","WAParseConsumerMessageProtocol","err"],"dependents":["WAHandleIndividualMessageProtocol"],"dependent_count":1,"exports":[{"name":"createV3ProtocolParser","used_by":["WAHandleIndividualMessageProtocol"],"uses":1}]}

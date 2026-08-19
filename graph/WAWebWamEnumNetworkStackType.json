@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCreateMediaDownloadMetrics","WAWebCreateMediaUploadMetrics","WAWebMediaDownload2WamEvent","WAWebMediaUpload2WamEvent"],"dependent_count":4,"exports":[{"name":"NETWORK_STACK_TYPE","used_by":["WAWebCreateMediaDownloadMetrics","WAWebCreateMediaUploadMetrics","WAWebMediaDownload2WamEvent","WAWebMediaUpload2WamEvent"],"uses":4}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:syncd_wait_for_key_timeout_days",
+  "kind": "ab",
+  "name": "syncd_wait_for_key_timeout_days",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14492,
+    "type": "int",
+    "default": 7,
+    "alt_default": 7
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "syncd_wait_for_key_timeout_days:\\s*\\[\\s*14492"
+  },
+  "literals": [
+    "syncd_wait_for_key_timeout_days",
+    "14492"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSyncdGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChatListSearch.react","WAWebSearchUserJourneyWamEvent"],"dependent_count":2,"exports":[{"name":"SEARCH_UJ_CRITERIA_TYPE","used_by":["WAWebChatListSearch.react","WAWebSearchUserJourneyWamEvent"],"uses":2}]}

@@ -1,0 +1,51 @@
+{
+  "id": "enum:CALLS_TAB_SOURCE",
+  "kind": "enum",
+  "name": "CALLS_TAB_SOURCE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCallsTabSource",
+    "variants": [
+      {
+        "name": "NOTIFICATION",
+        "value": 1.0
+      },
+      {
+        "name": "SWITCH",
+        "value": 2.0
+      },
+      {
+        "name": "LAUNCH",
+        "value": 3.0
+      },
+      {
+        "name": "NONE",
+        "value": 4.0
+      },
+      {
+        "name": "OS_CALL_LOG",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCallsTabSource",
+    "matches": "CALLS_TAB_SOURCE\\s*[:=]"
+  },
+  "literals": [
+    "CALLS_TAB_SOURCE",
+    "NOTIFICATION",
+    "SWITCH",
+    "LAUNCH",
+    "NONE",
+    "OS_CALL_LOG"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPreCallUserJourneyCallsTabWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "id": "mex:WAWebQueryProductSingleCollectionQuery",
+  "kind": "mex",
+  "name": "WAWebQueryProductSingleCollectionQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9546992575408789",
+    "operation": "query",
+    "variables": [
+      "request"
+    ],
+    "args": [
+      {
+        "name": "request"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_product_catalog_get_single_collection",
+        "ty": "XWAProductCatalogGetSingleCollectionResponseSuccess",
+        "args": [
+          "request: $request"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "collection",
+            "ty": "XWACatalogProductCollection",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "name",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "status_info",
+                "ty": "XWAProductCatalogCollectionStatusInfo",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "status",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "can_appeal",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "reject_reason",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "commerce_url",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "products",
+                "ty": "XWACatalogProduct",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "retailer_id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_hidden",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "is_sanctioned",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "product_availability",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "max_available",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "name",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "description",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "url",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "shimmed_url",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "currency",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "price",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "status_info",
+                    "ty": "XWAProductCatalogProductStatusInfo",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "can_appeal",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "status",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "sale_price",
+                    "ty": "XWAProductCatalogProductSalePrice",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "price",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "start_date",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "end_date",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "media",
+                    "ty": "XWAProductCatalogProductMedia",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "images",
+                        "ty": "XWAProductCatalogProductMediaImage",
+                        "plural": true,
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "original_image_url",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "request_image_url",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "videos",
+                        "ty": "XWAProductCatalogProductMediaVideo",
+                        "plural": true,
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "original_video_url",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "thumbnail_url",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "belongs_to",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "compliance_category",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "compliance_info",
+                    "ty": "XWAProductCatalogProductComplianceInfo",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "country_code_origin",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "importer_name",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "importer_address",
+                        "ty": "XWAProductCatalogProductComplianceInfoImporterAddress",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "street1",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "street2",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "postal_code",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "city",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "region",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "country_code",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "variant_info",
+                    "ty": "XWACatalogProductVariantInfo",
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "listing_details",
+                        "ty": "XWACatalogVariantListingDetails",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "description",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "multi_price",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "lowest_price",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "availability",
+                        "ty": "XWACatalogVariantAvailability",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "listing",
+                            "ty": "XWAVariantAvailabilityListing",
+                            "plural": true,
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "is_available",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "options",
+                                "ty": "XWAVariantAvailabilityListingOption",
+                                "plural": true,
+                                "kind": "LinkedField",
+                                "selections": [
+                                  {
+                                    "name": "name",
+                                    "kind": "ScalarField"
+                                  },
+                                  {
+                                    "name": "value",
+                                    "kind": "ScalarField"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "product_id",
+                                "kind": "ScalarField"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "types",
+                        "ty": "XWACatalogVariantTypes",
+                        "plural": true,
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "name",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "options",
+                            "ty": "XWACatalogVariantTypeOption",
+                            "plural": true,
+                            "kind": "LinkedField",
+                            "selections": [
+                              {
+                                "name": "value",
+                                "kind": "ScalarField"
+                              },
+                              {
+                                "name": "thumbnail_media",
+                                "ty": "XWAProductCatalogProductMediaImage",
+                                "kind": "LinkedField",
+                                "selections": [
+                                  {
+                                    "name": "id",
+                                    "kind": "ScalarField"
+                                  },
+                                  {
+                                    "name": "original_dimensions",
+                                    "ty": "XWAProductCatalogProductMediaImageOriginalDimensions",
+                                    "kind": "LinkedField",
+                                    "selections": [
+                                      {
+                                        "name": "height",
+                                        "kind": "ScalarField"
+                                      },
+                                      {
+                                        "name": "width",
+                                        "kind": "ScalarField"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "original_image_url",
+                                    "kind": "ScalarField"
+                                  },
+                                  {
+                                    "name": "request_image_url",
+                                    "kind": "ScalarField"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "variant_properties",
+                        "ty": "XWACatalogVariantProperties",
+                        "plural": true,
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "name",
+                            "kind": "ScalarField"
+                          },
+                          {
+                            "name": "value",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "paging",
+            "ty": "XWACatalogPaging",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "after",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 9546992575408789\nquery QueryProductSingleCollectionQuery(\n  $request\n) {\n  xwa_product_catalog_get_single_collection(request: $request) {  # XWAProductCatalogGetSingleCollectionResponseSuccess\n    collection {  # XWACatalogProductCollection\n      id\n      name\n      status_info {  # XWAProductCatalogCollectionStatusInfo\n        status\n        can_appeal\n        reject_reason\n        commerce_url\n      }\n      products {  # [XWACatalogProduct]\n        id\n        retailer_id\n        is_hidden\n        is_sanctioned\n        product_availability\n        max_available\n        name\n        description\n        url\n        shimmed_url\n        currency\n        price\n        status_info {  # XWAProductCatalogProductStatusInfo\n          can_appeal\n          status\n        }\n        sale_price {  # XWAProductCatalogProductSalePrice\n          price\n          start_date\n          end_date\n        }\n        media {  # XWAProductCatalogProductMedia\n          images {  # [XWAProductCatalogProductMediaImage]\n            id\n            original_image_url\n            request_image_url\n          }\n          videos {  # [XWAProductCatalogProductMediaVideo]\n            id\n            original_video_url\n            thumbnail_url\n          }\n        }\n        belongs_to\n        compliance_category\n        compliance_info {  # XWAProductCatalogProductComplianceInfo\n          country_code_origin\n          importer_name\n          importer_address {  # XWAProductCatalogProductComplianceInfoImporterAddress\n            street1\n            street2\n            postal_code\n            city\n            region\n            country_code\n          }\n        }\n        variant_info {  # XWACatalogProductVariantInfo\n          listing_details {  # XWACatalogVariantListingDetails\n            description\n            multi_price\n            lowest_price\n          }\n          availability {  # XWACatalogVariantAvailability\n            listing {  # [XWAVariantAvailabilityListing]\n              is_available\n              options {  # [XWAVariantAvailabilityListingOption]\n                name\n                value\n              }\n              product_id\n            }\n          }\n          types {  # [XWACatalogVariantTypes]\n            name\n            options {  # [XWACatalogVariantTypeOption]\n              value\n              thumbnail_media {  # XWAProductCatalogProductMediaImage\n                id\n                original_dimensions {  # XWAProductCatalogProductMediaImageOriginalDimensions\n                  height\n                  width\n                }\n                original_image_url\n                request_image_url\n              }\n            }\n          }\n          variant_properties {  # [XWACatalogVariantProperties]\n            name\n            value\n          }\n        }\n      }\n    }\n    paging {  # XWACatalogPaging\n      after\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebQueryProductSingleCollectionQuery.graphql",
+    "matches": "id:\\s*\"9546992575408789\""
+  },
+  "literals": [
+    "9546992575408789",
+    "WAWebQueryProductSingleCollectionQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebQueryProductSingleCollection"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

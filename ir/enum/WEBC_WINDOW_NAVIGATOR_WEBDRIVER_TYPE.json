@@ -1,0 +1,42 @@
+{
+  "id": "enum:WEBC_WINDOW_NAVIGATOR_WEBDRIVER_TYPE",
+  "kind": "enum",
+  "name": "WEBC_WINDOW_NAVIGATOR_WEBDRIVER_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcWindowNavigatorWebdriverType",
+    "variants": [
+      {
+        "name": "FALSE",
+        "value": 0.0
+      },
+      {
+        "name": "TRUE",
+        "value": 1.0
+      },
+      {
+        "name": "UNDEFINED",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcWindowNavigatorWebdriverType",
+    "matches": "WEBC_WINDOW_NAVIGATOR_WEBDRIVER_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_WINDOW_NAVIGATOR_WEBDRIVER_TYPE",
+    "FALSE",
+    "TRUE",
+    "UNDEFINED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWamFingerprintReporter",
+      "WAWebWebcFingerprintWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

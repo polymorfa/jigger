@@ -1,0 +1,182 @@
+{
+  "id": "enum:CTWA_1PD_CONVERSION_TYPE",
+  "kind": "enum",
+  "name": "CTWA_1PD_CONVERSION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumCtwa1pdConversionType",
+    "variants": [
+      {
+        "name": "FIRST_CUSTOMER_MESSAGE",
+        "value": 0.0
+      },
+      {
+        "name": "FIRST_CUSTOMER_MESSAGE_CONTINUATION",
+        "value": 1.0
+      },
+      {
+        "name": "FIRST_BIZ_REPLY",
+        "value": 2.0
+      },
+      {
+        "name": "FIRST_BIZ_REPLY_CONTINUATION",
+        "value": 3.0
+      },
+      {
+        "name": "SECOND_CUSTOMER_MESSAGE",
+        "value": 4.0
+      },
+      {
+        "name": "SECOND_CUSTOMER_MESSAGE_CONTINUATION",
+        "value": 5.0
+      },
+      {
+        "name": "SECOND_BIZ_REPLY",
+        "value": 6.0
+      },
+      {
+        "name": "SECOND_BIZ_REPLY_CONTINUATION",
+        "value": 7.0
+      },
+      {
+        "name": "THIRD_CUSTOMER_MESSAGE",
+        "value": 8.0
+      },
+      {
+        "name": "THIRD_CUSTOMER_MESSAGE_CONTINUATION",
+        "value": 9.0
+      },
+      {
+        "name": "THIRD_BIZ_REPLY",
+        "value": 10.0
+      },
+      {
+        "name": "FIRST_CUSTOMER_CALL",
+        "value": 11.0
+      },
+      {
+        "name": "FIRST_BIZ_CALL",
+        "value": 12.0
+      },
+      {
+        "name": "FIRST_CUSTOMER_LONG_CALL",
+        "value": 13.0
+      },
+      {
+        "name": "FIRST_BIZ_LONG_CALL",
+        "value": 14.0
+      },
+      {
+        "name": "WHATSAPP_FLOWS_SUBMITTED",
+        "value": 15.0
+      },
+      {
+        "name": "AGM_CTA_CLICK",
+        "value": 16.0
+      },
+      {
+        "name": "MESSAGE",
+        "value": 17.0
+      },
+      {
+        "name": "CALL",
+        "value": 18.0
+      },
+      {
+        "name": "LONG_CALL",
+        "value": 19.0
+      },
+      {
+        "name": "EXTRA_LONG_CALL",
+        "value": 20.0
+      },
+      {
+        "name": "BIZ_BLOCK",
+        "value": 21.0
+      },
+      {
+        "name": "BIZ_REPORT",
+        "value": 22.0
+      },
+      {
+        "name": "PAYMENT",
+        "value": 23.0
+      },
+      {
+        "name": "SHORT_CALL",
+        "value": 24.0
+      },
+      {
+        "name": "USER_BLOCK",
+        "value": 25.0
+      },
+      {
+        "name": "USER_REPORT",
+        "value": 26.0
+      },
+      {
+        "name": "USER_BLOCK_AND_REPORT",
+        "value": 27.0
+      },
+      {
+        "name": "MESSAGE_ON_DELIVERY",
+        "value": 28.0
+      },
+      {
+        "name": "CALL_OVER_120S",
+        "value": 29.0
+      },
+      {
+        "name": "BIZ_CONV_FEEDBACK",
+        "value": 30.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumCtwa1pdConversionType",
+    "matches": "CTWA_1PD_CONVERSION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CTWA_1PD_CONVERSION_TYPE",
+    "FIRST_CUSTOMER_MESSAGE",
+    "FIRST_CUSTOMER_MESSAGE_CONTINUATION",
+    "FIRST_BIZ_REPLY",
+    "FIRST_BIZ_REPLY_CONTINUATION",
+    "SECOND_CUSTOMER_MESSAGE",
+    "SECOND_CUSTOMER_MESSAGE_CONTINUATION",
+    "SECOND_BIZ_REPLY",
+    "SECOND_BIZ_REPLY_CONTINUATION",
+    "THIRD_CUSTOMER_MESSAGE",
+    "THIRD_CUSTOMER_MESSAGE_CONTINUATION",
+    "THIRD_BIZ_REPLY",
+    "FIRST_CUSTOMER_CALL",
+    "FIRST_BIZ_CALL",
+    "FIRST_CUSTOMER_LONG_CALL",
+    "FIRST_BIZ_LONG_CALL",
+    "WHATSAPP_FLOWS_SUBMITTED",
+    "AGM_CTA_CLICK",
+    "MESSAGE",
+    "CALL",
+    "LONG_CALL",
+    "EXTRA_LONG_CALL",
+    "BIZ_BLOCK",
+    "BIZ_REPORT",
+    "PAYMENT",
+    "SHORT_CALL",
+    "USER_BLOCK",
+    "USER_REPORT",
+    "USER_BLOCK_AND_REPORT",
+    "MESSAGE_ON_DELIVERY",
+    "CALL_OVER_120S",
+    "BIZ_CONV_FEEDBACK"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCtwa1pdConversionWamEvent",
+      "WAWebSmb1pdConversionSignalAction"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

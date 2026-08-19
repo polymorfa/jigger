@@ -1,0 +1,45 @@
+{
+  "id": "ab:syncd_sentinel_timeout_seconds",
+  "kind": "ab",
+  "name": "syncd_sentinel_timeout_seconds",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 14485,
+    "type": "int",
+    "default": 3,
+    "alt_default": 3
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "syncd_sentinel_timeout_seconds:\\s*\\[\\s*14485"
+  },
+  "literals": [
+    "syncd_sentinel_timeout_seconds",
+    "14485"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSocketModel"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["MAWWorkerPersistedDataService"],"dependents":["MAWBridgeHandlers"],"dependent_count":1,"exports":[{"name":"sendUpdateFromUIPersistedDataService","used_by":["MAWBridgeHandlers"],"uses":1}]}

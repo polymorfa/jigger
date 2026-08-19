@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebGatedChatOpenedWamEvent","WAWebGatedMessageReceivedWamEvent","WAWebLogReceivedMessages","useWAWebConversationPanelCanCompose"],"dependent_count":4,"exports":[{"name":"CHAT_GATED_REASON","used_by":["WAWebGatedChatOpenedWamEvent","WAWebGatedMessageReceivedWamEvent","WAWebLogReceivedMessages","useWAWebConversationPanelCanCompose"],"uses":4}]}

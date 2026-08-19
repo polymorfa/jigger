@@ -1,0 +1,52 @@
+{
+  "id": "proto:WAMsgApplication.MessageApplication",
+  "kind": "proto",
+  "name": "WAMsgApplication.MessageApplication",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "metadata": {
+        "number": 2,
+        "type_name": "WAMsgApplication.MessageApplication.Metadata"
+      },
+      "payload": {
+        "number": 1,
+        "type_name": "WAMsgApplication.MessageApplication.Payload"
+      }
+    },
+    "module": "WAMsgApplication.pb"
+  },
+  "evidence": {
+    "module": "WAMsgApplication.pb",
+    "matches": "name = \"MessageApplication\""
+  },
+  "literals": [
+    "MessageApplication"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsGenerateDeletionMessage",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseXMAProtocol",
+      "MAWProtobufDeserializers",
+      "MAWSpamReportUtils",
+      "MAWXMAEncodeUtils",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsMessageApplication",
+      "WADecodeIncomingMsg",
+      "WASendAppDataFanoutProtocol",
+      "WMIForwardMsgProcessor",
+      "WMIProtobufBuilder",
+      "WMIWAMessagePublisher"
+    ],
+    "dep_count": 2,
+    "dependent_count": 16
+  }
+}

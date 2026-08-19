@@ -1,0 +1,279 @@
+__d("WAWebMexCreateReportAppealJobMutation.graphql", [], (function(t, n, r, o, a, i) {
+	"use strict";
+	var e = (function() {
+		var e = {
+			defaultValue: null,
+			kind: "LocalArgument",
+			name: "reason"
+		}, t = {
+			defaultValue: null,
+			kind: "LocalArgument",
+			name: "report_id"
+		}, n = [{
+			kind: "Variable",
+			name: "reason",
+			variableName: "reason"
+		}, {
+			kind: "Variable",
+			name: "report_id",
+			variableName: "report_id"
+		}], r = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "report_id",
+			storageKey: null
+		}, o = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "status",
+			storageKey: null
+		}, a = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "creation_time",
+			storageKey: null
+		}, i = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "last_update_time",
+			storageKey: null
+		}, l = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "channel_name",
+			storageKey: null
+		}, s = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "channel_jid",
+			storageKey: null
+		}, u = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2ReportAppealReasonOption",
+			kind: "LinkedField",
+			name: "appeal_reason_options",
+			plural: !0,
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "reason",
+				storageKey: null
+			}, {
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "label",
+				storageKey: null
+			}],
+			storageKey: null
+		}, c = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "server_msg_id",
+				storageKey: null
+			}],
+			type: "XWA2ChannelServerMsgData",
+			abstractKey: null
+		}, d = {
+			kind: "InlineFragment",
+			selections: [{
+				alias: null,
+				args: null,
+				kind: "ScalarField",
+				name: "server_id",
+				storageKey: null
+			}],
+			type: "XWA2ChannelStatusData",
+			abstractKey: null
+		}, m = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "server_response_id",
+			storageKey: null
+		}, p = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "notify_name",
+			storageKey: null
+		}, _ = {
+			alias: null,
+			args: null,
+			concreteType: "XWA2ReportAppeal",
+			kind: "LinkedField",
+			name: "appeal",
+			plural: !1,
+			selections: [
+				{
+					alias: null,
+					args: null,
+					kind: "ScalarField",
+					name: "state",
+					storageKey: null
+				},
+				{
+					alias: null,
+					args: null,
+					kind: "ScalarField",
+					name: "appeal_reason",
+					storageKey: null
+				},
+				a,
+				r,
+				{
+					alias: null,
+					args: null,
+					kind: "ScalarField",
+					name: "appeal_id",
+					storageKey: null
+				}
+			],
+			storageKey: null
+		}, f = {
+			alias: null,
+			args: null,
+			kind: "ScalarField",
+			name: "__typename",
+			storageKey: null
+		};
+		return {
+			fragment: {
+				argumentDefinitions: [e, t],
+				kind: "Fragment",
+				metadata: null,
+				name: "WAWebMexCreateReportAppealJobMutation",
+				selections: [{
+					alias: null,
+					args: n,
+					concreteType: "XWA2ChannelsReport",
+					kind: "LinkedField",
+					name: "xwa2_create_channel_report_appeal_v2",
+					plural: !1,
+					selections: [
+						r,
+						o,
+						a,
+						i,
+						l,
+						s,
+						u,
+						{
+							alias: null,
+							args: null,
+							concreteType: null,
+							kind: "LinkedField",
+							name: "reported_content_data",
+							plural: !1,
+							selections: [
+								c,
+								d,
+								{
+									kind: "InlineFragment",
+									selections: [
+										m,
+										p,
+										{
+											alias: null,
+											args: null,
+											concreteType: null,
+											kind: "LinkedField",
+											name: "question_data",
+											plural: !1,
+											selections: [c],
+											storageKey: null
+										}
+									],
+									type: "XWA2ChannelQuestionResponseData",
+									abstractKey: null
+								}
+							],
+							storageKey: null
+						},
+						_
+					],
+					storageKey: null
+				}],
+				type: "Mutation",
+				abstractKey: null
+			},
+			kind: "Request",
+			operation: {
+				argumentDefinitions: [t, e],
+				kind: "Operation",
+				name: "WAWebMexCreateReportAppealJobMutation",
+				selections: [{
+					alias: null,
+					args: n,
+					concreteType: "XWA2ChannelsReport",
+					kind: "LinkedField",
+					name: "xwa2_create_channel_report_appeal_v2",
+					plural: !1,
+					selections: [
+						r,
+						o,
+						a,
+						i,
+						l,
+						s,
+						u,
+						{
+							alias: null,
+							args: null,
+							concreteType: null,
+							kind: "LinkedField",
+							name: "reported_content_data",
+							plural: !1,
+							selections: [
+								f,
+								c,
+								d,
+								{
+									kind: "InlineFragment",
+									selections: [
+										m,
+										p,
+										{
+											alias: null,
+											args: null,
+											concreteType: null,
+											kind: "LinkedField",
+											name: "question_data",
+											plural: !1,
+											selections: [f, c],
+											storageKey: null
+										}
+									],
+									type: "XWA2ChannelQuestionResponseData",
+									abstractKey: null
+								}
+							],
+							storageKey: null
+						},
+						_
+					],
+					storageKey: null
+				}]
+			},
+			params: {
+				id: "27103316329328467",
+				metadata: {},
+				name: "WAWebMexCreateReportAppealJobMutation",
+				operationKind: "mutation",
+				text: null
+			}
+		};
+	})();
+	a.exports = e;
+}), null);

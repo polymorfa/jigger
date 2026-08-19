@@ -1,0 +1,34 @@
+{
+  "id": "proto:WAArmadilloBackupCommon.FrankingMetadata",
+  "kind": "proto",
+  "name": "WAArmadilloBackupCommon.FrankingMetadata",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "frankingTag": {
+        "number": 3
+      },
+      "reportingTag": {
+        "number": 4
+      }
+    },
+    "module": "WAArmadilloBackupCommon.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloBackupCommon.pb",
+    "matches": "name = \"FrankingMetadata\""
+  },
+  "literals": [
+    "FrankingMetadata"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAArmadilloBackupMessage.pb"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

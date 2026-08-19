@@ -1,0 +1,218 @@
+{
+  "id": "iq:newsletter/get/my_addons",
+  "kind": "iq",
+  "name": "NewslettersMyAddOns",
+  "data": {
+    "kind": "iq",
+    "xmlns": "newsletter",
+    "type": "get",
+    "tags": [
+      "my_addons"
+    ],
+    "request": {
+      "tag": "iq",
+      "attrs": [
+        {
+          "name": "to",
+          "ty": "jid",
+          "literal": "s.whatsapp.net",
+          "optional": false
+        },
+        {
+          "name": "xmlns",
+          "ty": "string",
+          "literal": "newsletter",
+          "optional": false
+        },
+        {
+          "name": "id",
+          "ty": "id",
+          "optional": false
+        },
+        {
+          "name": "type",
+          "ty": "string",
+          "literal": "get",
+          "optional": false
+        }
+      ],
+      "children": [
+        {
+          "tag": "my_addons",
+          "attrs": [
+            {
+              "name": "limit",
+              "ty": "int",
+              "optional": false
+            },
+            {
+              "name": "jid",
+              "ty": "jid",
+              "optional": true
+            }
+          ],
+          "card": "one"
+        }
+      ],
+      "card": "one"
+    },
+    "rpc": "WASmaxNewslettersMyAddOnsRPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInNewslettersMyAddOnsResponseSuccess",
+        "node": {
+          "tag": "message",
+          "attrs": [
+            {
+              "name": "server_id",
+              "ty": "int",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "reaction",
+              "attrs": [
+                {
+                  "name": "code",
+                  "ty": "string",
+                  "optional": false
+                },
+                {
+                  "name": "t",
+                  "ty": "int",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "votes",
+              "attrs": [
+                {
+                  "name": "t",
+                  "ty": "int",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            },
+            {
+              "tag": "vote",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "ClientError",
+        "module": "WASmaxInNewslettersMyAddOnsResponseClientError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "BadRequestIQErrorResponse",
+          "ItemNotFoundIQErrorResponse",
+          "RateLimitedIQErrorResponse",
+          "UnauthorizedIQErrorResponse"
+        ]
+      },
+      {
+        "arm": "ServerError",
+        "module": "WASmaxInNewslettersMyAddOnsResponseServerError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutNewslettersMyAddOnsRequest",
+    "matches": "smax\\(\"my_addons\""
+  },
+  "literals": [
+    "newsletter",
+    "my_addons"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxJsx",
+      "WASmaxOutNewslettersSelfIQGetRequestMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxNewslettersMyAddOnsRPC"
+    ],
+    "dep_count": 4,
+    "dependent_count": 1
+  }
+}

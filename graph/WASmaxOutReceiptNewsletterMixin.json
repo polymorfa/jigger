@@ -1,0 +1,1 @@
+{"deps":["WASmaxJsx","WASmaxMixins","WASmaxOutReceiptStatusClassMixin","WAWap"],"dependents":["WASmaxOutReceiptPublishViewRequest"],"dependent_count":1,"exports":[{"name":"mergeNewsletterMixin","used_by":["WASmaxOutReceiptPublishViewRequest"],"uses":1}]}

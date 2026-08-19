@@ -1,0 +1,40 @@
+__d("WAWebGifPanelGifInfo", ["WAWebGifPanelConstants"], (function(t, n, r, o, a, i, l) {
+	var e = 0, s = function(n) {
+		var t = n.accessibilityLabel, r = n.nonVideoUrl, a = n.previewUrl, i = n.rank, l = n.trending, s = n.url, u = n.width;
+		this.rank = i, this.gifId = ++e, this.url = s, this.previewUrl = a || s, this.nonVideoUrl = r, this.width = u, this.widthStr = u + "px", this.ratioStr = Math.ceil(100 * o("WAWebGifPanelConstants").TARGET_GIF_HEIGHT / u) + "%", this.trending = l, this.accessibilityLabel = t;
+	}, u = [
+		"en",
+		"es",
+		"pt",
+		"id",
+		"fr",
+		"ar",
+		"tr",
+		"th",
+		"vi",
+		"de",
+		"it",
+		"ja",
+		"zh-CN",
+		"zh-TW",
+		"ru",
+		"ko",
+		"pl",
+		"nl",
+		"ro",
+		"hu",
+		"sv",
+		"cs",
+		"hi",
+		"bn",
+		"da",
+		"fa",
+		"tl",
+		"fi",
+		"iw",
+		"ms",
+		"no",
+		"uk"
+	];
+	l.GifInfo = s, l.GIPHY_LOCALES = u;
+}), 98);

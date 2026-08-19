@@ -1,0 +1,42 @@
+{
+  "id": "ab:ctwa_longest_call_duration",
+  "kind": "ab",
+  "name": "ctwa_longest_call_duration",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32100,
+    "type": "int",
+    "default": 120,
+    "alt_default": 120
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ctwa_longest_call_duration:\\s*\\[\\s*32100"
+  },
+  "literals": [
+    "ctwa_longest_call_duration",
+    "32100"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

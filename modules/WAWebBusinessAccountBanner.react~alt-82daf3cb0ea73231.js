@@ -1,0 +1,81 @@
+__d("WAWebBusinessAccountBanner.react", [
+	"fbt",
+	"WAWebBotBaseGating",
+	"WAWebBotLearnMore.react",
+	"WAWebBotUtils",
+	"WAWebContactGetters",
+	"WAWebDrawerBlock.react",
+	"WAWebDrawerSection.react",
+	"WAWebExternalLink.react",
+	"WAWebFaqUrl",
+	"WAWebInfoRefreshedIcon.react",
+	"WAWebModalManager",
+	"WAWebSmbUpsellBusinessInfoWithUpsellModal.react",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u = e || (e = o("react")), c = {
+		businessAccount: {
+			borderTopWidth: "x178xt8z",
+			borderTopStyle: "x13fuv20",
+			borderTopColor: "xx42vgk",
+			fontSize: "x1f6kntn",
+			$$css: !0
+		},
+		businessTitle: {
+			lineHeight: "x1dbl2gt",
+			$$css: !0
+		},
+		bannerSvg: {
+			color: "x1v5yvga",
+			width: "x1xp8n7a",
+			$$css: !0
+		}
+	};
+	function d(e) {
+		return o("WAWebBotBaseGating").isBotEnabled() && o("WAWebContactGetters").getId(e).isBot() ? s._(
+			/*BTDS*/
+			""
+		) : s._(
+			/*BTDS*/
+			""
+		);
+	}
+	d.displayName = d.name + " [from " + i.id + "]";
+	function m(e) {
+		var t = e.contact, n = e.onClick, a = u.jsx(o("WAWebInfoRefreshedIcon.react").InfoRefreshedIcon, {
+			iconXstyle: c.bannerSvg,
+			displayInline: !0
+		});
+		return u.jsx(r("WAWebDrawerBlock.react"), {
+			testid: "business-title",
+			xstyle: c.businessTitle,
+			onClick: n,
+			multiline: !0,
+			side: a,
+			children: d(t)
+		});
+	}
+	m.displayName = m.name + " [from " + i.id + "]";
+	function p(e) {
+		var t = e.contact;
+		function n() {
+			if (o("WAWebBotBaseGating").isBotEnabled() && o("WAWebContactGetters").getId(t).isBot()) {
+				if (o("WAWebBotUtils").isBotChannelFBID(o("WAWebContactGetters").getId(t))) {
+					var e = o("WAWebBotUtils").isHatchBot(o("WAWebContactGetters").getId(t)) ? o("WAWebFaqUrl").getHatchLearnMoreUrl() : o("WAWebFaqUrl").getManusLearnMoreUrl();
+					o("WAWebExternalLink.react").openExternalLink(e);
+				} else o("WAWebModalManager").ModalManager.open(u.jsx(r("WAWebBotLearnMore.react"), { fromInvoke: !1 }));
+				return;
+			}
+			o("WAWebModalManager").ModalManager.open(u.jsx(r("WAWebSmbUpsellBusinessInfoWithUpsellModal.react"), { contact: t }));
+		}
+		var a = u.jsx(m, {
+			contact: t,
+			onClick: n
+		});
+		return u.jsx(r("WAWebDrawerSection.react"), {
+			xstyle: c.businessAccount,
+			children: a
+		});
+	}
+	p.displayName = p.name + " [from " + i.id + "]", l.default = p;
+}), 226);

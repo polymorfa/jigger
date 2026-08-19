@@ -1,0 +1,1 @@
+{"deps":["fbt","$InternalEnum","LSDatabaseSingleton","LSFactory","LSIssueNewErrorStoredProcedure","LSRemoveErrorStoredProcedure","Promise","ReQL","asyncToGeneratorRuntime","gkx","promiseDone"],"dependents":["MAWCommonSetup","MAWSetupMutex","useLegacyUserWatchdog","useMAWReregisterDeviceOnError"],"dependent_count":4,"exports":[]}

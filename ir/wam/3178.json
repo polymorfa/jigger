@@ -1,0 +1,40 @@
+{
+  "id": "wam:3178",
+  "kind": "wam",
+  "name": "ClockSkewDifferenceT",
+  "data": {
+    "kind": "wam",
+    "event_id": 3178,
+    "fields": {
+      "clockSkewHourly": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "clock_skew_hourly"
+      }
+    },
+    "weights": [
+      1,
+      1000,
+      10000
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebClockSkewDifferenceTWamEvent",
+    "matches": "ClockSkewDifferenceT:\\s*\\[\\s*3178"
+  },
+  "literals": [
+    "3178"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebUpdateClockSkewUtils",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

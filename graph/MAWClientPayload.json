@@ -1,0 +1,1 @@
+{"deps":["MAWAppVersion","MAWDeviceInfo","MAWFbCat","WAArrayBufferUtils","WADanglingQueue","WAGlobals","WAJids","WALogger","WALongInt","WAWa5.pb","asyncToGeneratorRuntime","encodeProtobuf","gkx"],"dependents":["MAWChatSocketPlatformDetails"],"dependent_count":1,"exports":[{"name":"getClientPayload","used_by":["MAWChatSocketPlatformDetails"],"uses":1}]}

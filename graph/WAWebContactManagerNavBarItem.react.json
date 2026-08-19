@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebContactManagerDrawerLoadable","WAWebContactManagerGating","WAWebDrawerManager","WAWebKeyboardTabUtils","WAWebMobilePlatforms","WAWebNavBarTypes","WDSIconIcManageAccounts.react","WDSMenuBarItem.react","react","react-compiler-runtime"],"dependents":["WAWebNavigationBar.react"],"dependent_count":1,"exports":[]}

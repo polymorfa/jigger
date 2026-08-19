@@ -1,0 +1,233 @@
+{
+  "id": "proto:WAE2E.ContextInfo",
+  "kind": "proto",
+  "name": "WAE2E.ContextInfo",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actionLink": {
+        "number": 33,
+        "type_name": "WAE2E.ActionLink"
+      },
+      "afterReadDuration": {
+        "number": 76
+      },
+      "alwaysShowAdAttribution": {
+        "number": 48
+      },
+      "botMessageSharingInfo": {
+        "number": 72
+      },
+      "businessMessageForwardInfo": {
+        "number": 44,
+        "type_name": "WAE2E.ContextInfo.BusinessMessageForwardInfo"
+      },
+      "conversionData": {
+        "number": 19
+      },
+      "conversionDelaySeconds": {
+        "number": 20
+      },
+      "conversionSource": {
+        "number": 18
+      },
+      "ctwaPayload": {
+        "number": 55
+      },
+      "ctwaSignals": {
+        "number": 54
+      },
+      "dataSharingContext": {
+        "number": 47,
+        "type_name": "WAE2E.ContextInfo.DataSharingContext"
+      },
+      "disappearingMode": {
+        "number": 32,
+        "type_name": "WAE2E.DisappearingMode"
+      },
+      "entryPointConversionApp": {
+        "number": 30
+      },
+      "entryPointConversionDelaySeconds": {
+        "number": 31
+      },
+      "entryPointConversionExternalMedium": {
+        "number": 51
+      },
+      "entryPointConversionExternalSource": {
+        "number": 50
+      },
+      "entryPointConversionSource": {
+        "number": 29
+      },
+      "ephemeralSettingTimestamp": {
+        "number": 26
+      },
+      "ephemeralSharedSecret": {
+        "number": 27
+      },
+      "expiration": {
+        "number": 25
+      },
+      "externalAdReply": {
+        "number": 28,
+        "type_name": "WAE2E.ContextInfo.ExternalAdReplyInfo"
+      },
+      "featureEligibilities": {
+        "number": 49,
+        "type_name": "WAE2E.ContextInfo.FeatureEligibilities"
+      },
+      "forwardOrigin": {
+        "number": 67
+      },
+      "forwardedAiBotMessageInfo": {
+        "number": 56
+      },
+      "forwardedNewsletterMessageInfo": {
+        "number": 43,
+        "type_name": "WAE2E.ContextInfo.ForwardedNewsletterMessageInfo"
+      },
+      "forwardingScore": {
+        "number": 21
+      },
+      "groupMentions": {
+        "number": 40,
+        "type_name": "WAE2E.GroupMention"
+      },
+      "groupSubject": {
+        "number": 34
+      },
+      "isForwarded": {
+        "number": 22
+      },
+      "isGroupStatus": {
+        "number": 66
+      },
+      "isQuestion": {
+        "number": 63
+      },
+      "isSampled": {
+        "number": 39
+      },
+      "isSpoiler": {
+        "number": 73
+      },
+      "mediaDomainInfo": {
+        "number": 74,
+        "type_name": "WAE2E.MediaDomainInfo"
+      },
+      "memberLabel": {
+        "number": 62,
+        "type_name": "WAE2E.MemberLabel"
+      },
+      "mentionedJid": {
+        "number": 15
+      },
+      "nonJidMentions": {
+        "number": 70
+      },
+      "pairedMediaType": {
+        "number": 59
+      },
+      "parentGroupJid": {
+        "number": 35
+      },
+      "partiallySelectedContent": {
+        "number": 75,
+        "type_name": "WAE2E.ContextInfo.PartiallySelectedContent"
+      },
+      "participant": {
+        "number": 2
+      },
+      "placeholderKey": {
+        "number": 24
+      },
+      "questionReplyQuotedMessage": {
+        "number": 68,
+        "type_name": "WAE2E.ContextInfo.QuestionReplyQuotedMessage"
+      },
+      "quotedAd": {
+        "number": 23,
+        "type_name": "WAE2E.ContextInfo.AdReplyInfo"
+      },
+      "quotedMessage": {
+        "number": 3,
+        "type_name": "WAE2E.Message"
+      },
+      "quotedType": {
+        "number": 71
+      },
+      "rankingVersion": {
+        "number": 60
+      },
+      "remoteJid": {
+        "number": 4
+      },
+      "smbClientCampaignId": {
+        "number": 45
+      },
+      "smbServerCampaignId": {
+        "number": 46
+      },
+      "stanzaId": {
+        "number": 1
+      },
+      "statusAttributionType": {
+        "number": 57
+      },
+      "statusAttributions": {
+        "number": 65
+      },
+      "statusAudienceMetadata": {
+        "number": 69,
+        "type_name": "WAE2E.ContextInfo.StatusAudienceMetadata"
+      },
+      "statusSourceType": {
+        "number": 64
+      },
+      "trustBannerAction": {
+        "number": 38
+      },
+      "trustBannerType": {
+        "number": 37
+      },
+      "urlTrackingMap": {
+        "number": 58,
+        "type_name": "WAE2E.UrlTrackingMap"
+      },
+      "utm": {
+        "number": 41,
+        "type_name": "WAE2E.ContextInfo.UTMInfo"
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"ContextInfo\""
+  },
+  "literals": [
+    "ContextInfo"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

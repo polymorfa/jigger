@@ -1,0 +1,36 @@
+{
+  "id": "enum:WEBSITE_SOURCE_TYPE",
+  "kind": "enum",
+  "name": "WEBSITE_SOURCE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebsiteSourceType",
+    "variants": [
+      {
+        "name": "SOURCE_OTHER",
+        "value": 1.0
+      },
+      {
+        "name": "SOURCE_INSTAGRAM",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebsiteSourceType",
+    "matches": "WEBSITE_SOURCE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEBSITE_SOURCE_TYPE",
+    "SOURCE_OTHER",
+    "SOURCE_INSTAGRAM"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebViewBusinessProfileWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

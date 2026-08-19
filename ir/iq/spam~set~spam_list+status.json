@@ -1,0 +1,120 @@
+{
+  "id": "iq:spam/set/spam_list+status",
+  "kind": "iq",
+  "name": "SpamStatusReportV2",
+  "data": {
+    "kind": "iq",
+    "xmlns": "spam",
+    "type": "set",
+    "tags": [
+      "spam_list",
+      "status"
+    ],
+    "rpc": "WASmaxSpamStatusReportV2RPC",
+    "responses": [
+      {
+        "arm": "Success",
+        "module": "WASmaxInSpamStatusReportV2ResponseSuccess",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "domainjid",
+              "optional": true
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "result",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "report",
+              "attrs": [
+                {
+                  "name": "id",
+                  "ty": "string",
+                  "optional": false
+                }
+              ],
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        }
+      },
+      {
+        "arm": "Error",
+        "module": "WASmaxInSpamStatusReportV2ResponseError",
+        "node": {
+          "tag": "iq",
+          "attrs": [
+            {
+              "name": "id",
+              "ty": "string",
+              "optional": false
+            },
+            {
+              "name": "from",
+              "ty": "domainjid",
+              "optional": true
+            },
+            {
+              "name": "type",
+              "ty": "string",
+              "literal": "error",
+              "optional": false
+            }
+          ],
+          "children": [
+            {
+              "tag": "error",
+              "card": "one"
+            }
+          ],
+          "card": "one"
+        },
+        "errors": [
+          "IQErrorBadRequest",
+          "IQErrorForbidden",
+          "IQErrorInternalServerError",
+          "IQErrorRateOverlimit"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxOutSpamStatusReportV2Request",
+    "matches": "smax\\(\"spam_list\""
+  },
+  "literals": [
+    "spam",
+    "spam_list",
+    "status"
+  ],
+  "graph": {
+    "deps": [
+      "WASmaxAttrs",
+      "WASmaxJsx",
+      "WASmaxMixins",
+      "WASmaxOutSpamBaseIQSetRequestMixin",
+      "WASmaxOutSpamBaseReportMixin",
+      "WASmaxOutSpamEntitySubjectMixin",
+      "WASmaxOutSpamReportableNewsletterStatusMixin",
+      "WAWap"
+    ],
+    "dependents": [
+      "WASmaxSpamStatusReportV2RPC"
+    ],
+    "dep_count": 8,
+    "dependent_count": 1
+  }
+}

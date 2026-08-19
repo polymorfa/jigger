@@ -1,0 +1,1 @@
+{"deps":["WAJobOrchestratorTypes","WAWebMexFetchNewsletterInsightsJob","WAWebOrchestratorNonPersistedJob"],"dependents":["WAWebPopulateNewsletterInsightsAction"],"dependent_count":1,"exports":[{"name":"getNewsletterInsights","used_by":["WAWebPopulateNewsletterInsightsAction"],"uses":1}]}

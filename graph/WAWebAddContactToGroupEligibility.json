@@ -1,0 +1,1 @@
+{"deps":["WAWebContactGetters","WAWebLidMigrationUtils"],"dependents":["WAWebAddContactToGroupFlow.react","WAWebMessageVcard.react"],"dependent_count":2,"exports":[{"name":"isContactAddableToGroup","used_by":["WAWebAddContactToGroupFlow.react","WAWebMessageVcard.react"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebDrawerButton.react","WAWebEmojiText.react","WAWebFormatConfiguration","WAWebSettingsConst","WAWebSettingsStepIcon.react","WAWebStateUtils","nullthrows","react","useWAWebModelValues","useWAWebSearchQuery"],"dependents":["WAWebChatlistItem.react","WAWebChatlist_DEPRECATED.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

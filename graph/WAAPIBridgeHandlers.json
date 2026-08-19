@@ -1,0 +1,1 @@
+{"deps":["WAAPI"],"dependents":["MAWBackendBridgeSetup","MAWRegisterBridgeHandlers"],"dependent_count":2,"exports":[{"name":"waapiBridgeHandlers","used_by":["MAWBackendBridgeSetup","MAWRegisterBridgeHandlers"],"uses":2}]}

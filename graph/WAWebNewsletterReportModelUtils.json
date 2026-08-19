@@ -1,0 +1,1 @@
+{"deps":["WAWebWidFactory"],"dependents":["WAWebCreateReportAppealJob","WAWebNewsletterGetNewsletterReportsJob"],"dependent_count":2,"exports":[{"name":"mapMexReportToNewsletterReport","used_by":["WAWebCreateReportAppealJob","WAWebNewsletterGetNewsletterReportsJob"],"uses":2}]}

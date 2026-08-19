@@ -1,0 +1,70 @@
+{
+  "id": "enum:STORY_OVERLAY_BLOKS_LINK_STICKER_STYLES",
+  "kind": "enum",
+  "name": "STORY_OVERLAY_BLOKS_LINK_STICKER_STYLES",
+  "data": {
+    "kind": "enum",
+    "module": "StoriesEnums",
+    "variants": [
+      {
+        "name": "IG_ADD_TO_YOURS_STICKER_CROSSPOST",
+        "value": "IG_ADD_TO_YOURS_STICKER_CROSSPOST"
+      },
+      {
+        "name": "IG_FEED_URL",
+        "value": "IG_FEED_URL"
+      },
+      {
+        "name": "IG_LINK_STICKER_CROSSPOST",
+        "value": "IG_LINK_STICKER_CROSSPOST"
+      },
+      {
+        "name": "IG_MULTI_OPTION_POLL_CROSSPOST",
+        "value": "IG_MULTI_OPTION_POLL_CROSSPOST"
+      },
+      {
+        "name": "IG_REEL_URL",
+        "value": "IG_REEL_URL"
+      },
+      {
+        "name": "IG_TEXT_POST_SHARE_CROSSPOST",
+        "value": "IG_TEXT_POST_SHARE_CROSSPOST"
+      },
+      {
+        "name": "URL_ONLY",
+        "value": "URL_ONLY"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "StoriesEnums",
+    "matches": "STORY_OVERLAY_BLOKS_LINK_STICKER_STYLES\\s*[:=]"
+  },
+  "literals": [
+    "STORY_OVERLAY_BLOKS_LINK_STICKER_STYLES",
+    "IG_ADD_TO_YOURS_STICKER_CROSSPOST",
+    "IG_FEED_URL",
+    "IG_LINK_STICKER_CROSSPOST",
+    "IG_MULTI_OPTION_POLL_CROSSPOST",
+    "IG_REEL_URL",
+    "IG_TEXT_POST_SHARE_CROSSPOST",
+    "URL_ONLY"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum"
+    ],
+    "dependents": [
+      "CometFeedStoryFBReelsAttachment.react",
+      "FBUnifiedLightweightVideoAttachmentWrapper.react",
+      "ProfileCometAppSectionStoriesArchiveSelfActionRenderer.react",
+      "StoriesGradientBackground.react",
+      "StoriesTrayTileContent.react",
+      "StoriesTrayTileContentV2.react",
+      "StoriesTrayTileConversationSparkHeader.react",
+      "StoriesWebSettingsDialog.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 8
+  }
+}

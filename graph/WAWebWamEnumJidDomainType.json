@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebDefenseModeQuarantineWamEvent"],"dependent_count":1,"exports":[{"name":"JID_DOMAIN_TYPE","used_by":["WAWebDefenseModeQuarantineWamEvent"],"uses":1}]}

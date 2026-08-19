@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebKmpWamLogger","WAWebMdCriticalEventWamEvent","WAWebMessageRangeUtils","WAWebSyncdAntiTampering","WAWebSyncdIndexUtils"],"dependent_count":5,"exports":[{"name":"MD_SYNCD_CRITICAL_EVENT_CODE","used_by":["WAWebKmpWamLogger","WAWebMdCriticalEventWamEvent","WAWebMessageRangeUtils","WAWebSyncdAntiTampering","WAWebSyncdIndexUtils"],"uses":5}]}

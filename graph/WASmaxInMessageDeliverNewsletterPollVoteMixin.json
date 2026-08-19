@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInMessageDeliverContentTypePollVoteMixin","WASmaxParseUtils"],"dependents":["WASmaxInMessageDeliverNewsletterMessageFanoutContent"],"dependent_count":1,"exports":[{"name":"parseNewsletterPollVoteMixin","used_by":["WASmaxInMessageDeliverNewsletterMessageFanoutContent"],"uses":1},{"name":"parseNewsletterPollVoteVotesVote","used_by":[],"uses":0}]}

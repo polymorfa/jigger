@@ -1,0 +1,42 @@
+{
+  "id": "ab:mm_user_controls_entry_points_update_m1_icon",
+  "kind": "ab",
+  "name": "mm_user_controls_entry_points_update_m1_icon",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 20388,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "mm_user_controls_entry_points_update_m1_icon:\\s*\\[\\s*20388"
+  },
+  "literals": [
+    "mm_user_controls_entry_points_update_m1_icon",
+    "20388"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

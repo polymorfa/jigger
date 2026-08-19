@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWImageUtils"],"dependent_count":1,"exports":[{"name":"getThumbnailSpec","used_by":["MAWImageUtils"],"uses":1},{"name":"setThumbnailSpec","used_by":["MAWImageUtils"],"uses":1}]}

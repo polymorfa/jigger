@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBaseModel","WAWebGroupParticipantCollection","WAWebGroupType","WAWebWid"],"dependents":["WAWebCommunityNavigation.react","WAWebCommunityTabbedInfoDrawer.react","WAWebUnjoinedSubgroupMetadataCollection"],"dependent_count":3,"exports":[]}

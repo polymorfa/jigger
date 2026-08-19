@@ -1,0 +1,42 @@
+{
+  "id": "ab:interactive_response_message_killswitch",
+  "kind": "ab",
+  "name": "interactive_response_message_killswitch",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 1435,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "interactive_response_message_killswitch:\\s*\\[\\s*1435"
+  },
+  "literals": [
+    "interactive_response_message_killswitch",
+    "1435"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

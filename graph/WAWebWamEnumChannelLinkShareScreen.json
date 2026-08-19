@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChannelLinkShareWamEvent","WAWebNewsletterInfoTopCard.react","WAWebNewsletterLinkDrawer.react"],"dependent_count":3,"exports":[{"name":"CHANNEL_LINK_SHARE_SCREEN","used_by":["WAWebChannelLinkShareWamEvent","WAWebNewsletterInfoTopCard.react","WAWebNewsletterLinkDrawer.react"],"uses":3}]}

@@ -1,0 +1,30 @@
+__d("WAWebSendForAdminReviewButton.react", [
+	"fbt",
+	"WAWebFrontendMsgGetters",
+	"WAWebModalManager",
+	"WAWebReportToAdminEventsLogger",
+	"WAWebReportToAdminPopup.react",
+	"WAWebWamEnumReportToAdminInteraction",
+	"WDSIconIcThumbDown.react",
+	"WDSMenuItem.react",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u = e || (e = o("react"));
+	function c(e) {
+		var t = e.msg, n = function() {
+			o("WAWebReportToAdminEventsLogger").logRTAReportingEvent({
+				reportToAdminInteraction: o("WAWebWamEnumReportToAdminInteraction").REPORT_TO_ADMIN_INTERACTION.CLICK_SEND_FOR_ADMIN_REVIEW,
+				groupId: o("WAWebFrontendMsgGetters").getChat(t).id.user
+			}), o("WAWebModalManager").ModalManager.open(u.jsx(r("WAWebReportToAdminPopup.react"), { msg: t }));
+		};
+		return u.jsx(r("WDSMenuItem.react"), {
+			onPress: n,
+			Icon: r("WDSIconIcThumbDown.react"),
+			title: s._(
+				/*BTDS*/
+				""
+			)
+		});
+	}
+	c.displayName = c.name + " [from " + i.id + "]", l.default = c;
+}), 226);

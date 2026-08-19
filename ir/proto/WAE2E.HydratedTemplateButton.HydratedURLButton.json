@@ -1,0 +1,51 @@
+{
+  "id": "proto:WAE2E.HydratedTemplateButton.HydratedURLButton",
+  "kind": "proto",
+  "name": "WAE2E.HydratedTemplateButton.HydratedURLButton",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "consentedUsersUrl": {
+        "number": 3
+      },
+      "displayText": {
+        "number": 1
+      },
+      "url": {
+        "number": 2
+      },
+      "webviewPresentation": {
+        "number": 4
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"HydratedTemplateButton.HydratedURLButton\""
+  },
+  "literals": [
+    "HydratedURLButton"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

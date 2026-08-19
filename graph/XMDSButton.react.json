@@ -1,0 +1,1 @@
+{"deps":["BaseStyledButton.react","MetaConfig","XMDSButtonSpinnerContainer.react","XMDSSpinner.react","XMDSText.react","XMDSTooltip.react","react","react-compiler-runtime","useCDSButtonSpinner","useMergeRefs"],"dependents":["WAWebPDFNMetaModal.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

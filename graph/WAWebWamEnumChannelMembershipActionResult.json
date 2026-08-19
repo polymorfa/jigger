@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebChannelMembershipActionEventWamEvent","WAWebNewsletterSubscribeAction","WAWebNewsletterUnsubscribeAction"],"dependent_count":3,"exports":[{"name":"CHANNEL_MEMBERSHIP_ACTION_RESULT","used_by":["WAWebChannelMembershipActionEventWamEvent","WAWebNewsletterSubscribeAction","WAWebNewsletterUnsubscribeAction"],"uses":3}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_calling_smooth_call_link_lobby",
+  "kind": "ab",
+  "name": "web_calling_smooth_call_link_lobby",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 33131,
+    "type": "bool",
+    "default": true,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_calling_smooth_call_link_lobby:\\s*\\[\\s*33131"
+  },
+  "literals": [
+    "web_calling_smooth_call_link_lobby",
+    "33131"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebVoipGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WABase64","WALogger","WAWebBackendApi","WAWebSerializeVoipWapNode","asyncToGeneratorRuntime"],"dependents":["WAWebWindowsHybridBridge.v2607"],"dependent_count":1,"exports":[{"name":"VoipWinRTBridge_v2607","used_by":[],"uses":0}]}

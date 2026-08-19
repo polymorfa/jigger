@@ -1,0 +1,1 @@
+{"deps":["fbt","I64","LSAuthorityLevel","LSIntEnum","LSMessagingThreadTypeUtil","LSThreadBitOffset","MAWContactRelationshipType","MAWJids","MAWMessageRequestUtil","MAWMiActMappingTableAPI","MAWUserJidWrapper","ODS","Promise","ReQL","WADbContact","asyncToGeneratorRuntime"],"dependents":["MAWActThreadMapping","MAWBridgeUIEventHandler"],"dependent_count":2,"exports":[]}

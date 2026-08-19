@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebKicNux.react"],"dependent_count":2,"exports":[{"name":"WdsPictoSaveIcon","used_by":["WAWebAllGeneratedIcons","WAWebKicNux.react"],"uses":2}]}

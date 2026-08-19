@@ -1,0 +1,1 @@
+{"deps":["WABinary","WAWamTypes","err"],"dependents":["WAWam"],"dependent_count":1,"exports":[{"name":"canWriteEvent","used_by":["WAWam"],"uses":1},{"name":"canWriteGlobal","used_by":["WAWam"],"uses":1},{"name":"WamBuffer","used_by":[],"uses":0}]}

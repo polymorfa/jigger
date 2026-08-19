@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxParseUtils"],"dependents":["WASmaxInReceiptNewsletterDeliverMixin"],"dependent_count":1,"exports":[{"name":"parseStatusClassMixin","used_by":["WASmaxInReceiptNewsletterDeliverMixin"],"uses":1}]}

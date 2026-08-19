@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgGetters","WAWebStatusExternalShareUtils","WAWebStatusFutureproofFooter.react","react","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebStatusPlayer.react"],"dependent_count":1,"exports":[{"name":"useWAWebStatusContainsFutureproofEmbeddedContentBanner","used_by":["WAWebStatusPlayer.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["fbt","WATimeUtils","WAWebConfirmPopup.react","WAWebEnvironment","WAWebModalManager","WAWebWhatsNewContent","WAWebWhatsNewLogging","WAWebWhatsNewNux","WDSButton.react","WDSIconIcClose.react","WDSIllustrationWdsPictoWhatsappOutline.react","react","react-compiler-runtime","useVisibility"],"dependents":["WAWebMain.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebKmpKotlinUtils"],"dependents":["WAWebKmpSyncdRequestBuilder","WAWebSyncdRequestBuilder"],"dependent_count":2,"exports":[{"name":"compactKmpPatchArray","used_by":["WAWebKmpSyncdRequestBuilder"],"uses":1},{"name":"compactPatch","used_by":["WAWebSyncdRequestBuilder"],"uses":1},{"name":"compactKmpPatch","used_by":[],"uses":0}]}

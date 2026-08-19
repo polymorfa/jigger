@@ -1,0 +1,33 @@
+__d("WASmaxBizAccessTokenRequestSilentNonceRPC", [
+	"WAComms",
+	"WASmaxInBizAccessTokenRequestSilentNonceResponseError",
+	"WASmaxInBizAccessTokenRequestSilentNonceResponseRecoveryRequired",
+	"WASmaxInBizAccessTokenRequestSilentNonceResponseSuccess",
+	"WASmaxOutBizAccessTokenRequestSilentNonceRequest",
+	"WASmaxParsingFailure",
+	"WASmaxRpcUtils"
+], (function(t, n, r, o, a, i, l) {
+	async function e(e, t) {
+		var n = o("WASmaxOutBizAccessTokenRequestSilentNonceRequest").makeRequestSilentNonceRequest(e), r = await o("WAComms").sendSmaxStanza(n, t), a = o("WASmaxInBizAccessTokenRequestSilentNonceResponseSuccess").parseRequestSilentNonceResponseSuccess(r, n);
+		if (a.success) return {
+			name: "RequestSilentNonceResponseSuccess",
+			value: a.value
+		};
+		var i = o("WASmaxInBizAccessTokenRequestSilentNonceResponseRecoveryRequired").parseRequestSilentNonceResponseRecoveryRequired(r, n);
+		if (i.success) return {
+			name: "RequestSilentNonceResponseRecoveryRequired",
+			value: i.value
+		};
+		var l = o("WASmaxInBizAccessTokenRequestSilentNonceResponseError").parseRequestSilentNonceResponseError(r, n);
+		if (l.success) return {
+			name: "RequestSilentNonceResponseError",
+			value: l.value
+		};
+		throw new (o("WASmaxParsingFailure")).SmaxParsingFailure(o("WASmaxRpcUtils").errorMessageRpcParsing("RequestSilentNonce", {
+			Success: a,
+			RecoveryRequired: i,
+			Error: l
+		}));
+	}
+	l.sendRequestSilentNonceRPC = e;
+}), 98);

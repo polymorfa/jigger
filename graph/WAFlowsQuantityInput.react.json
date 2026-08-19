@@ -1,0 +1,1 @@
+{"deps":["WAFlowsComponentConstants","WAFlowsEnvContext.react","WAFlowsIconButton.react","WAFlowsLabel.react","WAFlowsLocalization","react","stylex"],"dependents":["WAFlowsCartItemList.react","WAFlowsItemDetailFooter.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

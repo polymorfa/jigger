@@ -1,0 +1,1 @@
+{"deps":["I64","MAWQPLLogger","qpl"],"dependents":["MAWMessageRangeDataSourceV2"],"dependent_count":1,"exports":[{"name":"getRangeExtensionLoggerForThread","used_by":["MAWMessageRangeDataSourceV2"],"uses":1},{"name":"startRangeExtensionLoggerForThread","used_by":["MAWMessageRangeDataSourceV2"],"uses":1}]}

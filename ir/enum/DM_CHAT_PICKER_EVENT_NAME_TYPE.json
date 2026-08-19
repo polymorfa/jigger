@@ -1,0 +1,48 @@
+{
+  "id": "enum:DM_CHAT_PICKER_EVENT_NAME_TYPE",
+  "kind": "enum",
+  "name": "DM_CHAT_PICKER_EVENT_NAME_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDmChatPickerEventNameType",
+    "variants": [
+      {
+        "name": "CHAT_PICKER_LINK_IMPRESSION",
+        "value": 0.0
+      },
+      {
+        "name": "CHAT_PICKER_TRAY_OPEN",
+        "value": 1.0
+      },
+      {
+        "name": "CHAT_PICKER_TRAY_EXIT",
+        "value": 2.0
+      },
+      {
+        "name": "CHAT_PICKER_CHATS_SELECTED",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDmChatPickerEventNameType",
+    "matches": "DM_CHAT_PICKER_EVENT_NAME_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "DM_CHAT_PICKER_EVENT_NAME_TYPE",
+    "CHAT_PICKER_LINK_IMPRESSION",
+    "CHAT_PICKER_TRAY_OPEN",
+    "CHAT_PICKER_TRAY_EXIT",
+    "CHAT_PICKER_CHATS_SELECTED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDefaultEphemeralityDrawer.react",
+      "WAWebDisappearingMessageChatPickerWamEvent",
+      "WAWebMultiSelectDdm.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

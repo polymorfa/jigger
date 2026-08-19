@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_offline_dynamic_batch_size_enabled",
+  "kind": "ab",
+  "name": "web_offline_dynamic_batch_size_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5271,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_offline_dynamic_batch_size_enabled:\\s*\\[\\s*5271"
+  },
+  "literals": [
+    "web_offline_dynamic_batch_size_enabled",
+    "5271"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["fbt","Promise","WALogger","WAPromiseEach","WAWebActionToast.react","WAWebChatGetters","WAWebClearChatUtils","WAWebToastManager","WAWebWamChatActionEventsLogger","WAWebWamChatPSALogger","WAWebWamEnumChatActionEntryPoint","WAWebWamEnumChatActionType","asyncToGeneratorRuntime","react"],"dependents":["WAWebClearSelectedChatsPopup.react"],"dependent_count":1,"exports":[]}

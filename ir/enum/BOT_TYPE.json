@@ -1,0 +1,83 @@
+{
+  "id": "enum:BOT_TYPE",
+  "kind": "enum",
+  "name": "BOT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBotType",
+    "variants": [
+      {
+        "name": "UNKNOWN",
+        "value": 0.0
+      },
+      {
+        "name": "METABOT",
+        "value": 1.0
+      },
+      {
+        "name": "BOT_1P_BIZ",
+        "value": 2.0
+      },
+      {
+        "name": "BOT_3P_BIZ",
+        "value": 3.0
+      },
+      {
+        "name": "UGC",
+        "value": 4.0
+      },
+      {
+        "name": "META_CHARACTER",
+        "value": 5.0
+      },
+      {
+        "name": "TEE_BOT",
+        "value": 6.0
+      },
+      {
+        "name": "HATCH",
+        "value": 7.0
+      },
+      {
+        "name": "MANUS",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBotType",
+    "matches": "BOT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "BOT_TYPE",
+    "UNKNOWN",
+    "METABOT",
+    "BOT_1P_BIZ",
+    "BOT_3P_BIZ",
+    "UGC",
+    "META_CHARACTER",
+    "TEE_BOT",
+    "HATCH",
+    "MANUS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAndroidMessageSendPerfWamEvent",
+      "WAWebBizBotLogging",
+      "WAWebBotBizJourneyWamEvent",
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebIncomingMessageDropWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent",
+      "WAWebPlaceholderActivityWamEvent",
+      "WAWebPostIncomingMessageDropMetric",
+      "WAWebTextMessageUserJourneyWamEvent",
+      "WAWebUiActionWamEvent",
+      "WAWebWamMsgUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 13
+  }
+}

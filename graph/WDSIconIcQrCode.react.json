@@ -1,0 +1,1 @@
+{"deps":["WDSSvgComponentBase.react","WDSSvgIconHelpers","react","stylex"],"dependents":["WAWebUprPaymentBubble.react","WAWebUprPaymentMethodRenderData","WAWebUprPaymentOptionsDrawer.react","WAWebWindowsWelcomeV2.react","WDSAllGeneratedIcons"],"dependent_count":5,"exports":[{"name":"default","used_by":[],"uses":0}]}

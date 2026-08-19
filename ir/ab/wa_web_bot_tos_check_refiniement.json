@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_bot_tos_check_refiniement",
+  "kind": "ab",
+  "name": "wa_web_bot_tos_check_refiniement",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28897,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_bot_tos_check_refiniement:\\s*\\[\\s*28897"
+  },
+  "literals": [
+    "wa_web_bot_tos_check_refiniement",
+    "28897"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebTosGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

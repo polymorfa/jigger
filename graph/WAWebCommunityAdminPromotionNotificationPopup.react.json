@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebEmojiText.react","WAWebExternalLink.react","WAWebKeyboardHotKeys.react","WAWebL10N","WAWebModal.react","WAWebWdsPictoCommunitiesHeartIcon.react","WDSButtonGroup.react","react","react-compiler-runtime"],"dependents":["WAWebCommunityAdminPromotionNotificationFlow.react","WAWebCommunityAdminPromotionNotificationPopup.story"],"dependent_count":2,"exports":[]}

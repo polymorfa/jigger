@@ -1,0 +1,1 @@
+{"deps":["WAWebQplFlowWrapper","qpl"],"dependents":["WAWebMobileLandingPhoneInput.react","WAWebMobileLandingVariant1.react","WAWebMobileLandingVariant2.react"],"dependent_count":3,"exports":[{"name":"logMobileLandingAcquisitionEvent","used_by":["WAWebMobileLandingPhoneInput.react","WAWebMobileLandingVariant1.react","WAWebMobileLandingVariant2.react"],"uses":3}]}

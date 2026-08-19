@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebStickerStoreOpenedWamEvent"],"dependent_count":1,"exports":[{"name":"STICKER_STORE_OPENED_ORIGIN_TYPE","used_by":["WAWebStickerStoreOpenedWamEvent"],"uses":1}]}

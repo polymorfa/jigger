@@ -1,0 +1,42 @@
+{
+  "id": "proto:WAWebProtobufsCompanionReg.ProloguePayload",
+  "kind": "proto",
+  "name": "WAWebProtobufsCompanionReg.ProloguePayload",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "commitment": {
+        "number": 2,
+        "type_name": "WAWebProtobufsCompanionReg.CompanionCommitment"
+      },
+      "companionEphemeralIdentity": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsCompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsCompanionReg.pb",
+    "matches": "name = \"ProloguePayload\""
+  },
+  "literals": [
+    "ProloguePayload"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebHandlePairSuccess",
+      "WAWebProtobufsE2E.pb",
+      "WAWebShortcakeLinkingAlgorithm",
+      "WAWebShortcakeLinkingApi",
+      "WAWebShortcakeLinkingPairingRequest",
+      "WAWebShortcakeLinkingPasskeyPrologue"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

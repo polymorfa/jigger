@@ -1,0 +1,1 @@
+{"deps":["Promise","WAFranking","WALogger"],"dependents":["WAGenReportingMeta"],"dependent_count":1,"exports":[{"name":"genFrankingTagFromMessageApplicationEncode","used_by":["WAGenReportingMeta"],"uses":1}]}

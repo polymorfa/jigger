@@ -1,0 +1,13230 @@
+__d("WAWebABPropsConfigs", [], (function(t, n, r, o, a, i) {
+	"use strict";
+	var e = {
+		a2ui_supported_elements: [
+			32276,
+			"string",
+			"info_card, list_card",
+			"info_card, list_card"
+		],
+		acp_removal: [
+			25255,
+			"bool",
+			!1,
+			!1
+		],
+		acp_removal_epoch_time: [
+			25993,
+			"int",
+			1782518400,
+			1782518400
+		],
+		acs_use_graphql_for_forward_counter: [
+			29218,
+			"bool",
+			!1,
+			!1
+		],
+		acs_use_graphql_for_migration_test: [
+			29217,
+			"bool",
+			!1,
+			!1
+		],
+		acs_use_graphql_issuance: [
+			27219,
+			"bool",
+			!1,
+			!1
+		],
+		add_member_system_message: [
+			4579,
+			"bool",
+			!0,
+			!0
+		],
+		add_to_call_in_chat_thread: [
+			11700,
+			"int",
+			0,
+			0
+		],
+		addon_infra_enable_perf_logging: [
+			7567,
+			"bool",
+			!1,
+			!0
+		],
+		admin_only_mention_everyone_group_size: [
+			20354,
+			"int",
+			33,
+			33
+		],
+		adv_accept_hosted_devices: [
+			6939,
+			"bool",
+			!1,
+			!0
+		],
+		advanced_chat_privacy_content_update_july_25: [
+			18025,
+			"bool",
+			!1,
+			!0
+		],
+		after_read_fallback_duration: [
+			26225,
+			"int",
+			86400,
+			86400
+		],
+		after_read_receiver_enabled: [
+			25649,
+			"bool",
+			!1,
+			!1
+		],
+		after_read_sending_enabled: [
+			25648,
+			"bool",
+			!1,
+			!1
+		],
+		ai_3p_agent_chat_enabled: [
+			31063,
+			"bool",
+			!1,
+			!1
+		],
+		ai_3p_agent_link_enabled: [
+			31064,
+			"bool",
+			!1,
+			!1
+		],
+		ai_3p_agent_media_support_mode: [
+			34393,
+			"int",
+			0,
+			0
+		],
+		ai_3p_bot_product_chat_rendering_enabled: [
+			34186,
+			"bool",
+			!1,
+			!0
+		],
+		ai_3p_bot_product_nux_notice_id: [
+			34541,
+			"string",
+			"20260806",
+			"20260806"
+		],
+		ai_account_linking_enabled: [
+			13856,
+			"bool",
+			!1,
+			!0
+		],
+		ai_all_languages_enabled: [
+			16091,
+			"bool",
+			!1,
+			!1
+		],
+		ai_asset_replacement_enabled: [
+			28265,
+			"bool",
+			!1,
+			!1
+		],
+		ai_bizai_2way_integration_enabled: [
+			26613,
+			"bool",
+			!1,
+			!1
+		],
+		ai_bizai_2way_integration_history_sync_pre_chatd_enabled: [
+			26614,
+			"bool",
+			!1,
+			!1
+		],
+		ai_bot_integration_bot_profile: [
+			25268,
+			"string",
+			"",
+			""
+		],
+		ai_bot_integration_enabled: [
+			25119,
+			"bool",
+			!1,
+			!1
+		],
+		ai_bot_integration_history_sync_enabled: [
+			25269,
+			"bool",
+			!1,
+			!1
+		],
+		ai_bot_integration_history_sync_pre_chatd_enabled: [
+			25469,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_meta_ai_banner_m2_enabled: [
+			18784,
+			"bool",
+			!1,
+			!0
+		],
+		ai_chat_meta_ai_glasses_banner_enabled: [
+			20405,
+			"bool",
+			!1,
+			!0
+		],
+		ai_chat_meta_ai_home_default_landing_enabled: [
+			28033,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_meta_ai_home_web_enabled: [
+			27817,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_meta_ai_null_state_web_enabled: [
+			32817,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_thread_capability_enabled: [
+			22038,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_threads_export_by_threads_enabled: [
+			34081,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_threads_fuzzy_search_enabled: [
+			27199,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_threads_historical_messages_migration_enabled: [
+			22070,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_threads_history_icon_variant: [
+			27316,
+			"int",
+			0,
+			0
+		],
+		ai_chat_threads_implicit_routing_strategy: [
+			27519,
+			"int",
+			0,
+			0
+		],
+		ai_chat_threads_infra_enabled: [
+			20652,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_threads_infra_web_enabled: [
+			26776,
+			"bool",
+			!1,
+			!0
+		],
+		ai_chat_threads_pin_enabled: [
+			25517,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_threads_pin_max_count: [
+			25520,
+			"int",
+			3,
+			3
+		],
+		ai_chat_threads_web_enabled: [
+			23169,
+			"bool",
+			!1,
+			!1
+		],
+		ai_chat_threads_web_killswitch_enabled: [
+			26806,
+			"bool",
+			!1,
+			!0
+		],
+		ai_chat_threads_web_msgs_load_limit: [
+			23694,
+			"int",
+			50,
+			50
+		],
+		ai_commentary_standalone_messages_enabled: [
+			34670,
+			"bool",
+			!1,
+			!1
+		],
+		ai_contextual_writing_help_enabled: [
+			22488,
+			"bool",
+			!1,
+			!1
+		],
+		ai_contextual_writing_help_languages_and_tones_config: [
+			22797,
+			"string",
+			"{}",
+			"{\"en\": \"auto,professional,funny,supportive\"}"
+		],
+		ai_contextual_writing_help_num_suggestions: [
+			22759,
+			"int",
+			4,
+			4
+		],
+		ai_continuous_session_transparency_notice_enabled: [
+			21510,
+			"bool",
+			!1,
+			!1
+		],
+		ai_dynamic_mode_selector_enabled: [
+			25287,
+			"bool",
+			!1,
+			!1
+		],
+		ai_dynamic_mode_selector_ttl_seconds: [
+			25797,
+			"int",
+			86400,
+			86400
+		],
+		ai_experiment_graphql_config: [
+			9601,
+			"string",
+			" ",
+			" "
+		],
+		ai_fbid_migration_invoke_receive_enabled: [
+			12795,
+			"bool",
+			!1,
+			!1
+		],
+		ai_fbid_migration_receive_enabled: [
+			11660,
+			"bool",
+			!1,
+			!1
+		],
+		ai_file_upload_count_limit: [
+			25093,
+			"int",
+			0,
+			1
+		],
+		ai_file_upload_size_limit_mb: [
+			25524,
+			"int",
+			40,
+			40
+		],
+		ai_file_upload_supported_file_types: [
+			25090,
+			"string",
+			"",
+			""
+		],
+		ai_forward_attribution_enabled: [
+			18286,
+			"bool",
+			!1,
+			!0
+		],
+		ai_forward_flow_surface_meta_ai_as_contact_enabled: [
+			13879,
+			"bool",
+			!1,
+			!1
+		],
+		ai_genai_straw_hat: [
+			28268,
+			"bool",
+			!1,
+			!1
+		],
+		ai_gizmo_integration_enabled: [
+			28584,
+			"bool",
+			!1,
+			!0
+		],
+		ai_group_call_add_in_call_ahgc_enabled: [
+			24654,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_call_add_in_call_lgc_enabled: [
+			31717,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_call_max_version_by_country: [
+			24656,
+			"int",
+			0,
+			0
+		],
+		ai_group_call_max_version_by_platform: [
+			24655,
+			"int",
+			0,
+			0
+		],
+		ai_group_call_meta_ai_animation_version: [
+			32245,
+			"int",
+			0,
+			0
+		],
+		ai_group_call_start_call_ahgc_enabled: [
+			31716,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_call_start_call_lgc_enabled: [
+			31713,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_call_start_call_logging_enabled: [
+			32527,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_call_start_call_notice_id: [
+			31736,
+			"string",
+			"",
+			""
+		],
+		ai_group_call_version: [
+			24652,
+			"int",
+			0,
+			0
+		],
+		ai_group_participation_add_tee_enabled: [
+			22236,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_participation_enabled: [
+			22171,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_participation_send_enabled: [
+			22184,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_send_mentioned_pushname_enabled: [
+			24361,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_tee_history_share_enabled: [
+			28278,
+			"bool",
+			!1,
+			!1
+		],
+		ai_group_tee_require_additional_member_enabled: [
+			33050,
+			"bool",
+			!1,
+			!1
+		],
+		ai_groups_open_enabled: [
+			22165,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_commands_enabled: [
+			27660,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_document_upload_size_limit_mb: [
+			27873,
+			"int",
+			20,
+			20
+		],
+		ai_hatch_encrypted_media_enabled: [
+			32496,
+			"bool",
+			!1,
+			!0
+		],
+		ai_hatch_forwarding_html_enabled: [
+			27876,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_integration_bot_profile: [
+			26190,
+			"string",
+			"",
+			""
+		],
+		ai_hatch_integration_enabled: [
+			26189,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_integration_history_sync_enabled: [
+			26517,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_integration_history_sync_pre_chatd_enabled: [
+			26445,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_integration_tab_enabled: [
+			27356,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_media_upload_count_limit: [
+			27897,
+			"int",
+			10,
+			10
+		],
+		ai_hatch_secret_encrypted_message_enabled: [
+			31040,
+			"bool",
+			!1,
+			!1
+		],
+		ai_hatch_video_avatars_enabled: [
+			31494,
+			"bool",
+			!1,
+			!0
+		],
+		ai_hatch_video_upload_enabled: [
+			27470,
+			"bool",
+			!1,
+			!1
+		],
+		ai_home_bot_profile_sync_interval_sec: [
+			11168,
+			"int",
+			86400,
+			86400
+		],
+		ai_imagine_loading_indicator_enabled: [
+			22795,
+			"bool",
+			!1,
+			!1
+		],
+		ai_learning_clear_chat_disable_empty_chats: [
+			26745,
+			"bool",
+			!1,
+			!1
+		],
+		ai_maiba_wass_migration_receiving: [
+			27083,
+			"bool",
+			!1,
+			!1
+		],
+		ai_maiba_wass_migration_sending: [
+			27084,
+			"bool",
+			!1,
+			!0
+		],
+		ai_meta_ai_prekey_cleanup_enabled: [
+			31941,
+			"bool",
+			!1,
+			!1
+		],
+		ai_metabot_document_ocr_image_conversion_enabled: [
+			22301,
+			"bool",
+			!1,
+			!1
+		],
+		ai_metabot_document_upload_enabled: [
+			17957,
+			"string",
+			"",
+			""
+		],
+		ai_metabot_document_upload_page_count_limit: [
+			19987,
+			"int",
+			1e5,
+			1e5
+		],
+		ai_metabot_document_upload_size_limit_mb: [
+			19823,
+			"int",
+			40,
+			40
+		],
+		ai_metabot_image_input_languages: [
+			9163,
+			"string",
+			" ",
+			"en"
+		],
+		ai_metabot_send_image_limit: [
+			8685,
+			"int",
+			1,
+			1
+		],
+		ai_migrate_away_from_inline_tos_enabled: [
+			18843,
+			"bool",
+			!1,
+			!1
+		],
+		ai_mode_selector_enabled: [
+			23885,
+			"bool",
+			!1,
+			!1
+		],
+		ai_mode_selector_media_editor_enabled: [
+			30986,
+			"bool",
+			!1,
+			!1
+		],
+		ai_pdfn_nux_ai_group_tee_discover_notice_id: [
+			26171,
+			"string",
+			"20260212",
+			"20260212"
+		],
+		ai_pdfn_nux_ai_side_chat_notice_id: [
+			31542,
+			"string",
+			" 20260211",
+			" 20260211"
+		],
+		ai_pdfn_tos_inline_notices: [
+			13970,
+			"string",
+			" ",
+			" "
+		],
+		ai_pdfn_tos_invoke_notice_id: [
+			9483,
+			"string",
+			" ",
+			" "
+		],
+		ai_pdfn_tos_master_notice_id: [
+			15295,
+			"string",
+			" ",
+			" "
+		],
+		ai_pdfn_tos_non_blocking_notices: [
+			15280,
+			"string",
+			"",
+			""
+		],
+		ai_pdfn_tos_shortcut_notice_id: [
+			9482,
+			"string",
+			" ",
+			" "
+		],
+		ai_ptt_main_gate_supported_languages: [
+			9694,
+			"string",
+			" ",
+			"en"
+		],
+		ai_reply_message_context_max_count: [
+			22024,
+			"int",
+			20,
+			20
+		],
+		ai_reply_message_context_trigger_min_count: [
+			22025,
+			"int",
+			10,
+			10
+		],
+		ai_rewrite_enabled: [
+			14219,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rewrite_entry_point_min_words: [
+			14923,
+			"int",
+			4,
+			4
+		],
+		ai_rewrite_in_expression_tray_enabled: [
+			16510,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rewrite_languages_and_tones_config: [
+			21139,
+			"string",
+			"{}",
+			"{\"en\": \"rephrase,professional,funny,supportive,proofread\"}"
+		],
+		ai_rewrite_load_more_enabled: [
+			20918,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rewrite_num_suggestions: [
+			14924,
+			"int",
+			3,
+			3
+		],
+		ai_rewrite_stack_undo_enabled: [
+			16943,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rewrite_supported_languages: [
+			14220,
+			"string",
+			" ",
+			"en"
+		],
+		ai_rewrite_tone_modifiers: [
+			14743,
+			"string",
+			"rephrase,professional,funny,supportive",
+			"rephrase,professional,funny,supportive"
+		],
+		ai_rich_response_forward_media_receiving_enabled: [
+			21363,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_forward_media_sending_enabled: [
+			20747,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_forward_receiving_enabled: [
+			16682,
+			"bool",
+			!1,
+			!0
+		],
+		ai_rich_response_forward_sending_enabled: [
+			16681,
+			"bool",
+			!1,
+			!0
+		],
+		ai_rich_response_forwarding_verification_enabled_v1: [
+			19590,
+			"string",
+			"\"none\"",
+			"\"none\""
+		],
+		ai_rich_response_grid_image_enabled: [
+			13578,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_inline_links_enabled: [
+			23819,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_main_gate_enabled: [
+			12539,
+			"bool",
+			!0,
+			!0
+		],
+		ai_rich_response_post_citations_enabled: [
+			22672,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_reasoning_enabled: [
+			15589,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_remove_grouped_citations_count: [
+			31010,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_side_by_side_survey_enabled: [
+			17408,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_tee_forward_sending_enabled: [
+			32683,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_tee_forwarding_verification_enforcement_v1: [
+			32551,
+			"string",
+			"none",
+			"none"
+		],
+		ai_rich_response_unknown_sender_preview_enabled: [
+			27355,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_unknown_sender_verification_masking_enabled: [
+			27635,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_ur_media_grid_enabled: [
+			18746,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_web_structured_response_enabled: [
+			14141,
+			"bool",
+			!1,
+			!1
+		],
+		ai_rich_response_zeitgeist_carousel_enabled: [
+			22750,
+			"bool",
+			!1,
+			!1
+		],
+		ai_search_ask_button_web_enabled: [
+			30604,
+			"bool",
+			!1,
+			!1
+		],
+		ai_search_bar_2025_redesign_enabled: [
+			16208,
+			"bool",
+			!1,
+			!1
+		],
+		ai_search_experience_enabled: [
+			8025,
+			"bool",
+			!1,
+			!1
+		],
+		ai_search_experience_web_enabled: [
+			18740,
+			"bool",
+			!1,
+			!0
+		],
+		ai_search_max_num_suggestions: [
+			8076,
+			"int",
+			5,
+			5
+		],
+		ai_search_meta_ai_send_button_enabled: [
+			20603,
+			"bool",
+			!0,
+			!0
+		],
+		ai_search_null_state_convo_starter_suggestions_update_interval: [
+			17623,
+			"int",
+			86400,
+			86400
+		],
+		ai_search_null_state_enabled: [
+			8026,
+			"bool",
+			!1,
+			!1
+		],
+		ai_search_null_state_row_count: [
+			8407,
+			"int",
+			3,
+			3
+		],
+		ai_search_null_state_update_interval: [
+			8100,
+			"int",
+			86400,
+			86400
+		],
+		ai_session_transparency_meta_ai_enabled: [
+			23188,
+			"bool",
+			!1,
+			!1
+		],
+		ai_simplified_profile_page_enabled: [
+			17104,
+			"bool",
+			!1,
+			!1
+		],
+		ai_standard_bot_profile_enabled: [
+			32961,
+			"bool",
+			!1,
+			!0
+		],
+		ai_subscription_enabled: [
+			25927,
+			"bool",
+			!1,
+			!1
+		],
+		ai_subscription_imagine_intent_enabled: [
+			28585,
+			"bool",
+			!1,
+			!1
+		],
+		ai_subscription_imagine_intent_metering_enabled: [
+			33229,
+			"bool",
+			!1,
+			!1
+		],
+		ai_subscription_metering_enabled: [
+			30960,
+			"bool",
+			!1,
+			!1
+		],
+		ai_tab_unread_badge_recency_window_hours: [
+			29800,
+			"int",
+			-1,
+			-1
+		],
+		ai_ugc_hide_enabled: [
+			20041,
+			"bool",
+			!1,
+			!1
+		],
+		ai_ugc_not_an_expert_enabled: [
+			17285,
+			"bool",
+			!1,
+			!1
+		],
+		ai_unified_response_forwarding_sender_web_timestamp: [
+			32008,
+			"int",
+			1781582400,
+			1781582400
+		],
+		ai_unified_response_imagine_receiver_web_enabled: [
+			24109,
+			"bool",
+			!1,
+			!1
+		],
+		ai_unified_response_mutation_enabled: [
+			17805,
+			"bool",
+			!0,
+			!0
+		],
+		ai_unified_response_qpl_logging: [
+			24484,
+			"bool",
+			!1,
+			!1
+		],
+		ai_unified_response_receiver_web_enabled: [
+			23348,
+			"bool",
+			!1,
+			!1
+		],
+		ai_unified_response_receiver_web_enabled_v2: [
+			25929,
+			"bool",
+			!1,
+			!1
+		],
+		ai_unified_response_receiver_web_timestamp_v2: [
+			25930,
+			"int",
+			1772082e3,
+			1772082e3
+		],
+		ai_unified_response_sender_web_enabled: [
+			23347,
+			"bool",
+			!1,
+			!1
+		],
+		ai_video_upload_size_limit_mb: [
+			25523,
+			"int",
+			40,
+			40
+		],
+		ai_video_upload_support_languages: [
+			28336,
+			"string",
+			"",
+			""
+		],
+		ai_video_upload_web_enabled: [
+			31107,
+			"bool",
+			!1,
+			!1
+		],
+		ai_voice_entry_point_logging_enabled: [
+			13247,
+			"bool",
+			!1,
+			!1
+		],
+		ai_voice_multimodal_composer_enabled: [
+			12692,
+			"bool",
+			!1,
+			!1
+		],
+		ai_web_ask_meta_ai_enabled: [
+			23725,
+			"bool",
+			!1,
+			!1
+		],
+		ai_web_ask_meta_ai_improvement_enabled: [
+			34586,
+			"bool",
+			!1,
+			!0
+		],
+		ai_web_ask_meta_ai_media_forward_enabled: [
+			34257,
+			"bool",
+			!1,
+			!0
+		],
+		ai_web_forward_flow_enabled: [
+			19676,
+			"bool",
+			!1,
+			!1
+		],
+		ai_web_meta_ai_image_input_enabled: [
+			20522,
+			"bool",
+			!1,
+			!1
+		],
+		ai_web_meta_ai_pdf_document_input_enabled: [
+			20581,
+			"bool",
+			!1,
+			!1
+		],
+		aigc_version: [
+			23692,
+			"int",
+			1,
+			1
+		],
+		album_v2_forward_as_album_enabled: [
+			10725,
+			"bool",
+			!1,
+			!0
+		],
+		album_v2_min_items_to_send_album_with_caption: [
+			12538,
+			"int",
+			2,
+			2
+		],
+		album_v2_min_items_to_send_as_album_enabled: [
+			10848,
+			"int",
+			4,
+			4
+		],
+		album_v2_receiving_enabled: [
+			8528,
+			"bool",
+			!1,
+			!0
+		],
+		album_v2_sender_enabled: [
+			8529,
+			"bool",
+			!1,
+			!1
+		],
+		allow_backfill_with_v0_to_v1_primary_version_transition: [
+			32186,
+			"bool",
+			!1,
+			!1
+		],
+		android_inbox_mentions_replies_filter: [
+			33633,
+			"bool",
+			!1,
+			!1
+		],
+		animated_emoji_final_set_enabled: [
+			9757,
+			"bool",
+			!1,
+			!1
+		],
+		animated_emoji_set_1_enabled: [
+			9758,
+			"bool",
+			!1,
+			!1
+		],
+		animated_emoji_use_lazy_parsing: [
+			29140,
+			"bool",
+			!1,
+			!1
+		],
+		animated_emojis_enabled: [
+			3575,
+			"bool",
+			!1,
+			!1
+		],
+		animated_race_mercedes_car_emoji_enabled: [
+			13490,
+			"bool",
+			!1,
+			!1
+		],
+		animated_soccer_ball_prod_enabled: [
+			27751,
+			"bool",
+			!1,
+			!1
+		],
+		animated_soccer_ball_test_enabled: [
+			27750,
+			"bool",
+			!1,
+			!1
+		],
+		anyone_can_link_to_groups: [
+			13268,
+			"bool",
+			!1,
+			!1
+		],
+		app_exit_reason_version: [
+			8147,
+			"int",
+			0,
+			0
+		],
+		appointment_booking_bloks_enabled: [
+			28146,
+			"bool",
+			!1,
+			!1
+		],
+		attach_invitee_user_pn_in_offer: [
+			34040,
+			"bool",
+			!1,
+			!1
+		],
+		attach_transport_rtx: [
+			16201,
+			"bool",
+			!1,
+			!0
+		],
+		audio_level_speaking_threshold: [
+			1213,
+			"int",
+			30,
+			50
+		],
+		aura_app_themes_benefit_active: [
+			23273,
+			"bool",
+			!1,
+			!1
+		],
+		aura_app_themes_enabled: [
+			23274,
+			"bool",
+			!1,
+			!1
+		],
+		aura_enabled: [
+			23270,
+			"bool",
+			!1,
+			!1
+		],
+		aura_focus_lists_benefit_active: [
+			32724,
+			"bool",
+			!1,
+			!1
+		],
+		aura_focus_lists_default_list_enabled: [
+			34252,
+			"bool",
+			!1,
+			!1
+		],
+		aura_focus_lists_enabled: [
+			32723,
+			"bool",
+			!1,
+			!1
+		],
+		aura_focus_lists_exclusion_enabled: [
+			33928,
+			"bool",
+			!1,
+			!1
+		],
+		aura_focus_lists_schedule_enabled: [
+			33413,
+			"bool",
+			!1,
+			!0
+		],
+		aura_group_reactions_blocking_enabled: [
+			33522,
+			"bool",
+			!1,
+			!1
+		],
+		aura_kill_switch: [
+			28345,
+			"bool",
+			!1,
+			!1
+		],
+		aura_media_offload_benefit_active: [
+			29308,
+			"bool",
+			!1,
+			!1
+		],
+		aura_media_offload_enabled: [
+			29391,
+			"bool",
+			!1,
+			!1
+		],
+		aura_pinned_chats_benefit_active: [
+			23278,
+			"bool",
+			!1,
+			!1
+		],
+		aura_pinned_chats_enabled: [
+			23277,
+			"bool",
+			!1,
+			!1
+		],
+		aura_pinned_chats_targeted_nux_force: [
+			27135,
+			"bool",
+			!1,
+			!1
+		],
+		aura_premium_stickers_killswitch: [
+			27946,
+			"bool",
+			!1,
+			!1
+		],
+		aura_ringtones_benefit_active: [
+			24050,
+			"bool",
+			!1,
+			!1
+		],
+		aura_ringtones_enabled: [
+			24047,
+			"bool",
+			!1,
+			!1
+		],
+		aura_settings_row_enabled: [
+			27210,
+			"bool",
+			!1,
+			!1
+		],
+		aura_status_search_enabled: [
+			26346,
+			"bool",
+			!1,
+			!1
+		],
+		aura_status_search_max_viewers: [
+			26545,
+			"int",
+			1e3,
+			1e3
+		],
+		aura_status_search_timeout_threshold: [
+			26546,
+			"int",
+			5,
+			5
+		],
+		aura_stickers_benefit_active: [
+			24801,
+			"bool",
+			!1,
+			!1
+		],
+		aura_stickers_enabled: [
+			24800,
+			"bool",
+			!1,
+			!1
+		],
+		aura_stickers_overlay_animation_enabled: [
+			25210,
+			"bool",
+			!1,
+			!1
+		],
+		aura_stickers_preview_max_animation_count: [
+			26602,
+			"int",
+			5,
+			5
+		],
+		aura_stickers_qp_banner_upsell_sheet_enabled: [
+			33209,
+			"bool",
+			!1,
+			!1
+		],
+		aura_subscription_simulation_enabled: [
+			26086,
+			"bool",
+			!1,
+			!1
+		],
+		auth_agent_soft_offboarding_enabled: [
+			28802,
+			"bool",
+			!1,
+			!1
+		],
+		auth_agents_consumer_exp_enabled: [
+			26492,
+			"bool",
+			!1,
+			!0
+		],
+		auth_agents_consumer_offboarding_exp_enabled: [
+			30360,
+			"bool",
+			!1,
+			!0
+		],
+		backfill_check_primary_identity_key: [
+			33448,
+			"bool",
+			!1,
+			!1
+		],
+		backfill_supports_coex_companion: [
+			27975,
+			"bool",
+			!1,
+			!1
+		],
+		banned_shops_ux_enabled: [
+			957,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_1: [
+			32208,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_10: [
+			32217,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_2: [
+			32209,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_3: [
+			32210,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_4: [
+			32211,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_5: [
+			32212,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_6: [
+			32213,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_7: [
+			32214,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_8: [
+			32215,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_9: [
+			32216,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_v1: [
+			32373,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_banner_v2: [
+			32374,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_1: [
+			31965,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_10: [
+			31966,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_2: [
+			31961,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_3: [
+			31960,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_4: [
+			31964,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_5: [
+			31962,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_6: [
+			31967,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_7: [
+			31969,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_8: [
+			31963,
+			"bool",
+			!1,
+			!0
+		],
+		bb_chat_list_mab_9: [
+			31968,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_agent_3p_store_links_enabled: [
+			24114,
+			"int",
+			0,
+			0
+		],
+		biz_ai_agent_thread_status_history_sync_enabled: [
+			20099,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_auto_save_enabled: [
+			13464,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_coaching_enabled: [
+			13465,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_consumer_tos_notice_iq_web: [
+			24754,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_consumer_tos_update_web: [
+			23880,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_fab_confirm_modal_enabled: [
+			32846,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_fab_enabled: [
+			33531,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_handoff_timing_sync_enabled: [
+			33602,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_in_thread_unmute_v2: [
+			15523,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_large_screens_gate_fetch_enabled: [
+			31880,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_priority_list_enabled: [
+			16420,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_priority_list_item_expire_days: [
+			16472,
+			"int",
+			14,
+			1
+		],
+		biz_ai_responding_list_enabled: [
+			26670,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_smb_agents_automatic_reply_enabled: [
+			8505,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_tools_settings: [
+			28552,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_tools_sync: [
+			29383,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_tos_variant: [
+			20833,
+			"int",
+			0,
+			0
+		],
+		biz_ai_web_ai_hub_chat_nav_enabled: [
+			34204,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_web_ai_hub_tap_cta_show_alert: [
+			17093,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_web_bulk_thread_control_enabled: [
+			32588,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_web_gdrive_enabled: [
+			32906,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_web_hub_chat_enabled: [
+			34203,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_web_integration_hub_enabled: [
+			33956,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_web_onboarding_handoff: [
+			29298,
+			"bool",
+			!1,
+			!0
+		],
+		biz_ai_web_onboarding_handoff_killswitch: [
+			32263,
+			"bool",
+			!1,
+			!1
+		],
+		biz_ai_web_smart_composer_enabled: [
+			34003,
+			"bool",
+			!1,
+			!1
+		],
+		biz_vpv_dimensions_logging_enabled: [
+			30266,
+			"bool",
+			!1,
+			!1
+		],
+		biz_vpv_impression_logging_enabled: [
+			25465,
+			"bool",
+			!1,
+			!1
+		],
+		blocklist_system_msg_on_full_refetch: [
+			28070,
+			"bool",
+			!1,
+			!1
+		],
+		bloks_a2ui_steps_enabled: [
+			32251,
+			"bool",
+			!1,
+			!1
+		],
+		blue_education_enabled: [
+			5295,
+			"bool",
+			!1,
+			!1
+		],
+		blue_education_v2_enabled: [
+			6127,
+			"bool",
+			!1,
+			!1
+		],
+		blue_enabled: [
+			5276,
+			"bool",
+			!1,
+			!1
+		],
+		blue_profile_locked_ui_enabled: [
+			6337,
+			"bool",
+			!1,
+			!0
+		],
+		blue_strings_enabled: [
+			5846,
+			"bool",
+			!1,
+			!0
+		],
+		bonsai_avatar_enabled: [
+			4532,
+			"bool",
+			!1,
+			!1
+		],
+		bonsai_carousel_enabled: [
+			5283,
+			"bool",
+			!1,
+			!0
+		],
+		bonsai_carousel_hq_thumbnail_enabled: [
+			6459,
+			"bool",
+			!1,
+			!0
+		],
+		bonsai_carousel_reels_profile_photo_enabled: [
+			6458,
+			"bool",
+			!1,
+			!0
+		],
+		bonsai_chat_list_entry_point_enabled: [
+			6251,
+			"bool",
+			!1,
+			!1
+		],
+		bonsai_enabled: [
+			4010,
+			"bool",
+			!1,
+			!1
+		],
+		bonsai_english_only: [
+			5637,
+			"bool",
+			!1,
+			!1
+		],
+		bonsai_fp_ugc_sender: [
+			9541,
+			"bool",
+			!1,
+			!1
+		],
+		bonsai_meta_ai_shortcut_tos_enabled: [
+			8004,
+			"bool",
+			!1,
+			!0
+		],
+		bonsai_ptt_enabled: [
+			4416,
+			"bool",
+			!1,
+			!0
+		],
+		bonsai_supported_languages: [
+			7848,
+			"string",
+			"en",
+			"en"
+		],
+		bonsai_ti_timeout_duration_ms: [
+			4736,
+			"int",
+			1e4,
+			1e4
+		],
+		bonsai_update_interval: [
+			4417,
+			"int",
+			86400,
+			86400
+		],
+		bonsai_word_streaming_enabled: [
+			4974,
+			"bool",
+			!1,
+			!1
+		],
+		booking_confirmation_enabled_wa_web: [
+			23559,
+			"bool",
+			!1,
+			!0
+		],
+		bot_3p_status: [
+			5985,
+			"int",
+			0,
+			0
+		],
+		bot_profile_sync_migration_enabled: [
+			17485,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_delete_payment_info_web_enabled: [
+			34062,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_payments_home_web_enabled: [
+			32968,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_pix_actions_web_enabled: [
+			33028,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_pix_contact_info_web_enabled: [
+			34555,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_pix_groups_web_enabled: [
+			34235,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_pix_sync_receive_enabled: [
+			33219,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_pix_sync_receive_web_enabled: [
+			33244,
+			"bool",
+			!1,
+			!1
+		],
+		br_consumer_transactions_date_filter_web_enabled: [
+			34454,
+			"bool",
+			!1,
+			!1
+		],
+		br_enable_payment_logos_on_bubble: [
+			8160,
+			"bool",
+			!1,
+			!1
+		],
+		br_payments_home_duration_rule_for_pux_banner: [
+			22249,
+			"int",
+			604800,
+			604800
+		],
+		br_payments_payment_detection_enhancement: [
+			27309,
+			"bool",
+			!1,
+			!1
+		],
+		br_payments_payment_request_cta: [
+			25599,
+			"bool",
+			!1,
+			!1
+		],
+		br_payments_pix_groups_enabled: [
+			21741,
+			"bool",
+			!1,
+			!1
+		],
+		br_pix_key_bubble_content_update: [
+			26033,
+			"bool",
+			!1,
+			!1
+		],
+		br_smb_paymentshome_enabled: [
+			23042,
+			"bool",
+			!1,
+			!1
+		],
+		br_smb_pix_payment_request_variant: [
+			24388,
+			"int",
+			0,
+			0
+		],
+		brigading_privacy_setting_enabled: [
+			9876,
+			"bool",
+			!1,
+			!0
+		],
+		broadcast_to_your_followers_enabled: [
+			31580,
+			"bool",
+			!1,
+			!1
+		],
+		bug_reporting_abprops_uploaded_on_submissoin: [
+			24850,
+			"bool",
+			!1,
+			!1
+		],
+		bug_reporting_async_attachments_enabled: [
+			23978,
+			"bool",
+			!1,
+			!1
+		],
+		bug_reporting_attach_pathfinder_pre_bug_creation: [
+			26311,
+			"bool",
+			!0,
+			!1
+		],
+		bug_reporting_attach_view_dump_pre_bug_creation: [
+			26307,
+			"bool",
+			!0,
+			!1
+		],
+		bug_reporting_not_shipped_yet_enabled: [
+			29458,
+			"bool",
+			!1,
+			!1
+		],
+		bug_reporting_pre_uploaded_attachments_on_bug_creation_enabled: [
+			24422,
+			"bool",
+			!1,
+			!1
+		],
+		bug_reporting_rid_in_flytrap: [
+			24421,
+			"bool",
+			!1,
+			!1
+		],
+		bug_reporting_using_graphql: [
+			24161,
+			"bool",
+			!1,
+			!1
+		],
+		business_broadcast_campaign_syncd_enabled: [
+			26426,
+			"bool",
+			!0,
+			!0
+		],
+		business_broadcast_insights_campaign_ttl_days: [
+			27218,
+			"int",
+			30,
+			30
+		],
+		business_broadcast_insights_sync_past_x_days: [
+			27082,
+			"int",
+			30,
+			30
+		],
+		business_broadcasts_syncd_wam_logging: [
+			28277,
+			"bool",
+			!1,
+			!0
+		],
+		business_tool_enhanced_logging: [
+			4427,
+			"bool",
+			!1,
+			!1
+		],
+		buyer_initiated_order_request_variant_enabled: [
+			5114,
+			"bool",
+			!1,
+			!1
+		],
+		call_admin_version: [
+			2912,
+			"int",
+			0,
+			0
+		],
+		call_info_optimizations_1on1: [
+			31095,
+			"bool",
+			!1,
+			!1
+		],
+		call_info_optimizations_ahgc_call_link: [
+			31096,
+			"bool",
+			!1,
+			!1
+		],
+		call_info_optimizations_lgc: [
+			31094,
+			"bool",
+			!1,
+			!1
+		],
+		call_info_optimizations_version: [
+			27483,
+			"int",
+			0,
+			0
+		],
+		call_offer_failed_soft_landing_screen_version: [
+			10559,
+			"int",
+			0,
+			1
+		],
+		call_screen_share_dual_stream_app_update_dialog_enabled: [
+			31922,
+			"bool",
+			!0,
+			!0
+		],
+		callee_accept_timeout_ms: [
+			6007,
+			"int",
+			3e4,
+			3e4
+		],
+		calling_32p_version: [
+			7709,
+			"int",
+			0,
+			3
+		],
+		calling_audio_share_version: [
+			6598,
+			"int",
+			0,
+			0
+		],
+		calling_av_sync_webrtc: [
+			24599,
+			"bool",
+			!1,
+			!1
+		],
+		calling_dual_stream_camera_auto_off_battery_threshold_pct: [
+			33552,
+			"int",
+			15,
+			15
+		],
+		calling_dual_stream_camera_auto_off_enabled: [
+			32896,
+			"bool",
+			!1,
+			!1
+		],
+		calling_dual_stream_camera_auto_off_include_low_data_usage: [
+			33235,
+			"bool",
+			!0,
+			!0
+		],
+		calling_dual_stream_camera_auto_off_poor_network_time_ms: [
+			33548,
+			"int",
+			5800,
+			5800
+		],
+		calling_lid_version: [
+			3358,
+			"int",
+			0,
+			0
+		],
+		calling_rust_migration_bitmap: [
+			17954,
+			"int",
+			0,
+			0
+		],
+		calling_rust_migration_incoming_ack_stanza_bitmap: [
+			28434,
+			"int",
+			0,
+			0
+		],
+		calling_rust_migration_incoming_stanza_bitmap: [
+			26876,
+			"int",
+			0,
+			0
+		],
+		calling_screen_share_milestone_version: [
+			30350,
+			"int",
+			2,
+			2
+		],
+		calling_ux_logging_bitmap: [
+			8175,
+			"int",
+			0,
+			0
+		],
+		calling_voicemail_attached_icce_enabled: [
+			30383,
+			"int",
+			0,
+			0
+		],
+		calling_voicemail_enabled: [
+			17685,
+			"bool",
+			!1,
+			!1
+		],
+		calling_voicemail_quoted_replies_enabled: [
+			30165,
+			"bool",
+			!1,
+			!1
+		],
+		calls_tab_username_global_search_enabled: [
+			17698,
+			"bool",
+			!1,
+			!1
+		],
+		camera_error_banners_version: [
+			10584,
+			"int",
+			0,
+			1
+		],
+		camera_health_check_delay: [
+			8739,
+			"int",
+			5e3,
+			5e3
+		],
+		camera_health_check_period: [
+			8740,
+			"int",
+			2e3,
+			2e3
+		],
+		canonical_ent_companion_server_cached_nonce_enabled: [
+			28399,
+			"bool",
+			!1,
+			!1
+		],
+		cap_context_info_max_array_length: [
+			33504,
+			"bool",
+			!0,
+			!0
+		],
+		carousel_message_client_enabled: [
+			4668,
+			"bool",
+			!1,
+			!0
+		],
+		catalog_categories_enabled: [
+			1514,
+			"bool",
+			!1,
+			!0
+		],
+		cci_compliance_ctwa: [
+			24983,
+			"bool",
+			!1,
+			!1
+		],
+		cci_compliance_ctwa_learn_more_hyperlink: [
+			25366,
+			"string",
+			"https://faq.whatsapp.com/785493319976156/",
+			"https://faq.whatsapp.com/785493319976156/"
+		],
+		cci_compliance_mm: [
+			24853,
+			"bool",
+			!1,
+			!1
+		],
+		channel_album_v2_receiving_enabled: [
+			13219,
+			"bool",
+			!1,
+			!1
+		],
+		channel_album_v2_sender_enabled: [
+			13220,
+			"bool",
+			!1,
+			!1
+		],
+		channel_enforcement_logging_enabled: [
+			20549,
+			"bool",
+			!1,
+			!0
+		],
+		channel_enforcement_policy_education_enabled: [
+			23745,
+			"bool",
+			!1,
+			!1
+		],
+		channel_forward_bottom_button_enabled: [
+			9422,
+			"bool",
+			!1,
+			!0
+		],
+		channel_forward_to_chat_enabled: [
+			4338,
+			"bool",
+			!1,
+			!0
+		],
+		channel_forward_to_chat_v2_message_navigation_enabled: [
+			4682,
+			"bool",
+			!1,
+			!0
+		],
+		channel_osa_reporting_enabled: [
+			12987,
+			"bool",
+			!1,
+			!0
+		],
+		channel_photo_poll_receiver_enabled: [
+			11980,
+			"bool",
+			!1,
+			!0
+		],
+		channel_photo_poll_sender_enabled: [
+			11989,
+			"bool",
+			!1,
+			!1
+		],
+		channel_playable_message_views_duration_milliseconds: [
+			4722,
+			"int",
+			3e3,
+			3e3
+		],
+		channel_poll_forwarding_enabled: [
+			10412,
+			"bool",
+			!1,
+			!0
+		],
+		channel_pull_message_updates_threshold_seconds: [
+			4326,
+			"int",
+			120,
+			120
+		],
+		channel_reactions_enabled: [
+			4306,
+			"bool",
+			!1,
+			!0
+		],
+		channel_reactions_sender_list_enabled: [
+			5185,
+			"bool",
+			!0,
+			!0
+		],
+		channel_reactions_settings_enabled: [
+			4887,
+			"bool",
+			!1,
+			!0
+		],
+		channel_status_consumption: [
+			23995,
+			"bool",
+			!1,
+			!1
+		],
+		channel_status_consumption_music_enabled: [
+			26774,
+			"bool",
+			!1,
+			!1
+		],
+		channel_status_creation: [
+			23994,
+			"bool",
+			!1,
+			!1
+		],
+		channel_status_creation_profile_ring_enabled: [
+			33840,
+			"bool",
+			!1,
+			!1
+		],
+		channel_status_deeplink_enabled: [
+			28500,
+			"bool",
+			!0,
+			!0
+		],
+		channel_status_fill_gap_page_size: [
+			27777,
+			"int",
+			100,
+			100
+		],
+		channel_status_forwarding_enabled: [
+			28479,
+			"bool",
+			!1,
+			!1
+		],
+		channel_status_help_enabled: [
+			30999,
+			"bool",
+			!1,
+			!0
+		],
+		channel_status_resharing_enabled: [
+			30155,
+			"bool",
+			!1,
+			!1
+		],
+		channel_sticker_pack_forwarding: [
+			20212,
+			"bool",
+			!1,
+			!1
+		],
+		channel_supported_message_types: [
+			3919,
+			"string",
+			"1, 2, 3, 5, 9, 10, 12, 15",
+			"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15"
+		],
+		channel_to_channel_forwarding_logging_enabled: [
+			8227,
+			"bool",
+			!1,
+			!1
+		],
+		channel_us_ncii_reporting_enabled: [
+			25818,
+			"bool",
+			!1,
+			!0
+		],
+		channel_view_counts_enabled: [
+			4721,
+			"int",
+			0,
+			3
+		],
+		channel_views_duration_milliseconds: [
+			4648,
+			"int",
+			250,
+			250
+		],
+		channel_views_vpv_definition_enabled: [
+			23616,
+			"bool",
+			!1,
+			!1
+		],
+		channel_web_embedding_enabled: [
+			31664,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_insights_gizmos_enabled: [
+			9641,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_notifications_enabled: [
+			18560,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_notifications_forwards_enabled: [
+			32808,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_profiles_banner_enabled: [
+			33896,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_profiles_forwarding_to_chats_enabled: [
+			23170,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_profiles_list_enabled: [
+			23174,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_profiles_receiver_enabled: [
+			22318,
+			"bool",
+			!1,
+			!0
+		],
+		channels_admin_profiles_sender_enabled: [
+			22316,
+			"bool",
+			!1,
+			!0
+		],
+		channels_admin_profiles_settings_enabled: [
+			24347,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_profiles_update_enabled: [
+			23168,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_reply_enabled: [
+			7211,
+			"bool",
+			!1,
+			!1
+		],
+		channels_admin_reply_receiver_enabled: [
+			7237,
+			"bool",
+			!1,
+			!1
+		],
+		channels_album_receiver_enabled: [
+			23809,
+			"bool",
+			!1,
+			!1
+		],
+		channels_album_sender_enabled: [
+			23859,
+			"bool",
+			!1,
+			!1
+		],
+		channels_audio_files_display_waveform_enabled: [
+			6996,
+			"bool",
+			!1,
+			!1
+		],
+		channels_audio_files_receiver_enabled: [
+			6506,
+			"bool",
+			!1,
+			!1
+		],
+		channels_audio_files_sender_enabled: [
+			6505,
+			"bool",
+			!1,
+			!1
+		],
+		channels_audio_files_sender_waveform_enabled: [
+			6943,
+			"bool",
+			!1,
+			!1
+		],
+		channels_capabilities_enabled: [
+			10328,
+			"bool",
+			!0,
+			!0
+		],
+		channels_context_card_invite_followers_enabled: [
+			27449,
+			"bool",
+			!1,
+			!1
+		],
+		channels_creation_enabled: [
+			3878,
+			"int",
+			0,
+			2
+		],
+		channels_creation_entrypoint_in_directory_enabled: [
+			18613,
+			"int",
+			0,
+			0
+		],
+		channels_creation_entrypoint_in_updates_tab_enabled: [
+			18925,
+			"int",
+			0,
+			1
+		],
+		channels_directory_categories_cache_refresh_interval_ms: [
+			8151,
+			"int",
+			864e5,
+			6e5
+		],
+		channels_directory_categories_enabled: [
+			7685,
+			"bool",
+			!1,
+			!1
+		],
+		channels_directory_categories_logging_enabled: [
+			10188,
+			"bool",
+			!1,
+			!0
+		],
+		channels_directory_category_types: [
+			7734,
+			"string",
+			"3,7,6,4,1,5,2",
+			"3,7,6,4,1,5,2"
+		],
+		channels_directory_enabled: [
+			3879,
+			"int",
+			0,
+			2
+		],
+		channels_directory_page_size: [
+			5853,
+			"int",
+			50,
+			50
+		],
+		channels_directory_search_debounce_ms: [
+			5204,
+			"int",
+			250,
+			250
+		],
+		channels_directory_v2_cache_refresh_interval_ms: [
+			5304,
+			"int",
+			18e5,
+			6e5
+		],
+		channels_directory_v2_filter_types: [
+			5127,
+			"string",
+			"",
+			"1, 2, 3, 4, 5, 6"
+		],
+		channels_emoji_forwarded_attribution_ui_enabled: [
+			17081,
+			"bool",
+			!1,
+			!1
+		],
+		channels_enabled: [
+			3877,
+			"int",
+			0,
+			2
+		],
+		channels_fetch_and_log_capabilities: [
+			10325,
+			"bool",
+			!0,
+			!0
+		],
+		channels_filter_out_subscribed_in_directory_null_state: [
+			5015,
+			"bool",
+			!1,
+			!0
+		],
+		channels_follower_invite_creation_modal_enabled: [
+			26120,
+			"bool",
+			!1,
+			!0
+		],
+		channels_followers_list_cache_refresh_milliseconds: [
+			5217,
+			"int",
+			6e4,
+			6e4
+		],
+		channels_forward_counter_on_status_card_enabled: [
+			26148,
+			"bool",
+			!1,
+			!1
+		],
+		channels_forward_logging_v2_enabled: [
+			5492,
+			"bool",
+			!1,
+			!0
+		],
+		channels_hide_news_url_preview: [
+			5287,
+			"bool",
+			!1,
+			!0
+		],
+		channels_in_app_policy_detail_enabled: [
+			29132,
+			"bool",
+			!1,
+			!0
+		],
+		channels_invite_contacts_to_follow_consumer_enabled: [
+			16790,
+			"bool",
+			!1,
+			!1
+		],
+		channels_invite_contacts_to_follow_producer_enabled: [
+			16789,
+			"bool",
+			!1,
+			!1
+		],
+		channels_invite_contacts_to_follow_receiver_invalid_message_drop_endabled: [
+			22280,
+			"bool",
+			!0,
+			!0
+		],
+		channels_invite_contacts_to_follow_receiver_logging_enabled: [
+			20836,
+			"bool",
+			!1,
+			!1
+		],
+		channels_invite_contacts_to_follow_sender_logging_enabled: [
+			20837,
+			"bool",
+			!1,
+			!1
+		],
+		channels_invite_link_preview_improvement_enabled: [
+			22196,
+			"bool",
+			!1,
+			!1
+		],
+		channels_is_multi_admin_lid_migration_enabled: [
+			16193,
+			"bool",
+			!1,
+			!0
+		],
+		channels_max_messages_batch_pull: [
+			5494,
+			"int",
+			100,
+			100
+		],
+		channels_message_pin_admin_enabled: [
+			29516,
+			"bool",
+			!1,
+			!0
+		],
+		channels_message_pin_follower_enabled: [
+			29517,
+			"bool",
+			!1,
+			!0
+		],
+		channels_multi_admin_max_admin_count: [
+			6461,
+			"int",
+			16,
+			16
+		],
+		channels_music_forwarding_disabled: [
+			22089,
+			"bool",
+			!1,
+			!1
+		],
+		channels_music_receiver_enabled: [
+			20266,
+			"bool",
+			!1,
+			!0
+		],
+		channels_open_qpl_improvements_enabled: [
+			15754,
+			"bool",
+			!1,
+			!0
+		],
+		channels_open_qpl_user_rid_logging_enabled: [
+			17712,
+			"bool",
+			!1,
+			!1
+		],
+		channels_photo_polls_genai_enabled: [
+			26392,
+			"bool",
+			!1,
+			!1
+		],
+		channels_pinning_nudge_enabled: [
+			20551,
+			"bool",
+			!1,
+			!1
+		],
+		channels_poll_receive_enabled: [
+			6191,
+			"bool",
+			!1,
+			!0
+		],
+		channels_poll_voter_list_enabled: [
+			6382,
+			"bool",
+			!1,
+			!0
+		],
+		channels_poll_voters_details_cache_ttl_ms: [
+			7920,
+			"int",
+			3e5,
+			3e5
+		],
+		channels_poll_voters_summary_cache_ttl_ms: [
+			7919,
+			"int",
+			12e4,
+			12e4
+		],
+		channels_proactive_message_gap_handling_enabled: [
+			5871,
+			"bool",
+			!1,
+			!1
+		],
+		channels_producer_insights_enabled: [
+			8960,
+			"bool",
+			!1,
+			!0
+		],
+		channels_producer_insights_hide_deltas: [
+			9792,
+			"bool",
+			!0,
+			!0
+		],
+		channels_producer_insights_min_followers: [
+			9447,
+			"int",
+			100,
+			100
+		],
+		channels_ptt_logging_enabled: [
+			6274,
+			"bool",
+			!0,
+			!0
+		],
+		channels_ptt_receiver_enabled: [
+			5876,
+			"bool",
+			!1,
+			!0
+		],
+		channels_ptv_forwarding_enabled: [
+			13776,
+			"bool",
+			!1,
+			!0
+		],
+		channels_ptv_receiving_enabled: [
+			13559,
+			"bool",
+			!1,
+			!1
+		],
+		channels_pulse_on_unread_badge_enabled: [
+			28224,
+			"bool",
+			!1,
+			!1
+		],
+		channels_qpl_improvements_supported_types: [
+			19589,
+			"string",
+			"",
+			"1,2"
+		],
+		channels_qpl_logging: [
+			7677,
+			"bool",
+			!1,
+			!1
+		],
+		channels_question_admin_enabled: [
+			17426,
+			"bool",
+			!1,
+			!0
+		],
+		channels_question_admin_m2_enabled: [
+			26910,
+			"bool",
+			!1,
+			!1
+		],
+		channels_question_fetch_responses_page_size: [
+			18984,
+			"int",
+			30,
+			30
+		],
+		channels_question_follower_m2_enabled: [
+			26911,
+			"bool",
+			!1,
+			!1
+		],
+		channels_question_forward_message_types_chat_m1_enabled: [
+			18988,
+			"string",
+			"",
+			"22"
+		],
+		channels_question_forward_message_types_chat_m2_enabled: [
+			26925,
+			"string",
+			"",
+			""
+		],
+		channels_question_forward_message_types_status_m2_enabled: [
+			26926,
+			"string",
+			"",
+			""
+		],
+		channels_question_receiver_message_types_m1_enabled: [
+			15246,
+			"string",
+			"",
+			" 22"
+		],
+		channels_question_receiver_message_types_m2_enabled: [
+			26932,
+			"string",
+			"",
+			""
+		],
+		channels_question_reply_receiver_message_types_m1_enabled: [
+			18393,
+			"string",
+			"",
+			"25"
+		],
+		channels_question_reply_receiver_message_types_m2_enabled: [
+			26933,
+			"string",
+			"",
+			""
+		],
+		channels_question_reply_sender_message_types_m1_enabled: [
+			18394,
+			"string",
+			"",
+			"22"
+		],
+		channels_question_reply_sender_message_types_m2_enabled: [
+			26931,
+			"string",
+			"",
+			""
+		],
+		channels_question_response_rate_limit_max_count_in_client_ui: [
+			19989,
+			"int",
+			5,
+			5
+		],
+		channels_question_sender_message_types_m1_enabled: [
+			15418,
+			"string",
+			" ",
+			" "
+		],
+		channels_question_sender_message_types_m2_enabled: [
+			26930,
+			"string",
+			"",
+			""
+		],
+		channels_questions_integrity_m1_enabled: [
+			17600,
+			"bool",
+			!1,
+			!0
+		],
+		channels_questions_responses_drawer_loading_shimmer_enabled: [
+			29209,
+			"bool",
+			!1,
+			!0
+		],
+		channels_questions_search_backtest_enabled: [
+			31046,
+			"bool",
+			!1,
+			!1
+		],
+		channels_questions_search_enabled: [
+			24004,
+			"bool",
+			!1,
+			!0
+		],
+		channels_quick_forwarding_button_mode: [
+			7234,
+			"int",
+			0,
+			0
+		],
+		channels_quiz_receiving_enabled: [
+			19778,
+			"bool",
+			!1,
+			!1
+		],
+		channels_quiz_sending_enabled: [
+			19777,
+			"bool",
+			!1,
+			!1
+		],
+		channels_reactions_bottomsheet_tap_to_react_enabled: [
+			7682,
+			"bool",
+			!1,
+			!0
+		],
+		channels_recommendation_unit_removal_v1_enabled: [
+			33761,
+			"bool",
+			!1,
+			!1
+		],
+		channels_recommended_v3_ui_limit: [
+			8167,
+			"int",
+			5,
+			5
+		],
+		channels_reply_forward_message_types_chat_m1_enabled: [
+			19053,
+			"string",
+			"",
+			"25"
+		],
+		channels_reply_forward_message_types_chat_m2_enabled: [
+			26927,
+			"string",
+			"",
+			""
+		],
+		channels_reply_forward_message_types_status_m2_enabled: [
+			26924,
+			"string",
+			"",
+			""
+		],
+		channels_scheduling_updates_enabled: [
+			33897,
+			"bool",
+			!1,
+			!1
+		],
+		channels_scheduling_updates_message_types: [
+			33898,
+			"string",
+			"1",
+			"1"
+		],
+		channels_send_album_enabled: [
+			5643,
+			"bool",
+			!1,
+			!1
+		],
+		channels_send_view_receipt_enabled: [
+			4760,
+			"bool",
+			!1,
+			!0
+		],
+		channels_sgi_receiver_enabled: [
+			32801,
+			"bool",
+			!1,
+			!0
+		],
+		channels_sgi_sender_enabled: [
+			32802,
+			"bool",
+			!1,
+			!0
+		],
+		channels_sgi_sender_self_disclosure_enabled: [
+			32990,
+			"bool",
+			!1,
+			!0
+		],
+		channels_sgi_ui_label_enabled: [
+			33109,
+			"bool",
+			!1,
+			!0
+		],
+		channels_share_link_logging_enabled: [
+			5491,
+			"bool",
+			!1,
+			!0
+		],
+		channels_status_consumption_entrypoints: [
+			27240,
+			"int",
+			0,
+			3
+		],
+		channels_status_updates_consumption_enabled: [
+			6444,
+			"bool",
+			!1,
+			!0
+		],
+		channels_sticker_forwarded_attribution_ui_enabled: [
+			16856,
+			"bool",
+			!1,
+			!0
+		],
+		channels_sticker_pack_forwarded_attribution_ui_enabled: [
+			16858,
+			"bool",
+			!1,
+			!0
+		],
+		channels_sticker_pack_rendering: [
+			20182,
+			"bool",
+			!1,
+			!0
+		],
+		channels_t_enabled: [
+			25078,
+			"bool",
+			!1,
+			!1
+		],
+		channels_uk_osa_enabled: [
+			14249,
+			"bool",
+			!1,
+			!0
+		],
+		channels_updates_tab_swipe_actions_enabled: [
+			8653,
+			"bool",
+			!1,
+			!0
+		],
+		channels_verified_badge_in_compact_inbox_enabled: [
+			8059,
+			"bool",
+			!1,
+			!1
+		],
+		channels_video_play_logging_enabled: [
+			16491,
+			"bool",
+			!1,
+			!0
+		],
+		channels_view_counts_sender_admin_exclusion_mode: [
+			31729,
+			"int",
+			0,
+			0
+		],
+		channels_view_counts_vpv_logging_enabled: [
+			12295,
+			"bool",
+			!1,
+			!0
+		],
+		channels_visibility_logging_fullscreen_media_enabled: [
+			28148,
+			"bool",
+			!1,
+			!1
+		],
+		channels_vpv_logging_enabled: [
+			9834,
+			"bool",
+			!1,
+			!0
+		],
+		chatlist_filters_v1: [
+			1608,
+			"bool",
+			!1,
+			!1
+		],
+		chatlist_prevent_autoread: [
+			21156,
+			"bool",
+			!1,
+			!1
+		],
+		chatlist_show_draft_for_empty_chat: [
+			19287,
+			"bool",
+			!1,
+			!1
+		],
+		coex_calling_enabled: [
+			18047,
+			"bool",
+			!1,
+			!0
+		],
+		coex_calling_enabled_business: [
+			23933,
+			"bool",
+			!1,
+			!0
+		],
+		coex_calling_permissions_3p_enabled: [
+			23464,
+			"bool",
+			!1,
+			!0
+		],
+		coex_edit_msg_enabled: [
+			19039,
+			"bool",
+			!1,
+			!0
+		],
+		coex_iicon_backfill: [
+			28349,
+			"bool",
+			!1,
+			!1
+		],
+		coex_revoke_message_enabled: [
+			19285,
+			"bool",
+			!1,
+			!0
+		],
+		coexv2_recv_enabled: [
+			28110,
+			"bool",
+			!1,
+			!0
+		],
+		coexv2_send_enabled: [
+			27839,
+			"bool",
+			!1,
+			!1
+		],
+		commerce_sanctioned: [
+			1319,
+			"bool",
+			!1,
+			!1
+		],
+		community_admin_promotion_one_time_prompt: [
+			1864,
+			"bool",
+			!1,
+			!1
+		],
+		community_announcement_group_size_limit: [
+			2774,
+			"int",
+			5e3,
+			5e3
+		],
+		community_general_chat_UI_enabled: [
+			5021,
+			"bool",
+			!1,
+			!1
+		],
+		community_general_chat_create_enabled: [
+			5453,
+			"bool",
+			!1,
+			!1
+		],
+		companion_contact_refresh: [
+			33093,
+			"bool",
+			!1,
+			!0
+		],
+		companion_contact_refresh_debounce_ms: [
+			33497,
+			"int",
+			0,
+			0
+		],
+		companion_contact_refresh_receiver: [
+			33635,
+			"bool",
+			!1,
+			!1
+		],
+		companion_initiated_companion_contact_refresh: [
+			33123,
+			"bool",
+			!1,
+			!1
+		],
+		consumer_graphql_enable_double_log_for_survey: [
+			28129,
+			"bool",
+			!1,
+			!1
+		],
+		consumer_graphql_web_to_fetch_qp_surface_ids: [
+			28159,
+			"string",
+			"{}",
+			"{}"
+		],
+		consumer_web_qp_graphql_to_fetch_qp_frequency_mins: [
+			28529,
+			"int",
+			1320,
+			1320
+		],
+		context_menu_content_fix: [
+			34337,
+			"bool",
+			!1,
+			!1
+		],
+		country_client_gating_enabled: [
+			1105,
+			"bool",
+			!1,
+			!1
+		],
+		coupon_copy_button_url: [
+			3631,
+			"string",
+			"https://www.whatsapp.com/coupon?code=",
+			"https://www.whatsapp.com/coupon?code="
+		],
+		create_group_and_add_member_overflow: [
+			15772,
+			"bool",
+			!1,
+			!0
+		],
+		cross_device_message_editing: [
+			28340,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_1pd_longest_call_enabled: [
+			32108,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_1pd_web_nbf_signals_enabled: [
+			33508,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_3pd_aggregated_call_logging_allowed: [
+			32379,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_3pd_aggregated_conversion_enabled: [
+			27640,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_3pd_conversion_on_ae_detection: [
+			34045,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_3pd_data_sharing_additional_logging: [
+			29333,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_3pd_data_sharing_cooldown_max_times_shown_for_opted_out: [
+			15686,
+			"int",
+			0,
+			0
+		],
+		ctwa_3pd_data_sharing_disclosure_on_lists_home: [
+			31224,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_3pd_data_sharing_on_thread_entry: [
+			13485,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_3pd_data_sharing_title_change: [
+			29332,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_3pd_opt_out_counter_optimization_enabled: [
+			24984,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_3pd_post_dc_depth_limit: [
+			24061,
+			"int",
+			0,
+			7
+		],
+		ctwa_ad_account_nonce_push_wait_timeout_web: [
+			8664,
+			"int",
+			20,
+			20
+		],
+		ctwa_ad_account_nonce_retries_max_web: [
+			8663,
+			"int",
+			0,
+			0
+		],
+		ctwa_ad_account_token_storage_kill_switch_web: [
+			8166,
+			"bool",
+			!0,
+			!1
+		],
+		ctwa_ad_creation_entry_point_catalog_product_web: [
+			9677,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_ad_creation_entry_point_catalog_web: [
+			9596,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_ae_model_meta_data_enabled: [
+			27515,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_ae_model_meta_data_signal_enabled: [
+			27516,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_ae_signal_3pd_enabled: [
+			34663,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_ae_signal_3pd_field_policy: [
+			34665,
+			"string",
+			"",
+			""
+		],
+		ctwa_block_ib_ar_for_wabai: [
+			26302,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_conversion_creation_from_delay_enabled: [
+			32777,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_custom_label_algorithm: [
+			14887,
+			"int",
+			0,
+			0
+		],
+		ctwa_custom_label_signals_enabled: [
+			11205,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_data_max_length: [
+			1841,
+			"int",
+			768,
+			768
+		],
+		ctwa_download_3pd_signals: [
+			13385,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_enable_biz_data_sharing_after_nux_dismiss: [
+			13240,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_entry_point_config_fetch_threshhold: [
+			6214,
+			"int",
+			432e5,
+			2e3
+		],
+		ctwa_favorites_list_sends_signals: [
+			29529,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_important_label_sends_signals: [
+			15271,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_lead_taxonomy: [
+			26531,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_long_term_holdout_client_side_check: [
+			11e3,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_long_term_holdout_content_enabled: [
+			8015,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_longest_call_duration: [
+			32100,
+			"int",
+			120,
+			120
+		],
+		ctwa_mm_biz_ai_disclosure_update_enabled: [
+			10379,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_native_ads_creation_web_enabled: [
+			18857,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_native_ads_creation_web_hawk_tool_enabled: [
+			20442,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_native_ads_creation_web_targeting_modal_hawk_tool_enabled: [
+			20731,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_native_ads_detailed_targeting: [
+			32487,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_native_ads_inline_notice_modules: [
+			32701,
+			"string",
+			"AdsLWICTWAZeroOutcomeAdValidationModule,AdsLWICTWASimilarAdvertiserBudgetRecommendationValidationModule",
+			"AdsLWICTWAZeroOutcomeAdValidationModule,AdsLWICTWASimilarAdvertiserBudgetRecommendationValidationModule"
+		],
+		ctwa_native_web_draft_ad_enabled: [
+			28989,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_per_customer_data_sharing_controls_do_not_show_msg_until_chosen: [
+			19763,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_show_ads_data_sharing_after_message: [
+			13579,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_smb_data_sharing_consent: [
+			2934,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_smb_data_sharing_opt_in_cool_off_period: [
+			3331,
+			"int",
+			259200,
+			259200
+		],
+		ctwa_smb_data_sharing_settings_killswitch: [
+			5615,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_smb_detected_outcome_labels_merger_enabled: [
+			15308,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_smb_detected_outcome_lists_enabled: [
+			20220,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_smb_label_chat_header_enabled_web: [
+			25180,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_smb_lists_dropdown_application_fix_enabled: [
+			30401,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_smb_multiselect_enabled: [
+			26719,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_suppress_message_via_ad_spam_web: [
+			17580,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled: [
+			21819,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_tos_filtering_enabled: [
+			976,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_web_custom_label_signals_enabled: [
+			19985,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_web_native_ads_budget_recommendation_enabled: [
+			32511,
+			"bool",
+			!1,
+			!0
+		],
+		ctwa_web_native_ads_mvp_qe1_enabled: [
+			24668,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_web_native_ads_mvp_qe1_enabled_no_exposure: [
+			24761,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_web_native_ads_mvp_qe2_enabled: [
+			24669,
+			"bool",
+			!1,
+			!1
+		],
+		ctwa_web_native_ads_sabr_enabled: [
+			32007,
+			"bool",
+			!1,
+			!0
+		],
+		custom_notification_tones: [
+			18884,
+			"bool",
+			!1,
+			!1
+		],
+		custom_racing_emoji: [
+			7463,
+			"bool",
+			!1,
+			!1
+		],
+		custom_racing_emoji_feb2025: [
+			13322,
+			"bool",
+			!1,
+			!1
+		],
+		data_privacy_phase_2_enabled: [
+			6843,
+			"bool",
+			!1,
+			!0
+		],
+		data_privacy_phase_2_non_e2ee_enabled: [
+			7131,
+			"bool",
+			!1,
+			!0
+		],
+		data_sharing_transparency_indicator_duration: [
+			5990,
+			"int",
+			604800,
+			604800
+		],
+		dau_fix_delay_presence_on_focus: [
+			18189,
+			"bool",
+			!1,
+			!1
+		],
+		dedupe_lid_pn_identity_key_stores: [
+			33083,
+			"bool",
+			!1,
+			!1
+		],
+		default_audio_limit_mb: [
+			3657,
+			"int",
+			16,
+			64
+		],
+		default_endpoint_thread_poll_timeout: [
+			11129,
+			"int",
+			0,
+			0
+		],
+		default_media_limit_mb: [
+			3660,
+			"int",
+			16,
+			64
+		],
+		default_status_media_limit_mb: [
+			3659,
+			"int",
+			16,
+			64
+		],
+		default_video_limit_mb: [
+			3185,
+			"int",
+			16,
+			64
+		],
+		defense_mode_available: [
+			13874,
+			"int",
+			0,
+			1
+		],
+		defense_mode_quarantine: [
+			24959,
+			"bool",
+			!1,
+			!0
+		],
+		defense_mode_quarantine_bulk_unblock_limit: [
+			21921,
+			"int",
+			50,
+			50
+		],
+		defense_mode_quarantine_message_expiration_window: [
+			21918,
+			"int",
+			121e4,
+			121e4
+		],
+		desktop_upsell_intro_panel_illustration_variant: [
+			19518,
+			"int",
+			0,
+			0
+		],
+		dev_prop_boolean: [
+			1065,
+			"bool",
+			!1,
+			!1
+		],
+		dev_prop_float: [
+			1067,
+			"float",
+			0,
+			0
+		],
+		dev_prop_int: [
+			1066,
+			"int",
+			0,
+			0
+		],
+		dev_prop_string: [
+			1064,
+			"string",
+			"",
+			""
+		],
+		device_capabilities_v2_sync_enabled: [
+			33380,
+			"bool",
+			!1,
+			!1
+		],
+		device_switching_enabled: [
+			3205,
+			"bool",
+			!1,
+			!1
+		],
+		dialer_pad_for_new_chats: [
+			18688,
+			"bool",
+			!1,
+			!1
+		],
+		direct_connection_business_numbers: [
+			1846,
+			"string",
+			"16005554444,918591749310,917977079770",
+			"16005554444,918591749310,917977079770"
+		],
+		directory_categories_display_newsletters_per_category_limit: [
+			9312,
+			"int",
+			4,
+			4
+		],
+		directory_categories_newsletters_per_category_limit: [
+			7986,
+			"int",
+			10,
+			10
+		],
+		disable_auto_download: [
+			1838,
+			"bool",
+			!1,
+			!1
+		],
+		disable_libaom_registration: [
+			23836,
+			"bool",
+			!1,
+			!1
+		],
+		disable_raise_hand_1on1: [
+			27177,
+			"bool",
+			!1,
+			!1
+		],
+		disappearing_mode: [
+			536,
+			"bool",
+			!1,
+			!1
+		],
+		disclosure_for_the_marketing_message_body_links_enabled: [
+			12994,
+			"bool",
+			!1,
+			!1
+		],
+		dm_additional_durations: [
+			3305,
+			"bool",
+			!1,
+			!1
+		],
+		dm_after_read_timer_sender_options_seconds: [
+			30176,
+			"string",
+			"{\"timers\": [0, 300, 3600, 43200]}",
+			"{\"timers\": [0, 300, 3600, 43200]}"
+		],
+		dm_initiator_trigger_daily_logs: [
+			7402,
+			"bool",
+			!1,
+			!0
+		],
+		dm_initiator_trigger_groups: [
+			7141,
+			"bool",
+			!1,
+			!0
+		],
+		dm_receiver_after_read_allow_values: [
+			26218,
+			"string",
+			"{\"timers\": [0, 900]}",
+			"{\"timers\": [0, 900]}"
+		],
+		dm_receiver_allowed_values: [
+			19232,
+			"string",
+			"{\"timers\": [0, 86400, 604800, 7776000]}",
+			"{\"timers\": [0, 86400, 604800, 7776000]}"
+		],
+		dm_reliability_logging: [
+			5580,
+			"bool",
+			!1,
+			!1
+		],
+		dm_updated_system_message: [
+			1670,
+			"bool",
+			!1,
+			!0
+		],
+		download_document_thumb_mms_enabled: [
+			250,
+			"bool",
+			!1,
+			!0
+		],
+		download_status_thumb_mms_enabled: [
+			249,
+			"bool",
+			!1,
+			!1
+		],
+		drop_last_name: [
+			726,
+			"bool",
+			!1,
+			!1
+		],
+		dsa_21_channel_reporting_enabled: [
+			21073,
+			"bool",
+			!1,
+			!0
+		],
+		dsa_26_receiver_enabled: [
+			22515,
+			"bool",
+			!1,
+			!0
+		],
+		dsa_26_sender_enabled: [
+			22516,
+			"bool",
+			!1,
+			!0
+		],
+		dsa_channels_report_unlawful_content_enabled: [
+			6145,
+			"bool",
+			!1,
+			!0
+		],
+		dsa_information_for_eu_only_enabled: [
+			7592,
+			"bool",
+			!1,
+			!0
+		],
+		early_audio_driver_capture_at_native: [
+			13166,
+			"bool",
+			!1,
+			!1
+		],
+		early_audio_driver_pre_buffering: [
+			13168,
+			"bool",
+			!1,
+			!1
+		],
+		early_bot_connect_event_bitmap: [
+			14200,
+			"int",
+			0,
+			0
+		],
+		educational_dialogs_button_enabled: [
+			14676,
+			"bool",
+			!1,
+			!1
+		],
+		elevated_push_names_v2_m2_enabled: [
+			2904,
+			"bool",
+			!1,
+			!1
+		],
+		emoji_search_cldr: [
+			13323,
+			"bool",
+			!1,
+			!1
+		],
+		empty_unread_filter_cta_variant: [
+			22962,
+			"int",
+			0,
+			0
+		],
+		enable_3p_contacts_share_hybrid: [
+			20849,
+			"bool",
+			!1,
+			!0
+		],
+		enable_agm_flow_cta: [
+			22006,
+			"bool",
+			!1,
+			!1
+		],
+		enable_audio_device_async_start: [
+			13231,
+			"bool",
+			!1,
+			!1
+		],
+		enable_auto_add_call_link_creator: [
+			15184,
+			"bool",
+			!1,
+			!1
+		],
+		enable_av_downgrade_1on1: [
+			18165,
+			"bool",
+			!1,
+			!1
+		],
+		enable_avatars_on_web_companion: [
+			18081,
+			"bool",
+			!1,
+			!1
+		],
+		enable_busy_reason_fs: [
+			9674,
+			"bool",
+			!1,
+			!1
+		],
+		enable_cached_media_manager: [
+			4812,
+			"bool",
+			!0,
+			!0
+		],
+		enable_call_control_m5: [
+			8524,
+			"bool",
+			!1,
+			!1
+		],
+		enable_call_link_call_log_aggregation: [
+			16523,
+			"bool",
+			!1,
+			!1
+		],
+		enable_call_links_push_notification: [
+			13679,
+			"bool",
+			!1,
+			!1
+		],
+		enable_call_result_fix_for_404_accept_nack: [
+			10565,
+			"bool",
+			!1,
+			!1
+		],
+		enable_call_transfer_notification: [
+			29242,
+			"bool",
+			!1,
+			!1
+		],
+		enable_calling_phone_number_privacy: [
+			17731,
+			"bool",
+			!1,
+			!1
+		],
+		enable_calling_username: [
+			13359,
+			"bool",
+			!1,
+			!1
+		],
+		enable_calluser_video_deeplink: [
+			32881,
+			"bool",
+			!1,
+			!1
+		],
+		enable_channel_video_server_thumbnail: [
+			11192,
+			"bool",
+			!1,
+			!1
+		],
+		enable_chat_list_sticker_emojis: [
+			9069,
+			"bool",
+			!1,
+			!1
+		],
+		enable_chat_psa_auto_play_videos: [
+			3182,
+			"bool",
+			!1,
+			!0
+		],
+		enable_clear_formatted_preview: [
+			4659,
+			"bool",
+			!1,
+			!0
+		],
+		enable_copy_paste_p2p: [
+			27642,
+			"bool",
+			!1,
+			!0
+		],
+		enable_ctwa_ml_entry_point_config: [
+			6216,
+			"bool",
+			!1,
+			!0
+		],
+		enable_days_since_receive_logging: [
+			3322,
+			"bool",
+			!1,
+			!0
+		],
+		enable_early_audio_driver_start: [
+			13807,
+			"bool",
+			!1,
+			!1
+		],
+		enable_events_v2_add_to_calendar: [
+			29417,
+			"int",
+			0,
+			0
+		],
+		enable_events_v2_entry_points_creation: [
+			29361,
+			"int",
+			0,
+			0
+		],
+		enable_events_v2_invite_message_update: [
+			32555,
+			"bool",
+			!1,
+			!1
+		],
+		enable_events_v2_invite_message_with_datetime: [
+			32612,
+			"bool",
+			!1,
+			!1
+		],
+		enable_events_v2_on_companion: [
+			30964,
+			"bool",
+			!1,
+			!1
+		],
+		enable_fmx_logging: [
+			19893,
+			"bool",
+			!1,
+			!0
+		],
+		enable_force_voip_logging: [
+			7300,
+			"bool",
+			!1,
+			!1
+		],
+		enable_fsa_save_as: [
+			33783,
+			"bool",
+			!1,
+			!0
+		],
+		enable_futureproof_galaxy_flow_message_for_business_numbers: [
+			22311,
+			"string",
+			"",
+			""
+		],
+		enable_grid_layout_tile_unification: [
+			18066,
+			"bool",
+			!1,
+			!1
+		],
+		enable_group_create_or_add_rate_limiting_error_ux: [
+			12020,
+			"bool",
+			!1,
+			!0
+		],
+		enable_hybrid_call_links_creation: [
+			15502,
+			"bool",
+			!0,
+			!0
+		],
+		enable_hybrid_call_links_join: [
+			15501,
+			"bool",
+			!0,
+			!0
+		],
+		enable_hybrid_open_with_shared_buffer: [
+			34175,
+			"bool",
+			!1,
+			!1
+		],
+		enable_hybrid_video_transcoding: [
+			19895,
+			"bool",
+			!1,
+			!1
+		],
+		enable_hybrid_video_transcoding_for_valid_mp4: [
+			20070,
+			"bool",
+			!1,
+			!1
+		],
+		enable_init_bwe_for_group_call: [
+			2601,
+			"bool",
+			!1,
+			!1
+		],
+		enable_join_group_context_non_auto_expose: [
+			30282,
+			"bool",
+			!1,
+			!0
+		],
+		enable_join_ongoing_call_refactor: [
+			34093,
+			"bool",
+			!1,
+			!1
+		],
+		enable_lanczos_upscaler_for_vod_bitmap: [
+			34626,
+			"int",
+			0,
+			0
+		],
+		enable_lazy_loading_of_call_view_elements: [
+			5053,
+			"bool",
+			!1,
+			!1
+		],
+		enable_lid_call_link: [
+			8180,
+			"bool",
+			!1,
+			!1
+		],
+		enable_logging_qbm_incoming_message: [
+			25149,
+			"bool",
+			!1,
+			!0
+		],
+		enable_mention_everyone_receiver_web: [
+			24843,
+			"bool",
+			!1,
+			!1
+		],
+		enable_mention_everyone_sender_web: [
+			24844,
+			"bool",
+			!1,
+			!1
+		],
+		enable_mention_everyone_syncd_sender: [
+			24244,
+			"bool",
+			!1,
+			!1
+		],
+		enable_minimize_individual_mutation_write: [
+			8910,
+			"bool",
+			!1,
+			!0
+		],
+		enable_ml_bwe_model_download: [
+			4349,
+			"bool",
+			!1,
+			!0
+		],
+		enable_new_ongoing_call_cell_ui: [
+			11426,
+			"bool",
+			!1,
+			!0
+		],
+		enable_new_user_action_stanza_for_raise_hand_sender: [
+			18489,
+			"bool",
+			!1,
+			!1
+		],
+		enable_offer_v2_upgrade: [
+			26435,
+			"bool",
+			!1,
+			!1
+		],
+		enable_orbit_sso_bridge: [
+			32299,
+			"bool",
+			!1,
+			!0
+		],
+		enable_order_details_for_payment_key: [
+			27643,
+			"bool",
+			!1,
+			!0
+		],
+		enable_peer_snapshot_recovery: [
+			16329,
+			"bool",
+			!1,
+			!1
+		],
+		enable_poll_results_contact_info_entry_point: [
+			33818,
+			"bool",
+			!1,
+			!1
+		],
+		enable_poll_settings_label_improved_layout: [
+			32778,
+			"bool",
+			!1,
+			!1
+		],
+		enable_pre_warm_audio_component: [
+			15994,
+			"bool",
+			!1,
+			!1
+		],
+		enable_privacy_token_with_timestamp: [
+			4992,
+			"bool",
+			!1,
+			!0
+		],
+		enable_product_carousel_message: [
+			7177,
+			"bool",
+			!1,
+			!1
+		],
+		enable_rate_app_prompt: [
+			19894,
+			"bool",
+			!1,
+			!1
+		],
+		enable_ring_for_gc_on_offer_expire: [
+			10103,
+			"bool",
+			!1,
+			!1
+		],
+		enable_scheduled_calls_v2_entry_points_creation: [
+			29793,
+			"int",
+			0,
+			0
+		],
+		enable_setup_error_result_check: [
+			28689,
+			"bool",
+			!1,
+			!1
+		],
+		enable_sharing_files_from_web_windows_hybrid: [
+			21184,
+			"bool",
+			!1,
+			!0
+		],
+		enable_silent_offer: [
+			3235,
+			"bool",
+			!1,
+			!0
+		],
+		enable_soox_message_sending: [
+			2832,
+			"bool",
+			!1,
+			!0
+		],
+		enable_spam_report_iq_with_privacy_token: [
+			4991,
+			"bool",
+			!1,
+			!0
+		],
+		enable_sticker_verification_for_gimmick: [
+			7886,
+			"bool",
+			!0,
+			!0
+		],
+		enable_sync_for_draft_messages: [
+			29314,
+			"bool",
+			!1,
+			!1
+		],
+		enable_syncd_coex_v2: [
+			31810,
+			"bool",
+			!1,
+			!1
+		],
+		enable_syncd_debug_data_in_patch: [
+			6614,
+			"bool",
+			!1,
+			!1
+		],
+		enable_tooltip_for_media_hub: [
+			21535,
+			"bool",
+			!1,
+			!1
+		],
+		enable_turn_on_call_notification_reminders: [
+			5360,
+			"bool",
+			!1,
+			!0
+		],
+		enable_ugc_voice_fs_logging: [
+			14641,
+			"bool",
+			!1,
+			!1
+		],
+		enable_unified_call_buttons_in_chat: [
+			13497,
+			"bool",
+			!1,
+			!1
+		],
+		enable_upcoming_schedule_call_events_in_calls_tab: [
+			15514,
+			"bool",
+			!1,
+			!1
+		],
+		enable_uwp_device_switch_banner: [
+			10416,
+			"bool",
+			!1,
+			!0
+		],
+		enable_uwp_screen_share_teaching_tip: [
+			6264,
+			"bool",
+			!0,
+			!0
+		],
+		enable_uwp_share_any_window: [
+			4801,
+			"bool",
+			!1,
+			!1
+		],
+		enable_uwp_swap_video_stream: [
+			10241,
+			"bool",
+			!0,
+			!0
+		],
+		enable_video_metrics_fix: [
+			20520,
+			"bool",
+			!1,
+			!1
+		],
+		enable_waiting_room_admin_ui: [
+			21676,
+			"bool",
+			!1,
+			!1
+		],
+		enable_waiting_room_logging: [
+			24991,
+			"bool",
+			!1,
+			!1
+		],
+		enable_waiting_room_ui: [
+			19819,
+			"bool",
+			!1,
+			!1
+		],
+		enable_wds_calling_dropdown: [
+			26974,
+			"bool",
+			!1,
+			!0
+		],
+		enable_web_calling: [
+			15461,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_calling_beta_upsell: [
+			24812,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_calling_nux: [
+			24504,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_group_calling: [
+			20924,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_log_download: [
+			28226,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_voip_anr_optimizations: [
+			27268,
+			"bool",
+			!1,
+			!0
+		],
+		enable_web_voip_audio_driver_lifetime_fix: [
+			33581,
+			"bool",
+			!0,
+			!0
+		],
+		enable_web_voip_dynamic_fps_throttle: [
+			25394,
+			"bool",
+			!0,
+			!0
+		],
+		enable_web_voip_eager_mic_acquire: [
+			29836,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_voip_p2p: [
+			25621,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_voip_platform_av_sync: [
+			25177,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_voip_proxy_and_sctp_workers: [
+			26012,
+			"bool",
+			!0,
+			!0
+		],
+		enable_web_voip_video_capture_dom_attach: [
+			33953,
+			"bool",
+			!0,
+			!0
+		],
+		enable_web_voip_video_resolution_cap: [
+			25899,
+			"bool",
+			!0,
+			!0
+		],
+		enable_web_voip_virtual_audio_capture_driver: [
+			26838,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_voip_virtual_video_capture_driver: [
+			26817,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_voip_webtransport: [
+			29764,
+			"bool",
+			!1,
+			!1
+		],
+		enable_web_voip_webtransport_fallback: [
+			33539,
+			"bool",
+			!0,
+			!0
+		],
+		enable_web_voip_webtransport_group_calls: [
+			34645,
+			"bool",
+			!1,
+			!0
+		],
+		enable_web_voip_worker_pool_reclaim_on_rejoin: [
+			33597,
+			"bool",
+			!0,
+			!0
+		],
+		enable_webcodec_require_keyframe: [
+			29510,
+			"bool",
+			!0,
+			!0
+		],
+		enable_webcodec_video_encode: [
+			26079,
+			"bool",
+			!1,
+			!1
+		],
+		enable_webrtc_video_jb: [
+			27591,
+			"bool",
+			!1,
+			!1
+		],
+		enable_wefr_client_expo_pulse: [
+			10230,
+			"bool",
+			!1,
+			!0
+		],
+		enable_windows_hybrid_jumplist_contacts: [
+			21057,
+			"bool",
+			!1,
+			!0
+		],
+		enable_windows_jumplist_hybrid: [
+			20899,
+			"bool",
+			!1,
+			!0
+		],
+		enable_windows_mocks_capture_drivers: [
+			31159,
+			"bool",
+			!1,
+			!1
+		],
+		enable_windows_xdr_chat_handoff: [
+			24783,
+			"bool",
+			!1,
+			!0
+		],
+		enable_windows_xdr_wns_pkey: [
+			32324,
+			"bool",
+			!1,
+			!0
+		],
+		enhanced_mention_limit: [
+			25951,
+			"int",
+			5,
+			5
+		],
+		enhanced_mention_suggestions_min_mention_char_count: [
+			28089,
+			"int",
+			-1,
+			-1
+		],
+		enhanced_mention_suggestions_non_group_members_enabled: [
+			24852,
+			"bool",
+			!1,
+			!1
+		],
+		ephemeral_sync_response: [
+			2714,
+			"bool",
+			!1,
+			!1
+		],
+		event_description_length_limit: [
+			6208,
+			"int",
+			2048,
+			2048
+		],
+		event_name_length_limit: [
+			6207,
+			"int",
+			100,
+			100
+		],
+		events_create_cag_enabled: [
+			9932,
+			"bool",
+			!1,
+			!0
+		],
+		events_m3_cover_image_receive: [
+			7511,
+			"bool",
+			!1,
+			!1
+		],
+		events_m3_cover_image_send: [
+			7510,
+			"bool",
+			!1,
+			!1
+		],
+		events_v2_enable_notifications: [
+			31418,
+			"bool",
+			!1,
+			!1
+		],
+		events_v2_hide_add_to_calendar_post_start_window_sec: [
+			30826,
+			"int",
+			1800,
+			1800
+		],
+		events_v2_invitation_message_version: [
+			26618,
+			"int",
+			0,
+			0
+		],
+		evolve_about_m1_receiver_enabled: [
+			5839,
+			"bool",
+			!1,
+			!1
+		],
+		evolve_about_m1_receiver_for_new_surfaces_enabled: [
+			6172,
+			"bool",
+			!1,
+			!1
+		],
+		expand_fmx_mex_should_use_fmx_use_case: [
+			27662,
+			"bool",
+			!1,
+			!1
+		],
+		extensions_geoblocking_enabled: [
+			5333,
+			"bool",
+			!1,
+			!0
+		],
+		extensions_user_report_store_max_data_exchanges_per_session: [
+			3211,
+			"int",
+			10,
+			10
+		],
+		extensions_user_report_store_max_data_max_sessions_per_message: [
+			3212,
+			"int",
+			3,
+			3
+		],
+		external_beta_can_join: [
+			3081,
+			"bool",
+			!1,
+			!0
+		],
+		external_ctx_authorise_existing_chats: [
+			12761,
+			"int",
+			0,
+			0
+		],
+		external_ctx_authorise_wa_chat: [
+			11655,
+			"bool",
+			!1,
+			!1
+		],
+		external_ctx_foa_logging: [
+			13565,
+			"int",
+			1,
+			1
+		],
+		external_ctx_url_param_names: [
+			12726,
+			"string",
+			"partnertoken",
+			"partnertoken"
+		],
+		favorite_sticker_sync_after_pairing_enabled_web: [
+			20815,
+			"bool",
+			!1,
+			!1
+		],
+		favorites_limit: [
+			7267,
+			"int",
+			100,
+			100
+		],
+		feature_key_store_infra_enabled: [
+			26829,
+			"bool",
+			!1,
+			!0
+		],
+		fetch_qp_via_graphql_web_enabled: [
+			28158,
+			"bool",
+			!1,
+			!1
+		],
+		flows_termination_message_v2_sending_enabled: [
+			9157,
+			"bool",
+			!1,
+			!1
+		],
+		flows_wa_web: [
+			12520,
+			"bool",
+			!1,
+			!0
+		],
+		flows_wa_web_agm_cta: [
+			24215,
+			"bool",
+			!0,
+			!0
+		],
+		flows_wa_web_responses_download: [
+			24216,
+			"bool",
+			!0,
+			!0
+		],
+		fmx_ctwa_kill_switch: [
+			6061,
+			"bool",
+			!1,
+			!1
+		],
+		fmx_persistent_country_trust_signal_enabled: [
+			33926,
+			"bool",
+			!1,
+			!0
+		],
+		forwarded_message_user_journey_logging_enabled: [
+			16055,
+			"bool",
+			!1,
+			!1
+		],
+		four_reactions_in_bubble_enabled: [
+			2378,
+			"bool",
+			!1,
+			!0
+		],
+		ft_validation_failure_drop_placeholder: [
+			13063,
+			"bool",
+			!1,
+			!0
+		],
+		fullscreen_animation_for_keyword: [
+			2776,
+			"bool",
+			!1,
+			!1
+		],
+		functional_chatlist_enabled: [
+			21799,
+			"bool",
+			!1,
+			!0
+		],
+		functional_emoji_text_enabled: [
+			34047,
+			"bool",
+			!1,
+			!1
+		],
+		futureproof_associated_child_enabled: [
+			11976,
+			"bool",
+			!1,
+			!0
+		],
+		gc_device_switch_show_entry_point: [
+			33281,
+			"bool",
+			!0,
+			!0
+		],
+		gc_device_switching_killswitch: [
+			26182,
+			"bool",
+			!1,
+			!1
+		],
+		genai_early_audio_pre_buf_size: [
+			15306,
+			"int",
+			100,
+			100
+		],
+		gif_max_play_duration: [
+			3684,
+			"int",
+			5,
+			5
+		],
+		gif_max_play_loops: [
+			3683,
+			"int",
+			3,
+			3
+		],
+		gif_min_play_loops: [
+			3682,
+			"int",
+			1,
+			1
+		],
+		gif_provider: [
+			14343,
+			"int",
+			1,
+			1
+		],
+		gimmick_phase_two_data_suffix: [
+			6785,
+			"string",
+			"",
+			""
+		],
+		giphy_pma_shutoff_enabled: [
+			27942,
+			"bool",
+			!1,
+			!1
+		],
+		graphql_get_product_list: [
+			8800,
+			"bool",
+			!1,
+			!1
+		],
+		graphql_locale_remapping: [
+			2014,
+			"string",
+			"{}",
+			"{}"
+		],
+		group_call_max_participants: [
+			4190,
+			"int",
+			32,
+			32
+		],
+		group_calling_wave_receiving_enabled: [
+			29161,
+			"bool",
+			!1,
+			!1
+		],
+		group_calling_wave_sending_enabled: [
+			29247,
+			"bool",
+			!1,
+			!1
+		],
+		group_create_add_using_lid_jids: [
+			16192,
+			"bool",
+			!1,
+			!1
+		],
+		group_description_length: [
+			14778,
+			"int",
+			2048,
+			2048
+		],
+		group_from_group: [
+			24024,
+			"bool",
+			!1,
+			!0
+		],
+		group_history_after_join_prerequisites: [
+			28787,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_bump_message_id: [
+			16346,
+			"int",
+			200,
+			200
+		],
+		group_history_bundle_time_limit_receiver_enforcement_secs: [
+			25910,
+			"int",
+			1209600,
+			1209600
+		],
+		group_history_message_count_limit: [
+			18405,
+			"int",
+			100,
+			100
+		],
+		group_history_message_count_receiver_upper_limit: [
+			19811,
+			"int",
+			100,
+			100
+		],
+		group_history_messages_time_limit_receiver_enforcement_secs: [
+			21313,
+			"int",
+			1209600,
+			1209600
+		],
+		group_history_messages_time_limit_secs: [
+			18406,
+			"int",
+			1209600,
+			1209600
+		],
+		group_history_new_user_threshold_receiver_enforcement_secs: [
+			30345,
+			"int",
+			2592e3,
+			2592e3
+		],
+		group_history_new_user_threshold_secs: [
+			30333,
+			"int",
+			2592e3,
+			2592e3
+		],
+		group_history_notice_receive: [
+			15722,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_out_of_window_pin_sender: [
+			26037,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_out_of_window_pins_receiver: [
+			26039,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_receive: [
+			15311,
+			"bool",
+			!1,
+			!0
+		],
+		group_history_receiver_dedup: [
+			30462,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_receiver_floating_banner: [
+			21568,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_reporting: [
+			22329,
+			"bool",
+			!0,
+			!0
+		],
+		group_history_send: [
+			15313,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_send_after_join: [
+			26451,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_setting_decouple_enabled: [
+			29973,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_settings: [
+			21261,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_settings_query: [
+			22230,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_settings_toggle_ui: [
+			21481,
+			"bool",
+			!1,
+			!1
+		],
+		group_history_support_history_sync_receiver_pre_chat: [
+			20658,
+			"bool",
+			!1,
+			!1
+		],
+		group_join_request_m2_banner_on_conversation: [
+			2449,
+			"bool",
+			!1,
+			!1
+		],
+		group_max_subject: [
+			14801,
+			"int",
+			100,
+			100
+		],
+		group_member_updates_hide_in_thread_enabled: [
+			24584,
+			"bool",
+			!1,
+			!1
+		],
+		group_member_updates_past_participant_migration_enabled: [
+			31614,
+			"bool",
+			!1,
+			!1
+		],
+		group_member_updates_username_description_enabled: [
+			28087,
+			"bool",
+			!1,
+			!0
+		],
+		group_member_updates_usernames_db_enabled: [
+			24586,
+			"bool",
+			!1,
+			!1
+		],
+		group_member_updates_usernames_enabled: [
+			24617,
+			"bool",
+			!1,
+			!1
+		],
+		group_member_updates_usernames_ui_enabled: [
+			24585,
+			"bool",
+			!1,
+			!1
+		],
+		group_settings_ia_prototype: [
+			34025,
+			"int",
+			0,
+			0
+		],
+		group_size_bypassing_sampling: [
+			1861,
+			"int",
+			1e5,
+			1e5
+		],
+		group_size_limit: [
+			1304,
+			"int",
+			257,
+			257
+		],
+		group_status_receiver_enabled: [
+			13956,
+			"bool",
+			!1,
+			!0
+		],
+		group_suspend_appeal_include_entity_id_enabled: [
+			2057,
+			"bool",
+			!1,
+			!0
+		],
+		group_suspend_v2_enabled: [
+			3180,
+			"bool",
+			!1,
+			!0
+		],
+		group_suspension_appeals_redesign_enabled: [
+			26276,
+			"bool",
+			!1,
+			!1
+		],
+		group_suspension_appeals_redesign_variant_enable: [
+			28376,
+			"bool",
+			!1,
+			!1
+		],
+		group_username_updates_as_member_updates_enabled: [
+			24477,
+			"bool",
+			!1,
+			!1
+		],
+		hand_raise_receiver_enabled: [
+			13540,
+			"bool",
+			!1,
+			!1
+		],
+		harmful_file_dialog_logging: [
+			15020,
+			"bool",
+			!1,
+			!0
+		],
+		hash_identity_keys_for_qr_code_device_verification: [
+			9211,
+			"bool",
+			!1,
+			!0
+		],
+		hatch_pairing_from_companion_enabled: [
+			32497,
+			"bool",
+			!1,
+			!0
+		],
+		hd_video_definition_max_edge: [
+			4172,
+			"int",
+			864,
+			864
+		],
+		hd_video_definition_min_edge: [
+			4171,
+			"int",
+			720,
+			720
+		],
+		hd_video_definition_min_edge_with_max_edge: [
+			4175,
+			"int",
+			480,
+			480
+		],
+		heartbeat_interval_s: [
+			1430,
+			"int",
+			10,
+			5
+		],
+		hide_auto_quotes_on_web: [
+			20892,
+			"bool",
+			!1,
+			!1
+		],
+		hide_silent_system_message_enabled: [
+			24268,
+			"bool",
+			!1,
+			!1
+		],
+		history_sync_on_demand: [
+			3337,
+			"bool",
+			!1,
+			!1
+		],
+		history_sync_on_demand_companion: [
+			17198,
+			"bool",
+			!1,
+			!0
+		],
+		history_sync_on_demand_cooldown_sec: [
+			4365,
+			"int",
+			7200,
+			7200
+		],
+		history_sync_on_demand_failure_limit: [
+			4364,
+			"int",
+			10,
+			10
+		],
+		history_sync_on_demand_message_count: [
+			3811,
+			"int",
+			50,
+			50
+		],
+		history_sync_on_demand_time_boundary_days_desktops: [
+			18391,
+			"int",
+			1095,
+			1095
+		],
+		history_sync_on_demand_timeout_ms: [
+			3882,
+			"int",
+			1e4,
+			1e4
+		],
+		history_sync_on_demand_with_android_beta: [
+			4135,
+			"bool",
+			!1,
+			!1
+		],
+		hosted_message_flag_enabled: [
+			27979,
+			"bool",
+			!1,
+			!1
+		],
+		hsm_tag_in_history_sync_deserialization_enabled: [
+			25804,
+			"bool",
+			!1,
+			!1
+		],
+		hybrid_educational_dialog_start_at: [
+			14675,
+			"string",
+			" ",
+			" "
+		],
+		hybrid_educational_dialogs_enabled: [
+			14674,
+			"bool",
+			!1,
+			!1
+		],
+		hybrid_flytrap_feedback_enabled: [
+			19495,
+			"bool",
+			!1,
+			!1
+		],
+		hybrid_font_size_dropdown: [
+			17637,
+			"bool",
+			!1,
+			!0
+		],
+		hybrid_incremental_zooming_simple_enabled: [
+			18080,
+			"bool",
+			!1,
+			!1
+		],
+		hybrid_nux_beta_50_enabled: [
+			17717,
+			"bool",
+			!1,
+			!1
+		],
+		ignore_joinable_terminate_on_expired_offer: [
+			11519,
+			"bool",
+			!1,
+			!1
+		],
+		ignore_one_to_one_terminate_in_group_call: [
+			10273,
+			"bool",
+			!1,
+			!1
+		],
+		im_a2ui_require_bot_attribution: [
+			34324,
+			"bool",
+			!1,
+			!0
+		],
+		im_bloks_widget_enable: [
+			25071,
+			"bool",
+			!1,
+			!0
+		],
+		im_nfm_multi_step_form_killswitch: [
+			28891,
+			"bool",
+			!1,
+			!1
+		],
+		imp_send_signal_post_connect_delay: [
+			23323,
+			"int",
+			500,
+			500
+		],
+		imp_send_signal_post_connect_webc_enabled: [
+			23322,
+			"bool",
+			!1,
+			!0
+		],
+		improve_group_reporting: [
+			26114,
+			"bool",
+			!1,
+			!0
+		],
+		improve_subgroup_activation_subgroup_poll_interval: [
+			8542,
+			"int",
+			43200,
+			43200
+		],
+		in_app_bug_reporting_description_good_quality_chars: [
+			22361,
+			"int",
+			50,
+			50
+		],
+		in_app_bug_reporting_show_quality_hints_v1: [
+			22363,
+			"bool",
+			!1,
+			!0
+		],
+		in_app_comms_manage_ads_web_banner_campaign_enabled: [
+			4542,
+			"bool",
+			!1,
+			!0
+		],
+		in_app_support_capi_number_prefixes: [
+			4799,
+			"string",
+			"155178684",
+			"155178684"
+		],
+		in_app_support_v2_number_prefixes: [
+			1031,
+			"string",
+			"15517868",
+			"15517868"
+		],
+		inapp_signup_agm_cta_experiment: [
+			27860,
+			"int",
+			1,
+			1
+		],
+		inapp_signup_confirmation_message_enabled: [
+			26390,
+			"bool",
+			!1,
+			!0
+		],
+		inapp_signup_m1_logging_enabled: [
+			28142,
+			"bool",
+			!1,
+			!0
+		],
+		inapp_signup_qpl_logging_enabled: [
+			28806,
+			"bool",
+			!1,
+			!0
+		],
+		inapp_signup_web_cta_logging_enabled: [
+			30498,
+			"bool",
+			!1,
+			!0
+		],
+		inbox_filters_custom_smb_enabled: [
+			7637,
+			"bool",
+			!1,
+			!1
+		],
+		inbox_filters_enabled: [
+			5171,
+			"bool",
+			!1,
+			!1
+		],
+		inbox_filters_haptic_feedback_enabled: [
+			6052,
+			"bool",
+			!1,
+			!1
+		],
+		inbox_filters_read_unread_logging_enabled: [
+			6967,
+			"bool",
+			!1,
+			!1
+		],
+		inbox_filters_reset_timeout: [
+			5765,
+			"int",
+			1800,
+			1800
+		],
+		inbox_filters_smb_enabled: [
+			7108,
+			"bool",
+			!1,
+			!1
+		],
+		inbox_filters_suppress_contact_filter: [
+			7769,
+			"bool",
+			!1,
+			!1
+		],
+		info_drawer_refresh: [
+			29210,
+			"bool",
+			!1,
+			!1
+		],
+		integrity_checkpoints_default_enabled: [
+			27663,
+			"bool",
+			!0,
+			!0
+		],
+		integrity_checkpoints_enabled: [
+			26961,
+			"bool",
+			!1,
+			!0
+		],
+		interactive_bloks_widget_web_enabled: [
+			26685,
+			"bool",
+			!1,
+			!0
+		],
+		interactive_message_native_flow_killswitch: [
+			1133,
+			"bool",
+			!1,
+			!1
+		],
+		interactive_response_message_killswitch: [
+			1435,
+			"bool",
+			!1,
+			!1
+		],
+		interactive_response_message_native_flow_killswitch: [
+			1436,
+			"bool",
+			!1,
+			!1
+		],
+		internal_group_indicator: [
+			18109,
+			"bool",
+			!1,
+			!0
+		],
+		invite_deactivated_user_web: [
+			31516,
+			"bool",
+			!1,
+			!1
+		],
+		ios_reaction_picker_wds_header_enabled: [
+			33885,
+			"bool",
+			!1,
+			!1
+		],
+		is_ai_mode_selector_visible: [
+			24489,
+			"bool",
+			!1,
+			!1
+		],
+		is_expand_fmx_account_age_bolded_non_auto_expose: [
+			26549,
+			"bool",
+			!1,
+			!0
+		],
+		is_expand_fmx_account_age_ui_enabled: [
+			26548,
+			"bool",
+			!1,
+			!0
+		],
+		is_expand_fmx_enabled_non_auto_expose: [
+			26551,
+			"bool",
+			!1,
+			!0
+		],
+		is_expand_fmx_mex_enabled: [
+			26550,
+			"bool",
+			!1,
+			!0
+		],
+		is_individual_suspicious_fmx_enabled: [
+			26191,
+			"bool",
+			!1,
+			!0
+		],
+		is_internal_tester: [
+			2945,
+			"bool",
+			!1,
+			!0
+		],
+		is_meta_employee_or_internal_tester: [
+			1777,
+			"bool",
+			!1,
+			!1
+		],
+		is_part_of_gsc_experiment: [
+			14279,
+			"bool",
+			!1,
+			!1
+		],
+		is_pmx_funnel_metrics_logging_enabled: [
+			6816,
+			"bool",
+			!1,
+			!0
+		],
+		is_pmx_hashed_msg_key_logging_enabled: [
+			6837,
+			"bool",
+			!1,
+			!0
+		],
+		is_spoiler_rich_format_enabled: [
+			22221,
+			"bool",
+			!1,
+			!1
+		],
+		is_spoiler_rich_format_sender_enabled: [
+			24210,
+			"bool",
+			!1,
+			!0
+		],
+		joinable_client_poll_interval_min: [
+			522,
+			"int",
+			0,
+			5
+		],
+		kaleidoscope_thumbnail_validation: [
+			18114,
+			"bool",
+			!1,
+			!0
+		],
+		keep_in_chat_undo_duration_limit: [
+			1698,
+			"int",
+			2592e3,
+			2592e3
+		],
+		kill_switch_ctwa_ml_entry_point_config: [
+			6215,
+			"bool",
+			!0,
+			!1
+		],
+		kmp_syncd_engine_crypto_enabled: [
+			15909,
+			"bool",
+			!1,
+			!1
+		],
+		kmp_syncd_engine_outgoing_processor_enabled: [
+			18234,
+			"bool",
+			!1,
+			!1
+		],
+		ks_use_component_model: [
+			26966,
+			"bool",
+			!1,
+			!1
+		],
+		large_screens_new_chat_button_variants: [
+			26788,
+			"int",
+			0,
+			0
+		],
+		lazy_system_message_insertion_enabled: [
+			9077,
+			"bool",
+			!1,
+			!0
+		],
+		lid_group_creation_addressing_mode_override: [
+			12985,
+			"bool",
+			!1,
+			!1
+		],
+		lid_group_migration_non_member_iq: [
+			16104,
+			"bool",
+			!1,
+			!0
+		],
+		lid_migration_daily_group_composition_enabled: [
+			34155,
+			"bool",
+			!0,
+			!0
+		],
+		lid_migration_for_biz_profile_enabled: [
+			12e3,
+			"bool",
+			!1,
+			!1
+		],
+		lid_migration_for_vname_enabled: [
+			11049,
+			"bool",
+			!1,
+			!1
+		],
+		lid_migration_notifications_enabled: [
+			8785,
+			"bool",
+			!1,
+			!1
+		],
+		lid_one_on_one_migration_compatible: [
+			13161,
+			"bool",
+			!0,
+			!0
+		],
+		lid_one_on_one_migration_enabled: [
+			9435,
+			"bool",
+			!1,
+			!1
+		],
+		lid_one_on_one_migration_peer_sync_timeout_in_seconds: [
+			13936,
+			"int",
+			300,
+			300
+		],
+		lid_pn_username_mapping_logging_enabled: [
+			31266,
+			"bool",
+			!1,
+			!1
+		],
+		lid_status_non_soaked_client_support_enabled: [
+			19696,
+			"bool",
+			!0,
+			!0
+		],
+		lid_status_send_enabled: [
+			6791,
+			"bool",
+			!1,
+			!1
+		],
+		lid_trusted_token_issue_to_lid: [
+			14303,
+			"bool",
+			!1,
+			!1
+		],
+		lightweight_group_creation: [
+			27819,
+			"bool",
+			!1,
+			!1
+		],
+		limit_sharing_enabled_for_1on1_chat: [
+			15127,
+			"bool",
+			!1,
+			!1
+		],
+		limit_sharing_protocol_message_receiver_enabled: [
+			15129,
+			"bool",
+			!1,
+			!1
+		],
+		limit_sharing_update_enabled_web: [
+			16376,
+			"bool",
+			!1,
+			!1
+		],
+		link_preview_wait_time: [
+			2566,
+			"int",
+			7,
+			7
+		],
+		lists_chat_list_row_pill_enabled: [
+			24133,
+			"bool",
+			!1,
+			!1
+		],
+		lists_smb_enabled: [
+			18229,
+			"bool",
+			!1,
+			!0
+		],
+		lists_smb_web_enabled: [
+			24732,
+			"bool",
+			!1,
+			!1
+		],
+		lists_smb_web_m2_enabled: [
+			31380,
+			"bool",
+			!1,
+			!0
+		],
+		lobby_timeout_min: [
+			1565,
+			"int",
+			0,
+			1
+		],
+		log_clock_skew: [
+			1190,
+			"bool",
+			!1,
+			!1
+		],
+		low_cache_hit_rate_media_types: [
+			4836,
+			"string",
+			"ptt,audio,document,ppic",
+			"ptt,audio,document,ppic"
+		],
+		lthash_check_hours: [
+			1104,
+			"int",
+			0,
+			0
+		],
+		m2_audience_dynamic_rules: [
+			28099,
+			"bool",
+			!1,
+			!1
+		],
+		mark_as_verified_enabled: [
+			29343,
+			"bool",
+			!1,
+			!1
+		],
+		max_group_size_for_long_ringtone: [
+			4710,
+			"int",
+			0,
+			0
+		],
+		max_num_participants_for_ss: [
+			3694,
+			"int",
+			8,
+			8
+		],
+		maximum_group_size_for_rcat: [
+			2915,
+			"int",
+			100,
+			100
+		],
+		may_have_messages_enabled: [
+			25303,
+			"bool",
+			!1,
+			!1
+		],
+		mc_enabled: [
+			32843,
+			"bool",
+			!1,
+			!1
+		],
+		md_app_state_gate_D34336913: [
+			1379,
+			"bool",
+			!1,
+			!1
+		],
+		md_icdc_hash_length: [
+			310,
+			"int",
+			10,
+			10
+		],
+		md_offline_v2_m2_enabled: [
+			1517,
+			"int",
+			10,
+			10
+		],
+		md_syncd_bundle_logging: [
+			27126,
+			"string",
+			"{\"allowlist\": []}",
+			"{\"allowlist\": []}"
+		],
+		md_syncd_mutation_logging: [
+			27124,
+			"string",
+			"{\"allowlist\": []}",
+			"{\"allowlist\": []}"
+		],
+		md_syncd_mutation_summary_logging: [
+			27125,
+			"string",
+			"{\"allowlist\": []}",
+			"{\"allowlist\": []}"
+		],
+		media_force_transcode_on_elst: [
+			30235,
+			"bool",
+			!1,
+			!0
+		],
+		media_hub_history_max_days: [
+			22518,
+			"int",
+			14,
+			14
+		],
+		media_large_file_awareness_popup_file_size_in_MB: [
+			3115,
+			"int",
+			2048,
+			2048
+		],
+		media_picker_select_limit: [
+			2614,
+			"int",
+			30,
+			30
+		],
+		media_picker_select_limit_new: [
+			2693,
+			"int",
+			30,
+			30
+		],
+		media_viewer_accelerated_playback_enabled: [
+			12813,
+			"bool",
+			!1,
+			!0
+		],
+		member_name_tag_db_enabled: [
+			16551,
+			"bool",
+			!0,
+			!0
+		],
+		member_name_tag_receiver_enabled: [
+			13523,
+			"bool",
+			!1,
+			!0
+		],
+		member_name_tag_sender_enabled: [
+			13524,
+			"bool",
+			!1,
+			!0
+		],
+		member_name_tag_web_receiver_enabled: [
+			22655,
+			"bool",
+			!1,
+			!0
+		],
+		member_name_tag_web_sender_enabled: [
+			22654,
+			"bool",
+			!1,
+			!0
+		],
+		message_association_infra_enabled: [
+			8783,
+			"bool",
+			!0,
+			!0
+		],
+		message_capping_upsell_version: [
+			19781,
+			"int",
+			0,
+			0
+		],
+		message_count_logging_md_enabled: [
+			1135,
+			"bool",
+			!1,
+			!1
+		],
+		message_edit_client_entry_point_limit_seconds: [
+			3272,
+			"int",
+			900,
+			900
+		],
+		message_edit_to_message_secret_receiver_enabled: [
+			17811,
+			"bool",
+			!1,
+			!0
+		],
+		message_edit_to_message_secret_sender_enabled: [
+			16057,
+			"bool",
+			!1,
+			!1
+		],
+		message_edit_window_duration_seconds: [
+			2983,
+			"int",
+			1200,
+			1200
+		],
+		message_keys_async_chunk_size: [
+			22815,
+			"int",
+			50,
+			50
+		],
+		message_partial_selection_in_bubble: [
+			34585,
+			"bool",
+			!1,
+			!1
+		],
+		message_partial_selection_m2: [
+			32142,
+			"bool",
+			!1,
+			!1
+		],
+		meta_ai_in_app_survey_enabled: [
+			17956,
+			"bool",
+			!1,
+			!0
+		],
+		meta_catalog_linking_m2_enabled: [
+			11029,
+			"bool",
+			!0,
+			!0
+		],
+		meta_verified_badge_education_vai_content: [
+			7976,
+			"bool",
+			!1,
+			!0
+		],
+		mex_get_privacy_contact_list_enabled: [
+			23874,
+			"bool",
+			!1,
+			!1
+		],
+		mex_get_privacy_settings_mode: [
+			23463,
+			"int",
+			0,
+			1
+		],
+		mex_phase3_enabled: [
+			2249,
+			"bool",
+			!1,
+			!1
+		],
+		mex_phase3_status_flags: [
+			2250,
+			"int",
+			0,
+			0
+		],
+		mex_usync_about_status: [
+			9524,
+			"bool",
+			!1,
+			!0
+		],
+		mex_usync_username_query: [
+			8421,
+			"bool",
+			!1,
+			!0
+		],
+		ml_model_download_skip_hash_check: [
+			11454,
+			"bool",
+			!0,
+			!0
+		],
+		mm_1pd_post_dc_depth_limit: [
+			26281,
+			"int",
+			0,
+			0
+		],
+		mm_1pd_post_dc_new_schema_enabled: [
+			26280,
+			"bool",
+			!1,
+			!1
+		],
+		mm_1pd_post_dc_old_schema_disabled: [
+			26282,
+			"bool",
+			!1,
+			!1
+		],
+		mm_data_sharing_disclosure_enabled: [
+			5869,
+			"bool",
+			!1,
+			!1
+		],
+		mm_data_sharing_disclosure_enabled_additional_transparency_large_screens: [
+			25421,
+			"bool",
+			!1,
+			!1
+		],
+		mm_data_sharing_disclosure_enabled_companion_history_sync: [
+			21288,
+			"bool",
+			!1,
+			!0
+		],
+		mm_data_sharing_disclosure_on_chat_open_enabled: [
+			17630,
+			"bool",
+			!1,
+			!1
+		],
+		mm_disclosure_handle_tos_failures_enabled: [
+			28572,
+			"bool",
+			!1,
+			!1
+		],
+		mm_disclosure_learn_more_article_id: [
+			25021,
+			"string",
+			"263784176043634",
+			"263784176043634"
+		],
+		mm_message_level_feedback_enabled: [
+			10011,
+			"bool",
+			!1,
+			!1
+		],
+		mm_message_level_feedback_not_interested_menu_enabled: [
+			10668,
+			"bool",
+			!1,
+			!1
+		],
+		mm_opt_out_enabled: [
+			11241,
+			"bool",
+			!1,
+			!1
+		],
+		mm_opt_out_fmx_stop_for_high_trust: [
+			12172,
+			"bool",
+			!1,
+			!1
+		],
+		mm_opt_out_lid_migration_enabled: [
+			16952,
+			"bool",
+			!1,
+			!1
+		],
+		mm_optimized_delivery_app_cta_enabled: [
+			22776,
+			"bool",
+			!1,
+			!1
+		],
+		mm_optimized_delivery_archive_signal_sharing_enabled: [
+			28558,
+			"bool",
+			!1,
+			!1
+		],
+		mm_optimized_delivery_replacing_shimmed_links_enabled: [
+			21782,
+			"bool",
+			!1,
+			!1
+		],
+		mm_optimized_delivery_token_fallback_disabled: [
+			29002,
+			"bool",
+			!0,
+			!0
+		],
+		mm_optimized_delivery_unique_token_per_message_id_enabled: [
+			29037,
+			"bool",
+			!0,
+			!0
+		],
+		mm_signal_sharing_collection_window_logging_enabled: [
+			18126,
+			"bool",
+			!1,
+			!1
+		],
+		mm_signal_sharing_verification_new_signal_type_origin: [
+			26784,
+			"bool",
+			!1,
+			!0
+		],
+		mm_signal_sharing_verification_system_lid_enabled: [
+			16727,
+			"bool",
+			!0,
+			!0
+		],
+		mm_tap_target_bloks_client_hydration_enabled: [
+			28473,
+			"bool",
+			!1,
+			!1
+		],
+		mm_template_message_telemetry_is_first_mm_enabled: [
+			32482,
+			"bool",
+			!1,
+			!1
+		],
+		mm_template_message_telemetry_strict_first_mm_enabled: [
+			33160,
+			"bool",
+			!1,
+			!0
+		],
+		mm_user_controls_entry_points_update_m1_icon: [
+			20388,
+			"bool",
+			!1,
+			!0
+		],
+		mm_user_controls_entry_points_update_m1_menu: [
+			20381,
+			"bool",
+			!1,
+			!0
+		],
+		mm_user_controls_exception_number_prefixes: [
+			13999,
+			"string",
+			"",
+			""
+		],
+		mm_user_controls_exposure: [
+			13510,
+			"bool",
+			!1,
+			!1
+		],
+		mm_user_controls_unified_stop_enabled: [
+			34622,
+			"bool",
+			!1,
+			!1
+		],
+		mms_vcache_aggregation_enabled: [
+			2134,
+			"bool",
+			!1,
+			!1
+		],
+		music_ohai_proxy_url: [
+			10975,
+			"string",
+			"https://meta-ohttp-relay-prod.fastly-edge.com/",
+			"https://meta-ohttp-relay-prod.fastly-edge.com/"
+		],
+		native_contact_companion_change_enabled: [
+			7301,
+			"bool",
+			!1,
+			!0
+		],
+		native_contact_companion_nux_learn_more_article_id: [
+			11644,
+			"string",
+			"1191526044909364",
+			"1191526044909364"
+		],
+		native_flow_response_message_params_json_max_size: [
+			32367,
+			"int",
+			262144,
+			262144
+		],
+		native_lib_sandboxing_enable_libwebp: [
+			26414,
+			"bool",
+			!1,
+			!1
+		],
+		new_chat_msg_capping_first_warning_threshold_percentage: [
+			18967,
+			"int",
+			50,
+			50
+		],
+		new_end_call_survey_pop_up_user_interval_s: [
+			2553,
+			"int",
+			-1,
+			-1
+		],
+		newsletter_admin_invite_nux_id: [
+			15256,
+			"string",
+			"20610220",
+			"20610220"
+		],
+		newsletter_admin_invite_tos_id: [
+			6498,
+			"string",
+			"20610101",
+			"20610101"
+		],
+		newsletter_admin_invite_tos_id_smb_web: [
+			6536,
+			"string",
+			"20610104",
+			"20610104"
+		],
+		newsletter_creation_nux_id: [
+			3835,
+			"string",
+			"20601218",
+			"20601218"
+		],
+		newsletter_creation_tos_id: [
+			3834,
+			"string",
+			"20601217",
+			"20601217"
+		],
+		newsletter_creation_tos_id_smb_web: [
+			5598,
+			"string",
+			"20601217",
+			"20601217"
+		],
+		newsletter_forward_counter_bump_forwards_to_self: [
+			22204,
+			"bool",
+			!0,
+			!0
+		],
+		newsletter_forward_counter_bump_own_channel_updates_fowards: [
+			22203,
+			"bool",
+			!0,
+			!0
+		],
+		newsletter_forward_counter_bump_second_order_forwards: [
+			22205,
+			"bool",
+			!1,
+			!0
+		],
+		newsletter_forward_counter_infra_enabled: [
+			19889,
+			"bool",
+			!1,
+			!1
+		],
+		newsletter_forward_counter_max_send_after_random_time: [
+			22206,
+			"int",
+			3600,
+			60
+		],
+		newsletter_forward_counter_ui_enabled: [
+			19888,
+			"int",
+			0,
+			0
+		],
+		newsletter_nux_notice_id: [
+			15255,
+			"string",
+			"20610210",
+			"20610210"
+		],
+		newsletter_rcat_field_generating_enabled: [
+			19303,
+			"bool",
+			!1,
+			!0
+		],
+		newsletter_status_creation_enabled: [
+			26669,
+			"bool",
+			!1,
+			!0
+		],
+		newsletter_tos_notice_id: [
+			3810,
+			"string",
+			"20601216",
+			"20601216"
+		],
+		newsletter_tos_notice_id_smb_web: [
+			5597,
+			"string",
+			"20601216",
+			"20601216"
+		],
+		newsletters_video_playback_wabba_logging_enabled: [
+			13954,
+			"bool",
+			!1,
+			!0
+		],
+		no_large_emoji_regex: [
+			29172,
+			"bool",
+			!1,
+			!1
+		],
+		noise_pq_mode: [
+			20161,
+			"int",
+			0,
+			0
+		],
+		non_wa_contact_invite_cta_enabled: [
+			27217,
+			"int",
+			-1,
+			-1
+		],
+		notification_highlight_group_size_threshold: [
+			11891,
+			"int",
+			130,
+			130
+		],
+		num_days_before_device_expiry_check: [
+			731,
+			"int",
+			7,
+			7
+		],
+		num_days_key_index_list_expiration: [
+			730,
+			"int",
+			35,
+			35
+		],
+		ohai_request_kb_size: [
+			12248,
+			"float",
+			20,
+			20
+		],
+		optimized_delivery_block_and_report_entry_points_allowlist_web: [
+			18736,
+			"string",
+			"4,10,12,13,14,15,17,18,24,31,32,33,34,35,36,39,40,45",
+			"4,10,12,13,14,15,17,18,24,31,32,33,34,35,36,39,40,45"
+		],
+		optimized_delivery_multiple_collection_windows_enabled: [
+			14588,
+			"bool",
+			!1,
+			!0
+		],
+		optimized_delivery_signal_collection_config: [
+			10302,
+			"string",
+			"{}",
+			"{}"
+		],
+		optimized_delivery_signal_collection_enabled: [
+			9348,
+			"bool",
+			!1,
+			!0
+		],
+		optimized_delivery_signal_collection_on_companions_enabled: [
+			15884,
+			"bool",
+			!1,
+			!1
+		],
+		optimized_delivery_tokens_storage_config: [
+			10303,
+			"string",
+			"{}",
+			"{}"
+		],
+		opus_admin: [
+			30454,
+			"bool",
+			!1,
+			!1
+		],
+		opus_enabled: [
+			27278,
+			"bool",
+			!1,
+			!1
+		],
+		opus_t: [
+			27803,
+			"int",
+			2147483647,
+			2147483647
+		],
+		opus_time: [
+			27277,
+			"int",
+			1784516400,
+			1784516400
+		],
+		order_details_custom_item_enabled: [
+			1176,
+			"bool",
+			!1,
+			!0
+		],
+		order_details_from_cart_enabled: [
+			1107,
+			"bool",
+			!1,
+			!0
+		],
+		order_details_from_catalog_enabled: [
+			1212,
+			"bool",
+			!1,
+			!0
+		],
+		order_details_payment_instructions_sync_enabled: [
+			6670,
+			"bool",
+			!1,
+			!1
+		],
+		order_details_quick_pay: [
+			1600,
+			"string",
+			"{\"allowed_product_type\":\"none\"}",
+			"{\"allowed_product_type\":\"none\"}"
+		],
+		order_details_total_maximum_value: [
+			1684,
+			"float",
+			5e8,
+			5e8
+		],
+		order_details_total_order_minimum_value: [
+			1719,
+			"float",
+			1,
+			1
+		],
+		order_management_enabled: [
+			1188,
+			"bool",
+			!1,
+			!1
+		],
+		order_messages_ephemeral_exception_enabled: [
+			3240,
+			"bool",
+			!1,
+			!0
+		],
+		order_statuses_revamp_m1_enabled: [
+			5770,
+			"bool",
+			!1,
+			!0
+		],
+		orders_expansion_receiver_countries_allowed: [
+			3690,
+			"string",
+			"",
+			""
+		],
+		original_quality_image_min_edge: [
+			3068,
+			"int",
+			2560,
+			2560
+		],
+		otp_lid_migration_enabled: [
+			12553,
+			"bool",
+			!1,
+			!0
+		],
+		out_contact_invites_enabled: [
+			28170,
+			"int",
+			0,
+			0
+		],
+		out_of_sync_disappearing_messages_logging: [
+			2561,
+			"bool",
+			!1,
+			!0
+		],
+		p2b_calling_availability_experiment_enabled: [
+			31098,
+			"bool",
+			!1,
+			!0
+		],
+		p2m_external_payments_link_enabled: [
+			4295,
+			"bool",
+			!1,
+			!0
+		],
+		p2p_pills_allowlist: [
+			29554,
+			"string",
+			"[{ \"business_id\": \"34666845417\", \"pills\": [\"CHAT\", \"PROFILE\", \"BOOK_APPOINTMENT\", \"CATALOG\", \"BESTSELLERS\", \"OFFERS\", \"ABOUT_US\"] }]",
+			"[{ \"business_id\": \"34666845417\", \"pills\": [\"CHAT\", \"PROFILE\", \"BOOK_APPOINTMENT\", \"CATALOG\", \"BESTSELLERS\", \"OFFERS\", \"ABOUT_US\"] }]"
+		],
+		p2p_pills_allowlist_entries: [
+			29708,
+			"string",
+			"{ \"entries\": [{ \"business_id\": \"34666845417\", \"pills\": [\"CHAT\", \"PROFILE\", \"ABOUT_US\"] }]}",
+			"{ \"entries\": [{ \"business_id\": \"34666845417\", \"pills\": [\"CHAT\", \"PROFILE\", \"ABOUT_US\"] }]}"
+		],
+		p2p_pills_auto_send_messages: [
+			30208,
+			"bool",
+			!1,
+			!1
+		],
+		p2p_pills_enabled: [
+			27959,
+			"bool",
+			!1,
+			!1
+		],
+		p2p_pills_enabled_for_ineligible_contacts: [
+			29715,
+			"bool",
+			!1,
+			!1
+		],
+		p2p_pills_entries: [
+			31469,
+			"string",
+			"{\"enabled_for\": {\"sender\": true,\"receiver\": true},\"enabled_on\": {\"contact_card\": true,\"p2p_link\": true,\"phone_number\": true,\"username\": true}}",
+			"{\"enabled_for\": {\"sender\": true,\"receiver\": true},\"enabled_on\": {\"contact_card\": true,\"p2p_link\": true,\"phone_number\": true,\"username\": true}}"
+		],
+		p2p_pills_entries_enabled: [
+			31471,
+			"string",
+			"{\"enabled_for\": {\"sender\": true,\"receiver\": true},\"enabled_on\": {\"contact_card\": true,\"p2p_link\": true,\"phone_number\": true,\"username\": true}}",
+			"{\"enabled_for\": {\"sender\": true,\"receiver\": true},\"enabled_on\": {\"contact_card\": true,\"p2p_link\": true,\"phone_number\": true,\"username\": true}}"
+		],
+		p2p_pills_graphql_enabled: [
+			30629,
+			"bool",
+			!1,
+			!1
+		],
+		p2p_pills_max_wait_on_contact_card_send: [
+			30943,
+			"int",
+			5,
+			5
+		],
+		p2p_pills_new_business_metadata_enabled: [
+			30578,
+			"bool",
+			!1,
+			!1
+		],
+		paa_support_for_disabled_epehemerality: [
+			21235,
+			"bool",
+			!1,
+			!0
+		],
+		parent_group_admins_limit: [
+			1655,
+			"int",
+			20,
+			20
+		],
+		parent_group_allow_member_suggest_existing_m3_receiver: [
+			5078,
+			"bool",
+			!1,
+			!0
+		],
+		parent_group_allow_member_suggest_existing_m3_sender: [
+			5077,
+			"bool",
+			!1,
+			!0
+		],
+		parent_group_announcement_comments_history_sync_receiver_enabled: [
+			5813,
+			"bool",
+			!1,
+			!1
+		],
+		parent_group_create_privacy: [
+			2356,
+			"bool",
+			!1,
+			!0
+		],
+		parent_group_link_limit: [
+			1238,
+			"int",
+			100,
+			100
+		],
+		parent_group_link_limit_community_creation: [
+			1990,
+			"int",
+			10,
+			20
+		],
+		parent_group_min_participants_for_group_entry_point: [
+			2382,
+			"int",
+			20,
+			1
+		],
+		parent_group_subgroup_filter: [
+			3147,
+			"bool",
+			!1,
+			!1
+		],
+		parent_group_view_enabled: [
+			982,
+			"bool",
+			!0,
+			!0
+		],
+		parent_group_view_enabled_for_smb_on_web: [
+			2205,
+			"bool",
+			!1,
+			!0
+		],
+		parse_encrypted_dsm_msg_fix: [
+			26772,
+			"bool",
+			!1,
+			!0
+		],
+		payment_br_holdout: [
+			14358,
+			"bool",
+			!1,
+			!1
+		],
+		payment_link_trace_id_logging_enabled: [
+			19440,
+			"bool",
+			!1,
+			!0
+		],
+		payment_links_trust_signals_metatag_enabled: [
+			16866,
+			"bool",
+			!1,
+			!1
+		],
+		payment_links_trust_signals_metatag_psp_list: [
+			17162,
+			"string",
+			"{\"psp\":[\"mercadopago\"]} ",
+			"{\"psp\":[\"mercadopago\"]} "
+		],
+		payment_links_trust_signals_other_metatag_kill_switch_enabled: [
+			24662,
+			"bool",
+			!1,
+			!1
+		],
+		payment_links_trust_signals_other_metatags_enabled: [
+			17355,
+			"bool",
+			!1,
+			!1
+		],
+		payment_support_lids: [
+			14333,
+			"string",
+			"116664750354676,128385682505839,46635358933114,26521959944357,200206125658243,179985503506636,187797998674170,228746200088715,117914552262794,10158134550607",
+			"116664750354676,128385682505839,46635358933114,26521959944357,200206125658243,179985503506636,187797998674170,228746200088715,117914552262794,10158134550607"
+		],
+		payments_br_content_optimization_variant: [
+			4248,
+			"int",
+			0,
+			0
+		],
+		payments_br_copy_pix_code_api_merchant_enabled: [
+			9017,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_force_copy_pix_cta_enabled: [
+			8953,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_merchant_psp_account_status_sync: [
+			9076,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_p2m_boleto_enabled: [
+			11671,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_p2m_buyer_logging_phase_2: [
+			29803,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_p2m_completed_payment_intent_buyer_logging: [
+			27095,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_copy_boleto_code_buyer_logging: [
+			27096,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_order_details_buyer_logging: [
+			27008,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_pay_now_buyer_logging: [
+			27092,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_pix_copy_code_buyer_logging: [
+			27028,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_pix_copy_key_buyer_logging: [
+			27026,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_pix_in_groups_buyer_logging: [
+			27029,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_pix_more_ways_to_pay_buyer_logging: [
+			27094,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2m_view_order_buyer_logging: [
+			27093,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2p_pix_copy_code_buyer_logging: [
+			27114,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_p2p_pix_copy_key_buyer_logging: [
+			26847,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_payment_links_buyer_logging: [
+			27027,
+			"bool",
+			!1,
+			!0
+		],
+		payments_br_pix_on_web: [
+			16156,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_pix_phase_1_seller_sync_enabled: [
+			7024,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_pix_quick_reply_enabled: [
+			7857,
+			"bool",
+			!1,
+			!1
+		],
+		payments_br_pix_web_attachment_tray: [
+			19276,
+			"bool",
+			!1,
+			!1
+		],
+		payments_link_to_lite_consumer_enabled: [
+			3051,
+			"bool",
+			!1,
+			!0
+		],
+		payments_merchant_global_orders_value_props_banner_enabled: [
+			3744,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_argentina_enabled: [
+			33887,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_bubble_countries: [
+			29342,
+			"string",
+			"MX, ID, HK, TW, AE, EG, TR",
+			"MX, ID, HK, TW, AE, EG, TR"
+		],
+		payments_upr_canada_enabled: [
+			33888,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_colombia_enabled: [
+			33889,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_cote_divoire_enabled: [
+			33894,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_custom_payment_methods_sync_countries: [
+			30647,
+			"string",
+			"",
+			" MX, ID, HK, TW, AE, EG, TR"
+		],
+		payments_upr_egypt_enabled: [
+			31870,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_ethiopia_enabled: [
+			33892,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_ghana_enabled: [
+			33891,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_hongkong_enabled: [
+			31868,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_id_enabled: [
+			32170,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_mexico_wallet_enabled: [
+			32043,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_multiple_key_copy_enabled: [
+			32124,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_mx_enabled: [
+			32169,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_peru_enabled: [
+			33890,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_saudi_arabia_enabled: [
+			33886,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_send_key_from_web: [
+			32826,
+			"string",
+			"",
+			" MX, ID, HK, TW, AE, EG, TR"
+		],
+		payments_upr_south_africa_enabled: [
+			33922,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_taiwan_enabled: [
+			31869,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_tanzania_enabled: [
+			33893,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_turkey_enabled: [
+			31848,
+			"bool",
+			!1,
+			!0
+		],
+		payments_upr_uae_enabled: [
+			31860,
+			"bool",
+			!1,
+			!0
+		],
+		peer_message_lid_migration_outgoing: [
+			24184,
+			"bool",
+			!1,
+			!1
+		],
+		pending_group_requests_persistent_banner: [
+			20545,
+			"bool",
+			!1,
+			!0
+		],
+		per_customer_data_sharing_controls_eligible: [
+			13383,
+			"bool",
+			!1,
+			!1
+		],
+		phone_number_sharing_flow: [
+			15653,
+			"bool",
+			!1,
+			!0
+		],
+		pinned_message_banner_notch_animation_enabled: [
+			34369,
+			"bool",
+			!1,
+			!0
+		],
+		pinned_messages_infinite_receiver_enabled: [
+			31886,
+			"bool",
+			!1,
+			!0
+		],
+		pinned_messages_infinite_sender_enabled: [
+			31887,
+			"bool",
+			!1,
+			!0
+		],
+		pinned_messages_m0: [
+			3138,
+			"bool",
+			!0,
+			!0
+		],
+		pinned_messages_m1_receiver: [
+			3139,
+			"bool",
+			!0,
+			!0
+		],
+		pinned_messages_m1_sender: [
+			3140,
+			"bool",
+			!0,
+			!0
+		],
+		pinned_messages_m2: [
+			3141,
+			"bool",
+			!1,
+			!1
+		],
+		pinned_messages_m2_image_thumbnail: [
+			7467,
+			"bool",
+			!1,
+			!1
+		],
+		pinned_messages_m2_pin_max: [
+			3732,
+			"int",
+			1,
+			1
+		],
+		pinned_messages_sender_short_expiry_durations_enabled: [
+			4432,
+			"bool",
+			!1,
+			!1
+		],
+		pix_onboarding_new_content_enabled: [
+			23953,
+			"bool",
+			!1,
+			!1
+		],
+		pix_payment_request_update_status_enabled: [
+			27006,
+			"bool",
+			!1,
+			!1
+		],
+		pix_payment_request_web_enabled: [
+			34199,
+			"bool",
+			!1,
+			!1
+		],
+		placeholder_message_key_hash_logging: [
+			2639,
+			"bool",
+			!1,
+			!0
+		],
+		placeholder_message_resend: [
+			3579,
+			"bool",
+			!1,
+			!1
+		],
+		placeholder_message_resend_maximum_days_limit: [
+			3639,
+			"int",
+			14,
+			14
+		],
+		pnh_cag_disable_polls_group_size: [
+			5056,
+			"int",
+			1e4,
+			1e4
+		],
+		pnh_cag_disable_reactions_group_size: [
+			4495,
+			"int",
+			1e4,
+			1e4
+		],
+		pnh_history_sync_force_general: [
+			28664,
+			"bool",
+			!0,
+			!0
+		],
+		pnh_pn_for_lid_chat_sync: [
+			3062,
+			"bool",
+			!1,
+			!0
+		],
+		pnh_thread_promotion_to_general_lid: [
+			16632,
+			"bool",
+			!1,
+			!1
+		],
+		poll_add_option_enabled: [
+			24517,
+			"bool",
+			!1,
+			!1
+		],
+		poll_add_option_receiving_enabled: [
+			25758,
+			"int",
+			0,
+			0
+		],
+		poll_creation_cag_enabled: [
+			2738,
+			"bool",
+			!1,
+			!1
+		],
+		poll_creator_edit_enabled: [
+			24887,
+			"bool",
+			!1,
+			!1
+		],
+		poll_creator_edit_receiving_version: [
+			24886,
+			"int",
+			0,
+			0
+		],
+		poll_end_time_enabled: [
+			24405,
+			"bool",
+			!1,
+			!1
+		],
+		poll_end_time_receiving_enabled: [
+			24884,
+			"bool",
+			!1,
+			!1
+		],
+		poll_hide_voters_enabled: [
+			24518,
+			"bool",
+			!1,
+			!1
+		],
+		poll_hide_voters_receiving_enabled: [
+			24885,
+			"int",
+			0,
+			0
+		],
+		poll_name_length: [
+			1406,
+			"int",
+			255,
+			255
+		],
+		poll_option_count: [
+			1408,
+			"int",
+			12,
+			12
+		],
+		poll_option_length: [
+			1407,
+			"int",
+			100,
+			100
+		],
+		poll_receiving_cag_enabled: [
+			2737,
+			"bool",
+			!1,
+			!1
+		],
+		poll_result_snapshot_polltype_envelope_enabled: [
+			12258,
+			"bool",
+			!1,
+			!0
+		],
+		poll_tc_receiving_enabled: [
+			31592,
+			"bool",
+			!1,
+			!1
+		],
+		poll_tc_sending_enabled: [
+			31593,
+			"bool",
+			!1,
+			!1
+		],
+		pq_1on1_message_enabled: [
+			24160,
+			"bool",
+			!1,
+			!1
+		],
+		pq_batch_upload_size: [
+			21201,
+			"int",
+			10,
+			10
+		],
+		pq_keys_upload: [
+			21198,
+			"bool",
+			!1,
+			!1
+		],
+		pq_max_keys_on_server: [
+			21200,
+			"int",
+			200,
+			200
+		],
+		premium_blue_enabled: [
+			5318,
+			"bool",
+			!1,
+			!1
+		],
+		premium_broadcast_smb_capping_enabled: [
+			13808,
+			"bool",
+			!1,
+			!0
+		],
+		premium_msg_bb_campaign_sync_enabled: [
+			29650,
+			"bool",
+			!1,
+			!1
+		],
+		primary_initiated_companion_contact_refresh: [
+			33013,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_screen_enabled: [
+			26820,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_settings_about_lid_migration_enable: [
+			16195,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_settings_group_add_lid_migration_enable: [
+			16274,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_settings_presence_lid_migration_enable: [
+			16275,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_settings_profile_lid_migration_enable: [
+			16161,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_tips_groups_build: [
+			3995,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_tips_killswitch: [
+			4314,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_tips_profile_build: [
+			3998,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_token_sending_on_all_1_on_1_messages: [
+			10518,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_token_sending_on_group_create: [
+			11261,
+			"bool",
+			!1,
+			!1
+		],
+		privacy_token_sending_on_group_participant_add: [
+			11262,
+			"bool",
+			!1,
+			!1
+		],
+		private_messaging_uk_osa_enabled: [
+			14250,
+			"bool",
+			!1,
+			!0
+		],
+		private_osa_reporting_enabled: [
+			12990,
+			"bool",
+			!1,
+			!0
+		],
+		profile_picture_deeplink_enabled: [
+			7634,
+			"bool",
+			!1,
+			!1
+		],
+		profile_scraping_privacy_token_in_about_iq: [
+			9668,
+			"bool",
+			!1,
+			!0
+		],
+		profile_scraping_privacy_token_in_about_usync: [
+			20798,
+			"bool",
+			!1,
+			!0
+		],
+		ptt_user_journey_logging_wam_enabled: [
+			8630,
+			"bool",
+			!1,
+			!0
+		],
+		ptv_autoplay_enabled: [
+			3482,
+			"bool",
+			!0,
+			!0
+		],
+		ptv_autoplay_loop_limit: [
+			3483,
+			"int",
+			3,
+			3
+		],
+		ptv_max_duration_seconds: [
+			3356,
+			"int",
+			60,
+			60
+		],
+		ptv_quoted_replies_cutout_enabled: [
+			30384,
+			"bool",
+			!1,
+			!1
+		],
+		public_bug_reporting_sidebar: [
+			19124,
+			"bool",
+			!1,
+			!1
+		],
+		pushname_blocklist_starting_with_at: [
+			18097,
+			"bool",
+			!1,
+			!1
+		],
+		qp_banner_sticker_animation_enabled: [
+			31213,
+			"bool",
+			!1,
+			!1
+		],
+		qp_campaign_client_enabled: [
+			3536,
+			"bool",
+			!1,
+			!1
+		],
+		quoted_message_user_journey_logging_enabled: [
+			15694,
+			"bool",
+			!1,
+			!1
+		],
+		rasterize_text_status_pixel_width: [
+			13460,
+			"int",
+			1080,
+			1080
+		],
+		reaction_user_journey_logging_enabled: [
+			10438,
+			"bool",
+			!1,
+			!0
+		],
+		reactions_alignment_for_transparent_messages_enabled: [
+			16792,
+			"bool",
+			!1,
+			!0
+		],
+		reactions_receiver_enabled: [
+			13542,
+			"bool",
+			!1,
+			!1
+		],
+		receipt_mode_bitmask_enabled: [
+			30084,
+			"bool",
+			!1,
+			!0
+		],
+		recommended_channels_background_refresh: [
+			4309,
+			"int",
+			144e5,
+			144e5
+		],
+		relax_integrity_constraints_for_bb_wa_tenured_accounts: [
+			28516,
+			"bool",
+			!1,
+			!0
+		],
+		remove_device_pn_dependencies: [
+			27791,
+			"bool",
+			!1,
+			!0
+		],
+		remove_pn_dependencies: [
+			26888,
+			"bool",
+			!1,
+			!0
+		],
+		render_updated_disclosure: [
+			14407,
+			"bool",
+			!1,
+			!1
+		],
+		report_block_improvements_for_groups_enabled: [
+			8327,
+			"bool",
+			!1,
+			!0
+		],
+		report_call_replayer_id: [
+			1834,
+			"bool",
+			!1,
+			!1
+		],
+		report_to_admin_enabled: [
+			3696,
+			"bool",
+			!1,
+			!0
+		],
+		report_to_admin_kill_switch: [
+			3695,
+			"bool",
+			!1,
+			!0
+		],
+		reuse_cached_certs_for_data_channel: [
+			12913,
+			"bool",
+			!1,
+			!0
+		],
+		reveal_username_non_linking_rejection_reason_enabled: [
+			32910,
+			"bool",
+			!0,
+			!0
+		],
+		rich_format_logging_enabled: [
+			29428,
+			"bool",
+			!1,
+			!1
+		],
+		rich_order_status_wa_web: [
+			16534,
+			"bool",
+			!1,
+			!1
+		],
+		rnr_days_cooldown: [
+			18703,
+			"int",
+			1e5,
+			1e5
+		],
+		rnr_min_days_user_active: [
+			18702,
+			"int",
+			2,
+			2
+		],
+		row_buyer_order_revamp_m0_enabled: [
+			4893,
+			"bool",
+			!1,
+			!0
+		],
+		rt_clean_reporting_tag: [
+			6723,
+			"int",
+			31,
+			31
+		],
+		rt_clean_reporting_token: [
+			9567,
+			"int",
+			31,
+			31
+		],
+		rt_edit_receive: [
+			15016,
+			"bool",
+			!0,
+			!0
+		],
+		rt_ghs_receiver_enabled: [
+			24742,
+			"bool",
+			!1,
+			!0
+		],
+		rt_ghs_sender_enabled: [
+			24741,
+			"bool",
+			!1,
+			!0
+		],
+		rt_receive_reporting_tag: [
+			5718,
+			"bool",
+			!0,
+			!0
+		],
+		rt_receiver_dual_encrypted_msg_enabled: [
+			15258,
+			"bool",
+			!0,
+			!0
+		],
+		rt_report_token_from_inclusion_list: [
+			9818,
+			"bool",
+			!1,
+			!1
+		],
+		rt_sender_dual_encrypted_msg_enabled: [
+			12623,
+			"bool",
+			!0,
+			!0
+		],
+		rt_sender_reporting_token_version: [
+			8860,
+			"int",
+			2,
+			2
+		],
+		rt_swapped_fallback_validation: [
+			21718,
+			"bool",
+			!0,
+			!0
+		],
+		rt_sync_reporting_tag: [
+			6578,
+			"bool",
+			!0,
+			!0
+		],
+		rt_web_delay_processing: [
+			15181,
+			"bool",
+			!1,
+			!0
+		],
+		rust_accel_wacall_foundation_enabled: [
+			33446,
+			"bool",
+			!1,
+			!1
+		],
+		saga_copy: [
+			7044,
+			"bool",
+			!0,
+			!0
+		],
+		saga_enabled: [
+			5626,
+			"bool",
+			!0,
+			!0
+		],
+		saga_message_feedback_using_canonical_ent: [
+			23328,
+			"bool",
+			!1,
+			!1
+		],
+		saga_protobuf_ai_stardust_web: [
+			11756,
+			"bool",
+			!1,
+			!0
+		],
+		saga_protobuf_show_sysmsg_web: [
+			11832,
+			"bool",
+			!1,
+			!0
+		],
+		saga_v1_carousel: [
+			10609,
+			"bool",
+			!0,
+			!0
+		],
+		saga_v1_enabled: [
+			9942,
+			"bool",
+			!0,
+			!0
+		],
+		saga_v1_nux_enabled: [
+			9944,
+			"bool",
+			!0,
+			!0
+		],
+		saga_v1_reengagement_enabled: [
+			9924,
+			"bool",
+			!0,
+			!0
+		],
+		schedule_call_show_join_button_time_interval_mins: [
+			16253,
+			"int",
+			5,
+			5
+		],
+		schedule_call_show_upcoming_banner_time_interval_mins: [
+			16254,
+			"int",
+			1440,
+			1440
+		],
+		scheduled_messages_photo_video_sender_enabled: [
+			32553,
+			"bool",
+			!1,
+			!1
+		],
+		scheduled_messages_receiver_enabled: [
+			24610,
+			"bool",
+			!1,
+			!1
+		],
+		scheduled_messages_sender_enabled: [
+			23845,
+			"bool",
+			!1,
+			!1
+		],
+		scheduled_messages_window_duration_max_seconds: [
+			26347,
+			"int",
+			1209600,
+			1209600
+		],
+		scheduled_messages_window_duration_min_seconds: [
+			26348,
+			"int",
+			600,
+			600
+		],
+		search_the_web_design_experiment_v1: [
+			15423,
+			"bool",
+			!1,
+			!0
+		],
+		search_the_web_dialog_redesign: [
+			8171,
+			"bool",
+			!1,
+			!0
+		],
+		search_the_web_image_search: [
+			9547,
+			"bool",
+			!1,
+			!0
+		],
+		search_the_web_text_search: [
+			9548,
+			"bool",
+			!1,
+			!0
+		],
+		search_the_web_url_offer: [
+			8473,
+			"bool",
+			!1,
+			!0
+		],
+		search_user_journey_logging_wam_enabled: [
+			14682,
+			"bool",
+			!1,
+			!0
+		],
+		security_fixes_bitmap: [
+			3094,
+			"int",
+			0,
+			0
+		],
+		seller_orders_management_revamp: [
+			5190,
+			"bool",
+			!1,
+			!1
+		],
+		send_cag_member_revokes_as_GDM: [
+			3069,
+			"bool",
+			!0,
+			!0
+		],
+		send_extended_nack_enabled: [
+			3280,
+			"bool",
+			!1,
+			!1
+		],
+		server_driven_copy_m2: [
+			30492,
+			"bool",
+			!1,
+			!1
+		],
+		service_improvement_opt_out_flag: [
+			3664,
+			"bool",
+			!1,
+			!1
+		],
+		settings_sync_enabled: [
+			22692,
+			"bool",
+			!1,
+			!1
+		],
+		sfu_secondary_remote_bwe_impl: [
+			11472,
+			"int",
+			0,
+			8
+		],
+		share_own_pn_sync: [
+			3070,
+			"bool",
+			!1,
+			!0
+		],
+		share_phone_number_on_cart_send_to_direct_connection_biz_enabled: [
+			1867,
+			"bool",
+			!0,
+			!0
+		],
+		shimmed_links_in_the_marketing_message_body_enabled: [
+			12995,
+			"bool",
+			!1,
+			!1
+		],
+		shortcake_companion_prologue__passkeys__assertion_timeout_seconds: [
+			30661,
+			"int",
+			600,
+			600
+		],
+		shortcake_companion_prologue__passkeys__enabled: [
+			29206,
+			"bool",
+			!1,
+			!0
+		],
+		shortcake_companion_prologue__passkeys__handoff_enabled: [
+			29204,
+			"bool",
+			!1,
+			!0
+		],
+		shortcake_companion_prologue__passkeys__request_options_ttl_seconds: [
+			30662,
+			"int",
+			600,
+			600
+		],
+		show_fishfooding_toggle_in_bug_reporting_form: [
+			33156,
+			"bool",
+			!1,
+			!1
+		],
+		show_integrity_screensharing_friction_ui: [
+			16411,
+			"bool",
+			!1,
+			!0
+		],
+		show_username_non_linking_rejection_reason_enabled: [
+			32920,
+			"bool",
+			!1,
+			!1
+		],
+		silent_group_username_activities_enabled: [
+			24269,
+			"bool",
+			!1,
+			!1
+		],
+		similar_channels_in_channel_details_enabled: [
+			7473,
+			"bool",
+			!1,
+			!1
+		],
+		similar_channels_in_thread_on_follow_enabled: [
+			7472,
+			"bool",
+			!1,
+			!1
+		],
+		similar_channels_max_limit: [
+			7559,
+			"int",
+			10,
+			10
+		],
+		similar_channels_min_limit: [
+			7560,
+			"int",
+			4,
+			4
+		],
+		single_e2ee_session_migration_state_incoming: [
+			7821,
+			"int",
+			2,
+			2
+		],
+		single_e2ee_session_migration_state_outgoing: [
+			7820,
+			"int",
+			2,
+			2
+		],
+		single_emoji_logging_enabled: [
+			9669,
+			"bool",
+			!1,
+			!1
+		],
+		smart_filters_enabled: [
+			1015,
+			"bool",
+			!1,
+			!0
+		],
+		smart_filters_enabled_consumer: [
+			1287,
+			"bool",
+			!1,
+			!0
+		],
+		smb_agent_chat_list_indicator_enabled: [
+			10455,
+			"bool",
+			!1,
+			!1
+		],
+		smb_agent_thread_control_notification_enabled: [
+			10456,
+			"bool",
+			!1,
+			!1
+		],
+		smb_ai_agents_web_chat_assignment_interop_enabled: [
+			13387,
+			"bool",
+			!1,
+			!0
+		],
+		smb_auth_agents_feature_control_enabled: [
+			27585,
+			"bool",
+			!1,
+			!0
+		],
+		smb_bb_in_thread_insight_metrics_enabled: [
+			31676,
+			"bool",
+			!1,
+			!0
+		],
+		smb_bb_pro_business_verification: [
+			34341,
+			"bool",
+			!1,
+			!0
+		],
+		smb_bb_web_audience_expression_sync_read: [
+			26894,
+			"bool",
+			!0,
+			!0
+		],
+		smb_billing_enabled: [
+			1583,
+			"bool",
+			!1,
+			!1
+		],
+		smb_biz_ai_lists_pills: [
+			28470,
+			"string",
+			"None",
+			"None"
+		],
+		smb_biz_profile_custom_url: [
+			2582,
+			"bool",
+			!0,
+			!0
+		],
+		smb_business_broadcast_import_contact: [
+			17433,
+			"bool",
+			!1,
+			!1
+		],
+		smb_business_broadcast_multi_audience_send_web: [
+			25206,
+			"bool",
+			!1,
+			!1
+		],
+		smb_business_broadcast_pro_enabled: [
+			29033,
+			"bool",
+			!1,
+			!1
+		],
+		smb_business_broadcast_pro_web_scheduled_sends_enabled: [
+			33169,
+			"bool",
+			!1,
+			!0
+		],
+		smb_business_broadcast_send_web: [
+			21508,
+			"bool",
+			!1,
+			!1
+		],
+		smb_business_broadcast_send_web_no_exp: [
+			28138,
+			"bool",
+			!1,
+			!1
+		],
+		smb_business_broadcast_send_web_smba: [
+			27486,
+			"bool",
+			!1,
+			!0
+		],
+		smb_business_broadcast_send_web_smba_no_exp: [
+			28139,
+			"bool",
+			!1,
+			!0
+		],
+		smb_catalog_graphql_get_public_key: [
+			11690,
+			"bool",
+			!1,
+			!1
+		],
+		smb_catalog_graphql_verify_postcode: [
+			11624,
+			"bool",
+			!1,
+			!1
+		],
+		smb_catkit_query_version: [
+			1229,
+			"int",
+			1,
+			1
+		],
+		smb_collections_enabled: [
+			451,
+			"bool",
+			!1,
+			!0
+		],
+		smb_contact_manager_sublist_enabled: [
+			33708,
+			"bool",
+			!1,
+			!1
+		],
+		smb_core_biz_profile_preview: [
+			26441,
+			"bool",
+			!1,
+			!1
+		],
+		smb_core_biz_profile_ux_refreshed: [
+			19929,
+			"bool",
+			!1,
+			!1
+		],
+		smb_core_biz_profile_ux_refreshed_v2: [
+			22561,
+			"bool",
+			!1,
+			!1
+		],
+		smb_core_rec_card: [
+			27568,
+			"bool",
+			!1,
+			!1
+		],
+		smb_ctwa_billing_enabled: [
+			2158,
+			"bool",
+			!1,
+			!1
+		],
+		smb_ctwa_irev_long_term_holdout_dummy_enabled: [
+			31959,
+			"bool",
+			!1,
+			!1
+		],
+		smb_do_label_localize_backfill_enabled_code: [
+			30352,
+			"bool",
+			!1,
+			!1
+		],
+		smb_do_label_localize_on_create_enabled_code: [
+			30344,
+			"bool",
+			!1,
+			!1
+		],
+		smb_ecommerce_compliance_india_m4: [
+			1003,
+			"bool",
+			!1,
+			!0
+		],
+		smb_ecommerce_compliance_india_m4_5: [
+			1192,
+			"bool",
+			!1,
+			!0
+		],
+		smb_graphql_to_fetch_qp_enabled: [
+			7645,
+			"bool",
+			!1,
+			!1
+		],
+		smb_graphql_to_fetch_qp_frequency_mins: [
+			7646,
+			"int",
+			1320,
+			5
+		],
+		smb_graphql_to_fetch_qp_surface_ids: [
+			7647,
+			"string",
+			"",
+			""
+		],
+		smb_graphql_token_recovery_during_account_recovery_enabled: [
+			9197,
+			"bool",
+			!1,
+			!0
+		],
+		smb_hide_unsupported_currency_price: [
+			1203,
+			"bool",
+			!1,
+			!0
+		],
+		smb_label_sync_critical_event_logging: [
+			24311,
+			"bool",
+			!1,
+			!0
+		],
+		smb_labels_ctwa_data_sharing: [
+			5009,
+			"bool",
+			!1,
+			!0
+		],
+		smb_md_agent_chat_assignment_chats_reorder_on_chat_assignment_enabled: [
+			2787,
+			"bool",
+			!1,
+			!0
+		],
+		smb_md_agent_chat_assignment_chats_reorder_on_chat_unassignment_enabled: [
+			2788,
+			"bool",
+			!1,
+			!0
+		],
+		smb_md_agent_chat_assignment_enabled: [
+			1798,
+			"bool",
+			!1,
+			!0
+		],
+		smb_md_agent_chat_assignment_notifications_enabled: [
+			2908,
+			"bool",
+			!1,
+			!0
+		],
+		smb_md_agent_chat_assignment_nux_impressions: [
+			2207,
+			"int",
+			0,
+			3
+		],
+		smb_md_agent_chat_assignment_system_messages_logging_v2_enabled: [
+			2709,
+			"bool",
+			!1,
+			!0
+		],
+		smb_meta_verified_context_card: [
+			8313,
+			"bool",
+			!1,
+			!0
+		],
+		smb_multi_device_agents_logging_V2_enabled: [
+			1897,
+			"bool",
+			!1,
+			!0
+		],
+		smb_multi_device_message_attribution_enabled: [
+			1981,
+			"bool",
+			!1,
+			!0
+		],
+		smb_notes_content_max_limit: [
+			10272,
+			"int",
+			5e3,
+			5e3
+		],
+		smb_payment_links_cta_button_kill_switch: [
+			14967,
+			"bool",
+			!1,
+			!1
+		],
+		smb_payment_links_cta_psp_list: [
+			14998,
+			"string",
+			"{}",
+			"{}"
+		],
+		smb_payment_links_cta_variant: [
+			14957,
+			"int",
+			2,
+			2
+		],
+		smb_payment_links_logging_enabled: [
+			9213,
+			"bool",
+			!1,
+			!0
+		],
+		smb_payment_links_seller_logging_enabled: [
+			10389,
+			"bool",
+			!1,
+			!1
+		],
+		smb_payment_links_url_regex_list: [
+			8969,
+			"string",
+			"{}",
+			"{}"
+		],
+		smb_payment_request_status_update: [
+			27077,
+			"bool",
+			!1,
+			!1
+		],
+		smb_phase_out_not_a_business_V2: [
+			1771,
+			"bool",
+			!1,
+			!0
+		],
+		smb_premium_messages_click_logging_enabled: [
+			4657,
+			"bool",
+			!1,
+			!0
+		],
+		smb_premium_messages_url_cta_alert_dialog_enabled: [
+			5044,
+			"bool",
+			!0,
+			!0
+		],
+		smb_product_country_of_origin_m1: [
+			13415,
+			"bool",
+			!1,
+			!1
+		],
+		smb_project_waldo_set_price_tier_biz_profile_enabled: [
+			3467,
+			"bool",
+			!1,
+			!0
+		],
+		smb_qp_conversion_tracking_infra: [
+			26331,
+			"bool",
+			!1,
+			!1
+		],
+		smb_qp_emergency_force_fetch_nonce: [
+			27115,
+			"string",
+			"",
+			""
+		],
+		smb_qp_web_debug_recunit: [
+			31009,
+			"bool",
+			!1,
+			!1
+		],
+		smb_rambutan_enabled: [
+			3124,
+			"bool",
+			!1,
+			!0
+		],
+		smb_temp_cover_photo_privacy_messaging: [
+			1913,
+			"bool",
+			!1,
+			!0
+		],
+		smb_tos_qp_chatlist_banner: [
+			32396,
+			"bool",
+			!1,
+			!1
+		],
+		smb_waldo_service_offerings_selection_enabled: [
+			3285,
+			"bool",
+			!1,
+			!0
+		],
+		smb_web_bb_home_qp_surface_enabled: [
+			32613,
+			"bool",
+			!1,
+			!1
+		],
+		smb_web_category_search_via_graph_enabled: [
+			28519,
+			"bool",
+			!1,
+			!1
+		],
+		smb_web_customer_management_enabled: [
+			26165,
+			"bool",
+			!1,
+			!1
+		],
+		smb_web_customer_manager_bulk_edit_enabled: [
+			32550,
+			"bool",
+			!1,
+			!0
+		],
+		smb_web_customer_manager_date_range_filter_enabled: [
+			32096,
+			"bool",
+			!1,
+			!0
+		],
+		smb_web_customer_manager_dob_filter_enabled: [
+			32229,
+			"bool",
+			!1,
+			!0
+		],
+		smb_web_customer_manager_export_enabled: [
+			32287,
+			"bool",
+			!1,
+			!0
+		],
+		smb_web_customer_manager_header_menu_enabled: [
+			33086,
+			"bool",
+			!1,
+			!0
+		],
+		smb_web_enable_fb_linking: [
+			30112,
+			"bool",
+			!1,
+			!1
+		],
+		smb_web_show_quick_reply_option_in_composer: [
+			31700,
+			"bool",
+			!1,
+			!1
+		],
+		smba_bb_genai_composer_min_words: [
+			21447,
+			"int",
+			4,
+			4
+		],
+		smba_business_broadcast_genai_custom_user_prompt_enabled: [
+			20464,
+			"bool",
+			!1,
+			!0
+		],
+		smba_business_broadcast_genai_master_abprop: [
+			22384,
+			"bool",
+			!1,
+			!1
+		],
+		smba_business_broadcast_genai_share_message_history: [
+			20926,
+			"bool",
+			!1,
+			!1
+		],
+		smba_business_broadcast_genai_text: [
+			17743,
+			"bool",
+			!1,
+			!1
+		],
+		smba_business_broadcast_genai_text_max_tries: [
+			20946,
+			"int",
+			30,
+			30
+		],
+		smba_business_broadcast_genai_text_model: [
+			20929,
+			"string",
+			"LLAMA",
+			"LLAMA"
+		],
+		smba_business_broadcast_recipient_limit: [
+			17937,
+			"int",
+			-1,
+			-1
+		],
+		smba_premium_messages_leaving_wa_content: [
+			6693,
+			"bool",
+			!0,
+			!0
+		],
+		smbi_premium_broadcast_max_recipient_limit: [
+			23857,
+			"int",
+			256,
+			500
+		],
+		smbw_business_broadcast_duplicate_enabled: [
+			29021,
+			"bool",
+			!1,
+			!1
+		],
+		smbw_business_broadcast_smart_column_detection_enabled: [
+			27999,
+			"bool",
+			!1,
+			!1
+		],
+		smoothie_performance_msg_send: [
+			17942,
+			"bool",
+			!0,
+			!0
+		],
+		smoothie_performance_resize_followup: [
+			18992,
+			"bool",
+			!1,
+			!1
+		],
+		snapl_newsletter_logging_encrypted_rid_enabled: [
+			32239,
+			"bool",
+			!1,
+			!0
+		],
+		snapl_newsletter_logging_media_id_placeholder_string: [
+			14064,
+			"string",
+			"-1",
+			"-1"
+		],
+		snapshot_recovery_max_mutations_count_allowed: [
+			18786,
+			"int",
+			2e3,
+			2e3
+		],
+		soccer_ball_reaction_full_animation_enabled: [
+			27834,
+			"bool",
+			!1,
+			!1
+		],
+		soccer_reaction_in_tray_enabled: [
+			27833,
+			"bool",
+			!1,
+			!1
+		],
+		status_allow_forwarding_to_status_on_web: [
+			17071,
+			"bool",
+			!1,
+			!1
+		],
+		status_chain_from_cl_mode: [
+			27343,
+			"int",
+			0,
+			0
+		],
+		status_chain_from_my_interaction_limit: [
+			27011,
+			"int",
+			3,
+			3
+		],
+		status_e2ee_recv_over_status_stanza: [
+			27622,
+			"bool",
+			!1,
+			!1
+		],
+		status_e2ee_send_over_status_stanza: [
+			27620,
+			"bool",
+			!1,
+			!1
+		],
+		status_future_proofing: [
+			9522,
+			"bool",
+			!1,
+			!1
+		],
+		status_infra_1_1_session_split: [
+			25034,
+			"int",
+			0,
+			0
+		],
+		status_likes_fifa_lottie_full_screen_animation_enabled: [
+			27054,
+			"bool",
+			!1,
+			!1
+		],
+		status_likes_sending_enabled: [
+			31665,
+			"bool",
+			!1,
+			!1
+		],
+		status_mentions_group_mention_receiver: [
+			12254,
+			"bool",
+			!1,
+			!0
+		],
+		status_mentions_receiver: [
+			7869,
+			"bool",
+			!1,
+			!1
+		],
+		status_player_avatar_status_creation_entrypoint: [
+			30912,
+			"bool",
+			!1,
+			!0
+		],
+		status_pog_id_rotation_window_days: [
+			18297,
+			"int",
+			-1,
+			-1
+		],
+		status_poster_side_gating_enabled: [
+			8742,
+			"bool",
+			!1,
+			!0
+		],
+		status_reaction_emojis: [
+			1852,
+			"string",
+			"[128525, 128514, 128558, 128546, 128591, 128079, 127881, 128175]",
+			"[128525, 128514, 128558, 128546, 128591, 128079, 127881, 128175]"
+		],
+		status_save_to_camera_roll_enabled: [
+			13280,
+			"bool",
+			!1,
+			!0
+		],
+		status_video_max_duration: [
+			175,
+			"int",
+			30,
+			30
+		],
+		status_viewer_action_psa_link_click_logging_enabled: [
+			34489,
+			"bool",
+			!1,
+			!0
+		],
+		status_web_ranking: [
+			31666,
+			"bool",
+			!1,
+			!1
+		],
+		sticker_store_testing_enabled: [
+			25639,
+			"bool",
+			!1,
+			!1
+		],
+		stickers_emoji_tagging_enabled: [
+			26465,
+			"bool",
+			!1,
+			!1
+		],
+		sticky_chat_profile_picture_enabled: [
+			13692,
+			"bool",
+			!1,
+			!1
+		],
+		suggested_audiences_wa_web: [
+			26207,
+			"bool",
+			!1,
+			!1
+		],
+		support_contact_form_using_graphql: [
+			26001,
+			"bool",
+			!1,
+			!1
+		],
+		support_email_contact_form_logged_in_enabled: [
+			33263,
+			"bool",
+			!1,
+			!0
+		],
+		support_lids: [
+			14317,
+			"string",
+			"4200746488034,30563255730192,70334669676777,19349129719984,66065505775654,133814269518032,243799792062487,7323238039569,269290422947912,261718412386336,4351103873168,12391299473616,92410801582180,277730033709185,36090878648473,79882365190287,94274800595104,117794058317863,115784047153172,179250745360524,7301780005088,166653589463190,94249030815912,198964645236955,198427807899653,23656948363422,255735573270728,106670109786240,130932396826763,18855208456329",
+			"4200746488034,30563255730192,70334669676777,19349129719984,66065505775654,133814269518032,243799792062487,7323238039569,269290422947912,261718412386336,4351103873168,12391299473616,92410801582180,277730033709185,36090878648473,79882365190287,94274800595104,117794058317863,115784047153172,179250745360524,7301780005088,166653589463190,94249030815912,198964645236955,198427807899653,23656948363422,255735573270728,106670109786240,130932396826763,18855208456329"
+		],
+		support_message_feedback_enabled: [
+			7080,
+			"bool",
+			!1,
+			!1
+		],
+		supports_keep_in_chat_in_cag: [
+			2844,
+			"bool",
+			!0,
+			!0
+		],
+		syncd_additional_mutations_count: [
+			2777,
+			"int",
+			1,
+			1
+		],
+		syncd_inline_mutations_max_count: [
+			14494,
+			"int",
+			100,
+			100
+		],
+		syncd_key_max_use_days: [
+			14488,
+			"int",
+			30,
+			30
+		],
+		syncd_lthash_consistency_check_on_snapshot_mac_mismatch: [
+			1783,
+			"bool",
+			!1,
+			!1
+		],
+		syncd_mutation_and_bundle_logging: [
+			11821,
+			"string",
+			"{\"allowlist\": []}",
+			"{\"allowlist\": []}"
+		],
+		syncd_patch_protobuf_max_size: [
+			14495,
+			"int",
+			10,
+			10
+		],
+		syncd_periodic_sync_days: [
+			1400,
+			"int",
+			0,
+			0
+		],
+		syncd_sentinel_timeout_seconds: [
+			14485,
+			"int",
+			3,
+			3
+		],
+		syncd_use_index_for_lthash_lookup: [
+			28144,
+			"bool",
+			!1,
+			!1
+		],
+		syncd_wait_for_key_timeout_days: [
+			14492,
+			"int",
+			7,
+			7
+		],
+		synced_message_keys_processing_type: [
+			22825,
+			"string",
+			"control",
+			"control"
+		],
+		system_msg_numbers_fb_branded: [
+			1035,
+			"string",
+			"16325551023,16505434800,16503130062,16507885324,16508620604,16504228206,447710173736,16315551023,16505361212,16508129150,16315555102,16315558723,16505212669,16507885280,19032707825,0",
+			"16325551023,16505434800,16503130062,16507885324,16508620604,16504228206,447710173736,16315551023,16505361212,16508129150,16315555102,16315558723,16505212669,16507885280,19032707825,0"
+		],
+		system_msg_numbers_fb_inc: [
+			1036,
+			"string",
+			"",
+			""
+		],
+		system_msg_text_styling: [
+			6246,
+			"bool",
+			!1,
+			!1
+		],
+		tappable_links_in_poll_option_enabled: [
+			26062,
+			"bool",
+			!1,
+			!1
+		],
+		tctoken_duration: [
+			865,
+			"int",
+			604800,
+			604800
+		],
+		tctoken_duration_sender: [
+			996,
+			"int",
+			604800,
+			604800
+		],
+		tctoken_num_buckets: [
+			909,
+			"int",
+			4,
+			4
+		],
+		tctoken_num_buckets_sender: [
+			997,
+			"int",
+			4,
+			4
+		],
+		teamlink_enabled: [
+			33978,
+			"bool",
+			!1,
+			!1
+		],
+		text_status_ttl_seconds_allowlist: [
+			6153,
+			"string",
+			"1800,3600,7200,14400,28800,86400",
+			"1800,3600,7200,14400,28800,86400"
+		],
+		text_user_journey_logging_wam_enabled: [
+			8627,
+			"bool",
+			!1,
+			!0
+		],
+		timeout_mex_call_expand_fmx_trust_signals: [
+			27862,
+			"int",
+			600,
+			600
+		],
+		top_level_message_secret_check: [
+			23796,
+			"bool",
+			!1,
+			!0
+		],
+		tos_3_client_gating_enabled: [
+			791,
+			"bool",
+			!1,
+			!1
+		],
+		tos_client_state_fetch_enabled: [
+			877,
+			"bool",
+			!1,
+			!1
+		],
+		tos_client_state_fetch_iteration: [
+			908,
+			"int",
+			0,
+			0
+		],
+		transcode_and_repair_videos: [
+			26027,
+			"bool",
+			!1,
+			!1
+		],
+		ts_session_duration_ms: [
+			3860,
+			"int",
+			6e5,
+			6e5
+		],
+		ts_surface_killswitch: [
+			4929,
+			"int",
+			0,
+			0
+		],
+		ugc_enabled: [
+			3011,
+			"bool",
+			!1,
+			!0
+		],
+		ugc_participant_limit: [
+			4118,
+			"int",
+			5,
+			5
+		],
+		unified_calling_entry_point_desktop_type: [
+			21591,
+			"int",
+			0,
+			0
+		],
+		unified_otp_copy_code_url: [
+			3827,
+			"string",
+			"https://www.whatsapp.com/otp/copy/",
+			"https://www.whatsapp.com/otp/copy/"
+		],
+		unified_otp_retriever_url: [
+			3828,
+			"string",
+			"https://www.whatsapp.com/otp/code",
+			"https://www.whatsapp.com/otp/code"
+		],
+		unified_pin_addon_table_enabled: [
+			8356,
+			"bool",
+			!1,
+			!1
+		],
+		unified_poll_vote_addon_infra_enabled: [
+			6046,
+			"bool",
+			!1,
+			!1
+		],
+		unified_response_ai_content_search_enabled: [
+			3e4,
+			"bool",
+			!1,
+			!1
+		],
+		unified_response_ai_sports_widget_enabled: [
+			31780,
+			"bool",
+			!1,
+			!1
+		],
+		unified_response_markdown_links_enabled: [
+			30330,
+			"bool",
+			!1,
+			!1
+		],
+		unified_session_log_call_event: [
+			8582,
+			"bool",
+			!1,
+			!1
+		],
+		unify_end_call_events: [
+			2856,
+			"bool",
+			!1,
+			!1
+		],
+		unknown_user_persistence_logging_enabled: [
+			34465,
+			"bool",
+			!0,
+			!0
+		],
+		unknown_user_target_rid_logging: [
+			34232,
+			"bool",
+			!1,
+			!1
+		],
+		unknown_user_wam_emit_cooldown_secs: [
+			34551,
+			"int",
+			30,
+			30
+		],
+		unknown_user_wam_max_events_per_window: [
+			32946,
+			"int",
+			10,
+			10
+		],
+		updated_harmful_document_dialog: [
+			15022,
+			"bool",
+			!1,
+			!0
+		],
+		updates_privacy_notice_rollout_date: [
+			14387,
+			"int",
+			174231e4,
+			174231e4
+		],
+		updates_quick_promotion_banner_enabled: [
+			13997,
+			"bool",
+			!1,
+			!1
+		],
+		updates_tab_channels_header_explore_entry_point_visibility: [
+			33934,
+			"int",
+			1,
+			1
+		],
+		updates_tab_channels_section_header_visibility: [
+			33935,
+			"int",
+			1,
+			1
+		],
+		updates_tab_channels_show_recommendation_unit_enabled: [
+			33937,
+			"bool",
+			!0,
+			!0
+		],
+		updates_tab_channels_show_unfollowed_search_results_enabled: [
+			33936,
+			"bool",
+			!0,
+			!0
+		],
+		upload_document_thumb_mms_enabled: [
+			247,
+			"bool",
+			!1,
+			!0
+		],
+		use_cached_app_settings_from_global_ctx: [
+			13428,
+			"bool",
+			!0,
+			!0
+		],
+		use_custom_soccer_ball_for_reaction_enabled: [
+			27807,
+			"bool",
+			!1,
+			!1
+		],
+		use_per_chat_wallpaper: [
+			9756,
+			"bool",
+			!1,
+			!1
+		],
+		use_signed_shimmed_url_link: [
+			11977,
+			"bool",
+			!1,
+			!1
+		],
+		username_1on1_sys_msg_creation_upsell_enabled: [
+			27359,
+			"bool",
+			!0,
+			!0
+		],
+		username_activation_qp: [
+			32809,
+			"bool",
+			!1,
+			!1
+		],
+		username_adoption_and_engagement_monitoring_enabled: [
+			15493,
+			"bool",
+			!1,
+			!0
+		],
+		username_antiscraping_send_cached_un: [
+			31261,
+			"bool",
+			!1,
+			!0
+		],
+		username_api_rate_limit_enabled: [
+			28678,
+			"bool",
+			!1,
+			!1
+		],
+		username_channels_pn_privacy_enabled: [
+			23795,
+			"bool",
+			!1,
+			!1
+		],
+		username_check_debounce_in_ms: [
+			18975,
+			"int",
+			600,
+			600
+		],
+		username_contact_card_dedupe_icons: [
+			32614,
+			"bool",
+			!1,
+			!1
+		],
+		username_contact_display: [
+			4746,
+			"bool",
+			!1,
+			!1
+		],
+		username_contact_privacy_setting_allow_uncontact_set_enable: [
+			20993,
+			"bool",
+			!1,
+			!1
+		],
+		username_contact_syncd_support_enable: [
+			17614,
+			"bool",
+			!1,
+			!1
+		],
+		username_contact_ui_vcard: [
+			18204,
+			"bool",
+			!1,
+			!1
+		],
+		username_contact_usync_lid_based: [
+			14565,
+			"bool",
+			!1,
+			!1
+		],
+		username_creation_reservation_pp_disclosure_enabled: [
+			32098,
+			"bool",
+			!1,
+			!1
+		],
+		username_enabled_on_companion: [
+			23817,
+			"bool",
+			!1,
+			!1
+		],
+		username_engagement_network_impact_logging: [
+			11794,
+			"bool",
+			!1,
+			!0
+		],
+		username_exposed_logging_enabled: [
+			25353,
+			"bool",
+			!1,
+			!1
+		],
+		username_global_search_enabled: [
+			18251,
+			"bool",
+			!1,
+			!1
+		],
+		username_group_mutation_enabled: [
+			16148,
+			"bool",
+			!1,
+			!1
+		],
+		username_key_entry_ui_v2: [
+			34226,
+			"bool",
+			!1,
+			!1
+		],
+		username_key_max_length: [
+			34348,
+			"int",
+			6,
+			6
+		],
+		username_key_min_length: [
+			34347,
+			"int",
+			4,
+			4
+		],
+		username_key_redesign_enabled: [
+			29026,
+			"bool",
+			!1,
+			!1
+		],
+		username_key_upsell_max_characters: [
+			25790,
+			"int",
+			8,
+			8
+		],
+		username_key_upsell_max_numbers: [
+			25789,
+			"int",
+			1,
+			1
+		],
+		username_key_upsell_mode: [
+			26220,
+			"int",
+			0,
+			0
+		],
+		username_lid_migration_calling: [
+			21890,
+			"bool",
+			!1,
+			!1
+		],
+		username_max_length: [
+			20459,
+			"int",
+			35,
+			35
+		],
+		username_mex_account_sync_enabled: [
+			8763,
+			"bool",
+			!1,
+			!1
+		],
+		username_min_length: [
+			20494,
+			"int",
+			3,
+			3
+		],
+		username_numeric_code_v4: [
+			14286,
+			"int",
+			0,
+			0
+		],
+		username_prevent_pn_populate_new_contact_creation: [
+			16495,
+			"bool",
+			!1,
+			!1
+		],
+		username_search: [
+			15956,
+			"bool",
+			!1,
+			!1
+		],
+		username_search_without_atsign_enabled: [
+			32948,
+			"bool",
+			!1,
+			!1
+		],
+		username_security_code_generation: [
+			7468,
+			"bool",
+			!1,
+			!0
+		],
+		username_suggestions_enabled: [
+			21984,
+			"bool",
+			!1,
+			!1
+		],
+		username_unknown_user_logging_enabled: [
+			32978,
+			"bool",
+			!0,
+			!0
+		],
+		utility_order_status_logging_enabled: [
+			19059,
+			"bool",
+			!1,
+			!1
+		],
+		utility_order_view_mbs_enabled: [
+			31282,
+			"bool",
+			!1,
+			!0
+		],
+		utility_payment_reminder_m1_enabled: [
+			22434,
+			"bool",
+			!1,
+			!1
+		],
+		utm_tracking_enabled: [
+			2895,
+			"bool",
+			!1,
+			!1
+		],
+		utm_tracking_expiration_hours: [
+			2896,
+			"int",
+			24,
+			24
+		],
+		uwp_voip_incoming_call_notification_version: [
+			7541,
+			"int",
+			0,
+			0
+		],
+		verified_badge_in_chats_list_enabled: [
+			9292,
+			"bool",
+			!1,
+			!1
+		],
+		vid_port_enable_capture_fps_median_filter: [
+			29214,
+			"bool",
+			!1,
+			!1
+		],
+		vid_port_frm_buf_mutex_fixes: [
+			22525,
+			"bool",
+			!1,
+			!1
+		],
+		vid_stream_pause_resume_jb_reset_threshold_ms: [
+			2642,
+			"int",
+			0,
+			0
+		],
+		video_stream_buffering_ui_enabled: [
+			2167,
+			"bool",
+			!1,
+			!0
+		],
+		view_replies_entry_point: [
+			19860,
+			"int",
+			0,
+			0
+		],
+		view_replies_infra_enabled: [
+			14199,
+			"bool",
+			!1,
+			!1
+		],
+		view_replies_is_composer_enabled: [
+			20817,
+			"bool",
+			!0,
+			!0
+		],
+		view_replies_with_threadid_enabled: [
+			16998,
+			"bool",
+			!1,
+			!1
+		],
+		visible_message_drop_placeholder_enabled_internal_only: [
+			7287,
+			"bool",
+			!1,
+			!0
+		],
+		voice_ai_conversation_starter_latency_tracking: [
+			19624,
+			"bool",
+			!1,
+			!1
+		],
+		voice_call_string_test: [
+			27841,
+			"bool",
+			!1,
+			!1
+		],
+		voice_chat_companion_experience_version: [
+			17052,
+			"int",
+			0,
+			0
+		],
+		voicemail_nudge_duration_ms: [
+			18339,
+			"int",
+			4e3,
+			4e3
+		],
+		voip_call_coordinator_version: [
+			9502,
+			"int",
+			0,
+			0
+		],
+		voip_enable_webrtc_stats_polling: [
+			26744,
+			"bool",
+			!0,
+			!0
+		],
+		voip_stack_incoming_message_ownership_transfer: [
+			16481,
+			"bool",
+			!1,
+			!1
+		],
+		wa_asteria_eligibility_subscription_status_check_enabled: [
+			26399,
+			"bool",
+			!1,
+			!1
+		],
+		wa_asteria_enabled: [
+			26234,
+			"bool",
+			!1,
+			!1
+		],
+		wa_asteria_meta_ai_settings_tab_entrypoint_enabled: [
+			27118,
+			"bool",
+			!1,
+			!1
+		],
+		wa_asteria_rollout_enabled: [
+			26996,
+			"bool",
+			!1,
+			!1
+		],
+		wa_auth_agent_offboarding_enabled: [
+			29923,
+			"bool",
+			!1,
+			!1
+		],
+		wa_biz_gap_enforcement_rules_sync_to_meta_enabled_ac_linked_user: [
+			34290,
+			"bool",
+			!1,
+			!1
+		],
+		wa_biz_payment_template_click_signals: [
+			33170,
+			"bool",
+			!1,
+			!1
+		],
+		wa_capping_local_data_logic_update: [
+			21348,
+			"bool",
+			!1,
+			!0
+		],
+		wa_catalog_graphql_use_lid_enabled: [
+			30797,
+			"bool",
+			!1,
+			!0
+		],
+		wa_coex_biz_ai_capping_eligible: [
+			34276,
+			"bool",
+			!1,
+			!0
+		],
+		wa_consumer_entry_point_enabled: [
+			24380,
+			"bool",
+			!1,
+			!1
+		],
+		wa_consumer_nova_eligibility_subscription_status_check_enabled: [
+			25388,
+			"bool",
+			!1,
+			!1
+		],
+		wa_consumer_nova_entry_point_settings_enabled: [
+			24495,
+			"bool",
+			!1,
+			!1
+		],
+		wa_consumer_nova_settings_green_dot_enabled: [
+			24955,
+			"bool",
+			!1,
+			!1
+		],
+		wa_consumer_nova_subscription_notifications_enabled: [
+			27068,
+			"bool",
+			!1,
+			!0
+		],
+		wa_ctwa_log_user_journey_enabled: [
+			1681,
+			"bool",
+			!1,
+			!0
+		],
+		wa_ctwa_web_enable_continuous_duration: [
+			31426,
+			"bool",
+			!1,
+			!1
+		],
+		wa_ctwa_web_entrypoint_home_header_dropdown_enabled: [
+			3095,
+			"bool",
+			!1,
+			!1
+		],
+		wa_ctwa_web_entrypoint_home_header_enabled: [
+			3058,
+			"bool",
+			!1,
+			!1
+		],
+		wa_ctwa_web_entrypoint_manage_ads_home_header_dropdown_enabled: [
+			3376,
+			"bool",
+			!1,
+			!1
+		],
+		wa_ctwa_web_fetch_linked_accounts_enabled: [
+			3294,
+			"bool",
+			!1,
+			!1
+		],
+		wa_ctwa_web_hide_ad_context_if_soft_dismissed_in_primary: [
+			9729,
+			"bool",
+			!1,
+			!1
+		],
+		wa_ctwa_web_thread_ad_attribution_enabled: [
+			2898,
+			"bool",
+			!1,
+			!1
+		],
+		wa_individual_new_chat_msg_capping_enabled: [
+			20865,
+			"bool",
+			!1,
+			!0
+		],
+		wa_individual_new_chat_msg_capping_fetch_ttl_seconds: [
+			20649,
+			"int",
+			3600,
+			3600
+		],
+		wa_individual_new_chat_msg_capping_limit: [
+			17845,
+			"int",
+			0,
+			0
+		],
+		wa_individual_new_chat_msg_capping_mv_get_subscription_v2: [
+			20667,
+			"bool",
+			!1,
+			!0
+		],
+		wa_individual_new_chat_msg_fci_staleness_ttl_in_seconds: [
+			21410,
+			"int",
+			120,
+			120
+		],
+		wa_individual_new_chat_msg_latest_rampup_date: [
+			20601,
+			"int",
+			0,
+			0
+		],
+		wa_individual_new_chat_thread_capping_limit: [
+			29369,
+			"int",
+			0,
+			0
+		],
+		wa_media_image_upload_cache: [
+			22784,
+			"bool",
+			!1,
+			!1
+		],
+		wa_meta_one_eligibility_subscription_status_check_enabled: [
+			28613,
+			"bool",
+			!1,
+			!1
+		],
+		wa_meta_one_enabled: [
+			28611,
+			"bool",
+			!1,
+			!1
+		],
+		wa_meta_one_launch_free_trial_enabled: [
+			29290,
+			"bool",
+			!1,
+			!1
+		],
+		wa_meta_one_rollout_enabled: [
+			28612,
+			"bool",
+			!1,
+			!1
+		],
+		wa_meta_one_subscription_notifications_enabled: [
+			29866,
+			"bool",
+			!1,
+			!0
+		],
+		wa_native_ads_web_creation_dummy: [
+			33640,
+			"bool",
+			!1,
+			!1
+		],
+		wa_native_ads_web_creation_rollout: [
+			33639,
+			"bool",
+			!1,
+			!1
+		],
+		wa_native_ads_web_creation_rollout_no_exposure: [
+			33752,
+			"bool",
+			!1,
+			!1
+		],
+		wa_native_ads_xplat_draft_ads_ms1a_dummy_enabled: [
+			33374,
+			"bool",
+			!1,
+			!1
+		],
+		wa_native_ads_xplat_draft_ads_ms1a_enabled: [
+			33372,
+			"bool",
+			!1,
+			!1
+		],
+		wa_nct_token_history_sync_enabled: [
+			25189,
+			"bool",
+			!1,
+			!1
+		],
+		wa_nct_token_salt_creation_enabled: [
+			24915,
+			"bool",
+			!1,
+			!1
+		],
+		wa_nct_token_send_enabled: [
+			24941,
+			"bool",
+			!1,
+			!1
+		],
+		wa_nct_token_syncd_enabled: [
+			25253,
+			"bool",
+			!1,
+			!1
+		],
+		wa_ohai_new_vip_header_enabled: [
+			31340,
+			"bool",
+			!1,
+			!1
+		],
+		wa_payments_smb_enabled: [
+			27173,
+			"bool",
+			!1,
+			!0
+		],
+		wa_payments_smb_labels_convention_enabled: [
+			27172,
+			"bool",
+			!1,
+			!0
+		],
+		wa_qp_exposure_log_via_graphql_enabled: [
+			31560,
+			"bool",
+			!1,
+			!1
+		],
+		wa_settings_read_receipts_copy_v2: [
+			33610,
+			"bool",
+			!1,
+			!0
+		],
+		wa_smb_biz_profile_google_integration_enabled: [
+			29007,
+			"bool",
+			!1,
+			!1
+		],
+		wa_smb_forward_bb_web_enabled: [
+			30028,
+			"bool",
+			!1,
+			!0
+		],
+		wa_smb_web_lists_quick_replies_enabled: [
+			31061,
+			"bool",
+			!1,
+			!1
+		],
+		wa_status_chain_new_at_end: [
+			24110,
+			"bool",
+			!1,
+			!1
+		],
+		wa_status_chain_unseen_min_pog: [
+			24500,
+			"int",
+			3,
+			3
+		],
+		wa_web_adaptive_layout_enabled: [
+			30140,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_agm_signup_enabled: [
+			26467,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_anr_pushname_check_enabled: [
+			32065,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_anyone_can_link_m2: [
+			24432,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_anyone_can_link_m2_flood_limit: [
+			25009,
+			"int",
+			10,
+			10
+		],
+		wa_web_app_lock_upsell: [
+			20064,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_attach_icon_variant: [
+			26386,
+			"int",
+			0,
+			0
+		],
+		wa_web_background_notifications: [
+			33844,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_base_video_comet_video_player_enabled: [
+			25660,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_biz_broadcast_collection_based_campaigns_enabled: [
+			31682,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_biz_broadcasts_catalog_attachment: [
+			28471,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_biz_broadcasts_contextual_entrypoints: [
+			30270,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_biz_profile_google_integration_enabled: [
+			31246,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_biz_profile_graphql_migration: [
+			25846,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_biz_profile_graphql_migration_bypass_lid_check_dogfooding: [
+			29965,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_biz_profile_preload: [
+			31842,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_blocked_participant_call_warning: [
+			29039,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_blocked_participant_chat_warning: [
+			29038,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_bot_orphan_logic_enabled: [
+			29753,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_bot_tos_check_refiniement: [
+			28897,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_broadcast_disappearing_messages_fix: [
+			31499,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_buttons_response_prop_removal_killswitch: [
+			33817,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_calling_calls_tab_empty_state_update_enabled: [
+			33154,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_calling_chat_empty_state_update_enabled: [
+			33153,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_calling_deep_link_error: [
+			10051,
+			"bool",
+			!0,
+			!0
+		],
+		wa_web_calling_sidenav_calls_tab_nux_enabled: [
+			33008,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_calling_whats_new_modal_update_enabled: [
+			33155,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_canonical_reg_reload_enabled: [
+			29472,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_canonical_wam_falco_buffer_enabled: [
+			30212,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_canonical_wam_falco_buffer_size: [
+			30219,
+			"int",
+			2e3,
+			2e3
+		],
+		wa_web_chaining_from_my_status: [
+			33019,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_change_list_wds_submenu: [
+			27123,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_channels_comet_video_player_enabled_v2: [
+			24541,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_chat_open_optimizations: [
+			31399,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_chat_search_entrypoint: [
+			25609,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_chat_themes: [
+			26629,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_chat_themes_logging: [
+			29457,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_chat_themes_solid_wallpaper_sync_encode: [
+			32878,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_chat_themes_stock_wallpaper_sync_encode: [
+			34349,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_chatlist_render_chat_open: [
+			27947,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_clear_selected_chats_enabled: [
+			20626,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_comet_video_player_snapl: [
+			25065,
+			"bool",
+			!0,
+			!0
+		],
+		wa_web_composer_height_increase_enabled: [
+			27441,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_console_log_level: [
+			16806,
+			"int",
+			3,
+			1
+		],
+		wa_web_contact_and_chat_fuzzy_search_async_enabled: [
+			33433,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_contact_and_chat_fuzzy_search_distance_threshold: [
+			26731,
+			"float",
+			.30000001192092896,
+			.30000001192092896
+		],
+		wa_web_contact_and_chat_fuzzy_search_enabled: [
+			26728,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_contact_and_chat_fuzzy_search_similarity_optimization_enabled: [
+			26729,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_contact_and_chat_fuzzy_search_timeout_threshold: [
+			26733,
+			"float",
+			5,
+			5
+		],
+		wa_web_contact_search_tokenized_enabled: [
+			24773,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_context_card_vertical_buttons: [
+			31178,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_copy_link_url_enabled: [
+			25820,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_create_group_in_filter: [
+			22617,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_debug_color_code_retry_messages: [
+			16138,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_default_profile_pics: [
+			25455,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_defense_mode_quarantine_extra_pn_check: [
+			33541,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_disable_prefetch_loadables: [
+			21917,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_discuss_privately: [
+			26815,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_download_mimetype_check_block_enabled: [
+			26555,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_edit_before_forwarding_to_status: [
+			27616,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_enable_chat_thread_and_info_status_ring: [
+			30026,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_enable_follow_up_reply_icon: [
+			24429,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_enable_granular_notifications: [
+			21909,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_enable_mention_message: [
+			27714,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_enable_status_hq_thumbnail: [
+			25079,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_enable_syncd_key_persistence_only_after_server_ack: [
+			27069,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_expansion_countries_bonsai_enabled: [
+			29543,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_export_chat: [
+			26201,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_falco_clear_local_storage_queue_enabled: [
+			18835,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_falco_console_logger: [
+			28054,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_favicon_badging_enabled: [
+			22924,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_favicons_update_m1: [
+			14260,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_feature_parity_small_wins: [
+			26481,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_fmx_agm_enabled: [
+			13597,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_focus_management_for_status_audience: [
+			27719,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_forward_to_small_groups: [
+			27157,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_frequent_reactions_reacts_ago_threshold: [
+			27712,
+			"int",
+			10,
+			10
+		],
+		wa_web_frequent_reactions_store_enabled: [
+			27710,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_frequent_reactions_weight_reducer: [
+			27711,
+			"int",
+			90,
+			90
+		],
+		wa_web_global_search_prefix_based: [
+			24559,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_group_discard_dialog_contact_threshold: [
+			25682,
+			"int",
+			-1,
+			2
+		],
+		wa_web_group_info_notification_row: [
+			25292,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_groups_in_common_multi_contact: [
+			25808,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_growth_empty_state_upsell_variant_m1: [
+			15557,
+			"int",
+			1,
+			1
+		],
+		wa_web_highlight_me_mention: [
+			25408,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_highlight_me_mention_groupsize_threshold: [
+			25836,
+			"int",
+			130,
+			130
+		],
+		wa_web_history_sync_dynamic_throttling: [
+			19110,
+			"bool",
+			!0,
+			!0
+		],
+		wa_web_horizontal_link_previews: [
+			24425,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_hq_image_thumbnail_in_chat_scans: [
+			27512,
+			"int",
+			0,
+			0
+		],
+		wa_web_hybrid_context_menu_reactions_enabled: [
+			17650,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_hybrid_simple_chat_conversation_context_menu_enabled: [
+			17479,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_imagine_ur_enabled: [
+			25331,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_important_msg_notification: [
+			27614,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_inline_message_edit: [
+			33334,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_invite_link_page_enhancements: [
+			31210,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_jump_to_cart: [
+			27939,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_large_group_presence_enabled: [
+			29279,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_lists_full_width_filters: [
+			25805,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_lists_m1_enabled: [
+			22090,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_lists_m2_enabled: [
+			22086,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_loader_button_uix_improvement: [
+			27768,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_match_primary_icons: [
+			29293,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_me_tab: [
+			24944,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_media_loader_button_uix_improvement: [
+			33245,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_media_upload_retry_retries_count: [
+			27782,
+			"int",
+			0,
+			0
+		],
+		wa_web_mention_search: [
+			28455,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_multi_ppl_typing_indicator_for_chatlist_groups_variant: [
+			24560,
+			"int",
+			0,
+			0
+		],
+		wa_web_notifications_modal: [
+			32228,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_notifications_modal_variants: [
+			32277,
+			"int",
+			0,
+			0
+		],
+		wa_web_notify_for: [
+			25544,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_pathfinder_unsampling_config: [
+			32631,
+			"string",
+			"{\"schema_version\":1,\"session_flag_rules\":[]}",
+			"{\"schema_version\":1,\"session_flag_rules\":[{\"rule_id\":\"about_2_creation\",\"trigger_screen_keys\":[\"settings-drawer\",\"self-profile\"]}]}"
+		],
+		wa_web_pre_chat_device_id_test: [
+			26553,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_preload_conversation_chat_open: [
+			25937,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_ptt_loader_button_uix_improvement: [
+			32418,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_push_name_in_global_search_non_contacts_enabled: [
+			28506,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_quick_reactions: [
+			28621,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_reactions_2: [
+			22469,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_reactions_motion_v2_enabled: [
+			26102,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_reconnect_anr: [
+			31467,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_reduce_cascading_updates_chat_open: [
+			25006,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_reduce_forced_layout_chat_open: [
+			24526,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_reshare_poster_side_enabled: [
+			28732,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_rich_response_replying_enabled: [
+			30493,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_scrollable_reaction_tray_enabled: [
+			27709,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_search_emoji_picker: [
+			27857,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_search_empty_state_m1: [
+			25310,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_select_all_chats_enabled: [
+			30040,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_self_profile_photo_fix_enabled: [
+			24945,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_share_content_uj: [
+			22813,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_show_hd_photo: [
+			26610,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_show_status_ring_for_no_unread: [
+			22567,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_small_group_presence_enabled: [
+			29280,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_starred_msgs_search: [
+			27353,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_chain_from_chatlist: [
+			33399,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_chain_new_at_end: [
+			33400,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_comet_video_player_enabled: [
+			24791,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_first_upload_fix_enabled: [
+			25015,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_question_sticker_reply_enabled: [
+			30495,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_reaction_sticker_reply_enabled: [
+			30494,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_reshare_attribution_enabled: [
+			28813,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_resharer_flow_enabled: [
+			28812,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_status_viewer_side_poster_identifiers_enabled: [
+			25151,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_ur_bloks_enabled: [
+			25332,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_ur_imagine_video_enabled: [
+			25329,
+			"bool",
+			!1,
+			!0
+		],
+		wa_web_velocity_animate_migration_enabled: [
+			31784,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_video_comet_video_player_enabled: [
+			24905,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_voip_adaptive_grid_page_size: [
+			28909,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_voip_stack_log_level: [
+			30261,
+			"int",
+			3,
+			3
+		],
+		wa_web_wae_qpl_enabled: [
+			21742,
+			"bool",
+			!0,
+			!0
+		],
+		wa_web_wam_falco_critical_event_ids: [
+			32632,
+			"string",
+			"",
+			""
+		],
+		wa_web_wam_falco_flush_interval_ms: [
+			32393,
+			"int",
+			3e3,
+			3e3
+		],
+		wa_web_wam_falco_logging_enabled: [
+			26200,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_wam_falco_mode: [
+			25306,
+			"int",
+			0,
+			0
+		],
+		wa_web_wam_falco_shadow_event_ids: [
+			25309,
+			"string",
+			"",
+			""
+		],
+		wa_web_win_hybrid_plus_enabled: [
+			33753,
+			"bool",
+			!1,
+			!1
+		],
+		wa_web_xb_bubble_enabled: [
+			32818,
+			"bool",
+			!1,
+			!1
+		],
+		wa_webtp_edit_pdf_in_whatsapp_enabled: [
+			26279,
+			"bool",
+			!1,
+			!1
+		],
+		wa_webtp_pdf_renderer_mode_no_exposure: [
+			27941,
+			"int",
+			0,
+			0
+		],
+		wa_webtp_pdf_sharer_consent_copy_v2: [
+			30771,
+			"bool",
+			!1,
+			!1
+		],
+		wa_webtp_preload_thumbnail_renderer_no_exposure: [
+			27534,
+			"bool",
+			!1,
+			!1
+		],
+		wa_webtp_thumbnail_renderer_mode: [
+			27535,
+			"int",
+			0,
+			0
+		],
+		wa_webtp_thumbnail_renderer_timeout_ms: [
+			27148,
+			"int",
+			3e3,
+			3e3
+		],
+		wa_webtp_use_async_pdf_send: [
+			30214,
+			"bool",
+			!1,
+			!1
+		],
+		wa_webtp_use_pdf_annotations: [
+			32144,
+			"bool",
+			!1,
+			!0
+		],
+		wa_webtp_use_pdf_editor: [
+			23498,
+			"bool",
+			!1,
+			!1
+		],
+		wa_webtp_use_pdf_renderer: [
+			20607,
+			"bool",
+			!1,
+			!1
+		],
+		wa_webtp_use_thumbnail_renderer: [
+			20555,
+			"bool",
+			!1,
+			!1
+		],
+		wa_win_pdf_rendering_enabled: [
+			29548,
+			"bool",
+			!1,
+			!1
+		],
+		wa_win_webtp_pdf_viewer_preload_enabled: [
+			33347,
+			"bool",
+			!0,
+			!0
+		],
+		wabai_consent_cooldown: [
+			5746,
+			"int",
+			-1,
+			-1
+		],
+		wabai_consent_required: [
+			5747,
+			"bool",
+			!1,
+			!1
+		],
+		wabai_message_feedback_enabled: [
+			5215,
+			"bool",
+			!1,
+			!1
+		],
+		wabai_message_rendering_enabled: [
+			4873,
+			"bool",
+			!1,
+			!1
+		],
+		wabba_receiver_enabled: [
+			10970,
+			"bool",
+			!1,
+			!1
+		],
+		wabba_save_to_camera_roll_enabled: [
+			13114,
+			"bool",
+			!1,
+			!0
+		],
+		wae_metadata_integrity_timeout_minutes: [
+			4849,
+			"int",
+			5,
+			5
+		],
+		wam_disable_abkey_attribute: [
+			12390,
+			"bool",
+			!1,
+			!1
+		],
+		wam_disable_expokey_attribute: [
+			12391,
+			"bool",
+			!1,
+			!1
+		],
+		wamo_agm_enabled: [
+			15714,
+			"bool",
+			!1,
+			!1
+		],
+		wamo_privacy_tos_linked_highlighted_notice_id: [
+			14985,
+			"string",
+			"20610204",
+			"20610204"
+		],
+		wamo_privacy_tos_show_channels_nux_enabled: [
+			15254,
+			"bool",
+			!0,
+			!0
+		],
+		wamo_privacy_tos_unlinked_highlighted_notice_id: [
+			14987,
+			"string",
+			"20610203",
+			"20610203"
+		],
+		wamo_sub_admin_enabled_v2: [
+			11020,
+			"bool",
+			!1,
+			!1
+		],
+		wamo_sub_consumer_enabled_v2: [
+			11021,
+			"bool",
+			!1,
+			!1
+		],
+		wamo_sub_logging_enabled_v2: [
+			11017,
+			"bool",
+			!1,
+			!0
+		],
+		wamo_sub_messages_supported: [
+			11062,
+			"bool",
+			!1,
+			!1
+		],
+		wamo_sub_process_message_kill_switch: [
+			12722,
+			"bool",
+			!0,
+			!0
+		],
+		wavoip_enable_ml_namespace_v2: [
+			26947,
+			"bool",
+			!1,
+			!1
+		],
+		wavoip_legacy_ml_qpl_exp_tag: [
+			30561,
+			"string",
+			"none",
+			"none"
+		],
+		wavoip_ml_bwe_cong_model_download_versions: [
+			21732,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_cong_model_download_versions_v2: [
+			27991,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_gc_hd_target_model_download_versions: [
+			21822,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_gc_hd_target_model_download_versions_v2: [
+			28021,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_gc_undershoot_model_download_versions: [
+			21821,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_gc_undershoot_model_download_versions_v2: [
+			28019,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_hd_target_model_download_versions: [
+			21738,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_hd_target_model_download_versions_v2: [
+			27990,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_plc_model_download_versions: [
+			5228,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_plc_model_download_versions_v2: [
+			27998,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_quickhd_model_download_versions: [
+			27109,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_rl_model_download_versions: [
+			21733,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_tr_model_download_versions: [
+			21734,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_tr_model_download_versions_v2: [
+			27996,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_bwe_undershoot_model_download_versions: [
+			5231,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_media_automos_model_download_versions: [
+			21731,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_media_ns_model_download_versions: [
+			21737,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_media_vmos_model_download_versions: [
+			21736,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_media_vsr_model_download_versions: [
+			21735,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_nadl_model_download_versions: [
+			24174,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_nadl_model_download_versions_v2: [
+			28015,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_qpl_exp_tag: [
+			30539,
+			"string",
+			"none",
+			"none"
+		],
+		wavoip_ml_temp_model_download_versions: [
+			21815,
+			"string",
+			"",
+			""
+		],
+		wavoip_ml_transport_download_versions: [
+			24173,
+			"string",
+			"",
+			""
+		],
+		waweb_chatinfo_refresh: [
+			23018,
+			"bool",
+			!1,
+			!0
+		],
+		waweb_crossposting_attributions: [
+			26138,
+			"bool",
+			!1,
+			!1
+		],
+		waweb_enable_legacy_image_zoom: [
+			27239,
+			"bool",
+			!1,
+			!1
+		],
+		waweb_status_close_friends_viewer_side_enabled: [
+			26659,
+			"bool",
+			!1,
+			!1
+		],
+		wds_radius_and_casing: [
+			3350,
+			"bool",
+			!1,
+			!0
+		],
+		wds_web_badge: [
+			27856,
+			"bool",
+			!1,
+			!0
+		],
+		wds_web_chip: [
+			20970,
+			"bool",
+			!1,
+			!0
+		],
+		wds_web_composer_toolbar_v2: [
+			26773,
+			"bool",
+			!1,
+			!0
+		],
+		wds_web_dialog: [
+			28557,
+			"bool",
+			!1,
+			!0
+		],
+		wds_web_expressions_panel: [
+			25144,
+			"bool",
+			!1,
+			!1
+		],
+		wds_web_menu_reaction_detail_panel_v2: [
+			30694,
+			"bool",
+			!1,
+			!1
+		],
+		wds_web_profile_photo: [
+			27954,
+			"bool",
+			!1,
+			!0
+		],
+		wds_web_rich_text_field: [
+			27264,
+			"bool",
+			!1,
+			!1
+		],
+		wds_web_submenus: [
+			25351,
+			"bool",
+			!1,
+			!0
+		],
+		wds_web_text_layout: [
+			31789,
+			"bool",
+			!1,
+			!1
+		],
+		wds_web_toast: [
+			23486,
+			"bool",
+			!1,
+			!0
+		],
+		web_abprop_block_catalog_creation_ecommerce_compliance_india: [
+			894,
+			"bool",
+			!1,
+			!1
+		],
+		web_abprop_business_profile_refresh_linked_account_enabled: [
+			764,
+			"bool",
+			!1,
+			!1
+		],
+		web_abprop_business_profile_refresh_linked_accounts_killswitch: [
+			1351,
+			"bool",
+			!1,
+			!1
+		],
+		web_abprop_collections_nux_banner: [
+			741,
+			"bool",
+			!1,
+			!1
+		],
+		web_abprop_core_wam_runtime: [
+			1753,
+			"bool",
+			!1,
+			!1
+		],
+		web_abprop_direct_connection_md: [
+			869,
+			"bool",
+			!1,
+			!0
+		],
+		web_abprop_drop_full_history_sync: [
+			600,
+			"bool",
+			!1,
+			!1
+		],
+		web_abprop_media_links_docs_search: [
+			2063,
+			"bool",
+			!1,
+			!1
+		],
+		web_abprop_screen_lock_enabled: [
+			1680,
+			"bool",
+			!1,
+			!1
+		],
+		web_add_contact: [
+			26892,
+			"string",
+			"",
+			""
+		],
+		web_adv_logout_on_self_device_list_expired: [
+			11011,
+			"bool",
+			!1,
+			!1
+		],
+		web_ai_group_open_support: [
+			23530,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_async_contacts_restore_from_db_enabled: [
+			27775,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_async_media_decryption_enabled: [
+			23200,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_async_msg_send_handler: [
+			27249,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_async_native_app_state_bridge_enabled: [
+			29551,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_async_sqlite_bridge_operations: [
+			29460,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_batch_and_queue_bulk_contacts_db_writes_enabled: [
+			25413,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_batch_profile_picture_bridge_operations: [
+			29122,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_disable_memory_logging: [
+			31047,
+			"bool",
+			!1,
+			!0
+		],
+		web_anr_file_size_threshold_to_use_worker_mb: [
+			22930,
+			"int",
+			0,
+			0
+		],
+		web_anr_group_metadata_yield: [
+			29294,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_media_chunk_enc_delay_enabled: [
+			22931,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_noop_gc_enabled: [
+			25915,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_optimized_initial_contacts_sync_enabled: [
+			30227,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_prune_cmc: [
+			29060,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_skip_unused_contacts_db_updates_enabled: [
+			30043,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_spinner_gpu_animation: [
+			29405,
+			"bool",
+			!1,
+			!1
+		],
+		web_anr_throttle_signal_snapshot_enabled: [
+			28890,
+			"bool",
+			!1,
+			!1
+		],
+		web_attach_menu_add_drawing_enabled: [
+			24384,
+			"bool",
+			!1,
+			!1
+		],
+		web_autodownload_stickers: [
+			7422,
+			"bool",
+			!1,
+			!0
+		],
+		web_background_sync_v2: [
+			8782,
+			"bool",
+			!1,
+			!1
+		],
+		web_batched_status_sending_enabled: [
+			34366,
+			"bool",
+			!1,
+			!1
+		],
+		web_batched_status_split_to_parts: [
+			34539,
+			"int",
+			0,
+			0
+		],
+		web_bb_genai_composer_min_words: [
+			32054,
+			"int",
+			4,
+			4
+		],
+		web_biz_profile_options: [
+			14881,
+			"int",
+			116,
+			116
+		],
+		web_biz_quality_telemetry_enabled: [
+			27855,
+			"bool",
+			!1,
+			!0
+		],
+		web_biz_quality_telemetry_message_clicks_enabled: [
+			27854,
+			"bool",
+			!1,
+			!0
+		],
+		web_biz_quality_telemetry_message_level_actions_enabled: [
+			28590,
+			"bool",
+			!1,
+			!0
+		],
+		web_biz_quality_telemetry_message_reads_enabled: [
+			28574,
+			"bool",
+			!1,
+			!0
+		],
+		web_biz_simple_signal_enabled: [
+			28573,
+			"int",
+			0,
+			0
+		],
+		web_biz_simple_signal_group_enabled: [
+			28679,
+			"bool",
+			!1,
+			!1
+		],
+		web_bot_profile_gql_migration_enabled: [
+			28941,
+			"bool",
+			!1,
+			!1
+		],
+		web_bot_profile_pic_gql_migration_enabled: [
+			30597,
+			"bool",
+			!1,
+			!0
+		],
+		web_browser_min_storage_quota: [
+			3135,
+			"int",
+			5,
+			5
+		],
+		web_browser_quota_threshold: [
+			3134,
+			"int",
+			100,
+			100
+		],
+		web_bug_reporting_request_peer_log_enabled: [
+			30485,
+			"bool",
+			!1,
+			!1
+		],
+		web_bulk_add_contacts_enabled: [
+			24875,
+			"bool",
+			!1,
+			!1
+		],
+		web_business_broadcast_genai_custom_user_prompt_enabled: [
+			32052,
+			"bool",
+			!1,
+			!0
+		],
+		web_business_broadcast_genai_text: [
+			32050,
+			"bool",
+			!1,
+			!0
+		],
+		web_business_broadcast_genai_text_languages: [
+			32117,
+			"string",
+			"en,es",
+			"en,es"
+		],
+		web_business_broadcast_genai_text_max_tries: [
+			32053,
+			"int",
+			30,
+			30
+		],
+		web_business_broadcast_genai_text_model: [
+			32051,
+			"string",
+			"LLAMA",
+			"LLAMA"
+		],
+		web_business_broadcast_genai_text_no_exp: [
+			32055,
+			"bool",
+			!1,
+			!0
+		],
+		web_business_tools_drawer_enabled: [
+			6803,
+			"bool",
+			!1,
+			!1
+		],
+		web_cache_open_failed_reload_flow_enabled: [
+			22155,
+			"bool",
+			!1,
+			!1
+		],
+		web_calendar_message_density_enabled: [
+			25823,
+			"bool",
+			!1,
+			!0
+		],
+		web_calling_auto_popout_video: [
+			28046,
+			"bool",
+			!1,
+			!1
+		],
+		web_calling_enable_on_windows: [
+			26259,
+			"bool",
+			!1,
+			!1
+		],
+		web_calling_full_screen_toggle_enabled: [
+			28830,
+			"bool",
+			!1,
+			!1
+		],
+		web_calling_offline_resume_ordering: [
+			29564,
+			"bool",
+			!1,
+			!1
+		],
+		web_calling_pause_bg_during_call_mode: [
+			34144,
+			"int",
+			0,
+			0
+		],
+		web_calling_perf_optimizations_bitmask: [
+			22186,
+			"int",
+			1,
+			1
+		],
+		web_calling_smooth_call_link_lobby: [
+			33131,
+			"bool",
+			!0,
+			!0
+		],
+		web_calling_speaker_strip_resize_enabled: [
+			30928,
+			"bool",
+			!1,
+			!1
+		],
+		web_calls_tab_empty_state_buttons: [
+			17724,
+			"bool",
+			!1,
+			!0
+		],
+		web_catalog_recovery_flow_enabled: [
+			14294,
+			"bool",
+			!1,
+			!1
+		],
+		web_catalog_viewing_variants_enabled: [
+			15534,
+			"bool",
+			!1,
+			!1
+		],
+		web_channel_status_likes_sending_enabled: [
+			32428,
+			"bool",
+			!1,
+			!0
+		],
+		web_channel_video_server_transcode_upload: [
+			19920,
+			"bool",
+			!1,
+			!1
+		],
+		web_chat_info_action_buttons_refresh: [
+			14664,
+			"bool",
+			!1,
+			!0
+		],
+		web_chat_theme_drawer_title: [
+			28157,
+			"bool",
+			!1,
+			!1
+		],
+		web_chatlist_fts_listener_cleanup: [
+			33181,
+			"bool",
+			!1,
+			!0
+		],
+		web_chatpsa_forwarding: [
+			23695,
+			"bool",
+			!1,
+			!1
+		],
+		web_chats_content_visibility: [
+			31259,
+			"bool",
+			!1,
+			!0
+		],
+		web_coex_simple_signal_enabled: [
+			30577,
+			"int",
+			0,
+			0
+		],
+		web_comms_socket_reconnect_enabled: [
+			7854,
+			"bool",
+			!1,
+			!1
+		],
+		web_communities_general_chat_v_2: [
+			8580,
+			"bool",
+			!1,
+			!0
+		],
+		web_configurable_quick_actions_m1: [
+			29874,
+			"bool",
+			!1,
+			!1
+		],
+		web_configurable_quick_actions_m1_channels: [
+			31781,
+			"bool",
+			!1,
+			!1
+		],
+		web_configurable_quick_actions_m1_communities: [
+			31782,
+			"bool",
+			!1,
+			!1
+		],
+		web_contact_collection_locale_listener: [
+			31103,
+			"bool",
+			!1,
+			!1
+		],
+		web_contact_sort_letters_first: [
+			28962,
+			"int",
+			-1,
+			-1
+		],
+		web_conversation_cleanup_temp_collection: [
+			30829,
+			"bool",
+			!1,
+			!1
+		],
+		web_crosspost_settings_sync: [
+			26296,
+			"int",
+			0,
+			0
+		],
+		web_date_marker_calendar_enabled: [
+			25811,
+			"bool",
+			!1,
+			!0
+		],
+		web_deprecate_mms4_hash_based_download: [
+			3152,
+			"bool",
+			!1,
+			!0
+		],
+		web_design_refresh: [
+			6665,
+			"bool",
+			!1,
+			!1
+		],
+		web_detached_dom_unmount_cleanup: [
+			33393,
+			"bool",
+			!1,
+			!0
+		],
+		web_dexie_hooks_support_enabled: [
+			12831,
+			"bool",
+			!1,
+			!0
+		],
+		web_disable_compose_box_for_deprecated_chats: [
+			30753,
+			"bool",
+			!1,
+			!0
+		],
+		web_disable_logs_low_end_device: [
+			18660,
+			"bool",
+			!1,
+			!1
+		],
+		web_disable_sw_on_safari_pwa: [
+			7281,
+			"bool",
+			!1,
+			!1
+		],
+		web_display_lid_contacts: [
+			24280,
+			"bool",
+			!1,
+			!1
+		],
+		web_drawer_descriptor_enabled: [
+			27677,
+			"bool",
+			!1,
+			!0
+		],
+		web_e2e_backfill_expire_time: [
+			3234,
+			"int",
+			5,
+			60
+		],
+		web_e2e_status_likes_sending_enabled: [
+			34296,
+			"bool",
+			!1,
+			!0
+		],
+		web_email_invites_group_info: [
+			33556,
+			"bool",
+			!1,
+			!1
+		],
+		web_enable_biz_catalog_view_ps_logging: [
+			2056,
+			"bool",
+			!0,
+			!0
+		],
+		web_enable_camera_capture_refresh: [
+			28316,
+			"bool",
+			!1,
+			!1
+		],
+		web_enable_improved_bulk_merge: [
+			19854,
+			"bool",
+			!1,
+			!0
+		],
+		web_enable_profile_pic_thumb_db_caching: [
+			2018,
+			"bool",
+			!1,
+			!1
+		],
+		web_evict_thumbnail_hq_on_inactive: [
+			32702,
+			"bool",
+			!1,
+			!0
+		],
+		web_evolve_about_send_enabled: [
+			5347,
+			"bool",
+			!1,
+			!1
+		],
+		web_fix_duplicated_lids_history_sync: [
+			19994,
+			"bool",
+			!1,
+			!1
+		],
+		web_force_lid_chats_in_history: [
+			24343,
+			"bool",
+			!0,
+			!0
+		],
+		web_frequently_contacted_enabled: [
+			29063,
+			"int",
+			-1,
+			-1
+		],
+		web_get_msg_exist_optmise: [
+			29880,
+			"bool",
+			!1,
+			!1
+		],
+		web_getters_lru_cache_size_limit: [
+			30796,
+			"int",
+			0,
+			0
+		],
+		web_group_bulk_add_contact: [
+			30417,
+			"bool",
+			!1,
+			!1
+		],
+		web_group_experimentation_enable: [
+			25414,
+			"bool",
+			!1,
+			!1
+		],
+		web_group_hover_card_variant: [
+			30260,
+			"int",
+			0,
+			0
+		],
+		web_group_profile_editor: [
+			1745,
+			"bool",
+			!0,
+			!0
+		],
+		web_guest_calling_representation_enabled: [
+			31533,
+			"bool",
+			!1,
+			!1
+		],
+		web_guest_calling_waiting_room_admin_xp_enabled: [
+			33384,
+			"bool",
+			!1,
+			!0
+		],
+		web_guest_calling_waiting_room_approval_note_enabled: [
+			33385,
+			"bool",
+			!1,
+			!0
+		],
+		web_history_sync_allow_duplicate_in_bulk_error: [
+			10842,
+			"bool",
+			!1,
+			!0
+		],
+		web_history_sync_worker_enabled: [
+			24147,
+			"bool",
+			!1,
+			!1
+		],
+		web_hybrid_apply_latest_db_schema_optimization_enabled: [
+			23595,
+			"bool",
+			!1,
+			!0
+		],
+		web_image_max_edge: [
+			3042,
+			"int",
+			1600,
+			1600
+		],
+		web_image_max_hd_edge: [
+			3204,
+			"int",
+			2560,
+			2560
+		],
+		web_init_chat_batch_size: [
+			1171,
+			"int",
+			100,
+			100
+		],
+		web_init_chat_max_unread_message_count: [
+			1172,
+			"int",
+			0,
+			0
+		],
+		web_intern_dogfooding_upsell_content: [
+			6860,
+			"string",
+			"",
+			""
+		],
+		web_intern_dogfooding_upsell_enabled: [
+			6858,
+			"bool",
+			!1,
+			!1
+		],
+		web_intern_dogfooding_upsell_snooze_duration: [
+			6859,
+			"int",
+			86400,
+			86400
+		],
+		web_internal_in_app_bug_reporting_enable: [
+			4681,
+			"bool",
+			!1,
+			!1
+		],
+		web_ip_token_enabled: [
+			20043,
+			"bool",
+			!1,
+			!1
+		],
+		web_jpeg_quality: [
+			6619,
+			"int",
+			92,
+			92
+		],
+		web_larger_link_previews: [
+			8172,
+			"bool",
+			!1,
+			!1
+		],
+		web_link_preview_debounce_period_ms: [
+			33339,
+			"int",
+			700,
+			700
+		],
+		web_link_preview_sync_enabled: [
+			2156,
+			"bool",
+			!1,
+			!0
+		],
+		web_log_capacity_override: [
+			24363,
+			"int",
+			0,
+			0
+		],
+		web_logout_unmigrated_companion: [
+			31151,
+			"bool",
+			!1,
+			!1
+		],
+		web_loom_stuck_trace_timeout_ms: [
+			34304,
+			"int",
+			0,
+			12e4
+		],
+		web_low_end_device_level: [
+			18747,
+			"int",
+			0,
+			0
+		],
+		web_mac_beta_upsell: [
+			16223,
+			"bool",
+			!1,
+			!0
+		],
+		web_material_refresh: [
+			6332,
+			"bool",
+			!1,
+			!1
+		],
+		web_max_contacts_to_show_common_groups: [
+			2264,
+			"int",
+			10,
+			10
+		],
+		web_max_found_common_groups_displayed: [
+			2268,
+			"int",
+			15,
+			15
+		],
+		web_media_compute_in_worker_enabled: [
+			25641,
+			"bool",
+			!1,
+			!1
+		],
+		web_media_encrypt_upload_in_worker_enabled: [
+			31721,
+			"bool",
+			!1,
+			!1
+		],
+		web_media_worker_split_enabled: [
+			27753,
+			"bool",
+			!1,
+			!1
+		],
+		web_memlab_fixes: [
+			33563,
+			"bool",
+			!1,
+			!0
+		],
+		web_memlab_fixes_2: [
+			34305,
+			"bool",
+			!1,
+			!0
+		],
+		web_memory_reduction: [
+			30394,
+			"bool",
+			!1,
+			!1
+		],
+		web_menu_share_group: [
+			26850,
+			"bool",
+			!1,
+			!1
+		],
+		web_message_custom_aria_label: [
+			2280,
+			"bool",
+			!1,
+			!1
+		],
+		web_message_drop_bulk_db_operation_fallback_enabled: [
+			7865,
+			"bool",
+			!1,
+			!1
+		],
+		web_message_list_a11y_redesign: [
+			2016,
+			"bool",
+			!0,
+			!0
+		],
+		web_message_plugin_frontend_registration_enabled: [
+			2793,
+			"bool",
+			!1,
+			!1
+		],
+		web_message_processing_cache_size: [
+			3728,
+			"int",
+			400,
+			400
+		],
+		web_messages_content_visibility: [
+			31260,
+			"bool",
+			!1,
+			!0
+		],
+		web_move_message_secret_top_level_enabled: [
+			29492,
+			"bool",
+			!1,
+			!0
+		],
+		web_msg_infra_remove_devices_on_406_error_enabled: [
+			27463,
+			"bool",
+			!1,
+			!1
+		],
+		web_multi_skin_toned_emoji_picker: [
+			1850,
+			"bool",
+			!1,
+			!1
+		],
+		web_native_fetch_media_download: [
+			3031,
+			"bool",
+			!1,
+			!1
+		],
+		web_navigation_bar_updates_tab: [
+			21250,
+			"bool",
+			!1,
+			!1
+		],
+		web_new_chat_flow_refresh_variant: [
+			12276,
+			"int",
+			0,
+			0
+		],
+		web_new_event_emitter: [
+			31127,
+			"bool",
+			!1,
+			!0
+		],
+		web_new_wds_icons: [
+			31128,
+			"bool",
+			!1,
+			!0
+		],
+		web_non_blocking_offline_resume_max_message_count: [
+			2508,
+			"int",
+			1e3,
+			1e3
+		],
+		web_noncritical_history_sync_message_processing_break_iteration: [
+			5106,
+			"int",
+			100,
+			100
+		],
+		web_notifications_banner_new_logic_enabled: [
+			19399,
+			"bool",
+			!1,
+			!1
+		],
+		web_notifications_banner_variant: [
+			19168,
+			"int",
+			0,
+			0
+		],
+		web_offline_dynamic_batch_config: [
+			5297,
+			"string",
+			"{\"version\": \"progressive\", \"multiplier\": 0.25}",
+			"{\"version\": \"progressive\", \"multiplier\": 0.25}"
+		],
+		web_offline_dynamic_batch_size_enabled: [
+			5271,
+			"bool",
+			!1,
+			!0
+		],
+		web_offline_message_processor_timeout_seconds: [
+			8406,
+			"int",
+			0,
+			0
+		],
+		web_offline_resume_qpl_enabled: [
+			1773,
+			"bool",
+			!1,
+			!1
+		],
+		web_offline_resume_wait_for_ping_timeout_seconds: [
+			16956,
+			"int",
+			10,
+			10
+		],
+		web_optimized_avatars: [
+			31257,
+			"bool",
+			!1,
+			!0
+		],
+		web_optimized_compositing_layers: [
+			32280,
+			"bool",
+			!1,
+			!1
+		],
+		web_optimized_event_handlers: [
+			31129,
+			"bool",
+			!1,
+			!0
+		],
+		web_optimized_message_tails: [
+			31258,
+			"bool",
+			!1,
+			!0
+		],
+		web_optimized_pills: [
+			31130,
+			"bool",
+			!1,
+			!0
+		],
+		web_original_photo_quality_upload_enabled: [
+			3136,
+			"bool",
+			!1,
+			!1
+		],
+		web_otp_copy_code_disabled: [
+			4330,
+			"bool",
+			!1,
+			!1
+		],
+		web_pathfinder_logging: [
+			27628,
+			"int",
+			0,
+			3
+		],
+		web_payment_notifications_ack_kick_fix_enabled: [
+			7546,
+			"bool",
+			!1,
+			!1
+		],
+		web_pdf_thumbnail_size_in_bytes: [
+			16834,
+			"int",
+			1300,
+			1300
+		],
+		web_pending_message_cache_enabled: [
+			8353,
+			"bool",
+			!1,
+			!0
+		],
+		web_phone_number_global_search: [
+			22603,
+			"bool",
+			!1,
+			!1
+		],
+		web_pnless_stanzas: [
+			26211,
+			"bool",
+			!1,
+			!1
+		],
+		web_preload_chat_messages: [
+			5079,
+			"bool",
+			!1,
+			!0
+		],
+		web_premium_messages_interactivity_rendering_enabled: [
+			4596,
+			"bool",
+			!1,
+			!0
+		],
+		web_ptt_render_throttling: [
+			31126,
+			"bool",
+			!1,
+			!0
+		],
+		web_ptt_streamer_upload: [
+			1902,
+			"bool",
+			!1,
+			!0
+		],
+		web_ptt_transcription_button_enabled: [
+			32799,
+			"bool",
+			!1,
+			!1
+		],
+		web_ptt_transcription_enabled: [
+			32798,
+			"bool",
+			!1,
+			!1
+		],
+		web_ptt_transcription_max_duration_seconds: [
+			32800,
+			"int",
+			0,
+			0
+		],
+		web_pwa_background_sync: [
+			6656,
+			"bool",
+			!1,
+			!1
+		],
+		web_pwa_background_sync_min_interval_hours: [
+			6706,
+			"int",
+			24,
+			24
+		],
+		web_qp_bb_re_engagement_past_29_days: [
+			30570,
+			"bool",
+			!1,
+			!1
+		],
+		web_qp_smb_bb_pmf_test_high_engagement_user: [
+			30569,
+			"bool",
+			!1,
+			!1
+		],
+		web_qp_smb_bb_recent_message_send: [
+			30568,
+			"bool",
+			!1,
+			!1
+		],
+		web_rating_and_review_contextual_prompt_enabled: [
+			18737,
+			"bool",
+			!1,
+			!1
+		],
+		web_rating_and_review_enabled: [
+			17540,
+			"bool",
+			!1,
+			!1
+		],
+		web_read_self_watermark_processing: [
+			30736,
+			"bool",
+			!1,
+			!1
+		],
+		web_read_self_watermark_receive_store_ts: [
+			29396,
+			"bool",
+			!1,
+			!1
+		],
+		web_read_self_watermark_send_store_ts: [
+			29546,
+			"bool",
+			!1,
+			!1
+		],
+		web_recent_sync_chunk_download_optimization: [
+			7356,
+			"bool",
+			!1,
+			!1
+		],
+		web_remove_message_secret_from_quoted_enabled: [
+			29491,
+			"bool",
+			!1,
+			!0
+		],
+		web_request_missing_keys_for_removes: [
+			24838,
+			"bool",
+			!1,
+			!1
+		],
+		web_resume_optimized_read_receipt_send_interval: [
+			5502,
+			"int",
+			500,
+			500
+		],
+		web_screen_lock_max_retries: [
+			2622,
+			"int",
+			10,
+			10
+		],
+		web_search_results_type_date_filters: [
+			32787,
+			"bool",
+			!1,
+			!1
+		],
+		web_self_adv_daily_use_lid: [
+			34414,
+			"bool",
+			!1,
+			!0
+		],
+		web_send_hid_failed_decrypt_in_receipts_enabled: [
+			31113,
+			"bool",
+			!1,
+			!0
+		],
+		web_send_invisible_msg_max_group_size: [
+			1945,
+			"int",
+			1024,
+			1024
+		],
+		web_send_invisible_msg_min_group_size: [
+			1100,
+			"int",
+			128,
+			128
+		],
+		web_send_orphan_in_receipts_enabled: [
+			31114,
+			"bool",
+			!1,
+			!0
+		],
+		web_shop_storefront_message: [
+			1053,
+			"bool",
+			!1,
+			!1
+		],
+		web_show_to_hide_enabled: [
+			27958,
+			"bool",
+			!1,
+			!1
+		],
+		web_signal_future_messages_max: [
+			12509,
+			"int",
+			2e4,
+			2e4
+		],
+		web_socket_parallel_connection_enabled: [
+			8019,
+			"bool",
+			!1,
+			!1
+		],
+		web_status_batch_size: [
+			34540,
+			"int",
+			500,
+			500
+		],
+		web_status_crossposting_enabled: [
+			21501,
+			"bool",
+			!1,
+			!1
+		],
+		web_status_likes_send_v2_enabled: [
+			26470,
+			"bool",
+			!1,
+			!0
+		],
+		web_status_ranking: [
+			31683,
+			"bool",
+			!1,
+			!1
+		],
+		web_status_ranking_enabled: [
+			31684,
+			"bool",
+			!1,
+			!1
+		],
+		web_status_recv_via_smax: [
+			34258,
+			"bool",
+			!1,
+			!0
+		],
+		web_status_send_via_smax: [
+			34259,
+			"bool",
+			!1,
+			!0
+		],
+		web_sticker_suggestions_enable: [
+			4726,
+			"bool",
+			!1,
+			!1
+		],
+		web_sticky_hd_photo_setting_enabled: [
+			8115,
+			"bool",
+			!1,
+			!1
+		],
+		web_store_quota_manager_enabled: [
+			3133,
+			"bool",
+			!1,
+			!1
+		],
+		web_streaming_document_encrypt_min_bytes: [
+			31864,
+			"int",
+			0,
+			5e7
+		],
+		web_syncd_fatal_fields_from_L1104589PRV2: [
+			1808,
+			"bool",
+			!1,
+			!1
+		],
+		web_syncd_max_mutations_to_process_during_resume: [
+			1513,
+			"int",
+			1e3,
+			1e3
+		],
+		web_tc_token_db_read_enabled: [
+			5110,
+			"bool",
+			!1,
+			!1
+		],
+		web_test_abprop_delete_me: [
+			27274,
+			"bool",
+			!1,
+			!1
+		],
+		web_thread_loading_infra_enabled: [
+			26192,
+			"bool",
+			!1,
+			!0
+		],
+		web_threads_infra_enabled: [
+			21062,
+			"bool",
+			!0,
+			!0
+		],
+		web_top_level_message_secret_enforcement_enabled: [
+			32231,
+			"bool",
+			!1,
+			!0
+		],
+		web_ui_refresh_m1: [
+			12993,
+			"bool",
+			!1,
+			!1
+		],
+		web_use_kaleidoscope_media_check_enabled: [
+			20375,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_adaptive_sctp_prewarm: [
+			32804,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_audio_capture_impl: [
+			21688,
+			"int",
+			0,
+			0
+		],
+		web_voip_audio_playback_impl: [
+			21689,
+			"int",
+			0,
+			0
+		],
+		web_voip_av_sync_debug_overlay: [
+			31481,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_capture_video_rotation_type: [
+			27973,
+			"int",
+			0,
+			0
+		],
+		web_voip_dynamic_thread_preallocate_count: [
+			23789,
+			"int",
+			0,
+			0
+		],
+		web_voip_load_wasm_variant: [
+			23045,
+			"string",
+			"prod-nonlab",
+			"prod-nonlab"
+		],
+		web_voip_low_resource_device: [
+			28203,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_outgoing_call_setup_latency_mode: [
+			33122,
+			"int",
+			0,
+			0
+		],
+		web_voip_pre_init_worker_bootstrap: [
+			34685,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_runtime_stack_selection_enabled: [
+			33151,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_sctp_worker_safari_exp: [
+			27695,
+			"int",
+			1,
+			1
+		],
+		web_voip_skip_offline_wait_on_call_intent: [
+			33310,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_use_content_addressed_wasm: [
+			33389,
+			"bool",
+			!1,
+			!1
+		],
+		web_voip_video_capture_impl: [
+			21350,
+			"int",
+			0,
+			0
+		],
+		web_voip_video_low_cap_height: [
+			28042,
+			"int",
+			270,
+			270
+		],
+		web_voip_video_low_cap_width: [
+			28041,
+			"int",
+			480,
+			480
+		],
+		web_voip_video_mid_cap_height: [
+			28044,
+			"int",
+			360,
+			360
+		],
+		web_voip_video_mid_cap_width: [
+			28043,
+			"int",
+			640,
+			640
+		],
+		web_voip_video_renderer: [
+			20573,
+			"int",
+			0,
+			0
+		],
+		web_waffle: [
+			14300,
+			"bool",
+			!1,
+			!1
+		],
+		web_wam_max_buffer_upload_size_bytes: [
+			9501,
+			"int",
+			64e3,
+			64e3
+		],
+		web_whats_new_auto_modal: [
+			29621,
+			"bool",
+			!1,
+			!1
+		],
+		web_whats_new_auto_modal_content_version: [
+			33475,
+			"int",
+			2,
+			2
+		],
+		web_whats_new_auto_modal_short_cooldown: [
+			29622,
+			"bool",
+			!1,
+			!1
+		],
+		web_whats_new_banner: [
+			29619,
+			"bool",
+			!1,
+			!1
+		],
+		web_whats_new_banner_short_cooldown: [
+			29620,
+			"bool",
+			!1,
+			!1
+		],
+		web_whats_new_banner_short_cooldown_v2: [
+			29709,
+			"bool",
+			!1,
+			!1
+		],
+		web_whats_new_carousel: [
+			29618,
+			"bool",
+			!1,
+			!1
+		],
+		web_windows_calling_32p_version: [
+			31845,
+			"int",
+			3,
+			3
+		],
+		web_worker_adv_processing_enabled: [
+			24924,
+			"bool",
+			!1,
+			!1
+		],
+		web_worker_prekey_processing_enabled: [
+			26133,
+			"bool",
+			!1,
+			!1
+		],
+		webc_page_load_early_commit_enabled: [
+			8458,
+			"bool",
+			!1,
+			!1
+		],
+		webview2_disable_gpu_acceleration: [
+			18262,
+			"bool",
+			!1,
+			!1
+		],
+		webview2_disable_gpu_acceleration_memory_threshold_mb: [
+			23073,
+			"int",
+			-1,
+			-1
+		],
+		webview2_enable_offline_support: [
+			21793,
+			"bool",
+			!1,
+			!1
+		],
+		whatsapp_vpv_logging_enabled: [
+			9833,
+			"bool",
+			!0,
+			!0
+		],
+		win_call_log_send_outgoing_syncd_mutations: [
+			5308,
+			"bool",
+			!1,
+			!0
+		],
+		win_enable_ss_button_audio: [
+			9633,
+			"bool",
+			!1,
+			!1
+		],
+		win_hybrid_bt_enabled: [
+			30041,
+			"bool",
+			!1,
+			!0
+		],
+		win_hybrid_force_persistent_storage_permission: [
+			20260,
+			"bool",
+			!0,
+			!0
+		],
+		win_hybrid_voip_anr_optimizations: [
+			22616,
+			"int",
+			0,
+			0
+		],
+		win_hybrid_vsr_button_enabled: [
+			34272,
+			"bool",
+			!1,
+			!0
+		],
+		win_hybrid_vsr_button_enabled_2: [
+			34279,
+			"bool",
+			!1,
+			!0
+		],
+		win_hybrid_vsr_enabled: [
+			34271,
+			"bool",
+			!1,
+			!0
+		],
+		win_hybrid_vsr_enabled_2: [
+			34280,
+			"bool",
+			!1,
+			!0
+		],
+		win_network_state_watchdog_interval: [
+			7737,
+			"int",
+			30,
+			30
+		],
+		windows_contacts_initial_sync_delay: [
+			24883,
+			"int",
+			10,
+			1
+		],
+		windows_contacts_sync_interval: [
+			24882,
+			"int",
+			60,
+			5
+		],
+		windows_graceful_degradation_version: [
+			8454,
+			"int",
+			0,
+			0
+		],
+		windows_ss_capture_driver_type: [
+			10434,
+			"int",
+			0,
+			0
+		],
+		winrt_renderer: [
+			10966,
+			"bool",
+			!0,
+			!0
+		],
+		wmi_async_await_prep: [
+			29197,
+			"bool",
+			!1,
+			!1
+		],
+		wmi_jm_to_ts_m1: [
+			32880,
+			"bool",
+			!1,
+			!1
+		],
+		wmi_jm_to_ts_serviced: [
+			34410,
+			"bool",
+			!1,
+			!1
+		],
+		wmi_task_scheduler_second_step: [
+			30276,
+			"bool",
+			!1,
+			!1
+		],
+		wmi_worker_scheduler_web: [
+			27237,
+			"bool",
+			!1,
+			!1
+		],
+		xplat_attachment_format_check_v2: [
+			8082,
+			"bool",
+			!1,
+			!1
+		],
+		youtube_inline_playback_killswitch: [
+			3522,
+			"bool",
+			!1,
+			!1
+		]
+	};
+	i.ABPropConfigs = e;
+}), 66);

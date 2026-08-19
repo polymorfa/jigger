@@ -1,0 +1,115 @@
+__d("WAWebAddToFavoritesAction", [
+	"fbt",
+	"WALogger",
+	"WATimeUtils",
+	"WAWebABProps",
+	"WAWebActionToast.react",
+	"WAWebConfirmPopup.react",
+	"WAWebDBFavoriteDatabaseApi",
+	"WAWebFavoriteCollection",
+	"WAWebFavoritesLogging",
+	"WAWebFavoritesSync",
+	"WAWebFbtCommon",
+	"WAWebInboxFiltersGatingUtils",
+	"WAWebL10NIsUsingSupportedBritishEnglishLocale",
+	"WAWebListsGatingUtils",
+	"WAWebModalManager",
+	"WAWebSyncdCoreApi",
+	"WAWebToastManager",
+	"asyncToGeneratorRuntime",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u, c = u || (u = o("react"));
+	function d() {
+		return o("WAWebListsGatingUtils").isListsEnabled() ? o("WAWebL10NIsUsingSupportedBritishEnglishLocale").isUsingSupportedBritishEnglishLocale() ? s._(
+			/*BTDS*/
+			""
+		) : s._(
+			/*BTDS*/
+			""
+		) : o("WAWebL10NIsUsingSupportedBritishEnglishLocale").isUsingSupportedBritishEnglishLocale() ? s._(
+			/*BTDS*/
+			""
+		) : s._(
+			/*BTDS*/
+			""
+		);
+	}
+	function m() {
+		return o("WAWebListsGatingUtils").isListsEnabled() ? o("WAWebL10NIsUsingSupportedBritishEnglishLocale").isUsingSupportedBritishEnglishLocale() ? s._(
+			/*BTDS*/
+			""
+		) : s._(
+			/*BTDS*/
+			""
+		) : o("WAWebL10NIsUsingSupportedBritishEnglishLocale").isUsingSupportedBritishEnglishLocale() ? s._(
+			/*BTDS*/
+			""
+		) : s._(
+			/*BTDS*/
+			""
+		);
+	}
+	function p(e) {
+		o("WAWebModalManager").ModalManager.open(c.jsx(o("WAWebConfirmPopup.react").ConfirmPopup, {
+			onOK: o("WAWebModalManager").closeModalManager,
+			okText: r("WAWebFbtCommon")("OK"),
+			children: o("WAWebL10NIsUsingSupportedBritishEnglishLocale").isUsingSupportedBritishEnglishLocale() ? s._(
+				/*BTDS*/
+				"",
+				[s._param("favorites_limit", e)]
+			) : s._(
+				/*BTDS*/
+				"",
+				[s._param("favorites_limit", e)]
+			)
+		}));
+	}
+	function _(e, t) {
+		return f.apply(this, arguments);
+	}
+	function f() {
+		return f = n("asyncToGeneratorRuntime").asyncToGenerator(function* (t, a) {
+			var i;
+			if (o("WAWebInboxFiltersGatingUtils").inboxFavoritesEnabled()) {
+				var l = yield o("WAWebDBFavoriteDatabaseApi").getAllFavorites(), s = (i = o("WAWebABProps").getABPropConfigValue("favorites_limit")) != null ? i : 100;
+				if (l.length + (Array.isArray(t) ? t.length : 1) > s) {
+					p(s);
+					return;
+				}
+				var u;
+				if (Array.isArray(t)) {
+					var _ = yield o("WAWebDBFavoriteDatabaseApi").getNextFavoriteOrderIndex();
+					u = t.map(function(e) {
+						return {
+							id: e.toString(),
+							orderIndex: _++
+						};
+					});
+				} else u = [babelHelpers.extends({}, t)];
+				a.entryPoint != null && o("WAWebFavoritesLogging").logAddingMessagingFavorites(u, a.entryPoint);
+				var f = l.concat(u), g = o("WATimeUtils").unixTime(), h = yield r("WAWebFavoritesSync").getFavoritesMutation(f, g);
+				o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["[Favorites] addToFavoritesAction, mutation generated"])));
+				var y = o("WAWebSyncdCoreApi").lockForSync(["favorite", "chat"], [h], n("asyncToGeneratorRuntime").asyncToGenerator(function* () {
+					return o("WAWebDBFavoriteDatabaseApi").addOrEditFavorites(u);
+				})).then(function() {
+					return o("WAWebFavoriteCollection").FavoriteCollection.add(u.map(function(e) {
+						return babelHelpers.extends({}, e);
+					}));
+				});
+				if (a.suppressToast === !0) yield y;
+				else {
+					var C = new (o("WAWebActionToast.react")).ActionType(d()), b = y.then(function() {
+						return new (o("WAWebActionToast.react")).ActionType(m());
+					});
+					o("WAWebToastManager").ToastManager.open(c.jsx(o("WAWebActionToast.react").ActionToast, {
+						id: o("WAWebActionToast.react").genId(),
+						initialAction: C,
+						pendingAction: b
+					}));
+				}
+			}
+		}), f.apply(this, arguments);
+	}
+	l.showFavoritesLimitExceededPopup = p, l.addToFavoritesAction = _;
+}), 226);

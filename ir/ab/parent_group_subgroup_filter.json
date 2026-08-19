@@ -1,0 +1,45 @@
+{
+  "id": "ab:parent_group_subgroup_filter",
+  "kind": "ab",
+  "name": "parent_group_subgroup_filter",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3147,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "parent_group_subgroup_filter:\\s*\\[\\s*3147"
+  },
+  "literals": [
+    "parent_group_subgroup_filter",
+    "3147"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebSelectGroupParticipantsDrawer.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

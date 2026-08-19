@@ -1,0 +1,92 @@
+{
+  "id": "mex:WAWebMexFetchNewsletterPollVotersJobQuery",
+  "kind": "mex",
+  "name": "WAWebMexFetchNewsletterPollVotersJobQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9407762219322536",
+    "operation": "query",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletters_poll_voter_list",
+        "alias": "voter_list",
+        "ty": "XWA2NewsletterPollVoterListResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "votes",
+            "ty": "XWA2NewsletterPollOptionWithVoters",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "vote_hash",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "voter_list",
+                "ty": "XWA2NewsletterSubscriberConnection",
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "edges",
+                    "ty": "XWA2NewsletterSubscriberEdge",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "action_time",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "node",
+                        "ty": "XWA2User",
+                        "kind": "LinkedField",
+                        "selections": [
+                          {
+                            "name": "id",
+                            "kind": "ScalarField"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletters_poll_voter_list",
+    "document": "# persisted document 9407762219322536\nquery MexFetchNewsletterPollVotersJobQuery(\n  $input\n) {\n  voter_list: xwa2_newsletters_poll_voter_list(input: $input) {  # XWA2NewsletterPollVoterListResponse\n    votes {  # [XWA2NewsletterPollOptionWithVoters]\n      vote_hash\n      voter_list {  # XWA2NewsletterSubscriberConnection\n        edges {  # [XWA2NewsletterSubscriberEdge]\n          action_time\n          node {  # XWA2User\n            id\n          }\n        }\n      }\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexFetchNewsletterPollVotersJobQuery.graphql",
+    "matches": "id:\\s*\"9407762219322536\""
+  },
+  "literals": [
+    "9407762219322536",
+    "WAWebMexFetchNewsletterPollVotersJobQuery",
+    "xwa2_newsletters_poll_voter_list"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexFetchNewsletterPollVotersJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

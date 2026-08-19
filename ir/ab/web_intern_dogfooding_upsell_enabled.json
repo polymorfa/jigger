@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_intern_dogfooding_upsell_enabled",
+  "kind": "ab",
+  "name": "web_intern_dogfooding_upsell_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6858,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_intern_dogfooding_upsell_enabled:\\s*\\[\\s*6858"
+  },
+  "literals": [
+    "web_intern_dogfooding_upsell_enabled",
+    "6858"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebInternDogfoodingModal.react"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

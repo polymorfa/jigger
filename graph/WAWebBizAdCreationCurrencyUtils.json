@@ -1,0 +1,1 @@
+{"deps":["AdsCurrencyFormatter","Currency","LWICometFormatCurrency"],"dependents":["WAWebBizAdCreationBudgetInput.react","WAWebBizAdCreationBudgetSlider.react","WAWebBizAdCreationBudgetUtils","WAWebBizAdCreationSummaryTotalsLineItems.react","WAWebBizAdDetailsPerformance.react"],"dependent_count":5,"exports":[{"name":"default","used_by":[],"uses":0}]}

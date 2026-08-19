@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebScreenLockDrawer.react"],"dependent_count":2,"exports":[{"name":"WdsPictoPrivacyIcon","used_by":["WAWebAllGeneratedIcons","WAWebScreenLockDrawer.react"],"uses":2}]}

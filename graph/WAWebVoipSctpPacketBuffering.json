@@ -1,0 +1,1 @@
+{"deps":["WAWebVoipRelayConnectionUtils","WAWebVoipSctpConnectionManagerConstants"],"dependents":["WAWebVoipSctpSendData"],"dependent_count":1,"exports":[{"name":"bufferPacketForConnection","used_by":["WAWebVoipSctpSendData"],"uses":1}]}

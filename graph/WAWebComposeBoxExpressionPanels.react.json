@@ -1,0 +1,1 @@
+{"deps":["WAWebComposeBoxPanelTypes","WAWebComposeBoxPanelsMenu.react","WAWebEmojiPanel.react","WAWebErrorBoundary.react","WAWebGifPanel.react","WAWebPanelsDisplayLocation","WAWebStickerPanel.react","WAWebUimUie.react","react"],"dependents":["WAWebComposeBoxPopupPanels.react","WAWebStatusComposeBox.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

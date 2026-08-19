@@ -1,0 +1,1 @@
+{"deps":["WAWebMsgCollection","WAWebMsgInfoAction","WAWebMsgInfoCollection"],"dependents":["WAWebSetFrontendHandlerApi"],"dependent_count":1,"exports":[{"name":"MsgInfoBridgeApi","used_by":["WAWebSetFrontendHandlerApi"],"uses":1}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:per_customer_data_sharing_controls_eligible",
+  "kind": "ab",
+  "name": "per_customer_data_sharing_controls_eligible",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 13383,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "per_customer_data_sharing_controls_eligible:\\s*\\[\\s*13383"
+  },
+  "literals": [
+    "per_customer_data_sharing_controls_eligible",
+    "13383"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebCTWAGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

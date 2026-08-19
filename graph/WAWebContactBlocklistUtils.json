@@ -1,0 +1,1 @@
+{"deps":["WAWebApiContact","WAWebBlocklistCollection","WAWebBlocklistMigration","WAWebChatCollection","WAWebWidFactory"],"dependents":["WAWebContactModel","WAWebContactMutator"],"dependent_count":2,"exports":[{"name":"updateContactBlocked","used_by":["WAWebContactModel","WAWebContactMutator"],"uses":2}]}

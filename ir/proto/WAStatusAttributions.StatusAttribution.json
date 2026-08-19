@@ -1,0 +1,59 @@
+{
+  "id": "proto:WAStatusAttributions.StatusAttribution",
+  "kind": "proto",
+  "name": "WAStatusAttributions.StatusAttribution",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actionUrl": {
+        "number": 2
+      },
+      "aiCreatedAttribution": {
+        "number": 8,
+        "type_name": "WAStatusAttributions.StatusAttribution.AiCreatedAttribution"
+      },
+      "externalShare": {
+        "number": 4,
+        "type_name": "WAStatusAttributions.StatusAttribution.ExternalShare"
+      },
+      "groupStatus": {
+        "number": 6,
+        "type_name": "WAStatusAttributions.StatusAttribution.GroupStatus"
+      },
+      "music": {
+        "number": 5,
+        "type_name": "WAStatusAttributions.StatusAttribution.Music"
+      },
+      "rlAttribution": {
+        "number": 7,
+        "type_name": "WAStatusAttributions.StatusAttribution.RLAttribution"
+      },
+      "statusReshare": {
+        "number": 3,
+        "type_name": "WAStatusAttributions.StatusAttribution.StatusReshare"
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "WAStatusAttributions.pb"
+  },
+  "evidence": {
+    "module": "WAStatusAttributions.pb",
+    "matches": "name = \"StatusAttribution\""
+  },
+  "literals": [
+    "StatusAttribution"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

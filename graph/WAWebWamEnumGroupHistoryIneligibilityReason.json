@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebGroupHistorySenderUserJourneyLogger","WAWebGroupHistorySenderUserJourneyWamEvent"],"dependent_count":2,"exports":[{"name":"GROUP_HISTORY_INELIGIBILITY_REASON","used_by":["WAWebGroupHistorySenderUserJourneyLogger","WAWebGroupHistorySenderUserJourneyWamEvent"],"uses":2}]}

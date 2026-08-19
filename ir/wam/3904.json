@@ -1,0 +1,86 @@
+{
+  "id": "wam:3904",
+  "kind": "wam",
+  "name": "NonMessagePeerDataOperationResponse",
+  "data": {
+    "kind": "wam",
+    "event_id": 3904,
+    "fields": {
+      "peerDataErrorCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "peer_data_error_count"
+      },
+      "peerDataNotFoundCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "peer_data_not_found_count"
+      },
+      "peerDataRequestErrorCode": {
+        "id": 9,
+        "type": "PEER_DATA_REQUEST_ERROR_CODE",
+        "wire": "peer_data_request_error_code",
+        "enum_ref": "PEER_DATA_REQUEST_ERROR_CODE"
+      },
+      "peerDataRequestSessionId": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "peer_data_request_session_id"
+      },
+      "peerDataRequestType": {
+        "id": 4,
+        "type": "PEER_DATA_REQUEST_TYPE",
+        "wire": "peer_data_request_type",
+        "enum_ref": "PEER_DATA_REQUEST_TYPE"
+      },
+      "peerDataResponseApplyResult": {
+        "id": 8,
+        "type": "PEER_DATA_RESPONSE_APPLY_RESULT_TYPE",
+        "wire": "peer_data_response_apply_result",
+        "enum_ref": "PEER_DATA_RESPONSE_APPLY_RESULT_TYPE"
+      },
+      "peerDataResponseCount": {
+        "id": 5,
+        "type": "INTEGER",
+        "wire": "peer_data_response_count"
+      },
+      "peerDataSuccessProcessCount": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "peer_data_success_process_count"
+      },
+      "peerDataSuccessResponseCount": {
+        "id": 7,
+        "type": "INTEGER",
+        "wire": "peer_data_success_response_count"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebNonMessagePeerDataOperationResponseWamEvent",
+    "matches": "NonMessagePeerDataOperationResponse:\\s*\\[\\s*3904"
+  },
+  "literals": [
+    "3904"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumPeerDataRequestErrorCode",
+      "WAWebWamEnumPeerDataRequestType",
+      "WAWebWamEnumPeerDataResponseApplyResultType"
+    ],
+    "dependents": [
+      "WAWebNonMessageDataRequestLoggingUtils",
+      "WAWebWamProcessWorkerData"
+    ],
+    "dep_count": 4,
+    "dependent_count": 2
+  }
+}

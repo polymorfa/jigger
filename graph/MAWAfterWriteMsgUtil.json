@@ -1,0 +1,1 @@
+{"deps":["ArmadilloDataTraceType","MAWBridgeMsg","MAWBridgeTrace","MAWDbMsg","MAWIndexedDb","MAWXMAUtils"],"dependents":["MAWWriteBulkWriteIncomingAdminMsgTxns","MAWWriteMsgTxns"],"dependent_count":2,"exports":[{"name":"writeMsgAfterTransaction","used_by":["MAWWriteBulkWriteIncomingAdminMsgTxns","MAWWriteMsgTxns"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps","WAWebChatGetters","WAWebCmd","WAWebContactMenuDropdown.react","WAWebConversationMenus","WAWebConversationMsgsUtils","WDSMenu.react","react","react-compiler-runtime","useWDSMenu"],"dependents":["WAWebConversationMsgs.react"],"dependent_count":1,"exports":[{"name":"ConversationMsgsMenuV2","used_by":["WAWebConversationMsgs.react"],"uses":1}]}

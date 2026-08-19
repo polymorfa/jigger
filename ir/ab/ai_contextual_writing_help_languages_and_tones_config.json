@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_contextual_writing_help_languages_and_tones_config",
+  "kind": "ab",
+  "name": "ai_contextual_writing_help_languages_and_tones_config",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 22797,
+    "type": "string",
+    "default": "{}",
+    "alt_default": "{\\\"en\\\": \\\"auto"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_contextual_writing_help_languages_and_tones_config:\\s*\\[\\s*22797"
+  },
+  "literals": [
+    "ai_contextual_writing_help_languages_and_tones_config",
+    "22797"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPttAudioMessageComponent.react"],"dependent_count":2,"exports":[{"name":"PttFileIcon","used_by":["WAWebAllGeneratedIcons","WAWebPttAudioMessageComponent.react"],"uses":2}]}

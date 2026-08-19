@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebFlex.react","WAWebImg.react","WAWebMediaDownloadMmsMusicArtwork","WAWebMsgGetters","WAWebSpinner.react","WDSIconIcAlertWarning.react","WDSIconIcMusicNote.react","react","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebMusicStatusAttribution.react"],"dependent_count":1,"exports":[]}

@@ -1,0 +1,47 @@
+{
+  "id": "mex:WAWebMexLidChangeNotificationQuery",
+  "kind": "mex",
+  "name": "WAWebMexLidChangeNotificationQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9892367127524985",
+    "operation": "query",
+    "variables": [],
+    "selections": [
+      {
+        "name": "xwa2_notify_lid_change",
+        "ty": "XWA2LidChange",
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "old",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "new",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_notify_lid_change",
+    "document": "# persisted document 9892367127524985\nquery MexLidChangeNotificationQuery {\n  xwa2_notify_lid_change {  # XWA2LidChange\n    old\n    new\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexLidChangeNotificationQuery.graphql",
+    "matches": "id:\\s*\"9892367127524985\""
+  },
+  "literals": [
+    "9892367127524985",
+    "WAWebMexLidChangeNotificationQuery",
+    "xwa2_notify_lid_change"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexLidChangeNotification"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

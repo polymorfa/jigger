@@ -1,0 +1,45 @@
+{
+  "id": "ab:ptv_autoplay_loop_limit",
+  "kind": "ab",
+  "name": "ptv_autoplay_loop_limit",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3483,
+    "type": "int",
+    "default": 3,
+    "alt_default": 3
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ptv_autoplay_loop_limit:\\s*\\[\\s*3483"
+  },
+  "literals": [
+    "ptv_autoplay_loop_limit",
+    "3483"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPtvGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

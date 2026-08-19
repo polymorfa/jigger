@@ -1,0 +1,87 @@
+{
+  "id": "enum:GROUP_HISTORY_RECEIVER_USER_JOURNEY_ACTION_TYPE",
+  "kind": "enum",
+  "name": "GROUP_HISTORY_RECEIVER_USER_JOURNEY_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupHistoryReceiverUserJourneyActionType",
+    "variants": [
+      {
+        "name": "GROUP_HISTORY_MESSAGE_RECEIVED",
+        "value": 0.0
+      },
+      {
+        "name": "GROUP_HISTORY_DOWNLOAD_STARTED",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP_HISTORY_DOWNLOAD_SUCCEEDED",
+        "value": 2.0
+      },
+      {
+        "name": "GROUP_HISTORY_DOWNLOAD_FAILED",
+        "value": 3.0
+      },
+      {
+        "name": "GROUP_HISTORY_PARSE_HISTORY_PROTO_FAILED",
+        "value": 4.0
+      },
+      {
+        "name": "GROUP_HISTORY_PARSE_HISTORY_PROTO_SUCCEEDED",
+        "value": 5.0
+      },
+      {
+        "name": "GROUP_HISTORY_DB_INSERTED",
+        "value": 6.0
+      },
+      {
+        "name": "GROUP_HISTORY_VIEW_BUTTON_CLICKED",
+        "value": 7.0
+      },
+      {
+        "name": "GROUP_HISTORY_DOWNLOAD_BUTTON_CLICKED",
+        "value": 8.0
+      },
+      {
+        "name": "GROUP_HISTORY_DOWNLOAD_EXPIRED",
+        "value": 9.0
+      },
+      {
+        "name": "GROUP_HISTORY_FOOTER_FLOATING_SHOWN",
+        "value": 10.0
+      },
+      {
+        "name": "GROUP_HISTORY_FOOTER_INLINE_SHOWN",
+        "value": 11.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupHistoryReceiverUserJourneyActionType",
+    "matches": "GROUP_HISTORY_RECEIVER_USER_JOURNEY_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_HISTORY_RECEIVER_USER_JOURNEY_ACTION_TYPE",
+    "GROUP_HISTORY_MESSAGE_RECEIVED",
+    "GROUP_HISTORY_DOWNLOAD_STARTED",
+    "GROUP_HISTORY_DOWNLOAD_SUCCEEDED",
+    "GROUP_HISTORY_DOWNLOAD_FAILED",
+    "GROUP_HISTORY_PARSE_HISTORY_PROTO_FAILED",
+    "GROUP_HISTORY_PARSE_HISTORY_PROTO_SUCCEEDED",
+    "GROUP_HISTORY_DB_INSERTED",
+    "GROUP_HISTORY_VIEW_BUTTON_CLICKED",
+    "GROUP_HISTORY_DOWNLOAD_BUTTON_CLICKED",
+    "GROUP_HISTORY_DOWNLOAD_EXPIRED",
+    "GROUP_HISTORY_FOOTER_FLOATING_SHOWN",
+    "GROUP_HISTORY_FOOTER_INLINE_SHOWN"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupHistoryReceiverUserJourneyLogger",
+      "WAWebGroupHistoryReceiverUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

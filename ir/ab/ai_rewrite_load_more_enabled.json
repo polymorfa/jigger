@@ -1,0 +1,42 @@
+{
+  "id": "ab:ai_rewrite_load_more_enabled",
+  "kind": "ab",
+  "name": "ai_rewrite_load_more_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 20918,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "ai_rewrite_load_more_enabled:\\s*\\[\\s*20918"
+  },
+  "literals": [
+    "ai_rewrite_load_more_enabled",
+    "20918"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

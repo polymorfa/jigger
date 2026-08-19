@@ -1,0 +1,53 @@
+{
+  "id": "enum:LWI_ADS_IDENTITY_TYPE",
+  "kind": "enum",
+  "name": "LWI_ADS_IDENTITY_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumLwiAdsIdentityType",
+    "variants": [
+      {
+        "name": "PAGE",
+        "value": 1.0
+      },
+      {
+        "name": "WHATSAPP",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumLwiAdsIdentityType",
+    "matches": "LWI_ADS_IDENTITY_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "LWI_ADS_IDENTITY_TYPE",
+    "PAGE",
+    "WHATSAPP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAdCreationLogger",
+      "WAWebBizAdDetailsActionButtons.react",
+      "WAWebBizAdDetailsDrawer.react",
+      "WAWebBizAdDraftSaveOnExitRegistrar.react",
+      "WAWebBizAdManagementActionsCell.react",
+      "WAWebBizAdManagementDraftYourAdsCell.react",
+      "WAWebBizAdManagementFBLoginPrompt.react",
+      "WAWebBizAdManagementHeaderButtonGroup.react",
+      "WAWebBizAdManagementMenu.react",
+      "WAWebBizAdManagementNullView.react",
+      "WAWebBizAdManagementPastAdsNudge.react",
+      "WAWebBizAdManagementRootContent.react",
+      "WAWebBizAdManagementYourAdsCell.react",
+      "WAWebBizNativeAdsEnterFlowErrorLogger",
+      "WAWebBizNativeAdsIdentityLogger",
+      "WAWebLwiScreenWamEvent",
+      "useWAWebBizAdDeleteDraftModal",
+      "useWAWebBizContactUs"
+    ],
+    "dep_count": 0,
+    "dependent_count": 18
+  }
+}

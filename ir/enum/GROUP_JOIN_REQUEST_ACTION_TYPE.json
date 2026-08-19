@@ -1,0 +1,67 @@
+{
+  "id": "enum:GROUP_JOIN_REQUEST_ACTION_TYPE",
+  "kind": "enum",
+  "name": "GROUP_JOIN_REQUEST_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumGroupJoinRequestActionType",
+    "variants": [
+      {
+        "name": "MEMBERSHIP_REQUEST_CREATE",
+        "value": 1.0
+      },
+      {
+        "name": "VIEW_PENDING_PARTICIPANTS",
+        "value": 2.0
+      },
+      {
+        "name": "MEMBERSHIP_REQUEST_APPROVAL_MODE_ON",
+        "value": 3.0
+      },
+      {
+        "name": "MEMBERSHIP_REQUEST_APPROVAL_MODE_OFF",
+        "value": 4.0
+      },
+      {
+        "name": "MEMBERSHIP_REQUEST_APPROVE",
+        "value": 5.0
+      },
+      {
+        "name": "MEMBERSHIP_REQUEST_REJECT",
+        "value": 6.0
+      },
+      {
+        "name": "MEMBERSHIP_REQUEST_CANCEL",
+        "value": 7.0
+      },
+      {
+        "name": "DISMISS_PENDING_PARTICIPANTS_BANNER",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumGroupJoinRequestActionType",
+    "matches": "GROUP_JOIN_REQUEST_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "GROUP_JOIN_REQUEST_ACTION_TYPE",
+    "MEMBERSHIP_REQUEST_CREATE",
+    "VIEW_PENDING_PARTICIPANTS",
+    "MEMBERSHIP_REQUEST_APPROVAL_MODE_ON",
+    "MEMBERSHIP_REQUEST_APPROVAL_MODE_OFF",
+    "MEMBERSHIP_REQUEST_APPROVE",
+    "MEMBERSHIP_REQUEST_REJECT",
+    "MEMBERSHIP_REQUEST_CANCEL",
+    "DISMISS_PENDING_PARTICIPANTS_BANNER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGroupJoinRequestMetricUtils",
+      "WAWebWaFsGroupJoinRequestActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

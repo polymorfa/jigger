@@ -1,0 +1,1 @@
+{"deps":["MAWFolderTypes","WADbContact"],"dependents":["MAWMarkThreadAsRead","MAWMarkThreadAsReadTxns"],"dependent_count":2,"exports":[{"name":"isInboxRequest","used_by":["MAWMarkThreadAsRead"],"uses":1},{"name":"isMessageRequestOrSpamThread","used_by":["MAWMarkThreadAsReadTxns"],"uses":1}]}

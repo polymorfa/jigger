@@ -1,0 +1,31 @@
+__d("WDSIconWdsIcDisappearingMessages.react", [
+	"WDSSvgComponentBase.react",
+	"WDSSvgIconHelpers",
+	"react",
+	"stylex"
+], (function(t, n, r, o, a, i, l) {
+	var e, s, u = s || (s = o("react")), c = "wds-ic-disappearing-messages";
+	function d(t) {
+		var n = o("WDSSvgIconHelpers").resolveSvgIcon(t, 24, 24, "0 0 24 24");
+		return u.jsx(r("WDSSvgComponentBase.react"), babelHelpers.extends({}, n.otherProps, { children: u.jsxs("svg", {
+			viewBox: n.viewBox,
+			height: n.height,
+			width: n.width,
+			preserveAspectRatio: "xMidYMid meet",
+			className: (e || (e = r("stylex")))(n.iconXstyle),
+			fill: "currentColor",
+			children: [
+				u.jsx("title", { children: c }),
+				u.jsx("path", {
+					fill: "currentColor",
+					d: "M12 2a10 10 0 1 0 .16 20 1.11 1.11 0 1 0-.03-2.22A7.8 7.8 0 0 1 4.23 12a7.78 7.78 0 0 1 7.9-7.78A1.11 1.11 0 1 0 12.16 2H12Zm4.86 1.26a1.11 1.11 0 1 0-1.08 1.94l.22.13a1.11 1.11 0 1 0 1.14-1.9l-.28-.17Zm2.19 3.22a1.11 1.11 0 0 1 1.53.38l.16.28a1.11 1.11 0 0 1-1.94 1.08 7.86 7.86 0 0 0-.13-.22c-.31-.52-.14-1.2.38-1.52ZM22 11.84a1.11 1.11 0 1 0-2.22.03 7.8 7.8 0 0 1 0 .26 1.11 1.11 0 0 0 2.22.03 9.93 9.93 0 0 0 0-.32Zm-1.69 3.51c.54.3.73.97.43 1.5l-.16.3a1.11 1.11 0 1 1-1.9-1.15l.12-.22c.3-.54.98-.73 1.51-.43Zm-3.17 5.23a1.11 1.11 0 1 0-1.14-1.9l-.22.12a1.11 1.11 0 0 0 1.08 1.94l.28-.16Z"
+				}),
+				u.jsx("path", {
+					fill: "currentColor",
+					d: "M16.78 7.62a.64.64 0 0 0-.84-.06l-4.6 3.46a1.33 1.33 0 0 0-.15 2.01l.18.18c.58.58 1.53.51 2.01-.14l3.46-4.61a.64.64 0 0 0-.06-.84Z"
+				})
+			]
+		}) }));
+	}
+	d.displayName = d.name + " [from " + i.id + "]", l.default = d;
+}), 98);

@@ -1,0 +1,1 @@
+{"deps":["WAWebDBMessageSerialization","WAWebSchemaMessage"],"dependents":["WAWebFtsClient","WAWebFtsSQLiteClient"],"dependent_count":2,"exports":[{"name":"resolveMsgIds","used_by":["WAWebFtsClient","WAWebFtsSQLiteClient"],"uses":2}]}

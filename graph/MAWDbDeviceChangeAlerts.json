@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWDebug","WmiMetadataDeviceChangeAlertsReader"],"dependent_count":2,"exports":[{"name":"KEY_CHANGE","used_by":["MAWDebug"],"uses":1},{"name":"unsafeCoerceToDeviceChangeAlertsID","used_by":["WmiMetadataDeviceChangeAlertsReader"],"uses":1},{"name":"ADD","used_by":[],"uses":0},{"name":"REMOVE","used_by":[],"uses":0}]}

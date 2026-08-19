@@ -1,0 +1,1 @@
+{"deps":["WAWebDataSharing3pdLidCollection","WAWebPerCustomerDataSharingModel"],"dependents":["WAWebCTWABridgeApi"],"dependent_count":1,"exports":[{"name":"removeDataSharing3pdLidFromCollection","used_by":["WAWebCTWABridgeApi"],"uses":1},{"name":"updateDataSharing3pdLidInCollection","used_by":["WAWebCTWABridgeApi"],"uses":1}]}

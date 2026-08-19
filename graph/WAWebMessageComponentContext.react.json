@@ -1,0 +1,1 @@
+{"deps":["react"],"dependents":["WAWebMessageMultiVcard.react","WAWebMessageVcard.react","WAWebStarredDrawerV2.react"],"dependent_count":3,"exports":[{"name":"MessageComponentContext","used_by":["WAWebMessageMultiVcard.react","WAWebMessageVcard.react","WAWebStarredDrawerV2.react"],"uses":3}]}

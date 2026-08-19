@@ -1,0 +1,1 @@
+{"deps":["fbt","CometRelay","WAWebConfirmPopup.react","WAWebFbtCommon","WAWebModalManager","WAWebToast.react","WAWebToastManager","WDSText.react","asyncToGeneratorRuntime","react","react-compiler-runtime","useWAWebBizAdPauseMutation"],"dependents":["WAWebBizAdDetailsActionButtons.react","WAWebBizAdManagementActionsCell.react"],"dependent_count":2,"exports":[]}

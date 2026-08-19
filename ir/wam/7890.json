@@ -1,0 +1,51 @@
+{
+  "id": "wam:7890",
+  "kind": "wam",
+  "name": "ArInterstitialScreenImpression",
+  "data": {
+    "kind": "wam",
+    "event_id": 7890,
+    "fields": {
+      "accountAfterReadDuration": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "account_after_read_duration"
+      },
+      "afterReadScreenEntryPoint": {
+        "id": 2,
+        "type": "AFTER_READ_SCREEN_ENTRY_POINT_TYPE",
+        "wire": "after_read_screen_entry_point",
+        "enum_ref": "AFTER_READ_SCREEN_ENTRY_POINT_TYPE"
+      },
+      "nuxVersion": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "nux_version"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebArInterstitialScreenImpressionWamEvent",
+    "matches": "ArInterstitialScreenImpression:\\s*\\[\\s*7890"
+  },
+  "literals": [
+    "7890"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAfterReadScreenEntryPointType"
+    ],
+    "dependents": [
+      "WAWebAfterReadNuxLogging"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

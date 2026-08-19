@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAFlowsShoppingExternalDataChannelUtils","WAFlowsWebPreviewActionHandler"],"dependent_count":2,"exports":[{"name":"GET_SINGLE_COLLECTION_API_NAME","used_by":["WAFlowsShoppingExternalDataChannelUtils","WAFlowsWebPreviewActionHandler"],"uses":2},{"name":"GET_SINGLE_COLLECTION_DOC_ID","used_by":["WAFlowsShoppingExternalDataChannelUtils"],"uses":1}]}

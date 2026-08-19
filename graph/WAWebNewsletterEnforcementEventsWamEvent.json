@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumEnforcementInteractionEvent","WAWebWamEnumEnforcementType","WAWebWamEnumInteractionEntryPoint","WAWebWamEnumInteractionSurface"],"dependents":["WAWebEnforcementActionLogging"],"dependent_count":1,"exports":[{"name":"NewsletterEnforcementEventsWamEvent","used_by":[],"uses":0}]}

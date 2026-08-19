@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebChatCommunityUtils","WAWebChatContactUtils","WAWebContactCollection","WAWebContactGetters","WAWebFrontendContactGetters","WAWebFrontendMsgGetters","WAWebMsgCollection","WAWebMsgGetters","WAWebMsgType","WAWebUserPrefsMeUser","nullthrows"],"dependents":["WAWebEventsFormatEventEditMessageText","WAWebMessageNotification.react"],"dependent_count":2,"exports":[]}

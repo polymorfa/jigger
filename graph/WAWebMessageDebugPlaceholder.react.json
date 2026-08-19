@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebAlertErrorIcon.react","WAWebMessagePlaceholder.react","WAWebMessageTextBubble.react","WAWebStateUtils","react","react-compiler-runtime"],"dependents":["WAWebMessageComponent.react"],"dependent_count":1,"exports":[]}

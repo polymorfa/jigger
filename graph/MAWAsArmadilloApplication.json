@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWEncodeMediaTransportProtocol","MAWMsg","MAWMsgType","MAWXMAEncodeUtils","WAArmadilloApplication.pb","WAGlobals","WAJids","WATimeUtils","getErrorSafe","validateMAWMediaAndComposeEntryForProtoMsg"],"dependents":["MAWAsMessageApplication"],"dependent_count":1,"exports":[{"name":"asArmadilloApplication","used_by":["MAWAsMessageApplication"],"uses":1}]}

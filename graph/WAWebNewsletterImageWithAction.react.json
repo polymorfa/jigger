@@ -1,0 +1,1 @@
+{"deps":["WAWebDetailImage.react","react","react-compiler-runtime"],"dependents":["WAWebNewsletterDeleteDrawer.react","WAWebNewsletterTransferOwnershipDrawer.react"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

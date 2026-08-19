@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBotPluginMsgBubbleMeta.react"],"dependent_count":2,"exports":[{"name":"SearchPluginBingIconIcon","used_by":["WAWebAllGeneratedIcons","WAWebBotPluginMsgBubbleMeta.react"],"uses":2}]}

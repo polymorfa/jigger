@@ -1,0 +1,99 @@
+{
+  "id": "wam:6506",
+  "kind": "wam",
+  "name": "ForwardActionUserJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 6506,
+    "fields": {
+      "appSessionId": {
+        "id": 1,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "forwardActionUserJourneyAction": {
+        "id": 2,
+        "type": "FORWARD_ACTION_USER_JOURNEY_ACTION",
+        "wire": "forward_action_user_journey_action",
+        "enum_ref": "FORWARD_ACTION_USER_JOURNEY_ACTION"
+      },
+      "forwardUserJourneyFunnelId": {
+        "id": 11,
+        "type": "STRING",
+        "wire": "forward_user_journey_funnel_id"
+      },
+      "messageIsFromMe": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "message_is_from_me"
+      },
+      "messageMediaType": {
+        "id": 4,
+        "type": "MEDIA_TYPE",
+        "wire": "message_media_type",
+        "enum_ref": "MEDIA_TYPE"
+      },
+      "messageType": {
+        "id": 5,
+        "type": "MESSAGE_TYPE",
+        "wire": "message_type",
+        "enum_ref": "MESSAGE_TYPE"
+      },
+      "uiSurface": {
+        "id": 6,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "unifiedSessionId": {
+        "id": 9,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "userJourneyChatType": {
+        "id": 7,
+        "type": "USER_JOURNEY_CHAT_TYPE",
+        "wire": "user_journey_chat_type",
+        "enum_ref": "USER_JOURNEY_CHAT_TYPE"
+      },
+      "userJourneyEventMs": {
+        "id": 12,
+        "type": "INTEGER",
+        "wire": "user_journey_event_ms"
+      },
+      "userJourneyFunnelId": {
+        "id": 8,
+        "type": "STRING",
+        "wire": "user_journey_funnel_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebForwardActionUserJourneyWamEvent",
+    "matches": "ForwardActionUserJourney:\\s*\\[\\s*6506"
+  },
+  "literals": [
+    "6506"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumForwardActionUserJourneyAction",
+      "WAWebWamEnumMediaType",
+      "WAWebWamEnumMessageType",
+      "WAWebWamEnumTsSurface",
+      "WAWebWamEnumUserJourneyChatType"
+    ],
+    "dependents": [
+      "WAWebForwardActionUserJourneyLogger"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

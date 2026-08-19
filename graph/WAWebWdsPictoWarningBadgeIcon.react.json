@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizBroadcastsModalWarningIcon.react"],"dependent_count":2,"exports":[{"name":"WdsPictoWarningBadgeIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizBroadcastsModalWarningIcon.react"],"uses":2}]}

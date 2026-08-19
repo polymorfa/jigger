@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFlex.react","WAWebNoop","WAWebSpinner.react","WAWebThemeContext","WAWebVoipCancelOutgoingCall","WDSButton.react","WDSColorStyles.stylex","WDSIconIcCallEndFilled.react","WDSText.react","WDSThemes","react","react-compiler-runtime"],"dependents":["WAWebVoipUi.react","WAWebVoipUiLoadable"],"dependent_count":2,"exports":[]}

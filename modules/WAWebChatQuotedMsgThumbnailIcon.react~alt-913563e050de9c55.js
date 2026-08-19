@@ -1,0 +1,11 @@
+__d("WAWebChatQuotedMsgThumbnailIcon.react", ["WAWebQuotedMsgQuotedMedia.react", "react"], (function(t, n, r, o, a, i, l) {
+	var e, s = e || (e = o("react"));
+	function u(e) {
+		var t = e.msg;
+		return t.thumbnail ? s.jsx("div", {
+			className: "xi9e97b",
+			children: s.jsx(o("WAWebQuotedMsgQuotedMedia.react").Base64BackgroundImage, { source: t.thumbnail })
+		}) : null;
+	}
+	u.displayName = u.name + " [from " + i.id + "]", l.default = u;
+}), 98);

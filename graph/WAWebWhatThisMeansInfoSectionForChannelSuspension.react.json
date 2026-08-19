@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFlex.react","WAWebNewsletterModalsUtils.react","WAWebNullFunc","WAWebSettingsBlockedIcon.react","react","react-compiler-runtime"],"dependents":["WAWebNewsletterSuspendInformDetailedScreenDrawer.react","WAWebNewsletterSuspendedDetailedScreenDrawer.react"],"dependent_count":2,"exports":[]}

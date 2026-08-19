@@ -1,0 +1,57 @@
+{
+  "id": "mex:WAWebMexIntegrityChallengeResponseMutation",
+  "kind": "mex",
+  "name": "WAWebMexIntegrityChallengeResponseMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26230331493320650",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_submit_integrity_challenge_response",
+        "ty": "XWA2IntegrityChallengeResponsePayload",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "error_message",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_submit_integrity_challenge_response",
+    "document": "# persisted document 26230331493320650\nmutation MexIntegrityChallengeResponseMutation(\n  $input\n) {\n  xwa2_submit_integrity_challenge_response(input: $input) {  # XWA2IntegrityChallengeResponsePayload\n    success\n    error_message\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexIntegrityChallengeResponseMutation.graphql",
+    "matches": "id:\\s*\"26230331493320650\""
+  },
+  "literals": [
+    "26230331493320650",
+    "WAWebMexIntegrityChallengeResponseMutation",
+    "xwa2_submit_integrity_challenge_response"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexIntegrityChallengeResponse"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAJobOrchestratorTypes","WAWebNewsletterPendingInvitesQueryJob","WAWebOrchestratorNonPersistedJob","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterPendingInvitesAction"],"dependent_count":1,"exports":[{"name":"getNewsletterPendingInvites","used_by":["WAWebNewsletterPendingInvitesAction"],"uses":1}]}

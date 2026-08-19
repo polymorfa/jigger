@@ -1,0 +1,40 @@
+{
+  "id": "enum:FMX_ENTRY_POINT",
+  "kind": "enum",
+  "name": "FMX_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumFmxEntryPoint",
+    "variants": [
+      {
+        "name": "FMX_CARD",
+        "value": 0.0
+      },
+      {
+        "name": "SAFETY_TOOLS",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumFmxEntryPoint",
+    "matches": "FMX_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "FMX_ENTRY_POINT",
+    "FMX_CARD",
+    "SAFETY_TOOLS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebContactInfoCard.react",
+      "WAWebCreateChat",
+      "WAWebPsFmxActionWamEvent",
+      "WAWebSafetyToolsModal.react",
+      "useWAWebChatOpenMetrics"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

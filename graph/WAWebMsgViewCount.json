@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebCommonNewsletterStrings","WAWebL10N","WAWebL10NNumbersPluginRegistry","WAWebMsgGetters","WAWebMsgType","WAWebNewsletterGatingUtils","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebLargeNumberL10N.story","WAWebMediaPanelHeader.react","WAWebMessageMeta.react","WAWebSpacerText.react"],"dependent_count":4,"exports":[]}

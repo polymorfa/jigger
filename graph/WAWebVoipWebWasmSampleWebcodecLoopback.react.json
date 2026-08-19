@@ -1,0 +1,1 @@
+{"deps":["fbt","WALogger","WAWebFlex.react","WAWebText.react","WAWebVoipGatingUtils","WAWebVoipWebWasmSampleContainer.react","WDSButton.react","asyncToGeneratorRuntime","err","react"],"dependents":["WAWebVoipWebWasmSamples"],"dependent_count":1,"exports":[]}

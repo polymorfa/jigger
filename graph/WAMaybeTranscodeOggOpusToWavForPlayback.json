@@ -1,0 +1,1 @@
+{"deps":["FBLogger","WABlobToArrayBuffer","WAIsOgg","WAOpusRecorderPlayer","asyncToGeneratorRuntime","justknobx"],"dependents":["MAWAudioUtils","MWPUseVoiceRecorderV2"],"dependent_count":2,"exports":[{"name":"maybeTranscodeOggOpusToWavForPlayback","used_by":["MAWAudioUtils","MWPUseVoiceRecorderV2"],"uses":2},{"name":"isOggPlaybackSupported","used_by":[],"uses":0}]}

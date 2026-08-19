@@ -1,0 +1,72 @@
+{
+  "id": "wam:4970",
+  "kind": "wam",
+  "name": "SupportAiSession",
+  "data": {
+    "kind": "wam",
+    "event_id": 4970,
+    "fields": {
+      "citationCmsId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "citation_cms_id"
+      },
+      "supportAiErrorCode": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "support_ai_error_code"
+      },
+      "supportAiErrorMessage": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "support_ai_error_message"
+      },
+      "supportAiEventType": {
+        "id": 1,
+        "type": "SUPPORT_AI_EVENT_TYPE",
+        "wire": "support_ai_event_type",
+        "enum_ref": "SUPPORT_AI_EVENT_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebSupportAiSessionWamEvent",
+    "matches": "SupportAiSession:\\s*\\[\\s*4970"
+  },
+  "literals": [
+    "4970"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumSupportAiEventType"
+    ],
+    "dependents": [
+      "WAWebContactFormWrapper.react",
+      "WAWebFeedbackIntroNuxModal.react",
+      "WAWebHelpDrawer.react",
+      "WAWebMessageWrapper.react",
+      "WAWebMsgBarActions",
+      "WAWebSendFeedbackModal.react",
+      "WAWebSendSupportBotFeedbackActions",
+      "WAWebSupportAIInfoNux.react",
+      "WAWebSupportAINux.react",
+      "WAWebSupportAIStartChatErrorModal.react",
+      "WAWebSupportAIStartChatNux.react",
+      "WAWebSupportBotNegativeFeedbackModal",
+      "WAWebSupportCarousel",
+      "WAWebSupportChatUtils",
+      "WAWebSuspendedCommunityModal.react",
+      "WAWebSuspendedGroupModalV2.react",
+      "WAWebSuspendedGroupUtils"
+    ],
+    "dep_count": 2,
+    "dependent_count": 17
+  }
+}

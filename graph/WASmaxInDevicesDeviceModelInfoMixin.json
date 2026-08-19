@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxParseUtils"],"dependents":["WASmaxInDevicesDeviceListMixin"],"dependent_count":1,"exports":[{"name":"parseDeviceModelInfoMixin","used_by":["WASmaxInDevicesDeviceListMixin"],"uses":1},{"name":"parseDeviceModelInfoModel","used_by":[],"uses":0},{"name":"parseDeviceModelInfoPlatform","used_by":[],"uses":0}]}

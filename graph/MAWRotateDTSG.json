@@ -1,0 +1,1 @@
+{"deps":["CSRFGuard","DTSG","MWFBLogger","asyncToGeneratorRuntime","getErrorSafe"],"dependents":["MAWCommonMainWebWorker","MAWDebug","MIHttpUploadMedia","createWorkerQuery"],"dependent_count":4,"exports":[{"name":"tryRotateDTSG","used_by":["MAWCommonMainWebWorker","MIHttpUploadMedia","createWorkerQuery"],"uses":3},{"name":"getNewDTSG","used_by":["MAWDebug"],"uses":1}]}

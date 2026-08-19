@@ -1,0 +1,1 @@
+{"deps":["Currency","NumberFormatConfig","intlNumUtils","isCurrencyWithSymbolAndThousandsSeparators"],"dependents":["LWICometFormatCurrency","WAWebBizAdCreationCurrencyUtils"],"dependent_count":2,"exports":[]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:wa_web_wam_falco_flush_interval_ms",
+  "kind": "ab",
+  "name": "wa_web_wam_falco_flush_interval_ms",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32393,
+    "type": "int",
+    "default": "3e3",
+    "alt_default": "3e3"
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "wa_web_wam_falco_flush_interval_ms:\\s*\\[\\s*32393"
+  },
+  "literals": [
+    "wa_web_wam_falco_flush_interval_ms",
+    "32393"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebWamFalcoABProps"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

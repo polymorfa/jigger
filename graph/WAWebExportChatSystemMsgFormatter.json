@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebContactCollection","WAWebEphemeralConstants","WAWebFormatNotificationTemplateText","WAWebFrontendContactGetters","WAWebMsgGetters","WAWebMsgType","WAWebUserPrefsMeUser","WAWebWidFactory","WAWebWidFormat"],"dependents":["WAWebExportChatMarkdownFormatter","WAWebExportChatPlainTextFormatter"],"dependent_count":2,"exports":[]}

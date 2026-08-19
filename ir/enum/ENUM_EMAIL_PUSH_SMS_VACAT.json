@@ -1,0 +1,57 @@
+{
+  "id": "enum:ENUM_EMAIL_PUSH_SMS_VACAT",
+  "kind": "enum",
+  "name": "ENUM_EMAIL_PUSH_SMS_VACAT",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInBrPaymentEnums",
+    "variants": [
+      {
+        "name": "EMAIL",
+        "value": "EMAIL"
+      },
+      {
+        "name": "PUSH",
+        "value": "PUSH"
+      },
+      {
+        "name": "SMS",
+        "value": "SMS"
+      },
+      {
+        "name": "VACAT",
+        "value": "VACAT"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInBrPaymentEnums",
+    "matches": "ENUM_EMAIL_PUSH_SMS_VACAT\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_EMAIL_PUSH_SMS_VACAT",
+    "EMAIL",
+    "PUSH",
+    "SMS",
+    "VACAT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInBrPaymentBRCardMixin",
+      "WASmaxInBrPaymentBRMerchantMixin",
+      "WASmaxInBrPaymentCardBaseMixin",
+      "WASmaxInBrPaymentCardCapabilitiesBaseMixin",
+      "WASmaxInBrPaymentComboCardCapabilitiesMixin",
+      "WASmaxInBrPaymentConsumerBaseMixin",
+      "WASmaxInBrPaymentCustomPaymentMethodMixin",
+      "WASmaxInBrPaymentMerchantBaseMixin",
+      "WASmaxInBrPaymentMethodBaseMixin",
+      "WASmaxInBrPaymentPayoutBankMixin",
+      "WASmaxInBrPaymentUPIAliasMixin",
+      "WASmaxInBrPaymentUPIBankMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

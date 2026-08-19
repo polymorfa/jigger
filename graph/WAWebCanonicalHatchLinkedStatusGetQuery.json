@@ -1,0 +1,1 @@
+{"deps":["WAWebCanonicalHatchLinkedStatusGetQuery.graphql","WAWebRelayClient","asyncToGeneratorRuntime"],"dependents":["WAWebInitBotGatingHelpers"],"dependent_count":1,"exports":[{"name":"fetchHatchLinkedStatus","used_by":["WAWebInitBotGatingHelpers"],"uses":1}]}

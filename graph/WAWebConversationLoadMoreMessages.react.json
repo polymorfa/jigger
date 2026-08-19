@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConversationLoadMoreMessagesHistorySync","WAWebRefreshIcon.react","WAWebSpinner.react","WAWebThreadMessageDBHooks","react","react-compiler-runtime"],"dependents":["WAWebConversationMsgs.react"],"dependent_count":1,"exports":[]}

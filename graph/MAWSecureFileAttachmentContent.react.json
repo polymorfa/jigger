@@ -1,0 +1,1 @@
+{"deps":["CometPlaceholder.react","MAWChatFile.react","MAWThreadViewAttachmentStateHandlerContent.react","MWV2AttachmentErrorPlaceholder.react","MWV2SecureFileAttachmentErrorPlaceholder.react","MWXMessageBubble.react","react","react-compiler-runtime"],"dependents":["MAWSecureAttachment.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

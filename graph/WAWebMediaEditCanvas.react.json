@@ -1,0 +1,1 @@
+{"deps":["WAWeb-easeljs","WAWebObjectFit.react","WAWebStaticCanvas.react","isNonZeroNumber","react","useWAWebForceUpdate","useWAWebOnUnmount"],"dependents":["WAWebEditImageDrawer.react"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0},{"name":"editedImage","used_by":[],"uses":0}]}

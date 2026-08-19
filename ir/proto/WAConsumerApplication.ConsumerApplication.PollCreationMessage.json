@@ -1,0 +1,52 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.PollCreationMessage",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.PollCreationMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "encKey": {
+        "number": 1
+      },
+      "name": {
+        "number": 2
+      },
+      "options": {
+        "number": 3,
+        "type_name": "WAConsumerApplication.ConsumerApplication.Option"
+      },
+      "selectableOptionsCount": {
+        "number": 4
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.PollCreationMessage\""
+  },
+  "literals": [
+    "PollCreationMessage"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

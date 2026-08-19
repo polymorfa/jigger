@@ -1,0 +1,1 @@
+{"deps":["WAJobOrchestratorTypes","WAWebEstimateIndexeddbUsageApi","WAWebOrchestratorNonPersistedJob"],"dependents":["WAWebScanDbModal.react"],"dependent_count":1,"exports":[{"name":"getEstimatedIndexedDbUsageJob","used_by":["WAWebScanDbModal.react"],"uses":1},{"name":"shouldMonitorDbStorageUsageJob","used_by":[],"uses":0}]}

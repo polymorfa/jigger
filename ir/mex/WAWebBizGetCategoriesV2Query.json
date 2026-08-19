@@ -1,0 +1,110 @@
+{
+  "id": "mex:WAWebBizGetCategoriesV2Query",
+  "kind": "mex",
+  "name": "WAWebBizGetCategoriesV2Query",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26869203922665622",
+    "operation": "query",
+    "variables": [
+      "query_params"
+    ],
+    "args": [
+      {
+        "name": "query_params"
+      }
+    ],
+    "selections": [
+      {
+        "name": "whatsapp_catkit_typeahead_proxy",
+        "ty": "CatkitTypeaheadResponse",
+        "args": [
+          "query_params: $query_params"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "categories",
+            "ty": "WhatsAppBizProfileCategory",
+            "plural": true,
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "display_name",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "categories",
+                "ty": "WhatsAppBizProfileCategory",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "id",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "display_name",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "categories",
+                    "ty": "WhatsAppBizProfileCategory",
+                    "plural": true,
+                    "kind": "LinkedField",
+                    "selections": [
+                      {
+                        "name": "id",
+                        "kind": "ScalarField"
+                      },
+                      {
+                        "name": "display_name",
+                        "kind": "ScalarField"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "not_a_biz",
+            "ty": "WhatsAppBizProfileCategory",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "id",
+                "kind": "ScalarField"
+              },
+              {
+                "name": "display_name",
+                "kind": "ScalarField"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26869203922665622\nquery BizGetCategoriesV2Query(\n  $query_params\n) {\n  whatsapp_catkit_typeahead_proxy(query_params: $query_params) {  # CatkitTypeaheadResponse\n    categories {  # [WhatsAppBizProfileCategory]\n      id\n      display_name\n      categories {  # [WhatsAppBizProfileCategory]\n        id\n        display_name\n        categories {  # [WhatsAppBizProfileCategory]\n          id\n          display_name\n        }\n      }\n    }\n    not_a_biz {  # WhatsAppBizProfileCategory\n      id\n      display_name\n    }\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebBizGetCategoriesV2Query.graphql",
+    "matches": "id:\\s*\"26869203922665622\""
+  },
+  "literals": [
+    "26869203922665622",
+    "WAWebBizGetCategoriesV2Query"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizGetCategoriesV2Query"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

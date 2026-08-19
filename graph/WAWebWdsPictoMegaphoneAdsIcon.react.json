@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebPaidPartnershipLabelModal.react"],"dependent_count":2,"exports":[{"name":"WdsPictoMegaphoneAdsIcon","used_by":["WAWebAllGeneratedIcons","WAWebPaidPartnershipLabelModal.react"],"uses":2}]}

@@ -1,0 +1,15 @@
+__d("WAWebCTWAParsePrivacy", ["WALogger", "WASmaxBizSettingsSyncPrivacySettingRPC"], (function(t, n, r, o, a, i, l) {
+	var e;
+	function s(t) {
+		try {
+			var n, r = o("WASmaxBizSettingsSyncPrivacySettingRPC").receiveSyncPrivacySettingRPC(t.node()), a = r.parsedRequest, i = a.privacySmbDataSharingSettingMixin, l = i == null ? void 0 : i.value;
+			return l == null ? null : {
+				smbDataSharingSetting: l,
+				smbDataSharingVersion: (n = i == null ? void 0 : i.version) != null ? n : null
+			};
+		} catch (t) {
+			return o("WALogger").ERROR(e || (e = babelHelpers.taggedTemplateLiteralLoose(["parseCTWAPrivacy: Could not parse RPC response"]))), null;
+		}
+	}
+	l.parseCTWAPrivacy = s;
+}), 98);

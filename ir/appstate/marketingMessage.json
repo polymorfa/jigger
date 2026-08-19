@@ -1,0 +1,36 @@
+{
+  "id": "appstate:marketingMessage",
+  "kind": "appstate",
+  "name": "MarketingMessage",
+  "data": {
+    "kind": "appstate",
+    "index_name": "marketingMessage",
+    "collection": "regular",
+    "version": 7,
+    "value_field": "marketingMessageAction"
+  },
+  "evidence": {
+    "module": "WAWebPremiumMessageSync",
+    "matches": "Actions\\.MarketingMessage"
+  },
+  "literals": [
+    "marketingMessage",
+    "MarketingMessage",
+    "marketingMessageAction"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebPremiumMessageCollection",
+      "WAWebPremiumMessageSchema",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 6,
+    "dependent_count": 1
+  }
+}

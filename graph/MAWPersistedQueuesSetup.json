@@ -1,0 +1,1 @@
+{"deps":["BackendInitLoggingUtils","MAWCurrentUser","MAWIndexedDbMetadata","MAWODSProxy","MessengerWebInitData","PersistedQueueDB","WAOdsEnums","WormPersistedQueueDb","asyncToGeneratorRuntime","justknobx","qpl"],"dependents":["MAWSetupAllDatabases"],"dependent_count":1,"exports":[{"name":"mawPersistedQueuesSetup","used_by":["MAWSetupAllDatabases"],"uses":1}]}

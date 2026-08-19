@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWBulkHandleIncomingMsgApi","MAWBulkWriteReactionsTxns","MAWHandleIncomingMsgApi","MAWRestoreMsgsTxns","MAWWriteMsgTxns"],"dependent_count":5,"exports":[{"name":"shouldUseProtocolMsgIdForMsgId","used_by":["MAWBulkHandleIncomingMsgApi","MAWBulkWriteReactionsTxns","MAWHandleIncomingMsgApi","MAWRestoreMsgsTxns","MAWWriteMsgTxns"],"uses":5}]}

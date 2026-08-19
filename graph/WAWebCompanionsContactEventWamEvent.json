@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumAddContactActionType","WAWebWamEnumCompanionAddContactEventType","WAWebWamEnumCompanionAddContactSource","WAWebWamEnumCompanionContactSaveResult","WAWebWamEnumCompanionWhatsappContactStatus"],"dependents":["WAWebContactLogging"],"dependent_count":1,"exports":[{"name":"CompanionsContactEventWamEvent","used_by":[],"uses":0}]}

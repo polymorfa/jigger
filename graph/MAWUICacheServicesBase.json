@@ -1,0 +1,1 @@
+{"deps":["FBLogger","MAWCacheServiceDB","MAWCacheServiceQPL","Promise","asyncToGeneratorRuntime"],"dependents":["MAWCacheServiceBase","MAWUICacheServices"],"dependent_count":2,"exports":[{"name":"adjustCacheKey","used_by":["MAWCacheServiceBase"],"uses":1},{"name":"MAWUICacheServicesBase","used_by":[],"uses":0}]}

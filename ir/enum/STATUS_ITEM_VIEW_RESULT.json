@@ -1,0 +1,158 @@
+{
+  "id": "enum:STATUS_ITEM_VIEW_RESULT",
+  "kind": "enum",
+  "name": "STATUS_ITEM_VIEW_RESULT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusItemViewResult",
+    "variants": [
+      {
+        "name": "OK",
+        "value": 1.0
+      },
+      {
+        "name": "CANCELLED",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR_UNKNOWN",
+        "value": 3.0
+      },
+      {
+        "name": "MEDIA_ERROR_UNKNOWN",
+        "value": 4.0
+      },
+      {
+        "name": "MEDIA_ERROR_DNS",
+        "value": 5.0
+      },
+      {
+        "name": "MEDIA_ERROR_TIMEOUT",
+        "value": 6.0
+      },
+      {
+        "name": "MEDIA_ERROR_INSUFFICIENT_SPACE",
+        "value": 7.0
+      },
+      {
+        "name": "MEDIA_ERROR_TOO_OLD",
+        "value": 8.0
+      },
+      {
+        "name": "MEDIA_ERROR_CANNOT_RESUME",
+        "value": 9.0
+      },
+      {
+        "name": "MEDIA_ERROR_HASH_MISMATCH",
+        "value": 10.0
+      },
+      {
+        "name": "MEDIA_ERROR_INVALID_URL",
+        "value": 11.0
+      },
+      {
+        "name": "MEDIA_ERROR_OUTPUT_STREAM",
+        "value": 12.0
+      },
+      {
+        "name": "MEDIA_ERROR_MEDIA_CONN",
+        "value": 13.0
+      },
+      {
+        "name": "MEDIA_ERROR_THROTTLE",
+        "value": 14.0
+      },
+      {
+        "name": "MEDIA_DOWNLOAD_CANCEL",
+        "value": 15.0
+      },
+      {
+        "name": "MEDIA_PREFETCH_END",
+        "value": 16.0
+      },
+      {
+        "name": "MEDIA_ERROR_WATLS",
+        "value": 17.0
+      },
+      {
+        "name": "MEDIA_ERROR_SERVER",
+        "value": 18.0
+      },
+      {
+        "name": "MEDIA_ERROR_WAMSYS",
+        "value": 19.0
+      },
+      {
+        "name": "MEDIA_ERROR_NETWORK",
+        "value": 20.0
+      },
+      {
+        "name": "MEDIA_ERROR_CONNECT",
+        "value": 21.0
+      },
+      {
+        "name": "MEDIE_HOST_SWTICH_REQUIRED",
+        "value": 22.0
+      },
+      {
+        "name": "MEDIA_INVALID_CODE",
+        "value": 23.0
+      },
+      {
+        "name": "MEDIA_SUSPICIOUS_CONTENT",
+        "value": 24.0
+      },
+      {
+        "name": "MEDIA_ERROR_CRONET",
+        "value": 25.0
+      },
+      {
+        "name": "PARTIAL_IMAGE_DOWNLOAD",
+        "value": 26.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusItemViewResult",
+    "matches": "STATUS_ITEM_VIEW_RESULT\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_ITEM_VIEW_RESULT",
+    "OK",
+    "CANCELLED",
+    "ERROR_UNKNOWN",
+    "MEDIA_ERROR_UNKNOWN",
+    "MEDIA_ERROR_DNS",
+    "MEDIA_ERROR_TIMEOUT",
+    "MEDIA_ERROR_INSUFFICIENT_SPACE",
+    "MEDIA_ERROR_TOO_OLD",
+    "MEDIA_ERROR_CANNOT_RESUME",
+    "MEDIA_ERROR_HASH_MISMATCH",
+    "MEDIA_ERROR_INVALID_URL",
+    "MEDIA_ERROR_OUTPUT_STREAM",
+    "MEDIA_ERROR_MEDIA_CONN",
+    "MEDIA_ERROR_THROTTLE",
+    "MEDIA_DOWNLOAD_CANCEL",
+    "MEDIA_PREFETCH_END",
+    "MEDIA_ERROR_WATLS",
+    "MEDIA_ERROR_SERVER",
+    "MEDIA_ERROR_WAMSYS",
+    "MEDIA_ERROR_NETWORK",
+    "MEDIA_ERROR_CONNECT",
+    "MEDIE_HOST_SWTICH_REQUIRED",
+    "MEDIA_INVALID_CODE",
+    "MEDIA_SUSPICIOUS_CONTENT",
+    "MEDIA_ERROR_CRONET",
+    "PARTIAL_IMAGE_DOWNLOAD"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusItemViewWamEvent",
+      "WAWebStatusPlayer.react",
+      "WAWebStatusPostImpressionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

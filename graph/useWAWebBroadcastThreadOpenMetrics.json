@@ -1,0 +1,1 @@
+{"deps":["WAWebBusinessBroadcastUserJourneyLogger","WAWebChatGetters","WAWebWidToJid","react"],"dependents":["WAWebConversationPanel.react"],"dependent_count":1,"exports":[{"name":"useBroadcastThreadOpenMetrics","used_by":["WAWebConversationPanel.react"],"uses":1}]}

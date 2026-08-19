@@ -1,0 +1,72 @@
+{
+  "id": "wam:4406",
+  "kind": "wam",
+  "name": "CtwaConsumerDisclosure",
+  "data": {
+    "kind": "wam",
+    "event_id": 4406,
+    "fields": {
+      "ctwaConsumerDisclosureVersion": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "ctwa_consumer_disclosure_version"
+      },
+      "disclosureAction": {
+        "id": 1,
+        "type": "DISCLOSURE_ACTION",
+        "wire": "disclosure_action",
+        "enum_ref": "DISCLOSURE_ACTION"
+      },
+      "disclosureContext": {
+        "id": 5,
+        "type": "DISCLOSURE_CONTEXT_TYPE",
+        "wire": "disclosure_context",
+        "enum_ref": "DISCLOSURE_CONTEXT_TYPE"
+      },
+      "disclosureEntryPoint": {
+        "id": 4,
+        "type": "DISCLOSURE_ENTRY_POINT_TYPE",
+        "wire": "disclosure_entry_point",
+        "enum_ref": "DISCLOSURE_ENTRY_POINT_TYPE"
+      },
+      "disclosureType": {
+        "id": 2,
+        "type": "DISCLOSURE_TYPE",
+        "wire": "disclosure_type",
+        "enum_ref": "DISCLOSURE_TYPE"
+      },
+      "threadIdHmac": {
+        "id": 6,
+        "type": "STRING",
+        "wire": "thread_id_hmac"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "private"
+  },
+  "evidence": {
+    "module": "WAWebCtwaConsumerDisclosureWamEvent",
+    "matches": "CtwaConsumerDisclosure:\\s*\\[\\s*4406"
+  },
+  "literals": [
+    "4406"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumDisclosureAction",
+      "WAWebWamEnumDisclosureContextType",
+      "WAWebWamEnumDisclosureEntryPointType",
+      "WAWebWamEnumDisclosureType"
+    ],
+    "dependents": [
+      "WAWebConsumerTransparencyModalDialog.react"
+    ],
+    "dep_count": 5,
+    "dependent_count": 1
+  }
+}

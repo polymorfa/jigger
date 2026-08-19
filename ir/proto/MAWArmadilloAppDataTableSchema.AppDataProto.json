@@ -1,0 +1,48 @@
+{
+  "id": "proto:MAWArmadilloAppDataTableSchema.AppDataProto",
+  "kind": "proto",
+  "name": "MAWArmadilloAppDataTableSchema.AppDataProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "actions": {
+        "number": 2,
+        "type_name": "MAWArmadilloAppDataTableSchema.MetaSyncActionProto"
+      },
+      "encryptedBackupsSecrets": {
+        "number": 3,
+        "type_name": "MAWArmadilloAppDataTableSchema.EncryptedBackupsSecretsProto"
+      },
+      "syncKeyRequest": {
+        "number": 5,
+        "type_name": "MAWArmadilloAppDataTableSchema.SyncKeyRequestProto"
+      },
+      "syncKeyShare": {
+        "number": 4,
+        "type_name": "MAWArmadilloAppDataTableSchema.SyncKeyShareProto"
+      },
+      "type": {
+        "number": 1
+      }
+    },
+    "module": "MAWArmadilloAppDataTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloAppDataTableSchema.pb",
+    "matches": "name = \"AppDataProto\""
+  },
+  "literals": [
+    "AppDataProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode",
+      "MAWDbObjEncode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "proto:WAArmadilloApplication.Armadillo.ApplicationData",
+  "kind": "proto",
+  "name": "WAArmadilloApplication.Armadillo.ApplicationData",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "aiBotResponse": {
+        "number": 2,
+        "type_name": "WAArmadilloApplication.Armadillo.ApplicationData.AIBotResponseMessage"
+      },
+      "messageHistoryDocumentMessage": {
+        "number": 3,
+        "type_name": "WAArmadilloApplication.Armadillo.ApplicationData.MessageHistoryDocumentMessage"
+      },
+      "metadataSync": {
+        "number": 1,
+        "type_name": "WAArmadilloApplication.Armadillo.ApplicationData.MetadataSyncNotification"
+      }
+    },
+    "module": "WAArmadilloApplication.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloApplication.pb",
+    "matches": "name = \"Armadillo.ApplicationData\""
+  },
+  "literals": [
+    "ApplicationData"
+  ],
+  "graph": {
+    "deps": [
+      "WAArmadilloXMA.pb",
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsArmadilloApplication",
+      "MAWAsMessageApplication",
+      "MAWEphemeralUtil",
+      "MAWEphemeralUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseArmadilloProtocol",
+      "MAWParseScreenshotActionMsg",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "MpsRavenToBridge",
+      "MpsScreenshotActionToBridgeMsg",
+      "SendMsgArgsToProtobuf",
+      "WAConvertAppData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 16
+  }
+}

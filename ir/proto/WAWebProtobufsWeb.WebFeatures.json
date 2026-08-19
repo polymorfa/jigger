@@ -1,0 +1,191 @@
+{
+  "id": "proto:WAWebProtobufsWeb.WebFeatures",
+  "kind": "proto",
+  "name": "WAWebProtobufsWeb.WebFeatures",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "archiveV2": {
+        "number": 43
+      },
+      "catalog": {
+        "number": 27
+      },
+      "changeNumberV2": {
+        "number": 5
+      },
+      "disappearingMode": {
+        "number": 47
+      },
+      "e2ENotificationSync": {
+        "number": 33
+      },
+      "ephemeral24HDuration": {
+        "number": 45
+      },
+      "ephemeralAllowGroupMembers": {
+        "number": 44
+      },
+      "ephemeralMessages": {
+        "number": 32
+      },
+      "externalMdOptInAvailable": {
+        "number": 48
+      },
+      "frequentlyForwardedSetting": {
+        "number": 24
+      },
+      "groupDogfoodingInternalOnly": {
+        "number": 41
+      },
+      "groupUiiCleanup": {
+        "number": 40
+      },
+      "groupsV3": {
+        "number": 3
+      },
+      "groupsV3Create": {
+        "number": 4
+      },
+      "groupsV4JoinPermission": {
+        "number": 25
+      },
+      "labelsDisplay": {
+        "number": 1
+      },
+      "labelsEdit": {
+        "number": 14
+      },
+      "liveLocations": {
+        "number": 7
+      },
+      "liveLocationsFinal": {
+        "number": 13
+      },
+      "mdForceUpgrade": {
+        "number": 46
+      },
+      "mediaUpload": {
+        "number": 15
+      },
+      "mediaUploadRichQuickReplies": {
+        "number": 18
+      },
+      "noDeleteMessageTimeLimit": {
+        "number": 49
+      },
+      "payments": {
+        "number": 11
+      },
+      "queryStatusV3Thumbnail": {
+        "number": 6
+      },
+      "queryVname": {
+        "number": 8
+      },
+      "quickRepliesQuery": {
+        "number": 10
+      },
+      "recentStickers": {
+        "number": 26
+      },
+      "recentStickersV2": {
+        "number": 34
+      },
+      "recentStickersV3": {
+        "number": 36
+      },
+      "settingsSync": {
+        "number": 42
+      },
+      "starredStickers": {
+        "number": 28
+      },
+      "statusRanking": {
+        "number": 21
+      },
+      "stickerPackQuery": {
+        "number": 12
+      },
+      "support": {
+        "number": 39
+      },
+      "templateMessage": {
+        "number": 30
+      },
+      "templateMessageInteractivity": {
+        "number": 31
+      },
+      "thirdPartyStickers": {
+        "number": 23
+      },
+      "userNotice": {
+        "number": 37
+      },
+      "videoPlaybackUrl": {
+        "number": 20
+      },
+      "vnameV2": {
+        "number": 19
+      },
+      "voipGroupCall": {
+        "number": 29
+      },
+      "voipIndividualIncoming": {
+        "number": 9
+      },
+      "voipIndividualOutgoing": {
+        "number": 2
+      },
+      "voipIndividualVideo": {
+        "number": 22
+      }
+    },
+    "module": "WAWebProtobufsWeb.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsWeb.pb",
+    "matches": "name = \"WebFeatures\""
+  },
+  "literals": [
+    "WebFeatures"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst",
+      "WAWebProtobufsE2E.pb",
+      "WAWebProtobufsProtocol.pb"
+    ],
+    "dependents": [
+      "WAWebBizPrivacyUtils",
+      "WAWebDBProcessPaymentMessages",
+      "WAWebDebug",
+      "WAWebEventsParseWebMsgInfoEventResponse",
+      "WAWebGenerateRevokeWebMessageInfo",
+      "WAWebGroupHistorySerializationUtils",
+      "WAWebHandleMsgParser",
+      "WAWebMessagePluginGenerateWebMessageInfo",
+      "WAWebNonMessageDataRequestHandlerPlaceholderResend",
+      "WAWebParseLimitSharingHistorySyncProto",
+      "WAWebParseMessageHistoryBundleProto",
+      "WAWebParseRequestPaymentMessageProto",
+      "WAWebParseWebMessageInfoUtils",
+      "WAWebPaymentIcon.react",
+      "WAWebPaymentIcon.story",
+      "WAWebPaymentInfo.react",
+      "WAWebPaymentInfo.story",
+      "WAWebPaymentStatus.react",
+      "WAWebPaymentStatus.story",
+      "WAWebPaymentStatusUtils",
+      "WAWebPinMsgParseWebMsgInfoPinInChat",
+      "WAWebPollsParseWebMsgInfoPollUpdates",
+      "WAWebProtobufsGroupHistory.pb",
+      "WAWebProtobufsHistorySync.pb",
+      "WAWebReactionsParseWebMsgInfoReaction",
+      "WAWebUpdateMsgBizPrivacyStatusAction"
+    ],
+    "dep_count": 4,
+    "dependent_count": 26
+  }
+}

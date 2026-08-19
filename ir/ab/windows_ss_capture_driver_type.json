@@ -1,0 +1,42 @@
+{
+  "id": "ab:windows_ss_capture_driver_type",
+  "kind": "ab",
+  "name": "windows_ss_capture_driver_type",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 10434,
+    "type": "int",
+    "default": 0,
+    "alt_default": 0
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "windows_ss_capture_driver_type:\\s*\\[\\s*10434"
+  },
+  "literals": [
+    "windows_ss_capture_driver_type",
+    "10434"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

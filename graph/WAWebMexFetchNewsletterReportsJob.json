@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBackendErrors","WAWebMexClient","WAWebMexFetchNewsletterReportsJobQuery.graphql","asyncToGeneratorRuntime"],"dependents":["WAWebNewsletterGetNewsletterReportsJob"],"dependent_count":1,"exports":[{"name":"mexFetchNewsletterReports","used_by":["WAWebNewsletterGetNewsletterReportsJob"],"uses":1}]}

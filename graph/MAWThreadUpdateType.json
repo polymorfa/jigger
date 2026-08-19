@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWGetThreadConsistencyInfo","MAWGetThreadUpdateType","MAWGetThreadUpdateTypeForAdminMsg","MAWThreadNewestMsgOrReactionUtils"],"dependent_count":4,"exports":[{"name":"THREAD_UPDATE_TYPE","used_by":["MAWGetThreadConsistencyInfo","MAWGetThreadUpdateType","MAWGetThreadUpdateTypeForAdminMsg","MAWThreadNewestMsgOrReactionUtils"],"uses":4}]}

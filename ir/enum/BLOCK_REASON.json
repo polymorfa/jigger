@@ -1,0 +1,67 @@
+{
+  "id": "enum:BLOCK_REASON",
+  "kind": "enum",
+  "name": "BLOCK_REASON",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBlockReason",
+    "variants": [
+      {
+        "name": "OTHER",
+        "value": 0.0
+      },
+      {
+        "name": "NO_LONGER_NEEDED",
+        "value": 1.0
+      },
+      {
+        "name": "NO_SIGN_UP",
+        "value": 2.0
+      },
+      {
+        "name": "SPAM",
+        "value": 3.0
+      },
+      {
+        "name": "OFFENSIVE_MESSAGES",
+        "value": 4.0
+      },
+      {
+        "name": "OTP_DID_NOT_REQUEST",
+        "value": 5.0
+      },
+      {
+        "name": "SCAM_OR_FRAUD",
+        "value": 6.0
+      },
+      {
+        "name": "DONT_RECOGNIZE",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBlockReason",
+    "matches": "BLOCK_REASON\\s*[:=]"
+  },
+  "literals": [
+    "BLOCK_REASON",
+    "OTHER",
+    "NO_LONGER_NEEDED",
+    "NO_SIGN_UP",
+    "SPAM",
+    "OFFENSIVE_MESSAGES",
+    "OTP_DID_NOT_REQUEST",
+    "SCAM_OR_FRAUD",
+    "DONT_RECOGNIZE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatMessageCountsWamEvent",
+      "WAWebThreadInteractionDataIntegrityWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

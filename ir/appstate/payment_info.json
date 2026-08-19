@@ -1,0 +1,38 @@
+{
+  "id": "appstate:payment_info",
+  "kind": "appstate",
+  "name": "PaymentInfo",
+  "data": {
+    "kind": "appstate",
+    "index_name": "payment_info",
+    "collection": "regular_low",
+    "version": 7,
+    "value_field": "paymentInfoAction"
+  },
+  "evidence": {
+    "module": "WAWebPaymentInfoSync",
+    "matches": "Actions\\.PaymentInfo"
+  },
+  "literals": [
+    "payment_info",
+    "PaymentInfo",
+    "paymentInfoAction"
+  ],
+  "graph": {
+    "deps": [
+      "WALogger",
+      "WAWebABProps",
+      "WAWebBackendApi",
+      "WAWebMobilePlatforms",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 8,
+    "dependent_count": 1
+  }
+}

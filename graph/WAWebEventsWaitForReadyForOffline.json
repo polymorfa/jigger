@@ -1,0 +1,1 @@
+{"deps":["Promise","WAWebBackendEventBus","WAWebEventsWaitForBbEvent","err"],"dependents":["WAWebInitWaitForEvents","WAWebMessageQueue","WAWebOfflineHandler"],"dependent_count":3,"exports":[{"name":"waitForOfflineProcessReady","used_by":["WAWebMessageQueue","WAWebOfflineHandler"],"uses":2},{"name":"initWaitForOfflineProcessReady","used_by":["WAWebInitWaitForEvents"],"uses":1}]}

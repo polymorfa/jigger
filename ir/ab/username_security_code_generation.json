@@ -1,0 +1,45 @@
+{
+  "id": "ab:username_security_code_generation",
+  "kind": "ab",
+  "name": "username_security_code_generation",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 7468,
+    "type": "bool",
+    "default": false,
+    "alt_default": true
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "username_security_code_generation:\\s*\\[\\s*7468"
+  },
+  "literals": [
+    "username_security_code_generation",
+    "7468"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebUsernameGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebBuildConstants","WAWebUpdaterDownloadStateType","WAWebUpdaterVersion"],"dependents":["WAWebAppSwInitializer","WAWebUpdater"],"dependent_count":2,"exports":[{"name":"updateSw","used_by":["WAWebAppSwInitializer","WAWebUpdater"],"uses":2}]}

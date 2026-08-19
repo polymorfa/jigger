@@ -1,0 +1,42 @@
+{
+  "id": "ab:web_chat_theme_drawer_title",
+  "kind": "ab",
+  "name": "web_chat_theme_drawer_title",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28157,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_chat_theme_drawer_title:\\s*\\[\\s*28157"
+  },
+  "literals": [
+    "web_chat_theme_drawer_title",
+    "28157"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

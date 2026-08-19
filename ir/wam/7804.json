@@ -1,0 +1,68 @@
+{
+  "id": "wam:7804",
+  "kind": "wam",
+  "name": "MdLinkedDevicesWindowsXdr",
+  "data": {
+    "kind": "wam",
+    "event_id": 7804,
+    "fields": {
+      "mdLinkedDevicesWindowsXdrStage": {
+        "id": 1,
+        "type": "MD_LINKED_DEVICES_WINDOWS_XDR_STAGE",
+        "wire": "md_linked_devices_windows_xdr_stage",
+        "enum_ref": "MD_LINKED_DEVICES_WINDOWS_XDR_STAGE"
+      },
+      "mdXdrDebounceTimeoutInMs": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "md_xdr_debounce_timeout_in_ms"
+      },
+      "mdXdrErrorReason": {
+        "id": 3,
+        "type": "STRING",
+        "wire": "md_xdr_error_reason"
+      },
+      "mdXdrPayload": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "md_xdr_payload"
+      },
+      "mdXdrSessionUuid": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "md_xdr_session_uuid"
+      },
+      "mdXdrTransportType": {
+        "id": 6,
+        "type": "MD_XDR_TRANSPORT_TYPE",
+        "wire": "md_xdr_transport_type",
+        "enum_ref": "MD_XDR_TRANSPORT_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebMdLinkedDevicesWindowsXdrWamEvent",
+    "matches": "MdLinkedDevicesWindowsXdr:\\s*\\[\\s*7804"
+  },
+  "literals": [
+    "7804"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumMdLinkedDevicesWindowsXdrStage",
+      "WAWebWamEnumMdXdrTransportType"
+    ],
+    "dependents": [
+      "WAWebExecApiCmd"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "wam:1840",
+  "kind": "wam",
+  "name": "StickerSend",
+  "data": {
+    "kind": "wam",
+    "event_id": 1840,
+    "fields": {
+      "stickerIsAi": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_ai"
+      },
+      "stickerIsAnimated": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_animated"
+      },
+      "stickerIsAvatar": {
+        "id": 6,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_avatar"
+      },
+      "stickerIsFirstParty": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_first_party"
+      },
+      "stickerIsFromStickerMaker": {
+        "id": 5,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_from_sticker_maker"
+      },
+      "stickerIsFromUserCreatedPack": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_from_user_created_pack"
+      },
+      "stickerIsGiphy": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_giphy"
+      },
+      "stickerIsKlipy": {
+        "id": 13,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_klipy"
+      },
+      "stickerIsLottie": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_lottie"
+      },
+      "stickerIsPremium": {
+        "id": 15,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_premium"
+      },
+      "stickerIsTenor": {
+        "id": 11,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_tenor"
+      },
+      "stickerIsText": {
+        "id": 14,
+        "type": "BOOLEAN",
+        "wire": "sticker_is_text"
+      },
+      "stickerMakerSourceType": {
+        "id": 8,
+        "type": "STICKER_MAKER_SOURCE_TYPE",
+        "wire": "sticker_maker_source_type",
+        "enum_ref": "STICKER_MAKER_SOURCE_TYPE"
+      },
+      "stickerSendMessageType": {
+        "id": 4,
+        "type": "STICKER_SEND_MESSAGE_TYPE",
+        "wire": "sticker_send_message_type",
+        "enum_ref": "STICKER_SEND_MESSAGE_TYPE"
+      },
+      "stickerSendOrigin": {
+        "id": 1,
+        "type": "STICKER_SEND_ORIGIN_TYPE",
+        "wire": "sticker_send_origin",
+        "enum_ref": "STICKER_SEND_ORIGIN_TYPE"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebStickerSendWamEvent",
+    "matches": "StickerSend:\\s*\\[\\s*1840"
+  },
+  "literals": [
+    "1840"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumStickerMakerSourceType",
+      "WAWebWamEnumStickerSendMessageType",
+      "WAWebWamEnumStickerSendOriginType"
+    ],
+    "dependents": [
+      "WAWebMediaEditor.react",
+      "WAWebMediaForwardMediaMsg",
+      "WAWebSendStickerAction"
+    ],
+    "dep_count": 4,
+    "dependent_count": 3
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["MAWAckLevel","MAWDbMsgTxns","MAWDbReactionsTxns","MAWDexieTable","MAWIndexedDb","MAWQplProxy","MAWTransactionMode"],"dependents":["MAWMessageSendsCommon"],"dependent_count":1,"exports":[{"name":"markMsgDropped","used_by":["MAWMessageSendsCommon"],"uses":1}]}

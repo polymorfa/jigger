@@ -1,0 +1,49 @@
+{
+  "id": "proto:MAWArmadilloCollectionVersionsTableSchema.CollectionVersionsTableSchemaProto",
+  "kind": "proto",
+  "name": "MAWArmadilloCollectionVersionsTableSchema.CollectionVersionsTableSchemaProto",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "collection": {
+        "number": 1
+      },
+      "finiteFailureStartTime": {
+        "number": 4
+      },
+      "isCollectionInMacMismatchFatal": {
+        "number": 6
+      },
+      "isCollectionLthashInconsistent": {
+        "number": 7
+      },
+      "ltHash": {
+        "number": 5
+      },
+      "state": {
+        "number": 3
+      },
+      "version": {
+        "number": 2
+      }
+    },
+    "module": "MAWArmadilloCollectionVersionsTableSchema.pb"
+  },
+  "evidence": {
+    "module": "MAWArmadilloCollectionVersionsTableSchema.pb",
+    "matches": "name = \"CollectionVersionsTableSchemaProto\""
+  },
+  "literals": [
+    "CollectionVersionsTableSchemaProto"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWDbObjDecode"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

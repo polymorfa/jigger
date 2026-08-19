@@ -1,0 +1,1 @@
+{"deps":["WAWebLinkPreviewUtils","WAWebLinkify","WAWebProtobufsE2E.pb"],"dependents":["WAWebVoipCallLinkSharePanel.react","WAWebVoipCreateCallLinksPopup.react"],"dependent_count":2,"exports":[{"name":"buildCallLinkLocalPreview","used_by":["WAWebVoipCallLinkSharePanel.react","WAWebVoipCreateCallLinksPopup.react"],"uses":2}]}

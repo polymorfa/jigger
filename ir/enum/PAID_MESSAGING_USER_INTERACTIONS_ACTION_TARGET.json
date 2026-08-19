@@ -1,0 +1,128 @@
+{
+  "id": "enum:PAID_MESSAGING_USER_INTERACTIONS_ACTION_TARGET",
+  "kind": "enum",
+  "name": "PAID_MESSAGING_USER_INTERACTIONS_ACTION_TARGET",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsActionTarget",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 0.0
+      },
+      {
+        "name": "HEADER",
+        "value": 1.0
+      },
+      {
+        "name": "CTA_COPY_CODE",
+        "value": 2.0
+      },
+      {
+        "name": "CTA_URL",
+        "value": 3.0
+      },
+      {
+        "name": "QUICK_REPLY",
+        "value": 4.0
+      },
+      {
+        "name": "CTA_CALL",
+        "value": 5.0
+      },
+      {
+        "name": "CTA_REMINDER",
+        "value": 6.0
+      },
+      {
+        "name": "SEE_ALL",
+        "value": 7.0
+      },
+      {
+        "name": "THUMBNAIL",
+        "value": 8.0
+      },
+      {
+        "name": "VIEW_PRODUCT",
+        "value": 9.0
+      },
+      {
+        "name": "URL",
+        "value": 10.0
+      },
+      {
+        "name": "CTA_APP",
+        "value": 11.0
+      },
+      {
+        "name": "IMAGE_HEADER_URL",
+        "value": 12.0
+      },
+      {
+        "name": "FULLSCREEN_IMAGE_CTA_URL",
+        "value": 13.0
+      },
+      {
+        "name": "FULLSCREEN_VIDEO_CTA_URL",
+        "value": 14.0
+      },
+      {
+        "name": "TEXT_HEADER_URL",
+        "value": 15.0
+      },
+      {
+        "name": "FULLSCREEN_ALBUM_CTA_URL",
+        "value": 16.0
+      },
+      {
+        "name": "WATCH_AND_BROWSE_VIDEO",
+        "value": 17.0
+      },
+      {
+        "name": "SUGGESTED_QUICK_REPLY",
+        "value": 18.0
+      },
+      {
+        "name": "QUICK_REPLY_PILL",
+        "value": 19.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPaidMessagingUserInteractionsActionTarget",
+    "matches": "PAID_MESSAGING_USER_INTERACTIONS_ACTION_TARGET\\s*[:=]"
+  },
+  "literals": [
+    "PAID_MESSAGING_USER_INTERACTIONS_ACTION_TARGET",
+    "NONE",
+    "HEADER",
+    "CTA_COPY_CODE",
+    "CTA_URL",
+    "QUICK_REPLY",
+    "CTA_CALL",
+    "CTA_REMINDER",
+    "SEE_ALL",
+    "THUMBNAIL",
+    "VIEW_PRODUCT",
+    "URL",
+    "CTA_APP",
+    "IMAGE_HEADER_URL",
+    "FULLSCREEN_IMAGE_CTA_URL",
+    "FULLSCREEN_VIDEO_CTA_URL",
+    "TEXT_HEADER_URL",
+    "FULLSCREEN_ALBUM_CTA_URL",
+    "WATCH_AND_BROWSE_VIDEO",
+    "SUGGESTED_QUICK_REPLY",
+    "QUICK_REPLY_PILL"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebGetInteractiveActionsForCarouselCard",
+      "WAWebInteractiveMessageCarouselLogEvents",
+      "WAWebPaidMessagingUserInteractionsLoggerWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

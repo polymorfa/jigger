@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebLinkSVGIcon"],"dependent_count":2,"exports":[{"name":"JiraLogoIcon","used_by":["WAWebAllGeneratedIcons","WAWebLinkSVGIcon"],"uses":2}]}

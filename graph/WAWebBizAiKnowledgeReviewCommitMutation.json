@@ -1,0 +1,1 @@
+{"deps":["WAWebBizAiKnowledgeReviewCommitMutation.graphql","WAWebBoolFunc","WAWebRelayClient"],"dependents":["WAWebBizAiKnowledgeReviewDrawer.react"],"dependent_count":1,"exports":[{"name":"commitPendingData","used_by":["WAWebBizAiKnowledgeReviewDrawer.react"],"uses":1}]}

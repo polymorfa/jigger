@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebButton.react","WAWebDrawerSection.react","WAWebFlatList.react","WAWebPollsOptionMetadataRow","WAWebPollsVoterRow","WAWebPollsVoterSectionHeader","WDSPaddings.stylex","react","react-compiler-runtime","stylex"],"dependents":["WAWebPollsDetailsDrawer","WAWebPollsViewAllVotesDrawer"],"dependent_count":2,"exports":[]}

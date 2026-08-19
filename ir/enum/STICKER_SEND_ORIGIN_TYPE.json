@@ -1,0 +1,121 @@
+{
+  "id": "enum:STICKER_SEND_ORIGIN_TYPE",
+  "kind": "enum",
+  "name": "STICKER_SEND_ORIGIN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStickerSendOriginType",
+    "variants": [
+      {
+        "name": "STICKER_SEARCH",
+        "value": 1.0
+      },
+      {
+        "name": "FORWARD",
+        "value": 2.0
+      },
+      {
+        "name": "STICKER_PICKER_TAB_RECENTS",
+        "value": 3.0
+      },
+      {
+        "name": "STICKER_PICKER_TAB_FAVORITES",
+        "value": 4.0
+      },
+      {
+        "name": "STICKER_PICKER_TAB_EMOTION",
+        "value": 5.0
+      },
+      {
+        "name": "STICKER_PICKER_TAB_PACK",
+        "value": 6.0
+      },
+      {
+        "name": "STICKER_PICKER_TAB_CONTEXTUAL_SUGGESTIONS",
+        "value": 7.0
+      },
+      {
+        "name": "STICKER_MAKER",
+        "value": 8.0
+      },
+      {
+        "name": "STICKER_STORE",
+        "value": 9.0
+      },
+      {
+        "name": "AI_STICKER_CREATE",
+        "value": 10.0
+      },
+      {
+        "name": "AI_STICKER_CREATE_TRAY",
+        "value": 11.0
+      },
+      {
+        "name": "AI_STICKER_CREATE_CHAT",
+        "value": 12.0
+      },
+      {
+        "name": "STATUS_QUICK_REPLY",
+        "value": 13.0
+      },
+      {
+        "name": "DISCOVERY_PACK",
+        "value": 14.0
+      },
+      {
+        "name": "STICKER_FROM_DEVICE_KEYBOARD",
+        "value": 15.0
+      },
+      {
+        "name": "STICKER_PACK_INFO",
+        "value": 16.0
+      },
+      {
+        "name": "CONVERSATION_STARTER",
+        "value": 17.0
+      },
+      {
+        "name": "STICKER_SEARCH_TRENDING",
+        "value": 18.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStickerSendOriginType",
+    "matches": "STICKER_SEND_ORIGIN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STICKER_SEND_ORIGIN_TYPE",
+    "STICKER_SEARCH",
+    "FORWARD",
+    "STICKER_PICKER_TAB_RECENTS",
+    "STICKER_PICKER_TAB_FAVORITES",
+    "STICKER_PICKER_TAB_EMOTION",
+    "STICKER_PICKER_TAB_PACK",
+    "STICKER_PICKER_TAB_CONTEXTUAL_SUGGESTIONS",
+    "STICKER_MAKER",
+    "STICKER_STORE",
+    "AI_STICKER_CREATE",
+    "AI_STICKER_CREATE_TRAY",
+    "AI_STICKER_CREATE_CHAT",
+    "STATUS_QUICK_REPLY",
+    "DISCOVERY_PACK",
+    "STICKER_FROM_DEVICE_KEYBOARD",
+    "STICKER_PACK_INFO",
+    "CONVERSATION_STARTER",
+    "STICKER_SEARCH_TRENDING"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaEditor.react",
+      "WAWebMediaForwardMediaMsg",
+      "WAWebStickerPackDetailsFlow.react",
+      "WAWebStickerPanelContent.react",
+      "WAWebStickerSendWamEvent",
+      "WAWebStickerStoreFlow"
+    ],
+    "dep_count": 0,
+    "dependent_count": 6
+  }
+}

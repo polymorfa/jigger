@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWCommonSetupBridge","MAWQplProxy","QuickPerformanceLogger","WAWebQplFlow","WMIQplFlow","sendToSentQPLLogger","useLabyrinthLogging"],"dependent_count":7,"exports":[{"name":"getMarkerId","used_by":[],"uses":0},{"name":"getSampleRate","used_by":[],"uses":0},{"name":"getSamplingMethod","used_by":[],"uses":0}]}

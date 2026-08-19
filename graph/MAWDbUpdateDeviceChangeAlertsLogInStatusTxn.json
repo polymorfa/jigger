@@ -1,0 +1,1 @@
+{"deps":["MAWDbGetAlertsWithDeviceJidTxn","MAWDbUpdateDeviceChangeAlertsTxn"],"dependents":["MAWDebug"],"dependent_count":1,"exports":[{"name":"updateDeviceChangeAlertsLogInStatusTxn","used_by":["MAWDebug"],"uses":1}]}

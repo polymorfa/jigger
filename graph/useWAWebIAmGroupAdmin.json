@@ -1,0 +1,1 @@
+{"deps":["react-compiler-runtime","useWAWebEventTargetValue"],"dependents":["WAWebCommunityHomeWrapper.react","WAWebGroupFromGroupSection.react","WAWebGroupInfoCreateCommunitySection.react","WAWebGroupInfoIntegritySection.react"],"dependent_count":4,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,103 @@
+{
+  "id": "proto:WAE2E.Message.DocumentMessage",
+  "kind": "proto",
+  "name": "WAE2E.Message.DocumentMessage",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "accessibilityLabel": {
+        "number": 21
+      },
+      "caption": {
+        "number": 20
+      },
+      "contactVcard": {
+        "number": 12
+      },
+      "contextInfo": {
+        "number": 17,
+        "type_name": "WAE2E.ContextInfo"
+      },
+      "directPath": {
+        "number": 10
+      },
+      "fileEncSha256": {
+        "number": 9
+      },
+      "fileLength": {
+        "number": 5
+      },
+      "fileName": {
+        "number": 8
+      },
+      "fileSha256": {
+        "number": 4
+      },
+      "jpegThumbnail": {
+        "number": 16
+      },
+      "mediaKey": {
+        "number": 7
+      },
+      "mediaKeyTimestamp": {
+        "number": 11
+      },
+      "mimetype": {
+        "number": 2
+      },
+      "pageCount": {
+        "number": 6
+      },
+      "thumbnailDirectPath": {
+        "number": 13
+      },
+      "thumbnailEncSha256": {
+        "number": 15
+      },
+      "thumbnailHeight": {
+        "number": 18
+      },
+      "thumbnailSha256": {
+        "number": 14
+      },
+      "thumbnailWidth": {
+        "number": 19
+      },
+      "title": {
+        "number": 3
+      },
+      "url": {
+        "number": 1
+      }
+    },
+    "module": "WAE2E.pb"
+  },
+  "evidence": {
+    "module": "WAE2E.pb",
+    "matches": "name = \"Message.DocumentMessage\""
+  },
+  "literals": [
+    "DocumentMessage"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAAICommon.pb",
+      "WAAICommonDeprecated.pb",
+      "WAAdv.pb",
+      "WACompanionReg.pb",
+      "WAMmsRetry.pb",
+      "WAProtoConst",
+      "WAProtocol.pb",
+      "WAStatusAttributions.pb"
+    ],
+    "dependents": [
+      "WAHandleGroupMessageProtocol",
+      "WAHandleIndividualMessageProtocol",
+      "WAHandlePeerMessageProtocol",
+      "WAParseProtocol"
+    ],
+    "dep_count": 9,
+    "dependent_count": 4
+  }
+}

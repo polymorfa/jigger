@@ -1,0 +1,1 @@
+{"deps":["MWXMAV2IsDataclassLiveLocationXMA"],"dependents":["MAWHandleIncomingMsgApi","MAWParseXMAProtocol"],"dependent_count":2,"exports":[{"name":"isCollapsibleXMA","used_by":["MAWHandleIncomingMsgApi","MAWParseXMAProtocol"],"uses":2}]}

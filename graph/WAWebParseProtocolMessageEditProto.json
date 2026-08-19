@@ -1,0 +1,1 @@
+{"deps":["WALogger","WALongInt","WAWebBotBaseGating","WAWebE2EProtoParser","WAWebE2EProtoUtils","WAWebMsgType","WAWebProtobufsE2E.pb","getErrorSafe","nullthrows"],"dependents":["WAWebMessageEditDecryptedMsgDataConversion","WAWebMessagePluginParseProtobufRegistry"],"dependent_count":2,"exports":[{"name":"default","used_by":[],"uses":0}]}

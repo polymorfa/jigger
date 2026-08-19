@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebDetailImage.react"],"dependent_count":2,"exports":[{"name":"DefaultUserSquareIcon","used_by":["WAWebAllGeneratedIcons","WAWebDetailImage.react"],"uses":2}]}

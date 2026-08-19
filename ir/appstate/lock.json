@@ -1,0 +1,50 @@
+{
+  "id": "appstate:lock",
+  "kind": "appstate",
+  "name": "LockChat",
+  "data": {
+    "kind": "appstate",
+    "index_name": "lock",
+    "collection": "regular_low",
+    "version": 7,
+    "value_field": "lockChatAction",
+    "index_fields": {
+      "chatJidIndex": 1
+    }
+  },
+  "evidence": {
+    "module": "WAWebLockChatSync",
+    "matches": "Actions\\.LockChat"
+  },
+  "literals": [
+    "lock",
+    "LockChat",
+    "lockChatAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WATimeUtils",
+      "WAWebArchiveChatSync",
+      "WAWebChatLockAction",
+      "WAWebPinChatSync",
+      "WAWebProtobufsServerSync.pb",
+      "WAWebSyncdAction",
+      "WAWebSyncdActionUtils",
+      "WAWebSyncdConst",
+      "WAWebSyncdCoreApi",
+      "WAWebSyncdGetChat",
+      "WAWebSyncdIndexUtils",
+      "WAWebWid",
+      "WAWebWidFactory",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebChatLockAction",
+      "WAWebCollectionHandlerActions"
+    ],
+    "dep_count": 16,
+    "dependent_count": 2
+  }
+}

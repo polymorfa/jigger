@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumChannelDirectoryAction","WAWebWamEnumChannelDirectoryEntryPoint","WAWebWamEnumChannelDirectoryImpReason","WAWebWamEnumChannelDirectoryPillSelected","WAWebWamEnumChannelDirectorySurface"],"dependents":["WAWebNewsletterDirectoryFunnelLogging"],"dependent_count":1,"exports":[{"name":"ChannelDirectoryWamEvent","used_by":[],"uses":0}]}

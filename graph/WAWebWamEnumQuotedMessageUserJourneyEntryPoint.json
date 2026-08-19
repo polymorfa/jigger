@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebMessageList.react","WAWebMessageWrapper.react","WAWebQuotedMessageUserJourneyWamEvent"],"dependent_count":3,"exports":[{"name":"QUOTED_MESSAGE_USER_JOURNEY_ENTRY_POINT","used_by":["WAWebMessageList.react","WAWebMessageWrapper.react","WAWebQuotedMessageUserJourneyWamEvent"],"uses":3}]}

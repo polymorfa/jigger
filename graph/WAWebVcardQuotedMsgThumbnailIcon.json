@@ -1,0 +1,1 @@
+{"deps":["WAWebDetailImage.react","WAWebMsgGetters","WAWebProfileImage.react","WAWebProfilePicThumbCollection","WAWebQuotedMsgUtils","WAWebVcardParsingUtils","react","react-compiler-runtime"],"dependents":["WAWebMessagePluginQuotedMsgThumbnailIconRegistry"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

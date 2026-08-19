@@ -1,0 +1,39 @@
+{
+  "id": "appstate:external_web_beta",
+  "kind": "appstate",
+  "name": "ExternalWebBeta",
+  "data": {
+    "kind": "appstate",
+    "index_name": "external_web_beta",
+    "collection": "regular",
+    "version": 3,
+    "value_field": "externalWebBetaAction"
+  },
+  "evidence": {
+    "module": "WAWebExternalWebBetaSync",
+    "matches": "Actions\\.ExternalWebBeta"
+  },
+  "literals": [
+    "external_web_beta",
+    "ExternalWebBeta",
+    "externalWebBetaAction"
+  ],
+  "graph": {
+    "deps": [
+      "Promise",
+      "WALogger",
+      "WAWebABProps",
+      "WAWebExternalBetaApi",
+      "WAWebSyncdAction",
+      "WAWebSyncdConst",
+      "WAWebSyncdIndexUtils",
+      "asyncToGeneratorRuntime"
+    ],
+    "dependents": [
+      "WAWebCollectionHandlerActions",
+      "WAWebExternalBetaOptInAction"
+    ],
+    "dep_count": 8,
+    "dependent_count": 2
+  }
+}

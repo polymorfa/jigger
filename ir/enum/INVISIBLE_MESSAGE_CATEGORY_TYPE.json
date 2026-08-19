@@ -1,0 +1,66 @@
+{
+  "id": "enum:INVISIBLE_MESSAGE_CATEGORY_TYPE",
+  "kind": "enum",
+  "name": "INVISIBLE_MESSAGE_CATEGORY_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumInvisibleMessageCategoryType",
+    "variants": [
+      {
+        "name": "PEER",
+        "value": 1.0
+      },
+      {
+        "name": "INVISIBLE_KEY_DISTRIBUTION",
+        "value": 2.0
+      },
+      {
+        "name": "OTHER",
+        "value": 3.0
+      },
+      {
+        "name": "MEDIA_EXPRESS_NOTIFY",
+        "value": 4.0
+      },
+      {
+        "name": "EPHEMERAL_SYNC_RESPONSE",
+        "value": 5.0
+      },
+      {
+        "name": "GROUP_MEMBER_TAG",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumInvisibleMessageCategoryType",
+    "matches": "INVISIBLE_MESSAGE_CATEGORY_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "INVISIBLE_MESSAGE_CATEGORY_TYPE",
+    "PEER",
+    "INVISIBLE_KEY_DISTRIBUTION",
+    "OTHER",
+    "MEDIA_EXPRESS_NOTIFY",
+    "EPHEMERAL_SYNC_RESPONSE",
+    "GROUP_MEMBER_TAG"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebAndroidMessageSendPerfWamEvent",
+      "WAWebE2eMessageRecvWamEvent",
+      "WAWebE2eMessageSendWamEvent",
+      "WAWebE2eRetryRejectWamEvent",
+      "WAWebIncomingMessageDropWamEvent",
+      "WAWebMdDeviceSyncAckWamEvent",
+      "WAWebMessageHighRetryCountWamEvent",
+      "WAWebMessageReceiveWamEvent",
+      "WAWebMessageSendWamEvent",
+      "WAWebOfflineCountTooHighWamEvent",
+      "WAWebWamMsgUtils"
+    ],
+    "dep_count": 0,
+    "dependent_count": 11
+  }
+}

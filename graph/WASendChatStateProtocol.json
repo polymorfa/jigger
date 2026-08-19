@@ -1,0 +1,1 @@
+{"deps":["WALogger","WASmaxChatstateClientNotificationRPC"],"dependents":["MAWSendChatStateFromComposerApi","WAWebChatStateBridge"],"dependent_count":2,"exports":[{"name":"sendChatStateProtocol","used_by":["MAWSendChatStateFromComposerApi","WAWebChatStateBridge"],"uses":2}]}

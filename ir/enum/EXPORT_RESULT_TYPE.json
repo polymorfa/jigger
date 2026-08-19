@@ -1,0 +1,42 @@
+{
+  "id": "enum:EXPORT_RESULT_TYPE",
+  "kind": "enum",
+  "name": "EXPORT_RESULT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumExportResultType",
+    "variants": [
+      {
+        "name": "SUCCESS",
+        "value": 1.0
+      },
+      {
+        "name": "CANCELLED",
+        "value": 2.0
+      },
+      {
+        "name": "ERROR",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumExportResultType",
+    "matches": "EXPORT_RESULT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "EXPORT_RESULT_TYPE",
+    "SUCCESS",
+    "CANCELLED",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatExportWamEvent",
+      "WAWebExportChatLogging"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumAboutEntrypointType","WAWebWamEnumAboutPromptType","WAWebWamEnumAboutRequestType","WAWebWamEnumPresetType"],"dependents":["WAWebAboutWamLogger"],"dependent_count":1,"exports":[{"name":"AboutCreationWamEvent","used_by":[],"uses":0}]}

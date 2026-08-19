@@ -1,0 +1,1 @@
+{"deps":["WAWebPluginCreateRegistryLookup","WAWebSystemMessagePluginFormatMsgTextRegistry"],"dependents":["WAWebFormatMsgText"],"dependent_count":1,"exports":[{"name":"formatMsgText","used_by":["WAWebFormatMsgText"],"uses":1}]}

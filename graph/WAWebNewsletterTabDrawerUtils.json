@@ -1,0 +1,1 @@
+{"deps":["WAWebFrontendConstants"],"dependents":["WAWebNewsletterDirectoryCategoriesPreviewDrawerContent.react","WAWebNewsletterTabDrawerContent.react"],"dependent_count":2,"exports":[{"name":"isScrollAtBottomOfList","used_by":["WAWebNewsletterDirectoryCategoriesPreviewDrawerContent.react","WAWebNewsletterTabDrawerContent.react"],"uses":2}]}

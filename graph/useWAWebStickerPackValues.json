@@ -1,0 +1,1 @@
+{"deps":["WAWebStickerPackCollectionMd","useWAWebCollectionValues"],"dependents":["WAWebStickersPackDetailsDrawerModal.react"],"dependent_count":1,"exports":[{"name":"useOptionalStickerPackValues","used_by":["WAWebStickersPackDetailsDrawerModal.react"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["Promise","WALogger","WAWebPdfViewerEventEmitter"],"dependents":["WAWebMediaPanelHeaderButtons.react","WAWebTPEditPdfSendBar.react"],"dependent_count":2,"exports":[{"name":"fetchAnnotatedPdfBuffer","used_by":["WAWebMediaPanelHeaderButtons.react","WAWebTPEditPdfSendBar.react"],"uses":2}]}

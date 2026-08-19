@@ -1,0 +1,1 @@
+{"deps":["Promise","WAGlobals","WALogger","WANotifyDeviceChange","WAOfflineUtils","asyncToGeneratorRuntime"],"dependents":["MAWHandleFbDeviceChangeNotification","WAService"],"dependent_count":2,"exports":[{"name":"deviceNotificationFlushable","used_by":["MAWHandleFbDeviceChangeNotification","WAService"],"uses":2},{"name":"DeviceNotificationFlushable","used_by":[],"uses":0}]}

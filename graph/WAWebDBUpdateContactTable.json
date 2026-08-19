@@ -1,0 +1,1 @@
+{"deps":["WAWebABProps","WAWebLidAwareContactsDB","WAWebWidToJid"],"dependents":["WAWebChatModel","WAWebUpdateDisappearingModeForContact","WAWebUpdateTextStatusForContact"],"dependent_count":3,"exports":[{"name":"updateContactTable","used_by":["WAWebChatModel","WAWebUpdateDisappearingModeForContact","WAWebUpdateTextStatusForContact"],"uses":3}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebModelStorageUtils","WAWebModelStorageVersions","WAWebStorageMutationBuilder","WAWebStorageSchema"],"dependents":["WAWebAddonCommentTableMode","WAWebModelStorageInitialize"],"dependent_count":2,"exports":[{"name":"addTable","used_by":["WAWebModelStorageInitialize"],"uses":1},{"name":"getTable","used_by":["WAWebAddonCommentTableMode"],"uses":1}]}

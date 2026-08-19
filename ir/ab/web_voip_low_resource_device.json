@@ -1,0 +1,45 @@
+{
+  "id": "ab:web_voip_low_resource_device",
+  "kind": "ab",
+  "name": "web_voip_low_resource_device",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 28203,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_voip_low_resource_device:\\s*\\[\\s*28203"
+  },
+  "literals": [
+    "web_voip_low_resource_device",
+    "28203"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebLowEndDeviceExperimentGating"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

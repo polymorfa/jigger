@@ -1,0 +1,51 @@
+{
+  "id": "enum:CONTACTS_PERMISSION_AUTHORIZATION_STATUS_TYPE",
+  "kind": "enum",
+  "name": "CONTACTS_PERMISSION_AUTHORIZATION_STATUS_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumContactsPermissionAuthorizationStatusType",
+    "variants": [
+      {
+        "name": "NOT_DETERMINED",
+        "value": 1.0
+      },
+      {
+        "name": "RESTRICTED",
+        "value": 2.0
+      },
+      {
+        "name": "DENIED",
+        "value": 3.0
+      },
+      {
+        "name": "AUTHORIZED",
+        "value": 4.0
+      },
+      {
+        "name": "LIMITED",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumContactsPermissionAuthorizationStatusType",
+    "matches": "CONTACTS_PERMISSION_AUTHORIZATION_STATUS_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CONTACTS_PERMISSION_AUTHORIZATION_STATUS_TYPE",
+    "NOT_DETERMINED",
+    "RESTRICTED",
+    "DENIED",
+    "AUTHORIZED",
+    "LIMITED"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDailyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

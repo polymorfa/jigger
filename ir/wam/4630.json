@@ -1,0 +1,279 @@
+{
+  "id": "wam:4630",
+  "kind": "wam",
+  "name": "BotJourney",
+  "data": {
+    "kind": "wam",
+    "event_id": 4630,
+    "fields": {
+      "actionType": {
+        "id": 1,
+        "type": "CHAT_FILTER_ACTION_TYPES",
+        "wire": "action_type",
+        "enum_ref": "CHAT_FILTER_ACTION_TYPES"
+      },
+      "additionalCategory": {
+        "id": 11,
+        "type": "ADDITIONAL_CATEGORY_TYPE",
+        "wire": "additional_category",
+        "enum_ref": "ADDITIONAL_CATEGORY_TYPE"
+      },
+      "aiCreationAvatarCropChanges": {
+        "id": 38,
+        "type": "STRING",
+        "wire": "ai_creation_avatar_crop_changes"
+      },
+      "aiCreationInputType": {
+        "id": 29,
+        "type": "INPUT_TYPE",
+        "wire": "ai_creation_input_type",
+        "enum_ref": "INPUT_TYPE"
+      },
+      "aiCreationPersonalityCategoryInsert": {
+        "id": 26,
+        "type": "STRING",
+        "wire": "ai_creation_personality_category_insert"
+      },
+      "aiCreationPersonalityCategorySelect": {
+        "id": 27,
+        "type": "STRING",
+        "wire": "ai_creation_personality_category_select"
+      },
+      "aiDiscoveryTab": {
+        "id": 4,
+        "type": "STRING",
+        "wire": "ai_discovery_tab"
+      },
+      "aiHomeQpPromotionId": {
+        "id": 53,
+        "type": "INTEGER",
+        "wire": "ai_home_qp_promotion_id"
+      },
+      "aiQpPromotionId": {
+        "id": 54,
+        "type": "STRING",
+        "wire": "ai_qp_promotion_id"
+      },
+      "aiSessionId": {
+        "id": 18,
+        "type": "STRING",
+        "wire": "ai_session_id"
+      },
+      "aiVoiceOnSelectionDefault": {
+        "id": 24,
+        "type": "BOOLEAN",
+        "wire": "ai_voice_on_selection_default"
+      },
+      "aiVoiceSelectionEnum": {
+        "id": 25,
+        "type": "STRING",
+        "wire": "ai_voice_selection_enum"
+      },
+      "appSessionId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "app_session_id"
+      },
+      "botDiscoveryPath": {
+        "id": 8,
+        "type": "BOT_DISCOVERY_PATH_TYPE",
+        "wire": "bot_discovery_path",
+        "enum_ref": "BOT_DISCOVERY_PATH_TYPE"
+      },
+      "botEntryPoint": {
+        "id": 7,
+        "type": "BOT_ENTRY_POINT_TYPE",
+        "wire": "bot_entry_point",
+        "enum_ref": "BOT_ENTRY_POINT_TYPE"
+      },
+      "botPersonaId": {
+        "id": 5,
+        "type": "STRING",
+        "wire": "bot_persona_id"
+      },
+      "botPromptType": {
+        "id": 49,
+        "type": "BOT_PROMPT_TYPE",
+        "wire": "bot_prompt_type",
+        "enum_ref": "BOT_PROMPT_TYPE"
+      },
+      "callRandomId": {
+        "id": 13,
+        "type": "STRING",
+        "wire": "call_random_id"
+      },
+      "categoryType": {
+        "id": 40,
+        "type": "STRING",
+        "wire": "category_type"
+      },
+      "commandName": {
+        "id": 52,
+        "type": "STRING",
+        "wire": "command_name"
+      },
+      "conversationStarterCategory": {
+        "id": 22,
+        "type": "STRING",
+        "wire": "conversation_starter_category"
+      },
+      "conversationStarterIndex": {
+        "id": 23,
+        "type": "INTEGER",
+        "wire": "conversation_starter_index"
+      },
+      "conversationStarterLabel": {
+        "id": 46,
+        "type": "STRING",
+        "wire": "conversation_starter_label"
+      },
+      "conversationStarterName": {
+        "id": 51,
+        "type": "STRING",
+        "wire": "conversation_starter_name"
+      },
+      "conversationStarterPromptMode": {
+        "id": 28,
+        "type": "STRING",
+        "wire": "conversation_starter_prompt_mode"
+      },
+      "deviceLanguage": {
+        "id": 16,
+        "type": "STRING",
+        "wire": "device_language"
+      },
+      "discoveryOrigin": {
+        "id": 19,
+        "type": "DISCOVERY_ORIGIN_TYPE",
+        "wire": "discovery_origin",
+        "enum_ref": "DISCOVERY_ORIGIN_TYPE"
+      },
+      "eventTsMs": {
+        "id": 47,
+        "type": "INTEGER",
+        "wire": "event_ts_ms"
+      },
+      "hasContinueChatting": {
+        "id": 41,
+        "type": "BOOLEAN",
+        "wire": "has_continue_chatting"
+      },
+      "hasYourAiCategory": {
+        "id": 42,
+        "type": "BOOLEAN",
+        "wire": "has_your_ai_category"
+      },
+      "inlineTosNoticeId": {
+        "id": 20,
+        "type": "STRING",
+        "wire": "inline_tos_notice_id"
+      },
+      "inlineTosStatus": {
+        "id": 21,
+        "type": "INLINE_TOS_STATUS",
+        "wire": "inline_tos_status",
+        "enum_ref": "INLINE_TOS_STATUS"
+      },
+      "interestCategoriesSelected": {
+        "id": 39,
+        "type": "INTEGER",
+        "wire": "interest_categories_selected"
+      },
+      "isCache": {
+        "id": 45,
+        "type": "BOOLEAN",
+        "wire": "is_cache"
+      },
+      "isMetaAiAssistant": {
+        "id": 12,
+        "type": "BOOLEAN",
+        "wire": "is_meta_ai_assistant"
+      },
+      "isMetaAiCharacterBotChat": {
+        "id": 9,
+        "type": "BOOLEAN",
+        "wire": "is_meta_ai_character_bot_chat"
+      },
+      "isUserCreatedAgent": {
+        "id": 10,
+        "type": "BOOLEAN",
+        "wire": "is_user_created_agent"
+      },
+      "metricCount": {
+        "id": 17,
+        "type": "INTEGER",
+        "wire": "metric_count"
+      },
+      "promptTriggerPoint": {
+        "id": 50,
+        "type": "PROMPT_TRIGGER_POINT",
+        "wire": "prompt_trigger_point",
+        "enum_ref": "PROMPT_TRIGGER_POINT"
+      },
+      "rawBotEntryPoint": {
+        "id": 48,
+        "type": "STRING",
+        "wire": "raw_bot_entry_point"
+      },
+      "scrollDepth": {
+        "id": 44,
+        "type": "INTEGER",
+        "wire": "scroll_depth"
+      },
+      "scrollFetchLatency": {
+        "id": 43,
+        "type": "INTEGER",
+        "wire": "scroll_fetch_latency"
+      },
+      "uiSurface": {
+        "id": 6,
+        "type": "TS_SURFACE",
+        "wire": "ui_surface",
+        "enum_ref": "TS_SURFACE"
+      },
+      "xmaReelIndex": {
+        "id": 14,
+        "type": "INTEGER",
+        "wire": "xma_reel_index"
+      },
+      "xmaReelMaxIndex": {
+        "id": 15,
+        "type": "INTEGER",
+        "wire": "xma_reel_max_index"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebBotJourneyWamEvent",
+    "matches": "BotJourney:\\s*\\[\\s*4630"
+  },
+  "literals": [
+    "4630"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumAdditionalCategoryType",
+      "WAWebWamEnumBotDiscoveryPathType",
+      "WAWebWamEnumBotEntryPointType",
+      "WAWebWamEnumBotPromptType",
+      "WAWebWamEnumChatFilterActionTypes",
+      "WAWebWamEnumDiscoveryOriginType",
+      "WAWebWamEnumInlineTosStatus",
+      "WAWebWamEnumInputType",
+      "WAWebWamEnumPromptTriggerPoint",
+      "WAWebWamEnumTsSurface"
+    ],
+    "dependents": [
+      "WAWebBotJourneyLogger"
+    ],
+    "dep_count": 11,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["Promise","WAFlowsDomainUtils","gkx","unsafeCast"],"dependents":["WAFlowsJSBridge"],"dependent_count":1,"exports":[{"name":"getWebJSBridge","used_by":["WAFlowsJSBridge"],"uses":1},{"name":"isNativeBridgeAvailable","used_by":[],"uses":0}]}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:payment_links_trust_signals_other_metatag_kill_switch_enabled",
+  "kind": "ab",
+  "name": "payment_links_trust_signals_other_metatag_kill_switch_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 24662,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "payment_links_trust_signals_other_metatag_kill_switch_enabled:\\s*\\[\\s*24662"
+  },
+  "literals": [
+    "payment_links_trust_signals_other_metatag_kill_switch_enabled",
+    "24662"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebPaymentLinkPreviewWithAmountFeature"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

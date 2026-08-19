@@ -1,0 +1,45 @@
+{
+  "id": "ab:fmx_ctwa_kill_switch",
+  "kind": "ab",
+  "name": "fmx_ctwa_kill_switch",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 6061,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "fmx_ctwa_kill_switch:\\s*\\[\\s*6061"
+  },
+  "literals": [
+    "fmx_ctwa_kill_switch",
+    "6061"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebFMXGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

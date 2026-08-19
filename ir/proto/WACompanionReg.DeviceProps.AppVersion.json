@@ -1,0 +1,44 @@
+{
+  "id": "proto:WACompanionReg.DeviceProps.AppVersion",
+  "kind": "proto",
+  "name": "WACompanionReg.DeviceProps.AppVersion",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "primary": {
+        "number": 1
+      },
+      "quaternary": {
+        "number": 4
+      },
+      "quinary": {
+        "number": 5
+      },
+      "secondary": {
+        "number": 2
+      },
+      "tertiary": {
+        "number": 3
+      }
+    },
+    "module": "WACompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WACompanionReg.pb",
+    "matches": "name = \"DeviceProps.AppVersion\""
+  },
+  "literals": [
+    "AppVersion"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

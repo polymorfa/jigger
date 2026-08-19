@@ -1,0 +1,62 @@
+{
+  "id": "mex:WAWebMexRevokeNewsletterAdminInviteJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexRevokeNewsletterAdminInviteJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9656078347839416",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "user_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "user_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_admin_invite_revoke",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "newsletter_id: $newsletter_id",
+          "user_id: $user_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_admin_invite_revoke",
+    "document": "# persisted document 9656078347839416\nmutation MexRevokeNewsletterAdminInviteJobMutation(\n  $newsletter_id\n  $user_id\n) {\n  xwa2_newsletter_admin_invite_revoke(newsletter_id: $newsletter_id, user_id: $user_id) {  # XWA2NewsletterMutationResponse\n    __typename\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexRevokeNewsletterAdminInviteJobMutation.graphql",
+    "matches": "id:\\s*\"9656078347839416\""
+  },
+  "literals": [
+    "9656078347839416",
+    "WAWebMexRevokeNewsletterAdminInviteJobMutation",
+    "xwa2_newsletter_admin_invite_revoke"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexRevokeNewsletterAdminInviteJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

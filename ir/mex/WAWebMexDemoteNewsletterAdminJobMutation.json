@@ -1,0 +1,62 @@
+{
+  "id": "mex:WAWebMexDemoteNewsletterAdminJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexDemoteNewsletterAdminJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "9880997548630971",
+    "operation": "mutation",
+    "variables": [
+      "newsletter_id",
+      "user_id"
+    ],
+    "args": [
+      {
+        "name": "newsletter_id"
+      },
+      {
+        "name": "user_id"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_newsletter_admin_demote",
+        "ty": "XWA2NewsletterMutationResponse",
+        "args": [
+          "newsletter_id: $newsletter_id",
+          "user_id: $user_id"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "__typename",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "id",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "root_field": "xwa2_newsletter_admin_demote",
+    "document": "# persisted document 9880997548630971\nmutation MexDemoteNewsletterAdminJobMutation(\n  $newsletter_id\n  $user_id\n) {\n  xwa2_newsletter_admin_demote(newsletter_id: $newsletter_id, user_id: $user_id) {  # XWA2NewsletterMutationResponse\n    __typename\n    id\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexDemoteNewsletterAdminJobMutation.graphql",
+    "matches": "id:\\s*\"9880997548630971\""
+  },
+  "literals": [
+    "9880997548630971",
+    "WAWebMexDemoteNewsletterAdminJobMutation",
+    "xwa2_newsletter_admin_demote"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexDemoteNewsletterAdminJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

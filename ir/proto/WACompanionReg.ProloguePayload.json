@@ -1,0 +1,36 @@
+{
+  "id": "proto:WACompanionReg.ProloguePayload",
+  "kind": "proto",
+  "name": "WACompanionReg.ProloguePayload",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "commitment": {
+        "number": 2,
+        "type_name": "WACompanionReg.CompanionCommitment"
+      },
+      "companionEphemeralIdentity": {
+        "number": 1
+      }
+    },
+    "module": "WACompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WACompanionReg.pb",
+    "matches": "name = \"ProloguePayload\""
+  },
+  "literals": [
+    "ProloguePayload"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAE2E.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 1
+  }
+}

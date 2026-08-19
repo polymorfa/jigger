@@ -1,0 +1,37 @@
+{
+  "id": "enum:OPPOSITE_PLATFORM_ENUM",
+  "kind": "enum",
+  "name": "OPPOSITE_PLATFORM_ENUM",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumOppositePlatformEnum",
+    "variants": [
+      {
+        "name": "CONSUMER",
+        "value": 0.0
+      },
+      {
+        "name": "BUSINESS",
+        "value": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumOppositePlatformEnum",
+    "matches": "OPPOSITE_PLATFORM_ENUM\\s*[:=]"
+  },
+  "literals": [
+    "OPPOSITE_PLATFORM_ENUM",
+    "CONSUMER",
+    "BUSINESS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebNotesLogEvents",
+      "WAWebSmbUserJourneyWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["WASmaxReceiptPublishViewRPC","WAStanzaUtils","WAWebNewsletterDBUtils","WAWebNewsletterValidationUtils","asyncToGeneratorRuntime"],"dependents":["WAWebSendReadReceiptJob"],"dependent_count":1,"exports":[{"name":"sendNewsletterStatusViewReceipt","used_by":["WAWebSendReadReceiptJob"],"uses":1}]}

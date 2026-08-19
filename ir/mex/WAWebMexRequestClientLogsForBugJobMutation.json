@@ -1,0 +1,46 @@
+{
+  "id": "mex:WAWebMexRequestClientLogsForBugJobMutation",
+  "kind": "mex",
+  "name": "WAWebMexRequestClientLogsForBugJobMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "27135500612803533",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa2_request_client_logs_for_bug",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "ScalarField"
+      }
+    ],
+    "root_field": "xwa2_request_client_logs_for_bug",
+    "document": "# persisted document 27135500612803533\nmutation MexRequestClientLogsForBugJobMutation(\n  $input\n) {\n  xwa2_request_client_logs_for_bug(input: $input)\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebMexRequestClientLogsForBugJobMutation.graphql",
+    "matches": "id:\\s*\"27135500612803533\""
+  },
+  "literals": [
+    "27135500612803533",
+    "WAWebMexRequestClientLogsForBugJobMutation",
+    "xwa2_request_client_logs_for_bug"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMexRequestClientLogsForBugJob"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

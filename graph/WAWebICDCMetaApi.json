@@ -1,0 +1,1 @@
+{"deps":["WAWebAdvMetadataCreationFailureWamEvent","WAWebE2EProtoGenerator","WAWebIdentityIcdcApi","WAWebUserPrefsMeUser","asyncToGeneratorRuntime"],"dependents":["WAWebSendMsgCreateDeviceStanza","WAWebSendMsgCreateFanoutStanza"],"dependent_count":2,"exports":[{"name":"populateICDCMeta","used_by":["WAWebSendMsgCreateDeviceStanza","WAWebSendMsgCreateFanoutStanza"],"uses":2}]}

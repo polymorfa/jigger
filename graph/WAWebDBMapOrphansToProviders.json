@@ -1,0 +1,1 @@
+{"deps":["WAWebDBAddOnProviders"],"dependents":["WAWebDBProcessOrphansForNewMsg","WAWebDBPurgeExpiredRecords"],"dependent_count":2,"exports":[{"name":"mapOrphansToProviders","used_by":["WAWebDBProcessOrphansForNewMsg","WAWebDBPurgeExpiredRecords"],"uses":2}]}

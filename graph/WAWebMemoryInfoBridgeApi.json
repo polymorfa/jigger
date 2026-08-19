@@ -1,0 +1,1 @@
+{"deps":["WAWebChatCollection","WAWebContactCollection","WAWebMsgCollection"],"dependents":["WAWebSetFrontendHandlerApi"],"dependent_count":1,"exports":[{"name":"MemoryInfoBridgeApi","used_by":["WAWebSetFrontendHandlerApi"],"uses":1}]}

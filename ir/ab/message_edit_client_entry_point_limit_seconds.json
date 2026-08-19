@@ -1,0 +1,45 @@
+{
+  "id": "ab:message_edit_client_entry_point_limit_seconds",
+  "kind": "ab",
+  "name": "message_edit_client_entry_point_limit_seconds",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 3272,
+    "type": "int",
+    "default": 900,
+    "alt_default": 900
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "message_edit_client_entry_point_limit_seconds:\\s*\\[\\s*3272"
+  },
+  "literals": [
+    "message_edit_client_entry_point_limit_seconds",
+    "3272"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMessageEditUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

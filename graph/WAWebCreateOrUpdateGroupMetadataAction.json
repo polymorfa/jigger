@@ -1,0 +1,1 @@
+{"deps":["WAWebGroupHistoryParticipantStateHydration","WAWebGroupMetadataCollection","WAWebGroupQueryBridge"],"dependents":["WAWebGroupBridgeApi"],"dependent_count":1,"exports":[{"name":"createOrUpdateGroupMetadataModelFromQuery","used_by":["WAWebGroupBridgeApi"],"uses":1}]}

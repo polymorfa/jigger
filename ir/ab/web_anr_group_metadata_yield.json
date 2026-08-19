@@ -1,0 +1,48 @@
+{
+  "id": "ab:web_anr_group_metadata_yield",
+  "kind": "ab",
+  "name": "web_anr_group_metadata_yield",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 29294,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "web_anr_group_metadata_yield:\\s*\\[\\s*29294"
+  },
+  "literals": [
+    "web_anr_group_metadata_yield",
+    "29294"
+  ],
+  "usage": {
+    "read_count": 4,
+    "readers": [
+      "WAWebChat.react",
+      "WAWebChatlistPanelFunctionalLegacy.react",
+      "WAWebGroupParticipantCollection",
+      "WAWebQueryAndUpdateGroupMetadataJob"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

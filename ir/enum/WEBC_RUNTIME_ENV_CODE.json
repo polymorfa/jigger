@@ -1,0 +1,41 @@
+{
+  "id": "enum:WEBC_RUNTIME_ENV_CODE",
+  "kind": "enum",
+  "name": "WEBC_RUNTIME_ENV_CODE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebcRuntimeEnvCode",
+    "variants": [
+      {
+        "name": "MAIN",
+        "value": 1.0
+      },
+      {
+        "name": "WEB_WORKER",
+        "value": 2.0
+      },
+      {
+        "name": "SERVICE_WORKER",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebcRuntimeEnvCode",
+    "matches": "WEBC_RUNTIME_ENV_CODE\\s*[:=]"
+  },
+  "literals": [
+    "WEBC_RUNTIME_ENV_CODE",
+    "MAIN",
+    "WEB_WORKER",
+    "SERVICE_WORKER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebWebcMemoryStatWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

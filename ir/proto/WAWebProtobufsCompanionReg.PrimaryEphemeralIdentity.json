@@ -1,0 +1,41 @@
+{
+  "id": "proto:WAWebProtobufsCompanionReg.PrimaryEphemeralIdentity",
+  "kind": "proto",
+  "name": "WAWebProtobufsCompanionReg.PrimaryEphemeralIdentity",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "nonce": {
+        "number": 2
+      },
+      "publicKey": {
+        "number": 1
+      }
+    },
+    "module": "WAWebProtobufsCompanionReg.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsCompanionReg.pb",
+    "matches": "name = \"PrimaryEphemeralIdentity\""
+  },
+  "literals": [
+    "PrimaryEphemeralIdentity"
+  ],
+  "graph": {
+    "deps": [
+      "$InternalEnum",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "WAWebClientPayload",
+      "WAWebHandlePairSuccess",
+      "WAWebProtobufsE2E.pb",
+      "WAWebShortcakeLinkingAlgorithm",
+      "WAWebShortcakeLinkingApi",
+      "WAWebShortcakeLinkingPairingRequest",
+      "WAWebShortcakeLinkingPasskeyPrologue"
+    ],
+    "dep_count": 2,
+    "dependent_count": 7
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["I64","MAWGetEphemeralSettings","MAWMiActOnActThreadReady","WATimeUtils","asyncToGeneratorRuntime"],"dependents":["MAWMessageIntegrityCheck"],"dependent_count":1,"exports":[{"name":"getEphemeralMessagesStatusForPage","used_by":["MAWMessageIntegrityCheck"],"uses":1},{"name":"ephemeralLastUpdatedOrSetTimestamp","used_by":[],"uses":0}]}

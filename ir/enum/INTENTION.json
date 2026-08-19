@@ -1,0 +1,48 @@
+{
+  "id": "enum:INTENTION",
+  "kind": "enum",
+  "name": "INTENTION",
+  "data": {
+    "kind": "enum",
+    "module": "CustomConversionRuleEnum",
+    "variants": [
+      {
+        "name": "description",
+        "value": "Filter events that meet intention"
+      },
+      {
+        "name": "name",
+        "value": "Intention"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "CustomConversionRuleEnum",
+    "matches": "INTENTION\\s*[:=]"
+  },
+  "literals": [
+    "INTENTION",
+    "description",
+    "name"
+  ],
+  "graph": {
+    "deps": [
+      "AdsCustomConversionAdvancedOperators",
+      "fbt"
+    ],
+    "dependents": [
+      "AdsEventsManagerCustomConversionCreationUtils",
+      "AdsEventsManagerCustomConversionPixelRuleContainer.react",
+      "AdsEventsManagerCustomConversionRule.react",
+      "AdsEventsManagerCustomConversionRuleUtils",
+      "AdsEventsManagerCustomConversionTokenizer.react",
+      "AdsEventsManagerLongConsiderationCustomConversionCreationDialog.react",
+      "AdsEventsManagerPostConversionCustomConversionRuleSelectorContainer.react",
+      "CustomConversionCreationUtils",
+      "CustomConversionRuleDefaultValues",
+      "DataSourceToRuleTypeMapping"
+    ],
+    "dep_count": 2,
+    "dependent_count": 10
+  }
+}

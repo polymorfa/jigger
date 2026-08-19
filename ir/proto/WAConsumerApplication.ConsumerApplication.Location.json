@@ -1,0 +1,48 @@
+{
+  "id": "proto:WAConsumerApplication.ConsumerApplication.Location",
+  "kind": "proto",
+  "name": "WAConsumerApplication.ConsumerApplication.Location",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "degreesLatitude": {
+        "number": 1
+      },
+      "degreesLongitude": {
+        "number": 2
+      },
+      "name": {
+        "number": 3
+      }
+    },
+    "module": "WAConsumerApplication.pb"
+  },
+  "evidence": {
+    "module": "WAConsumerApplication.pb",
+    "matches": "name = \"ConsumerApplication.Location\""
+  },
+  "literals": [
+    "Location"
+  ],
+  "graph": {
+    "deps": [
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsConsumerApplication",
+      "MAWAsMessageApplication",
+      "MAWGroupPollsDualEncryptionUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "SendMsgArgsToProtobuf",
+      "WAAsConsumerApplication",
+      "WAAsMessageApplication",
+      "WAParseConsumerMessageProtocol"
+    ],
+    "dep_count": 2,
+    "dependent_count": 11
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ab:rt_sender_reporting_token_version",
+  "kind": "ab",
+  "name": "rt_sender_reporting_token_version",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 8860,
+    "type": "int",
+    "default": 2,
+    "alt_default": 2
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "rt_sender_reporting_token_version:\\s*\\[\\s*8860"
+  },
+  "literals": [
+    "rt_sender_reporting_token_version",
+    "8860"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMessagingGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

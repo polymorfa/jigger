@@ -1,0 +1,42 @@
+{
+  "id": "enum:PLAYBACK_ORIGIN_TYPE",
+  "kind": "enum",
+  "name": "PLAYBACK_ORIGIN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPlaybackOriginType",
+    "variants": [
+      {
+        "name": "CONVERSATION",
+        "value": 1.0
+      },
+      {
+        "name": "STATUS",
+        "value": 2.0
+      },
+      {
+        "name": "CHANNELS",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPlaybackOriginType",
+    "matches": "PLAYBACK_ORIGIN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PLAYBACK_ORIGIN_TYPE",
+    "CONVERSATION",
+    "STATUS",
+    "CHANNELS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMediaStreamPlaybackWamEvent",
+      "useWAWebMediaStreamPlaybackMetric"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

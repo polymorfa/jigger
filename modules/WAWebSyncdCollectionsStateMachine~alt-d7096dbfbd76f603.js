@@ -1,0 +1,126 @@
+__d("WAWebSyncdCollectionsStateMachine", [
+	"WALogger",
+	"WATimeUtils",
+	"WAWebGetCollectionVersion",
+	"WAWebSyncdConst",
+	"compactMap"
+], (function(t, n, r, o, a, i, l) {
+	"use strict";
+	var e, s, u = (function() {
+		function t() {}
+		return t.loadStatesFromDb = async function() {
+			var e = this, t = await o("WAWebGetCollectionVersion").getAllCollectionVersionsInTransaction();
+			t.forEach(function(t) {
+				return e.collectionStates.set(t.collection, {
+					collection: t.collection,
+					state: t.state,
+					finiteFailureStartTime: t.finiteFailureStartTime
+				});
+			});
+		}, t.persistToDb = function() {
+			var t = [];
+			this.collectionStates.forEach(function(e) {
+				return t.push(babelHelpers.extends({}, e));
+			});
+			var n = t.map(function(e) {
+				var t = e.finiteFailureStartTime == null ? "" : "(failure start: " + e.finiteFailureStartTime + ")";
+				return String(e.collection) + ": " + String(e.state) + " " + t;
+			});
+			return o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["syncd: state machine persistToDb. states: ", ""])), n), o("WAWebGetCollectionVersion").bulkUpdateCollectionVersionInTransaction(t);
+		}, t.clean = function() {
+			this.collectionStates = new Map();
+		}, t.getCollectionState = function(t) {
+			var e = this.collectionStates.get(t);
+			return e ? e.state : (this.moveCollectionsToUpToDate([t]), o("WAWebSyncdConst").CollectionSyncState.UpToDate);
+		}, t.getCollectionsInStateDirty = function() {
+			var e = [];
+			return this.collectionStates.forEach(function(t) {
+				t.state === o("WAWebSyncdConst").CollectionSyncState.Dirty && e.push(t.collection);
+			}), e;
+		}, t.getCollectionsInStateRetry = function() {
+			var e = [];
+			return this.collectionStates.forEach(function(t) {
+				t.state === o("WAWebSyncdConst").CollectionSyncState.FailingFiniteRetry && e.push(t.collection);
+			}), e;
+		}, t.getCollectionsInStateFatal = function() {
+			var e = [];
+			return this.collectionStates.forEach(function(t) {
+				t.state === o("WAWebSyncdConst").CollectionSyncState.Fatal && e.push(t.collection);
+			}), e;
+		}, t.getCollectionsInStateBlocked = function() {
+			var e = [];
+			return this.collectionStates.forEach(function(t) {
+				t.state === o("WAWebSyncdConst").CollectionSyncState.Blocked && e.push(t.collection);
+			}), e;
+		}, t.moveCollectionsToUpToDate = function(t) {
+			var e = this;
+			t.forEach(function(t) {
+				return e.collectionStates.set(t, {
+					collection: t,
+					state: o("WAWebSyncdConst").CollectionSyncState.UpToDate,
+					finiteFailureStartTime: void 0
+				});
+			});
+		}, t.moveCollectionsToDirty = function(t) {
+			var e = this;
+			t.forEach(function(t) {
+				var n;
+				return e.collectionStates.set(t, {
+					collection: t,
+					state: o("WAWebSyncdConst").CollectionSyncState.Dirty,
+					finiteFailureStartTime: (n = e.collectionStates.get(t)) == null ? void 0 : n.finiteFailureStartTime
+				});
+			});
+		}, t.moveCollectionsToFiniteRetry = function(t) {
+			var e = this;
+			t.forEach(function(t) {
+				var n, r;
+				return e.collectionStates.set(t, {
+					collection: t,
+					state: o("WAWebSyncdConst").CollectionSyncState.FailingFiniteRetry,
+					finiteFailureStartTime: (n = (r = e.collectionStates.get(t)) == null ? void 0 : r.finiteFailureStartTime) != null ? n : o("WATimeUtils").unixTimeMs()
+				});
+			});
+		}, t.moveCollectionsToFatal = function(t) {
+			var e = this;
+			t.forEach(function(t) {
+				return e.collectionStates.set(t, {
+					collection: t,
+					state: o("WAWebSyncdConst").CollectionSyncState.Fatal
+				});
+			});
+		}, t.moveCollectionsToBlocked = function(t) {
+			var e = this;
+			t.forEach(function(t) {
+				var n;
+				return e.collectionStates.set(t, {
+					collection: t,
+					state: o("WAWebSyncdConst").CollectionSyncState.Blocked,
+					finiteFailureStartTime: (n = e.collectionStates.get(t)) == null ? void 0 : n.finiteFailureStartTime
+				});
+			});
+		}, t.getExpiredCollections = function() {
+			var e = [], t = [], n = 0;
+			return this.collectionStates.forEach(function(r) {
+				if (r.state === o("WAWebSyncdConst").CollectionSyncState.FailingFiniteRetry) {
+					var a;
+					r.finiteFailureStartTime == null ? (a = 1 / 0, n++, t.length < 3 && t.push(r.collection)) : a = r.finiteFailureStartTime;
+					var i = a + o("WAWebSyncdConst").FINITE_FAILURE_EXPIRY_DURATION;
+					i < o("WATimeUtils").unixTimeMs() && e.push(r.collection);
+				}
+			}), n > 0 && o("WALogger").WARN(s || (s = babelHelpers.taggedTemplateLiteralLoose([
+				"[syncd] ",
+				" finite retry w/o failureStartTime => ",
+				""
+			])), n, t), e;
+		}, t.getCollectionMinFailureTime = function() {
+			var e = Array.from(this.collectionStates.values()).filter(function(e) {
+				return e.state === o("WAWebSyncdConst").CollectionSyncState.FailingFiniteRetry;
+			}), t = r("compactMap")(e, function(e) {
+				return e.finiteFailureStartTime;
+			});
+			return t.length === 0 ? null : Math.min.apply(Math, t);
+		}, t;
+	})();
+	u.collectionStates = new Map(), l.default = u;
+}), 98);

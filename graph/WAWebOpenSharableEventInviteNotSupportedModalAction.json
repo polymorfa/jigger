@@ -1,0 +1,1 @@
+{"deps":["WAWebModalManager","WAWebSharableEventInviteNotSupportedModal.react","react"],"dependents":["WAWebSharableEventInviteMessageComponent.react","WAWebSharableEventNotification"],"dependent_count":2,"exports":[{"name":"openSharableEventInviteNotSupportedModal","used_by":["WAWebSharableEventInviteMessageComponent.react","WAWebSharableEventNotification"],"uses":2}]}

@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWEncryptionIndexedDbV2"],"dependent_count":1,"exports":[{"name":"IDBRequest","used_by":[],"uses":0},{"name":"getAll","used_by":[],"uses":0}]}

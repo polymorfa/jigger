@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebTPEditPdfThicknessSelector.react"],"dependent_count":2,"exports":[{"name":"LineWeightIcon","used_by":["WAWebAllGeneratedIcons","WAWebTPEditPdfThicknessSelector.react"],"uses":2}]}

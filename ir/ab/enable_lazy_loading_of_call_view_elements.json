@@ -1,0 +1,42 @@
+{
+  "id": "ab:enable_lazy_loading_of_call_view_elements",
+  "kind": "ab",
+  "name": "enable_lazy_loading_of_call_view_elements",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 5053,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "enable_lazy_loading_of_call_view_elements:\\s*\\[\\s*5053"
+  },
+  "literals": [
+    "enable_lazy_loading_of_call_view_elements",
+    "5053"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

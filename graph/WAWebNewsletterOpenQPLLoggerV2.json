@@ -1,0 +1,1 @@
+{"deps":["WAWebEncryptedRid","WAWebNewsletterGatingUtils","WAWebNewsletterLoggingUtils","WAWebQplFlowWrapper","qpl"],"dependents":["WAWebOpenNewsletterChat","WAWebOpenNewsletterPreviewChat"],"dependent_count":2,"exports":[{"name":"WAWebNewsletterOpenQPLLoggerV2","used_by":[],"uses":0}]}

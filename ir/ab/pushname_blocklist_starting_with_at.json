@@ -1,0 +1,42 @@
+{
+  "id": "ab:pushname_blocklist_starting_with_at",
+  "kind": "ab",
+  "name": "pushname_blocklist_starting_with_at",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 18097,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "pushname_blocklist_starting_with_at:\\s*\\[\\s*18097"
+  },
+  "literals": [
+    "pushname_blocklist_starting_with_at",
+    "18097"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

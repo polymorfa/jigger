@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["MAWImageUtils","WADecodeImage"],"dependent_count":2,"exports":[{"name":"calculateBoundOutputSize","used_by":["MAWImageUtils","WADecodeImage"],"uses":2}]}

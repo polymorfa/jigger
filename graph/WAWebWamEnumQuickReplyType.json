@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebQuickRepliesPluginLogEvents","WAWebQuickReplyWamEvent"],"dependent_count":2,"exports":[{"name":"QUICK_REPLY_TYPE","used_by":["WAWebQuickRepliesPluginLogEvents","WAWebQuickReplyWamEvent"],"uses":2}]}

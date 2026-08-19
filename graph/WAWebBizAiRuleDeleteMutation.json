@@ -1,0 +1,1 @@
+{"deps":["WAWebBizAiRuleDeleteMutation.graphql","WAWebFetchAdAccountToken","WAWebNetworkStatus","WAWebRelayClient"],"dependents":["WAWebBizAIInstructionsDrawer.react"],"dependent_count":1,"exports":[{"name":"deleteRule","used_by":["WAWebBizAIInstructionsDrawer.react"],"uses":1}]}

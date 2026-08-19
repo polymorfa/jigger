@@ -1,0 +1,66 @@
+{
+  "id": "enum:PTT_PLAYER_TYPE",
+  "kind": "enum",
+  "name": "PTT_PLAYER_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPttPlayerType",
+    "variants": [
+      {
+        "name": "AUDIO_QUEUE",
+        "value": 0.0
+      },
+      {
+        "name": "AVPLAYER",
+        "value": 1.0
+      },
+      {
+        "name": "AVAUDIOPLAYER",
+        "value": 2.0
+      },
+      {
+        "name": "OPUSPLAYER",
+        "value": 3.0
+      },
+      {
+        "name": "ANDROIDPLAYER",
+        "value": 4.0
+      },
+      {
+        "name": "EXOPLAYER",
+        "value": 5.0
+      },
+      {
+        "name": "UWPPLAYER",
+        "value": 6.0
+      },
+      {
+        "name": "VOIPPLAYER",
+        "value": 7.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPttPlayerType",
+    "matches": "PTT_PLAYER_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PTT_PLAYER_TYPE",
+    "AUDIO_QUEUE",
+    "AVPLAYER",
+    "AVAUDIOPLAYER",
+    "OPUSPLAYER",
+    "ANDROIDPLAYER",
+    "EXOPLAYER",
+    "UWPPLAYER",
+    "VOIPPLAYER"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebPttPlaybackWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"deps":["MAWIndexedDb","MAWTransactionMode","MAWWriteUKOSAAdminMsgTxns"],"dependents":["MAWBridgeHandlers"],"dependent_count":1,"exports":[{"name":"writeAdminMessageForUKOSA","used_by":["MAWBridgeHandlers"],"uses":1}]}

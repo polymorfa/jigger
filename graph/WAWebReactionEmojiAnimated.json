@@ -1,0 +1,1 @@
+{"deps":["WAWebReactionEmoji.react","WAWebReactionGatingUtils","WAWebVelocityAnimate","react","react-compiler-runtime","stylex"],"dependents":["WAWebReactionsBubble.react"],"dependent_count":1,"exports":[{"name":"ANIMATION_REMOVE_LENGTH","used_by":["WAWebReactionsBubble.react"],"uses":1},{"name":"ReactionEmojiAnimated","used_by":["WAWebReactionsBubble.react"],"uses":1}]}

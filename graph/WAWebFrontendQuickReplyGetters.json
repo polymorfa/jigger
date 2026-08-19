@@ -1,0 +1,1 @@
+{"deps":["WAWebGetters","WAWebGettersCaches","WAWebQuickReplyGetters"],"dependents":["WAWebQuickReplyCollection","WAWebQuickReplyModel"],"dependent_count":2,"exports":[{"name":"clearFrontendQuickReplyGetterCacheFor","used_by":["WAWebQuickReplyModel"],"uses":1},{"name":"getTotalCount","used_by":["WAWebQuickReplyCollection"],"uses":1}]}

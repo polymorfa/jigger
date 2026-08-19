@@ -1,0 +1,1 @@
+{"deps":["WAWebCopyToClipboard","WAWebDevIcon.react","WAWebDevOnlyBadge.react","WAWebFrontendChatGetters","WDSMenu.react","WDSMenuItem.react","gkx","react"],"dependents":["WAWebBroadcastChatListMenuItems","WAWebChatContextMenu"],"dependent_count":2,"exports":[{"name":"getWAWebChatCellDebugMenuItems","used_by":["WAWebBroadcastChatListMenuItems","WAWebChatContextMenu"],"uses":2}]}

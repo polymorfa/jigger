@@ -1,0 +1,1 @@
+{"deps":["$InternalEnum"],"dependents":["WAWebBotFrontendUtils","WAWebPttComposerRecordingSession","useWAWebCmdChatEvents"],"dependent_count":3,"exports":[{"name":"cancelChatRecordingForThreadSwitch","used_by":["WAWebBotFrontendUtils","useWAWebCmdChatEvents"],"uses":2},{"name":"RecordingSessionStopReason","used_by":["WAWebPttComposerRecordingSession"],"uses":1}]}

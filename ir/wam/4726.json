@@ -1,0 +1,52 @@
+{
+  "id": "wam:4726",
+  "kind": "wam",
+  "name": "ChannelDyi",
+  "data": {
+    "kind": "wam",
+    "event_id": 4726,
+    "fields": {
+      "channelDyiEventType": {
+        "id": 1,
+        "type": "CHANNEL_DYI_EVENT_TYPE",
+        "wire": "channel_dyi_event_type",
+        "enum_ref": "CHANNEL_DYI_EVENT_TYPE"
+      },
+      "unifiedSessionId": {
+        "id": 2,
+        "type": "STRING",
+        "wire": "unified_session_id"
+      },
+      "updatesTabSessionId": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "updates_tab_session_id"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebChannelDyiWamEvent",
+    "matches": "ChannelDyi:\\s*\\[\\s*4726"
+  },
+  "literals": [
+    "4726"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumChannelDyiEventType"
+    ],
+    "dependents": [
+      "useWAWebGdprDownload",
+      "useWAWebGdprRequest"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ab:aura_focus_lists_benefit_active",
+  "kind": "ab",
+  "name": "aura_focus_lists_benefit_active",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 32724,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "aura_focus_lists_benefit_active:\\s*\\[\\s*32724"
+  },
+  "literals": [
+    "aura_focus_lists_benefit_active",
+    "32724"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

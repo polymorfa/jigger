@@ -1,0 +1,1 @@
+{"deps":["MAWMarkThreadAsRead","MsgrSchedulerQPL","NativeSchedulerTickStrategy","TaskScheduler","TaskSchedulerPriority"],"dependents":["MAWBridgeHandlers"],"dependent_count":1,"exports":[{"name":"scheduleMarkThreadAsRead","used_by":["MAWBridgeHandlers"],"uses":1}]}

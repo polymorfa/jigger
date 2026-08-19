@@ -1,0 +1,1 @@
+{"deps":["WAWebLruMediaStorageUtils","WAWebStorageMutationBuilder"],"dependents":["WAWebMediaArrayBufferIdbStore"],"dependent_count":1,"exports":[{"name":"IdbArrayBufferTable","used_by":["WAWebMediaArrayBufferIdbStore"],"uses":1}]}

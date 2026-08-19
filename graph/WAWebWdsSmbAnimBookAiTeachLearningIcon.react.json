@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebBizAiKnowledgeReviewDrawer.react"],"dependent_count":2,"exports":[{"name":"WdsSmbAnimBookAiTeachLearningIcon","used_by":["WAWebAllGeneratedIcons","WAWebBizAiKnowledgeReviewDrawer.react"],"uses":2}]}

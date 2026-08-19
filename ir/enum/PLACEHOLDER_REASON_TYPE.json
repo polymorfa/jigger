@@ -1,0 +1,97 @@
+{
+  "id": "enum:PLACEHOLDER_REASON_TYPE",
+  "kind": "enum",
+  "name": "PLACEHOLDER_REASON_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPlaceholderReasonType",
+    "variants": [
+      {
+        "name": "OTHER",
+        "value": 0.0
+      },
+      {
+        "name": "SIGNAL_NO_SESSION",
+        "value": 1.0
+      },
+      {
+        "name": "DEVICE_VERIFICATION_FAILURE",
+        "value": 2.0
+      },
+      {
+        "name": "UNKNOWN_SELF_DEVICE",
+        "value": 3.0
+      },
+      {
+        "name": "SIGNAL_INVALID_KEY",
+        "value": 4.0
+      },
+      {
+        "name": "SIGNAL_INVALID_KEY_ID",
+        "value": 5.0
+      },
+      {
+        "name": "SIGNAL_INVALID_MESSAGE",
+        "value": 6.0
+      },
+      {
+        "name": "DEVICE_VERIFICATION_FAILURE_SELF_PEER",
+        "value": 7.0
+      },
+      {
+        "name": "UNKNOWN_COMPANION_NO_PREKEY",
+        "value": 8.0
+      },
+      {
+        "name": "BAD_EPHEMERAL_SETTING",
+        "value": 9.0
+      },
+      {
+        "name": "SIGNAL_FUTURE_MESSAGE",
+        "value": 10.0
+      },
+      {
+        "name": "SIGNAL_INVALID_SIGNATURE",
+        "value": 11.0
+      },
+      {
+        "name": "SIGNAL_BAD_MAC",
+        "value": 12.0
+      },
+      {
+        "name": "SIGNAL_INVALID_SESSION",
+        "value": 13.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPlaceholderReasonType",
+    "matches": "PLACEHOLDER_REASON_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "PLACEHOLDER_REASON_TYPE",
+    "OTHER",
+    "SIGNAL_NO_SESSION",
+    "DEVICE_VERIFICATION_FAILURE",
+    "UNKNOWN_SELF_DEVICE",
+    "SIGNAL_INVALID_KEY",
+    "SIGNAL_INVALID_KEY_ID",
+    "SIGNAL_INVALID_MESSAGE",
+    "DEVICE_VERIFICATION_FAILURE_SELF_PEER",
+    "UNKNOWN_COMPANION_NO_PREKEY",
+    "BAD_EPHEMERAL_SETTING",
+    "SIGNAL_FUTURE_MESSAGE",
+    "SIGNAL_INVALID_SIGNATURE",
+    "SIGNAL_BAD_MAC",
+    "SIGNAL_INVALID_SESSION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBackendJobsCommon",
+      "WAWebPlaceholderActivityWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

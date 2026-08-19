@@ -1,0 +1,1 @@
+{"deps":["fbt","WAFilteredCatch","WALogger","WAWebActionToast.react","WAWebBackendErrors","WAWebChatCollection","WAWebGroupCommunityJob","WAWebNoop","WAWebToastManager","asyncToGeneratorRuntime","react"],"dependents":["WAWebCommunityRemoveSubgroup"],"dependent_count":1,"exports":[]}

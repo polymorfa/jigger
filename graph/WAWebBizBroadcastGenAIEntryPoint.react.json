@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebBizBroadcastGenAIEligibilityModel","WAWebBizBroadcastGenAIGating","WAWebBusinessBroadcastUserJourneyLogger","WAWebNux","WAWebTooltip.react","WDSButton.react","WDSIconWdsIcAi.react","WDSTooltip.react","react","react-compiler-runtime","useWAWebNux"],"dependents":["WAWebBizBroadcastMessageInputSection.react"],"dependent_count":1,"exports":[]}

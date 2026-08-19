@@ -1,0 +1,1 @@
+{"deps":["WAWebWamRuntimeProvider"],"dependents":["WAWebWamCodegenUtils","WAWebWamCodegenWamEvent","WAWebWamRuntimeProvider"],"dependent_count":3,"exports":[{"name":"processQueuedJobs","used_by":["WAWebWamRuntimeProvider"],"uses":1},{"name":"queueEvent","used_by":["WAWebWamCodegenWamEvent"],"uses":1},{"name":"queueMetric","used_by":["WAWebWamCodegenUtils"],"uses":1}]}

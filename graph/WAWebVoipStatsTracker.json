@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebVoipJsWorkerMessageHandler","WAWebVoipSctpStatsInstrumentation"],"dependent_count":2,"exports":[{"name":"DEFAULT_POLL_INTERVAL_MS","used_by":["WAWebVoipJsWorkerMessageHandler","WAWebVoipSctpStatsInstrumentation"],"uses":2},{"name":"VoipStatsTracker","used_by":[],"uses":0}]}

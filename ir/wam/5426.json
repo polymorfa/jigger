@@ -1,0 +1,39 @@
+{
+  "id": "wam:5426",
+  "kind": "wam",
+  "name": "WebHdMediaAwarenessInteraction",
+  "data": {
+    "kind": "wam",
+    "event_id": 5426,
+    "fields": {
+      "hdMediaSelected": {
+        "id": 1,
+        "type": "BOOLEAN",
+        "wire": "hd_media_selected"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebWebHdMediaAwarenessInteractionWamEvent",
+    "matches": "WebHdMediaAwarenessInteraction:\\s*\\[\\s*5426"
+  },
+  "literals": [
+    "5426"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils"
+    ],
+    "dependents": [
+      "WAWebHDPhotoMediaEditorDropdown.react"
+    ],
+    "dep_count": 1,
+    "dependent_count": 1
+  }
+}

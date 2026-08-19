@@ -1,0 +1,1 @@
+{"deps":["WAFlowJSONConstants","WAFlowJSONSchemaUtils"],"dependents":["WAFlowJSONChildrenSchema","WAFlowJSONTextAreaComponentSchemaV600"],"dependent_count":2,"exports":[{"name":"getTextAreaComponentSchemaV500","used_by":["WAFlowJSONChildrenSchema","WAFlowJSONTextAreaComponentSchemaV600"],"uses":2}]}

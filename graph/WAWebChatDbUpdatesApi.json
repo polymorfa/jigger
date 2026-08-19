@@ -1,0 +1,1 @@
+{"deps":["WALogger","WAWebBackendApi","WAWebSchemaChat","WAWebWidFactory","asyncToGeneratorRuntime"],"dependents":["WAWebArchiveChatSync","WAWebMsgRangeContainmentHandlers"],"dependent_count":2,"exports":[{"name":"setArchive","used_by":["WAWebArchiveChatSync","WAWebMsgRangeContainmentHandlers"],"uses":2}]}

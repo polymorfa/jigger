@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumWebcQuickActionEventType","WAWebWamEnumWebcQuickActionId","WAWebWamEnumWebcQuickActionSurface"],"dependents":["WAWebQuickActionLogging"],"dependent_count":1,"exports":[{"name":"WebcQuickActionWamEvent","used_by":[],"uses":0}]}

@@ -1,0 +1,41 @@
+{
+  "id": "enum:WSUA_TIER",
+  "kind": "enum",
+  "name": "WSUA_TIER",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWsuaTier",
+    "variants": [
+      {
+        "name": "TIER_1",
+        "value": 1.0
+      },
+      {
+        "name": "TIER_2",
+        "value": 2.0
+      },
+      {
+        "name": "TIER_3",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWsuaTier",
+    "matches": "WSUA_TIER\\s*[:=]"
+  },
+  "literals": [
+    "WSUA_TIER",
+    "TIER_1",
+    "TIER_2",
+    "TIER_3"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebSubscriptionUserActionWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

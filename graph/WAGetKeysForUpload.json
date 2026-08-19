@@ -1,0 +1,1 @@
+{"deps":["Promise","WACryptoLibraryConfig","WALoggerTag","WAResultOrError","WASignalKeys","WATagsLogger"],"dependents":["WAGenerateAndUploadPreKeysProtocol","WAMockServer","WARequestPreKeyDigest"],"dependent_count":3,"exports":[{"name":"getKeysForUpload","used_by":["WAGenerateAndUploadPreKeysProtocol","WAMockServer","WARequestPreKeyDigest"],"uses":3}]}

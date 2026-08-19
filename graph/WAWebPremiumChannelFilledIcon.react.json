@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebMessageMeta.react"],"dependent_count":2,"exports":[{"name":"PremiumChannelFilledIcon","used_by":["WAWebAllGeneratedIcons","WAWebMessageMeta.react"],"uses":2}]}

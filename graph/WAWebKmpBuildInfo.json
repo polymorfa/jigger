@@ -1,0 +1,1 @@
+{"deps":["WAWebBuildType","WAWebKmpBridgeResultWrappers","asyncToGeneratorRuntime","wa-kmp-syncd-engine-api"],"dependents":["WAWebKmpSyncdServiceLocator"],"dependent_count":1,"exports":[{"name":"getBuildInfo","used_by":["WAWebKmpSyncdServiceLocator"],"uses":1}]}

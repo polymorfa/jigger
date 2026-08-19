@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebLottieAnimation.story","WAWebPipVideoControls.react"],"dependent_count":3,"exports":[{"name":"VideoPauseIcon","used_by":["WAWebAllGeneratedIcons","WAWebLottieAnimation.story","WAWebPipVideoControls.react"],"uses":3}]}

@@ -1,0 +1,78 @@
+{
+  "id": "enum:CHAT_ACTION_TYPE",
+  "kind": "enum",
+  "name": "CHAT_ACTION_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumChatActionType",
+    "variants": [
+      {
+        "name": "MUTE",
+        "value": 1.0
+      },
+      {
+        "name": "UNMUTE",
+        "value": 2.0
+      },
+      {
+        "name": "ARCHIVE",
+        "value": 3.0
+      },
+      {
+        "name": "CLEAR",
+        "value": 4.0
+      },
+      {
+        "name": "EXIT_GROUP",
+        "value": 5.0
+      },
+      {
+        "name": "DELETE",
+        "value": 6.0
+      },
+      {
+        "name": "PIN",
+        "value": 7.0
+      },
+      {
+        "name": "UNREAD",
+        "value": 8.0
+      },
+      {
+        "name": "READ",
+        "value": 9.0
+      },
+      {
+        "name": "SUSPEND_CHAT_DELETE",
+        "value": 10.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumChatActionType",
+    "matches": "CHAT_ACTION_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "CHAT_ACTION_TYPE",
+    "MUTE",
+    "UNMUTE",
+    "ARCHIVE",
+    "CLEAR",
+    "EXIT_GROUP",
+    "DELETE",
+    "PIN",
+    "UNREAD",
+    "READ",
+    "SUSPEND_CHAT_DELETE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebChatActionWamEvent",
+      "WAWebClearSelectedChatsAction",
+      "WAWebConsumerMultiSelectBarOverflowMenu.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

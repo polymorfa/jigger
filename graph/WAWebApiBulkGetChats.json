@@ -1,0 +1,1 @@
+{"deps":["WAWebSchemaChat"],"dependents":["WAWebChatThreadLoggingEventStore","WAWebLogReceivedMessages"],"dependent_count":2,"exports":[{"name":"bulkGetChats","used_by":["WAWebChatThreadLoggingEventStore","WAWebLogReceivedMessages"],"uses":2}]}

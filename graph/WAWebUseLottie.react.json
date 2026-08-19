@@ -1,0 +1,1 @@
+{"deps":["invariant","$InternalEnum","WAWeb-lottie-light","WAWebNetworkResourceCache","WAWebStructuredClone","react","react-compiler-runtime","stylex"],"dependents":["WAWebLottieAnimation.react","WAWebLottieAnimation.story"],"dependent_count":2,"exports":[]}

@@ -1,0 +1,254 @@
+__d("WAWebTPEditPdfSendBar.react", [
+	"fbt",
+	"WALogger",
+	"WAWebExpressionsPanelPicker.react",
+	"WAWebFlex.react",
+	"WAWebMediaOpaqueData",
+	"WAWebMsgType",
+	"WAWebNullFunc",
+	"WAWebPrepRawMedia",
+	"WAWebTPEditPdfInWhatsappContext.react",
+	"WAWebTPFetchAnnotatedPdfBuffer",
+	"WAWebTPLoggingUtils",
+	"WAWebUnstyledButton.react",
+	"WAWebWdsIcSendFilledIcon.react",
+	"WDSText.react",
+	"getErrorSafe",
+	"react"
+], (function(t, n, r, o, a, i, l, s) {
+	var e, u, c, d, m = d || (d = o("react")), p = d, _ = p.useEffect, f = p.useRef, g = p.useState, h = {
+		container: {
+			position: "xixxii4",
+			bottom: "x1ey2m1c",
+			insetInlineStart: "x1o0tod",
+			insetInlineEnd: "xtijo5x",
+			left: null,
+			right: null,
+			height: "x14baz6b",
+			backgroundColor: "x1h3rtpe",
+			borderTopColor: "xx42vgk",
+			borderTopWidth: "x178xt8z",
+			borderTopStyle: "x13fuv20",
+			zIndex: "x28dyy9",
+			paddingInlineStart: "xdx6fka",
+			paddingInlineEnd: "xvtqlqk",
+			paddingLeft: null,
+			paddingRight: null,
+			justifyContent: "x1qughib",
+			$$css: !0
+		},
+		sendButton: {
+			width: "x100vrsf",
+			height: "x1vqgdyp",
+			borderStartStartRadius: "xt8t1vi",
+			borderStartEndRadius: "x1xc408v",
+			borderEndEndRadius: "x129tdwq",
+			borderEndStartRadius: "x15urzxu",
+			backgroundColor: "xfn3atn",
+			color: "x1pse0pq",
+			display: "x78zum5",
+			alignItems: "x6s0dn4",
+			justifyContent: "xl56j7k",
+			flexShrink: "x2lah0s",
+			cursor: "x1ypdohk",
+			$$css: !0
+		},
+		sendButtonDisabled: {
+			opacity: "xbyyjgo",
+			cursor: "xt0e3qv",
+			pointerEvents: "x47corl",
+			$$css: !0
+		},
+		inputWrapper: {
+			width: "xh8yej3",
+			maxWidth: "x27kpxv",
+			height: "xdd8jsf",
+			boxSizing: "x9f619",
+			backgroundColor: "x1280gxy",
+			borderTopColor: "xnj1f2r",
+			borderInlineEndColor: "x2uibgs",
+			borderBottomColor: "xkveyfu",
+			borderInlineStartColor: "x12llq9",
+			borderTopWidth: "x178xt8z",
+			borderInlineEndWidth: "x1lun4ml",
+			borderBottomWidth: "xso031l",
+			borderInlineStartWidth: "xpilrb4",
+			borderTopStyle: "x13fuv20",
+			borderInlineEndStyle: "x18b5jzi",
+			borderBottomStyle: "x1q0q8m5",
+			borderInlineStartStyle: "x1t7ytsu",
+			borderStartStartRadius: "xt8t1vi",
+			borderStartEndRadius: "x1xc408v",
+			borderEndEndRadius: "x129tdwq",
+			borderEndStartRadius: "x15urzxu",
+			paddingInlineStart: "x1g0dm76",
+			paddingInlineEnd: "xpdmqnj",
+			paddingLeft: null,
+			paddingRight: null,
+			marginInlineStart: "x150mmf0",
+			marginInlineEnd: "xqf2s3x",
+			marginLeft: null,
+			marginRight: null,
+			$$css: !0
+		},
+		destinationPill: {
+			height: "x10w6t97",
+			boxSizing: "x9f619",
+			paddingInlineStart: "x12w63v0",
+			paddingInlineEnd: "x1nzty39",
+			paddingLeft: null,
+			paddingRight: null,
+			borderStartStartRadius: "xt8t1vi",
+			borderStartEndRadius: "x1xc408v",
+			borderEndEndRadius: "x129tdwq",
+			borderEndStartRadius: "x15urzxu",
+			borderTopWidth: "x178xt8z",
+			borderInlineEndWidth: "x1lun4ml",
+			borderBottomWidth: "xso031l",
+			borderInlineStartWidth: "xpilrb4",
+			borderTopStyle: "x13fuv20",
+			borderInlineEndStyle: "x18b5jzi",
+			borderBottomStyle: "x1q0q8m5",
+			borderInlineStartStyle: "x1t7ytsu",
+			borderTopColor: "xnj1f2r",
+			borderInlineEndColor: "x2uibgs",
+			borderBottomColor: "xkveyfu",
+			borderInlineStartColor: "x12llq9",
+			maxWidth: "x1e4dklr",
+			flexShrink: "x2lah0s",
+			marginInlineEnd: "xqf2s3x",
+			$$css: !0
+		},
+		destinationPillName: {
+			minWidth: "xeuugli",
+			$$css: !0
+		}
+	};
+	function y(e) {
+		var t = e.inputRef, n = e.onEmoji;
+		return _(function() {
+			var e;
+			(e = t.current) == null || e.focus();
+		}, [t]), m.jsxs(o("WAWebFlex.react").FlexRow, {
+			align: "center",
+			xstyle: h.inputWrapper,
+			children: [m.jsx("div", {
+				className: "xqf2s3x",
+				children: m.jsx(o("WAWebExpressionsPanelPicker.react").ExpressionsPanelPicker, {
+					getComposeBoxEditorRef: o("WAWebNullFunc").returnNull,
+					onEmoji: n,
+					onGif: null,
+					onSticker: null
+				})
+			}), m.jsx("input", {
+				ref: t,
+				className: "x1iyjqo2 xs83m0k x1t1x2f9 xeuugli x1ejq31n x18oe1m7 x1sy0etr xstzfhl x1a2a7pz xjbqb8w xjb2p0i x1f6kntn xo1l8bm x8r4c90 x12xpedu x14ug900 x1hcheoe",
+				placeholder: s._(
+					/*BTDS*/
+					""
+				),
+				"aria-label": s._(
+					/*BTDS*/
+					""
+				)
+			})]
+		});
+	}
+	y.displayName = y.name + " [from " + i.id + "]";
+	function C(e) {
+		var t = e.chat;
+		return m.jsx(o("WAWebFlex.react").FlexRow, {
+			align: "center",
+			xstyle: h.destinationPill,
+			children: m.jsx(r("WDSText.react"), {
+				type: "Body2",
+				colorName: "contentDeemphasized",
+				maxLines: 1,
+				xstyle: h.destinationPillName,
+				children: t.formattedTitle
+			})
+		});
+	}
+	C.displayName = C.name + " [from " + i.id + "]";
+	function b(t) {
+		var n = t.chat, a = t.filename, i = t.mimetype, l = t.onSent, d = o("WAWebTPEditPdfInWhatsappContext.react").useWAWebTPEditPdfInWhatsappContext(), p = d.filehash, b = d.undoRedoState, v = f(null), S = g(!1), R = S[0], L = S[1], E = f(null);
+		function k(e) {
+			var t, n, r = v.current;
+			if (r != null) {
+				var o = (t = r.selectionStart) != null ? t : r.value.length, a = (n = r.selectionEnd) != null ? n : r.value.length;
+				r.value = r.value.slice(0, o) + e + r.value.slice(a);
+				var i = o + e.length;
+				r.selectionStart = i, r.selectionEnd = i, r.focus();
+			}
+		}
+		function I() {
+			if (E.current != null) return E.current;
+			var e = o("WAWebTPFetchAnnotatedPdfBuffer").fetchAnnotatedPdfBuffer().then(function(e) {
+				return e == null && (E.current = null), e;
+			});
+			return E.current = e, e;
+		}
+		_(function() {
+			I();
+		}, []);
+		async function T() {
+			var t, s;
+			if (!R) {
+				o("WAWebTPLoggingUtils").logAnnotatedSendEvent(b.hasUndo, p), L(!0);
+				var d = (t = (s = v.current) == null ? void 0 : s.value) != null ? t : "";
+				try {
+					var m = await I();
+					if (m == null) {
+						o("WALogger").ERROR(e || (e = babelHelpers.taggedTemplateLiteralLoose(["Received null buffer when requesting updated PDF"]))).sendLogs("edit-pdf-null-buffer");
+						return;
+					}
+					var _ = await r("WAWebMediaOpaqueData").createFromData(m, i), f = o("WAWebPrepRawMedia").prepRawMedia(_, {
+						asDocument: !0,
+						filename: a
+					});
+					f.sendToChat({
+						chat: n,
+						options: {
+							type: o("WAWebMsgType").MSG_TYPE.DOCUMENT,
+							caption: d || void 0,
+							addEvenWhilePreparing: !0,
+							placeholderProps: { filename: a }
+						}
+					}).catch(function(e) {
+						o("WALogger").ERROR(u || (u = babelHelpers.taggedTemplateLiteralLoose(["Failed to send edited PDF"]))).catching(r("getErrorSafe")(e)).sendLogs("edit-pdf-send-fail");
+					}), l();
+				} catch (e) {
+					o("WALogger").ERROR(c || (c = babelHelpers.taggedTemplateLiteralLoose(["Failed to send edited PDF"]))).catching(r("getErrorSafe")(e)).sendLogs("edit-pdf-send-fail");
+				} finally {
+					L(!1);
+				}
+			}
+		}
+		return m.jsxs(o("WAWebFlex.react").FlexRow, {
+			align: "center",
+			xstyle: h.container,
+			children: [
+				m.jsx(C, { chat: n }),
+				m.jsx(y, {
+					inputRef: v,
+					onEmoji: k
+				}),
+				m.jsx(r("WAWebUnstyledButton.react"), {
+					xstyle: [h.sendButton, R && h.sendButtonDisabled],
+					disabled: R,
+					onClick: T,
+					"aria-label": s._(
+						/*BTDS*/
+						""
+					),
+					children: m.jsx(o("WAWebWdsIcSendFilledIcon.react").WdsIcSendFilledIcon, {
+						directional: !0,
+						width: 24,
+						height: 24
+					})
+				})
+			]
+		});
+	}
+	b.displayName = b.name + " [from " + i.id + "]", l.default = b;
+}), 226);

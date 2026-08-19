@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCallWamEvent","WAWebNotificationDeliveryWamEvent"],"dependent_count":2,"exports":[{"name":"PERIPHERAL_DEVICE_TYPE","used_by":["WAWebCallWamEvent","WAWebNotificationDeliveryWamEvent"],"uses":2}]}

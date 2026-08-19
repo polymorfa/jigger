@@ -1,0 +1,1 @@
+{"deps":["WAWebMarkAddOnsAsReadJob","WAWebMsgGetters","WAWebSendReadReceiptJob","asyncToGeneratorRuntime","nullthrows","react","react-compiler-runtime","useLazyRef","useWAWebListener"],"dependents":["useWAWebEventResponses"],"dependent_count":1,"exports":[{"name":"useMarkAddonsAsRead","used_by":["useWAWebEventResponses"],"uses":1}]}

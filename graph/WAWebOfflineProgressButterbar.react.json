@@ -1,0 +1,1 @@
+{"deps":["fbt","WAShiftTimer","WAWebCmd","WAWebOfflineHandler","WDSBanner.react","WDSIconIcSync.react","react","react-compiler-runtime","useWAWebListener"],"dependents":["WAWebPrimaryButterbar.react"],"dependent_count":1,"exports":[]}

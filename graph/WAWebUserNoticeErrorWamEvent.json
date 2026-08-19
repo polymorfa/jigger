@@ -1,0 +1,1 @@
+{"deps":["WAWebWamCodegenUtils","WAWebWamEnumNoticeType","WAWebWamEnumUserNoticeErrorEvent"],"dependents":["WAWebGetUserDisclosuresContentsQueryJob","WAWebNoticeModel"],"dependent_count":2,"exports":[{"name":"UserNoticeErrorWamEvent","used_by":[],"uses":0}]}

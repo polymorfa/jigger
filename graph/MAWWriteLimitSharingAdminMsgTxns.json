@@ -1,0 +1,1 @@
+{"deps":["MAWDexieTable","MAWInMemoryThreadStore","MAWLocalizationUtils","MAWWriteLimitSharingAdminMsgContent","MAWWriteMsgTxns","WATimeUtils","emptyFunction","err"],"dependents":["MAWWriteAdminMessageForLimitSharingApi"],"dependent_count":1,"exports":[{"name":"writeLimitSharingAdminMsg","used_by":["MAWWriteAdminMessageForLimitSharingApi"],"uses":1}]}

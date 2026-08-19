@@ -1,0 +1,1 @@
+{"deps":["invariant","Promise","WAWebIdb","WAWebStorage","err"],"dependents":["WAWebApiDeferredMessagesStorage","WAWebApiLocalStorage","WAWebSchemaDeferredMessagesStorage","WAWebSchemaLocalStorage","WAWebWorkerStorage","WAWebWorkerStorageVersions"],"dependent_count":6,"exports":[]}

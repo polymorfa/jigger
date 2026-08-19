@@ -1,0 +1,56 @@
+{
+  "id": "enum:STATUS_MEDIA_PICKER_FORMAT_TYPE",
+  "kind": "enum",
+  "name": "STATUS_MEDIA_PICKER_FORMAT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumStatusMediaPickerFormatType",
+    "variants": [
+      {
+        "name": "TEXT",
+        "value": 1.0
+      },
+      {
+        "name": "VOICE",
+        "value": 2.0
+      },
+      {
+        "name": "LAYOUTS",
+        "value": 3.0
+      },
+      {
+        "name": "MUSIC",
+        "value": 4.0
+      },
+      {
+        "name": "AI_IMAGINE",
+        "value": 5.0
+      },
+      {
+        "name": "LOCATION",
+        "value": 6.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumStatusMediaPickerFormatType",
+    "matches": "STATUS_MEDIA_PICKER_FORMAT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "STATUS_MEDIA_PICKER_FORMAT_TYPE",
+    "TEXT",
+    "VOICE",
+    "LAYOUTS",
+    "MUSIC",
+    "AI_IMAGINE",
+    "LOCATION"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebStatusPosterActionsWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

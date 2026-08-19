@@ -1,0 +1,1 @@
+{"deps":["WAProtoConst"],"dependents":["WAWebEphemeralDecodeBroadcastSetting","WAWebEphemeralEncodeBroadcastSetting"],"dependent_count":2,"exports":[{"name":"EphemeralSettingSpec","used_by":["WAWebEphemeralDecodeBroadcastSetting","WAWebEphemeralEncodeBroadcastSetting"],"uses":2}]}

@@ -1,0 +1,73 @@
+__d("WAWebHandleMsgProcessUtils", [
+	"WALogger",
+	"WAWebBackendApi",
+	"WAWebDBCreateOrUpdateReactions",
+	"WAWebDBProcessEditProtocolMsgs",
+	"WAWebDBUpdateLastAddOnPreviewChat",
+	"WAWebGetMessageCache",
+	"WAWebHandleMsgCommon",
+	"WAWebHandleMsgError",
+	"WAWebHandleMsgValidate",
+	"WAWebIcdcHandlerApi",
+	"WAWebLastAddOnDBSerialization",
+	"WAWebOfflineDeviceCache",
+	"WAWebReactionDataUtils",
+	"WAWebShouldUpdateLastAddOnPreview",
+	"WAWebSyncDeviceAdvDeviceListJob",
+	"WAWebWidFactory",
+	"cr:10197"
+], (function(t, n, r, o, a, i, l) {
+	var e;
+	function s(e, t) {
+		var n = t.category === o("WAWebHandleMsgCommon").MSG_CATEGORY.peer, r = n ? { msg: e } : {
+			msg: e,
+			receiptInfo: {
+				externalId: e.id.id,
+				from: e.from,
+				author: t.author
+			}
+		};
+		o("WAWebGetMessageCache").getMessageCache().addMessages([r], !1);
+	}
+	async function u(t, n) {
+		if (t.offline == null && o("WALogger").LOG(e || (e = babelHelpers.taggedTemplateLiteralLoose(["processDecryptedMessageProto: msgId::", ", message decrypted: "])), t.externalId).tags("messaging"), !t.isHsm && n.highlyStructuredMessage) throw new (o("WAWebHandleMsgCommon")).HsmMismatchError();
+		var r = null;
+		if (!await o("WAWebHandleMsgValidate").isFromKnownDevice(t.author)) {
+			var a = o("WAWebWidFactory").asUserWidOrThrow(t.author);
+			throw t.offline == null ? o("WAWebSyncDeviceAdvDeviceListJob").syncDeviceListJob([a], null, null) : o("WAWebOfflineDeviceCache").OfflinePendingDeviceCache.addOfflinePendingDevice(String(a), null), new (o("WAWebHandleMsgError")).UnknownDeviceMessageError("[messaging] msgId::" + t.externalId + ", processDecryptedMessageProto: reject message from unknown device");
+		}
+		return n.messageContextInfo && (r = t.chat.isUser() ? await o("WAWebIcdcHandlerApi").handleHostedIcdcMetadataInline(t.chat, t.author, n.messageContextInfo) : null, o("WAWebIcdcHandlerApi").handleICDCData(t.author, t.chat.isUser() ? t.chat : null, n.messageContextInfo)), r;
+	}
+	async function c(e) {
+		var t = e.msg, n = e.msgInfo, r = e.reparsing;
+		if (n.offline != null && !r) return s(t, n);
+		await o("WAWebBackendApi").frontendSendAndReceive("processEphemeralSyncResponse", { msg: t });
+	}
+	async function d(e, t, n) {
+		if (t.offline != null && !n) return s(e, t);
+		await o("WAWebBackendApi").frontendSendAndReceive("processKeepInChatMessage", {
+			keepInChatMessage: e,
+			allowNotification: !0
+		});
+	}
+	async function m(e, t, n) {
+		var r = e;
+		if (t.offline != null && !n) return s(r, t);
+		await o("WAWebDBProcessEditProtocolMsgs").processEditProtocolMsgs([r], n);
+	}
+	async function p(e) {
+		var t = await o("WAWebShouldUpdateLastAddOnPreview").filterChatsWithAddOnPreviewUpdates(e);
+		t.size > 0 && (await o("WAWebDBUpdateLastAddOnPreviewChat").updateDatabaseForLastAddOnPreview(t), o("WAWebBackendApi").frontendFireAndForget("updateChatLastAddOnPreview", { chatMap: t }));
+	}
+	async function _(e) {
+		var t = e.map(function(e) {
+			return o("WAWebReactionDataUtils").webMsgInfoReactionTypeToReactionsRow(e);
+		}), n = "reaction received: " + t.map(function(e) {
+			return e.msgKey.toString() + " to " + e.parentMsgKey;
+		}).toString() + ";", r = await o("WAWebDBCreateOrUpdateReactions").createOrUpdateReactions(t);
+		return r && await p(r.map(function(e) {
+			return o("WAWebLastAddOnDBSerialization").lastAddOnPreviewCandidateFromReactionRowType(e);
+		})), r;
+	}
+	l.preProcessMsg = u, l.processEphemeralSyncResponseMsg = c, l.processKeepInChatMsg = d, l.processEditProtocolMsg = m, l.storeReactionMsgBulk = _;
+}), 98);

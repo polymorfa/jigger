@@ -1,0 +1,60 @@
+{
+  "id": "proto:WAArmadilloApplication.Armadillo.ApplicationData.MetadataSyncAction.SyncChatAction",
+  "kind": "proto",
+  "name": "WAArmadilloApplication.Armadillo.ApplicationData.MetadataSyncAction.SyncChatAction",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "chatArchive": {
+        "number": 101,
+        "type_name": "WAArmadilloApplication.Armadillo.ApplicationData.MetadataSyncAction.SyncChatAction.ActionChatArchive"
+      },
+      "chatDelete": {
+        "number": 102,
+        "type_name": "WAArmadilloApplication.Armadillo.ApplicationData.MetadataSyncAction.SyncChatAction.ActionChatDelete"
+      },
+      "chatId": {
+        "number": 1
+      },
+      "chatRead": {
+        "number": 103,
+        "type_name": "WAArmadilloApplication.Armadillo.ApplicationData.MetadataSyncAction.SyncChatAction.ActionChatRead"
+      }
+    },
+    "module": "WAArmadilloApplication.pb"
+  },
+  "evidence": {
+    "module": "WAArmadilloApplication.pb",
+    "matches": "name = \"Armadillo.ApplicationData.MetadataSyncAction.SyncChatAction\""
+  },
+  "literals": [
+    "SyncChatAction"
+  ],
+  "graph": {
+    "deps": [
+      "WAArmadilloXMA.pb",
+      "WACommon.pb",
+      "WAProtoConst"
+    ],
+    "dependents": [
+      "MAWAsArmadilloApplication",
+      "MAWAsMessageApplication",
+      "MAWEphemeralUtil",
+      "MAWEphemeralUtils",
+      "MAWHandleEchoProtobufsRestoreApi",
+      "MAWHandleRtcE2eeCallEventNotification",
+      "MAWMpsMutateMessagePreprocessor",
+      "MAWParseArmadilloProtocol",
+      "MAWParseScreenshotActionMsg",
+      "MAWProtobufDeserializers",
+      "MAWSendMsgUtil",
+      "MawEchoToProtobufConverter",
+      "MpsRavenToBridge",
+      "MpsScreenshotActionToBridgeMsg",
+      "SendMsgArgsToProtobuf",
+      "WAConvertAppData"
+    ],
+    "dep_count": 3,
+    "dependent_count": 16
+  }
+}

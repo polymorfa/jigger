@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WAWebLazyLoadedRetriable","WAWebLoadable","WAWebLoadingModal.react","asyncToGeneratorRuntime","react"],"dependents":["WAWebAddEditPixFeature","WAWebAttachMenuPopupPix.react"],"dependent_count":2,"exports":[{"name":"WAWebBizPaymentsBrazilAddPixModalLoadable","used_by":["WAWebAddEditPixFeature","WAWebAttachMenuPopupPix.react"],"uses":2}]}

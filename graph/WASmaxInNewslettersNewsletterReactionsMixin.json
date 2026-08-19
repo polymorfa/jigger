@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxParseUtils"],"dependents":["WASmaxInNewslettersNewsletterMessageHistoryWithAddOnsMixin"],"dependent_count":1,"exports":[{"name":"parseNewsletterReactionsMixin","used_by":["WASmaxInNewslettersNewsletterMessageHistoryWithAddOnsMixin"],"uses":1},{"name":"parseNewsletterReactionsReactionsReaction","used_by":[],"uses":0}]}

@@ -1,0 +1,44 @@
+{
+  "id": "enum:PILL_ENTRY_POINT",
+  "kind": "enum",
+  "name": "PILL_ENTRY_POINT",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumPillEntryPoint",
+    "variants": [
+      {
+        "name": "LINK",
+        "value": 0.0
+      },
+      {
+        "name": "PHONE",
+        "value": 1.0
+      },
+      {
+        "name": "CONTACT",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumPillEntryPoint",
+    "matches": "PILL_ENTRY_POINT\\s*[:=]"
+  },
+  "literals": [
+    "PILL_ENTRY_POINT",
+    "LINK",
+    "PHONE",
+    "CONTACT"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebQbmIncomingMessageWamEvent",
+      "WAWebQbmMessageClickWamEvent",
+      "WAWebQbmMessageLevelActionWamEvent",
+      "WAWebQbmMessageReadWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 4
+  }
+}

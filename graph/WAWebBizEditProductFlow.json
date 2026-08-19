@@ -1,0 +1,1 @@
+{"deps":["fbt","$InternalEnum","WAWebDrawerManager","WAWebManageEditProductDrawer.react","WAWebManageProductInfoDrawer.react","WAWebProductCatalogProductLinkDrawer.react","WAWebProductDetailsInfoVariants.react","WAWebUtilsLogQplEvents","react","react-compiler-runtime","useWAWebFlow"],"dependents":["WAWebBizCatalogManagementFlow.react"],"dependent_count":1,"exports":[]}

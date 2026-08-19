@@ -1,0 +1,56 @@
+{
+  "id": "enum:DATA_CHANNEL_CONNECTION_STATE",
+  "kind": "enum",
+  "name": "DATA_CHANNEL_CONNECTION_STATE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumDataChannelConnectionState",
+    "variants": [
+      {
+        "name": "NONE",
+        "value": 0.0
+      },
+      {
+        "name": "INITED",
+        "value": 1.0
+      },
+      {
+        "name": "CONNECTING",
+        "value": 2.0
+      },
+      {
+        "name": "CONNECTED",
+        "value": 3.0
+      },
+      {
+        "name": "CLOSED",
+        "value": 4.0
+      },
+      {
+        "name": "ERROR",
+        "value": 5.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumDataChannelConnectionState",
+    "matches": "DATA_CHANNEL_CONNECTION_STATE\\s*[:=]"
+  },
+  "literals": [
+    "DATA_CHANNEL_CONNECTION_STATE",
+    "NONE",
+    "INITED",
+    "CONNECTING",
+    "CONNECTED",
+    "CLOSED",
+    "ERROR"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebCallWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

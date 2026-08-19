@@ -1,0 +1,68 @@
+{
+  "id": "enum:BUSINESS_PROFILE_FIELD",
+  "kind": "enum",
+  "name": "BUSINESS_PROFILE_FIELD",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumBusinessProfileField",
+    "variants": [
+      {
+        "name": "DESCRIPTION",
+        "value": 1.0
+      },
+      {
+        "name": "HOURS",
+        "value": 2.0
+      },
+      {
+        "name": "ADDRESS",
+        "value": 3.0
+      },
+      {
+        "name": "EMAIL",
+        "value": 4.0
+      },
+      {
+        "name": "WEBSITE",
+        "value": 5.0
+      },
+      {
+        "name": "CATEGORY",
+        "value": 6.0
+      },
+      {
+        "name": "PROFILE",
+        "value": 7.0
+      },
+      {
+        "name": "PIX",
+        "value": 8.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumBusinessProfileField",
+    "matches": "BUSINESS_PROFILE_FIELD\\s*[:=]"
+  },
+  "literals": [
+    "BUSINESS_PROFILE_FIELD",
+    "DESCRIPTION",
+    "HOURS",
+    "ADDRESS",
+    "EMAIL",
+    "WEBSITE",
+    "CATEGORY",
+    "PROFILE",
+    "PIX"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebEditBusinessProfileWamEvent",
+      "WAWebEditFormBusinessAddressField.react",
+      "WAWebEditFormEditFieldsForm.react"
+    ],
+    "dep_count": 0,
+    "dependent_count": 3
+  }
+}

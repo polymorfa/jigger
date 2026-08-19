@@ -1,0 +1,1 @@
+{"deps":["WAWebSyncdDecode","WAWebSyncdNetCallbacksApi","WAWebSyncdValidateServerSyncProtobuf","asyncToGeneratorRuntime"],"dependents":["WAWebSyncdCollectionHandler"],"dependent_count":1,"exports":[{"name":"downloadExternalPatch","used_by":["WAWebSyncdCollectionHandler"],"uses":1},{"name":"downloadSnapshot","used_by":["WAWebSyncdCollectionHandler"],"uses":1}]}

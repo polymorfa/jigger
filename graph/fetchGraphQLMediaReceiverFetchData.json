@@ -1,0 +1,1 @@
+{"deps":["MAWIssueReceiverFetchTask"],"dependents":["MAWRetryReceiverFetchSticker","useIssueMediaReceiverFetchTask"],"dependent_count":2,"exports":[{"name":"fetchGraphQLMediaReceiverFetchData","used_by":["MAWRetryReceiverFetchSticker","useIssueMediaReceiverFetchTask"],"uses":2}]}

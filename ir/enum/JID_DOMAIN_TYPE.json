@@ -1,0 +1,101 @@
+{
+  "id": "enum:JID_DOMAIN_TYPE",
+  "kind": "enum",
+  "name": "JID_DOMAIN_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumJidDomainType",
+    "variants": [
+      {
+        "name": "S_WHATSAPP_NET",
+        "value": 0.0
+      },
+      {
+        "name": "C_US",
+        "value": 1.0
+      },
+      {
+        "name": "LID",
+        "value": 2.0
+      },
+      {
+        "name": "MSGR",
+        "value": 3.0
+      },
+      {
+        "name": "INTEROP",
+        "value": 4.0
+      },
+      {
+        "name": "INTEROP_MSGR",
+        "value": 5.0
+      },
+      {
+        "name": "G_US",
+        "value": 6.0
+      },
+      {
+        "name": "BOT",
+        "value": 7.0
+      },
+      {
+        "name": "BROADCAST",
+        "value": 8.0
+      },
+      {
+        "name": "NEWSLETTER",
+        "value": 9.0
+      },
+      {
+        "name": "CALL",
+        "value": 10.0
+      },
+      {
+        "name": "HPHONE",
+        "value": 11.0
+      },
+      {
+        "name": "NONE_US",
+        "value": 12.0
+      },
+      {
+        "name": "ERROR_US",
+        "value": 13.0
+      },
+      {
+        "name": "NONE",
+        "value": 14.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumJidDomainType",
+    "matches": "JID_DOMAIN_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "JID_DOMAIN_TYPE",
+    "S_WHATSAPP_NET",
+    "C_US",
+    "LID",
+    "MSGR",
+    "INTEROP",
+    "INTEROP_MSGR",
+    "G_US",
+    "BOT",
+    "BROADCAST",
+    "NEWSLETTER",
+    "CALL",
+    "HPHONE",
+    "NONE_US",
+    "ERROR_US",
+    "NONE"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDefenseModeQuarantineWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

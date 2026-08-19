@@ -1,0 +1,1 @@
+{"deps":["WADeprecatedSendIq","WADeprecatedWapParser","WAWap","WAWebBackendErrors","WAWebCommonParsersParseBusinessProfile","WAWebCommsWapMd","WAWebJidToWid","asyncToGeneratorRuntime"],"dependents":["WAWebQueryBusinessProfile"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

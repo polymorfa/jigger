@@ -1,0 +1,1 @@
+{"deps":["JSResourceForInteraction","WAWebLazyLoadedRetriable","WAWebLoadable","asyncToGeneratorRuntime","react"],"dependents":["WAWebSuspendedCommunityUtils","WAWebSuspendedGroupUtils"],"dependent_count":2,"exports":[{"name":"GroupAppealInReviewModalLoadable","used_by":["WAWebSuspendedCommunityUtils","WAWebSuspendedGroupUtils"],"uses":2}]}

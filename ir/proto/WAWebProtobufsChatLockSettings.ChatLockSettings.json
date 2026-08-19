@@ -1,0 +1,36 @@
+{
+  "id": "proto:WAWebProtobufsChatLockSettings.ChatLockSettings",
+  "kind": "proto",
+  "name": "WAWebProtobufsChatLockSettings.ChatLockSettings",
+  "data": {
+    "kind": "proto",
+    "fields": {
+      "hideLockedChats": {
+        "number": 1
+      },
+      "secretCode": {
+        "number": 2
+      }
+    },
+    "module": "WAWebProtobufsChatLockSettings.pb"
+  },
+  "evidence": {
+    "module": "WAWebProtobufsChatLockSettings.pb",
+    "matches": "name = \"ChatLockSettings\""
+  },
+  "literals": [
+    "ChatLockSettings"
+  ],
+  "graph": {
+    "deps": [
+      "WAProtoConst",
+      "WAWebProtobufsUserPassword.pb"
+    ],
+    "dependents": [
+      "WAWebProtobufSyncAction.pb",
+      "WAWebProtobufsHistorySync.pb"
+    ],
+    "dep_count": 2,
+    "dependent_count": 2
+  }
+}

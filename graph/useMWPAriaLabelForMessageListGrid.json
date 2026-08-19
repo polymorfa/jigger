@@ -1,0 +1,1 @@
+{"deps":["fbt","Int64Hooks","MWPActor.react","MWPGetThreadTitle","ReQL","ReQLSuspense","react-compiler-runtime","useReStore"],"dependents":["MAWMessageList.react"],"dependent_count":1,"exports":[]}

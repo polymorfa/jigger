@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebConfirmPopup.react","WAWebFbtAppName","WAWebFbtCommon","WAWebModalManager","react"],"dependents":["WAWebGetInteractiveActions","WAWebGetQuickPayAction","WAWebInteractiveBubble.react","WAWebInteractiveMessage","WAWebInteractiveMessageCarousel.react","WAWebNativeFlowMessage"],"dependent_count":6,"exports":[]}

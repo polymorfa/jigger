@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebFlex.react","WAWebVoipGatingUtils","WDSIconIcBackToTab.react","react","react-compiler-runtime"],"dependents":["WAWebVoipUiVideoCallSelfPreviewFullWidth.react","WAWebVoipVoiceCallContainer.react"],"dependent_count":2,"exports":[]}

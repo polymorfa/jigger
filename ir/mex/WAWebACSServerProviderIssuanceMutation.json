@@ -1,0 +1,90 @@
+{
+  "id": "mex:WAWebACSServerProviderIssuanceMutation",
+  "kind": "mex",
+  "name": "WAWebACSServerProviderIssuanceMutation",
+  "data": {
+    "kind": "mex",
+    "doc_id": "26039599689054760",
+    "operation": "mutation",
+    "variables": [
+      "input"
+    ],
+    "args": [
+      {
+        "name": "input"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_wa_acs_issue_credentials",
+        "ty": "XWAWAACSCredsIssueResponse",
+        "args": [
+          "input: $input"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "success",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "creds",
+            "ty": "TIssuanceResponseType",
+            "kind": "LinkedField",
+            "selections": [
+              {
+                "name": "evaluation",
+                "ty": "TServerEvaluationType",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "data",
+                    "kind": "ScalarField"
+                  }
+                ]
+              },
+              {
+                "name": "proof",
+                "ty": "TDLEQServerProofType",
+                "plural": true,
+                "kind": "LinkedField",
+                "selections": [
+                  {
+                    "name": "c",
+                    "kind": "ScalarField"
+                  },
+                  {
+                    "name": "s",
+                    "kind": "ScalarField"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "error_message",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 26039599689054760\nmutation ACSServerProviderIssuanceMutation(\n  $input\n) {\n  xwa_wa_acs_issue_credentials(input: $input) {  # XWAWAACSCredsIssueResponse\n    success\n    creds {  # TIssuanceResponseType\n      evaluation {  # [TServerEvaluationType]\n        data\n      }\n      proof {  # [TDLEQServerProofType]\n        c\n        s\n      }\n    }\n    error_message\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebACSServerProviderIssuanceMutation.graphql",
+    "matches": "id:\\s*\"26039599689054760\""
+  },
+  "literals": [
+    "26039599689054760",
+    "WAWebACSServerProviderIssuanceMutation"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebACSServerProvider"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

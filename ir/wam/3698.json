@@ -1,0 +1,68 @@
+{
+  "id": "wam:3698",
+  "kind": "wam",
+  "name": "KeepInChatErrors",
+  "data": {
+    "kind": "wam",
+    "event_id": 3698,
+    "fields": {
+      "canEditDmSettings": {
+        "id": 7,
+        "type": "BOOLEAN",
+        "wire": "can_edit_dm_settings"
+      },
+      "isAGroup": {
+        "id": 2,
+        "type": "BOOLEAN",
+        "wire": "is_a_group"
+      },
+      "isAdmin": {
+        "id": 3,
+        "type": "BOOLEAN",
+        "wire": "is_admin"
+      },
+      "kicAction": {
+        "id": 4,
+        "type": "KIC_ACTION_TYPE",
+        "wire": "kic_action",
+        "enum_ref": "KIC_ACTION_TYPE"
+      },
+      "kicErrorCode": {
+        "id": 5,
+        "type": "KIC_ERROR_CODE_TYPE",
+        "wire": "kic_error_code",
+        "enum_ref": "KIC_ERROR_CODE_TYPE"
+      },
+      "kicMessageEphemeralityDuration": {
+        "id": 6,
+        "type": "INTEGER",
+        "wire": "kic_message_ephemerality_duration"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebKeepInChatErrorsWamEvent",
+    "matches": "KeepInChatErrors:\\s*\\[\\s*3698"
+  },
+  "literals": [
+    "3698"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumKicActionType",
+      "WAWebWamEnumKicErrorCodeType"
+    ],
+    "dependents": [
+      "WAWebEphemeralKeepInChatWamUtils"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

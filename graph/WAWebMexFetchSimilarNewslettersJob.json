@@ -1,0 +1,1 @@
+{"deps":["WAWebMexClient","WAWebMexFetchSimilarNewslettersJobQuery.graphql","WAWebNewsletterGatingUtils","asyncToGeneratorRuntime"],"dependents":["WAWebDebugNewsletterSimilar","WAWebNewsletterDirectorySearchQueryJob"],"dependent_count":2,"exports":[{"name":"mexFetchSimilarNewsletters","used_by":["WAWebDebugNewsletterSimilar","WAWebNewsletterDirectorySearchQueryJob"],"uses":2}]}

@@ -1,0 +1,63 @@
+{
+  "id": "wam:3522",
+  "kind": "wam",
+  "name": "PrivacyHighlightDaily",
+  "data": {
+    "kind": "wam",
+    "event_id": 3522,
+    "fields": {
+      "dialogAppearCount": {
+        "id": 1,
+        "type": "INTEGER",
+        "wire": "dialog_appear_count"
+      },
+      "dialogSelectCount": {
+        "id": 2,
+        "type": "INTEGER",
+        "wire": "dialog_select_count"
+      },
+      "narrativeAppearCount": {
+        "id": 3,
+        "type": "INTEGER",
+        "wire": "narrative_appear_count"
+      },
+      "privacyHighlightCategory": {
+        "id": 4,
+        "type": "PRIVACY_HIGHLIGHT_CATEGORY_ENUM",
+        "wire": "privacy_highlight_category",
+        "enum_ref": "PRIVACY_HIGHLIGHT_CATEGORY_ENUM"
+      },
+      "privacyHighlightSurface": {
+        "id": 5,
+        "type": "PRIVACY_HIGHLIGHT_SURFACE_ENUM",
+        "wire": "privacy_highlight_surface",
+        "enum_ref": "PRIVACY_HIGHLIGHT_SURFACE_ENUM"
+      }
+    },
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "channel": "regular"
+  },
+  "evidence": {
+    "module": "WAWebPrivacyHighlightDailyWamEvent",
+    "matches": "PrivacyHighlightDaily:\\s*\\[\\s*3522"
+  },
+  "literals": [
+    "3522"
+  ],
+  "graph": {
+    "deps": [
+      "WAWebWamCodegenUtils",
+      "WAWebWamEnumPrivacyHighlightCategoryEnum",
+      "WAWebWamEnumPrivacyHighlightSurfaceEnum"
+    ],
+    "dependents": [
+      "WAWebTasksDailyStatsTask"
+    ],
+    "dep_count": 3,
+    "dependent_count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "enum:WEB_CONTACT_LIST_START_NEW_CHAT_TYPE",
+  "kind": "enum",
+  "name": "WEB_CONTACT_LIST_START_NEW_CHAT_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumWebContactListStartNewChatType",
+    "variants": [
+      {
+        "name": "CONTACT",
+        "value": 1.0
+      },
+      {
+        "name": "GROUP",
+        "value": 2.0
+      },
+      {
+        "name": "CONTACTLESS",
+        "value": 3.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumWebContactListStartNewChatType",
+    "matches": "WEB_CONTACT_LIST_START_NEW_CHAT_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "WEB_CONTACT_LIST_START_NEW_CHAT_TYPE",
+    "CONTACT",
+    "GROUP",
+    "CONTACTLESS"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebDialerPadFlow.react",
+      "WAWebDialerPadSearchResult.react",
+      "WAWebNewChatDrawer.react",
+      "WAWebNewChatFlow.react",
+      "WAWebWebContactListStartNewChatWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

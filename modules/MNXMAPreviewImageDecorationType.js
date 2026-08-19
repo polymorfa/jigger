@@ -1,0 +1,29 @@
+__d("MNXMAPreviewImageDecorationType", [], (function(t, n, r, o, a, i) {
+	var e = Object.freeze({
+		DEFAULT: 0,
+		COLLAGE: 1,
+		VIDEO: 2,
+		MESSENGER_ICON: 3,
+		INSTAGRAM_ICON: 4,
+		SHOPPING: 5,
+		UPCOMING_EVENT: 6,
+		LIVE: 7,
+		REEL: 8,
+		IGTV: 9,
+		YOUTUBE_VIDEO: 10,
+		YOUTUBE_SHORTS: 11,
+		COMMENT: 12,
+		BLUR: 13,
+		PILL: 14,
+		MESSENGER_CHANNEL_IMAGE: 15,
+		TROPHY: 16,
+		DXMA_LIVE: 17,
+		DXMA_LIVE_ENDED: 18,
+		LIKE_BUBBLE_REPLY: 19,
+		LIKE_BUBBLES: 20,
+		REPOST: 21,
+		FUBS_EXCLUSIVE_CONTENT_TEASER: 22,
+		GLIMMER: 23
+	});
+	i.default = e;
+}), 66);

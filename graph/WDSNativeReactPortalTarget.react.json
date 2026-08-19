@@ -1,0 +1,1 @@
+{"deps":["ReactDOM","react","stylex"],"dependents":["WAFlowsReactPortal.react"],"dependent_count":1,"exports":[{"name":"WDSNativeReactPortal","used_by":["WAFlowsReactPortal.react"],"uses":1},{"name":"WDSPortalTarget","used_by":["WAFlowsReactPortal.react"],"uses":1}]}

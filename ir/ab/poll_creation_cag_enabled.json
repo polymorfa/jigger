@@ -1,0 +1,42 @@
+{
+  "id": "ab:poll_creation_cag_enabled",
+  "kind": "ab",
+  "name": "poll_creation_cag_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2738,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "poll_creation_cag_enabled:\\s*\\[\\s*2738"
+  },
+  "literals": [
+    "poll_creation_cag_enabled",
+    "2738"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

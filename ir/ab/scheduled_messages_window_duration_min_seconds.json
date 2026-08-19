@@ -1,0 +1,45 @@
+{
+  "id": "ab:scheduled_messages_window_duration_min_seconds",
+  "kind": "ab",
+  "name": "scheduled_messages_window_duration_min_seconds",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 26348,
+    "type": "int",
+    "default": 600,
+    "alt_default": 600
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "scheduled_messages_window_duration_min_seconds:\\s*\\[\\s*26348"
+  },
+  "literals": [
+    "scheduled_messages_window_duration_min_seconds",
+    "26348"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebScheduledMessagesGatingUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

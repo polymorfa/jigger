@@ -1,0 +1,56 @@
+{
+  "id": "mex:WAWebBizGetProfileShimlinksQuery",
+  "kind": "mex",
+  "name": "WAWebBizGetProfileShimlinksQuery",
+  "data": {
+    "kind": "mex",
+    "doc_id": "24491258413796282",
+    "operation": "query",
+    "variables": [
+      "bizJid"
+    ],
+    "args": [
+      {
+        "name": "bizJid"
+      }
+    ],
+    "selections": [
+      {
+        "name": "xwa_whatsapp_smb_get_profile_linkshims",
+        "ty": "XWAWhatsAppSMBProfileWebsiteInfo",
+        "plural": true,
+        "args": [
+          "biz_jid: $bizJid"
+        ],
+        "kind": "LinkedField",
+        "selections": [
+          {
+            "name": "website",
+            "kind": "ScalarField"
+          },
+          {
+            "name": "shimmed_website_url",
+            "kind": "ScalarField"
+          }
+        ]
+      }
+    ],
+    "document": "# persisted document 24491258413796282\nquery BizGetProfileShimlinksQuery(\n  $bizJid\n) {\n  xwa_whatsapp_smb_get_profile_linkshims(biz_jid: $bizJid) {  # [XWAWhatsAppSMBProfileWebsiteInfo]\n    website\n    shimmed_website_url\n  }\n}\n"
+  },
+  "evidence": {
+    "module": "WAWebBizGetProfileShimlinksQuery.graphql",
+    "matches": "id:\\s*\"24491258413796282\""
+  },
+  "literals": [
+    "24491258413796282",
+    "WAWebBizGetProfileShimlinksQuery"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebBizGetProfileShimlinksQuery"
+    ],
+    "dep_count": 0,
+    "dependent_count": 1
+  }
+}

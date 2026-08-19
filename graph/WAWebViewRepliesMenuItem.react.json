@@ -1,0 +1,1 @@
+{"deps":["fbt","WAWebIsInThreadsViewContext","WAWebModalManager","WAWebViewRepliesContextMenuUtils","WAWebViewRepliesThreadsModal.react","WDSIconIcReply.react","WDSMenuItem.react","react","react-compiler-runtime"],"dependents":["WAWebWrapperMessageDropdownMenu.react"],"dependent_count":1,"exports":[]}

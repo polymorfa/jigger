@@ -1,0 +1,1 @@
+{"deps":["WAWebDBGroupMembeshipApprovalRequest"],"dependents":["WAWebGroupMembershipApprovalRequestsJob"],"dependent_count":1,"exports":[{"name":"removeMembershipApprovalRequests","used_by":["WAWebGroupMembershipApprovalRequestsJob"],"uses":1}]}

@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInMessageDeliverNewsletterMessageWithJIDMixin","WASmaxInMessageDeliverReceiverContentTypeMediaRCATMixin","WASmaxParseUtils"],"dependents":["WASmaxMessageDeliverNewsletterRPC"],"dependent_count":1,"exports":[{"name":"parseNewsletterRequest","used_by":["WASmaxMessageDeliverNewsletterRPC"],"uses":1}]}

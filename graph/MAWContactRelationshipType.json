@@ -1,0 +1,1 @@
+{"deps":["I64","LSContactBitOffset","WADbContact"],"dependents":["MAWBridgeOneToOneMessageRequestLoadedHandler","MAWFetchContacts","MAWThreadEvent"],"dependent_count":3,"exports":[{"name":"getContactRelationshipType","used_by":["MAWBridgeOneToOneMessageRequestLoadedHandler","MAWFetchContacts","MAWThreadEvent"],"uses":3}]}

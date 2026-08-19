@@ -1,0 +1,42 @@
+{
+  "id": "ab:soccer_reaction_in_tray_enabled",
+  "kind": "ab",
+  "name": "soccer_reaction_in_tray_enabled",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 27833,
+    "type": "bool",
+    "default": false,
+    "alt_default": false
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "soccer_reaction_in_tray_enabled:\\s*\\[\\s*27833"
+  },
+  "literals": [
+    "soccer_reaction_in_tray_enabled",
+    "27833"
+  ],
+  "usage": {
+    "read_count": 0
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}

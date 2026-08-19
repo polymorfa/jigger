@@ -1,0 +1,42 @@
+{
+  "id": "enum:ENUM_ELIGIBLE_LOCKED_TRUE",
+  "kind": "enum",
+  "name": "ENUM_ELIGIBLE_LOCKED_TRUE",
+  "data": {
+    "kind": "enum",
+    "module": "WASmaxInAccountEnums",
+    "variants": [
+      {
+        "name": "eligible",
+        "value": "eligible"
+      },
+      {
+        "name": "locked",
+        "value": "locked"
+      },
+      {
+        "name": "true",
+        "value": "true"
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WASmaxInAccountEnums",
+    "matches": "ENUM_ELIGIBLE_LOCKED_TRUE\\s*[:=]"
+  },
+  "literals": [
+    "ENUM_ELIGIBLE_LOCKED_TRUE",
+    "eligible",
+    "locked",
+    "true"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WASmaxInAccountSetPaymentsTOSv3BRConsumerPaymentsTOSv3ResponseMixin",
+      "WASmaxInAccountSetPaymentsTOSv3UPIConsumerPaymentsTOSv3ResponseMixin"
+    ],
+    "dep_count": 0,
+    "dependent_count": 2
+  }
+}

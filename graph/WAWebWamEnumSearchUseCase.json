@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebSearchUserJourneyLogger","WAWebSearchUserJourneyWamEvent"],"dependent_count":2,"exports":[{"name":"SEARCH_USE_CASE","used_by":["WAWebSearchUserJourneyLogger","WAWebSearchUserJourneyWamEvent"],"uses":2}]}

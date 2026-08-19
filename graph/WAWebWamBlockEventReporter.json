@@ -1,0 +1,1 @@
+{"deps":["WAWebBlockEventsFsWamEvent","WAWebChatCollection","WAWebFrontendContactGetters","WAWebWamEnumBlockEventActionType"],"dependents":["WAWebBlockContactAction"],"dependent_count":1,"exports":[{"name":"logBlockEvent","used_by":["WAWebBlockContactAction"],"uses":1}]}

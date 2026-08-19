@@ -1,0 +1,1 @@
+{"deps":["WDSSvgComponentBase.react","WDSSvgIconHelpers","react","stylex"],"dependents":["WAWebMediaHubEmptyGalleryEntryPoint.react","WAWebMediaHubFooterEntryPoint.react","WAWebMediaHubNavBarItem.react","WAWebPrivacyNarrativeE2ESummary.react","WAWebStatusPostingDropdown.react","WDSAllGeneratedIcons"],"dependent_count":6,"exports":[{"name":"default","used_by":[],"uses":0}]}

@@ -1,0 +1,1 @@
+{"deps":["WAWebCallLogEntryCell.react","WAWebCallLogMsgData.flow","WAWebCallLogUtils","WAWebFlex.react","WAWebMsgGetters","react","react-compiler-runtime","useWAWebMsgValues"],"dependents":["WAWebSystemMessagePluginRenderPreviewIconRegistry"],"dependent_count":1,"exports":[{"name":"default","used_by":[],"uses":0}]}

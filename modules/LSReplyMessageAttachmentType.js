@@ -1,0 +1,25 @@
+__d("LSReplyMessageAttachmentType", [], (function(t, n, r, o, a, i) {
+	var e = Object.freeze({
+		OTHER: 0,
+		PHOTO: 1,
+		VIDEO: 2,
+		GIF: 3,
+		STICKER: 4,
+		LINK: 5,
+		MULTIPHOTO: 6,
+		PERMANENT_RAVEN_PHOTO: 7,
+		PERMANENT_RAVEN_VIDEO: 8,
+		AUDIO: 10,
+		ROLL_CALL_PHOTO_CONTRIBUTION: 11,
+		ROLL_CALL_VIDEO_CONTRIBUTION: 12,
+		FEED_POST: 13,
+		POWER_UP: 14,
+		XMA: 15,
+		ROLL_CALL_TEXT_CONTRIBUTION: 16,
+		BLOKS_XMA: 17,
+		EPHEMERAL_RAVEN_MESSAGE: 18,
+		THIRD_PARTY_STICKER: 19,
+		SOUND_BITE: 9
+	});
+	i.default = e;
+}), 66);

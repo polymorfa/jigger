@@ -1,0 +1,45 @@
+{
+  "id": "enum:SETTINGS_PAGE_TYPE",
+  "kind": "enum",
+  "name": "SETTINGS_PAGE_TYPE",
+  "data": {
+    "kind": "enum",
+    "module": "WAWebWamEnumSettingsPageType",
+    "variants": [
+      {
+        "name": "SETTINGS",
+        "value": 0.0
+      },
+      {
+        "name": "ME_TAB",
+        "value": 1.0
+      },
+      {
+        "name": "AVATAR_COINFLIP",
+        "value": 2.0
+      }
+    ]
+  },
+  "evidence": {
+    "module": "WAWebWamEnumSettingsPageType",
+    "matches": "SETTINGS_PAGE_TYPE\\s*[:=]"
+  },
+  "literals": [
+    "SETTINGS_PAGE_TYPE",
+    "SETTINGS",
+    "ME_TAB",
+    "AVATAR_COINFLIP"
+  ],
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebMeTabFlow.react",
+      "WAWebMeTabSettingsSearchResults.react",
+      "WAWebSettingsClickWamEvent",
+      "WAWebSettingsDrawer.react",
+      "WAWebSettingsSearchInitiateWamEvent"
+    ],
+    "dep_count": 0,
+    "dependent_count": 5
+  }
+}

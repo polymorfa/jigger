@@ -1,0 +1,1 @@
+{"deps":["WAWebChatlistPageNavigation.react","react","react-compiler-runtime"],"dependents":["WAWebChatlistFunctional.react"],"dependent_count":1,"exports":[{"name":"usePageNavigation","used_by":["WAWebChatlistFunctional.react"],"uses":1}]}

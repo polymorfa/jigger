@@ -1,0 +1,1 @@
+{"deps":["WAWebMediaTypes","WAWebMsgCollection","WAWebMsgKey","WAWebMsgModel"],"dependents":["WAWebMessageBubbleShowroom.react","WAWebMessageWrapperBenchmark.react"],"dependent_count":2,"exports":[{"name":"createMsgForType","used_by":["WAWebMessageBubbleShowroom.react","WAWebMessageWrapperBenchmark.react"],"uses":2}]}

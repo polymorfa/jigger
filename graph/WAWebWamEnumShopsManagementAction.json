@@ -1,0 +1,1 @@
+{"deps":[],"dependents":["WAWebCatalogChatlistHeaderDropdownItem.react","WAWebProductCatalogDrawerSection","WAWebWaShopsManagementWamEvent"],"dependent_count":3,"exports":[{"name":"SHOPS_MANAGEMENT_ACTION","used_by":["WAWebCatalogChatlistHeaderDropdownItem.react","WAWebProductCatalogDrawerSection","WAWebWaShopsManagementWamEvent"],"uses":3}]}

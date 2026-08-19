@@ -1,0 +1,1 @@
+{"deps":["WAResultOrError","WASmaxInOfflineEnums","WASmaxInOfflineThreadMetadataDelayedMixin","WASmaxParseJid","WASmaxParseUtils"],"dependents":["WASmaxOfflineThreadMetadataRPC"],"dependent_count":1,"exports":[{"name":"parseThreadMetadataRequest","used_by":["WASmaxOfflineThreadMetadataRPC"],"uses":1},{"name":"parseThreadMetadataRequestThreadMetadataItem","used_by":[],"uses":0}]}

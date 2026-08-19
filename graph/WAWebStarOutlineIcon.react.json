@@ -1,0 +1,1 @@
+{"deps":["WAWebSvgComponentBase","WAWebSvgIconHelpers","react","react-compiler-runtime","stylex"],"dependents":["WAWebAllGeneratedIcons","WAWebAppRatingStarButton.react"],"dependent_count":2,"exports":[{"name":"StarOutlineIcon","used_by":["WAWebAllGeneratedIcons","WAWebAppRatingStarButton.react"],"uses":2}]}

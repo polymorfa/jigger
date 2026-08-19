@@ -1,0 +1,45 @@
+{
+  "id": "ab:maximum_group_size_for_rcat",
+  "kind": "ab",
+  "name": "maximum_group_size_for_rcat",
+  "data": {
+    "kind": "ab",
+    "opaque_id": 2915,
+    "type": "int",
+    "default": 100,
+    "alt_default": 100
+  },
+  "evidence": {
+    "module": "WAWebABPropsConfigs",
+    "matches": "maximum_group_size_for_rcat:\\s*\\[\\s*2915"
+  },
+  "literals": [
+    "maximum_group_size_for_rcat",
+    "2915"
+  ],
+  "usage": {
+    "read_count": 1,
+    "readers": [
+      "WAWebMsgRcatUtils"
+    ]
+  },
+  "graph": {
+    "deps": [],
+    "dependents": [
+      "WAWebABPropSearchModel",
+      "WAWebABProps",
+      "WAWebABPropsCache",
+      "WAWebABPropsUpdateFromStorage",
+      "WAWebAbPropsParsingJob",
+      "WAWebApiAbPropConfig",
+      "WAWebBackendWorkerABPropsCache",
+      "WAWebDebugABProps",
+      "WAWebEligibilityLogging",
+      "WAWebVoipWasmArtifactGating",
+      "WAWebVoipWebWasmVariantLoader",
+      "useWAWebReadABPropFromIdb"
+    ],
+    "dep_count": 0,
+    "dependent_count": 12
+  }
+}
