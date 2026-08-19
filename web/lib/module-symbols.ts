@@ -1,7 +1,8 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { rawSymbolsUrl, type DataSource } from "./source";
+import { fetchPayloadFile } from "./payload";
+import type { DataSource } from "./source";
 
 /** line, column, length, reference count. */
 export type Decl = [number, number, number, number];
@@ -45,12 +46,9 @@ export async function fetchSymbols(
 ): Promise<Symbols | null> {
   if (source.kind === "local") return null;
   try {
-    const res = await fetch(rawSymbolsUrl(source, module), {
-      cache: "force-cache",
-      next: { revalidate: false },
-    });
-    if (!res.ok) return null;
-    const sym = (await res.json()) as Symbols;
+    const body = await fetchPayloadFile(source, `symbols/${module.replace(/\//g, "_")}.json`);
+    if (!body) return null;
+    const sym = JSON.parse(body) as Symbols;
     // The same guarantee as the local path: offsets against different bytes are
     // not approximately right, they are meaningless.
     return sym.hash === fnv1a(rewritten) ? sym : null;

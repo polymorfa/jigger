@@ -6,6 +6,7 @@ import { Scroll } from "@/components/ui";
 import { getSnapshotResult } from "@/lib/data";
 import { fetchModule, lineOfMatch, loadModule, memberLine } from "@/lib/module-source";
 import { fetchSymbols, loadSymbols } from "@/lib/module-symbols";
+import { makeGithubSource } from "@/lib/source";
 import { rewriteModule } from "@/lib/source-rewrite";
 
 type Params = { params: Promise<{ module: string }>; searchParams: Promise<{ m?: string }> };
@@ -30,9 +31,15 @@ export default async function SourcePage({ params, searchParams }: Params) {
   if (!res.ok) notFound();
   const revision = res.snap.ir.revision;
 
-  // Disk when there is a cellar store, the payload branch otherwise. A
-  // deployment has no bundle; a laptop has no reason to make a network call.
-  const src = loadModule(revision, name) ?? (await fetchModule(res.snap.source, name));
+  // Disk when there is a cellar store, the payload branch otherwise.
+  //
+  // The snapshot's own source is not the right thing to ask. `ir.json` is on
+  // disk on a deployment too — the build fetched it — so the snapshot reads as
+  // local while the modules, which are far too many to bundle, are not there.
+  // What decides this is whether a cellar store exists, not where the ledger
+  // came from.
+  const remote = res.snap.source.kind === "github" ? res.snap.source : makeGithubSource();
+  const src = loadModule(revision, name) ?? (remote && (await fetchModule(remote, name)));
   if (src === null) {
     return (
       <Scroll>
@@ -58,7 +65,8 @@ export default async function SourcePage({ params, searchParams }: Params) {
   // Symbols are keyed to the rewritten text, so it is computed once here and
   // handed to the viewer rather than derived twice.
   const shown = rewriteModule(src);
-  const symbols = loadSymbols(name, shown) ?? (await fetchSymbols(res.snap.source, name, shown));
+  const symbols =
+    loadSymbols(name, shown) ?? (remote ? await fetchSymbols(remote, name, shown) : null);
 
   const isMember = Boolean(m && /^[A-Za-z_$][\w$]*$/.test(m));
   const hit = m ? (isMember ? memberLine(src, m) : lineOfMatch(src, m)) : null;

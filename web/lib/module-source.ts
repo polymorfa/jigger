@@ -1,7 +1,8 @@
 import { existsSync, readFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
-import { rawModuleUrl, type DataSource } from "./source";
+import { fetchPayloadFile } from "./payload";
+import type { DataSource } from "./source";
 
 /**
  * Module source, read straight out of the cellar bundle.
@@ -35,15 +36,7 @@ export function hasModule(revision: number, name: string): boolean {
  */
 export async function fetchModule(source: DataSource, name: string): Promise<string | null> {
   if (source.kind === "local") return null;
-  try {
-    const res = await fetch(rawModuleUrl(source, name), {
-      cache: "force-cache",
-      next: { revalidate: false },
-    });
-    return res.ok ? await res.text() : null;
-  } catch {
-    return null;
-  }
+  return fetchPayloadFile(source, `modules/${name}.js`);
 }
 
 export function loadModule(revision: number, name: string): string | null {

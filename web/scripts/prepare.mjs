@@ -50,10 +50,20 @@ async function fetchPayload() {
   mkdirSync(dir, { recursive: true });
   let got = 0;
 
+  // A token is required for a private repository and harmless for a public one.
+  // Raw would 404 on private indistinguishably from a missing file, which is
+  // the kind of failure that costs an afternoon.
+  const token = process.env.JIGGER_GITHUB_TOKEN ?? process.env.GITHUB_TOKEN;
   for (const file of ["ir.json", "revision.json", "manifest.json", "diff.json", "history.json", "vectors.json"]) {
-    const url = `https://raw.githubusercontent.com/${repo}/${ref}/${file}`;
+    const url = token
+      ? `https://api.github.com/repos/${repo}/contents/${file}?ref=${ref}`
+      : `https://raw.githubusercontent.com/${repo}/${ref}/${file}`;
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, {
+        headers: token
+          ? { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" }
+          : {},
+      });
       if (!res.ok) continue;
       writeFileSync(join(dir, file), Buffer.from(await res.arrayBuffer()));
       got++;
