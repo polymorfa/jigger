@@ -1,6 +1,0 @@
-export enum GROUPMEMBERADDINGMEMBERTYPE {
-  OPEN_META_AI = 0,
-  TEE_BOT = 1,
-  WA_USER = 2,
-  NON_WA_USER = 3,
-}

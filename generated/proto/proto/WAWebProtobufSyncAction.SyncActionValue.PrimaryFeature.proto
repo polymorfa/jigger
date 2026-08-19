@@ -1,3 +1,0 @@
-message PrimaryFeature {
-  optional bytes flags = 1;
-}

@@ -1,4 +1,0 @@
-export enum IMPLEMENTATIONTYPE {
-  NATIVE = 0,
-  GENAI = 1,
-}

@@ -1,2 +1,0 @@
-// ABMmDataSharingDisclosureEnabledAdditionalTransparencyLargeScreens is A/B property 25421 (bool), default false.
-const ABMmDataSharingDisclosureEnabledAdditionalTransparencyLargeScreens = "mm_data_sharing_disclosure_enabled_additional_transparency_large_screens"

@@ -1,2 +1,0 @@
-/// A/B property 22280 (bool), default true.
-pub const AB_CHANNELS_INVITE_CONTACTS_TO_FOLLOW_RECEIVER_INVALID_MESSAGE_DROP_ENDABLED: &str = "channels_invite_contacts_to_follow_receiver_invalid_message_drop_endabled";

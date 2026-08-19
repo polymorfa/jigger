@@ -1,4 +1,0 @@
-export enum CHANNELFORWARDCONTENTTYPE {
-  UPDATE = 0,
-  UPDATE_CARD = 1,
-}

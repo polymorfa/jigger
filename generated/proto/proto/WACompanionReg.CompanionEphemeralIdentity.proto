@@ -1,5 +1,0 @@
-message CompanionEphemeralIdentity {
-  optional bytes publicKey = 1;
-  optional bytes deviceType = 2;
-  optional bytes ref = 3;
-}

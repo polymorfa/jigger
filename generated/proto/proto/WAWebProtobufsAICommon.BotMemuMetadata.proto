@@ -1,3 +1,0 @@
-message BotMemuMetadata {
-  optional BotMediaMetadata faceImages = 1;
-}

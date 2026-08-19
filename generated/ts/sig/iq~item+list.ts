@@ -1,2 +1,0 @@
-/** Matches `<iq>`. Response to BlocklistsUpdateOptOutList. */
-export function parseBlocklistsUpdateOptOutListResponseSuccessWithMatch(n: BinaryNode): BlocklistsUpdateOptOutListResponseSuccessWithMatch | null

@@ -1,3 +1,0 @@
-message RemoveRecentStickerAction {
-  optional bytes lastStickerSentTs = 1;
-}

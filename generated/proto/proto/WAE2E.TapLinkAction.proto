@@ -1,4 +1,0 @@
-message TapLinkAction {
-  optional bytes title = 1;
-  optional bytes tapUrl = 2;
-}

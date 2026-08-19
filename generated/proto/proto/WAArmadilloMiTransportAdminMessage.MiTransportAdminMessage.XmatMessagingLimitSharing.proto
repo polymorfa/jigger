@@ -1,5 +1,0 @@
-message XmatMessagingLimitSharing {
-  optional bytes senderName = 1;
-  optional bytes senderId = 2;
-  optional bytes limitSharingType = 3;
-}

@@ -1,2 +1,0 @@
-// ABChannelsQuestionReplySenderMessageTypesM2Enabled is A/B property 26931 (string), default "".
-const ABChannelsQuestionReplySenderMessageTypesM2Enabled = "channels_question_reply_sender_message_types_m2_enabled"

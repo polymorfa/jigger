@@ -1,5 +1,0 @@
-export enum CUSTOMERADSSHARINGSETTINGENABLED {
-  UNSET = 0,
-  TRUE = 1,
-  FALSE = 2,
-}

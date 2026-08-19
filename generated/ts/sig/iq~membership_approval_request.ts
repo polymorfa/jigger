@@ -1,2 +1,0 @@
-/** Matches `<iq>`. Response to GroupsAcceptGroupAdd. */
-export function parseGroupsAcceptGroupAddResponseGroupJoinRequestSuccess(n: BinaryNode): GroupsAcceptGroupAddResponseGroupJoinRequestSuccess | null

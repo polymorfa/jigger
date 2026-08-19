@@ -1,5 +1,0 @@
-message FilterClause {
-  optional bytes clauseType = 1;
-  optional FilterClause clauses = 2;
-  optional Filter filters = 3;
-}

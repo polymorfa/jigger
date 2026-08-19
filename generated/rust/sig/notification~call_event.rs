@@ -1,2 +1,0 @@
-/// Matches `<notification>`. Server-initiated; nothing sends it.
-pub fn parse_rtc_e2ee_call_event_notify_call_event_notification_request(n: &Node) -> Option<RtcE2eeCallEventNotifyCallEventNotificationRequest>

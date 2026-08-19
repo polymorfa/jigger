@@ -1,6 +1,0 @@
-type ENUMHIGHLOW string
-
-const (
-	ENUMHIGHLOWHigh ENUMHIGHLOW = "high"
-	ENUMHIGHLOWLow ENUMHIGHLOW = "low"
-)

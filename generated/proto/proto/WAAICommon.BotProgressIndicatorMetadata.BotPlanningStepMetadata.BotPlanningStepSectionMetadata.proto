@@ -1,5 +1,0 @@
-message BotPlanningStepSectionMetadata {
-  optional bytes sectionTitle = 1;
-  optional bytes sectionBody = 2;
-  optional BotPlanningSearchSourceMetadata sourcesMetadata = 3;
-}

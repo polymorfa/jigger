@@ -1,2 +1,0 @@
-// ABWebNoncriticalHistorySyncMessageProcessingBreakIteration is A/B property 5106 (int), default 100.
-const ABWebNoncriticalHistorySyncMessageProcessingBreakIteration = "web_noncritical_history_sync_message_processing_break_iteration"

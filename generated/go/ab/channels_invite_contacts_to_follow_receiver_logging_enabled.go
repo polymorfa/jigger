@@ -1,2 +1,0 @@
-// ABChannelsInviteContactsToFollowReceiverLoggingEnabled is A/B property 20836 (bool), default false.
-const ABChannelsInviteContactsToFollowReceiverLoggingEnabled = "channels_invite_contacts_to_follow_receiver_logging_enabled"

@@ -1,6 +1,0 @@
-message TemplateButton {
-  optional QuickReplyButton quickReplyButton = 1;
-  optional URLButton urlButton = 2;
-  optional CallButton callButton = 3;
-  optional bytes index = 4;
-}

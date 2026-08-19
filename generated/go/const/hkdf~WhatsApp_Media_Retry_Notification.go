@@ -1,1 +1,0 @@
-const HkdfWhatsAppMediaRetryNotification = "WhatsApp Media Retry Notification"

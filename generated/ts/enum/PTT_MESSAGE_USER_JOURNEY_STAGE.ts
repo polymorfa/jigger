@@ -1,4 +1,0 @@
-export enum PTTMESSAGEUSERJOURNEYSTAGE {
-  NORMAL = 1,
-  LOCKED = 2,
-}

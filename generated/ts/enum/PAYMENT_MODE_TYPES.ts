@@ -1,4 +1,0 @@
-export enum PAYMENTMODETYPES {
-  CONSUMER = 0,
-  MERCHANT = 1,
-}

@@ -1,6 +1,0 @@
-message AIRichResponseMessage {
-  optional bytes messageType = 1;
-  optional bytes submessages = 2;
-  optional bytes unifiedResponse = 3;
-  optional ContextInfo contextInfo = 4;
-}

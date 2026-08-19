@@ -1,5 +1,0 @@
-message FullHistorySyncOnDemandRequestMetadata {
-  optional bytes requestId = 1;
-  optional bytes businessProduct = 2;
-  optional bytes opaqueClientData = 3;
-}

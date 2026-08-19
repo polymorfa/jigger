@@ -1,3 +1,0 @@
-message QuickReactionChanged {
-  optional bytes emojiName = 1;
-}

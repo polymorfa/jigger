@@ -1,2 +1,0 @@
-// ABSmbaBusinessBroadcastGenaiCustomUserPromptEnabled is A/B property 20464 (bool), default false.
-const ABSmbaBusinessBroadcastGenaiCustomUserPromptEnabled = "smba_business_broadcast_genai_custom_user_prompt_enabled"

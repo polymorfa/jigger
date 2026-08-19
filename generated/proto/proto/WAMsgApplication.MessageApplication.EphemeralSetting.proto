@@ -1,6 +1,0 @@
-message EphemeralSetting {
-  optional bytes ephemeralExpiration = 2;
-  optional bytes ephemeralSettingTimestamp = 3;
-  optional bytes isEphemeralSettingReset = 4;
-  optional bytes ephemeralityType = 5;
-}

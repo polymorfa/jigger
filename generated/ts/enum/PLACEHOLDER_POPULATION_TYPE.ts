@@ -1,6 +1,0 @@
-export enum PLACEHOLDERPOPULATIONTYPE {
-  OTHER = 0,
-  RETRY = 1,
-  PEER_MESSAGE = 2,
-  RESEND = 3,
-}

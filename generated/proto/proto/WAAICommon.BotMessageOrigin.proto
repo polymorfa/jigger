@@ -1,3 +1,0 @@
-message BotMessageOrigin {
-  optional bytes type = 1;
-}

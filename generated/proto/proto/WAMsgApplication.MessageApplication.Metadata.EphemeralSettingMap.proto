@@ -1,4 +1,0 @@
-message EphemeralSettingMap {
-  optional bytes chatJid = 1;
-  optional EphemeralSetting ephemeralSetting = 2;
-}

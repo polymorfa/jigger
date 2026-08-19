@@ -1,2 +1,0 @@
-/** A/B property 31922 (bool), default true. */
-export const ABCallScreenShareDualStreamAppUpdateDialogEnabled = 'call_screen_share_dual_stream_app_update_dialog_enabled' as const

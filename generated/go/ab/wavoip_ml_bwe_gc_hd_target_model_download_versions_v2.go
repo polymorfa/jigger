@@ -1,2 +1,0 @@
-// ABWavoipMlBweGcHdTargetModelDownloadVersionsV2 is A/B property 28021 (string), default "".
-const ABWavoipMlBweGcHdTargetModelDownloadVersionsV2 = "wavoip_ml_bwe_gc_hd_target_model_download_versions_v2"

@@ -1,4 +1,0 @@
-message CommentMessage {
-  optional Message message = 1;
-  optional bytes targetMessageKey = 2;
-}

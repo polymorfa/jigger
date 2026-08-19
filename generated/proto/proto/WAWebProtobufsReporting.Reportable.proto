@@ -1,6 +1,0 @@
-message Reportable {
-  optional bytes minVersion = 1;
-  optional bytes maxVersion = 2;
-  optional bytes notReportableMinVersion = 3;
-  optional bytes never = 4;
-}

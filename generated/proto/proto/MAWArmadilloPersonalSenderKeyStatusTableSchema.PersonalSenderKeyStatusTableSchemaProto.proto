@@ -1,7 +1,0 @@
-message PersonalSenderKeyStatusTableSchemaProto {
-  optional bytes groupJid = 1;
-  optional bytes senderKeyId = 2;
-  optional bytes rotateSenderKey = 4;
-  optional bytes senderKeyTs = 5;
-  optional bytes hasSenderKey = 6;
-}

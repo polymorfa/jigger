@@ -1,6 +1,0 @@
-message UrlTrackingMapElement {
-  optional bytes originalUrl = 1;
-  optional bytes unconsentedUsersUrl = 2;
-  optional bytes consentedUsersUrl = 3;
-  optional bytes cardIndex = 4;
-}

@@ -1,2 +1,0 @@
-// ABWavoipMlBweGcUndershootModelDownloadVersionsV2 is A/B property 28019 (string), default "".
-const ABWavoipMlBweGcUndershootModelDownloadVersionsV2 = "wavoip_ml_bwe_gc_undershoot_model_download_versions_v2"

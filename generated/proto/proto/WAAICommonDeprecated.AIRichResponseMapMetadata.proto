@@ -1,8 +1,0 @@
-message AIRichResponseMapMetadata {
-  optional bytes centerLatitude = 1;
-  optional bytes centerLongitude = 2;
-  optional bytes latitudeDelta = 3;
-  optional bytes longitudeDelta = 4;
-  optional AIRichResponseMapAnnotation annotations = 5;
-  optional bytes showInfoList = 6;
-}

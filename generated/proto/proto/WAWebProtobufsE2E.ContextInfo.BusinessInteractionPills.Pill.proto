@@ -1,4 +1,0 @@
-message Pill {
-  optional bytes pillType = 1;
-  optional bytes actionUrl = 2;
-}

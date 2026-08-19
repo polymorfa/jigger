@@ -1,3 +1,0 @@
-message SenderKeyRecordStructure {
-  optional SenderKeyStateStructure senderKeyStates = 1;
-}

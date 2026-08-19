@@ -1,1 +1,0 @@
-export const HkdfWhatsAppStickerPackKeys = "WhatsApp Sticker Pack Keys" as const

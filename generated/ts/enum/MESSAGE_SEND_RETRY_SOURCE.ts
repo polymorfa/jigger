@@ -1,4 +1,0 @@
-export enum MESSAGESENDRETRYSOURCE {
-  AUTO = 1,
-  MANUAL = 2,
-}

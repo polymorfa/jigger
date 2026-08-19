@@ -1,2 +1,0 @@
-/** Matches `<ack>`. Server-initiated; nothing sends it. */
-export function parseVoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck(n: BinaryNode): VoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck | null

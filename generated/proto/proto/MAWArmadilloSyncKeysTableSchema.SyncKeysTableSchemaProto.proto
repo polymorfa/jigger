@@ -1,8 +1,0 @@
-message SyncKeysTableSchemaProto {
-  optional bytes id = 1;
-  optional bytes keyId = 2;
-  optional bytes keyData = 3;
-  optional bytes keyEpoch = 4;
-  optional bytes timestamp = 5;
-  optional SyncKeyFingerprint fingerprint = 6;
-}

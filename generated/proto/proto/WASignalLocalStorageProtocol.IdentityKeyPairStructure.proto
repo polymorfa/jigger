@@ -1,4 +1,0 @@
-message IdentityKeyPairStructure {
-  optional bytes publicKey = 1;
-  optional bytes privateKey = 2;
-}

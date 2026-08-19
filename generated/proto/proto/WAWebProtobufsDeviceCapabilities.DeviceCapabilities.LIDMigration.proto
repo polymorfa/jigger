@@ -1,3 +1,0 @@
-message LIDMigration {
-  optional bytes chatDbMigrationTimestamp = 1;
-}

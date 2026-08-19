@@ -1,5 +1,0 @@
-message Integral {
-  optional WAMediaTransport transport = 1;
-  optional bytes isAnimated = 2;
-  optional bytes receiverFetchId = 3;
-}

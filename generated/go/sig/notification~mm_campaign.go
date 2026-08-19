@@ -1,2 +1,0 @@
-// ParseSmbMeteredMessagesCampaignCampaignStateChangedNotificationRequest matches <notification>. Server-initiated; nothing sends it.
-func ParseSmbMeteredMessagesCampaignCampaignStateChangedNotificationRequest(n *waBinary.Node) (*SmbMeteredMessagesCampaignCampaignStateChangedNotificationRequest, error)

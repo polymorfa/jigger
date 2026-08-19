@@ -1,2 +1,0 @@
-/** A/B property 18489 (bool), default false. */
-export const ABEnableNewUserActionStanzaForRaiseHandSender = 'enable_new_user_action_stanza_for_raise_hand_sender' as const

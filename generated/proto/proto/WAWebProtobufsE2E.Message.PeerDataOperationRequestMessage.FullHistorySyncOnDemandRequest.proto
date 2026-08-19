@@ -1,5 +1,0 @@
-message FullHistorySyncOnDemandRequest {
-  optional FullHistorySyncOnDemandRequestMetadata requestMetadata = 1;
-  optional bytes historySyncConfig = 2;
-  optional FullHistorySyncOnDemandConfig fullHistorySyncOnDemandConfig = 3;
-}

@@ -1,2 +1,0 @@
-// ABDefenseModeQuarantineMessageExpirationWindow is A/B property 21918 (int), default "121e4".
-const ABDefenseModeQuarantineMessageExpirationWindow = "defense_mode_quarantine_message_expiration_window"

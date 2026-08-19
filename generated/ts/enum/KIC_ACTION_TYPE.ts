@@ -1,4 +1,0 @@
-export enum KICACTIONTYPE {
-  KEEP_MESSAGE = 1,
-  UNKEEP_MESSAGE = 2,
-}

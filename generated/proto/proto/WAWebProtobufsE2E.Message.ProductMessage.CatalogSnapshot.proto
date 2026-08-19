@@ -1,5 +1,0 @@
-message CatalogSnapshot {
-  optional ImageMessage catalogImage = 1;
-  optional bytes title = 2;
-  optional bytes description = 3;
-}

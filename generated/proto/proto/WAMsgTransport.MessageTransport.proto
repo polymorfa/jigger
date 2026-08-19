@@ -1,4 +1,0 @@
-message MessageTransport {
-  optional Payload payload = 1;
-  optional Protocol protocol = 2;
-}

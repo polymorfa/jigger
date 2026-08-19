@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
+import { rawModuleUrl, type DataSource } from "./source";
 
 /**
  * Module source, read straight out of the cellar bundle.
@@ -21,6 +22,28 @@ export function modulePath(revision: number, name: string): string {
 
 export function hasModule(revision: number, name: string): boolean {
   return existsSync(modulePath(revision, name));
+}
+
+/**
+ * Module source, wherever it happens to live.
+ *
+ * On a machine with a cellar store that is the bundle on disk. On a deployment
+ * it is the payload branch, fetched one module at a time — the payload holds
+ * ~4,800 of them and shipping all 29 MB to serve the one someone opened would
+ * be absurd. Cached indefinitely because a revision's source never changes:
+ * a new build is a new revision with its own branch content.
+ */
+export async function fetchModule(source: DataSource, name: string): Promise<string | null> {
+  if (source.kind === "local") return null;
+  try {
+    const res = await fetch(rawModuleUrl(source, name), {
+      cache: "force-cache",
+      next: { revalidate: false },
+    });
+    return res.ok ? await res.text() : null;
+  } catch {
+    return null;
+  }
 }
 
 export function loadModule(revision: number, name: string): string | null {

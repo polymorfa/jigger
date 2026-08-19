@@ -1,6 +1,0 @@
-message SyncdSnapshotRecovery {
-  optional SyncdVersion version = 1;
-  optional bytes collectionName = 2;
-  optional SyncdPlainTextRecord mutationRecords = 3;
-  optional bytes collectionLthash = 4;
-}

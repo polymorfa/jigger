@@ -1,3 +1,0 @@
-message GroupImageChanged {
-  optional bytes action = 1;
-}

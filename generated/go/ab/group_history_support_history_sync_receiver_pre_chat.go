@@ -1,2 +1,0 @@
-// ABGroupHistorySupportHistorySyncReceiverPreChat is A/B property 20658 (bool), default false.
-const ABGroupHistorySupportHistorySyncReceiverPreChat = "group_history_support_history_sync_receiver_pre_chat"

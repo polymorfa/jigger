@@ -1,6 +1,0 @@
-message Metadata {
-  optional bytes duration = 1;
-  optional bytes channelJid = 2;
-  optional bytes channelMessageId = 3;
-  optional bytes hasMultipleReshares = 4;
-}

@@ -1,5 +1,0 @@
-message XmatInstantGameEncryptedDynamicCustomUpdate {
-  optional bytes senderName = 1;
-  optional bytes muteManagementAdminTextType = 2;
-  optional bytes gameName = 3;
-}

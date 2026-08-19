@@ -1,3 +1,0 @@
-message NctSaltSyncAction {
-  optional bytes salt = 1;
-}

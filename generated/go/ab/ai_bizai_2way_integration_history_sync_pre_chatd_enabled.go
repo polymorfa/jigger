@@ -1,2 +1,0 @@
-// ABAiBizai2wayIntegrationHistorySyncPreChatdEnabled is A/B property 26614 (bool), default false.
-const ABAiBizai2wayIntegrationHistorySyncPreChatdEnabled = "ai_bizai_2way_integration_history_sync_pre_chatd_enabled"

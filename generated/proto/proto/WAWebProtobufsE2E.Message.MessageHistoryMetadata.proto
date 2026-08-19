@@ -1,7 +1,0 @@
-message MessageHistoryMetadata {
-  optional bytes historyReceivers = 1;
-  optional bytes oldestMessageTimestampInWindow = 2;
-  optional bytes messageCount = 3;
-  optional bytes nonHistoryReceivers = 4;
-  optional bytes oldestMessageTimestampInBundle = 5;
-}

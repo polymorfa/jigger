@@ -1,2 +1,0 @@
-// ParseNewslettersGetNewsletterStatusesResponseSuccess matches <iq>. Server-initiated; nothing sends it.
-func ParseNewslettersGetNewsletterStatusesResponseSuccess(n *waBinary.Node) (*NewslettersGetNewsletterStatusesResponseSuccess, error)

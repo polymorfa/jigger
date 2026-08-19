@@ -1,3 +1,0 @@
-message KeyExpiration {
-  optional bytes expiredKeyEpoch = 1;
-}

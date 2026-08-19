@@ -1,9 +1,0 @@
-message Epoch0Output {
-  optional bytes epochFbid = 1;
-  optional bytes epochAnonId = 2;
-  optional bytes epochData = 3;
-  optional bytes wrappedRootKeyForSelf = 4;
-  optional bytes epochSignature = 5;
-  optional bytes epochRootKeyFingerprint = 6;
-  optional bytes epochRootKey = 7;
-}

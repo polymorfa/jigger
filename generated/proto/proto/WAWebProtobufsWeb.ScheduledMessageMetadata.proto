@@ -1,5 +1,0 @@
-message ScheduledMessageMetadata {
-  optional bytes revealKeyId = 1;
-  optional bytes revealKey = 2;
-  optional bytes scheduledTime = 3;
-}

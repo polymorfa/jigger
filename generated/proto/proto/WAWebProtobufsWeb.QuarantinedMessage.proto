@@ -1,4 +1,0 @@
-message QuarantinedMessage {
-  optional bytes originalData = 1;
-  optional bytes extractedText = 2;
-}

@@ -1,4 +1,0 @@
-message Config {
-  optional bytes field = 1;
-  optional bytes version = 2;
-}

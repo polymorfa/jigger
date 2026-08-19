@@ -1,6 +1,0 @@
-export enum CONNECTIONORIGINTYPE {
-  PERSON = 1,
-  PUSH = 2,
-  OTHER = 3,
-  BACKOFF = 4,
-}

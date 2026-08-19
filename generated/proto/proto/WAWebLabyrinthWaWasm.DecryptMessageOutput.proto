@@ -1,4 +1,0 @@
-message DecryptMessageOutput {
-  optional bytes plaintextPayload = 1;
-  optional bytes error = 2;
-}

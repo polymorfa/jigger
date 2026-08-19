@@ -1,3 +1,0 @@
-message PnForLidChatAction {
-  optional bytes pnJid = 1;
-}

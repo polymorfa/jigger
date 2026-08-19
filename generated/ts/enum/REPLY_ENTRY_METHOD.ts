@@ -1,4 +1,0 @@
-export enum REPLYENTRYMETHOD {
-  SWIPE_UP = 1,
-  TAP_REPLY_BAR = 2,
-}

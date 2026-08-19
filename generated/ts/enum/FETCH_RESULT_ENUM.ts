@@ -1,4 +1,0 @@
-export enum FETCHRESULTENUM {
-  SUCCESS = 0,
-  EXCEPTION = 1,
-}

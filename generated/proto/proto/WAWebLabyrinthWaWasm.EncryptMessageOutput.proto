@@ -1,8 +1,0 @@
-message EncryptMessageOutput {
-  optional bytes encryptedProtobuf = 1;
-  optional bytes orfThreadId = 2;
-  optional bytes valueSecretRef = 3;
-  optional bytes offlineThreadingId = 4;
-  optional bytes timestampMs = 5;
-  optional bytes error = 7;
-}

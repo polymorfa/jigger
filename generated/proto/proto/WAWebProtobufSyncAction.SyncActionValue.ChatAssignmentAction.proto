@@ -1,3 +1,0 @@
-message ChatAssignmentAction {
-  optional bytes deviceAgentId = 1;
-}

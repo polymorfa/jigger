@@ -1,5 +1,0 @@
-message XmatMessengerSharedAlbumRename {
-  optional bytes sharedAlbumId = 1;
-  optional bytes oldAlbumTitle = 2;
-  optional bytes newAlbumTitle = 3;
-}

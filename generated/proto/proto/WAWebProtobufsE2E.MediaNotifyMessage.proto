@@ -1,5 +1,0 @@
-message MediaNotifyMessage {
-  optional bytes expressPathUrl = 1;
-  optional bytes fileEncSha256 = 2;
-  optional bytes fileLength = 3;
-}

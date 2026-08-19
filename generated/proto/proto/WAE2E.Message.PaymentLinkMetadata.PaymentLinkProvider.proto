@@ -1,3 +1,0 @@
-message PaymentLinkProvider {
-  optional bytes paramsJson = 1;
-}

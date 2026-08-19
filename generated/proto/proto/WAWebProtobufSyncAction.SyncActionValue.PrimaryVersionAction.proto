@@ -1,3 +1,0 @@
-message PrimaryVersionAction {
-  optional bytes version = 1;
-}

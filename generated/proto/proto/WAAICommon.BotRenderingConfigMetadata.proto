@@ -1,4 +1,0 @@
-message BotRenderingConfigMetadata {
-  optional bytes bloksVersioningId = 1;
-  optional bytes pixelDensity = 2;
-}

@@ -1,3 +1,0 @@
-message LockChatAction {
-  optional bytes locked = 1;
-}

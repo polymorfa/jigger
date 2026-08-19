@@ -1,3 +1,0 @@
-message BotSignatureVerificationMetadata {
-  optional BotSignatureVerificationUseCaseProof proofs = 1;
-}

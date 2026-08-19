@@ -1,4 +1,0 @@
-message TransportEvent {
-  optional Placeholder placeholder = 1;
-  optional Event event = 2;
-}

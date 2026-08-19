@@ -1,7 +1,0 @@
-message GroupInvitesTableSchemaProto {
-  optional bytes inviterJid = 1;
-  optional bytes invitedParticipantId = 2;
-  optional bytes inviteCode = 3;
-  optional bytes inviteExpirationTs = 4;
-  optional bytes caption = 5;
-}

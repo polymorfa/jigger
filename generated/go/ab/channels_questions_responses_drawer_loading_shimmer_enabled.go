@@ -1,2 +1,0 @@
-// ABChannelsQuestionsResponsesDrawerLoadingShimmerEnabled is A/B property 29209 (bool), default false.
-const ABChannelsQuestionsResponsesDrawerLoadingShimmerEnabled = "channels_questions_responses_drawer_loading_shimmer_enabled"

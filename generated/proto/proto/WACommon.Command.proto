@@ -1,6 +1,0 @@
-message Command {
-  optional bytes commandType = 1;
-  optional bytes offset = 2;
-  optional bytes length = 3;
-  optional bytes validationToken = 4;
-}

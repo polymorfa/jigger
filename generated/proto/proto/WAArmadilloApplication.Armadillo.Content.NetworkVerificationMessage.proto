@@ -1,3 +1,0 @@
-message NetworkVerificationMessage {
-  optional bytes codeText = 1;
-}

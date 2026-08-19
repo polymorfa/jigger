@@ -1,5 +1,0 @@
-message StickerSyncRMRMessage {
-  optional bytes filehash = 1;
-  optional bytes rmrSource = 2;
-  optional bytes requestTimestamp = 3;
-}

@@ -1,2 +1,0 @@
-// ABCtwaNativeAdsCreationWebTargetingModalHawkToolEnabled is A/B property 20731 (bool), default false.
-const ABCtwaNativeAdsCreationWebTargetingModalHawkToolEnabled = "ctwa_native_ads_creation_web_targeting_modal_hawk_tool_enabled"

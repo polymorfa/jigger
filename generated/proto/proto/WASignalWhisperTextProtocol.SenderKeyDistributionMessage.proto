@@ -1,6 +1,0 @@
-message SenderKeyDistributionMessage {
-  optional bytes id = 1;
-  optional bytes iteration = 2;
-  optional bytes chainKey = 3;
-  optional bytes signingKey = 4;
-}

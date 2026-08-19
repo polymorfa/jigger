@@ -1,9 +1,0 @@
-message Sticker {
-  optional bytes fileName = 1;
-  optional bytes isAnimated = 2;
-  optional bytes emojis = 3;
-  optional bytes accessibilityLabel = 4;
-  optional bytes isLottie = 5;
-  optional bytes mimetype = 6;
-  optional bytes premium = 7;
-}

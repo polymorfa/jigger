@@ -1,3 +1,0 @@
-message BizAiSettingsSync {
-  optional bytes handoffRemovalTimingEnabled = 1;
-}

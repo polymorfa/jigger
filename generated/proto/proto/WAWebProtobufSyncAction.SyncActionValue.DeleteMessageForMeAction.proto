@@ -1,4 +1,0 @@
-message DeleteMessageForMeAction {
-  optional bytes deleteMedia = 1;
-  optional bytes messageTimestamp = 2;
-}

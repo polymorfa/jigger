@@ -1,3 +1,0 @@
-message ImageGalleryMessage {
-  optional bytes images = 1;
-}

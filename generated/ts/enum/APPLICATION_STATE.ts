@@ -1,4 +1,0 @@
-export enum APPLICATIONSTATE {
-  FOREGROUND = 1,
-  BACKGROUND = 2,
-}

@@ -1,5 +1,0 @@
-message AppStateSyncKeyData {
-  optional bytes keyData = 1;
-  optional AppStateSyncKeyFingerprint fingerprint = 2;
-  optional bytes timestamp = 3;
-}

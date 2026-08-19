@@ -1,5 +1,0 @@
-message SyncActionMessageRange {
-  optional bytes lastMessageTimestamp = 1;
-  optional bytes lastSystemMessageTimestamp = 2;
-  optional SyncActionMessage messages = 3;
-}

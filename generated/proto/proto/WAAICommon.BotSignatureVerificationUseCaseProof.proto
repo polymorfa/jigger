@@ -1,6 +1,0 @@
-message BotSignatureVerificationUseCaseProof {
-  optional bytes version = 1;
-  optional bytes useCase = 2;
-  optional bytes signature = 3;
-  optional bytes certificateChain = 4;
-}

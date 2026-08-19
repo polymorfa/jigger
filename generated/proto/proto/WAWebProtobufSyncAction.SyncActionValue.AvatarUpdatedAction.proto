@@ -1,4 +1,0 @@
-message AvatarUpdatedAction {
-  optional bytes eventType = 1;
-  optional StickerAction recentAvatarStickers = 2;
-}

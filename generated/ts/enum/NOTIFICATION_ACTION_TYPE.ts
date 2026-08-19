@@ -1,4 +1,0 @@
-export enum NOTIFICATIONACTIONTYPE {
-  SHOW = 1,
-  REMOVE = 2,
-}

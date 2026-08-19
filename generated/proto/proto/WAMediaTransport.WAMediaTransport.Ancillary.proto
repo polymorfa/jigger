@@ -1,6 +1,0 @@
-message Ancillary {
-  optional bytes fileLength = 1;
-  optional bytes mimetype = 2;
-  optional Thumbnail thumbnail = 3;
-  optional bytes objectId = 4;
-}

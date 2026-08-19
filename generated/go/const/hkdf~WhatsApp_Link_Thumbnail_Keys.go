@@ -1,1 +1,0 @@
-const HkdfWhatsAppLinkThumbnailKeys = "WhatsApp Link Thumbnail Keys"

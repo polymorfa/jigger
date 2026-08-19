@@ -1,2 +1,0 @@
-/// Matches `<receipt>`. Server-initiated; nothing sends it.
-pub fn parse_receipt_deliver_biz_feature_incapable_type_with_reason_mixin(n: &Node) -> Option<ReceiptDeliverBizFeatureIncapableTypeWithReasonMixin>

@@ -1,7 +1,0 @@
-message XmatUpdatePayments {
-  optional bytes receiverName = 1;
-  optional bytes senderName = 2;
-  optional bytes amount = 3;
-  optional bytes transactionId = 4;
-  optional bytes transactionStatus = 5;
-}

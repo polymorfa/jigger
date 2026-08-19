@@ -1,5 +1,0 @@
-message LocalizedName {
-  optional bytes lg = 1;
-  optional bytes lc = 2;
-  optional bytes verifiedName = 3;
-}

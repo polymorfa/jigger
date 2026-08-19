@@ -1,3 +1,0 @@
-message SingleSelectReply {
-  optional bytes selectedRowId = 1;
-}

@@ -1,4 +1,0 @@
-message OrfThreadIdOutput {
-  optional bytes orfThreadId = 1;
-  optional bytes error = 2;
-}

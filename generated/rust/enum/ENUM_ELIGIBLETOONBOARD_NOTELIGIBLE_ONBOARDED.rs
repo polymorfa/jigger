@@ -1,6 +1,0 @@
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ENUMELIGIBLETOONBOARDNOTELIGIBLEONBOARDED {
-    ELIGIBLETOONBOARD,
-    NOTELIGIBLE,
-    ONBOARDED,
-}

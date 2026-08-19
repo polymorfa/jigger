@@ -1,4 +1,0 @@
-message CallParticipant {
-  optional bytes jid = 1;
-  optional bytes callOutcome = 2;
-}

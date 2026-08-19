@@ -1,2 +1,0 @@
-/// Persisted query. Variables: 
-pub const MEX_WAWEB_MEX_PAYMENTS_PASSKEY_HAS_CREDENTIAL_JOB_QUERY: &str = "36878915648418618";

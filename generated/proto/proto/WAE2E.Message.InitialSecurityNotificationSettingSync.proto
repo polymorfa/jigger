@@ -1,3 +1,0 @@
-message InitialSecurityNotificationSettingSync {
-  optional bytes securityNotificationEnabled = 1;
-}

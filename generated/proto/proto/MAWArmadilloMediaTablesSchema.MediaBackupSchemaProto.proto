@@ -1,7 +1,0 @@
-message MediaBackupSchemaProto {
-  optional bytes mediaBackupId = 1;
-  optional bytes mediaId = 2;
-  optional bytes objectId = 3;
-  optional bytes msgId = 4;
-  optional bytes fbid = 5;
-}

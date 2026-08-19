@@ -1,3 +1,0 @@
-message WaffleAccountLinkStateAction {
-  optional bytes linkState = 2;
-}

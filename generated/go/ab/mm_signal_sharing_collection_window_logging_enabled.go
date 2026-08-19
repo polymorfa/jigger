@@ -1,2 +1,0 @@
-// ABMmSignalSharingCollectionWindowLoggingEnabled is A/B property 18126 (bool), default false.
-const ABMmSignalSharingCollectionWindowLoggingEnabled = "mm_signal_sharing_collection_window_logging_enabled"

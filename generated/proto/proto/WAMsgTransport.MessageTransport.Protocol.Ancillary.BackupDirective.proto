@@ -1,5 +1,0 @@
-message BackupDirective {
-  optional bytes messageId = 1;
-  optional bytes actionType = 2;
-  optional bytes supplementalKey = 3;
-}

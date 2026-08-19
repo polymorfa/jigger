@@ -1,7 +1,0 @@
-export enum CALLSTABSOURCE {
-  NOTIFICATION = 1,
-  SWITCH = 2,
-  LAUNCH = 3,
-  NONE = 4,
-  OS_CALL_LOG = 5,
-}

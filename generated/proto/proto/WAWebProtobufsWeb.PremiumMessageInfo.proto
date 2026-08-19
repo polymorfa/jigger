@@ -1,3 +1,0 @@
-message PremiumMessageInfo {
-  optional bytes serverCampaignId = 1;
-}

@@ -1,3 +1,0 @@
-message XmatThreadIcon {
-  optional bytes threadIcon = 1;
-}

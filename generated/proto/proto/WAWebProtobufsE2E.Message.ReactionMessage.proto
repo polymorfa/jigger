@@ -1,6 +1,0 @@
-message ReactionMessage {
-  optional bytes key = 1;
-  optional bytes text = 2;
-  optional bytes groupingKey = 3;
-  optional bytes senderTimestampMs = 4;
-}

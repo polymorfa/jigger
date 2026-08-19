@@ -1,5 +1,0 @@
-export enum SIGNALMESSAGESTATE {
-  TRUNCATED = 0,
-  EXPANDED = 1,
-  ORIGINAL = 2,
-}

@@ -1,2 +1,0 @@
-/// A/B property 25034 (int), default 0.
-pub const AB_STATUS_INFRA_1_1_SESSION_SPLIT: &str = "status_infra_1_1_session_split";

@@ -1,3 +1,0 @@
-message AIThreadServerInfo {
-  optional bytes title = 1;
-}

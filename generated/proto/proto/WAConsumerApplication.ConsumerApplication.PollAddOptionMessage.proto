@@ -1,3 +1,0 @@
-message PollAddOptionMessage {
-  optional Option pollOption = 1;
-}

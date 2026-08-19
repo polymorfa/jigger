@@ -1,7 +1,0 @@
-export enum METAVERIFIEDLOCKEDPROFILEFIELD {
-  PHOTO = 1,
-  NAME = 2,
-  ADDRESS = 3,
-  WEBSITE = 4,
-  EMAIL = 5,
-}

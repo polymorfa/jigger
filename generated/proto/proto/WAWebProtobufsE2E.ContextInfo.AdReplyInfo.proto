@@ -1,6 +1,0 @@
-message AdReplyInfo {
-  optional bytes advertiserName = 1;
-  optional bytes mediaType = 2;
-  optional bytes jpegThumbnail = 16;
-  optional bytes caption = 17;
-}

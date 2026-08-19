@@ -1,6 +1,0 @@
-export enum DEVICEAGCSTATETYPE {
-  UNKNOWN = 0,
-  UNAVAILABLE = 1,
-  ENABLE_FAILED = 2,
-  ENABLED = 3,
-}

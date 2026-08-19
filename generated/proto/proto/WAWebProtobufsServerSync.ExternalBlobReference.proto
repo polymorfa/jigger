@@ -1,8 +1,0 @@
-message ExternalBlobReference {
-  optional bytes mediaKey = 1;
-  optional bytes directPath = 2;
-  optional bytes handle = 3;
-  optional bytes fileSizeBytes = 4;
-  optional bytes fileSha256 = 5;
-  optional bytes fileEncSha256 = 6;
-}

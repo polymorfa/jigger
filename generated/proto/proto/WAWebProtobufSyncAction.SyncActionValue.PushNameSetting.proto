@@ -1,3 +1,0 @@
-message PushNameSetting {
-  optional bytes name = 1;
-}

@@ -1,4 +1,0 @@
-message ExitCode {
-  optional bytes code = 1;
-  optional bytes text = 2;
-}

@@ -1,6 +1,0 @@
-export enum MESSAGECONTEXTMENUACTIONTYPE {
-  OPEN = 1,
-  CLICK = 2,
-  COMPLETE = 3,
-  CANCEL = 4,
-}

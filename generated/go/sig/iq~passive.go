@@ -1,2 +1,0 @@
-// ParsePassiveModePassiveIQResponseSuccess matches <iq>. Response to PassiveModePassiveIQ.
-func ParsePassiveModePassiveIQResponseSuccess(n *waBinary.Node) (*PassiveModePassiveIQResponseSuccess, error)

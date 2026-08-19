@@ -1,5 +1,0 @@
-message BizBroadcastInsightsContactListResponse {
-  optional bytes campaignId = 1;
-  optional bytes timestampMs = 2;
-  optional BizBroadcastInsightsContactState contacts = 3;
-}

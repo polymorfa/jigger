@@ -1,3 +1,0 @@
-message UserHasAvatar {
-  optional bytes userHasAvatar = 1;
-}

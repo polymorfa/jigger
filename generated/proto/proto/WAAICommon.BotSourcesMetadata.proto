@@ -1,3 +1,0 @@
-message BotSourcesMetadata {
-  optional BotSourceItem sources = 1;
-}

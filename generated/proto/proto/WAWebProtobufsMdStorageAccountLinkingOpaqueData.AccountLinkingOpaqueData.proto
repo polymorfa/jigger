@@ -1,6 +1,0 @@
-message AccountLinkingOpaqueData {
-  optional bytes accesstoken = 1;
-  optional bytes fbid = 2;
-  optional bytes nonce = 3;
-  optional bytes encryptedPassword = 4;
-}

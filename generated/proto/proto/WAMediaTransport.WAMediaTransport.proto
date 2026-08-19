@@ -1,4 +1,0 @@
-message WAMediaTransport {
-  optional Integral integral = 1;
-  optional Ancillary ancillary = 2;
-}

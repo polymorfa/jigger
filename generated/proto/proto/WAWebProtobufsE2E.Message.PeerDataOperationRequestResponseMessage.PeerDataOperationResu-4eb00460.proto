@@ -1,7 +1,0 @@
-message PaymentLinkPreviewMetadata {
-  optional bytes isBusinessVerified = 1;
-  optional bytes providerName = 2;
-  optional bytes amount = 3;
-  optional bytes offset = 4;
-  optional bytes currency = 5;
-}

@@ -1,4 +1,0 @@
-message MetaSyncMessageActionProto {
-  optional bytes type = 1;
-  optional ProtocolMsgId protocolMsgId = 2;
-}

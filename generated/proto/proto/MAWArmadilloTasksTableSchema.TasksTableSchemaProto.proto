@@ -1,4 +1,0 @@
-message TasksTableSchemaProto {
-  optional bytes taskName = 1;
-  optional bytes scheduledTime = 2;
-}

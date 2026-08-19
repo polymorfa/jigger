@@ -1,6 +1,0 @@
-export enum AICHATORIGINSTYPE {
-  UNKNOWN = 0,
-  AI_HOME = 1,
-  AI_TAB_TEXT = 2,
-  AI_TAB_VOICE = 3,
-}

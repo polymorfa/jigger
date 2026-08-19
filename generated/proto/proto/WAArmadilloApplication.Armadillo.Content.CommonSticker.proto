@@ -1,3 +1,0 @@
-message CommonSticker {
-  optional bytes stickerType = 1;
-}

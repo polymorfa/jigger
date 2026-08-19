@@ -1,4 +1,0 @@
-message CertChain {
-  optional NoiseCertificate leaf = 1;
-  optional NoiseCertificate intermediate = 2;
-}

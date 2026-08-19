@@ -1,1 +1,0 @@
-const HkdfWhatsAppVideoKeys = "WhatsApp Video Keys"

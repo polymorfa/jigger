@@ -1,5 +1,0 @@
-export enum CAMERAPREVIEWMODE {
-  DEFAULT = 0,
-  TEXTURE = 1,
-  TEXTURE_FALLBACK = 2,
-}

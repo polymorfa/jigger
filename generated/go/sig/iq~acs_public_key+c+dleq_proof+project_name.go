@@ -1,2 +1,0 @@
-// ParsePrivatestatsSignCredentialResponseSuccess matches <iq>. Response to PrivatestatsSignCredential.
-func ParsePrivatestatsSignCredentialResponseSuccess(n *waBinary.Node) (*PrivatestatsSignCredentialResponseSuccess, error)

@@ -1,4 +1,0 @@
-message CloudAPIThreadControlNotificationContent {
-  optional bytes handoffNotificationText = 1;
-  optional bytes extraJson = 2;
-}

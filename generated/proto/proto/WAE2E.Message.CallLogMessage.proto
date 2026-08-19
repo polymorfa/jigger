@@ -1,7 +1,0 @@
-message CallLogMessage {
-  optional bytes isVideo = 1;
-  optional bytes callOutcome = 2;
-  optional bytes durationSecs = 3;
-  optional bytes callType = 4;
-  optional CallParticipant participants = 5;
-}

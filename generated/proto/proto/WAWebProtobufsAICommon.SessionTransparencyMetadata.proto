@@ -1,5 +1,0 @@
-message SessionTransparencyMetadata {
-  optional bytes disclaimerText = 1;
-  optional bytes hcaId = 2;
-  optional bytes sessionTransparencyType = 3;
-}

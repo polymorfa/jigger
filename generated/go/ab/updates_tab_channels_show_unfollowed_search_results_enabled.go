@@ -1,2 +1,0 @@
-// ABUpdatesTabChannelsShowUnfollowedSearchResultsEnabled is A/B property 33936 (bool), default true.
-const ABUpdatesTabChannelsShowUnfollowedSearchResultsEnabled = "updates_tab_channels_show_unfollowed_search_results_enabled"

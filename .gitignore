@@ -3,3 +3,8 @@ web/node_modules/
 web/.next/
 web/content/spec/
 web/public/data/
+
+# The payload lives on the `data` branch, not here: it is ~65 MB and is
+# replaced wholesale each release, which is not a thing to keep in the branch
+# people clone. CI publishes it; `jigger extract` regenerates it locally.
+generated/

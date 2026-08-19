@@ -1,2 +1,0 @@
-// ParseGroupsDeleteNotificationRequest matches <notification>. Server-initiated; nothing sends it.
-func ParseGroupsDeleteNotificationRequest(n *waBinary.Node) (*GroupsDeleteNotificationRequest, error)

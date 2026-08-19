@@ -1,2 +1,0 @@
-// ParseBlocklistsUpdateBlockListResponseSuccessWithMatch matches <iq>. Response to BlocklistsUpdateBlockList.
-func ParseBlocklistsUpdateBlockListResponseSuccessWithMatch(n *waBinary.Node) (*BlocklistsUpdateBlockListResponseSuccessWithMatch, error)

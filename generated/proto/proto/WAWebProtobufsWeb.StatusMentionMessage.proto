@@ -1,3 +1,0 @@
-message StatusMentionMessage {
-  optional bytes quotedStatus = 1;
-}

@@ -1,4 +1,0 @@
-message ApplicationData {
-  optional AppStateSyncKeyShareMessage appStateSyncKeyShare = 1;
-  optional AppStateSyncKeyRequestMessage appStateSyncKeyRequest = 2;
-}

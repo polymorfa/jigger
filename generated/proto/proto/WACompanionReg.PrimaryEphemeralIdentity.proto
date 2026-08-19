@@ -1,4 +1,0 @@
-message PrimaryEphemeralIdentity {
-  optional bytes publicKey = 1;
-  optional bytes nonce = 2;
-}

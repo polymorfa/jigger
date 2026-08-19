@@ -1,6 +1,0 @@
-message VideoEndCard {
-  optional bytes username = 1;
-  optional bytes caption = 2;
-  optional bytes thumbnailImageUrl = 3;
-  optional bytes profilePictureUrl = 4;
-}

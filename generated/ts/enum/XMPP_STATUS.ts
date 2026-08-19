@@ -1,6 +1,0 @@
-export enum XMPPSTATUS {
-  DISCONNECTED = 1,
-  CONNECTING = 2,
-  CONNECTED = 3,
-  UNKNOWN = 4,
-}

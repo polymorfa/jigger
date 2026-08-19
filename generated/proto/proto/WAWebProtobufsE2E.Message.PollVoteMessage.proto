@@ -1,3 +1,0 @@
-message PollVoteMessage {
-  optional bytes selectedOptions = 1;
-}

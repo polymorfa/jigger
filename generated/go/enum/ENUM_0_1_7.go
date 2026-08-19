@@ -1,7 +1,0 @@
-type ENUM017 string
-
-const (
-	ENUM0170 ENUM017 = "0"
-	ENUM0171 ENUM017 = "1"
-	ENUM0177 ENUM017 = "7"
-)

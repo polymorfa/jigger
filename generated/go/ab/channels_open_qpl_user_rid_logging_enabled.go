@@ -1,2 +1,0 @@
-// ABChannelsOpenQplUserRidLoggingEnabled is A/B property 17712 (bool), default false.
-const ABChannelsOpenQplUserRidLoggingEnabled = "channels_open_qpl_user_rid_logging_enabled"

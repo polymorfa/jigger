@@ -1,4 +1,0 @@
-export enum MUTATIONBUNDLETYPE {
-  SNAPSHOT = 0,
-  PATCH = 1,
-}

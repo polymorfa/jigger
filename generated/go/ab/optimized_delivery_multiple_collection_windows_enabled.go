@@ -1,2 +1,0 @@
-// ABOptimizedDeliveryMultipleCollectionWindowsEnabled is A/B property 14588 (bool), default false.
-const ABOptimizedDeliveryMultipleCollectionWindowsEnabled = "optimized_delivery_multiple_collection_windows_enabled"

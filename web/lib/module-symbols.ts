@@ -1,6 +1,7 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { rawSymbolsUrl, type DataSource } from "./source";
 
 /** line, column, length, reference count. */
 export type Decl = [number, number, number, number];
@@ -36,6 +37,28 @@ function fnv1a(s: string): string {
  * that land beside the identifier they name — worse than no links, because it
  * looks correct.
  */
+/** The same table, from the payload branch, for a deployment with no store. */
+export async function fetchSymbols(
+  source: DataSource,
+  module: string,
+  rewritten: string,
+): Promise<Symbols | null> {
+  if (source.kind === "local") return null;
+  try {
+    const res = await fetch(rawSymbolsUrl(source, module), {
+      cache: "force-cache",
+      next: { revalidate: false },
+    });
+    if (!res.ok) return null;
+    const sym = (await res.json()) as Symbols;
+    // The same guarantee as the local path: offsets against different bytes are
+    // not approximately right, they are meaningless.
+    return sym.hash === fnv1a(rewritten) ? sym : null;
+  } catch {
+    return null;
+  }
+}
+
 export function loadSymbols(module: string, rewritten: string): Symbols | null {
   try {
     const raw = readFileSync(

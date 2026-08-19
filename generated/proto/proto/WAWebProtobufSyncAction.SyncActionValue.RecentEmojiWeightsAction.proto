@@ -1,3 +1,0 @@
-message RecentEmojiWeightsAction {
-  optional RecentEmojiWeight weights = 1;
-}

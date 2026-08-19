@@ -1,4 +1,0 @@
-export enum CALLRELAYBINDSTATUS {
-  UNBOUND = 1,
-  BINDED = 2,
-}

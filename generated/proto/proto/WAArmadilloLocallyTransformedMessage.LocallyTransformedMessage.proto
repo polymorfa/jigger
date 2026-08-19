@@ -1,3 +1,0 @@
-message LocallyTransformedMessage {
-  optional PollUpdateAdminMessage pollUpdateMessage = 1;
-}

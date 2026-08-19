@@ -1,5 +1,0 @@
-message NativeFlowMessage {
-  optional NativeFlowButton buttons = 1;
-  optional bytes messageParamsJson = 2;
-  optional bytes messageVersion = 3;
-}

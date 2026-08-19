@@ -1,5 +1,0 @@
-message PairingRequest {
-  optional bytes companionPublicKey = 1;
-  optional bytes companionIdentityKey = 2;
-  optional bytes advSecret = 3;
-}

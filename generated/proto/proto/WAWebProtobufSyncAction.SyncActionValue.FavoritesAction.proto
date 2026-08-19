@@ -1,3 +1,0 @@
-message FavoritesAction {
-  optional Favorite favorites = 1;
-}

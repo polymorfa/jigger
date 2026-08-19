@@ -1,4 +1,0 @@
-export enum CONSENTSOURCE {
-  DISCLOSURE = 0,
-  ACCOUNT_LINKING = 1,
-}

@@ -1,1 +1,0 @@
-pub const HKDF_WHATS_APP_VIDEO_KEYS: &str = "WhatsApp Video Keys";

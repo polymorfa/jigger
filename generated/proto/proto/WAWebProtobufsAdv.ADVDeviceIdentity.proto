@@ -1,7 +1,0 @@
-message ADVDeviceIdentity {
-  optional bytes rawId = 1;
-  optional bytes timestamp = 2;
-  optional bytes keyIndex = 3;
-  optional bytes accountType = 4;
-  optional bytes deviceType = 5;
-}

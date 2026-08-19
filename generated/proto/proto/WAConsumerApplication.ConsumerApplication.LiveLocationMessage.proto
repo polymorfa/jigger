@@ -1,9 +1,0 @@
-message LiveLocationMessage {
-  optional Location location = 1;
-  optional bytes accuracyInMeters = 2;
-  optional bytes speedInMps = 3;
-  optional bytes degreesClockwiseFromMagneticNorth = 4;
-  optional bytes caption = 5;
-  optional bytes sequenceNumber = 6;
-  optional bytes timeOffset = 7;
-}

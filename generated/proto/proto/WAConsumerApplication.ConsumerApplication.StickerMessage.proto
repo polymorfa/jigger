@@ -1,3 +1,0 @@
-message StickerMessage {
-  optional bytes sticker = 1;
-}

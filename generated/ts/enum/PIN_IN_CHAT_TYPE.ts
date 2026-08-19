@@ -1,4 +1,0 @@
-export enum PININCHATTYPE {
-  PIN_FOR_ALL = 1,
-  UNPIN_FOR_ALL = 2,
-}

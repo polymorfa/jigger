@@ -1,4 +1,0 @@
-message SideBySideSurveyResponseEventData {
-  optional bytes responseDwellTimeMsString = 1;
-  optional bytes selectedResponseId = 2;
-}

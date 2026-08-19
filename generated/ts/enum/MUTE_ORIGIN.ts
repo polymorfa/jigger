@@ -1,5 +1,0 @@
-export enum MUTEORIGIN {
-  STATUS_LIST = 1,
-  STATUS_VIEWER = 2,
-  CHATS_TAB_STATUS_TRAY = 3,
-}

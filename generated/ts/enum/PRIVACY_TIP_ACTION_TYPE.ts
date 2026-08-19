@@ -1,6 +1,0 @@
-export enum PRIVACYTIPACTIONTYPE {
-  VIEW = 1,
-  CLICK_PRIVACY_TIP = 2,
-  CLICK_OK = 3,
-  CLICK_OUTSIDE = 4,
-}

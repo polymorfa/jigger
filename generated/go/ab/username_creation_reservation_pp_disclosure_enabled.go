@@ -1,2 +1,0 @@
-// ABUsernameCreationReservationPpDisclosureEnabled is A/B property 32098 (bool), default false.
-const ABUsernameCreationReservationPpDisclosureEnabled = "username_creation_reservation_pp_disclosure_enabled"

@@ -4,8 +4,8 @@ import { SourceView } from "@/components/source-view";
 
 import { Scroll } from "@/components/ui";
 import { getSnapshotResult } from "@/lib/data";
-import { lineOfMatch, loadModule, memberLine } from "@/lib/module-source";
-import { loadSymbols } from "@/lib/module-symbols";
+import { fetchModule, lineOfMatch, loadModule, memberLine } from "@/lib/module-source";
+import { fetchSymbols, loadSymbols } from "@/lib/module-symbols";
 import { rewriteModule } from "@/lib/source-rewrite";
 
 type Params = { params: Promise<{ module: string }>; searchParams: Promise<{ m?: string }> };
@@ -30,7 +30,9 @@ export default async function SourcePage({ params, searchParams }: Params) {
   if (!res.ok) notFound();
   const revision = res.snap.ir.revision;
 
-  const src = loadModule(revision, name);
+  // Disk when there is a cellar store, the payload branch otherwise. A
+  // deployment has no bundle; a laptop has no reason to make a network call.
+  const src = loadModule(revision, name) ?? (await fetchModule(res.snap.source, name));
   if (src === null) {
     return (
       <Scroll>
@@ -56,7 +58,7 @@ export default async function SourcePage({ params, searchParams }: Params) {
   // Symbols are keyed to the rewritten text, so it is computed once here and
   // handed to the viewer rather than derived twice.
   const shown = rewriteModule(src);
-  const symbols = loadSymbols(name, shown);
+  const symbols = loadSymbols(name, shown) ?? (await fetchSymbols(res.snap.source, name, shown));
 
   const isMember = Boolean(m && /^[A-Za-z_$][\w$]*$/.test(m));
   const hit = m ? (isMember ? memberLine(src, m) : lineOfMatch(src, m)) : null;

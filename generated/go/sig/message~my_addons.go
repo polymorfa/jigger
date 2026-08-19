@@ -1,2 +1,0 @@
-// ParseNewslettersMyAddOnsResponseSuccess matches <message>. Response to NewslettersMyAddOns.
-func ParseNewslettersMyAddOnsResponseSuccess(n *waBinary.Node) (*NewslettersMyAddOnsResponseSuccess, error)

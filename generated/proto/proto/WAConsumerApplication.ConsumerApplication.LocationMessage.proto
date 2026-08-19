@@ -1,4 +1,0 @@
-message LocationMessage {
-  optional Location location = 1;
-  optional bytes address = 2;
-}

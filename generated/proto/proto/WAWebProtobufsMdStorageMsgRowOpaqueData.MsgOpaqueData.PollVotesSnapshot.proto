@@ -1,3 +1,0 @@
-message PollVotesSnapshot {
-  optional PollVoteSnapshot pollVotes = 1;
-}

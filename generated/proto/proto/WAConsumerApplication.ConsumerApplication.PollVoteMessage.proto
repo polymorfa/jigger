@@ -1,4 +1,0 @@
-message PollVoteMessage {
-  optional bytes selectedOptions = 1;
-  optional bytes senderTimestampMs = 2;
-}

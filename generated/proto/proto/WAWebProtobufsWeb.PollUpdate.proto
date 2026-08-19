@@ -1,8 +1,0 @@
-message PollUpdate {
-  optional bytes pollUpdateMessageKey = 1;
-  optional bytes vote = 2;
-  optional bytes senderTimestampMs = 3;
-  optional bytes serverTimestampMs = 4;
-  optional bytes unread = 5;
-  optional bytes metadata = 6;
-}

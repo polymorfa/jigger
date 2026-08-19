@@ -1,7 +1,0 @@
-message ChatCustomImageWallpaper {
-  optional bytes directPath = 1;
-  optional bytes mediaKey = 2;
-  optional bytes fileEncSha256 = 3;
-  optional bytes fileSha256 = 4;
-  optional bytes dimLevel = 5;
-}

@@ -1,2 +1,0 @@
-// ParseMessageDeliverPayTransactionMessageMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverPayTransactionMessageMixin(n *waBinary.Node) (*MessageDeliverPayTransactionMessageMixin, error)

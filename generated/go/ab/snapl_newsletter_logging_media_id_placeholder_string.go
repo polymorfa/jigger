@@ -1,2 +1,0 @@
-// ABSnaplNewsletterLoggingMediaIdPlaceholderString is A/B property 14064 (string), default "-1".
-const ABSnaplNewsletterLoggingMediaIdPlaceholderString = "snapl_newsletter_logging_media_id_placeholder_string"

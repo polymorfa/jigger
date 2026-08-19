@@ -1,4 +1,0 @@
-export enum LABELSYNCDEVICEROLETYPE {
-  PRIMARY = 1,
-  COMPANION = 2,
-}

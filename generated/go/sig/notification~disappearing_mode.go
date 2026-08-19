@@ -1,2 +1,0 @@
-// ParseAccountSyncNotificationDisappearingModeNotificationMixin matches <notification>. Server-initiated; nothing sends it.
-func ParseAccountSyncNotificationDisappearingModeNotificationMixin(n *waBinary.Node) (*AccountSyncNotificationDisappearingModeNotificationMixin, error)

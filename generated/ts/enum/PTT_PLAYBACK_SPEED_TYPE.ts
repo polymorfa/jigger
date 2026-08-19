@@ -1,5 +1,0 @@
-export enum PTTPLAYBACKSPEEDTYPE {
-  SPEED_1 = 0,
-  SPEED_1_5 = 1,
-  SPEED_2 = 2,
-}

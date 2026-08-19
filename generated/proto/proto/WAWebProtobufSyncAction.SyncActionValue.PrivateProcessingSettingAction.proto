@@ -1,3 +1,0 @@
-message PrivateProcessingSettingAction {
-  optional bytes privateProcessingStatus = 1;
-}

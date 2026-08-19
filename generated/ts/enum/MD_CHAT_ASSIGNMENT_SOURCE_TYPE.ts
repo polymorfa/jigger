@@ -1,4 +1,0 @@
-export enum MDCHATASSIGNMENTSOURCETYPE {
-  NONE = 0,
-  BOOTSTRAP = 1,
-}

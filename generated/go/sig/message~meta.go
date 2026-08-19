@@ -1,2 +1,0 @@
-// ParseMessageDeliverAppdataMetaAttributeMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverAppdataMetaAttributeMixin(n *waBinary.Node) (*MessageDeliverAppdataMetaAttributeMixin, error)

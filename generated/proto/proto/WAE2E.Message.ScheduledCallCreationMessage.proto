@@ -1,5 +1,0 @@
-message ScheduledCallCreationMessage {
-  optional bytes scheduledTimestampMs = 1;
-  optional bytes callType = 2;
-  optional bytes title = 3;
-}

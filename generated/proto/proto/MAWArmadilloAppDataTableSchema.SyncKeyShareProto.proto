@@ -1,4 +1,0 @@
-message SyncKeyShareProto {
-  optional SyncKeyDataProto keys = 1;
-  optional bytes orphanKeys = 2;
-}

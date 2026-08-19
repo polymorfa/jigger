@@ -1,6 +1,0 @@
-export enum INLINEVIDEOCTACLICK {
-  LOGO = 1,
-  MUSIC = 2,
-  AUTHOR = 3,
-  WATCH_MORE_END = 4,
-}

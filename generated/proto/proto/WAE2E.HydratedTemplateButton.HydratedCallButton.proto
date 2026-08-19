@@ -1,4 +1,0 @@
-message HydratedCallButton {
-  optional bytes displayText = 1;
-  optional bytes phoneNumber = 2;
-}

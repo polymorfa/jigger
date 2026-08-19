@@ -1,2 +1,0 @@
-// ABWaWebEnableSyncdKeyPersistenceOnlyAfterServerAck is A/B property 27069 (bool), default false.
-const ABWaWebEnableSyncdKeyPersistenceOnlyAfterServerAck = "wa_web_enable_syncd_key_persistence_only_after_server_ack"

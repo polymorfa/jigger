@@ -1,5 +1,0 @@
-message Row {
-  optional bytes title = 1;
-  optional bytes description = 2;
-  optional bytes rowId = 3;
-}

@@ -1,4 +1,0 @@
-export enum LWIADSIDENTITYTYPE {
-  PAGE = 1,
-  WHATSAPP = 2,
-}

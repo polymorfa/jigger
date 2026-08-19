@@ -1,4 +1,0 @@
-message SideBySideSurveyCTAClickEventData {
-  optional bytes isSurveyExpired = 1;
-  optional bytes clickDwellTimeMsString = 2;
-}

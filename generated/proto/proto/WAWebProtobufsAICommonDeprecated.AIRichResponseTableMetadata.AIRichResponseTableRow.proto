@@ -1,4 +1,0 @@
-message AIRichResponseTableRow {
-  optional bytes items = 1;
-  optional bytes isHeading = 2;
-}

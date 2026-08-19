@@ -1,3 +1,0 @@
-message CallLogAction {
-  optional CallLogRecord callLogRecord = 1;
-}

@@ -1,8 +1,0 @@
-message ProductMessage {
-  optional ProductSnapshot product = 1;
-  optional bytes businessOwnerJid = 2;
-  optional CatalogSnapshot catalog = 4;
-  optional bytes body = 5;
-  optional bytes footer = 6;
-  optional ContextInfo contextInfo = 17;
-}

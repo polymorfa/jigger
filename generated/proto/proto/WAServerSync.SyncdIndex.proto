@@ -1,3 +1,0 @@
-message SyncdIndex {
-  optional bytes blob = 1;
-}

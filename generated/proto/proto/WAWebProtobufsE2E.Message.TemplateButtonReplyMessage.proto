@@ -1,7 +1,0 @@
-message TemplateButtonReplyMessage {
-  optional bytes selectedId = 1;
-  optional bytes selectedDisplayText = 2;
-  optional ContextInfo contextInfo = 3;
-  optional bytes selectedIndex = 4;
-  optional bytes selectedCarouselCardIndex = 5;
-}

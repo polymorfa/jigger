@@ -1,2 +1,0 @@
-/// Matches `<iq>`. Response to NewslettersSubscribeToLiveUpdates.
-pub fn parse_newsletters_subscribe_to_live_updates_response_success(n: &Node) -> Option<NewslettersSubscribeToLiveUpdatesResponseSuccess>

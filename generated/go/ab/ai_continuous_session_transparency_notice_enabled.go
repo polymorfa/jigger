@@ -1,2 +1,0 @@
-// ABAiContinuousSessionTransparencyNoticeEnabled is A/B property 21510 (bool), default false.
-const ABAiContinuousSessionTransparencyNoticeEnabled = "ai_continuous_session_transparency_notice_enabled"

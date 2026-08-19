@@ -1,5 +1,0 @@
-message AIHomeState {
-  optional bytes lastFetchTime = 1;
-  optional AIHomeOption capabilityOptions = 2;
-  optional AIHomeOption conversationOptions = 3;
-}

@@ -1,4 +1,0 @@
-message AIRichResponseTableMetadata {
-  optional AIRichResponseTableRow rows = 1;
-  optional bytes title = 2;
-}

@@ -1,4 +1,0 @@
-export enum COMPANIONADDCONTACTEVENTTYPE {
-  CREATE_NEW = 0,
-  EDIT = 1,
-}

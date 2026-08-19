@@ -1,4 +1,0 @@
-export enum SESSIONSCOPETYPE {
-  DEFAULT = 0,
-  STATUS = 1,
-}

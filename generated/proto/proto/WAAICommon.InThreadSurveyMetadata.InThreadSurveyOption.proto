@@ -1,5 +1,0 @@
-message InThreadSurveyOption {
-  optional bytes stringValue = 1;
-  optional bytes numericValue = 2;
-  optional bytes textTranslated = 3;
-}

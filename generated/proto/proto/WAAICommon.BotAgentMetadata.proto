@@ -1,3 +1,0 @@
-message BotAgentMetadata {
-  optional BotAgentDeepLinkMetadata deepLinkMetadata = 1;
-}

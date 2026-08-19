@@ -1,4 +1,0 @@
-message ChainKey {
-  optional bytes index = 1;
-  optional bytes key = 2;
-}

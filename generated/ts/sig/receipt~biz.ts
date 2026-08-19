@@ -1,2 +1,0 @@
-/** Matches `<receipt>`. Server-initiated; nothing sends it. */
-export function parseReceiptDeliverBizFeatureIncapableTypeWithReasonMixin(n: BinaryNode): ReceiptDeliverBizFeatureIncapableTypeWithReasonMixin | null

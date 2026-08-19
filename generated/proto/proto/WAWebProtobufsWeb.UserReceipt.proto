@@ -1,8 +1,0 @@
-message UserReceipt {
-  optional bytes userJid = 1;
-  optional bytes receiptTimestamp = 2;
-  optional bytes readTimestamp = 3;
-  optional bytes playedTimestamp = 4;
-  optional bytes pendingDeviceJid = 5;
-  optional bytes deliveredDeviceJid = 6;
-}

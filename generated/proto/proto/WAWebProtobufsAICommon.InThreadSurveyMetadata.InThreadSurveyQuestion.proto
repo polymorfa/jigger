@@ -1,5 +1,0 @@
-message InThreadSurveyQuestion {
-  optional bytes questionText = 1;
-  optional bytes questionId = 2;
-  optional InThreadSurveyOption questionOptions = 3;
-}

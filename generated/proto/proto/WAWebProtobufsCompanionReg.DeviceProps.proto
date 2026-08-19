@@ -1,7 +1,0 @@
-message DeviceProps {
-  optional bytes os = 1;
-  optional AppVersion version = 2;
-  optional bytes platformType = 3;
-  optional bytes requireFullSync = 4;
-  optional HistorySyncConfig historySyncConfig = 5;
-}

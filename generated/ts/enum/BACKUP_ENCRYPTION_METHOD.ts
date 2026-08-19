@@ -1,6 +1,0 @@
-export enum BACKUPENCRYPTIONMETHOD {
-  NOT_E2_EE = 1,
-  E2_EE_PASSWORD = 2,
-  E2_EE_64_DIGIT = 3,
-  E2_EE_PASSKEY = 4,
-}

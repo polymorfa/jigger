@@ -1,2 +1,0 @@
-/// Matches `<message>`. Server-initiated; nothing sends it.
-pub fn parse_message_deliver_group_history_bundle_reporting_messages_receive_mixin(n: &Node) -> Option<MessageDeliverGroupHistoryBundleReportingMessagesReceiveMixin>

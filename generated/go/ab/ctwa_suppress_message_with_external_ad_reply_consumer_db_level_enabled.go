@@ -1,2 +1,0 @@
-// ABCtwaSuppressMessageWithExternalAdReplyConsumerDbLevelEnabled is A/B property 21819 (bool), default false.
-const ABCtwaSuppressMessageWithExternalAdReplyConsumerDbLevelEnabled = "ctwa_suppress_message_with_external_ad_reply_consumer_db_level_enabled"

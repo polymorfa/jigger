@@ -1,6 +1,0 @@
-export enum MEDIAQUALITY {
-  AUTO = 0,
-  DATA_SAVER = 1,
-  HIGH_QUALITY = 2,
-  HIGHEST_QUALITY = 3,
-}

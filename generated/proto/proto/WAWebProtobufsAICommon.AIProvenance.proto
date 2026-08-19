@@ -1,4 +1,0 @@
-message AIProvenance {
-  optional Metadata c2PaMetadata = 1;
-  optional Metadata iptcMetadata = 2;
-}

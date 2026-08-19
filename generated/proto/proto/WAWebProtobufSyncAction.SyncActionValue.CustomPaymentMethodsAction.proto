@@ -1,3 +1,0 @@
-message CustomPaymentMethodsAction {
-  optional CustomPaymentMethod customPaymentMethods = 1;
-}

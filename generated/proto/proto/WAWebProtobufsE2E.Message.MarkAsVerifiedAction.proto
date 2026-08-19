@@ -1,6 +1,0 @@
-message MarkAsVerifiedAction {
-  optional bytes userJidString = 1;
-  optional bytes verified = 2;
-  optional bytes verifiedIdentityKey = 3;
-  optional bytes actionSeq = 4;
-}

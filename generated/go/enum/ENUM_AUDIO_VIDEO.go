@@ -1,6 +1,0 @@
-type ENUMAUDIOVIDEO string
-
-const (
-	ENUMAUDIOVIDEOAudio ENUMAUDIOVIDEO = "audio"
-	ENUMAUDIOVIDEOVideo ENUMAUDIOVIDEO = "video"
-)

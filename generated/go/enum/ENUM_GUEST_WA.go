@@ -1,6 +1,0 @@
-type ENUMGUESTWA string
-
-const (
-	ENUMGUESTWAGuest ENUMGUESTWA = "guest"
-	ENUMGUESTWAWa ENUMGUESTWA = "wa"
-)

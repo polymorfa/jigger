@@ -1,4 +1,0 @@
-message ScheduledCallEditMessage {
-  optional bytes key = 1;
-  optional bytes editType = 2;
-}

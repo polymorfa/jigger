@@ -1,5 +1,0 @@
-export enum HTTPPROTOCOLVERSIONTYPE {
-  HTTP1 = 0,
-  HTTP2 = 1,
-  HTTP3 = 2,
-}

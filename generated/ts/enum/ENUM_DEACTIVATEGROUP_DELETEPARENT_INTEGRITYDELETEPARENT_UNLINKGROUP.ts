@@ -1,6 +1,0 @@
-export enum ENUMDEACTIVATEGROUPDELETEPARENTINTEGRITYDELETEPARENTUNLINKGROUP {
-  DEACTIVATE_GROUP = "deactivate_group",
-  DELETE_PARENT = "delete_parent",
-  INTEGRITY_DELETE_PARENT = "integrity_delete_parent",
-  UNLINK_GROUP = "unlink_group",
-}

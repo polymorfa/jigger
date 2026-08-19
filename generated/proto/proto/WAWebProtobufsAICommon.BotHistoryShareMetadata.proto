@@ -1,3 +1,0 @@
-message BotHistoryShareMetadata {
-  optional BotGroupParticipantMetadata participantsMetadata = 1;
-}

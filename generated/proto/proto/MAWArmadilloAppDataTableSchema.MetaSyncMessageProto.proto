@@ -1,4 +1,0 @@
-message MetaSyncMessageProto {
-  optional MetaSyncMessageKeyProto key = 1;
-  optional bytes ts = 2;
-}

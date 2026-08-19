@@ -1,7 +1,0 @@
-export enum MUTECHATTYPE {
-  ONE_ON_ONE = 1,
-  GROUP = 2,
-  CHANNEL = 3,
-  INTEROP = 4,
-  INORGANIC_NOTIFICATION = 5,
-}

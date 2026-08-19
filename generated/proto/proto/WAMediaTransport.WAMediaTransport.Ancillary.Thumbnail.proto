@@ -1,6 +1,0 @@
-message Thumbnail {
-  optional bytes jpegThumbnail = 1;
-  optional DownloadableThumbnail downloadableThumbnail = 2;
-  optional bytes thumbnailWidth = 3;
-  optional bytes thumbnailHeight = 4;
-}

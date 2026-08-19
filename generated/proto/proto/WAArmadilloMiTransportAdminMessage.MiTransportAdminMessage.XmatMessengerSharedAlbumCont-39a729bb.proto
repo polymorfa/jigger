@@ -1,4 +1,0 @@
-message RemovedContentTuple {
-  optional bytes key = 1;
-  optional bytes value = 2;
-}

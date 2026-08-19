@@ -1,6 +1,0 @@
-type ENUMP2MP2P string
-
-const (
-	ENUMP2MP2PP2m ENUMP2MP2P = "p2m"
-	ENUMP2MP2PP2p ENUMP2MP2P = "p2p"
-)

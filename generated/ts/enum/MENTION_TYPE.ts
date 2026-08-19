@@ -1,7 +1,0 @@
-export enum MENTIONTYPE {
-  REGULAR_USER = 0,
-  GROUP = 1,
-  META_AI_BOT = 2,
-  EVERYONE = 3,
-  NON_GROUP_USER = 4,
-}

@@ -1,2 +1,0 @@
-// ABRevealUsernameNonLinkingRejectionReasonEnabled is A/B property 32910 (bool), default true.
-const ABRevealUsernameNonLinkingRejectionReasonEnabled = "reveal_username_non_linking_rejection_reason_enabled"

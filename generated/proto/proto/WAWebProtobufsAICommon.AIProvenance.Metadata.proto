@@ -1,4 +1,0 @@
-message Metadata {
-  optional bytes createdWithGenAi = 1;
-  optional bytes editedWithGenAi = 2;
-}

@@ -1,3 +1,0 @@
-message BotPttPromptMetadata {
-  optional bytes transcript = 1;
-}

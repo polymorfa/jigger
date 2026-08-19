@@ -1,2 +1,0 @@
-/// Matches `<iq>`. Server-initiated; nothing sends it.
-pub fn parse_biz_access_token_request_silent_nonce_response_recovery_required(n: &Node) -> Option<BizAccessTokenRequestSilentNonceResponseRecoveryRequired>

@@ -1,5 +1,0 @@
-message StatusStickerInteractionMessage {
-  optional bytes key = 1;
-  optional bytes stickerKey = 2;
-  optional bytes type = 3;
-}

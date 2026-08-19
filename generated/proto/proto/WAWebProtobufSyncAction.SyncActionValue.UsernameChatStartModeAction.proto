@@ -1,3 +1,0 @@
-message UsernameChatStartModeAction {
-  optional bytes chatStartMode = 1;
-}

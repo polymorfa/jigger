@@ -1,4 +1,0 @@
-message MusicUserIdAction {
-  optional bytes musicUserId = 1;
-  optional bytes music_user_id_map = 2;
-}

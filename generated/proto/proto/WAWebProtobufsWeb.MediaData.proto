@@ -1,3 +1,0 @@
-message MediaData {
-  optional bytes localPath = 1;
-}

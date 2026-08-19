@@ -1,6 +1,0 @@
-message BotPlanningSearchSourceMetadata {
-  optional bytes title = 1;
-  optional bytes provider = 2;
-  optional bytes sourceUrl = 3;
-  optional bytes favIconUrl = 4;
-}

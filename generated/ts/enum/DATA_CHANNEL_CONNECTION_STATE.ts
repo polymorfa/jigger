@@ -1,8 +1,0 @@
-export enum DATACHANNELCONNECTIONSTATE {
-  NONE = 0,
-  INITED = 1,
-  CONNECTING = 2,
-  CONNECTED = 3,
-  CLOSED = 4,
-  ERROR = 5,
-}

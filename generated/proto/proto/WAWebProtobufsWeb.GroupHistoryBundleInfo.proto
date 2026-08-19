@@ -1,4 +1,0 @@
-message GroupHistoryBundleInfo {
-  optional bytes deprecatedMessageHistoryBundle = 1;
-  optional bytes processState = 2;
-}

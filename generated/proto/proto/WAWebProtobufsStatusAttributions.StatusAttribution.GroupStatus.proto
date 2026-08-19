@@ -1,3 +1,0 @@
-message GroupStatus {
-  optional bytes authorJid = 1;
-}

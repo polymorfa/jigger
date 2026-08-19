@@ -1,6 +1,0 @@
-#[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum CHATMUTENOTIFICATIONCHOICE {
-    NONOTIFICATIONSWHENMUTED = 1,
-    YESNOTIFICATIONSWHENMUTED = 2,
-}

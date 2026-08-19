@@ -1,2 +1,0 @@
-// ABWebBizQualityTelemetryMessageLevelActionsEnabled is A/B property 28590 (bool), default false.
-const ABWebBizQualityTelemetryMessageLevelActionsEnabled = "web_biz_quality_telemetry_message_level_actions_enabled"

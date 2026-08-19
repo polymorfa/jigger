@@ -1,3 +1,0 @@
-message ExternalWebBetaAction {
-  optional bytes isOptIn = 1;
-}

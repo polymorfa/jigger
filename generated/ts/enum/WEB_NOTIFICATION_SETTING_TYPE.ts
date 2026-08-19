@@ -1,5 +1,0 @@
-export enum WEBNOTIFICATIONSETTINGTYPE {
-  ALLOWED = 1,
-  BLOCKED = 2,
-  UNKNOWN = 3,
-}

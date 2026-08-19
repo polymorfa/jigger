@@ -1,4 +1,0 @@
-message BotResolvedToolCallMetadata {
-  optional bytes toolCallId = 1;
-  optional bytes resolutionDataSerialized = 2;
-}

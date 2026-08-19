@@ -1,3 +1,0 @@
-message RequestPhoneNumberMessage {
-  optional ContextInfo contextInfo = 1;
-}

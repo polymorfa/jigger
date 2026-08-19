@@ -1,2 +1,0 @@
-// ParseMessagePublishAckPaidGroupConversationMixin matches <ack>. Server-initiated; nothing sends it.
-func ParseMessagePublishAckPaidGroupConversationMixin(n *waBinary.Node) (*MessagePublishAckPaidGroupConversationMixin, error)

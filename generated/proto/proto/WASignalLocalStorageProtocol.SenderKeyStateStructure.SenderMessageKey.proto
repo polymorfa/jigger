@@ -1,4 +1,0 @@
-message SenderMessageKey {
-  optional bytes iteration = 1;
-  optional bytes seed = 2;
-}

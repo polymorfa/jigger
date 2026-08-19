@@ -1,3 +1,0 @@
-message MetadataSyncNotification {
-  optional MetadataSyncAction actions = 2;
-}

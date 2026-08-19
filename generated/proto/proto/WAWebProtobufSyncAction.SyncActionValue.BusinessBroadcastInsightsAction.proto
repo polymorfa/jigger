@@ -1,7 +1,0 @@
-message BusinessBroadcastInsightsAction {
-  optional bytes recipientCount = 1;
-  optional bytes deliveredCount = 2;
-  optional bytes readCount = 3;
-  optional bytes repliedCount = 4;
-  optional bytes quickReplyCount = 5;
-}

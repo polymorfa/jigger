@@ -1,6 +1,0 @@
-message Button {
-  optional bytes buttonId = 1;
-  optional ButtonText buttonText = 2;
-  optional bytes type = 3;
-  optional NativeFlowInfo nativeFlowInfo = 4;
-}

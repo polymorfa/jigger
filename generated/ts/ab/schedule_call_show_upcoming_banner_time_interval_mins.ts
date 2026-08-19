@@ -1,2 +1,0 @@
-/** A/B property 16254 (int), default 1440. */
-export const ABScheduleCallShowUpcomingBannerTimeIntervalMins = 'schedule_call_show_upcoming_banner_time_interval_mins' as const

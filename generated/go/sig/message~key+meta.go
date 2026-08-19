@@ -1,2 +1,0 @@
-// ParseMessageDeliverMetaScheduledMessageMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverMetaScheduledMessageMixin(n *waBinary.Node) (*MessageDeliverMetaScheduledMessageMixin, error)

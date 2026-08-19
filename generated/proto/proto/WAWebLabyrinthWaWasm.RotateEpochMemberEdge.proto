@@ -1,5 +1,0 @@
-message RotateEpochMemberEdge {
-  optional bytes deviceId = 1;
-  optional bytes encryptedEpochKey = 2;
-  optional bytes deviceEpochHmac = 3;
-}

@@ -1,4 +1,0 @@
-message SyncDSnapshotFatalRecoveryResponse {
-  optional bytes collectionSnapshot = 1;
-  optional bytes isCompressed = 2;
-}

@@ -1,2 +1,0 @@
-/// A/B property 25421 (bool), default false.
-pub const AB_MM_DATA_SHARING_DISCLOSURE_ENABLED_ADDITIONAL_TRANSPARENCY_LARGE_SCREENS: &str = "mm_data_sharing_disclosure_enabled_additional_transparency_large_screens";

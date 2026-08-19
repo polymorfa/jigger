@@ -1,6 +1,0 @@
-message Mutation {
-  optional SyncdIndex index = 1;
-  optional SyncdValue value = 2;
-  optional bytes dirtyVersion = 3;
-  optional bytes operation = 4;
-}

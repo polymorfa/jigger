@@ -1,6 +1,0 @@
-message CustomPaymentMethod {
-  optional bytes credentialId = 1;
-  optional bytes country = 2;
-  optional bytes type = 3;
-  optional CustomPaymentMethodMetadata metadata = 4;
-}

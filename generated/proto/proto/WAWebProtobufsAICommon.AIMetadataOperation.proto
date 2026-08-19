@@ -1,3 +1,0 @@
-message AIMetadataOperation {
-  optional HatchMetadataSync hatchMetadataSync = 1;
-}

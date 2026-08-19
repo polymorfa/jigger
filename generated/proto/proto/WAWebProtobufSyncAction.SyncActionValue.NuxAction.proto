@@ -1,3 +1,0 @@
-message NuxAction {
-  optional bytes acknowledged = 1;
-}

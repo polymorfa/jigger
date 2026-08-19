@@ -1,7 +1,0 @@
-message CustomList {
-  optional bytes listId = 1;
-  optional bytes name = 2;
-  optional bytes emoji = 3;
-  optional bytes isSelected = 4;
-  optional bytes userJid = 5;
-}

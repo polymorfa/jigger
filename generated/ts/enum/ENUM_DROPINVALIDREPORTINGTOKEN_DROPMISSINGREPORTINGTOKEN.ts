@@ -1,4 +1,0 @@
-export enum ENUMDROPINVALIDREPORTINGTOKENDROPMISSINGREPORTINGTOKEN {
-  DROP_INVALID_REPORTING_TOKEN = "drop_invalid_reporting_token",
-  DROP_MISSING_REPORTING_TOKEN = "drop_missing_reporting_token",
-}

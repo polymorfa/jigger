@@ -1,9 +1,0 @@
-export enum STRUCTUREDMESSAGECLASS {
-  HSM = 0,
-  BUTTON = 1,
-  LIST = 2,
-  PRODUCT_LIST = 3,
-  BUTTON_NFM = 4,
-  PRODUCT_ITEM = 5,
-  SHOP_STOREFRONT = 6,
-}

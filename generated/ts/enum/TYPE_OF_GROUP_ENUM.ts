@@ -1,5 +1,0 @@
-export enum TYPEOFGROUPENUM {
-  GROUP = 1,
-  SUBGROUP = 2,
-  DEFAULT_SUBGROUP = 3,
-}

@@ -1,2 +1,0 @@
-/// Persisted query. Variables: 
-pub const MEX_WAWEB_CANONICAL_HATCH_LINKED_STATUS_GET_QUERY: &str = "35121461644169181";

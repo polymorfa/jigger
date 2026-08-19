@@ -1,6 +1,0 @@
-message ContactRefreshResponse {
-  optional bytes coveredRequestIds = 1;
-  optional bytes collectionVersion = 2;
-  optional bytes primaryDurationMs = 3;
-  optional bytes uniqueContactCount = 4;
-}

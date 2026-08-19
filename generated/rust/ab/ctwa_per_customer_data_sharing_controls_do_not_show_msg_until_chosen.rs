@@ -1,2 +1,0 @@
-/// A/B property 19763 (bool), default false.
-pub const AB_CTWA_PER_CUSTOMER_DATA_SHARING_CONTROLS_DO_NOT_SHOW_MSG_UNTIL_CHOSEN: &str = "ctwa_per_customer_data_sharing_controls_do_not_show_msg_until_chosen";

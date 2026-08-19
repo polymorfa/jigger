@@ -32,6 +32,40 @@ function syncSpec() {
   console.log(`[prepare] synced ${files.length} spec file(s) -> content/spec`);
 }
 
+/**
+ * Pull the ledger from the payload branch when there is no local extraction.
+ *
+ * A deployment has no cellar store and no `jigger extract` — the facts come
+ * from the branch CI publishes them to. Only the small files are fetched here:
+ * module source and symbol tables are per-page and are fetched at request time,
+ * because bundling ~4,800 modules into a deployment to serve the one someone
+ * opens would be 29 MB of dead weight.
+ */
+async function fetchPayload() {
+  const repo = (process.env.NEXT_PUBLIC_JIGGER_REPO ?? "").trim();
+  const ref = (process.env.NEXT_PUBLIC_JIGGER_REF ?? "data").trim() || "data";
+  if (!repo) return false;
+
+  const dir = join(webRoot, "public", "data");
+  mkdirSync(dir, { recursive: true });
+  let got = 0;
+
+  for (const file of ["ir.json", "revision.json", "manifest.json", "diff.json", "history.json", "vectors.json"]) {
+    const url = `https://raw.githubusercontent.com/${repo}/${ref}/${file}`;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      writeFileSync(join(dir, file), Buffer.from(await res.arrayBuffer()));
+      got++;
+    } catch {
+      // A missing optional file is normal — `history.json` only exists once the
+      // history walk has run, and the app renders without it.
+    }
+  }
+  console.log(`[prepare] fetched ${got} file(s) from ${repo}@${ref}`);
+  return got > 0;
+}
+
 function buildSearchIndex() {
   const irPath = join(webRoot, "public", "data", "ir.json");
   if (!existsSync(irPath)) {
@@ -220,4 +254,9 @@ function buildSearchIndex() {
 }
 
 syncSpec();
+// Local extraction wins: a machine that just ran `jigger extract` should see
+// what it extracted, not what CI published an hour ago.
+if (!existsSync(join(webRoot, "public", "data", "ir.json"))) {
+  await fetchPayload();
+}
 buildSearchIndex();

@@ -1,4 +1,0 @@
-message HydratedQuickReplyButton {
-  optional bytes displayText = 1;
-  optional bytes id = 2;
-}

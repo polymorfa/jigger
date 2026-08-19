@@ -1,4 +1,0 @@
-message BroadcastListParticipant {
-  optional bytes lidJid = 1;
-  optional bytes pnJid = 2;
-}

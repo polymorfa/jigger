@@ -1,4 +1,0 @@
-message PollUpdateMessageMetadata {
-  optional bytes pollNameHash = 1;
-  optional bytes lastEditStanzaId = 2;
-}

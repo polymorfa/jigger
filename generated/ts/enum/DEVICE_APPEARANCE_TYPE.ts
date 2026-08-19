@@ -1,4 +1,0 @@
-export enum DEVICEAPPEARANCETYPE {
-  LIGHT = 0,
-  DARK = 1,
-}

@@ -1,2 +1,0 @@
-// ParseBlocklistsUpdateOptOutListResponseSuccessWithMatch matches <iq>. Response to BlocklistsUpdateOptOutList.
-func ParseBlocklistsUpdateOptOutListResponseSuccessWithMatch(n *waBinary.Node) (*BlocklistsUpdateOptOutListResponseSuccessWithMatch, error)

@@ -1,8 +1,0 @@
-message XmatMagicWords {
-  optional bytes newMagicWordCount = 1;
-  optional bytes removedMagicWordCount = 2;
-  optional bytes magicWord = 3;
-  optional bytes emojiEffect = 4;
-  optional bytes isAllEdited = 5;
-  optional bytes themeName = 6;
-}

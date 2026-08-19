@@ -1,8 +1,0 @@
-message CloudAPIThreadControlNotification {
-  optional bytes status = 1;
-  optional bytes senderNotificationTimestampMs = 2;
-  optional bytes consumerLid = 3;
-  optional bytes consumerPhoneNumber = 4;
-  optional CloudAPIThreadControlNotificationContent notificationContent = 5;
-  optional bytes shouldSuppressNotification = 6;
-}

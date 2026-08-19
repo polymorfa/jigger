@@ -1,1 +1,0 @@
-pub const HKDF_WHATS_APP_IMAGE_KEYS: &str = "WhatsApp Image Keys";

@@ -1,2 +1,0 @@
-// ABCtwaPerCustomerDataSharingControlsDoNotShowMsgUntilChosen is A/B property 19763 (bool), default false.
-const ABCtwaPerCustomerDataSharingControlsDoNotShowMsgUntilChosen = "ctwa_per_customer_data_sharing_controls_do_not_show_msg_until_chosen"

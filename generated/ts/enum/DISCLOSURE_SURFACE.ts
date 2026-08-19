@@ -1,4 +1,0 @@
-export enum DISCLOSURESURFACE {
-  BIZ_PROFILE_SCREEN = 0,
-  CHAT_THREAD = 1,
-}

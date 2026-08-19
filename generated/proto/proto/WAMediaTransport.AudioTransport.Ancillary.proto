@@ -1,6 +1,0 @@
-message Ancillary {
-  optional bytes seconds = 1;
-  optional AvatarAudio avatarAudio = 2;
-  optional bytes waveformData = 3;
-  optional bytes waveform = 4;
-}

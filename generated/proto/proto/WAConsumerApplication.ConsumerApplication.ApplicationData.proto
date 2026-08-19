@@ -1,3 +1,0 @@
-message ApplicationData {
-  optional RevokeMessage revoke = 1;
-}

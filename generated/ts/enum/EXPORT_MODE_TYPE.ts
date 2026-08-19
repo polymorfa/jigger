@@ -1,4 +1,0 @@
-export enum EXPORTMODETYPE {
-  TEXT_ONLY = 1,
-  WITH_MEDIA = 2,
-}

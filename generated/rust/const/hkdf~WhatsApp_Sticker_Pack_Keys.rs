@@ -1,1 +1,0 @@
-pub const HKDF_WHATS_APP_STICKER_PACK_KEYS: &str = "WhatsApp Sticker Pack Keys";

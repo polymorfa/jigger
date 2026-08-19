@@ -1,7 +1,0 @@
-message HistorySyncChunkRetryResponse {
-  optional bytes syncType = 1;
-  optional bytes chunkOrder = 2;
-  optional bytes requestId = 3;
-  optional bytes responseCode = 4;
-  optional bytes canRecover = 5;
-}

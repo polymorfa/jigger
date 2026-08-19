@@ -1,7 +1,0 @@
-export enum GROUPSTATUSSIZEBUCKET {
-  EMPTY_GROUP = 1,
-  X_SMALL = 2,
-  SMALL = 3,
-  MEDIUM = 4,
-  LARGE = 5,
-}

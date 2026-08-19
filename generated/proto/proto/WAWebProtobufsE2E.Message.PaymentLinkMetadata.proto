@@ -1,5 +1,0 @@
-message PaymentLinkMetadata {
-  optional PaymentLinkButton button = 1;
-  optional PaymentLinkHeader header = 2;
-  optional PaymentLinkProvider provider = 3;
-}

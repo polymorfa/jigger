@@ -1,2 +1,0 @@
-/** A/B property 30498 (bool), default false. */
-export const ABInappSignupWebCtaLoggingEnabled = 'inapp_signup_web_cta_logging_enabled' as const

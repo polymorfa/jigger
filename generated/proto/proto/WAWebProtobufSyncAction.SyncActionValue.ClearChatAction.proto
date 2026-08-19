@@ -1,3 +1,0 @@
-message ClearChatAction {
-  optional SyncActionMessageRange messageRange = 1;
-}

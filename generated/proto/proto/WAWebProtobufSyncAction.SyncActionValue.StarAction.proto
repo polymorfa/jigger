@@ -1,3 +1,0 @@
-message StarAction {
-  optional bytes starred = 1;
-}

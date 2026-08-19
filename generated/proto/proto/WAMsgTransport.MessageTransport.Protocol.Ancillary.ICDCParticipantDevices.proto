@@ -1,5 +1,0 @@
-message ICDCParticipantDevices {
-  optional ICDCIdentityListDescription senderIdentity = 1;
-  optional ICDCIdentityListDescription recipientIdentities = 2;
-  optional bytes recipientUserJids = 3;
-}

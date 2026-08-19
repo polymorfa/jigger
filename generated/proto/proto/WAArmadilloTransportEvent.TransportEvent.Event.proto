@@ -1,4 +1,0 @@
-message Event {
-  optional DeviceChange deviceChange = 1;
-  optional IcdcAlert icdcAlert = 2;
-}

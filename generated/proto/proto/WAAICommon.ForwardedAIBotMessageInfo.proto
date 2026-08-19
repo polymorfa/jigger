@@ -1,5 +1,0 @@
-message ForwardedAIBotMessageInfo {
-  optional bytes botName = 1;
-  optional bytes botJid = 2;
-  optional bytes creatorName = 3;
-}

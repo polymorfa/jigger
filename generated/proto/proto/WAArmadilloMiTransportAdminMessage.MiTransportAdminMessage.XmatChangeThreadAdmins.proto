@@ -1,6 +1,0 @@
-message XmatChangeThreadAdmins {
-  optional bytes adminEvent = 1;
-  optional bytes targetId = 2;
-  optional bytes threadCategory = 3;
-  optional bytes adminType = 4;
-}

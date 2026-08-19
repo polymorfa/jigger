@@ -1,9 +1,0 @@
-message SubProtocolPayload {
-  optional bytes futureProof = 1;
-  optional bytes consumerMessage = 2;
-  optional bytes businessMessage = 3;
-  optional bytes paymentMessage = 4;
-  optional bytes multiDevice = 5;
-  optional bytes voip = 6;
-  optional bytes armadillo = 7;
-}

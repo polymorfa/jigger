@@ -1,4 +1,0 @@
-message AudioMessage {
-  optional bytes audio = 1;
-  optional bytes ptt = 2;
-}

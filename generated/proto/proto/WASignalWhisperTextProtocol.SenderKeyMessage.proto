@@ -1,5 +1,0 @@
-message SenderKeyMessage {
-  optional bytes id = 1;
-  optional bytes iteration = 2;
-  optional bytes ciphertext = 3;
-}

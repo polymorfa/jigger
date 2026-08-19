@@ -1,4 +1,0 @@
-export enum WEBFLOWTYPE {
-  NATIVE_WEB = 0,
-  EXTERNAL_WEB = 1,
-}

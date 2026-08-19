@@ -1,4 +1,0 @@
-message DNSSource {
-  optional bytes dnsMethod = 15;
-  optional bytes appCached = 16;
-}

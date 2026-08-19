@@ -1,4 +1,0 @@
-message CertificateSKI {
-  optional bytes useCase = 1;
-  optional bytes ski = 2;
-}

@@ -1,4 +1,0 @@
-message DeviceResponse {
-  optional bytes deviceId = 1;
-  optional bytes deviceResponse = 2;
-}

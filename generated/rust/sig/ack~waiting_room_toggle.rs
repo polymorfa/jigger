@@ -1,2 +1,0 @@
-/// Matches `<ack>`. Server-initiated; nothing sends it.
-pub fn parse_voip_waiting_room_toggle_call_link_response_waiting_room_toggle_call_link_ack(n: &Node) -> Option<VoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck>

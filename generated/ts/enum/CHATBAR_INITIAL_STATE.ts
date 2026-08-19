@@ -1,4 +1,0 @@
-export enum CHATBARINITIALSTATE {
-  EMPTY = 1,
-  CONTAINS_DRAFT = 2,
-}

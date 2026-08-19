@@ -1,8 +1,0 @@
-message ForwardedNewsletterMessageInfo {
-  optional bytes newsletterJid = 1;
-  optional bytes serverMessageId = 2;
-  optional bytes newsletterName = 3;
-  optional bytes contentType = 4;
-  optional bytes accessibilityText = 5;
-  optional bytes profileName = 6;
-}

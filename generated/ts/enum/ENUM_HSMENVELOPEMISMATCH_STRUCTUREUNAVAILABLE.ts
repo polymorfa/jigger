@@ -1,4 +1,0 @@
-export enum ENUMHSMENVELOPEMISMATCHSTRUCTUREUNAVAILABLE {
-  HSM_ENVELOPE_MISMATCH = "hsm-envelope-mismatch",
-  STRUCTURE_UNAVAILABLE = "structure-unavailable",
-}

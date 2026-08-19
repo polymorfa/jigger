@@ -1,3 +1,0 @@
-message ChatRowOpaqueData {
-  optional DraftMessage draftMessage = 1;
-}

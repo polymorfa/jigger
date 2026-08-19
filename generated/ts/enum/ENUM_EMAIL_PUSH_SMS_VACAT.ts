@@ -1,6 +1,0 @@
-export enum ENUMEMAILPUSHSMSVACAT {
-  EMAIL = "EMAIL",
-  PUSH = "PUSH",
-  SMS = "SMS",
-  VACAT = "VACAT",
-}

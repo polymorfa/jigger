@@ -1,3 +1,0 @@
-message XmatUnpinMessageV2 {
-  optional bytes pinnedMessageId = 1;
-}

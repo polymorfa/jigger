@@ -1,4 +1,0 @@
-message DocumentFileMsgContentProto {
-  optional bytes filename = 1;
-  optional bytes mimetype = 2;
-}

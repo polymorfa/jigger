@@ -1,4 +1,0 @@
-message BotUnifiedResponseMutation {
-  optional SideBySideMetadata sbsMetadata = 1;
-  optional MediaDetailsMetadata mediaDetailsMetadataList = 2;
-}

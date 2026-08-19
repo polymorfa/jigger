@@ -1,7 +1,0 @@
-export enum DEFAULTPROTOCOLSCHEMETYPE {
-  TEL = 0,
-  MS_VOIP_CALL = 1,
-  MS_VOIP_VIDEO = 2,
-  IM = 3,
-  MS_IPMESSAGING = 4,
-}

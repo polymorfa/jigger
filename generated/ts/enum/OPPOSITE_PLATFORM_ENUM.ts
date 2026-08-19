@@ -1,4 +1,0 @@
-export enum OPPOSITEPLATFORMENUM {
-  CONSUMER = 0,
-  BUSINESS = 1,
-}

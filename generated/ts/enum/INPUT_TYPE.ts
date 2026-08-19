@@ -1,5 +1,0 @@
-export enum INPUTTYPE {
-  SUGGESTION = 1,
-  USER_INPUT = 2,
-  USER_INPUT_AND_SUGGESTION = 3,
-}

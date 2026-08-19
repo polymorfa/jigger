@@ -1,4 +1,0 @@
-message PollAdditionalMetadata {
-  optional bytes pollInvalidated = 1;
-  optional PollNameHashHistoryEntry pollNameHashHistory = 2;
-}

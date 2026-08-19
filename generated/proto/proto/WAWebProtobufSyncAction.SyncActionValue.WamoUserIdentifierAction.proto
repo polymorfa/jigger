@@ -1,3 +1,0 @@
-message WamoUserIdentifierAction {
-  optional bytes identifier = 1;
-}

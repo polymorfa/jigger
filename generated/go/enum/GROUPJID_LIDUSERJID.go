@@ -1,5 +1,0 @@
-type GROUPJIDLIDUSERJID string
-
-const (
-	GROUPJIDLIDUSERJIDTypeName GROUPJIDLIDUSERJID = "GroupJid|LidUserJid"
-)

@@ -1,6 +1,0 @@
-export enum SIGNALSURFACE {
-  BIZ_PROFILE_SCREEN = 0,
-  CHAT_THREAD = 1,
-  CHAT_LIST = 2,
-  OTHER = 3,
-}

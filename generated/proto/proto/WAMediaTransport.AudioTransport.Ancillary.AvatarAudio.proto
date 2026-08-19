@@ -1,4 +1,0 @@
-message AvatarAudio {
-  optional bytes poseId = 1;
-  optional DownloadableAvatarAnimations avatarAnimations = 2;
-}

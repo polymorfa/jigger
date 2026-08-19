@@ -1,4 +1,0 @@
-message ActionChatArchive {
-  optional SyncActionMessageRange messageRange = 1;
-  optional bytes archived = 2;
-}

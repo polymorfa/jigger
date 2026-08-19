@@ -1,5 +1,0 @@
-message StatusAudienceMetadata {
-  optional bytes audienceType = 1;
-  optional bytes listName = 2;
-  optional bytes listEmoji = 3;
-}

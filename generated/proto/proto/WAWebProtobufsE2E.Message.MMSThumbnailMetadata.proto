@@ -1,9 +1,0 @@
-message MMSThumbnailMetadata {
-  optional bytes thumbnailDirectPath = 1;
-  optional bytes thumbnailSha256 = 2;
-  optional bytes thumbnailEncSha256 = 3;
-  optional bytes mediaKey = 4;
-  optional bytes mediaKeyTimestamp = 5;
-  optional bytes thumbnailHeight = 6;
-  optional bytes thumbnailWidth = 7;
-}

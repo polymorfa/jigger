@@ -1,3 +1,0 @@
-message Body {
-  optional bytes text = 1;
-}

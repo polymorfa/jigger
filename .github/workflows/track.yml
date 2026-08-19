@@ -1,18 +1,36 @@
 name: track
 
-# Keeps the generated IR current and tells the tracked libraries what they are
-# missing.
+# Watch for a new WhatsApp Web release, and when one lands, open a pull request
+# describing exactly what changed in the protocol.
 #
-# WhatsApp Web ships roughly every ten hours and each version expires exactly 61
-# days after its own release, so falling behind is not cosmetic — a library
-# pinned to an expired revision stops working entirely. This runs four times a
-# day and is a no-op on most runs by design: the expensive path only starts once
-# the extraction actually differs, because at ~900 releases a year anything that
-# does real work per release is a cost problem rather than a correctness one.
+# WhatsApp ships roughly every ten hours and each build expires 61 days after
+# its own release, so falling behind is not cosmetic — a library pinned to an
+# expired revision stops working outright. This checks hourly and is a no-op on
+# almost every run by design: the expensive path only starts once the extraction
+# actually differs.
+#
+# # Where things go, and why
+#
+# A revision's source is 1.3 GB raw and 59 MB even after git packs it, and
+# WhatsApp re-minifies on every build so successive revisions barely delta at
+# all. At ~875 releases a year that is ~51 GB of history, which would make the
+# repository unusable within weeks.
+#
+# So the three kinds of output go three places:
+#
+#   * `data`      — the payload the site reads, **latest revision only**. Each
+#                   release replaces it, so a clone stays around 65 MB forever.
+#   * a release   — the full 1.3 GB bundle, compressed to ~100 MB, one asset per
+#                   revision. Complete history, none of it in anyone's clone.
+#   * `artifacts` — generated libraries, coverage and patches. Derived from the
+#                   above, so pushed directly rather than reviewed.
+#
+# The pull request itself carries the fact-level diff, which is the part a human
+# reads. Nobody reviews 29 MB of re-minified JavaScript.
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       revision:
@@ -26,14 +44,13 @@ concurrency:
 
 permissions:
   contents: write
-  issues: write
+  pull-requests: write
 
 jobs:
   track:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
 
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
@@ -43,93 +60,122 @@ jobs:
           cargo build --release --locked
           cargo install --git https://github.com/polymorfa/cellar cellar --locked
 
-      - name: Fetch and index the revision
-        run: cellar bundle add --rev "${{ inputs.revision || 'latest' }}"
+      - name: Fetch the revision
+        id: fetch
+        run: |
+          cellar bundle add --rev "${{ inputs.revision || 'latest' }}"
+          echo "modules=$(cellar bundle path --rev latest)/modules" >> "$GITHUB_OUTPUT"
 
-      # Extract into a scratch tree first. Writing straight into `generated`
-      # would make "did anything change" unanswerable, since the working tree
-      # would already contain the answer.
+      # Extracted into a scratch tree, never over the committed one: writing in
+      # place would make "did anything change" unanswerable, because the answer
+      # would already have been overwritten.
       - name: Extract
         id: extract
         run: |
-          ./target/release/jigger --out .next-gen extract latest
-          echo "rev=$(jq -r .revision .next-gen/revision.json)" >> "$GITHUB_OUTPUT"
+          ./target/release/jigger --out .next extract latest
+          ./target/release/jigger --out .next symbols
+          ./target/release/jigger --out .next vectors
+          echo "rev=$(jq -r .revision .next/revision.json)" >> "$GITHUB_OUTPUT"
 
-      - name: Anything new?
+      - name: Compare against the published revision
         id: changed
         run: |
-          if diff -rq generated/ir .next-gen/ir >/dev/null 2>&1; then
-            echo "new=false" >> "$GITHUB_OUTPUT"
-            echo "no protocol change in revision ${{ steps.extract.outputs.rev }}"
-          else
-            echo "new=true" >> "$GITHUB_OUTPUT"
+          git fetch origin data --depth=1 2>/dev/null || true
+          if git show origin/data:ir.json > .published.json 2>/dev/null; then
+            # Compared on facts alone. The module hashes and read counts move on
+            # every build without the protocol moving at all, and a workflow
+            # that opens a pull request every hour is a workflow people mute.
+            if jq -S '.facts' .published.json > /tmp/a.json &&
+               jq -S '.facts' .next/ir.json  > /tmp/b.json &&
+               cmp -s /tmp/a.json /tmp/b.json; then
+              echo "new=false" >> "$GITHUB_OUTPUT"
+              echo "revision ${{ steps.extract.outputs.rev }}: no protocol change"
+              exit 0
+            fi
           fi
+          echo "new=true" >> "$GITHUB_OUTPUT"
 
-      # From here on, only when something actually moved.
-      - name: Diff against the committed revision
-        if: steps.changed.outputs.new == 'true'
-        run: ./target/release/jigger diff generated .next-gen | tee diff-summary.txt
-
-      - name: Promote the new extraction
-        if: steps.changed.outputs.new == 'true'
-        run: rm -rf generated && mv .next-gen generated
-
-      - name: Emit helpers
-        if: steps.changed.outputs.new == 'true'
-        run: ./target/release/jigger emit
-
-      - name: Check out the tracked libraries
+      - name: Diff the two revisions
         if: steps.changed.outputs.new == 'true'
         run: |
-          mkdir -p .repos
-          jq -r '.repos[] | select(.enabled and .remote) | "\(.name) \(.remote)"' repos.json |
-          while read -r name remote; do
-            git clone --depth 1 "https://github.com/$remote" ".repos/$name" || true
-          done
+          mkdir -p .prev
+          git show origin/data:ir.json > .prev/ir.json 2>/dev/null || echo '{"facts":[]}' > .prev/ir.json
+          ./target/release/jigger --out .next diff .prev .next || true
 
-      - name: Scan coverage
+      - name: Pack the payload
         if: steps.changed.outputs.new == 'true'
-        run: ./target/release/jigger scan --config repos.ci.json || true
+        run: ./scripts/pack-data.sh .next "${{ steps.fetch.outputs.modules }}" .payload
 
-      # One commit per revision, tagged. That is the revision history: `git diff
-      # rev/A rev/B -- generated/ir` is the protocol changelog, and no separate
-      # database has to be kept in step with it.
-      - name: Commit and tag
-        if: steps.changed.outputs.new == 'true'
-        run: |
-          git config user.name "jigger"
-          git config user.email "jigger@users.noreply.github.com"
-          git add generated
-          git commit -m "track: revision ${{ steps.extract.outputs.rev }}" || exit 0
-          git tag "rev/${{ steps.extract.outputs.rev }}"
-          git push --follow-tags
-
-      - name: File or update issues
+      # The full bundle, out of git entirely. A release asset has no effect on
+      # clone size and no 100 MB file limit, which is the only way to keep every
+      # revision's complete source without the repository becoming unclonable.
+      - name: Publish the full source as a release asset
         if: steps.changed.outputs.new == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # At most one open issue per repo. A second one for the same thing is
-          # how a useful feed becomes something maintainers mute.
-          jq -r '.repos[] | select(.enabled and .remote) | "\(.name) \(.remote)"' repos.json |
-          while read -r name remote; do
-            body="generated/issues/${name}-${{ steps.extract.outputs.rev }}.md"
-            [ -f "$body" ] || continue
-            existing=$(gh issue list -R "$remote" --label jigger --state open --json number -q '.[0].number' || true)
-            if [ -n "$existing" ]; then
-              gh issue comment "$existing" -R "$remote" -F "$body"
-            else
-              gh issue create -R "$remote" -t "jigger: protocol facts missing as of ${{ steps.extract.outputs.rev }}" \
-                -F "$body" --label jigger || true
-            fi
-          done
+          REV="${{ steps.extract.outputs.rev }}"
+          tar -C "$(dirname '${{ steps.fetch.outputs.modules }}')" -czf "source-$REV.tar.gz" modules
+          gh release create "rev/$REV" "source-$REV.tar.gz" \
+            --title "revision $REV" \
+            --notes "Complete module source for WhatsApp Web revision $REV. The browsable subset and the extracted facts are on the \`data\` branch." \
+            || gh release upload "rev/$REV" "source-$REV.tar.gz" --clobber
 
-      - uses: actions/upload-artifact@v4
+      - name: Open the pull request
         if: steps.changed.outputs.new == 'true'
-        with:
-          name: jigger-${{ steps.extract.outputs.rev }}
-          path: |
-            generated/ir.json
-            generated/diff.json
-            generated/coverage.json
-            generated/issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          REV="${{ steps.extract.outputs.rev }}"
+          BRANCH="rev/$REV"
+
+          git config user.name  "jigger"
+          git config user.email "jigger@users.noreply.github.com"
+
+          # Branched from `data`, or orphaned if this is the first run.
+          git checkout -B "$BRANCH" origin/data 2>/dev/null || git checkout --orphan "$BRANCH"
+          git rm -rq --cached . 2>/dev/null || true
+          find . -maxdepth 1 -mindepth 1 ! -name .git ! -name .payload ! -name .next ! -name target -exec rm -rf {} +
+          mv .payload/* .
+          rmdir .payload
+
+          git add -A
+          git commit -qm "revision $REV" || exit 0
+          git push -f origin "$BRANCH"
+
+          # The summary is the fact diff, because that is what a person reviews.
+          SUMMARY=$(jq -r '
+            "| kind | added | changed | removed |\n|---|---|---|---|\n" +
+            ([.summary.byKind | to_entries[] |
+              "| \(.key) | \(.value.added) | \(.value.changed) | \(.value.removed) |"] | join("\n"))
+          ' .next/diff.json 2>/dev/null || echo "_(no diff available)_")
+
+          gh pr create --base data --head "$BRANCH" \
+            --title "revision $REV" \
+            --body "$(cat <<EOF
+Extracted from WhatsApp Web revision \`$REV\`.
+
+$SUMMARY
+
+Complete module source for this revision is attached to the
+[\`rev/$REV\`](../../releases/tag/rev/$REV) release — 1.3 GB uncompressed, kept
+out of git so a clone stays small. The \`modules/\` directory here holds only
+what the ledger references and the viewer can open.
+EOF
+)" || gh pr edit "$BRANCH" --body "Updated for revision $REV."
+
+      # Derived from the facts, so there is nothing to review — it is pushed
+      # straight to its own branch rather than through the pull request.
+      - name: Publish generated libraries and coverage
+        if: steps.changed.outputs.new == 'true'
+        run: |
+          git checkout -B artifacts origin/artifacts 2>/dev/null || git checkout --orphan artifacts
+          find . -maxdepth 1 -mindepth 1 ! -name .git ! -name .next ! -name target -exec rm -rf {} +
+          ./target/release/jigger --out .next emit
+          for d in go ts rust proto vectors.json; do
+            [ -e ".next/$d" ] && cp -R ".next/$d" .
+          done
+          cp .next/revision.json .
+          git add -A
+          git commit -qm "libraries for revision ${{ steps.extract.outputs.rev }}" || exit 0
+          git push -f origin artifacts

@@ -1,3 +1,0 @@
-message StatusLinkPreviewMetadata {
-  optional bytes style = 1;
-}

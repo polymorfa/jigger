@@ -1,6 +1,0 @@
-export enum CHANNELLINKSHAREDIRECTION {
-  WHATSAPP = 1,
-  STATUS = 2,
-  EXTERNAL = 3,
-  QR_CODE = 4,
-}

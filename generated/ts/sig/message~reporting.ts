@@ -1,2 +1,0 @@
-/** Matches `<message>`. Server-initiated; nothing sends it. */
-export function parseMessageDeliverGroupHistoryBundleReportingMessagesReceiveMixin(n: BinaryNode): MessageDeliverGroupHistoryBundleReportingMessagesReceiveMixin | null

@@ -1,2 +1,0 @@
-// ParseMessageDeliverDeliveryContextMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverDeliveryContextMixin(n *waBinary.Node) (*MessageDeliverDeliveryContextMixin, error)

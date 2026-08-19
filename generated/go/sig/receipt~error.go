@@ -1,2 +1,0 @@
-// ParseReceiptDeliverFeatureIncapableErrorTypeMixin matches <receipt>. Server-initiated; nothing sends it.
-func ParseReceiptDeliverFeatureIncapableErrorTypeMixin(n *waBinary.Node) (*ReceiptDeliverFeatureIncapableErrorTypeMixin, error)

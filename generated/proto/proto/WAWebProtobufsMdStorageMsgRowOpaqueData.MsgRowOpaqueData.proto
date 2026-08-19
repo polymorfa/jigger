@@ -1,4 +1,0 @@
-message MsgRowOpaqueData {
-  optional MsgOpaqueData currentMsg = 1;
-  optional MsgOpaqueData quotedMsg = 2;
-}

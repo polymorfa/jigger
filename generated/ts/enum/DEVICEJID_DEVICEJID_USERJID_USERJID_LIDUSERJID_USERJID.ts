@@ -1,3 +1,0 @@
-export enum DEVICEJIDDEVICEJIDUSERJIDUSERJIDLIDUSERJIDUSERJID {
-  TYPE_NAME = "DeviceJid|DeviceJid|UserJid|UserJid|LidUserJid|UserJid",
-}

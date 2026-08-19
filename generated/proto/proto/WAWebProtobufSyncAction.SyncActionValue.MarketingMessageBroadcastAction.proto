@@ -1,3 +1,0 @@
-message MarketingMessageBroadcastAction {
-  optional bytes repliedCount = 1;
-}

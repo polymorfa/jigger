@@ -1,3 +1,0 @@
-message InteractiveMessageAdditionalMetadata {
-  optional bytes isGalaxyFlowCompleted = 1;
-}

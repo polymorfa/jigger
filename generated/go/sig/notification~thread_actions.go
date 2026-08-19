@@ -1,2 +1,0 @@
-// ParseMessageRequestThreadNotificationRequest matches <notification>. Server-initiated; nothing sends it.
-func ParseMessageRequestThreadNotificationRequest(n *waBinary.Node) (*MessageRequestThreadNotificationRequest, error)

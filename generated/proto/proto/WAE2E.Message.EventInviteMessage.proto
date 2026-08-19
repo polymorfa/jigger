@@ -1,9 +1,0 @@
-message EventInviteMessage {
-  optional ContextInfo contextInfo = 1;
-  optional bytes eventId = 2;
-  optional bytes eventTitle = 3;
-  optional bytes jpegThumbnail = 4;
-  optional bytes startTime = 5;
-  optional bytes caption = 6;
-  optional bytes isCanceled = 7;
-}

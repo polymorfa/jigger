@@ -1,4 +1,0 @@
-message AvatarUserSettings {
-  optional bytes fbid = 1;
-  optional bytes password = 2;
-}

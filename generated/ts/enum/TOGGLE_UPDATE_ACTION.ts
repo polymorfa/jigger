@@ -1,4 +1,0 @@
-export enum TOGGLEUPDATEACTION {
-  TURN_ON = 0,
-  TURN_OFF = 1,
-}

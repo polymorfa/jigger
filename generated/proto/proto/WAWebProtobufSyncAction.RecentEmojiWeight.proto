@@ -1,4 +1,0 @@
-message RecentEmojiWeight {
-  optional bytes emoji = 1;
-  optional bytes weight = 2;
-}

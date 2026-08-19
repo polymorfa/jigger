@@ -1,2 +1,0 @@
-/** Matches `<notification>`. Server-initiated; nothing sends it. */
-export function parseRtcE2eeCallEventNotifyCallEventNotificationRequest(n: BinaryNode): RtcE2eeCallEventNotifyCallEventNotificationRequest | null

@@ -1,4 +1,0 @@
-message GroupParticipantChanged {
-  optional bytes targetUserId = 1;
-  optional bytes action = 2;
-}

@@ -1,5 +1,0 @@
-message RotateEpochMemberInput {
-  optional bytes deviceId = 1;
-  optional bytes epochStoragePublicKey = 2;
-  optional bytes devicePublicKey = 3;
-}

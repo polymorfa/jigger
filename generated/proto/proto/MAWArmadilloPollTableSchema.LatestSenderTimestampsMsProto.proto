@@ -1,4 +1,0 @@
-message LatestSenderTimestampsMsProto {
-  optional bytes author = 1;
-  optional bytes latestSenderTimestampMs = 2;
-}

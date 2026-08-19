@@ -1,2 +1,0 @@
-/// Persisted query. Variables: input
-pub const MEX_WAWEB_MEX_FETCH_NEWSLETTER_MESSAGE_REACTION_SENDER_LIST_JOB_QUERY: &str = "29575462448733991";

@@ -1,2 +1,0 @@
-// ABMmDataSharingDisclosureEnabledCompanionHistorySync is A/B property 21288 (bool), default false.
-const ABMmDataSharingDisclosureEnabledCompanionHistorySync = "mm_data_sharing_disclosure_enabled_companion_history_sync"

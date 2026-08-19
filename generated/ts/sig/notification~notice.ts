@@ -1,2 +1,0 @@
-/** Matches `<notification>`. Server-initiated; nothing sends it. */
-export function parseAccountSyncNotificationNoticeNotificationMixin(n: BinaryNode): AccountSyncNotificationNoticeNotificationMixin | null

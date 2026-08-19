@@ -1,4 +1,0 @@
-message RequestUrlPreview {
-  optional bytes url = 1;
-  optional bytes includeHqThumbnail = 2;
-}

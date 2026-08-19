@@ -1,4 +1,0 @@
-message ProgressiveJpegDetails {
-  optional bytes scanLengths = 1;
-  optional bytes sidecar = 2;
-}

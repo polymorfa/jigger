@@ -1,5 +1,0 @@
-message NativeFlowResponseMessage {
-  optional bytes name = 1;
-  optional bytes paramsJson = 2;
-  optional bytes version = 3;
-}

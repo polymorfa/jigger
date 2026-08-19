@@ -1,4 +1,0 @@
-export enum ENUMINELIGIBLERECOVERYREQUIRED {
-  INELIGIBLE = "Ineligible",
-  RECOVERY_REQUIRED = "RecoveryRequired",
-}

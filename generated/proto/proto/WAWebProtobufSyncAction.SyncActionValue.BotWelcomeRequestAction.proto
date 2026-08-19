@@ -1,3 +1,0 @@
-message BotWelcomeRequestAction {
-  optional bytes isSent = 1;
-}

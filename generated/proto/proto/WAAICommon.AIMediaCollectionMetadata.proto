@@ -1,4 +1,0 @@
-message AIMediaCollectionMetadata {
-  optional bytes collectionId = 1;
-  optional bytes uploadOrderIndex = 2;
-}

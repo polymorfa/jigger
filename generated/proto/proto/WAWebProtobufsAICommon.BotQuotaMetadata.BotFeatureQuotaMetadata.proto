@@ -1,5 +1,0 @@
-message BotFeatureQuotaMetadata {
-  optional bytes featureType = 1;
-  optional bytes remainingQuota = 2;
-  optional bytes expirationTimestamp = 3;
-}

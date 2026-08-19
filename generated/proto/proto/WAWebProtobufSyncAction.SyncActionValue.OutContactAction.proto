@@ -1,4 +1,0 @@
-message OutContactAction {
-  optional bytes fullName = 1;
-  optional bytes firstName = 2;
-}

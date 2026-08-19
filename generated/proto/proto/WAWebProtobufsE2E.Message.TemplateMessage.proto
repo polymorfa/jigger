@@ -1,8 +1,0 @@
-message TemplateMessage {
-  optional FourRowTemplate fourRowTemplate = 1;
-  optional HydratedFourRowTemplate hydratedFourRowTemplate = 2;
-  optional ContextInfo contextInfo = 3;
-  optional HydratedFourRowTemplate hydratedTemplate = 4;
-  optional InteractiveMessage interactiveMessageTemplate = 5;
-  optional bytes templateId = 9;
-}

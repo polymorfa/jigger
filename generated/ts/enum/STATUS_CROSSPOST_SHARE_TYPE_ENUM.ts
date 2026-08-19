@@ -1,4 +1,0 @@
-export enum STATUSCROSSPOSTSHARETYPEENUM {
-  AUTO = 1,
-  MANUAL = 2,
-}

@@ -1,5 +1,0 @@
-message ApplicationData {
-  optional MetadataSyncNotification metadataSync = 1;
-  optional AIBotResponseMessage aiBotResponse = 2;
-  optional MessageHistoryDocumentMessage messageHistoryDocumentMessage = 3;
-}

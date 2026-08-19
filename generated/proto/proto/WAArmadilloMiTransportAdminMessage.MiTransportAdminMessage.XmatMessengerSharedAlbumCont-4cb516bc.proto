@@ -1,6 +1,0 @@
-message XmatMessengerSharedAlbumContentRemoval {
-  optional bytes sharedAlbumId = 1;
-  optional RemovedContentTuple removedContentMap = 2;
-  optional bytes removedContentCount = 3;
-  optional bytes albumTitle = 4;
-}

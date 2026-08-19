@@ -1,3 +1,0 @@
-message CompanionCommitment {
-  optional bytes hash = 1;
-}

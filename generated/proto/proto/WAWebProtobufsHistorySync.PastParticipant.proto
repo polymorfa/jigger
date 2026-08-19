@@ -1,5 +1,0 @@
-message PastParticipant {
-  optional bytes userJid = 1;
-  optional bytes leaveReason = 2;
-  optional bytes leaveTs = 3;
-}

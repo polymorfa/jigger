@@ -1,4 +1,0 @@
-message Body {
-  optional bytes text = 1;
-  optional bytes format = 2;
-}

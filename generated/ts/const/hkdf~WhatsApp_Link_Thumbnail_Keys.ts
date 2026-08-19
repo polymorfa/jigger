@@ -1,1 +1,0 @@
-export const HkdfWhatsAppLinkThumbnailKeys = "WhatsApp Link Thumbnail Keys" as const

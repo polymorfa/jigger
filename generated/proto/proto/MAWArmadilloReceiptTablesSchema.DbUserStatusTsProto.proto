@@ -1,4 +1,0 @@
-message DbUserStatusTsProto {
-  optional bytes deliveredTs = 1;
-  optional bytes readTs = 2;
-}

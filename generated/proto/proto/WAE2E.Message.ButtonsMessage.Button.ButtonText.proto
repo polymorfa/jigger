@@ -1,3 +1,0 @@
-message ButtonText {
-  optional bytes displayText = 1;
-}

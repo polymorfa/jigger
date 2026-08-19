@@ -1,4 +1,0 @@
-message BotMemoryFact {
-  optional bytes fact = 1;
-  optional bytes factId = 2;
-}

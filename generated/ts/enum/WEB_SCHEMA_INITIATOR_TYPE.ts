@@ -1,5 +1,0 @@
-export enum WEBSCHEMAINITIATORTYPE {
-  MAIN = 1,
-  WEB_WORKER = 2,
-  SERVICE_WORKER = 3,
-}

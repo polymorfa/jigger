@@ -1,5 +1,0 @@
-type DEVICEJIDDEVICEJID string
-
-const (
-	DEVICEJIDDEVICEJIDTypeName DEVICEJIDDEVICEJID = "DeviceJid|DeviceJid"
-)

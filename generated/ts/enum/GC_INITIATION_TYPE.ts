@@ -1,7 +1,0 @@
-export enum GCINITIATIONTYPE {
-  ONE_ON_ONE_TO_GC_UPGRADE = 0,
-  ADHOC = 1,
-  LINKED = 2,
-  CALL_LINK = 3,
-  VOICE_CHAT = 4,
-}

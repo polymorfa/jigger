@@ -1,3 +1,0 @@
-message CompanionMetaNonceFetchResponse {
-  optional bytes nonce = 1;
-}

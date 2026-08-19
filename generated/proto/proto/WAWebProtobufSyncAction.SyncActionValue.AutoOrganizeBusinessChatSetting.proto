@@ -1,3 +1,0 @@
-message AutoOrganizeBusinessChatSetting {
-  optional bytes autoOrganize = 1;
-}

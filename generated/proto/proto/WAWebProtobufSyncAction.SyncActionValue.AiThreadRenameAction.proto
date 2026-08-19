@@ -1,3 +1,0 @@
-message AiThreadRenameAction {
-  optional bytes newTitle = 1;
-}

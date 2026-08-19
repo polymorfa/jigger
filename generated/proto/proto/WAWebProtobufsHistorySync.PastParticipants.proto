@@ -1,4 +1,0 @@
-message PastParticipants {
-  optional bytes groupJid = 1;
-  optional PastParticipant pastParticipants = 2;
-}

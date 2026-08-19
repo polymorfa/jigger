@@ -1,3 +1,0 @@
-message BotQuotaMetadata {
-  optional BotFeatureQuotaMetadata botFeatureQuotaMetadata = 1;
-}

@@ -1,2 +1,0 @@
-// ParseMessageDeliverPaidPartnershipContentMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverPaidPartnershipContentMixin(n *waBinary.Node) (*MessageDeliverPaidPartnershipContentMixin, error)

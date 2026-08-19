@@ -1,8 +1,0 @@
-message EventLocation {
-  optional bytes degreesLatitude = 1;
-  optional bytes degreesLongitude = 2;
-  optional bytes name = 3;
-  optional bytes address = 4;
-  optional bytes url = 5;
-  optional bytes jpegThumbnail = 6;
-}

@@ -1,3 +1,0 @@
-message AndroidUnsupportedActions {
-  optional bytes allowed = 1;
-}

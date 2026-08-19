@@ -1,4 +1,0 @@
-export enum ESRSENDRESULTTYPE {
-  SUCCESS = 1,
-  ERROR = 2,
-}

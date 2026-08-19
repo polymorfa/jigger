@@ -1,3 +1,0 @@
-message AIRichResponseUnifiedResponse {
-  optional bytes data = 1;
-}

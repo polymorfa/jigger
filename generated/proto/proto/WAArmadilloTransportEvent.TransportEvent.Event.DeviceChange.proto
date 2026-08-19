@@ -1,6 +1,0 @@
-message DeviceChange {
-  optional bytes type = 1;
-  optional bytes deviceName = 2;
-  optional bytes devicePlatform = 3;
-  optional bytes deviceModel = 4;
-}

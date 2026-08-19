@@ -1,3 +1,0 @@
-message GroupMembershipAddModeChanged {
-  optional bytes mode = 1;
-}

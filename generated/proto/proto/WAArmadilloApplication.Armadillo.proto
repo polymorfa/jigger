@@ -1,4 +1,0 @@
-message Armadillo {
-  optional Payload payload = 1;
-  optional Metadata metadata = 2;
-}

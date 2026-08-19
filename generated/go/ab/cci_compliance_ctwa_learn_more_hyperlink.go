@@ -1,2 +1,0 @@
-// ABCciComplianceCtwaLearnMoreHyperlink is A/B property 25366 (string), default "https://faq.whatsapp.com/785493319976156/".
-const ABCciComplianceCtwaLearnMoreHyperlink = "cci_compliance_ctwa_learn_more_hyperlink"

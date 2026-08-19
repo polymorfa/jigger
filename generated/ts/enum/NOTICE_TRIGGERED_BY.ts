@@ -1,6 +1,0 @@
-export enum NOTICETRIGGEREDBY {
-  AUTO_START = 0,
-  BANNER = 1,
-  DEEP_LINK = 2,
-  JUST_IN_TIME = 3,
-}

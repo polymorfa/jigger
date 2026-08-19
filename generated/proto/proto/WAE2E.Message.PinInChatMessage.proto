@@ -1,5 +1,0 @@
-message PinInChatMessage {
-  optional bytes key = 1;
-  optional bytes type = 2;
-  optional bytes senderTimestampMs = 3;
-}

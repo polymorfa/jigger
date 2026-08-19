@@ -1,6 +1,0 @@
-message ExternalShare {
-  optional bytes actionUrl = 1;
-  optional bytes source = 2;
-  optional bytes duration = 3;
-  optional bytes actionFallbackUrl = 4;
-}

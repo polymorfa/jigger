@@ -1,9 +1,0 @@
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ENUMCITYCOUNTRYCUSTOMLOCATIONNEIGHBORHOODREGIONZIP {
-    CITY,
-    COUNTRY,
-    CUSTOMLOCATION,
-    NEIGHBORHOOD,
-    REGION,
-    ZIP,
-}

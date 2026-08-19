@@ -1,5 +1,0 @@
-message HSMLocalizableParameter {
-  optional bytes default = 1;
-  optional HSMCurrency currency = 2;
-  optional HSMDateTime dateTime = 3;
-}

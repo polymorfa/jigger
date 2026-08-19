@@ -1,4 +1,0 @@
-export enum ENGAGEMENTCARDTYPE {
-  MID_CARD = 1,
-  END_CARD = 2,
-}

@@ -1,3 +1,0 @@
-message PinAction {
-  optional bytes pinned = 1;
-}

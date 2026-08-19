@@ -1,4 +1,0 @@
-export enum BACKUPNETWORKSETTING {
-  WIFI_ONLY = 0,
-  WIFI_OR_CELLULAR = 1,
-}

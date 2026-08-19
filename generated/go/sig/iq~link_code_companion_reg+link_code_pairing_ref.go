@@ -1,2 +1,0 @@
-// ParseMdCompanionHelloResponseNotifyCompanion matches <iq>. Response to MdCompanionHello.
-func ParseMdCompanionHelloResponseNotifyCompanion(n *waBinary.Node) (*MdCompanionHelloResponseNotifyCompanion, error)

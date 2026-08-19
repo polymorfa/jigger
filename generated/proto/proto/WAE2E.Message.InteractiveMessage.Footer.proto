@@ -1,5 +1,0 @@
-message Footer {
-  optional bytes text = 1;
-  optional AudioMessage audioMessage = 2;
-  optional bytes hasMediaAttachment = 3;
-}

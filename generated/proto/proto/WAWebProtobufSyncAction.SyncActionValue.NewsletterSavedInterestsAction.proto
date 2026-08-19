@@ -1,3 +1,0 @@
-message NewsletterSavedInterestsAction {
-  optional bytes newsletterSavedInterests = 1;
-}

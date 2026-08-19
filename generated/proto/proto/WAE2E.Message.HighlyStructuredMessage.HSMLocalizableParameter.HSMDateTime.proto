@@ -1,4 +1,0 @@
-message HSMDateTime {
-  optional HSMDateTimeComponent component = 1;
-  optional HSMDateTimeUnixEpoch unixEpoch = 2;
-}

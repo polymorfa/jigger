@@ -1,8 +1,0 @@
-export enum PROFILEPICTURETYPE {
-  PHOTO_CAMERA = 1,
-  PHOTO_UPLOAD = 2,
-  WEB_SEARCH = 3,
-  EMOJI = 4,
-  STICKER = 5,
-  REMOVE_PHOTO = 6,
-}

@@ -1,1 +1,0 @@
-pub const HKDF_WHATS_APP_HISTORY_KEYS: &str = "WhatsApp History Keys";

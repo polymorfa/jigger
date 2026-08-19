@@ -1,5 +1,0 @@
-export enum VOTINGPHASES {
-  JUST_VOTED = "JUST_VOTED",
-  RESULTS = "RESULTS",
-  VOTING = "VOTING",
-}

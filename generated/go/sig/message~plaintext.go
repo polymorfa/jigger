@@ -1,2 +1,0 @@
-// ParseMessageDeliverNewsletterMediaMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverNewsletterMediaMixin(n *waBinary.Node) (*MessageDeliverNewsletterMediaMixin, error)

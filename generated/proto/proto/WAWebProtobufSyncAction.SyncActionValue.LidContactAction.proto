@@ -1,5 +1,0 @@
-message LidContactAction {
-  optional bytes fullName = 1;
-  optional bytes firstName = 2;
-  optional bytes username = 3;
-}

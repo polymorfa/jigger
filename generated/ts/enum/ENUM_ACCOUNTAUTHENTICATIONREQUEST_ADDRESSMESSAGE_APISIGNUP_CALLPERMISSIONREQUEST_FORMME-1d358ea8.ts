@@ -1,9 +1,0 @@
-export enum ENUMACCOUNTAUTHENTICATIONREQUESTADDRESSMESSAGEAPISIGNUPCALLPERMISSIONREQUESTFORMMESSAGEGALAXYMESSAGEMENUOPTIONS {
-  ACCOUNT_AUTHENTICATION_REQUEST = "account_authentication_request",
-  ADDRESS_MESSAGE = "address_message",
-  API_SIGNUP = "api_signup",
-  CALL_PERMISSION_REQUEST = "call_permission_request",
-  FORM_MESSAGE = "form_message",
-  GALAXY_MESSAGE = "galaxy_message",
-  MENU_OPTIONS = "menu_options",
-}

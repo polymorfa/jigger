@@ -1,5 +1,0 @@
-export enum CHATSFOLDERTYPE {
-  INBOX = 1,
-  ARCHIVED = 2,
-  BUSINESS_FOLDER = 3,
-}

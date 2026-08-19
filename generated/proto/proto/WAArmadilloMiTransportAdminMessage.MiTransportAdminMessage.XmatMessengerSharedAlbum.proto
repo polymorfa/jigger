@@ -1,3 +1,0 @@
-message XmatMessengerSharedAlbum {
-  optional bytes xmaDataclass = 1;
-}

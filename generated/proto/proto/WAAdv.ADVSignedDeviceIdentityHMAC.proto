@@ -1,5 +1,0 @@
-message ADVSignedDeviceIdentityHMAC {
-  optional bytes details = 1;
-  optional bytes hmac = 2;
-  optional bytes accountType = 3;
-}

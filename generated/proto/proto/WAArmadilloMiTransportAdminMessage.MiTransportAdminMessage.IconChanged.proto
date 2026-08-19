@@ -1,3 +1,0 @@
-message IconChanged {
-  optional bytes threadIcon = 1;
-}

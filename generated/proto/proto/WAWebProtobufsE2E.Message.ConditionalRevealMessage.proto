@@ -1,6 +1,0 @@
-message ConditionalRevealMessage {
-  optional bytes encPayload = 1;
-  optional bytes encIv = 2;
-  optional bytes conditionalRevealMessageType = 3;
-  optional bytes revealKeyId = 4;
-}

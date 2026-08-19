@@ -1,1 +1,0 @@
-pub const HKDF_WHATS_APP_MEDIA_RETRY_NOTIFICATION: &str = "WhatsApp Media Retry Notification";

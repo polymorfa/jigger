@@ -1,6 +1,0 @@
-message SyncActionData {
-  optional bytes index = 1;
-  optional SyncActionValue value = 2;
-  optional bytes padding = 3;
-  optional bytes version = 4;
-}

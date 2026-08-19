@@ -1,9 +1,0 @@
-message PendingKeyExchange {
-  optional bytes sequence = 1;
-  optional bytes localBaseKey = 2;
-  optional bytes localBaseKeyPrivate = 3;
-  optional bytes localRatchetKey = 4;
-  optional bytes localRatchetKeyPrivate = 5;
-  optional bytes localIdentityKey = 7;
-  optional bytes localIdentityKeyPrivate = 8;
-}

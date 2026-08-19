@@ -1,5 +1,0 @@
-message SyncKeyFingerprint {
-  optional bytes currentIndex = 1;
-  optional bytes deviceIndexes = 2;
-  optional bytes rawId = 3;
-}

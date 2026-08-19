@@ -1,5 +1,0 @@
-export enum PSALINKOPENRESULT {
-  SUCCESS = 1,
-  CANCEL = 2,
-  ERROR = 3,
-}

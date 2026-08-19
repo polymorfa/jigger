@@ -1,3 +1,0 @@
-message CompanionCanonicalUserNonceFetchRequest {
-  optional bytes registrationTraceId = 1;
-}

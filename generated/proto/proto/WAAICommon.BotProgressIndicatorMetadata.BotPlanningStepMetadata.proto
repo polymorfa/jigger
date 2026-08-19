@@ -1,9 +1,0 @@
-message BotPlanningStepMetadata {
-  optional bytes statusTitle = 1;
-  optional bytes statusBody = 2;
-  optional BotPlanningSearchSourcesMetadata sourcesMetadata = 3;
-  optional bytes status = 4;
-  optional bytes isReasoning = 5;
-  optional bytes isEnhancedSearch = 6;
-  optional BotPlanningStepSectionMetadata sections = 7;
-}

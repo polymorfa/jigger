@@ -1,6 +1,0 @@
-message WebInfo {
-  optional bytes refToken = 1;
-  optional bytes version = 2;
-  optional WebdPayload webdPayload = 3;
-  optional bytes webSubPlatform = 4;
-}

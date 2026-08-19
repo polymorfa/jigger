@@ -1,4 +1,0 @@
-export enum PTTTRIGGERTYPE {
-  MANUAL = 0,
-  SEQUENTIAL = 1,
-}

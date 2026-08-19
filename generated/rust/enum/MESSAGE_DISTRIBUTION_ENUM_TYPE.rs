@@ -1,7 +1,0 @@
-#[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MESSAGEDISTRIBUTIONENUMTYPE {
-    REGULARMESSAGE = 0,
-    DIRECTMESSAGE = 1,
-    SENDERKEYDISTRIBUTIONMESSAGE = 2,
-}

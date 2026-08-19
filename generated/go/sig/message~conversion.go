@@ -1,2 +1,0 @@
-// ParseMessageDeliverConversionRecipientStatusMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverConversionRecipientStatusMixin(n *waBinary.Node) (*MessageDeliverConversionRecipientStatusMixin, error)

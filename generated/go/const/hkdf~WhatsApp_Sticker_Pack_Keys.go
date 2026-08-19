@@ -1,1 +1,0 @@
-const HkdfWhatsAppStickerPackKeys = "WhatsApp Sticker Pack Keys"

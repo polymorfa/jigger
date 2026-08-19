@@ -1,9 +1,0 @@
-message CollectionVersionsTableSchemaProto {
-  optional bytes collection = 1;
-  optional bytes version = 2;
-  optional bytes state = 3;
-  optional bytes finiteFailureStartTime = 4;
-  optional bytes ltHash = 5;
-  optional bytes isCollectionInMacMismatchFatal = 6;
-  optional bytes isCollectionLthashInconsistent = 7;
-}

@@ -1,2 +1,0 @@
-/** A/B property 22280 (bool), default true. */
-export const ABChannelsInviteContactsToFollowReceiverInvalidMessageDropEndabled = 'channels_invite_contacts_to_follow_receiver_invalid_message_drop_endabled' as const

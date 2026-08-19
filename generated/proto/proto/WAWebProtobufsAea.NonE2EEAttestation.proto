@@ -1,3 +1,0 @@
-message NonE2EEAttestation {
-  optional bytes accountType = 1;
-}

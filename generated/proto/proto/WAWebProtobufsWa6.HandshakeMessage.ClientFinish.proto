@@ -1,7 +1,0 @@
-message ClientFinish {
-  optional bytes static = 1;
-  optional bytes payload = 2;
-  optional bytes extendedCiphertext = 3;
-  optional bytes paddedBytes = 4;
-  optional bytes simulateXxkemFs = 5;
-}

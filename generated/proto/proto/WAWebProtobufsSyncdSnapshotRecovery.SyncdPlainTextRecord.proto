@@ -1,5 +1,0 @@
-message SyncdPlainTextRecord {
-  optional bytes value = 1;
-  optional bytes keyId = 2;
-  optional bytes mac = 3;
-}

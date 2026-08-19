@@ -1,4 +1,0 @@
-message PollAddOptionMessage {
-  optional bytes pollCreationMessageKey = 1;
-  optional Option addOption = 2;
-}

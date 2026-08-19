@@ -1,5 +1,0 @@
-message RavenMessage {
-  optional bytes ephemeralType = 1;
-  optional bytes imageMessage = 2;
-  optional bytes videoMessage = 3;
-}

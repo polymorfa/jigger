@@ -1,4 +1,0 @@
-message XmatThreadQuickReaction {
-  optional bytes threadQuickReactionEmoji = 1;
-  optional bytes threadQuickReactionInstructionKeyId = 2;
-}

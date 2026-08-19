@@ -1,3 +1,0 @@
-message BusinessBroadcastAssociationAction {
-  optional bytes deleted = 1;
-}

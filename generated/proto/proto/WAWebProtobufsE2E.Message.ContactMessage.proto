@@ -1,6 +1,0 @@
-message ContactMessage {
-  optional bytes displayName = 1;
-  optional bytes vcard = 16;
-  optional ContextInfo contextInfo = 17;
-  optional bytes isSelfContact = 18;
-}

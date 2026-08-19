@@ -1,4 +1,0 @@
-message URLButton {
-  optional HighlyStructuredMessage displayText = 1;
-  optional HighlyStructuredMessage url = 2;
-}

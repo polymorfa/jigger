@@ -1,7 +1,0 @@
-message CreateBackupOutput {
-  optional DeviceOutput device = 1;
-  optional VirtualDeviceOutput virtualDevice = 2;
-  optional Epoch0Output epoch0 = 3;
-  optional bytes mailboxRootKey = 4;
-  optional bytes error = 5;
-}

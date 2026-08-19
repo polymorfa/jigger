@@ -1,4 +1,0 @@
-export enum ORDERSIGNALTYPE {
-  CREATED = 0,
-  UPDATED = 1,
-}

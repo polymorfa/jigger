@@ -1,6 +1,0 @@
-message WebNotificationsInfo {
-  optional bytes timestamp = 2;
-  optional bytes unreadChats = 3;
-  optional bytes notifyMessageCount = 4;
-  optional WebMessageInfo notifyMessages = 5;
-}

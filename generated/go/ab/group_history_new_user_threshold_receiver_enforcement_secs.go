@@ -1,2 +1,0 @@
-// ABGroupHistoryNewUserThresholdReceiverEnforcementSecs is A/B property 30345 (int), default "2592e3".
-const ABGroupHistoryNewUserThresholdReceiverEnforcementSecs = "group_history_new_user_threshold_receiver_enforcement_secs"

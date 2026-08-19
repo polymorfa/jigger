@@ -1,3 +1,0 @@
-message SyncdVersion {
-  optional bytes version = 1;
-}

@@ -1,4 +1,0 @@
-message Option {
-  optional bytes optionName = 1;
-  optional bytes optionHash = 2;
-}

@@ -1,2 +1,0 @@
-// WAWebMexNewsletterAddPaidPartnershipLabelJobMutation is the persisted mutation. Variables: message_type, newsletter_id, server_id
-const MexWAWebMexNewsletterAddPaidPartnershipLabelJobMutation = "26102375079404865"

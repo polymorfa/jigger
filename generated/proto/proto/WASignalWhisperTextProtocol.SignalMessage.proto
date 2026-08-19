@@ -1,6 +1,0 @@
-message SignalMessage {
-  optional bytes ratchetKey = 1;
-  optional bytes counter = 2;
-  optional bytes previousCounter = 3;
-  optional bytes ciphertext = 4;
-}

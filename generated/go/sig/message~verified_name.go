@@ -1,2 +1,0 @@
-// ParseMessageDeliverVerifiedNameCertificateMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverVerifiedNameCertificateMixin(n *waBinary.Node) (*MessageDeliverVerifiedNameCertificateMixin, error)

@@ -1,8 +1,0 @@
-message NoteReplyMessage {
-  optional bytes noteId = 1;
-  optional bytes noteText = 2;
-  optional bytes noteTimestampMs = 3;
-  optional bytes textContent = 4;
-  optional bytes stickerContent = 5;
-  optional bytes videoContent = 6;
-}

@@ -1,5 +1,0 @@
-export enum WAADACCOUNTELIGIBILITY {
-  WA_ONLY = 1,
-  FB_ONLY = 2,
-  FB_OR_WA = 3,
-}

@@ -1,4 +1,0 @@
-message AIRichResponseLatexMetadata {
-  optional bytes text = 1;
-  optional AIRichResponseLatexExpression expressions = 2;
-}

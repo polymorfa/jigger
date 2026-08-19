@@ -1,4 +1,0 @@
-message NicknameChanged {
-  optional bytes targetUserId = 1;
-  optional bytes nickname = 2;
-}

@@ -1,7 +1,0 @@
-message ExtendedContentMessageWithSear {
-  optional bytes searId = 1;
-  optional bytes payload = 2;
-  optional bytes nativeUrl = 3;
-  optional bytes searAssociatedMessage = 4;
-  optional bytes searSentWithMessageId = 5;
-}

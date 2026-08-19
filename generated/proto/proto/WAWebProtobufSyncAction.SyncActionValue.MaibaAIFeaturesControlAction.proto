@@ -1,4 +1,0 @@
-message MaibaAIFeaturesControlAction {
-  optional bytes aiFeatureStatus = 1;
-  optional bytes aiReplyMode = 2;
-}

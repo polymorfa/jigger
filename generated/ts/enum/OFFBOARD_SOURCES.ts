@@ -1,4 +1,0 @@
-export enum OFFBOARDSOURCES {
-  IN_APP_SETTING = 1,
-  OS_SETTING = 2,
-}

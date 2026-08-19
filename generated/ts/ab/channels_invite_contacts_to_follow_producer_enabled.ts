@@ -1,2 +1,0 @@
-/** A/B property 16789 (bool), default false. */
-export const ABChannelsInviteContactsToFollowProducerEnabled = 'channels_invite_contacts_to_follow_producer_enabled' as const

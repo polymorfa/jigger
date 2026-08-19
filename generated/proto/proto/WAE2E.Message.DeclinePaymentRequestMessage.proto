@@ -1,3 +1,0 @@
-message DeclinePaymentRequestMessage {
-  optional bytes key = 1;
-}

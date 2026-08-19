@@ -1,5 +1,0 @@
-message PollUpdateMessage {
-  optional bytes pollCreationMessageKey = 1;
-  optional PollEncValue vote = 2;
-  optional PollEncValue addOption = 3;
-}

@@ -1,4 +1,0 @@
-export enum MDBOOTSTRAPPAYLOADTYPE {
-  CRITICAL = 1,
-  NON_CRITICAL = 2,
-}

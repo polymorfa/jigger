@@ -1,3 +1,0 @@
-export enum CHATFILTERTARGETSCREEN {
-  CHAT_LIST = 0,
-}

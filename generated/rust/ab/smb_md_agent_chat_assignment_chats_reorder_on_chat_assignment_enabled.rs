@@ -1,2 +1,0 @@
-/// A/B property 2787 (bool), default false.
-pub const AB_SMB_MD_AGENT_CHAT_ASSIGNMENT_CHATS_REORDER_ON_CHAT_ASSIGNMENT_ENABLED: &str = "smb_md_agent_chat_assignment_chats_reorder_on_chat_assignment_enabled";

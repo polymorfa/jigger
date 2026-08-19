@@ -1,3 +1,0 @@
-message DeleteChatAction {
-  optional SyncActionMessageRange messageRange = 1;
-}

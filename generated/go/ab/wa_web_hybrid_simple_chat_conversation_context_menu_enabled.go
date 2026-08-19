@@ -1,2 +1,0 @@
-// ABWaWebHybridSimpleChatConversationContextMenuEnabled is A/B property 17479 (bool), default false.
-const ABWaWebHybridSimpleChatConversationContextMenuEnabled = "wa_web_hybrid_simple_chat_conversation_context_menu_enabled"

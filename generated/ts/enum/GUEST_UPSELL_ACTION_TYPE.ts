@@ -1,6 +1,0 @@
-export enum GUESTUPSELLACTIONTYPE {
-  VIEW = 1,
-  CLICK = 2,
-  DISMISS = 3,
-  DOWNLOAD_CTA_CLICK = 4,
-}

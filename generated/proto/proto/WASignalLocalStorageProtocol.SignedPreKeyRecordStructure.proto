@@ -1,7 +1,0 @@
-message SignedPreKeyRecordStructure {
-  optional bytes id = 1;
-  optional bytes publicKey = 2;
-  optional bytes privateKey = 3;
-  optional bytes signature = 4;
-  optional bytes timestamp = 5;
-}

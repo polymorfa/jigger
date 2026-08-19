@@ -1,4 +1,0 @@
-message PollUpdateAdminMessage {
-  optional bytes pollCreationMessageId = 1;
-  optional bytes pollUpdateMessageId = 2;
-}

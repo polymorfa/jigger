@@ -1,7 +1,0 @@
-message BotReminderMetadata {
-  optional bytes requestMessageKey = 1;
-  optional bytes action = 2;
-  optional bytes name = 3;
-  optional bytes nextTriggerTimestamp = 4;
-  optional bytes frequency = 5;
-}

@@ -1,3 +1,0 @@
-message AISubscriptionUpsellMetadata {
-  optional bytes requestType = 1;
-}

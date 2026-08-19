@@ -1,6 +1,0 @@
-message UnauthenticatedBusinessMetadata {
-  optional bytes businessName = 1;
-  optional bytes businessCategory = 2;
-  optional bytes businessIsOpen = 3;
-  optional bytes businessIsOpenSnapshotMs = 4;
-}

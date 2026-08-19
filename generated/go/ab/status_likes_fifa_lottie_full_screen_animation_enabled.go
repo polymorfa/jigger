@@ -1,2 +1,0 @@
-// ABStatusLikesFifaLottieFullScreenAnimationEnabled is A/B property 27054 (bool), default false.
-const ABStatusLikesFifaLottieFullScreenAnimationEnabled = "status_likes_fifa_lottie_full_screen_animation_enabled"

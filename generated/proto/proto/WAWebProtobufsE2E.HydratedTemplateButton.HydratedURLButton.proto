@@ -1,6 +1,0 @@
-message HydratedURLButton {
-  optional bytes displayText = 1;
-  optional bytes url = 2;
-  optional bytes consentedUsersUrl = 3;
-  optional bytes webviewPresentation = 4;
-}

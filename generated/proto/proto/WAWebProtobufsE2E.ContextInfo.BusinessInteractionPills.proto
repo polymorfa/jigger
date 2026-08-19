@@ -1,8 +1,0 @@
-message BusinessInteractionPills {
-  optional bytes businessJid = 1;
-  optional Pill pills = 2;
-  optional bytes entryPoint = 3;
-  optional bytes signedPayload = 4;
-  optional bytes signatureEnvelope = 5;
-  optional UnauthenticatedBusinessMetadata unauthenticatedBusinessMetadata = 6;
-}

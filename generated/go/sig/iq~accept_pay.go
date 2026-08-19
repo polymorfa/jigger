@@ -1,2 +1,0 @@
-// ParseAccountSetPaymentsTOSv3ResponseSuccess matches <iq>. Response to AccountSetPaymentsTOSv3.
-func ParseAccountSetPaymentsTOSv3ResponseSuccess(n *waBinary.Node) (*AccountSetPaymentsTOSv3ResponseSuccess, error)

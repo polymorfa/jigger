@@ -1,2 +1,0 @@
-// ParseMessageDeliverWireSizePaddingMixin matches <message>. Server-initiated; nothing sends it.
-func ParseMessageDeliverWireSizePaddingMixin(n *waBinary.Node) (*MessageDeliverWireSizePaddingMixin, error)

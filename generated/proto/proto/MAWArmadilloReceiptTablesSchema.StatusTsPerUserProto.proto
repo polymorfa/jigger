@@ -1,4 +1,0 @@
-message StatusTsPerUserProto {
-  optional bytes userJid = 1;
-  optional DbUserStatusTsProto dbUserStatusTs = 2;
-}

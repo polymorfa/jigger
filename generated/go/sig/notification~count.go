@@ -1,2 +1,0 @@
-// ParsePreKeysNotificationLowCountLowCountLegacyOnlyMixin matches <notification>. Server-initiated; nothing sends it.
-func ParsePreKeysNotificationLowCountLowCountLegacyOnlyMixin(n *waBinary.Node) (*PreKeysNotificationLowCountLowCountLegacyOnlyMixin, error)

@@ -1,6 +1,0 @@
-export enum PTTWAVEFORMRESULT {
-  SUCCESS = 1,
-  ALL_ZEROES = 2,
-  ALL_ONES = 3,
-  MISSING = 4,
-}

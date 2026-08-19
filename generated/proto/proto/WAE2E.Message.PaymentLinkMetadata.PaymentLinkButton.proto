@@ -1,3 +1,0 @@
-message PaymentLinkButton {
-  optional bytes displayText = 1;
-}

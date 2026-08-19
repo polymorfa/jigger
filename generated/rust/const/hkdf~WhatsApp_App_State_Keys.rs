@@ -1,1 +1,0 @@
-pub const HKDF_WHATS_APP_APP_STATE_KEYS: &str = "WhatsApp App State Keys";

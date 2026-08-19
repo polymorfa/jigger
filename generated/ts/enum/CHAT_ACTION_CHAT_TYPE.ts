@@ -1,7 +1,0 @@
-export enum CHATACTIONCHATTYPE {
-  INDIVIDUAL = 1,
-  GROUP = 2,
-  BUSINESS = 3,
-  BROADCAST_LIST = 4,
-  CHANNEL = 5,
-}

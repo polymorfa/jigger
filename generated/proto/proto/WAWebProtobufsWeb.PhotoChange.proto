@@ -1,5 +1,0 @@
-message PhotoChange {
-  optional bytes oldPhoto = 1;
-  optional bytes newPhoto = 2;
-  optional bytes newPhotoId = 3;
-}

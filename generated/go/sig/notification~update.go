@@ -1,2 +1,0 @@
-// ParseUsyncNotificationUpdateDevicesNotificationMixin matches <notification>. Server-initiated; nothing sends it.
-func ParseUsyncNotificationUpdateDevicesNotificationMixin(n *waBinary.Node) (*UsyncNotificationUpdateDevicesNotificationMixin, error)

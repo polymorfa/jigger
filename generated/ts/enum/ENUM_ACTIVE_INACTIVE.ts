@@ -1,4 +1,0 @@
-export enum ENUMACTIVEINACTIVE {
-  ACTIVE = "ACTIVE",
-  INACTIVE = "INACTIVE",
-}

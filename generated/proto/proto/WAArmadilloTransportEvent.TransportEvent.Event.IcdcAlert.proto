@@ -1,3 +1,0 @@
-message IcdcAlert {
-  optional bytes type = 1;
-}

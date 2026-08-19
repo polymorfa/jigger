@@ -1,7 +1,0 @@
-export enum ABOUTENTRYPOINTTYPE {
-  SETTINGS = 1,
-  PROFILE = 2,
-  ME_TAB = 3,
-  DEEP_LINK = 4,
-  ONE_ON_ONE_CHAT = 5,
-}

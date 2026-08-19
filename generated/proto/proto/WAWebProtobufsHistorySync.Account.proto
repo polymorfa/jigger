@@ -1,6 +1,0 @@
-message Account {
-  optional bytes lid = 1;
-  optional bytes username = 2;
-  optional bytes countryCode = 3;
-  optional bytes isUsernameDeleted = 4;
-}

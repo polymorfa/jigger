@@ -1,8 +1,0 @@
-message ContactAction {
-  optional bytes fullName = 1;
-  optional bytes firstName = 2;
-  optional bytes lidJid = 3;
-  optional bytes saveOnPrimaryAddressbook = 4;
-  optional bytes pnJid = 5;
-  optional bytes username = 6;
-}

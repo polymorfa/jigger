@@ -1,5 +1,0 @@
-message ProductListInfo {
-  optional ProductSection productSections = 1;
-  optional ProductListHeaderImage headerImage = 2;
-  optional bytes businessOwnerJid = 3;
-}

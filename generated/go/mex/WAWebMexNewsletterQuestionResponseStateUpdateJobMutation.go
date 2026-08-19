@@ -1,2 +1,0 @@
-// WAWebMexNewsletterQuestionResponseStateUpdateJobMutation is the persisted mutation. Variables: newsletter_id, response_server_id, server_id, state
-const MexWAWebMexNewsletterQuestionResponseStateUpdateJobMutation = "24636260219323456"

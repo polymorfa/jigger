@@ -1,1 +1,0 @@
-pub const HKDF_WHATS_APP_LINK_THUMBNAIL_KEYS: &str = "WhatsApp Link Thumbnail Keys";

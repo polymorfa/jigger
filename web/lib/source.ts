@@ -13,7 +13,10 @@ export const REF_COOKIE = "jigger_ref";
 
 // owner/repo and default ref come from env (NEXT_PUBLIC_* so the client sees them).
 const ENV_REPO = (process.env.NEXT_PUBLIC_JIGGER_REPO ?? "").trim();
-export const DEFAULT_REF = (process.env.NEXT_PUBLIC_JIGGER_REF ?? "main").trim() || "main";
+// The payload lives on its own branch, not on `main`. `main` carries code; a
+// revision's facts, modules and symbols are 65 MB and are replaced wholesale
+// each release, which is not a thing to keep in the branch people clone.
+export const DEFAULT_REF = (process.env.NEXT_PUBLIC_JIGGER_REF ?? "data").trim() || "data";
 
 export function githubConfigured(): boolean {
   return /^[^/]+\/[^/]+$/.test(ENV_REPO);
@@ -41,7 +44,28 @@ export function sourceLabel(s: DataSource): string {
   return s.kind === "local" ? "local snapshot" : `github ${s.owner}/${s.repo} @ ${s.ref}`;
 }
 
-// Raw URL for the generated IR at a github source.
-export function rawIrUrl(s: Extract<DataSource, { kind: "github" }>): string {
-  return `https://raw.githubusercontent.com/${s.owner}/${s.repo}/${s.ref}/generated/ir.json`;
+type Gh = Extract<DataSource, { kind: "github" }>;
+
+/** Raw URL for any file in the payload. */
+export function rawUrl(s: Gh, path: string): string {
+  return `https://raw.githubusercontent.com/${s.owner}/${s.repo}/${s.ref}/${path}`;
+}
+
+export function rawIrUrl(s: Gh): string {
+  return rawUrl(s, "ir.json");
+}
+
+/**
+ * Where a module's source and symbol table live in the payload.
+ *
+ * Fetched per page rather than bundled: the payload holds ~4,800 modules and a
+ * deployment that shipped all of them would carry 29 MB nobody asked for to
+ * serve the one file a reader opened.
+ */
+export function rawModuleUrl(s: Gh, name: string): string {
+  return rawUrl(s, `modules/${encodeURIComponent(name)}.js`);
+}
+
+export function rawSymbolsUrl(s: Gh, name: string): string {
+  return rawUrl(s, `symbols/${encodeURIComponent(name.replace(/\//g, "_"))}.json`);
 }

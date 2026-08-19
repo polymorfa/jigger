@@ -1,6 +1,0 @@
-message DeletedMessagesTableSchemaProto {
-  optional bytes author = 1;
-  optional bytes chat = 2;
-  optional bytes externalId = 3;
-  optional bytes reason = 4;
-}

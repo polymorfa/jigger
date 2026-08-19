@@ -1,3 +1,0 @@
-message CtwaPerCustomerDataSharingAction {
-  optional bytes isCtwaPerCustomerDataSharingEnabled = 1;
-}

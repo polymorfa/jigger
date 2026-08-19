@@ -1,2 +1,0 @@
-// ABWebHybridApplyLatestDbSchemaOptimizationEnabled is A/B property 23595 (bool), default false.
-const ABWebHybridApplyLatestDbSchemaOptimizationEnabled = "web_hybrid_apply_latest_db_schema_optimization_enabled"

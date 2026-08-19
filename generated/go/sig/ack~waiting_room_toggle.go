@@ -1,2 +1,0 @@
-// ParseVoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck matches <ack>. Server-initiated; nothing sends it.
-func ParseVoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck(n *waBinary.Node) (*VoipWaitingRoomToggleCallLinkResponseWaitingRoomToggleCallLinkAck, error)

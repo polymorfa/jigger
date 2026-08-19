@@ -1,7 +1,0 @@
-message Integral {
-  optional bytes fileSha256 = 1;
-  optional bytes mediaKey = 2;
-  optional bytes fileEncSha256 = 3;
-  optional bytes directPath = 4;
-  optional bytes mediaKeyTimestamp = 5;
-}

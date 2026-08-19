@@ -1,9 +1,0 @@
-message LinkPreviewHighQualityThumbnail {
-  optional bytes directPath = 1;
-  optional bytes thumbHash = 2;
-  optional bytes encThumbHash = 3;
-  optional bytes mediaKey = 4;
-  optional bytes mediaKeyTimestampMs = 5;
-  optional bytes thumbWidth = 6;
-  optional bytes thumbHeight = 7;
-}

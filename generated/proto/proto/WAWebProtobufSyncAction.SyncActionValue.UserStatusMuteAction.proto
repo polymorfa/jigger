@@ -1,3 +1,0 @@
-message UserStatusMuteAction {
-  optional bytes muted = 1;
-}

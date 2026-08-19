@@ -1,7 +1,0 @@
-message ChunkTableSchemaProto {
-  optional bytes plaintextHash = 1;
-  optional bytes blobData = 2;
-  optional bytes mimetype = 3;
-  optional bytes hashedPlaintextHash = 4;
-  optional bytes chunkId = 5;
-}

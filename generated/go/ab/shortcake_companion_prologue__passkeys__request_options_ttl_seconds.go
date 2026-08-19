@@ -1,2 +1,0 @@
-// ABShortcakeCompanionProloguePasskeysRequestOptionsTtlSeconds is A/B property 30662 (int), default 600.
-const ABShortcakeCompanionProloguePasskeysRequestOptionsTtlSeconds = "shortcake_companion_prologue__passkeys__request_options_ttl_seconds"

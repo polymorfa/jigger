@@ -1,5 +1,0 @@
-export enum WPBUJBENEFITSTATUS {
-  DISABLED = 1,
-  NOT_ACTIVE = 2,
-  ACTIVE = 3,
-}

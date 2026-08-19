@@ -1,4 +1,0 @@
-message SideBySideMetadata {
-  optional bytes primaryResponseId = 1;
-  optional bytes surveyCtaHasRendered = 2;
-}

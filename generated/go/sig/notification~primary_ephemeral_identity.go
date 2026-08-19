@@ -1,2 +1,0 @@
-// ParseMdSetPrimaryEphemeralIdentityNotificationRequest matches <notification>. Server-initiated; nothing sends it.
-func ParseMdSetPrimaryEphemeralIdentityNotificationRequest(n *waBinary.Node) (*MdSetPrimaryEphemeralIdentityNotificationRequest, error)

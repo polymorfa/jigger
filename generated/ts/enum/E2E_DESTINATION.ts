@@ -1,8 +1,0 @@
-export enum E2EDESTINATION {
-  INDIVIDUAL = 0,
-  GROUP = 1,
-  LIST = 2,
-  STATUS = 3,
-  CHANNEL = 4,
-  INTEROP = 5,
-}

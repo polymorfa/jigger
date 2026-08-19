@@ -1,7 +1,0 @@
-message InlineContact {
-  optional bytes pnJid = 1;
-  optional bytes lidJid = 2;
-  optional bytes fullName = 3;
-  optional bytes firstName = 4;
-  optional bytes username = 5;
-}

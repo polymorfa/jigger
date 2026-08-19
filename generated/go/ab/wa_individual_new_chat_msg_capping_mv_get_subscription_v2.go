@@ -1,2 +1,0 @@
-// ABWaIndividualNewChatMsgCappingMvGetSubscriptionV2 is A/B property 20667 (bool), default false.
-const ABWaIndividualNewChatMsgCappingMvGetSubscriptionV2 = "wa_individual_new_chat_msg_capping_mv_get_subscription_v2"

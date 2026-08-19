@@ -1,5 +1,0 @@
-message SyncdRecord {
-  optional SyncdIndex index = 1;
-  optional SyncdValue value = 2;
-  optional KeyId keyId = 3;
-}

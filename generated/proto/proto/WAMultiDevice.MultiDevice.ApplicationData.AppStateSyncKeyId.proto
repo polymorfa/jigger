@@ -1,3 +1,0 @@
-message AppStateSyncKeyId {
-  optional bytes keyId = 1;
-}

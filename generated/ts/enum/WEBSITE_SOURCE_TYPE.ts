@@ -1,4 +1,0 @@
-export enum WEBSITESOURCETYPE {
-  SOURCE_OTHER = 1,
-  SOURCE_INSTAGRAM = 2,
-}

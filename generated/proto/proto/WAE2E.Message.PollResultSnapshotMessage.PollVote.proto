@@ -1,4 +1,0 @@
-message PollVote {
-  optional bytes optionName = 1;
-  optional bytes optionVoteCount = 2;
-}

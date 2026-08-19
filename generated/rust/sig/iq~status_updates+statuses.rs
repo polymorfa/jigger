@@ -1,2 +1,0 @@
-/// Matches `<iq>`. Response to NewslettersGetNewsletterStatusUpdates.
-pub fn parse_newsletters_get_newsletter_status_updates_response_success(n: &Node) -> Option<NewslettersGetNewsletterStatusUpdatesResponseSuccess>

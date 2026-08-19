@@ -1,4 +1,0 @@
-message InteractiveMessageAction {
-  optional bytes type = 1;
-  optional bytes agmId = 2;
-}

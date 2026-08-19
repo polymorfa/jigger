@@ -1,6 +1,0 @@
-message Filter {
-  optional bytes filterName = 1;
-  optional FilterParameters parameters = 2;
-  optional bytes filterResult = 3;
-  optional bytes clientNotSupportedConfig = 4;
-}

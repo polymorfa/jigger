@@ -1,4 +1,0 @@
-message XmatAddParticipants {
-  optional bytes participantsAdded = 1;
-  optional bytes addedThroughJoinRequests = 2;
-}

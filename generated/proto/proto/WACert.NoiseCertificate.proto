@@ -1,4 +1,0 @@
-message NoiseCertificate {
-  optional bytes details = 1;
-  optional bytes signature = 2;
-}

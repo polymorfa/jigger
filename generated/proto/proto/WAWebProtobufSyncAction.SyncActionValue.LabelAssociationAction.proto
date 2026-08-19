@@ -1,4 +1,0 @@
-message LabelAssociationAction {
-  optional bytes labeled = 1;
-  optional bytes modelMetaData = 2;
-}

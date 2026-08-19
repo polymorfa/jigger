@@ -1,2 +1,0 @@
-// ParseWaffleGetCertificateResponseSuccess matches <iq>. Response to WaffleGetCertificate.
-func ParseWaffleGetCertificateResponseSuccess(n *waBinary.Node) (*WaffleGetCertificateResponseSuccess, error)

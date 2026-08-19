@@ -1,3 +1,0 @@
-message HistorySyncMessageAccessStatus {
-  optional bytes completeAccessGranted = 1;
-}

@@ -1,4 +1,0 @@
-message SyncAttachmentInterventionAction {
-  optional bytes messageKey = 1;
-  optional bytes interventionType = 2;
-}

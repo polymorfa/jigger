@@ -1,6 +1,0 @@
-message AIRichResponseDynamicMetadata {
-  optional bytes type = 1;
-  optional bytes version = 2;
-  optional bytes url = 3;
-  optional bytes loopCount = 4;
-}

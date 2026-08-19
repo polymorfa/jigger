@@ -1,6 +1,0 @@
-message AutoDownloadSettings {
-  optional bytes downloadImages = 1;
-  optional bytes downloadAudio = 2;
-  optional bytes downloadVideo = 3;
-  optional bytes downloadDocuments = 4;
-}

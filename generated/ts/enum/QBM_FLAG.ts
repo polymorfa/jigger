@@ -1,7 +1,0 @@
-export enum QBMFLAG {
-  OTHER = 0,
-  TRANSACTIONAL = 1,
-  PROMOTIONAL = 2,
-  OTP = 3,
-  MARKETING_MESSAGE_SMB = 4,
-}

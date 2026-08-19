@@ -1,6 +1,0 @@
-message PaidFeature {
-  optional bytes name = 1;
-  optional bytes enabled = 2;
-  optional bytes limit = 3;
-  optional bytes expirationTime = 4;
-}

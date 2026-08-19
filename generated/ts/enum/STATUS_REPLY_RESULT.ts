@@ -1,5 +1,0 @@
-export enum STATUSREPLYRESULT {
-  OK = 1,
-  CANCELLED = 2,
-  ERROR_UNKNOWN = 3,
-}

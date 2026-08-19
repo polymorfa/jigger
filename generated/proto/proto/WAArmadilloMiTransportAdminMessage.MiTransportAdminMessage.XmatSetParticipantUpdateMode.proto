@@ -1,5 +1,0 @@
-message XmatSetParticipantUpdateMode {
-  optional bytes participantUpdateMode = 1;
-  optional bytes setterId = 2;
-  optional bytes transportThreadFbid = 3;
-}

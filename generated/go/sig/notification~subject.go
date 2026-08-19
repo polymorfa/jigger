@@ -1,2 +1,0 @@
-// ParseGroupsSubjectChangeNotificationRequest matches <notification>. Server-initiated; nothing sends it.
-func ParseGroupsSubjectChangeNotificationRequest(n *waBinary.Node) (*GroupsSubjectChangeNotificationRequest, error)

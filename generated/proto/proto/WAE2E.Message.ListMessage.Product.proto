@@ -1,3 +1,0 @@
-message Product {
-  optional bytes productId = 1;
-}

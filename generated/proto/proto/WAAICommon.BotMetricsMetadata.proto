@@ -1,5 +1,0 @@
-message BotMetricsMetadata {
-  optional bytes destinationId = 1;
-  optional bytes destinationEntryPoint = 2;
-  optional bytes threadOrigin = 3;
-}

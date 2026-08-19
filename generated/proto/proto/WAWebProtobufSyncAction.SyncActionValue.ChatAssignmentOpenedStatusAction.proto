@@ -1,3 +1,0 @@
-message ChatAssignmentOpenedStatusAction {
-  optional bytes chatOpened = 1;
-}

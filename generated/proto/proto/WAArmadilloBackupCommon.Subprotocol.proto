@@ -1,4 +1,0 @@
-message Subprotocol {
-  optional bytes payload = 1;
-  optional bytes version = 2;
-}

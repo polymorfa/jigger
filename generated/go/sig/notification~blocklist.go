@@ -1,2 +1,0 @@
-// ParseAccountSyncNotificationBlocklistNotificationMixin matches <notification>. Server-initiated; nothing sends it.
-func ParseAccountSyncNotificationBlocklistNotificationMixin(n *waBinary.Node) (*AccountSyncNotificationBlocklistNotificationMixin, error)

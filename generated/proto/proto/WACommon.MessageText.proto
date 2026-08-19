@@ -1,6 +1,0 @@
-message MessageText {
-  optional bytes text = 1;
-  optional bytes mentionedJid = 2;
-  optional Command commands = 3;
-  optional Mention mentions = 4;
-}

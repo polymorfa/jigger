@@ -1,5 +1,0 @@
-export enum USERNAMESTATE {
-  RESERVED = 1,
-  CREATED = 2,
-  ACTIVATED = 3,
-}

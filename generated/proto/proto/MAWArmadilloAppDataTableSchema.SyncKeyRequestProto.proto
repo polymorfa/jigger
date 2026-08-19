@@ -1,3 +1,0 @@
-message SyncKeyRequestProto {
-  optional bytes keyIds = 1;
-}

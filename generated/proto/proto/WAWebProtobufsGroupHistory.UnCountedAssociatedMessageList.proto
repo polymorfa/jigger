@@ -1,5 +1,0 @@
-message UnCountedAssociatedMessageList {
-  optional bytes messages = 1;
-  optional bytes parentMessage = 2;
-  optional bytes associationType = 3;
-}

@@ -1,8 +1,0 @@
-#[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum WEBHYBRIDAPPRATEANDREVIEWREQUESTSOURCE {
-    OTHER = 0,
-    HELPSECTIONINSETTINGS = 1,
-    NAVIGATIONPANELBUTTON = 2,
-    PROMPTDIALOG = 3,
-}

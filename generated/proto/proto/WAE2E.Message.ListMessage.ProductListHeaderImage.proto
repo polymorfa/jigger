@@ -1,4 +1,0 @@
-message ProductListHeaderImage {
-  optional bytes productId = 1;
-  optional bytes jpegThumbnail = 2;
-}

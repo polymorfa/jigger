@@ -1,5 +1,0 @@
-message CombinedFingerprint {
-  optional bytes version = 1;
-  optional FingerprintData localFingerprint = 2;
-  optional FingerprintData remoteFingerprint = 3;
-}

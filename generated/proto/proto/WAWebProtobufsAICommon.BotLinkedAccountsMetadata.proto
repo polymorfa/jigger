@@ -1,5 +1,0 @@
-message BotLinkedAccountsMetadata {
-  optional BotLinkedAccount accounts = 1;
-  optional bytes acAuthTokens = 2;
-  optional bytes acErrorCode = 3;
-}

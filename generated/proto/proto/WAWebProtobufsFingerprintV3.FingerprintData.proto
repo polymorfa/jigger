@@ -1,8 +1,0 @@
-message FingerprintData {
-  optional bytes publicKey = 1;
-  optional bytes pnIdentifier = 2;
-  optional bytes lidIdentifier = 3;
-  optional bytes usernameIdentifier = 4;
-  optional bytes hostedState = 5;
-  optional bytes hashedPublicKey = 6;
-}

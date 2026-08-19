@@ -1,9 +1,0 @@
-#[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum BUSINESSINTERACTIONENTRYPOINTSOURCE {
-    CLICKTOCHATLINK = 1,
-    MESSAGESHORTLINK = 2,
-    QRCODE = 3,
-    CUSTOMLINK = 4,
-    CUSTOMQRCODELINK = 5,
-}

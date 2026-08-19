@@ -1,3 +1,0 @@
-message InstagramThreadLink {
-  optional bytes url = 1;
-}

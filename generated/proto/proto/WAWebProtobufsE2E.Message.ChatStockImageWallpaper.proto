@@ -1,4 +1,0 @@
-message ChatStockImageWallpaper {
-  optional bytes stockImageId = 1;
-  optional bytes dimLevel = 2;
-}

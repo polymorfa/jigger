@@ -1,5 +1,0 @@
-message PreKeyRecordStructure {
-  optional bytes id = 1;
-  optional bytes publicKey = 2;
-  optional bytes privateKey = 3;
-}

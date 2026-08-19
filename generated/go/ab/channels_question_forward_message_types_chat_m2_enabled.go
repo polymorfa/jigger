@@ -1,2 +1,0 @@
-// ABChannelsQuestionForwardMessageTypesChatM2Enabled is A/B property 26925 (string), default "".
-const ABChannelsQuestionForwardMessageTypesChatM2Enabled = "channels_question_forward_message_types_chat_m2_enabled"

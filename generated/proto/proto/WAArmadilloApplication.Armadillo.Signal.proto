@@ -1,3 +1,0 @@
-message Signal {
-  optional EncryptedBackupsSecrets encryptedBackupsSecrets = 1;
-}

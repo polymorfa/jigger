@@ -1,2 +1,0 @@
-/// Matches `<iq>`. Response to BrPaymentRemoveCustomPaymentMethod.
-pub fn parse_br_payment_remove_custom_payment_method_response_success(n: &Node) -> Option<BrPaymentRemoveCustomPaymentMethodResponseSuccess>

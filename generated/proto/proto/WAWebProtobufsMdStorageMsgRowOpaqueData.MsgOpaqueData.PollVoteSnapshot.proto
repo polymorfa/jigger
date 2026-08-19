@@ -1,4 +1,0 @@
-message PollVoteSnapshot {
-  optional PollOption option = 1;
-  optional bytes optionVoteCount = 2;
-}

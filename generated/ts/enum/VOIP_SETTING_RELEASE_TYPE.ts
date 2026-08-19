@@ -1,6 +1,0 @@
-export enum VOIPSETTINGRELEASETYPE {
-  UNKNOWN = 0,
-  PROD = 1,
-  FALLBACK = 2,
-  CANARY = 3,
-}

@@ -1,4 +1,0 @@
-message AppMetaTableSchemaProto {
-  optional bytes key = 1;
-  optional DbAppMetaValuesProto value = 2;
-}

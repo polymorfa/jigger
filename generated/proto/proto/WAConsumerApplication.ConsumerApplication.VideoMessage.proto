@@ -1,4 +1,0 @@
-message VideoMessage {
-  optional bytes video = 1;
-  optional bytes caption = 2;
-}

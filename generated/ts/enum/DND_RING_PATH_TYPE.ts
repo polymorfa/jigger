@@ -1,5 +1,0 @@
-export enum DNDRINGPATHTYPE {
-  IMPERATIVE = 1,
-  CHANNEL = 2,
-  NONE = 3,
-}

@@ -1,3 +1,0 @@
-message SyncdValue {
-  optional bytes blob = 1;
-}

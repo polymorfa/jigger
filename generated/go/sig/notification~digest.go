@@ -1,2 +1,0 @@
-// ParsePreKeysNotificationDigestRequest matches <notification>. Server-initiated; nothing sends it.
-func ParsePreKeysNotificationDigestRequest(n *waBinary.Node) (*PreKeysNotificationDigestRequest, error)

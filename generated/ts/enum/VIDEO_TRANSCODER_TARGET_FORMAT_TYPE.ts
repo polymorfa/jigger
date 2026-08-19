@@ -1,5 +1,0 @@
-export enum VIDEOTRANSCODERTARGETFORMATTYPE {
-  IMAGE = 0,
-  VIDEO = 1,
-  GIF = 2,
-}

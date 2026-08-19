@@ -1,5 +1,0 @@
-message EncCommentMessage {
-  optional bytes targetMessageKey = 1;
-  optional bytes encPayload = 2;
-  optional bytes encIv = 3;
-}

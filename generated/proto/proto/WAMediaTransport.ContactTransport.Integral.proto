@@ -1,4 +1,0 @@
-message Integral {
-  optional bytes vcard = 1;
-  optional WAMediaTransport downloadableVcard = 2;
-}

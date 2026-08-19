@@ -1,5 +1,0 @@
-message ShopMessage {
-  optional bytes id = 1;
-  optional bytes surface = 2;
-  optional bytes messageVersion = 3;
-}

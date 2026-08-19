@@ -1,5 +1,0 @@
-message GroupParticipant {
-  optional bytes userJid = 1;
-  optional bytes rank = 2;
-  optional bytes memberLabel = 3;
-}

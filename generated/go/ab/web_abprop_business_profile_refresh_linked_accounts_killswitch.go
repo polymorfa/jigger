@@ -1,2 +1,0 @@
-// ABWebAbpropBusinessProfileRefreshLinkedAccountsKillswitch is A/B property 1351 (bool), default false.
-const ABWebAbpropBusinessProfileRefreshLinkedAccountsKillswitch = "web_abprop_business_profile_refresh_linked_accounts_killswitch"

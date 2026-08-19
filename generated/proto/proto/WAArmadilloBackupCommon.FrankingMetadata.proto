@@ -1,4 +1,0 @@
-message FrankingMetadata {
-  optional bytes frankingTag = 3;
-  optional bytes reportingTag = 4;
-}

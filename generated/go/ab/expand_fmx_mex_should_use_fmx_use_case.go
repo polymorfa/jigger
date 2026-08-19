@@ -1,2 +1,0 @@
-// ABExpandFmxMexShouldUseFmxUseCase is A/B property 27662 (bool), default false.
-const ABExpandFmxMexShouldUseFmxUseCase = "expand_fmx_mex_should_use_fmx_use_case"

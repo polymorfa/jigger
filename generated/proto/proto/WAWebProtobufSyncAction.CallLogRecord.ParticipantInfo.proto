@@ -1,4 +1,0 @@
-message ParticipantInfo {
-  optional bytes userJid = 1;
-  optional bytes callResult = 2;
-}

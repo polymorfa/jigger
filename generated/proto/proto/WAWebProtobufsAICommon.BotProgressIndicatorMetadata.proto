@@ -1,5 +1,0 @@
-message BotProgressIndicatorMetadata {
-  optional bytes progressDescription = 1;
-  optional BotPlanningStepMetadata stepsMetadata = 2;
-  optional bytes estimatedCompletionTime = 3;
-}

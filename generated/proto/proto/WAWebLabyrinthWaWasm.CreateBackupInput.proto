@@ -1,4 +1,0 @@
-message CreateBackupInput {
-  optional bytes recoveryCode = 1;
-  optional bytes userId = 2;
-}

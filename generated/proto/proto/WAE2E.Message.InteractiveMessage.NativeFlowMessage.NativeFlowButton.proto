@@ -1,4 +1,0 @@
-message NativeFlowButton {
-  optional bytes name = 1;
-  optional bytes buttonParamsJson = 2;
-}

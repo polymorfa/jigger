@@ -1,5 +1,0 @@
-message CompanionCanonicalUserNonceFetchResponse {
-  optional bytes nonce = 1;
-  optional bytes waFbid = 2;
-  optional bytes forceRefresh = 3;
-}

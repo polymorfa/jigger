@@ -1,2 +1,0 @@
-// ParseNewslettersNewsletterViewsCountDeprecatedMixin matches <message>. Server-initiated; nothing sends it.
-func ParseNewslettersNewsletterViewsCountDeprecatedMixin(n *waBinary.Node) (*NewslettersNewsletterViewsCountDeprecatedMixin, error)

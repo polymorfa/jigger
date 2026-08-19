@@ -1,2 +1,0 @@
-// ABChannelsVisibilityLoggingFullscreenMediaEnabled is A/B property 28148 (bool), default false.
-const ABChannelsVisibilityLoggingFullscreenMediaEnabled = "channels_visibility_logging_fullscreen_media_enabled"

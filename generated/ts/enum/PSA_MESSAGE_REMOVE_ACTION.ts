@@ -1,8 +1,0 @@
-export enum PSAMESSAGEREMOVEACTION {
-  BLOCK = 1,
-  UNBLOCK = 2,
-  ARCHIVE = 3,
-  UNARCHIVE = 4,
-  CLEAR = 5,
-  DELETE_ALL = 6,
-}

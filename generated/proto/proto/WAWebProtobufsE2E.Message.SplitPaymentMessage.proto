@@ -1,9 +1,0 @@
-message SplitPaymentMessage {
-  optional bytes splitId = 1;
-  optional Money totalAmount = 2;
-  optional bytes description = 3;
-  optional bytes requesterJid = 4;
-  optional SplitPaymentParticipant participants = 5;
-  optional bytes createdAtMs = 6;
-  optional ContextInfo contextInfo = 17;
-}

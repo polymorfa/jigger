@@ -1,4 +1,0 @@
-message ReportingTokenInfo {
-  optional bytes reportingTag = 1;
-  optional bytes reportingTagTimestamp = 2;
-}

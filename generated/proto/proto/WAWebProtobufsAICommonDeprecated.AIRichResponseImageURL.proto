@@ -1,5 +1,0 @@
-message AIRichResponseImageURL {
-  optional bytes imagePreviewUrl = 1;
-  optional bytes imageHighResUrl = 2;
-  optional bytes sourceUrl = 3;
-}

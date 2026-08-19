@@ -1,2 +1,0 @@
-// ParseMdGetCountryCodeResponseGetCountryCodeResponse matches <iq>. Response to MdGetCountryCode.
-func ParseMdGetCountryCodeResponseGetCountryCodeResponse(n *waBinary.Node) (*MdGetCountryCodeResponseGetCountryCodeResponse, error)

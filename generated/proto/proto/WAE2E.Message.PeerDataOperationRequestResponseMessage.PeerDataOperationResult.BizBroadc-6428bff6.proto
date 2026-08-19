@@ -1,4 +1,0 @@
-message BizBroadcastInsightsContactState {
-  optional bytes contactJid = 1;
-  optional bytes state = 2;
-}

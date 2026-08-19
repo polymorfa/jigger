@@ -1,5 +1,0 @@
-type DEVICEJIDGROUPJID string
-
-const (
-	DEVICEJIDGROUPJIDTypeName DEVICEJIDGROUPJID = "DeviceJid|GroupJid"
-)

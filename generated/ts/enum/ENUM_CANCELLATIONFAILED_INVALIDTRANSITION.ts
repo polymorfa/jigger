@@ -1,4 +1,0 @@
-export enum ENUMCANCELLATIONFAILEDINVALIDTRANSITION {
-  CANCELLATION_FAILED = "cancellation-failed",
-  INVALID_TRANSITION = "invalid-transition",
-}

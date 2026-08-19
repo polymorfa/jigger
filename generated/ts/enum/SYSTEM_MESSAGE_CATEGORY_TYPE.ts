@@ -1,4 +1,0 @@
-export enum SYSTEMMESSAGECATEGORYTYPE {
-  PRIVACY = 1,
-  GROUPS = 2,
-}

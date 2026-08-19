@@ -1,7 +1,0 @@
-message ClientPairingProps {
-  optional bytes isChatDbLidMigrated = 1;
-  optional bytes isSyncdPureLidSession = 2;
-  optional bytes isSyncdSnapshotRecoveryEnabled = 3;
-  optional bytes isHsThumbnailSyncEnabled = 4;
-  optional bytes subscriptionSyncPayload = 5;
-}
