@@ -1,9 +1,11 @@
-import type { AbData, Fact } from "@/lib/types";
+import type { IndexRow } from "@/lib/cdn";
+
+export type AbRow = IndexRow<"ab">;
 
 export type AbGroup = {
   /** The subsystem, derived from the modules that read these flags. */
   name: string;
-  facts: Fact[];
+  facts: AbRow[];
   /** How many ship enabled. The rollout state of the group at a glance. */
   on: number;
   /** How many disagree between the two shipped defaults — an A/B actually
@@ -37,13 +39,12 @@ function subsystem(module: string): string {
  * feature itself, and taking the first reader alphabetically buckets half of
  * them under whichever helper sorts earliest.
  */
-export function buildAbMap(facts: Fact[]): { groups: AbGroup[]; unwired: Fact[] } {
-  const wired = new Map<string, Fact[]>();
-  const unwired: Fact[] = [];
+export function buildAbMap(rows: AbRow[]): { groups: AbGroup[]; unwired: AbRow[] } {
+  const wired = new Map<string, AbRow[]>();
+  const unwired: AbRow[] = [];
 
-  for (const f of facts) {
-    if (f.kind !== "ab") continue;
-    const readers = f.usage?.readers ?? [];
+  for (const f of rows) {
+    const readers = f.list.readers ?? [];
     if (readers.length === 0) {
       unwired.push(f);
       continue;
@@ -59,18 +60,12 @@ export function buildAbMap(facts: Fact[]): { groups: AbGroup[]; unwired: Fact[] 
   }
 
   const groups: AbGroup[] = [...wired.entries()]
-    .map(([name, fs]) => {
-      const d = (f: Fact) => f.data as AbData;
-      return {
-        name,
-        facts: fs.sort((a, b) => a.name.localeCompare(b.name)),
-        on: fs.filter((f) => d(f).default === true || d(f).default === 1).length,
-        // `default !== alt_default` is the tell that an experiment is live: the
-        // two shipped values disagree, so which one you get is being decided
-        // server-side right now.
-        split: fs.filter((f) => d(f).default !== d(f).alt_default).length,
-      };
-    })
+    .map(([name, fs]) => ({
+      name,
+      facts: fs.sort((a, b) => a.name.localeCompare(b.name)),
+      on: fs.filter((f) => f.list.on).length,
+      split: fs.filter((f) => f.list.split).length,
+    }))
     .sort((a, b) => b.facts.length - a.facts.length || a.name.localeCompare(b.name));
 
   return { groups, unwired: unwired.sort((a, b) => a.name.localeCompare(b.name)) };

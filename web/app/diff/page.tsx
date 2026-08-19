@@ -1,30 +1,41 @@
-import type { Metadata } from "next";
-import { Scroll } from "@/components/ui";
-import { DataError } from "@/components/data-error";
+"use client";
+
+import { Suspense, use } from "react";
+import { ClientOnly } from "@/components/client-only";
 import { DiffView } from "@/components/diff-view";
-import { getDiff, getSnapshotResult } from "@/lib/data";
-import { sourceLabel } from "@/lib/source";
+import { Scroll } from "@/components/ui";
+import { loadDiff } from "@/lib/cdn";
 
-export const metadata: Metadata = { title: "Revision diff" };
-
-export default async function DiffPage() {
-  const res = await getSnapshotResult();
-  if (!res.ok) {
-    return <DataError reason={res.reason} message={res.message} sourceLabel={sourceLabel(res.source)} />;
+function View() {
+  const diff = use(loadDiff());
+  if (!diff) {
+    return (
+      <div className="px-6 py-5">
+        <p className="max-w-prose text-sm text-fg-faint">
+          Nothing to compare yet. A diff needs two indexed revisions, and this payload carries the
+          first one.
+        </p>
+      </div>
+    );
   }
-  const diff = getDiff();
+  // Every diff entry links somewhere, and a fact that has since disappeared
+  // would link nowhere. Rather than a per-entry existence check against the
+  // whole ledger, the diff is a statement about two revisions we did index, so
+  // its own entries are the set.
+  const present = [diff.added, diff.removed].flatMap((g) =>
+    Object.values(g).flatMap((entries) => entries.map((e) => e.id)),
+  );
+  return <DiffView diff={diff} revisions={diff.revisions} existing={present} />;
+}
 
-  // Which diff entries still exist in the loaded snapshot (so links don't 404).
-  const present: string[] = [];
-  for (const group of [diff.added, diff.removed]) {
-    for (const entries of Object.values(group)) {
-      for (const e of entries) if (res.snap.factMap.has(e.id)) present.push(e.id);
-    }
-  }
-
+export default function DiffPage() {
   return (
     <Scroll>
-      <DiffView diff={diff} revisions={diff.revisions} existing={present} />
+      <ClientOnly>
+        <Suspense>
+          <View />
+        </Suspense>
+      </ClientOnly>
     </Scroll>
   );
 }

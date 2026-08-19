@@ -7,7 +7,7 @@
 // writes per-fact and per-module files alongside `ir.json`: the 12 MB ledger is
 // the archive, and these are what a reader actually opens.
 
-import type { Fact, FactKind, Ir, IqType } from "./types";
+import type { Diff, Fact, FactKind, Ir, IqType, Route } from "./types";
 
 /**
  * Where the payload lives.
@@ -91,23 +91,25 @@ export function fetchText(path: string): Promise<string> {
   return cached(path, async () => (await get(path)).text());
 }
 
-/** The same, for artifacts that are legitimately absent rather than broken. */
-export async function fetchJsonOptional<T>(path: string): Promise<T | null> {
-  try {
-    return await fetchJson<T>(path);
-  } catch (err) {
-    if (err instanceof CdnError && err.status === 404) return null;
-    throw err;
-  }
+/**
+ * The same, for artifacts that are legitimately absent rather than broken.
+ *
+ * Cached under their own key, and that is not an optimisation. These are handed
+ * to `use()`, which suspends on the *identity* of a promise — an `async`
+ * wrapper returning a fresh one every render suspends forever, and does it
+ * silently: the page simply stays on its fallback with nothing in the console.
+ */
+const absent = (err: unknown): null => {
+  if (err instanceof CdnError && err.status === 404) return null;
+  throw err;
+};
+
+export function fetchJsonOptional<T>(path: string): Promise<T | null> {
+  return cached(`opt:${path}`, () => fetchJson<T>(path).catch(absent));
 }
 
-export async function fetchTextOptional(path: string): Promise<string | null> {
-  try {
-    return await fetchText(path);
-  } catch (err) {
-    if (err instanceof CdnError && err.status === 404) return null;
-    throw err;
-  }
+export function fetchTextOptional(path: string): Promise<string | null> {
+  return cached(`opt:${path}`, () => fetchText(path).catch(absent));
 }
 
 // ---------------------------------------------------------------------------
@@ -122,7 +124,16 @@ export async function fetchTextOptional(path: string): Promise<string | null> {
  * of that against `"id 4750"`.
  */
 export type ListFields = {
-  ab: { oid: number; type: string; reads: number };
+  ab: {
+    oid: number;
+    type: string;
+    reads: number;
+    /** The modules that read it — what tells you which subsystem it gates. */
+    readers: string[];
+    on: boolean;
+    /** The two shipped defaults disagree: an experiment actually running. */
+    split: boolean;
+  };
   wam: { event: number; fields: number };
   iq: { ns: string; type: IqType };
   mex: { op: "query" | "mutation"; doc: string };
@@ -154,6 +165,23 @@ export const loadKindIndex = <K extends FactKind>(kind: K): Promise<IndexRow<K>[
 export const loadModuleIndex = (): Promise<ModuleRow[]> => fetchJson<ModuleRow[]>("index/modules.json");
 
 export const loadKinds = (): Promise<KindRow[]> => fetchJson<KindRow[]>("index/kinds.json");
+
+/** The numbers the overview leads with, so it needs no index to count them. */
+export type Summary = {
+  revision: number;
+  facts: number;
+  kinds: Partial<Record<FactKind, number>>;
+  ab: { total: number; unwired: number };
+};
+
+export const loadSummary = (): Promise<Summary> => fetchJson<Summary>("index/summary.json");
+
+/** The pairwise diff against the previous indexed revision, when one exists. */
+export const loadDiff = (): Promise<Diff | null> => fetchJsonOptional<Diff>("diff.json");
+
+/** The inbound dispatch table for this revision, if one was read. */
+export const loadDispatch = (): Promise<Route[] | null> =>
+  fetchJsonOptional<Route[]>("index/dispatch.json");
 
 // ---------------------------------------------------------------------------
 // Records

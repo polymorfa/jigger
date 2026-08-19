@@ -10,7 +10,7 @@
  */
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { listOf, metaOf } from "./lib/fact-view.mjs";
+import { listOf, metaOf, termsOf } from "./lib/fact-view.mjs";
 
 const [ir_path, out] = process.argv.slice(2);
 if (!ir_path || !out) {
@@ -197,6 +197,58 @@ for (const list of embeds.values()) list.sort((a, b) => a.message.localeCompare(
 writeFileSync(join(out, "embedded-by.json"), JSON.stringify(Object.fromEntries(embeds)));
 console.log(`  embedded  ${String(embeds.size).padStart(6)}`);
 
+// The inbound dispatch table, read from `WAWebCommsHandleLoggedInStanza`. It
+// answers "what happens to a stanza that arrives", which is the question a
+// library author has before they have picked a handler to read — and it belongs
+// to the revision rather than to any one fact.
+if (ir.dispatch) {
+  writeFileSync(join(out, "dispatch.json"), JSON.stringify(ir.dispatch));
+  console.log(`  dispatch  ${String(ir.dispatch.length).padStart(6)}`);
+}
+
+/**
+ * The global search index: every fact and every module in one file.
+ *
+ * One index, because a search that finds `WAWebABPropsConfigs` the fact but not
+ * `WAWebABPropsConfigs` the source file is a search you cannot trust to be
+ * complete — you end up keeping a second mental index of what it misses.
+ */
+const search = ir.facts.map((f) => ({
+  id: f.id,
+  kind: f.kind,
+  name: f.name,
+  // The module a fact was read out of, as its own facet. It is the answer to
+  // "what else came from here", which `contains:` cannot express — evidence is
+  // not something the fact carries, it is where the fact came from.
+  module: f.evidence?.module,
+  meta: metaOf(f).filter(Boolean).map(String),
+  terms: termsOf(f),
+}));
+if (existsSync(modulesDir)) {
+  const roles = new Map();
+  const note = (name, why) => {
+    if (name) roles.set(name, (roles.get(name) ?? new Set()).add(why));
+  };
+  for (const f of ir.facts) {
+    note(f.evidence?.module, "evidence");
+    for (const d of f.graph?.deps ?? []) note(d, "import");
+    for (const d of f.graph?.dependents ?? []) note(d, "dependent");
+    for (const r of f.usage?.readers ?? []) note(r, "reader");
+    if (f.data?.kind === "iq") {
+      note(f.data.rpc, "rpc");
+      for (const r of f.data.responses ?? []) note(r.module, "response");
+    }
+  }
+  for (const [name, why] of roles) {
+    // `sub` is what the module is *for*, which is the only thing distinguishing
+    // one minified WASmax name from the next in a result list.
+    const sorted = [...why].sort();
+    search.push({ id: name, kind: "module", name, sub: sorted.join(", "), meta: sorted });
+  }
+}
+writeFileSync(join(out, "search.json"), JSON.stringify(search));
+console.log(`  search    ${String(search.length).padStart(6)}`);
+
 // One manifest so a reader can discover what exists without guessing filenames.
 writeFileSync(
   join(out, "kinds.json"),
@@ -205,5 +257,18 @@ writeFileSync(
       .map(([kind, rows]) => ({ kind, count: rows.length }))
       .sort((a, b) => a.kind.localeCompare(b.kind)),
   ),
+);
+
+// The handful of numbers the overview leads with, so arriving at the front page
+// does not mean downloading the 642 KB A/B index to count one of them.
+const ab = byKind.get("ab") ?? [];
+writeFileSync(
+  join(out, "summary.json"),
+  JSON.stringify({
+    revision: ir.revision,
+    facts: ir.facts.length,
+    kinds: Object.fromEntries([...byKind.entries()].map(([k, rows]) => [k, rows.length])),
+    ab: { total: ab.length, unwired: ab.filter((r) => r.list.reads === 0).length },
+  }),
 );
 console.log(`  ${total} facts indexed across ${byKind.size} kinds -> ${out}`);

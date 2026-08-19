@@ -1,7 +1,9 @@
-import { redirect } from "next/navigation";
-import { browseHref, decodeFactId, kindOfId } from "@/lib/ids";
+"use client";
 
-type Params = { params: Promise<{ id: string }> };
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { browseHref, decodeFactId, kindOfId } from "@/lib/ids";
+import { useRouteTail } from "@/lib/route";
 
 /**
  * There is one place to look at a fact, not two.
@@ -11,9 +13,16 @@ type Params = { params: Promise<{ id: string }> };
  * keep in step and a reader who is never sure which one is canonical, so this
  * now redirects into the browser for the fact's kind. Old links keep working.
  */
-export default async function FactPage({ params }: Params) {
-  const { id } = await params;
-  const decoded = decodeFactId(id);
-  const kind = kindOfId(decoded);
-  redirect(kind ? browseHref(kind, decoded) : "/");
+export default function FactRedirect() {
+  const tail = useRouteTail("/fact/");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!tail) return;
+    const id = decodeFactId(tail);
+    const kind = kindOfId(id);
+    router.replace(kind ? browseHref(kind, id) : "/");
+  }, [tail, router]);
+
+  return <div className="px-5 py-5 text-sm text-fg-faint">Redirecting…</div>;
 }

@@ -2,14 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Scroll } from "@/components/ui";
-import { DataError } from "@/components/data-error";
 import { SpecMarkdown } from "@/components/markdown";
-import { KindBadge } from "@/components/kind-badge";
-import { getSnapshotResult } from "@/lib/data";
-import { FACT_ID_RE, factHref } from "@/lib/ids";
-import { sourceLabel } from "@/lib/source";
+import { CitedFacts } from "@/components/cited-facts";
+import { FACT_ID_RE } from "@/lib/ids";
 import { getSpec, getSpecList } from "@/lib/spec";
-import type { Fact } from "@/lib/types";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -23,18 +19,14 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return { title: spec ? spec.title : "Spec not found" };
 }
 
-// Facts this document cites, by backtick citation, in order of first mention.
-function citedFacts(content: string, factMap: Map<string, Fact>): Fact[] {
+/** Fact ids this document cites, by backtick citation, in order of first mention. */
+function citedIds(content: string): string[] {
   const seen = new Set<string>();
-  const out: Fact[] = [];
   for (const m of content.matchAll(/`([^`]+)`/g)) {
     const token = m[1]!;
-    if (!FACT_ID_RE.test(token) || seen.has(token)) continue;
-    seen.add(token);
-    const f = factMap.get(token);
-    if (f) out.push(f);
+    if (FACT_ID_RE.test(token)) seen.add(token);
   }
-  return out;
+  return [...seen];
 }
 
 export default async function SpecPage({ params }: Params) {
@@ -42,13 +34,7 @@ export default async function SpecPage({ params }: Params) {
   const spec = getSpec(slug);
   if (!spec) notFound();
 
-  const res = await getSnapshotResult();
-  if (!res.ok) {
-    return <DataError reason={res.reason} message={res.message} sourceLabel={sourceLabel(res.source)} />;
-  }
-  const factMap = res.snap.factMap;
-  const factIds = new Set(factMap.keys());
-  const facts = citedFacts(spec.content, factMap);
+  const cited = citedIds(spec.content);
 
   return (
     <Scroll>
@@ -57,33 +43,9 @@ export default async function SpecPage({ params }: Params) {
           ← all spec documents
         </Link>
 
-        <SpecMarkdown content={spec.content} factIds={factIds} />
+        <SpecMarkdown content={spec.content} factIds={new Set(cited)} />
 
-        <section className="flex flex-col gap-2">
-          <div className="flex items-baseline justify-between gap-3 border-b border-hair pb-1.5">
-            <h2 className="text-md font-semibold text-fg">Facts in this section</h2>
-            <span className="data tnum text-xs text-fg-faint">{facts.length}</span>
-          </div>
-          {facts.length === 0 ? (
-            <p className="text-sm text-fg-faint">
-              This document cites no facts present in the loaded snapshot.
-            </p>
-          ) : (
-            <div className="border border-hair bg-surface">
-              {facts.map((f) => (
-                <Link
-                  key={f.id}
-                  href={factHref(f.id)}
-                  className="flex items-baseline gap-2.5 border-b border-hair px-3 py-1.5 last:border-b-0 hover:bg-surface-2"
-                >
-                  <KindBadge kind={f.kind} />
-                  <span className="data shrink-0 text-sm text-brand">{f.id}</span>
-                  <span className="min-w-0 truncate text-sm text-fg-muted">{f.name}</span>
-                </Link>
-              ))}
-            </div>
-          )}
-        </section>
+        <CitedFacts ids={cited} />
       </div>
     </Scroll>
   );

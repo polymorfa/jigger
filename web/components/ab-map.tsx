@@ -3,8 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { browseHref } from "@/lib/ids";
-import type { AbGroup } from "@/lib/ab-map";
-import type { AbData, Fact } from "@/lib/types";
+import type { AbGroup, AbRow } from "@/lib/ab-map";
 
 /**
  * What the flags are for.
@@ -14,7 +13,7 @@ import type { AbData, Fact } from "@/lib/types";
  * `split` column is the part worth watching: a flag whose two shipped defaults
  * disagree is an experiment running right now, not a switch parked at a value.
  */
-export function AbMap({ groups, unwired }: { groups: AbGroup[]; unwired: Fact[] }) {
+export function AbMap({ groups, unwired }: { groups: AbGroup[]; unwired: AbRow[] }) {
   const total = groups.reduce((n, g) => n + g.facts.length, 0);
 
   return (
@@ -86,26 +85,24 @@ function Group({ group }: { group: AbGroup }) {
   );
 }
 
-function Names({ facts }: { facts: Fact[] }) {
+function Names({ facts }: { facts: AbRow[] }) {
   const [all, setAll] = useState(false);
   const shown = all ? facts : facts.slice(0, 40);
   return (
     <div className="flex flex-col gap-0.5">
       <div className="flex flex-wrap gap-x-3 gap-y-0.5">
-        {shown.map((f) => {
-          const d = f.data as AbData;
-          const live = d.default !== d.alt_default;
-          return (
-            <Link
-              key={f.id}
-              href={browseHref("ab", f.id)}
-              title={`${d.type} · default ${String(d.default)} · alt ${String(d.alt_default)}`}
-              className={`data text-xs hover:underline ${live ? "text-brand" : "text-fg-muted"}`}
-            >
-              {f.name}
-            </Link>
-          );
-        })}
+        {shown.map((f) => (
+          <Link
+            key={f.id}
+            href={browseHref("ab", f.id)}
+            // The prose the index already carries: type, both defaults, and how
+            // many modules read it.
+            title={f.meta.join(" · ")}
+            className={`data text-xs hover:underline ${f.list.split ? "text-brand" : "text-fg-muted"}`}
+          >
+            {f.name}
+          </Link>
+        ))}
       </div>
       {facts.length > shown.length && (
         <button

@@ -1,9 +1,16 @@
+"use client";
+
+import { Suspense, use } from "react";
 import { AbMap } from "@/components/ab-map";
-import { DataError } from "@/components/data-error";
+import { ClientOnly } from "@/components/client-only";
 import { Scroll } from "@/components/ui";
 import { buildAbMap } from "@/lib/ab-map";
-import { getSnapshotResult } from "@/lib/data";
-import { sourceLabel } from "@/lib/source";
+import { loadKindIndex } from "@/lib/cdn";
+
+function Map() {
+  const { groups, unwired } = buildAbMap(use(loadKindIndex("ab")));
+  return <AbMap groups={groups} unwired={unwired} />;
+}
 
 /**
  * The landing pane for A/B properties, as a map rather than a placeholder.
@@ -12,19 +19,15 @@ import { sourceLabel } from "@/lib/source";
  * question you actually arrive with is what is being changed at all, and that is
  * answerable — the reader modules say which subsystem each flag gates.
  */
-export default async function AbIndexPage() {
-  const res = await getSnapshotResult();
-  if (!res.ok) {
-    return (
-      <DataError reason={res.reason} message={res.message} sourceLabel={sourceLabel(res.source)} />
-    );
-  }
-  const { groups, unwired } = buildAbMap(res.snap.byKind.get("ab") ?? []);
-
+export default function AbIndexPage() {
   return (
     <Scroll>
       <div className="px-6 py-5">
-        <AbMap groups={groups} unwired={unwired} />
+        <ClientOnly>
+          <Suspense>
+            <Map />
+          </Suspense>
+        </ClientOnly>
       </div>
     </Scroll>
   );

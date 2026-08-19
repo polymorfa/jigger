@@ -138,7 +138,19 @@ export const listOf = (f) => {
   const d = f.data ?? {};
   switch (f.kind) {
     case "ab":
-      return { oid: d.opaque_id, type: d.type, reads: f.usage?.read_count ?? 0 };
+      return {
+        oid: d.opaque_id,
+        type: d.type,
+        reads: f.usage?.read_count ?? 0,
+        // The modules that read a flag are what tells you which subsystem it
+        // gates; a bare `wds_web_text_layout = 5842` teaches nothing. Already a
+        // short list upstream — six at most — so it costs little to carry.
+        readers: f.usage?.readers ?? [],
+        on: d.default === true || d.default === 1,
+        // Two shipped defaults that disagree is the tell that an experiment is
+        // live: which one you get is being decided server-side right now.
+        split: d.default !== d.alt_default,
+      };
     case "wam":
       return { event: d.event_id, fields: Object.keys(d.fields ?? {}).length };
     case "iq":
