@@ -10,29 +10,46 @@
 import type { Diff, Fact, FactKind, Ir, IqType, Route } from "./types";
 
 /**
- * Where the payload lives.
+ * Where the payload lives, pinned to an exact commit.
  *
- * An explicit `NEXT_PUBLIC_JIGGER_CDN` wins. Otherwise a configured repository
- * is served through jsDelivr, which fronts GitHub with a real CDN — raw
- * .githubusercontent.com would work but is rate-limited per IP, and the limit
- * is shared by everyone behind an office NAT.
+ * The `data` branch is replaced wholesale every release, and jsDelivr serves a
+ * branch ref with `s-maxage=43200` at the edge and `max-age=604800` in the
+ * browser. Those two facts together are a correctness bug, not a performance
+ * one: a reader arriving mid-release gets `revision.json` from the new revision
+ * and half the indexes from the old, with nothing on the page admitting it.
  *
- * With neither, `/data` is the local extraction under `public/`, which is what
- * a machine that just ran `jigger extract` should be reading.
+ * A commit ref is served `immutable` for a year instead, and is self-consistent
+ * by construction. So the branch is resolved to a SHA once — a 60-second-cached
+ * GitHub API call, and once per session because the promise is cached — and
+ * every artifact after that comes from the pinned tree.
+ *
+ * Resolution failing is not fatal. A rate-limited or offline reader falls back
+ * to the branch, which is the behaviour we are trying to improve on rather than
+ * a broken state.
  */
-function base(): string {
-  const explicit = (process.env.NEXT_PUBLIC_JIGGER_CDN ?? "").trim();
-  if (explicit) return explicit.replace(/\/+$/, "");
-  const repo = (process.env.NEXT_PUBLIC_JIGGER_REPO ?? "").trim();
-  const ref = (process.env.NEXT_PUBLIC_JIGGER_REF ?? "data").trim() || "data";
-  if (/^[^/]+\/[^/]+$/.test(repo)) return `https://cdn.jsdelivr.net/gh/${repo}@${ref}`;
-  return "/data";
-}
+function resolveBase(): Promise<string> {
+  return cached("cdn:base", async () => {
+    const explicit = (process.env.NEXT_PUBLIC_JIGGER_CDN ?? "").trim();
+    if (explicit) return explicit.replace(/\/+$/, "");
 
-export const CDN_BASE = base();
+    const repo = (process.env.NEXT_PUBLIC_JIGGER_REPO ?? "").trim();
+    const ref = (process.env.NEXT_PUBLIC_JIGGER_REF ?? "data").trim() || "data";
+    // No repository configured means a local extraction under `public/`, which
+    // is what a machine that just ran `jigger extract` should be reading.
+    if (!/^[^/]+\/[^/]+$/.test(repo)) return "/data";
 
-export function cdnUrl(path: string): string {
-  return `${CDN_BASE}/${path}`;
+    const branch = `https://cdn.jsdelivr.net/gh/${repo}@${ref}`;
+    try {
+      const res = await fetch(`https://api.github.com/repos/${repo}/commits/${ref}`, {
+        headers: { Accept: "application/vnd.github.sha" },
+      });
+      if (!res.ok) return branch;
+      const sha = (await res.text()).trim();
+      return /^[0-9a-f]{40}$/.test(sha) ? `https://cdn.jsdelivr.net/gh/${repo}@${sha}` : branch;
+    } catch {
+      return branch;
+    }
+  });
 }
 
 export class CdnError extends Error {
@@ -73,13 +90,14 @@ export function cached<T>(path: string, load: () => Promise<T>): Promise<T> {
 }
 
 async function get(path: string): Promise<Response> {
+  const url = `${await resolveBase()}/${path}`;
   let res: Response;
   try {
-    res = await fetch(cdnUrl(path));
+    res = await fetch(url);
   } catch {
-    throw new CdnError(path, null, `Could not reach ${cdnUrl(path)}.`);
+    throw new CdnError(path, null, `Could not reach ${url}.`);
   }
-  if (!res.ok) throw new CdnError(path, res.status, `${cdnUrl(path)} returned HTTP ${res.status}.`);
+  if (!res.ok) throw new CdnError(path, res.status, `${url} returned HTTP ${res.status}.`);
   return res;
 }
 

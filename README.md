@@ -114,9 +114,16 @@ branch, replaced wholesale each release.
 | `NEXT_PUBLIC_JIGGER_REF` | branch holding the payload. Defaults to `data` |
 
 With none of these the app reads `/data`, which is where a local `jigger
-extract` lands. jsDelivr requires the repository to be public; raw.
-githubusercontent works but is rate-limited per IP, and one office NAT shares
-that limit.
+extract` lands.
+
+The branch is resolved to a commit SHA once per session and every artifact comes
+from that pinned tree. This is about correctness, not speed: jsDelivr caches a
+*branch* ref for 12 hours at the edge and a week in the browser, and the branch
+is replaced wholesale each release — so a reader arriving mid-release would get
+`revision.json` from the new revision and half the indexes from the old, with
+nothing on the page admitting it. A commit ref is served `immutable` and is
+self-consistent by construction. If the resolve fails the app falls back to the
+branch, which is worse but not broken.
 
 URLs survive because the edge, not a function, maps them: there are 33,676 fact
 and module pages differing only in a string, so one shell is built per section
