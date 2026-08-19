@@ -1,0 +1,4 @@
+export enum METAAIMODELTIERTYPE {
+  BASE = 0,
+  PREMIUM = 1,
+}

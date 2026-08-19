@@ -1,0 +1,1 @@
+const HkdfWhatsAppImageKeys = "WhatsApp Image Keys"

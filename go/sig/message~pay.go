@@ -1,0 +1,2 @@
+// ParseMessageDeliverGroupDeliverPayNodeMessageMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverGroupDeliverPayNodeMessageMixin(n *waBinary.Node) (*MessageDeliverGroupDeliverPayNodeMessageMixin, error)

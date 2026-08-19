@@ -1,0 +1,7 @@
+message PendingPreKey {
+  optional bytes preKeyId = 1;
+  optional bytes baseKey = 2;
+  optional bytes signedPreKeyId = 3;
+  optional bytes kyberPreKeyId = 4;
+  optional bytes kyberCiphertext = 5;
+}

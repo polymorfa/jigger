@@ -1,0 +1,2 @@
+// ParseAccountSyncNotificationUsernameNotificationMixin matches <notification>. Server-initiated; nothing sends it.
+func ParseAccountSyncNotificationUsernameNotificationMixin(n *waBinary.Node) (*AccountSyncNotificationUsernameNotificationMixin, error)

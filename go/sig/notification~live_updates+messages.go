@@ -1,0 +1,2 @@
+// ParseNewslettersLiveUpdatesNotificationRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseNewslettersLiveUpdatesNotificationRequest(n *waBinary.Node) (*NewslettersLiveUpdatesNotificationRequest, error)

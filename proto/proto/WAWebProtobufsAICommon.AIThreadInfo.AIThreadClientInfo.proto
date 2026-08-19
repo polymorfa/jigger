@@ -1,0 +1,4 @@
+message AIThreadClientInfo {
+  optional bytes type = 1;
+  optional bytes sourceChatJid = 2;
+}

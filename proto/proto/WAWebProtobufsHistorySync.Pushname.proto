@@ -1,0 +1,4 @@
+message Pushname {
+  optional bytes id = 1;
+  optional bytes pushname = 2;
+}

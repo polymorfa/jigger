@@ -1,0 +1,18 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ACTIONENTRYPOINT {
+    CHATINFO = 0,
+    CHATCONTEXTMENU = 1,
+    NOTIFICATIONS = 2,
+    CONTACTS = 3,
+    CHATLIST = 4,
+    UNKNOWN = 5,
+    PRIVATEREPLY = 6,
+    STATUSREPLY = 7,
+    SEARCH = 8,
+    DIRECTMESSAGE = 9,
+    PRIVACYSETTINGS = 10,
+    CHATLONGPRESSOPTIONS = 11,
+    CHATMOREOPTIONS = 12,
+    SIDEBAR = 13,
+}

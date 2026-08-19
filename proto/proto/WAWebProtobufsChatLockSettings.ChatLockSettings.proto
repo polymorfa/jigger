@@ -1,0 +1,4 @@
+message ChatLockSettings {
+  optional bytes hideLockedChats = 1;
+  optional bytes secretCode = 2;
+}

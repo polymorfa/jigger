@@ -1,0 +1,9 @@
+message RotateEpochOutput {
+  optional bytes newEpochRootKey = 1;
+  optional bytes newEpochAnonId = 2;
+  optional bytes epochAnonId = 3;
+  optional bytes epochData = 4;
+  optional RotateEpochMemberEdge memberEdges = 5;
+  optional bytes epochRootKeyFingerprint = 6;
+  optional bytes error = 7;
+}

@@ -1,0 +1,5 @@
+export enum DEFAULTPROTOCOLTARGETTYPE {
+  LID = 0,
+  PHONE = 1,
+  NONE = 2,
+}

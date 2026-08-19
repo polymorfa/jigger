@@ -1,0 +1,13 @@
+message WebdPayload {
+  optional bytes usesParticipantInKey = 1;
+  optional bytes supportsStarredMessages = 2;
+  optional bytes supportsDocumentMessages = 3;
+  optional bytes supportsUrlMessages = 4;
+  optional bytes supportsMediaRetry = 5;
+  optional bytes supportsE2EImage = 6;
+  optional bytes supportsE2EVideo = 7;
+  optional bytes supportsE2EAudio = 8;
+  optional bytes supportsE2EDocument = 9;
+  optional bytes documentTypes = 10;
+  optional bytes features = 11;
+}

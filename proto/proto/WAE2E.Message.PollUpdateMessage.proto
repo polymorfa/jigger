@@ -1,0 +1,6 @@
+message PollUpdateMessage {
+  optional bytes pollCreationMessageKey = 1;
+  optional PollEncValue vote = 2;
+  optional PollUpdateMessageMetadata metadata = 3;
+  optional bytes senderTimestampMs = 4;
+}

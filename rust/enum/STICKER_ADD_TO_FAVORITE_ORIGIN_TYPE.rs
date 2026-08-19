@@ -1,0 +1,13 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum STICKERADDTOFAVORITEORIGINTYPE {
+    STICKERRECEIVED = 1,
+    STICKERSENT = 2,
+    STICKERPICKER = 3,
+    STICKERSTORE = 4,
+    STICKERSEARCH = 5,
+    STICKERAICREATE = 6,
+    DISCOVERYPACK = 7,
+    STICKERMAKER = 8,
+    MEDIAHUB = 9,
+}

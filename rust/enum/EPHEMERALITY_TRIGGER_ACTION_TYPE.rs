@@ -1,0 +1,10 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EPHEMERALITYTRIGGERACTIONTYPE {
+    UNKNOWN = 0,
+    CHATSETTINGS = 1,
+    ACCOUNTSETTINGS = 2,
+    BULKCHANGE = 3,
+    BIZSUPPORTSFBHOSTING = 4,
+    UNKNOWNGROUP = 5,
+}

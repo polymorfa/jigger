@@ -1,0 +1,2 @@
+/** Matches `<iq>`. Response to BlocklistsUpdateBlockList. */
+export function parseBlocklistsUpdateBlockListResponseSuccessWithMatch(n: BinaryNode): BlocklistsUpdateBlockListResponseSuccessWithMatch | null

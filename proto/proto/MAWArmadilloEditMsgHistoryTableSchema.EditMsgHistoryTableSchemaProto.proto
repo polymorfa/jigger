@@ -1,0 +1,11 @@
+message EditMsgHistoryTableSchemaProto {
+  optional bytes author = 1;
+  optional bytes editMsgHistoryId = 2;
+  optional bytes editTs = 3;
+  optional bytes msgContent = 4;
+  optional bytes originalMsgExternalId = 5;
+  optional bytes specialTextSize = 6;
+  optional bytes threadJid = 7;
+  optional bytes editExternalId = 8;
+  optional bytes sendStatus = 9;
+}

@@ -1,0 +1,2 @@
+// ABChannelsFollowersListCacheRefreshMilliseconds is A/B property 5217 (int), default "6e4".
+const ABChannelsFollowersListCacheRefreshMilliseconds = "channels_followers_list_cache_refresh_milliseconds"

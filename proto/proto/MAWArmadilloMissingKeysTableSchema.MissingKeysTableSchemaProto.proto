@@ -1,0 +1,6 @@
+message MissingKeysTableSchemaProto {
+  optional bytes keyHex = 1;
+  optional bytes keyId = 2;
+  optional bytes timestamp = 3;
+  optional DeviceResponse deviceResponses = 4;
+}

@@ -1,0 +1,6 @@
+message ICDCIdentityListDescription {
+  optional bytes seq = 1;
+  optional bytes signingDevice = 2;
+  optional bytes unknownDevices = 3;
+  optional bytes unknownDeviceIds = 4;
+}

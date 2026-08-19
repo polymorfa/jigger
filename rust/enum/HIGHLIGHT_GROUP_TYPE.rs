@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HIGHLIGHTGROUPTYPE {
+    UNKNOWN = 0,
+    SINGLE = 1,
+    CREATOR = 2,
+    ADMIN = 3,
+    SAVEDCONTACTS = 4,
+    PARTICIPANTS = 5,
+    MORE = 6,
+}

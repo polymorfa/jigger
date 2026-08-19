@@ -1,0 +1,2 @@
+// ABWebBusinessBroadcastGenaiCustomUserPromptEnabled is A/B property 32052 (bool), default false.
+const ABWebBusinessBroadcastGenaiCustomUserPromptEnabled = "web_business_broadcast_genai_custom_user_prompt_enabled"

@@ -1,0 +1,11 @@
+export enum STATUSCONTENTSOURCE {
+  CAMERA = 1,
+  EXTERNAL = 2,
+  FORWARD = 3,
+  GALLERY = 4,
+  CHANNEL = 5,
+  RESHARE = 6,
+  AI_IMAGINE = 7,
+  DRAFT = 8,
+  LOCATION = 9,
+}

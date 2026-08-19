@@ -1,0 +1,4 @@
+export enum DYIREPORTTYPECODE {
+  ACCOUNT = 1,
+  CHANNEL = 2,
+}

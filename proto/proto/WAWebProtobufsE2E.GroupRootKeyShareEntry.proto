@@ -1,0 +1,6 @@
+message GroupRootKeyShareEntry {
+  optional bytes groupRootKey = 1;
+  optional bytes keyId = 2;
+  optional bytes expiryTimestampMs = 3;
+  optional bytes createdTimestampMs = 4;
+}

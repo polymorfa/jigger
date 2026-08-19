@@ -1,0 +1,4 @@
+message DocumentMessage {
+  optional bytes document = 1;
+  optional bytes fileName = 2;
+}

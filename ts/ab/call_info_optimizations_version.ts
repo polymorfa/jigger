@@ -1,0 +1,2 @@
+/** A/B property 27483 (int), default 0. */
+export const ABCallInfoOptimizationsVersion = 'call_info_optimizations_version' as const

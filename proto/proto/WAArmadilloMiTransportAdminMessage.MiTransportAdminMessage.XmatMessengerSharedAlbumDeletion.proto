@@ -1,0 +1,4 @@
+message XmatMessengerSharedAlbumDeletion {
+  optional bytes sharedAlbumId = 1;
+  optional bytes albumTitle = 2;
+}

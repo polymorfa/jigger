@@ -1,0 +1,2 @@
+// WAWebGraphQLProductCatalogGetPublicKeyJobQuery is the persisted query. Variables: request
+const MexWAWebGraphQLProductCatalogGetPublicKeyJobQuery = "WAWebGraphQLProductCatalogGetPublicKeyJobQuery"

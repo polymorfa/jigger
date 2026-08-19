@@ -1,0 +1,2 @@
+/** A/B property 26729 (bool), default false. */
+export const ABWaWebContactAndChatFuzzySearchSimilarityOptimizationEnabled = 'wa_web_contact_and_chat_fuzzy_search_similarity_optimization_enabled' as const

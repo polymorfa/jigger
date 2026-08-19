@@ -1,0 +1,2 @@
+// ParseProfilePictureGetResponseSuccessPictureBlob matches <iq>. Response to ProfilePictureGet.
+func ParseProfilePictureGetResponseSuccessPictureBlob(n *waBinary.Node) (*ProfilePictureGetResponseSuccessPictureBlob, error)

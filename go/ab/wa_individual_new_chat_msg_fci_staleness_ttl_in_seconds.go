@@ -1,0 +1,2 @@
+// ABWaIndividualNewChatMsgFciStalenessTtlInSeconds is A/B property 21410 (int), default 120.
+const ABWaIndividualNewChatMsgFciStalenessTtlInSeconds = "wa_individual_new_chat_msg_fci_staleness_ttl_in_seconds"

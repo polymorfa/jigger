@@ -1,0 +1,6 @@
+export enum DISCLOSUREINTERACTION {
+  CONTINUE = 0,
+  CANCEL = 1,
+  DISMISSED = 2,
+  LEARN_MORE = 3,
+}

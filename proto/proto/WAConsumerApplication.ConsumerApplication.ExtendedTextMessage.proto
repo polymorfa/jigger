@@ -1,0 +1,9 @@
+message ExtendedTextMessage {
+  optional bytes text = 1;
+  optional bytes matchedText = 2;
+  optional bytes canonicalUrl = 3;
+  optional bytes description = 4;
+  optional bytes title = 5;
+  optional bytes thumbnail = 6;
+  optional bytes previewType = 7;
+}

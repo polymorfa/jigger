@@ -1,0 +1,3 @@
+message Favorite {
+  optional bytes id = 1;
+}

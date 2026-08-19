@@ -1,0 +1,6 @@
+export enum ENUMDEACTIVATEGENERALCHATDELETECAPIDELETEPARENTINTEGRITYDELETEPARENT {
+  DEACTIVATE_GENERAL_CHAT = "deactivate_general_chat",
+  DELETE_CAPI = "delete_capi",
+  DELETE_PARENT = "delete_parent",
+  INTEGRITY_DELETE_PARENT = "integrity_delete_parent",
+}

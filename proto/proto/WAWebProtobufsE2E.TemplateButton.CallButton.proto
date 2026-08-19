@@ -1,0 +1,4 @@
+message CallButton {
+  optional HighlyStructuredMessage displayText = 1;
+  optional HighlyStructuredMessage phoneNumber = 2;
+}

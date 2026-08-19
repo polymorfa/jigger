@@ -1,0 +1,10 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum CHATASSIGNMENTENTRYPOINTTYPE {
+    CONVERSATIONOVERFLOWMENU = 0,
+    CONTACTINFOSCREEN = 1,
+    MULTISELECT = 2,
+    SYSTEMMESSAGE = 3,
+    CHATLISTSWIPE = 4,
+    AIREPLIES = 5,
+}

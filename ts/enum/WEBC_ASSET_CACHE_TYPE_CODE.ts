@@ -1,0 +1,5 @@
+export enum WEBCASSETCACHETYPECODE {
+  UNCACHED = 0,
+  IDB = 1,
+  SW = 2,
+}

@@ -1,0 +1,5 @@
+message MediaDetailsMetadata {
+  optional bytes id = 1;
+  optional BotMediaMetadata highResMedia = 2;
+  optional BotMediaMetadata previewMedia = 3;
+}

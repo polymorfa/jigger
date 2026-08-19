@@ -1,0 +1,5 @@
+export enum VIDEOTRANSCODERSOURCEFORMATTYPE {
+  SLOMO = 0,
+  VIDEO = 1,
+  GIF = 2,
+}

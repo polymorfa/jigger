@@ -1,0 +1,4 @@
+export enum WEBCMEDIAOPERATIONCODE {
+  DOWNLOAD = 1,
+  UPLOAD = 2,
+}

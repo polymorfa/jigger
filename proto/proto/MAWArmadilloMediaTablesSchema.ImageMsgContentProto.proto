@@ -1,0 +1,9 @@
+message ImageMsgContentProto {
+  optional bytes width = 1;
+  optional bytes height = 2;
+  optional bytes jpegThumbnail = 3;
+  optional bytes jpegThumbnailHeight = 4;
+  optional bytes jpegThumbnailWidth = 5;
+  optional bytes thumbnailPlaintextHash = 6;
+  optional bytes hdType = 7;
+}

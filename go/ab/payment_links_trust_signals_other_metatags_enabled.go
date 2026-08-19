@@ -1,0 +1,2 @@
+// ABPaymentLinksTrustSignalsOtherMetatagsEnabled is A/B property 17355 (bool), default false.
+const ABPaymentLinksTrustSignalsOtherMetatagsEnabled = "payment_links_trust_signals_other_metatags_enabled"

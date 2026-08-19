@@ -1,0 +1,12 @@
+message InvoiceMessage {
+  optional bytes note = 1;
+  optional bytes token = 2;
+  optional bytes attachmentType = 3;
+  optional bytes attachmentMimetype = 4;
+  optional bytes attachmentMediaKey = 5;
+  optional bytes attachmentMediaKeyTimestamp = 6;
+  optional bytes attachmentFileSha256 = 7;
+  optional bytes attachmentFileEncSha256 = 8;
+  optional bytes attachmentDirectPath = 9;
+  optional bytes attachmentJpegThumbnail = 10;
+}

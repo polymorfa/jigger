@@ -1,0 +1,5 @@
+message BotMemoryMetadata {
+  optional BotMemoryFact addedFacts = 1;
+  optional BotMemoryFact removedFacts = 2;
+  optional bytes disclaimer = 3;
+}

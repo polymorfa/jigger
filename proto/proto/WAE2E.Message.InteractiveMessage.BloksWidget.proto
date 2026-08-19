@@ -1,0 +1,5 @@
+message BloksWidget {
+  optional bytes uuid = 1;
+  optional bytes data = 2;
+  optional bytes type = 3;
+}

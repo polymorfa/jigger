@@ -1,0 +1,2 @@
+// ParseAbPropsGetExperimentConfigResponseErrorNoRetry matches <iq>. Response to AbPropsGetExperimentConfig.
+func ParseAbPropsGetExperimentConfigResponseErrorNoRetry(n *waBinary.Node) (*AbPropsGetExperimentConfigResponseErrorNoRetry, error)

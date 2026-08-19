@@ -1,0 +1,8 @@
+export enum CALLLINKSHARECHATTYPE {
+  INDIVIDUAL = 1,
+  BUSINESS = 2,
+  GROUP_LARGE = 3,
+  GROUP_3_P = 4,
+  GROUP_8_P = 5,
+  GROUP_32_P = 6,
+}

@@ -1,0 +1,6 @@
+message Citation {
+  optional bytes title = 1;
+  optional bytes subtitle = 2;
+  optional bytes cmsId = 3;
+  optional bytes imageUrl = 4;
+}

@@ -1,0 +1,4 @@
+export enum AUDIOSTREAMTYPE {
+  STREAM_MUSIC = 0,
+  STREAM_VOICE_CALL = 1,
+}

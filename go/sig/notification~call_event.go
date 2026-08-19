@@ -1,0 +1,2 @@
+// ParseRtcE2eeCallEventNotifyCallEventNotificationRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseRtcE2eeCallEventNotifyCallEventNotificationRequest(n *waBinary.Node) (*RtcE2eeCallEventNotifyCallEventNotificationRequest, error)

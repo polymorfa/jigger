@@ -1,0 +1,12 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SMBLISTSURFACETYPE {
+    BIZTOOLS = 1,
+    MANAGELISTS = 2,
+    NEWLIST = 3,
+    INBOX = 4,
+    INBOXCHATROWMORE = 5,
+    INBOXCHATBOTTOMSHEET = 6,
+    INBOXCHATBOTTOMSHEETADDTOLIST = 7,
+    CHOOSELISTSHEET = 8,
+}

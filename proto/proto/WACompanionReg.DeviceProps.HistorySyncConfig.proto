@@ -1,0 +1,26 @@
+message HistorySyncConfig {
+  optional bytes fullSyncDaysLimit = 1;
+  optional bytes fullSyncSizeMbLimit = 2;
+  optional bytes storageQuotaMb = 3;
+  optional bytes inlineInitialPayloadInE2EeMsg = 4;
+  optional bytes recentSyncDaysLimit = 5;
+  optional bytes supportCallLogHistory = 6;
+  optional bytes supportBotUserAgentChatHistory = 7;
+  optional bytes supportCagReactionsAndPolls = 8;
+  optional bytes supportBizHostedMsg = 9;
+  optional bytes supportRecentSyncChunkMessageCountTuning = 10;
+  optional bytes supportHostedGroupMsg = 11;
+  optional bytes supportFbidBotChatHistory = 12;
+  optional bytes supportAddOnHistorySyncMigration = 13;
+  optional bytes supportMessageAssociation = 14;
+  optional bytes supportGroupHistory = 15;
+  optional bytes onDemandReady = 16;
+  optional bytes supportGuestChat = 17;
+  optional bytes completeOnDemandReady = 18;
+  optional bytes thumbnailSyncDaysLimit = 19;
+  optional bytes initialSyncMaxMessagesPerChat = 20;
+  optional bytes supportManusHistory = 21;
+  optional bytes supportHatchHistory = 22;
+  optional bytes supportedBotChannelFbids = 23;
+  optional bytes supportInlineContacts = 24;
+}

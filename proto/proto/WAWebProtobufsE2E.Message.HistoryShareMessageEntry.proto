@@ -1,0 +1,4 @@
+message HistoryShareMessageEntry {
+  optional bytes stanzaId = 1;
+  optional bytes messageSecretProof = 2;
+}

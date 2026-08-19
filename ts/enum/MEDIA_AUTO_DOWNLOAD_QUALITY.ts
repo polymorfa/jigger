@@ -1,0 +1,5 @@
+export enum MEDIAAUTODOWNLOADQUALITY {
+  AUTO = 0,
+  SD_QUALITY = 1,
+  HD_QUALITY = 2,
+}

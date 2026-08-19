@@ -1,0 +1,6 @@
+message MediaRetryNotification {
+  optional bytes stanzaId = 1;
+  optional bytes directPath = 2;
+  optional bytes result = 3;
+  optional bytes messageSecret = 4;
+}

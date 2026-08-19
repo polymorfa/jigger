@@ -1,0 +1,3 @@
+message BotMessageOriginMetadata {
+  optional BotMessageOrigin origins = 1;
+}

@@ -1,0 +1,8 @@
+message CTA {
+  optional bytes buttonType = 1;
+  optional bytes title = 2;
+  optional bytes actionUrl = 3;
+  optional bytes nativeUrl = 4;
+  optional bytes ctaType = 5;
+  optional bytes actionContentBlob = 6;
+}

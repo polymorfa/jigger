@@ -1,0 +1,10 @@
+message MessageAddOn {
+  optional bytes messageAddOnType = 1;
+  optional bytes messageAddOn = 2;
+  optional bytes senderTimestampMs = 3;
+  optional bytes serverTimestampMs = 4;
+  optional bytes status = 5;
+  optional MessageAddOnContextInfo addOnContextInfo = 6;
+  optional bytes messageAddOnKey = 7;
+  optional LegacyMessage legacyMessage = 8;
+}

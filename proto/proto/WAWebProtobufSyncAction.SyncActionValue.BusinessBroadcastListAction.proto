@@ -1,0 +1,8 @@
+message BusinessBroadcastListAction {
+  optional bytes deleted = 1;
+  optional BroadcastListParticipant participants = 2;
+  optional bytes listName = 3;
+  optional bytes labelIds = 4;
+  optional bytes audienceExpression = 5;
+  optional bytes customAudienceFbid = 6;
+}

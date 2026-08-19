@@ -1,0 +1,2 @@
+// ParseBizAccessTokenRequestSilentNonceResponseRecoveryRequired matches <iq>. Server-initiated; nothing sends it.
+func ParseBizAccessTokenRequestSilentNonceResponseRecoveryRequired(n *waBinary.Node) (*BizAccessTokenRequestSilentNonceResponseRecoveryRequired, error)

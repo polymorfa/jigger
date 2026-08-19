@@ -1,0 +1,4 @@
+export enum MESSAGEBODYTYPEENUM {
+  MESSAGE = 1,
+  CAROUSEL_CARD = 2,
+}

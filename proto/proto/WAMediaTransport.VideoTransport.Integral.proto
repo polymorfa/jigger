@@ -1,0 +1,3 @@
+message Integral {
+  optional WAMediaTransport transport = 1;
+}

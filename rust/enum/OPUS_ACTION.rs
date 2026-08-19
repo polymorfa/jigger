@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OPUSACTION {
+    OPUSNOTWORKING = 0,
+    OPUSJOBRUN = 1,
+    OPUSFALLBACKRUN = 2,
+    OPUSMESSAGECLICKED = 3,
+    OPUSJOBFAILED = 4,
+    OPUSFALLBACKFAILED = 5,
+    OPUSHOOKFAILED = 6,
+}

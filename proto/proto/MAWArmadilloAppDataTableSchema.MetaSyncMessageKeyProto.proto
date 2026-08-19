@@ -1,0 +1,4 @@
+message MetaSyncMessageKeyProto {
+  optional bytes fromMe = 1;
+  optional bytes id = 2;
+}

@@ -1,0 +1,4 @@
+message DeviceSentMessage {
+  optional bytes destinationJid = 1;
+  optional bytes phash = 2;
+}

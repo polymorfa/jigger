@@ -1,0 +1,7 @@
+message MetadataSyncAction {
+  optional bytes actionTimestamp = 1;
+  optional SyncChatAction chatAction = 101;
+  optional SyncMessageAction messageAction = 102;
+  optional SyncSpectraAction spectraAction = 103;
+  optional SyncAttachmentInterventionAction attachmentInterventionAction = 104;
+}

@@ -1,0 +1,6 @@
+message LimitSharing {
+  optional bytes sharingLimited = 1;
+  optional bytes trigger = 2;
+  optional bytes limitSharingSettingTimestamp = 3;
+  optional bytes initiatedByMe = 4;
+}

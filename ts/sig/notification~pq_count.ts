@@ -1,0 +1,2 @@
+/** Matches `<notification>`. Server-initiated; nothing sends it. */
+export function parsePreKeysNotificationLowCountLowCountPQOnlyMixin(n: BinaryNode): PreKeysNotificationLowCountLowCountPQOnlyMixin | null

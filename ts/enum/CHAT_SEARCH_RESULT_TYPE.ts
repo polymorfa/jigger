@@ -1,0 +1,9 @@
+export enum CHATSEARCHRESULTTYPE {
+  CONTACT = 0,
+  CHAT = 1,
+  GROUP = 2,
+  BROADCAST_LIST = 3,
+  MESSAGE = 4,
+  BUSINESS = 5,
+  GROUP_IN_COMMON = 6,
+}

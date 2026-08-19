@@ -1,0 +1,23 @@
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ENUM1PSTICKERAUDIOAVATARSTICKERCATALOGLINKCOLLECTIONDOCUMENTGENAISTICKERGIFIMAGEMOTIONPHOTOMOTIONVIDEOPRODUCTLINKPTTPTVSTICKERSTICKERPACKURLUSERCREATEDSTICKERVCARDVIDEO {
+    1pSticker,
+    Audio,
+    AvatarSticker,
+    Cataloglink,
+    Collection,
+    Document,
+    GenaiSticker,
+    Gif,
+    Image,
+    MotionPhoto,
+    MotionVideo,
+    Productlink,
+    Ptt,
+    Ptv,
+    Sticker,
+    StickerPack,
+    Url,
+    UserCreatedSticker,
+    Vcard,
+    Video,
+}

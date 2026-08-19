@@ -1,0 +1,4 @@
+message ProductSection {
+  optional bytes title = 1;
+  optional Product products = 2;
+}

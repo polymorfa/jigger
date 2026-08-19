@@ -1,0 +1,7 @@
+message AIRichResponseMapAnnotation {
+  optional bytes annotationNumber = 1;
+  optional bytes latitude = 2;
+  optional bytes longitude = 3;
+  optional bytes title = 4;
+  optional bytes body = 5;
+}

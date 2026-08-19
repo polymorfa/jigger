@@ -1,0 +1,6 @@
+message StatusTextMesage {
+  optional ExtendedTextMessage text = 1;
+  optional bytes textArgb = 6;
+  optional bytes backgroundArgb = 7;
+  optional bytes font = 8;
+}

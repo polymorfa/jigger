@@ -1,0 +1,2 @@
+// ParseMessageDeliverReceiverContentTypeMediaRCATMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverReceiverContentTypeMediaRCATMixin(n *waBinary.Node) (*MessageDeliverReceiverContentTypeMediaRCATMixin, error)

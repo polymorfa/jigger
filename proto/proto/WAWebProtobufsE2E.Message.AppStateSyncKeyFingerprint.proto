@@ -1,0 +1,5 @@
+message AppStateSyncKeyFingerprint {
+  optional bytes rawId = 1;
+  optional bytes currentIndex = 2;
+  optional bytes deviceIndexes = 3;
+}

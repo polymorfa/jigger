@@ -1,0 +1,8 @@
+message ReceiptsTableSchemaProto {
+  optional bytes msgId = 1;
+  optional StatusTsPerUserProto statusTsPerUser = 2;
+  optional IdentitiesPerDeviceProto permittedIdentitiesPerDevice = 3;
+  optional bytes recipientDevices = 4;
+  optional RetryCountPerDeviceProto retryCountsPerDevice = 5;
+  optional bytes waMsgId = 6;
+}

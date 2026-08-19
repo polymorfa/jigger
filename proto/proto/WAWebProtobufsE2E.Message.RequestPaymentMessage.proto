@@ -1,0 +1,9 @@
+message RequestPaymentMessage {
+  optional bytes currencyCodeIso4217 = 1;
+  optional bytes amount1000 = 2;
+  optional bytes requestFrom = 3;
+  optional Message noteMessage = 4;
+  optional bytes expiryTimestamp = 5;
+  optional Money amount = 6;
+  optional PaymentBackground background = 7;
+}

@@ -1,0 +1,2 @@
+// ParsePsaResetSmbLastQpPrefetchTimestampRequest matches <notification>. Server-initiated; nothing sends it.
+func ParsePsaResetSmbLastQpPrefetchTimestampRequest(n *waBinary.Node) (*PsaResetSmbLastQpPrefetchTimestampRequest, error)

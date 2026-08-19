@@ -1,0 +1,6 @@
+message HydratedTemplateButton {
+  optional HydratedQuickReplyButton quickReplyButton = 1;
+  optional HydratedURLButton urlButton = 2;
+  optional HydratedCallButton callButton = 3;
+  optional bytes index = 4;
+}

@@ -1,0 +1,2 @@
+// ParseNewslettersGetNewsletterStatusUpdatesResponseSuccess matches <iq>. Response to NewslettersGetNewsletterStatusUpdates.
+func ParseNewslettersGetNewsletterStatusUpdatesResponseSuccess(n *waBinary.Node) (*NewslettersGetNewsletterStatusUpdatesResponseSuccess, error)

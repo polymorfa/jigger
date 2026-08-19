@@ -1,0 +1,13 @@
+message DbAppMetaValuesProto {
+  optional bytes msgTypeVersion = 1;
+  optional bytes hmacKey = 2;
+  optional bytes allowSecurityAlert = 3;
+  optional bytes hotlikeSticker = 4;
+  optional bytes isBackfilledForOccamadillo = 5;
+  optional bytes allowSecurityAlertForSelf = 11;
+  optional bytes hasMigratedFromDexie = 12;
+  optional bytes restoreMigrationAttempts = 13;
+  optional bytes deviceJid = 14;
+  optional bytes restoreToDexieMigrationComplete = 15;
+  optional bytes dbMigrationVersion = 16;
+}

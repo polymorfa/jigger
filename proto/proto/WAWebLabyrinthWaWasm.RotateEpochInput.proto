@@ -1,0 +1,8 @@
+message RotateEpochInput {
+  optional bytes currentEpochRootKey = 1;
+  optional bytes currentEpochAnonId = 2;
+  optional bytes currentEpochFbid = 3;
+  optional bytes newEpochFbid = 4;
+  optional bytes epochStoragePrivateKey = 5;
+  optional RotateEpochMemberInput members = 6;
+}

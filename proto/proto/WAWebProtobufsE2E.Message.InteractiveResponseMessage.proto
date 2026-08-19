@@ -1,0 +1,5 @@
+message InteractiveResponseMessage {
+  optional Body body = 1;
+  optional NativeFlowResponseMessage nativeFlowResponseMessage = 2;
+  optional ContextInfo contextInfo = 15;
+}

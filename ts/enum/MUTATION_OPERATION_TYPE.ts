@@ -1,0 +1,4 @@
+export enum MUTATIONOPERATIONTYPE {
+  SET = 0,
+  REMOVE = 1,
+}

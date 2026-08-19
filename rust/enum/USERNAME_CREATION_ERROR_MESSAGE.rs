@@ -1,0 +1,8 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum USERNAMECREATIONERRORMESSAGE {
+    REQUIRESFBLINKING = 1,
+    REQUIRESIGLINKING = 2,
+    REQUIRESFBIGLINKING = 3,
+    ALREADYTAKEN = 4,
+}

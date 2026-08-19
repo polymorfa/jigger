@@ -1,0 +1,5 @@
+message AIQueryFanout {
+  optional bytes messageKey = 1;
+  optional Message message = 2;
+  optional bytes timestamp = 3;
+}

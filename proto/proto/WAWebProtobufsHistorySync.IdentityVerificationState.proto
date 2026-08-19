@@ -1,0 +1,4 @@
+message IdentityVerificationState {
+  optional bytes verified = 1;
+  optional bytes actionSeq = 2;
+}

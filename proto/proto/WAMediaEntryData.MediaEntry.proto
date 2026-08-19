@@ -1,0 +1,19 @@
+message MediaEntry {
+  optional bytes fileSha256 = 1;
+  optional bytes mediaKey = 2;
+  optional bytes fileEncSha256 = 3;
+  optional bytes directPath = 4;
+  optional bytes mediaKeyTimestamp = 5;
+  optional bytes serverMediaType = 6;
+  optional bytes uploadToken = 7;
+  optional bytes validatedTimestamp = 8;
+  optional bytes sidecar = 9;
+  optional bytes objectId = 10;
+  optional bytes fbid = 11;
+  optional DownloadableThumbnail downloadableThumbnail = 12;
+  optional bytes handle = 13;
+  optional bytes filename = 14;
+  optional ProgressiveJpegDetails progressiveJpegDetails = 15;
+  optional bytes size = 16;
+  optional bytes lastDownloadAttemptTimestamp = 17;
+}

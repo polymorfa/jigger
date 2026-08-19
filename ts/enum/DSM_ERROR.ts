@@ -1,0 +1,5 @@
+export enum DSMERROR {
+  INVALID_SENDER = 1,
+  MISSING_DSM = 2,
+  INVALID_DSM = 3,
+}

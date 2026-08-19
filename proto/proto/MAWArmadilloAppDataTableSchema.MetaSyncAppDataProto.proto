@@ -1,0 +1,3 @@
+message MetaSyncAppDataProto {
+  optional MetaSyncActionProto actions = 1;
+}

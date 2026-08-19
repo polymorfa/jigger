@@ -1,0 +1,2 @@
+// ParseWaffleGenerateWAEntACUserResponseSuccess matches <iq>. Response to WaffleGenerateWAEntACUser.
+func ParseWaffleGenerateWAEntACUserResponseSuccess(n *waBinary.Node) (*WaffleGenerateWAEntACUserResponseSuccess, error)

@@ -1,0 +1,36 @@
+message SettingsSyncAction {
+  optional bytes startAtLogin = 1;
+  optional bytes minimizeToTray = 2;
+  optional bytes language = 3;
+  optional bytes replaceTextWithEmoji = 4;
+  optional bytes bannerNotificationDisplayMode = 5;
+  optional bytes unreadCounterBadgeDisplayMode = 6;
+  optional bytes isMessagesNotificationEnabled = 7;
+  optional bytes isCallsNotificationEnabled = 8;
+  optional bytes isReactionsNotificationEnabled = 9;
+  optional bytes isStatusReactionsNotificationEnabled = 10;
+  optional bytes isTextPreviewForNotificationEnabled = 11;
+  optional bytes defaultNotificationToneId = 12;
+  optional bytes groupDefaultNotificationToneId = 13;
+  optional bytes appTheme = 14;
+  optional bytes wallpaperId = 15;
+  optional bytes isDoodleWallpaperEnabled = 16;
+  optional bytes fontSize = 17;
+  optional bytes isPhotosAutodownloadEnabled = 18;
+  optional bytes isAudiosAutodownloadEnabled = 19;
+  optional bytes isVideosAutodownloadEnabled = 20;
+  optional bytes isDocumentsAutodownloadEnabled = 21;
+  optional bytes disableLinkPreviews = 22;
+  optional bytes notificationToneId = 23;
+  optional bytes mediaUploadQuality = 24;
+  optional bytes isSpellCheckEnabled = 25;
+  optional bytes isEnterToSendEnabled = 26;
+  optional bytes isGroupMessageNotificationEnabled = 27;
+  optional bytes isGroupReactionsNotificationEnabled = 28;
+  optional bytes isStatusNotificationEnabled = 29;
+  optional bytes statusNotificationToneId = 30;
+  optional bytes shouldPlaySoundForCallNotification = 31;
+  optional bytes chatThemeId = 32;
+  optional bytes colorSchemeId = 33;
+  optional bytes stockWallpaperImageId = 34;
+}

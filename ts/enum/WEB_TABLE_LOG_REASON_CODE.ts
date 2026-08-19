@@ -1,0 +1,4 @@
+export enum WEBTABLELOGREASONCODE {
+  BASE = 0,
+  EXCEEDED_THRESHOLD = 1,
+}

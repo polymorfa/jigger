@@ -1,0 +1,2 @@
+// ABWaAsteriaEligibilitySubscriptionStatusCheckEnabled is A/B property 26399 (bool), default false.
+const ABWaAsteriaEligibilitySubscriptionStatusCheckEnabled = "wa_asteria_eligibility_subscription_status_check_enabled"

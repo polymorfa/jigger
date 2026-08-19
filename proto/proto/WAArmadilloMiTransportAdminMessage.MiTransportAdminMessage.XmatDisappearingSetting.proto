@@ -1,0 +1,7 @@
+message XmatDisappearingSetting {
+  optional bytes disappearingSettingTime = 1;
+  optional bytes oldDisappearingSettingTime = 2;
+  optional bytes disappearingSettingActorFbid = 3;
+  optional bytes newEphemeralityType = 4;
+  optional bytes oldEphemeralityType = 5;
+}

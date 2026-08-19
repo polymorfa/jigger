@@ -1,0 +1,4 @@
+message FullHistorySyncOnDemandRequestResponse {
+  optional FullHistorySyncOnDemandRequestMetadata requestMetadata = 1;
+  optional bytes responseCode = 2;
+}

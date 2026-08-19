@@ -1,0 +1,3 @@
+message BizBroadcastInsightsRefreshRequest {
+  optional bytes campaignId = 1;
+}

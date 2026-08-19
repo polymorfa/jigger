@@ -1,0 +1,8 @@
+message ServerHello {
+  optional bytes ephemeral = 1;
+  optional bytes static = 2;
+  optional bytes payload = 3;
+  optional bytes extendedStatic = 4;
+  optional bytes paddingBytes = 5;
+  optional bytes extendedCiphertext = 6;
+}

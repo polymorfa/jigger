@@ -1,0 +1,3 @@
+message HSMDateTimeUnixEpoch {
+  optional bytes timestamp = 1;
+}

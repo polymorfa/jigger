@@ -1,0 +1,2 @@
+// WAWebMexFetchNewsletterIsDomainPreviewableJobQuery is the persisted query. Variables: url_domains
+const MexWAWebMexFetchNewsletterIsDomainPreviewableJobQuery = "9849510985088294"

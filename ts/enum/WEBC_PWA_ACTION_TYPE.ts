@@ -1,0 +1,3 @@
+export enum WEBCPWAACTIONTYPE {
+  INSTALL = 1,
+}

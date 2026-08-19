@@ -1,0 +1,4 @@
+export enum BLOCKEVENTACTIONTYPE {
+  BLOCK = 0,
+  UNBLOCK = 1,
+}

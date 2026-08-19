@@ -1,0 +1,5 @@
+message MessageAssociation {
+  optional bytes associationType = 1;
+  optional bytes parentMessageKey = 2;
+  optional bytes messageIndex = 3;
+}

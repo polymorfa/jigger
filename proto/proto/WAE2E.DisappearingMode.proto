@@ -1,0 +1,6 @@
+message DisappearingMode {
+  optional bytes initiator = 1;
+  optional bytes trigger = 2;
+  optional bytes initiatorDeviceJid = 3;
+  optional bytes initiatedByMe = 4;
+}

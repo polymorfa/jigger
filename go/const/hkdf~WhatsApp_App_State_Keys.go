@@ -1,0 +1,1 @@
+const HkdfWhatsAppAppStateKeys = "WhatsApp App State Keys"

@@ -1,0 +1,4 @@
+export enum IPHONEPROCESSNONGLOBAL {
+  MAIN = 1,
+  SHARE_EXT = 2,
+}

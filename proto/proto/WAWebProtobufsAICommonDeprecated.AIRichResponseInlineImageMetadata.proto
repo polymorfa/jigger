@@ -1,0 +1,6 @@
+message AIRichResponseInlineImageMetadata {
+  optional AIRichResponseImageURL imageUrl = 1;
+  optional bytes imageText = 2;
+  optional bytes alignment = 3;
+  optional bytes tapLinkUrl = 4;
+}

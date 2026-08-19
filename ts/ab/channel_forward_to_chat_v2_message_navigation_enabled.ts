@@ -1,0 +1,2 @@
+/** A/B property 4682 (bool), default false. */
+export const ABChannelForwardToChatV2MessageNavigationEnabled = 'channel_forward_to_chat_v2_message_navigation_enabled' as const

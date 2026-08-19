@@ -1,0 +1,7 @@
+message DecryptMessageInput {
+  optional bytes epochRootKey = 1;
+  optional bytes epochAnonId = 2;
+  optional bytes threadId = 3;
+  optional bytes encryptionVersion = 4;
+  optional bytes ciphertext = 5;
+}

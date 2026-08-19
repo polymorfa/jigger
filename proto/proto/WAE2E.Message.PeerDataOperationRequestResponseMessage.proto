@@ -1,0 +1,5 @@
+message PeerDataOperationRequestResponseMessage {
+  optional bytes peerDataOperationRequestType = 1;
+  optional bytes stanzaId = 2;
+  optional PeerDataOperationResult peerDataOperationResult = 3;
+}

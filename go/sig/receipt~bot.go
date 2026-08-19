@@ -1,0 +1,2 @@
+// ParseReceiptBotClientMultiThreadIDReceiptMixin matches <receipt>. Server-initiated; nothing sends it.
+func ParseReceiptBotClientMultiThreadIDReceiptMixin(n *waBinary.Node) (*ReceiptBotClientMultiThreadIDReceiptMixin, error)

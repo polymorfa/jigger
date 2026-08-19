@@ -1,0 +1,7 @@
+message AppDataProto {
+  optional bytes type = 1;
+  optional MetaSyncActionProto actions = 2;
+  optional EncryptedBackupsSecretsProto encryptedBackupsSecrets = 3;
+  optional SyncKeyShareProto syncKeyShare = 4;
+  optional SyncKeyRequestProto syncKeyRequest = 5;
+}

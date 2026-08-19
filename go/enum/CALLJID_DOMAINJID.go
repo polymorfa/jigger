@@ -1,0 +1,5 @@
+type CALLJIDDOMAINJID string
+
+const (
+	CALLJIDDOMAINJIDTypeName CALLJIDDOMAINJID = "CallJid|DomainJid"
+)

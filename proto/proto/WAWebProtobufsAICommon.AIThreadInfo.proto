@@ -1,0 +1,4 @@
+message AIThreadInfo {
+  optional AIThreadServerInfo serverInfo = 1;
+  optional AIThreadClientInfo clientInfo = 2;
+}

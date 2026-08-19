@@ -1,0 +1,5 @@
+message BotCommandMetadata {
+  optional bytes commandName = 1;
+  optional bytes commandDescription = 2;
+  optional bytes commandPrompt = 3;
+}

@@ -1,0 +1,1 @@
+export const HkdfWhatsAppHistoryKeys = "WhatsApp History Keys" as const

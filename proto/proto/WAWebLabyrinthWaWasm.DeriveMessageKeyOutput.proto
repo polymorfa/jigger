@@ -1,0 +1,4 @@
+message DeriveMessageKeyOutput {
+  optional bytes messageKey = 1;
+  optional bytes error = 2;
+}

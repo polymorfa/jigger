@@ -1,0 +1,5 @@
+type DOMAINJIDGROUPJID string
+
+const (
+	DOMAINJIDGROUPJIDTypeName DOMAINJIDGROUPJID = "DomainJid|GroupJid"
+)

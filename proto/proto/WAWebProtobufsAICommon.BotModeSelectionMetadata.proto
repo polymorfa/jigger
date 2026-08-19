@@ -1,0 +1,4 @@
+message BotModeSelectionMetadata {
+  optional bytes mode = 1;
+  optional bytes overrideMode = 2;
+}

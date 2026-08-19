@@ -1,0 +1,3 @@
+export enum DEVICEJIDDEVICEJIDINTEROPDEVICEJIDINTEROPDEVICEJIDDEVICEJID {
+  TYPE_NAME = "DeviceJid|DeviceJid|InteropDeviceJid|InteropDeviceJid|DeviceJid",
+}

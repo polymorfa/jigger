@@ -1,0 +1,3 @@
+message CoexV2VersionAction {
+  optional bytes version = 1;
+}

@@ -1,0 +1,15 @@
+message PaymentInfo {
+  optional bytes currencyDeprecated = 1;
+  optional bytes amount1000 = 2;
+  optional bytes receiverJid = 3;
+  optional bytes status = 4;
+  optional bytes transactionTimestamp = 5;
+  optional bytes requestMessageKey = 6;
+  optional bytes expiryTimestamp = 7;
+  optional bytes futureproofed = 8;
+  optional bytes currency = 9;
+  optional bytes txnStatus = 10;
+  optional bytes useNoviFiatFormat = 11;
+  optional bytes primaryAmount = 12;
+  optional bytes exchangeAmount = 13;
+}

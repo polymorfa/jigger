@@ -1,0 +1,6 @@
+message SyncSpectraAction {
+  optional bytes key = 1;
+  optional bytes actionType = 2;
+  optional bytes takedownActionId = 3;
+  optional bytes config = 4;
+}

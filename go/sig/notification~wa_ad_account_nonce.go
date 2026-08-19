@@ -1,0 +1,2 @@
+// ParseBizCtwaAdAccountNonceNotificationRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseBizCtwaAdAccountNonceNotificationRequest(n *waBinary.Node) (*BizCtwaAdAccountNonceNotificationRequest, error)

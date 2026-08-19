@@ -1,0 +1,10 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum RECOVERYSTATUSENUM {
+    PRIMARYUNSUPPORTED = 1,
+    ABPROPOFF = 2,
+    NOTFATAL = 3,
+    COLLECTIONUNSUPPORTED = 4,
+    MUTATIONCOUNTTOOHIGH = 5,
+    PRIMARYDIDNOTRESPOND = 6,
+}

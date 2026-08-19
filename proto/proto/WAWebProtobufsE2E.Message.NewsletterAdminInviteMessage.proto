@@ -1,0 +1,8 @@
+message NewsletterAdminInviteMessage {
+  optional bytes newsletterJid = 1;
+  optional bytes newsletterName = 2;
+  optional bytes jpegThumbnail = 3;
+  optional bytes caption = 4;
+  optional bytes inviteExpiration = 5;
+  optional ContextInfo contextInfo = 6;
+}

@@ -1,0 +1,4 @@
+message HistorySyncMsg {
+  optional bytes message = 1;
+  optional bytes msgOrderId = 2;
+}

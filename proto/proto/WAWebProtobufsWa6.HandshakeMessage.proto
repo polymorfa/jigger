@@ -1,0 +1,5 @@
+message HandshakeMessage {
+  optional ClientHello clientHello = 2;
+  optional ServerHello serverHello = 3;
+  optional ClientFinish clientFinish = 4;
+}

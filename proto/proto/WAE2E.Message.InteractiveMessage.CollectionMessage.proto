@@ -1,0 +1,5 @@
+message CollectionMessage {
+  optional bytes bizJid = 1;
+  optional bytes id = 2;
+  optional bytes messageVersion = 3;
+}

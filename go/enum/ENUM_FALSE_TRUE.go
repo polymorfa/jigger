@@ -1,0 +1,6 @@
+type ENUMFALSETRUE string
+
+const (
+	ENUMFALSETRUEFalse ENUMFALSETRUE = "false"
+	ENUMFALSETRUETrue ENUMFALSETRUE = "true"
+)

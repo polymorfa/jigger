@@ -1,0 +1,6 @@
+type ENUMGROUPUSER string
+
+const (
+	ENUMGROUPUSERGroup ENUMGROUPUSER = "group"
+	ENUMGROUPUSERUser ENUMGROUPUSER = "user"
+)

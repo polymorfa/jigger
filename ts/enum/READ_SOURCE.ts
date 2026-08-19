@@ -1,0 +1,7 @@
+export enum READSOURCE {
+  OTHER = 0,
+  CHAT = 1,
+  NOTIFICATION = 2,
+  MARK_AS_READ = 3,
+  MULTIDEVICE_SYNC = 4,
+}

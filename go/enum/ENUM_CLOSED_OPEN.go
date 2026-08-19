@@ -1,0 +1,6 @@
+type ENUMCLOSEDOPEN string
+
+const (
+	ENUMCLOSEDOPENClosed ENUMCLOSEDOPEN = "closed"
+	ENUMCLOSEDOPENOpen ENUMCLOSEDOPEN = "open"
+)

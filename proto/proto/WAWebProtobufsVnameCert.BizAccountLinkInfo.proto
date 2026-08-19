@@ -1,0 +1,7 @@
+message BizAccountLinkInfo {
+  optional bytes whatsappBizAcctFbid = 1;
+  optional bytes whatsappAcctNumber = 2;
+  optional bytes issueTime = 3;
+  optional bytes hostStorage = 4;
+  optional bytes accountType = 5;
+}

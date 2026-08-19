@@ -1,0 +1,4 @@
+message AIRichResponseContentItemsMetadata {
+  optional AIRichResponseContentItemMetadata itemsMetadata = 1;
+  optional bytes contentType = 2;
+}

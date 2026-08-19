@@ -1,0 +1,2 @@
+/** Matches `<iq>`. Server-initiated; nothing sends it. */
+export function parseBizAccessTokenRequestSilentNonceResponseRecoveryRequired(n: BinaryNode): BizAccessTokenRequestSilentNonceResponseRecoveryRequired | null

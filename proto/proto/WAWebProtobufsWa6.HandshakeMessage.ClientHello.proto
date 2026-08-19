@@ -1,0 +1,12 @@
+message ClientHello {
+  optional bytes ephemeral = 1;
+  optional bytes static = 2;
+  optional bytes payload = 3;
+  optional bytes useExtended = 4;
+  optional bytes extendedCiphertext = 5;
+  optional bytes paddedBytes = 6;
+  optional bytes sendServerHelloPaddedBytes = 7;
+  optional bytes simulateXxkemFs = 8;
+  optional bytes pqMode = 9;
+  optional bytes extendedEphemeral = 10;
+}

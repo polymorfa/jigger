@@ -1,0 +1,4 @@
+message ActionLink {
+  optional bytes url = 1;
+  optional bytes buttonTitle = 2;
+}

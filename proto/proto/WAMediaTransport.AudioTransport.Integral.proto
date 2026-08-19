@@ -1,0 +1,4 @@
+message Integral {
+  optional WAMediaTransport transport = 1;
+  optional bytes audioFormat = 2;
+}

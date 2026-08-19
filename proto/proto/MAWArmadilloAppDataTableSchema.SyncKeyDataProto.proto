@@ -1,0 +1,7 @@
+message SyncKeyDataProto {
+  optional bytes keyId = 1;
+  optional bytes keyData = 2;
+  optional bytes keyEpoch = 3;
+  optional bytes timestamp = 4;
+  optional FingerprintProto fingerprint = 5;
+}

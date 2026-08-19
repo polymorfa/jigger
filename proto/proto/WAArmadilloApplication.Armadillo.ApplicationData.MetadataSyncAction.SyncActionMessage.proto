@@ -1,0 +1,4 @@
+message SyncActionMessage {
+  optional bytes key = 1;
+  optional bytes timestamp = 2;
+}

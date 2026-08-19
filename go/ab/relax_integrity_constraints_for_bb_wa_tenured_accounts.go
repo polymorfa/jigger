@@ -1,0 +1,2 @@
+// ABRelaxIntegrityConstraintsForBbWaTenuredAccounts is A/B property 28516 (bool), default false.
+const ABRelaxIntegrityConstraintsForBbWaTenuredAccounts = "relax_integrity_constraints_for_bb_wa_tenured_accounts"

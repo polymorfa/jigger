@@ -1,0 +1,4 @@
+message WaffleNonceFetchResponse {
+  optional bytes nonce = 1;
+  optional bytes waEntFbid = 2;
+}

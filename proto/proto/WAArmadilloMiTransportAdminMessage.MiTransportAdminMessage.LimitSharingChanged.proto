@@ -1,0 +1,3 @@
+message LimitSharingChanged {
+  optional bytes sharingType = 1;
+}

@@ -1,0 +1,2 @@
+/// Persisted query. Variables: input, fetch_viewer_metadata, fetch_full_image, fetch_creation_time, fetch_wamo_sub, fetch_status_metadata, fetch_pinned_messages
+pub const MEX_WAWEB_MEX_FETCH_NEWSLETTER_JOB_QUERY: &str = "27456920720571478";

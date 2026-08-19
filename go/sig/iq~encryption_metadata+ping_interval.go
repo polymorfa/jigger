@@ -1,0 +1,2 @@
+// ParseWaffleGenerateAccessTokensResponseSuccess matches <iq>. Response to WaffleGenerateAccessTokens.
+func ParseWaffleGenerateAccessTokensResponseSuccess(n *waBinary.Node) (*WaffleGenerateAccessTokensResponseSuccess, error)

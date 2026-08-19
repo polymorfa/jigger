@@ -1,0 +1,8 @@
+message PendingReceiptsTableSchemaProto {
+  optional bytes pendingReceiptId = 1;
+  optional bytes thread = 2;
+  optional bytes externalId = 3;
+  optional bytes author = 4;
+  optional Receipts deliveryReceipts = 5;
+  optional Receipts readReceipts = 6;
+}

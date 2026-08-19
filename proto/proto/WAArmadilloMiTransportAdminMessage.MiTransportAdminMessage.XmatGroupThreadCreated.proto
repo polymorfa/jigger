@@ -1,0 +1,3 @@
+message XmatGroupThreadCreated {
+  optional bytes threadSubtype = 1;
+}

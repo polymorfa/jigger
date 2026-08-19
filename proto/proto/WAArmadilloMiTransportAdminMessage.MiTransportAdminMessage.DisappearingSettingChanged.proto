@@ -1,0 +1,4 @@
+message DisappearingSettingChanged {
+  optional bytes disappearingSettingDurationSeconds = 1;
+  optional bytes oldDisappearingSettingDurationSeconds = 2;
+}

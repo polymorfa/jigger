@@ -1,0 +1,4 @@
+export enum DYITRIGGERTYPECODE {
+  ADHOC = 1,
+  SCHEDULED = 2,
+}

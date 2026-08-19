@@ -1,0 +1,4 @@
+message GroupAdminChanged {
+  optional bytes targetUserId = 1;
+  optional bytes action = 2;
+}

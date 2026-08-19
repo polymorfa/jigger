@@ -1,0 +1,5 @@
+message ADVSignedKeyIndexList {
+  optional bytes details = 1;
+  optional bytes accountSignature = 2;
+  optional bytes accountSignatureKey = 3;
+}

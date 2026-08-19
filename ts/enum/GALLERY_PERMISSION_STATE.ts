@@ -1,0 +1,5 @@
+export enum GALLERYPERMISSIONSTATE {
+  FULL = 1,
+  PARTIAL = 2,
+  NONE = 3,
+}

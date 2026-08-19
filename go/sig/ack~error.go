@@ -1,0 +1,2 @@
+// ParseVoipLinkQueryResponseLinkQueryNack matches <ack>. Server-initiated; nothing sends it.
+func ParseVoipLinkQueryResponseLinkQueryNack(n *waBinary.Node) (*VoipLinkQueryResponseLinkQueryNack, error)

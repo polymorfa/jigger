@@ -1,0 +1,5 @@
+type GROUPJIDUSERJID string
+
+const (
+	GROUPJIDUSERJIDTypeName GROUPJIDUSERJID = "GroupJid|UserJid"
+)

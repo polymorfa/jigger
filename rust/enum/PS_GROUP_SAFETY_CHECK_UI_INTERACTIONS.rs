@@ -1,0 +1,15 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PSGROUPSAFETYCHECKUIINTERACTIONS {
+    SEECHAT = 0,
+    EXITGROUP = 1,
+    EXITCOMMUNITY = 2,
+    SEESCAMEXAMPLES = 3,
+    PRIVACYSETTINGS = 4,
+    HOWTOREPORT = 5,
+    DOUBLECHECKLINKS = 6,
+    DISMISS = 7,
+    DRAGDISMISS = 8,
+    XBUTTON = 9,
+    BACKBUTTON = 10,
+}

@@ -1,0 +1,19 @@
+message Metadata {
+  optional EphemeralSetting chatEphemeralSetting = 1;
+  optional EphemeralSettingMap ephemeralSettingList = 2;
+  optional bytes ephemeralSharedSecret = 3;
+  optional bytes forwardingScore = 5;
+  optional bytes isForwarded = 6;
+  optional bytes businessMetadata = 7;
+  optional bytes frankingKey = 8;
+  optional bytes frankingVersion = 9;
+  optional QuotedMessage quotedMessage = 10;
+  optional bytes threadType = 11;
+  optional bytes readonlyMetadataDataclass = 12;
+  optional bytes groupId = 13;
+  optional bytes groupSize = 14;
+  optional bytes groupIndex = 15;
+  optional bytes botResponseId = 16;
+  optional bytes collapsibleId = 17;
+  optional bytes secondaryOtid = 18;
+}

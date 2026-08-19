@@ -1,0 +1,2 @@
+// ParseGroupsGetLinkedGroupResponseSuccess matches <iq>. Server-initiated; nothing sends it.
+func ParseGroupsGetLinkedGroupResponseSuccess(n *waBinary.Node) (*GroupsGetLinkedGroupResponseSuccess, error)

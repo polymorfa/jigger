@@ -1,0 +1,12 @@
+message FlowResponsesCsvBundle {
+  optional bytes flowId = 1;
+  optional bytes galaxyFlowDownloadRequestId = 2;
+  optional bytes fileName = 3;
+  optional bytes mimetype = 4;
+  optional bytes fileSha256 = 5;
+  optional bytes mediaKey = 6;
+  optional bytes fileEncSha256 = 7;
+  optional bytes directPath = 8;
+  optional bytes mediaKeyTimestamp = 9;
+  optional bytes fileLength = 10;
+}

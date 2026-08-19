@@ -1,0 +1,5 @@
+export enum WEBCMESSAGEQUERYDIRECTION {
+  LOAD_PREV = 0,
+  LOAD_NEXT = 1,
+  LOAD_AROUND = 2,
+}

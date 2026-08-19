@@ -1,0 +1,6 @@
+message AudioMsgContentProto {
+  optional bytes duration = 1;
+  optional bytes mimetype = 2;
+  optional bytes played = 3;
+  optional bytes waveform = 4;
+}

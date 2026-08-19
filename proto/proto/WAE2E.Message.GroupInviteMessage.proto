@@ -1,0 +1,10 @@
+message GroupInviteMessage {
+  optional bytes groupJid = 1;
+  optional bytes inviteCode = 2;
+  optional bytes inviteExpiration = 3;
+  optional bytes groupName = 4;
+  optional bytes jpegThumbnail = 5;
+  optional bytes caption = 6;
+  optional ContextInfo contextInfo = 7;
+  optional bytes groupType = 8;
+}

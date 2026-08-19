@@ -1,0 +1,6 @@
+message HistorySyncChunkRetryRequest {
+  optional bytes syncType = 1;
+  optional bytes chunkOrder = 2;
+  optional bytes chunkNotificationId = 3;
+  optional bytes regenerateChunk = 4;
+}

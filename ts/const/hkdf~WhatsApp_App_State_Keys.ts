@@ -1,0 +1,1 @@
+export const HkdfWhatsAppAppStateKeys = "WhatsApp App State Keys" as const

@@ -1,0 +1,4 @@
+export enum CTWADIRECTIONFROM {
+  CUSTOMER = 0,
+  BUSINESS = 1,
+}

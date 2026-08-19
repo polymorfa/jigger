@@ -1,0 +1,2 @@
+// ParsePreKeysNotificationContactIDChangedRequest matches <notification>. Server-initiated; nothing sends it.
+func ParsePreKeysNotificationContactIDChangedRequest(n *waBinary.Node) (*PreKeysNotificationContactIDChangedRequest, error)

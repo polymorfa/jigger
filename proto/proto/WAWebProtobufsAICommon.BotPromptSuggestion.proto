@@ -1,0 +1,4 @@
+message BotPromptSuggestion {
+  optional bytes prompt = 1;
+  optional bytes promptId = 2;
+}

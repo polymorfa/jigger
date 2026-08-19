@@ -1,0 +1,7 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ENTRYPOINTCONVERSATIONINITIATED {
+    BUSINESSINITIATED = 0,
+    CONSUMERINITIATED = 1,
+    NOMESSAGESLAST24H = 2,
+}

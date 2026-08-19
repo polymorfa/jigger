@@ -1,0 +1,8 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum STATUSREPORTINTERACTION {
+    CLICKREPORT = 0,
+    CLICKSUBMITREPORT = 1,
+    CLICKCANCELREPORT = 2,
+    CLICKSUBMITREPORTBLOCK = 3,
+}

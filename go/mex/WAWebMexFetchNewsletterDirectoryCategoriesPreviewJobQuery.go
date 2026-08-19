@@ -1,0 +1,2 @@
+// WAWebMexFetchNewsletterDirectoryCategoriesPreviewJobQuery is the persisted query. Variables: input, fetch_status_metadata
+const MexWAWebMexFetchNewsletterDirectoryCategoriesPreviewJobQuery = "35266481849605779"

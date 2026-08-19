@@ -1,0 +1,3 @@
+message PlaceholderMessage {
+  optional bytes type = 1;
+}

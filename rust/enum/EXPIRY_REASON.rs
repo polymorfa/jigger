@@ -1,0 +1,12 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EXPIRYREASON {
+    USERLEAVE = 1,
+    DEVICEUNPAIR = 2,
+    IDENTITYCHANGE = 3,
+    AUDIENCECHANGE = 4,
+    PERIODICROTATION = 5,
+    KEYCORRUPTION = 6,
+    PEERCOMPANIONUNPAIR = 7,
+    OTHERDEVICEUNPAIR = 8,
+}

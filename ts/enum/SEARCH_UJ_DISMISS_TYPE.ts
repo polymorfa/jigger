@@ -1,0 +1,5 @@
+export enum SEARCHUJDISMISSTYPE {
+  BACK_PRESSED = 1,
+  OTHER = 2,
+  SWIPE = 3,
+}

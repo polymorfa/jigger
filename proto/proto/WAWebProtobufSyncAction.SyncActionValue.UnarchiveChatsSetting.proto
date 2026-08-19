@@ -1,0 +1,3 @@
+message UnarchiveChatsSetting {
+  optional bytes unarchiveChats = 1;
+}

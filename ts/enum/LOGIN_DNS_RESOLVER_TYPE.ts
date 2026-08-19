@@ -1,0 +1,9 @@
+export enum LOGINDNSRESOLVERTYPE {
+  SYSTEM = 1,
+  GOOGLE = 2,
+  HARDCODED = 3,
+  NO_DNS = 4,
+  MNS = 5,
+  SOCKS_PROXY = 6,
+  MNS_SECONDARY = 7,
+}

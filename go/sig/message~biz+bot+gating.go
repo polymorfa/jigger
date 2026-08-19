@@ -1,0 +1,2 @@
+// ParseMessageDeliverBusinessBotGatingMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverBusinessBotGatingMixin(n *waBinary.Node) (*MessageDeliverBusinessBotGatingMixin, error)

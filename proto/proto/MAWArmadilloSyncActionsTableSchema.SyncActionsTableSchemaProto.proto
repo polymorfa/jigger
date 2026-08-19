@@ -1,0 +1,14 @@
+message SyncActionsTableSchemaProto {
+  optional bytes index = 1;
+  optional bytes binarySyncData = 2;
+  optional bytes actionState = 3;
+  optional bytes version = 4;
+  optional bytes keyId = 5;
+  optional bytes modelId = 6;
+  optional bytes modelType = 7;
+  optional bytes indexMac = 8;
+  optional bytes valueMac = 9;
+  optional bytes collection = 10;
+  optional bytes timestamp = 11;
+  optional bytes action = 12;
+}

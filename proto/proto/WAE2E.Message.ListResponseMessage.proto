@@ -1,0 +1,7 @@
+message ListResponseMessage {
+  optional bytes title = 1;
+  optional bytes listType = 2;
+  optional SingleSelectReply singleSelectReply = 3;
+  optional ContextInfo contextInfo = 4;
+  optional bytes description = 5;
+}

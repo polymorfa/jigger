@@ -1,0 +1,3 @@
+message LabelReorderingAction {
+  optional bytes sortedLabelIds = 1;
+}

@@ -1,0 +1,4 @@
+message EncryptedPairingRequest {
+  optional bytes encryptedPayload = 1;
+  optional bytes iv = 2;
+}

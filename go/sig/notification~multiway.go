@@ -1,0 +1,2 @@
+// ParseMultiwaydMultiwayNotificationRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseMultiwaydMultiwayNotificationRequest(n *waBinary.Node) (*MultiwaydMultiwayNotificationRequest, error)

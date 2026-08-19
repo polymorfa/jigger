@@ -1,0 +1,5 @@
+message ContactsArrayMessage {
+  optional bytes displayName = 1;
+  optional ContactMessage contacts = 2;
+  optional ContextInfo contextInfo = 17;
+}

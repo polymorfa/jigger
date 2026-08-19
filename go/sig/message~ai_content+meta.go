@@ -1,0 +1,2 @@
+// ParseMessageDeliverNewsletterAIContentMetaMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverNewsletterAIContentMetaMixin(n *waBinary.Node) (*MessageDeliverNewsletterAIContentMetaMixin, error)

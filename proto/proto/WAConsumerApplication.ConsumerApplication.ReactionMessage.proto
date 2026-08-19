@@ -1,0 +1,8 @@
+message ReactionMessage {
+  optional bytes key = 1;
+  optional bytes text = 2;
+  optional bytes groupingKey = 3;
+  optional bytes senderTimestampMs = 4;
+  optional bytes reactionMetadataDataclassData = 5;
+  optional bytes style = 6;
+}

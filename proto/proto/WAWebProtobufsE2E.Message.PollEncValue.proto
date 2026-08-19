@@ -1,0 +1,4 @@
+message PollEncValue {
+  optional bytes encPayload = 1;
+  optional bytes encIv = 2;
+}

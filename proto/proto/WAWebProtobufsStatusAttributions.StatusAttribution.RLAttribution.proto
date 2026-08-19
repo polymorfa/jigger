@@ -1,0 +1,3 @@
+message RLAttribution {
+  optional bytes source = 1;
+}

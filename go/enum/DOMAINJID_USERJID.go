@@ -1,0 +1,5 @@
+type DOMAINJIDUSERJID string
+
+const (
+	DOMAINJIDUSERJIDTypeName DOMAINJIDUSERJID = "DomainJid|UserJid"
+)

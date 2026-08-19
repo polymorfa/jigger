@@ -1,0 +1,9 @@
+message MarketingMessageAction {
+  optional bytes name = 1;
+  optional bytes message = 2;
+  optional bytes type = 3;
+  optional bytes createdAt = 4;
+  optional bytes lastSentAt = 5;
+  optional bytes isDeleted = 6;
+  optional bytes mediaId = 7;
+}

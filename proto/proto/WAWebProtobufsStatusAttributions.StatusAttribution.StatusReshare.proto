@@ -1,0 +1,4 @@
+message StatusReshare {
+  optional bytes source = 1;
+  optional Metadata metadata = 2;
+}

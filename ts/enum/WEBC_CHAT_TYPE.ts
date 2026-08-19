@@ -1,0 +1,7 @@
+export enum WEBCCHATTYPE {
+  INDIVIDUAL = 0,
+  GROUP = 1,
+  BROADCAST_LIST = 2,
+  COMMUNITY = 3,
+  NEWSLETTER = 4,
+}

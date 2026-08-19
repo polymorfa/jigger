@@ -1,0 +1,6 @@
+message ButtonsResponseMessage {
+  optional bytes selectedButtonId = 1;
+  optional bytes selectedDisplayText = 2;
+  optional ContextInfo contextInfo = 3;
+  optional bytes type = 4;
+}

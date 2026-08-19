@@ -1,0 +1,3 @@
+export enum ENDCALLCONFIRMATIONTYPE {
+  CALL_TOO_SHORT = 1,
+}

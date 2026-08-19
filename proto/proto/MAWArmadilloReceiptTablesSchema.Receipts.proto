@@ -1,0 +1,4 @@
+message Receipts {
+  optional bytes device = 1;
+  optional bytes ts = 2;
+}

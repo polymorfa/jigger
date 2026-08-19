@@ -1,0 +1,6 @@
+type ENUMDARKLIGHT string
+
+const (
+	ENUMDARKLIGHTDark ENUMDARKLIGHT = "dark"
+	ENUMDARKLIGHTLight ENUMDARKLIGHT = "light"
+)

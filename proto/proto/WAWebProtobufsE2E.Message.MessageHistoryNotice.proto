@@ -1,0 +1,5 @@
+message MessageHistoryNotice {
+  optional ContextInfo contextInfo = 1;
+  optional MessageHistoryMetadata messageHistoryMetadata = 2;
+  optional BotHistoryShareSyncMetadata botHistoryShareSyncMetadata = 3;
+}

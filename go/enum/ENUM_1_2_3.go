@@ -1,0 +1,7 @@
+type ENUM123 string
+
+const (
+	ENUM1231 ENUM123 = "1"
+	ENUM1232 ENUM123 = "2"
+	ENUM1233 ENUM123 = "3"
+)

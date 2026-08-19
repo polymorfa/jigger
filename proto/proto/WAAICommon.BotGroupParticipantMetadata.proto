@@ -1,0 +1,3 @@
+message BotGroupParticipantMetadata {
+  optional bytes botFbid = 1;
+}

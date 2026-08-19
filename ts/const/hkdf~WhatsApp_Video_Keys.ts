@@ -1,0 +1,1 @@
+export const HkdfWhatsAppVideoKeys = "WhatsApp Video Keys" as const

@@ -1,0 +1,4 @@
+message AIRichResponseGridImageMetadata {
+  optional AIRichResponseImageURL gridImageUrl = 1;
+  optional AIRichResponseImageURL imageUrls = 2;
+}

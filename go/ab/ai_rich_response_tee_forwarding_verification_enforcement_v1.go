@@ -1,0 +1,2 @@
+// ABAiRichResponseTeeForwardingVerificationEnforcementV1 is A/B property 32551 (string), default "none".
+const ABAiRichResponseTeeForwardingVerificationEnforcementV1 = "ai_rich_response_tee_forwarding_verification_enforcement_v1"

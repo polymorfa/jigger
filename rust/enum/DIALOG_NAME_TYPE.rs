@@ -1,0 +1,11 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum DIALOGNAMETYPE {
+    LOGOUT = 1,
+    APPLOCKENABLE = 2,
+    APPLOCKDISABLE = 3,
+    APPLOCKENABLEDCONFIRM = 4,
+    HARDREFRESH = 5,
+    NOTIFICATIONMESSAGEOPTIN = 6,
+    NOTIFICATIONCALLOPTIN = 7,
+}

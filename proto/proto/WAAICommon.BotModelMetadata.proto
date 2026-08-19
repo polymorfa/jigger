@@ -1,0 +1,5 @@
+message BotModelMetadata {
+  optional bytes modelType = 1;
+  optional bytes premiumModelStatus = 2;
+  optional bytes modelNameOverride = 3;
+}

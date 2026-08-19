@@ -1,0 +1,9 @@
+message HistorySyncOnDemandRequest {
+  optional bytes chatJid = 1;
+  optional bytes oldestMsgId = 2;
+  optional bytes oldestMsgFromMe = 3;
+  optional bytes onDemandMsgCount = 4;
+  optional bytes oldestMsgTimestampMs = 5;
+  optional bytes accountLid = 6;
+  optional bytes supportInlineResponse = 7;
+}

@@ -1,0 +1,18 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PTTMESSAGEUSERJOURNEYACTION {
+    START = 1,
+    PAUSE = 2,
+    RESUME = 3,
+    FAIL = 4,
+    SEND = 5,
+    DELETE = 6,
+    AUTOCANCEL = 7,
+    LOCK = 8,
+    DRAFTSAVED = 9,
+    DRAFTLOADED = 10,
+    WIDGETTAP = 11,
+    PTTWIDGETFORWARDPICKERSHOWN = 12,
+    PTTWIDGETRECIPIENTSELECTED = 13,
+    PREVIEWPLAYBACK = 14,
+}

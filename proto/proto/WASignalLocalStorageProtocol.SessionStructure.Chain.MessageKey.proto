@@ -1,0 +1,6 @@
+message MessageKey {
+  optional bytes index = 1;
+  optional bytes cipherKey = 2;
+  optional bytes macKey = 3;
+  optional bytes iv = 4;
+}

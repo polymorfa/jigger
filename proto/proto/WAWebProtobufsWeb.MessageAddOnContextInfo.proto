@@ -1,0 +1,4 @@
+message MessageAddOnContextInfo {
+  optional bytes messageAddOnDurationInSecs = 1;
+  optional bytes messageAddOnExpiryType = 2;
+}

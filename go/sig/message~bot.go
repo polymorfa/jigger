@@ -1,0 +1,2 @@
+// ParseMessageDeliverBotProactiveMessageMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverBotProactiveMessageMixin(n *waBinary.Node) (*MessageDeliverBotProactiveMessageMixin, error)

@@ -1,0 +1,11 @@
+message HighlyStructuredMessage {
+  optional bytes namespace = 1;
+  optional bytes elementName = 2;
+  optional bytes params = 3;
+  optional bytes fallbackLg = 4;
+  optional bytes fallbackLc = 5;
+  optional HSMLocalizableParameter localizableParams = 6;
+  optional bytes deterministicLg = 7;
+  optional bytes deterministicLc = 8;
+  optional TemplateMessage hydratedHsm = 9;
+}

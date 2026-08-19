@@ -1,0 +1,3 @@
+message ScreenshotAction {
+  optional bytes screenshotType = 1;
+}

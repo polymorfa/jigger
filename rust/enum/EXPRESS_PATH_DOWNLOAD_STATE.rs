@@ -1,0 +1,9 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EXPRESSPATHDOWNLOADSTATE {
+    PARTIALORNONE = 1,
+    FULL = 2,
+    MEDIANOTIFYRECEIVEDEPDISABLED = 3,
+    SKIPPEDDIFFPOP = 4,
+    SKIPPEDAUTODOWNLOAD = 5,
+}

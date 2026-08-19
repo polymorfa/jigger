@@ -1,0 +1,3 @@
+export enum BROADCASTJIDCALLJIDDEVICEJIDDOMAINJIDGROUPJIDSTATUSJIDUSERJID {
+  TYPE_NAME = "BroadcastJid|CallJid|DeviceJid|DomainJid|GroupJid|StatusJid|UserJid",
+}

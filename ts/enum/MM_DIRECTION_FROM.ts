@@ -1,0 +1,4 @@
+export enum MMDIRECTIONFROM {
+  CUSTOMER = 0,
+  BUSINESS = 1,
+}

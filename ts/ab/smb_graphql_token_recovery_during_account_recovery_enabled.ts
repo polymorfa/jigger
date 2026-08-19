@@ -1,0 +1,2 @@
+/** A/B property 9197 (bool), default false. */
+export const ABSmbGraphqlTokenRecoveryDuringAccountRecoveryEnabled = 'smb_graphql_token_recovery_during_account_recovery_enabled' as const

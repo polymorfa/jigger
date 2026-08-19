@@ -1,0 +1,9 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum BIZAIASSETMATERIALIZATIONFAILURETYPE {
+    CONTEXTGENERATION = 0,
+    ASSETRETRIEVAL = 1,
+    CDNGENERATION = 2,
+    UNKNOWNTYPE = 3,
+    GENERALFAILURE = 4,
+}

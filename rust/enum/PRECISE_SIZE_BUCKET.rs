@@ -1,0 +1,22 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PRECISESIZEBUCKET {
+    LT4 = 1,
+    LT8 = 2,
+    LT16 = 3,
+    LT32 = 4,
+    LT64 = 5,
+    LT128 = 6,
+    LT256 = 7,
+    LT512 = 8,
+    LT1000 = 9,
+    LT1500 = 10,
+    LT2000 = 11,
+    LT2500 = 12,
+    LT3000 = 13,
+    LT3500 = 14,
+    LT4000 = 15,
+    LT4500 = 16,
+    LT5000 = 17,
+    LARGESTBUCKET = 18,
+}

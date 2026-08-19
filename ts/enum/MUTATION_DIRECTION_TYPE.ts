@@ -1,0 +1,4 @@
+export enum MUTATIONDIRECTIONTYPE {
+  INCOMING = 0,
+  OUTGOING = 1,
+}

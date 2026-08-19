@@ -1,0 +1,7 @@
+message Field {
+  optional bytes minVersion = 1;
+  optional bytes maxVersion = 2;
+  optional bytes notReportableMinVersion = 3;
+  optional bytes isMessage = 4;
+  optional bytes subfield = 5;
+}

@@ -1,0 +1,4 @@
+message PollOption {
+  optional bytes name = 1;
+  optional bytes hash = 2;
+}

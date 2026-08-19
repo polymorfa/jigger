@@ -1,0 +1,11 @@
+message VideoMsgContentProto {
+  optional bytes duration = 1;
+  optional bytes width = 2;
+  optional bytes height = 3;
+  optional bytes mimetype = 4;
+  optional bytes jpegThumbnail = 5;
+  optional bytes jpegThumbnailHeight = 6;
+  optional bytes jpegThumbnailWidth = 7;
+  optional bytes thumbnailPlaintextHash = 8;
+  optional bytes gifPlayback = 9;
+}

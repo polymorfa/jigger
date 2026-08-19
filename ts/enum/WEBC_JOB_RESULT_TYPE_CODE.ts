@@ -1,0 +1,6 @@
+export enum WEBCJOBRESULTTYPECODE {
+  COMPLETED = 0,
+  ERROR = 1,
+  TIMEOUT = 2,
+  ABORTED = 3,
+}

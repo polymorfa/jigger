@@ -1,0 +1,12 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum WEBCSTICKERMAKEREVENTNAMETYPE {
+    STICKERMAKERBUTTONTAP = 0,
+    IMAGEUPLOADED = 1,
+    IMAGECROPPED = 2,
+    EMOJIADDED = 3,
+    STICKERADDED = 4,
+    TEXTADDED = 5,
+    IMAGEOUTLINED = 6,
+    SENDSTICKER = 7,
+}

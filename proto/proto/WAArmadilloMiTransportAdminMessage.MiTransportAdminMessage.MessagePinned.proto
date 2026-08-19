@@ -1,0 +1,3 @@
+message MessagePinned {
+  optional bytes action = 1;
+}

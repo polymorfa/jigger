@@ -1,0 +1,10 @@
+message StatusAttribution {
+  optional bytes type = 1;
+  optional bytes actionUrl = 2;
+  optional StatusReshare statusReshare = 3;
+  optional ExternalShare externalShare = 4;
+  optional Music music = 5;
+  optional GroupStatus groupStatus = 6;
+  optional RLAttribution rlAttribution = 7;
+  optional AiCreatedAttribution aiCreatedAttribution = 8;
+}

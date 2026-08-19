@@ -1,0 +1,7 @@
+message Parameters {
+  optional bytes key = 1;
+  optional bytes stringData = 2;
+  optional bytes intData = 3;
+  optional bytes floatData = 4;
+  optional Parameters contents = 5;
+}

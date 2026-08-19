@@ -1,0 +1,3 @@
+message BubbleLockMessageAction {
+  optional bytes locked = 1;
+}

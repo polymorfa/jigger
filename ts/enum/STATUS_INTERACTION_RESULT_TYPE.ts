@@ -1,0 +1,5 @@
+export enum STATUSINTERACTIONRESULTTYPE {
+  OK = 1,
+  REVOKED = 2,
+  ERROR_UNKNOWN = 3,
+}

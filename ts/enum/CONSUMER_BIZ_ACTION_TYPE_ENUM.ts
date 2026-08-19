@@ -1,0 +1,10 @@
+export enum CONSUMERBIZACTIONTYPEENUM {
+  IMPRESSION = 0,
+  TAP = 1,
+  SCROLL = 2,
+  LONG_PRESS = 3,
+  SWIPE = 4,
+  CLICK = 5,
+  VIEW = 6,
+  OPEN_CHAT = 7,
+}

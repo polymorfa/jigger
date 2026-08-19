@@ -1,0 +1,3 @@
+message UGCBot {
+  optional bytes definition = 1;
+}

@@ -1,0 +1,4 @@
+message EphemeralSetting {
+  optional bytes duration = 1;
+  optional bytes timestamp = 2;
+}

@@ -1,0 +1,5 @@
+message AlbumMessage {
+  optional bytes expectedImageCount = 2;
+  optional bytes expectedVideoCount = 3;
+  optional ContextInfo contextInfo = 17;
+}

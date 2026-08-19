@@ -1,0 +1,2 @@
+// ABWebPremiumMessagesInteractivityRenderingEnabled is A/B property 4596 (bool), default false.
+const ABWebPremiumMessagesInteractivityRenderingEnabled = "web_premium_messages_interactivity_rendering_enabled"

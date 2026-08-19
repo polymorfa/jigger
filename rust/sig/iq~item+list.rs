@@ -1,0 +1,2 @@
+/// Matches `<iq>`. Response to BlocklistsUpdateOptOutList.
+pub fn parse_blocklists_update_opt_out_list_response_success_with_match(n: &Node) -> Option<BlocklistsUpdateOptOutListResponseSuccessWithMatch>

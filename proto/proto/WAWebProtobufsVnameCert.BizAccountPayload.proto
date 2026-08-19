@@ -1,0 +1,4 @@
+message BizAccountPayload {
+  optional VerifiedNameCertificate vnameCert = 1;
+  optional bytes bizAcctLinkInfo = 2;
+}

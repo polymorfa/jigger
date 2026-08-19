@@ -1,0 +1,2 @@
+// ABAiRichResponseForwardingVerificationEnabledV1 is A/B property 19590 (string), default "\\\"none\\".
+const ABAiRichResponseForwardingVerificationEnabledV1 = "ai_rich_response_forwarding_verification_enabled_v1"

@@ -1,0 +1,5 @@
+message IdentitiesPerDeviceProto {
+  optional bytes deviceJid = 1;
+  optional bytes serializedPubKey = 2;
+  optional bytes baseKey = 3;
+}

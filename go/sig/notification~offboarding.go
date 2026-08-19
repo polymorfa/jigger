@@ -1,0 +1,2 @@
+// ParseCoexistenceOffboardingNotificationRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseCoexistenceOffboardingNotificationRequest(n *waBinary.Node) (*CoexistenceOffboardingNotificationRequest, error)

@@ -1,0 +1,4 @@
+export enum NOTIFICATIONSOUNDTONE {
+  DEFAULT = 1,
+  CUSTOM = 2,
+}

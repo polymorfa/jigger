@@ -1,0 +1,4 @@
+message InteractiveAnnotation {
+  optional Point polygonVertices = 1;
+  optional Location location = 2;
+}

@@ -1,0 +1,4 @@
+export enum ENUMMASTERCARDVISA {
+  MASTERCARD = "MASTERCARD",
+  VISA = "VISA",
+}

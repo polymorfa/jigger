@@ -1,0 +1,7 @@
+message NewsletterFollowerInviteMessage {
+  optional bytes newsletterJid = 1;
+  optional bytes newsletterName = 2;
+  optional bytes jpegThumbnail = 3;
+  optional bytes caption = 4;
+  optional ContextInfo contextInfo = 5;
+}

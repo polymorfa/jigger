@@ -1,0 +1,2 @@
+/** A/B property 21313 (int), default 1209600. */
+export const ABGroupHistoryMessagesTimeLimitReceiverEnforcementSecs = 'group_history_messages_time_limit_receiver_enforcement_secs' as const

@@ -1,0 +1,6 @@
+message EventResponse {
+  optional bytes eventResponseMessageKey = 1;
+  optional bytes timestampMs = 2;
+  optional bytes eventResponseMessage = 3;
+  optional bytes unread = 4;
+}

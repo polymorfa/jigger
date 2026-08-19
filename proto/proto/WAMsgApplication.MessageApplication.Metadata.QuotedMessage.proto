@@ -1,0 +1,6 @@
+message QuotedMessage {
+  optional bytes stanzaId = 1;
+  optional bytes remoteJid = 2;
+  optional bytes participant = 3;
+  optional Payload payload = 4;
+}

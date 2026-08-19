@@ -1,0 +1,3 @@
+message BotAgentDeepLinkMetadata {
+  optional bytes token = 1;
+}

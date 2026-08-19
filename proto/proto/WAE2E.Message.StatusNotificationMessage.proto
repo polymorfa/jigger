@@ -1,0 +1,5 @@
+message StatusNotificationMessage {
+  optional bytes responseMessageKey = 1;
+  optional bytes originalMessageKey = 2;
+  optional bytes type = 3;
+}

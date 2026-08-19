@@ -1,0 +1,10 @@
+message FourRowTemplate {
+  optional DocumentMessage documentMessage = 1;
+  optional HighlyStructuredMessage highlyStructuredMessage = 2;
+  optional ImageMessage imageMessage = 3;
+  optional VideoMessage videoMessage = 4;
+  optional LocationMessage locationMessage = 5;
+  optional HighlyStructuredMessage content = 6;
+  optional HighlyStructuredMessage footer = 7;
+  optional TemplateButton buttons = 8;
+}

@@ -1,0 +1,5 @@
+message SideBySideSurveyAnalyticsData {
+  optional bytes tessaEvent = 1;
+  optional bytes tessaSessionFbid = 2;
+  optional bytes simonSessionFbid = 3;
+}

@@ -1,0 +1,2 @@
+// ParseWaffleForceSuspendStateResponseSuccess matches <iq>. Response to WaffleForceSuspendState.
+func ParseWaffleForceSuspendStateResponseSuccess(n *waBinary.Node) (*WaffleForceSuspendStateResponseSuccess, error)

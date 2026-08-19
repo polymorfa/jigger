@@ -1,0 +1,4 @@
+message Section {
+  optional bytes title = 1;
+  optional Row rows = 2;
+}

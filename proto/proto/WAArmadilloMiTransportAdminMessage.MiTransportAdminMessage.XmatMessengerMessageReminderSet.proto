@@ -1,0 +1,4 @@
+message XmatMessengerMessageReminderSet {
+  optional bytes offlineThreadingId = 1;
+  optional bytes scheduledTime = 2;
+}

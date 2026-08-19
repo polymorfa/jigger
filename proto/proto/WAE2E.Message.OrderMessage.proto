@@ -1,0 +1,17 @@
+message OrderMessage {
+  optional bytes orderId = 1;
+  optional bytes thumbnail = 2;
+  optional bytes itemCount = 3;
+  optional bytes status = 4;
+  optional bytes surface = 5;
+  optional bytes message = 6;
+  optional bytes orderTitle = 7;
+  optional bytes sellerJid = 8;
+  optional bytes token = 9;
+  optional bytes totalAmount1000 = 10;
+  optional bytes totalCurrencyCode = 11;
+  optional bytes messageVersion = 12;
+  optional bytes orderRequestMessageId = 13;
+  optional bytes catalogType = 15;
+  optional ContextInfo contextInfo = 17;
+}

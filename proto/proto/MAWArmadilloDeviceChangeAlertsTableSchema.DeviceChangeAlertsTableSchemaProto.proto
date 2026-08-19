@@ -1,0 +1,16 @@
+message DeviceChangeAlertsTableSchemaProto {
+  optional bytes action = 1;
+  optional bytes isArchived = 2;
+  optional bytes deviceChangeAlertsId = 3;
+  optional bytes location = 4;
+  optional bytes model = 5;
+  optional bytes ts = 6;
+  optional bytes loggedOut = 7;
+  optional bytes deviceJid = 8;
+  optional bytes identity = 9;
+  optional bytes platform = 10;
+  optional bytes latitude = 11;
+  optional bytes longitude = 12;
+  optional bytes isConfirmed = 13;
+  optional bytes isNotified = 14;
+}

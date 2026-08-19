@@ -1,0 +1,2 @@
+// ABPaymentsUprCustomPaymentMethodsSyncCountries is A/B property 30647 (string), default "".
+const ABPaymentsUprCustomPaymentMethodsSyncCountries = "payments_upr_custom_payment_methods_sync_countries"

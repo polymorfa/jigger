@@ -1,0 +1,2 @@
+/** Matches `<message>`. Server-initiated; nothing sends it. */
+export function parseMessageDeliverReceiverContentTypeMediaRCATMixin(n: BinaryNode): MessageDeliverReceiverContentTypeMediaRCATMixin | null

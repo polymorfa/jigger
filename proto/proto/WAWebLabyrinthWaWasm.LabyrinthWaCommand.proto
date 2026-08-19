@@ -1,0 +1,8 @@
+message LabyrinthWaCommand {
+  optional CreateBackupInput createBackupInput = 1;
+  optional EncryptMessageInput encryptMessageInput = 2;
+  optional DecryptMessageInput decryptMessageInput = 3;
+  optional OrfThreadIdInput orfThreadIdInput = 4;
+  optional DeriveMessageKeyInput deriveMessageKeyInput = 5;
+  optional RotateEpochInput rotateEpochInput = 6;
+}

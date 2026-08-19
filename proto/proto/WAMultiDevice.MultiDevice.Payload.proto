@@ -1,0 +1,4 @@
+message Payload {
+  optional ApplicationData applicationData = 1;
+  optional Signal signal = 2;
+}

@@ -1,0 +1,2 @@
+// ParseMessageDeliverPreFilledNumberMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverPreFilledNumberMixin(n *waBinary.Node) (*MessageDeliverPreFilledNumberMixin, error)

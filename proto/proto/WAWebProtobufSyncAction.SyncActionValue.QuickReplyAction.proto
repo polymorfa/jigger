@@ -1,0 +1,8 @@
+message QuickReplyAction {
+  optional bytes shortcut = 1;
+  optional bytes message = 2;
+  optional bytes keywords = 3;
+  optional bytes count = 4;
+  optional bytes deleted = 5;
+  optional bytes associatedLabelIds = 6;
+}

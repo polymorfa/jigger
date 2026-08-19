@@ -1,0 +1,12 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LISTUPDATEUSERJOURNEYACTION {
+    START = 0,
+    SELECTPREDEFINED = 1,
+    CREATELIST = 2,
+    MOREBOTTOMSHEETOPEN = 3,
+    MOREBUTTONTAP = 4,
+    LISTITEMTAP = 5,
+    CREATELISTTAP = 6,
+    EDITTAP = 7,
+}

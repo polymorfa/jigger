@@ -1,0 +1,4 @@
+message Point {
+  optional bytes x = 1;
+  optional bytes y = 2;
+}

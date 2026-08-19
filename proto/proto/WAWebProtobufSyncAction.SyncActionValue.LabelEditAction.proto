@@ -1,0 +1,11 @@
+message LabelEditAction {
+  optional bytes name = 1;
+  optional bytes color = 2;
+  optional bytes predefinedId = 3;
+  optional bytes deleted = 4;
+  optional bytes orderIndex = 5;
+  optional bytes isActive = 6;
+  optional bytes type = 7;
+  optional bytes isImmutable = 8;
+  optional bytes muteEndTimeMs = 9;
+}

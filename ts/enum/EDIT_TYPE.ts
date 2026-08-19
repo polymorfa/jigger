@@ -1,0 +1,8 @@
+export enum EDITTYPE {
+  NOT_EDITED = 0,
+  EDITED = 1,
+  SENDER_REVOKE = 2,
+  ADMIN_REVOKE = 3,
+  ADMIN_EDIT = 4,
+  PIN = 5,
+}

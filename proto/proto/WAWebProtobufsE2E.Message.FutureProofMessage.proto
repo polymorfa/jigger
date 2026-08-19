@@ -1,0 +1,3 @@
+message FutureProofMessage {
+  optional Message message = 1;
+}

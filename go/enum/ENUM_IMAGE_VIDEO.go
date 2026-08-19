@@ -1,0 +1,6 @@
+type ENUMIMAGEVIDEO string
+
+const (
+	ENUMIMAGEVIDEOImage ENUMIMAGEVIDEO = "image"
+	ENUMIMAGEVIDEOVideo ENUMIMAGEVIDEO = "video"
+)

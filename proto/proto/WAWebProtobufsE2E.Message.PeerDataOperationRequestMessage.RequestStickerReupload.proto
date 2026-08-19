@@ -1,0 +1,3 @@
+message RequestStickerReupload {
+  optional bytes fileSha256 = 1;
+}

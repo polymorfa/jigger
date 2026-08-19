@@ -1,0 +1,5 @@
+message ChatSolidColorWallpaper {
+  optional bytes colorLight = 1;
+  optional bytes colorDark = 2;
+  optional bytes isDoodleEnabled = 3;
+}

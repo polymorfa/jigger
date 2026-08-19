@@ -1,0 +1,5 @@
+message EventResponseMessage {
+  optional bytes response = 1;
+  optional bytes timestampMs = 2;
+  optional bytes extraGuestCount = 3;
+}

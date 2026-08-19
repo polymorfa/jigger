@@ -1,0 +1,4 @@
+message UTMInfo {
+  optional bytes utmSource = 1;
+  optional bytes utmCampaign = 2;
+}

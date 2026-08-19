@@ -1,0 +1,4 @@
+message MessageHistoryNotice {
+  optional ContextInfo contextInfo = 1;
+  optional MessageHistoryMetadata messageHistoryMetadata = 2;
+}

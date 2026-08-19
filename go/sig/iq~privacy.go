@@ -1,0 +1,2 @@
+// ParseBizSettingsGetPrivacySettingResponseSuccess matches <iq>. Response to BizSettingsGetPrivacySetting.
+func ParseBizSettingsGetPrivacySettingResponseSuccess(n *waBinary.Node) (*BizSettingsGetPrivacySettingResponseSuccess, error)

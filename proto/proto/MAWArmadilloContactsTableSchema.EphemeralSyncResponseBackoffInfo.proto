@@ -1,0 +1,4 @@
+message EphemeralSyncResponseBackoffInfo {
+  optional bytes syncResponseRetries = 1;
+  optional bytes syncResponseSentTs = 2;
+}

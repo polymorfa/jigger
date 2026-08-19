@@ -1,0 +1,4 @@
+message SubscriptionsSyncV2Action {
+  optional SubscriptionInfo subscriptions = 1;
+  optional PaidFeature paidFeature = 2;
+}

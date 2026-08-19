@@ -1,0 +1,4 @@
+message ClientFinish {
+  optional bytes static = 1;
+  optional bytes payload = 2;
+}

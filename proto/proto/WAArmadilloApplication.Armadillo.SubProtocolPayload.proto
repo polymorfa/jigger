@@ -1,0 +1,3 @@
+message SubProtocolPayload {
+  optional bytes futureProof = 1;
+}

@@ -1,0 +1,5 @@
+message MetaSyncMessageRangeProto {
+  optional bytes lastMessageTimestamp = 1;
+  optional bytes lastSystemMessageTimestamp = 2;
+  optional MetaSyncMessageProto messages = 3;
+}

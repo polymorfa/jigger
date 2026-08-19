@@ -1,0 +1,3 @@
+message NotificationActivitySettingAction {
+  optional bytes notificationActivitySetting = 1;
+}

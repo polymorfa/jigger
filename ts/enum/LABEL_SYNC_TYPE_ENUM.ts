@@ -1,0 +1,5 @@
+export enum LABELSYNCTYPEENUM {
+  LABEL_JID = 1,
+  LABEL_EDIT = 2,
+  LABEL_REORDER = 3,
+}

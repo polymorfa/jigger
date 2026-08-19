@@ -1,0 +1,4 @@
+message Integral {
+  optional bytes padding = 1;
+  optional DeviceSentMessage dsm = 2;
+}

@@ -1,0 +1,7 @@
+message PinInChat {
+  optional bytes type = 1;
+  optional bytes key = 2;
+  optional bytes senderTimestampMs = 3;
+  optional bytes serverTimestampMs = 4;
+  optional MessageAddOnContextInfo messageAddOnContextInfo = 5;
+}

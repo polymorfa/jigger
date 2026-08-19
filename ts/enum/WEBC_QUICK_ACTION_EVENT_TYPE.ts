@@ -1,0 +1,5 @@
+export enum WEBCQUICKACTIONEVENTTYPE {
+  SURFACE_VIEW = 1,
+  IMPRESSION = 2,
+  TAP = 3,
+}

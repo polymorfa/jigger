@@ -1,0 +1,2 @@
+/** Matches `<iq>`. Response to BrPaymentRemoveCustomPaymentMethod. */
+export function parseBrPaymentRemoveCustomPaymentMethodResponseSuccess(n: BinaryNode): BrPaymentRemoveCustomPaymentMethodResponseSuccess | null

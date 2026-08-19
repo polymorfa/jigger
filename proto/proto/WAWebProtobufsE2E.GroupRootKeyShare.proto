@@ -1,0 +1,3 @@
+message GroupRootKeyShare {
+  optional GroupRootKeyShareEntry keys = 1;
+}

@@ -1,0 +1,2 @@
+// ParseMdRefreshCodeNotifyCompanionRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseMdRefreshCodeNotifyCompanionRequest(n *waBinary.Node) (*MdRefreshCodeNotifyCompanionRequest, error)

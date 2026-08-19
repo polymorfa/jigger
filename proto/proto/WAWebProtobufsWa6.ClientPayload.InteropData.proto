@@ -1,0 +1,5 @@
+message InteropData {
+  optional bytes accountId = 1;
+  optional bytes token = 2;
+  optional bytes enableReadReceipts = 3;
+}

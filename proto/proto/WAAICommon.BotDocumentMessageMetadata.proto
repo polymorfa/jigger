@@ -1,0 +1,3 @@
+message BotDocumentMessageMetadata {
+  optional bytes pluginType = 1;
+}

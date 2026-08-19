@@ -1,0 +1,2 @@
+// ParseMessageDeliverProductListDeprecatedMixin matches <message>. Server-initiated; nothing sends it.
+func ParseMessageDeliverProductListDeprecatedMixin(n *waBinary.Node) (*MessageDeliverProductListDeprecatedMixin, error)

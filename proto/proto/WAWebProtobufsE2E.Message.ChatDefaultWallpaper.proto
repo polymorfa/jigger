@@ -1,0 +1,3 @@
+message ChatDefaultWallpaper {
+  optional bytes isDoodleEnabled = 1;
+}

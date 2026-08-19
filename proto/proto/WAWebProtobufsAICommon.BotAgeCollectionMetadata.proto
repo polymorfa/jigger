@@ -1,0 +1,5 @@
+message BotAgeCollectionMetadata {
+  optional bytes ageCollectionEligible = 1;
+  optional bytes shouldTriggerAgeCollectionOnClient = 2;
+  optional bytes ageCollectionType = 3;
+}

@@ -1,0 +1,4 @@
+message GroupMention {
+  optional bytes groupJid = 1;
+  optional bytes groupSubject = 2;
+}

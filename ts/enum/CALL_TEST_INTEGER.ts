@@ -1,0 +1,3 @@
+export enum CALLTESTINTEGER {
+  TEST_VALUE = 0,
+}

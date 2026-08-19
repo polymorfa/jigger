@@ -1,0 +1,5 @@
+message Location {
+  optional bytes degreesLatitude = 1;
+  optional bytes degreesLongitude = 2;
+  optional bytes name = 3;
+}

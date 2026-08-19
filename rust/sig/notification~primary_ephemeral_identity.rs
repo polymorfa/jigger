@@ -1,0 +1,2 @@
+/// Matches `<notification>`. Server-initiated; nothing sends it.
+pub fn parse_md_set_primary_ephemeral_identity_notification_request(n: &Node) -> Option<MdSetPrimaryEphemeralIdentityNotificationRequest>

@@ -1,0 +1,9 @@
+message BotFeedbackMessage {
+  optional bytes messageKey = 1;
+  optional bytes kind = 2;
+  optional bytes text = 3;
+  optional bytes kindNegative = 4;
+  optional bytes kindPositive = 5;
+  optional bytes kindReport = 6;
+  optional SideBySideSurveyMetadata sideBySideSurveyMetadata = 7;
+}

@@ -1,0 +1,3 @@
+message PaymentLinkHeader {
+  optional bytes headerType = 1;
+}

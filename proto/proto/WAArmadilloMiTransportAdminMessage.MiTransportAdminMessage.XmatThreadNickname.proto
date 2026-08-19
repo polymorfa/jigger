@@ -1,0 +1,4 @@
+message XmatThreadNickname {
+  optional bytes participantId = 1;
+  optional bytes nickname = 2;
+}

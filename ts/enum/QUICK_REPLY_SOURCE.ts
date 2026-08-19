@@ -1,0 +1,5 @@
+export enum QUICKREPLYSOURCE {
+  UNKNOWN = 0,
+  UPLEVEL = 1,
+  FULLSCREEN = 2,
+}

@@ -1,0 +1,4 @@
+export enum DELETEACTIONTYPE {
+  DELETE_FOR_ME = 0,
+  DELETE_FOR_EVERYONE = 1,
+}

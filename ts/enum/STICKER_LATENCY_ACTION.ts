@@ -1,0 +1,3 @@
+export enum STICKERLATENCYACTION {
+  DECOMPRESSION = 2,
+}

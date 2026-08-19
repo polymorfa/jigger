@@ -1,0 +1,4 @@
+message AppStateFatalExceptionNotification {
+  optional bytes collectionNames = 1;
+  optional bytes timestamp = 2;
+}

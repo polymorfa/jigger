@@ -1,0 +1,13 @@
+#[repr(i64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum WAFFLELIFECYCLEERRORCODETYPE {
+    NOTAPPLICABLE = 0,
+    TIMEOUT = 1,
+    RATEOVERLIMIT = 2,
+    NOTAUTHORIZED = 3,
+    INVALIDPASSWORD = 4,
+    WFNOTFOUND = 5,
+    WFSTATEMISMATCH = 6,
+    WFSUSPENDED = 7,
+    UNKNOWN = 8,
+}

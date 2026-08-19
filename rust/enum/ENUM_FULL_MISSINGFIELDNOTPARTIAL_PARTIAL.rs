@@ -1,0 +1,6 @@
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ENUMFULLMISSINGFIELDNOTPARTIALPARTIAL {
+    FULL,
+    MISSINGFIELDNOTPARTIAL,
+    PARTIAL,
+}

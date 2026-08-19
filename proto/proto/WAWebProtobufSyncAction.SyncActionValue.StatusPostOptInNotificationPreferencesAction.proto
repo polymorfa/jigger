@@ -1,0 +1,3 @@
+message StatusPostOptInNotificationPreferencesAction {
+  optional bytes enabled = 1;
+}

@@ -1,0 +1,2 @@
+// ParseMdPrimaryHelloNotifyCompanionRequest matches <notification>. Server-initiated; nothing sends it.
+func ParseMdPrimaryHelloNotifyCompanionRequest(n *waBinary.Node) (*MdPrimaryHelloNotifyCompanionRequest, error)

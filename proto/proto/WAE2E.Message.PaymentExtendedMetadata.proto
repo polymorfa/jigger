@@ -1,0 +1,4 @@
+message PaymentExtendedMetadata {
+  optional bytes type = 1;
+  optional bytes platform = 2;
+}

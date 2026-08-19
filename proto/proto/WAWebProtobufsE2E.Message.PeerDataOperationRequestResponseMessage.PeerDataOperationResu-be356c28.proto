@@ -1,0 +1,3 @@
+message PlaceholderMessageResendResponse {
+  optional bytes webMessageInfoBytes = 1;
+}

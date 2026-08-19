@@ -1,0 +1,3 @@
+message LocaleSetting {
+  optional bytes locale = 1;
+}

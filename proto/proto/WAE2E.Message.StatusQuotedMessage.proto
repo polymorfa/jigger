@@ -1,0 +1,6 @@
+message StatusQuotedMessage {
+  optional bytes type = 1;
+  optional bytes text = 2;
+  optional bytes thumbnail = 3;
+  optional bytes originalStatusId = 4;
+}

@@ -1,0 +1,5 @@
+message SubscriptionAction {
+  optional bytes isDeactivated = 1;
+  optional bytes isAutoRenewing = 2;
+  optional bytes expirationDate = 3;
+}

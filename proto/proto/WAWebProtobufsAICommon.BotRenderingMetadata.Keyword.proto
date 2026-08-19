@@ -1,0 +1,4 @@
+message Keyword {
+  optional bytes value = 1;
+  optional bytes associatedPrompts = 2;
+}

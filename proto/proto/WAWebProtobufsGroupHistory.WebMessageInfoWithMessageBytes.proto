@@ -1,0 +1,4 @@
+message WebMessageInfoWithMessageBytes {
+  optional bytes key = 1;
+  optional bytes messageBytes = 2;
+}

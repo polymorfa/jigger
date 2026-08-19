@@ -1,0 +1,12 @@
+message ButtonsMessage {
+  optional bytes text = 1;
+  optional DocumentMessage documentMessage = 2;
+  optional ImageMessage imageMessage = 3;
+  optional VideoMessage videoMessage = 4;
+  optional LocationMessage locationMessage = 5;
+  optional bytes contentText = 6;
+  optional bytes footerText = 7;
+  optional ContextInfo contextInfo = 8;
+  optional Button buttons = 9;
+  optional bytes headerType = 10;
+}

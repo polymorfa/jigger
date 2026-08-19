@@ -1,0 +1,32 @@
+message ImageMessage {
+  optional bytes url = 1;
+  optional bytes mimetype = 2;
+  optional bytes caption = 3;
+  optional bytes fileSha256 = 4;
+  optional bytes fileLength = 5;
+  optional bytes height = 6;
+  optional bytes width = 7;
+  optional bytes mediaKey = 8;
+  optional bytes fileEncSha256 = 9;
+  optional InteractiveAnnotation interactiveAnnotations = 10;
+  optional bytes directPath = 11;
+  optional bytes mediaKeyTimestamp = 12;
+  optional bytes jpegThumbnail = 16;
+  optional ContextInfo contextInfo = 17;
+  optional bytes firstScanSidecar = 18;
+  optional bytes firstScanLength = 19;
+  optional bytes experimentGroupId = 20;
+  optional bytes scansSidecar = 21;
+  optional bytes scanLengths = 22;
+  optional bytes midQualityFileSha256 = 23;
+  optional bytes midQualityFileEncSha256 = 24;
+  optional bytes viewOnce = 25;
+  optional bytes thumbnailDirectPath = 26;
+  optional bytes thumbnailSha256 = 27;
+  optional bytes thumbnailEncSha256 = 28;
+  optional bytes staticUrl = 29;
+  optional InteractiveAnnotation annotations = 30;
+  optional bytes imageSourceType = 31;
+  optional bytes accessibilityLabel = 32;
+  optional bytes qrUrl = 34;
+}

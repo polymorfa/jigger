@@ -1,0 +1,3 @@
+export enum PRIVACYHIGHLIGHTCATEGORYENUM {
+  E2_EE = 0,
+}

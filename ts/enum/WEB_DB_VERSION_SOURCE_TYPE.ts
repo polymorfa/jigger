@@ -1,0 +1,6 @@
+export enum WEBDBVERSIONSOURCETYPE {
+  KNOB = 1,
+  LOCAL = 2,
+  STATIC = 3,
+  KNOB_WITH_LOCAL_OVERRIDE = 4,
+}

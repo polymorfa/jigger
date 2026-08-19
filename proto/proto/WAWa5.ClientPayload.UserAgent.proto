@@ -1,0 +1,17 @@
+message UserAgent {
+  optional bytes platform = 1;
+  optional AppVersion appVersion = 2;
+  optional bytes mcc = 3;
+  optional bytes mnc = 4;
+  optional bytes osVersion = 5;
+  optional bytes manufacturer = 6;
+  optional bytes device = 7;
+  optional bytes osBuildNumber = 8;
+  optional bytes phoneId = 9;
+  optional bytes releaseChannel = 10;
+  optional bytes localeLanguageIso6391 = 11;
+  optional bytes localeCountryIso31661Alpha2 = 12;
+  optional bytes deviceBoard = 13;
+  optional bytes deviceExpId = 14;
+  optional bytes deviceType = 15;
+}

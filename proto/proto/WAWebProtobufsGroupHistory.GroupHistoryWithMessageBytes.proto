@@ -1,0 +1,6 @@
+message GroupHistoryWithMessageBytes {
+  optional WebMessageInfoWithMessageBytes messages = 1;
+  optional UnCountedAssociatedMessageListWithMessageBytes uncountedAssociatedMessageLists = 2;
+  optional WebMessageInfoWithMessageBytes commentMessages = 3;
+  optional WebMessageInfoWithMessageBytes outOfWindowPinnedMessages = 4;
+}

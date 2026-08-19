@@ -1,0 +1,10 @@
+message BizIdentityInfo {
+  optional bytes vlevel = 1;
+  optional VerifiedNameCertificate vnameCert = 2;
+  optional bytes signed = 3;
+  optional bytes revoked = 4;
+  optional bytes hostStorage = 5;
+  optional bytes actualActors = 6;
+  optional bytes privacyModeTs = 7;
+  optional bytes featureControls = 8;
+}

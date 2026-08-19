@@ -1,0 +1,7 @@
+message BusinessBroadcast {
+  optional bytes importListEnabled = 1;
+  optional bytes companionSupportEnabled = 2;
+  optional bytes campaignSyncEnabled = 3;
+  optional bytes insightsSyncEnabled = 4;
+  optional bytes recipientLimit = 5;
+}

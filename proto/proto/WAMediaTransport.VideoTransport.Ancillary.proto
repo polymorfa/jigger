@@ -1,0 +1,11 @@
+message Ancillary {
+  optional bytes seconds = 1;
+  optional bytes caption = 2;
+  optional bytes gifPlayback = 3;
+  optional bytes height = 4;
+  optional bytes width = 5;
+  optional bytes sidecar = 6;
+  optional bytes gifAttribution = 7;
+  optional bytes accessibilityLabel = 8;
+  optional bytes isHd = 9;
+}

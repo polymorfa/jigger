@@ -1,0 +1,3 @@
+message MessageHistoryDocumentMessage {
+  optional bytes document = 1;
+}

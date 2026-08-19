@@ -1,0 +1,20 @@
+message InThreadSurveyMetadata {
+  optional bytes tessaSessionId = 1;
+  optional bytes simonSessionId = 2;
+  optional bytes simonSurveyId = 3;
+  optional bytes tessaRootId = 4;
+  optional bytes requestId = 5;
+  optional bytes tessaEvent = 6;
+  optional bytes invitationHeaderText = 7;
+  optional bytes invitationBodyText = 8;
+  optional bytes invitationCtaText = 9;
+  optional bytes invitationCtaUrl = 10;
+  optional bytes surveyTitle = 11;
+  optional InThreadSurveyQuestion questions = 12;
+  optional bytes surveyContinueButtonText = 13;
+  optional bytes surveySubmitButtonText = 14;
+  optional bytes privacyStatementFull = 15;
+  optional InThreadSurveyPrivacyStatementPart privacyStatementParts = 16;
+  optional bytes feedbackToastText = 17;
+  optional bytes startQuestionIndex = 18;
+}

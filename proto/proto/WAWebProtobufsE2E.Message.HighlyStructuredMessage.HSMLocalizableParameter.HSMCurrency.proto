@@ -1,0 +1,4 @@
+message HSMCurrency {
+  optional bytes currencyCode = 1;
+  optional bytes amount1000 = 2;
+}

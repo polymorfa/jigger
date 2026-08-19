@@ -1,0 +1,6 @@
+message MuteAction {
+  optional bytes muted = 1;
+  optional bytes muteEndTimestamp = 2;
+  optional bytes autoMuted = 3;
+  optional bytes muteEveryoneMentionEndTimestamp = 4;
+}

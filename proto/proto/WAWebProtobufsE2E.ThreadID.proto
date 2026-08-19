@@ -1,0 +1,4 @@
+message ThreadID {
+  optional bytes threadType = 1;
+  optional bytes threadKey = 2;
+}

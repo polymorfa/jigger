@@ -1,0 +1,6 @@
+export enum METAVERIFIEDINTERACTIONASSETTYPE {
+  CHANNEL = 1,
+  SMB = 2,
+  ENT = 3,
+  PERSONAL = 4,
+}

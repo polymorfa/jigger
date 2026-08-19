@@ -1,0 +1,4 @@
+message SenderSigningKey {
+  optional bytes public = 1;
+  optional bytes private = 2;
+}

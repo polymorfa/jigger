@@ -1,0 +1,4 @@
+export enum PTTSOURCETYPE {
+  FROM_CONVERSATION = 0,
+  FROM_VOICEMAIL = 1,
+}

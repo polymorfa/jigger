@@ -1,0 +1,5 @@
+message XmatFriendRequestConfirmedEncrypted {
+  optional bytes otherUserName = 1;
+  optional bytes isTurnOnCohort = 2;
+  optional bytes userWhoAcceptedFriendRequest = 3;
+}

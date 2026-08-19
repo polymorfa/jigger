@@ -1,0 +1,5 @@
+message Money {
+  optional bytes value = 1;
+  optional bytes offset = 2;
+  optional bytes currencyCode = 3;
+}

@@ -1,0 +1,11 @@
+message Ancillary {
+  optional bytes pageCount = 1;
+  optional bytes height = 2;
+  optional bytes width = 3;
+  optional bytes firstFrameLength = 4;
+  optional bytes firstFrameSidecar = 5;
+  optional bytes mustacheText = 6;
+  optional bytes isThirdParty = 7;
+  optional bytes receiverFetchId = 8;
+  optional bytes accessibilityLabel = 9;
+}
