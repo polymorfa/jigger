@@ -129,7 +129,32 @@ export type AbData = {
  *  `<iq xmlns="w:mex"><query query_id="..."/></iq>`, and it rotates between
  *  releases — a library holding a stale one fails silently, with the server
  *  simply not recognising the query. */
-export type MexData = { doc_id: string; operation: string; variables: string[] };
+export type GqlArg = { name: string; ty?: string; default?: string };
+
+/** One node of the selection tree, as Relay records it. */
+export type GqlField = {
+  name: string;
+  alias?: string;
+  /** The concrete type a linked field returns. */
+  ty?: string;
+  plural?: boolean;
+  args?: string[];
+  kind: string;
+  selections?: GqlField[];
+};
+
+export type MexData = {
+  doc_id: string;
+  operation: string;
+  variables: string[];
+  args?: GqlArg[];
+  /** The selection tree. Kept alongside the printed document because a tree can
+   *  be navigated and a string cannot. */
+  selections?: GqlField[];
+  root_field?: string;
+  /** The document, printed from the Relay AST. */
+  document?: string;
+};
 
 /** Inbound: a stanza the server sends us. `responds_to` is set when this is the
  *  reply half of an outbound operation; when it is absent the stanza is

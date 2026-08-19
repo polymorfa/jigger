@@ -160,6 +160,15 @@ pub enum Data {
         doc_id: String,
         operation: String,
         variables: Vec<String>,
+        /// Argument definitions with their GraphQL types, which `variables`
+        /// alone cannot carry.
+        #[serde(default, skip_serializing_if = "Vec::is_empty")]
+        args: Vec<GqlArg>,
+        /// The selection tree, as Relay records it — types, arguments,
+        /// plurality and all. The printed document is derived from this; it is
+        /// kept because a tree can be navigated and a string cannot.
+        #[serde(default, skip_serializing_if = "Vec::is_empty")]
+        selections: Vec<GqlField>,
         /// The `xwa2_*` root the response hangs off, when there is one.
         #[serde(default, skip_serializing_if = "Option::is_none")]
         root_field: Option<String>,
@@ -253,6 +262,41 @@ pub struct Handler {
 pub struct EnumVariant {
     pub name: String,
     pub value: serde_json::Value,
+}
+
+/// One argument a persisted GraphQL operation takes.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+pub struct GqlArg {
+    pub name: String,
+    /// The GraphQL type, when Relay recorded one.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub ty: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub default: Option<String>,
+}
+
+/// One node of a GraphQL selection tree.
+///
+/// Kept as a tree rather than only as printed text because a tree can be walked:
+/// a concrete type is something to link to, and a document is a string.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+pub struct GqlField {
+    pub name: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub alias: Option<String>,
+    /// The concrete type a linked field returns.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub ty: Option<String>,
+    /// A list-typed field. `categories` and `category` are different contracts.
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub plural: bool,
+    /// Arguments, already rendered: `query_params: $query_params`, `first: 10`.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub args: Vec<String>,
+    /// `ScalarField`, `LinkedField`, `InlineFragment`, `FragmentSpread`, …
+    pub kind: String,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub selections: Vec<GqlField>,
 }
 
 /// One protobuf field.

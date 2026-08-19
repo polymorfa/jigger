@@ -13,6 +13,7 @@ use cellar_core::{BundleHandle, ModuleEntry};
 pub mod appstate;
 pub mod dispatch;
 pub mod enums;
+pub mod graphql;
 pub mod wam;
 pub mod stanza;
 pub mod symbols;
@@ -367,60 +368,38 @@ pub fn proto(bundle: &BundleHandle, entries: &[ModuleEntry]) -> Result<Vec<Fact>
 /// existing one — which is the single event worth tracking here, because a
 /// library holding a stale id fails silently.
 pub fn mex(bundle: &BundleHandle, entries: &[ModuleEntry]) -> Result<Vec<Fact>> {
-    let id_re = Regex::new(r#"id:\s*"(\d{6,})""#)?;
-    let kind_re = Regex::new(r#"operationKind:\s*"([a-z]+)""#)?;
-    let name_re = Regex::new(r#"name:\s*"(WAWeb[A-Za-z0-9]+)""#)?;
-    let arg_re = Regex::new(r#"kind:\s*"LocalArgument",\s*name:\s*"([A-Za-z0-9_]+)""#)?;
-    // Field tokens in source order, with their kind, so nesting can be rebuilt.
-    let field_re = Regex::new(r#"kind:\s*"(LinkedField|ScalarField)",\s*name:\s*"([A-Za-z0-9_]+)""#)?;
-    let root_re = Regex::new(r#""(xwa2_[a-z0-9_]+)""#)?;
-
     let mut out = Vec::new();
     for e in entries.iter().filter(|e| {
         e.name.starts_with("WAWeb") && e.name.ends_with(".graphql") && !e.name.contains("~alt-")
     }) {
         let Ok(src) = bundle.read_module(e) else { continue };
-        let flat = src.replace('\n', " ");
-        let Some(doc_id) = id_re.captures(&flat).map(|c| c[1].to_string()) else { continue };
-        let op_kind = kind_re.captures(&flat).map(|c| c[1].to_string()).unwrap_or_else(|| "query".into());
-        let name = name_re.captures(&flat).map(|c| c[1].to_string())
-            .unwrap_or_else(|| e.name.trim_end_matches(".graphql").to_string());
+        let Some(op) = graphql::operation(&src) else { continue };
 
-        let mut variables: Vec<String> =
-            arg_re.captures_iter(&flat).map(|c| c[1].to_string()).collect();
-        variables.sort();
-        variables.dedup();
+        let name = if op.name.is_empty() {
+            e.name.trim_end_matches(".graphql").to_string()
+        } else {
+            op.name.clone()
+        };
 
-        let root_field = root_re.captures(&flat).map(|c| c[1].to_string());
+        // Kept for the coverage scanner and for anything that only wants the
+        // names; `args` carries the same list with its types attached.
+        let variables: Vec<String> = op.args.iter().map(|a| a.name.clone()).collect();
 
-        // Print the document. Relay stores the tree flat with `selections`
-        // nesting; a linked field opens a block and scalars are leaves, which is
-        // enough structure to render something a person can read and compare.
-        let mut doc = String::new();
-        let vars = if variables.is_empty() { String::new() }
-            else { format!("({})", variables.iter().map(|v| format!("${v}")).collect::<Vec<_>>().join(", ")) };
-        doc.push_str(&format!("{op_kind} {}{vars} {{\n", name.trim_start_matches("WAWeb")));
-        let mut depth = 1usize;
-        let mut seen = BTreeSet::new();
-        for c in field_re.captures_iter(&flat) {
-            let (fk, fname) = (&c[1], c[2].to_string());
-            if !seen.insert(format!("{depth}:{fname}")) { continue }
-            doc.push_str(&"  ".repeat(depth));
-            doc.push_str(&fname);
-            if fk == "LinkedField" {
-                doc.push_str(" {\n");
-                depth += 1;
-            } else {
-                doc.push('\n');
-            }
-        }
-        while depth > 1 { depth -= 1; doc.push_str(&"  ".repeat(depth)); doc.push_str("}\n"); }
-        doc.push('}');
-
-        let m = format!(r#"id: "{doc_id}""#);
-        out.push(fact(Kind::Mex, name.clone(),
-                      Data::Mex { doc_id, operation: op_kind, variables, root_field, document: doc },
-                      &e.name, m));
+        out.push(fact(
+            Kind::Mex,
+            name,
+            Data::Mex {
+                doc_id: op.doc_id.clone(),
+                operation: op.kind.clone(),
+                variables,
+                args: op.args.clone(),
+                selections: op.selections.clone(),
+                root_field: op.root_field.clone(),
+                document: graphql::print(&op),
+            },
+            &e.name,
+            format!(r#"id:\s*"{}""#, regex::escape(&op.doc_id)),
+        ));
     }
     Ok(out)
 }

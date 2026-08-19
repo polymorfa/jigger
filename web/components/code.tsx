@@ -236,10 +236,18 @@ export function schemaOf(fact: Fact): { src: string; lang: Lang } {
   }
 
   if (isMex(fact)) {
-    // Rendered as the GraphQL it is. The document body lives on the server —
-    // that is what "persisted" means — so the operation name and its variables
-    // are the whole of what a caller controls, and the doc_id is the handle.
-    const op = fact.data.operation;
+    // The document, printed from the Relay AST the bundle ships. It used to say
+    // "body is server-side", which is true of the *text* — Relay sets it to null
+    // because the server holds it — and false of the operation: the selection
+    // tree is right there in the module, types and arguments and all.
+    if (fact.data.document) {
+      return {
+        src:
+          `# sent as <iq xmlns="w:mex"><query query_id="${fact.data.doc_id}"/></iq>\n` +
+          fact.data.document,
+        lang: "graphql",
+      };
+    }
     const name = fact.name.replace(/^WAWeb/, "").replace(/(Query|Mutation)$/, "");
     const vars = fact.data.variables.length
       ? `(\n${fact.data.variables.map((v) => `  $${v}`).join(",\n")}\n)`
@@ -247,8 +255,8 @@ export function schemaOf(fact: Fact): { src: string; lang: Lang } {
     return {
       src:
         `# persisted document, id ${fact.data.doc_id}\n` +
-        `# sent as <iq xmlns="w:mex"><query query_id="${fact.data.doc_id}"/></iq>\n` +
-        `${op} ${name}${vars} {\n  # body is server-side\n}`,
+        `# the selection tree could not be read from this module\n` +
+        `${fact.data.operation} ${name}${vars}\n`,
       lang: "graphql",
     };
   }

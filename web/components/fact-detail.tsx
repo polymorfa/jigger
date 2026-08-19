@@ -35,6 +35,17 @@ const LEAD: Record<FactKind, string> = {
   appstate: "the index, collection and version a mutation syncs under",
 };
 
+/**
+ * The fact's filename in the generated tree.
+ *
+ * Mirrors the emitter's rule — 96 bytes then a hash — so the path shown beside a
+ * snippet is the path it was written to, not an approximation of one.
+ */
+function slugOf(fact: Fact): string {
+  const body = fact.id.slice(fact.id.indexOf(":") + 1);
+  return body.replace(/[^A-Za-z0-9._-]+/g, "_").slice(0, 96);
+}
+
 function Head({ title, note }: { title: string; note: string }) {
   return (
     <div className="flex items-baseline justify-between gap-3 border-b border-hair pb-1.5">
@@ -128,7 +139,14 @@ export function FactDetail({
           the arms are what the stanza above resolves to. */}
       {isIq(fact) && <IqResponses data={fact.data} />}
 
-      <GeneratedSection generated={fact.generated} protoOption={PROTO_LANG_KINDS.includes(fact.kind)} />
+      <GeneratedSection
+        generated={fact.generated}
+        protoOption={PROTO_LANG_KINDS.includes(fact.kind)}
+        module={fact.evidence.module}
+        kind={fact.kind}
+        slug={slugOf(fact)}
+        links={links}
+      />
 
       </div>
 

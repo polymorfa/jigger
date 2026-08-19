@@ -1,12 +1,20 @@
 "use client";
 
 import { useLang } from "./lang-context";
-import { CopyButton } from "./copy-button";
+import { Code } from "@/components/code";
+import { ModuleLink } from "@/components/module-link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import type { Lang } from "@/lib/highlight";
 import { LANGUAGE_LABEL, type Generated, type Language } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const BASE: Language[] = ["go", "ts", "rust"];
+
+/** The highlighter's name for each target. */
+const LANG: Record<Language, Lang> = { go: "go", ts: "ts", rust: "rust", proto: "proto" };
+
+/** The extension each target's emitted file carries on disk. */
+const EXT: Record<Language, string> = { go: "go", ts: "ts", rust: "rs", proto: "proto" };
 
 /**
  * The same fact, in each library's language.
@@ -22,9 +30,20 @@ const BASE: Language[] = ["go", "ts", "rust"];
 export function GeneratedSection({
   generated,
   protoOption,
+  module,
+  kind,
+  slug,
+  links,
 }: {
   generated?: Generated;
   protoOption: boolean;
+  /** The source module the fact was read out of. */
+  module: string;
+  kind: string;
+  /** The fact's filename in the generated tree. */
+  slug: string;
+  /** Type names that can be followed, same map the schema uses. */
+  links?: Record<string, string>;
 }) {
   const { lang, setLang } = useLang();
   const options: Language[] = protoOption || generated?.proto ? [...BASE, "proto"] : BASE;
@@ -56,13 +75,23 @@ export function GeneratedSection({
         {options.map((o) => (
           <TabsContent key={o} value={o} className="mt-2">
             {generated?.[o] ? (
-              <div className="relative">
-                <div className="absolute right-1.5 top-1.5 z-10">
-                  <CopyButton value={generated[o]!} title={`Copy ${LANGUAGE_LABEL[o]}`} />
-                </div>
-                <pre className="bg-surface overflow-x-auto border p-3 text-sm leading-[var(--text-sm--line-height)]">
-                  <code className="data text-fg">{generated[o]}</code>
-                </pre>
+              <div className="flex flex-col gap-1">
+                {/* Highlighted like every other block. Generated code was the
+                    one place still rendering as flat grey text, which made the
+                    output look like a dump rather than like the code it is. */}
+                <Code src={generated[o]!} lang={LANG[o]} links={links} />
+                {/* Where it came from and where it lands. A snippet with no
+                    provenance is the same problem the whole app exists to fix:
+                    a claim you cannot check. */}
+                <p className="text-muted-foreground flex flex-wrap items-baseline gap-x-3 text-2xs">
+                  <span>
+                    generated from{" "}
+                    <ModuleLink name={module} className="text-2xs" />
+                  </span>
+                  <span className="data">
+                    {`generated/${o}/${kind}/${slug}.${EXT[o]}`}
+                  </span>
+                </p>
               </div>
             ) : (
               <p className="text-muted-foreground bg-surface border px-3 py-3 text-sm">
