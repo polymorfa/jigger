@@ -8,7 +8,7 @@ import { ModuleGraphPanel } from "@/components/module-graph";
 import { cached, loadModuleFacts, loadModuleSource, loadRevision } from "@/lib/cdn";
 import { loadModuleGraph } from "@/lib/module-graph";
 import { lineOfMatch, memberLine } from "@/lib/module-source";
-import { loadSymbols } from "@/lib/module-symbols";
+import { applyRenames, loadSymbols } from "@/lib/module-symbols";
 import { browseHref } from "@/lib/ids";
 import { useQueryParam, useRouteTail } from "@/lib/route";
 import { rewriteModule } from "@/lib/source-rewrite";
@@ -25,13 +25,13 @@ function view(name: string) {
   return cached(`view:${name}`, async () => {
     const src = await loadModuleSource(name);
     if (src === null) return null;
-    const shown = rewriteModule(src);
+    const rewritten = rewriteModule(src);
     const [symbols, graph, facts] = await Promise.all([
-      loadSymbols(name, shown),
+      loadSymbols(name, rewritten),
       loadModuleGraph(name),
       loadModuleFacts(name),
     ]);
-    return { src, shown, symbols, graph, facts: facts ?? [] };
+    return { src, shown: symbols ? applyRenames(rewritten, symbols.renames) : rewritten, symbols, graph, facts: facts ?? [] };
   });
 }
 

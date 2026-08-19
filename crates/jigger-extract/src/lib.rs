@@ -13,6 +13,7 @@ use cellar_core::{BundleHandle, ModuleEntry};
 pub mod appstate;
 pub mod dispatch;
 pub mod enums;
+pub mod factory;
 pub mod graphql;
 pub mod modgraph;
 pub mod observe;
