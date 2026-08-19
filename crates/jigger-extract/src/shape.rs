@@ -310,17 +310,22 @@ pub struct Func {
 
 /// Which module-local symbols are published, and under what name.
 ///
-/// `__d("M", [...], function(a, b, …, exports) { … exports.foo = u … })`: the
-/// factory's last parameter is the exports object, so an assignment to a
-/// property of it maps a stable public name onto whatever letter the minifier
-/// happened to give the local this build.
+/// `__d("M", [...], function(…, exports, …) { … exports.foo = u … })`: an
+/// assignment onto the exports object maps a stable public name onto whatever
+/// letter the minifier gave the local this build.
+///
+/// Finding the exports parameter is [`crate::factory`]'s job and is not as
+/// simple as taking the last one. That held for the six- and seven-parameter
+/// factories and was wrong for every `.react` module, where the loader injects
+/// dependencies *after* `exports` and the last parameter is `fbt` or
+/// `invariant` — about a fifth of the bundle, all silently exporting nothing.
 fn export_names(program: &Program<'_>, scoping: &Scoping) -> HashMap<SymbolId, String> {
+    let obj = crate::factory::exports_symbol(program, scoping);
+
     struct Exports<'s> {
         scoping: &'s Scoping,
-        /// The exports object, once the module factory has been recognised.
         obj: Option<SymbolId>,
         out: HashMap<SymbolId, String>,
-        depth: u32,
     }
 
     impl<'s> Exports<'s> {
@@ -330,21 +335,6 @@ fn export_names(program: &Program<'_>, scoping: &Scoping) -> HashMap<SymbolId, S
     }
 
     impl<'a, 's> Visit<'a> for Exports<'s> {
-        fn visit_function(&mut self, f: &Function<'a>, flags: oxc_semantic::ScopeFlags) {
-            // The outermost function is the module factory; its last parameter
-            // is the exports object. Nested functions have their own parameters
-            // and none of them are exports.
-            if self.depth == 0
-                && let Some(last) = f.params.items.last()
-                && let BindingPattern::BindingIdentifier(id) = &last.pattern
-            {
-                self.obj = id.symbol_id.get();
-            }
-            self.depth += 1;
-            oxc_ast_visit::walk::walk_function(self, f, flags);
-            self.depth -= 1;
-        }
-
         fn visit_assignment_expression(&mut self, e: &AssignmentExpression<'a>) {
             if let AssignmentTarget::StaticMemberExpression(m) = &e.left
                 && let Expression::Identifier(obj) = &m.object
@@ -362,7 +352,7 @@ fn export_names(program: &Program<'_>, scoping: &Scoping) -> HashMap<SymbolId, S
         }
     }
 
-    let mut v = Exports { scoping, obj: None, out: HashMap::new(), depth: 0 };
+    let mut v = Exports { scoping, obj, out: HashMap::new() };
     v.visit_program(program);
     v.out
 }
