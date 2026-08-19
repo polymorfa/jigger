@@ -105,10 +105,15 @@ fetches exactly the artifact a page needs, and nothing opens the 12 MB ledger.
 `scripts/pack-data.sh` builds that payload and CI publishes it to the `data`
 branch, replaced wholesale each release.
 
-Vercel is given no `outputDirectory`. `output: "export"` writes `out/`, but
-`routes-manifest.json` stays in `.next/` — naming `out/` sends the Next builder
-looking for a manifest where it will never be. Default detection finds the
-export on its own.
+Vercel's `outputDirectory` is `.next`, which is also the default. It is stated
+anyway: the value is resolved relative to the Root Directory, so a dashboard
+override of `web/.next` becomes `web/web/.next` and the build fails after
+succeeding. Config that lives in the repo can be read in a diff; config that
+lives in a dashboard can only be guessed at from an error message.
+
+`out/` is *not* the answer, tempting as it looks — `output: "export"` writes the
+site there, but `routes-manifest.json` and `export-marker.json` stay in `.next/`,
+which is what the builder reads to find the export.
 
 ### Deploying
 
