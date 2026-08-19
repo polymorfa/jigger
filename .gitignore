@@ -8,3 +8,6 @@ web/public/data/
 # replaced wholesale each release, which is not a thing to keep in the branch
 # people clone. CI publishes it; `jigger extract` regenerates it locally.
 generated/
+
+# Agent worktrees, not part of the project.
+.claude/
