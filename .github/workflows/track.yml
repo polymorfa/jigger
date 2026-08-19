@@ -215,20 +215,27 @@ jobs:
             ' .next/observe.json 2>/dev/null || echo "")
           fi
 
+          # Built into a file rather than a heredoc. A heredoc's body has to
+          # start at column 1 to avoid indenting the output, and column 1 ends
+          # the YAML block scalar this whole script lives in — so the workflow
+          # did not parse, and every run failed before it reached a single step.
+          # `--body-file` keeps the text indented, which keeps it inside the
+          # block, and costs nothing.
+          {
+            printf 'Extracted from WhatsApp Web revision `%s`.\n\n' "$REV"
+            printf '%s\n\n' "$SUMMARY"
+            # `if`, not `[ … ] && …`: the latter returns non-zero when the
+            # observation is absent, and the runner's `set -e` would abort the
+            # release on the one path that is expected to be empty.
+            if [ -n "$OBSERVED" ]; then printf '%s\n\n' "$OBSERVED"; fi
+            printf 'Every module of this revision is in `modules/` — the whole bundle, not a\n'
+            printf 'subset, so the viewer can follow any reference. The branch is orphaned each\n'
+            printf 'release, so it is always exactly this revision.\n\n'
+            printf 'The same source is also attached to the [`rev/%s`](../../releases/tag/rev/%s)\n' "$REV" "$REV"
+            printf 'release as a single archive, which is the copy that keeps history.\n'
+          } > pr-body.md
+
           gh pr create --base data --head "$BRANCH" \
             --title "revision $REV" \
-            --body "$(cat <<EOF
-Extracted from WhatsApp Web revision \`$REV\`.
-
-$SUMMARY
-
-$OBSERVED
-
-Every module of this revision is in \`modules/\` — the whole bundle, not a
-subset, so the viewer can follow any reference. The branch is orphaned each
-release, so it is always exactly this revision.
-
-The same source is also attached to the [\`rev/$REV\`](../../releases/tag/rev/$REV)
-release as a single archive, which is the copy that keeps history.
-EOF
-)" || gh pr edit "$BRANCH" --body "Updated for revision $REV."
+            --body-file pr-body.md \
+            || gh pr edit "$BRANCH" --body-file pr-body.md
