@@ -6,6 +6,8 @@ import { Scroll } from "@/components/ui";
 import { getSnapshotResult } from "@/lib/data";
 import { fetchModule, lineOfMatch, loadModule, memberLine } from "@/lib/module-source";
 import { fetchSymbols, loadSymbols } from "@/lib/module-symbols";
+import { ModuleGraphPanel } from "@/components/module-graph";
+import { loadModuleGraph } from "@/lib/module-graph";
 import { makeGithubSource } from "@/lib/source";
 import { rewriteModule } from "@/lib/source-rewrite";
 
@@ -68,6 +70,10 @@ export default async function SourcePage({ params, searchParams }: Params) {
   const symbols =
     loadSymbols(name, shown) ?? (remote ? await fetchSymbols(remote, name, shown) : null);
 
+  // Who relies on this, and on which export. The direction the source itself
+  // cannot answer.
+  const graph = await loadModuleGraph(remote ?? res.snap.source, name);
+
   const isMember = Boolean(m && /^[A-Za-z_$][\w$]*$/.test(m));
   const hit = m ? (isMember ? memberLine(src, m) : lineOfMatch(src, m)) : null;
 
@@ -88,13 +94,24 @@ export default async function SourcePage({ params, searchParams }: Params) {
             )}
           </div>
       </div>
-      <SourceView
-        name={name}
-        src={shown}
-        revision={revision}
-        highlight={hit}
-        symbols={symbols}
-      />
+      <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
+        <div className="flex min-h-0 min-w-0 flex-1 flex-col">
+          <SourceView
+            name={name}
+            src={shown}
+            revision={revision}
+            highlight={hit}
+            symbols={symbols}
+          />
+        </div>
+        {/* Beside the source, not beneath it: "what relies on this" is read
+            while reading the code, not after scrolling past all of it. */}
+        {graph && (
+          <aside className="w-full shrink-0 overflow-y-auto border-t px-3 py-3 lg:w-[var(--pane)] lg:border-l lg:border-t-0">
+            <ModuleGraphPanel graph={graph} />
+          </aside>
+        )}
+      </div>
     </div>
   );
 }

@@ -20,6 +20,8 @@ mkdir -p "$OUT/modules"
 cp "$SRC/ir.json" "$SRC/revision.json" "$OUT/"
 cp -R "$SRC/ir" "$OUT/ir"
 [ -d "$SRC/symbols" ] && cp -R "$SRC/symbols" "$OUT/symbols"
+# Who relies on what. One file per module, so a page reads only the one it shows.
+[ -d "$SRC/graph" ] && cp -R "$SRC/graph" "$OUT/graph"
 for f in vectors.json diff.json history.json coverage.json; do
   [ -f "$SRC/$f" ] && cp "$SRC/$f" "$OUT/"
 done

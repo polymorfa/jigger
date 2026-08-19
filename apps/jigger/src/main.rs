@@ -71,6 +71,9 @@ enum Cmd {
         config: PathBuf,
     },
 
+    /// Per-module dependents and export usage — who relies on what.
+    Graph,
+
     /// Per-module symbol tables, for go-to-definition in the source viewer.
     ///
     /// Precomputed rather than resolved per request: it is a pure function of a
@@ -206,6 +209,41 @@ fn main() -> Result<()> {
                 fs::write(&path, md)?;
                 println!("  {:<16} {} missing -> {}", repo.name, missing.len(), path.display());
             }
+        }
+
+        Cmd::Graph => {
+            let id = store.latest(Platform::Whatsapp)?;
+            let bundle = store.open_bundle(id)?;
+            let index = bundle.index()?;
+
+            // The same reachable set the payload ships: every WhatsApp module
+            // and everything it imports. Indexing beyond it would record
+            // dependents nobody can open.
+            let wanted: BTreeSet<String> = index
+                .modules
+                .iter()
+                .filter(|e| e.name.starts_with("WA") || e.name.starts_with("MAW"))
+                .flat_map(|e| {
+                    std::iter::once(e.name.clone()).chain(e.deps.iter().cloned())
+                })
+                .collect();
+
+            let graph = jigger_extract::modgraph::build(&bundle, &index.modules, &wanted)?;
+            let dir = cli.out.join("graph");
+            fs::create_dir_all(&dir)?;
+
+            let mut exports = 0usize;
+            let mut linked = 0usize;
+            for (name, g) in &graph {
+                exports += g.exports.len();
+                linked += g.exports.iter().filter(|e| e.uses > 0).count();
+                fs::write(
+                    dir.join(format!("{}.json", name.replace('/', "_"))),
+                    serde_json::to_string(g)?,
+                )?;
+            }
+            println!("  {} modules, {exports} exports, {linked} with a known caller", graph.len());
+            eprintln!("  -> {}/graph", cli.out.display());
         }
 
         Cmd::Symbols => {

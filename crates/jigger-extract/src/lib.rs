@@ -14,6 +14,7 @@ pub mod appstate;
 pub mod dispatch;
 pub mod enums;
 pub mod graphql;
+pub mod modgraph;
 pub mod wam;
 pub mod stanza;
 pub mod symbols;

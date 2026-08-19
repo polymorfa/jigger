@@ -78,6 +78,7 @@ jobs:
         run: |
           ./target/release/jigger --out .next extract latest
           ./target/release/jigger --out .next symbols
+          ./target/release/jigger --out .next graph
           ./target/release/jigger --out .next vectors
           echo "rev=$(jq -r .revision .next/revision.json)" >> "$GITHUB_OUTPUT"
 
