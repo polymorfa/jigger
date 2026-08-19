@@ -1,48 +1,25 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { FactDetail } from "@/components/fact-detail";
-import { Scroll } from "@/components/ui";
-import { DataError } from "@/components/data-error";
+"use client";
+
+import { FactPage } from "@/components/fact-page";
 import { FactIdLine } from "@/components/fact-parts";
-import { getSnapshotResult, getTypeIndex } from "@/lib/data";
-import { idFromSlug } from "@/lib/ids";
-import { sourceLabel } from "@/lib/source";
 import { isWam } from "@/lib/types";
 
-type Params = { params: Promise<{ slug: string[] }> };
-
-export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { slug } = await params;
-  return { title: idFromSlug("wam", slug) };
-}
-
-export default async function WamDetailPage({ params }: Params) {
-  const { slug } = await params;
-  const res = await getSnapshotResult();
-  if (!res.ok) {
-    return <DataError reason={res.reason} message={res.message} sourceLabel={sourceLabel(res.source)} />;
-  }
-  const fact = res.snap.factMap.get(idFromSlug("wam", slug));
-  if (!fact || !isWam(fact)) notFound();
-  const fieldCount = Object.keys(fact.data.fields).length;
-
+export default function WamDetailPage() {
   return (
-    <Scroll>
-      <div className="flex max-w-[var(--reading)] flex-col gap-4 px-5 py-5">
-        <div className="flex flex-col gap-2">
-          <FactIdLine id={fact.id} kind="wam" />
-          <span className="text-lg text-fg">{fact.name}</span>
-          <div className="data flex gap-4 text-xs text-fg-faint">
-            <span>event_id {fact.data.event_id}</span>
-            <span className="tnum">{fieldCount} fields</span>
+    <FactPage
+      kind="wam"
+      head={(fact) =>
+        isWam(fact) ? (
+          <div className="flex flex-col gap-2">
+            <FactIdLine id={fact.id} kind="wam" />
+            <span className="text-lg text-fg">{fact.name}</span>
+            <div className="data flex gap-4 text-xs text-fg-faint">
+              <span>event_id {fact.data.event_id}</span>
+              <span className="tnum">{Object.keys(fact.data.fields).length} fields</span>
+            </div>
           </div>
-        </div>
-
-        <section className="flex flex-col gap-1.5">
-          <h2 className="text-sm font-semibold text-fg-muted">Fields</h2>
-        </section>
-      </div>
-      <FactDetail fact={fact} types={getTypeIndex(res.snap)} revision={res.snap.ir.revision} revisions={res.snap.ir.revisions ?? []} />
-    </Scroll>
+        ) : null
+      }
+    />
   );
 }

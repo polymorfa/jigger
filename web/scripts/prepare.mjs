@@ -150,7 +150,37 @@ function buildSearchIndex() {
   console.log(`[prepare] wrote search index with ${index.length} entries -> public/data/search-index.json`);
 }
 
+/**
+ * Which spec documents cite each fact, as a file the browser can read.
+ *
+ * The prose is the source of truth for "is this documented" — a fact is
+ * documented iff some spec names it in backticks — and that scan used to happen
+ * per request. It is derived from markdown that ships with the app, so it is
+ * settled at build time and nothing needs to re-read five documents to render
+ * one badge.
+ */
+function buildCitations() {
+  const dir = join(webRoot, "content", "spec");
+  if (!existsSync(dir)) return;
+  const out = {};
+  for (const file of readdirSync(dir).filter((f) => f.endsWith(".md"))) {
+    const body = readFileSync(join(dir, file), "utf8");
+    const slug = file.replace(/\.md$/, "");
+    const title = /^#\s+(.+)$/m.exec(body)?.[1]?.trim() ?? slug;
+    const seen = new Set();
+    for (const m of body.matchAll(/`([^`]+)`/g)) {
+      const token = m[1];
+      if (!/^(ab|wam|iq|const|proto|enum|appstate|mex|sig):/.test(token) || seen.has(token)) continue;
+      seen.add(token);
+      (out[token] ??= []).push({ slug, title });
+    }
+  }
+  writeFileSync(join(webRoot, "public", "citations.json"), JSON.stringify(out));
+  console.log(`[prepare] ${Object.keys(out).length} cited fact(s) -> public/citations.json`);
+}
+
 syncSpec();
+buildCitations();
 // Local extraction wins: a machine that just ran `jigger extract` should see
 // what it extracted, not what CI published an hour ago.
 if (!existsSync(join(webRoot, "public", "data", "ir.json"))) {

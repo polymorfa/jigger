@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { CopyButton } from "@/components/copy-button";
+import { loadChildren } from "@/lib/facts";
 import { browseHref } from "@/lib/ids";
 import type { TreeNode } from "@/lib/proto-graph";
 
@@ -41,7 +42,7 @@ export function SchemaTree({
             <span className="text-fg-faint">{"{"}</span>
           </span>
           {nodes.map((n) => (
-            <Row key={`${n.number}:${n.field}`} node={n} depth={1} />
+            <Row key={`${n.number}:${n.field}`} node={n} depth={1} seen={[name]} />
           ))}
           <span className="block whitespace-pre text-fg-faint">{"}"}</span>
         </code>
@@ -61,11 +62,19 @@ function flatten(module: string, name: string, nodes: TreeNode[]): string {
   return `// ${module}\nmessage ${name} {\n${body}\n}`;
 }
 
-function Row({ node, depth }: { node: TreeNode; depth: number }) {
+function Row({ node, depth, seen }: { node: TreeNode; depth: number; seen: string[] }) {
   const [open, setOpen] = useState(false);
-  const kids = node.children ?? [];
-  const expandable = kids.length > 0;
+  const [kids, setKids] = useState<TreeNode[] | null>(node.children ?? null);
+  const expandable = Boolean(node.target) && !node.cycle;
   const indent = "  ".repeat(depth);
+
+  // Fetched on open rather than up front. Expanding three levels of every
+  // message on every page load is a great deal of schema nobody asked to see;
+  // `Message` alone has 80 fields, most of them other messages.
+  const toggle = () => {
+    setOpen((o) => !o);
+    if (!kids && node.target) loadChildren(node.target).then(setKids);
+  };
 
   return (
     <>
@@ -74,7 +83,7 @@ function Row({ node, depth }: { node: TreeNode; depth: number }) {
             so an unexpandable field lines up with an expandable one and the
             column of types stays a column. */}
         <button
-          onClick={() => setOpen((o) => !o)}
+          onClick={toggle}
           disabled={!expandable}
           aria-label={open ? `Collapse ${node.field}` : `Expand ${node.field}`}
           className={
@@ -107,7 +116,19 @@ function Row({ node, depth }: { node: TreeNode; depth: number }) {
           <span className="ml-2 text-2xs text-fg-faint">↺ expanded above</span>
         )}
       </span>
-      {open && kids.map((k) => <Row key={`${k.number}:${k.field}`} node={k} depth={depth + 1} />)}
+      {open &&
+        (kids ?? []).map((k) => (
+          <Row
+            key={`${k.number}:${k.field}`}
+            // `Message` contains `ContextInfo` contains `Message`, so a branch
+            // that has already appeared above itself is marked and stopped. A
+            // silently truncated branch reads as a leaf, and a leaf is a claim
+            // that nothing is nested there.
+            node={seen.includes(k.type) ? { ...k, cycle: true } : k}
+            depth={depth + 1}
+            seen={[...seen, node.type]}
+          />
+        ))}
     </>
   );
 }

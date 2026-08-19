@@ -113,6 +113,90 @@ for (const [name, refs] of byModule) {
 }
 console.log(`  by-module ${String(byModule.size).padStart(6)}`);
 
+/**
+ * Short type name -> the fact it names.
+ *
+ * Two questions need this and neither can be answered from one fact. A schema
+ * links a field's type to the message it points at, and the expandable tree
+ * resolves that type to its fields when you open it. Both are lookups against
+ * the whole corpus, which is precisely the kind of thing a reader should not be
+ * downloading 12 MB to do.
+ *
+ * Ambiguous names are dropped rather than resolved to an arbitrary one of
+ * several: six messages are called `ImageMessage`, and a link to the wrong one
+ * is worse than no link, because it looks right.
+ */
+const types = new Map();
+for (const f of ir.facts) {
+  const short = f.name.split(".").pop();
+  if (!short || short.length < 4) continue;
+  if (types.has(short)) {
+    types.set(short, null);
+    continue;
+  }
+  types.set(short, f);
+}
+for (const [k, f] of types) {
+  if (!f) {
+    types.delete(k);
+    continue;
+  }
+  // `[kind, id, slug]`, with the slug omitted when it is the id body with the
+  // one substitution a filename needs. That is the common case, and spelling it
+  // out for every entry doubled the file for nothing.
+  const body = f.id.slice(f.kind.length + 1);
+  const slug = slugOf.get(f.id);
+  types.set(k, slug === body.replace(/\//g, "~") ? [f.kind, f.id] : [f.kind, f.id, slug]);
+}
+writeFileSync(join(out, "types.json"), JSON.stringify(Object.fromEntries(types)));
+console.log(`  types     ${String(types.size).padStart(6)}`);
+
+/**
+ * Short name -> proto message, first writer wins.
+ *
+ * Deliberately laxer than `types.json`, and for a different job. A *link* to
+ * the wrong `ImageMessage` is a lie, so ambiguity is dropped there. But
+ * *expanding* a field typed `Message` has to show some Message or the tree is
+ * useless — 80 of them share a short name, and refusing to expand any leaves
+ * the schema flat, which is the thing the tree exists to fix.
+ */
+const protoTypes = new Map();
+for (const f of ir.facts) {
+  if (f.kind !== "proto") continue;
+  const short = f.name.split(".").pop();
+  if (!short || protoTypes.has(short)) continue;
+  const body = f.id.slice(f.kind.length + 1);
+  const slug = slugOf.get(f.id);
+  protoTypes.set(short, slug === body.replace(/\//g, "~") ? [f.id] : [f.id, slug]);
+}
+writeFileSync(join(out, "proto-types.json"), JSON.stringify(Object.fromEntries(protoTypes)));
+console.log(`  proto-ty  ${String(protoTypes.size).padStart(6)}`);
+
+/**
+ * Who embeds what — the inverse of the field-type edges.
+ *
+ * Field types point one way, so "what does `Message` hold" is a lookup and
+ * "what holds `ContextInfo`" is unanswerable without inverting the whole set.
+ * The second is the question you have when a field changes and you need the
+ * blast radius, and it is the one the schema cannot answer on its own.
+ *
+ * Keyed on the last segment because that is how fields name their types: a
+ * field of type `WAE2E.ContextInfo` and one of type `ContextInfo` refer to the
+ * same message, and only the short name is common to both.
+ */
+const embeds = new Map();
+for (const f of ir.facts) {
+  if (f.kind !== "proto") continue;
+  for (const [field, info] of Object.entries(f.data?.fields ?? {})) {
+    const key = info?.type_name?.split(".").pop();
+    if (!key) continue;
+    embeds.set(key, [...(embeds.get(key) ?? []), { message: f.name, field, number: info.number, id: f.id }]);
+  }
+}
+for (const list of embeds.values()) list.sort((a, b) => a.message.localeCompare(b.message));
+writeFileSync(join(out, "embedded-by.json"), JSON.stringify(Object.fromEntries(embeds)));
+console.log(`  embedded  ${String(embeds.size).padStart(6)}`);
+
 // One manifest so a reader can discover what exists without guessing filenames.
 writeFileSync(
   join(out, "kinds.json"),

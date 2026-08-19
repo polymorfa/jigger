@@ -60,3 +60,22 @@ export function useQueryParam(key: string): string | null {
 export function usePath(): string | null {
   return useLocation()?.pathname ?? null;
 }
+
+/**
+ * The fact id this page is showing.
+ *
+ * An id's own separators become path separators — `iq:privacy/get/privacy` is
+ * `/iq/privacy/get/privacy`, with no encoding anywhere — so recovering it is
+ * putting the `kind:` prefix back on the rest of the path.
+ */
+export function useFactId(kind: string): string | null {
+  const tail = useRouteTail(`/${kind}/`);
+  return tail ? `${kind}:${tail}` : null;
+}
+
+/** Set the browser tab title. There is no server render to carry a `<title>`. */
+export function useTitle(title: string | null) {
+  useEffect(() => {
+    if (title) document.title = title;
+  }, [title]);
+}

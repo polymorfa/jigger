@@ -177,3 +177,44 @@ export type FactRef = { id: string; kind: FactKind; name: string; slug?: string 
 
 export const loadModuleFacts = (name: string): Promise<FactRef[] | null> =>
   fetchJsonOptional<FactRef[]>(`index/by-module/${flatName(name)}.json`);
+
+/**
+ * Where a short type name resolves to: `[kind, id]`, with the filename only
+ * when it is not the id body. Ambiguous names are absent — six messages are
+ * called `ImageMessage`, and a link to the wrong one is worse than no link.
+ */
+export type TypeEntry = [FactKind, string] | [FactKind, string, string];
+
+export const loadTypes = (): Promise<Record<string, TypeEntry>> =>
+  fetchJson<Record<string, TypeEntry>>("index/types.json");
+
+/**
+ * Short name -> the proto message it names: `[id]`, or `[id, slug]` when the
+ * filename is not the id body.
+ *
+ * Laxer than `types.json` and for a different job. A link to the wrong
+ * `ImageMessage` is a lie, so ambiguity is dropped there; but expanding a field
+ * typed `Message` has to show some Message or the tree stays flat, which is the
+ * thing it exists to fix.
+ */
+export type ProtoType = [string] | [string, string];
+
+export const loadProtoTypes = (): Promise<Record<string, ProtoType>> =>
+  fetchJson<Record<string, ProtoType>>("index/proto-types.json");
+
+/** One place a message is embedded: which message, and under which field. */
+export type Embedding = { message: string; field: string; number: number; id: string };
+
+export const loadEmbeddings = (): Promise<Record<string, Embedding[]>> =>
+  fetchJson<Record<string, Embedding[]>>("index/embedded-by.json");
+
+/**
+ * The filename for a fact id.
+ *
+ * Only the one substitution a path needs. Everything the Rust rule does beyond
+ * that — the length cap, the escaping of stranger characters — applies to 89 of
+ * 5,382 facts, and those carry their filename explicitly rather than having it
+ * guessed from a second implementation of a rule that has to agree exactly.
+ */
+export const slugOfId = (kind: FactKind, id: string, explicit?: string): string =>
+  explicit ?? id.slice(kind.length + 1).replace(/\//g, "~");

@@ -1,16 +1,16 @@
+"use client";
+
+import { use } from "react";
 import Link from "next/link";
 import { schemaOf } from "@/components/code";
 import { AnnotatedCode } from "@/components/annotated-code";
 import { CopyButton } from "@/components/copy-button";
 import { ModuleLink } from "@/components/module-link";
 import { IqResponses } from "@/components/iq-responses";
-import { Timeline } from "@/components/timeline";
 import { EmbeddedBy } from "@/components/proto-message-tree";
 import { SchemaTree } from "@/components/schema-tree";
 
-import { historyFor } from "@/lib/history";
-import { getCitations, type Citation } from "@/lib/spec";
-import type { Embedding, TreeNode } from "@/lib/proto-graph";
+import { loadCitations, loadEmbeddedBy, loadTypeIndex, loadTreeFor, type Citation } from "@/lib/facts";
 import type { Fact, FactKind } from "@/lib/types";
 import { isAb, isIq, isProto } from "@/lib/types";
 
@@ -46,26 +46,15 @@ function Head({ title, note }: { title: string; note: string }) {
  * destinations for one thing means two things to keep in step, and a reader who
  * is never certain which is canonical.
  */
-export function FactDetail({
-  fact,
-  types,
-  revision = 0,
-  revisions = [],
-  tree,
-  embeddedBy,
-}: {
-  fact: Fact;
-  types?: Map<string, string>;
-  revision?: number;
-  /** Every indexed revision, for reading the timeline against. */
-  revisions?: number[];
-  /** The message expanded through its field types. Proto facts only. */
-  tree?: TreeNode[];
-  /** Everything that carries this message. The direction the schema cannot go. */
-  embeddedBy?: Embedding[];
-}) {
+export function FactDetail({ fact, revision = 0 }: { fact: Fact; revision?: number }) {
   const { src, lang } = schemaOf(fact);
-  const citations: Citation[] = getCitations().get(fact.id) ?? [];
+  const short = fact.name.split(".").pop() ?? fact.name;
+  // Everything below is a lookup against the whole corpus, precomputed into an
+  // index and fetched once per session rather than per page.
+  const types = use(loadTypeIndex());
+  const citations: Citation[] = use(loadCitations())[fact.id] ?? [];
+  const tree = isProto(fact) ? use(loadTreeFor(fact)) : undefined;
+  const embeddedBy = isProto(fact) ? use(loadEmbeddedBy(short)) : undefined;
   const reads = isAb(fact) ? (fact.usage?.read_count ?? 0) : null;
   const readers = fact.usage?.readers ?? [];
 
@@ -218,11 +207,6 @@ export function FactDetail({
             </div>
           </div>
         )}
-      </section>
-
-      <section className="flex flex-col gap-2">
-        <Head title="History" note="across indexed revisions" />
-        <Timeline history={historyFor(fact.id)} revisions={revisions} />
       </section>
 
       <section className="flex flex-col gap-2">
