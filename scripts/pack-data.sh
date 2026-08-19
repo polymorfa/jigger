@@ -20,7 +20,9 @@ mkdir -p "$OUT/modules"
 cp "$SRC/ir.json" "$SRC/revision.json" "$OUT/"
 cp -R "$SRC/ir" "$OUT/ir"
 [ -d "$SRC/symbols" ] && cp -R "$SRC/symbols" "$OUT/symbols"
-[ -f "$SRC/vectors.json" ] && cp "$SRC/vectors.json" "$OUT/"
+for f in vectors.json diff.json history.json coverage.json; do
+  [ -f "$SRC/$f" ] && cp "$SRC/$f" "$OUT/"
+done
 
 # Source, for the modules the ledger actually references.
 #

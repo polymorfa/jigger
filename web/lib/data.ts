@@ -134,17 +134,45 @@ function readLocalJson<T>(file: string): T {
   return JSON.parse(readFileSync(join(DATA_DIR, file), "utf8")) as T;
 }
 
+/**
+ * The same, for artifacts that legitimately may not exist yet.
+ *
+ * A diff needs two revisions and coverage needs the tracked libraries checked
+ * out — neither is available on a first extraction or in a deployment that only
+ * carries the ledger. Throwing there is wrong: these describe *analysis* that
+ * has not run, not data that is missing, and the pages that use them already
+ * render an empty state. Letting it throw took the whole build down from a
+ * header that wanted a revision list.
+ */
+function readLocalJsonOr<T>(file: string, fallback: T): T {
+  try {
+    return readLocalJson<T>(file);
+  } catch {
+    return fallback;
+  }
+}
+
+const EMPTY_DIFF: Diff = {
+  from: 0,
+  to: 0,
+  revisions: [],
+  summary: { added: 0, removed: 0, changed: 0, stable: 0, byKind: {} },
+  added: {},
+  removed: {},
+  changed: {},
+};
+
 let _diff: Diff | null = null;
 let _coverage: CoverageRow[] | null = null;
 let _covByFact: Map<string, CoveragePivot> | null = null;
 
 export function getDiff(): Diff {
-  if (!_diff) _diff = readLocalJson<Diff>("diff.json");
+  if (!_diff) _diff = readLocalJsonOr<Diff>("diff.json", EMPTY_DIFF);
   return _diff;
 }
 
 export function getCoverage(): CoverageRow[] {
-  if (!_coverage) _coverage = readLocalJson<CoverageRow[]>("coverage.json");
+  if (!_coverage) _coverage = readLocalJsonOr<CoverageRow[]>("coverage.json", []);
   return _coverage;
 }
 
