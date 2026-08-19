@@ -15,6 +15,7 @@ pub mod dispatch;
 pub mod enums;
 pub mod graphql;
 pub mod modgraph;
+pub mod observe;
 pub mod wam;
 pub mod shape;
 pub mod stanza;
