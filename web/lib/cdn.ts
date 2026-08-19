@@ -42,11 +42,23 @@ function resolveBase(): Promise<string> {
     try {
       const res = await fetch(`https://api.github.com/repos/${repo}/commits/${ref}`, {
         headers: { Accept: "application/vnd.github.sha" },
+        // The timeout is the whole point of this call being safe. A rejection
+        // is caught below, but a request that simply never answers is not a
+        // rejection — it is a promise nobody resolves, and every page in the
+        // app is suspended on it. That renders as a blank shell with no error,
+        // which is indistinguishable from the site being broken.
+        //
+        // GitHub also allows 60 unauthenticated requests an hour per address,
+        // so a shared network can lose this without anything being wrong.
+        signal: AbortSignal.timeout(2500),
       });
       if (!res.ok) return branch;
       const sha = (await res.text()).trim();
       return /^[0-9a-f]{40}$/.test(sha) ? `https://cdn.jsdelivr.net/gh/${repo}@${sha}` : branch;
     } catch {
+      // Falling back to the branch means a reader may see a snapshot mixed
+      // across two revisions, which is what pinning exists to prevent. It is
+      // still the right trade against showing them nothing.
       return branch;
     }
   });

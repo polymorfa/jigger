@@ -13,43 +13,43 @@
   "rewrites": [
     {
       "source": "/source/:name+",
-      "destination": "/source/_.html"
+      "destination": "/source/_"
     },
     {
       "source": "/fact/:id+",
-      "destination": "/fact/_.html"
+      "destination": "/fact/_"
     },
     {
       "source": "/ab/:slug+",
-      "destination": "/ab/_.html"
+      "destination": "/ab/_"
     },
     {
       "source": "/wam/:slug+",
-      "destination": "/wam/_.html"
+      "destination": "/wam/_"
     },
     {
       "source": "/iq/:slug+",
-      "destination": "/iq/_.html"
+      "destination": "/iq/_"
     },
     {
       "source": "/mex/:slug+",
-      "destination": "/mex/_.html"
+      "destination": "/mex/_"
     },
     {
       "source": "/sig/:slug+",
-      "destination": "/sig/_.html"
+      "destination": "/sig/_"
     },
     {
       "source": "/proto/:slug+",
-      "destination": "/proto/_.html"
+      "destination": "/proto/_"
     },
     {
       "source": "/enum/:slug+",
-      "destination": "/enum/_.html"
+      "destination": "/enum/_"
     },
     {
       "source": "/appstate/:slug+",
-      "destination": "/appstate/_.html"
+      "destination": "/appstate/_"
     }
   ]
 }
