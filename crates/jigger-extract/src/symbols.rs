@@ -120,15 +120,23 @@ pub fn factory_renames(src: &str) -> Vec<(usize, usize, String)> {
     if parsed.panicked {
         return vec![];
     }
-    let semantic = SemanticBuilder::new().with_build_nodes(true).build(&parsed.program).semantic;
+    let semantic = SemanticBuilder::new()
+        .with_build_nodes(true)
+        .build(&parsed.program)
+        .semantic;
     let scoping = semantic.scoping();
 
-    let Some(factory) = crate::factory::factory_of(&parsed.program) else { return vec![] };
-    let layout = crate::factory::layout_of(factory, scoping);
+    let Some(factory) = crate::factory::factory_of(&parsed.program) else {
+        return vec![];
+    };
+    let layout =
+        crate::factory::layout_of(factory, &crate::factory::deps_of(&parsed.program), scoping);
 
     let mut out = Vec::new();
     for (i, param) in factory.params.items.iter().enumerate() {
-        let oxc_ast::ast::BindingPattern::BindingIdentifier(id) = &param.pattern else { continue };
+        let oxc_ast::ast::BindingPattern::BindingIdentifier(id) = &param.pattern else {
+            continue;
+        };
         let Some(name) = layout.name(i) else { continue };
         // A module that already names its parameters needs no help, and
         // rewriting `exports` to `exports` would only be a chance to get the
@@ -136,7 +144,9 @@ pub fn factory_renames(src: &str) -> Vec<(usize, usize, String)> {
         if id.name == name {
             continue;
         }
-        let Some(sym) = id.symbol_id.get() else { continue };
+        let Some(sym) = id.symbol_id.get() else {
+            continue;
+        };
 
         let span = scoping.symbol_span(sym);
         out.push((span.start as usize, span.end as usize, name.to_string()));
@@ -190,7 +200,10 @@ impl Lines {
     }
 
     fn at(&self, src: &str, offset: usize) -> (u32, u32) {
-        let line = self.starts.partition_point(|&s| s <= offset).saturating_sub(1);
+        let line = self
+            .starts
+            .partition_point(|&s| s <= offset)
+            .saturating_sub(1);
         let start = self.starts[line];
         // Counted in characters, not bytes: the viewer indexes into JavaScript
         // strings, where a multi-byte character is one position.
@@ -260,7 +273,12 @@ pub fn symbols(raw: &str) -> Option<Symbols> {
 
     decls.sort_unstable();
     refs.sort_unstable();
-    Some(Symbols { hash: fnv1a(&src), decls, refs, renames })
+    Some(Symbols {
+        hash: fnv1a(&src),
+        decls,
+        refs,
+        renames,
+    })
 }
 
 #[cfg(test)]
@@ -284,9 +302,15 @@ __d("M", ["Dep"], (function(t, n, r, o, a, i, l) {
             out.contains("function(global, require, importDefault, importNamespace, requireLazy, module, exports)"),
             "signature not rewritten:\n{out}"
         );
-        assert!(out.contains("exports.go = u;"), "exports use not rewritten:\n{out}");
+        assert!(
+            out.contains("exports.go = u;"),
+            "exports use not rewritten:\n{out}"
+        );
         // `u`'s own `t` shadows the factory's and must survive untouched.
-        assert!(out.contains("function u(t) { return s(t); }"), "inner `t` was clobbered:\n{out}");
+        assert!(
+            out.contains("function u(t) { return s(t); }"),
+            "inner `t` was clobbered:\n{out}"
+        );
     }
 
     /// A six-parameter factory is the other convention, and `i` is its exports.
@@ -295,7 +319,10 @@ __d("M", ["Dep"], (function(t, n, r, o, a, i, l) {
         let src = r#"__d("M", [], (function(t, n, r, o, a, i) { i.x = 1; }), 98);"#;
         let out = apply_renames(&rewrite(src), &factory_renames(&rewrite(src)));
         assert!(out.contains("exports.x = 1"), "{out}");
-        assert!(out.contains("requireDynamic, requireLazy, module, exports"), "{out}");
+        assert!(
+            out.contains("requireDynamic, requireLazy, module, exports"),
+            "{out}"
+        );
     }
 
     /// The hash describes the text after renaming, because that is the text the
@@ -313,7 +340,11 @@ __d("M", ["Dep"], (function(t, n, r, o, a, i, l) {
     fn a_reference_resolves_to_its_own_scope() {
         let sym = symbols(SRC).expect("parses");
         // `s` is declared on line 3 and referenced on line 4.
-        let call = sym.refs.iter().find(|(l, ..)| *l == 4).expect("reference on line 4");
+        let call = sym
+            .refs
+            .iter()
+            .find(|(l, ..)| *l == 4)
+            .expect("reference on line 4");
         assert_eq!(call.3, 3, "should resolve to the declaration on line 3");
     }
 
