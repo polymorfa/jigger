@@ -1,8 +1,4 @@
-import "server-only";
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
-import { fetchPayloadFile } from "./payload";
-import type { DataSource } from "./source";
+import { fetchJsonOptional, flatName } from "./cdn";
 
 export type Export = { name: string; used_by: string[]; uses: number };
 
@@ -23,17 +19,6 @@ export type ModuleGraph = {
  * the symbol tables are: it is a whole-bundle question and the answer is the
  * same for every reader.
  */
-export async function loadModuleGraph(
-  source: DataSource,
-  name: string,
-): Promise<ModuleGraph | null> {
-  const file = `${name.replace(/\//g, "_")}.json`;
-  try {
-    return JSON.parse(
-      readFileSync(join(process.cwd(), "public", "data", "graph", file), "utf8"),
-    ) as ModuleGraph;
-  } catch {
-    const body = await fetchPayloadFile(source, `graph/${file}`);
-    return body ? (JSON.parse(body) as ModuleGraph) : null;
-  }
+export function loadModuleGraph(name: string): Promise<ModuleGraph | null> {
+  return fetchJsonOptional<ModuleGraph>(`graph/${flatName(name)}.json`);
 }

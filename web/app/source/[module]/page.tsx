@@ -1,105 +1,103 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { SourceView } from "@/components/source-view";
+"use client";
 
-import { Scroll } from "@/components/ui";
-import { getSnapshotResult } from "@/lib/data";
-import { fetchModule, lineOfMatch, loadModule, memberLine } from "@/lib/module-source";
-import { fetchSymbols, loadSymbols } from "@/lib/module-symbols";
+import { Suspense, use } from "react";
+import Link from "next/link";
+import { SourceView } from "@/components/source-view";
 import { ModuleGraphPanel } from "@/components/module-graph";
+
+import { cached, loadModuleFacts, loadModuleSource, loadRevision } from "@/lib/cdn";
 import { loadModuleGraph } from "@/lib/module-graph";
-import { makeGithubSource } from "@/lib/source";
+import { lineOfMatch, memberLine } from "@/lib/module-source";
+import { loadSymbols } from "@/lib/module-symbols";
+import { browseHref } from "@/lib/ids";
+import { useQueryParam, useRouteTail } from "@/lib/route";
 import { rewriteModule } from "@/lib/source-rewrite";
 
-type Params = { params: Promise<{ module: string }>; searchParams: Promise<{ m?: string }> };
-
-export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { module } = await params;
-  return { title: decodeURIComponent(module) };
+/**
+ * Everything the page shows, as one cached promise.
+ *
+ * Composed rather than fetched piecemeal so it can be handed to `use()`: React
+ * suspends on the identity of a promise, and a new one built each render would
+ * suspend forever. The symbol table has to come after the rewrite regardless —
+ * it is keyed to the exact bytes the viewer will draw.
+ */
+function view(name: string) {
+  return cached(`view:${name}`, async () => {
+    const src = await loadModuleSource(name);
+    if (src === null) return null;
+    const shown = rewriteModule(src);
+    const [symbols, graph, facts] = await Promise.all([
+      loadSymbols(name, shown),
+      loadModuleGraph(name),
+      loadModuleFacts(name),
+    ]);
+    return { src, shown, symbols, graph, facts: facts ?? [] };
+  });
 }
 
-/**
- * One module of WhatsApp Web, as shipped.
- *
- * This is what every "source module" reference in the app points at. A claim
- * that cites a module nobody can open is not evidence, it is an assertion.
- */
-export default async function SourcePage({ params, searchParams }: Params) {
-  const { module } = await params;
-  const { m } = await searchParams;
-  const name = decodeURIComponent(module);
+function Missing({ name }: { name: string }) {
+  return (
+    <div className="px-6 py-5">
+      <h1 className="data text-lg font-semibold">{name}</h1>
+      <p className="mt-2 max-w-prose text-sm text-fg-muted">
+        This revision’s payload carries no module by that name. The payload holds the modules the
+        app can reach — everything named <span className="data">WA*</span> or{" "}
+        <span className="data">MAW*</span> and everything they import — so a name outside that set,
+        or a stale link from an older revision, lands here.
+      </p>
+    </div>
+  );
+}
 
-  const res = await getSnapshotResult();
-  if (!res.ok) notFound();
-  const revision = res.snap.ir.revision;
+function Body({ name, match }: { name: string; match: string | null }) {
+  const rev = use(loadRevision());
+  const data = use(view(name));
+  if (!data) return <Missing name={name} />;
+  const { src, shown, symbols, graph, facts } = data;
 
-  // Disk when there is a cellar store, the payload branch otherwise.
-  //
-  // The snapshot's own source is not the right thing to ask. `ir.json` is on
-  // disk on a deployment too — the build fetched it — so the snapshot reads as
-  // local while the modules, which are far too many to bundle, are not there.
-  // What decides this is whether a cellar store exists, not where the ledger
-  // came from.
-  const remote = res.snap.source.kind === "github" ? res.snap.source : makeGithubSource();
-  const src = loadModule(revision, name) ?? (remote && (await fetchModule(remote, name)));
-  if (src === null) {
-    return (
-      <Scroll>
-        <div className="px-6 py-5">
-          <h1 className="data text-lg font-semibold">{name}</h1>
-          <p className="mt-2 max-w-prose text-sm text-fg-muted">
-            No local copy of revision <span className="data">{revision}</span>. Module source is
-            read from the cellar store on disk, so it is unavailable when the app is pointed at a
-            remote snapshot. Index the revision with{" "}
-            <span className="data">cellar bundle add</span> to read it here.
-          </p>
-        </div>
-      </Scroll>
-    );
-  }
-
-  // Facts extracted from this module, so the page answers "what did we learn
-  // here" as well as "what does it say".
-  const cited = res.snap.facts.filter((f) => f.evidence.module === name);
   // `?m=` carries two different things. An evidence pattern is a regex to match;
   // a member name came from a click-through and wants the definition, not the
   // first line that happens to mention it.
-  // Symbols are keyed to the rewritten text, so it is computed once here and
-  // handed to the viewer rather than derived twice.
-  const shown = rewriteModule(src);
-  const symbols =
-    loadSymbols(name, shown) ?? (remote ? await fetchSymbols(remote, name, shown) : null);
-
-  // Who relies on this, and on which export. The direction the source itself
-  // cannot answer.
-  const graph = await loadModuleGraph(remote ?? res.snap.source, name);
-
-  const isMember = Boolean(m && /^[A-Za-z_$][\w$]*$/.test(m));
-  const hit = m ? (isMember ? memberLine(src, m) : lineOfMatch(src, m)) : null;
+  const isMember = Boolean(match && /^[A-Za-z_$][\w$]*$/.test(match));
+  const hit = match ? (isMember ? memberLine(src, match) : lineOfMatch(src, match)) : null;
 
   return (
     <div className="flex h-full min-h-0 flex-col">
       <div className="flex flex-col gap-1 border-b border-hair px-4 py-2.5">
-          <h1 className="data text-lg font-semibold tracking-tight">{name}</h1>
-          <div className="data flex flex-wrap gap-4 text-xs text-fg-faint">
-            <span className="tnum">revision {revision}</span>
-            <span className="tnum">{src.split("\n").length} lines</span>
-            <span className="tnum">
-              {cited.length} fact{cited.length === 1 ? "" : "s"} extracted here
+        <h1 className="data text-lg font-semibold tracking-tight">{name}</h1>
+        <div className="data flex flex-wrap gap-4 text-xs text-fg-faint">
+          <span className="tnum">revision {rev.revision}</span>
+          <span className="tnum">{shown.split("\n").length} lines</span>
+          <span className="tnum">
+            {facts.length} fact{facts.length === 1 ? "" : "s"} extracted here
+          </span>
+          {hit && (
+            <span className="tnum text-brand">
+              {isMember ? `${match} defined at line ${hit}` : `match at line ${hit}`}
             </span>
-            {hit && (
-              <span className="tnum text-brand">
-                {isMember ? `${m} defined at line ${hit}` : `match at line ${hit}`}
-              </span>
+          )}
+        </div>
+        {/* What we learned here, not just what it says. A module that is
+            evidence for something should say so where you are reading it. */}
+        {facts.length > 0 && (
+          <div className="flex flex-wrap gap-x-3 gap-y-1 pt-0.5">
+            {facts.slice(0, 24).map((f) => (
+              <Link key={f.id} href={browseHref(f.kind, f.id)} className="link data text-xs">
+                {f.name}
+              </Link>
+            ))}
+            {facts.length > 24 && (
+              <span className="text-xs text-fg-faint">and {facts.length - 24} more</span>
             )}
           </div>
+        )}
       </div>
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
         <div className="flex min-h-0 min-w-0 flex-1 flex-col">
           <SourceView
             name={name}
             src={shown}
-            revision={revision}
+            revision={rev.revision}
             highlight={hit}
             symbols={symbols}
           />
@@ -113,5 +111,31 @@ export default async function SourcePage({ params, searchParams }: Params) {
         )}
       </div>
     </div>
+  );
+}
+
+function Waiting({ name }: { name?: string }) {
+  return (
+    <div className="px-6 py-5">
+      <h1 className="data text-lg font-semibold tracking-tight">{name ?? " "}</h1>
+      <p className="mt-2 text-sm text-fg-faint">Fetching module source…</p>
+    </div>
+  );
+}
+
+/**
+ * One module of WhatsApp Web, as shipped.
+ *
+ * This is what every "source module" reference in the app points at. A claim
+ * that cites a module nobody can open is not evidence, it is an assertion.
+ */
+export default function SourcePage() {
+  const name = useRouteTail("/source/");
+  const match = useQueryParam("m");
+  if (!name) return <Waiting />;
+  return (
+    <Suspense fallback={<Waiting name={name} />}>
+      <Body name={name} match={match} />
+    </Suspense>
   );
 }

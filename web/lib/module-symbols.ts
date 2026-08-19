@@ -1,8 +1,4 @@
-import "server-only";
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
-import { fetchPayloadFile } from "./payload";
-import type { DataSource } from "./source";
+import { fetchJsonOptional, flatName } from "./cdn";
 
 /** line, column, length, reference count. */
 export type Decl = [number, number, number, number];
@@ -22,7 +18,7 @@ export type Symbols = { hash: string; decls: Decl[]; refs: Ref[] };
  */
 function fnv1a(s: string): string {
   let h = 0xcbf29ce484222325n;
-  for (const byte of Buffer.from(s, "utf8")) {
+  for (const byte of new TextEncoder().encode(s)) {
     h ^= BigInt(byte);
     h = BigInt.asUintN(64, h * 0x100000001b3n);
   }
@@ -37,40 +33,14 @@ function fnv1a(s: string): string {
  * against different bytes, and a symbol table that half-matches produces links
  * that land beside the identifier they name — worse than no links, because it
  * looks correct.
+ *
+ * Not every module has one: the pass covers what the ledger references, and the
+ * viewer can open anything. No symbols means no internal links, which is the
+ * honest degradation.
  */
-/** The same table, from the payload branch, for a deployment with no store. */
-export async function fetchSymbols(
-  source: DataSource,
-  module: string,
-  rewritten: string,
-): Promise<Symbols | null> {
-  if (source.kind === "local") return null;
-  try {
-    const body = await fetchPayloadFile(source, `symbols/${module.replace(/\//g, "_")}.json`);
-    if (!body) return null;
-    const sym = JSON.parse(body) as Symbols;
-    // The same guarantee as the local path: offsets against different bytes are
-    // not approximately right, they are meaningless.
-    return sym.hash === fnv1a(rewritten) ? sym : null;
-  } catch {
-    return null;
-  }
-}
-
-export function loadSymbols(module: string, rewritten: string): Symbols | null {
-  try {
-    const raw = readFileSync(
-      join(process.cwd(), "public", "data", "symbols", `${module.replace(/\//g, "_")}.json`),
-      "utf8",
-    );
-    const sym = JSON.parse(raw) as Symbols;
-    return sym.hash === fnv1a(rewritten) ? sym : null;
-  } catch {
-    // Not every module has one: the pass covers what the ledger references, and
-    // the viewer can open anything. No symbols means no internal links, which
-    // is the honest degradation.
-    return null;
-  }
+export async function loadSymbols(module: string, rewritten: string): Promise<Symbols | null> {
+  const sym = await fetchJsonOptional<Symbols>(`symbols/${flatName(module)}.json`);
+  return sym && sym.hash === fnv1a(rewritten) ? sym : null;
 }
 
 /**

@@ -1,53 +1,10 @@
-import { existsSync, readFileSync } from "node:fs";
-import { homedir } from "node:os";
-import { join } from "node:path";
-import { fetchPayloadFile } from "./payload";
-import type { DataSource } from "./source";
-
 /**
- * Module source, read straight out of the cellar bundle.
+ * Reading a module's text: the parts that are pure computation.
  *
- * Not copied into the app: a bundle is ~188k modules and gigabytes, and the
- * whole point of cellar is that it already stores them addressably. This reads
- * the one module a page asks for.
- *
- * Only works against a local cellar store. When the app is pointed at a GitHub
- * snapshot there is no bundle on disk, so `loadModule` returns null and callers
- * render the reference without a link rather than a broken one.
+ * Fetching lives in `cdn.ts` — the browser asks for the one module a page
+ * opened. What is left here is everything that turns that text into a line
+ * number, which is the only form of location the IR ever commits to.
  */
-const STORE = process.env.CELLAR_STORE ?? join(homedir(), ".cellar", "bundles");
-
-export function modulePath(revision: number, name: string): string {
-  return join(STORE, `whatsapp-${revision}`, "modules", `${name}.js`);
-}
-
-export function hasModule(revision: number, name: string): boolean {
-  return existsSync(modulePath(revision, name));
-}
-
-/**
- * Module source, wherever it happens to live.
- *
- * On a machine with a cellar store that is the bundle on disk. On a deployment
- * it is the payload branch, fetched one module at a time — the payload holds
- * ~4,800 of them and shipping all 29 MB to serve the one someone opened would
- * be absurd. Cached indefinitely because a revision's source never changes:
- * a new build is a new revision with its own branch content.
- */
-export async function fetchModule(source: DataSource, name: string): Promise<string | null> {
-  if (source.kind === "local") return null;
-  return fetchPayloadFile(source, `modules/${name}.js`);
-}
-
-export function loadModule(revision: number, name: string): string | null {
-  const p = modulePath(revision, name);
-  if (!existsSync(p)) return null;
-  try {
-    return readFileSync(p, "utf8");
-  } catch {
-    return null;
-  }
-}
 
 /**
  * The first line matching a fact's evidence pattern.
