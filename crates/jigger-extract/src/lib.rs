@@ -8,7 +8,7 @@
 //! Bundle access goes through `cellar-core`, so the on-disk layout, the module
 //! index and the filter engine are cellar's concern and are not re-implemented.
 
-use anyhow::Result;
+use anyhow::{Context, Result};
 use cellar_core::{BundleHandle, ModuleEntry};
 pub mod appstate;
 pub mod dispatch;
@@ -41,33 +41,82 @@ pub fn abprops(
     entries: &[ModuleEntry],
     reads: &BTreeMap<String, Vec<String>>,
 ) -> Result<Vec<Fact>> {
-    let entry = Regex::new(r#"([a-z][a-z0-9_]*):\s*\[\s*(\d+),\s*"([a-z]+)",\s*([^,\]]+),\s*([^,\]]+)"#)?;
     let Some(e) = entries.iter().find(|e| e.name == "WAWebABPropsConfigs") else { return Ok(vec![]) };
-    let src = bundle.read_module(e)?;
+    parse_abprops_source(&bundle.read_module(e)?, &e.name, reads)
+}
 
-    let lit = |s: &str| -> serde_json::Value {
-        match s.trim() {
-            "!1" | "false" => serde_json::Value::Bool(false),
-            "!0" | "true" => serde_json::Value::Bool(true),
-            v => v.parse::<i64>().map(Into::into)
-                  .unwrap_or_else(|_| serde_json::Value::String(v.trim_matches('"').to_string())),
+fn ab_literal(s: &str) -> Result<serde_json::Value> {
+    match s.trim() {
+        "!1" | "false" => Ok(serde_json::Value::Bool(false)),
+        "!0" | "true" => Ok(serde_json::Value::Bool(true)),
+        v if Regex::new(r"^-?(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:[eE][+-]?[0-9]+)?$")?.is_match(v) => {
+            if let Ok(n) = v.parse::<i64>() { return Ok(n.into()); }
+            let number = serde_json::Number::from_f64(v.parse()?).ok_or_else(|| anyhow::anyhow!("non-finite default"))?;
+            Ok(serde_json::Value::Number(number))
         }
-    };
+        v => {
+            let parsed: serde_json::Value = serde_json::from_str(v)?;
+            anyhow::ensure!(!parsed.is_array() && !parsed.is_object(), "unsupported AB prop literal: {v}");
+            Ok(parsed)
+        }
+    }
+}
 
-    Ok(entry.captures_iter(&src).map(|c| {
+fn parse_abprops_source(src: &str, module: &str, reads: &BTreeMap<String, Vec<String>>) -> Result<Vec<Fact>> {
+    // Match complete names and string literals before delimiter scanning.
+    let value = r#"("(?:[^"\\]|\\.)*"|[^,\]"\n]+)"#;
+    let entry = Regex::new(&format!(
+        r#"(?:^|[{{,\s])([A-Za-z_][A-Za-z0-9_]*):\s*\[\s*(\d+),\s*"([a-z]+)",\s*{value},\s*{value}\s*\]"#
+    ))?;
+    let declared = Regex::new(r#"\b[A-Za-z_][A-Za-z0-9_]*:\s*\[\s*\d+,\s*"(?:bool|int|float|string)""#)?.find_iter(src).count();
+    let facts = entry.captures_iter(src).map(|c| -> Result<Fact> {
         let name = c[1].to_string();
-        let opaque_id: u32 = c[2].parse().unwrap_or(0);
+        let opaque_id: u32 = c[2].parse()?;
         let mut f = fact(Kind::Ab, name.clone(),
-             Data::Ab { opaque_id, r#type: c[3].to_string(), default: lit(&c[4]), alt_default: lit(&c[5]) },
-             &e.name, format!(r"{name}:\s*\[\s*{opaque_id}"));
+            Data::Ab { opaque_id, r#type: c[3].to_string(), default: ab_literal(&c[4]).with_context(|| format!("{name} default {:?}", &c[4]))?, alt_default: ab_literal(&c[5]).with_context(|| format!("{name} alt default {:?}", &c[5]))? },
+            module, format!(r"{name}:\s*\[\s*{opaque_id}"));
         let r = reads.get(&name).cloned().unwrap_or_default();
         let mut readers = r.clone();
-        // Capped for size; read_count keeps the true total so a truncated list
-        // is never mistaken for the complete one.
         readers.truncate(40);
         f.usage = Some(Usage { read_count: r.len() as u32, readers });
-        f
-    }).collect())
+        Ok(f)
+    }).collect::<Result<Vec<_>>>()?;
+    anyhow::ensure!(facts.len() == declared, "unsupported or malformed AB prop default: extracted {} of {declared}", facts.len());
+    Ok(facts)
+}
+
+#[cfg(test)]
+mod ab_tests {
+    use super::*;
+    #[test]
+    fn complete_names_and_escaped_defaults() {
+        let src = r#"{community_general_chat_UI_enabled: [7, "bool", !0, false], allow_list: [8, "string", "[1,2]", "{\"a\":\"b\"}"], count: [9, "float", 1e5, -.25]}"#;
+        let reads = BTreeMap::from([("community_general_chat_UI_enabled".into(), vec!["Reader".into()])]);
+        let facts = parse_abprops_source(src, "Configs", &reads).unwrap();
+        assert_eq!(facts.len(), 3);
+        assert_eq!(facts[0].name, "community_general_chat_UI_enabled");
+        assert_eq!(facts[0].usage.as_ref().unwrap().readers, vec!["Reader"]);
+        if let Data::Ab { default, alt_default, .. } = &facts[1].data {
+            assert_eq!(default, "[1,2]"); assert_eq!(alt_default, r#"{"a":"b"}"#);
+        } else { panic!("wrong fact") }
+    }
+    #[test]
+    fn reader_names_preserve_case() {
+        let pattern = abprop_read_pattern().unwrap();
+        let names: Vec<_> = pattern.captures_iter(r#"getABPropConfigValue("community_UI_enabled"); getAbPropConfigValue( "plain_name"); getABPropConfigValue(computed)"#).map(|c| c[1].to_string()).collect();
+        assert_eq!(names, vec!["community_UI_enabled", "plain_name"]);
+    }
+    #[test]
+    fn unsupported_defaults_fail_visibly() {
+        for value in ["undefined", "someCall()", "[1,2]", "{a:1}"] {
+            let src = format!(r#"{{flag: [1, "string", {value}, ""]}}"#);
+            assert!(parse_abprops_source(&src, "Configs", &BTreeMap::new()).is_err(), "{value}");
+        }
+    }
+}
+
+fn abprop_read_pattern() -> Result<Regex> {
+    Ok(Regex::new(r#"get[Aa][Bb]PropConfigValue\(\s*"([A-Za-z_][A-Za-z0-9_]*)""#)?)
 }
 
 /// Counts how many modules read each A/B property. A property registered but
@@ -77,7 +126,7 @@ pub fn abprop_reads(
     bundle: &BundleHandle,
     entries: &[ModuleEntry],
 ) -> Result<BTreeMap<String, Vec<String>>> {
-    let call = Regex::new(r#"get[Aa][Bb]PropConfigValue\("([a-z0-9_]+)""#)?;
+    let call = abprop_read_pattern()?;
     let mut readers: BTreeMap<String, Vec<String>> = BTreeMap::new();
     for e in entries.iter().filter(|e| e.name.starts_with("WA") || e.name.starts_with("MAW")) {
         let Ok(src) = bundle.read_module(e) else { continue };
