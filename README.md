@@ -146,3 +146,8 @@ its own parameter from `window.location` instead.
 * MEX persisted query ids. They are constructed at runtime, so this needs the
   same oxc treatment the protobuf extractor got.
 * The spec is one section. The machinery is real; the prose is not yet written.
+
+## Copyright
+
+Copyright (C) 2026 Polymorfa (Softium LLC). See [COPYRIGHT](COPYRIGHT)
+for the scope of this notice.
