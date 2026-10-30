@@ -68,3 +68,15 @@ export function memberLine(src: string, member: string): number | null {
 
   return lineOf(new RegExp(`\\b${member}\\b`));
 }
+
+/** Observation offsets are UTF-8 bytes in the original module. Rewrites keep lines. */
+export function lineAtByteOffset(src: string, raw: string): number | null {
+  if (!/^\d+$/.test(raw)) return null;
+  const offset = Number(raw);
+  const bytes = new TextEncoder().encode(src);
+  if (!Number.isSafeInteger(offset) || offset < 0 || offset >= bytes.length) return null;
+  // Count raw newline bytes; a multi-byte identifier cannot change the line.
+  let line = 1;
+  for (let i = 0; i < offset; i++) if (bytes[i] === 10) line++;
+  return line;
+}

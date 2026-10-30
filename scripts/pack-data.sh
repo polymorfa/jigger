@@ -24,7 +24,7 @@ cp -R "$SRC/ir" "$OUT/ir"
 if [ -d "$SRC/symbols" ]; then cp -R "$SRC/symbols" "$OUT/symbols"; fi
 # Who relies on what. One file per module, so a page reads only the one it shows.
 if [ -d "$SRC/graph" ]; then cp -R "$SRC/graph" "$OUT/graph"; fi
-for f in vectors.json diff.json history.json; do
+for f in vectors.json diff.json history.json observe.json; do
   if [ -f "$SRC/$f" ]; then cp "$SRC/$f" "$OUT/"; fi
 done
 

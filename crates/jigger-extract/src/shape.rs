@@ -59,11 +59,22 @@ struct Canon<'s> {
     /// symbol -> the order it was first seen. A minifier's choice of letter is
     /// not information; the position in the binding order is.
     seen: HashMap<SymbolId, u32>,
+    function_span: Option<oxc_span::Span>,
 }
 
 impl<'s> Canon<'s> {
     fn new(scoping: &'s Scoping) -> Self {
-        Self { scoping, out: String::new(), tokens: 0, seen: HashMap::new() }
+        Self {
+            scoping,
+            out: String::new(),
+            tokens: 0,
+            seen: HashMap::new(),
+            function_span: None,
+        }
+    }
+
+    fn for_function(scoping: &'s Scoping, span: oxc_span::Span) -> Self {
+        Self { function_span: Some(span), ..Self::new(scoping) }
     }
 
     fn push(&mut self, s: &str) {
@@ -77,6 +88,13 @@ impl<'s> Canon<'s> {
             // Bound here: emit its ordinal, so `y` and `C` are the same thing
             // when they occupy the same position in the binding order.
             Some(id) => {
+                if self.function_span.is_some_and(|span| {
+                    let declared = self.scoping.symbol_span(id);
+                    declared.start < span.start || declared.end > span.end
+                }) {
+                    self.push(&format!("capture{}", id.index()));
+                    return;
+                }
                 let next = self.seen.len() as u32;
                 let n = *self.seen.entry(id).or_insert(next);
                 self.push(&format!("${n}"));
@@ -120,6 +138,20 @@ impl<'a, 's> Visit<'a> for Canon<'s> {
             AstKind::LogicalExpression(e) => self.push(&format!("op{}", e.operator.as_str())),
             AstKind::AssignmentExpression(e) => self.push(&format!("op{}", e.operator.as_str())),
             AstKind::UnaryExpression(e) => self.push(&format!("op{}", e.operator.as_str())),
+            AstKind::VariableDeclaration(d) => self.push(&format!("decl{:?}", d.kind)),
+            AstKind::Function(f) => self.push(&format!("fn{:?}:{}:{}", f.r#type, f.r#async, f.generator)),
+            AstKind::ArrowFunctionExpression(f) => self.push(&format!("arrow{}:{}", f.r#async, f.expression)),
+            AstKind::TemplateElement(t) => self.push(&format!("template{:?}:{}", t.value.raw, t.tail)),
+            AstKind::ObjectProperty(p) => self.push(&format!("prop{:?}:{}:{}", p.kind, p.method, p.computed)),
+            AstKind::CallExpression(e) => self.push(&format!("call{}", e.optional)),
+            AstKind::StaticMemberExpression(e) => self.push(&format!("member{}", e.optional)),
+            AstKind::ComputedMemberExpression(e) => self.push(&format!("computed{}", e.optional)),
+            AstKind::PrivateFieldExpression(e) => self.push(&format!("private{}", e.optional)),
+            AstKind::MethodDefinition(m) => self.push(&format!("method{:?}:{}:{}", m.kind, m.r#static, m.computed)),
+            AstKind::PropertyDefinition(p) => self.push(&format!("field{}:{}", p.r#static, p.computed)),
+            AstKind::ForOfStatement(f) => self.push(&format!("forof{}", f.r#await)),
+            AstKind::YieldExpression(e) => self.push(&format!("yield{}", e.delegate)),
+            AstKind::LabelIdentifier(i) => self.push(&format!("label{}", i.name)),
             AstKind::UpdateExpression(e) => {
                 self.push(&format!("op{}{}", e.operator.as_str(), e.prefix))
             }
@@ -157,7 +189,7 @@ impl<'a, 's> Visit<'a> for Canon<'s> {
             && let Expression::NumericLiteral(n) = &expr.argument
             && n.value == 0.0
         {
-            self.push("undefined");
+            self.push("@undefined");
             self.push(")");
             return;
         }
@@ -178,7 +210,7 @@ fn fnv1a(s: &str) -> String {
 pub fn shape(src: &str) -> Option<Shape> {
     let alloc = Allocator::default();
     let parsed = Parser::new(&alloc, src, SourceType::cjs()).parse();
-    if parsed.panicked {
+    if parsed.panicked || !parsed.diagnostics.is_empty() {
         return None;
     }
     // Symbol ids are what make a rename invisible, and they only exist once the
@@ -212,7 +244,7 @@ pub enum Verdict {
 pub fn function_shapes(src: &str) -> Vec<Shape> {
     let alloc = Allocator::default();
     let parsed = Parser::new(&alloc, src, SourceType::cjs()).parse();
-    if parsed.panicked {
+    if parsed.panicked || !parsed.diagnostics.is_empty() {
         return vec![];
     }
     let semantic = SemanticBuilder::new().with_build_nodes(true).build(&parsed.program).semantic;
@@ -223,13 +255,13 @@ pub fn function_shapes(src: &str) -> Vec<Shape> {
     }
     impl<'a, 's> Visit<'a> for Fns<'s> {
         fn visit_function(&mut self, f: &Function<'a>, flags: oxc_semantic::ScopeFlags) {
-            let mut c = Canon::new(self.scoping);
+            let mut c = Canon::for_function(self.scoping, f.span);
             c.visit_function(f, flags);
             self.out.push(Shape { hash: fnv1a(&c.out), tokens: c.tokens });
             oxc_ast_visit::walk::walk_function(self, f, flags);
         }
         fn visit_arrow_function_expression(&mut self, f: &ArrowFunctionExpression<'a>) {
-            let mut c = Canon::new(self.scoping);
+            let mut c = Canon::for_function(self.scoping, f.span);
             c.visit_arrow_function_expression(f);
             self.out.push(Shape { hash: fnv1a(&c.out), tokens: c.tokens });
             oxc_ast_visit::walk::walk_arrow_function_expression(self, f);
@@ -276,9 +308,509 @@ pub fn compare(before: &str, after: &str) -> Verdict {
     }
 }
 
+// --- naming the functions --------------------------------------------------
+
+/// One function, canonically shaped and labelled by whatever survives minification.
+///
+/// The label deliberately excludes local binding names. A minifier renames
+/// `function e(t)` to `function u(n)` between builds, so matching on that would
+/// re-introduce exactly the noise the shape exists to remove — and do worse than
+/// not matching at all, because it would pair up unrelated functions and report
+/// both as changed.
+///
+/// What survives is the **export name**. A Metro module declares its functions
+/// under minified locals and then publishes them — `l.encodeServerErrorReceipt =
+/// u` — and that property name is stable across builds because it is the
+/// module's interface. So the local is resolved through the export table before
+/// it is used as a label, which is the same walk the source viewer's
+/// go-to-definition does, in the other direction. Failing that, anything written
+/// directly as a property (`{parse: …}`, a class method) names itself.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct Func {
+    /// `encodeServerErrorReceipt`, `encode/#2` for a closure nested inside
+    /// `encode`, `#7` for something anonymous at the top level.
+    pub label: String,
+    pub hash: String,
+    pub tokens: usize,
+    /// How many parameters it declares. Used only to pair up unnamed functions,
+    /// where it is the one stable attribute a minifier does not touch.
+    pub params: usize,
+    /// Byte offsets into the module, so a viewer can jump straight to it.
+    pub start: u32,
+    pub end: u32,
+}
+
+/// Which module-local symbols are published, and under what name.
+///
+/// `__d("M", [...], function(…, exports, …) { … exports.foo = u … })`: an
+/// assignment onto the exports object maps a stable public name onto whatever
+/// letter the minifier gave the local this build.
+///
+/// Finding the exports parameter is [`crate::factory`]'s job and is not as
+/// simple as taking the last one. That held for the six- and seven-parameter
+/// factories and was wrong for every `.react` module, where the loader injects
+/// dependencies *after* `exports` and the last parameter is `fbt` or
+/// `invariant` — about a fifth of the bundle, all silently exporting nothing.
+fn export_names(program: &Program<'_>, scoping: &Scoping) -> HashMap<SymbolId, String> {
+    let obj = crate::factory::exports_symbol(program, scoping);
+
+    struct Exports<'s> {
+        scoping: &'s Scoping,
+        obj: Option<SymbolId>,
+        out: HashMap<SymbolId, String>,
+    }
+
+    impl<'s> Exports<'s> {
+        fn symbol_of(&self, r: &IdentifierReference) -> Option<SymbolId> {
+            r.reference_id.get().and_then(|id| self.scoping.get_reference(id).symbol_id())
+        }
+    }
+
+    impl<'a, 's> Visit<'a> for Exports<'s> {
+        fn visit_assignment_expression(&mut self, e: &AssignmentExpression<'a>) {
+            if let AssignmentTarget::StaticMemberExpression(m) = &e.left
+                && let Expression::Identifier(obj) = &m.object
+                && self.symbol_of(obj).is_some()
+                && self.symbol_of(obj) == self.obj
+                && let Expression::Identifier(local) = &e.right
+                && let Some(sym) = self.symbol_of(local)
+            {
+                // First name wins. A local published twice is published under
+                // both, and picking either consistently beats picking whichever
+                // the walk happened to reach last.
+                self.out.entry(sym).or_insert_with(|| m.property.name.to_string());
+            }
+            oxc_ast_visit::walk::walk_assignment_expression(self, e);
+        }
+    }
+
+    let mut v = Exports { scoping, obj, out: HashMap::new() };
+    v.visit_program(program);
+    v.out
+}
+
+/// Every function in a module, shaped and labelled.
+pub fn functions(src: &str) -> Vec<Func> {
+    let alloc = Allocator::default();
+    let parsed = Parser::new(&alloc, src, SourceType::cjs()).parse();
+    if parsed.panicked || !parsed.diagnostics.is_empty() {
+        return vec![];
+    }
+    let semantic = SemanticBuilder::new().with_build_nodes(true).build(&parsed.program).semantic;
+    let exported = export_names(&parsed.program, semantic.scoping());
+
+    struct Funcs<'s> {
+        scoping: &'s Scoping,
+        /// Local symbol -> the name it is published under.
+        exported: HashMap<SymbolId, String>,
+        out: Vec<Func>,
+        /// Labels of the functions we are currently inside.
+        path: Vec<String>,
+        /// Set by a parent immediately before descending into its function
+        /// value, consumed by that function. `take()` is what keeps a stale
+        /// hint from being picked up by an unrelated sibling.
+        hint: Option<String>,
+        anon: u32,
+    }
+
+    impl<'s> Funcs<'s> {
+        fn record(
+            &mut self,
+            span: oxc_span::Span,
+            params: usize,
+            named: Option<String>,
+            canon: &Canon<'s>,
+        ) -> String {
+            let label = match named.or_else(|| self.hint.take()) {
+                Some(n) => n,
+                None => {
+                    self.anon += 1;
+                    format!("#{}", self.anon)
+                }
+            };
+            // Only named ancestors qualify a label. Every function in a Metro
+            // module is nested inside the module factory, which is itself
+            // unnamed, so including anonymous ancestors would prefix `#1/` onto
+            // the entire module and hang every label off an ordinal that shifts
+            // whenever an earlier closure is added.
+            let named_path: Vec<&str> =
+                self.path.iter().filter(|p| !p.starts_with('#')).map(String::as_str).collect();
+            let full = if named_path.is_empty() {
+                label.clone()
+            } else {
+                format!("{}/{}", named_path.join("/"), label)
+            };
+            self.out.push(Func {
+                label: full,
+                hash: fnv1a(&canon.out),
+                tokens: canon.tokens,
+                params,
+                start: span.start,
+                end: span.end,
+            });
+            label
+        }
+    }
+
+    fn key_name(k: &PropertyKey) -> Option<String> {
+        match k {
+            PropertyKey::StaticIdentifier(i) => Some(i.name.to_string()),
+            PropertyKey::StringLiteral(s) => Some(s.value.to_string()),
+            _ => None,
+        }
+    }
+
+    impl<'a, 's> Visit<'a> for Funcs<'s> {
+        fn visit_function(&mut self, f: &Function<'a>, flags: oxc_semantic::ScopeFlags) {
+            let mut c = Canon::for_function(self.scoping, f.span);
+            c.visit_function(f, flags);
+            // `function u(t)` says nothing; `exports.encodeServerErrorReceipt =
+            // u` says everything, and it is the same `u`.
+            let named = f
+                .id
+                .as_ref()
+                .and_then(|id| id.symbol_id.get())
+                .and_then(|s| self.exported.get(&s).cloned());
+            let label = self.record(f.span, f.params.items.len(), named, &c);
+            self.path.push(label);
+            oxc_ast_visit::walk::walk_function(self, f, flags);
+            self.path.pop();
+        }
+
+        fn visit_arrow_function_expression(&mut self, f: &ArrowFunctionExpression<'a>) {
+            let mut c = Canon::for_function(self.scoping, f.span);
+            c.visit_arrow_function_expression(f);
+            let label = self.record(f.span, f.params.items.len(), None, &c);
+            self.path.push(label);
+            oxc_ast_visit::walk::walk_arrow_function_expression(self, f);
+            self.path.pop();
+        }
+
+        /// `{parse: function(){…}}` — the key names the value.
+        fn visit_object_property(&mut self, p: &ObjectProperty<'a>) {
+            if matches!(
+                p.value,
+                Expression::FunctionExpression(_) | Expression::ArrowFunctionExpression(_)
+            ) {
+                self.hint = key_name(&p.key);
+            }
+            oxc_ast_visit::walk::walk_object_property(self, p);
+        }
+
+        /// `l.assertTag = function(){…}` — the export surface, and the one name
+        /// in a minified module that means the same thing next release.
+        fn visit_assignment_expression(&mut self, e: &AssignmentExpression<'a>) {
+            if matches!(
+                e.right,
+                Expression::FunctionExpression(_) | Expression::ArrowFunctionExpression(_)
+            ) && let AssignmentTarget::StaticMemberExpression(m) = &e.left
+            {
+                self.hint = Some(m.property.name.to_string());
+            }
+            oxc_ast_visit::walk::walk_assignment_expression(self, e);
+        }
+
+        fn visit_method_definition(&mut self, m: &MethodDefinition<'a>) {
+            self.hint = key_name(&m.key);
+            oxc_ast_visit::walk::walk_method_definition(self, m);
+        }
+
+        /// `var u = function(){…}`, where `u` is later published. Same trick as
+        /// a function declaration, different syntax for it.
+        fn visit_variable_declarator(&mut self, d: &VariableDeclarator<'a>) {
+            if matches!(
+                d.init,
+                Some(Expression::FunctionExpression(_))
+                    | Some(Expression::ArrowFunctionExpression(_))
+            ) && let BindingPattern::BindingIdentifier(id) = &d.id
+                && let Some(name) = id.symbol_id.get().and_then(|s| self.exported.get(&s))
+            {
+                self.hint = Some(name.clone());
+            }
+            oxc_ast_visit::walk::walk_variable_declarator(self, d);
+        }
+
+        fn visit_property_definition(&mut self, p: &PropertyDefinition<'a>) {
+            if matches!(
+                p.value,
+                Some(Expression::FunctionExpression(_))
+                    | Some(Expression::ArrowFunctionExpression(_))
+            ) {
+                self.hint = key_name(&p.key);
+            }
+            oxc_ast_visit::walk::walk_property_definition(self, p);
+        }
+    }
+
+    let mut v = Funcs {
+        scoping: semantic.scoping(),
+        exported,
+        out: Vec::new(),
+        path: Vec::new(),
+        hint: None,
+        anon: 0,
+    };
+    v.visit_program(&parsed.program);
+    v.out
+}
+
+/// A function that exists in both revisions under one name, and differs.
+#[derive(Debug, Clone)]
+pub struct FnChange {
+    pub label: String,
+    pub before: Func,
+    pub after: Func,
+}
+
+/// What actually happened to a module's functions between two revisions.
+#[derive(Debug, Clone, Default)]
+pub struct FnDiff {
+    /// Same name, different program. The thing you want to read.
+    pub changed: Vec<FnChange>,
+    pub added: Vec<Func>,
+    pub removed: Vec<Func>,
+    /// Functions whose shape is unchanged, however they moved or were renamed.
+    pub module_changed: bool,
+    pub kept: usize,
+    pub total: usize,
+}
+
+impl FnDiff {
+    /// Whether anything real happened here.
+    pub fn is_change(&self) -> bool {
+        self.module_changed || !self.changed.is_empty() || !self.added.is_empty() || !self.removed.is_empty()
+    }
+}
+
+/// Match a module's functions across two revisions, by shape and then by name.
+///
+/// Shape first, as a multiset: a function that is the same program has not
+/// changed no matter where it moved to or what its locals became, and moving is
+/// most of what a minifier does. Only what is left over is matched by name,
+/// which is why an unchanged function sharing a label with a changed one never
+/// confuses the pairing.
+pub fn diff_functions(before: &str, after: &str) -> FnDiff {
+    let old = functions(before);
+    let new = functions(after);
+
+    let mut pool: HashMap<&str, Vec<usize>> = HashMap::new();
+    for (i, f) in old.iter().enumerate() {
+        pool.entry(f.hash.as_str()).or_default().push(i);
+    }
+
+    let mut old_used = vec![false; old.len()];
+    let mut leftover_new: Vec<&Func> = Vec::new();
+    let mut d = FnDiff { total: new.len(), ..Default::default() };
+
+    for f in &new {
+        match pool.get_mut(f.hash.as_str()).and_then(|v| {
+            let slot = v.iter().position(|&i| old[i].label == f.label).unwrap_or(v.len().saturating_sub(1));
+            if v.is_empty() { None } else { Some(v.remove(slot)) }
+        }) {
+            Some(i) => {
+                old_used[i] = true;
+                d.kept += 1;
+            }
+            None => leftover_new.push(f),
+        }
+    }
+
+    let mut leftover_old: HashMap<&str, Vec<&Func>> = HashMap::new();
+    for (i, f) in old.iter().enumerate() {
+        if !old_used[i] {
+            leftover_old.entry(f.label.as_str()).or_default().push(f);
+        }
+    }
+
+    let is_named = |f: &Func| !f.label.rsplit('/').next().unwrap_or("#").starts_with('#');
+
+    let mut unnamed_new: Vec<&Func> = Vec::new();
+    for f in leftover_new {
+        // An anonymous label is a position, not a name: `#4` in one revision and
+        // `#4` in the next are each the fourth unnamed function, which two
+        // insertions earlier makes meaningless. Pairing on it directly would
+        // manufacture changes out of nothing.
+        if !is_named(f) {
+            unnamed_new.push(f);
+            continue;
+        }
+        match leftover_old.get_mut(f.label.as_str()).and_then(|v| v.pop()) {
+            Some(prev) => d.changed.push(FnChange {
+                label: f.label.clone(),
+                before: prev.clone(),
+                after: f.clone(),
+            }),
+            None => d.added.push(f.clone()),
+        }
+    }
+
+    // What is left is unnamed on both sides. Reporting each as one addition
+    // *and* one removal doubles the count and reads as far more churn than
+    // happened — the module factory itself is unnamed, so every module that
+    // changed at all was showing up twice. Pair them on the two things a
+    // minifier leaves alone: which named function they sit inside, and how many
+    // parameters they take. That is not identity and cannot be; it is enough to
+    // stop one edit from being counted as two, and the label stays `#n` so
+    // nobody mistakes the pairing for a name.
+    let mut by_shape: HashMap<(&str, usize), Vec<&Func>> = HashMap::new();
+    for rest in leftover_old.values() {
+        for f in rest.iter().filter(|f| !is_named(f)) {
+            let parent = f.label.rsplit_once('/').map(|(p, _)| p).unwrap_or("");
+            by_shape.entry((parent, f.params)).or_default().push(f);
+        }
+    }
+    for f in unnamed_new {
+        let parent = f.label.rsplit_once('/').map(|(p, _)| p).unwrap_or("");
+        match by_shape.get_mut(&(parent, f.params)).and_then(|v| v.pop()) {
+            Some(prev) => d.changed.push(FnChange {
+                label: f.label.clone(),
+                before: prev.clone(),
+                after: f.clone(),
+            }),
+            None => d.added.push(f.clone()),
+        }
+    }
+    for rest in leftover_old.values() {
+        for f in rest.iter().filter(|f| is_named(f)) {
+            d.removed.push((*f).clone());
+        }
+    }
+    for rest in by_shape.into_values() {
+        for f in rest {
+            d.removed.push(f.clone());
+        }
+    }
+
+    narrow(&mut d);
+    d.total = d.kept + d.changed.len() + d.added.len();
+    d.module_changed = matches!(compare(before,after), Verdict::Changed);
+
+    // Biggest first: a 400-token function that changed is the release, a
+    // 6-token one is a constant someone bumped.
+    d.changed.sort_by(|a, b| b.after.tokens.cmp(&a.after.tokens));
+    d.added.sort_by(|a, b| b.tokens.cmp(&a.tokens));
+    d.removed.sort_by(|a, b| b.tokens.cmp(&a.tokens));
+    d
+}
+
+/// Keep only the innermost thing that changed.
+///
+/// A function's shape includes its body, so editing one line inside a closure
+/// marks that closure, the function around it, and the module factory around
+/// that — every module reports its own factory as changed, on top of whatever
+/// really happened. Reading a chain of ancestors tells you nothing the innermost
+/// entry did not already say.
+///
+/// Containment comes from spans rather than labels, because an unnamed ancestor
+/// is deliberately stripped out of its descendants' labels and cannot be
+/// recovered from them. The two directions are resolved separately: `changed`
+/// and `added` carry offsets into the new revision, `removed` into the old, and
+/// comparing across the two would be comparing coordinates from different files.
+fn narrow(d: &mut FnDiff) {
+    let new_spans: Vec<_> = d.changed.iter().map(|c| (c.after.start, c.after.end))
+        .chain(d.added.iter().map(|f| (f.start, f.end))).collect();
+    let old_spans: Vec<_> = d.changed.iter().map(|c| (c.before.start, c.before.end))
+        .chain(d.removed.iter().map(|f| (f.start, f.end))).collect();
+    let contains = |s, e, spans: &[(u32, u32)]| spans.iter().any(|&(a,b)| (a,b) != (s,e) && s <= a && b <= e);
+    let previous = d.changed.len();
+    d.changed.retain(|c| !contains(c.after.start,c.after.end,&new_spans)
+        && !contains(c.before.start,c.before.end,&old_spans));
+    // Ancestors narrowed out of the report are structural overlap, not extra edits.
+    d.kept += previous - d.changed.len();
+    // Whole additions/removals retain their outer API, not only its callbacks.
+    let added: Vec<_> = d.added.iter().map(|f| (f.start,f.end)).collect();
+    d.added.retain(|f| !added.iter().any(|&(a,b)| (a,b)!=(f.start,f.end) && a<=f.start && f.end<=b));
+    let removed: Vec<_> = d.removed.iter().map(|f| (f.start,f.end)).collect();
+    d.removed.retain(|f| !removed.iter().any(|&(a,b)| (a,b)!=(f.start,f.end) && a<=f.start && f.end<=b));
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    /// The whole point of the label: it names the one function that changed,
+    /// while the minifier renames every local around it and moves the others.
+    #[test]
+    fn the_changed_function_is_named() {
+        let before = r#"var e = {};
+            e.encode = function(t, n) { return t + n };
+            e.decode = function(r) { return r * 2 };
+            e.check = function(o) { return o > 4 };"#;
+        // Every local renamed, order shuffled, and `check` given a real edit.
+        let after = r#"var u = {};
+            u.decode = function(a) { return a * 2 };
+            u.check = function(s) { return s > 5 };
+            u.encode = function(l, c) { return l + c };"#;
+
+        let d = diff_functions(before, after);
+        assert_eq!(d.kept, 2, "encode and decode moved but did not change");
+        assert_eq!(d.changed.len(), 1);
+        assert_eq!(d.changed[0].label, "check");
+        assert!(d.added.is_empty() && d.removed.is_empty());
+    }
+
+    /// The real shape of a Metro module: functions declared under minified
+    /// locals, published at the bottom. The local is noise and the export name
+    /// is the contract, so the label has to come from the second, not the first.
+    #[test]
+    fn a_function_is_labelled_by_the_name_it_is_exported_under() {
+        let before = r#"__d("M", ["dep"], (function(t, n, r, o, a, i, l) {
+            function u(t) { return t + 1 }
+            function c(e) { return e * 2 }
+            l.encodeReceipt = u;
+            l.decodeReceipt = c;
+        }), 98)"#;
+        // Same module, every local renamed by the minifier, and `decodeReceipt`
+        // given a real edit.
+        let after = r#"__d("M", ["dep"], (function(e, s, d, f, g, h, j) {
+            function q(y) { return y + 1 }
+            function w(z) { return z * 3 }
+            j.encodeReceipt = q;
+            j.decodeReceipt = w;
+        }), 98)"#;
+
+        let labels: Vec<_> = functions(before).into_iter().map(|f| f.label).collect();
+        assert!(labels.contains(&"encodeReceipt".to_string()), "{labels:?}");
+
+        let d = diff_functions(before, after);
+        assert_eq!(d.changed.len(), 1, "one real edit: {:?}", d.changed);
+        assert_eq!(d.changed[0].label, "decodeReceipt");
+        assert!(d.added.is_empty() && d.removed.is_empty(), "+{:?} -{:?}", d.added, d.removed);
+    }
+
+    /// The module factory is itself unnamed. Reporting it as one addition and
+    /// one removal doubled the count for every module that changed at all.
+    #[test]
+    fn the_unnamed_module_factory_is_one_change_not_two() {
+        let before = r#"__d("M", ["dep"], (function(t, n, r, o, a, i, l) { l.x = 1 }), 98)"#;
+        let after = r#"__d("M", ["dep"], (function(t, n, r, o, a, i, l) { l.x = 2 }), 98)"#;
+        let d = diff_functions(before, after);
+        assert_eq!(d.changed.len(), 1, "{d:?}");
+        assert!(d.added.is_empty() && d.removed.is_empty(), "{d:?}");
+    }
+
+    /// A closure inside a named function inherits the path, so a change deep
+    /// inside `encode` is still reported as being in `encode`.
+    #[test]
+    fn nested_closures_carry_the_path() {
+        let src = r#"var e = {}; e.encode = function(t) { return t.map(function(n) { return n + 1 }) };"#;
+        let labels: Vec<_> = functions(src).into_iter().map(|f| f.label).collect();
+        assert!(labels.contains(&"encode".to_string()), "{labels:?}");
+        assert!(labels.iter().any(|l| l.starts_with("encode/")), "{labels:?}");
+    }
+
+    /// Anonymous functions are numbered by position, and a position is not a
+    /// name. Pairing on it would turn one insertion into a wall of changes.
+    #[test]
+    fn anonymous_functions_are_never_paired_by_position() {
+        let before = r#"f(function(a) { return a }, function(b) { return b * 2 });"#;
+        // One function inserted at the front: every ordinal after it shifts.
+        let after = r#"f(function(z) { return z + 9 }, function(a) { return a }, function(b) { return b * 2 });"#;
+        let d = diff_functions(before, after);
+        assert_eq!(d.kept, 2, "the two originals are unchanged");
+        assert_eq!(d.changed.len(), 0, "an ordinal shift is not a change");
+        assert_eq!(d.added.len(), 1);
+    }
 
     /// A minifier inserting one binding renames everything after it. This is the
     /// exact cascade seen in `WAWebWid` between two real revisions.
@@ -445,7 +977,7 @@ pub fn fuzz(bundle: &cellar_core::BundleHandle, entries: &[cellar_core::ModuleEn
 pub fn rename_locals(src: &str) -> Option<String> {
     let alloc = Allocator::default();
     let parsed = Parser::new(&alloc, src, SourceType::cjs()).parse();
-    if parsed.panicked {
+    if parsed.panicked || !parsed.diagnostics.is_empty() {
         return None;
     }
     let semantic = SemanticBuilder::new().with_build_nodes(true).build(&parsed.program).semantic;
@@ -487,4 +1019,46 @@ pub fn rename_locals(src: &str) -> Option<String> {
         out.replace_range(start as usize..end as usize, &format!("q{}", id.index()));
     }
     Some(out)
+}
+
+#[cfg(test)]
+mod regression_tests {
+    use super::*;
+    #[test]
+    fn behavior_fields_are_not_renames() {
+        for (a,b) in [
+            ("var a=1", "const a=1"),
+            ("function a(){return 1}", "async function a(){return 1}"),
+            ("function a(){return 1}", "function* a(){return 1}"),
+            ("var a=`old`", "var a=`new`"),
+            ("a.b()", "a?.b()"),
+            ("var a={get x(){return 1}}", "var a={x(){return 1}}"),
+        ] { assert_eq!(compare(a,b),Verdict::Changed,"{a} -> {b}"); }
+    }
+    #[test]
+    fn captures_and_duplicate_shapes_keep_the_edited_export() {
+        let a="__d('M',[],function(g,r,d,l,m,e){var a=r('A'),b=r('B');function x(){return a()}function y(){return a()}e.A=x;e.B=y})";
+        let b=a.replace("function y(){return a()}","function y(){return b()}");
+        let d=diff_functions(a,&b);assert_eq!(d.changed.len(),1);assert_eq!(d.changed[0].label,"B");
+        assert!(d.added.is_empty() && d.removed.is_empty());assert_eq!(d.total-d.kept,1);
+    }
+    #[test]
+    fn injected_parameter_is_not_exports() {
+        let a="__d('M',['fbt'],function(g,r,d,l,m,e,fbt){function x(){return 1}m.exports={};e.real=x;})";
+        let d=diff_functions(a,&a.replace("return 1","return 2"));assert_eq!(d.changed[0].label,"real");
+    }
+    #[test]
+    fn outer_additions_and_nested_deletions_are_localized() {
+        let d=diff_functions("", "var e={};e.encode=function(){return [1].map(function(x){return x})}");
+        assert_eq!(d.added.len(),1);assert_eq!(d.added[0].label,"encode");
+        let a="var e={};e.encode=function(){function inner(){return 1}return 2}";
+        let b="var e={};e.encode=function(){return 2}";
+        let d=diff_functions(a,b);assert!(d.changed.is_empty());assert_eq!(d.removed.len(),1);
+    }
+    #[test]
+    fn parser_diagnostics_and_undefined_are_honest() {
+        assert_eq!(compare("var a=;", "var b=;"), Verdict::Unknown);
+        assert_eq!(compare("var a=void 0", "var b=undefined"),Verdict::RenamedOnly);
+        assert_eq!(compare("function f(undefined){return void 0}", "function f(undefined){return undefined}"),Verdict::Changed);
+    }
 }

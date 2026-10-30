@@ -1,0 +1,315 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import { KindBadge } from "./kind-badge";
+import { ModuleLink } from "./module-link";
+import { SectionTitle, Stat, StatBar } from "./ui";
+import { factHref } from "@/lib/ids";
+import { FACT_KINDS, type Attributed, type FactKind, type Observed, type ObserveSite, type Silent } from "@/lib/types";
+
+const fmt = (n: number) => n.toLocaleString("en-US");
+
+/**
+ * `kind` arrives as a plain string from JSON, and `KindBadge` indexes a record
+ * with it. Casting the string to `FactKind` would silence the compiler and keep
+ * the hazard: a value like `toString` finds a function on the prototype chain
+ * and React throws on being handed one as a child. Checking costs a `Set`
+ * lookup and turns an unknown kind into text instead of a crash.
+ */
+const KNOWN = new Set<string>(FACT_KINDS);
+
+function Kind({ kind }: { kind: string }) {
+  if (!KNOWN.has(kind)) return <span className="data text-2xs text-fg-faint">{kind}</span>;
+  return <KindBadge kind={kind as FactKind} />;
+}
+
+/** The three questions, in the order they are worth asking. */
+const TABS = [
+  {
+    key: "silent" as const,
+    label: "Silent",
+    blurb:
+      "Code that changed under facts that did not. Either the protocol moved somewhere nothing models yet, or an extractor stopped seeing something it used to see. No fact-level diff can produce this list, because it is defined by the absence of a fact.",
+  },
+  {
+    key: "attributed" as const,
+    label: "Attributed",
+    blurb:
+      "Every fact that moved, and the function that moved it. Grouped by the code rather than by the fact: one function that changed four hundred A/B flags is one thing that happened, and listing it four hundred times buries the nine other things beside it.",
+  },
+  {
+    key: "unexplained" as const,
+    label: "Unexplained",
+    blurb:
+      "A fact moved and nothing in reach did. That is a defect in this pipeline, not a finding about WhatsApp — most often an extractor whose output is not reproducible. Shown rather than quietly folded into the others, because a tracker that cannot tell “they changed something” from “we measured it differently” is one nobody should believe.",
+  },
+];
+
+/**
+ * A changed function, as a link into the source at the exact bytes.
+ *
+ * `start`/`end` are offsets into the *new* revision, which is the one the viewer
+ * has open. A removed function's offsets describe a file that is no longer
+ * there, so it links to the module and no further rather than to a plausible
+ * wrong location.
+ */
+function SiteRef({ site }: { site: ObserveSite }) {
+  const tone =
+    site.how === "added"
+      ? "text-cov-covered"
+      : site.how === "removed"
+        ? "text-cov-missing"
+        : "text-fg";
+  const anonymous = site.function.split("/").pop()?.startsWith("#") ?? false;
+  const href = site.how !== "removed" && site.start > 0 ? `/source/${encodeURIComponent(site.module)}?at=${site.start}` : `/source/${encodeURIComponent(site.module)}`;
+  // An added and a removed function often carry the same label — a module whose
+  // factory was rewritten shows `#1` twice — and colour alone does not separate
+  // them, least of all in light mode. The sigil does, and it survives being
+  // read aloud or pasted into an issue.
+  const sigil = site.how === "added" ? "+" : site.how === "removed" ? "−" : "~";
+  return (
+    <span className="inline-flex items-baseline gap-1.5">
+      <span className={`data text-2xs ${tone}`} aria-hidden="true">
+        {sigil}
+      </span>
+      <Link
+        href={href}
+        className={`data text-sm ${tone} underline decoration-dotted underline-offset-2 hover:decoration-solid`}
+        title={`${site.how}${anonymous ? " · unnamed function, numbered by position" : ` · exported as ${site.function}`}`}
+      >
+        <span className="sr-only">{site.how} </span>
+        {site.function}
+        {anonymous || site.how === "module" ? "" : "()"}
+      </Link>
+      {site.hops > 0 && (
+        <span className="text-2xs text-fg-faint" title="found by walking what the module imports">
+          {site.hops} hop{site.hops === 1 ? "" : "s"} away
+        </span>
+      )}
+    </span>
+  );
+}
+
+function SilentRow({ row }: { row: Silent }) {
+  return (
+    <div className="flex flex-col gap-1 border-b border-hair py-2">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <ModuleLink name={row.module} className="text-md" />
+        <span className="text-2xs text-fg-faint">
+          <span className="tnum">{row.dependents}</span> dependent
+          {row.dependents === 1 ? "" : "s"} · <span className="tnum">{row.facts.length}</span> fact
+          {row.facts.length === 1 ? "" : "s"} read from it, none of which moved
+        </span>
+      </div>
+      <div className="flex flex-wrap gap-x-3 gap-y-1">
+        {row.sites.map((s, i) => (
+          <SiteRef key={i} site={s} />
+        ))}
+      </div>
+      {row.facts.length > 0 && (
+        <div className="flex flex-wrap gap-x-2 gap-y-0.5">
+          {row.facts.slice(0, 6).map((id) => (
+            <Link key={id} href={factHref(id)} className="data text-2xs text-fg-faint hover:text-fg">
+              {id}
+            </Link>
+          ))}
+          {row.facts.length > 6 && (
+            <span className="text-2xs text-fg-faint">and {row.facts.length - 6} more</span>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Attributed facts, grouped by the site that explains them. */
+type Group = { site: ObserveSite; facts: Attributed[] };
+
+function group(rows: Attributed[]): Group[] {
+  const by = new Map<string, Group>();
+  for (const a of rows) {
+    const s = a.sites[0];
+    if (!s) continue;
+    const key = `${s.module}\0${s.function}\0${s.hops}`;
+    const g = by.get(key);
+    if (g) g.facts.push(a);
+    else by.set(key, { site: s, facts: [a] });
+  }
+  return [...by.values()].sort((a, b) => b.facts.length - a.facts.length);
+}
+
+function GroupRow({ g }: { g: Group }) {
+  const [open, setOpen] = useState(false);
+  const shown = open ? g.facts : g.facts.slice(0, 5);
+  return (
+    <div className="flex flex-col gap-1 border-b border-hair py-2">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <span className="flex flex-wrap items-baseline gap-2">
+          <ModuleLink name={g.site.module} className="text-md" />
+          <SiteRef site={g.site} />
+        </span>
+        <span className="text-2xs text-fg-faint">
+          moved <span className="tnum">{g.facts.length}</span> fact
+          {g.facts.length === 1 ? "" : "s"}
+        </span>
+      </div>
+      <div className="flex flex-col gap-0.5">
+        {shown.map((a) => (
+          <span key={a.id} className="flex items-baseline gap-2">
+            <Kind kind={a.kind} />
+            <Link href={factHref(a.id)} className="data text-sm text-fg hover:underline">
+              {a.id}
+            </Link>
+            <span className="text-2xs text-fg-faint">{a.how}</span>
+          </span>
+        ))}
+      </div>
+      {g.facts.length > 5 && (
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          className="self-start text-2xs text-fg-muted hover:text-fg"
+        >
+          {open ? "show fewer" : `show all ${g.facts.length}`}
+        </button>
+      )}
+    </div>
+  );
+}
+
+export function ObserveView({ observed }: { observed: Observed }) {
+  const [tab, setTab] = useState<"silent" | "attributed" | "unexplained">("silent");
+  const groups = useMemo(() => group(observed.attributed), [observed.attributed]);
+  const wholeModules = observed.attributed.filter((a) => a.sites.length === 0);
+  const s = observed.stats;
+
+  // A fact in a module that did not exist last revision is explained by that
+  // alone. Counted apart from the ones a function was actually found for, so
+  // "attributed" never sounds better than it is.
+  const located = observed.attributed.filter((a) => a.sites.length > 0).length;
+  const fresh = observed.attributed.length - located;
+
+  const counts = {
+    silent: observed.silent.length,
+    attributed: groups.length + wholeModules.length,
+    unexplained: observed.unexplained.length,
+  };
+
+  return (
+    <div className="flex flex-col gap-6">
+      <StatBar>
+        <Stat label="facts moved" value={fmt(s.facts_moved)} />
+        <Stat
+          label="traced to a function"
+          value={fmt(located)}
+          sub={fresh > 0 ? `${fmt(fresh)} more in wholly new modules` : undefined}
+        />
+        <Stat
+          label="changed under still facts"
+          value={fmt(observed.silent.length)}
+          sub="nothing models these"
+          tone={observed.silent.length > 0 ? "loud" : undefined}
+        />
+        <Stat
+          label="unexplained"
+          value={fmt(observed.unexplained.length)}
+          sub="ours to explain"
+          tone={observed.unexplained.length > 0 ? "loud" : "quiet"}
+        />
+        <Stat
+          label="functions changed"
+          value={fmt(s.functions_changed)}
+          sub={`across ${fmt(s.modules_changed)} of ${fmt(s.modules_examined)} modules read`}
+        />
+      </StatBar>
+
+      <div className="flex flex-col gap-2">
+        <div className="flex items-stretch gap-0 border-b border-hair">
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              type="button"
+              onClick={() => setTab(t.key)}
+              aria-current={tab === t.key ? "true" : undefined}
+              className={
+                "relative px-3 py-1.5 text-sm transition-colors " +
+                (tab === t.key
+                  ? "text-fg after:absolute after:inset-x-2 after:bottom-0 after:h-[2px] after:bg-brand"
+                  : "text-fg-muted hover:text-fg")
+              }
+            >
+              {t.label}{" "}
+              <span className="data tnum text-2xs text-fg-faint">{fmt(counts[t.key])}</span>
+            </button>
+          ))}
+        </div>
+        <p className="max-w-3xl text-sm text-fg-muted">{TABS.find((t) => t.key === tab)!.blurb}</p>
+      </div>
+
+      {tab === "silent" && (
+        <section className="flex flex-col">
+          <SectionTitle right="most changed first, then by blast radius">
+            Changed code, unmoved facts
+          </SectionTitle>
+          {observed.silent.length === 0 ? (
+            <p className="py-3 text-sm text-fg-muted">
+              Every module a fact was read from either changed a fact or did not change at all.
+              That is the good outcome, and it is worth knowing it was checked.
+            </p>
+          ) : (
+            observed.silent.map((r) => <SilentRow key={r.module} row={r} />)
+          )}
+        </section>
+      )}
+
+      {tab === "attributed" && (
+        <section className="flex flex-col">
+          <SectionTitle right="grouped by the code, not by the fact">
+            What moved, and what moved it
+          </SectionTitle>
+          {groups.length === 0 && wholeModules.length === 0 ? (
+            <p className="py-3 text-sm text-fg-muted">No fact changed in this revision.</p>
+          ) : (
+            groups.map((g, i) => <GroupRow key={i} g={g} />)
+          )}
+          {wholeModules.map((a) => (
+            <div key={a.id} className="flex flex-wrap items-baseline gap-2 border-b border-hair py-2">
+              <Kind kind={a.kind} />
+              <Link href={factHref(a.id)} className="data text-sm hover:underline">{a.id}</Link>
+              <span className="text-sm text-fg-muted">explained by a {a.module_status === "gone" ? "removed" : "new"} module</span>
+              <ModuleLink name={a.module} />
+            </div>
+          ))}
+        </section>
+      )}
+
+      {tab === "unexplained" && (
+        <section className="flex flex-col">
+          <SectionTitle right="a defect here, not a finding there">
+            Moved with no code behind it
+          </SectionTitle>
+          {observed.unexplained.length === 0 ? (
+            <p className="py-3 text-sm text-fg-muted">
+              Every fact that moved has code behind it. The extraction is reproducible against
+              these two revisions.
+            </p>
+          ) : (
+            observed.unexplained.map((a) => (
+              <div key={a.id} className="flex items-baseline gap-2 border-b border-hair py-1.5">
+                <Kind kind={a.kind} />
+                <Link href={factHref(a.id)} className="data text-sm text-fg hover:underline">
+                  {a.id}
+                </Link>
+                <span className="text-2xs text-fg-faint">{a.how}</span>
+                <span className="ml-auto">
+                  <ModuleLink name={a.module} className="text-xs" />
+                </span>
+              </div>
+            ))
+          )}
+        </section>
+      )}
+    </div>
+  );
+}

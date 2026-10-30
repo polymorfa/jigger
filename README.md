@@ -151,3 +151,9 @@ its own parameter from `window.location` instead.
 
 Copyright (C) 2026 Polymorfa (Softium LLC). See [COPYRIGHT](COPYRIGHT)
 for the scope of this notice.
+
+## Observe code changes
+
+With both source revisions in the Cellar store, run `jigger --out NEW observe OLD NEW`. `OLD` and `NEW` are extraction directories produced by the same extractor. `NEW/observe.json` joins moved facts to nearby code changes, lists changed modules whose facts stayed unchanged, and reports unexplained fact changes. A module-level site means no individual function accounts for the edit.
+
+The `/observe` page loads this optional artifact from the same pinned payload as the other pages. A missing observation is shown as unavailable. The tracker checks observations before discarding a fact-stable revision and includes `observe.json` in the payload when present. Source links use offsets into the new module; removed functions link to the module without an offset.
