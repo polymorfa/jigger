@@ -156,6 +156,10 @@ fn sites_of(module: &str, d: &FnDiff, hops: u32) -> Vec<Site> {
             how: "removed".into(),
         });
     }
+    if out.is_empty() && d.module_changed {
+        out.push(Site { module: module.into(), function: "[module-level]".into(), hops,
+            start: 0, end: 0, tokens: 0, how: "module".into() });
+    }
     out
 }
 
@@ -170,6 +174,7 @@ pub fn observe(
     new_modules: &[ModuleEntry],
     changes: &[FactChange],
     depth: u32,
+    fact_modules: &BTreeMap<String, Vec<String>>,
 ) -> Observed {
     let old_by: HashMap<&str, &ModuleEntry> =
         old_modules.iter().map(|e| (e.name.as_str(), e)).collect();
@@ -219,7 +224,9 @@ pub fn observe(
             let mut q: VecDeque<(&str, u32)> = VecDeque::new();
             q.push_back((c.module.as_str(), 0));
 
+            let mut found_at = None;
             while let Some((name, hops)) = q.pop_front() {
+                if found_at.is_some_and(|level| hops + 1 > level) { break; }
                 if hops >= depth {
                     continue;
                 }
@@ -232,6 +239,7 @@ pub fn observe(
                         && d.is_change()
                     {
                         sites.extend(sites_of(dep, &d, hops + 1));
+                        found_at = Some(hops + 1);
                     }
                     q.push_back((dep.as_str(), hops + 1));
                 }
@@ -239,9 +247,7 @@ pub fn observe(
                 // anything. A change two hops away is not evidence when one hop
                 // away already changed; reporting both would bury the near
                 // cause under everything the near cause imports.
-                if !sites.is_empty() {
-                    break;
-                }
+
             }
         }
 
@@ -278,8 +284,11 @@ pub fn observe(
         }
     }
 
-    // `silent` is filled by `silent_scan`, which the caller runs with the
-    // fact-to-module map it already holds.
+    // Populate the same cache for silent candidates so statistics and tables
+    // describe the same scan, including revisions where no fact moved.
+    for module in fact_modules.keys() { diff_of(module, &mut cache); }
+    let moved: BTreeSet<_> = changes.iter().map(|c| c.id.clone()).collect();
+    out.silent = silent_scan(old,new,old_modules,new_modules,fact_modules,&moved);
     out.stats.modules_examined = cache.len();
     out.stats.modules_changed =
         cache.values().flatten().filter(|d| d.is_change()).count();
@@ -338,4 +347,68 @@ pub fn silent_scan(
     }
     out.sort_by(|a, b| b.sites.len().cmp(&a.sites.len()).then(b.dependents.cmp(&a.dependents)));
     out
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use cellar_core::{BundleId,BundleManifest,Diagnostics,Platform,SourceForm};
+    pub(super) fn fixture(rev:u64,texts:&[(&str,&str,&[&str])])->(BundleHandle,Vec<ModuleEntry>) {
+        let dir=std::path::PathBuf::from(std::env::var_os("HOME").unwrap()).join(".polymorfa-agent-work/tools-ready-test-fixtures").join(format!("{}-{rev}",std::process::id()));
+        std::fs::create_dir_all(dir.join("modules")).unwrap();
+        let mut entries=vec![];
+        for (name,src,deps) in texts {
+            let file=format!("modules/{name}.js");std::fs::write(dir.join(&file),src).unwrap();
+            entries.push(ModuleEntry{name:(*name).into(),file,deps:deps.iter().map(|s|s.to_string()).collect(),dependents:vec![],exports:vec![],functions:vec![],raw_sha256:String::new(),raw_len:src.len() as u64,stored_len:src.len() as u64,chunk:String::new(),form:SourceForm::Pretty,variants:vec![]});
+        }
+        let id=BundleId::new(Platform::Whatsapp,rev);
+        let manifest=BundleManifest{schema_version:"1".into(),bundle:id,source_url:None,archive_sha256:None,archive_len:None,indexed_at:String::new(),cellar_version:String::new(),codegen_version:String::new(),source_form:SourceForm::Pretty,modules_indexed:entries.len() as u64,modules_bytes:0,diagnostics:Diagnostics::default()};
+        (BundleHandle{id,dir,manifest},entries)
+    }
+    #[test]
+    fn silent_stats_include_module_level_edits_and_exclude_removed_facts() {
+        let (a,ai)=fixture(1,&[("M","__d('M',['A'],function(){})",&[])]);
+        let (b,bi)=fixture(2,&[("M","__d('M',['B'],function(){})",&[])]);
+        let facts=BTreeMap::from([("M".into(),vec!["keep".into(),"removed".into()])]);
+        let out=observe(&a,&b,&ai,&bi,&[],2,&facts);
+        assert_eq!(out.silent.len(),1);assert_eq!(out.silent[0].sites[0].how,"module");
+        assert_eq!(out.stats.modules_examined,1);assert_eq!(out.stats.modules_changed,1);assert_eq!(out.stats.functions_changed,0);
+        assert!(silent_scan(&a,&b,&ai,&bi,&facts,&BTreeSet::from(["removed".into()])).is_empty());
+        std::fs::remove_dir_all(a.dir).unwrap();std::fs::remove_dir_all(b.dir).unwrap();
+    }
+    #[test]
+    fn bfs_reports_all_nearest_candidates() {
+        let old=[("M","var x=1", &["A","B"][..]),("A","var x=1",&["C"][..]),("B","var x=1",&["D"][..]),("C","var e={};e.go=function(){return 1}",&[][..]),("D","var e={};e.go=function(){return 1}",&[][..])];
+        let new=[("M","var x=1", &["A","B"][..]),("A","var x=1",&["C"][..]),("B","var x=1",&["D"][..]),("C","var e={};e.go=function(){return 2}",&[][..]),("D","var e={};e.go=function(){return 3}",&[][..])];
+        let (a,ai)=fixture(3,&old);let (b,bi)=fixture(4,&new);
+        let change=FactChange{id:"f".into(),kind:"ab".into(),name:"f".into(),module:"M".into(),how:"changed".into()};
+        let out=observe(&a,&b,&ai,&bi,&[change],2,&BTreeMap::new());
+        let modules:BTreeSet<_>=out.attributed[0].sites.iter().map(|s|s.module.as_str()).collect();assert_eq!(modules,BTreeSet::from(["C","D"]));
+        std::fs::remove_dir_all(a.dir).unwrap();std::fs::remove_dir_all(b.dir).unwrap();
+    }
+}
+
+#[cfg(test)]
+mod producer_qualification {
+    use super::tests::fixture;
+    use super::*;
+    #[test]
+    fn generate_observation_and_symbols_from_matching_source() {
+        let before="/* 🐈 */ __d(\"M\",[],function(g,r,i,n,l,m,e){\nfunction x(){return 1}\ne.test=x;\n});";
+        let after=before.replace("return 1","return 2");
+        let (a,ai)=fixture(5,&[("M",before,&[]),("S","var x=1",&[]),("U","var x=1",&[])]);
+        let (b,bi)=fixture(6,&[("M",&after,&[]),("S","var x=2",&[]),("U","var x=1",&[])]);
+        let changes:Vec<_>=[("M","ab:changed"),("U","ab:unexplained")].iter().map(|(module,id)|FactChange{id:(*id).into(),kind:"ab".into(),name:(*id).into(),module:(*module).into(),how:"changed".into()}).collect();
+        let facts=BTreeMap::from([("M".into(),vec!["ab:changed".into()]),("S".into(),vec!["ab:stable".into()]),("U".into(),vec!["ab:unexplained".into()])]);
+        let out=observe(&a,&b,&ai,&bi,&changes,2,&facts);
+        assert_eq!(out.attributed.len(),1);assert_eq!(out.unexplained.len(),1);assert_eq!(out.silent.len(),1);
+        let symbols=crate::symbols::symbols(&after).unwrap();
+        if let Some(dir)=std::env::var_os("JIGGER_QUALIFICATION_DIR") {
+            let dir=std::path::PathBuf::from(dir);std::fs::create_dir_all(dir.join("modules")).unwrap();std::fs::create_dir_all(dir.join("symbols")).unwrap();
+            std::fs::write(dir.join("observe.json"),serde_json::to_vec(&out).unwrap()).unwrap();
+            std::fs::write(dir.join("modules/M.js"),after).unwrap();
+            std::fs::write(dir.join("symbols/M.json"),serde_json::to_vec(&symbols).unwrap()).unwrap();
+        }
+        std::fs::remove_dir_all(a.dir).unwrap();std::fs::remove_dir_all(b.dir).unwrap();
+    }
 }

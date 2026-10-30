@@ -307,7 +307,7 @@ export type ObserveSite = {
   start: number;
   end: number;
   tokens: number;
-  how: "changed" | "added" | "removed";
+  how: "changed" | "added" | "removed" | "module";
 };
 
 /** A fact that moved, and the code that moved it. */

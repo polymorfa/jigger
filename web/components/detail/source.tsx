@@ -7,7 +7,7 @@ import { ModuleGraphPanel } from "@/components/module-graph";
 
 import { cached, loadModuleFacts, loadModuleSource, loadRevision } from "@/lib/cdn";
 import { loadModuleGraph } from "@/lib/module-graph";
-import { lineOfMatch, memberLine } from "@/lib/module-source";
+import { lineOfMatch, memberLine, lineAtByteOffset } from "@/lib/module-source";
 import { applyRenames, loadSymbols } from "@/lib/module-symbols";
 import { browseHref } from "@/lib/ids";
 import { useQueryParam, useRouteTail } from "@/lib/route";
@@ -49,7 +49,7 @@ function Missing({ name }: { name: string }) {
   );
 }
 
-function Body({ name, match }: { name: string; match: string | null }) {
+function Body({ name, match, at }: { name: string; match: string | null; at: string | null }) {
   const rev = use(loadRevision());
   const data = use(view(name));
   if (!data) return <Missing name={name} />;
@@ -59,7 +59,7 @@ function Body({ name, match }: { name: string; match: string | null }) {
   // a member name came from a click-through and wants the definition, not the
   // first line that happens to mention it.
   const isMember = Boolean(match && /^[A-Za-z_$][\w$]*$/.test(match));
-  const hit = match ? (isMember ? memberLine(src, match) : lineOfMatch(src, match)) : null;
+  const hit = at !== null ? lineAtByteOffset(src, at) : match ? (isMember ? memberLine(src, match) : lineOfMatch(src, match)) : null;
 
   return (
     <div className="flex h-full min-h-0 flex-col">
@@ -132,10 +132,11 @@ function Waiting({ name }: { name?: string }) {
 export default function SourcePage() {
   const name = useRouteTail("/source/");
   const match = useQueryParam("m");
+  const at = useQueryParam("at");
   if (!name) return <Waiting />;
   return (
     <Suspense fallback={<Waiting name={name} />}>
-      <Body name={name} match={match} />
+      <Body name={name} match={match} at={at} />
     </Suspense>
   );
 }

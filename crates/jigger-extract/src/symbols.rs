@@ -206,8 +206,8 @@ impl Lines {
             .saturating_sub(1);
         let start = self.starts[line];
         // Counted in characters, not bytes: the viewer indexes into JavaScript
-        // strings, where a multi-byte character is one position.
-        let col = src[start..offset.min(src.len())].chars().count();
+        // strings, where non-BMP characters occupy two UTF-16 code units.
+        let col = src[start..offset.min(src.len())].encode_utf16().count();
         (line as u32 + 1, col as u32)
     }
 }
@@ -228,7 +228,7 @@ pub fn symbols(raw: &str) -> Option<Symbols> {
         .iter()
         .map(|(start, end, name)| {
             let (l, c) = rename_lines.at(&rewritten, *start);
-            (l, c, (end - start) as u32, name.clone())
+            (l, c, rewritten[*start..*end].encode_utf16().count() as u32, name.clone())
         })
         .collect();
     let src = apply_renames(&rewritten, &spans);
@@ -255,7 +255,7 @@ pub fn symbols(raw: &str) -> Option<Symbols> {
     for id in scoping.symbol_ids() {
         let span = scoping.symbol_span(id);
         let (dl, dc) = lines.at(&src, span.start as usize);
-        let len = span.end - span.start;
+        let len = src[span.start as usize..span.end as usize].encode_utf16().count() as u32;
 
         let bound: Vec<_> = scoping.get_resolved_references(id).collect();
         decls.push((dl, dc, len, bound.len() as u32));
@@ -267,7 +267,7 @@ pub fn symbols(raw: &str) -> Option<Symbols> {
                 continue;
             }
             let (rl, rc) = lines.at(&src, rspan.start as usize);
-            refs.push((rl, rc, rspan.end - rspan.start, dl, dc));
+            refs.push((rl, rc, src[rspan.start as usize..rspan.end as usize].encode_utf16().count() as u32, dl, dc));
         }
     }
 
@@ -379,5 +379,20 @@ __d("M", ["Dep"], (function(t, n, r, o, a, i, l) {
         let sym = symbols("var a = 1; function f() { return a; }").expect("parses");
         assert!(sym.renames.is_empty());
         assert!(!sym.decls.is_empty());
+    }
+}
+
+#[cfg(test)]
+mod unicode_regression {
+    use super::*;
+    #[test]
+    fn rename_offsets_use_utf16() {
+        let src="/* 🐈 */ __d(\"M\",[],function(a,b,c,d,e,f,g){g.go=function(){return 1}})";
+        let rewritten=rewrite(src);let spans=factory_renames(&rewritten);let sym=symbols(src).unwrap();
+        assert!(!sym.renames.is_empty());
+        for ((start,end,_),(line,col,len,_)) in spans.iter().zip(&sym.renames) {
+            assert_eq!(*line,1);assert_eq!(*col,rewritten[..*start].encode_utf16().count() as u32);
+            assert_eq!(*len,rewritten[*start..*end].encode_utf16().count() as u32);
+        }
     }
 }

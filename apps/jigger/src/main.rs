@@ -371,19 +371,14 @@ fn main() -> Result<()> {
             }
 
             eprintln!("  {} -> {}  ({} facts moved)", ia.revision, ib.revision, changes.len());
-            let mut obs = jigger_extract::observe::observe(
-                &ba, &bb, &xa.modules, &xb.modules, &changes, *depth,
-            );
-
-            // The silent half needs the whole fact-to-module map, not just the
-            // facts that moved — silence is defined by what did *not* move.
+            // A removed fact still disqualifies its module from being silent.
             let mut fact_modules: BTreeMap<String, Vec<String>> = BTreeMap::new();
-            for f in &ib.facts {
+            for f in ia.facts.iter().chain(&ib.facts) {
                 fact_modules.entry(f.evidence.module.clone()).or_default().push(f.id.clone());
             }
-            let moved: BTreeSet<String> = changes.iter().map(|c| c.id.clone()).collect();
-            obs.silent = jigger_extract::observe::silent_scan(
-                &ba, &bb, &xa.modules, &xb.modules, &fact_modules, &moved,
+            for facts in fact_modules.values_mut() { facts.sort(); facts.dedup(); }
+            let obs = jigger_extract::observe::observe(
+                &ba, &bb, &xa.modules, &xb.modules, &changes, *depth, &fact_modules,
             );
 
             let s = &obs.stats;
